@@ -1,0 +1,16 @@
+.tabs {grid-template-columns:repeat(5,minmax(0,1fr))}
+.tabs button {overflow-wrap:anywhere}
+#p-media .media-line {font-size:var(--cue-size,20px);line-height:1.65;margin:.3rem 0;color:var(--ink)}
+#p-media .media-line button {font:inherit;color:inherit;background:transparent;border:0;padding:0 .06em;border-radius:4px}
+#p-media .media-line button:is(:hover,:focus-visible){background:rgba(56,189,248,.22)}
+#p-media .transcript {display:grid;max-height:230px;overflow:auto;gap:2px}
+#p-media .transcript button {text-align:left;background:transparent;color:inherit;border:0;padding:5px 8px;border-radius:8px}
+#p-media .transcript button[aria-current=true] {background:rgba(56,189,248,.18);font-weight:700}
+#p-media .strong-contrast {background:#102338;color:#fff;--ink:#fff}
+#p-media input[type=file] {width:100%}
+#p-media select,#p-media textarea {max-width:100%}
+#p-media button:disabled {opacity:.55}
+#p-media .recording {color:#c72b43;font-weight:700}
+dialog.card {max-width:min(420px,92vw);max-height:80vh;overflow:auto;color:inherit;background:Canvas}
+dialog:not([open]) {display:none}
+dialog blockquote {max-height:140px;overflow:auto;overflow-wrap:anywhere}

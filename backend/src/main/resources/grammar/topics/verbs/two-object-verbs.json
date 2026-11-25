@@ -1,0 +1,488 @@
+{
+  "schema": 1,
+  "slug": "two-object-verbs",
+  "version": 2,
+  "domain": "verbs",
+  "order": 80,
+  "kind": "grammar",
+  "title": {
+    "vi": "Động từ hai tân ngữ: give, send, explain",
+    "en": "Verbs with two objects"
+  },
+  "subtitle": {
+    "vi": "Người nhận, vật được chuyển và giới hạn từng động từ",
+    "en": "Recipients, things and lexical limits"
+  },
+  "aliases": [
+    "động từ hai tân ngữ",
+    "double object",
+    "give send explain",
+    "explain me",
+    "to và for"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Phân biệt hai tân ngữ với tân ngữ kèm cụm giới từ.",
+    "Dùng to và for theo vai trò.",
+    "Giữ giới hạn của explain, suggest và từng động từ."
+  ],
+  "prerequisites": [
+    "sentence-patterns"
+  ],
+  "related": [
+    {
+      "slug": "sentence-patterns",
+      "rel": "more"
+    },
+    {
+      "slug": "transitive-intransitive",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Mẫu hai tân ngữ (double-object pattern) đặt người nhận hoặc hưởng lợi trước vật: give someone something.",
+    "when": "Dùng với động từ cho phép khung đó, không áp dụng cho mọi từ có nghĩa trao đổi thông tin.",
+    "examples": [
+      {
+        "en": "[S|Mai] [V|sent] [O|me] [O|a receipt].",
+        "vi": "Mai gửi tôi một biên lai."
+      },
+      {
+        "en": "[S|Mai] [V|explained] [O|the fee] [PREP|to] me.",
+        "vi": "Mai giải thích khoản phí cho tôi."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Trong She gave Lan a key, Lan là tân ngữ gián tiếp (indirect object), a key là tân ngữ trực tiếp. Trong She gave a key to Lan, to Lan là cụm giới từ, không phải tân ngữ thứ hai của cùng mẫu."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+  "kind": "slots",
+  "slots": [
+    {
+      "label": "Động từ",
+      "items": [
+        "gave"
+      ]
+    },
+    {
+      "label": "Người nhận",
+      "items": [
+        "Lan"
+      ]
+    },
+    {
+      "label": "Vật",
+      "items": [
+        "a key"
+      ]
+    }
+  ],
+  "sentence": "She {0} {1} {2}.",
+  "fixedOrder": true
+},
+      "caption": "Mẫu hai tân ngữ đặt người nhận trước vật, không có to ở giữa.",
+      "alt": "Mẫu hai tân ngữ đặt người nhận trước vật, không có to ở giữa."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Động từ và nghĩa",
+        "Hai tân ngữ",
+        "Mẫu giới từ"
+      ],
+      "rows": [
+        [
+          "give, send, show",
+          "give me a key",
+          "give a key to me"
+        ],
+        [
+          "buy, make (tạo vật)",
+          "buy me lunch",
+          "buy lunch for me"
+        ],
+        [
+          "explain",
+          "Không theo mẫu explain me the rule",
+          "explain the rule to me"
+        ],
+        [
+          "suggest",
+          "Không theo mẫu suggest me a route",
+          "suggest a route to me"
+        ]
+      ]
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|The host] [V|showed] [O|us] [O|the garden].",
+          "vi": "Chủ nhà chỉ cho chúng tôi xem khu vườn."
+        },
+        {
+          "en": "[S|The host] [V|described] [O|the garden] [PREP|to] us.",
+          "vi": "Chủ nhà miêu tả khu vườn cho chúng tôi."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "To thường giới thiệu người nhận thông tin hoặc vật; for thường chỉ người hưởng lợi trong buy/make something for someone. Nghĩa của toàn câu vẫn quan trọng: không đổi to thành for chỉ vì tiếng Việt cùng dịch là “cho”."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Việc đổi mẫu bị giới hạn theo động từ và nghĩa. Explain, describe và suggest không theo mẫu give someone something trong các nghĩa đang học. Không suy rằng mọi từ trong bảng có mọi cấu trúc hoặc mọi kiểu bị động."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Thông tin ngắn và đã biết thường đứng sớm: Send me the file rất tự nhiên. Với người nhận dài, Send the file to the colleague who joined yesterday dễ đọc hơn. Đây là xu hướng tổ chức thông tin, không phải quy tắc cấm câu khác."
+    },
+    {
+      "type": "p",
+      "vi": "Khi vật là đại từ it, Give it to me là lựa chọn trung tính rộng rãi. Give me it có ở một số vùng hoặc cách nói, nên không dùng nó làm đáp án chắc chắn sai trong bài kiểm tra chung."
+    },
+    {
+      "type": "p",
+      "vi": "Hai mẫu cũng không luôn giữ mọi sắc thái: một vật được làm for someone có thể là vì lợi ích của họ, không nhất thiết đã được trao cho họ. Hãy chọn câu theo điều thực sự xảy ra."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "two-object-verbs-m1",
+      "wrong": "Please explain me the fee.",
+      "right": "Please explain the fee to me.",
+      "why": "Explain something to someone, không theo khung give."
+    },
+    {
+      "id": "two-object-verbs-m2",
+      "wrong": "She suggested us a restaurant.",
+      "right": "She suggested a restaurant to us.",
+      "why": "Suggest ở nghĩa đề xuất không dùng mẫu hai tân ngữ này."
+    },
+    {
+      "id": "two-object-verbs-m3",
+      "wrong": "He gave a key me.",
+      "right": "He gave a key to me.",
+      "why": "Khi a key đứng trước người nhận trong mẫu này, dùng to me; cũng có He gave me a key."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có thể chuyển mọi câu hai tân ngữ sang to không?",
+      "a": "Không. Buy và make ở nghĩa hưởng lợi thường dùng for; một số động từ hoặc nghĩa khác không cho phép hoán đổi theo công thức."
+    },
+    {
+      "q": "Explain có thể đi với người nghe không?",
+      "a": "Có, bằng to: explain the problem to her. Vấn đề là khung câu, không phải cấm nhắc đến người nghe."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "tov-01",
+      "prompt": "Chọn câu chuẩn khi nói giải thích quy trình cho người mới.",
+      "explain": "Explain dùng vật được giải thích trực tiếp rồi to chỉ người nghe.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "Muốn giữ cả the procedure và the trainee.",
+      "options": [
+        {
+          "t": "She explained the procedure to the trainee.",
+          "ok": true,
+          "note": "Đây là khung explain something to someone."
+        },
+        {
+          "t": "She explained the trainee the procedure.",
+          "ok": false,
+          "note": "Explain không theo mẫu give ở nghĩa này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "She explained to the trainee the procedure about.",
+          "ok": false,
+          "note": "About cuối câu không có bổ sung và sai khung.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+  "id": "tov-02",
+  "prompt": "Nối câu với quan hệ của người nhận hoặc hưởng lợi.",
+  "explain": "To và for khác vai trò, không phải hai giới từ đổi tự do.",
+  "skill": "meaning",
+  "use": "practice",
+  "type": "match",
+  "pairs": [
+    {
+      "a": "She sent the receipt to Minh.",
+      "b": "Minh là người nhận mà việc gửi hướng tới; chưa khẳng định đã nhận được"
+    },
+    {
+      "a": "She made some tea for Minh.",
+      "b": "Minh hưởng lợi từ việc pha trà"
+    },
+    {
+      "a": "She explained the fee to Minh.",
+      "b": "Minh là người nghe giải thích"
+    }
+  ],
+  "level": "B1"
+},
+    {
+      "id": "tov-03",
+      "prompt": "Phân loại cấu trúc, không coi cụm to/for là tân ngữ thứ hai.",
+      "explain": "Hai tân ngữ là hai cụm danh từ sau động từ; to/for tạo cụm giới từ.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Hai tân ngữ",
+        "Tân ngữ và cụm giới từ"
+      ],
+      "items": [
+        {
+          "t": "She gave Minh a receipt.",
+          "cat": "Hai tân ngữ"
+        },
+        {
+          "t": "She gave a receipt to Minh.",
+          "cat": "Tân ngữ và cụm giới từ"
+        },
+        {
+          "t": "She bought a sandwich for Minh.",
+          "cat": "Tân ngữ và cụm giới từ"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+  "id": "tov-04",
+  "prompt": "Điền to hoặc for đúng quan hệ.",
+  "explain": "Send thường hướng tới người nhận; buy for chỉ người hưởng lợi trong ngữ cảnh này.",
+  "skill": "form",
+  "use": "practice",
+  "type": "cloze",
+  "stem": "Please send the invoice {1} Linh. I bought this lunch {2} her because she is working late.",
+  "blanks": {
+    "1": {
+      "accept": [
+        "to"
+      ]
+    },
+    "2": {
+      "accept": [
+        "for"
+      ]
+    }
+  },
+  "level": "B1",
+  "context": "Linh là người phải nhận hóa đơn, không phải người được gửi thay. Bữa trưa được mua vì lợi ích của Linh."
+},
+    {
+      "id": "tov-05",
+      "prompt": "Sửa mẫu explain; giữ người nghe và vật được giải thích.",
+      "explain": "Explain the rule to us là mẫu chuẩn.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "The tutor explained"
+        },
+        {
+          "t": "us the rule",
+          "bad": true,
+          "fix": [
+            "the rule to us"
+          ],
+          "note": "Không dùng explain us the rule.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "again."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "tov-06",
+      "prompt": "Sắp xếp câu kể bắt đầu bằng Please.",
+      "explain": "Đại từ người nhận có thể đứng trước vật gửi trong mẫu send.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "Please",
+        "send",
+        "me",
+        "the receipt"
+      ],
+      "accept": [
+        [
+          "Please",
+          "send",
+          "me",
+          "the receipt"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "tov-07",
+      "prompt": "Đổi sang mẫu có to.",
+      "explain": "Send cho phép đổi với các cụm này; vật gửi đứng trước to.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "The agent sent Hoa a ticket.",
+      "instruction": "Giữ chủ ngữ; dùng a ticket rồi to Hoa ở cuối.",
+      "accept": [
+        "The agent sent a ticket to Hoa"
+      ],
+      "model": "The agent sent a ticket to Hoa",
+      "level": "B1"
+    },
+    {
+      "id": "tov-08",
+      "prompt": "Soạn tin nhắn yêu cầu hỗ trợ.",
+      "explain": "Bài tự viết cần đúng khung từng từ; không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết ba câu dùng send, buy và explain. Ít nhất một câu dùng hai tân ngữ, một câu dùng for, một câu dùng explain ... to ....",
+      "model": [
+        "Please send me the address. I will buy lunch for the team. Could you explain the route to me?"
+      ],
+      "checklist": [
+        "Người nhận đứng trước vật trong mẫu hai tân ngữ.",
+        "Buy ... for chỉ người hưởng lợi.",
+        "Explain không theo mẫu explain me something."
+      ],
+      "level": "B1"
+    },
+    {
+  "id": "tov-09",
+  "prompt": "Điền to hoặc for; giữ đúng nghĩa người nhận và người hưởng lợi.",
+  "explain": "Tell hướng thông tin đến người nghe; make for chỉ người hưởng lợi.",
+  "skill": "form",
+  "use": "check",
+  "type": "cloze",
+  "stem": "She told the story {1} the children. She made a blanket {2} the baby.",
+  "blanks": {
+    "1": {
+      "accept": [
+        "to"
+      ]
+    },
+    "2": {
+      "accept": [
+        "for"
+      ]
+    }
+  },
+  "level": "B1",
+  "context": "The children là người nghe được kể câu chuyện. The baby là người hưởng lợi từ chiếc chăn, không phải địa chỉ giao hàng được nêu."
+},
+    {
+      "id": "tov-10",
+      "prompt": "Đổi sang mẫu với for.",
+      "explain": "Buy cho phép cấu trúc với for trong câu này.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "I bought my sister a notebook.",
+      "instruction": "Giữ chủ ngữ; đặt a notebook trước for my sister ở cuối.",
+      "accept": [
+        "I bought a notebook for my sister"
+      ],
+      "model": "I bought a notebook for my sister",
+      "level": "B1"
+    },
+    {
+      "id": "tov-11",
+      "prompt": "Chọn tất cả câu chuẩn.",
+      "explain": "Give cho phép hai mẫu; explain và suggest không mặc nhiên cho phép hai tân ngữ.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Xét từng câu.",
+      "options": [
+        {
+          "t": "The host gave us a map.",
+          "ok": true,
+          "note": "Give someone something."
+        },
+        {
+          "t": "The host gave a map to us.",
+          "ok": true,
+          "note": "Give something to someone."
+        },
+        {
+          "t": "The host explained us the route.",
+          "ok": false,
+          "note": "Explain the route to us.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "The host suggested us a route.",
+          "ok": false,
+          "note": "Suggest a route to us.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "tov-12",
+      "prompt": "Phân loại mẫu theo câu đã cho.",
+      "explain": "Give và buy có hai cụm danh từ; explain có cụm to.",
+      "skill": "recognition",
+      "use": "check",
+      "type": "classify",
+      "cats": [
+        "Hai tân ngữ",
+        "Tân ngữ và cụm giới từ"
+      ],
+      "items": [
+        {
+          "t": "I gave her a key.",
+          "cat": "Hai tân ngữ"
+        },
+        {
+          "t": "I bought her a key ring.",
+          "cat": "Hai tân ngữ"
+        },
+        {
+          "t": "I explained the lock to her.",
+          "cat": "Tân ngữ và cụm giới từ"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

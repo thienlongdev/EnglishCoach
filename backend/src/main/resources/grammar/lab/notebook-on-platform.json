@@ -1,0 +1,88 @@
+{
+  "id": "notebook-on-platform",
+  "title": "Có cần having để biết hai hành động cái nào trước?",
+  "summary": "Một nhà thiết kế đóng sổ rồi rời bục. Thử phân từ đơn, phân từ hoàn thành và một mệnh đề nói rõ đồng thời. Cách nào đánh dấu thứ tự bằng hình thức?",
+  "level": "C1",
+  "topics": [
+    "participle-clauses",
+    "tense-aspect-system"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Quan hệ thời gian",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Suy từ sự việc"
+        },
+        {
+          "id": "v2",
+          "label": "Đánh dấu hoàn tất"
+        },
+        {
+          "id": "v3",
+          "label": "Nêu đồng thời"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Closing her notebook, Ada stepped off the platform.",
+      "vi": "Ada khép sổ rồi bước xuống bục.",
+      "note": "Closing không tự định một khoảng cách trước sau chính xác. Người đọc dựa vào diễn biến động tác. / The simple participle permits closely linked or overlapping actions.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Having closed her notebook, Ada stepped off the platform.",
+      "vi": "Sau khi đã khép sổ, Ada bước xuống bục.",
+      "note": "Having closed yêu cầu hành động khép sổ hoàn tất trước bước xuống. / The perfect participle explicitly marks prior completion.",
+      "verdict": "ok",
+      "timeline": {
+        "sentence": "Having closed her notebook, Ada stepped off the platform.",
+        "now": 92,
+        "events": [
+          {
+            "kind": "point",
+            "at": 30,
+            "label": "Đã khép sổ",
+            "role": "main"
+          },
+          {
+            "kind": "point",
+            "at": 55,
+            "label": "Bước xuống",
+            "role": "ref"
+          }
+        ]
+      }
+    },
+    "v3": {
+      "en": "While she was closing her notebook, Ada stepped off the platform.",
+      "vi": "Ngay trong lúc đang khép sổ, Ada bước xuống bục.",
+      "note": "While và was closing đặt bước xuống bên trong khoảng khép sổ, khác với cách đánh dấu đã xong. / While plus progressive specifies overlap.",
+      "verdict": "ok",
+      "timeline": {
+        "sentence": "While she was closing her notebook, Ada stepped off the platform.",
+        "now": 92,
+        "events": [
+          {
+            "kind": "span",
+            "from": 24,
+            "to": 60,
+            "label": "Đang khép sổ",
+            "role": "main"
+          },
+          {
+            "kind": "point",
+            "at": 42,
+            "label": "Bước xuống",
+            "role": "ref"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s123-last-tea-leaf",
+  "title": "Lá trà cuối trong ấm",
+  "summary": "Vị khách lần thứ một trăm hỏi Sa đã từng uống trà từ lá cuối mẻ chưa. Hôm qua chị vừa thử, lần đầu trong đời.",
+  "level": "B1",
+  "topics": [
+    "present-perfect-vs-past-simple"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sa",
+      "role": "Người nấu bếp"
+    },
+    {
+      "id": "b",
+      "name": "Linh",
+      "role": "Người phục vụ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Linh muốn ghi cả trải nghiệm lẫn mốc cụ thể vào tấm thiệp kỷ niệm. Một chỗ trống trước yesterday cần được điền.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can still taste oranges in it.",
+          "vi": "Tôi vẫn còn nhớ vị cam trong đó."
+        },
+        {
+          "who": "b",
+          "en": "When did you actually try it?",
+          "vi": "Chị đã thử đúng lúc nào?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Điền một câu trả lời kể lần thử trong ngày hôm qua đã khép.",
+        "options": [
+          {
+            "ok": true,
+            "t": "I tried it yesterday after closing.",
+            "note": "Yesterday và after closing định thời điểm đã qua. Quá khứ đơn tried kể sự kiện rõ mốc.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "I have tried it yesterday after closing.",
+            "note": "Have tried nói kinh nghiệm tới hiện tại, nhưng cách dùng chuẩn không phối khung này với mốc yesterday đã kết thúc. Có thể tách “I've tried it” rồi kể bằng quá khứ đơn.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Khách nhận ra hương cam đến từ vỏ cam ông từng dạy mẹ Sa phơi. Ông viết thêm một dòng dưới ngày hôm qua.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Yesterday turned out to have a long history.",
+          "vi": "Hóa ra ngày hôm qua có một quá khứ dài."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Lá trà cuối nối được hai đời người bằng đúng một ngày được nhớ.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Sa chia lời thành hai dòng. Khách đánh dấu dòng đầu cho những ai đã thử, dòng hai cho đúng ngày mở mẻ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "There was room for both answers.",
+          "vi": "Trên thiệp có chỗ cho cả hai cách trả lời."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Tấm thiệp có hai cột dần đầy chữ của người đến quán. Họ nhớ được cả chuyện đã thử lẫn lúc thử.",
+      "end": true
+    }
+  ]
+}

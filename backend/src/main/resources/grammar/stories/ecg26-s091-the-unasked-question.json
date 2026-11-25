@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s091-the-unasked-question",
+  "title": "Câu hỏi nằm giữa hai dòng",
+  "summary": "Một tiêu đề sắp lên trang nhất nói rạp rối đóng cửa. Cả câu chuyện dựa trên một dòng tốc ký thiếu dấu hỏi.",
+  "level": "B1",
+  "topics": [
+    "reporting-questions",
+    "indirect-questions"
+  ],
+  "scene": "newsroom",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Anika",
+      "role": "Phóng viên"
+    },
+    {
+      "id": "b",
+      "name": "Thu",
+      "role": "Người trông rạp múa rối"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Anika tìm được đoạn ghi âm phỏng vấn. Trên băng, biên tập viên hỏi Thu liệu rạp có đóng cửa không. Tiếng xe chạy ngang át mất câu trả lời.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can hear the question. I can't hear your answer.",
+          "vi": "Tôi nghe được câu hỏi. Tôi không nghe được câu trả lời của cô."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Then print what you actually heard.",
+          "vi": "Vậy hãy đăng đúng điều cô đã nghe."
+        }
+      ],
+      "choice": {
+        "prompt": "Câu nào tường thuật chính xác phần băng còn nghe được?",
+        "options": [
+          {
+            "t": "He said that the theatre was closing.",
+            "note": "Said that biến câu hỏi thành lời khẳng định. Trật tự từ đúng nhưng bằng chứng không cho phép viết vậy.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "He asked whether the theatre was closing.",
+            "note": "Asked whether dẫn câu hỏi có hoặc không. Nó giữ tình trạng chưa rõ câu trả lời và dùng trật tự chủ ngữ trước động từ.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Thu lật lịch diễn sang tháng sau. Những ngón tay bà dính màu xanh từ con rối mới sơn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We open the new show on Friday.",
+          "vi": "Thứ Sáu chúng tôi ra mắt vở mới."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Anika gạch chữ said khỏi bản in thử. Thu đưa cô xem mấy vé chưa xé của vở mới.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Would you like the first ticket?",
+          "vi": "Cô có muốn nhận tấm vé đầu tiên không?"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Anika đổi tiêu đề thành tên vở diễn và mua vé hàng cuối. Lúc mở màn, con rối xanh nhô lên cầm tờ báo. Khán giả cười trước cả lời thoại đầu tiên.",
+      "say": [
+        {
+          "who": "a",
+          "en": "That's the first time my headline has been on stage.",
+          "vi": "Lần đầu tiên dòng tít của tôi được lên sân khấu đấy."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s118-soft-signal",
+  "title": "Lời nhờ trong bóng tối",
+  "summary": "Đèn trong phòng ngủ chung quá sáng cho ca đêm. Uyên cần nhờ Sao giảm đèn nhưng vẫn để anh đọc sổ.",
+  "level": "B1",
+  "topics": [
+    "permission-and-requests",
+    "politeness-indirectness"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Uyên",
+      "role": "Người ghi nhật ký"
+    },
+    {
+      "id": "b",
+      "name": "Sao",
+      "role": "Kỹ thuật viên"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Sao không thấy vệt sáng chiếu qua màn gối. Uyên có thể nói một lời nhờ trực tiếp hoặc xin phép tự xoay chụp đèn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can read every word on your page from my pillow.",
+          "vi": "Từ gối tôi đọc được cả trang sổ của anh."
+        },
+        {
+          "who": "b",
+          "en": "I didn't know the light reached your bed.",
+          "vi": "Tôi không biết ánh đèn tới tận giường cô."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn cách phân việc để cả hai vẫn có thể dùng căn phòng.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Could you turn the lamp towards your book?",
+            "note": "Could you ...? yêu cầu Sao xoay đèn. Towards your book giữ ánh sáng trên trang mà tránh giường.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": true,
+            "t": "Would you mind if I moved the shade a little?",
+            "note": "Would you mind if I moved ...? xin phép để Uyên tự điều chỉnh. Moved ở đây làm lời xin mềm đi, không kể việc quá khứ.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Sao xoay chụp đèn, thấy một con hạc giấy trên gối Uyên bỗng đổ bóng cánh dài lên tường.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I can see my page and your bird.",
+          "vi": "Tôi thấy được cả trang sách lẫn con hạc của cô."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Anh vẽ chiếc bóng vào sổ trước khi khép lại. Ca sau đặt tên phòng là Tổ hạc.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Uyên xoay chụp một chút và dùng ánh phản chiếu thử đúng vị trí Sao nhìn được. Từ gối không còn chói.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We found a little night inside the day.",
+          "vi": "Ta tìm được một khoảng đêm bé giữa ban ngày rồi."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Hai người đánh dấu góc xoay bằng hình trăng khuyết để ca sau tìm lại ngay.",
+      "end": true
+    }
+  ]
+}

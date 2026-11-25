@@ -1,0 +1,26 @@
+/*
+ * Echo swimming (shared): the landing's rendered still + the real rig's VP9-alpha swim loop placed so its whale origin and
+ * length equal the still's (same numbers as the Dashboard hero, docs/echo-ocean/2026-11-14). Decoration only.
+ */
+.swimmer { position: relative; pointer-events: none; }
+.swimmer[data-facing='left'] { scale: -1 1; }
+.swimmer[data-drift] { animation: echoDrift 13s ease-in-out infinite; }
+.body { position: relative; aspect-ratio: 640 / 400; filter: drop-shadow(0 18px 18px rgb(40 30 120 / 0.32)); }
+:global(.dark) .body { filter: drop-shadow(0 0 22px rgb(125 211 252 / 0.4)) drop-shadow(0 18px 20px rgb(0 0 0 / 0.5)); }
+.still { position: absolute; inset: 0; display: block; width: 100%; height: 100%; transition: opacity 700ms ease; animation: echoBeat 3.4s ease-in-out infinite; transform-origin: 55% 58%; }
+.video { position: absolute; left: 0.71%; top: 22.12%; width: 82.71%; height: auto; opacity: 0; pointer-events: none; transition: opacity 700ms ease; }
+.swimmer[data-live] .video { opacity: 1; }
+.swimmer[data-live] .still { opacity: 0; animation-play-state: paused; }
+
+@keyframes echoDrift {
+  0%, 100% { translate: -8px 0; rotate: -1.5deg; }
+  30% { translate: 4px -10px; rotate: -3deg; }
+  60% { translate: 12px -2px; rotate: 1deg; }
+  80% { translate: 2px 6px; rotate: 2.4deg; }
+}
+@keyframes echoBeat { 0%, 100% { rotate: -1deg; } 50% { rotate: 1.2deg; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .swimmer[data-drift], .still { animation: none; }
+  .video { display: none; }
+}

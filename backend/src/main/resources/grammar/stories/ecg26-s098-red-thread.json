@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s098-red-thread",
+  "title": "Cuộn chỉ chạy trốn",
+  "summary": "Một cuộn chỉ đỏ nhỏ dần mỗi tối dù Anh không khâu gì. Sáng nay sợi chỉ chui qua khe cửa sang phòng Leo.",
+  "level": "B1",
+  "topics": [
+    "stative-dynamic",
+    "present-perfect-continuous"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Anh",
+      "role": "Người sửa áo"
+    },
+    {
+      "id": "b",
+      "name": "Leo",
+      "role": "Bạn hàng xóm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Anh không thấy mèo hay chuột. Sợi chỉ căng lên từng chút rồi chùng xuống. Bên kia cửa có tiếng cười và tiếng bìa cứng cọ vào sàn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "My thread has been moving all morning.",
+          "vi": "Sợi chỉ của mình cứ dịch chuyển suốt sáng nay."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Before you pull, can you tell whether it has stopped for good?",
+          "vi": "Trước khi kéo lại, cậu có biết nó đã dừng hẳn chưa?"
+        }
+      ],
+      "choice": {
+        "prompt": "Anh chỉ biết việc kéo lặp lại tới giờ. Chọn báo cáo giữ quá trình, chưa khẳng định kết thúc.",
+        "options": [
+          {
+            "t": "Someone has been pulling it a little at a time.",
+            "note": "Hiện tại hoàn thành tiếp diễn nhìn lại hoạt động lặp từng đợt đến gần hiện tại. Nó không đòi phải kéo liên tục từng giây.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "Someone has pulled the whole thread through.",
+            "note": "The whole thread through nói toàn bộ sợi đã được kéo hết qua khe. Trong tay Anh rõ ràng vẫn còn cuộn chỉ.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Anh nới thêm chỉ rồi gõ cửa. Leo đang thử dây kéo rèm cho rạp rối bìa cứng. Cậu tưởng sợi chỉ rơi từ cuộn của mình.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I've been pulling the wrong thread!",
+          "vi": "Hóa ra mình kéo nhầm sợi chỉ suốt!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Anh nhìn cuộn vẫn nằm trên tay rồi bước sang phòng Leo. Một bức rèm bìa rơi xuống vì sợi chỉ bị giữ lại.",
+      "say": [
+        {
+          "who": "b",
+          "en": "My curtain needs your end too.",
+          "vi": "Rèm của mình cũng cần cả đầu dây của cậu."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Hai người nối chỉ thành vòng để vừa kéo mở vừa kéo đóng được. Tối đó Anh vẫn khâu được tay áo bằng phần chỉ thừa, còn Leo mời bạn kéo rèm mở màn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "That's the first sleeve I've mended during a show.",
+          "vi": "Đó là cái tay áo đầu tiên mình vá ngay giữa buổi diễn."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s211-homework-for-tomorrow",
+  "title": "Bài tập của người chưa nhập học",
+  "level": "B2",
+  "topics": [
+    "future-perfect"
+  ],
+  "scene": "university",
+  "summary": "La viết cho Kimi một lá thư mở đúng ngày vào trường. Kimi nghĩ chị mình vẫn sẽ đứng ở cổng như hôm nay.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "La",
+      "role": "Sinh viên năm cuối"
+    },
+    {
+      "id": "b",
+      "name": "Kimi",
+      "role": "Em gái"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "La sẽ tốt nghiệp vào tháng Sáu. Em nhập học vào tháng Chín. Hai mốc khiến lời hứa đón em cần một hình thức khác: một dấu vẽ nhỏ ở gốc cây đầu cổng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Your first day comes after my last one.",
+          "vi": "Ngày đầu của em tới sau ngày cuối của chị."
+        },
+        {
+          "who": "b",
+          "en": "Then who will show me which way to go?",
+          "vi": "Thế ai chỉ cho em biết đi hướng nào?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "La giải thích điều đã hoàn tất tính đến lúc Kimi tới.",
+        "options": [
+          {
+            "t": "I'll graduate after your first day.",
+            "note": "After đảo thứ tự hai mốc. Nó tạo kỳ vọng chị còn học ở đó khi em tới, trái với tháng Sáu và tháng Chín đã nêu.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "By the time you arrive, I'll have graduated.",
+            "note": "Future perfect đặt việc tốt nghiệp xong trước mốc em đến. Mệnh đề by the time you arrive dùng hiện tại đơn cho tương lai.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "La dẫn Kimi ngắm gốc cây rồi vẽ vào thư đúng hình hai nút thắt trên thân. Tháng Chín Kimi mở thư nhận ra cây từ xa, tự tìm tới lớp đầu tiên.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can still show you the way in pencil.",
+          "vi": "Chị vẫn chỉ đường cho em được bằng nét chì."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Kimi chỉ hai ô lịch rồi xin La một lời hẹn khác. La mua vé về thăm đúng chiều khai giảng thay vì hứa đang còn là sinh viên. Hai chị em gặp ở cổng với hai chiếc thẻ khác màu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "You can be a visitor and still be my guide.",
+          "vi": "Chị làm khách mà vẫn dẫn em đi được."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,495 @@
+{
+  "schema": 1,
+  "slug": "modal-perfect-regret",
+  "version": 2,
+  "domain": "modality",
+  "order": 110,
+  "kind": "grammar",
+  "title": {
+    "vi": "Should have, could have: tiếc nuối và cơ hội đã qua",
+    "en": "Should have and could have"
+  },
+  "subtitle": {
+    "vi": "Đánh giá lựa chọn đã qua mà không ép mọi câu thành tiếc nuối.",
+    "en": "Evaluate past choices, missed opportunities and expectations."
+  },
+  "level": "B2",
+  "levelBasis": "editorial",
+  "prerequisites": [
+    "should-ought-to",
+    "present-perfect-basics"
+  ],
+  "related": [
+    {
+      "slug": "modal-perfect-deduction",
+      "rel": "contrast"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "aliases": [
+    "should have done",
+    "could have done",
+    "ought to have",
+    "tiếc nuối quá khứ",
+    "cơ hội bỏ lỡ",
+    "should have went"
+  ],
+  "objectives": [
+    "Dùng should have và shouldn’t have đánh giá một lựa chọn quá khứ.",
+    "Dùng could have khi ngữ cảnh xác nhận cơ hội đã bỏ qua.",
+    "Nhận ra cách đọc kỳ vọng của should have và khả năng của could have."
+  ],
+  "quick": {
+    "what": "Should have thường đánh giá việc trước đó là đáng lẽ nên làm; shouldn’t have thường đánh giá việc đã làm là không nên. Could have có thể nêu một cơ hội đã có.",
+    "when": "Khi rút kinh nghiệm, xin lỗi hoặc nhìn lại lựa chọn với dữ kiện rõ.",
+    "examples": [
+      {
+        "en": "I [MOD|should] [AUX|have] [V|checked] the address before leaving.",
+        "vi": "Đáng lẽ tôi nên kiểm tra địa chỉ trước khi đi."
+      },
+      {
+        "en": "We [MOD|could] [AUX|have] [V|booked] a cheaper room, but we chose this one.",
+        "vi": "Chúng tôi đã có thể đặt phòng rẻ hơn nhưng đã chọn phòng này."
+      }
+    ],
+    "remember": "Không phải mọi should have đều xác nhận việc chưa làm; không phải mọi could have đều là cơ hội bỏ lỡ."
+  },
+  "lesson": [
+    {
+      "type": "h",
+      "vi": "Từ việc đã xảy ra đến bài học"
+    },
+    {
+      "type": "p",
+      "vi": "Bạn đến nhầm địa điểm vì không kiểm tra địa chỉ. I should have checked the address đánh giá một lựa chọn trước đó từ góc nhìn hiện tại. Trong tình huống này ta biết việc kiểm tra đã không diễn ra. Cách nói cũng có thể thành lời trách người khác; nên cân nhắc giọng và quan hệ."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Mẫu",
+        "Ngữ cảnh",
+        "Cách hiểu"
+      ],
+      "rows": [
+        [
+          "should have + phân từ",
+          "Tôi không sao lưu và đã mất bản nháp.",
+          "I should have saved a backup."
+        ],
+        [
+          "shouldn’t have + phân từ",
+          "Tôi đã gửi số điện thoại riêng khi chưa xin phép.",
+          "I shouldn’t have shared her number."
+        ],
+        [
+          "could have + phân từ",
+          "Có vé nhưng tôi quyết định ở lại.",
+          "I could have gone, but I stayed."
+        ],
+        [
+          "ought to have + phân từ",
+          "Nhìn lại trách nhiệm đã không thực hiện.",
+          "We ought to have warned the guests."
+        ]
+      ]
+    },
+    {
+      "type": "formula",
+      "parts": [
+        {
+          "t": "should / could",
+          "role": "MOD"
+        },
+        {
+          "t": "have",
+          "role": "AUX"
+        },
+        {
+          "t": "past participle",
+          "role": "V"
+        }
+      ],
+      "note": "Ought giữ to: ought to have checked. Phủ định thường là should not have hoặc shouldn’t have."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "I am sorry. I should have asked before using your photo.",
+          "vi": "Tôi xin lỗi. Đáng lẽ tôi nên hỏi trước khi dùng ảnh của bạn."
+        },
+        {
+          "en": "You shouldn’t have driven with that warning light on.",
+          "vi": "Đáng lẽ bạn không nên lái khi đèn cảnh báo đó sáng."
+        },
+        {
+          "en": "The train left on time. It should have reached the city by now.",
+          "vi": "Tàu đi đúng giờ. Chắc giờ tàu đã tới thành phố theo dự kiến.",
+          "note": "Đây là kỳ vọng; người nói chưa xác nhận tàu đã tới hay chưa."
+        }
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "branch",
+        "root": "Đọc should have hoặc could have",
+        "branches": [
+          {
+            "cond": "Đã biết lựa chọn thực tế và đang đánh giá?",
+            "result": "Tiếc nuối, phê bình hoặc cơ hội bỏ qua.",
+            "world": "real"
+          },
+          {
+            "cond": "Chưa rõ kết quả nhưng có lịch trình?",
+            "result": "Should have có thể nêu kỳ vọng.",
+            "world": "real"
+          },
+          {
+            "cond": "Đang tìm lời giải thích chưa xác minh?",
+            "result": "Could have có thể nêu khả năng đã xảy ra.",
+            "world": "real"
+          }
+        ]
+      },
+      "caption": "Bằng chứng về việc thực tế quyết định cách đọc; modal perfect không tự đủ.",
+      "alt": "Bằng chứng về việc thực tế quyết định cách đọc; modal perfect không tự đủ."
+    },
+    {
+      "type": "p",
+      "vi": "Could have không hứa rằng kết quả sẽ tốt. We could have taken the earlier bus chỉ nói có lựa chọn ấy trong cách đọc cơ hội; không tự chứng minh đã đến đúng giờ nếu chọn nó. Khi phản hồi lỗi, nêu một thay đổi cụ thể có ích hơn việc chỉ trách."
+    },
+    {
+      "type": "try",
+      "exercise": "mpr-04"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Should have thường gợi việc đáng làm đã không làm trong ngữ cảnh đánh giá. Nhưng You should have received the receipt by now có thể hỏi về một kỳ vọng mà kết quả vẫn chưa biết. Không chấm câu ấy là khẳng định người nghe chưa nhận được biên nhận."
+    },
+    {
+      "type": "p",
+      "vi": "You shouldn’t have! khi đáp lại một món quà thường là công thức xã giao thể hiện bất ngờ hoặc biết ơn, không nhất thiết là lời phê bình thật. Không suy cảm xúc chỉ từ not."
+    },
+    {
+      "type": "p",
+      "vi": "Could have been worse có thể là một đánh giá về kết quả thay thế. So sánh với It could have been a loose cable, but we haven’t checked: câu sau giữ một nguyên nhân quá khứ ở dạng khả năng, chưa phải cơ hội đã bỏ lỡ."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "mpr-part",
+      "wrong": "I should have went earlier.",
+      "right": "I should have gone earlier.",
+      "why": "Have cần gone, không went."
+    },
+    {
+      "id": "mpr-have",
+      "wrong": "We could of asked.",
+      "right": "We could have asked.",
+      "why": "Could’ve nghe gần could of nhưng dạng viết chuẩn là could have hoặc could’ve."
+    },
+    {
+      "id": "mpr-ought",
+      "wrong": "I ought have called.",
+      "right": "I ought to have called.",
+      "why": "Ought giữ to trước have."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Should have luôn nói điều không xảy ra?",
+      "a": "Không. Trong đánh giá tiếc nuối thường có hàm ý ấy; trong kỳ vọng, kết quả có thể chưa biết."
+    },
+    {
+      "q": "Could have và should have có thay nhau tự do không?",
+      "a": "Không. Could have nhấn khả năng hoặc cơ hội; should have nhấn đánh giá hoặc kỳ vọng. Ngữ cảnh có thể chấp nhận cả hai nhưng ý khác."
+    },
+    {
+      "q": "Làm sao giảm sắc thái trách móc?",
+      "a": "Nêu phần trách nhiệm của mình, hậu quả cụ thể và một bước sửa. Một modal lịch sự không tự xóa tác động của lời nói."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "mpr-01",
+      "type": "choice",
+      "level": "B2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Đọc lời rút kinh nghiệm.",
+      "stem": "I sent the old attachment by mistake. I should have checked the filename.",
+      "options": [
+        {
+          "t": "Người nói đánh giá việc kiểm tra là điều đáng làm trước khi gửi.",
+          "ok": true,
+          "note": "Bối cảnh lỗi làm rõ tiếc nuối."
+        },
+        {
+          "t": "Người nói chỉ kể đã kiểm tra kỹ tên tệp.",
+          "tag": "meaning-mismatch",
+          "note": "Câu không báo cáo hành động kiểm tra đã hoàn thành."
+        }
+      ],
+      "explain": "Bối cảnh xác nhận lỗi và hướng sửa cho lần sau."
+    },
+    {
+      "id": "mpr-02",
+      "type": "match",
+      "level": "B2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Nối với ý được nêu.",
+      "pairs": [
+        {
+          "a": "I should have kept a copy; now the only file is gone.",
+          "b": "Tiếc vì thiếu một bản sao"
+        },
+        {
+          "a": "I could have stayed longer, but I chose to leave.",
+          "b": "Lựa chọn có thể làm nhưng không chọn"
+        },
+        {
+          "a": "The package should have arrived by now, but I have not checked.",
+          "b": "Kỳ vọng chưa được xác minh"
+        }
+      ],
+      "explain": "Ngữ cảnh ngăn việc gộp mọi modal perfect vào tiếc nuối."
+    },
+    {
+      "id": "mpr-03",
+      "type": "cloze",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Điền phân từ của write.",
+      "stem": "I should have {1} the reference number down.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "written"
+          ]
+        }
+      },
+      "explain": "Should have written dùng phân từ bất quy tắc."
+    },
+    {
+      "id": "mpr-04",
+      "type": "transform",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lời đánh giá hành vi của mình.",
+      "source": "I shared the link, and that was a bad decision.",
+      "instruction": "Bắt đầu I; dùng should not have hoặc shouldn’t have; giữ shared the link.",
+      "model": "I should not have shared the link.",
+      "accept": [
+        "I should not have shared the link.",
+        "I shouldn't have shared the link."
+      ],
+      "explain": "Phủ định điều nên làm: đánh giá việc chia sẻ đã xảy ra là không phù hợp."
+    },
+    {
+      "id": "mpr-05",
+      "type": "classify",
+      "level": "B2",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Xếp theo dữ kiện.",
+      "cats": [
+        "Đánh giá lựa chọn đã biết",
+        "Kỳ vọng kết quả chưa rõ"
+      ],
+      "items": [
+        {
+          "t": "I ignored the warning. I should have listened.",
+          "cat": "Đánh giá lựa chọn đã biết"
+        },
+        {
+          "t": "The payment should have cleared by now; can you check?",
+          "cat": "Kỳ vọng kết quả chưa rõ"
+        },
+        {
+          "t": "We left our bags unlocked. We should have been more careful.",
+          "cat": "Đánh giá lựa chọn đã biết"
+        }
+      ],
+      "explain": "Biết kết quả hay chưa là một đầu mối quan trọng."
+    },
+    {
+      "id": "mpr-06",
+      "type": "error",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sửa cụm trợ động từ.",
+      "segments": [
+        {
+          "t": "We"
+        },
+        {
+          "t": "should of",
+          "bad": true,
+          "fix": [
+            "should have",
+            "should've"
+          ],
+          "note": "Dạng viết chuẩn dùng have.",
+          "tag": "modal-perfect-of"
+        },
+        {
+          "t": "warned you."
+        }
+      ],
+      "explain": "Âm dạng rút gọn không đổi have thành giới từ of."
+    },
+    {
+      "id": "mpr-07",
+      "type": "multi",
+      "level": "B2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Chọn những điều có thể kết luận.",
+      "stem": "I could have attended the workshop, but I decided to work that day.",
+      "options": [
+        {
+          "t": "Việc tham dự là một lựa chọn theo lời người nói.",
+          "ok": true,
+          "note": "Could have và mệnh đề sau hỗ trợ cách đọc cơ hội."
+        },
+        {
+          "t": "Người nói đã chọn làm việc.",
+          "ok": true,
+          "note": "Decided to work nêu lựa chọn thực tế."
+        },
+        {
+          "t": "Người nói chắc chắn sẽ được thăng chức nếu dự.",
+          "tag": "meaning-mismatch",
+          "note": "Không có dữ kiện về kết quả ấy."
+        }
+      ],
+      "explain": "Cơ hội đã có không bảo đảm một hệ quả tưởng tượng."
+    },
+    {
+      "id": "mpr-08",
+      "type": "open",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết phản hồi sau một sai sót.",
+      "task": "Bạn dùng phiên bản cũ của lịch làm việc nên đến muộn. Viết ba câu: nhận trách nhiệm, dùng should have cho điều đáng làm, rồi nêu bước phòng ngừa. Không đổ lỗi cho người khác.",
+      "model": [
+        "I used the old schedule and arrived late.",
+        "I should have checked the shared calendar.",
+        "From now on, I will confirm my shift the evening before."
+      ],
+      "checklist": [
+        "Nêu việc thực tế",
+        "Should have + phân từ",
+        "Bước sửa cụ thể",
+        "Giọng phù hợp lời xin lỗi"
+      ],
+      "explain": "Sản phẩm cần một thông điệp hữu ích, không chỉ một câu đổi mẫu."
+    },
+    {
+      "id": "mpr-09",
+      "type": "choice",
+      "level": "B2",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Chọn nhận xét đúng.",
+      "stem": "You should have received an automated reply by now. Have you checked your spam folder?",
+      "options": [
+        {
+          "t": "Người nói nêu kỳ vọng và đang hỏi kiểm tra kết quả.",
+          "ok": true,
+          "note": "Câu hỏi tiếp theo cho thấy kết quả chưa rõ."
+        },
+        {
+          "t": "Câu tự chứng minh người nhận đã không nhận được thư.",
+          "tag": "meaning-mismatch",
+          "note": "Should have không tạo kết luận đó trong ngữ cảnh này."
+        }
+      ],
+      "explain": "Kỳ vọng khác lời tiếc về một hành động đã biết là không xảy ra."
+    },
+    {
+      "id": "mpr-10",
+      "type": "cloze",
+      "level": "B2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Điền phân từ của take.",
+      "stem": "I ought to have {1} a screenshot before closing the page.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "taken"
+          ]
+        }
+      },
+      "explain": "Ought to have taken giữ to và dùng phân từ."
+    },
+    {
+      "id": "mpr-11",
+      "type": "transform",
+      "level": "B2",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Diễn đạt cơ hội đã bỏ qua.",
+      "source": "We had the option of asking for help, but we worked alone.",
+      "instruction": "Viết We could have …, but we worked alone; dùng asked for help.",
+      "model": "We could have asked for help, but we worked alone.",
+      "accept": [
+        "We could have asked for help, but we worked alone."
+      ],
+      "explain": "Mệnh đề sau xác định lựa chọn thực tế, tránh cách đọc khả năng chưa rõ.",
+      "context": "Chúng tôi thực sự không hỏi xin giúp đỡ và đã tự làm; đây là lựa chọn bỏ qua dù có cơ hội hỏi."
+    },
+    {
+      "id": "mpr-12",
+      "type": "multi",
+      "level": "B2",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Chọn những nhận xét đúng.",
+      "stem": "Mina could have missed the bus. We do not yet know why she is late.",
+      "options": [
+        {
+          "t": "Có thể đây là giả thuyết về nguyên nhân đi muộn.",
+          "ok": true,
+          "note": "Câu sau nói chưa rõ nguyên nhân."
+        },
+        {
+          "t": "Chưa thể kết luận Mina chắc chắn đã lỡ xe.",
+          "ok": true,
+          "note": "Could giữ sự kiện dưới dạng khả năng."
+        },
+        {
+          "t": "Câu bắt buộc nói Mina đã có cơ hội lỡ xe nhưng không lỡ.",
+          "tag": "meaning-mismatch",
+          "note": "Không phù hợp với khung suy luận đang cho."
+        }
+      ],
+      "explain": "Đọc toàn cảnh trước khi gán nghĩa tiếc nuối hay phản thực."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  },
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tác phẩm tham chiếu cho cấu trúc và nghĩa trong chương; dùng sổ nguồn hiện có. Chưa có kiểm chứng đoạn nguồn riêng cho bản thảo này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tài liệu đối chiếu biên tập dự kiến; không xác nhận đã đọc một mục hoặc ấn bản cụ thể."
+    }
+  ]
+}

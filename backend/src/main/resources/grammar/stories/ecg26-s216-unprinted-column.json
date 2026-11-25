@@ -1,0 +1,161 @@
+{
+  "id": "ecg26-s216-unprinted-column",
+  "title": "Cột chữ không lên báo",
+  "summary": "Trước giờ in, hai biên tập viên phát hiện một lời phủ định bị dời chỗ. Chỉ một chữ có thể biến một quyết định tập thể thành lời tố cáo.",
+  "level": "C1",
+  "topics": [
+    "negation-scope",
+    "negative-inversion",
+    "hedging"
+  ],
+  "scene": "newsroom",
+  "cast": [
+    {
+      "id": "ina",
+      "name": "Ina",
+      "role": "Biên tập viên đêm"
+    },
+    {
+      "id": "binh",
+      "name": "Bình",
+      "role": "Phóng viên điều trần"
+    }
+  ],
+  "beats": [
+    {
+      "id": "proof",
+      "narrate": "Trên bàn có hai bản in thử và một phong bì đề tên Bình. Ai đó đã gạch chữ not trong bản đầu rồi viết lại ở dòng dưới. Đồng hồ đếm ngược còn chín phút.",
+      "say": [
+        {
+          "who": "binh",
+          "en": "I counted seven hands for publication. Three stayed down. Nobody left the room.",
+          "vi": "Tôi đếm được bảy cánh tay ủng hộ đăng bài. Ba người không giơ. Không ai rời phòng."
+        },
+        {
+          "who": "ina",
+          "en": "Then ten people were present. That's the one number both proofs get right.",
+          "vi": "Vậy có mười người có mặt. Đó là con số duy nhất cả hai bản in thử đều ghi đúng."
+        }
+      ],
+      "next": "scope"
+    },
+    {
+      "id": "scope",
+      "choice": {
+        "prompt": "Ina cần một dòng mở đầu vừa đúng với bảy phiếu thuận vừa không suy diễn lý do ba người còn lại. Chọn dòng đưa vào trang.",
+        "options": [
+          {
+            "t": "Not everyone voted for publication.",
+            "note": "Not everyone phủ định sự nhất trí, vẫn cho phép bảy người đã bỏ phiếu thuận.",
+            "ok": true,
+            "next": "seven",
+            "consequence": "Bình có thể kèm con số để người đọc biết chính xác."
+          },
+          {
+            "t": "Everyone voted against publication.",
+            "note": "Everyone kết hợp với against biến kết quả thành mười phiếu chống. Không giơ tay thuận cũng chưa chắc là bỏ phiếu chống.",
+            "ok": false,
+            "next": "hands",
+            "consequence": "Ba người im lặng vô tình bị biến thành người biểu quyết chống, còn bảy cánh tay biến mất."
+          },
+          {
+            "t": "Seven of the ten people present voted in favour.",
+            "note": "Cấu trúc phân lượng nêu đích danh số người bỏ phiếu thuận mà không quy động cơ cho ba người còn lại.",
+            "ok": true,
+            "next": "seven",
+            "consequence": "Con số thay cho suy đoán về động cơ."
+          }
+        ]
+      }
+    },
+    {
+      "id": "seven",
+      "say": [
+        {
+          "who": "binh",
+          "en": "I'll write seven in words. It looks less like a score that way.",
+          "vi": "Tôi sẽ viết chữ bảy thay vì số. Nhìn sẽ bớt giống tỉ số trận đấu."
+        }
+      ],
+      "next": "envelope"
+    },
+    {
+      "id": "hands",
+      "say": [
+        {
+          "who": "ina",
+          "en": "Show me an actual vote against. A hand in a lap can mean more than one thing.",
+          "vi": "Cho tôi xem một lá phiếu chống thật sự. Một bàn tay đặt trên đùi có thể mang nhiều nghĩa."
+        }
+      ],
+      "narrate": "Bình đếm lại trong sổ rồi điền con số bảy. Anh để trống cột lý do.",
+      "next": "envelope"
+    },
+    {
+      "id": "envelope",
+      "narrate": "Trong phong bì là mẩu giấy than. Dưới ánh xiên, Ina nhận ra dòng bị dời chữ not nằm trên bản của CHÍNH mình. Bình vẫn chưa nói ai chạm vào bản in.",
+      "say": [
+        {
+          "who": "ina",
+          "en": "The mark is on my copy. It doesn't tell us whose pencil made it.",
+          "vi": "Vết sửa trên bản của tôi. Nó không cho biết ai đã cầm bút."
+        }
+      ],
+      "choice": {
+        "prompt": "Bình muốn nhấn mạnh rằng chỉ sau khi soi giấy than, hai người mới nhìn thấy vết sửa. Chọn câu phù hợp.",
+        "options": [
+          {
+            "t": "The mark became visible only when we held the sheet to the light.",
+            "note": "Đặt only when ở cuối vẫn giữ điều kiện quan sát, không cần đảo ngữ mệnh đề chính.",
+            "ok": true,
+            "next": "light",
+            "consequence": "Thông tin mới về cách quan sát nằm cuối câu."
+          },
+          {
+            "t": "Only when we held the sheet to the light did the mark become visible.",
+            "note": "Only when đứng đầu giới hạn mốc nhìn thấy. Đảo did the mark become ở mệnh đề chính, không đảo trong mệnh đề when.",
+            "ok": true,
+            "next": "light",
+            "consequence": "Bản tin ghi một quan sát có thể lặp lại."
+          },
+          {
+            "t": "Only when did we hold the sheet to the light the mark became visible.",
+            "note": "Đảo nhầm trong mệnh đề when rồi bỏ đảo ở mệnh đề chính. Đây không phải câu hỏi trực tiếp.",
+            "ok": false,
+            "next": "pencil",
+            "consequence": "Ina đổi vị trí did trước khi trả bản cho nhà in."
+          }
+        ]
+      }
+    },
+    {
+      "id": "pencil",
+      "say": [
+        {
+          "who": "ina",
+          "en": "Put the subject next to held. We know who held the sheet. We don't know who held the pencil.",
+          "vi": "Đặt chủ ngữ cạnh held. Ta biết ai cầm tờ giấy. Ta chưa biết ai cầm bút."
+        }
+      ],
+      "next": "light"
+    },
+    {
+      "id": "light",
+      "narrate": "Đèn báo báo in chuyển xanh. Ina ký duyệt trang có con số bảy. Cô giữ mẩu giấy than trong ngăn riêng cho ca sáng thay vì kẹp nó cạnh tên Bình. Hôm sau, ba người chưa giơ tay gửi ba lá thư với ba lý do khác nhau.",
+      "say": [
+        {
+          "who": "binh",
+          "en": "There wasn't room for three different silences in that first headline. There is now.",
+          "vi": "Dòng tít đầu không chừa chỗ cho ba sự im lặng khác nhau. Dòng này thì có."
+        }
+      ],
+      "explain": [
+        {
+          "type": "p",
+          "vi": "Not everyone không đồng nghĩa với no one. Tả số phiếu hoặc điều kiện quan sát không cho ta quyền suy ra động cơ hay người thực hiện."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

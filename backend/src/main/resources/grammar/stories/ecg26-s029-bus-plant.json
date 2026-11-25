@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s029-bus-plant",
+  "title": "Cây con đi xe buýt",
+  "summary": "Một chậu cây được chuyển qua ba bàn tay trên xe buýt. Di cần nhờ Kim giữ đúng chậu khi cửa mở.",
+  "level": "A1",
+  "topics": [
+    "adjective-position",
+    "the-basics"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Di",
+      "role": "Người mang cây"
+    },
+    {
+      "id": "b",
+      "name": "Kim",
+      "role": "Bạn đi cùng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Có hai chậu đất. Chỉ chậu nhỏ có mầm xanh, chậu to còn trống. Di phải cầm tay vịn để xuống xe an toàn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "My hands are full. Can you help?",
+          "vi": "Tay mình đang bận. Cậu giúp được không?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Which pot do you want me to hold?",
+          "vi": "Cậu muốn mình cầm chậu nào?"
+        }
+      ],
+      "choice": {
+        "prompt": "Di chỉ đúng chậu có mầm bằng một cụm danh từ tự nhiên.",
+        "options": [
+          {
+            "t": "The small pot, please.",
+            "note": "Small đứng trước pot khi mô tả trực tiếp chiếc chậu. The chỉ chiếc chậu nhỏ mà cả hai đang nhìn.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "The big pot, please.",
+            "note": "Big pot cũng đúng trật tự tính từ và danh từ nhưng gọi chiếc chậu trống. Kim chưa đỡ được cây.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Kim đỡ đáy chậu. Mầm cây chỉ rung một chút khi xe dừng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "It's still standing!",
+          "vi": "Cây vẫn đứng thẳng kìa!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Kim cầm chậu trống lên. Di chỉ mầm cây, Kim đổi tay đỡ đúng chậu trước lúc xe dừng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Oh, this little one.",
+          "vi": "À, chiếc nhỏ này đây."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Hai bạn đặt chậu nhỏ bên cửa lớp. Chậu to trở thành chỗ cất thiệp ghi tên ai đã giúp cây đi xe buýt. Đến tối đã có ba tấm thiệp.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A small plant has three friends.",
+          "vi": "Một cây bé xíu mà có ba người bạn."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

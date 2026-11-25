@@ -1,0 +1,20 @@
+{
+  "id":"conditional-worlds",
+  "title":"Cùng một kế hoạch, ba góc nhìn điều kiện",
+  "summary":"Chọn một khả năng đang xét, một giả định đặt xa hơn hoặc một cơ hội quá khứ đã bỏ lỡ. Đổi phủ định để xem điều kiện và hệ quả thay đổi ra sao.",
+  "level":"B2",
+  "topics":["real-conditionals","unreal-present-conditionals","past-unreal-conditionals"],
+  "kind":"switchboard",
+  "axes":[
+    {"id":"world","label":"Bối cảnh được nói rõ","values":[{"id":"live","label":"Kế hoạch tuần tới đang được xem xét"},{"id":"remote","label":"Giả sử tuần tới có thêm tiền"},{"id":"missed","label":"Tuần trước đã không có thêm tiền"}]},
+    {"id":"condition","label":"Điều kiện trong câu","values":[{"id":"funds","label":"Có thêm kinh phí"},{"id":"no-funds","label":"Không có thêm kinh phí"}]}
+  ],
+  "results":{
+    "live|funds":{"en":"If we receive extra funding, we will extend the trial.","vi":"Nếu nhận được thêm kinh phí, chúng ta sẽ kéo dài thử nghiệm.","note":"Người nói trình bày kế hoạch như một khả năng đang xét. Hiện tại receive nằm trong mệnh đề điều kiện hướng tới tương lai; không biểu thị một phần trăm xác suất cố định.","verdict":"ok"},
+    "live|no-funds":{"en":"If we do not receive extra funding, we will keep the original schedule.","vi":"Nếu không nhận thêm kinh phí, chúng ta sẽ giữ lịch ban đầu.","note":"Phủ định chỉ việc nhận kinh phí; hệ quả là giữ lịch. Không được tự đổi câu này thành lời khẳng định chắc chắn rằng sẽ không nhận tiền.","verdict":"ok"},
+    "remote|funds":{"en":"If we received extra funding, we would extend the trial.","vi":"Giả sử nhận được thêm kinh phí, chúng ta sẽ kéo dài thử nghiệm.","note":"Received ở đây đặt điều kiện xa thực tế hơn theo góc nhìn người nói; mốc vẫn là tuần tới. Quá khứ về hình thức không tự biến kế hoạch thành chuyện đã xảy ra, cũng không chứng minh khả năng bằng không.","verdict":"ok"},
+    "remote|no-funds":{"en":"If we did not receive extra funding, we would keep the original schedule.","vi":"Giả sử không nhận thêm kinh phí, chúng ta sẽ giữ lịch ban đầu.","note":"Đây là hệ quả trong tình huống giả định. Không thể chỉ dựa vào did not để kết luận thực tế đã bị từ chối cấp tiền.","verdict":"ok"},
+    "missed|funds":{"en":"If we had received extra funding, we would have extended the trial.","vi":"Nếu khi đó nhận thêm kinh phí, chúng ta đã kéo dài thử nghiệm.","note":"Bối cảnh xác nhận tuần trước không nhận thêm tiền. Had received và would have extended cùng nhìn lại một phương án quá khứ không xảy ra trong tình huống này.","verdict":"ok"},
+    "missed|no-funds":{"en":"If we had not received extra funding, we would have kept the original schedule.","vi":"Nếu khi đó không nhận thêm kinh phí, chúng ta đã giữ lịch ban đầu.","note":"Cấu trúc đúng nhưng không khớp góc nhìn cơ hội bị bỏ lỡ đã chọn: bối cảnh nói thực tế không nhận tiền, trong khi câu này thường đặt việc không nhận tiền làm phương án trái với chuyện đã nhận. Cần đổi bối cảnh hoặc dùng câu tường thuật sự thật; không gọi cấu trúc này sai trong mọi tình huống.","verdict":"odd"}
+  }
+}

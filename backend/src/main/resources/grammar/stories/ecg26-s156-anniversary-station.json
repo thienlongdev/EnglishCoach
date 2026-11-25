@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s156-anniversary-station",
+  "title": "Lễ kỷ niệm ở ga chưa xây",
+  "summary": "Áp phích cổ mời người dân đến dự lễ khánh thành một nhà ga mà làng chưa từng có.",
+  "level": "B2",
+  "topics": [
+    "future-in-the-past",
+    "past-perfect"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sam",
+      "role": "Người dẫn triển lãm"
+    },
+    {
+      "id": "b",
+      "name": "Uyên",
+      "role": "Người vẽ sơ đồ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Sam gỡ áp phích khỏi khung và thấy mẫu phê duyệt thiết kế ở mặt sau. Mẫu vẫn thiếu chữ ký cuối. Uyên đặt cạnh nó trang báo về trận lũ khiến dự án dừng lại.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The poster says the first train will arrive at dawn.",
+          "vi": "Áp phích ghi chuyến đầu sẽ đến lúc bình minh."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "That was their plan when they printed it. How shall we word the caption?",
+          "vi": "Lúc in họ dự tính như vậy. Mình sẽ viết chú thích thế nào?"
+        }
+      ],
+      "choice": {
+        "prompt": "Để lời chú thích kể lại kỳ vọng thời đó mà không khẳng định tàu đã đến, Sam chọn dòng nào?",
+        "options": [
+          {
+            "t": "The first train had arrived by dawn.",
+            "note": "Had arrived trình bày việc tàu đến như sự kiện hoàn thành trước một mốc quá khứ. Áp phích chỉ là lời hẹn.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "They expected that the first train would arrive at dawn.",
+            "note": "Expected cùng would arrive đặt thời điểm tàu đến ở phía sau mốc kỳ vọng trong quá khứ. Câu không bảo sự kiện thực sự xảy ra.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Uyên đặt một nét đứt thay vì nét liền ở đường ray trên bản đồ trưng bày.",
+      "say": [
+        {
+          "who": "b",
+          "en": "A dotted line for a journey people imagined.",
+          "vi": "Dùng nét đứt cho chuyến đi người ta từng hình dung."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Sam nhìn lại mặt đất trong ảnh chụp sau lũ. Ở đó chưa đặt một thanh ray nào. Anh lấy nhãn khác.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We can show the promise without inventing a train.",
+          "vi": "Ta có thể trưng bày lời hẹn mà không dựng ra một chuyến tàu."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Ngày mở cửa triển lãm, một cụ già đem chiếc vé đặt chỗ chưa từng xé đến tặng. Uyên đặt nó ở đầu đường nét đứt. Khách đứng rất lâu trước quãng đường không có tàu đi qua.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It was a real ticket for a journey that never happened.",
+          "vi": "Đó là một tấm vé thật cho chuyến đi chưa từng xảy ra."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

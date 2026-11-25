@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s048-flower-or-flour",
+  "title": "Hoa trong lò bánh",
+  "summary": "Một khách đọc đơn qua điện thoại. Nga nghe âm giống cả flour và flower, rồi nhìn thấy trên bàn có cả hoa lẫn bột.",
+  "level": "A2",
+  "topics": [
+    "countable-uncountable",
+    "much-many-a-lot"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Nga",
+      "role": "Người nhận đơn"
+    },
+    {
+      "id": "b",
+      "name": "Otto",
+      "role": "Thợ bánh"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Ghi chú đầu nói khách cần nguyên liệu cho mười ổ bánh. Otto đang buộc một bó hoa vì tưởng khách đặt bàn tiệc.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The words sound the same on the phone.",
+          "vi": "Hai từ ấy nghe giống nhau qua điện thoại."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Ask about the amount. That may help us.",
+          "vi": "Hỏi về lượng xem. Có thể mình sẽ hiểu ra."
+        }
+      ],
+      "choice": {
+        "prompt": "Nga muốn hỏi lượng bột để làm bánh, không hỏi số cành hoa.",
+        "options": [
+          {
+            "t": "How many flowers do you need?",
+            "note": "Flowers là các bông hoa đếm được. How many sẽ khiến khách trả lời số bông, trái với đơn nguyên liệu.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "How much flour do you need?",
+            "note": "Flour là nguyên liệu không đếm từng cái trong cách dùng này. How much hỏi lượng bột.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Khách trả lời hai ký. Otto tháo dây ruy băng, buộc nó quanh túi bột thay vì bó hoa.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Two kilos. Now I know!",
+          "vi": "Hai ký. Giờ thì tôi hiểu rồi!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Khách cười và nhắc lại là để làm mười ổ bánh. Nga hỏi cân nặng, Otto mang ra túi bột hai ký.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We nearly baked a bunch of flowers.",
+          "vi": "Suýt nữa mình đem cả bó hoa đi nướng."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Nga kẹp một cành hoa nhỏ vào dây túi bột. Khách nhận được đúng hai ký để làm bánh và đúng một bông hoa không hề ghi trong đơn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One flower, and plenty of flour.",
+          "vi": "Một bông hoa, và thật nhiều bột."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

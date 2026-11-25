@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s031-lost-sun",
+  "title": "Mặt trời lạc trong hộp thư",
+  "summary": "Trước khu nhà có hai hộp thư: một cho gia đình Sun, một để nhận tranh vẽ mặt trời của lớp trẻ nhỏ. Lá thư ghi Sun không có hình vẽ.",
+  "level": "A1",
+  "topics": [
+    "proper-nouns",
+    "capitals-and-end-punctuation"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Lu",
+      "role": "Người xếp thư"
+    },
+    {
+      "id": "b",
+      "name": "Tú",
+      "role": "Bạn hàng xóm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Bên trong phong bì lộ ra thiệp đề Dear Mr Sun. Tú cầm hai tấm nhãn; một tấm là hình mặt trời, một tấm ghi họ của người thuê nhà.",
+      "say": [
+        {
+          "who": "a",
+          "en": "This card says Mr Sun.",
+          "vi": "Tấm thiệp này ghi ông Sun."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Then is it a name or a picture?",
+          "vi": "Vậy đây là tên hay là một bức tranh?"
+        }
+      ],
+      "choice": {
+        "prompt": "Lu đọc lời chào để chọn hộp thư của gia đình.",
+        "options": [
+          {
+            "t": "Sun is his name.",
+            "note": "Mr đứng trước Sun giúp nhận ra đây là họ riêng. Chữ S hoa hợp với tên người.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "It's a picture of the sun.",
+            "note": "The sun có thể chỉ mặt trời, nhưng lời chào Mr Sun không nói về một bức tranh. Nó gọi người nhận thư.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Tú thả thiệp vào hộp gia đình. Ông Sun bước ra với chiếc áo vàng như nắng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Even his shirt is yellow!",
+          "vi": "Đến áo ông ấy cũng màu vàng!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Tú nhấc nắp hộp tranh rồi thấy dòng Dear Mr Sun. Hai bạn đổi sang hộp thư gia đình.",
+      "say": [
+        {
+          "who": "b",
+          "en": "This one goes to a person.",
+          "vi": "Lá này gửi cho một người."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Ông Sun mở thiệp. Bên trong chính là bức tranh mặt trời cô cháu gái vẽ tặng. Lu cười: cuối cùng bức tranh cũng đi đúng nhà nhờ cái tên trên bì.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The sun is for Mr Sun.",
+          "vi": "Mặt trời này là quà cho ông Sun."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,1626 @@
+{
+  "version": 2,
+  "note": "Single source of truth for Echo Garden world composition. Read by the PixiJS runtime (sprite placement) and by the Blender world builder (placement, baked terrain features). Shadows are per-sprite (never baked for entities). Grid: 25 x 27 logical tiles; screen = ((gx-gy)*64, (gx+gy)*32).",
+  "grid": {
+    "width": 25,
+    "height": 27,
+    "center": [
+      12.0,
+      13.5
+    ]
+  },
+  "starterPlots": [
+    {
+      "id": "plot_1",
+      "gx": 8,
+      "gy": 18,
+      "crop": "wheat",
+      "stage": 4
+    },
+    {
+      "id": "plot_2",
+      "gx": 9,
+      "gy": 18,
+      "crop": "watermelon",
+      "stage": 1
+    },
+    {
+      "id": "plot_3",
+      "gx": 10,
+      "gy": 18,
+      "crop": "tomato",
+      "stage": 4
+    },
+    {
+      "id": "plot_4",
+      "gx": 8,
+      "gy": 19,
+      "crop": "strawberry",
+      "stage": 3
+    },
+    {
+      "id": "plot_5",
+      "gx": 9,
+      "gy": 19,
+      "crop": "pumpkin",
+      "stage": 4
+    },
+    {
+      "id": "plot_6",
+      "gx": 10,
+      "gy": 19,
+      "crop": "corn",
+      "stage": 2
+    }
+  ],
+  "farmWalkways": [
+    [
+      11,
+      16
+    ],
+    [
+      11,
+      17
+    ],
+    [
+      11,
+      18
+    ],
+    [
+      11,
+      19
+    ],
+    [
+      11,
+      20
+    ],
+    [
+      10,
+      17
+    ],
+    [
+      9,
+      17
+    ],
+    [
+      8,
+      17
+    ],
+    [
+      7,
+      17
+    ],
+    [
+      7,
+      18
+    ],
+    [
+      7,
+      19
+    ],
+    [
+      7,
+      20
+    ],
+    [
+      8,
+      20
+    ],
+    [
+      9,
+      20
+    ],
+    [
+      10,
+      20
+    ]
+  ],
+  "futureFields": [
+    {
+      "id": "north_strip",
+      "rect": [
+        7.55,
+        15.55,
+        10.45,
+        16.45
+      ],
+      "furrow": "gx",
+      "state": "prepared"
+    },
+    {
+      "id": "west_tilled",
+      "rect": [
+        3.55,
+        16.55,
+        6.45,
+        19.45
+      ],
+      "furrow": "gy",
+      "state": "prepared"
+    },
+    {
+      "id": "west_fallow",
+      "rect": [
+        3.55,
+        19.55,
+        6.45,
+        22.45
+      ],
+      "furrow": "gy",
+      "state": "fallow"
+    },
+    {
+      "id": "south_field",
+      "rect": [
+        7.55,
+        20.55,
+        11.45,
+        23.45
+      ],
+      "furrow": "gx",
+      "state": "resting"
+    },
+    {
+      "id": "east_strip",
+      "rect": [
+        11.55,
+        16.55,
+        12.45,
+        22.45
+      ],
+      "furrow": "gy",
+      "state": "resting"
+    }
+  ],
+  "expansionPlots": [
+    {
+      "slot": 7,
+      "gx": 8,
+      "gy": 16,
+      "dy": 0.2,
+      "field": "north_strip"
+    },
+    {
+      "slot": 8,
+      "gx": 9,
+      "gy": 16,
+      "dy": 0.2,
+      "field": "north_strip"
+    },
+    {
+      "slot": 9,
+      "gx": 10,
+      "gy": 16,
+      "dy": 0.2,
+      "field": "north_strip"
+    },
+    {
+      "slot": 10,
+      "gx": 6,
+      "gy": 18,
+      "field": "west_tilled"
+    }
+  ],
+  "expansionNote": "Phase 3A purchasable beds (owner decision 2026-10-10): exactly these four cells, mirrored by V80 garden_config.expansion. Every other future-field cell stays reserved. dy = art-only offset inside the cell (bed, crops, ring and touch area move together): the raised beds of the north strip sit 0.2 south so the fence line at gy 15.65 stays behind them.",
+  "marketStall": {
+    "gx": 12.2,
+    "gy": 16.2,
+    "radius": 0.62
+  },
+  "fences": [
+    {
+      "from": [
+        3.25,
+        15.65
+      ],
+      "to": [
+        10.45,
+        15.65
+      ]
+    },
+    {
+      "from": [
+        11.55,
+        15.65
+      ],
+      "to": [
+        12.75,
+        15.65
+      ]
+    },
+    {
+      "from": [
+        3.25,
+        15.65
+      ],
+      "to": [
+        3.25,
+        23.7
+      ]
+    },
+    {
+      "from": [
+        3.25,
+        23.7
+      ],
+      "to": [
+        12.75,
+        23.7
+      ]
+    },
+    {
+      "from": [
+        12.75,
+        15.65
+      ],
+      "to": [
+        12.75,
+        23.7
+      ]
+    }
+  ],
+  "farmGate": [
+    11.0,
+    15.65
+  ],
+  "paths": [
+    {
+      "id": "cottage_hub",
+      "width": 0.62,
+      "points": [
+        [
+          13.9,
+          9.0
+        ],
+        [
+          13.6,
+          10.3
+        ],
+        [
+          13.1,
+          11.6
+        ],
+        [
+          12.5,
+          12.6
+        ]
+      ]
+    },
+    {
+      "id": "hub_farm",
+      "width": 0.56,
+      "points": [
+        [
+          12.5,
+          12.6
+        ],
+        [
+          11.9,
+          13.7
+        ],
+        [
+          11.2,
+          14.8
+        ],
+        [
+          11.0,
+          15.8
+        ]
+      ]
+    },
+    {
+      "id": "hub_pond",
+      "width": 0.5,
+      "points": [
+        [
+          12.5,
+          12.6
+        ],
+        [
+          10.9,
+          12.2
+        ],
+        [
+          9.4,
+          11.6
+        ],
+        [
+          8.3,
+          11.2
+        ]
+      ]
+    },
+    {
+      "id": "hub_sanctuary",
+      "width": 0.52,
+      "points": [
+        [
+          12.5,
+          12.6
+        ],
+        [
+          14.4,
+          13.5
+        ],
+        [
+          16.5,
+          14.6
+        ],
+        [
+          18.5,
+          15.9
+        ],
+        [
+          20.3,
+          17.0
+        ],
+        [
+          21.4,
+          17.6
+        ]
+      ]
+    },
+    {
+      "id": "forest_trail",
+      "width": 0.36,
+      "points": [
+        [
+          12.4,
+          11.9
+        ],
+        [
+          12.1,
+          10.4
+        ],
+        [
+          11.8,
+          8.6
+        ],
+        [
+          11.5,
+          6.6
+        ],
+        [
+          11.2,
+          4.8
+        ],
+        [
+          11.0,
+          3.6
+        ]
+      ]
+    },
+    {
+      "id": "meadow_trail",
+      "width": 0.34,
+      "points": [
+        [
+          16.5,
+          14.6
+        ],
+        [
+          16.1,
+          17.2
+        ],
+        [
+          16.2,
+          19.8
+        ],
+        [
+          16.6,
+          22.2
+        ],
+        [
+          17.0,
+          23.4
+        ]
+      ]
+    }
+  ],
+  "plaza": {
+    "center": [
+      12.5,
+      12.6
+    ],
+    "radius": 0.95
+  },
+  "pond": {
+    "center": [
+      5.5,
+      10.5
+    ],
+    "pier": {
+      "from": [
+        8.05,
+        11.1
+      ],
+      "to": [
+        6.9,
+        10.75
+      ]
+    },
+    "water": [
+      [
+        3.63,
+        8.21
+      ],
+      [
+        3.5,
+        8.4
+      ],
+      [
+        3.45,
+        8.66
+      ],
+      [
+        3.46,
+        8.99
+      ],
+      [
+        3.49,
+        9.33
+      ],
+      [
+        3.5,
+        9.65
+      ],
+      [
+        3.5,
+        9.97
+      ],
+      [
+        3.51,
+        10.3
+      ],
+      [
+        3.51,
+        10.61
+      ],
+      [
+        3.49,
+        10.9
+      ],
+      [
+        3.46,
+        11.19
+      ],
+      [
+        3.5,
+        11.54
+      ],
+      [
+        3.61,
+        11.97
+      ],
+      [
+        3.85,
+        12.36
+      ],
+      [
+        4.15,
+        12.69
+      ],
+      [
+        4.41,
+        13.06
+      ],
+      [
+        4.64,
+        13.46
+      ],
+      [
+        4.99,
+        13.74
+      ],
+      [
+        5.34,
+        13.81
+      ],
+      [
+        5.56,
+        13.72
+      ],
+      [
+        5.88,
+        13.72
+      ],
+      [
+        6.18,
+        13.71
+      ],
+      [
+        6.4,
+        13.61
+      ],
+      [
+        6.52,
+        13.42
+      ],
+      [
+        6.61,
+        13.19
+      ],
+      [
+        6.66,
+        12.93
+      ],
+      [
+        6.71,
+        12.67
+      ],
+      [
+        6.82,
+        12.46
+      ],
+      [
+        6.95,
+        12.27
+      ],
+      [
+        7.07,
+        12.08
+      ],
+      [
+        7.14,
+        11.83
+      ],
+      [
+        7.18,
+        11.56
+      ],
+      [
+        7.25,
+        11.31
+      ],
+      [
+        7.39,
+        11.13
+      ],
+      [
+        7.49,
+        10.92
+      ],
+      [
+        7.56,
+        10.68
+      ],
+      [
+        7.6,
+        10.4
+      ],
+      [
+        7.63,
+        10.12
+      ],
+      [
+        7.64,
+        9.81
+      ],
+      [
+        7.55,
+        9.41
+      ],
+      [
+        7.35,
+        8.99
+      ],
+      [
+        7.08,
+        8.62
+      ],
+      [
+        6.79,
+        8.29
+      ],
+      [
+        6.52,
+        7.92
+      ],
+      [
+        6.3,
+        7.52
+      ],
+      [
+        6.01,
+        7.17
+      ],
+      [
+        5.63,
+        6.93
+      ],
+      [
+        5.24,
+        6.84
+      ],
+      [
+        5.01,
+        6.92
+      ],
+      [
+        4.87,
+        7.09
+      ],
+      [
+        4.77,
+        7.31
+      ],
+      [
+        4.66,
+        7.51
+      ],
+      [
+        4.52,
+        7.7
+      ],
+      [
+        4.38,
+        7.86
+      ],
+      [
+        4.19,
+        7.99
+      ],
+      [
+        3.95,
+        8.06
+      ],
+      [
+        3.72,
+        8.15
+      ]
+    ]
+  },
+  "cottageYard": {
+    "center": [
+      14.0,
+      8.6
+    ],
+    "radius": 1.3
+  },
+  "sanctuary": {
+    "center": [
+      23.0,
+      18.4
+    ],
+    "radius": 2.6
+  },
+  "sprites": [
+    {
+      "key": "cottage",
+      "id": "farmhouse",
+      "gx": 14.4,
+      "gy": 7.3,
+      "s": 1.15
+    },
+    {
+      "key": "shed",
+      "id": "shed",
+      "gx": 14.95,
+      "gy": 16.45
+    },
+    {
+      "key": "well",
+      "id": "prop_well",
+      "gx": 12.5,
+      "gy": 12.6
+    },
+    {
+      "key": "lamppost",
+      "id": "prop_lantern",
+      "gx": 13.55,
+      "gy": 11.05
+    },
+    {
+      "key": "signpost",
+      "id": "prop_signpost",
+      "gx": 13.6,
+      "gy": 13.75
+    },
+    {
+      "key": "scarecrow",
+      "id": "prop_scarecrow",
+      "gx": 5.0,
+      "gy": 18.0
+    },
+    {
+      "key": "knowledge_tree",
+      "id": "knowledge_tree",
+      "gx": 23.6,
+      "gy": 18.4,
+      "s": 0.88
+    },
+    {
+      "key": "forgotten_worm",
+      "id": "forgotten_worm",
+      "gx": 5.6,
+      "gy": 20.8
+    }
+  ],
+  "trees": [
+    {
+      "key": "pine_a",
+      "gx": 8.0,
+      "gy": 0.7,
+      "s": 0.886
+    },
+    {
+      "key": "oak_a",
+      "gx": 9.6,
+      "gy": 1.0,
+      "s": 0.861
+    },
+    {
+      "key": "pine_b",
+      "gx": 11.1,
+      "gy": 0.5,
+      "s": 0.943
+    },
+    {
+      "key": "oak_b",
+      "gx": 12.7,
+      "gy": 1.1,
+      "s": 0.902
+    },
+    {
+      "key": "pine_a",
+      "gx": 14.3,
+      "gy": 0.6,
+      "s": 0.918
+    },
+    {
+      "key": "oak_c",
+      "gx": 15.8,
+      "gy": 1.4,
+      "s": 0.836
+    },
+    {
+      "key": "pine_c",
+      "gx": 17.2,
+      "gy": 1.8,
+      "s": 0.804
+    },
+    {
+      "key": "oak_b",
+      "gx": 6.3,
+      "gy": 1.9,
+      "s": 0.804
+    },
+    {
+      "key": "pine_b",
+      "gx": 5.0,
+      "gy": 3.1,
+      "s": 0.754
+    },
+    {
+      "key": "oak_a",
+      "gx": 3.9,
+      "gy": 4.5,
+      "s": 0.722
+    },
+    {
+      "key": "oak_c",
+      "gx": 7.7,
+      "gy": 2.8,
+      "s": 0.836
+    },
+    {
+      "key": "pine_c",
+      "gx": 9.1,
+      "gy": 2.5,
+      "s": 0.787
+    },
+    {
+      "key": "oak_round",
+      "gx": 10.2,
+      "gy": 3.5,
+      "s": 0.672
+    },
+    {
+      "key": "oak_b",
+      "gx": 13.4,
+      "gy": 2.7,
+      "s": 0.869
+    },
+    {
+      "key": "pine_a",
+      "gx": 15.1,
+      "gy": 3.1,
+      "s": 0.82
+    },
+    {
+      "key": "oak_a",
+      "gx": 16.7,
+      "gy": 3.2,
+      "s": 0.804
+    },
+    {
+      "key": "pine_b",
+      "gx": 18.4,
+      "gy": 3.4,
+      "s": 0.754
+    },
+    {
+      "key": "oak_c",
+      "gx": 19.6,
+      "gy": 4.9,
+      "s": 0.722
+    },
+    {
+      "key": "pine_c",
+      "gx": 20.2,
+      "gy": 6.7,
+      "s": 0.689
+    },
+    {
+      "key": "oak_round",
+      "gx": 21.0,
+      "gy": 8.6,
+      "s": 0.656
+    },
+    {
+      "key": "oak_round",
+      "gx": 6.1,
+      "gy": 4.9,
+      "s": 0.656
+    },
+    {
+      "key": "pine_c",
+      "gx": 7.5,
+      "gy": 4.5,
+      "s": 0.705
+    },
+    {
+      "key": "oak_a",
+      "gx": 8.9,
+      "gy": 4.7,
+      "s": 0.689
+    },
+    {
+      "key": "pine_c",
+      "gx": 2.5,
+      "gy": 6.6,
+      "s": 0.64
+    },
+    {
+      "key": "oak_round",
+      "gx": 1.8,
+      "gy": 9.1,
+      "s": 0.59
+    },
+    {
+      "key": "pine_c",
+      "gx": 2.1,
+      "gy": 16.3,
+      "s": 0.607
+    },
+    {
+      "key": "oak_round",
+      "gx": 1.7,
+      "gy": 19.8,
+      "s": 0.574
+    },
+    {
+      "key": "pine_c",
+      "gx": 2.3,
+      "gy": 22.7,
+      "s": 0.574
+    },
+    {
+      "key": "orchard",
+      "gx": 19.0,
+      "gy": 8.6,
+      "s": 0.672
+    },
+    {
+      "key": "orchard",
+      "gx": 21.6,
+      "gy": 9.6,
+      "s": 0.64
+    },
+    {
+      "key": "orchard",
+      "gx": 17.6,
+      "gy": 8.0,
+      "s": 0.607
+    },
+    {
+      "key": "oak_a",
+      "gx": 17.6,
+      "gy": 23.6,
+      "s": 0.672
+    },
+    {
+      "key": "oak_round",
+      "gx": 15.2,
+      "gy": 24.2,
+      "s": 0.55
+    },
+    {
+      "key": "pine_c",
+      "gx": 20.8,
+      "gy": 22.6,
+      "s": 0.6
+    }
+  ],
+  "bushes": [
+    {
+      "key": "bush_a",
+      "gx": 10.6,
+      "gy": 5.6,
+      "s": 1.0
+    },
+    {
+      "key": "fern_a",
+      "gx": 9.8,
+      "gy": 6.1,
+      "s": 1.0
+    },
+    {
+      "key": "bush_b",
+      "gx": 17.9,
+      "gy": 7.6,
+      "s": 0.95
+    },
+    {
+      "key": "bush_flower_pink",
+      "gx": 16.9,
+      "gy": 9.0,
+      "s": 0.9
+    },
+    {
+      "key": "fern_a",
+      "gx": 15.6,
+      "gy": 5.9,
+      "s": 0.95
+    },
+    {
+      "key": "bush_a",
+      "gx": 2.6,
+      "gy": 12.6,
+      "s": 0.95
+    },
+    {
+      "key": "bush_flower_white",
+      "gx": 8.6,
+      "gy": 13.6,
+      "s": 0.85
+    },
+    {
+      "key": "bush_b",
+      "gx": 14.9,
+      "gy": 12.3,
+      "s": 0.85
+    },
+    {
+      "key": "bush_flower_pink",
+      "gx": 10.2,
+      "gy": 13.9,
+      "s": 0.8
+    },
+    {
+      "key": "bush_a",
+      "gx": 19.4,
+      "gy": 15.2,
+      "s": 0.9
+    },
+    {
+      "key": "fern_a",
+      "gx": 23.4,
+      "gy": 16.4,
+      "s": 0.9
+    },
+    {
+      "key": "bush_flower_white",
+      "gx": 23.6,
+      "gy": 19.6,
+      "s": 0.85
+    },
+    {
+      "key": "bush_b",
+      "gx": 20.0,
+      "gy": 20.6,
+      "s": 0.9
+    },
+    {
+      "key": "fern_a",
+      "gx": 22.2,
+      "gy": 20.9,
+      "s": 0.85
+    },
+    {
+      "key": "bush_a",
+      "gx": 14.4,
+      "gy": 17.6,
+      "s": 0.85
+    },
+    {
+      "key": "bush_flower_pink",
+      "gx": 14.0,
+      "gy": 22.4,
+      "s": 0.85
+    },
+    {
+      "key": "bush_b",
+      "gx": 19.2,
+      "gy": 23.4,
+      "s": 0.85
+    },
+    {
+      "key": "bush_a",
+      "gx": 22.4,
+      "gy": 13.6,
+      "s": 0.85
+    },
+    {
+      "key": "fern_a",
+      "gx": 4.4,
+      "gy": 6.0,
+      "s": 0.85
+    },
+    {
+      "key": "bush_flower_white",
+      "gx": 15.8,
+      "gy": 16.4,
+      "s": 0.85
+    },
+    {
+      "key": "fern_a",
+      "gx": 17.6,
+      "gy": 19.2,
+      "s": 0.9
+    },
+    {
+      "key": "bush_a",
+      "gx": 13.4,
+      "gy": 19.8,
+      "s": 0.8
+    },
+    {
+      "key": "bush_b",
+      "gx": 15.1,
+      "gy": 21.2,
+      "s": 0.8
+    },
+    {
+      "key": "bush_flower_pink",
+      "gx": 18.9,
+      "gy": 18.1,
+      "s": 0.8
+    },
+    {
+      "key": "fern_a",
+      "gx": 13.0,
+      "gy": 15.3,
+      "s": 0.8
+    },
+    {
+      "key": "bush_flower_white",
+      "gx": 17.4,
+      "gy": 12.2,
+      "s": 0.8
+    },
+    {
+      "key": "fern_a",
+      "gx": 9.6,
+      "gy": 8.8,
+      "s": 0.85
+    },
+    {
+      "key": "bush_a",
+      "gx": 3.2,
+      "gy": 15.1,
+      "s": 0.75
+    },
+    {
+      "key": "bush_flower_pink",
+      "gx": 12.9,
+      "gy": 8.9,
+      "s": 0.75
+    },
+    {
+      "key": "bush_flower_white",
+      "gx": 15.45,
+      "gy": 8.95,
+      "s": 0.7
+    },
+    {
+      "key": "fern_a",
+      "gx": 15.95,
+      "gy": 8.25,
+      "s": 0.8
+    }
+  ],
+  "baked": {
+    "rocks": [
+      [
+        14.9,
+        13.4
+      ],
+      [
+        9.4,
+        7.9
+      ],
+      [
+        3.7,
+        14.9
+      ],
+      [
+        20.6,
+        15.7
+      ],
+      [
+        23.0,
+        21.2
+      ],
+      [
+        18.6,
+        21.8
+      ],
+      [
+        22.6,
+        9.8
+      ],
+      [
+        10.4,
+        24.4
+      ],
+      [
+        5.2,
+        24.0
+      ],
+      [
+        15.2,
+        25.3
+      ],
+      [
+        1.6,
+        14.4
+      ],
+      [
+        19.0,
+        2.6
+      ]
+    ],
+    "runeStones": [],
+    "outcrops": [
+      [
+        24.7,
+        16.9,
+        0.55
+      ],
+      [
+        22.2,
+        20.1,
+        0.48
+      ],
+      [
+        24.5,
+        20.0,
+        0.4
+      ],
+      [
+        21.3,
+        19.3,
+        0.3
+      ],
+      [
+        24.9,
+        18.7,
+        0.34
+      ]
+    ]
+  },
+  "farmProps": [
+    {
+      "key": "crate_stack",
+      "gx": 12.3,
+      "gy": 15.98
+    },
+    {
+      "key": "seed_sacks",
+      "gx": 11.85,
+      "gy": 16.28
+    },
+    {
+      "key": "barrel",
+      "gx": 12.5,
+      "gy": 16.38
+    },
+    {
+      "key": "tool_rack",
+      "gx": 6.9,
+      "gy": 15.98
+    },
+    {
+      "key": "watering_can",
+      "gx": 6.74,
+      "gy": 16.44
+    },
+    {
+      "key": "wheelbarrow",
+      "gx": 6.05,
+      "gy": 16.18
+    },
+    {
+      "key": "hay_stack",
+      "gx": 12.2,
+      "gy": 22.95
+    },
+    {
+      "key": "bench",
+      "gx": 17.0,
+      "gy": 23.9
+    }
+  ],
+  "satellites": [
+    {
+      "id": "satellite_a",
+      "key": "sat_a",
+      "base": [
+        -1700,
+        -560
+      ],
+      "depth": 0.72,
+      "scale": 0.95,
+      "drift": {
+        "x": 55,
+        "y": 26,
+        "periodX": 67,
+        "periodY": 49
+      },
+      "bob": {
+        "amp": 10,
+        "period": 9.3
+      },
+      "tilt": {
+        "deg": 0.9,
+        "period": 27
+      },
+      "phase": 0.4
+    },
+    {
+      "id": "satellite_b",
+      "key": "sat_b",
+      "base": [
+        1640,
+        380
+      ],
+      "depth": 0.58,
+      "scale": 0.85,
+      "drift": {
+        "x": 42,
+        "y": 30,
+        "periodX": 83,
+        "periodY": 59
+      },
+      "bob": {
+        "amp": 12,
+        "period": 12.1
+      },
+      "tilt": {
+        "deg": 1.1,
+        "period": 33
+      },
+      "phase": 2.3
+    }
+  ],
+  "satellitesNote": "Exactly two satellite islands (+ the main island = three floating islands). base = offset from the home framing centre (world px, zoom 1); depth = parallax (main island 1, smaller = farther, drawn behind it); drift / bob / tilt = bounded floating path (px, s, deg). Visual only: never persisted.",
+  "atmosphere": {
+    "note": "Cloud layers (world/atmosphere.ts): depth = parallax vs the main island (1); band = vertical band (px from the home centre); speed = drift along the shared wind (px/s); puffs = billows per cloud.",
+    "layers": [
+      {
+        "id": "far",
+        "depth": 0.12,
+        "count": 9,
+        "band": [
+          -1750,
+          -950
+        ],
+        "scale": [
+          0.5,
+          0.8
+        ],
+        "speed": 6,
+        "alpha": 0.62,
+        "puffs": [
+          2,
+          3
+        ],
+        "haze": 0.35
+      },
+      {
+        "id": "mid",
+        "depth": 0.45,
+        "count": 8,
+        "band": [
+          -1250,
+          -100
+        ],
+        "scale": [
+          0.85,
+          1.25
+        ],
+        "speed": 11,
+        "alpha": 0.88,
+        "puffs": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": "sea",
+        "depth": 0.86,
+        "count": 13,
+        "band": [
+          520,
+          1150
+        ],
+        "scale": [
+          1.5,
+          2.3
+        ],
+        "speed": 8,
+        "alpha": 1.0,
+        "puffs": [
+          3,
+          5
+        ],
+        "sea": true
+      },
+      {
+        "id": "near",
+        "depth": 1.3,
+        "count": 4,
+        "band": [
+          1000,
+          1350
+        ],
+        "scale": [
+          1.8,
+          2.6
+        ],
+        "speed": 15,
+        "alpha": 0.7,
+        "puffs": [
+          3,
+          4
+        ],
+        "sea": true
+      }
+    ]
+  },
+  "farmEdges": [
+    {
+      "key": "edge_weeds_x",
+      "gx": 4.4,
+      "gy": 15.3
+    },
+    {
+      "key": "edge_weeds_x",
+      "gx": 6.3,
+      "gy": 15.32
+    },
+    {
+      "key": "edge_weeds_x",
+      "gx": 8.7,
+      "gy": 15.3
+    },
+    {
+      "key": "edge_weeds_y",
+      "gx": 13.1,
+      "gy": 17.3
+    },
+    {
+      "key": "edge_weeds_y",
+      "gx": 13.1,
+      "gy": 20.6
+    },
+    {
+      "key": "edge_weeds_y",
+      "gx": 2.9,
+      "gy": 17.8
+    },
+    {
+      "key": "edge_weeds_y",
+      "gx": 2.92,
+      "gy": 21.4
+    }
+  ],
+  "memoryGrove": [
+    {
+      "slot": 1,
+      "gx": 17.1,
+      "gy": 18.5
+    },
+    {
+      "slot": 2,
+      "gx": 18.4,
+      "gy": 19.9
+    },
+    {
+      "slot": 3,
+      "gx": 17.2,
+      "gy": 20.9
+    }
+  ],
+  "memoryForest": [
+    {
+      "gx": 3.6,
+      "gy": 6.6,
+      "s": 0.8
+    },
+    {
+      "gx": 6.8,
+      "gy": 6.2,
+      "s": 0.8
+    },
+    {
+      "gx": 8.0,
+      "gy": 5.4,
+      "s": 0.8
+    },
+    {
+      "gx": 10.0,
+      "gy": 4.6,
+      "s": 0.8
+    },
+    {
+      "gx": 12.8,
+      "gy": 3.8,
+      "s": 0.8
+    },
+    {
+      "gx": 14.4,
+      "gy": 4.2,
+      "s": 0.8
+    },
+    {
+      "gx": 16.0,
+      "gy": 4.2,
+      "s": 0.8
+    },
+    {
+      "gx": 17.6,
+      "gy": 4.6,
+      "s": 0.8
+    },
+    {
+      "gx": 5.2,
+      "gy": 4.2,
+      "s": 0.8
+    },
+    {
+      "gx": 11.6,
+      "gy": 3.0,
+      "s": 0.8
+    },
+    {
+      "gx": 6.0,
+      "gy": 3.0,
+      "s": 0.8
+    },
+    {
+      "gx": 19.6,
+      "gy": 2.6,
+      "s": 0.8
+    }
+  ],
+  "landRegions": [
+    {
+      "code": "WEST_TILLED",
+      "field": "west_tilled",
+      "plots": [
+        {
+          "slot": 11,
+          "gx": 6,
+          "gy": 19
+        },
+        {
+          "slot": 12,
+          "gx": 5,
+          "gy": 19
+        },
+        {
+          "slot": 13,
+          "gx": 4,
+          "gy": 19
+        },
+        {
+          "slot": 14,
+          "gx": 4,
+          "gy": 18
+        }
+      ]
+    },
+    {
+      "code": "WEST_FALLOW",
+      "field": "west_fallow",
+      "plots": [
+        {
+          "slot": 15,
+          "gx": 6,
+          "gy": 22
+        },
+        {
+          "slot": 16,
+          "gx": 5,
+          "gy": 22
+        },
+        {
+          "slot": 17,
+          "gx": 4,
+          "gy": 22
+        },
+        {
+          "slot": 18,
+          "gx": 4,
+          "gy": 21
+        }
+      ]
+    },
+    {
+      "code": "SOUTH_FIELD",
+      "field": "south_field",
+      "plots": [
+        {
+          "slot": 19,
+          "gx": 8,
+          "gy": 21
+        },
+        {
+          "slot": 20,
+          "gx": 9,
+          "gy": 21
+        },
+        {
+          "slot": 21,
+          "gx": 10,
+          "gy": 21
+        },
+        {
+          "slot": 22,
+          "gx": 8,
+          "gy": 22
+        },
+        {
+          "slot": 23,
+          "gx": 9,
+          "gy": 22
+        },
+        {
+          "slot": 24,
+          "gx": 10,
+          "gy": 22
+        }
+      ]
+    }
+  ],
+  "landNote": "Phase 3C farmland regions (owner addendum 2026-10-11): fourteen further beds on reserved future-field cells inside the farm fence, mirrored by V83 garden_config.land (slots 11..24). Bounded maximum: 6 starter + 4 expansion + 14 regional = 24 beds. Still reserved (never beds): the north row of west_tilled around the tool corner, the scarecrow cell, the decorative caterpillar's corner of west_fallow, the south row and east column of south_field and the whole east_strip (market corner, hay stack, east walkway).",
+  "buildings": {
+    "COTTAGE": {
+      "sprite": "farmhouse",
+      "art": "cottage",
+      "levels": 3
+    },
+    "WAREHOUSE": {
+      "sprite": "shed",
+      "art": "shed",
+      "levels": 3
+    },
+    "MARKET": {
+      "art": "market_stall",
+      "levels": 3,
+      "gx": 12.2,
+      "gy": 16.2,
+      "replaces": [
+        "crate_stack",
+        "seed_sacks",
+        "barrel"
+      ]
+    }
+  },
+  "decorRegions": [{"code": "COTTAGE_GARDEN", "rect": [14.5, 10.0, 15.25, 10.5]}, {"code": "EAST_MEADOW", "rect": [18.25, 9.75, 19.5, 10.5]}, {"code": "EAST_CLIFF", "rect": [21.5, 10.75, 22.5, 11.25]}, {"code": "POND_BANK", "rect": [8.5, 9.75, 11.25, 10.5]}, {"code": "NORTH_LAWN", "rect": [7.75, 6.5, 9.0, 7.25]}, {"code": "POND_MEADOW", "rect": [4.5, 14.5, 9.5, 15.0]}, {"code": "WEST_SHORE", "rect": [1.25, 10.25, 2.75, 10.75]}, {"code": "SOUTH_SHORE", "rect": [6.25, 25.0, 13.25, 25.75]}, {"code": "SOUTH_EAST_SHORE", "rect": [16.0, 24.75, 20.0, 25.25]}, {"code": "SANCTUARY_TERRACE", "rect": [21.75, 21.75, 22.75, 22.75]}],
+  "decorNote": "Phase 3E: rectangles of free ground where a decoration may stand (grid cells; anchors inside). Mirrors V86 garden_config.cosmetics.regions, which decides; this copy only lets the contracts check the regions against the layout (beds, fields, fences, paths, pond, buildings, trees, grove, forest). Every point is also checked for visibility behind taller sprites by the art script validate_decor_regions.py.",
+  "animalQuarter": {"houses": {"COOP": {"art": "ahouse_coop", "gx": 14.5, "gy": 18.7, "yard": [15.2, 18.9]}, "DUCK_POND": {"art": "ahouse_duck_pond", "gx": 10.0, "gy": 7.0, "yard": [10.6, 8.5]}, "SHEEP_BARN": {"art": "ahouse_sheep_barn", "gx": 22.95, "gy": 11.85, "yard": [22.85, 12.65]}, "PIG_PEN": {"art": "ahouse_pig_pen", "gx": 20.2, "gy": 23.55, "yard": [20.3, 24.3]}}, "guardians": {"DOG": {"gx": 10.05, "gy": 14.95}, "GOOSE": {"gx": 11.0, "gy": 18.3}, "CAT": {"gx": 7.0, "gy": 18.6}}},
+  "animalNote": "Phase 3H: four house lots on free, visible ground (never behind the Knowledge Tree's crown): the coop beside the farm's east fence, the duck shelter on the north lawn by the pond, the sheep barn on the east cliff meadow, the pig pen on the south-east lawn; three guardian posts: the dog outside the farm gate, the goose on the central walkway, the cat on the west walkway. Art only; mirrored by no server rule."
+}

@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s141-beads-to-count",
+  "title": "Hạt gỗ đếm quãng lặng",
+  "summary": "Trên dây đàn cũ có hạt gỗ xỏ không chạm vào dây phát âm. Giang tưởng đó là một nốt nhạc không bao giờ kêu.",
+  "level": "B1",
+  "topics": [
+    "infinitive-of-purpose",
+    "verb-ing-or-infinitive"
+  ],
+  "scene": "library-mystery",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Giang",
+      "role": "Người giữ thư viện"
+    },
+    {
+      "id": "b",
+      "name": "Aki",
+      "role": "Người thu âm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Người khiếm thị từng dùng hạt để đếm số ô nhịp nghỉ. Aki tìm thấy ngón cái mòn nhẵn trên hạt ở đầu dây bên ngoài.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It never touches a string.",
+          "vi": "Hạt ấy chẳng chạm dây đàn bao giờ."
+        },
+        {
+          "who": "b",
+          "en": "Ask what the player needed it for.",
+          "vi": "Hãy hỏi người chơi cần nó vào việc gì."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Giang viết mục đích cụ thể vào nhãn.",
+        "options": [
+          {
+            "ok": true,
+            "t": "She used the bead to count the silent bars.",
+            "note": "To count là nguyên mẫu chỉ mục đích. Silent bars là các ô nhịp nghỉ cần đếm, không phải chỗ dây đứt.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "She counted the bars to use up the bead.",
+            "note": "To use up the bead biến việc làm mòn hạt thành mục đích của sự đếm. Vết mòn là kết quả của dùng lâu, không phải mục tiêu.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Aki thử nhắm mắt chuyển hạt qua tay đúng mỗi ô. Ông vào lại bản nhạc vừa lúc và bật cười vì lần đầu nghe được nhịp của yên lặng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The bead played a rest.",
+          "vi": "Hạt gỗ đã chơi một dấu lặng."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Khách giờ có một dây đếm bên cạnh tai nghe để thử bằng ngón tay.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Giang mượn một hạt mới và thử đếm cùng Aki. Cả hai vẫn đếm đúng dù hạt chẳng mòn đi chút nào. Họ sửa nhãn trước khi trả vật về hộp.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The old counter has earned a rest too.",
+          "vi": "Hạt đếm cũ cũng xứng đáng được nghỉ."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Hạt mới được để ngoài cho khách dùng, hạt cũ được nghỉ sau công việc dài.",
+      "end": true
+    }
+  ]
+}

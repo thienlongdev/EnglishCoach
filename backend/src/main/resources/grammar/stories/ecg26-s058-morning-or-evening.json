@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s058-morning-or-evening",
+  "title": "Chuyến diễn có hai buổi đầu",
+  "level": "A2",
+  "topics": [
+    "prepositions-time",
+    "future-going-to"
+  ],
+  "scene": "station",
+  "summary": "Ga cho Nhi chọn một buổi diễn thử: giờ sáng tàu chở học sinh hoặc buổi tối đón người tan ca.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Nhi",
+      "role": "Người chơi đàn đường phố"
+    },
+    {
+      "id": "b",
+      "name": "Tae",
+      "role": "Bạn đồng diễn"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Hai vé biểu diễn để sẵn trong phong bì, một vé ghi 8 am, một vé ghi 8 pm. Chỉ cần nhận vé, họ được chọn bài mở đầu.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Eight on both tickets!",
+          "vi": "Cả hai vé đều ghi tám giờ!"
+        },
+        {
+          "who": "b",
+          "en": "Read the little letters after the number.",
+          "vi": "Đọc mấy chữ nhỏ sau con số đi."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Nhi chọn thời gian và đồng thời chọn người sẽ nghe bài hát đầu tiên.",
+        "options": [
+          {
+            "t": "Let's play at eight in the morning.",
+            "note": "At dùng trước giờ, in the morning xác định nửa ngày. Khán giả sẽ là người đi học sớm.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "Let's play at eight in the evening.",
+            "note": "In the evening làm rõ 8 pm. Cùng một con số nhưng vào ngày diễn sẽ là nhóm vừa tan ca.",
+            "ok": true,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Một em bé vừa đánh vần tên ga vừa gõ nhịp lên ba lô. Nhi đổi bài đầu thành bài đếm đến tám, cả toa tàu hát theo.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We gave them a song for school.",
+          "vi": "Mình tặng các em một bài hát đem tới trường."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Một bác công nhân ngồi lại hết bản nhạc thay vì vội ra cổng. Nhi kết bằng giai điệu êm, để nhịp bước chân bác chậm dần theo.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One quiet song was enough tonight.",
+          "vi": "Tối nay chỉ cần một bài thật êm là đủ."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

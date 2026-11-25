@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s222-missing-subject",
+  "title": "Chủ ngữ nằm dưới nếp áo",
+  "summary": "Bản kịch có câu Dad kept the promise, Mum the coat. Cả nhà tranh cãi ai đã giữ lời với người thợ may.",
+  "level": "C1",
+  "topics": [
+    "ellipsis",
+    "structural-ambiguity"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Gia",
+      "role": "Người dựng vở kịch"
+    },
+    {
+      "id": "b",
+      "name": "Mina",
+      "role": "Cô thợ may"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Gia tìm được chiếc áo đỏ mẹ vẫn giữ trong rương. Trong túi có hóa đơn đã thanh toán và mẩu giấy hứa trả tiền đề tên cha. Không có dấu hiệu nào cho thấy cha giữ chiếc áo.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The comma takes up less room than a button. Can it carry a whole verb?",
+          "vi": "Dấu phẩy còn nhỏ hơn cái cúc. Nó chứa nổi cả động từ sao?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Try reading aloud what the second half leaves unsaid.",
+          "vi": "Cháu thử đọc thành tiếng phần câu sau đã lược đi."
+        }
+      ],
+      "choice": {
+        "prompt": "Gia phải phục hồi động từ cho đoạn đối xứng mà không hoán đổi chủ thể hay đồ vật.",
+        "options": [
+          {
+            "t": "Dad kept Mum's coat as a promise.",
+            "note": "Câu trôi chảy nhưng biến Mum thành người sở hữu áo trong một cụm danh từ và xóa hành động riêng của mẹ. Đó không còn là khôi phục phần lược.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "Dad kept the promise, and Mum kept the coat.",
+            "note": "Vế sau lược kept vì người nghe khôi phục được từ cấu trúc đối xứng. Promise và coat là hai tân ngữ khác nhau của hai lần hiểu kept.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Mina lộn túi áo. Bên trong còn dòng chữ Cảm ơn anh đã trả đủ do chính tay bà viết.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I remember sewing that pocket shut for luck.",
+          "vi": "Cô nhớ mình đã khâu kín túi ấy để lấy may."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Gia mặc áo lên tượng của người cha. Mina chuyển áo sang tượng mẹ, đặt giấy biên nhận vào tay tượng cha. Hai vai hiện rõ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Two people. Two different things to keep.",
+          "vi": "Hai người. Hai thứ khác nhau để giữ."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Gia giữ nguyên câu lược trong vở diễn. Khi đọc tới dấu phẩy, một diễn viên chuyền cái áo còn người kia gấp tờ biên nhận. Khán giả hiểu trước cả khi lời thoại tiếp theo cất lên.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We let the actors speak the missing verb with their hands.",
+          "vi": "Chúng cháu để các diễn viên nói động từ đã lược bằng đôi tay."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

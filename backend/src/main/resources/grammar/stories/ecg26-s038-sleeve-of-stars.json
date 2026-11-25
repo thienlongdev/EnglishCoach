@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s038-sleeve-of-stars",
+  "title": "Những ngôi sao trên tay áo",
+  "summary": "Milo không chịu mặc áo khoác có đường chỉ bạc. Cậu nghĩ chị đã vẽ lên áo lúc cậu ngủ.",
+  "level": "A2",
+  "topics": [
+    "past-continuous",
+    "past-simple"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Yến",
+      "role": "Chị gái"
+    },
+    {
+      "id": "b",
+      "name": "Milo",
+      "role": "Em trai"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Tối hôm qua đèn tắt khi Yến đang vá chỗ tay áo rách. Cô lần đường kim quanh lỗ thủng dưới ánh trăng. Buổi sáng Milo nhìn những mũi chỉ lấp lánh.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I didn't draw on your coat.",
+          "vi": "Chị đâu có vẽ lên áo em."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "What were you doing when the lights went out?",
+          "vi": "Lúc đèn tắt chị đang làm gì?"
+        }
+      ],
+      "choice": {
+        "prompt": "Yến cần nói việc vá đã diễn ra vào lúc mất điện.",
+        "options": [
+          {
+            "t": "I started fixing it after the lights went out.",
+            "note": "After đặt lúc bắt đầu vá sau khi mất điện. Câu có nghĩa rõ nhưng đó không phải trình tự Yến vừa kể.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "I was fixing the sleeve when the lights went out.",
+            "note": "Was fixing là việc đang diễn ra. Went out đánh dấu sự kiện xảy ra giữa lúc đó.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Milo luồn tay vào tay áo. Chỗ từng bị rách nay đã kín, chỉ còn đường chỉ như một chòm sao.",
+      "say": [
+        {
+          "who": "b",
+          "en": "My fingers can't get through now.",
+          "vi": "Giờ ngón tay em không lọt qua nữa."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Yến cho Milo xem đoạn chỉ thường ở đầu đường may. Chị chỉ đổi sang chỉ bạc khi đèn đã tắt.",
+      "say": [
+        {
+          "who": "b",
+          "en": "So you started before the dark.",
+          "vi": "Vậy là chị bắt đầu trước khi trời tối om."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Milo khoác áo đi học. Hôm ấy cậu giơ tay trái mỗi lần muốn trả lời để đường chỉ bạc bắt sáng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Next time, I'll let you choose the colour.",
+          "vi": "Lần sau chị sẽ để em chọn màu."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

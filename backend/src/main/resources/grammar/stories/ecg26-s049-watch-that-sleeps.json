@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s049-watch-that-sleeps",
+  "title": "Chiếc đồng hồ ngủ trưa",
+  "summary": "Đúng mỗi trưa, đồng hồ của Hùng đứng lại trong ảnh chụp. Ngoài ảnh kim vẫn chạy. Ira đề nghị Hùng nhìn đúng lúc cô đang chụp.",
+  "level": "A2",
+  "topics": [
+    "present-simple-vs-continuous"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Ira",
+      "role": "Người sửa đồng hồ"
+    },
+    {
+      "id": "b",
+      "name": "Hùng",
+      "role": "Khách hàng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Hùng thường chụp đồng hồ ngay sau khi xoay núm đặt giờ về mười hai. Hôm nay Ira cầm máy còn anh chỉ nhìn kim giây. Nó vừa qua số một.",
+      "say": [
+        {
+          "who": "b",
+          "en": "It always says twelve in my photos.",
+          "vi": "Trong ảnh của tôi lúc nào nó cũng chỉ mười hai."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "a",
+          "en": "Forget the photos for a second. What's the hand doing now?",
+          "vi": "Tạm quên ảnh đi. Ngay lúc này kim đang làm gì?"
+        }
+      ],
+      "choice": {
+        "prompt": "Hùng báo điều trực tiếp trông thấy lúc Ira chụp, giữ khác biệt với thói quen đặt giờ.",
+        "options": [
+          {
+            "t": "I set it to twelve every day.",
+            "note": "Hiện tại đơn cùng every day kể thói quen của Hùng. Thông tin ấy giúp giải thích ảnh cũ nhưng chưa trả lời kim đang làm gì lúc này.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "It's moving past the one.",
+            "note": "Is moving tả chuyển động đang xảy ra bây giờ. Trên mặt đồng hồ, the one chỉ vị trí có số 1.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Ira cho Hùng xem ảnh mới có kim giây ở số một. Chiếc đồng hồ chưa hề ngủ trưa.",
+      "say": [
+        {
+          "who": "b",
+          "en": "This photo has a different time.",
+          "vi": "Tấm ảnh này có giờ khác rồi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Ira chờ thêm một nhịp. Hùng theo kim qua số hai và báo lại. Tấm ảnh mới bắt được một vị trí khác.",
+      "say": [
+        {
+          "who": "b",
+          "en": "There. We caught it moving.",
+          "vi": "Đấy. Mình bắt được lúc nó chuyển động rồi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Hùng giữ cả hai ảnh cạnh nhau trong ví. Hôm sau lần đầu tiên anh chụp đồng hồ trước khi chỉnh núm, để biết buổi sáng của chính nó dài bao lâu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Tomorrow I'll ask the watch first.",
+          "vi": "Ngày mai tôi sẽ hỏi chiếc đồng hồ trước."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

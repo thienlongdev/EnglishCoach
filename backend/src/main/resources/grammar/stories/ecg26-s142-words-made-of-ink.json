@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s142-words-made-of-ink",
+  "title": "Tên khách viết bằng mùi mực",
+  "summary": "Bản ghi âm tiếp theo không có giọng nói mà chỉ có tiếng bút ký sổ. Mép sổ có bốn nét mực nhưng chỉ ba người đã vào thư viện.",
+  "level": "B1",
+  "topics": [
+    "passive-form"
+  ],
+  "scene": "library-mystery",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Giang",
+      "role": "Người giữ thư viện"
+    },
+    {
+      "id": "b",
+      "name": "Aki",
+      "role": "Người thu âm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Một người ký hai lần vì nét đầu bị nhòe. Giang muốn diễn tả sổ được ký bốn lần mà không nói sai có bốn khách.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I heard four scratches. I counted three coats.",
+          "vi": "Tôi nghe bốn tiếng sột. Tôi đếm ba chiếc áo."
+        },
+        {
+          "who": "b",
+          "en": "Can the sentence count actions instead of people?",
+          "vi": "Câu của cô đếm hành động thay vì đếm người được không?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn lời ghi đúng điều bản thu cung cấp.",
+        "options": [
+          {
+            "ok": false,
+            "t": "The book was signed by four different visitors.",
+            "note": "By four different visitors đếm tác nhân riêng biệt, điều bốn tiếng bút không thể tự chứng minh. Cảnh có một người ký lại.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "The book was signed four times.",
+            "note": "Bị động đặt book làm chủ ngữ và four times đếm hành động ký. Nó không yêu cầu bốn người khác nhau.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Aki nghe kỹ: nét thứ hai và ba có cùng tiếng ngòi mắc ở góc. Người khách xác nhận mình viết lại tên.",
+      "say": [
+        {
+          "who": "b",
+          "en": "One name had two sounds.",
+          "vi": "Một cái tên có hai âm thanh."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Họ đặt sổ và tai nghe cạnh nhau. Khách nghe ra câu chuyện của vết nhòe mà không cần thấy mặt người ký.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Giang mời ba người tự kể tiếng nào của mình. Một người giơ tay hai lần. Cả phòng cười và đề nghị ghi thêm lời kể ấy vào cuối băng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "My ears counted strokes before they counted voices.",
+          "vi": "Tai tôi đếm nét bút trước khi đếm giọng người."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Lần này Giang thu đủ ba giọng, không lấy số nét bút làm số người.",
+      "end": true
+    }
+  ]
+}

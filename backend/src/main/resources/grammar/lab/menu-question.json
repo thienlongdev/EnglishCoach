@@ -1,0 +1,41 @@
+{
+  "id": "menu-question",
+  "title": "Hỏi còn trà hay mời trà?",
+  "summary": "Trước ấm trà ở quán, bạn có thể kiểm tra lượng trà hoặc mời khách. Đoán câu nào thiên về câu trả lời đồng ý.",
+  "level": "A2",
+  "topics": [
+    "some-and-any",
+    "permission-and-requests"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Mục đích",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Kiểm tra"
+        },
+        {
+          "id": "v2",
+          "label": "Mời khách"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Is there any tea left?",
+      "vi": "Còn chút trà nào không?",
+      "note": "Người hỏi chưa biết có còn trà để rót không. / Any leaves both answers open.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Would you like some tea?",
+      "vi": "Bạn dùng chút trà nhé?",
+      "note": "Some thường gặp trong lời mời khi người nói có trà để mời. / Some frames a positive offer.",
+      "verdict": "ok"
+    }
+  }
+}

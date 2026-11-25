@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s151-blind-caption",
+  "title": "Chú thích cho một chỗ trống",
+  "summary": "Một người trong ảnh lớp cũ đã biến thành khoảng trắng có hình chiếc lá. Cả lớp tưởng ai đó xóa bạn mình.",
+  "level": "B2",
+  "topics": [
+    "hedging",
+    "passive-use"
+  ],
+  "scene": "newsroom",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mây",
+      "role": "Người viết chú thích ảnh"
+    },
+    {
+      "id": "b",
+      "name": "Rui",
+      "role": "Thợ tráng phim"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Rui cho Mây xem bản âm. Khoảng trắng chỉ có trên bản in, còn bản âm vẫn giữ nguyên khuôn mặt. Dưới chân bàn phóng ảnh có một chiếc lá khô.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can put her back without drawing a single line.",
+          "vi": "Tôi có thể làm bạn ấy xuất hiện trở lại mà chẳng cần vẽ nét nào."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Try a new print. But what will you tell her about the first one?",
+          "vi": "Thử in bản mới đi. Nhưng cậu sẽ nói với bạn ấy thế nào về bản đầu?"
+        }
+      ],
+      "choice": {
+        "prompt": "Mây chưa tận mắt thấy lá rơi lên giấy in. Cô chọn chú thích đúng mức độ chứng cứ.",
+        "options": [
+          {
+            "t": "A leaf may have blocked the light during printing.",
+            "note": "May have blocked đặt ra khả năng về sự việc đã qua. Dấu lá và bản âm còn nguyên khiến giả thuyết có cơ sở.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "Someone must have erased her from the negative.",
+            "note": "Must have erased thể hiện suy luận mạnh. Chính bản âm còn nguyên khuôn mặt bác bỏ suy luận ấy.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Rui đặt chiếc lá lên một mẩu giấy thử trong lúc phóng. Vệt trắng hiện ra với đúng chiếc răng cưa bị khuyết.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Even the missing tip matches.",
+          "vi": "Đến cả chỗ sứt ở đầu lá cũng khớp."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Rui kẹp bản âm trước đèn. Mây nhìn ra cả chiếc khuyên tai trong ảnh. Họ thử phóng lại với chiếc lá rồi bỏ nó ra.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Watch the earring appear.",
+          "vi": "Nhìn chiếc khuyên tai hiện ra này."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Mây gửi cả hai bản in cho người bạn cũ. Lá thư hồi âm xin giữ cả bản trắng vì chiếc lá ấy là lá bàng cuối cùng của cây trong sân trường.",
+      "say": [
+        {
+          "who": "a",
+          "en": "For once, the mistake belongs in the album too.",
+          "vi": "Lần này cả tấm ảnh lỗi cũng đáng có chỗ trong album."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

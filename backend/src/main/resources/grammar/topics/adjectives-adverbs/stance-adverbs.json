@@ -1,0 +1,487 @@
+{
+  "schema": 1,
+  "slug": "stance-adverbs",
+  "version": 2,
+  "domain": "adjectives-adverbs",
+  "order": 140,
+  "kind": "grammar",
+  "title": {
+    "vi": "Trạng từ thể hiện lập trường: frankly, apparently",
+    "en": "Stance and sentence adverbs"
+  },
+  "subtitle": {
+    "vi": "Tách điều xảy ra khỏi mức tin tưởng, thái độ và góc nhìn của người nói.",
+    "en": "Separate events from confidence, attitude and viewpoint."
+  },
+  "aliases": [
+    "trạng từ lập trường",
+    "sentence adverbs",
+    "apparently frankly hopefully",
+    "honestly speaking",
+    "stance register"
+  ],
+  "level": "C1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Phân biệt trạng từ cách thức với nhận xét về toàn mệnh đề hoặc cách nói.",
+    "Chọn trạng từ phù hợp căn cứ thông tin và mức cam kết.",
+    "Điều chỉnh giọng điệu theo quan hệ giao tiếp, tránh coi frankly là lịch sự tự động."
+  ],
+  "prerequisites": [
+    "adverb-position"
+  ],
+  "related": [
+    {
+      "slug": "hedging",
+      "rel": "more"
+    },
+    {
+      "slug": "register-formal-informal",
+      "rel": "application"
+    },
+    {
+      "slug": "adverb-position",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": "Hữu ích khi nêu mức chắc chắn và thái độ có căn cứ; không thêm apparently vào dữ liệu trực tiếp một cách máy móc.",
+    "toeic": "Nhận ra nguồn tin và thái độ trong email, thông báo."
+  },
+  "quick": {
+    "what": "Trạng từ lập trường (stance adverb) cho biết người nói tin điều gì đến đâu, đánh giá nó thế nào hoặc trình bày nó theo góc nào. Nó thường có phạm vi rộng hơn một động từ hành động.",
+    "when": "Khi cần phân biệt tin gián tiếp với quan sát, bày tỏ tiếc nuối, hoặc báo hiệu cách mình sẽ nói.",
+    "examples": [
+      {
+        "en": "[ADV|Apparently], the venue has changed.",
+        "vi": "Theo thông tin tôi được biết, địa điểm đã đổi."
+      },
+      {
+        "en": "[ADV|Frankly], the timetable needs more work.",
+        "vi": "Nói thẳng ra, lịch trình cần được làm lại kỹ hơn."
+      }
+    ],
+    "remember": "Apparently không đồng nghĩa với chắc chắn sai; frankly không bảo đảm câu nói mềm mỏng."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Một câu có thể gồm nội dung và bình luận của người nói về nội dung ấy. Unfortunately, the lift is broken vừa thông báo thang máy hỏng vừa đánh giá đó là điều không may. Bỏ unfortunately thì sự kiện cơ bản vẫn còn, nhưng thái độ không còn được nêu trực tiếp."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Nhóm ý nghĩa hữu ích",
+        "Ví dụ",
+        "Điều cần tự hỏi"
+      ],
+      "rows": [
+        [
+          "Mức chắc chắn hoặc căn cứ",
+          "probably; apparently",
+          "Tôi suy đoán, nghe lại hay có căn cứ gì?"
+        ],
+        [
+          "Đánh giá sự việc",
+          "fortunately; regrettably",
+          "Ai đang thấy điều này tốt hoặc đáng tiếc?"
+        ],
+        [
+          "Cách trình bày",
+          "frankly; honestly",
+          "Tôi đang báo hiệu nói thẳng hay chân thành?"
+        ],
+        [
+          "Giới hạn góc nhìn",
+          "financially; technically",
+          "Nhận xét đúng trong phương diện nào?"
+        ]
+      ]
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "Honestly, I don't remember the code.",
+            "vi": "Thật lòng mà nói, tôi không nhớ mã."
+          },
+          "b": {
+            "en": "She answered honestly.",
+            "vi": "Cô ấy trả lời trung thực."
+          },
+          "diff": "Câu đầu bình luận cách người nói trình bày; câu sau mô tả cách trả lời. Không thể xác định chức năng của honestly chỉ từ hậu tố -ly."
+        }
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Lập trường / nguồn tin",
+            "items": [
+              "Apparently,"
+            ]
+          },
+          {
+            "label": "Nội dung được báo lại",
+            "items": [
+              "the venue has changed"
+            ]
+          }
+        ],
+        "sentence": "{0} {1}."
+      },
+      "caption": "Một lớp bình luận đặt quanh thông tin.",
+      "alt": "Apparently báo hiệu cách người nói tiếp cận thông tin địa điểm thay đổi, không mô tả cách địa điểm thay đổi."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[ADV|Regrettably], we cannot extend the deadline.",
+          "vi": "Rất tiếc, chúng tôi không thể gia hạn.",
+          "tag": "formal"
+        },
+        {
+          "en": "[ADV|Financially], the proposal is viable.",
+          "vi": "Về tài chính, đề xuất khả thi.",
+          "note": "Không khẳng định nó khả thi về mọi mặt."
+        },
+        {
+          "en": "The package will [ADV|probably] arrive on Friday.",
+          "vi": "Có lẽ kiện hàng sẽ đến vào thứ Sáu.",
+          "note": "Đặt giữa trợ động từ và động từ chính là lựa chọn thông dụng."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Frankly có thể làm lời phản đối mạnh và nghe thẳng thừng, nhất là khi đánh giá người khác. Honestly có thể nhấn sự chân thành hoặc sự bực bội tùy giọng. Trong email nhạy cảm, nêu vấn đề cụ thể và đề nghị giải pháp thường hữu ích hơn việc thêm một trạng từ."
+    },
+    {
+      "type": "p",
+      "vi": "Trạng từ bình luận ở đầu câu thường được tách bằng dấu phẩy trong văn viết. Vị trí giữa hoặc cuối câu cũng có thể dùng; probably ở giữa câu thường không có dấu phẩy. Dấu câu phản ánh cấu trúc và nhịp đọc, không phải mọi trạng từ lập trường đều bắt buộc đứng đầu."
+    },
+    {
+      "type": "try",
+      "exercise": "staul-4"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Apparently có thể đánh dấu thông tin được nghe/đọc lại hoặc suy ra từ dấu hiệu; nó để người nói giữ một khoảng cách với việc xác nhận trực tiếp. Khoảng cách ấy không tự chứng minh thông tin sai hoặc đáng nghi. Nếu nguồn quan trọng, ghi rõ According to the updated notice thay vì để apparently mang hết trách nhiệm dẫn nguồn."
+    },
+    {
+      "type": "p",
+      "vi": "Hopefully dùng cho cả câu, như Hopefully, the roads will reopen, là cách dùng phổ biến trong tiếng Anh hiện đại. Nghĩa cách thức vẫn tồn tại, như She looked at him hopefully. Một hướng dẫn biên tập có thể ưu tiên cách khác, nhưng không nên tuyên bố sentence hopefully là sai ngữ pháp phổ quát."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Clearly, obviously và undoubtedly nâng mức cam kết hoặc giả định người đọc thấy điều hiển nhiên. Khi chứng cứ chưa đủ hoặc người đọc có lý do bất đồng, chúng có thể quá mạnh. Chọn từ theo chứng cứ; không dùng một thang phần trăm cố định cho mọi trạng từ và mọi ngữ cảnh."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "staul-m1",
+      "wrong": "Apparently, the lab closed. [Người viết muốn khẳng định mình trực tiếp khóa cửa và kiểm tra việc đóng lab.]",
+      "right": "I locked the lab and checked that it was closed.",
+      "why": "Câu gốc không sai, nhưng không diễn đạt căn cứ trực tiếp mà người viết cần nêu. Viết nguồn quan sát cụ thể rõ hơn."
+    },
+    {
+      "id": "staul-m2",
+      "wrong": "Frankly, your plan is ridiculous. [Mục tiêu: góp ý nhẹ nhàng cho đồng nghiệp mới.]",
+      "right": "I'm concerned about the cost of this plan. Could we review the budget?",
+      "why": "Frankly không tự làm lời chê nhẹ đi. Sửa theo mục tiêu giao tiếp, không gắn nhãn lỗi cú pháp."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apparently có nghĩa là thông tin chắc chắn sai không?",
+      "a": "Không. Nó đánh dấu cách tiếp cận thông tin và mức cam kết, không quyết định sự thật của nội dung."
+    },
+    {
+      "q": "Mọi từ tận cùng -ly đều là trạng từ lập trường sao?",
+      "a": "Không. Quickly thường mô tả cách hành động; friendly thường là tính từ. Ngay honestly cũng đổi chức năng theo câu."
+    },
+    {
+      "q": "Có được dùng hopefully cho cả câu không?",
+      "a": "Có trong tiếng Anh hiện đại. Nếu tuân một style guide cụ thể, kiểm tra yêu cầu của nơi nhận văn bản; đừng biến sở thích biên tập thành luật ngữ pháp chung."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "staul-1",
+      "type": "choice",
+      "level": "C1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Chọn nhận định được bảo đảm bởi câu, tránh suy diễn.",
+      "stem": "Apparently, the archive will reopen in June.",
+      "options": [
+        {
+          "t": "Người nói trình bày thông tin có khoảng cách xác nhận trực tiếp.",
+          "ok": true,
+          "note": "Apparently gắn với cách tiếp cận thông tin."
+        },
+        {
+          "t": "Người nói khẳng định thông tin mở cửa là giả.",
+          "note": "Apparently không kéo theo kết luận thông tin sai.",
+          "tag": "apparently-false"
+        }
+      ],
+      "explain": "Người nói có thể nghe lại hoặc suy từ dấu hiệu; câu chưa cung cấp nguồn hay kết quả kiểm chứng."
+    },
+    {
+      "id": "staul-2",
+      "type": "multi",
+      "level": "C1",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Chọn các câu có trạng từ bình luận thái độ về sự việc.",
+      "stem": "Nhận diện chức năng trong câu",
+      "options": [
+        {
+          "t": "Fortunately, nobody lost their files.",
+          "ok": true,
+          "note": "Fortunately đánh giá sự việc là may mắn."
+        },
+        {
+          "t": "Regrettably, the appeal was unsuccessful.",
+          "ok": true,
+          "note": "Regrettably thể hiện sự tiếc nuối."
+        },
+        {
+          "t": "The clerk spoke quietly.",
+          "note": "Quietly mô tả cách nói.",
+          "tag": "manner-stance"
+        }
+      ],
+      "explain": "Xem từ tác động lên hành động hay lên cách người nói đánh giá cả nội dung."
+    },
+    {
+      "id": "staul-3",
+      "type": "classify",
+      "level": "C1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Phân loại honestly theo chức năng nổi bật.",
+      "cats": [
+        "Bình luận lời nói",
+        "Cách hành động"
+      ],
+      "items": [
+        {
+          "t": "Honestly, I have no objection.",
+          "cat": "Bình luận lời nói"
+        },
+        {
+          "t": "The witness answered honestly.",
+          "cat": "Cách hành động"
+        },
+        {
+          "t": "Honestly, that wasn't my intention.",
+          "cat": "Bình luận lời nói"
+        }
+      ],
+      "explain": "Đầu câu tách bằng dấu phẩy ở các ví dụ này bình luận lời nói; answered honestly mô tả cách trả lời."
+    },
+    {
+      "id": "staul-4",
+      "type": "cloze",
+      "level": "C1",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Điền financially hoặc fortunately: chỉ xét khả năng chi trả, không đánh giá điều may mắn.",
+      "stem": "{1}, the scheme is feasible, but its environmental impact is still unclear.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "Financially"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Financially giới hạn phương diện tài chính; không kết luận toàn bộ phương án đều tốt."
+    },
+    {
+      "id": "staul-5",
+      "type": "transform",
+      "level": "C1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Chuyển cách nói về mức chắc chắn.",
+      "source": "It is probable that the hearing will finish today.",
+      "instruction": "Dùng The hearing will probably …, giữ finish today.",
+      "accept": [
+        "The hearing will probably finish today."
+      ],
+      "model": "The hearing will probably finish today.",
+      "explain": "Probably đứng sau will ở mẫu giữa câu này; không cần dấu phẩy quanh nó."
+    },
+    {
+      "id": "staul-6",
+      "type": "match",
+      "level": "C1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Ghép câu với chức năng nổi bật.",
+      "pairs": [
+        {
+          "a": "Technically, the device meets the standard.",
+          "b": "Giới hạn phương diện nhận định."
+        },
+        {
+          "a": "Unfortunately, the device failed again.",
+          "b": "Đánh giá sự việc là không may."
+        },
+        {
+          "a": "Frankly, we need a different device.",
+          "b": "Báo hiệu nói thẳng quan điểm."
+        }
+      ],
+      "explain": "Ba trạng từ làm ba việc khác nhau; không dùng chúng thay nhau chỉ để câu nghe nâng cao."
+    },
+    {
+      "id": "staul-7",
+      "type": "choice",
+      "level": "C1",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Chọn lời góp ý hợp mục tiêu thận trọng với đối tác, chứng cứ mới là sơ bộ.",
+      "stem": "Bạn nhận thấy vài chi phí chưa có trong bảng.",
+      "options": [
+        {
+          "t": "Some costs may be missing. Could we check the figures together?",
+          "ok": true,
+          "note": "Nêu vấn đề cụ thể, giữ mức cam kết phù hợp."
+        },
+        {
+          "t": "Obviously, your team has ignored the costs.",
+          "note": "Câu đúng cấu trúc nhưng quy trách nhiệm quá mạnh so với chứng cứ và mục tiêu.",
+          "tag": "stance-overclaim"
+        }
+      ],
+      "explain": "Bài đánh giá sự phù hợp giao tiếp; obviously không phải từ sai ngữ pháp."
+    },
+    {
+      "id": "staul-8",
+      "type": "open",
+      "level": "C1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết cập nhật cho nhóm đang chờ quyết định.",
+      "task": "Viết 4 câu: tách một quan sát trực tiếp, một thông tin gián tiếp có nguồn, một dự đoán thận trọng và một đánh giá cá nhân. Dùng ít nhất hai trạng từ lập trường và giải thích chọn từ.",
+      "model": [
+        "I checked the booking page this morning. Apparently, the larger room is unavailable, according to the organiser's latest message. We will probably need two sessions. Fortunately, both tutors are free."
+      ],
+      "checklist": [
+        "Nguồn trực tiếp và gián tiếp được phân biệt.",
+        "Không dùng certainly khi chỉ đang suy đoán.",
+        "Giọng phù hợp người nhận.",
+        "Không xem mẫu là đáp án duy nhất."
+      ],
+      "explain": "Tự rà soát bằng chứng và register; bài mở không tự cấp chứng nhận thành thạo."
+    },
+    {
+      "id": "staul-9",
+      "type": "choice",
+      "level": "C1",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Chọn phạm vi của financially.",
+      "stem": "Financially, the merger has been successful.",
+      "options": [
+        {
+          "t": "Nhận định thành công được giới hạn ở mặt tài chính.",
+          "ok": true,
+          "note": "Financially nêu phương diện."
+        },
+        {
+          "t": "Sáp nhập chắc chắn thành công về mọi mặt.",
+          "note": "Câu không khẳng định mọi khía cạnh.",
+          "tag": "viewpoint-overgeneralisation"
+        }
+      ],
+      "explain": "Một kết luận trong một phương diện không tự kéo theo kết luận toàn diện."
+    },
+    {
+      "id": "staul-10",
+      "type": "cloze",
+      "level": "C1",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Chọn regrettably hoặc fortunately khi người viết muốn bày tỏ tiếc nuối về việc hủy tài trợ.",
+      "stem": "{1}, we have had to withdraw the funding.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "Regrettably"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Regrettably phù hợp thái độ tiếc nuối đã nêu; fortunately sẽ đánh giá theo hướng may mắn khác."
+    },
+    {
+      "id": "staul-11",
+      "type": "transform",
+      "level": "C1",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Viết lại thông tin dự đoán.",
+      "source": "It is probable that the replacement will cost more.",
+      "instruction": "Bắt đầu The replacement will probably và giữ cost more.",
+      "accept": [
+        "The replacement will probably cost more."
+      ],
+      "model": "The replacement will probably cost more.",
+      "explain": "Probably giữ mức dự đoán của probable; không chuyển thành khẳng định chắc chắn."
+    },
+    {
+      "id": "staul-12",
+      "type": "choice",
+      "level": "C1",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Chọn đánh giá đúng về hai câu.",
+      "stem": "Hopefully, the talks will resume. / She waited hopefully by the phone.",
+      "options": [
+        {
+          "t": "Câu đầu dùng hopefully cho cả nội dung; câu sau mô tả cách chờ đợi. Cả hai cách dùng đều có thể chấp nhận.",
+          "ok": true,
+          "note": "Phạm vi và chức năng khác nhau."
+        },
+        {
+          "t": "Câu đầu sai phổ quát vì hopefully chỉ được mô tả động từ.",
+          "note": "Không đúng với cách dùng hiện đại.",
+          "tag": "sentence-hopefully-ban"
+        }
+      ],
+      "explain": "Cần phân biệt quy định biên tập riêng với mô tả cách dùng tiếng Anh hiện đại."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham chiếu đề xuất về comment/viewpoint adverbs; ledger chưa xác lập kiểm chứng từng claim của bài."
+    },
+    {
+      "ref": "lgswe",
+      "note": "Tham chiếu đề xuất về stance trong lời nói và văn viết; không tuyên bố đã đọc đoạn hoặc thống kê tần suất."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham chiếu đề xuất về sentence hopefully và sắc thái; còn cần đối chiếu đoạn."
+    }
+  ],
+  "editorial": {
+    "status": "drafted",
+    "note": "Tự rà soát ngữ cảnh và khóa; chưa có review độc lập hoặc xác nhận chuyên gia."
+  }
+}

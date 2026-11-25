@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s093-two-claps",
+  "title": "Hai tiếng vỗ tay trong rạp trống",
+  "summary": "Đan cúi chào trong buổi tập một mình. Hai tiếng vỗ tay bỗng vọng xuống từ ban công tối.",
+  "level": "B1",
+  "topics": [
+    "must-cant-deduction",
+    "may-might-could-possibility"
+  ],
+  "scene": "lecture",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Đan",
+      "role": "Nữ diễn viên"
+    },
+    {
+      "id": "b",
+      "name": "Ivo",
+      "role": "Người trực rạp"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Ivo bật đèn. Ban công trống, hai cánh cửa vẫn khóa. Trên sàn là tấm áp phích cuộn lại và dây buộc đã tuột. Cả hai chưa thấy vật gì rơi.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I thought someone liked my speech.",
+          "vi": "Tôi cứ tưởng có người thích bài diễn của mình."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "We know the balcony is empty now. What made the noise?",
+          "vi": "Ta biết bây giờ ban công trống. Tiếng động là do đâu?"
+        }
+      ],
+      "choice": {
+        "prompt": "Đan muốn nêu một khả năng để Ivo thử lại, chưa kết luận chắc chắn.",
+        "options": [
+          {
+            "t": "It must be a person in the balcony.",
+            "note": "Must be nói người nói suy ra điều gần như chắc chắn. Ban công hiện trống và chưa có bằng chứng cho người vỗ tay.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "It might be the poster hitting the rail.",
+            "note": "Might đưa ra một giả thuyết có thể thử. Chưa có ai chứng kiến áp phích đập vào lan can.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Ivo cuộn giấy lại rồi buông tay. Giấy mở ra, đập hai đầu vào thanh gỗ. Đúng hai tiếng ấy.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Listen. It claps twice!",
+          "vi": "Nghe này. Nó vỗ hai tiếng!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Đan lên tận ban công. Dây buộc tuột khỏi tay cô, cuộn giấy bật ra rồi đập lan can hai lần.",
+      "say": [
+        {
+          "who": "b",
+          "en": "There goes your audience.",
+          "vi": "Khán giả của cô lại lên tiếng kìa."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Trong buổi diễn chính, Đan đặt cuộn áp phích ở hàng ghế đầu. Khán giả thật vỗ tay rất lâu. Cô cúi chào họ rồi cúi chào cả tờ giấy.",
+      "say": [
+        {
+          "who": "a",
+          "en": "You were the first to clap.",
+          "vi": "Cậu là người vỗ tay đầu tiên."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

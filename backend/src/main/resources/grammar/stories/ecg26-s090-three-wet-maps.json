@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s090-three-wet-maps",
+  "title": "Ba bản đồ bị ướt",
+  "summary": "Một dòng suối vừa tràn qua cả hai lối mòn. Trạm dừng có ba bản đồ nhưng chỉ một tấm ghi đường trên cao.",
+  "level": "B1",
+  "topics": [
+    "relative-clauses-defining"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Lan",
+      "role": "Hướng dẫn viên đi bộ"
+    },
+    {
+      "id": "b",
+      "name": "Idris",
+      "role": "Người đi đường"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Lan trải ba tấm giấy dưới mái hiên. Cả ba đều chỉ suối, chỉ một tấm có đường màu cam lên sống núi. Idris đã mang sẵn túi chống nước.",
+      "say": [
+        {
+          "who": "a",
+          "en": "All three maps show the river.",
+          "vi": "Cả ba bản đồ đều có vẽ sông."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "My bag has room for one. Which one shall I take?",
+          "vi": "Túi của tôi chỉ còn chỗ cho một tấm. Tôi mang tấm nào?"
+        }
+      ],
+      "choice": {
+        "prompt": "Lan cần mô tả để Idris chọn được đúng một bản đồ.",
+        "options": [
+          {
+            "t": "Take the map that shows the orange path.",
+            "note": "Mệnh đề that shows the orange path thu hẹp tập ba bản đồ còn đúng tấm có đường lên cao.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "Take a map that shows the river.",
+            "note": "That shows the river là mệnh đề đúng nhưng cả ba tấm đều thỏa điều kiện. A map để ngỏ việc chọn tấm nào.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Idris gấp tấm bản đồ dọc đường màu cam sao cho đoạn đầu nằm ngay ngoài nếp gấp.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The path starts behind this shelter.",
+          "vi": "Lối đi bắt đầu ngay sau mái trú này."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Idris giơ cả ba lên. Lan vạch đường màu cam bằng đầu ngón tay, tới sát ký hiệu mái trú.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Only one of them has that line.",
+          "vi": "Chỉ một tấm có nét đó thôi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Họ theo dấu sơn cam lên điểm nghỉ cao, nơi cả nhóm đang đợi. Tấm bản đồ ướt để lại một vệt cam trên túi. Idris giữ nó làm dấu cho lần tới.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Now both the map and the bag show the way.",
+          "vi": "Giờ cả bản đồ lẫn cái túi đều chỉ đường."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

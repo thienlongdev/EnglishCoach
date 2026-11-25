@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s119-invisible-menu",
+  "title": "Thực đơn vô hình",
+  "summary": "Một vị khách gấp thực đơn lại mà chưa đọc. Sa nghĩ ông không thích món nào; Linh thấy ông nheo mắt dưới đèn.",
+  "level": "B1",
+  "topics": [
+    "indirect-questions"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sa",
+      "role": "Người nấu bếp"
+    },
+    {
+      "id": "b",
+      "name": "Linh",
+      "role": "Người phục vụ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Ngoài hiên có nắng, trong nhà có đèn bàn. Không ai biết khách muốn gì. Linh xin Sa đừng đoán thay.",
+      "say": [
+        {
+          "who": "a",
+          "en": "He hasn't looked at a single dish.",
+          "vi": "Ông chưa nhìn một món nào."
+        },
+        {
+          "who": "b",
+          "en": "Ask him where he'd like to sit.",
+          "vi": "Cứ hỏi ông muốn ngồi ở đâu đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Sa mở lời lịch sự bằng câu hỏi gián tiếp.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Could you tell me where you'd like to sit?",
+            "note": "Sau tell me, dùng where you'd like, không đảo would you. Câu mở cho khách chọn chỗ dễ đọc.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Could you tell me where would you like to sit?",
+            "note": "Would you like phù hợp ở câu hỏi trực tiếp. Sau tell me trong câu này hãy giữ thứ tự chủ ngữ you trước would.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Ông chọn bàn gần cửa sổ và lấy từ túi một cây bút. Ông muốn chép lại tên món mà vợ thường gọi.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The sunlight helped him find a name.",
+          "vi": "Nắng giúp ông tìm lại một cái tên."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Sa mời ông viết tên vợ ở mép thực đơn lưu của quán. Từ đó có người khác cũng gọi món theo tên bà.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Khách nghe được chữ sit, chỉ về hiên. Sa kéo ghế và hỏi lại gọn hơn Where would you like to sit? Ông mời cô cùng đọc một dòng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "That smell remembers more than the card.",
+          "vi": "Mùi ấy nhớ được nhiều hơn tờ thực đơn."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Hai người phát hiện món cũ chỉ đổi cách viết. Sa mang một phần nhỏ ra để ông nhận ra bằng mùi.",
+      "end": true
+    }
+  ]
+}

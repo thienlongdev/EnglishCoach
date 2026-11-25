@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s143-lighthouse-tea",
+  "title": "Tách trà dưới chân đèn biển",
+  "level": "B1",
+  "topics": [
+    "past-perfect"
+  ],
+  "scene": "station",
+  "summary": "Một tách trà còn nóng nằm dưới chân thang đèn biển nhưng Fer đang ở bến từ trước bình minh. Ly tưởng mình vừa bỏ lỡ ông trên tháp.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Ly",
+      "role": "Người giao thư"
+    },
+    {
+      "id": "b",
+      "name": "Fer",
+      "role": "Người giữ đèn"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Ly nhìn giờ phà rời bến và giờ nước vừa sôi ghi trên ấm điện. Phà rời lúc năm giờ; ấm bật lúc sáu. Người phụ đèn có chìa khóa riêng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I saw your ferry leave at five.",
+          "vi": "Tôi đã thấy phà của bác rời bến lúc năm giờ."
+        },
+        {
+          "who": "b",
+          "en": "What had happened before the kettle came on?",
+          "vi": "Trước khi ấm bật thì điều gì đã xảy ra?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Ly kể đúng thứ tự để tránh đưa nhầm thư lên tháp.",
+        "options": [
+          {
+            "t": "You had already left when the kettle came on.",
+            "note": "Had already left đặt chuyến đi trước mốc ấm bật. Tách nóng sau đó chưa chứng minh Fer pha.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "You left after the kettle came on.",
+            "note": "After đảo thứ tự so với hai mốc giờ. Câu đúng ngữ pháp nhưng sẽ khiến Ly tìm Fer sai chỗ.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Phụ đèn bước ra với chiếc cốc thứ hai. Ly trao cho anh bức thư ghi ca sáng; Fer ở bến nhận đúng bức ghi ca đêm. Hai người cùng biết tin trạm được giữ lại.",
+      "say": [
+        {
+          "who": "a",
+          "en": "There was tea enough for both shifts.",
+          "vi": "Có đủ trà cho cả hai ca trực."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Phụ đèn chỉ vé phà đóng dấu dưới cốc. Ly ra kịp bến mang tin giữ trạm cho Fer trước lúc ông rời làng. Bức thư được mở ngay trên bậc lên phà.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I thought that was my last sunrise here.",
+          "vi": "Tôi cứ tưởng đó là bình minh cuối cùng của mình ở đây."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

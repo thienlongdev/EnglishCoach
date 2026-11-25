@@ -1,0 +1,489 @@
+{
+  "schema": 1,
+  "slug": "must-cant-deduction",
+  "version": 1,
+  "domain": "modality",
+  "order": 80,
+  "kind": "grammar",
+  "title": {
+    "vi": "Must, can't: suy luận",
+    "en": "Deduction: must, can't"
+  },
+  "subtitle": {
+    "vi": "Suy từ dấu hiệu, giữ rõ điều mình biết và điều mình đoán.",
+    "en": "Reason from evidence while keeping inference distinct from fact."
+  },
+  "level": "B1",
+  "levelBasis": "editorial",
+  "prerequisites": [
+    "may-might-could-possibility"
+  ],
+  "related": [
+    {
+      "slug": "must-have-to",
+      "rel": "contrast"
+    },
+    {
+      "slug": "modal-perfect-deduction",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "aliases": [
+    "suy luận hiện tại",
+    "must be",
+    "cannot be",
+    "epistemic must",
+    "deontic must",
+    "must is tired"
+  ],
+  "objectives": [
+    "Dùng must và cannot để nêu kết luận dựa trên dấu hiệu.",
+    "Phân biệt suy luận với nghĩa vụ, cấm đoán và khả năng thực hiện.",
+    "Giữ khoảng cách giữa kết luận mạnh và sự thật đã kiểm chứng."
+  ],
+  "quick": {
+    "what": "Must trong suy luận diễn đạt kết luận mà người nói thấy rất có cơ sở. Can’t hoặc cannot diễn đạt việc người nói loại trừ một khả năng.",
+    "when": "Khi giải thích một trạng thái từ dấu hiệu hiện có, không phải đưa quy định.",
+    "examples": [
+      {
+        "en": "[S|The bakery] [MOD|must] [V|be] [C|open]; the lights are on and customers are going in.",
+        "vi": "Tiệm bánh hẳn đang mở; đèn sáng và khách đang vào."
+      },
+      {
+        "en": "That [MOD|cannot] [V|be] [C|our bus]; it has the wrong route number.",
+        "vi": "Đó không thể là xe buýt của mình; số tuyến không đúng."
+      }
+    ],
+    "remember": "Suy luận mạnh vẫn có thể sai nếu bằng chứng thiếu hoặc bị hiểu nhầm."
+  },
+  "lesson": [
+    {
+      "type": "h",
+      "vi": "Bắt đầu từ dấu hiệu, không bắt đầu từ bản dịch “phải”"
+    },
+    {
+      "type": "p",
+      "vi": "Bạn thấy áo khoác của Linh trên ghế và nghe giọng cô ấy ở phòng bên. Linh must be here nêu kết luận từ các dấu hiệu ấy. Bạn không yêu cầu Linh có mặt. Đây là tình thái nhận thức (epistemic modality), khác với tình thái nghĩa vụ (deontic modality) trong Staff must wear badges."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Mục đích",
+        "Ví dụ",
+        "Cách hiểu"
+      ],
+      "rows": [
+        [
+          "Suy luận",
+          "The soup must be hot; it is steaming.",
+          "Hơi bốc lên khiến người nói kết luận súp nóng."
+        ],
+        [
+          "Nghĩa vụ",
+          "The soup must be kept hot during service.",
+          "Yêu cầu bảo quản khi phục vụ."
+        ],
+        [
+          "Loại trừ",
+          "This cannot be the final file; it still has blank pages.",
+          "Các trang trống chống lại giả thuyết đây là bản cuối."
+        ]
+      ]
+    },
+    {
+      "type": "formula",
+      "parts": [
+        {
+          "t": "Chủ ngữ",
+          "role": "S"
+        },
+        {
+          "t": "must / cannot / can’t",
+          "role": "MOD"
+        },
+        {
+          "t": "dạng gốc",
+          "role": "V"
+        }
+      ],
+      "note": "Với tính từ hoặc danh từ làm bổ ngữ, dùng be. Với hành động đang diễn ra, dùng be + V-ing."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "She must be tired after that overnight shift.",
+          "vi": "Cô ấy hẳn mệt sau ca đêm đó."
+        },
+        {
+          "en": "They must be repairing the lift; I can hear drilling.",
+          "vi": "Họ hẳn đang sửa thang máy; tôi nghe tiếng khoan."
+        },
+        {
+          "en": "This cannot belong to Mai; her initials are different.",
+          "vi": "Cái này không thể thuộc về Mai; chữ viết tắt tên cô ấy khác."
+        }
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "branch",
+        "root": "Đọc must hoặc cannot trong ngữ cảnh",
+        "branches": [
+          {
+            "cond": "Có dấu hiệu để kết luận?",
+            "result": "Suy luận: This must be the right entrance.",
+            "world": "real"
+          },
+          {
+            "cond": "Có quy định hoặc yêu cầu?",
+            "result": "Nghĩa vụ: You must use this entrance.",
+            "world": "real"
+          },
+          {
+            "cond": "Nói về năng lực hoặc điều kiện thực hiện?",
+            "result": "Khả năng: I cannot open this entrance.",
+            "world": "real"
+          }
+        ]
+      },
+      "caption": "Cùng một hình thức có thể tham gia những nghĩa khác nhau; đọc cả tình huống.",
+      "alt": "Cùng một hình thức có thể tham gia những nghĩa khác nhau; đọc cả tình huống."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Trong suy luận phủ định ở mức này, đối chiếu must be với can’t be. Mustn’t thường biểu thị cấm đoán; đừng thay máy móc để nói “chắc là không”. Đây là hướng dẫn dùng phổ biến, không phải khẳng định must not không bao giờ có cách đọc suy luận."
+    },
+    {
+      "type": "try",
+      "exercise": "mcd-03"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Must thường cho thấy người nói đi từ bằng chứng đến kết luận. The lights are on, so someone must be inside không có nghĩa bạn đã nhìn thấy người đó. Có thể đèn được bật hẹn giờ. Khi bằng chứng yếu, someone might be inside giữ mức cam kết phù hợp hơn."
+    },
+    {
+      "type": "p",
+      "vi": "Can’t không chỉ có một nghĩa. I can’t lift this box nói năng lực hoặc điều kiện; Visitors can’t park here có thể nói quy định; This can’t be our box; ours is blue là suy luận. Không gắn nhãn chỉ dựa vào can’t."
+    },
+    {
+      "type": "p",
+      "vi": "Must not có thể mang cách đọc suy luận phủ định trong một số ngữ cảnh và cách dùng, chẳng hạn suy ra ai đó không biết tin. Vì vậy không coi mọi must not ngoài nghĩa cấm là sai. Nếu cần rõ nghĩa cho người học, probably doesn’t know hoặc can’t know, tùy bằng chứng và mức cam kết, giúp tránh lẫn với cấm đoán."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "mcd-be",
+      "wrong": "The room must quiet.",
+      "right": "The room must be quiet.",
+      "why": "Trong ý trạng thái, quiet cần be sau must."
+    },
+    {
+      "id": "mcd-do",
+      "wrong": "Does she must be nearby?",
+      "right": "Must she be nearby?",
+      "why": "Must tự đảo lên trước chủ ngữ; không dùng do-support. Câu hỏi này có thể hỏi lại kết luận, cần ngữ cảnh."
+    },
+    {
+      "id": "mcd-s",
+      "wrong": "The noise must comes from upstairs.",
+      "right": "The noise must come from upstairs.",
+      "why": "Dùng come dạng gốc sau modal."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Must có biến kết luận thành sự thật không?",
+      "a": "Không. Nó thể hiện cách người nói đánh giá bằng chứng. Hãy kiểm tra lại khi hậu quả của việc đoán sai đáng kể."
+    },
+    {
+      "q": "Can’t be có đồng nghĩa với might not be không?",
+      "a": "Không. Might not be để ngỏ khả năng không đúng; can’t be thường loại trừ khả năng đúng theo cách đánh giá của người nói."
+    },
+    {
+      "q": "Có phải must luôn là “bắt buộc” không?",
+      "a": "Không. Chủ thể, loại vị ngữ và tình huống giúp phân biệt yêu cầu với suy luận."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "mcd-01",
+      "type": "choice",
+      "level": "B1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Chọn cách hiểu phù hợp.",
+      "stem": "That must be the courier; I can see a delivery van outside.",
+      "options": [
+        {
+          "t": "Người nói suy ra danh tính từ dấu hiệu.",
+          "ok": true,
+          "note": "Xe giao hàng là cơ sở suy luận."
+        },
+        {
+          "t": "Người nói ra lệnh cho người kia làm nghề giao hàng.",
+          "tag": "meaning-mismatch",
+          "note": "Câu nhận diện người đến, không giao nghĩa vụ."
+        }
+      ],
+      "explain": "Must be liên kết dấu hiệu với một kết luận chưa phải quan sát trực tiếp."
+    },
+    {
+      "id": "mcd-02",
+      "type": "match",
+      "level": "B1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Nối câu với chức năng trong ngữ cảnh.",
+      "pairs": [
+        {
+          "a": "You must wear goggles in this lab.",
+          "b": "Yêu cầu an toàn"
+        },
+        {
+          "a": "The lab must be empty; every researcher has left.",
+          "b": "Suy luận từ việc mọi người đã ra về"
+        },
+        {
+          "a": "I cannot lift the cylinder without help.",
+          "b": "Không đủ sức tự nâng"
+        }
+      ],
+      "explain": "Xem nội dung và hoàn cảnh; không dịch tất cả modal thành cùng một nghĩa."
+    },
+    {
+      "id": "mcd-03",
+      "type": "cloze",
+      "level": "B1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Điền dạng gốc của động từ be.",
+      "stem": "The label is faded. This must {1} an old bottle.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "be"
+          ]
+        }
+      },
+      "explain": "Sau must dùng be, không dùng is hoặc to be."
+    },
+    {
+      "id": "mcd-04",
+      "type": "transform",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết kết luận bằng must.",
+      "source": "I am almost certain the printer is offline.",
+      "instruction": "Bắt đầu The printer; dùng must và giữ offline.",
+      "model": "The printer must be offline.",
+      "accept": [
+        "The printer must be offline."
+      ],
+      "explain": "Must be offline nêu suy luận mạnh về trạng thái máy."
+    },
+    {
+      "id": "mcd-05",
+      "type": "classify",
+      "level": "B1",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Phân loại theo tình huống được cho.",
+      "cats": [
+        "Suy luận",
+        "Nghĩa vụ"
+      ],
+      "items": [
+        {
+          "t": "There is no engine noise. The motor must be off.",
+          "cat": "Suy luận"
+        },
+        {
+          "t": "For maintenance, the motor must be off before you open the cover.",
+          "cat": "Nghĩa vụ"
+        },
+        {
+          "t": "Every chair is taken. The room must be full.",
+          "cat": "Suy luận"
+        }
+      ],
+      "explain": "Một trạng thái tương tự có thể là kết luận hoặc yêu cầu."
+    },
+    {
+      "id": "mcd-06",
+      "type": "error",
+      "level": "B1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sửa dạng động từ sau modal.",
+      "segments": [
+        {
+          "t": "The guests must"
+        },
+        {
+          "t": "are",
+          "bad": true,
+          "fix": [
+            "be"
+          ],
+          "note": "Dùng be sau must.",
+          "tag": "modal-base"
+        },
+        {
+          "t": "upstairs; their bags are here."
+        }
+      ],
+      "explain": "Must không đi trực tiếp với are."
+    },
+    {
+      "id": "mcd-07",
+      "type": "multi",
+      "level": "B1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Chọn các nhận xét có căn cứ.",
+      "stem": "The key cannot be in this drawer; we have emptied it completely.",
+      "options": [
+        {
+          "t": "Người nói loại trừ một vị trí dựa vào việc đã kiểm tra.",
+          "ok": true,
+          "note": "Ngăn kéo trống là bằng chứng."
+        },
+        {
+          "t": "Đây là suy luận, không phải lệnh cấm chìa khóa nằm ở đó.",
+          "ok": true,
+          "note": "Không có người được giao nghĩa vụ."
+        },
+        {
+          "t": "Câu chỉ nói vị trí đó hơi ít có khả năng.",
+          "tag": "meaning-mismatch",
+          "note": "Cannot mạnh hơn một dè dặt nhẹ."
+        }
+      ],
+      "explain": "Phạm vi của phủ định là khả năng chìa khóa ở trong ngăn kéo."
+    },
+    {
+      "id": "mcd-08",
+      "type": "open",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết một ghi chú suy luận có trách nhiệm.",
+      "task": "Bạn đến phòng họp, thấy màn hình tắt và mọi ghế trống. Viết hai câu tiếng Anh: một suy luận có căn cứ bằng must hoặc can’t, rồi một khả năng khác hoặc một bước kiểm tra. Đừng bịa rằng đã gặp người tổ chức.",
+      "model": [
+        "The meeting must be over; the room is empty.",
+        "But it might have moved to another room, so I will check the calendar."
+      ],
+      "checklist": [
+        "Tách điều nhìn thấy khỏi kết luận",
+        "Có modal và động từ đúng dạng",
+        "Có khả năng khác hoặc bước xác minh"
+      ],
+      "explain": "Mẫu chỉ là một hướng; chất lượng nằm ở quan hệ giữa bằng chứng và mức khẳng định."
+    },
+    {
+      "id": "mcd-09",
+      "type": "choice",
+      "level": "B1",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Chọn nghĩa trong tình huống.",
+      "stem": "That cannot be the museum entrance; the sign says “Private residence”.",
+      "options": [
+        {
+          "t": "Người nói bác bỏ một giả thuyết từ biển báo.",
+          "ok": true,
+          "note": "Biển báo chống lại giả thuyết."
+        },
+        {
+          "t": "Khách không được phép đi vào bảo tàng theo quy định vừa nêu.",
+          "tag": "meaning-mismatch",
+          "note": "Câu đang nhận diện địa điểm, không phát biểu quy định của bảo tàng."
+        }
+      ],
+      "explain": "Cannot be phủ định giả thuyết về danh tính địa điểm."
+    },
+    {
+      "id": "mcd-10",
+      "type": "cloze",
+      "level": "B1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Điền be hoặc being cho đúng cấu trúc.",
+      "stem": "I hear water running. Someone must {1} washing dishes.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "be"
+          ]
+        }
+      },
+      "explain": "Sau must là be; washing đã biểu thị hoạt động đang diễn ra."
+    },
+    {
+      "id": "mcd-11",
+      "type": "transform",
+      "level": "B1",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Viết lại bằng cannot.",
+      "source": "I rule out the possibility that this is the original painting.",
+      "instruction": "Bắt đầu This; giữ the original painting; dùng cannot hoặc can’t.",
+      "model": "This cannot be the original painting.",
+      "accept": [
+        "This cannot be the original painting.",
+        "This can't be the original painting."
+      ],
+      "explain": "Cannot be và can’t be cùng diễn đạt việc loại trừ trong nhiệm vụ này."
+    },
+    {
+      "id": "mcd-12",
+      "type": "multi",
+      "level": "B1",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Chọn các kết luận đúng về ngôn ngữ.",
+      "stem": "The cafe must be busy; there is a queue outside.",
+      "options": [
+        {
+          "t": "Hàng người là bằng chứng cho suy luận.",
+          "ok": true,
+          "note": "Mệnh đề sau giải thích vì sao người nói nghĩ vậy."
+        },
+        {
+          "t": "Có thể cần kiểm tra thêm trước khi coi kết luận là sự thật.",
+          "ok": true,
+          "note": "Must không đảm bảo bằng chứng đầy đủ."
+        },
+        {
+          "t": "Câu bắt buộc quán phải đông khách.",
+          "tag": "meaning-mismatch",
+          "note": "Không phải nghĩa vụ trong ngữ cảnh này."
+        }
+      ],
+      "explain": "Phân biệt độ mạnh của phát biểu với việc đã xác minh sự kiện."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  },
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tác phẩm tham chiếu cho cấu trúc và nghĩa trong chương; dùng sổ nguồn hiện có. Chưa có kiểm chứng đoạn nguồn riêng cho bản thảo này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tài liệu đối chiếu biên tập dự kiến; không xác nhận đã đọc một mục hoặc ấn bản cụ thể."
+    }
+  ]
+}

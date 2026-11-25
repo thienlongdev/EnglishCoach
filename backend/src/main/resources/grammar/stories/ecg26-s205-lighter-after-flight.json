@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s205-lighter-after-flight",
+  "title": "Kiện đồ nhẹ đi sau chuyến bay",
+  "summary": "Cân ở nơi gửi báo 12, cân nhận báo 10. Một người định viết mất hai ký đồ. Mặt số đầu ghi pounds còn đầu kia ghi kilograms.",
+  "level": "B2",
+  "topics": [
+    "comparison-advanced"
+  ],
+  "scene": "airport",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Như",
+      "role": "Người phụ trách quầy"
+    },
+    {
+      "id": "b",
+      "name": "Nico",
+      "role": "Người nhận dạng đồ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Nico không có quyền suy giảm khối lượng chỉ từ hai con số khác đơn vị. Hai kiện vẫn còn dây niêm và một tấm bưu thiếp đề xin đừng tháo.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Twelve looks larger on paper.",
+          "vi": "Trên giấy số mười hai trông lớn hơn."
+        },
+        {
+          "who": "b",
+          "en": "Can you compare numbers without calling the case lighter?",
+          "vi": "Có thể so con số mà không nói kiện bị nhẹ đi không?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Như viết điều biết được trước khi quy về cùng đơn vị.",
+        "options": [
+          {
+            "ok": false,
+            "t": "The case is two kilograms lighter than it was.",
+            "note": "Two kilograms lighter giả định hai số đã có cùng đơn vị, trong khi số đầu là pounds. Chênh số 2 không phải chênh 2 kg.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "The second number is smaller, but the units differ.",
+            "note": "Smaller so sánh hai trị số được viết. But the units differ chặn suy luận từ số nhỏ sang khối lượng ít hơn.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Nico chỉnh cân sang cùng đơn vị và nhận ra khối lượng ở nơi đến thực chất lớn hơn số gửi quy đổi. Họ kiểm tra lại số kiện và phát hiện đã ghép nhầm phiếu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Comparing the units saved the ribbon.",
+          "vi": "So lại đơn vị đã giữ được sợi ruy băng."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Đúng kiện đồ được trả mà dây niêm chưa từng bị cắt. Bưu thiếp vẫn đón người nhà nguyên vẹn.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Như vẽ hai cột đơn vị, nhận thấy lời báo mất đồ chưa có cơ sở. Cô xin đối chiếu mã thẻ trước khi mở kiện.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A two on a page nearly split two families' presents.",
+          "vi": "Một con số hai suýt làm lẫn quà của hai gia đình."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Hai mã khác nhau dẫn tới hai gia đình đang chờ ở hai cửa. Họ nhận lại đúng hai món quà.",
+      "end": true
+    }
+  ]
+}

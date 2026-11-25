@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chào mừng đến Echo Anywhere</title>
+  <link rel="stylesheet" href="ui.css">
+  <style>
+    header { padding: 40px 16px 34px; }
+    .wrap { width: min(820px, 100%); margin: 0 auto; padding: 0 16px; }
+    header h1 { font-size: 30px; margin: 18px 0 6px; line-height: 1.2; }
+    header p { color: rgba(255,255,255,.82); max-width: 560px; }
+    main { padding: 22px 0 56px; }
+    .steps { counter-reset: s; display: grid; gap: 12px; }
+    .step { position: relative; padding-left: 52px; }
+    .step::before { counter-increment: s; content: counter(s); position: absolute; left: 14px; top: 14px; width: 26px; height: 26px; border-radius: 50%;
+      display: grid; place-items: center; background: linear-gradient(135deg,#0d2a5e,#1656b8); color: #fff; font-weight: 700; font-size: 13px; }
+    .demo { font-size: 17px; line-height: 1.9; }
+    .demo button { border: 0; background: transparent; padding: 0 1px; border-bottom: 2px dotted var(--sky); font-size: inherit; }
+    .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 640px) { .cols { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="wrap">
+    <div class="brand"><img src="icons/echo-256.webp" alt="" style="width:56px;height:56px"><div><b>Echo Anywhere</b><small>English Coach</small></div></div>
+    <h1>Học tiếng Anh ngay trên trang bạn đang đọc</h1>
+    <p>Bôi đen một từ trên GitHub, Wikipedia, Reddit hay báo tiếng Anh — Echo cho bạn nghĩa, phát âm và lưu vào Thẻ từ vựng.</p>
+  </div></header>
+  <div class="wrap"><main class="stack" id="main"></main></div>
+  <script type="module" src="welcome.js"></script>
+</body>
+</html>

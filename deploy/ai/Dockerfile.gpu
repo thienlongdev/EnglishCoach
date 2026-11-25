@@ -1,0 +1,14 @@
+# The canonical production AI image on the Windows GPU PC (rules 10 §BE, §BM). A DELTA on the qualified runtime, never a full rebuild:
+# a full `docker build ai-service` re-resolves every library and needs a full AI qualification first (07).
+# Base = englishcoach-ai-listening-whisperx:20261030b (800d20e0…), which holds faster-whisper + WhisperX.
+#
+#   docker build -f deploy/ai/Dockerfile.gpu --build-context easyocr=C:/Users/Admin/.englishcoach/easyocr/model -t englishcoach-ai-whisperx:<date> ai-service
+#
+# The OCR weights lived only in the old containers' writable layers: a fresh container spent minutes downloading them before it answered at all.
+# Baked here, a new container starts with everything it needs and asks the network for nothing.
+FROM englishcoach-ai-listening-whisperx:20261030b
+COPY --from=easyocr . /root/.EasyOCR/model/
+COPY app/services/listening_youtube_service.py app/services/listening_local_asr.py app/services/listening_trace.py app/services/listening_jobs.py /app/app/services/
+COPY app/api/routes/listening.py /app/app/api/routes/listening.py
+COPY app/tests/test_listening_pipeline_law.py app/tests/test_listening_import_v2.py /app/app/tests/
+LABEL org.englishcoach.service="ai-gpu" org.englishcoach.pipeline="faster-whisper-large-v3+whisperx-wav2vec2"

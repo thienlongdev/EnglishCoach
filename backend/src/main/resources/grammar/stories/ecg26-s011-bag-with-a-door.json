@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s011-bag-with-a-door",
+  "title": "Chiếc túi có cửa",
+  "summary": "Bo cần một cái nhà cho thỏ vải trước giờ đi ngủ. Hân mang đến chiếc túi vải cũ có một ô khóa kéo.",
+  "level": "A1",
+  "topics": [
+    "have-and-have-got"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hân",
+      "role": "Chị của bé"
+    },
+    {
+      "id": "b",
+      "name": "Bo",
+      "role": "Em nhỏ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Bo đặt thỏ vào túi. Hai tai thò qua quai. Trên một mặt túi có khóa kéo nhỏ vừa bằng bàn tay, chiếc hộp giấy bên cạnh thì không.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Can the rabbit go out by itself?",
+          "vi": "Thỏ tự đi ra được không?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Which one has a little door?",
+          "vi": "Cái nào có cửa nhỏ vậy?"
+        }
+      ],
+      "choice": {
+        "prompt": "Hân chỉ vào túi và trả lời về đặc điểm của nó.",
+        "options": [
+          {
+            "t": "The box has a little door.",
+            "note": "Câu đúng về cấu trúc nhưng gọi nhầm vật. Chiếc hộp giấy chưa được khoét cửa.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "The bag has a little door.",
+            "note": "The bag là một chiếc túi nên dùng has để nói nó có ô mở. A little door là vật được sở hữu.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Bo kéo khóa, thỏ thò mũi ra đúng ô nhỏ. Bo gọi đó là cửa nhà.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Hello, rabbit!",
+          "vi": "Chào thỏ nhé!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Bo gõ vào hộp. Hân kéo khóa túi cho đôi tai thỏ rung lên, Bo đổi sang túi có cửa.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Your door is here!",
+          "vi": "Cửa nhà thỏ đây rồi!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Bo đặt túi ở cạnh gối và kéo khóa hé một chút. Đêm đó Hân nghe Bo chúc ngủ ngon qua ô cửa nhỏ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Good night, little house.",
+          "vi": "Ngủ ngon nhé, ngôi nhà nhỏ."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

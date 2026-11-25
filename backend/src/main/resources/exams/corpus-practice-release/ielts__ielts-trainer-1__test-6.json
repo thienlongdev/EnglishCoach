@@ -1,0 +1,409 @@
+{
+  "manifest" : {
+    "schemaVersion" : "1.0",
+    "packageId" : "RAW-RAW_IELTS_TRAINER_1_T6",
+    "packageVersion" : 1,
+    "contentHash" : "4ad917cb6f7f8fb0584f65eed32ead7392a7fe0cdcd8b8e810515fe6107566d4",
+    "creator" : "exam-raw-extractor",
+    "specificationBaselineId" : "EC-EXAM-SPEC-2026-09-10",
+    "authoringStatus" : "DRAFT",
+    "createdAt" : null,
+    "metadata" : {
+      "rightsReviewStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED_PROJECT_USE_OWNER_AUTHORIZED",
+      "visualQAStatus" : "PAGE_REGION_RENDERING_HUMAN_QA_REQUIRED",
+      "displayName" : {
+        "current" : "IELTS Trainer 1 — Test 6 (source extraction, draft)",
+        "ownerSelected" : null,
+        "status" : "PROVISIONAL_SOURCE_TITLE",
+        "policy" : "DISPLAY_NAME_MAY_CHANGE_SOURCE_PROVENANCE_MUST_NOT",
+        "renameTargets" : [ "form.title", "catalogNodes[].title" ]
+      },
+      "sourceIdentity" : {
+        "publisher" : "Cambridge University Press & Assessment",
+        "collection" : "ielts-trainer",
+        "book" : "ielts-trainer-1",
+        "bookTitle" : "IELTS Trainer 1",
+        "test" : 6,
+        "rawSourceSha256" : "a80567fe26de7fe195dcef1ff1e478325aebd4f2d2077789d4cbca00f81820db"
+      },
+      "audioQAStatus" : "AUTOMATED_TECHNICAL_QA_ONLY_HUMAN_QA_REQUIRED",
+      "sourceProvenance" : {
+        "collection" : "ielts-trainer",
+        "book" : "ielts-trainer-1",
+        "test" : "TEST_6",
+        "rawSourceFile" : {
+          "path" : "imports/source-files/ielts/ielts-trainer/Quyển 1 - IELTS Trainer - Six Practice Tests with Answers.pdf",
+          "sha256" : "a80567fe26de7fe195dcef1ff1e478325aebd4f2d2077789d4cbca00f81820db"
+        },
+        "pageRange" : "171-172",
+        "audio" : [ ],
+        "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json#ielts/ielts-trainer-1/test-6",
+        "extractorName" : "exam-raw-extractor",
+        "extractorVersion" : "3.8.1",
+        "reviewStatus" : "UNREVIEWED"
+      },
+      "ocr" : { },
+      "practiceProjection" : {
+        "sourceContentHash" : "8da7e27f0186aacf444e0f9a079417f9e137b06943ef4e4c66445e9fa210360f",
+        "humanApprovalCreated" : false,
+        "fullSimulationGranted" : false,
+        "sourcePackageId" : "RAW-RAW_IELTS_TRAINER_1_T6",
+        "excludedScopes" : {
+          "IELTS_WRITING_TASK_1" : [ "MEDIA_IMAGE_PENDING", "QA_SCOPE_PENDING", "SCOPE_NOT_SELECTED" ]
+        },
+        "retainedScopes" : [ "IELTS_WRITING_TASK_2" ],
+        "version" : "exam-practice-projection-v1"
+      },
+      "reviewOnlyReferences" : {
+        "transcripts" : [ ],
+        "answerKeys" : [ ],
+        "note" : "References only. Transcript text is not embedded: the learner manifest projection has no stimulus/asset role allow-list yet (EXAM-AUD-032)."
+      },
+      "humanReviewComplete" : false,
+      "projectUsageAuthorization" : {
+        "status" : "OWNER_AUTHORIZED",
+        "scope" : "ENGLISHCOACH_PROJECT_USE",
+        "authorizedBy" : "PROJECT_OWNER",
+        "decisionDate" : "2026-10-06",
+        "decisionRef" : "EXAMS_CORPUS_OWNER_PRODUCTION_AUTHORIZATION_20261006",
+        "appliesTo" : "EXISTING_REPOSITORY_SOURCE_CORPUS",
+        "permits" : [ "EXTRACTION", "CANONICAL_PACKAGE_PREPARATION", "STAGING_VALIDATION", "LOCAL_STAGING_IMPORT_PREPARATION", "PRODUCTION_IMPORT", "PUBLICATION", "LEARNER_RUNTIME", "PRACTICE", "SIMULATION", "MEDIA", "SCORING", "RESULTS", "REVIEW" ],
+        "productionImport" : "OWNER_AUTHORIZED_PRODUCTION_USE",
+        "publisherLicence" : "NOT_ESTABLISHED",
+        "publisherEndorsement" : false
+      },
+      "extraction" : {
+        "status" : "NEEDS_REVIEW",
+        "extractorVersion" : "3.8.1",
+        "blockingCodes" : [ "SECTION_NOT_FOUND", "SECTION_OMITTED" ],
+        "reviewCodes" : [ "IMAGE_REGION_HEURISTIC" ]
+      },
+      "sourceDocuments" : [ {
+        "path" : "imports/source-files/ielts/ielts-trainer/Quyển 1 - IELTS Trainer - Six Practice Tests with Answers.pdf",
+        "sha256" : "a80567fe26de7fe195dcef1ff1e478325aebd4f2d2077789d4cbca00f81820db",
+        "role" : "ANSWER_KEY",
+        "textLayer" : "TEXT"
+      } ],
+      "audioSegments" : [ ]
+    }
+  },
+  "sources" : [ {
+    "id" : "019f9e33-7aa0-58a3-928f-b744085a31bd",
+    "code" : "RAW_IELTS_TRAINER_IELTS_TRAINER_1",
+    "name" : "IELTS Trainer 1",
+    "owner" : "Cambridge University Press & Assessment",
+    "publisher" : "Cambridge University Press & Assessment",
+    "sourceType" : "THIRD_PARTY_PUBLICATION",
+    "referenceMeta" : {
+      "rawCorpusRoot" : "imports/source-files/",
+      "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json",
+      "rightsStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED",
+      "projectUsageAuthorization" : "OWNER_AUTHORIZED",
+      "primaryDocument" : "imports/source-files/ielts/ielts-trainer/Quyển 1 - IELTS Trainer - Six Practice Tests with Answers.pdf"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  }, {
+    "id" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "code" : "EC_INTERNAL_ORIGINAL",
+    "name" : "English Coach original content",
+    "owner" : "English Coach",
+    "publisher" : "English Coach",
+    "sourceType" : "INTERNAL_ORIGINAL",
+    "referenceMeta" : {
+      "declaration" : "Rubrics and scoring metadata authored by English Coach; no external text"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "licenses" : [ {
+    "id" : "461ea033-7d98-5af9-b6a6-8eb731695003",
+    "sourceId" : "019f9e33-7aa0-58a3-928f-b744085a31bd",
+    "licenseCode" : "UNKNOWN-RAW_IELTS_TRAINER_IELTS_TRAINER_1",
+    "provenanceCategory" : "UNKNOWN",
+    "commercialRights" : false,
+    "redistributionRights" : false,
+    "derivativeRights" : false,
+    "permittedPurposes" : {
+      "LOCAL_PRIVATE_REVIEW" : true
+    },
+    "permittedTerritories" : { },
+    "validFrom" : null,
+    "validUntil" : null,
+    "attribution" : "IELTS Trainer 1 — Cambridge University Press & Assessment. Publisher licence not established; used under the EnglishCoach project owner's authorization (2026-10-03), which is not a publisher licence or endorsement.",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  }, {
+    "id" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseCode" : "EC-ORIGINAL-DRAFT-PENDING-LEGAL",
+    "provenanceCategory" : "ORIGINAL",
+    "commercialRights" : true,
+    "redistributionRights" : true,
+    "derivativeRights" : true,
+    "permittedPurposes" : {
+      "EXAM" : true,
+      "SIMULATION" : true,
+      "PRACTICE" : true,
+      "CONTENT" : true
+    },
+    "permittedTerritories" : {
+      "GLOBAL" : true
+    },
+    "validFrom" : 1790985600.000000000,
+    "validUntil" : null,
+    "attribution" : "English Coach original draft; legal review pending",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  } ],
+  "provenances" : [ {
+    "id" : "d5e179af-d104-5446-a2ef-43c01b4a5acd",
+    "sourceId" : "019f9e33-7aa0-58a3-928f-b744085a31bd",
+    "licenseId" : "461ea033-7d98-5af9-b6a6-8eb731695003",
+    "creator" : "exam-raw-extractor",
+    "acquisitionMethod" : "RAW_CORPUS_EXTRACTION",
+    "originalReference" : "IELTS Trainer 1 / Test 6",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  }, {
+    "id" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseId" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "creator" : "English Coach",
+    "acquisitionMethod" : "ORIGINAL_AUTHORING",
+    "originalReference" : "EC-RUBRIC-AND-SCORING-METADATA",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  } ],
+  "catalogNodes" : [ {
+    "id" : "dde6e9fe-6291-5598-a163-c10afe95b818",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "sourceId" : "019f9e33-7aa0-58a3-928f-b744085a31bd",
+    "parentId" : null,
+    "kind" : "VOLUME",
+    "title" : "IELTS Trainer 1",
+    "year" : null,
+    "ordinal" : 0,
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "specifications" : [ {
+    "id" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SPEC",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "deliveryMode" : "COMPUTER_SIMULATION",
+    "blueprint" : {
+      "source" : "RAW_CORPUS_EXTRACTION",
+      "family" : "IELTS",
+      "variant" : "ACADEMIC",
+      "scope" : "FULL"
+    },
+    "timingPolicy" : {
+      "listeningSeconds" : 1800,
+      "readingSeconds" : 3600,
+      "writingSeconds" : 3600,
+      "speakingSeconds" : 840
+    },
+    "navigationPolicy" : {
+      "sectionNavigation" : "fixed_sequence"
+    },
+    "playbackPolicy" : {
+      "mode" : "ONCE"
+    },
+    "sourceReferences" : {
+      "baseline" : "EC-EXAM-SPEC-2026-09-10"
+    },
+    "contentHash" : "01a9a5d6615e4c044e33620aacc7f229326296fc975b4c54a3fc1cc0d69efd4c",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "rubrics" : [ {
+    "id" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "logicalCode" : "EC_RAW_IELTS_WRITING_RUBRIC",
+    "version" : 1,
+    "family" : "IELTS",
+    "skill" : "WRITING",
+    "taskFamily" : "IELTS_WRITING",
+    "criteria" : {
+      "taskAchievement" : {
+        "weight" : 1
+      },
+      "coherenceAndCohesion" : {
+        "weight" : 1
+      },
+      "lexicalResource" : {
+        "weight" : 1
+      },
+      "grammaticalRangeAndAccuracy" : {
+        "weight" : 1
+      }
+    },
+    "ordinalScale" : {
+      "min" : 0,
+      "max" : 9,
+      "steps" : [ 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0 ]
+    },
+    "provenanceId" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "contentHash" : "0d542a6e2c855fb3a6fa51ef83026cb296280b0f51f9073604b6756d4752e253",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "calibrations" : [ ],
+  "scoringSchemes" : [ {
+    "id" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SCORING",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "normalizationVersion" : "EC-NORM-V1",
+    "rubricReferences" : { },
+    "calibrationId" : null,
+    "mappingTable" : {
+      "metrics" : [ "LISTENING", "READING", "WRITING", "SPEAKING", "FULL_OVERALL" ],
+      "status" : "DRAFT_NOT_CALIBRATED",
+      "scoreLabel" : "English Coach estimated band"
+    },
+    "aggregationRules" : {
+      "officialEquating" : false,
+      "version" : "EC-AGGREGATION-DRAFT-V1",
+      "creditUnitsPerItem" : 1,
+      "task1Weight" : 1,
+      "task2Weight" : 2,
+      "overall" : "mean_of_four_quarter_rounding"
+    },
+    "contentHash" : "0780e29af069b167dab0956ac01663b2c8b509ca0f03839208766aa0b62ed428",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "form" : {
+    "id" : "2912d994-fc8e-5999-90b9-c2dd073999cf",
+    "logicalKey" : "RAW_IELTS_TRAINER_1_T6",
+    "version" : 1,
+    "title" : "IELTS Trainer 1 — Test 6 (source extraction, draft)",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "catalogNodeId" : "dde6e9fe-6291-5598-a163-c10afe95b818",
+    "specificationId" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "lifecycleState" : "DRAFT",
+    "provenanceId" : "d5e179af-d104-5446-a2ef-43c01b4a5acd",
+    "authorId" : null,
+    "contentHash" : "fc3d6b0386e75a51e6a9267572f7e119283e897cedc6c813bf398cd7e7242864",
+    "publishedAt" : null,
+    "retiredAt" : null,
+    "createdAt" : null,
+    "primaryHealthStatus" : null
+  },
+  "formComponents" : [ ],
+  "sections" : [ {
+    "id" : "d9f832e1-6d61-5a9f-9e02-f2ed5e6b4e97",
+    "formId" : "2912d994-fc8e-5999-90b9-c2dd073999cf",
+    "skill" : "WRITING",
+    "ordinal" : 1,
+    "specSectionKey" : "WRITING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 3600,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  } ],
+  "parts" : [ {
+    "id" : "943a93bc-a37a-569f-80c2-fea651711b58",
+    "sectionId" : "d9f832e1-6d61-5a9f-9e02-f2ed5e6b4e97",
+    "partCode" : "WRITING_TASK_2",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : {
+      "recommendedMinutes" : 40
+    }
+  } ],
+  "groups" : [ {
+    "id" : "0cac7386-375f-5009-8a09-21e9bd3a943f",
+    "logicalGroupKey" : "RAW_IELTS_TRAINER_1_T6_WRITING_TASK_2",
+    "version" : 1,
+    "questionType" : "WRITING_TASK_2",
+    "construct" : "written_production",
+    "skill" : "WRITING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "d5e179af-d104-5446-a2ef-43c01b4a5acd",
+    "contentHash" : "5728c3280a5f921c23c4dbea0fb6b2ea87599ed301d908ea6fde31111cac9569",
+    "createdAt" : null
+  } ],
+  "formGroups" : [ {
+    "id" : "6f9e29e8-6885-5f3d-9a94-1db5c93ce915",
+    "partId" : "943a93bc-a37a-569f-80c2-fea651711b58",
+    "groupId" : "0cac7386-375f-5009-8a09-21e9bd3a943f",
+    "ordinal" : 1,
+    "displayNumbering" : "Task 2"
+  } ],
+  "stimuli" : [ {
+    "id" : "a24e503c-5122-5239-bdc5-1fc733e1e08e",
+    "logicalStimulusKey" : "RAW_IELTS_TRAINER_1_T6_WRITING_TASK_2_PROMPT",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "promptContext" : "• You should spend about 40 minutes on this task. 8 Wrtte about the following topic: Some people choose to eat no meat or fish. They believe that this is not only better for their own health but also benefits the world as a whole. Discuss this view and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience. «~ Write at least 250 words . • • W rit i ng Te s t 6 I 1 71 '1 :'\" ~ _.!~~..0t'X ~~~ .,.,.. --,; ~:.:1 i>=:~~ ~ ~ ~ - .,_, - ~ - ., ~ - - ~ ; , ..---- - , , _ . .., . ,_ ,, ,. ,,,_ , _ ~ ..; -'"
+    },
+    "provenanceId" : "d5e179af-d104-5446-a2ef-43c01b4a5acd",
+    "contentHash" : "ef06c74949af31fef18f0418bd04bdab0ff3a84fadfeb5c6a070bac7a60913c0",
+    "createdAt" : null
+  } ],
+  "groupStimuli" : [ {
+    "id" : "ee4f409f-d888-5541-b41a-f3102485d875",
+    "groupId" : "0cac7386-375f-5009-8a09-21e9bd3a943f",
+    "stimulusId" : "a24e503c-5122-5239-bdc5-1fc733e1e08e",
+    "role" : "PRIMARY_PROMPT",
+    "ordinal" : 2
+  } ],
+  "items" : [ {
+    "id" : "7008a396-8cf1-51b9-b49d-c325eec2f257",
+    "groupId" : "0cac7386-375f-5009-8a09-21e9bd3a943f",
+    "logicalItemKey" : "RAW_IELTS_TRAINER_1_T6_W2",
+    "version" : 1,
+    "prompt" : "• You should spend about 40 minutes on this task. 8 Wrtte about the following topic: Some people choose to eat no meat or fish. They believe that this is not only better for their own health but also benefits the world as a whole. Discuss this view and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience. «~ Write at least 250 words . • • W rit i ng Te s t 6 I 1 71 '1 :'\" ~ _.!~~..0t'X ~~~ .,.,.. --,; ~:.:1 i>=:~~ ~ ~ ~ - .,_, - ~ - ., ~ - - ~ ; , ..---- - , , _ . .., . ,_ ,, ,. ,,,_ , _ ~ ..; -'",
+    "interactionType" : "WRITING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "free_text",
+      "minimumWords" : 250,
+      "recommendedMinutes" : 40
+    },
+    "construct" : "writing_task",
+    "provenanceId" : "d5e179af-d104-5446-a2ef-43c01b4a5acd",
+    "contentHash" : "d374ce472fd6c61f97286efda47a29c7b6f1b461f6114558ed5a374aaab9268d",
+    "createdAt" : null,
+    "ordinal" : 2
+  } ],
+  "answerSpecs" : [ {
+    "id" : "7e3c30d0-cb6c-5e9f-9912-2f528ef51bae",
+    "itemId" : "7008a396-8cf1-51b9-b49d-c325eec2f257",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "minimumWords" : 250
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-WRITING-TEXT-V1",
+      "preserveParagraphs" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "createdAt" : null
+  } ],
+  "assets" : [ ],
+  "stimulusAssets" : [ ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "counteroffer-inversion",
+  "title": "Không chỉ giảm phí, còn nới hạn",
+  "summary": "Một đối tác đưa ra hai nhượng bộ. Đổi giữa not only ở giữa mệnh đề và ở đầu. Trường hợp nào cần did, và phạm vi của not có phủ nhận việc hạ phí không?",
+  "level": "C1",
+  "topics": [
+    "negative-inversion",
+    "parallelism"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Vị trí cấu trúc",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Sau chủ ngữ"
+        },
+        {
+          "id": "v2",
+          "label": "Đầu mệnh đề"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The firm not only cut the fee but also extended the deadline.",
+      "vi": "Công ty không chỉ giảm phí mà còn gia hạn.",
+      "note": "Not only … but also cộng thêm nhượng bộ thứ hai. Nó không phủ định việc giảm phí. / Both concessions are asserted without inversion.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Not only did the firm cut the fee, but it also extended the deadline.",
+      "vi": "Công ty chẳng những giảm phí mà còn gia hạn.",
+      "note": "Did đứng trước the firm. Vế sau vẫn dùng it also extended theo trật tự bình thường. / Initial not only triggers inversion in the first clause.",
+      "verdict": "ok"
+    }
+  }
+}

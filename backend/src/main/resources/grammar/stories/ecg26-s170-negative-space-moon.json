@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s170-negative-space-moon",
+  "title": "Mặt trăng nhìn qua lỗ thủng",
+  "summary": "Đĩa ảnh trạm có hai lỗ tròn. Một lỗ do hỏng máy, một là mặt trăng đen đi qua mặt trời. Chỉ ảnh số 9 có dấu giờ.",
+  "level": "B2",
+  "topics": [
+    "relative-clauses-non-defining"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hà",
+      "role": "Người chăm kho hạt"
+    },
+    {
+      "id": "b",
+      "name": "Pax",
+      "role": "Người lái tàu"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Pax đã xác định ảnh số 9 bằng dấu giờ. Hà muốn thêm chi tiết về mặt trăng mà không đổi danh tính tấm ảnh.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Number nine has the official time stamp.",
+          "vi": "Số chín có dấu giờ chính thức."
+        },
+        {
+          "who": "b",
+          "en": "Then let that be its name in the note.",
+          "vi": "Vậy cứ gọi đúng nó trong ghi chú."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Hà thêm thông tin bổ sung vào sau cụm đã xác định Plate Nine.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Plate Nine, which shows the moon crossing the sun, is safe.",
+            "note": "Hai dấu phẩy tách mệnh đề bổ sung về Plate Nine. Người đọc đã biết đích danh tấm nào.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Plate Nine, that shows the moon crossing the sun, is safe.",
+            "note": "That không mở mệnh đề quan hệ bổ sung giữa hai dấu phẩy theo chuẩn này. Dùng which hoặc tách thành câu riêng.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Pax cất tấm chín và dùng tấm hỏng làm khung ngắm. Qua lỗ trên tấm hỏng, trẻ ở trạm lần đầu thấy hướng mặt trời mọc.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Even the damaged plate has a job.",
+          "vi": "Ngay cả tấm hỏng cũng có việc."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Cả hai vòng đen có tên đúng và việc riêng.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Hà tách chú thích thành hai câu ngắn để đọc qua bộ đàm. Từng chữ tới rõ dù kênh truyền cứ ngắt quãng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Two short sentences crossed a lot of space.",
+          "vi": "Hai câu ngắn đã vượt một khoảng không thật xa."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Dưới mặt đất, một đứa trẻ nghe được cả tên tấm ảnh lẫn tên mặt trăng và vẽ lại mà không cần thấy ảnh.",
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s063-moth-screen",
+  "title": "Bóng bướm đêm",
+  "level": "A2",
+  "topics": [
+    "past-continuous"
+  ],
+  "scene": "lecture",
+  "summary": "Một con bướm đêm khổng lồ xuất hiện trên phim câm rồi biến mất, dù cuộn phim không có cảnh ấy.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mỹ",
+      "role": "Người chiếu phim"
+    },
+    {
+      "id": "b",
+      "name": "Leo",
+      "role": "Bạn giữ màn"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Leo thấy một con bướm nhỏ ở sát đèn. Mỹ nhìn thấy vệt cánh trên màn đúng lúc bạn đưa tay ra.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The wing was bigger than my head on the screen.",
+          "vi": "Cánh trên màn còn to hơn cả đầu mình."
+        },
+        {
+          "who": "b",
+          "en": "Where was the real moth when my hand moved?",
+          "vi": "Lúc tay mình đưa ra thì con bướm thật ở đâu?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Mỹ kể hành động đang diễn ra lúc hai hình chạm nhau.",
+        "options": [
+          {
+            "t": "It flew away before the light came on.",
+            "note": "Before đặt lúc bay đi trước khi đèn sáng. Không còn bướm trong luồng sáng để tạo hình đang được hỏi.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "It was flying in front of the lamp.",
+            "note": "Was flying là sự việc đang diễn ra. In front of the lamp đặt vật ở đường chiếu nên bóng mới phóng lớn.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Leo mở cửa sổ. Bướm bay ra trời đêm, còn trên màn nhân vật chính kịp cúi chào đúng nơi bóng cánh vừa lướt qua.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It had a part in the film for one night.",
+          "vi": "Nó có một vai trong phim suốt một đêm."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Mỹ tạm dừng phim. Con bướm nhỏ vẫn đậu ngay vành đèn. Leo đưa tờ giấy lên để nó bò ra cửa. Điểm dừng phim hóa thành một màn cứu hộ cho khán giả xem.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Even our break had a happy ending.",
+          "vi": "Đến giờ nghỉ cũng có cái kết có hậu."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

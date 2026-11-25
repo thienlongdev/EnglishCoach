@@ -1,0 +1,77 @@
+{
+  "id": "photo-finish",
+  "title": "Đèn đã tắt hay vừa tắt khi máy quay chạy?",
+  "summary": "Trong báo cáo kỹ thuật, giữ mốc máy quay bắt đầu chạy. Đổi dạng go out và xác định đoạn phim có thể ghi được khoảnh khắc đèn tắt không.",
+  "level": "B2",
+  "topics": [
+    "narrative-tenses",
+    "past-perfect"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Quan hệ với mốc quay",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Đã tắt trước"
+        },
+        {
+          "id": "v2",
+          "label": "Tắt đúng lúc"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The lights had gone out when filming began.",
+      "vi": "Khi bắt đầu quay, đèn đã tắt từ trước.",
+      "note": "Had gone out đặt sự kiện trước mốc quay nên đoạn phim này không ghi được đúng lúc đèn tắt. / The loss of light precedes the start of filming.",
+      "verdict": "ok",
+      "timeline": {
+        "sentence": "The lights had gone out when filming began.",
+        "now": 95,
+        "events": [
+          {
+            "kind": "point",
+            "at": 28,
+            "label": "Đèn tắt",
+            "role": "main"
+          },
+          {
+            "kind": "point",
+            "at": 65,
+            "label": "Bắt đầu quay",
+            "role": "ref"
+          }
+        ]
+      }
+    },
+    "v2": {
+      "en": "The lights went out just as filming began.",
+      "vi": "Đèn tắt đúng lúc bắt đầu quay.",
+      "note": "Went out cùng just as cho phép hai sự kiện gần như đồng thời. / Just as aligns the two events.",
+      "verdict": "ok",
+      "timeline": {
+        "sentence": "The lights went out just as filming began.",
+        "now": 95,
+        "events": [
+          {
+            "kind": "point",
+            "at": 65,
+            "label": "Bắt đầu quay",
+            "role": "ref"
+          },
+          {
+            "kind": "point",
+            "at": 66,
+            "label": "Đèn vụt tắt",
+            "role": "main"
+          }
+        ]
+      }
+    }
+  }
+}

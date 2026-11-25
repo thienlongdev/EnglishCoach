@@ -1,0 +1,477 @@
+{
+  "schema": 1,
+  "slug": "passive-use",
+  "version": 2,
+  "domain": "voice",
+  "order": 20,
+  "kind": "grammar",
+  "title": {
+    "vi": "Khi nào dùng bị động",
+    "en": "When to use the passive"
+  },
+  "subtitle": {
+    "vi": "Chọn trọng tâm và phân biệt get-passive",
+    "en": "Choose a focus and recognise the get-passive"
+  },
+  "aliases": [
+    "khi nào dùng bị động",
+    "passive use",
+    "get-passive",
+    "get cộng phân từ",
+    "got promoted got injured"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Chọn chủ động/bị động theo trọng tâm.",
+    "Bỏ tác nhân khi không cần hoặc chưa biết.",
+    "Dùng get-passive mà không gán lỗi hoặc giới hạn chỉ việc xấu."
+  ],
+  "prerequisites": [
+    "passive-form"
+  ],
+  "related": [
+    {
+      "slug": "passive-form",
+      "rel": "more"
+    },
+    {
+      "slug": "causatives",
+      "rel": "contrast"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Bị động giúp đặt đối tượng chịu tác động làm chủ đề, nhất là khi tác nhân chưa biết hoặc ít liên quan. Get-passive thường nêu sự việc hoặc thay đổi trong lối nói ít trang trọng hơn.",
+    "when": "Chọn theo ngữ cảnh, không theo lệnh mọi văn viết phải tránh bị động.",
+    "examples": [
+      {
+        "en": "The hall [AUX|was] [V|cleaned].",
+        "vi": "Hội trường đã được dọn."
+      },
+      {
+        "en": "She [V|got promoted].",
+        "vi": "Cô ấy được thăng chức."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Nếu đang nói về hội trường, The hall was cleaned giữ chủ đề. Nếu người dọn là điều cần biết, The new contractor cleaned the hall đặt họ ở đầu. Không có một thể luôn tốt hơn mọi tình huống."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Chủ đề hiện tại",
+            "items": [
+              "The hall"
+            ]
+          },
+          {
+            "label": "Việc được nói tiếp",
+            "items": [
+              "was cleaned"
+            ]
+          },
+          {
+            "label": "Tác nhân khi cần",
+            "items": [
+              "by a new contractor"
+            ]
+          }
+        ],
+        "sentence": "{0} {1} {2}."
+      },
+      "caption": "Bị động giữ hall ở đầu và vẫn có thể thêm người làm ở cuối.",
+      "alt": "Bị động giữ hall ở đầu và vẫn có thể thêm người làm ở cuối."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Mục tiêu",
+        "Lựa chọn",
+        "Giới hạn"
+      ],
+      "rows": [
+        [
+          "Không biết người làm",
+          "The window was broken.",
+          "Không bịa by someone như bắt buộc"
+        ],
+        [
+          "Nêu tác nhân mới",
+          "The hall was cleaned by a contractor.",
+          "Thêm khi hữu ích"
+        ],
+        [
+          "Lối kể sự việc",
+          "The bike got damaged.",
+          "Get-passive thường ít trang trọng hơn"
+        ],
+        [
+          "Kết quả tốt",
+          "She got promoted.",
+          "Không chỉ sự việc xấu"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Get-passive có get + phân từ: got promoted, got injured, got chosen. Nó thường làm nổi bật việc xảy đến cho chủ ngữ. Trong văn bản chính thức, be-passive có thể trung tính hơn, nhưng không có lệnh cấm mọi get-passive."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Got injured không tự chứng minh người bị thương có lỗi. Đừng biến xu hướng liên quan người chịu tác động thành kết luận đạo đức hoặc nguyên nhân."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Không phải mọi get + từ miêu tả là bị động: get cold là get + tính từ. Cũng không thay mọi be + phân từ thành get một cách tự do; nghĩa trạng thái và giới hạn động từ có thể làm câu khác hoặc không tự nhiên."
+    },
+    {
+      "type": "p",
+      "vi": "Không dùng bị động để cố giấu trách nhiệm nếu người đọc cần biết tác nhân. Đồng thời, câu không nêu tác nhân không tự là né tránh; trong nhiều ngữ cảnh người làm đã rõ hoặc không liên quan."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Bị động là lựa chọn tổ chức thông tin, không phải văn phong xấu mặc định. Có thể lược tác nhân khi người đọc không cần biết; nếu trách nhiệm quan trọng, hãy nêu người làm rõ thay vì dựa vào công thức."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "passive-use-m1",
+      "wrong": "She got chose for the team.",
+      "right": "She got chosen for the team.",
+      "why": "Get-passive cần phân từ chosen."
+    },
+    {
+      "id": "passive-use-m2",
+      "wrong": "The bike got damage yesterday.",
+      "right": "The bike got damaged yesterday.",
+      "why": "Cần phân từ damaged trong mẫu này."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có nên tránh mọi bị động không?",
+      "a": "Không. Chọn theo trọng tâm và điều người đọc cần biết."
+    },
+    {
+      "q": "Get-passive chỉ nói việc xấu không?",
+      "a": "Không. Got promoted và got chosen có thể là sự việc tốt."
+    },
+    {
+      "q": "Got injured có nghĩa tự gây lỗi không?",
+      "a": "Không. Dạng câu không tự xác định trách nhiệm."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "psu-01",
+      "prompt": "Chọn cách mở đầu theo chủ đề đã nêu.",
+      "explain": "Khi đang nói về parcel, bị động giữ parcel ở đầu; không làm câu chủ động sai chung.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "Cần câu bắt đầu bằng The parcel, không biết người giao.",
+      "options": [
+        {
+          "t": "The parcel was delivered at noon.",
+          "ok": true,
+          "note": "Giữ chủ đề và không bịa tác nhân."
+        },
+        {
+          "t": "Someone delivered the parcel at noon.",
+          "ok": false,
+          "note": "Có thể đúng ngữ pháp nhưng không đáp ứng yêu cầu mở đầu.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "The parcel delivered someone at noon.",
+          "ok": false,
+          "note": "Đảo vai nghĩa: bưu kiện không giao người.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "psu-02",
+      "prompt": "Nối câu với thông tin được đặt làm chủ đề.",
+      "explain": "Chủ động/bị động giúp tổ chức thông tin.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "The caretaker cleaned the hall.",
+          "b": "Nêu người thực hiện ở đầu"
+        },
+        {
+          "a": "The hall was cleaned.",
+          "b": "Nêu nơi được làm ở đầu, không tác nhân"
+        },
+        {
+          "a": "The hall was cleaned by a new contractor.",
+          "b": "Nêu nơi ở đầu, thêm tác nhân mới"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "psu-03",
+      "prompt": "Phân loại get theo câu.",
+      "explain": "Get + phân từ có thể bị động; get + tính từ không tự là bị động.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Get-passive",
+        "Get + tính từ"
+      ],
+      "items": [
+        {
+          "t": "She got promoted last week.",
+          "cat": "Get-passive"
+        },
+        {
+          "t": "The parcel got damaged in transit.",
+          "cat": "Get-passive"
+        },
+        {
+          "t": "The weather got cold.",
+          "cat": "Get + tính từ"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "psu-04",
+      "prompt": "Điền dạng quá khứ của get và phân từ của promote.",
+      "explain": "Got là quá khứ; promoted là phân từ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "He {1} (get) injured yesterday. She got {2} (promote) last month.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "got"
+          ]
+        },
+        "2": {
+          "accept": [
+            "promoted"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "psu-05",
+      "prompt": "Sửa phân từ sau got trong bị động.",
+      "explain": "Chosen là phân từ của choose.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "She got"
+        },
+        {
+          "t": "chose",
+          "bad": true,
+          "fix": [
+            "chosen"
+          ],
+          "note": "Choose có phân từ chosen.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "for the team."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "psu-06",
+      "prompt": "Sắp xếp bắt đầu bằng The package; để in transit cuối.",
+      "explain": "Got damaged kể sự thay đổi/tác động trong lời nói thông thường.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "The package",
+        "got",
+        "damaged",
+        "in transit"
+      ],
+      "accept": [
+        [
+          "The package",
+          "got",
+          "damaged",
+          "in transit"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "psu-07",
+      "prompt": "Đổi cách tổ chức thông tin.",
+      "explain": "Bỏ tác nhân không cần thiết, giữ hall làm chủ đề.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "Someone cleaned the hall yesterday.",
+      "instruction": "Bắt đầu The hall, dùng be-passive quá khứ; không nêu by.",
+      "accept": [
+        "The hall was cleaned yesterday"
+      ],
+      "model": "The hall was cleaned yesterday",
+      "level": "B1"
+    },
+    {
+      "id": "psu-08",
+      "prompt": "Viết hai thông báo với trọng tâm khác nhau.",
+      "explain": "Tự đánh giá văn phong; không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết một thông báo công việc bằng be-passive không tác nhân. Viết một tin nhắn về sự việc bằng get-passive. Giải thích vì sao không nêu tác nhân hoặc vì sao chọn lối nói đó.",
+      "model": [
+        "The entrance will be repaired tomorrow. My bike got damaged yesterday."
+      ],
+      "checklist": [
+        "Không bịa người làm.",
+        "Get-passive phù hợp lối nói và nghĩa sự việc.",
+        "Không đổ lỗi cho người chịu tác động chỉ vì dùng got."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "psu-09",
+      "prompt": "Điền phân từ của choose và quá khứ của get.",
+      "explain": "Chosen theo got; got theo mốc yesterday.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "She got {1} (choose) for the team. The package {2} (get) damaged yesterday.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "chosen"
+          ]
+        },
+        "2": {
+          "accept": [
+            "got"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "psu-10",
+      "prompt": "Viết lại với get-passive theo yêu cầu.",
+      "explain": "Đổi be sang get có thể đổi sắc thái/văn phong; vẫn giữ sự việc thăng chức.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "She was promoted last week.",
+      "instruction": "Dùng quá khứ đơn của get thay was; giữ phần còn lại.",
+      "accept": [
+        "She got promoted last week"
+      ],
+      "model": "She got promoted last week",
+      "level": "B1"
+    },
+    {
+      "id": "psu-11",
+      "prompt": "Chọn tất cả get-passive chuẩn.",
+      "explain": "Get-passive có thể kể việc tốt hoặc bất lợi, không chỉ tai nạn.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "She got promoted.",
+          "ok": true,
+          "note": "Sự việc có thể tốt."
+        },
+        {
+          "t": "The bike got damaged.",
+          "ok": true,
+          "note": "Sự việc bất lợi."
+        },
+        {
+          "t": "She got promote.",
+          "ok": false,
+          "note": "Cần promoted.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "The bike got damage yesterday.",
+          "ok": false,
+          "note": "Cần damaged cho mẫu bị động này.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "psu-12",
+      "prompt": "Chọn nhận xét đúng về trách nhiệm.",
+      "explain": "Get-passive không tự chứng minh lỗi người chịu tác động.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "He got injured at work.",
+      "options": [
+        {
+          "t": "Câu nói anh ấy bị thương; chưa đủ kết luận lỗi của ai.",
+          "ok": true,
+          "note": "Không gán trách nhiệm từ dạng câu."
+        },
+        {
+          "t": "Ngữ pháp chứng minh anh ấy cố ý tự làm bị thương.",
+          "ok": false,
+          "note": "Không suy ra điều đó.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Get-passive chỉ được dùng cho kết quả tốt.",
+          "ok": false,
+          "note": "Có thể nói việc bất lợi.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

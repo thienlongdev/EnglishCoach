@@ -1,0 +1,2224 @@
+{
+  "manifest" : {
+    "schemaVersion" : "1.0",
+    "packageId" : "EC_ORIGINAL_IELTS_READING_20261006",
+    "packageVersion" : 1,
+    "contentHash" : "462a8e97cf1773aab1c24dd1cc96551031128b9f9c147c46421d9cdecab684bf",
+    "creator" : "ENGLISHCOACH_ORIGINAL_RECOVERY",
+    "specificationBaselineId" : "EC-EXAM-SPEC-2026-09-10",
+    "authoringStatus" : "DRAFT",
+    "createdAt" : "2026-10-06T00:00:00Z",
+    "metadata" : {
+      "provenanceLabel" : "EnglishCoach Original IELTS Practice",
+      "ownerAuthorizedOriginalPractice" : "2026-10-06",
+      "humanReviewComplete" : false,
+      "officialIELTS" : false,
+      "publisherEndorsement" : false
+    }
+  },
+  "sources" : [ {
+    "id" : "fc3bc014-5669-5447-9538-ddd6989410ce",
+    "code" : "EC_ORIGINAL_IELTS_READING_20261006_SOURCE",
+    "name" : "EnglishCoach Original IELTS Practice",
+    "owner" : "English Coach",
+    "publisher" : "English Coach",
+    "sourceType" : "INTERNAL_ORIGINAL",
+    "referenceMeta" : {
+      "declaration" : "Original practice; no publisher content or endorsement."
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "licenses" : [ {
+    "id" : "861717cd-1b45-5680-b434-695c1a5dc65e",
+    "sourceId" : "fc3bc014-5669-5447-9538-ddd6989410ce",
+    "licenseCode" : "EC_ORIGINAL_IELTS_READING_20261006_ORIGINAL_PENDING",
+    "provenanceCategory" : "ORIGINAL",
+    "commercialRights" : true,
+    "redistributionRights" : true,
+    "derivativeRights" : true,
+    "permittedPurposes" : {
+      "EXAM" : true,
+      "SIMULATION" : true,
+      "PRACTICE" : true,
+      "CONTENT" : true,
+      "REDISTRIBUTION" : true
+    },
+    "permittedTerritories" : {
+      "GLOBAL" : true
+    },
+    "validFrom" : "2026-09-10T00:00:00Z",
+    "validUntil" : null,
+    "attribution" : "EnglishCoach Original IELTS Practice; human review pending",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  } ],
+  "provenances" : [ {
+    "id" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "sourceId" : "fc3bc014-5669-5447-9538-ddd6989410ce",
+    "licenseId" : "861717cd-1b45-5680-b434-695c1a5dc65e",
+    "creator" : "ENGLISHCOACH_ORIGINAL_RECOVERY",
+    "acquisitionMethod" : "ORIGINAL_GENERATION",
+    "originalReference" : "EC_ORIGINAL_IELTS_READING_20261006",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : {
+      "generatedAt" : "2026-10-06",
+      "humanReviewComplete" : false
+    },
+    "createdAt" : null
+  } ],
+  "catalogNodes" : [ {
+    "id" : "2c425010-a41b-5252-accd-c0b3592c8803",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "sourceId" : "fc3bc014-5669-5447-9538-ddd6989410ce",
+    "parentId" : null,
+    "kind" : "COLLECTION",
+    "title" : "EnglishCoach Original IELTS Practice",
+    "year" : 2026,
+    "ordinal" : 1,
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "specifications" : [ {
+    "id" : "822568dd-2e08-5897-86aa-57e9d22f052d",
+    "logicalCode" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACADEMIC_READING_SPEC",
+    "version" : 2,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "deliveryMode" : "COMPUTER_SIMULATION",
+    "blueprint" : {
+      "sectionCount" : 1,
+      "itemCount" : 40,
+      "targetItemCount" : 40,
+      "incomplete" : false,
+      "deliveryMode" : "COMPUTER_SIMULATION"
+    },
+    "timingPolicy" : {
+      "readingSeconds" : 3600,
+      "questionCount" : 40,
+      "draftItems" : 40
+    },
+    "navigationPolicy" : {
+      "sectionNavigation" : "free_within_section"
+    },
+    "playbackPolicy" : {
+      "mode" : "NONE"
+    },
+    "sourceReferences" : {
+      "baseline" : "EC-EXAM-SPEC-2026-09-10"
+    },
+    "contentHash" : "f2b057d909604fe64d911bfcd0927e19f8695d65fc9ee49d93d0c9efcd098200",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "rubrics" : [ ],
+  "calibrations" : [ ],
+  "scoringSchemes" : [ {
+    "id" : "6a6a8560-bd35-56fe-85ed-dd3b8d23c35a",
+    "logicalCode" : "EC_ORIGINAL_IELTS_READING_20261006_a3c9f854e52d",
+    "version" : 2,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "READING",
+    "normalizationVersion" : "EC-NORM-V1",
+    "rubricReferences" : { },
+    "calibrationId" : null,
+    "mappingTable" : {
+      "metrics" : [ "READING" ],
+      "rawItemCount" : 40,
+      "targetItemCount" : 40,
+      "status" : "DRAFT_NOT_CALIBRATED",
+      "scoreLabel" : "English Coach estimated band"
+    },
+    "aggregationRules" : {
+      "creditUnitsPerItem" : 1,
+      "officialEquating" : false,
+      "version" : "EC-AGGREGATION-DRAFT-V1"
+    },
+    "contentHash" : "79d786ef7adf71f3028852c9cea08fd9e7a5a48a62c04d2cc3263794cefd9b24",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "form" : {
+    "id" : "42c8aa02-dad6-577b-a870-14ec407dc51a",
+    "logicalKey" : "EC_ORIGINAL_IELTS_READING_20261006",
+    "version" : 1,
+    "title" : "EnglishCoach Original IELTS Reading Practice",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "READING",
+    "catalogNodeId" : "2c425010-a41b-5252-accd-c0b3592c8803",
+    "specificationId" : "822568dd-2e08-5897-86aa-57e9d22f052d",
+    "scoringSchemeId" : "6a6a8560-bd35-56fe-85ed-dd3b8d23c35a",
+    "lifecycleState" : "DRAFT",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "authorId" : null,
+    "contentHash" : "131ea9eb386be065cbb26d97a196d6f603786e2113164cd101a5bdf8b447e3da",
+    "publishedAt" : null,
+    "retiredAt" : null,
+    "createdAt" : null,
+    "primaryHealthStatus" : null
+  },
+  "formComponents" : [ ],
+  "sections" : [ {
+    "id" : "36194304-a002-5733-a486-cb9c37f8544f",
+    "formId" : "42c8aa02-dad6-577b-a870-14ec407dc51a",
+    "skill" : "READING",
+    "ordinal" : 1,
+    "specSectionKey" : "READING",
+    "scoringSchemeId" : "6a6a8560-bd35-56fe-85ed-dd3b8d23c35a",
+    "durationSeconds" : 3600,
+    "timingPolicy" : {
+      "sectionCount" : 3,
+      "targetItemCount" : 40,
+      "draftItemCount" : 40
+    },
+    "isRunnable" : true,
+    "healthStatus" : "HEALTHY"
+  } ],
+  "parts" : [ {
+    "id" : "4e8c0f93-61c4-5cdd-b02f-d4761f65273b",
+    "sectionId" : "36194304-a002-5733-a486-cb9c37f8544f",
+    "partCode" : "READING_PASSAGE_1",
+    "ordinal" : 1,
+    "instructions" : "Read the original passage and answer the draft questions. This pilot slice is incomplete.",
+    "timingPolicy" : {
+      "durationSeconds" : 3600
+    }
+  }, {
+    "id" : "571487f2-720f-5c3c-b782-601b96b0fb47",
+    "sectionId" : "36194304-a002-5733-a486-cb9c37f8544f",
+    "partCode" : "READING_PASSAGE_2",
+    "ordinal" : 2,
+    "instructions" : "Read the original passage and answer the draft questions. This pilot slice is incomplete.",
+    "timingPolicy" : {
+      "durationSeconds" : 3600
+    }
+  }, {
+    "id" : "cff9d3bf-8596-55c3-89bf-61a96fea3aa3",
+    "sectionId" : "36194304-a002-5733-a486-cb9c37f8544f",
+    "partCode" : "READING_PASSAGE_3",
+    "ordinal" : 3,
+    "instructions" : "Read the original passage and answer the draft questions. This pilot slice is incomplete.",
+    "timingPolicy" : {
+      "durationSeconds" : 3600
+    }
+  } ],
+  "groups" : [ {
+    "id" : "2bd3730d-7e02-547a-aa95-497f1f6f19d0",
+    "logicalGroupKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P1_G01",
+    "version" : 1,
+    "questionType" : "ACADEMIC_READING_TEXT",
+    "construct" : "reading_comprehension",
+    "skill" : "READING",
+    "topic" : "repair and civic design",
+    "difficultyEstimate" : 0.58,
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "e68a058ea074d75c35d9bee00a20aeb0f1d3c01325cde02a32f6933453fa71b5",
+    "createdAt" : null
+  }, {
+    "id" : "22a7b4c8-1068-561b-bdfd-165f37b13701",
+    "logicalGroupKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P2_G01",
+    "version" : 1,
+    "questionType" : "ACADEMIC_READING_TEXT",
+    "construct" : "reading_comprehension",
+    "skill" : "READING",
+    "topic" : "biomimetic architecture and passive ventilation",
+    "difficultyEstimate" : 0.65,
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "b71e49dc95427e912a33abbec82ce6ee36f0a84d91815f5f7fddc8e62ff8d5dd",
+    "createdAt" : null
+  }, {
+    "id" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "logicalGroupKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P3_G01",
+    "version" : 1,
+    "questionType" : "ACADEMIC_READING_TEXT",
+    "construct" : "reading_comprehension",
+    "skill" : "READING",
+    "topic" : "archaeology of non-instrument navigation in Oceania",
+    "difficultyEstimate" : 0.75,
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "e3950374e9f3dcb27f6a423fc7e88b0c00f4a8f8a0170e245a6a99e84086ed37",
+    "createdAt" : null
+  } ],
+  "formGroups" : [ {
+    "id" : "758860c3-cb03-5270-a6e2-cb238969359e",
+    "partId" : "4e8c0f93-61c4-5cdd-b02f-d4761f65273b",
+    "groupId" : "2bd3730d-7e02-547a-aa95-497f1f6f19d0",
+    "ordinal" : 1,
+    "displayNumbering" : "1-13"
+  }, {
+    "id" : "4d4ed781-2045-5e8d-ae9f-e90ba1b877f7",
+    "partId" : "571487f2-720f-5c3c-b782-601b96b0fb47",
+    "groupId" : "22a7b4c8-1068-561b-bdfd-165f37b13701",
+    "ordinal" : 1,
+    "displayNumbering" : "14-26"
+  }, {
+    "id" : "cac81ca0-139c-5adc-a4ea-08652167bee1",
+    "partId" : "cff9d3bf-8596-55c3-89bf-61a96fea3aa3",
+    "groupId" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "ordinal" : 1,
+    "displayNumbering" : "27-40"
+  } ],
+  "stimuli" : [ {
+    "id" : "471c323b-a2e6-56be-941a-9ecb45804eb6",
+    "logicalStimulusKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P1_STIM",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : "Repair Cafes and the Circular City",
+    "bodyPayload" : {
+      "passageId" : "ACAD_R_P1",
+      "title" : "Repair Cafes and the Circular City",
+      "paragraphs" : [ {
+        "id" : "A",
+        "text" : "In many cities, a broken kettle now has two possible destinations: a recycling bin or a repair cafe. These volunteer-run workshops keep objects in use, but they also create a place where a resident can sit beside a person with practical knowledge and learn why a switch fails, how a seam can be strengthened, or when a replacement is safer than a repair. The first groups were often informal, organised by people who wanted to share tools. As city governments began measuring waste, some councils started lending rooms or small grants, but the workshops kept their community identity."
+      }, {
+        "id" : "B",
+        "text" : "The movement changed when organisers began recording what arrived at the door. A logbook showed that many visitors were not seeking a free service; they wanted confidence before buying a new object. One organiser called this a shift from a hobby to a civic experiment. The records also exposed a practical limit: a repair that saved a product from disposal was not automatically the cheapest choice for the resident. Volunteers therefore began explaining price, safety, expected lifespan, and the availability of parts rather than treating repair as a moral instruction."
+      }, {
+        "id" : "C",
+        "text" : "The most successful workshops divide their work into two linked spaces. In the first, visitors describe a fault and receive a short diagnosis. In the second, they decide whether to borrow a tool, order a part, or stop because the risk is too high. This arrangement protects the workshop from becoming an unplanned repair shop while still making technical knowledge visible. A visitor who leaves without a fixed toaster may nevertheless leave with a clear description of the failure and a list of questions for a professional technician."
+      }, {
+        "id" : "D",
+        "text" : "Researchers have tried to measure the effect of these spaces, but counting repaired objects is not enough. A team in the coastal city of Marlow weighed discarded appliances for six months and compared the results with energy use in the workshop. The study found that the electricity used for lighting and small machines was easy to record, whereas the environmental benefit of a longer product life was harder to assign. The team consequently reported ranges rather than a single saving figure and asked future studies to track products beyond the workshop."
+      }, {
+        "id" : "E",
+        "text" : "Another study followed visitors rather than objects. It found that people who attended a second session were more likely to attempt a simple maintenance task at home, such as cleaning a filter or tightening a hinge. The researchers warned against calling this proof of a city-wide behaviour change: the sample consisted of volunteers already interested in practical skills. Nevertheless, the finding suggested that repeated contact could matter more than a single successful repair."
+      }, {
+        "id" : "F",
+        "text" : "Policy makers now face a choice about what to support. A city can fund more opening hours, train volunteer mentors, or build a library of spare parts. Each option solves a different bottleneck. Longer hours help residents with inflexible schedules; mentors help beginners; a parts library reduces the delay between diagnosis and action. The strongest programmes do not choose one measure blindly. They use repair logs, safety reports, and visitor feedback to decide which constraint is most limiting in a particular neighbourhood."
+      } ],
+      "wordCountEstimate" : 640
+    },
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "1851af2f1578f7e1eb9413cb6878938c90a91165c6864cb579df7ec9afd7bc81",
+    "createdAt" : null
+  }, {
+    "id" : "b91bf168-578b-59b3-987b-c5c4fc77b25e",
+    "logicalStimulusKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P2_STIM",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : "Biomimetic Architecture: Termite Mounds and Natural Climate Control",
+    "bodyPayload" : {
+      "passageId" : "ACAD_R_P2",
+      "title" : "Biomimetic Architecture: Termite Mounds and Natural Climate Control",
+      "paragraphs" : [ {
+        "id" : "A",
+        "text" : "In the modern built environment, heating, ventilation, and air conditioning (HVAC) systems account for roughly forty percent of the total energy consumed by commercial buildings. As metropolitan centers expand and global temperatures fluctuate unpredictably, architects and structural engineers are increasingly examining passive environmental control mechanisms. Nature, through millions of years of evolutionary refinement, has produced organisms that regulate their microclimates with extraordinary energetic efficiency. Among the most celebrated natural architects is the mound-building termite, particularly species such as Macrotermes bellicosus found in the arid savannas of sub-Saharan Africa. The intricate structures erected by these social insects maintain stable interior conditions despite external ambient temperature variations exceeding thirty degrees Celsius within a single diurnal cycle."
+      }, {
+        "id" : "B",
+        "text" : "For decades, entomologists and biological theorists attributed the thermal equilibrium of termite mounds to what became known as the 'convective cooling hypothesis' or the 'solar chimney effect.' Under this model, heat produced by the metabolic activity of millions of termites, combined with the decomposition of the subterranean fungus gardens that supply their nutrition, warms the air in the central nest core. Because warm air is less dense than cool air, it ascends through a substantial vertical central chimney and vents through porous flues at the pinnacle of the mound. This continuous upward draft was believed to draw cooler, fresh air into the lower subterranean galleries through low-level vents, thereby generating an autonomous, self-perpetuating ventilation loop without any mechanical intervention."
+      }, {
+        "id" : "C",
+        "text" : "However, recent investigations employing high-resolution computational fluid dynamics (CFD) and non-invasive tracer gas analysis, led by biophysicist Dr. J. Scott Turner and his collaborators, have substantially revised this classical doctrine. Turner discovered that internal air velocities within the primary nest galleries were far too modest to support continuous buoyancy-driven displacement. Instead, wind-induced atmospheric turbulence and external pressure fluctuations play a decisive role. External breezes blowing across the uneven flues on the exterior walls generate turbulent eddies that induce bidirectional, oscillatory airflow—a process broadly analogous to the tidal breathing of mammalian lungs. The mound functions not as a steady solar chimney, but rather as an acoustic and aerodynamic filter, dynamically damping external temperature swings while rhythmically expelling accumulated carbon dioxide."
+      }, {
+        "id" : "D",
+        "text" : "The conceptual principles of termite architecture were famously translated into modern civil engineering by Zimbabwean architect Mick Pearce in his design of the Eastgate Centre in Harare. Completed in the mid-1990s, this large office and shopping complex operates without conventional refrigeration-based chillers or air conditioning plants. Pearce capitalized on the high thermal mass of local masonry, utilizing dense concrete slabs and exposed brick facades that absorb radiant solar heat throughout the day, preventing rapid interior warming. During the chilly nighttime hours, low-powered mechanical fans draw cool ambient air through hollow floors and vertical service ducts, purging the heat stored in the masonry. By morning, the structural fabric has cooled significantly, ready to absorb another day's thermal influx. Operational data demonstrate that the Eastgate Centre consumes approximately thirty-five percent less energy than comparable conventional buildings in Harare, saving millions of dollars in maintenance and utility expenses."
+      }, {
+        "id" : "E",
+        "text" : "Beyond temperature stabilization, biological research highlights the sophisticated moisture-buffering capacities inherent in earthen construction. Termite nest walls, constructed from chewed soil particles, saliva, and organic waste, exhibit high hygroscopic porosity. When external ambient air humidity rises during sudden tropical deluges, the mineral walls rapidly absorb excess vapor; during dry seasonal droughts, water molecules desorb back into the circulating air, sustaining the narrow sixty-to-eighty percent relative humidity interval essential for the cultivation of their symbiotic fungal crop. Modern green architects are adapting this phenomenon through the deployment of unfired clay plasters, hemp-lime composites, and cellulose insulation, which naturally stabilize indoor air moisture and substantially reduce the burden on mechanical dehumidifiers."
+      }, {
+        "id" : "F",
+        "text" : "Notwithstanding these biological advantages, the wholesale adoption of biomimetic passive design in dense urban environments faces tangible engineering constraints. First, urban street canyons frequently lack the consistent, unpolluted horizontal wind vectors necessary to induce tidal air oscillation across building envelopes. Particulate matter, vehicular exhaust, and atmospheric smog can rapidly foul porous ventilation ducts and compromise indoor air quality. Furthermore, large open ventilation shafts designed for natural airflow can inadvertently transmit acoustic interference and vehicular traffic noise directly into working office environments. Consequently, contemporary architectural specialists emphasize hybrid models: buildings that utilize passive biomimetic thermal storage and natural airflow as primary mechanisms, while retaining compact, automated mechanical ventilation backups to navigate severe weather anomalies and periods of urban pollution."
+      } ]
+    },
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "18695d7e23a0b38dab4fcb87ad40cc490b9f7fa4b1ff9134557b17dd41f404c3",
+    "createdAt" : null
+  }, {
+    "id" : "c6ba3dd9-73c6-5a3f-b9ba-cc5f3d16d391",
+    "logicalStimulusKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P3_STIM",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : "The Archaeology of Navigation: Reconstructing the Seafaring Expansion into Remote Oceania",
+    "bodyPayload" : {
+      "passageId" : "ACAD_R_P3",
+      "title" : "The Archaeology of Navigation: Reconstructing the Seafaring Expansion into Remote Oceania",
+      "paragraphs" : [ {
+        "id" : "A",
+        "text" : "The colonisation of Remote Oceania represents one of the most astonishing maritime feats in human history. Between approximately 1300 and 900 BCE, seafaring populations associated with the distinctive Lapita ceramic tradition rapidly crossed the open ocean from the Bismarck Archipelago to the islands of Samoa and Tonga. Following an enigmatic hiatus of nearly two millennia, their Polynesian descendants embarked on another explosive voyaging expansion across thousands of miles of open sea, reaching the remote corners of the Polynesian Triangle—Hawaii, Easter Island (Rapa Nui), and New Zealand (Aotearoa)—by 1250 CE. For over a century, western scholars debated how stone-age navigators in double-hulled canoes could have reached tiny, isolated islands across millions of square kilometers of open water without compasses, sextants, or chronometers. The historian Andrew Sharp famously argued in the 1950s that the settlement was largely accidental, resulting from haphazard drift voyages in storms. Today, however, converging archaeological, genetic, and ethnographic evidence has thoroughly overturned Sharp's hypothesis, demonstrating that Oceanic navigation was systematic, deliberate, and scientifically sophisticated."
+      }, {
+        "id" : "B",
+        "text" : "At the core of non-instrument Polynesian voyaging was an intricate mental compass based on sidereal astronomy. Unlike modern cartography, which fixes locations upon an abstract coordinate grid of latitude and longitude, traditional navigators organized the dome of the night sky into discrete directional houses. Navigators committed to memory the rising and setting azimuths of over two hundred specific stars and constellations as they crossed the horizon. Because stars rise and set at constant points along the horizon throughout the year, an experienced navigator could align the canoe's bows with a specific rising star to maintain an unswerving bearing across hundreds of leagues. By observing zenith stars—celestial bodies whose paths pass directly overhead at specific latitudes—wayfinders could also ascertain when they had reached the exact latitude of their target archipelago before altering course east or west."
+      }, {
+        "id" : "C",
+        "text" : "However, celestial observation was frequently obscured by overcast skies, squalls, or prolonged daytime passages. Under such conditions, wayfinders relied on an extraordinary sensitivity to ocean swells. Unlike surface wind waves, which shift rapidly according to local breezes, deep-ocean swells are generated by distant, massive weather systems thousands of kilometers away and maintain a remarkably uniform direction for days. A master navigator, lying in the hull of a canoe, could distinguish as many as five distinct swell patterns simultaneously through bodily tactile perception. More impressively, navigators learned to read the subtle interference patterns caused by submerged shoals or invisible islands. When deep ocean swells strike an island, they bend, reflect, and refract around the landmass, creating distinctive intersecting ripples. Navigators recognized these reflected waves up to fifty kilometers before the land itself was visible."
+      }, {
+        "id" : "D",
+        "text" : "As canoes drew closer to landfall, navigators deployed a broad repertoire of biological and ecological signposts to pinpoint elusive atolls. Foremost among these was the observation of pelagic seabirds, notably terns, noddies, and boobies. While these birds forage for fish far out at sea during daylight, they do not sleep on the water and must return to roost on coastal trees every evening. By observing the heading of these flocks at sunrise and sunset, navigators could reliably deduce the bearing of land. Other localized phenomena included stationary clouds anchored above island landmasses, distinctive bioluminescent flashes in the sea, floating terrestrial debris such as mangrove seeds, and even the greenish tint on the underside of cumulus clouds caused by the reflection of sunlight off shallow lagoon waters."
+      }, {
+        "id" : "E",
+        "text" : "The scientific plausibility of these traditional techniques was dramatically tested in 1976 by the Polynesian Voyaging Society. The expedition constructed the Hōkūleʻa, a full-scale sixty-foot double-hulled voyaging canoe built using traditional Polynesian proportions and materials. Mau Piailug, a master navigator from the Micronesian atoll of Satawal and one of the last living custodians of non-instrument star navigation, agreed to guide the canoe across 4,400 kilometers of open ocean from Hawaii to Tahiti. Relying strictly on stars, ocean swells, and bird flight paths without any modern navigational instruments, Piailug brought Hōkūleʻa to landfall in Tahiti thirty-four days later, precisely on course. The voyage galvanized indigenous cultural pride across the Pacific and definitively dismantled western academic assumptions regarding the accidental nature of Polynesian settlement."
+      }, {
+        "id" : "F",
+        "text" : "In recent decades, geochemical provenance studies have added indisputable material evidence to the voyaging debate. Archaeological excavations on remote atolls in the Tuamotu and Cook Islands have uncovered high-grade basalt adzes used for woodworking and canoe construction. Because low-lying coral atolls are entirely devoid of volcanic rock, these tools had to be imported. Using wavelength-dispersive X-ray fluorescence and mass spectrometry, geochemists analyzed trace element ratios and isotope signatures in the basalt, tracing the rock back to specific geological quarries in Samoa and the Marquesas Islands, more than two thousand kilometers away. Crucially, the presence of distinct tool sequences spanning multiple centuries proves that voyages were not desperate, one-way migrations of castaways, but part of a sustained, bidirectional exchange network that linked archipelagoes across deep ocean space."
+      }, {
+        "id" : "G",
+        "text" : "Ultimately, Oceanic navigation reflects a fundamentally different ontology of space and human mobility. In western navigation, a vessel is conceived as an active, moving coordinate traversing a stationary, two-dimensional map. In contrast, the traditional Micronesian and Polynesian wayfinder operated within a cognitive paradigm known as 'etee'. Within this model, the canoe remains the stable, stationary center of the universe, while the surrounding world—islands, star houses, ocean currents, and wind systems—moves toward and passes beneath the vessel. This dynamic conceptualization required an immense intellectual synthesis of sensory perception, memory, and spatial orientation, establishing Oceanic seafaring not merely as an adventure, but as one of humanity's most sophisticated cognitive achievements."
+      } ]
+    },
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "e9a479833252bbff4486a37cf28c221ee658a75d6daebf48ad27384bc35bcda9",
+    "createdAt" : null
+  } ],
+  "groupStimuli" : [ {
+    "id" : "68b99793-43b5-5a01-9dac-e8295ce4367a",
+    "groupId" : "2bd3730d-7e02-547a-aa95-497f1f6f19d0",
+    "stimulusId" : "471c323b-a2e6-56be-941a-9ecb45804eb6",
+    "role" : "PRIMARY",
+    "ordinal" : 1
+  }, {
+    "id" : "5bf203d1-6db0-509a-84c4-f6345a5f6cf8",
+    "groupId" : "22a7b4c8-1068-561b-bdfd-165f37b13701",
+    "stimulusId" : "b91bf168-578b-59b3-987b-c5c4fc77b25e",
+    "role" : "PRIMARY_PASSAGE",
+    "ordinal" : 1
+  }, {
+    "id" : "f1c5eda0-9430-563e-9522-c65ecb9ae154",
+    "groupId" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "stimulusId" : "c6ba3dd9-73c6-5a3f-b9ba-cc5f3d16d391",
+    "role" : "PRIMARY_PASSAGE",
+    "ordinal" : 1
+  } ],
+  "items" : [ {
+    "id" : "adbd1f10-9c33-503a-b869-5331e55d07b3",
+    "groupId" : "2bd3730d-7e02-547a-aa95-497f1f6f19d0",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P1_Q01",
+    "version" : 1,
+    "prompt" : "The first repair cafes were generally created as formal government services.",
+    "interactionType" : "truth_classification",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NG",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 1
+    },
+    "construct" : "identifying_information",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "11d71e8feab1c2f0dcad8860df91aca861ebd8a7c448717d5064869ef53b73be",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "023f516a-7c0d-568a-8f92-c19086268210",
+    "groupId" : "2bd3730d-7e02-547a-aa95-497f1f6f19d0",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P1_Q02",
+    "version" : 1,
+    "prompt" : "Which heading best describes the paragraph about logbooks and visitor motivation?",
+    "interactionType" : "heading_matching",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Measuring electricity in a workshop"
+      }, {
+        "id" : "B",
+        "text" : "From hobby to civic experiment"
+      }, {
+        "id" : "C",
+        "text" : "A design that prevents all failures"
+      } ],
+      "questionNumber" : 2
+    },
+    "construct" : "main_idea",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "24d357eea799ebd45e7260a924fb358ae88622a888dbc287dab60eaea5555fb5",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "e23d81fb-e70f-5313-9c15-b0fe29f6bb82",
+    "groupId" : "2bd3730d-7e02-547a-aa95-497f1f6f19d0",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P1_Q03",
+    "version" : 1,
+    "prompt" : "Why did some visitors return to a repair cafe?",
+    "interactionType" : "single_choice",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "They wanted confidence before buying a new object"
+      }, {
+        "id" : "B",
+        "text" : "They were required to attend by a council"
+      }, {
+        "id" : "C",
+        "text" : "They needed to weigh discarded appliances"
+      } ],
+      "questionNumber" : 3
+    },
+    "construct" : "author_purpose",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "897a6fdd0e4b4c7782ee25251bb45a1746a03a00a1e4cbb66d3394b91f1d3c39",
+    "createdAt" : null,
+    "ordinal" : 3
+  }, {
+    "id" : "4469ee10-dd38-5b91-9fc0-20609e7290c4",
+    "groupId" : "2bd3730d-7e02-547a-aa95-497f1f6f19d0",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P1_Q04",
+    "version" : 1,
+    "prompt" : "Complete: Volunteers began explaining price, safety, expected lifespan, and the availability of _____.",
+    "interactionType" : "text_gap",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 4
+    },
+    "construct" : "detail",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "45eff20bd31cf316e23cdf32eca523946b89b7dcdcfe40fa98d1b8579d89b425",
+    "createdAt" : null,
+    "ordinal" : 4
+  }, {
+    "id" : "175ebd95-e5fd-5764-bc29-46a351ed4f85",
+    "groupId" : "2bd3730d-7e02-547a-aa95-497f1f6f19d0",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P1_Q05",
+    "version" : 1,
+    "prompt" : "The workshop's second space is used only for professional technicians.",
+    "interactionType" : "truth_classification",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NG",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 5
+    },
+    "construct" : "identifying_information",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "16bdf217b38f6b663117a3a3b946b6a0d0dcd048e037f40a8e1460944c9850bc",
+    "createdAt" : null,
+    "ordinal" : 5
+  }, {
+    "id" : "d67639e3-49f9-53ad-bb68-92755790dead",
+    "groupId" : "2bd3730d-7e02-547a-aa95-497f1f6f19d0",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P1_Q06",
+    "version" : 1,
+    "prompt" : "Which paragraph mentions a study that measured both workshop energy and discarded appliances?",
+    "interactionType" : "matching",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "A"
+      }, {
+        "id" : "B",
+        "text" : "B"
+      }, {
+        "id" : "C",
+        "text" : "C"
+      }, {
+        "id" : "D",
+        "text" : "D"
+      }, {
+        "id" : "E",
+        "text" : "E"
+      }, {
+        "id" : "F",
+        "text" : "F"
+      } ],
+      "questionNumber" : 6
+    },
+    "construct" : "locating_information",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "567a0047badb950d8ca223a76a6331b77f9b79a48ccbb580e25d2ab79bbfe244",
+    "createdAt" : null,
+    "ordinal" : 6
+  }, {
+    "id" : "a690d2a4-e645-5370-ba14-894d2f275d73",
+    "groupId" : "2bd3730d-7e02-547a-aa95-497f1f6f19d0",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P1_Q07",
+    "version" : 1,
+    "prompt" : "Name TWO examples of simple maintenance tasks visitors later attempted at home.",
+    "interactionType" : "short_answer",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 7
+    },
+    "construct" : "detail_retrieval",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "0861caf35d4381012406d97d03adf05e5fbd7ae04358f0e5f11cbcc477c6984c",
+    "createdAt" : null,
+    "ordinal" : 7
+  }, {
+    "id" : "77d56c1a-1692-5d4f-a6b0-794727175935",
+    "groupId" : "2bd3730d-7e02-547a-aa95-497f1f6f19d0",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P1_Q08",
+    "version" : 1,
+    "prompt" : "What limitation did the researchers identify in the study of repeat visitors?",
+    "interactionType" : "single_choice",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "The sample consisted of volunteers already interested in practical skills"
+      }, {
+        "id" : "B",
+        "text" : "No visitor attended a second session"
+      }, {
+        "id" : "C",
+        "text" : "The workshop used no repair logs"
+      } ],
+      "questionNumber" : 8
+    },
+    "construct" : "critical_reading",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "6357685c7403081408f05dc596b9640a89b45bc36d877cebbfa34d49a74fd78d",
+    "createdAt" : null,
+    "ordinal" : 8
+  }, {
+    "id" : "a29e6c50-1117-569b-bafe-9f751b15deef",
+    "groupId" : "2bd3730d-7e02-547a-aa95-497f1f6f19d0",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P1_Q09",
+    "version" : 1,
+    "prompt" : "Complete the summary: The two-space design allows visitors to receive a short _____ before deciding what to do.",
+    "interactionType" : "text_gap",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 9
+    },
+    "construct" : "paraphrase",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "8103a35402bbd56d482d3bf08f2b8b438020a8d5d0e681ea91f96e40184df4ef",
+    "createdAt" : null,
+    "ordinal" : 9
+  }, {
+    "id" : "e6824301-3385-564c-ab50-e9709e5850bc",
+    "groupId" : "2bd3730d-7e02-547a-aa95-497f1f6f19d0",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P1_Q10",
+    "version" : 1,
+    "prompt" : "The Marlow study reported one exact environmental saving figure.",
+    "interactionType" : "truth_classification",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "YES",
+        "text" : "YES"
+      }, {
+        "id" : "NO",
+        "text" : "NO"
+      }, {
+        "id" : "NG",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 10
+    },
+    "construct" : "writer_claim",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "d1fb2a8a36f37af0a79c085b67d09f05b874cc0a9866ac75fa359f669f3f2e4d",
+    "createdAt" : null,
+    "ordinal" : 10
+  }, {
+    "id" : "eba61362-1b6c-5c50-a7fd-e27298f1a3eb",
+    "groupId" : "2bd3730d-7e02-547a-aa95-497f1f6f19d0",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P1_Q11",
+    "version" : 1,
+    "prompt" : "Which policy option is intended to reduce the delay between diagnosis and action?",
+    "interactionType" : "single_choice",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "longer opening hours"
+      }, {
+        "id" : "B",
+        "text" : "volunteer mentors"
+      }, {
+        "id" : "C",
+        "text" : "a library of spare parts"
+      } ],
+      "questionNumber" : 11
+    },
+    "construct" : "matching_function",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "35b2d5fd775bd143023244d841fab63d6472e451f289a6195eaea3a702771577",
+    "createdAt" : null,
+    "ordinal" : 11
+  }, {
+    "id" : "945527f1-de48-5ec1-ab14-8f834333476f",
+    "groupId" : "2bd3730d-7e02-547a-aa95-497f1f6f19d0",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P1_Q12",
+    "version" : 1,
+    "prompt" : "How long did the Marlow team weigh discarded appliances?",
+    "interactionType" : "short_answer",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 12
+    },
+    "construct" : "number_detail",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "3b6928a7c4fbcf7d54c28efd26037da8739d7db643f3e677a24d6e9af15b8203",
+    "createdAt" : null,
+    "ordinal" : 12
+  }, {
+    "id" : "2dd74d5d-0bde-5017-944e-401dbfeb37dd",
+    "groupId" : "2bd3730d-7e02-547a-aa95-497f1f6f19d0",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P1_Q13",
+    "version" : 1,
+    "prompt" : "Which heading best describes the paragraph about opening hours, mentors, and spare parts?",
+    "interactionType" : "heading_matching",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Choosing support by local bottlenecks"
+      }, {
+        "id" : "B",
+        "text" : "A visitor's first diagnosis"
+      }, {
+        "id" : "C",
+        "text" : "Measuring a product's weight"
+      } ],
+      "questionNumber" : 13
+    },
+    "construct" : "main_idea",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "4df7846fb5032d9e1915b7fa57a055101c17277f5ba7e5d32a9a0d33bf18a88a",
+    "createdAt" : null,
+    "ordinal" : 13
+  }, {
+    "id" : "71219b07-5cca-5ad5-abf8-c02b8fb011e0",
+    "groupId" : "22a7b4c8-1068-561b-bdfd-165f37b13701",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P2_Q14",
+    "version" : 1,
+    "prompt" : "Which paragraph mentions the role of atmospheric turbulence in ventilating termite structures?",
+    "interactionType" : "matching",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Paragraph A"
+      }, {
+        "id" : "B",
+        "text" : "Paragraph B"
+      }, {
+        "id" : "C",
+        "text" : "Paragraph C"
+      }, {
+        "id" : "D",
+        "text" : "Paragraph D"
+      }, {
+        "id" : "E",
+        "text" : "Paragraph E"
+      }, {
+        "id" : "F",
+        "text" : "Paragraph F"
+      } ],
+      "questionNumber" : 14
+    },
+    "construct" : "locating_information",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "a3a59f11331d99144498704d72fef242ab102ccf4c2bc0d56b8bcbb745c1440a",
+    "createdAt" : null,
+    "ordinal" : 14
+  }, {
+    "id" : "532b4eb9-4ad4-5888-9fc0-70bf56722854",
+    "groupId" : "22a7b4c8-1068-561b-bdfd-165f37b13701",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P2_Q15",
+    "version" : 1,
+    "prompt" : "Which paragraph mentions an example of a real-world building that incorporates passive thermal mass?",
+    "interactionType" : "matching",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Paragraph A"
+      }, {
+        "id" : "B",
+        "text" : "Paragraph B"
+      }, {
+        "id" : "C",
+        "text" : "Paragraph C"
+      }, {
+        "id" : "D",
+        "text" : "Paragraph D"
+      }, {
+        "id" : "E",
+        "text" : "Paragraph E"
+      }, {
+        "id" : "F",
+        "text" : "Paragraph F"
+      } ],
+      "questionNumber" : 15
+    },
+    "construct" : "locating_information",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "453726bae15ccbc891a8b86dc71f6774367294ec90087ca994087e15dd8461aa",
+    "createdAt" : null,
+    "ordinal" : 15
+  }, {
+    "id" : "71f0fd53-f198-5a79-a39c-30a1680eac87",
+    "groupId" : "22a7b4c8-1068-561b-bdfd-165f37b13701",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P2_Q16",
+    "version" : 1,
+    "prompt" : "Which paragraph mentions external factors that can hinder the performance of naturally ventilated buildings?",
+    "interactionType" : "matching",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Paragraph A"
+      }, {
+        "id" : "B",
+        "text" : "Paragraph B"
+      }, {
+        "id" : "C",
+        "text" : "Paragraph C"
+      }, {
+        "id" : "D",
+        "text" : "Paragraph D"
+      }, {
+        "id" : "E",
+        "text" : "Paragraph E"
+      }, {
+        "id" : "F",
+        "text" : "Paragraph F"
+      } ],
+      "questionNumber" : 16
+    },
+    "construct" : "locating_information",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "a70ec3a33cfadbdc1eaeca8a159e0b1403d5c64f1f3002649836f1e2fa070797",
+    "createdAt" : null,
+    "ordinal" : 16
+  }, {
+    "id" : "1f0f8501-0c7c-5990-b363-2cf40a984755",
+    "groupId" : "22a7b4c8-1068-561b-bdfd-165f37b13701",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P2_Q17",
+    "version" : 1,
+    "prompt" : "Which paragraph describes a comparison between early biological theories and modern aerodynamic models?",
+    "interactionType" : "matching",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Paragraph A"
+      }, {
+        "id" : "B",
+        "text" : "Paragraph B"
+      }, {
+        "id" : "C",
+        "text" : "Paragraph C"
+      }, {
+        "id" : "D",
+        "text" : "Paragraph D"
+      }, {
+        "id" : "E",
+        "text" : "Paragraph E"
+      }, {
+        "id" : "F",
+        "text" : "Paragraph F"
+      } ],
+      "questionNumber" : 17
+    },
+    "construct" : "locating_information",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "403c0e3730c2a22751320cfe677ccaa6e984959f1f7740b33b9645491e29318b",
+    "createdAt" : null,
+    "ordinal" : 17
+  }, {
+    "id" : "16cb495b-6b6d-5329-b85a-ef52b5d19c55",
+    "groupId" : "22a7b4c8-1068-561b-bdfd-165f37b13701",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P2_Q18",
+    "version" : 1,
+    "prompt" : "Complete the sentence using NO MORE THAN TWO WORDS from the passage: Early researchers believed that temperature regulation inside mounds was primarily governed by a _____ effect.",
+    "interactionType" : "text_gap",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 18
+    },
+    "construct" : "sentence_completion",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "ae9f73d0f1249a9361cf77b608eb272cc822d83613d48e014592d762b7722038",
+    "createdAt" : null,
+    "ordinal" : 18
+  }, {
+    "id" : "9c0d236d-a2f8-54f5-bb75-270226a9480a",
+    "groupId" : "22a7b4c8-1068-561b-bdfd-165f37b13701",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P2_Q19",
+    "version" : 1,
+    "prompt" : "Complete the sentence using NO MORE THAN TWO WORDS from the passage: At the Eastgate Centre, night air is channeled through _____ within the floors to cool the structure.",
+    "interactionType" : "text_gap",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 19
+    },
+    "construct" : "sentence_completion",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "91db7256a9d2942decf683a604e391ada5c006331e8e283c9d3b713bde520a5c",
+    "createdAt" : null,
+    "ordinal" : 19
+  }, {
+    "id" : "bafb152d-7476-5c7c-8634-8a3bac3825b2",
+    "groupId" : "22a7b4c8-1068-561b-bdfd-165f37b13701",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P2_Q20",
+    "version" : 1,
+    "prompt" : "Complete the sentence using NO MORE THAN TWO WORDS from the passage: Architects are using _____ materials like unfired clay to mimic the moisture-control properties of termite walls.",
+    "interactionType" : "text_gap",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 20
+    },
+    "construct" : "sentence_completion",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "73f8a95ad7ecf5c24246614c5f2988e5f0aff8ea8de775b29e85397b04d05e8f",
+    "createdAt" : null,
+    "ordinal" : 20
+  }, {
+    "id" : "2af3e234-323d-563f-91a9-9e533ae2fbe7",
+    "groupId" : "22a7b4c8-1068-561b-bdfd-165f37b13701",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P2_Q21",
+    "version" : 1,
+    "prompt" : "Complete the sentence using NO MORE THAN TWO WORDS from the passage: In dense urban environments, natural ventilation ducts can inadvertently introduce unwanted _____ into offices.",
+    "interactionType" : "text_gap",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 21
+    },
+    "construct" : "sentence_completion",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "20d6e3a30089e1d76f61be029c0323942063de701db147544547a03920616d9f",
+    "createdAt" : null,
+    "ordinal" : 21
+  }, {
+    "id" : "8b7c2ddb-ca61-5870-936a-5fe5d98cf6ce",
+    "groupId" : "22a7b4c8-1068-561b-bdfd-165f37b13701",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P2_Q22",
+    "version" : 1,
+    "prompt" : "The Eastgate Centre relies entirely on passive mechanisms without any mechanical ventilation assistance.",
+    "interactionType" : "truth_classification",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NG",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 22
+    },
+    "construct" : "identifying_information",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "4903936e4af11f6d583a37cfe8ba11734f307b5916ce39deb510bff8114fafb3",
+    "createdAt" : null,
+    "ordinal" : 22
+  }, {
+    "id" : "cf869613-5f13-5a00-8dc1-e1cd2e053434",
+    "groupId" : "22a7b4c8-1068-561b-bdfd-165f37b13701",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P2_Q23",
+    "version" : 1,
+    "prompt" : "Turner's computational model confirmed that internal mound temperatures remain completely static throughout the year.",
+    "interactionType" : "truth_classification",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NG",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 23
+    },
+    "construct" : "identifying_information",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "f996ce4019edde85758c526023be356802b1e21662242d6b092d728ac692e0e4",
+    "createdAt" : null,
+    "ordinal" : 23
+  }, {
+    "id" : "08b9061a-abd2-54af-a8a9-4708da5bf72f",
+    "groupId" : "22a7b4c8-1068-561b-bdfd-165f37b13701",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P2_Q24",
+    "version" : 1,
+    "prompt" : "Dense masonry materials are effective in thermal management because they delay the interior impact of solar heat.",
+    "interactionType" : "truth_classification",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NG",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 24
+    },
+    "construct" : "identifying_information",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "9d13b0b95505681a67eff14c25a0493f5c5bf8d44e83c4860e9544ea89a09e4a",
+    "createdAt" : null,
+    "ordinal" : 24
+  }, {
+    "id" : "1daee0a9-74fe-5c62-8099-7b24767f9d9e",
+    "groupId" : "22a7b4c8-1068-561b-bdfd-165f37b13701",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P2_Q25",
+    "version" : 1,
+    "prompt" : "Termite-inspired moisture regulation has proven completely unworkable outside tropical climate zones.",
+    "interactionType" : "truth_classification",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NG",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 25
+    },
+    "construct" : "identifying_information",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "901e3420e65e83ef90a882499b9b9e793522a903db7e9c4167ca4d1633264581",
+    "createdAt" : null,
+    "ordinal" : 25
+  }, {
+    "id" : "edd5a115-dd5a-51a8-ba27-3b09ee13bd03",
+    "groupId" : "22a7b4c8-1068-561b-bdfd-165f37b13701",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P2_Q26",
+    "version" : 1,
+    "prompt" : "Municipal building codes in Harare had to be amended before the Eastgate Centre could be constructed.",
+    "interactionType" : "truth_classification",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NG",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 26
+    },
+    "construct" : "identifying_information",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "9b5718270d404340c88aba90df223dc7e7dd7750b7bdfddbbe6c09ced84c3131",
+    "createdAt" : null,
+    "ordinal" : 26
+  }, {
+    "id" : "c2e38768-cd76-5adc-ad03-a301b2f33a10",
+    "groupId" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P3_Q27",
+    "version" : 1,
+    "prompt" : "Which heading best describes Paragraph B?",
+    "interactionType" : "heading_matching",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "i",
+        "text" : "Physical artifacts revealing bidirectional contact"
+      }, {
+        "id" : "ii",
+        "text" : "Biological and environmental indicators of nearby land"
+      }, {
+        "id" : "iii",
+        "text" : "A distinct conceptual framework of spatial orientation"
+      }, {
+        "id" : "iv",
+        "text" : "Astronomical bearings and nocturnal orientation"
+      }, {
+        "id" : "v",
+        "text" : "Oceanographic wave dynamics and swell detection"
+      }, {
+        "id" : "vi",
+        "text" : "Experimental archaeology vindicating indigenous expertise"
+      }, {
+        "id" : "vii",
+        "text" : "The failure of computer-simulated drift theories"
+      }, {
+        "id" : "viii",
+        "text" : "Political resistance to modern voyaging revivals"
+      } ],
+      "questionNumber" : 27
+    },
+    "construct" : "main_idea",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "9f605fec5d6415581dca10513a6ce051c382a65f03fcdfb74a9bd32cbd2d8f22",
+    "createdAt" : null,
+    "ordinal" : 27
+  }, {
+    "id" : "455eb8ea-ce77-54f1-826f-674b7f55f187",
+    "groupId" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P3_Q28",
+    "version" : 1,
+    "prompt" : "Which heading best describes Paragraph C?",
+    "interactionType" : "heading_matching",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "i",
+        "text" : "Physical artifacts revealing bidirectional contact"
+      }, {
+        "id" : "ii",
+        "text" : "Biological and environmental indicators of nearby land"
+      }, {
+        "id" : "iii",
+        "text" : "A distinct conceptual framework of spatial orientation"
+      }, {
+        "id" : "iv",
+        "text" : "Astronomical bearings and nocturnal orientation"
+      }, {
+        "id" : "v",
+        "text" : "Oceanographic wave dynamics and swell detection"
+      }, {
+        "id" : "vi",
+        "text" : "Experimental archaeology vindicating indigenous expertise"
+      }, {
+        "id" : "vii",
+        "text" : "The failure of computer-simulated drift theories"
+      }, {
+        "id" : "viii",
+        "text" : "Political resistance to modern voyaging revivals"
+      } ],
+      "questionNumber" : 28
+    },
+    "construct" : "main_idea",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "e5555e8387db83a7c4a8b22d77ecbe6782d2ca04d9f86819d1004c57595d54d2",
+    "createdAt" : null,
+    "ordinal" : 28
+  }, {
+    "id" : "caa3417b-9cd8-526e-a6e0-47057680fe80",
+    "groupId" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P3_Q29",
+    "version" : 1,
+    "prompt" : "Which heading best describes Paragraph D?",
+    "interactionType" : "heading_matching",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "i",
+        "text" : "Physical artifacts revealing bidirectional contact"
+      }, {
+        "id" : "ii",
+        "text" : "Biological and environmental indicators of nearby land"
+      }, {
+        "id" : "iii",
+        "text" : "A distinct conceptual framework of spatial orientation"
+      }, {
+        "id" : "iv",
+        "text" : "Astronomical bearings and nocturnal orientation"
+      }, {
+        "id" : "v",
+        "text" : "Oceanographic wave dynamics and swell detection"
+      }, {
+        "id" : "vi",
+        "text" : "Experimental archaeology vindicating indigenous expertise"
+      }, {
+        "id" : "vii",
+        "text" : "The failure of computer-simulated drift theories"
+      }, {
+        "id" : "viii",
+        "text" : "Political resistance to modern voyaging revivals"
+      } ],
+      "questionNumber" : 29
+    },
+    "construct" : "main_idea",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "1083795f727352d567e728106682613abd024489194aabe26c23b6b819d6f6d5",
+    "createdAt" : null,
+    "ordinal" : 29
+  }, {
+    "id" : "a708197c-37bd-5173-9310-ea133ca5047f",
+    "groupId" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P3_Q30",
+    "version" : 1,
+    "prompt" : "Which heading best describes Paragraph E?",
+    "interactionType" : "heading_matching",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "i",
+        "text" : "Physical artifacts revealing bidirectional contact"
+      }, {
+        "id" : "ii",
+        "text" : "Biological and environmental indicators of nearby land"
+      }, {
+        "id" : "iii",
+        "text" : "A distinct conceptual framework of spatial orientation"
+      }, {
+        "id" : "iv",
+        "text" : "Astronomical bearings and nocturnal orientation"
+      }, {
+        "id" : "v",
+        "text" : "Oceanographic wave dynamics and swell detection"
+      }, {
+        "id" : "vi",
+        "text" : "Experimental archaeology vindicating indigenous expertise"
+      }, {
+        "id" : "vii",
+        "text" : "The failure of computer-simulated drift theories"
+      }, {
+        "id" : "viii",
+        "text" : "Political resistance to modern voyaging revivals"
+      } ],
+      "questionNumber" : 30
+    },
+    "construct" : "main_idea",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "e5ca84f9f4bfd31e5cd476689577bc10e6204e671e70d6037a0826fd6578ac85",
+    "createdAt" : null,
+    "ordinal" : 30
+  }, {
+    "id" : "03de8c72-eb87-57da-a706-dde50cc087aa",
+    "groupId" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P3_Q31",
+    "version" : 1,
+    "prompt" : "Which heading best describes Paragraph F?",
+    "interactionType" : "heading_matching",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "i",
+        "text" : "Physical artifacts revealing bidirectional contact"
+      }, {
+        "id" : "ii",
+        "text" : "Biological and environmental indicators of nearby land"
+      }, {
+        "id" : "iii",
+        "text" : "A distinct conceptual framework of spatial orientation"
+      }, {
+        "id" : "iv",
+        "text" : "Astronomical bearings and nocturnal orientation"
+      }, {
+        "id" : "v",
+        "text" : "Oceanographic wave dynamics and swell detection"
+      }, {
+        "id" : "vi",
+        "text" : "Experimental archaeology vindicating indigenous expertise"
+      }, {
+        "id" : "vii",
+        "text" : "The failure of computer-simulated drift theories"
+      }, {
+        "id" : "viii",
+        "text" : "Political resistance to modern voyaging revivals"
+      } ],
+      "questionNumber" : 31
+    },
+    "construct" : "main_idea",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "3b62eeb7341f1847f0ad34dc3439903cc7cfea1f15a8f5cb0a2e7cf6ead12a6e",
+    "createdAt" : null,
+    "ordinal" : 31
+  }, {
+    "id" : "2d9fc4ae-5b18-5835-9eea-0dc24152b310",
+    "groupId" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P3_Q32",
+    "version" : 1,
+    "prompt" : "Which heading best describes Paragraph G?",
+    "interactionType" : "heading_matching",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "i",
+        "text" : "Physical artifacts revealing bidirectional contact"
+      }, {
+        "id" : "ii",
+        "text" : "Biological and environmental indicators of nearby land"
+      }, {
+        "id" : "iii",
+        "text" : "A distinct conceptual framework of spatial orientation"
+      }, {
+        "id" : "iv",
+        "text" : "Astronomical bearings and nocturnal orientation"
+      }, {
+        "id" : "v",
+        "text" : "Oceanographic wave dynamics and swell detection"
+      }, {
+        "id" : "vi",
+        "text" : "Experimental archaeology vindicating indigenous expertise"
+      }, {
+        "id" : "vii",
+        "text" : "The failure of computer-simulated drift theories"
+      }, {
+        "id" : "viii",
+        "text" : "Political resistance to modern voyaging revivals"
+      } ],
+      "questionNumber" : 32
+    },
+    "construct" : "main_idea",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "99a608f27a0f009bf9a77da67741f7e36df683d360f71ff3aee7f194c0c92fa9",
+    "createdAt" : null,
+    "ordinal" : 32
+  }, {
+    "id" : "1d6df40e-54ce-5d23-82c1-aa6ebcdb1a37",
+    "groupId" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P3_Q33",
+    "version" : 1,
+    "prompt" : "Sharp's accidental drift hypothesis underestimated the navigational capabilities of ancestral Polynesians.",
+    "interactionType" : "truth_classification",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "YES",
+        "text" : "YES"
+      }, {
+        "id" : "NO",
+        "text" : "NO"
+      }, {
+        "id" : "NG",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 33
+    },
+    "construct" : "identifying_writer_views",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "1d8220398265ba90c97d9575e9c928c1a37e44d46dae12819f8d8d8966c1ac6f",
+    "createdAt" : null,
+    "ordinal" : 33
+  }, {
+    "id" : "8cfc02f4-98c6-5ca6-974c-e5d6627859ee",
+    "groupId" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P3_Q34",
+    "version" : 1,
+    "prompt" : "Pelagic seabirds provide reliable directional guidance to navigators throughout both day and night.",
+    "interactionType" : "truth_classification",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "YES",
+        "text" : "YES"
+      }, {
+        "id" : "NO",
+        "text" : "NO"
+      }, {
+        "id" : "NG",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 34
+    },
+    "construct" : "identifying_writer_views",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "172272ae75cf83c282bb6d3154c91cc6f640bb0b633b704ce62abb1a09641933",
+    "createdAt" : null,
+    "ordinal" : 34
+  }, {
+    "id" : "163214a1-7b09-54f5-901d-50cc73a7191d",
+    "groupId" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P3_Q35",
+    "version" : 1,
+    "prompt" : "The Hōkūleʻa crew encountered severe interpersonal disputes during the 1976 voyage.",
+    "interactionType" : "truth_classification",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "YES",
+        "text" : "YES"
+      }, {
+        "id" : "NO",
+        "text" : "NO"
+      }, {
+        "id" : "NG",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 35
+    },
+    "construct" : "identifying_writer_views",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "7e08904840cfa943979aba7c2b838b3b9b24fdb6423c0eae5fef8e75abc9b358",
+    "createdAt" : null,
+    "ordinal" : 35
+  }, {
+    "id" : "a5a12c6c-2b19-5f75-9adc-1131fcf524b5",
+    "groupId" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P3_Q36",
+    "version" : 1,
+    "prompt" : "Chemical analysis of stone tools proves that inter-island contact continued across several centuries.",
+    "interactionType" : "truth_classification",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "YES",
+        "text" : "YES"
+      }, {
+        "id" : "NO",
+        "text" : "NO"
+      }, {
+        "id" : "NG",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 36
+    },
+    "construct" : "identifying_writer_views",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "887c16a7dd113c9de803fdd2b322e1e5ed2949d8b176ef1684a04036c202bdaf",
+    "createdAt" : null,
+    "ordinal" : 36
+  }, {
+    "id" : "80a2a01e-d755-5179-89e3-586fc70f1731",
+    "groupId" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P3_Q37",
+    "version" : 1,
+    "prompt" : "What is the defining characteristic of the 'etee' concept described in Paragraph G?",
+    "interactionType" : "single_choice",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "The vessel is conceived as stationary while the environment moves toward it."
+      }, {
+        "id" : "B",
+        "text" : "The navigator memorizes routes as lines on a two-dimensional grid."
+      }, {
+        "id" : "C",
+        "text" : "Voyages are planned only during seasons of predictable planetary alignment."
+      }, {
+        "id" : "D",
+        "text" : "The ocean is regarded as an empty barrier isolating human societies."
+      } ],
+      "questionNumber" : 37
+    },
+    "construct" : "multiple_choice",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "ca16afa3f2ca92216b7ef85077f6753be2a474ab62ceaad2dab452506f6b86ff",
+    "createdAt" : null,
+    "ordinal" : 37
+  }, {
+    "id" : "b806fdb8-b31f-54e8-8ac0-fc175ce10374",
+    "groupId" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P3_Q38",
+    "version" : 1,
+    "prompt" : "Why was the 1976 voyage of the Hōkūleʻa of major historical importance?",
+    "interactionType" : "single_choice",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "It established a permanent commercial shipping route between Hawaii and Tahiti."
+      }, {
+        "id" : "B",
+        "text" : "It provided practical proof that non-instrument navigational methods were effective."
+      }, {
+        "id" : "C",
+        "text" : "It introduced modern electronic navigation tools to indigenous sailors."
+      }, {
+        "id" : "D",
+        "text" : "It discovered previously unknown archipelagoes in the eastern Pacific."
+      } ],
+      "questionNumber" : 38
+    },
+    "construct" : "multiple_choice",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "641e3a1db6a5b14185ba26a213debf73d5dc3e8520d0cff699aa76b79915b05f",
+    "createdAt" : null,
+    "ordinal" : 38
+  }, {
+    "id" : "9f3969a6-7d51-50fc-96a4-472ff4d3e283",
+    "groupId" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P3_Q39",
+    "version" : 1,
+    "prompt" : "According to Paragraph C, how could navigators detect unseen islands from far away?",
+    "interactionType" : "single_choice",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "By observing abrupt changes in surface water salinity and warmth."
+      }, {
+        "id" : "B",
+        "text" : "By identifying altered swell patterns reflected from landmasses."
+      }, {
+        "id" : "C",
+        "text" : "By following underwater bioluminescent organisms at midnight."
+      }, {
+        "id" : "D",
+        "text" : "By measuring the speed of wind currents over shallow reefs."
+      } ],
+      "questionNumber" : 39
+    },
+    "construct" : "multiple_choice",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "3bd8931b096f813178ef47f81edeeae915f58a5d7b5d52bf6413a9a24d0eb2e6",
+    "createdAt" : null,
+    "ordinal" : 39
+  }, {
+    "id" : "edff051d-a7a0-5a32-8747-7a0e057957f5",
+    "groupId" : "b010b0c0-0e5c-5b07-a8ac-ffbd0c35bc66",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_READING_20261006_IELTS_ACAD_R_P3_Q40",
+    "version" : 1,
+    "prompt" : "What overall conclusion does the author reach regarding Polynesian seafaring?",
+    "interactionType" : "single_choice",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "It was an intellectual and empirical achievement of the highest order."
+      }, {
+        "id" : "B",
+        "text" : "It was fortunate that severe weather consistently blew canoes toward land."
+      }, {
+        "id" : "C",
+        "text" : "It declined rapidly once ceramic production was abandoned."
+      }, {
+        "id" : "D",
+        "text" : "It was largely derived from ancient Mediterranean navigation manuals."
+      } ],
+      "questionNumber" : 40
+    },
+    "construct" : "multiple_choice",
+    "provenanceId" : "c06144e0-373a-5988-8018-e2ef8bfa36e1",
+    "contentHash" : "ea82480442fa8d2cfcb87bcb3d353d06286b52b9d5f026b9ab7cdee979eaab99",
+    "createdAt" : null,
+    "ordinal" : 40
+  } ],
+  "answerSpecs" : [ {
+    "id" : "d14bb399-21a5-5e9c-8c2f-0428ad09666a",
+    "itemId" : "adbd1f10-9c33-503a-b869-5331e55d07b3",
+    "acceptedAnswers" : {
+      "values" : [ "FALSE" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\":\"The passage contrasts informal beginnings with later council support.\",\"evidence\":\"Paragraph A: The first groups were often informal, organised by people who wanted to share tools.\",\"distractorLogic\":\"TRUE reverses the sequence; NOT GIVEN ignores the explicit statement.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "29f04f9e-80dc-5e7c-94fa-804e47fd5dda",
+    "itemId" : "023f516a-7c0d-568a-8f92-c19086268210",
+    "acceptedAnswers" : {
+      "values" : [ "B" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\":\"The paragraph explains how records changed a hobby into a civic experiment.\",\"evidence\":\"Paragraph B: The movement changed when organisers began recording what arrived at the door.\",\"distractorLogic\":\"A is a later study detail; C is a different paragraph's workflow.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "d79a382a-ef71-5031-a91b-0e350f2a88b2",
+    "itemId" : "e23d81fb-e70f-5313-9c15-b0fe29f6bb82",
+    "acceptedAnswers" : {
+      "values" : [ "A" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\":\"The text gives confidence as a reason for the change in visitor motivation.\",\"evidence\":\"Paragraph B: they wanted confidence before buying a new object.\",\"distractorLogic\":\"B is unsupported; C confuses a research activity with visitor motivation.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "87800d64-8de7-57d2-8f63-3493216d9a90",
+    "itemId" : "4469ee10-dd38-5b91-9fc0-20609e7290c4",
+    "acceptedAnswers" : {
+      "values" : [ "parts" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\":\"The missing noun completes the stated list of decision factors.\",\"evidence\":\"Paragraph B: availability of parts.\",\"distractorLogic\":\"Tools and products appear elsewhere but are not the listed factor.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "4930bc48-3ee5-5e31-89be-73f2540e2e09",
+    "itemId" : "175ebd95-e5fd-5764-bc29-46a351ed4f85",
+    "acceptedAnswers" : {
+      "values" : [ "FALSE" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\":\"The second space supports visitor decisions rather than being restricted to technicians.\",\"evidence\":\"Paragraph C: visitors decide whether to borrow a tool, order a part, or stop.\",\"distractorLogic\":\"TRUE adds a restriction contradicted by the visitor description.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "30242ea5-13b9-5ec8-bb74-3383878dd5b4",
+    "itemId" : "d67639e3-49f9-53ad-bb68-92755790dead",
+    "acceptedAnswers" : {
+      "values" : [ "D" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\":\"The study comparison is described in paragraph D.\",\"evidence\":\"Paragraph D: Marlow weighed discarded appliances and compared the results with energy use.\",\"distractorLogic\":\"The other paragraphs discuss origins, workflow, behaviour, or policy.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "1b2ce496-f29a-5cb0-a806-31a4908bf568",
+    "itemId" : "a690d2a4-e645-5370-ba14-894d2f275d73",
+    "acceptedAnswers" : {
+      "values" : [ "cleaning a filter; tightening a hinge", "cleaning a filter, tightening a hinge", "cleaning a filter and tightening a hinge" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : 6,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\":\"Both examples are stated in the follow-up study.\",\"evidence\":\"Paragraph E: cleaning a filter or tightening a hinge.\",\"distractorLogic\":\"A toaster repair and a seam repair are different examples.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "a6ec8458-5be3-599d-9db0-d0361afe9757",
+    "itemId" : "77d56c1a-1692-5d4f-a6b0-794727175935",
+    "acceptedAnswers" : {
+      "values" : [ "A" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\":\"The researchers qualify the inference because of selection bias.\",\"evidence\":\"Paragraph E: the sample consisted of volunteers already interested in practical skills.\",\"distractorLogic\":\"B contradicts the study; C belongs to a different issue.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "8fed74ed-87cf-5be2-935e-abbd2d242bd4",
+    "itemId" : "a29e6c50-1117-569b-bafe-9f751b15deef",
+    "acceptedAnswers" : {
+      "values" : [ "diagnosis" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\":\"The word names the first step of the two-space process.\",\"evidence\":\"Paragraph C: visitors describe a fault and receive a short diagnosis.\",\"distractorLogic\":\"A parts list comes later and is not the missing process.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "3f1d6f1d-2c14-5be6-a7a1-d43a90ce2493",
+    "itemId" : "e6824301-3385-564c-ab50-e9709e5850bc",
+    "acceptedAnswers" : {
+      "values" : [ "NO" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\":\"The author explicitly says the study did not report one exact figure.\",\"evidence\":\"Paragraph D: reported ranges rather than a single saving figure.\",\"distractorLogic\":\"YES reverses the reported method; NOT GIVEN ignores it.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "4f98bad4-78c0-5dd8-82ae-1619682315ba",
+    "itemId" : "eba61362-1b6c-5c50-a7fd-e27298f1a3eb",
+    "acceptedAnswers" : {
+      "values" : [ "C" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\":\"The function is stated directly.\",\"evidence\":\"Paragraph F: a parts library reduces the delay between diagnosis and action.\",\"distractorLogic\":\"A addresses access time; B addresses beginner support.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "21f26294-73b2-56bc-93f5-a60bb4cbf513",
+    "itemId" : "945527f1-de48-5ec1-ab14-8f834333476f",
+    "acceptedAnswers" : {
+      "values" : [ "six months" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 2,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\":\"The duration appears in the study description.\",\"evidence\":\"Paragraph D: weighed discarded appliances for six months.\",\"distractorLogic\":\"The recommendation to track products is not a duration.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "1c55c901-aa59-5299-babd-a8b6effff49b",
+    "itemId" : "2dd74d5d-0bde-5017-944e-401dbfeb37dd",
+    "acceptedAnswers" : {
+      "values" : [ "A" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\":\"The paragraph compares policy options and local bottlenecks.\",\"evidence\":\"Paragraph F: a city can fund opening hours, mentors, or a library of spare parts.\",\"distractorLogic\":\"B and C are narrower details from earlier paragraphs.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "ae20bfdc-c95e-5f5e-8920-87312525d9fc",
+    "itemId" : "71219b07-5cca-5ad5-abf8-c02b8fb011e0",
+    "acceptedAnswers" : {
+      "values" : [ "C" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"Paragraph C explains how wind turbulence drives tidal airflow in the mounds.\", \"evidence\": \"Paragraph C: wind-induced atmospheric turbulence and external pressure fluctuations play a decisive role.\", \"distractorLogic\": \"A introduces HVAC energy; B covers the older convective model; D discusses the Eastgate Centre; E covers moisture; F discusses urban constraints.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "ef37f3ec-54c2-5395-b265-31a4d64f07af",
+    "itemId" : "532b4eb9-4ad4-5888-9fc0-70bf56722854",
+    "acceptedAnswers" : {
+      "values" : [ "D" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"Paragraph D specifically describes the Eastgate Centre in Zimbabwe using concrete and masonry mass.\", \"evidence\": \"Paragraph D: Mick Pearce in his design of the Eastgate Centre in Harare... utilized dense concrete slabs and exposed brick facades.\", \"distractorLogic\": \"Other paragraphs cover biological theory or urban limitations.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "55811c1f-34b2-5c4a-a02b-00abc21f5436",
+    "itemId" : "71f0fd53-f198-5a79-a39c-30a1680eac87",
+    "acceptedAnswers" : {
+      "values" : [ "F" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"Paragraph F details urban pollution, lack of wind vectors, and traffic noise hindering passive design.\", \"evidence\": \"Paragraph F: urban street canyons frequently lack consistent wind... Particulate matter, vehicular exhaust... acoustic interference.\", \"distractorLogic\": \"Other paragraphs detail advantages or biological mechanisms.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "bcc9e4d7-a9c0-5de5-a391-5800efa77bde",
+    "itemId" : "1f0f8501-0c7c-5990-b363-2cf40a984755",
+    "acceptedAnswers" : {
+      "values" : [ "C" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"Paragraph C directly contrasts the older convective hypothesis with the modern turbulence/eddy model.\", \"evidence\": \"Paragraph C: Turner discovered that internal air velocities... substantially revised this classical doctrine... not as a steady solar chimney, but rather as an acoustic and aerodynamic filter.\", \"distractorLogic\": \"B explains only the old hypothesis; A introduces the topic; D is engineering application.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "9d0b8cbf-b248-507e-80a2-2abced85d216",
+    "itemId" : "16cb495b-6b6d-5329-b85a-ef52b5d19c55",
+    "acceptedAnswers" : {
+      "values" : [ "solar chimney" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 2,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"The text directly names the 'solar chimney' effect as the classical hypothesis.\", \"evidence\": \"Paragraph B: attributed the thermal equilibrium of termite mounds to what became known as the 'convective cooling hypothesis' or the 'solar chimney effect.'\", \"distractorLogic\": \"Other terms like convective cooling are synonymous but 'solar chimney' specifically fits the gap.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "a32de762-436c-5b9e-b884-061d12be1b70",
+    "itemId" : "9c0d236d-a2f8-54f5-bb75-270226a9480a",
+    "acceptedAnswers" : {
+      "values" : [ "hollow floors", "hollow slabs" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 2,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"The text explicitly specifies 'hollow floors' (or 'hollow slabs' earlier in the paragraph) as the conduits.\", \"evidence\": \"Paragraph D: low-powered mechanical fans draw cool ambient air through hollow floors and vertical service ducts.\", \"distractorLogic\": \"Brick facades and concrete slabs absorb heat, not air channels.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "5f88a21f-3d57-577d-910b-868f638723ff",
+    "itemId" : "bafb152d-7476-5c7c-8634-8a3bac3825b2",
+    "acceptedAnswers" : {
+      "values" : [ "hygroscopic" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"Hygroscopic describes the moisture-absorbing capacity of the materials.\", \"evidence\": \"Paragraph E: Termite nest walls... exhibit high hygroscopic porosity... Modern green architects are adapting this phenomenon...\", \"distractorLogic\": \"Porosity is a noun, not the adjective modifying materials.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "e4bbea4c-1627-5678-b658-fad48ab31ab0",
+    "itemId" : "2af3e234-323d-563f-91a9-9e533ae2fbe7",
+    "acceptedAnswers" : {
+      "values" : [ "acoustic interference", "traffic noise", "noise" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 2,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"'acoustic interference' or 'traffic noise' is directly stated.\", \"evidence\": \"Paragraph F: large open ventilation shafts designed for natural airflow can inadvertently transmit acoustic interference and vehicular traffic noise directly into working office environments.\", \"distractorLogic\": \"Vehicular exhaust is air pollution, not acoustic.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "9c6b8557-3d36-5451-9b60-d05a06840e1c",
+    "itemId" : "8b7c2ddb-ca61-5870-936a-5fe5d98cf6ce",
+    "acceptedAnswers" : {
+      "values" : [ "FALSE" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"The building is not entirely passive; it uses mechanical fans to draw night air.\", \"evidence\": \"Paragraph D: low-powered mechanical fans draw cool ambient air through hollow floors...\", \"distractorLogic\": \"TRUE contradicts the explicit mention of mechanical fans; NOT GIVEN ignores the factual evidence.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "8d36d323-4eb6-5742-bd2d-44eb37c0852e",
+    "itemId" : "cf869613-5f13-5a00-8dc1-e1cd2e053434",
+    "acceptedAnswers" : {
+      "values" : [ "NG" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"The passage says it damps external swings, but does not claim complete annual static equilibrium.\", \"evidence\": \"Paragraph C discusses air velocities, tidal breathing, and dynamic damping, but never asserts that temperatures remain completely static all year.\", \"distractorLogic\": \"TRUE and FALSE require an explicit factual claim that is absent from the text.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "acd52433-d84b-5d07-88f8-20e2baf1be4f",
+    "itemId" : "08b9061a-abd2-54af-a8a9-4708da5bf72f",
+    "acceptedAnswers" : {
+      "values" : [ "TRUE" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"The text confirms that high thermal mass masonry absorbs heat and prevents rapid interior warming.\", \"evidence\": \"Paragraph D: dense concrete slabs and exposed brick facades that absorb radiant solar heat throughout the day, preventing rapid interior warming.\", \"distractorLogic\": \"FALSE contradicts the stated mechanism; NOT GIVEN ignores Paragraph D.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "f203666d-c183-542d-a916-56d2e77bfa16",
+    "itemId" : "1daee0a9-74fe-5c62-8099-7b24767f9d9e",
+    "acceptedAnswers" : {
+      "values" : [ "FALSE" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"The text shows it is being adapted in modern architecture, refuting the claim that it is completely unworkable.\", \"evidence\": \"Paragraph E: Modern green architects are adapting this phenomenon through the deployment of unfired clay plasters, hemp-lime composites, and cellulose insulation, which naturally stabilize indoor air moisture...\", \"distractorLogic\": \"TRUE contradicts the successful adaptation described in Paragraph E.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "373f96d2-4e42-556e-abb4-10abe31a8754",
+    "itemId" : "edd5a115-dd5a-51a8-ba27-3b09ee13bd03",
+    "acceptedAnswers" : {
+      "values" : [ "NG" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"There is no information regarding building code amendments.\", \"evidence\": \"Paragraph D discusses the design and operation of the Eastgate Centre, but makes no mention of municipal building codes.\", \"distractorLogic\": \"TRUE or FALSE would be an unsupported inference.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "3a2c8dea-6116-5d7a-9de0-7f51220dbb4f",
+    "itemId" : "c2e38768-cd76-5adc-ad03-a301b2f33a10",
+    "acceptedAnswers" : {
+      "values" : [ "iv" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"Paragraph B focuses entirely on star compasses, azimuths, and nocturnal astronomical bearings.\", \"evidence\": \"Paragraph B: mental compass based on sidereal astronomy... rising and setting azimuths of over two hundred specific stars... zenith stars...\", \"distractorLogic\": \"iii describes the cognitive model in G; v is ocean swells in C; ii is birds/clouds in D.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "48d8b9e9-c1a3-56ca-bb37-04e79a6a40cc",
+    "itemId" : "455eb8ea-ce77-54f1-826f-674b7f55f187",
+    "acceptedAnswers" : {
+      "values" : [ "v" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"Paragraph C describes detecting deep-ocean swells and reflected wave patterns.\", \"evidence\": \"Paragraph C: extraordinary sensitivity to ocean swells... deep-ocean swells... subtle interference patterns caused by submerged shoals...\", \"distractorLogic\": \"ii covers flora/fauna; iv covers stars; vi covers Hokule'a.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "f2ef279e-22d9-50c1-990c-e88331125596",
+    "itemId" : "caa3417b-9cd8-526e-a6e0-47057680fe80",
+    "acceptedAnswers" : {
+      "values" : [ "ii" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"Paragraph D details seabirds, clouds, and flora indicating proximity to land.\", \"evidence\": \"Paragraph D: biological and ecological signposts... pelagic seabirds, notably terns, noddies, and boobies... stationary clouds... green tint...\", \"distractorLogic\": \"v is wave dynamics; i is stone adzes.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "919dbeec-62b2-58d2-ac77-ecf3d330d408",
+    "itemId" : "a708197c-37bd-5173-9310-ea133ca5047f",
+    "acceptedAnswers" : {
+      "values" : [ "vi" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"Paragraph E focuses on the experimental voyage of Hokule'a proving indigenous navigational science.\", \"evidence\": \"Paragraph E: scientific plausibility... tested in 1976... Hokule'a... Mau Piailug... definitively dismantled western academic assumptions...\", \"distractorLogic\": \"vii is not mentioned; viii is unsupported.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "0cf124e2-d69f-5079-85c3-31c5fe77070e",
+    "itemId" : "03de8c72-eb87-57da-a706-dde50cc087aa",
+    "acceptedAnswers" : {
+      "values" : [ "i" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"Paragraph F explains how volcanic stone adzes prove two-way contact between archipelagoes.\", \"evidence\": \"Paragraph F: geochemical provenance studies... basalt adzes... sustained, bidirectional exchange network...\", \"distractorLogic\": \"vi is canoe testing; iii is philosophy of navigation.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "fe2a75c1-f3fc-52e8-9924-5c76ad7137b0",
+    "itemId" : "2d9fc4ae-5b18-5835-9eea-0dc24152b310",
+    "acceptedAnswers" : {
+      "values" : [ "iii" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"Paragraph G discusses the distinct conceptual and ontological framework of 'etee'.\", \"evidence\": \"Paragraph G: fundamentally different ontology of space... cognitive paradigm known as 'etee'... canoe remains stationary center while world moves...\", \"distractorLogic\": \"iv covers night stars; ii covers birds.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "be50a6c3-5e2f-58f3-a6ec-d9b2bae2d6c5",
+    "itemId" : "1d6df40e-54ce-5d23-82c1-aa6ebcdb1a37",
+    "acceptedAnswers" : {
+      "values" : [ "YES" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"The author clearly agrees that Sharp was wrong and that Polynesian navigation was systematic and deliberate.\", \"evidence\": \"Paragraph A: Andrew Sharp famously argued... settlement was largely accidental... Today, however, converging archaeological, genetic, and ethnographic evidence has thoroughly overturned Sharp's hypothesis...\", \"distractorLogic\": \"NO contradicts the writer's thesis; NOT GIVEN ignores the explicit critique of Sharp.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "f0862ccb-a777-56a0-9c0a-ab7c213503e4",
+    "itemId" : "8cfc02f4-98c6-5ca6-974c-e5d6627859ee",
+    "acceptedAnswers" : {
+      "values" : [ "NO" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"The text states birds provide cues at sunrise and sunset when heading to/from land, not all through the night.\", \"evidence\": \"Paragraph D: While these birds forage for fish far out at sea during daylight... must return to roost on coastal trees every evening. By observing the heading of these flocks at sunrise and sunset...\", \"distractorLogic\": \"YES contradicts the specific dawn/dusk behavior described.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "28fd37d0-d8c8-5e8c-b60b-5be40ed57707",
+    "itemId" : "163214a1-7b09-54f5-901d-50cc73a7191d",
+    "acceptedAnswers" : {
+      "values" : [ "NG" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"No information is provided about interpersonal crew conflicts.\", \"evidence\": \"Paragraph E outlines the 1976 voyage and its success, but contains no mention of crew disputes.\", \"distractorLogic\": \"YES and NO are ungrounded speculations.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "b329b90b-6e8e-5d9a-ad0a-d3249a5b7a18",
+    "itemId" : "a5a12c6c-2b19-5f75-9adc-1131fcf524b5",
+    "acceptedAnswers" : {
+      "values" : [ "YES" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"The text explicitly validates multi-century sustained contact via geochemical tool sequences.\", \"evidence\": \"Paragraph F: trace element ratios and isotope signatures in the basalt... the presence of distinct tool sequences spanning multiple centuries proves that voyages were not desperate, one-way migrations... but part of a sustained, bidirectional exchange network...\", \"distractorLogic\": \"NO contradicts Paragraph F directly.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "1abfc95b-d073-5151-8796-ae9e0f211bb4",
+    "itemId" : "80a2a01e-d755-5179-89e3-586fc70f1731",
+    "acceptedAnswers" : {
+      "values" : [ "A" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"Option A accurately reflects the core principle of 'etee'.\", \"evidence\": \"Paragraph G: the canoe remains the stable, stationary center of the universe, while the surrounding world... moves toward and passes beneath the vessel.\", \"distractorLogic\": \"B describes western cartography; C and D contradict the text.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "300b339d-1d49-5092-919b-3d7379618a6d",
+    "itemId" : "b806fdb8-b31f-54e8-8ac0-fc175ce10374",
+    "acceptedAnswers" : {
+      "values" : [ "B" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"Option B correctly identifies the validation of non-instrument navigation.\", \"evidence\": \"Paragraph E: Relying strictly on stars, ocean swells, and bird flight paths without any modern navigational instruments... definitively dismantled western academic assumptions regarding the accidental nature of Polynesian settlement.\", \"distractorLogic\": \"A is false; C is the opposite of non-instrument voyaging; D is historically inaccurate.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "0ed7eea2-8b26-5495-a7ce-0d6fe1dbf5f3",
+    "itemId" : "9f3969a6-7d51-50fc-96a4-472ff4d3e283",
+    "acceptedAnswers" : {
+      "values" : [ "B" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"Option B accurately describes detecting deflected and reflected swell ripples.\", \"evidence\": \"Paragraph C: When deep ocean swells strike an island, they bend, reflect, and refract... creating distinctive intersecting ripples... recognized these reflected waves up to fifty kilometers before the land itself was visible.\", \"distractorLogic\": \"A, C, and D misattribute or fabricate details.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "a931fffc-f2ef-517d-b55f-7aaa10b75fa7",
+    "itemId" : "edff051d-a7a0-5a32-8747-7a0e057957f5",
+    "acceptedAnswers" : {
+      "values" : [ "A" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "{\"rationale\": \"Option A summarizes the writer's overarching conclusion in Paragraph G.\", \"evidence\": \"Paragraph G: establishing Oceanic seafaring not merely as an adventure, but as one of humanity's most sophisticated cognitive achievements.\", \"distractorLogic\": \"B repeats Sharp's discredited thesis; C and D are historical absurdities.\"}",
+    "rubricId" : null,
+    "createdAt" : null
+  } ],
+  "assets" : [ ],
+  "stimulusAssets" : [ ]
+}

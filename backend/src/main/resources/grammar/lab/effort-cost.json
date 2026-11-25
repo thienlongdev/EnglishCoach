@@ -1,0 +1,41 @@
+{
+  "id": "effort-cost",
+  "title": "Gấp đôi hay hơn hai đơn vị?",
+  "summary": "Bạn so hai gói lưu trữ. Khi gói nhỏ có 3 GB, thử dự đoán dung lượng gói lớn theo hai kiểu so sánh.",
+  "level": "B2",
+  "topics": [
+    "comparison-advanced",
+    "as-as-comparisons"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Phép so",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Theo tỉ lệ"
+        },
+        {
+          "id": "v2",
+          "label": "Theo độ chênh"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The large plan offers twice as much storage as the small one.",
+      "vi": "Gói lớn có dung lượng gấp đôi gói nhỏ.",
+      "note": "Nếu gói nhỏ là 3 GB thì gói lớn là 6 GB theo phát biểu này. / Twice as much scales the whole amount.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The large plan offers two gigabytes more than the small one.",
+      "vi": "Gói lớn có nhiều hơn gói nhỏ hai gigabyte.",
+      "note": "Nếu gói nhỏ là 3 GB thì gói lớn là 5 GB. Hai đơn vị thêm không phải hệ số nhân. / Two gigabytes more adds a fixed difference.",
+      "verdict": "ok"
+    }
+  }
+}

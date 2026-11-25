@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s076-last-teacup",
+  "title": "Chiếc tách vừa đủ",
+  "level": "A2",
+  "topics": [
+    "enough-too"
+  ],
+  "scene": "restaurant",
+  "summary": "Min chỉ có đủ đất sét làm tách nhỏ. Hana cần thứ vừa trên bậu cửa để khách đứng ngoài cũng uống trà được.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hana",
+      "role": "Chủ tiệm trà"
+    },
+    {
+      "id": "b",
+      "name": "Min",
+      "role": "Người làm gốm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Chiếc tách cũ rộng hơn bậu, đặt lên là nghiêng. Min đưa tách mới, đế hẹp lùi vào được một ngón tay.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can't make it any bigger today.",
+          "vi": "Hôm nay tôi không thể làm nó lớn hơn nữa."
+        },
+        {
+          "who": "b",
+          "en": "Bigger isn't always better. Try it here.",
+          "vi": "Lớn hơn chưa chắc tốt hơn. Thử đặt ở đây xem."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Hana giải thích vì sao muốn giữ chiếc tách mới.",
+        "options": [
+          {
+            "t": "It's small enough to fit on the ledge.",
+            "note": "Small enough nói kích cỡ nhỏ đạt điều kiện đặt vừa. To fit chỉ điều có thể làm được nhờ kích cỡ ấy.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "It's too small to fit on the ledge.",
+            "note": "Too small to fit coi việc nhỏ là nguyên nhân khiến không đặt vừa. Thử nghiệm trên bậu lại cho thấy điều ngược lại.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Khách đầu tiên là bác đưa thư. Bác nhấp vừa một ngụm rồi đi kịp chuyến, để lại bức thư cảm ơn cuộn vừa lòng tách.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The smallest cup brought us a letter.",
+          "vi": "Chiếc tách nhỏ nhất mang về một lá thư."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Min toan đem tách về thì Hana đặt cả tách lẫn một cái bánh nhỏ cạnh nhau trên bậu. Min giữ nguyên kích thước và khắc hình bánh lên chiếc thứ hai.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Room for a cake as well!",
+          "vi": "Còn chỗ cho cả bánh nữa!"
+        }
+      ],
+      "end": true
+    }
+  ]
+}

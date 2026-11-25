@@ -1,0 +1,25 @@
+{
+  "id":"workplace-reference-check",
+  "title":"Ai sẽ nhận bản kế hoạch?",
+  "level":"B2",
+  "topics":["relative-clauses-defining","relative-clauses-non-defining","indirect-questions","reference-chains"],
+  "brief":"Biên tập email bàn giao theo tiếng Anh viết chuẩn. Sửa riêng đoạn sai, giữ thời gian và người được nhắc. Alex dùng they/them; đó không phải lỗi số. Một đại từ có hai tiền ngữ khả dĩ cần làm rõ nội dung nhưng chưa đủ bằng chứng để kết luận sai ngữ pháp.",
+  "paragraph":[
+    {"t":"Please send Alex "},
+    {"t":"their","decoy":true,"note":"Alex dùng they/them nên their là từ sở hữu phù hợp trước copy. Singular they không phải lỗi cần đổi sang his hoặc her."},
+    {"t":" copy of the plan. Our coordinator, "},
+    {"t":"that approved the schedule","bad":true,"fix":["who approved the schedule"],"cat":"pronoun","tag":"nondefining-that","note":"Mệnh đề bổ sung giữa hai dấu phẩy về người dùng who, không dùng that. Giữ nguyên dấu phẩy và ý bổ sung."},
+    {"t":", is away today. The client "},
+    {"t":"we spoke to","decoy":true,"note":"Đại từ quan hệ làm tân ngữ có thể lược trong mệnh đề xác định; giới từ to ở cuối mẫu này vẫn đúng."},
+    {"t":" needs an update. Could you tell me "},
+    {"t":"when will the courier arrive","bad":true,"fix":["when the courier will arrive"],"cat":"word-order","tag":"embedded-question-order","note":"Đây là câu hỏi gián tiếp sau tell me, nên chủ ngữ the courier đứng trước will. Will vẫn dùng được vì when hỏi thời điểm, không mở mệnh đề thời gian kiểu I will call when..."},
+    {"t":"? The company has changed "},
+    {"t":"it's","bad":true,"fix":["its"],"cat":"pronoun","tag":"possessive-its","note":"Trước address cần sở hữu its; it's là it is hoặc it has."},
+    {"t":" address. Linh spoke to Mai after "},
+    {"t":"she","style":true,"note":"She có thể chỉ Linh hoặc Mai. Câu chưa sai ngữ pháp, nhưng người viết cần xác nhận ai đã đọc bản nháp rồi thay she bằng tên tương ứng; không đoán hộ một người."},
+    {"t":" read the draft. The documents "},
+    {"t":"that you requested","decoy":true,"note":"That là tân ngữ của requested trong mệnh đề xác định; which hoặc lược that cũng được trong mẫu này."},
+    {"t":"is","bad":true,"fix":["are"],"cat":"agreement","tag":"subject-head-agreement","note":"Documents là chủ ngữ số nhiều. Mệnh đề that you requested không đổi yêu cầu hòa hợp."},
+    {"t":" attached."}
+  ]
+}

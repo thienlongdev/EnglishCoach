@@ -1,0 +1,46 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="tBedSoil1" cx="64" cy="98" r="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4E342E"/>
+      <stop offset="70%" stop-color="#3E2723"/>
+      <stop offset="100%" stop-color="#2D150B" stop-opacity="0.8"/>
+    </radialGradient>
+    <linearGradient id="tLeafGrad1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#15803D"/>
+      <stop offset="100%" stop-color="#4ADE80"/>
+    </linearGradient>
+    <linearGradient id="stakeWood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6B4423"/>
+      <stop offset="50%" stop-color="#8D5B2F"/>
+      <stop offset="100%" stop-color="#55331A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Tilled Soil Bed Silhouette -->
+  <ellipse cx="64" cy="100" rx="38" ry="14" fill="url(#tBedSoil1)"/>
+  <!-- Soil Ridge Furrows -->
+  <path d="M34 100 Q64 106 94 100" stroke="#3E2723" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M40 94 Q64 99 88 94" stroke="#5D4037" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Plant 1: Left Sprout with Nursery Marker -->
+  <g transform="translate(42, 94)">
+    <rect x="-1.5" y="-18" width="3" height="18" rx="1" fill="url(#stakeWood)"/>
+    <path d="M0 0 Q-1 -6 0 -10" stroke="#22C55E" stroke-width="2" stroke-linecap="round"/>
+    <path d="M0 -10 C-6 -14 -4 -18 0 -13 C4 -18 6 -14 0 -10 Z" fill="url(#tLeafGrad1)"/>
+  </g>
+
+  <!-- Plant 2: Center Vigorous Sprout with Stake -->
+  <g transform="translate(64, 91)">
+    <rect x="-1.5" y="-24" width="3" height="24" rx="1" fill="url(#stakeWood)"/>
+    <path d="M0 0 Q-1 -8 0 -14" stroke="#16A34A" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M0 -14 C-8 -18 -6 -24 0 -17 C6 -24 8 -18 0 -14 Z" fill="url(#tLeafGrad1)"/>
+    <circle cx="0" cy="-18" r="2" fill="#86EFAC"/>
+  </g>
+
+  <!-- Plant 3: Right Sprout with Marker -->
+  <g transform="translate(86, 95)">
+    <rect x="-1.5" y="-18" width="3" height="18" rx="1" fill="url(#stakeWood)"/>
+    <path d="M0 0 Q1 -6 0 -10" stroke="#22C55E" stroke-width="2" stroke-linecap="round"/>
+    <path d="M0 -10 C-5 -14 -3 -18 0 -13 C3 -18 5 -14 0 -10 Z" fill="url(#tLeafGrad1)"/>
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- [ASSET_REQUIRED] Production-grade vector artwork (Hand-crafted vector finalization) -->
+  <!-- Series: streak_flame | Stage: 3 | Tier: A | Slug: streak_flame_stage_3 | Achievement Lineage: Cobalt Armor & Azure Blue Flame -->
+  <!-- Production Vector Quality: PRODUCTION_READY_VECTOR | External Studio/Rive Hand-off: ASSET_REQUIRED -->
+  <!-- Center: (50, 50), Avatar Aperture: r=40 (80px boundary) -->
+  <defs>
+    <linearGradient id="flameACobaltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bae6fd"/>
+      <stop offset="35%" stop-color="#38bdf8"/>
+      <stop offset="70%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+
+    <linearGradient id="flameAAzureFire" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#7dd3fc"/>
+      <stop offset="70%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+
+    <filter id="flameADropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#082f49" flood-opacity="0.5"/>
+    </filter>
+
+    <filter id="flameABlueGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Armored Cobalt Rim with Azure Inset -->
+  <g class="flame-a-core" filter="url(#flameADropShadow)">
+    <circle cx="50" cy="50" r="45.5" stroke="#082f49" stroke-width="5"/>
+    <circle cx="50" cy="50" r="44.5" stroke="url(#flameACobaltGrad)" stroke-width="3.5"/>
+    <circle cx="50" cy="50" r="41" stroke="#ffffff" stroke-width="1.2"/>
+  </g>
+
+  <!-- 4 Directional Armored Blue Flame Crests -->
+  <g class="flame-a-crests" filter="url(#flameABlueGlow)">
+    <!-- Top Apex: Knight's Grand Azure Flame Wing (100-Day Milestone) -->
+    <g fill="url(#flameAAzureFire)" stroke="#0c4a6e" stroke-width="0.8">
+      <path d="M50 0 C53 6, 60 10, 56 16 C53 14, 50 16, 50 18 C50 16, 47 14, 44 16 C40 10, 47 6, 50 0 Z"/>
+      <!-- Inner Pure White Flame Core -->
+      <path d="M50 5 C52 9, 55 11, 52 14 C50 13, 50 14, 50 15 C50 14, 50 13, 48 14 C45 11, 48 9, 50 5 Z" fill="#ffffff"/>
+    </g>
+
+    <!-- Bottom Armored Anchor Flame Leaf -->
+    <path d="M50 100 C53 94, 60 90, 55 84 C52 86, 50 84, 50 82 C50 84, 48 86, 45 84 C40 90, 47 94, 50 100 Z" fill="url(#flameAAzureFire)" stroke="#0c4a6e" stroke-width="0.8"/>
+
+    <!-- Left Armored Flank Wing -->
+    <path d="M0 50 C6 47, 10 40, 16 45 C14 48, 16 50, 18 50 C16 50, 14 52, 16 55 C10 60, 6 53, 0 50 Z" fill="url(#flameAAzureFire)" stroke="#0c4a6e" stroke-width="0.8"/>
+
+    <!-- Right Armored Flank Wing -->
+    <path d="M100 50 C94 47, 90 40, 84 45 C86 48, 84 50, 82 50 C84 50, 86 52, 84 55 C90 60, 94 53, 100 50 Z" fill="url(#flameAAzureFire)" stroke="#0c4a6e" stroke-width="0.8"/>
+
+    <!-- Corner Knight Rivets -->
+    <circle cx="18" cy="18" r="2.2" fill="#bae6fd" stroke="#082f49" stroke-width="0.6"/>
+    <circle cx="82" cy="18" r="2.2" fill="#bae6fd" stroke="#082f49" stroke-width="0.6"/>
+    <circle cx="18" cy="82" r="2.2" fill="#bae6fd" stroke="#082f49" stroke-width="0.6"/>
+    <circle cx="82" cy="82" r="2.2" fill="#bae6fd" stroke="#082f49" stroke-width="0.6"/>
+  </g>
+</svg>

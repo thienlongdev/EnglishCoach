@@ -1,0 +1,40 @@
+{
+  "id": "hall-entrance",
+  "title": "Ai bước vào hội trường?",
+  "summary": "Bạn viết hồi ký về buổi tập đầu tiên. Chọn chủ ngữ sau cụm Entering the hall và xem chủ thể ngầm của entering là ai.",
+  "level": "B2",
+  "topics": [
+    "participle-clauses"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Chủ thể sau dấu phẩy",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Người kể"
+        },
+        {
+          "id": "v2",
+          "label": "Câu hữu hạn rõ vai"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Entering the hall, I noticed the echo.",
+      "vi": "Khi bước vào hội trường, tôi nhận ra tiếng vọng.",
+      "note": "I vừa thực hiện entering vừa nhận ra tiếng vọng nên hai phần khớp. / The understood walker is I.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "As I entered the hall, the echo startled me.",
+      "vi": "Khi tôi bước vào hội trường, tiếng vọng làm tôi giật mình.",
+      "note": "As I entered nêu rõ người bước vào là tôi. The echo làm chủ ngữ mệnh đề chính mà không bị hiểu là thứ bước vào. / A finite clause can have its own subject.",
+      "verdict": "ok"
+    }
+  }
+}

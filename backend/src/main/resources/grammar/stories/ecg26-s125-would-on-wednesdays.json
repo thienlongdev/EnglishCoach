@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s125-would-on-wednesdays",
+  "title": "Thứ Tư có bánh thì là",
+  "summary": "Một quyển sổ cũ ghi “On Wednesdays she would bake dill bread”. Sa tưởng đó là đơn hàng cho thứ Tư tới.",
+  "level": "B1",
+  "topics": [
+    "used-to-and-would"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sa",
+      "role": "Người nấu bếp"
+    },
+    {
+      "id": "b",
+      "name": "Linh",
+      "role": "Người phục vụ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Sổ của một khách quen nay đã về quê. Bên cạnh dòng bánh có vết dầu và dấu giá từ nhiều năm trước. Linh hỏi người cháu đang cầm sổ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Do we owe her a loaf this Wednesday?",
+          "vi": "Thứ Tư này mình nợ bà một ổ bánh à?"
+        },
+        {
+          "who": "b",
+          "en": "Read the line beside those old prices.",
+          "vi": "Đọc dòng đó cạnh những giá cũ ngày xưa đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn cách hiểu của would trong lời hồi tưởng có mốc lặp lại.",
+        "options": [
+          {
+            "ok": true,
+            "t": "She often baked that bread on Wednesdays back then.",
+            "note": "Would bake ở ngữ cảnh hồi tưởng và on Wednesdays nói thói quen lặp. Không có lời đặt hàng cho tương lai.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "She promised to bake a loaf next Wednesday.",
+            "note": "Promised và next Wednesday thêm lời cam kết và mốc tương lai không có trong dòng hồi tưởng.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Người cháu gật đầu rồi ngửi bó thì là trong bếp. Sa mời em tự nướng một ổ để mang về quê gặp bà.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We turned a memory into an invitation.",
+          "vi": "Mình biến ký ức thành lời mời rồi."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Lịch quán có thêm buổi tự nướng thứ Tư, bắt đầu bằng ký ức chứ không phải món nợ.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Sa gọi cho bà, và bà cười bảo tay giờ chỉ còn đủ sức rắc hạt. Cả quán nướng hộ rồi gửi bà làm bước cuối.",
+      "say": [
+        {
+          "who": "a",
+          "en": "She finished the loaf after all.",
+          "vi": "Cuối cùng bà vẫn hoàn tất được ổ bánh."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Ổ bánh trở về bên quyển sổ, lần này có một vết dầu mới bên dòng chữ cũ.",
+      "end": true
+    }
+  ]
+}

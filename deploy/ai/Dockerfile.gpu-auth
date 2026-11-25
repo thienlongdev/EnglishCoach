@@ -1,0 +1,16 @@
+# Security delta of the canonical production AI image on the Windows GPU PC (security release 2026-11-16, SEC-01; rules 10 §BM).
+# A DELTA on the image that is running and qualified, never a rebuild: only the service-auth module, the exams judge route
+# (no default key) and two lines that install the module at the end of the image's own entry module are added. Nothing
+# else of the image changes (models, libraries, listening pipeline, routes).
+#
+#   docker build -f deploy/ai/Dockerfile.gpu-auth -t englishcoach-ai-whisperx:20261116-auth ai-service
+#
+# Requires AI_SERVICE_KEY in the env file (EC_AI_ENV_FILE); without it every protected route answers 503 (fail closed).
+FROM englishcoach-ai-whisperx:20261031-import-v2
+COPY app/core/__init__.py app/core/service_auth.py /app/app/core/
+COPY app/api/routes/exams.py /app/app/api/routes/exams.py
+COPY app/tests/test_service_auth.py /app/app/tests/
+RUN grep -q "install_service_auth(app)" /app/app/main.py \
+ || printf '\n# SEC-01: every route requires X-EC-Service-Key (AI_SERVICE_KEY); health / capability probes stay open; no CORS.\nfrom app.core.service_auth import install_service_auth  # noqa: E402\n\ninstall_service_auth(app)\n' >> /app/app/main.py \
+ && python -c "import ast; ast.parse(open('/app/app/main.py', encoding='utf-8').read())"
+LABEL org.englishcoach.service="ai-gpu" org.englishcoach.pipeline="faster-whisper-large-v3+whisperx-wav2vec2" org.englishcoach.service-auth="X-EC-Service-Key"

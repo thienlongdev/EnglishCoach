@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s059-unread-seed",
+  "title": "Lời nhắn trong gói hạt",
+  "level": "A2",
+  "topics": [
+    "real-conditionals"
+  ],
+  "scene": "home",
+  "summary": "Hai gói hạt mang cùng hình mặt trời. Chỉ một gói cần ánh sáng ngay từ đầu.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Li",
+      "role": "Người gieo hạt"
+    },
+    {
+      "id": "b",
+      "name": "Bình",
+      "role": "Em trai"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Li lật mặt sau. Gói A ghi If you cover me, I stay asleep. Một hạt đen tí xíu tuột khỏi tay em.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It looks too small to leave outside.",
+          "vi": "Nó trông bé quá, để bên ngoài liệu có sao không?"
+        },
+        {
+          "who": "b",
+          "en": "What happens if we cover it?",
+          "vi": "Nếu mình lấp đất lên thì sao?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Giữ nguyên mối quan hệ giữa điều kiện và kết quả trong lời hạt kể.",
+        "options": [
+          {
+            "t": "If we cover it, it will wake up.",
+            "note": "Will wake up đảo kết quả ghi trên gói. Câu đúng nhưng không theo chỉ dẫn riêng của giống hạt này.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "If we cover it, it won't grow yet.",
+            "note": "If we cover it là điều kiện. Won't grow yet cho hạt tiếp tục đợi, đúng hình ảnh stay asleep.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Li đặt hạt trên mặt đất, che khay bằng lưới. Một tuần sau Bình vẽ chiếc lá đầu tiên lên đúng gói A để không ai lẫn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The little sun has a leaf now.",
+          "vi": "Mặt trời bé xíu giờ có lá rồi."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Bình lấp một nửa khay để thử. Hạt trong phần sáng nảy trước. Cậu nhẹ tay gạt đất khỏi phần còn lại và vẽ một mắt đang mở lên nhãn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Our two little gardens told us the answer.",
+          "vi": "Hai mảnh vườn nhỏ đã cho mình câu trả lời."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

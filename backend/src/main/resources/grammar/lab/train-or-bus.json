@@ -1,0 +1,40 @@
+{
+  "id": "train-or-bus",
+  "title": "Đi một hay cả hai chặng?",
+  "summary": "Bảng hướng dẫn đưa ra hai phương tiện. Đổi từ nối rồi quyết định bạn cần mua vé cho cả hai hay chỉ chọn một.",
+  "level": "A1",
+  "topics": [
+    "coordination"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Quan hệ giữa phương tiện",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Kết hợp"
+        },
+        {
+          "id": "v2",
+          "label": "Lựa chọn"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Take the train and the bus.",
+      "vi": "Hãy đi cả tàu lẫn xe buýt.",
+      "note": "And yêu cầu dùng cả hai phương tiện, chẳng hạn nối hai chặng. / And includes both parts.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Take the train or the bus.",
+      "vi": "Hãy đi tàu hoặc xe buýt.",
+      "note": "Or cho người đi lựa chọn phương tiện phù hợp. / Or offers alternatives.",
+      "verdict": "ok"
+    }
+  }
+}

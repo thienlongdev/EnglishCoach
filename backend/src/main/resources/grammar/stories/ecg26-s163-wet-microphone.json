@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s163-wet-microphone",
+  "title": "Chiếc mic ướt trong ngày nắng",
+  "summary": "Nhật ký ghi trời quang mà chiếc mic của Linh nhỏ nước.",
+  "level": "B2",
+  "topics": [
+    "modal-perfect-deduction"
+  ],
+  "scene": "newsroom",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Linh",
+      "role": "Phóng viên trực đêm"
+    },
+    {
+      "id": "b",
+      "name": "Ari",
+      "role": "Biên tập viên"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Cuộn băng có tiếng nước rồi tiếng ai đó bật cười. Ari nhặt được khăn của đội phóng viên tại bể tập chèo trong nhà. Linh không nhớ chiếc mic đã được lau khi nào.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It never rained on us outside.",
+          "vi": "Suốt lúc ở ngoài trời không hề mưa."
+        },
+        {
+          "who": "b",
+          "en": "We did record inside the boat shed.",
+          "vi": "Ta có thu âm trong nhà thuyền."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Linh ghi giả thuyết còn cần kiểm tra về nước trên mic.",
+        "options": [
+          {
+            "ok": false,
+            "t": "Rain must have soaked it outdoors.",
+            "note": "Must have diễn tả suy luận mạnh. Nó đi ngược quan sát trời quang và bỏ qua phần thu trong bể.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "A paddle might have splashed it.",
+            "note": "Might have splashed chỉ một khả năng quá khứ. Chiếc khăn ở bể khiến giả thuyết có căn cứ.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Họ bật đoạn phỏng vấn trong nhà. Ngay trước tiếng nước là lời dặn Lift your paddle. Linh gọi cho người chèo và nhận được ảnh giọt nước văng lên mic.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We've found the splash, and the person laughing.",
+          "vi": "Ta tìm được cả giọt nước lẫn người đã cười rồi."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Bản tin phát cả tiếng cười sau khi được người chèo đồng ý. Chiếc khăn trở thành món đầu tiên trong túi dụng cụ của Linh.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Ari nhìn ảnh nắng trên bến. Linh tách hai đoạn ghi ngoài và trong nhà; chỉ đoạn trong nhà có tiếng nước.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I'd like to learn the sound from the other end.",
+          "vi": "Lần này tôi muốn học âm thanh ấy từ đầu bên kia mái chèo."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Cô đổi tiêu đề từ Cơn mưa bất ngờ thành Bài chèo đầu tiên và mang mic khô tới buổi tập sau. Người chèo đưa cô một chiếc mái chèo dành cho người mới.",
+      "end": true
+    }
+  ]
+}

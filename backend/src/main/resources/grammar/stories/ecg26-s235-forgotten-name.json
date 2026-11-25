@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s235-forgotten-name",
+  "title": "Cái tên người giữ sổ không quên",
+  "level": "C1",
+  "topics": [
+    "ellipsis",
+    "fronting"
+  ],
+  "scene": "library-mystery",
+  "summary": "Mara rời thư viện với câu “The dates I forget; the names I don't”. Huy cứ tìm một cái tên đã mất trong giấy tờ của bà.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Huy",
+      "role": "Người biên mục"
+    },
+    {
+      "id": "b",
+      "name": "Mara",
+      "role": "Người tặng sách"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Trên trang đầu sổ có tên đầy đủ của sáu người tặng nhưng hầu như không có năm tặng. Chữ don't khép lời bà chứ không mở một câu chưa kịp nói.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I thought you'd stopped halfway through a confession.",
+          "vi": "Cháu tưởng bà dừng giữa chừng khi đang thú nhận chuyện gì."
+        },
+        {
+          "who": "b",
+          "en": "Read the verb back into the silence.",
+          "vi": "Thử đặt lại động từ vào chỗ im lặng đi."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Huy diễn giải hai tân ngữ được đưa lên đầu để đối chiếu.",
+        "options": [
+          {
+            "t": "You forget the dates, but you don't forget the names.",
+            "note": "The dates và the names là hai tân ngữ đưa lên đầu. Don't ở vế sau thay cho don't forget trong thế đối chiếu.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "You forget both, but you don't say the names aloud.",
+            "note": "Cách đọc này lặng lẽ thay forget bằng say trong vế lược và thêm ý bí mật. Đối chiếu gốc không đưa ra động từ say.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Huy ngừng tìm tên ẩn. Anh mời từng người có tên kể lại tháng năm tặng sách. Sáu ký ức điền được bốn mốc, hai ô còn lại để trống.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Six names were enough to begin with.",
+          "vi": "Có sáu cái tên là đủ để bắt đầu rồi."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Mara đọc rành rọt cả sáu tên nhưng không nhớ được năm. Huy viết một mục lục theo tên thay vì xếp sách theo niên đại phỏng đoán.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The catalogue can remember what you remember.",
+          "vi": "Mục lục cũng có thể nhớ theo cách bà nhớ."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

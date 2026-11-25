@@ -1,0 +1,89 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="wBedSoil3" cx="64" cy="98" r="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4E342E"/>
+      <stop offset="70%" stop-color="#3E2723"/>
+      <stop offset="100%" stop-color="#2D150B" stop-opacity="0.8"/>
+    </radialGradient>
+    <linearGradient id="wGreenEarGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#166534"/>
+      <stop offset="40%" stop-color="#65A30D"/>
+      <stop offset="80%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#FEF08A"/>
+    </linearGradient>
+    <linearGradient id="wStalk3" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#15803D"/>
+      <stop offset="70%" stop-color="#65A30D"/>
+      <stop offset="100%" stop-color="#CA8A04"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Soil Bed Base -->
+  <ellipse cx="64" cy="102" rx="42" ry="14" fill="url(#wBedSoil3)"/>
+  <ellipse cx="64" cy="100" rx="36" ry="10" fill="#3E2723" opacity="0.6"/>
+
+  <!-- Left Wheat Plant with Ears -->
+  <g transform="translate(36, 96)">
+    <path d="M0 0 Q-6 -22 -10 -46" stroke="url(#wStalk3)" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M0 0 Q1 -26 0 -54" stroke="url(#wStalk3)" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M0 0 Q8 -22 10 -48" stroke="url(#wStalk3)" stroke-width="2.4" stroke-linecap="round"/>
+    <!-- Left Ears -->
+    <g transform="translate(-10, -46) rotate(-16)">
+      <ellipse cx="0" cy="-10" rx="3.5" ry="10" fill="url(#wGreenEarGrad)"/>
+      <path d="M-2 -5 L-5 -10 M2 -5 L5 -10 M-2 -12 L-6 -17 M2 -12 L6 -17 M0 -20 L0 -26" stroke="#FEF08A" stroke-width="1"/>
+    </g>
+    <g transform="translate(0, -54) rotate(-3)">
+      <ellipse cx="0" cy="-12" rx="4" ry="12" fill="url(#wGreenEarGrad)"/>
+      <path d="M-2.5 -6 L-6 -12 M2.5 -6 L6 -12 M-2.5 -14 L-7 -20 M2.5 -14 L7 -20 M0 -24 L0 -30" stroke="#FEF08A" stroke-width="1.1"/>
+    </g>
+    <g transform="translate(10, -48) rotate(14)">
+      <ellipse cx="0" cy="-10" rx="3.5" ry="10" fill="url(#wGreenEarGrad)"/>
+      <path d="M-2 -5 L-5 -10 M2 -5 L5 -10 M-2 -12 L-6 -17 M2 -12 L6 -17 M0 -20 L0 -26" stroke="#FEF08A" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- Center Main Wheat Plant (Taller, Richer Heads) -->
+  <g transform="translate(64, 94)">
+    <path d="M0 0 Q-10 -30 -12 -60" stroke="url(#wStalk3)" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M0 0 Q-3 -34 -4 -68" stroke="url(#wStalk3)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M0 0 Q4 -34 5 -66" stroke="url(#wStalk3)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M0 0 Q11 -30 13 -58" stroke="url(#wStalk3)" stroke-width="2.6" stroke-linecap="round"/>
+    <!-- Center Ears -->
+    <g transform="translate(-12, -60) rotate(-14)">
+      <ellipse cx="0" cy="-11" rx="3.8" ry="11" fill="url(#wGreenEarGrad)"/>
+      <path d="M-2.5 -6 L-6 -12 M2.5 -6 L6 -12 M-2.5 -13 L-6.5 -19 M2.5 -13 L6.5 -19 M0 -22 L0 -28" stroke="#FEF08A" stroke-width="1.1"/>
+    </g>
+    <g transform="translate(-4, -68) rotate(-4)">
+      <ellipse cx="0" cy="-13" rx="4.5" ry="13" fill="url(#wGreenEarGrad)"/>
+      <path d="M-3 -6 L-7 -14 M3 -6 L7 -14 M-3 -15 L-8 -23 M3 -15 L8 -23 M0 -26 L0 -34" stroke="#FEF08A" stroke-width="1.2"/>
+    </g>
+    <g transform="translate(5, -66) rotate(6)">
+      <ellipse cx="0" cy="-13" rx="4.5" ry="13" fill="url(#wGreenEarGrad)"/>
+      <path d="M-3 -6 L-7 -14 M3 -6 L7 -14 M-3 -15 L-8 -23 M3 -15 L8 -23 M0 -26 L0 -34" stroke="#FEF08A" stroke-width="1.2"/>
+    </g>
+    <g transform="translate(13, -58) rotate(16)">
+      <ellipse cx="0" cy="-11" rx="3.8" ry="11" fill="url(#wGreenEarGrad)"/>
+      <path d="M-2.5 -6 L-6 -12 M2.5 -6 L6 -12 M-2.5 -13 L-6.5 -19 M2.5 -13 L6.5 -19 M0 -22 L0 -28" stroke="#FEF08A" stroke-width="1.1"/>
+    </g>
+  </g>
+
+  <!-- Right Wheat Plant with Ears -->
+  <g transform="translate(92, 96)">
+    <path d="M0 0 Q-8 -22 -10 -48" stroke="url(#wStalk3)" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M0 0 Q-1 -26 0 -54" stroke="url(#wStalk3)" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M0 0 Q7 -22 9 -46" stroke="url(#wStalk3)" stroke-width="2.4" stroke-linecap="round"/>
+    <!-- Right Ears -->
+    <g transform="translate(-10, -48) rotate(-14)">
+      <ellipse cx="0" cy="-10" rx="3.5" ry="10" fill="url(#wGreenEarGrad)"/>
+      <path d="M-2 -5 L-5 -10 M2 -5 L5 -10 M-2 -12 L-6 -17 M2 -12 L6 -17 M0 -20 L0 -26" stroke="#FEF08A" stroke-width="1"/>
+    </g>
+    <g transform="translate(0, -54) rotate(2)">
+      <ellipse cx="0" cy="-12" rx="4" ry="12" fill="url(#wGreenEarGrad)"/>
+      <path d="M-2.5 -6 L-6 -12 M2.5 -6 L6 -12 M-2.5 -14 L-7 -20 M2.5 -14 L7 -20 M0 -24 L0 -30" stroke="#FEF08A" stroke-width="1.1"/>
+    </g>
+    <g transform="translate(9, -46) rotate(16)">
+      <ellipse cx="0" cy="-10" rx="3.5" ry="10" fill="url(#wGreenEarGrad)"/>
+      <path d="M-2 -5 L-5 -10 M2 -5 L5 -10 M-2 -12 L-6 -17 M2 -12 L6 -17 M0 -20 L0 -26" stroke="#FEF08A" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

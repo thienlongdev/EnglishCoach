@@ -1,0 +1,24 @@
+# Canonical GPU Echo AI delta image layered directly onto live `echo-jarvis-agentic-20261125` (`7c1db41a9f86`):
+# - Base image already includes `llama-cpp-python==0.3.38` (MIT, CPU-only `n_gpu_layers=0`, `0 MiB` VRAM),
+#   Kokoro-82M v1.0 (Apache-2.0), VieNeu-TTS-v3-Turbo ONNX INT8 (Apache-2.0), MOSS-Audio-Tokenizer-Nano-ONNX
+#   (Apache-2.0), sea-g2p (Apache-2.0), Smart Turn v3.2 (BSD-2-Clause), isolated faster-whisper-large-v3-turbo
+#   (MIT), and 0 GPLv3+ (`espeakng-loader`/`phonemizer-fork` removed).
+# - `Qwen3-4B-Instruct-2507-Q4_K_M.gguf` (Apache-2.0) resolves from the mounted `/root/.cache/huggingface`
+#   volume (`n_ctx=12288`, native `FP16` KV + `flash_attn=False`, `threads=12/16`, `batch=512/512`, 0 GB image layer duplication).
+# Build from repo root:
+#   docker build -f deploy/ai/Dockerfile.gpu-echo -t englishcoach-ai-whisperx:echo-voice-repair-20261125 ai-service
+FROM englishcoach-ai-whisperx:echo-jarvis-agentic-20261125
+
+COPY app/main.py /app/app/main.py
+COPY app/domain/schemas/tts.py /app/app/domain/schemas/tts.py
+COPY app/services/tts/__init__.py /app/app/services/tts/__init__.py
+COPY app/services/tts/kokoro_oov_g2p.py /app/app/services/tts/kokoro_oov_g2p.py
+COPY app/services/tts/jarvis_tts_service.py /app/app/services/tts/jarvis_tts_service.py
+COPY app/services/tts/omnivoice_service.py /app/app/services/tts/omnivoice_service.py
+COPY app/services/echo_realtime_voice.py /app/app/services/echo_realtime_voice.py
+COPY app/services/echo_local_llm.py /app/app/services/echo_local_llm.py
+COPY app/api/routes/tts.py /app/app/api/routes/tts.py
+COPY app/api/routes/coach.py /app/app/api/routes/coach.py
+COPY app/tests/test_listening_pipeline_law.py /app/app/tests/test_listening_pipeline_law.py
+COPY app/tests/test_echo_jarvis_voice.py /app/app/tests/test_echo_jarvis_voice.py
+COPY app/tests/test_echo_local_llm.py /app/app/tests/test_echo_local_llm.py

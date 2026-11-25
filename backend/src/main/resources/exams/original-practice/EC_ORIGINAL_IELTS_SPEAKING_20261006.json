@@ -1,0 +1,644 @@
+{
+  "manifest" : {
+    "schemaVersion" : "1.0",
+    "packageId" : "EC_ORIGINAL_IELTS_SPEAKING_20261006",
+    "packageVersion" : 1,
+    "contentHash" : "60ca8df2fb032774cf792db7d705cebd3c964254c22d2e77ce40fd61de3cbaf8",
+    "creator" : "ENGLISHCOACH_ORIGINAL_RECOVERY",
+    "specificationBaselineId" : "EC-EXAM-SPEC-2026-09-10",
+    "authoringStatus" : "DRAFT",
+    "createdAt" : "2026-10-06T00:00:00Z",
+    "metadata" : {
+      "provenanceLabel" : "EnglishCoach Original IELTS Practice",
+      "ownerAuthorizedOriginalPractice" : "2026-10-06",
+      "humanReviewComplete" : false,
+      "officialIELTS" : false,
+      "publisherEndorsement" : false,
+      "targetItemCount" : 9
+    }
+  },
+  "sources" : [ {
+    "id" : "9b4ae775-1758-5ee3-bb9d-722f852d076c",
+    "code" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_SOURCE",
+    "name" : "EnglishCoach Original IELTS Practice",
+    "owner" : "English Coach",
+    "publisher" : "English Coach",
+    "sourceType" : "INTERNAL_ORIGINAL",
+    "referenceMeta" : {
+      "declaration" : "Original practice; no publisher content or endorsement."
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "licenses" : [ {
+    "id" : "72ed907c-854f-5b09-92ac-f4a7deee8c2a",
+    "sourceId" : "9b4ae775-1758-5ee3-bb9d-722f852d076c",
+    "licenseCode" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_ORIGINAL_PENDING",
+    "provenanceCategory" : "ORIGINAL",
+    "commercialRights" : true,
+    "redistributionRights" : true,
+    "derivativeRights" : true,
+    "permittedPurposes" : {
+      "EXAM" : true,
+      "SIMULATION" : true,
+      "PRACTICE" : true,
+      "CONTENT" : true,
+      "REDISTRIBUTION" : true
+    },
+    "permittedTerritories" : {
+      "GLOBAL" : true
+    },
+    "validFrom" : "2026-09-10T00:00:00Z",
+    "validUntil" : null,
+    "attribution" : "EnglishCoach Original IELTS Practice; human review pending",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  } ],
+  "provenances" : [ {
+    "id" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "sourceId" : "9b4ae775-1758-5ee3-bb9d-722f852d076c",
+    "licenseId" : "72ed907c-854f-5b09-92ac-f4a7deee8c2a",
+    "creator" : "ENGLISHCOACH_ORIGINAL_RECOVERY",
+    "acquisitionMethod" : "ORIGINAL_GENERATION",
+    "originalReference" : "EC_ORIGINAL_IELTS_SPEAKING_20261006",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : {
+      "generatedAt" : "2026-10-06",
+      "humanReviewComplete" : false
+    },
+    "createdAt" : null
+  } ],
+  "catalogNodes" : [ {
+    "id" : "0b6156ee-a113-5297-b47c-1e82d018d28b",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "sourceId" : "9b4ae775-1758-5ee3-bb9d-722f852d076c",
+    "parentId" : null,
+    "kind" : "COLLECTION",
+    "title" : "EnglishCoach Original IELTS Practice",
+    "year" : 2026,
+    "ordinal" : 2,
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "specifications" : [ {
+    "id" : "04c6d02c-255d-5a75-9a4a-054dec37d3c2",
+    "logicalCode" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_IELTS_SHARED_SPEAKING_SPEC",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "deliveryMode" : "COMPUTER_SIMULATION",
+    "blueprint" : {
+      "sectionCount" : 1,
+      "itemCount" : 9,
+      "targetItemCount" : 9,
+      "sharedWith" : [ "GENERAL_TRAINING" ]
+    },
+    "timingPolicy" : {
+      "speakingMinutes" : "11-14",
+      "part2PreparationSeconds" : 60,
+      "part2ResponseSeconds" : 120
+    },
+    "navigationPolicy" : {
+      "sectionNavigation" : "fixed_sequence"
+    },
+    "playbackPolicy" : {
+      "mode" : "PROMPT_TEXT_SIMULATION"
+    },
+    "sourceReferences" : {
+      "baseline" : "EC-EXAM-SPEC-2026-09-10"
+    },
+    "contentHash" : "fa8d6aec337554e9694fda8ca9ae23bbede90af5dc78b477ea0202818d1cf7e3",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "rubrics" : [ {
+    "id" : "2003f86c-8018-5f5d-9086-bba9a755344a",
+    "logicalCode" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_IELTS_SPEAKING_RUBRIC",
+    "version" : 1,
+    "family" : "IELTS",
+    "skill" : "SPEAKING",
+    "taskFamily" : "IELTS_SPEAKING",
+    "criteria" : {
+      "fluencyAndCoherence" : {
+        "weight" : 1
+      },
+      "lexicalResource" : {
+        "weight" : 1
+      },
+      "grammaticalRangeAndAccuracy" : {
+        "weight" : 1
+      },
+      "pronunciation" : {
+        "weight" : 1
+      }
+    },
+    "ordinalScale" : {
+      "min" : 0,
+      "max" : 9,
+      "steps" : [ 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9 ]
+    },
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "contentHash" : "ef69a004c41dd65b4e12ac6ad68b14fe9df8a8aba6814be4376aa43e6c355ead",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "calibrations" : [ ],
+  "scoringSchemes" : [ {
+    "id" : "f24c47cf-e94f-5f99-966f-67fdf5766319",
+    "logicalCode" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_7682828566fa",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "SPEAKING",
+    "normalizationVersion" : "EC-SPEECH-V1",
+    "rubricReferences" : {
+      "speaking" : "2003f86c-8018-5f5d-9086-bba9a755344a"
+    },
+    "calibrationId" : null,
+    "mappingTable" : {
+      "metrics" : [ "SPEAKING" ],
+      "status" : "DRAFT_NOT_CALIBRATED",
+      "scoreLabel" : "English Coach estimated band"
+    },
+    "aggregationRules" : {
+      "criteriaEqualWeight" : true,
+      "officialEquating" : false,
+      "version" : "EC-AGGREGATION-DRAFT-V1"
+    },
+    "contentHash" : "842b10193cdf37b505e5d72f75b3a5bbe0af160a1e66b620478c9692dfa0f7d4",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "form" : {
+    "id" : "90919e47-3ed0-5499-8376-a95e5cd64647",
+    "logicalKey" : "EC_ORIGINAL_IELTS_SPEAKING_20261006",
+    "version" : 1,
+    "title" : "EnglishCoach Original IELTS Speaking - A useful shared place",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "SPEAKING",
+    "catalogNodeId" : "0b6156ee-a113-5297-b47c-1e82d018d28b",
+    "specificationId" : "04c6d02c-255d-5a75-9a4a-054dec37d3c2",
+    "scoringSchemeId" : "f24c47cf-e94f-5f99-966f-67fdf5766319",
+    "lifecycleState" : "DRAFT",
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "authorId" : null,
+    "contentHash" : "5cf69d070676e4329747da3713ebe1a1880b61a4ec9ccbd91451ed6852c7a830",
+    "publishedAt" : null,
+    "retiredAt" : null,
+    "createdAt" : null
+  },
+  "formComponents" : [ ],
+  "sections" : [ {
+    "id" : "67af1c26-9cfb-5d4d-b7ce-1e9326d4c9b6",
+    "formId" : "90919e47-3ed0-5499-8376-a95e5cd64647",
+    "skill" : "SPEAKING",
+    "ordinal" : 1,
+    "specSectionKey" : "SPEAKING",
+    "scoringSchemeId" : "f24c47cf-e94f-5f99-966f-67fdf5766319",
+    "durationSeconds" : 840,
+    "timingPolicy" : {
+      "officialMinutes" : "11-14",
+      "simulationLabel" : "IELTS Speaking simulation",
+      "sharedWith" : "GENERAL_TRAINING"
+    },
+    "isRunnable" : true,
+    "healthStatus" : "HEALTHY"
+  } ],
+  "parts" : [ {
+    "id" : "97a72360-a19c-5c02-89a2-b4e485a182ac",
+    "sectionId" : "67af1c26-9cfb-5d4d-b7ce-1e9326d4c9b6",
+    "partCode" : "SPEAKING_PART_1",
+    "ordinal" : 1,
+    "instructions" : "Answer familiar-topic interview questions in a natural way.",
+    "timingPolicy" : {
+      "durationSeconds" : 300
+    }
+  }, {
+    "id" : "dca9844e-d12e-542c-b03d-4e9edb8f004f",
+    "sectionId" : "67af1c26-9cfb-5d4d-b7ce-1e9326d4c9b6",
+    "partCode" : "SPEAKING_PART_2",
+    "ordinal" : 2,
+    "instructions" : "Prepare for one minute, then speak for up to two minutes.",
+    "timingPolicy" : {
+      "preparationSeconds" : 60,
+      "responseSeconds" : 120,
+      "totalSeconds" : 240
+    }
+  }, {
+    "id" : "108f8f4c-8216-5926-9822-96e86dafe8b6",
+    "sectionId" : "67af1c26-9cfb-5d4d-b7ce-1e9326d4c9b6",
+    "partCode" : "SPEAKING_PART_3",
+    "ordinal" : 3,
+    "instructions" : "Discuss broader ideas connected with the Part 2 topic.",
+    "timingPolicy" : {
+      "durationSeconds" : 300
+    }
+  } ],
+  "groups" : [ {
+    "id" : "746f1b0a-e7d6-5199-ba52-c118108a5c82",
+    "logicalGroupKey" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_IELTS_SHARED_SP_G01",
+    "version" : 1,
+    "questionType" : "INTERVIEW",
+    "construct" : "familiar_topic_fluency",
+    "skill" : "SPEAKING",
+    "topic" : "neighbourhood routines",
+    "difficultyEstimate" : 0.45,
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "contentHash" : "9c19a5b6c5090286e4631b6e5c067d827f91a0cd9a3dc1d6b5a2c3e8ac9c9ee5",
+    "createdAt" : null
+  }, {
+    "id" : "a9dfd022-9a12-5b8c-984a-787f1a3284d1",
+    "logicalGroupKey" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_IELTS_SHARED_SP_G02",
+    "version" : 1,
+    "questionType" : "LONG_TURN",
+    "construct" : "extended_monologue",
+    "skill" : "SPEAKING",
+    "topic" : "a small change to a shared place",
+    "difficultyEstimate" : 0.55,
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "contentHash" : "248557d31ee78d3c43e9cc953d14790637aad44e6469a12d18f0a48bfcf5d8c8",
+    "createdAt" : null
+  }, {
+    "id" : "b84291fd-0b5f-56ca-b08d-8b4885c41ef5",
+    "logicalGroupKey" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_IELTS_SHARED_SP_G03",
+    "version" : 1,
+    "questionType" : "DISCUSSION",
+    "construct" : "abstract_discussion",
+    "skill" : "SPEAKING",
+    "topic" : "public improvements",
+    "difficultyEstimate" : 0.65,
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "contentHash" : "807dc773a08bfe7f1e6c5f172ff639629480cee020c1821cf30a948f3e1a47b2",
+    "createdAt" : null
+  } ],
+  "formGroups" : [ {
+    "id" : "81e90203-c6e6-54f5-8c48-65dd418627bc",
+    "partId" : "97a72360-a19c-5c02-89a2-b4e485a182ac",
+    "groupId" : "746f1b0a-e7d6-5199-ba52-c118108a5c82",
+    "ordinal" : 1,
+    "displayNumbering" : "Part 1"
+  }, {
+    "id" : "b068309e-fb62-5fc0-8278-0350c63d8cd1",
+    "partId" : "dca9844e-d12e-542c-b03d-4e9edb8f004f",
+    "groupId" : "a9dfd022-9a12-5b8c-984a-787f1a3284d1",
+    "ordinal" : 1,
+    "displayNumbering" : "Part 2"
+  }, {
+    "id" : "6d342580-9312-53a1-8207-90c4d12050c6",
+    "partId" : "108f8f4c-8216-5926-9822-96e86dafe8b6",
+    "groupId" : "b84291fd-0b5f-56ca-b08d-8b4885c41ef5",
+    "ordinal" : 1,
+    "displayNumbering" : "Part 3"
+  } ],
+  "stimuli" : [ {
+    "id" : "95980203-a78d-5046-b9a7-892b63ca44ce",
+    "logicalStimulusKey" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_IELTS_SHARED_SP_P1_PROMPT",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : "Neighbourhood routines",
+    "bodyPayload" : {
+      "text" : "EnglishCoach Original IELTS Speaking Practice"
+    },
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "contentHash" : "6a42fc010bd294a37a563cacc0bb88d7dc77d0aa56a8cfa8e1fbf83c5cd2fe6c",
+    "createdAt" : null
+  }, {
+    "id" : "03234f96-8854-57e4-a8d3-e94fccded758",
+    "logicalStimulusKey" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_IELTS_SHARED_SP_P2_PROMPT",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : "A small change to a shared place",
+    "bodyPayload" : {
+      "text" : "EnglishCoach Original IELTS Speaking Practice"
+    },
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "contentHash" : "14ddc16c25f63af3cb9f6b8a49fb8f225c0b671ea7e64a68776ae727dc3d8748",
+    "createdAt" : null
+  }, {
+    "id" : "245583c6-dfcd-57b5-a54a-1a6838d8cfc9",
+    "logicalStimulusKey" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_IELTS_SHARED_SP_P3_PROMPT",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : "Public improvements",
+    "bodyPayload" : {
+      "text" : "EnglishCoach Original IELTS Speaking Practice"
+    },
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "contentHash" : "c970df11fa77c8aaeba8c000b6495b86a3eceafd24e464117293ede661e71c18",
+    "createdAt" : null
+  } ],
+  "groupStimuli" : [ {
+    "id" : "d1e12b17-a78d-57e5-8491-adb62dab10a7",
+    "groupId" : "746f1b0a-e7d6-5199-ba52-c118108a5c82",
+    "stimulusId" : "95980203-a78d-5046-b9a7-892b63ca44ce",
+    "role" : "PRIMARY",
+    "ordinal" : 1
+  }, {
+    "id" : "6d3a1000-5022-5cd0-b2f8-eb1547dac735",
+    "groupId" : "a9dfd022-9a12-5b8c-984a-787f1a3284d1",
+    "stimulusId" : "03234f96-8854-57e4-a8d3-e94fccded758",
+    "role" : "PRIMARY",
+    "ordinal" : 1
+  }, {
+    "id" : "e307e007-99bc-59cd-b942-dab2380964e2",
+    "groupId" : "b84291fd-0b5f-56ca-b08d-8b4885c41ef5",
+    "stimulusId" : "245583c6-dfcd-57b5-a54a-1a6838d8cfc9",
+    "role" : "PRIMARY",
+    "ordinal" : 1
+  } ],
+  "items" : [ {
+    "id" : "d5229b6d-dc83-5750-8c8a-98686bb39291",
+    "groupId" : "746f1b0a-e7d6-5199-ba52-c118108a5c82",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_P1_Q1",
+    "version" : 1,
+    "prompt" : "What kind of area do you live in?",
+    "interactionType" : "speaking_response",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true
+    },
+    "construct" : "familiar_topic_fluency",
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "contentHash" : "bfb72e0e749534f9d796ea59e7b5ec8da2eb24d2ced3d5467663f2abe89ceb62",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "ee79d0cc-0d68-5f97-b60a-f8ddb2f597ca",
+    "groupId" : "746f1b0a-e7d6-5199-ba52-c118108a5c82",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_P1_Q2",
+    "version" : 1,
+    "prompt" : "Is there a public place near your home that you use often?",
+    "interactionType" : "speaking_response",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true
+    },
+    "construct" : "familiar_topic_fluency",
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "contentHash" : "767c2762f07f87f38aba831f0e97fe0807520981aab3805c13512bcb65eb8a01",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "173cccb3-18a3-5d32-b4b0-8c7697117e11",
+    "groupId" : "746f1b0a-e7d6-5199-ba52-c118108a5c82",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_P1_Q3",
+    "version" : 1,
+    "prompt" : "Do you prefer quiet places or busy places in your free time? Why?",
+    "interactionType" : "speaking_response",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true
+    },
+    "construct" : "familiar_topic_fluency",
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "contentHash" : "1db6b75d8f01d3b7ae1a1f8959456cbc737623e937b871574b79203c448f4175",
+    "createdAt" : null,
+    "ordinal" : 3
+  }, {
+    "id" : "744d0942-14ea-5cac-9fd6-5442f359690d",
+    "groupId" : "746f1b0a-e7d6-5199-ba52-c118108a5c82",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_P1_Q4",
+    "version" : 1,
+    "prompt" : "Has the area where you live changed in recent years?",
+    "interactionType" : "speaking_response",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true
+    },
+    "construct" : "familiar_topic_fluency",
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "contentHash" : "9130671fd3b705916565d9c533b184aa33a889a30c0768a81502990f76b79368",
+    "createdAt" : null,
+    "ordinal" : 4
+  }, {
+    "id" : "dc7eea47-adc5-5555-b588-7916f17b564b",
+    "groupId" : "a9dfd022-9a12-5b8c-984a-787f1a3284d1",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_P2_Q1",
+    "version" : 1,
+    "prompt" : "Describe a shared place that became more useful after a small improvement. You should say: where the place is, what was changed, who uses it, and explain why the improvement made a difference.",
+    "interactionType" : "speaking_response",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true
+    },
+    "construct" : "extended_monologue",
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "contentHash" : "645756f888565c143923798f446c09ec1c15a8521d001636017cae052c61f2a0",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "d9667240-a764-577e-9578-1931eeaa85ba",
+    "groupId" : "b84291fd-0b5f-56ca-b08d-8b4885c41ef5",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_P3_Q1",
+    "version" : 1,
+    "prompt" : "Why can a small improvement to a public place have a large effect on a community?",
+    "interactionType" : "speaking_response",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true
+    },
+    "construct" : "abstract_discussion",
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "contentHash" : "4695891adf782d742a1255e0bbe2e3f161b424b2de3eaae086a61327246bdfe7",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "ba28f544-e09c-530c-92fb-3fd246e4e4e1",
+    "groupId" : "b84291fd-0b5f-56ca-b08d-8b4885c41ef5",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_P3_Q2",
+    "version" : 1,
+    "prompt" : "How should local authorities decide which public spaces need investment?",
+    "interactionType" : "speaking_response",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true
+    },
+    "construct" : "abstract_discussion",
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "contentHash" : "46d7af79d25d19f56bf5d64026df9ac586c53e0a1f5b4aef1ffe68dc4d4e7e00",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "e5ebff03-bcb8-5ac0-b20b-24c576fae2f5",
+    "groupId" : "b84291fd-0b5f-56ca-b08d-8b4885c41ef5",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_P3_Q3",
+    "version" : 1,
+    "prompt" : "What are the advantages and disadvantages of asking residents to help design shared places?",
+    "interactionType" : "speaking_response",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true
+    },
+    "construct" : "abstract_discussion",
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "contentHash" : "555ac354f4b15012bde3dd5090c3a36ed317fa9ecc041496bf91328cb72dbee8",
+    "createdAt" : null,
+    "ordinal" : 3
+  }, {
+    "id" : "97924020-b08f-591e-8997-41ce8cc56191",
+    "groupId" : "b84291fd-0b5f-56ca-b08d-8b4885c41ef5",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_SPEAKING_20261006_P3_Q4",
+    "version" : 1,
+    "prompt" : "How might the way people use public places change in the future?",
+    "interactionType" : "speaking_response",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true
+    },
+    "construct" : "abstract_discussion",
+    "provenanceId" : "b0300185-ccd8-598e-ad69-de345c31e952",
+    "contentHash" : "37fc57a5851ec830178e9ea31d743c700f91e187975ec6332b86e813f480dbea",
+    "createdAt" : null,
+    "ordinal" : 4
+  } ],
+  "answerSpecs" : [ {
+    "id" : "9e47ff54-9c91-5489-9aef-16a13c70035c",
+    "itemId" : "d5229b6d-dc83-5750-8c8a-98686bb39291",
+    "acceptedAnswers" : {
+      "policy" : "productive_response"
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Response-only original practice; no official IELTS score.",
+    "rubricId" : "2003f86c-8018-5f5d-9086-bba9a755344a",
+    "createdAt" : null
+  }, {
+    "id" : "534d597c-e434-569c-a9f6-d80343e8799c",
+    "itemId" : "ee79d0cc-0d68-5f97-b60a-f8ddb2f597ca",
+    "acceptedAnswers" : {
+      "policy" : "productive_response"
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Response-only original practice; no official IELTS score.",
+    "rubricId" : "2003f86c-8018-5f5d-9086-bba9a755344a",
+    "createdAt" : null
+  }, {
+    "id" : "a39c77b9-cfa4-5da4-b448-81a677802826",
+    "itemId" : "173cccb3-18a3-5d32-b4b0-8c7697117e11",
+    "acceptedAnswers" : {
+      "policy" : "productive_response"
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Response-only original practice; no official IELTS score.",
+    "rubricId" : "2003f86c-8018-5f5d-9086-bba9a755344a",
+    "createdAt" : null
+  }, {
+    "id" : "81693ea3-3130-5904-9750-4a0e166ec916",
+    "itemId" : "744d0942-14ea-5cac-9fd6-5442f359690d",
+    "acceptedAnswers" : {
+      "policy" : "productive_response"
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Response-only original practice; no official IELTS score.",
+    "rubricId" : "2003f86c-8018-5f5d-9086-bba9a755344a",
+    "createdAt" : null
+  }, {
+    "id" : "0438788e-f3d2-5100-afff-28f30418abf7",
+    "itemId" : "dc7eea47-adc5-5555-b588-7916f17b564b",
+    "acceptedAnswers" : {
+      "policy" : "productive_response"
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Response-only original practice; no official IELTS score.",
+    "rubricId" : "2003f86c-8018-5f5d-9086-bba9a755344a",
+    "createdAt" : null
+  }, {
+    "id" : "1bc6a3db-5778-5688-87d8-0264e51a487e",
+    "itemId" : "d9667240-a764-577e-9578-1931eeaa85ba",
+    "acceptedAnswers" : {
+      "policy" : "productive_response"
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Response-only original practice; no official IELTS score.",
+    "rubricId" : "2003f86c-8018-5f5d-9086-bba9a755344a",
+    "createdAt" : null
+  }, {
+    "id" : "849108ad-7fb1-5a8f-987b-c1b31994fcf5",
+    "itemId" : "ba28f544-e09c-530c-92fb-3fd246e4e4e1",
+    "acceptedAnswers" : {
+      "policy" : "productive_response"
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Response-only original practice; no official IELTS score.",
+    "rubricId" : "2003f86c-8018-5f5d-9086-bba9a755344a",
+    "createdAt" : null
+  }, {
+    "id" : "2870d325-ffa4-5aec-8f35-2f5c069c22d6",
+    "itemId" : "e5ebff03-bcb8-5ac0-b20b-24c576fae2f5",
+    "acceptedAnswers" : {
+      "policy" : "productive_response"
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Response-only original practice; no official IELTS score.",
+    "rubricId" : "2003f86c-8018-5f5d-9086-bba9a755344a",
+    "createdAt" : null
+  }, {
+    "id" : "5b932f2b-96eb-5ec8-8ce0-25d871058293",
+    "itemId" : "97924020-b08f-591e-8997-41ce8cc56191",
+    "acceptedAnswers" : {
+      "policy" : "productive_response"
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Response-only original practice; no official IELTS score.",
+    "rubricId" : "2003f86c-8018-5f5d-9086-bba9a755344a",
+    "createdAt" : null
+  } ],
+  "assets" : [ ],
+  "stimulusAssets" : [ ]
+}

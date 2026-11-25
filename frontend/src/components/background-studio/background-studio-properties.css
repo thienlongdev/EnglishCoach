@@ -1,0 +1,57 @@
+/*
+ * Echo Background Studio — Progressive-enhancement CSS @property registrations.
+ *
+ * Strictly namespaced `--ec-bg-*`. Registered typed custom properties enable smooth
+ * interpolation of gradient angles, shimmer sweep angles, breath phase, and morph mix
+ * on browsers supporting CSS Properties and Values API (Chromium 85+, Safari 15.4+,
+ * Firefox 128+). Older browsers safely inherit the fallback declarations on `:root`.
+ *
+ * Discipline: zero specificity overrides, zero live backdrop blur, zero document-wide animations.
+ */
+
+:root {
+  --ec-bg-angle: 135deg;
+  --ec-bg-shimmer-angle: 118deg;
+  --ec-bg-breathe: 0;
+  --ec-bg-morph-mix: 0;
+  --ec-bg-opacity: 1;
+  --ec-bg-base-opacity: 1;
+  --ec-bg-depth-opacity: 0.45;
+  --ec-bg-speed: 1;
+  --ec-bg-motion: 0.6;
+  --ec-bg-scale: 1;
+  --ec-bg-light: 0.6;
+  --ec-bg-glow: 0.4;
+  --ec-bg-glow-radius: 0.65;
+  --ec-bg-shimmer: 0.45;
+  --ec-bg-grain-opacity: 0.025;
+  --ec-bg-blur-overscan: 0px;
+  --ec-bg-dir-x: 0.707;
+  --ec-bg-dir-y: -0.707;
+  --ec-bg-center-x: 50%;
+  --ec-bg-center-y: 50%;
+}
+
+@property --ec-bg-angle {
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 135deg;
+}
+
+@property --ec-bg-shimmer-angle {
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 118deg;
+}
+
+@property --ec-bg-breathe {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --ec-bg-morph-mix {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}

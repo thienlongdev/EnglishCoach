@@ -1,0 +1,36 @@
+/* The computer's screen, exactly over the screen in the room. Its own world: it never reads the page's wallpaper surfaces. */
+.desk{contain:layout paint;position:absolute;z-index:26;overflow:hidden;border-radius:3px;color:#eaf4fb;background:linear-gradient(145deg,#0b2240 0%,#16426f 52%,#2d6c9f 100%);pointer-events:auto;opacity:0;animation:deskIn .28s ease-out .02s forwards;font-size:14px;user-select:none}
+@keyframes deskIn{from{opacity:0;filter:brightness(1.8)}to{opacity:1;filter:none}}
+.wallpaper{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.wallpaper::before,.wallpaper::after{content:'';position:absolute;left:-10%;right:-10%;height:46%;bottom:-16%;border-radius:50%;background:radial-gradient(60% 100% at 50% 0,#7cd0ff2a,#7cd0ff00 70%)}
+.wallpaper::after{bottom:-26%;left:10%;background:radial-gradient(60% 100% at 50% 0,#b6e4ff22,#b6e4ff00 70%)}
+.wallpaper img{position:absolute;right:6%;top:50%;width:min(30%,300px);transform:translateY(-58%);opacity:.92;filter:drop-shadow(0 18px 40px #03122466)}
+.top{position:absolute;left:0;right:0;top:0;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:18px 22px;pointer-events:none}
+.clock{display:grid;gap:2px;text-shadow:0 2px 12px #04162a88}.clock b{font-size:clamp(30px,4.4vw,52px);line-height:1;font-weight:700;letter-spacing:.01em}.clock span{font-size:13px;opacity:.86;text-transform:capitalize}
+.glance{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end;pointer-events:auto}
+.glance button{display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border:1px solid #cfe9f733;border-radius:12px;background:#0a203a99;color:inherit;font:inherit;font-size:12.5px;cursor:pointer}.glance button:hover{background:#12345abf}
+.icons{position:absolute;left:18px;top:104px;bottom:72px;display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));grid-auto-rows:92px;gap:6px;width:min(62%,560px);align-content:start;overflow:auto}
+.icons button{display:grid;justify-items:center;align-content:center;gap:6px;padding:6px 4px;border:1px solid transparent;border-radius:12px;background:none;color:inherit;font:inherit;font-size:12px;line-height:1.2;text-align:center;cursor:pointer;text-shadow:0 1px 6px #04162acc}
+.icons button:hover,.icons button:focus-visible{background:#ffffff14;border-color:#ffffff1f;outline:none}
+.tile{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;color:#fff;background:linear-gradient(150deg,var(--tone),color-mix(in srgb,var(--tone) 62%,#0a1d33));box-shadow:0 6px 14px #03122466,inset 0 1px 0 #ffffff55}
+.window{position:absolute;left:10px;right:10px;top:10px;bottom:58px;display:flex;flex-direction:column;border-radius:12px;overflow:hidden;background:var(--md-sys-color-surface,#fbfaff);color:var(--md-sys-color-on-surface,#1b1b24);box-shadow:0 24px 60px #020b1880,0 0 0 1px #0b24404d;animation:winIn .2s cubic-bezier(.2,.8,.2,1);user-select:text}
+.window[hidden]{display:none}
+@keyframes winIn{from{transform:translateY(10px) scale(.985);opacity:.4}to{transform:none;opacity:1}}
+.bar{flex:none;display:flex;justify-content:space-between;align-items:center;gap:8px;height:38px;padding:0 6px 0 12px;background:#102b48;color:#eaf4fb;user-select:none}
+.barTitle{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13px}.barTitle svg{color:var(--tone)}
+.barTools{display:flex;gap:2px}.barTools button{display:grid;place-items:center;width:30px;height:28px;border:0;border-radius:7px;background:none;color:inherit;cursor:pointer}.barTools button:hover{background:#ffffff1f}
+.fill { height: 100%; min-height: 0; }
+/* The same real modules out of a screen's frame, when a thing in the room is what opened them. */
+.roomWindow { position: fixed; z-index: 60; inset: clamp(10px, 4vh, 44px) clamp(10px, 6vw, 90px); }
+.body{flex:1;min-height:0;overflow:auto;background:var(--md-sys-color-surface,#fbfaff)}
+.pad{padding:18px}
+.dock{position:absolute;left:50%;bottom:9px;transform:translateX(-50%);display:flex;align-items:center;gap:6px;max-width:calc(100% - 20px);padding:5px 7px;border:1px solid #cfe9f72e;border-radius:15px;background:#081b31cc;box-shadow:0 10px 26px #020b1866}
+.dock button{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-width:36px;height:34px;padding:0 8px;border:0;border-radius:10px;background:none;color:#eaf4fb;font:inherit;font-size:12.5px;cursor:pointer}
+.dock button:hover{background:#ffffff1a}.dock button[aria-pressed=true]{background:#ffffff26;color:var(--tone)}
+.dockRule{width:1px;height:22px;background:#cfe9f733}.dockRule:first-child{display:none}
+.leave kbd{display:inline-grid;place-items:center;min-width:26px;height:18px;padding:0 4px;border:1px solid #cfe9f755;border-radius:5px;font:inherit;font-size:10.5px;opacity:.85}
+.loadingApp{display:flex;justify-content:center;gap:8px;padding:64px 0}.loadingApp span{width:10px;height:10px;border-radius:50%;background:#7aa7d8;animation:dots 1s infinite ease-in-out}.loadingApp span:nth-child(2){animation-delay:.14s}.loadingApp span:nth-child(3){animation-delay:.28s}
+@keyframes dots{0%,100%{opacity:.3;transform:translateY(0)}50%{opacity:1;transform:translateY(-5px)}}
+@media(prefers-reduced-motion:reduce){.desk,.window{animation:none;opacity:1}.loadingApp span{animation:none}}
+@media(max-width:700px){.icons{width:calc(100% - 28px);left:14px;top:90px}.wallpaper img{display:none}}
+.failed{display:grid;place-content:center;justify-items:center;gap:14px;height:100%;padding:24px;text-align:center;color:inherit}.failed p{margin:0;font-weight:600}.failed div{display:flex;gap:8px}.failed button{padding:8px 14px;border-radius:10px;border:1px solid #7a8aa055;background:#10304e;color:#fff;font:inherit;cursor:pointer}

@@ -1,0 +1,20 @@
+{
+  "id":"modal-evidence",
+  "title":"Suy luận từ dấu hiệu: must, may, can't",
+  "summary":"Thay mức cam kết và mốc thời gian. Các câu thể hiện suy luận của người nói, không phải phép đo xác suất hay lời ra lệnh.",
+  "level":"B2",
+  "topics":["must-cant-deduction","modal-perfect-deduction","modality-degrees-of-certainty"],
+  "kind":"switchboard",
+  "axes":[
+    {"id":"commitment","label":"Cách người nói đánh giá dấu hiệu","values":[{"id":"strong","label":"Dấu hiệu khiến tôi tin rất mạnh"},{"id":"possible","label":"Một khả năng chưa xác nhận"},{"id":"excluded","label":"Dấu hiệu khiến tôi loại trừ"}]},
+    {"id":"time","label":"Điều đang suy luận","values":[{"id":"now","label":"Mai đang ở đâu"},{"id":"past","label":"Mai có rời đi trước đó không"}]}
+  ],
+  "results":{
+    "strong|now":{"en":"Mai must be in the archive.","vi":"Chắc hẳn Mai đang ở kho lưu trữ.","note":"Ví dụ: thiết bị báo vừa có người vào bằng thẻ của Mai và bạn nghe giọng cô ấy. Must diễn đạt suy luận mạnh ở đây, không phải mệnh lệnh Mai phải ở đó. Dấu hiệu vẫn có thể bị hiểu sai.","verdict":"ok"},
+    "possible|now":{"en":"Mai may be in the archive.","vi":"Mai có thể đang ở kho lưu trữ.","note":"Bạn chưa kiểm tra nhưng biết cô ấy định tìm hồ sơ. May be nêu một khả năng; không gán phần trăm và không khẳng định cô ấy chắc chắn ở đó.","verdict":"ok"},
+    "excluded|now":{"en":"Mai can't be in the archive.","vi":"Mai không thể đang ở kho lưu trữ.","note":"Ví dụ: bạn đang nói chuyện trực tiếp với Mai ở một tòa nhà khác. Can't là suy luận loại trừ, không phải cấm vào kho. Cannot là dạng đầy đủ; mustn't không phải cách phủ định suy luận thông thường tương đương ở đây.","verdict":"ok"},
+    "strong|past":{"en":"Mai must have left before noon.","vi":"Chắc hẳn Mai đã rời đi trước buổi trưa.","note":"Bạn suy từ dữ liệu hiện có về một lần rời đi trước đó. Must have + phân từ không có nghĩa Mai đã bị bắt buộc phải rời đi; ngữ cảnh ở đây là suy luận.","verdict":"ok"},
+    "possible|past":{"en":"Mai may have left before noon.","vi":"Mai có thể đã rời đi trước buổi trưa.","note":"May have left giữ khả năng chưa xác nhận. Might have left cũng có thể dùng; cannot have left sẽ loại trừ thay vì để ngỏ khả năng.","verdict":"ok"},
+    "excluded|past":{"en":"Mai can't have left before noon.","vi":"Mai không thể đã rời đi trước buổi trưa.","note":"Ví dụ: bạn trực tiếp cùng Mai làm việc trong kho đến 12 giờ 30 trước khi cô ấy rời đi trong ngày đó. Can't have left loại trừ mốc trước trưa cho lần rời đi đang bàn. Couldn't have left cũng có thể dùng; câu không tự loại trừ mọi lần ra ngoài khác.","verdict":"ok"}
+  }
+}

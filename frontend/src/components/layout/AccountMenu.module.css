@@ -1,0 +1,141 @@
+/*
+ * Account capsule + menu (Echo Glass, 2026-10-22). The capsule is a raised glass object of the top bar (it inherits the bar's
+ * --gx-* tokens); the menu is portalled to <body>, so it carries its own tokens: a floating glass panel with a specular rim, a
+ * top sheen, a deep soft shadow and a small notch toward the capsule. Items are lit wells; sign-out stays a restrained rose.
+ */
+.trigger {
+  position: relative;
+  isolation: isolate;
+  color: #0b1a38;
+  background: var(--gx-sheen, none), var(--gx-fill, #ffffff);
+  box-shadow: var(--gx-shadow, 0 1px 2px #0b1a380d);
+  transition: transform 260ms cubic-bezier(.2, .9, .3, 1.25), box-shadow 220ms;
+}
+.trigger::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  padding: 1px;
+  pointer-events: none;
+  background: var(--gx-rim, linear-gradient(#dfe5f0, #dfe5f0));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.trigger:hover { transform: translateY(-1px); box-shadow: var(--gx-shadow-hover, 0 6px 16px -12px #0d2a5e66); }
+.trigger:active { transform: translateY(0.5px) scale(0.985); box-shadow: var(--gx-shadow-press, none); transition-duration: 90ms; }
+.trigger[aria-expanded="true"] { box-shadow: var(--gx-shadow-hover, none), 0 0 0 3px rgb(37 99 235 / 0.16); }
+.trigger:focus-visible, .item:focus-visible { outline: 2px solid #2563eb; outline-offset: 3px; }
+.subtitle { color: #5d6a88; }
+.chevron { color: #7f8cab; }
+
+.menu {
+  --m-fill: radial-gradient(120% 70% at 50% -20%, rgb(255 255 255 / 0.98), rgb(255 255 255 / 0) 60%), linear-gradient(180deg, rgb(250 252 255 / 0.97), rgb(236 242 253 / 0.96));
+  --m-rim: linear-gradient(170deg, #ffffff, rgb(255 255 255 / 0.3) 40%, rgb(150 176 236 / 0.7));
+  --m-shadow: 0 2px 4px rgb(16 32 84 / 0.06), 0 24px 48px -16px rgb(24 52 140 / 0.38), 0 10px 22px -12px rgb(56 110 255 / 0.3), inset 0 1px 0 #ffffff, inset 0 -2px 4px rgb(30 52 130 / 0.06);
+  --m-text: #1d2a4d;
+  --m-hover: linear-gradient(180deg, rgb(225 234 252 / 0.95), rgb(240 245 255 / 0.9));
+  --m-hover-shadow: inset 0 1px 2px rgb(30 52 130 / 0.12), inset 0 -1px 0 #ffffff;
+  --m-well: linear-gradient(180deg, #ffffff, #e6edfb);
+  --m-well-shadow: 0 2px 5px -2px rgb(24 52 140 / 0.35), inset 0 1px 0 #ffffff, inset 0 -1px 2px rgb(30 52 130 / 0.1);
+  --m-icon: #1d4ed8;
+  --m-line: rgb(30 52 130 / 0.1);
+  position: fixed;
+  isolation: isolate;
+  color: var(--m-text);
+  background: var(--m-fill);
+  box-shadow: var(--m-shadow);
+  transform-origin: calc(100% - 30px) -8px;
+  animation: appear 300ms cubic-bezier(.2, .9, .3, 1.15);
+}
+:global(.dark) .menu {
+  --m-fill: radial-gradient(120% 70% at 50% -20%, rgb(140 170 255 / 0.2), rgb(140 170 255 / 0) 60%), linear-gradient(180deg, rgb(24 34 74 / 0.98), rgb(12 18 44 / 0.98));
+  --m-rim: linear-gradient(170deg, rgb(190 215 255 / 0.55), rgb(255 255 255 / 0.05) 40%, rgb(125 211 252 / 0.35));
+  --m-shadow: 0 2px 4px rgb(0 0 0 / 0.4), 0 26px 50px -16px rgb(0 0 0 / 0.85), 0 10px 24px -12px rgb(56 140 255 / 0.3), inset 0 1px 0 rgb(255 255 255 / 0.14), inset 0 -2px 4px rgb(0 0 0 / 0.35);
+  --m-text: #e3e9fb;
+  --m-hover: linear-gradient(180deg, rgb(8 12 32 / 0.55), rgb(40 54 104 / 0.45));
+  --m-hover-shadow: inset 0 1px 3px rgb(0 0 0 / 0.5), inset 0 -1px 0 rgb(255 255 255 / 0.08);
+  --m-well: linear-gradient(180deg, #34467f, #1b2656);
+  --m-well-shadow: 0 2px 6px -2px rgb(0 0 0 / 0.6), inset 0 1px 0 rgb(255 255 255 / 0.22), inset 0 -1px 2px rgb(0 0 0 / 0.3);
+  --m-icon: #9fd8ff;
+  --m-line: rgb(255 255 255 / 0.09);
+}
+.menu::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  padding: 1px;
+  pointer-events: none;
+  background: var(--m-rim);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+/* the notch: a small glass diamond pointing at the capsule */
+.notch {
+  position: absolute;
+  top: -6px;
+  right: 26px;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px 0 0 0;
+  transform: rotate(45deg);
+  background: linear-gradient(135deg, rgb(255 255 255), rgb(246 249 255));
+  box-shadow: -1px -1px 0 rgb(150 176 236 / 0.45);
+  pointer-events: none;
+}
+:global(.dark) .notch { background: linear-gradient(135deg, #2a3970, #1d2858); box-shadow: -1px -1px 0 rgb(190 215 255 / 0.35); }
+.list { position: relative; max-height: inherit; overflow-y: auto; border-radius: inherit; }
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 46px;
+  width: 100%;
+  padding: 6px 10px 6px 7px;
+  border-radius: 13px;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-align: left;
+  transition: background 160ms, box-shadow 160ms, color 160ms;
+}
+.item + .item { margin-top: 2px; }
+.item:hover, .item:focus-visible { background: var(--m-hover); box-shadow: var(--m-hover-shadow); }
+.well {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  color: var(--m-icon);
+  background: var(--m-well);
+  box-shadow: var(--m-well-shadow);
+  transition: transform 300ms cubic-bezier(.2, .9, .3, 1.35);
+}
+.item:hover .well, .item:focus-visible .well { transform: translateY(-1px) scale(1.06); }
+.rule { display: block; height: 1px; margin: 6px 8px; background: linear-gradient(90deg, transparent, var(--m-line), transparent); }
+.logout { color: #be123c; }
+.logout .well { color: #e11d48; background: linear-gradient(180deg, #fff5f6, #ffe1e6); }
+.logout:hover, .logout:focus-visible { background: linear-gradient(180deg, rgb(255 228 233 / 0.9), rgb(255 241 243 / 0.85)); box-shadow: inset 0 1px 2px rgb(190 18 60 / 0.12), inset 0 -1px 0 #ffffff; }
+:global(.dark) .trigger { color: #f1f5fd; }
+:global(.dark) .trigger[aria-expanded="true"] { box-shadow: var(--gx-shadow-hover, none), 0 0 0 3px rgb(125 211 252 / 0.18); }
+:global(.dark) .trigger:focus-visible, :global(.dark) .item:focus-visible { outline-color: #7dd3fc; }
+:global(.dark) .subtitle, :global(.dark) .chevron { color: #9aa8c8; }
+:global(.dark) .logout { color: #fda4af; }
+:global(.dark) .logout .well { color: #fda4af; background: linear-gradient(180deg, #4a1f35, #2c1224); }
+:global(.dark) .logout:hover, :global(.dark) .logout:focus-visible { background: linear-gradient(180deg, rgb(80 20 45 / 0.6), rgb(60 16 36 / 0.5)); box-shadow: inset 0 1px 3px rgb(0 0 0 / 0.45); }
+@keyframes appear {
+  from { opacity: 0; transform: translateY(-6px) scale(0.94); filter: blur(4px); }
+  to { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .trigger, .well, .item { transition: none; }
+  .trigger:hover, .trigger:active, .item:hover .well, .item:focus-visible .well { transform: none; }
+  .menu { animation: none; }
+}

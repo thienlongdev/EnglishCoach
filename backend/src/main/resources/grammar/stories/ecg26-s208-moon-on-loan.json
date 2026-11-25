@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s208-moon-on-loan",
+  "title": "Vầng trăng được phép mượn",
+  "level": "B2",
+  "topics": [
+    "passive-tenses-modals"
+  ],
+  "scene": "lecture",
+  "summary": "Ki xin dùng hình trăng của Dạ trong đúng một điệu múa. Chiếc đèn chiếu vẫn thuộc xưởng. Tờ bàn giao phải nói rõ mượn quyền chiếu hay mượn đèn.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Dạ",
+      "role": "Người thiết kế phông"
+    },
+    {
+      "id": "b",
+      "name": "Ki",
+      "role": "Nghệ sĩ múa"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Ki xem thư đồng ý: You may project my moon in the final dance. Xưởng sẽ tự trông đèn và dựng phông. Không ai giao máy cho vũ công.",
+      "say": [
+        {
+          "who": "a",
+          "en": "They said yes to my moon, not to my machine.",
+          "vi": "Họ đồng ý dùng mặt trăng của tôi, chưa nói giao máy."
+        },
+        {
+          "who": "b",
+          "en": "Then what can I tell the dancers?",
+          "vi": "Vậy tôi có thể nói gì với đoàn múa?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Giữ vật, hành động và phạm vi được phép.",
+        "options": [
+          {
+            "t": "The moon image may be projected in the final dance.",
+            "note": "May be projected cho phép chiếu hình; in the final dance giữ giới hạn một điệu. Máy chiếu không thành vật được cho mượn.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "The projector can be taken home after the dance.",
+            "note": "Bị động can be taken home thêm quyền mang thiết bị về nhà, không có trong thư xin chiếu hình. After còn đổi thời điểm sử dụng.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Xưởng chiếu một vầng trăng vừa chạm tay Ki khi cô xoay. Đèn vẫn ở phòng máy, nhưng vầng trăng đã đi hết chiều dài sân khấu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I borrowed the moon without carrying the lamp.",
+          "vi": "Tôi mượn được trăng mà chẳng phải bê đèn."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Ki mang hộp máy rỗng về trả quầy, xin Dạ một ảnh chụp tiết mục thay thế. Trên ảnh, bóng hai bàn tay ôm gọn trăng; nó theo cô về nhà bằng giấy.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Now you have a moon that needs no plug.",
+          "vi": "Giờ cô có vầng trăng không cần cắm điện."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

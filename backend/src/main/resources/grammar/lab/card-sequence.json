@@ -1,0 +1,35 @@
+{
+  "id": "card-sequence",
+  "title": "Đại từ cần một người để chỉ",
+  "summary": "Hai mảnh tin trong bản tin trường nhắc tới Inez. Đọc chúng thành một bản tin độc lập. Đặt she trước tên riêng có khiến người mới nghe phải chờ không?",
+  "level": "B1",
+  "topics": [
+    "reference-chains",
+    "pronoun-reference"
+  ],
+  "kind": "arrange",
+  "tokens": [
+    "She thanked her coach.",
+    "Inez won the race."
+  ],
+  "orders": [
+    {
+      "seq": [
+        "Inez won the race.",
+        "She thanked her coach."
+      ],
+      "verdict": "ok",
+      "note": "Inez mở đầu rồi she nối tiếp nên người mới đọc biết she chỉ ai. / The name supplies an immediate antecedent.",
+      "effect": "Inez thắng cuộc đua. Cô ấy cảm ơn huấn luyện viên."
+    },
+    {
+      "seq": [
+        "She thanked her coach.",
+        "Inez won the race."
+      ],
+      "verdict": "odd",
+      "note": "Đọc riêng, she chưa có đối tượng rõ ràng. Nếu Inez đã là chủ đề cuộc trò chuyện, thứ tự này vẫn dùng được. / An isolated opening she needs context.",
+      "effect": "Cô ấy cảm ơn huấn luyện viên. Inez thắng cuộc đua."
+    }
+  ]
+}

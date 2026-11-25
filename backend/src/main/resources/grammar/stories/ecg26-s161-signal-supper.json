@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s161-signal-supper",
+  "title": "Bữa tối nhận qua tín hiệu",
+  "summary": "Trạm nhận một tín hiệu sáu tiếng gõ từ Trái Đất đúng giờ ăn. Rafi nhận ra nhịp mẹ gọi cả nhà vào bếp nhưng trên màn hình lại hiện tên của Min.",
+  "level": "B2",
+  "topics": [
+    "it-clefts",
+    "focus-adverbs"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Min",
+      "role": "Người trực liên lạc"
+    },
+    {
+      "id": "b",
+      "name": "Rafi",
+      "role": "Đầu bếp trên trạm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Danh bạ ghi mẹ Rafi là người gửi, Min là người chuyển tiếp và cả đội nhận được âm thanh. Một thành viên tưởng Min đã tạo ra tiếng gõ rồi tự gửi cho Rafi.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I passed it on. I didn't knock on anything.",
+          "vi": "Mình chuyển tiếp nó. Mình đâu có gõ vào vật gì."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "People keep thanking you for the tune. Can you put the focus back on Mum?",
+          "vi": "Mọi người cứ cảm ơn cậu vì giai điệu ấy. Cậu nhấn mạnh lại là mẹ mình được không?"
+        }
+      ],
+      "choice": {
+        "prompt": "Min chọn lời sửa nhấn mạnh đúng người đã tạo ra nhịp gõ.",
+        "options": [
+          {
+            "t": "It was Rafi's mother who tapped out the rhythm.",
+            "note": "Câu chẻ đặt Rafi's mother giữa it was và who để làm nổi bật người thực hiện tapped out. Vai chuyển tiếp của Min không bị gán nhầm.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "It was Rafi's mother that I passed the rhythm on to.",
+            "note": "Câu chẻ này nhấn mạnh mẹ Rafi ở vai người nhận sau to. Nó đảo hướng truyền so với danh bạ.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Rafi đập nhẹ muỗng vào nồi đáp lại. Sáu người trong bếp đứng yên nghe tiếng kim loại ngân.",
+      "say": [
+        {
+          "who": "b",
+          "en": "She used to use this very spoon.",
+          "vi": "Mẹ từng dùng chính chiếc muỗng này."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Min vẽ mũi tên từ Trái Đất tới trạm. Rafi lấy muỗng gõ một tín hiệu đáp, lúc này hướng mũi tên mới thật sự quay ngược.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Now she's the one receiving it.",
+          "vi": "Bây giờ mẹ mới là người nhận tín hiệu ấy."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Vài phút sau, màn hình hiện một bức ảnh mờ: một cái bàn dưới Trái Đất bày thừa sáu cái bát. Rafi đặt chiếc muỗng vào giữa bàn của đội trên trạm.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We managed to eat at the same table after all.",
+          "vi": "Cuối cùng thì chúng ta vẫn ăn cùng một bàn."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

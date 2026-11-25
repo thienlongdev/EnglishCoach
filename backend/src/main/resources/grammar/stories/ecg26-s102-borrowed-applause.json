@@ -1,0 +1,133 @@
+{
+  "id": "ecg26-s102-borrowed-applause",
+  "title": "Khán giả của chú hề câm",
+  "summary": "Đêm cuối trước khi đoàn kịch rời làng, chú hề dừng giữa sân khấu để nghe một tiếng cười đến từ phòng vé đã khóa.",
+  "level": "B1",
+  "topics": [
+    "stop-remember-try",
+    "verb-ing-or-infinitive"
+  ],
+  "scene": "lecture",
+  "cast": [
+    {
+      "id": "thu",
+      "name": "Thu",
+      "role": "Diễn viên kịch câm"
+    },
+    {
+      "id": "bao",
+      "name": "Bảo",
+      "role": "Người giữ vé"
+    }
+  ],
+  "beats": [
+    {
+      "id": "quiet",
+      "say": [
+        {
+          "who": "thu",
+          "en": "I stopped in the middle of the trick. Did you hear that laugh?",
+          "vi": "Tôi dừng giữa màn diễn. Anh có nghe tiếng cười ấy không?"
+        },
+        {
+          "who": "bao",
+          "en": "She can't see the stage from here. She can see your shadow.",
+          "vi": "Ở đây con bé không nhìn được sân khấu. Nó nhìn được bóng của chị thôi."
+        }
+      ],
+      "narrate": "Bảo bật đèn hậu trường. Phòng vé khóa nhưng có bàn tay vẽ phấn trên cửa sổ. Một đứa trẻ đang ngồi ngoài hành lang xem bóng Thu chiếu trên kính.",
+      "next": "why"
+    },
+    {
+      "id": "why",
+      "choice": {
+        "prompt": "Bảo muốn nói Thu dừng màn diễn một lát để lắng nghe. Chọn cách kể đúng chuỗi hành động.",
+        "options": [
+          {
+            "t": "She stopped listening.",
+            "note": "Stopped listening nói Thu thôi nghe. Nó không giải thích vì sao cô tạm ngừng màn diễn.",
+            "ok": false,
+            "next": "again",
+            "consequence": "Bảo hỏi Thu có nghe nữa không."
+          },
+          {
+            "t": "She stopped to listen.",
+            "note": "Stopped to listen đặt việc nghe làm mục đích của lần dừng. Màn diễn có thể tiếp tục sau đó.",
+            "ok": true,
+            "next": "shadow",
+            "consequence": "Thu làm lại động tác bên cửa kính để đứa trẻ thấy được cái kết."
+          }
+        ]
+      }
+    },
+    {
+      "id": "again",
+      "say": [
+        {
+          "who": "thu",
+          "en": "I'm still listening. I want to know which bit made her laugh.",
+          "vi": "Tôi vẫn đang nghe. Tôi muốn biết đoạn nào khiến con bé cười."
+        }
+      ],
+      "next": "shadow"
+    },
+    {
+      "id": "shadow",
+      "scene": "office",
+      "narrate": "Ở phòng vé, Thu cúi đầu trước tấm kính. Bóng chiếc mũ đi qua bàn tay vẽ phấn như một con chim đáp xuống. Đứa trẻ chỉ vào hình chim rồi vỗ tay không thành tiếng.",
+      "say": [
+        {
+          "who": "bao",
+          "en": "We pack tonight. Tomorrow this window will be clean.",
+          "vi": "Đêm nay mình dọn đồ. Ngày mai cửa kính này sẽ được lau sạch."
+        }
+      ],
+      "next": "memory"
+    },
+    {
+      "id": "memory",
+      "choice": {
+        "prompt": "Thu muốn nhờ Bảo nhớ thực hiện việc chụp lại bức vẽ vào tối nay, trước khi nó bị xóa.",
+        "options": [
+          {
+            "t": "Remember to take a picture of the hand.",
+            "note": "Remember to + động từ nhắc một việc còn cần thực hiện. Bức ảnh chưa được chụp.",
+            "ok": true,
+            "next": "photo",
+            "consequence": "Bảo lấy điện thoại ra khi bàn tay phấn vẫn còn trên kính."
+          },
+          {
+            "t": "Do you remember taking a picture of the hand?",
+            "note": "Remember taking hỏi Bảo có ký ức về lần đã chụp hay không. Câu hỏi không nhắc một việc còn phải làm.",
+            "ok": false,
+            "next": "empty",
+            "consequence": "Bảo mở thư viện ảnh, không có bức nào chụp bàn tay phấn."
+          }
+        ]
+      }
+    },
+    {
+      "id": "empty",
+      "say": [
+        {
+          "who": "bao",
+          "en": "I haven't taken one yet. Put the hat there again.",
+          "vi": "Tôi chưa chụp tấm nào. Chị đặt mũ ở đó lần nữa đi."
+        }
+      ],
+      "next": "photo"
+    },
+    {
+      "id": "photo",
+      "narrate": "Đêm sau, ở một nhà hát khác, Thu dán tấm ảnh lên mặt trong rương đồ. Mỗi khi mở nắp, con chim bằng bóng lại đáp xuống bàn tay phấn. Cô gọi màn mới là Khán giả ngoài cửa.",
+      "say": [
+        {
+          "who": "thu",
+          "en": "I can take my smallest audience with me.",
+          "vi": "Tôi mang được khán giả bé nhất của mình đi cùng rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,622 @@
+{
+  "schema": 1,
+  "slug": "enough-too",
+  "version": 2,
+  "domain": "articles-determiners",
+  "order": 150,
+  "kind": "grammar",
+  "title": {
+    "vi": "Enough và too: đủ và quá mức",
+    "en": "Enough and too: sufficiency and excess"
+  },
+  "subtitle": {
+    "vi": "Đánh giá một lượng hoặc mức độ theo mục đích",
+    "en": "Judge quantity and degree against a purpose"
+  },
+  "aliases": [
+    "enough too",
+    "đủ quá",
+    "too much too many",
+    "adjective enough",
+    "enough big",
+    "much too"
+  ],
+  "level": "A2",
+  "levelBasis": "editorial",
+  "uses": [
+    {
+      "level": "B1",
+      "vi": "Phân biệt phạm vi của enough trước cụm danh từ và sau tính từ."
+    }
+  ],
+  "prerequisites": [],
+  "related": [
+    {
+      "slug": "much-many-a-lot",
+      "rel": "more"
+    },
+    {
+      "slug": "degree-modifiers",
+      "rel": "more"
+    },
+    {
+      "slug": "adjectives-vs-adverbs",
+      "rel": "more"
+    }
+  ],
+  "objectives": [
+    "Đặt enough đúng vị trí với danh từ, tính từ và trạng từ.",
+    "Diễn đạt lượng vượt nhu cầu bằng too much và too many.",
+    "Nêu rõ đủ hoặc quá mức cho ai và cho việc gì."
+  ],
+  "exam": {
+    "ielts": "Giải thích tính phù hợp, giới hạn hoặc nguồn lực trong một đề xuất thay vì chỉ tăng cường bằng very.",
+    "toeic": "Đọc yêu cầu về sức chứa, thời gian và ngân sách trong thông báo công việc."
+  },
+  "quick": {
+    "what": "**Enough** nói đủ so với một nhu cầu; **too** nói vượt mức thích hợp trong cách dùng đang học. Dùng enough time nhưng warm enough. Too đi trước tính từ hoặc trạng từ: too hot, too slowly.",
+    "when": "Khi đánh giá liệu phòng, thời gian, sức lực hoặc nguồn lực có đáp ứng việc cần làm. Nêu nhu cầu rõ ràng để người nghe biết mức đủ hoặc quá là gì.",
+    "examples": [
+      {
+        "en": "We have [DET|enough] [N|chairs] for everyone.",
+        "vi": "Chúng ta có đủ ghế cho mọi người."
+      },
+      {
+        "en": "The table is [ADV|too] [ADJ|wide] to fit through this doorway.",
+        "vi": "Bàn quá rộng để lọt qua lối cửa này."
+      }
+    ],
+    "remember": "Enough + danh từ; tính từ hoặc trạng từ + enough; too + tính từ hoặc trạng từ. Đủ không có nghĩa chỉ vừa đúng, không thừa chút nào."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Một nhóm thuê phòng để họp. Có 12 người và 15 ghế: enough chairs là đúng dù còn ghế thừa. Nếu cửa phòng không lọt chiếc bàn, the table is too wide for the doorway nêu kích thước vượt giới hạn. Very wide chỉ nói rất rộng, chưa khẳng định điều đó gây trở ngại. Muốn hiểu enough hoặc too, luôn hỏi: so với nhu cầu nào?"
+    },
+    {
+      "type": "table",
+      "head": [
+        "Điều được đánh giá",
+        "Cấu trúc",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "Số lượng hoặc lượng",
+          "enough + danh từ",
+          "enough seats / enough room"
+        ],
+        [
+          "Mức độ của tính từ",
+          "tính từ + enough",
+          "quiet enough"
+        ],
+        [
+          "Cách thực hiện hành động",
+          "trạng từ + enough",
+          "clearly enough"
+        ],
+        [
+          "Vượt mức thích hợp",
+          "too + tính từ / trạng từ",
+          "too narrow / too quickly"
+        ],
+        [
+          "Quá nhiều vật riêng lẻ",
+          "too many + số nhiều",
+          "too many cars"
+        ],
+        [
+          "Quá nhiều lượng không đếm",
+          "too much + không đếm",
+          "too much traffic"
+        ]
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Mức độ",
+            "items": [
+              "clear"
+            ]
+          },
+          {
+            "label": "Đạt yêu cầu",
+            "items": [
+              "enough"
+            ]
+          },
+          {
+            "label": "Người thực hiện",
+            "items": [
+              "for everyone"
+            ]
+          },
+          {
+            "label": "Hành động",
+            "items": [
+              "to read"
+            ]
+          }
+        ],
+        "sentence": "The sign is {0} {1} {2} {3}.",
+        "fixedOrder": true
+      },
+      "caption": "Đặt enough sau clear; for everyone cho biết ai đọc.",
+      "alt": "Bốn ô nối tiếp: clear, enough, for everyone, to read. Câu nói biển chỉ dẫn đủ rõ để mọi người đọc."
+    },
+    {
+      "type": "formula",
+      "lines": [
+        {
+          "label": "Đủ cho ai hoặc việc gì",
+          "parts": [
+            {
+              "t": "enough + danh từ"
+            },
+            {
+              "t": "+ for + người / mục đích"
+            }
+          ]
+        },
+        {
+          "label": "Đủ để làm",
+          "parts": [
+            {
+              "t": "tính từ / trạng từ + enough"
+            },
+            {
+              "t": "+ (for + người) + to + động từ"
+            }
+          ]
+        },
+        {
+          "label": "Quá mức để làm",
+          "parts": [
+            {
+              "t": "too + tính từ / trạng từ"
+            },
+            {
+              "t": "+ (for + người) + to + động từ"
+            }
+          ]
+        }
+      ],
+      "note": "For us to lift nêu chúng ta là người nhấc. Không lặp thêm it khi vật ở chủ ngữ đã là đối tượng hiểu ngầm của lift trong mẫu The box is too heavy for us to lift."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "We don't have [DET|enough] [N|time] to test every device.",
+          "vi": "Chúng ta không có đủ thời gian kiểm tra mọi thiết bị."
+        },
+        {
+          "en": "Please speak [ADV|slowly] [ADV|enough] for the visitors to follow.",
+          "vi": "Hãy nói đủ chậm để khách theo kịp."
+        },
+        {
+          "en": "There are [DET|too many] [N|people] in the lift.",
+          "vi": "Có quá nhiều người trong thang máy."
+        },
+        {
+          "en": "There is [DET|too much] [N|noise] to record the interview here.",
+          "vi": "Ở đây quá ồn để thu âm cuộc phỏng vấn."
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "The hall is very large.",
+            "vi": "Sảnh rất rộng."
+          },
+          "b": {
+            "en": "The hall is too large for our small workshop.",
+            "vi": "Sảnh quá rộng cho buổi hội thảo nhỏ của chúng ta."
+          },
+          "diff": "Very tăng mức độ; too đánh giá mức độ vượt điều phù hợp với hoạt động này. Sảnh có thể phù hợp với một hoạt động khác."
+        },
+        {
+          "a": {
+            "en": "We have enough clean towels.",
+            "vi": "Chúng ta có đủ số khăn sạch."
+          },
+          "b": {
+            "en": "These towels are clean enough for the demonstration.",
+            "vi": "Những khăn này đủ sạch cho buổi minh họa."
+          },
+          "diff": "Câu đầu đánh giá số lượng khăn sạch; câu sau đánh giá mức sạch. Không nên tự động đổi vị trí enough mà coi nghĩa không đổi."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Không đủ có thể nói not enough: not enough chairs, not warm enough. Thiếu số lượng cũng có thể nói too few chairs hoặc too little time. Đây không phải mọi cặp từ đều thay được cho nhau: too hot có thể dẫn đến not cool enough trong một hoàn cảnh, nhưng hot và cool không đơn giản là phép đổi máy móc trong mọi thang đánh giá."
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Nếu danh từ đã rõ, đủ có thể đứng riêng: Do we need more chairs? No, we have enough. Enough of thường chọn một phần từ nhóm hoặc lượng xác định: enough of the budget, enough of these samples. Không thêm of trước danh từ chung trong mẫu enough time."
+    },
+    {
+      "type": "try",
+      "exercise": "et-04"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Enough biểu đạt đạt ngưỡng cần thiết, không luôn nói chính xác bằng ngưỡng. Enough time có thể bao gồm thời gian dư. Too much và too many đánh giá vượt mức phù hợp, không phải các đơn vị đo cố định. Một lượng có thể là enough cho nhóm nhỏ nhưng too little cho nhóm lớn."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "We don't have enough long cables.",
+            "vi": "Chúng ta không có đủ số dây cáp dài."
+          },
+          "b": {
+            "en": "We don't have long enough cables.",
+            "vi": "Chúng ta không có dây cáp đủ dài."
+          },
+          "diff": "Enough đứng trước cả cụm long cables nói số lượng; đứng sau long nói độ dài. Các phương án sửa phải giữ đúng vấn đề mà người nói đang báo."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Too còn có nghĩa cũng, thường ở cuối: I need a key too. Trong You're too kind, too có thể là lời cảm ơn cường điệu; không đọc máy móc thành lời chê. Bài tập về quá mức phải cung cấp ngữ cảnh thực, không tuyên bố mọi too đều có ý tiêu cực."
+    },
+    {
+      "type": "p",
+      "vi": "Phân biệt much too expensive với too much money. Ở cụm đầu, much tăng cường too trước expensive; ở cụm sau, too much định lượng money. Mẫu trang trọng too expensive a solution có tồn tại, nhưng với người mới học, This solution is too expensive giúp diễn đạt rõ và dễ kiểm soát hơn."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "et-position",
+      "wrong": "The recording is enough clear.",
+      "right": "The recording is clear enough.",
+      "why": "Enough bổ nghĩa tính từ clear nên đứng sau tính từ trong cách dùng hiện đại thông thường này."
+    },
+    {
+      "id": "et-count",
+      "wrong": "There are too much bicycles here.",
+      "right": "There are too many bicycles here.",
+      "why": "Bicycles là số nhiều đếm được; dùng many."
+    },
+    {
+      "id": "et-of",
+      "wrong": "We have enough of time.",
+      "right": "We have enough time.",
+      "why": "Danh từ time chưa có từ xác định theo mẫu enough of the time; cấu trúc lượng chung dùng enough time."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Enough có nghĩa chính xác bằng số cần không?",
+      "a": "Không. Có 15 ghế cho12 người vẫn là enough chairs. Câu chỉ khẳng định nhu cầu được đáp ứng."
+    },
+    {
+      "q": "Too có luôn nghĩa cũng không?",
+      "a": "Không. I joined too nghĩa tôi cũng tham gia. Too late nghĩa quá muộn trong cách dùng mức độ. Vị trí và ngữ cảnh giúp phân biệt."
+    },
+    {
+      "q": "Có thể đổi very thành too để nghe mạnh hơn?",
+      "a": "Chỉ khi muốn nói vượt mức thích hợp, hoặc dùng một cách cường điệu có ngữ cảnh. Very good và too good không tự động cùng nghĩa."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "et-01",
+      "type": "choice",
+      "level": "A2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Chọn cấu trúc đúng khi đánh giá độ rõ của chữ.",
+      "stem": "The print isn't ___ to read comfortably.",
+      "options": [
+        {
+          "t": "large enough",
+          "ok": true,
+          "note": "Enough đứng sau tính từ large."
+        },
+        {
+          "t": "enough large",
+          "note": "Không đặt enough trước tính từ ở cấu trúc vị ngữ này.",
+          "tag": "enough-position"
+        },
+        {
+          "t": "large too",
+          "note": "Too chỉ mức độ đứng trước tính từ: too large.",
+          "tag": "too-position"
+        }
+      ],
+      "explain": "Large enough nói độ lớn đạt yêu cầu; isn't large enough phủ nhận điều đó."
+    },
+    {
+      "id": "et-02",
+      "type": "cloze",
+      "level": "A2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Điền much hoặc many, không đổi câu.",
+      "stem": "There is too {1} traffic. There are too {2} parked cars.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "much"
+          ],
+          "closed": true
+        },
+        "2": {
+          "accept": [
+            "many"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Traffic là lượng giao thông không đếm; cars là các xe riêng lẻ số nhiều."
+    },
+    {
+      "id": "et-03",
+      "type": "match",
+      "level": "A2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Ghép cụm với điều được đánh giá.",
+      "pairs": [
+        {
+          "a": "enough chairs",
+          "b": "Số ghế đáp ứng nhu cầu"
+        },
+        {
+          "a": "quiet enough",
+          "b": "Mức yên tĩnh đạt yêu cầu"
+        },
+        {
+          "a": "too many chairs",
+          "b": "Số ghế vượt mức phù hợp"
+        },
+        {
+          "a": "too quickly",
+          "b": "Tốc độ hành động vượt mức phù hợp"
+        }
+      ],
+      "explain": "Lượng danh từ và mức độ tính từ/trạng từ có cấu trúc khác nhau, nhưng đều cần một tiêu chuẩn theo ngữ cảnh."
+    },
+    {
+      "id": "et-04",
+      "type": "transform",
+      "level": "A2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Kết hợp thông tin bằng too và to.",
+      "source": "The parcel is very wide. It cannot fit into this locker because of its width.",
+      "instruction": "Bắt đầu The parcel is too wide và dùng to fit into this locker.",
+      "accept": [
+        "The parcel is too wide to fit into this locker."
+      ],
+      "model": "The parcel is too wide to fit into this locker.",
+      "explain": "Ngữ cảnh đã cho chiều rộng gây trở ngại, nên too wide diễn đạt đúng mối quan hệ. Very wide một mình chưa nói được hậu quả đó."
+    },
+    {
+      "id": "et-05",
+      "type": "error",
+      "level": "A2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Chọn phần cần sửa.",
+      "segments": [
+        {
+          "t": "We don't have "
+        },
+        {
+          "t": "enough of chairs",
+          "bad": true,
+          "fix": [
+            "enough chairs"
+          ],
+          "note": "Trước chairs chưa xác định dùng enough, không thêm of.",
+          "tag": "enough-of"
+        },
+        {
+          "t": " for the audience."
+        }
+      ],
+      "explain": "Enough chairs là lượng chung. Enough of these chairs là cấu trúc khác, chọn từ một nhóm đã xác định."
+    },
+    {
+      "id": "et-06",
+      "type": "choice",
+      "level": "A2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Nhóm cần8 ghế và có10 ghế sử dụng được. Chọn kết luận đúng.",
+      "stem": "Theo nhu cầu đã cho:",
+      "options": [
+        {
+          "t": "They have enough chairs.",
+          "ok": true,
+          "note": "10 đáp ứng nhu cầu8; dư ghế không làm enough sai."
+        },
+        {
+          "t": "They don't have enough chairs.",
+          "note": "Trái với số lượng đã cho.",
+          "tag": "enough-threshold"
+        },
+        {
+          "t": "Enough không dùng được vì còn dư ghế.",
+          "note": "Enough không buộc phải đúng bằng số cần.",
+          "tag": "enough-exactness"
+        }
+      ],
+      "explain": "Enough nghĩa đủ cho mục đích, không phải đúng bằng8."
+    },
+    {
+      "id": "et-07",
+      "type": "cloze",
+      "level": "A2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Điền to hoặc for để nêu ai có thể đọc.",
+      "stem": "The text is clear enough {1} the visitors {2} read.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "for"
+          ],
+          "closed": true
+        },
+        "2": {
+          "accept": [
+            "to"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "For the visitors nêu chủ thể hiểu ngầm của to read. Text là thứ được đọc, không lặp thêm it ở cuối mẫu này."
+    },
+    {
+      "id": "et-08",
+      "type": "open",
+      "level": "A2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Đánh giá một địa điểm học nhóm.",
+      "task": "Viết hai câu: một câu nêu nguồn lực đủ cho nhóm, một câu nêu trở ngại quá mức. Làm rõ nhu cầu của nhóm.",
+      "model": [
+        "The room has enough desks for our six members. It is too noisy to record a presentation."
+      ],
+      "checklist": [
+        "Enough trước danh từ hoặc sau tính từ/trạng từ.",
+        "Too diễn đạt một trở ngại cụ thể trong ngữ cảnh.",
+        "Không coi đủ là bắt buộc chính xác bằng số cần."
+      ],
+      "explain": "Tự đối chiếu các điều kiện; nhiều câu khác mẫu vẫn hợp lệ."
+    },
+    {
+      "id": "et-09",
+      "type": "choice",
+      "level": "A2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn cụm đúng để nói thiếu tiền.",
+      "stem": "We haven't got ___ for a second printer.",
+      "options": [
+        {
+          "t": "enough money",
+          "ok": true,
+          "note": "Enough đứng trước danh từ money."
+        },
+        {
+          "t": "enough of money",
+          "note": "Không có từ xác định cho cấu trúc enough of.",
+          "tag": "enough-of"
+        },
+        {
+          "t": "many money",
+          "note": "Money trong nghĩa này không đếm được.",
+          "tag": "quantity-countability"
+        }
+      ],
+      "explain": "Haven't got enough money diễn đạt tiền chưa đáp ứng nhu cầu mua thêm máy."
+    },
+    {
+      "id": "et-10",
+      "type": "cloze",
+      "level": "A2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Điền too hoặc enough theo cấu trúc và nghĩa đã cho.",
+      "context": "Lối đi hẹp đến mức xe đẩy không lọt. Cửa bên kia đủ rộng để dùng thay thế.",
+      "stem": "This passage is {1} narrow for the trolley. The other doorway is wide {2}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "too"
+          ],
+          "closed": true
+        },
+        "2": {
+          "accept": [
+            "enough"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Too đứng trước narrow và nêu trở ngại; enough đứng sau wide và nêu mức đáp ứng."
+    },
+    {
+      "id": "et-11",
+      "type": "error",
+      "level": "A2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn phần có lỗi hoặc xác nhận câu đúng.",
+      "segments": [
+        {
+          "t": "The guide spoke "
+        },
+        {
+          "t": "slowly enough for us to follow."
+        }
+      ],
+      "noError": true,
+      "explain": "Enough đứng sau trạng từ slowly. For us to follow nêu mục đích và người theo dõi."
+    },
+    {
+      "id": "et-12",
+      "type": "choice",
+      "level": "A2",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Chọn ý nghĩa của too trong tình huống được nêu.",
+      "stem": "The music is too loud for this quiet study area.",
+      "options": [
+        {
+          "t": "Âm lượng vượt mức phù hợp với khu học yên tĩnh.",
+          "ok": true,
+          "note": "Too đánh giá âm lượng theo mục đích sử dụng."
+        },
+        {
+          "t": "Âm lượng chỉ được miêu tả cao, không có đánh giá phù hợp.",
+          "note": "Too bổ sung đánh giá vượt mức, hơn ý very loud.",
+          "tag": "too-vs-very"
+        },
+        {
+          "t": "Người nói cũng đang phát nhạc.",
+          "note": "Too ở đây không có nghĩa cũng.",
+          "tag": "too-meaning"
+        }
+      ],
+      "explain": "Ngưỡng phù hợp phụ thuộc không gian. Cùng âm lượng đó có thể phù hợp trong một buổi hòa nhạc."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Đã đọc phần Grammar explanation của Using enough (https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/using-enough),2026-11-01: vị trí, phạm vi với tính từ và danh từ, enough of. Không dùng bình luận của người học làm nguồn kiểm chứng."
+    },
+    {
+      "ref": "cgt",
+      "note": "Too/enough là nguồn tham khảo thêm cho nghĩa vượt mức; lượt này chỉ có trích đoạn tìm kiếm cho Too, chưa tính là kiểm chứng toàn trang."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham khảo đề xuất về degree; chưa đọc trực tiếp ấn bản."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

@@ -1,0 +1,274 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 175" fill="none">
+  <!-- [ASSET_REQUIRED] Production-grade vector artwork (Hand-crafted vector finalization) -->
+  <!-- Series: dragon_emperor | Tier: SSS | Slug: sss_dragon_emperor | Overflow: 175% footprint -->
+  <!-- Production Vector Quality: PRODUCTION_READY_VECTOR | External Studio/Rive Hand-off: ASSET_REQUIRED -->
+  <!-- Center: (87.5, 87.5), Avatar aperture: r=40 (80px), Outer Canvas: 175x175 (175%) -->
+  <defs>
+    <!-- Imperial Sovereign Gold Gradients -->
+    <linearGradient id="imperialGoldPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="25%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="75%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#854d0e"/>
+    </linearGradient>
+
+    <linearGradient id="imperialGoldHighlight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ca8a04"/>
+      <stop offset="45%" stop-color="#fef08a"/>
+      <stop offset="55%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+
+    <!-- Imperial Crimson & Dragon Fire Gradients -->
+    <linearGradient id="dragonCrimsonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="35%" stop-color="#dc2626"/>
+      <stop offset="70%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#450a0a"/>
+    </linearGradient>
+
+    <linearGradient id="dragonFireGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="30%" stop-color="#f97316"/>
+      <stop offset="70%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+
+    <radialGradient id="dragonPearlGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#fef08a"/>
+      <stop offset="60%" stop-color="#f97316"/>
+      <stop offset="90%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </radialGradient>
+
+    <radialGradient id="celestialBackdropAura" cx="50%" cy="50%" r="50%">
+      <stop offset="50%" stop-color="#fef08a" stop-opacity="0"/>
+      <stop offset="75%" stop-color="#f59e0b" stop-opacity="0.25"/>
+      <stop offset="90%" stop-color="#dc2626" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#7f1d1d" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Filters for Depth, Bevel and Ambient Fire Glow -->
+    <filter id="dragonGlowFX" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="coreFrameBevel" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- LAYER -1: AURA & RADIANT DRAGON SUNBURST                           -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <g class="dragon-aura-layer" opacity="0.85">
+    <!-- Outer energy cloud circle -->
+    <circle cx="87.5" cy="87.5" r="70" fill="url(#celestialBackdropAura)" filter="url(#dragonGlowFX)"/>
+
+    <!-- Radiant Dragon Ray Flares -->
+    <g stroke="url(#dragonFireGrad)" stroke-width="1.2" opacity="0.6" stroke-linecap="round">
+      <line x1="87.5" y1="18" x2="87.5" y2="8"/>
+      <line x1="135" y1="38" x2="143" y2="30"/>
+      <line x1="157" y1="87.5" x2="167" y2="87.5"/>
+      <line x1="135" y1="137" x2="143" y2="145"/>
+      <line x1="87.5" y1="157" x2="87.5" y2="167"/>
+      <line x1="40" y1="137" x2="32" y2="145"/>
+      <line x1="18" y1="87.5" x2="8" y2="87.5"/>
+      <line x1="40" y1="38" x2="32" y2="30"/>
+    </g>
+
+    <!-- Outer Rune Energy Orbit -->
+    <circle cx="87.5" cy="87.5" r="54" stroke="url(#imperialGoldPrimary)" stroke-width="1.2" stroke-dasharray="4 8 12 8" opacity="0.5"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- LAYER 1: CORE FRAME RING (Carved imperial gold & crimson rim)       -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <g class="dragon-core-frame" filter="url(#coreFrameBevel)">
+    <!-- Base dark metallic depth bevel -->
+    <circle cx="87.5" cy="87.5" r="46.5" stroke="#450a0a" stroke-width="7"/>
+
+    <!-- Primary Carved Imperial Gold Band -->
+    <circle cx="87.5" cy="87.5" r="45" stroke="url(#imperialGoldPrimary)" stroke-width="4.5"/>
+
+    <!-- Inner Crimson Inlay Channel -->
+    <circle cx="87.5" cy="87.5" r="42.5" stroke="url(#dragonCrimsonGrad)" stroke-width="1.5"/>
+
+    <!-- Inner Avatar Retention Bevel (r=40.5, framing 80px avatar without obstruction) -->
+    <circle cx="87.5" cy="87.5" r="40.5" stroke="url(#imperialGoldHighlight)" stroke-width="1.5"/>
+
+    <!-- Engraved Gold Boss Studs at Hexagonal Angles -->
+    <g fill="#fef08a" stroke="#854d0e" stroke-width="0.75">
+      <circle cx="58.5" cy="70.5" r="2"/>
+      <circle cx="116.5" cy="70.5" r="2"/>
+      <circle cx="58.5" cy="104.5" r="2"/>
+      <circle cx="116.5" cy="104.5" r="2"/>
+    </g>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- LAYER 2: SERPENTINE DRAGON BODY & DORSAL SPINES                     -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <g class="dragon-body-layer">
+    <!-- Left Flank: Coiled Dragon Body Segment with Dorsal Spines -->
+    <g fill="url(#dragonCrimsonGrad)" stroke="url(#imperialGoldPrimary)" stroke-width="1.2">
+      <!-- Dorsal Spines (Outer Left) -->
+      <path d="M42 48 L30 42 L39 55 Z" fill="url(#imperialGoldPrimary)"/>
+      <path d="M36 60 L22 58 L34 70 Z" fill="url(#imperialGoldPrimary)"/>
+      <path d="M34 76 L18 80 L35 88 Z" fill="url(#imperialGoldPrimary)"/>
+      <path d="M37 98 L24 106 L40 108 Z" fill="url(#imperialGoldPrimary)"/>
+      <path d="M43 115 L32 126 L49 122 Z" fill="url(#imperialGoldPrimary)"/>
+
+      <!-- Dragon Body Trunk (Left) -->
+      <path d="M48 44 C34 56, 30 84, 38 106 C42 118, 50 128, 62 134 C54 126, 46 114, 44 98 C42 80, 46 62, 54 48 Z"/>
+    </g>
+
+    <!-- Scaled Skin Details (Left Body) -->
+    <g fill="none" stroke="#fef08a" stroke-width="0.8" opacity="0.75">
+      <path d="M38 64 C42 66, 45 64, 46 60"/>
+      <path d="M37 74 C42 77, 46 75, 47 71"/>
+      <path d="M38 84 C43 87, 47 85, 48 81"/>
+      <path d="M41 94 C46 97, 49 95, 50 91"/>
+      <path d="M46 104 C50 108, 54 106, 56 102"/>
+    </g>
+
+    <!-- Right Flank: Coiled Dragon Body Segment with Dorsal Spines -->
+    <g fill="url(#dragonCrimsonGrad)" stroke="url(#imperialGoldPrimary)" stroke-width="1.2">
+      <!-- Dorsal Spines (Outer Right) -->
+      <path d="M133 48 L145 42 L136 55 Z" fill="url(#imperialGoldPrimary)"/>
+      <path d="M139 60 L153 58 L141 70 Z" fill="url(#imperialGoldPrimary)"/>
+      <path d="M141 76 L157 80 L140 88 Z" fill="url(#imperialGoldPrimary)"/>
+      <path d="M138 98 L151 106 L135 108 Z" fill="url(#imperialGoldPrimary)"/>
+      <path d="M132 115 L143 126 L126 122 Z" fill="url(#imperialGoldPrimary)"/>
+
+      <!-- Dragon Body Trunk (Right) -->
+      <path d="M127 44 C141 56, 145 84, 137 106 C133 118, 125 128, 113 134 C121 126, 129 114, 131 98 C133 80, 129 62, 121 48 Z"/>
+    </g>
+
+    <!-- Scaled Skin Details (Right Body) -->
+    <g fill="none" stroke="#fef08a" stroke-width="0.8" opacity="0.75">
+      <path d="M137 64 C133 66, 130 64, 129 60"/>
+      <path d="M138 74 C133 77, 129 75, 128 71"/>
+      <path d="M137 84 C132 87, 128 85, 127 81"/>
+      <path d="M134 94 C129 97, 126 95, 125 91"/>
+      <path d="M129 104 C125 108, 121 106, 119 102"/>
+    </g>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- LAYER 3: CLAWS & SERPENTINE TAIL OVERFLOW                           -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <g class="dragon-limbs-layer" filter="url(#coreFrameBevel)">
+    <!-- Left Dragon Talons Grasping the Frame -->
+    <g fill="url(#imperialGoldPrimary)" stroke="#7f1d1d" stroke-width="1">
+      <!-- Upper Talon -->
+      <path d="M42 80 C34 78, 22 81, 16 85 C24 87, 34 86, 43 85 Z"/>
+      <!-- Middle Talon -->
+      <path d="M41 87 C31 87, 18 90, 12 95 C22 95, 33 93, 42 90 Z"/>
+      <!-- Lower Talon -->
+      <path d="M42 93 C34 95, 23 100, 18 106 C25 104, 34 99, 44 95 Z"/>
+      <!-- Talon Claws Knuckle Inset -->
+      <circle cx="42" cy="88" r="3.5" fill="url(#dragonCrimsonGrad)"/>
+    </g>
+
+    <!-- Right Dragon Talons Grasping the Frame -->
+    <g fill="url(#imperialGoldPrimary)" stroke="#7f1d1d" stroke-width="1">
+      <!-- Upper Talon -->
+      <path d="M133 80 C141 78, 153 81, 159 85 C151 87, 141 86, 132 85 Z"/>
+      <!-- Middle Talon -->
+      <path d="M134 87 C144 87, 157 90, 163 95 C153 95, 142 93, 133 90 Z"/>
+      <!-- Lower Talon -->
+      <path d="M133 93 C141 95, 152 100, 157 106 C150 104, 141 99, 131 95 Z"/>
+      <!-- Talon Claws Knuckle Inset -->
+      <circle cx="133" cy="88" r="3.5" fill="url(#dragonCrimsonGrad)"/>
+    </g>
+
+    <!-- Bottom Coiling Dragon Tail Plumes -->
+    <g fill="url(#dragonCrimsonGrad)" stroke="url(#imperialGoldPrimary)" stroke-width="1.2">
+      <path d="M60 134 C68 142, 78 148, 87.5 150 C97 148, 107 142, 115 134 C122 144, 114 158, 102 164 C94 167, 81 167, 73 164 C61 158, 53 144, 60 134 Z"/>
+      <!-- Tail Flame Fin Tendrils -->
+      <path d="M75 165 C68 171, 56 169, 50 162 C58 159, 66 161, 74 164 Z" fill="url(#imperialGoldPrimary)"/>
+      <path d="M100 165 C107 171, 119 169, 125 162 C117 159, 109 161, 101 164 Z" fill="url(#imperialGoldPrimary)"/>
+      <path d="M87.5 167 L87.5 174 L84 168 Z" fill="url(#imperialGoldHighlight)"/>
+      <path d="M87.5 167 L87.5 174 L91 168 Z" fill="url(#imperialGoldHighlight)"/>
+    </g>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- LAYER 4: DRAGON HEAD (DOMINANT FOCAL POINT AT TOP APEX)            -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <g class="dragon-head-focal" filter="url(#coreFrameBevel)">
+    <!-- Magnificent Dragon Antlers / Imperial Horns Sweeping High -->
+    <g fill="url(#imperialGoldPrimary)" stroke="#7f1d1d" stroke-width="1.2">
+      <!-- Left Major Antler -->
+      <path d="M80 26 C74 18, 62 12, 50 8 C53 14, 59 18, 66 22 C58 20, 48 20, 42 24 C50 27, 60 28, 70 30 C72 32, 75 35, 78 37 Z"/>
+      <!-- Right Major Antler -->
+      <path d="M95 26 C101 18, 113 12, 125 8 C122 14, 116 18, 109 22 C117 20, 127 20, 133 24 C125 27, 115 28, 105 30 C103 32, 100 35, 97 37 Z"/>
+    </g>
+
+    <!-- Imperial Dragon Crown Crest (Center Horn & Tiara) -->
+    <g fill="url(#dragonFireGrad)" stroke="url(#imperialGoldHighlight)" stroke-width="1.2">
+      <path d="M87.5 10 L94 22 L98 16 L96 28 L87.5 35 L79 28 L77 16 L81 22 Z"/>
+      <!-- Center Crown Jewel -->
+      <polygon points="87.5,18 90.5,23 87.5,28 84.5,23" fill="#ffffff" stroke="#eab308" stroke-width="0.8"/>
+    </g>
+
+    <!-- Dragon Cranium & Brow Ridges -->
+    <path d="M74 34 C78 30, 83 28, 87.5 28 C92 28, 97 30, 101 34 C104 38, 102 43, 98 46 C94 48, 81 48, 77 46 C73 43, 71 38, 74 34 Z" fill="url(#dragonCrimsonGrad)" stroke="url(#imperialGoldPrimary)" stroke-width="1.2"/>
+
+    <!-- Piercing Dragon Eyes (Glowing Amber Gold) -->
+    <g filter="url(#dragonGlowFX)">
+      <polygon points="78,35 83,34 81,37 77,37" fill="#fef08a" stroke="#ca8a04" stroke-width="0.6"/>
+      <polygon points="97,35 92,34 94,37 98,37" fill="#fef08a" stroke="#ca8a04" stroke-width="0.6"/>
+      <!-- Slit Pupils -->
+      <line x1="80" y1="34.5" x2="80" y2="36.5" stroke="#7f1d1d" stroke-width="0.8"/>
+      <line x1="95" y1="34.5" x2="95" y2="36.5" stroke="#7f1d1d" stroke-width="0.8"/>
+    </g>
+
+    <!-- Dragon Snout, Muzzle & Fierce Fangs -->
+    <g fill="url(#dragonCrimsonGrad)" stroke="url(#imperialGoldPrimary)" stroke-width="1">
+      <path d="M81 42 C84 40, 91 40, 94 42 C96 46, 94 51, 91 53 C89 54, 86 54, 84 53 C81 51, 79 46, 81 42 Z"/>
+      <!-- Nostrils -->
+      <circle cx="84.5" cy="44.5" r="1" fill="#450a0a"/>
+      <circle cx="90.5" cy="44.5" r="1" fill="#450a0a"/>
+      <!-- Imperial Beard Tufts & Lower Fangs -->
+      <path d="M83 50 L82 54 L85 52 L87.5 56 L90 52 L93 54 L92 50 Z" fill="url(#imperialGoldHighlight)"/>
+      <polygon points="84,48 85,51 86,48" fill="#ffffff"/>
+      <polygon points="91,48 90,51 89,48" fill="#ffffff"/>
+    </g>
+
+    <!-- Sinuous Imperial Whiskers (Left & Right Curling Gracefully) -->
+    <g fill="none" stroke="url(#imperialGoldHighlight)" stroke-width="1.4" stroke-linecap="round">
+      <path d="M81 45 C70 46, 58 54, 52 64 C48 71, 54 75, 60 72"/>
+      <path d="M94 45 C105 46, 117 54, 123 64 C127 71, 121 75, 115 72"/>
+    </g>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- LAYER 5: THE FLAMING DRAGON PEARL (DẠ MINH CHÂU / HỎA LONG CHÂU)   -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <g class="dragon-pearl-anchor" filter="url(#coreFrameBevel)">
+    <!-- Swirling Flame Halo Around Pearl -->
+    <path d="M87.5 130 C81 130, 75 135, 76 142 C77 150, 84 156, 87.5 158 C91 156, 98 150, 99 142 C100 135, 94 130, 87.5 130 Z" fill="url(#dragonFireGrad)" opacity="0.85"/>
+
+    <!-- Sacred Dragon Pearl Sphere (Luminous Celestial Core) -->
+    <circle cx="87.5" cy="143" r="8" fill="url(#dragonPearlGlow)" filter="url(#dragonGlowFX)"/>
+    <circle cx="87.5" cy="143" r="8" fill="none" stroke="#fef08a" stroke-width="1.2"/>
+
+    <!-- Pearl Specular Highlights -->
+    <ellipse cx="85" cy="140" rx="2.5" ry="1.5" fill="#ffffff" opacity="0.9" transform="rotate(-30 85 140)"/>
+    <circle cx="89" cy="145" r="1" fill="#ffffff" opacity="0.6"/>
+
+    <!-- Pearl Imperial Claws / Golden Lotus Setting -->
+    <g fill="url(#imperialGoldPrimary)" stroke="#7f1d1d" stroke-width="0.8">
+      <path d="M77 146 C80 149, 83 151, 87.5 152 C92 151, 95 149, 98 146 C95 151, 91 154, 87.5 154 C84 154, 80 151, 77 146 Z"/>
+      <polygon points="87.5,152 86,156 87.5,157 89,156"/>
+    </g>
+  </g>
+</svg>

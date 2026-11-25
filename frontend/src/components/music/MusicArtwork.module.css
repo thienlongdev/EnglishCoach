@@ -1,0 +1,13 @@
+/* Shared by the header player and the room; kept tiny so the header never loads the room's styles. */
+.artwork { position: relative; overflow: hidden; background: #241c36; border-radius: 8px; flex-shrink: 0; }
+.artwork img { display: block; width: 100%; height: 100%; object-fit: cover; user-select: none; }
+.artFallback {
+  position: relative; width: 100%; height: 100%; display: grid; place-items: center; color: #efe1ff;
+  background:
+    radial-gradient(circle at 26% 22%, color-mix(in srgb, var(--music-accent, #b9a2f2) 85%, #fff) 0, transparent 46%),
+    radial-gradient(circle at 80% 85%, color-mix(in srgb, var(--music-accent, #b9a2f2) 55%, #0b1530) 0, transparent 60%),
+    linear-gradient(150deg, color-mix(in srgb, var(--music-accent, #b9a2f2) 45%, #1b1430), #120e20);
+}
+.artFallback svg { width: 42%; height: 42%; opacity: .5; }
+.artFallback span { position: absolute; bottom: 12%; right: 14%; font-size: clamp(10px, 22cqi, 46px); font-weight: 700; opacity: .85; }
+.artwork { container-type: inline-size; }

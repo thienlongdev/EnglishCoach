@@ -1,0 +1,635 @@
+/*
+ * Echo Background Studio — GPU-composited Background Theme Layer (BackgroundThemeLayer.tsx).
+ *
+ * Strict compositor discipline (aligned with EchoAtmosphere.module.css and Echo Visual Contract):
+ *   - Pure DOM/CSS layered surfaces with zero script frame loops or 3D graphics contexts.
+ *   - Keyframes animate ONLY `transform` and `opacity` (100% GPU compositor thread, zero layout/paint).
+ *   - Strict `.ecBg*` class namespace; `contain: strict`, `isolation: isolate`, `pointer-events: none`.
+ *   - Zero specificity overrides, zero live backdrop blur, inherits application typography cleanly.
+ *   - Prime-ratio asynchronous loop durations (13s, 17s, 19s, 23s, 29s, 31s, 37s) prevent visible repetition.
+ *   - `[data-paused="true"]` pauses every animation and releases `will-change` compositor memory.
+ */
+
+.ecBgRoot {
+  --ec-bg-speed-safe: max(0.1, var(--ec-bg-speed, 1));
+  --ec-bg-travel: clamp(0, calc(var(--ec-bg-motion, 0.6) * var(--ec-bg-scale, 1)), 1.35);
+  --ec-bg-glow-base: calc(0.62 + var(--ec-bg-glow-radius, 0.65) * 0.62);
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  contain: strict;
+  isolation: isolate;
+  background-color: var(--ec-bg-base-color, rgb(7 16 40));
+  opacity: var(--ec-bg-opacity, 1);
+}
+
+.ecBgFixed {
+  position: fixed;
+  z-index: 0;
+}
+
+.ecBgPreview {
+  position: absolute;
+  inset: 0;
+}
+
+.ecBgRoot[data-eco='true'] {
+  --ec-bg-travel: clamp(0, calc(var(--ec-bg-motion, 0.35) * var(--ec-bg-scale, 0.75) * 0.72), 0.75);
+}
+
+/* ── Static base and harmonic depth planes ──────────────────────────────────────────────────────────── */
+
+.ecBgBase {
+  position: absolute;
+  inset: calc(var(--ec-bg-blur-overscan, 0px) * -1);
+  background-color: var(--ec-bg-base-color, rgb(7 16 40));
+  background-image: var(--ec-bg-base);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: var(--ec-bg-base-opacity, 1);
+  filter: var(--ec-bg-filter, none);
+}
+
+.ecBgDepth {
+  position: absolute;
+  inset: 0;
+  background-image: var(--ec-bg-depth);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  mix-blend-mode: var(--ec-bg-blend-mode, soft-light);
+  opacity: var(--ec-bg-depth-opacity, 0.45);
+}
+
+/* Shared GPU motion layer foundation: promoted only while actively running (released when paused/compact). */
+.ecBgMotionLayer {
+  position: absolute;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+/* ── 1. gradient-morph: secondary OKLCH-shifted full gradient crossfading and counter-shifting ─────── */
+
+.ecBgMorph {
+  inset: -12%;
+  background-image: var(--ec-bg-morph);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation-name: ecBgGradientMorph;
+  animation-duration: calc(31s / var(--ec-bg-speed-safe));
+  animation-timing-function: var(--ec-bg-ease, cubic-bezier(0.37, 0, 0.63, 1));
+  animation-iteration-count: infinite;
+}
+
+@keyframes ecBgGradientMorph {
+  0%, 100% {
+    opacity: 0.04;
+    transform: translate3d(
+      calc(var(--ec-bg-dir-x, 0.707) * var(--ec-bg-travel) * 3.8%),
+      calc(var(--ec-bg-dir-y, -0.707) * var(--ec-bg-travel) * 3.8%),
+      0
+    ) scale(1.01);
+  }
+  50% {
+    opacity: calc(0.26 + var(--ec-bg-motion, 0.6) * 0.56);
+    transform: translate3d(
+      calc(var(--ec-bg-dir-x, 0.707) * var(--ec-bg-travel) * -4.2%),
+      calc(var(--ec-bg-dir-y, -0.707) * var(--ec-bg-travel) * -4.2%),
+      0
+    ) scale(calc(1.02 + var(--ec-bg-motion, 0.6) * 0.045));
+  }
+}
+
+/* ── 2. color-flow: oversized 140% directional flowing color plane ─────────────────────────────────── */
+
+.ecBgFlow {
+  inset: -20%;
+  background-image: var(--ec-bg-flow);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  mix-blend-mode: var(--ec-bg-blend-mode, screen);
+  animation-name: ecBgColorFlow;
+  animation-duration: calc(23s / var(--ec-bg-speed-safe));
+  animation-timing-function: var(--ec-bg-ease, cubic-bezier(0.37, 0, 0.63, 1));
+  animation-iteration-count: infinite;
+}
+
+@keyframes ecBgColorFlow {
+  0%, 100% {
+    opacity: calc(0.28 + var(--ec-bg-motion, 0.6) * 0.36);
+    transform: translate3d(
+      calc(var(--ec-bg-dir-x, 0.707) * var(--ec-bg-travel) * -7.4%),
+      calc(var(--ec-bg-dir-y, -0.707) * var(--ec-bg-travel) * -7.4%),
+      0
+    ) scale(1.02);
+  }
+  25% {
+    opacity: calc(0.4 + var(--ec-bg-motion, 0.6) * 0.42);
+    transform: translate3d(
+      calc(var(--ec-bg-dir-y, -0.707) * var(--ec-bg-travel) * -3.1%),
+      calc(var(--ec-bg-dir-x, 0.707) * var(--ec-bg-travel) * 3.1%),
+      0
+    ) scale(calc(1.03 + var(--ec-bg-motion, 0.6) * 0.045));
+  }
+  50% {
+    opacity: calc(0.34 + var(--ec-bg-motion, 0.6) * 0.44);
+    transform: translate3d(
+      calc(var(--ec-bg-dir-x, 0.707) * var(--ec-bg-travel) * 7.4%),
+      calc(var(--ec-bg-dir-y, -0.707) * var(--ec-bg-travel) * 7.4%),
+      0
+    ) scale(1.03);
+  }
+  75% {
+    opacity: calc(0.38 + var(--ec-bg-motion, 0.6) * 0.38);
+    transform: translate3d(
+      calc(var(--ec-bg-dir-y, -0.707) * var(--ec-bg-travel) * 3.1%),
+      calc(var(--ec-bg-dir-x, 0.707) * var(--ec-bg-travel) * -3.1%),
+      0
+    ) scale(calc(1.04 + var(--ec-bg-motion, 0.6) * 0.04));
+  }
+}
+
+/* ── 3. aurora: dual counter-drifting boreal curtains (prime 23s and 31s) ──────────────────────────── */
+
+.ecBgAuroraA {
+  inset: -26% -30% -14% -30%;
+  background-image: var(--ec-bg-aurora-a);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  mix-blend-mode: screen;
+  transform-origin: 50% 22%;
+  animation-name: ecBgAuroraCurtainA;
+  animation-duration: calc(23s / var(--ec-bg-speed-safe));
+  animation-timing-function: var(--ec-bg-ease, cubic-bezier(0.37, 0, 0.63, 1));
+  animation-iteration-count: infinite;
+}
+
+.ecBgAuroraB {
+  inset: -24% -30% -16% -30%;
+  background-image: var(--ec-bg-aurora-b);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  mix-blend-mode: soft-light;
+  transform-origin: 48% 28%;
+  animation-name: ecBgAuroraCurtainB;
+  animation-duration: calc(31s / var(--ec-bg-speed-safe));
+  animation-delay: calc(-11s / var(--ec-bg-speed-safe));
+  animation-timing-function: var(--ec-bg-ease, cubic-bezier(0.37, 0, 0.63, 1));
+  animation-iteration-count: infinite;
+}
+
+@keyframes ecBgAuroraCurtainA {
+  0%, 100% {
+    opacity: calc(0.26 + var(--ec-bg-light, 0.6) * 0.34);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * -6.2%),
+      calc(var(--ec-bg-travel) * -2.4%),
+      0
+    ) scaleX(calc(1.04 + var(--ec-bg-motion, 0.6) * 0.08))
+      scaleY(calc(0.95 + var(--ec-bg-motion, 0.6) * 0.04))
+      skewX(calc(var(--ec-bg-motion, 0.6) * -7.5deg));
+  }
+  33% {
+    opacity: calc(0.42 + var(--ec-bg-light, 0.6) * 0.44);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * 2.8%),
+      calc(var(--ec-bg-travel) * 3.1%),
+      0
+    ) scaleX(calc(0.96 + var(--ec-bg-motion, 0.6) * 0.04))
+      scaleY(calc(1.06 + var(--ec-bg-motion, 0.6) * 0.1))
+      skewX(calc(var(--ec-bg-motion, 0.6) * 4.5deg));
+  }
+  67% {
+    opacity: calc(0.34 + var(--ec-bg-light, 0.6) * 0.4);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * 6.5%),
+      calc(var(--ec-bg-travel) * -1.6%),
+      0
+    ) scaleX(calc(1.08 + var(--ec-bg-motion, 0.6) * 0.08))
+      scaleY(calc(0.98 + var(--ec-bg-motion, 0.6) * 0.08))
+      skewX(calc(var(--ec-bg-motion, 0.6) * 6.8deg));
+  }
+}
+
+@keyframes ecBgAuroraCurtainB {
+  0%, 100% {
+    opacity: calc(0.22 + var(--ec-bg-light, 0.6) * 0.36);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * 6.8%),
+      calc(var(--ec-bg-travel) * 2.2%),
+      0
+    ) scaleX(calc(1.06 + var(--ec-bg-motion, 0.6) * 0.07))
+      scaleY(calc(1.02 + var(--ec-bg-motion, 0.6) * 0.08))
+      skewX(calc(var(--ec-bg-motion, 0.6) * 7.2deg));
+  }
+  38% {
+    opacity: calc(0.38 + var(--ec-bg-light, 0.6) * 0.42);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * -3.4%),
+      calc(var(--ec-bg-travel) * -3.0%),
+      0
+    ) scaleX(calc(0.94 + var(--ec-bg-motion, 0.6) * 0.06))
+      scaleY(calc(1.08 + var(--ec-bg-motion, 0.6) * 0.09))
+      skewX(calc(var(--ec-bg-motion, 0.6) * -6.4deg));
+  }
+  72% {
+    opacity: calc(0.3 + var(--ec-bg-light, 0.6) * 0.38);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * -6.4%),
+      calc(var(--ec-bg-travel) * 1.8%),
+      0
+    ) scaleX(calc(1.05 + var(--ec-bg-motion, 0.6) * 0.09))
+      scaleY(calc(0.96 + var(--ec-bg-motion, 0.6) * 0.05))
+      skewX(calc(var(--ec-bg-motion, 0.6) * -4.2deg));
+  }
+}
+
+/* ── 4. liquid-flow: 3 radial orb layers on organic elliptical/Lissajous orbits (23s, 29s, 37s) ───── */
+
+.ecBgOrbA {
+  left: -14%;
+  top: -12%;
+  width: 80%;
+  height: 80%;
+  background-image: var(--ec-bg-orb-a);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  mix-blend-mode: screen;
+  animation-name: ecBgLiquidOrbA;
+  animation-duration: calc(23s / var(--ec-bg-speed-safe));
+  animation-timing-function: var(--ec-bg-ease, cubic-bezier(0.37, 0, 0.63, 1));
+  animation-iteration-count: infinite;
+}
+
+.ecBgOrbB {
+  right: -14%;
+  bottom: -16%;
+  width: 82%;
+  height: 82%;
+  background-image: var(--ec-bg-orb-b);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  mix-blend-mode: soft-light;
+  animation-name: ecBgLiquidOrbB;
+  animation-duration: calc(29s / var(--ec-bg-speed-safe));
+  animation-delay: calc(-9s / var(--ec-bg-speed-safe));
+  animation-timing-function: var(--ec-bg-ease, cubic-bezier(0.37, 0, 0.63, 1));
+  animation-iteration-count: infinite;
+}
+
+.ecBgOrbC {
+  left: 12%;
+  top: 14%;
+  width: 76%;
+  height: 76%;
+  background-image: var(--ec-bg-orb-c);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  mix-blend-mode: screen;
+  animation-name: ecBgLiquidOrbC;
+  animation-duration: calc(37s / var(--ec-bg-speed-safe));
+  animation-delay: calc(-17s / var(--ec-bg-speed-safe));
+  animation-timing-function: var(--ec-bg-ease, cubic-bezier(0.37, 0, 0.63, 1));
+  animation-iteration-count: infinite;
+}
+
+@keyframes ecBgLiquidOrbA {
+  0%, 100% {
+    opacity: calc(0.32 + var(--ec-bg-motion, 0.6) * 0.36);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * -4%),
+      calc(var(--ec-bg-travel) * 2%),
+      0
+    ) scale(0.96);
+  }
+  25% {
+    opacity: calc(0.45 + var(--ec-bg-motion, 0.6) * 0.38);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * 24%),
+      calc(var(--ec-bg-travel) * -6%),
+      0
+    ) scale(1.1);
+  }
+  50% {
+    opacity: calc(0.38 + var(--ec-bg-motion, 0.6) * 0.4);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * 34%),
+      calc(var(--ec-bg-travel) * 20%),
+      0
+    ) scale(1.02);
+  }
+  75% {
+    opacity: calc(0.42 + var(--ec-bg-motion, 0.6) * 0.36);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * 8%),
+      calc(var(--ec-bg-travel) * 28%),
+      0
+    ) scale(0.92);
+  }
+}
+
+@keyframes ecBgLiquidOrbB {
+  0%, 100% {
+    opacity: calc(0.36 + var(--ec-bg-motion, 0.6) * 0.38);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * 4%),
+      calc(var(--ec-bg-travel) * 4%),
+      0
+    ) scale(1.04);
+  }
+  20% {
+    opacity: calc(0.48 + var(--ec-bg-motion, 0.6) * 0.4);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * -22%),
+      calc(var(--ec-bg-travel) * -14%),
+      0
+    ) scale(1.14);
+  }
+  40% {
+    opacity: calc(0.34 + var(--ec-bg-motion, 0.6) * 0.36);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * -32%),
+      calc(var(--ec-bg-travel) * 6%),
+      0
+    ) scale(0.94);
+  }
+  60% {
+    opacity: calc(0.46 + var(--ec-bg-motion, 0.6) * 0.4);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * -14%),
+      calc(var(--ec-bg-travel) * -26%),
+      0
+    ) scale(1.08);
+  }
+  80% {
+    opacity: calc(0.4 + var(--ec-bg-motion, 0.6) * 0.36);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * -4%),
+      calc(var(--ec-bg-travel) * -10%),
+      0
+    ) scale(0.96);
+  }
+}
+
+@keyframes ecBgLiquidOrbC {
+  0%, 100% {
+    opacity: calc(0.24 + var(--ec-bg-motion, 0.6) * 0.34);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * -14%),
+      calc(var(--ec-bg-travel) * -12%),
+      0
+    ) scale(0.9);
+  }
+  33% {
+    opacity: calc(0.38 + var(--ec-bg-motion, 0.6) * 0.42);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * 18%),
+      calc(var(--ec-bg-travel) * -16%),
+      0
+    ) scale(1.14);
+  }
+  66% {
+    opacity: calc(0.3 + var(--ec-bg-motion, 0.6) * 0.38);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * -10%),
+      calc(var(--ec-bg-travel) * 18%),
+      0
+    ) scale(1.02);
+  }
+}
+
+/* ── 5. pearl-shimmer: opalescent iridescent prism sheen sweep (prime 17s) ─────────────────────────── */
+
+.ecBgPearl {
+  inset: -38%;
+  background-image: var(--ec-bg-pearl);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  mix-blend-mode: screen;
+  transform-origin: 50% 50%;
+  animation-name: ecBgPearlSweep;
+  animation-duration: calc(17s / var(--ec-bg-speed-safe));
+  animation-timing-function: var(--ec-bg-ease, cubic-bezier(0.37, 0, 0.63, 1));
+  animation-iteration-count: infinite;
+}
+
+@keyframes ecBgPearlSweep {
+  0%, 100% {
+    opacity: calc(var(--ec-bg-shimmer, 0.45) * 0.16);
+    transform: translate3d(
+      calc(var(--ec-bg-dir-x, 0.707) * var(--ec-bg-travel) * -8.5%),
+      calc(var(--ec-bg-dir-y, -0.707) * var(--ec-bg-travel) * -8.5%),
+      0
+    ) rotate(calc(var(--ec-bg-motion, 0.6) * -7deg)) scale(1.01);
+  }
+  45% {
+    opacity: calc(var(--ec-bg-shimmer, 0.45) * 0.72);
+    transform: translate3d(
+      calc(var(--ec-bg-dir-x, 0.707) * var(--ec-bg-travel) * 2.4%),
+      calc(var(--ec-bg-dir-y, -0.707) * var(--ec-bg-travel) * 2.4%),
+      0
+    ) rotate(calc(var(--ec-bg-motion, 0.6) * 3deg)) scale(1.06);
+  }
+  75% {
+    opacity: calc(var(--ec-bg-shimmer, 0.45) * 0.46);
+    transform: translate3d(
+      calc(var(--ec-bg-dir-x, 0.707) * var(--ec-bg-travel) * 8.5%),
+      calc(var(--ec-bg-dir-y, -0.707) * var(--ec-bg-travel) * 8.5%),
+      0
+    ) rotate(calc(var(--ec-bg-motion, 0.6) * 7.5deg)) scale(1.03);
+  }
+}
+
+/* ── 6. ambient-glow: deep radial focal light aura breathing softly (prime 13s) ────────────────────── */
+
+.ecBgAmbientGlow {
+  inset: -18%;
+  background-image: var(--ec-bg-ambient-glow);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  mix-blend-mode: screen;
+  transform-origin: var(--ec-bg-center-x, 50%) var(--ec-bg-center-y, 50%);
+  animation-name: ecBgAmbientPulse;
+  animation-duration: calc(13s / var(--ec-bg-speed-safe));
+  animation-timing-function: var(--ec-bg-ease, cubic-bezier(0.37, 0, 0.63, 1));
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.ecBgAmbientGlowStatic {
+  position: absolute;
+  inset: -18%;
+  background-image: var(--ec-bg-ambient-glow);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  mix-blend-mode: screen;
+  transform-origin: var(--ec-bg-center-x, 50%) var(--ec-bg-center-y, 50%);
+  transform: scale(var(--ec-bg-glow-base));
+  opacity: calc(var(--ec-bg-light, 0.6) * 0.46 + var(--ec-bg-glow, 0.4) * 0.28);
+}
+
+@keyframes ecBgAmbientPulse {
+  from {
+    opacity: calc(var(--ec-bg-light, 0.6) * 0.38 + var(--ec-bg-glow, 0.4) * 0.16);
+    transform: scale(calc(var(--ec-bg-glow-base) * (1 - 0.08 * var(--ec-bg-motion, 0.6))));
+  }
+  to {
+    opacity: calc(var(--ec-bg-light, 0.6) * 0.68 + var(--ec-bg-glow, 0.4) * 0.24);
+    transform: scale(calc(var(--ec-bg-glow-base) * (1 + 0.14 * var(--ec-bg-motion, 0.6))));
+  }
+}
+
+/* ── 7. light-drift: 2 slow drifting soft light pools (prime 29s and 37s) ──────────────────────────── */
+
+.ecBgDriftA {
+  left: -18%;
+  top: -18%;
+  width: 86%;
+  height: 86%;
+  background-image: var(--ec-bg-drift-a);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  mix-blend-mode: screen;
+  animation-name: ecBgLightDriftA;
+  animation-duration: calc(29s / var(--ec-bg-speed-safe));
+  animation-timing-function: var(--ec-bg-ease, cubic-bezier(0.37, 0, 0.63, 1));
+  animation-iteration-count: infinite;
+}
+
+.ecBgDriftB {
+  right: -16%;
+  bottom: -18%;
+  width: 82%;
+  height: 82%;
+  background-image: var(--ec-bg-drift-b);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  mix-blend-mode: soft-light;
+  animation-name: ecBgLightDriftB;
+  animation-duration: calc(37s / var(--ec-bg-speed-safe));
+  animation-delay: calc(-13s / var(--ec-bg-speed-safe));
+  animation-timing-function: var(--ec-bg-ease, cubic-bezier(0.37, 0, 0.63, 1));
+  animation-iteration-count: infinite;
+}
+
+@keyframes ecBgLightDriftA {
+  0%, 100% {
+    opacity: calc(var(--ec-bg-light, 0.6) * 0.34);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * -4%),
+      calc(var(--ec-bg-travel) * -2%),
+      0
+    ) scale(0.96);
+  }
+  35% {
+    opacity: calc(var(--ec-bg-light, 0.6) * 0.68);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * 32%),
+      calc(var(--ec-bg-travel) * 14%),
+      0
+    ) scale(1.1);
+  }
+  70% {
+    opacity: calc(var(--ec-bg-light, 0.6) * 0.5);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * 16%),
+      calc(var(--ec-bg-travel) * 30%),
+      0
+    ) scale(1.02);
+  }
+}
+
+@keyframes ecBgLightDriftB {
+  0%, 100% {
+    opacity: calc(var(--ec-bg-light, 0.6) * 0.3);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * 4%),
+      calc(var(--ec-bg-travel) * 2%),
+      0
+    ) scale(1.02);
+  }
+  42% {
+    opacity: calc(var(--ec-bg-light, 0.6) * 0.64);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * -28%),
+      calc(var(--ec-bg-travel) * -18%),
+      0
+    ) scale(1.12);
+  }
+  76% {
+    opacity: calc(var(--ec-bg-light, 0.6) * 0.44);
+    transform: translate3d(
+      calc(var(--ec-bg-travel) * -12%),
+      calc(var(--ec-bg-travel) * -32%),
+      0
+    ) scale(0.95);
+  }
+}
+
+/* ── 8. color-breathing: serene harmonic luminosity/saturation veil (prime 19s) ────────────────────── */
+
+.ecBgBreathe {
+  inset: -6%;
+  background-image: var(--ec-bg-breathe-veil);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  mix-blend-mode: soft-light;
+  animation-name: ecBgColorBreathe;
+  animation-duration: calc(19s / var(--ec-bg-speed-safe));
+  animation-timing-function: var(--ec-bg-ease, cubic-bezier(0.37, 0, 0.63, 1));
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes ecBgColorBreathe {
+  from {
+    opacity: calc(0.06 + var(--ec-bg-motion, 0.6) * 0.08);
+    transform: scale(1);
+  }
+  to {
+    opacity: calc(0.24 + var(--ec-bg-motion, 0.6) * 0.44);
+    transform: scale(calc(1 + var(--ec-bg-motion, 0.6) * 0.03));
+  }
+}
+
+/* ── Anti-banding grain tile (disabled in eco and compact modes) ───────────────────────────────────── */
+
+.ecBgGrain {
+  position: absolute;
+  inset: 0;
+  background-image: var(--ec-bg-grain);
+  background-size: 128px 128px;
+  background-repeat: repeat;
+  opacity: var(--ec-bg-grain-opacity, 0.025);
+  mix-blend-mode: overlay;
+}
+
+/* ── Pause, static, compact, reduced-motion, and forced-colors safeguards ──────────────────────────── */
+
+.ecBgRoot[data-paused='true'] .ecBgMotionLayer {
+  animation-play-state: paused;
+  will-change: auto;
+}
+
+.ecBgRoot[data-static='true'] .ecBgMotionLayer {
+  animation: none;
+  will-change: auto;
+}
+
+.ecBgCompact .ecBgMotionLayer {
+  will-change: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ecBgMotionLayer {
+    animation: none;
+    will-change: auto;
+  }
+}
+
+@media (forced-colors: active) {
+  .ecBgRoot {
+    display: none;
+  }
+}

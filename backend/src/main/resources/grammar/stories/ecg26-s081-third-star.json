@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s081-third-star",
+  "title": "Ngôi sao mượn từ một bàn khác",
+  "level": "A2",
+  "topics": [
+    "other-another"
+  ],
+  "scene": "restaurant",
+  "summary": "Trên bánh có hai sao đường. Bea muốn có ba để tặng ba chị em, nhưng khay sao đã trống.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Quy",
+      "role": "Người trang trí bàn"
+    },
+    {
+      "id": "b",
+      "name": "Bea",
+      "role": "Cô chủ tiệc"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Bàn bên còn một ngôi sao giấy không ăn được. Có thể vẽ thêm một sao đường bằng mứt hoặc dùng sao giấy làm biển tên.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I need one more for my sister.",
+          "vi": "Mình cần thêm một cái cho chị."
+        },
+        {
+          "who": "b",
+          "en": "Do you want food or a name card?",
+          "vi": "Cậu muốn đồ ăn hay thẻ tên?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Chọn cách lấy thêm một sao mà vẫn báo rõ nó dùng làm gì.",
+        "options": [
+          {
+            "t": "Let's use the other table's star as a card.",
+            "note": "The other table's star chỉ vật đã xác định ở bàn kia; as a card nói rõ dùng làm thẻ, không phải ăn.",
+            "ok": true,
+            "next": "ending-2"
+          },
+          {
+            "t": "Let's draw another star in jam.",
+            "note": "Another star là thêm một ngôi sao bên cạnh hai ngôi đã có. In jam cho biết chất dùng để vẽ.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Bea dùng thìa vẽ một sao méo. Người chị lớn xin miếng có ngôi méo vì đó là miếng duy nhất chính tay em làm.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The crooked one went first.",
+          "vi": "Ngôi méo được chọn đầu tiên đấy."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Bea viết cả ba tên lên sao giấy, cắm trên đĩa riêng. Ba chị em giữ chung tấm thẻ sau khi hai ngôi đường đã tan.",
+      "say": [
+        {
+          "who": "b",
+          "en": "This star can come home with us.",
+          "vi": "Ngôi sao này theo chị em mình về nhà được."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

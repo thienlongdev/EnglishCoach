@@ -1,0 +1,41 @@
+{
+  "id": "pair-of-socks",
+  "title": "Đếm tất hay đếm đôi?",
+  "summary": "Trên dây phơi có hai chiếc tất cùng bộ. Đổi đơn vị đếm rồi dự đoán danh từ nào ở số nhiều.",
+  "level": "A1",
+  "topics": [
+    "regular-plurals",
+    "numbers-dates-measures"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Đơn vị đếm",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Chiếc"
+        },
+        {
+          "id": "v2",
+          "label": "Đôi"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I need two socks.",
+      "vi": "Tôi cần hai chiếc tất.",
+      "note": "Two đi với socks ở số nhiều. Hai chiếc chưa chắc tạo thành một đôi cùng bộ. / Two counts separate socks.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "I need a pair of socks.",
+      "vi": "Tôi cần một đôi tất.",
+      "note": "A đi với pair ở số ít. Socks vẫn ở số nhiều vì một đôi gồm hai chiếc. / A counts one pair.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,489 @@
+{
+  "schema": 1,
+  "slug": "passive-nonfinite",
+  "version": 2,
+  "domain": "voice",
+  "order": 60,
+  "kind": "grammar",
+  "title": {
+    "vi": "Bị động với to be done, being done",
+    "en": "Passive infinitives and gerunds"
+  },
+  "subtitle": {
+    "vi": "To be done và being done theo đúng mẫu từ",
+    "en": "To be done and being done in licensed patterns"
+  },
+  "aliases": [
+    "bị động không hữu hạn",
+    "passive infinitive gerund",
+    "to be done being done",
+    "avoid to be",
+    "to have been invited"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Tạo to be + phân từ và being + phân từ.",
+    "Chọn mẫu theo từ dẫn nhập.",
+    "Đọc mốc của infinitive bị động hoàn thành."
+  ],
+  "prerequisites": [
+    "passive-use",
+    "gerunds"
+  ],
+  "related": [
+    {
+      "slug": "passive-use",
+      "rel": "more"
+    },
+    {
+      "slug": "gerunds",
+      "rel": "more"
+    },
+    {
+      "slug": "participle-clauses",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Bị động không hữu hạn có các dạng như to be invited và being invited. Chúng không tự mang thì như động từ hữu hạn; từ dẫn nhập quyết định dạng được phép.",
+    "when": "Dùng trong các mẫu mong muốn, trải nghiệm hoặc sau giới từ phù hợp.",
+    "examples": [
+      {
+        "en": "I hope [V|to be invited].",
+        "vi": "Tôi hy vọng được mời."
+      },
+      {
+        "en": "I dislike [V|being interrupted].",
+        "vi": "Tôi không thích bị ngắt lời."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Hope thường có to-infinitive: hope to be invited. Avoid có -ing: avoid being photographed. Cả hai có bị động nhưng không vì thế đổi hai dạng tự do sau mọi động từ."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Từ dẫn nhập",
+            "items": [
+              "avoid"
+            ]
+          },
+          {
+            "label": "Dạng -ing của be",
+            "items": [
+              "being"
+            ]
+          },
+          {
+            "label": "Phân từ",
+            "items": [
+              "photographed"
+            ]
+          }
+        ],
+        "sentence": "I {0} {1} {2}."
+      },
+      "caption": "Avoid chọn mẫu -ing; photographed giữ quan hệ bị động.",
+      "alt": "Avoid chọn mẫu -ing; photographed giữ quan hệ bị động."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Mẫu",
+        "Ví dụ",
+        "Lý do hình thức"
+      ],
+      "rows": [
+        [
+          "to be + phân từ",
+          "I hope to be selected.",
+          "Hope cho phép to-infinitive"
+        ],
+        [
+          "being + phân từ",
+          "I dislike being interrupted.",
+          "Dislike cho phép -ing"
+        ],
+        [
+          "giới từ + being",
+          "worried about being misunderstood",
+          "Sau about dùng dạng phù hợp"
+        ],
+        [
+          "to have been + phân từ",
+          "glad to have been invited",
+          "Nhìn việc được mời trước mốc cảm xúc"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Being invited không tự có nghĩa “đang được mời ngay bây giờ”. Trong I enjoyed being invited to local events as a student, ngữ cảnh đặt trải nghiệm ở quá khứ."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không phải động từ có mọi dạng bị động tự nhiên, và không phải từ dẫn nhập lấy cả to-infinitive lẫn -ing. Tra đúng nghĩa và mẫu khi chưa chắc."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "To have been selected thường nhìn việc được chọn trước mốc của động từ/tính từ ngoài. Có thể không cần dạng hoàn thành nếu ngữ cảnh đã rõ, nhưng không hứa hai dạng luôn cùng trọng tâm."
+    },
+    {
+      "type": "p",
+      "vi": "The car needs washing có thể có nghĩa bị động dù không có being: cần được rửa. Needs to be washed cũng chuẩn. Đây là mẫu riêng của need trong ngữ cảnh phù hợp; không suy mọi need + -ing có mẫu giống mọi động từ khác."
+    },
+    {
+      "type": "p",
+      "vi": "Having been warned có thể làm mệnh đề phân từ: Having been warned, we checked again. Đừng xem mọi -ing trong mọi cấu trúc đều là cùng một chức năng danh từ."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "passive-nonfinite-m1",
+      "wrong": "I hope to being invited.",
+      "right": "I hope to be invited.",
+      "why": "To-infinitive cần be."
+    },
+    {
+      "id": "passive-nonfinite-m2",
+      "wrong": "I avoid to be photographed.",
+      "right": "I avoid being photographed.",
+      "why": "Avoid lấy -ing trong mẫu này."
+    },
+    {
+      "id": "passive-nonfinite-m3",
+      "wrong": "She was pleased about being chose.",
+      "right": "She was pleased about being chosen.",
+      "why": "Cần phân từ chosen."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có đổi to be và being tùy ý không?",
+      "a": "Không. Từ dẫn nhập và nghĩa quyết định mẫu được phép."
+    },
+    {
+      "q": "Being có luôn chỉ hiện tại không?",
+      "a": "Không. Mốc thời gian do cả câu và ngữ cảnh cung cấp."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "pnf-01",
+      "prompt": "Chọn bị động nguyên thể sau want.",
+      "explain": "Want cho phép to be invited; invited là phân từ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "I want ___ to the workshop.",
+      "options": [
+        {
+          "t": "to be invited",
+          "ok": true,
+          "note": "To be + phân từ."
+        },
+        {
+          "t": "being invited",
+          "ok": false,
+          "note": "Không theo khung want được yêu cầu.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "to be invite",
+          "ok": false,
+          "note": "Cần invited.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "pnf-02",
+      "prompt": "Ghép theo cả mẫu ngữ pháp và ý nghĩa tiếng Việt đã cho.",
+      "explain": "Mẫu theo sau bị ràng buộc bởi động từ/tính từ.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "I hope ... (tôi hy vọng được chọn)",
+          "b": "to be selected."
+        },
+        {
+          "a": "I avoid ... (tôi tránh bị chụp ảnh)",
+          "b": "being photographed."
+        },
+        {
+          "a": "I am worried about ... (tôi lo bị hiểu lầm)",
+          "b": "being misunderstood."
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "pnf-03",
+      "prompt": "Phân loại hình thức.",
+      "explain": "Being invited và to be invited cùng bị động nhưng khác kiểu bổ ngữ.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "To be + phân từ",
+        "Being + phân từ",
+        "To have been + phân từ"
+      ],
+      "items": [
+        {
+          "t": "I hope to be invited.",
+          "cat": "To be + phân từ"
+        },
+        {
+          "t": "I dislike being interrupted.",
+          "cat": "Being + phân từ"
+        },
+        {
+          "t": "I am glad to have been invited.",
+          "cat": "To have been + phân từ"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "pnf-04",
+      "prompt": "Điền be hoặc being theo khung.",
+      "explain": "Hope lấy to be; sau about ở mẫu này dùng being.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "I hope to {1} selected. I am worried about {2} misunderstood.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "be"
+          ]
+        },
+        "2": {
+          "accept": [
+            "being"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "pnf-05",
+      "prompt": "Sửa phân từ sau being.",
+      "explain": "Chosen là phân từ của choose.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "She was pleased about being"
+        },
+        {
+          "t": "chose",
+          "bad": true,
+          "fix": [
+            "chosen"
+          ],
+          "note": "Dùng chosen.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "for the team."
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "pnf-06",
+      "prompt": "Sắp xếp bắt đầu bằng I; không đổi từ.",
+      "explain": "Avoid cho phép being photographed, không to be ở khung này.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "I",
+        "avoid",
+        "being",
+        "photographed"
+      ],
+      "accept": [
+        [
+          "I",
+          "avoid",
+          "being",
+          "photographed"
+        ]
+      ],
+      "end": ".",
+      "level": "B2"
+    },
+    {
+      "id": "pnf-07",
+      "prompt": "Chuyển hành động được nhận sang bị động nguyên thể.",
+      "explain": "Sau hope dùng to be selected với chủ ngữ chịu tác động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "I hope the committee selects me.",
+      "instruction": "Viết lại với I hope to và dạng bị động của select, không nêu committee.",
+      "accept": [
+        "I hope to be selected"
+      ],
+      "model": "I hope to be selected",
+      "level": "B2"
+    },
+    {
+      "id": "pnf-08",
+      "prompt": "Viết mong muốn và trải nghiệm được làm.",
+      "explain": "Tự đối chiếu, không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết một câu hope to be, một câu dislike/avoid being và một câu about being. Chọn những hành động có quan hệ bị động tự nhiên.",
+      "model": [
+        "I hope to be invited. I dislike being interrupted. I am worried about being misunderstood."
+      ],
+      "checklist": [
+        "Từ dẫn nhập cho phép dạng theo sau.",
+        "Phân từ đúng.",
+        "Không dùng mọi bị động cho mọi động từ."
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "pnf-09",
+      "prompt": "Điền phân từ của see, invite và dạng been trong khung hoàn thành.",
+      "explain": "Seen và invited là phân từ; have been giữ bị động hoàn thành.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "She avoided being {1} (see). I hope to be {2} (invite). I am glad to have {3} selected.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "seen"
+          ]
+        },
+        "2": {
+          "accept": [
+            "invited"
+          ]
+        },
+        "3": {
+          "accept": [
+            "been"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "pnf-10",
+      "prompt": "Chuyển bổ ngữ sang bị động sau dislike.",
+      "explain": "Being interrupted giữ nghĩa chủ ngữ không thích bị ngắt lời.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "I dislike people interrupting me.",
+      "instruction": "Viết I dislike rồi dạng -ing bị động của interrupt, không nêu people.",
+      "accept": [
+        "I dislike being interrupted"
+      ],
+      "model": "I dislike being interrupted",
+      "level": "B2"
+    },
+    {
+      "id": "pnf-11",
+      "prompt": "Chọn tất cả mẫu chuẩn.",
+      "explain": "Lexical pattern khác nhau sau hope và avoid.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "I hope to be selected.",
+          "ok": true,
+          "note": "Hope + to-infinitive."
+        },
+        {
+          "t": "I avoid being photographed.",
+          "ok": true,
+          "note": "Avoid + -ing."
+        },
+        {
+          "t": "I avoid to be photographed.",
+          "ok": false,
+          "note": "Avoid không lấy to-infinitive theo mẫu này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "I hope to being selected.",
+          "ok": false,
+          "note": "To-infinitive cần be.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "pnf-12",
+      "prompt": "Chọn nhận xét đúng về thời gian.",
+      "explain": "To have been invited nhìn việc được mời là trước mốc vui mừng.",
+      "skill": "meaning",
+      "use": "check",
+      "type": "choice",
+      "stem": "I am glad to have been invited.",
+      "options": [
+        {
+          "t": "Lời mời được nhìn là trước cảm xúc hiện tại; câu không xác nhận sự kiện đã diễn ra.",
+          "ok": true,
+          "note": "Được mời khác việc đã tham dự."
+        },
+        {
+          "t": "Người nói chắc chắn đã dự xong sự kiện.",
+          "ok": false,
+          "note": "Không suy từ lời mời.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Mọi being đều có nghĩa sự việc đang xảy ra bây giờ.",
+          "ok": false,
+          "note": "Dạng không hữu hạn nhận thời gian từ ngữ cảnh.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s234-not-a-drop",
+  "title": "Giọt mưa không trả lời",
+  "level": "C1",
+  "topics": [
+    "negation-scope",
+    "academic-grammar"
+  ],
+  "scene": "university",
+  "summary": "Phiếu quan trắc có ô “no rain recorded”. Trong buổi lễ vườn, một em bé lại nhớ mưa rơi lên tay mình.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Đạt",
+      "role": "Sinh viên thực tập"
+    },
+    {
+      "id": "b",
+      "name": "Noa",
+      "role": "Người giữ vườn"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Đạt phát hiện nắp ống đo quên mở. Không có mẫu thu, dù bầu trời thực sự có mưa hay không. Noa không muốn lấy trí nhớ em nhỏ làm số liệu định lượng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Zero in the jar isn't necessarily zero in the sky.",
+          "vi": "Số không trong bình chưa chắc là số không trên trời."
+        },
+        {
+          "who": "b",
+          "en": "How will you mark the cell in the table?",
+          "vi": "Em sẽ đánh dấu ô trong bảng thế nào?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Giữ sự khác nhau giữa thiếu quan sát và quan sát được không có mưa.",
+        "options": [
+          {
+            "t": "We can conclude that no rain fell.",
+            "note": "Đặt no trong mệnh đề sau conclude tạo kết luận xác định về bầu trời. Một ống đo bị bịt không thể hỗ trợ kết luận ấy.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "We cannot conclude that no rain fell.",
+            "note": "Cannot conclude phủ định khả năng kết luận. Nó không tự khẳng định có mưa; dụng cụ bị đậy để ngỏ cả hai khả năng.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Đạt ghi “mẫu không sử dụng được”. Em bé vẽ giọt nước cạnh trang nhật ký, được ghi tên dưới mục ký ức của khách.",
+      "say": [
+        {
+          "who": "b",
+          "en": "There's room on this page for her memory and our missing measurement.",
+          "vi": "Trang này đủ chỗ cho ký ức của em và phép đo chúng ta bỏ lỡ."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Noa nhỏ nước lên nắp cho Đạt thấy bình vẫn khô. Đạt thay số không bằng ô thiếu dữ liệu rồi giữ nắp có giọt nước làm vật minh họa.",
+      "say": [
+        {
+          "who": "a",
+          "en": "An empty jar taught us what it couldn't measure.",
+          "vi": "Chiếc bình rỗng đã dạy ta thứ nó không đo được."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

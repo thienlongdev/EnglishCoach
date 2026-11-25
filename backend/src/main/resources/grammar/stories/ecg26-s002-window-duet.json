@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s002-window-duet",
+  "title": "Bản nhạc hai ô cửa",
+  "summary": "Vy nghe một nốt nhạc từ căn hộ đối diện mỗi khi em tập sáo.",
+  "level": "A1",
+  "topics": [
+    "can-could-ability"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vy",
+      "role": "Người thổi sáo"
+    },
+    {
+      "id": "b",
+      "name": "Eli",
+      "role": "Bạn hàng xóm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Vy thổi ba nốt. Bên kia ngõ, có người đáp lại đúng ba tiếng gõ. Một tờ giấy bay sang, trên đó vẽ cái trống.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can play this song.",
+          "vi": "Mình chơi được bài này."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "I have a drum. Can I play with you?",
+          "vi": "Mình có trống. Mình chơi cùng bạn nhé?"
+        }
+      ],
+      "choice": {
+        "prompt": "Vy muốn biết Eli có chơi được đoạn cuối. Em hỏi thế nào?",
+        "options": [
+          {
+            "t": "Can you play the last part?",
+            "note": "Can you play hỏi về khả năng của Eli. Ở đây Vy chỉ vào đoạn nhạc để bạn thử.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "Can I play the last part?",
+            "note": "Chủ ngữ I chuyển câu hỏi sang Vy. Eli hiểu rằng Vy muốn tự chơi đoạn cuối.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Vy giơ bản nhạc ra cửa sổ. Eli chơi chậm, rồi chơi đúng đoạn khó.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Yes. Listen!",
+          "vi": "Được. Nghe nhé!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Eli đặt dùi xuống. Vy chỉ vào bạn rồi chỉ vào đoạn nhạc lần nữa. Eli hiểu ý và gõ thử.",
+      "say": [
+        {
+          "who": "b",
+          "en": "You want me to play it!",
+          "vi": "Bạn muốn mình chơi đoạn đó!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Chiều ấy, cả ngõ nghe một bản nhạc có tiếng sáo từ cửa sổ này và tiếng trống từ cửa sổ kia. Lần đầu tiên Vy mở cửa sổ thật rộng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We can play it together.",
+          "vi": "Chúng mình chơi chung được rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

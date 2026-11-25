@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s095-same-soup-twice",
+  "title": "Hai bữa súp cùng một ngày",
+  "summary": "Yul phục vụ cùng một vị khách vào cùng một giờ hai lần. Lần đầu ông trả bằng tiền, lần sau ông mang một chiếc thìa chưa từng dùng.",
+  "level": "B1",
+  "topics": [
+    "future-present-forms",
+    "time-clauses"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Yul",
+      "role": "Người chạy bàn"
+    },
+    {
+      "id": "b",
+      "name": "Minh",
+      "role": "Khách quen"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Quán nằm cạnh đường biên hai múi giờ trong một thành phố tưởng tượng. Minh ăn lúc 12 giờ ở quầy đông, ngồi đọc sách gần một giờ rồi đi bộ sang quầy tây, nơi đồng hồ mới gần 12 giờ. Hai quầy mở bán súp khi đồng hồ riêng chỉ 12 giờ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I thought tomorrow had arrived early.",
+          "vi": "Tôi cứ tưởng ngày mai đến sớm."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Watch the clock on this side. When can I buy the second bowl?",
+          "vi": "Nhìn đồng hồ bên này đi. Khi nào tôi mua được bát thứ hai?"
+        }
+      ],
+      "choice": {
+        "prompt": "Yul muốn nói thời điểm phục vụ trong tương lai ở quầy tây.",
+        "options": [
+          {
+            "t": "We'll serve you when this clock reaches twelve.",
+            "note": "When mở mệnh đề thời gian nói tương lai. Dùng hiện tại đơn reaches sau when, còn will ở mệnh đề chính.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "We served you when this clock reached twelve.",
+            "note": "Câu quá khứ kể việc đã xảy ra ở chính quầy này. Đồng hồ quầy tây vẫn chưa tới mười hai nên chưa phải điều Yul muốn hẹn.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Minh đợi qua mười phút. Kim phút chạm số mười hai, Yul đặt bát súp xuống và nhìn thấy chiếc thìa mới trong túi ông.",
+      "say": [
+        {
+          "who": "b",
+          "en": "This one is for my brother.",
+          "vi": "Bát này dành cho em trai tôi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Minh xoay mặt đồng hồ về phía Yul. Họ đợi kim dài tới đỉnh rồi múc bát thứ hai.",
+      "say": [
+        {
+          "who": "b",
+          "en": "One lunch for each of us.",
+          "vi": "Mỗi anh em một suất trưa."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Em trai Minh đến từ phía bên kia đường, nhận bát còn bốc khói. Yul ghim cả hai hóa đơn 12:00 lên bảng. Bên dưới, cậu vẽ hai cái thìa như hai kim đồng hồ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Two clocks made one family lunch possible.",
+          "vi": "Hai chiếc đồng hồ đã giúp anh em họ ăn chung một bữa."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

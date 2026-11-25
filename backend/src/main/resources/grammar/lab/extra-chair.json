@@ -1,0 +1,40 @@
+{
+  "id": "extra-chair",
+  "title": "Ghế đủ chưa?",
+  "summary": "Phòng tập chuẩn bị đón một nhóm nhạc. So sánh cách nói đủ ghế với quá ít ghế. Từ định lượng đứng ở đâu?",
+  "level": "A2",
+  "topics": [
+    "enough-too"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Số ghế so với nhu cầu",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Đủ"
+        },
+        {
+          "id": "v2",
+          "label": "Thiếu"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "We have enough chairs for everyone.",
+      "vi": "Chúng ta có đủ ghế cho tất cả mọi người.",
+      "note": "Enough đứng trước chairs và cho biết số ghế đạt mức cần. / Enough before a noun meets a threshold.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "We have too few chairs for everyone.",
+      "vi": "Chúng ta có quá ít ghế cho cả nhóm.",
+      "note": "Few đi với danh từ đếm được số nhiều. Too few báo rằng sẽ có người không có ghế. / Too few falls below the threshold.",
+      "verdict": "ok"
+    }
+  }
+}

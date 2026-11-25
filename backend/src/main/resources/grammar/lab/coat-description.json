@@ -1,0 +1,40 @@
+{
+  "id": "coat-description",
+  "title": "Chiếc áo đỏ nằm ở đâu trong câu?",
+  "summary": "Bạn dán nhãn cho áo khoác, rồi nói thành câu về màu áo. So sánh vị trí của red.",
+  "level": "A1",
+  "topics": [
+    "adjective-position"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Cách dùng màu sắc",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Nhận diện món đồ"
+        },
+        {
+          "id": "v2",
+          "label": "Nêu đặc điểm"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "This is a red coat.",
+      "vi": "Đây là một chiếc áo khoác đỏ.",
+      "note": "Red đứng trước coat. A thuộc về cả cụm a red coat. / Red modifies coat inside the noun phrase.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "This coat is red.",
+      "vi": "Chiếc áo khoác này màu đỏ.",
+      "note": "Chủ ngữ đã xác định chiếc áo. Red sau is nêu đặc điểm của nó. / Red follows is as a description.",
+      "verdict": "ok"
+    }
+  }
+}

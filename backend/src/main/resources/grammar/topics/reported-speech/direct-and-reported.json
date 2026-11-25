@@ -1,0 +1,458 @@
+{
+  "schema": 1,
+  "slug": "direct-and-reported",
+  "version": 2,
+  "domain": "reported-speech",
+  "order": 10,
+  "kind": "grammar",
+  "title": {
+    "vi": "Lời trực tiếp và lời tường thuật",
+    "en": "Direct and reported speech"
+  },
+  "subtitle": {
+    "vi": "Giữ nội dung khi thay góc nhìn người kể",
+    "en": "Preserve the message while changing the reporting viewpoint"
+  },
+  "aliases": [
+    "lời trực tiếp tường thuật",
+    "direct reported speech",
+    "say tell",
+    "said me",
+    "told that"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Phân biệt trích lời với thuật nội dung.",
+    "Giữ đúng người nói/nghe và đại từ.",
+    "Dùng say/tell theo đúng mẫu đang học."
+  ],
+  "prerequisites": [
+    "noun-clauses-that"
+  ],
+  "related": [
+    {
+      "slug": "backshift",
+      "rel": "more"
+    },
+    {
+      "slug": "reporting-questions",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Lời trực tiếp (direct speech) trình bày lời như nguyên văn; lời tường thuật (reported speech) diễn đạt nội dung từ góc nhìn người kể.",
+    "when": "Không chỉ thay thì: cần giữ người, mốc, ý định và mức độ chính xác của lời trích.",
+    "examples": [
+      {
+        "en": "Mai said, “I am ready.”",
+        "vi": "Mai nói: “Tôi sẵn sàng rồi.”"
+      },
+      {
+        "en": "Mai said that she was ready.",
+        "vi": "Mai nói cô ấy đã sẵn sàng."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Trong lời Mai nói I am ready, I chỉ Mai. Khi người khác kể Mai said she was ready, she vẫn chỉ Mai. Nếu đổi thành I was ready, nội dung có thể chuyển sang người kể và không còn giữ lời gốc."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "transform",
+        "steps": [
+          {
+            "label": "Lời gốc của Mai",
+            "sentence": "Mai said, “I am ready.”"
+          },
+          {
+            "label": "Người khác thuật về Mai",
+            "sentence": "Mai said she was ready."
+          }
+        ]
+      },
+      "caption": "Đại từ đổi theo người được chỉ, không theo một bảng I luôn thành he.",
+      "alt": "Đại từ đổi theo người được chỉ, không theo một bảng I luôn thành he."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Khung",
+        "Ví dụ",
+        "Giới hạn"
+      ],
+      "rows": [
+        [
+          "say + nội dung",
+          "She said she was ready.",
+          "không said me trong mẫu này"
+        ],
+        [
+          "tell + người nghe + nội dung",
+          "She told me she was ready.",
+          "cần người nghe ở mẫu này"
+        ],
+        [
+          "say to + người nghe",
+          "She said to me she was ready.",
+          "giữ to"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "That thường có thể bỏ sau say/tell ở mẫu nội dung đơn giản. Tường thuật cũng có thể giữ thì nếu điều được nói vẫn đúng và góc nhìn phù hợp; xem backshift."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Các lượt thoại trong bài là ví dụ hư cấu. Khi tường thuật sự việc thật, không tự gán nguyên văn, người nói hoặc mức độ chắc chắn chưa được biết."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Tell còn có mẫu tell a story, tell the truth và tell the difference. Quy tắc cần người nghe ở trên thuộc nghĩa tell someone that ..., không phải mọi tell trong từ điển."
+    },
+    {
+      "type": "p",
+      "vi": "Ngoặc kép dùng khi trình bày lời trích. Lời tường thuật có thể thay hình thức mà giữ ý; không đặt bản diễn đạt lại trong ngoặc kép rồi gọi là nguyên văn."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "direct-and-reported-m1",
+      "wrong": "She said me she was ready.",
+      "right": "She told me she was ready.",
+      "why": "Tell đi trực tiếp với người nghe; say dùng to."
+    },
+    {
+      "id": "direct-and-reported-m2",
+      "wrong": "She told that she was ready.",
+      "right": "She said that she was ready.",
+      "why": "Không có người nghe nên dùng say trong mẫu này."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Tường thuật có chỉ là đổi thì không?",
+      "a": "Không. Cần giữ nội dung, vai người và mốc nhìn."
+    },
+    {
+      "q": "Tell luôn cần người nghe không?",
+      "a": "Ở mẫu tell someone that cần người nghe; các nghĩa khác như tell a story có cấu trúc riêng."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "drs-01",
+      "prompt": "Chọn lời tường thuật đúng người nói.",
+      "explain": "Trong tình huống này Lan dùng I để chỉ chính Lan; người kể dùng she.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "Lan nói với tôi: “I am tired.” Tôi kể lại về Lan.",
+      "options": [
+        {
+          "t": "Lan said she was tired.",
+          "ok": true,
+          "note": "She chỉ Lan; tường thuật dùng quá khứ phù hợp."
+        },
+        {
+          "t": "Lan said I was tired.",
+          "ok": false,
+          "note": "Đổi người mệt thành người kể, không giữ nội dung.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Lan told she was tired.",
+          "ok": false,
+          "note": "Tell trong mẫu này cần người nghe sau told.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "drs-02",
+      "prompt": "Nối mẫu với cấu trúc.",
+      "explain": "Không biến giới hạn của một nghĩa thành luật mọi từ.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "She said that she was tired.",
+          "b": "Say + mệnh đề nội dung"
+        },
+        {
+          "a": "She told me that she was tired.",
+          "b": "Tell + người nghe + nội dung"
+        },
+        {
+          "a": "She said to me that she was tired.",
+          "b": "Say + to người nghe + nội dung"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "drs-03",
+      "prompt": "Phân loại cách trình bày lời nói.",
+      "explain": "Lời trực tiếp nêu từ như được trích; tường thuật nêu nội dung từ góc nhìn người kể.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Trực tiếp",
+        "Tường thuật"
+      ],
+      "items": [
+        {
+          "t": "Mai said, “I am ready.”",
+          "cat": "Trực tiếp"
+        },
+        {
+          "t": "Mai said that she was ready.",
+          "cat": "Tường thuật"
+        },
+        {
+          "t": "“Please wait,” Mai said.",
+          "cat": "Trực tiếp"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "drs-04",
+      "prompt": "Điền say hoặc tell ở quá khứ theo mẫu.",
+      "explain": "Said không có người nghe trực tiếp theo ngay; told me có người nghe.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "Lan {1} that she was ready. Lan {2} me that she was ready.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "said"
+          ]
+        },
+        "2": {
+          "accept": [
+            "told"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "drs-05",
+      "prompt": "Sửa mẫu say với người nghe.",
+      "explain": "Say to me, không say me trong nghĩa tường thuật này.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "She"
+        },
+        {
+          "t": "said me",
+          "bad": true,
+          "fix": [
+            "told me",
+            "said to me"
+          ],
+          "note": "Dùng tell người nghe hoặc say to người nghe.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "that she was ready."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "drs-06",
+      "prompt": "Sắp xếp câu kể bắt đầu bằng Mai.",
+      "explain": "Told me that she was ready giữ người nói, người nghe và nội dung.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "Mai",
+        "told",
+        "me",
+        "that",
+        "she",
+        "was ready"
+      ],
+      "accept": [
+        [
+          "Mai",
+          "told",
+          "me",
+          "that",
+          "she",
+          "was ready"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "drs-07",
+      "prompt": "Tường thuật với góc nhìn quá khứ được yêu cầu.",
+      "explain": "He chỉ Nam trong bài; was giữ mẫu lùi thì yêu cầu.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "Nam said, “I am ready.”",
+      "instruction": "Viết Nam said (that), dùng he chỉ Nam và was cho be.",
+      "accept": [
+        "Nam said he was ready",
+        "Nam said that he was ready"
+      ],
+      "model": "Nam said he was ready",
+      "level": "B1"
+    },
+    {
+      "id": "drs-08",
+      "prompt": "Viết một cuộc trao đổi và lời kể lại.",
+      "explain": "Bài tự đặt không là bằng chứng người thật đã nói; không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Tạo hai lượt thoại hư cấu ngắn. Tường thuật lại nội dung, chỉ rõ người nói và người nghe. Không đặt ngoặc kép quanh một bản viết lại như thể là nguyên văn.",
+      "model": [
+        "Mai said, “I am ready.” Nam said, “I need a minute.” Mai said she was ready. Nam said he needed a minute."
+      ],
+      "checklist": [
+        "Đại từ đúng người.",
+        "Say/tell đúng mẫu.",
+        "Phân biệt nguyên văn với lời diễn đạt lại."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "drs-09",
+      "prompt": "Điền said/told và to theo cấu trúc.",
+      "explain": "Told us có người nghe; said to us có to.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "He {1} us that the shop was closed. He said {2} us that the shop was closed.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "told"
+          ]
+        },
+        "2": {
+          "accept": [
+            "to"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "drs-10",
+      "prompt": "Viết lại bằng tell có người nghe rõ.",
+      "explain": "Tell đi trực tiếp với me trong mẫu này.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "Lan said to me that she was leaving.",
+      "instruction": "Thay said to bằng dạng quá khứ của tell; giữ các từ khác.",
+      "accept": [
+        "Lan told me that she was leaving"
+      ],
+      "model": "Lan told me that she was leaving",
+      "level": "B1"
+    },
+    {
+      "id": "drs-11",
+      "prompt": "Chọn tất cả mẫu chuẩn.",
+      "explain": "That có thể giữ hoặc bỏ sau said ở các mẫu đơn giản này.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "Lan said she was ready.",
+          "ok": true,
+          "note": "Có thể bỏ that."
+        },
+        {
+          "t": "Lan said that she was ready.",
+          "ok": true,
+          "note": "Giữ that cũng đúng."
+        },
+        {
+          "t": "Lan said me she was ready.",
+          "ok": false,
+          "note": "Dùng told me hoặc said to me.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Lan told that she was ready.",
+          "ok": false,
+          "note": "Thiếu người nghe trong mẫu tell này.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "drs-12",
+      "prompt": "Chọn nguyên tắc tường thuật đúng.",
+      "explain": "Không tự bịa nội dung hoặc lời nguyên văn.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "Bạn muốn tường thuật một lời đã nghe.",
+      "options": [
+        {
+          "t": "Giữ nội dung và vai người, điều chỉnh góc nhìn theo ngữ cảnh.",
+          "ok": true,
+          "note": "Không phải chỉ thay từ theo bảng."
+        },
+        {
+          "t": "Có thể viết lại bất kỳ rồi dùng ngoặc kép như nguyên văn.",
+          "ok": false,
+          "note": "Đó là gán sai lời trích.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Mọi tell ở mọi nghĩa luôn cần một người nghe hiện ra.",
+          "ok": false,
+          "note": "Tell a story hoặc tell the truth có cấu trúc khác.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

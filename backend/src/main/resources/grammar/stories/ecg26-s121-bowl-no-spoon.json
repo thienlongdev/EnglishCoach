@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s121-bowl-no-spoon",
+  "title": "Bát cháo không thìa",
+  "summary": "Một thực khách gấp thìa vào khăn trước khi ăn cháo. Sa tưởng mình đã phạm điều kiêng của khách.",
+  "level": "B1",
+  "topics": [
+    "mustnt-dont-have-to"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sa",
+      "role": "Người nấu bếp"
+    },
+    {
+      "id": "b",
+      "name": "Linh",
+      "role": "Người phục vụ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Tờ ghi chú chỉ nói khách không bắt buộc dùng thìa của quán. Ông có chiếc thìa gỗ nhỏ tự khắc cho ngày đặc biệt.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Have I given him something he can't use?",
+          "vi": "Tôi đưa cho ông thứ gì không dùng được sao?"
+        },
+        {
+          "who": "b",
+          "en": "Read the note before taking every spoon away.",
+          "vi": "Đọc lời nhắn trước khi dẹp hết thìa đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Sa nói lại quyền lựa chọn dành cho khách.",
+        "options": [
+          {
+            "ok": false,
+            "t": "He mustn't use any spoon.",
+            "note": "Mustn't cấm và any spoon mở rộng tới mọi chiếc thìa, vượt xa lời nhắn chỉ nói thìa của quán.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "He doesn't have to use our spoon.",
+            "note": "Doesn't have to nghĩa là không bắt buộc. Ông có thể chọn thìa riêng nhưng người khác vẫn dùng thìa của quán.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Ông lấy chiếc thìa gỗ vừa khéo tay mình. Cháu ông nhận chiếc thìa của quán và hai người ăn ở hai bên cùng một bát lớn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "His own spoon made room for hers.",
+          "vi": "Thìa riêng của ông để lại chiếc thìa kia cho cháu."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Linh ghi vào sổ “thêm bát, giữ thìa”, đúng điều gia đình cần lần sau.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Ông đặt chiếc thìa gỗ lên bàn như một câu trả lời. Sa mời ông kể về vết khắc ở cán.",
+      "say": [
+        {
+          "who": "a",
+          "en": "That spoon was invited too.",
+          "vi": "Chiếc thìa ấy cũng được mời mà."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Hóa ra đây là món đầu người cháu tự đẽo. Bữa cháo trở thành lần thử thìa long trọng nhất nhà.",
+      "end": true
+    }
+  ]
+}

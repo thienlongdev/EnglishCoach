@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s072-snow-ear",
+  "title": "Tai thỏ trong tuyết",
+  "level": "A2",
+  "topics": [
+    "one-and-ones",
+    "demonstratives"
+  ],
+  "scene": "home",
+  "summary": "Hai nhóm trẻ xây thỏ tuyết. Mây muốn cho nhóm nhỏ hơn mượn đôi tai bằng len.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mây",
+      "role": "Chị gái"
+    },
+    {
+      "id": "b",
+      "name": "Jun",
+      "role": "Em trai"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Trên ghế cạnh Mây là tai đỏ dài. Phía xa, Jun cầm tai xám ngắn. Cả hai đôi đều vừa đầu thỏ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Our rabbit looks a little cold.",
+          "vi": "Thỏ của mình trông hơi lạnh."
+        },
+        {
+          "who": "b",
+          "en": "Which ears shall I give the little ones?",
+          "vi": "Em đưa mấy bạn nhỏ đôi tai nào?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Mây chọn đôi gần mình hoặc đôi ở chỗ Jun. Cả hai quyết định đều có lý.",
+        "options": [
+          {
+            "t": "Give them those grey ones.",
+            "note": "Those chỉ đôi tai ở xa Mây, trong tay Jun. Grey xác định đúng đôi ngắn.",
+            "ok": true,
+            "next": "ending-2"
+          },
+          {
+            "t": "Give them these long ones.",
+            "note": "These và long ones chỉ đôi dài cạnh người nói. Ones thay cho ears số nhiều.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Những chiếc tai đỏ nổi bật trên nền trắng, giúp nhóm bé tìm thấy thỏ của mình sau trận ném tuyết. Jun buộc tai xám cho con thỏ còn lại.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We can see their rabbit from the window.",
+          "vi": "Từ cửa sổ cũng thấy con thỏ của các em."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Tai xám vừa khít như thỏ thật. Một chú chim đứng lại ngắm rồi đậu lên một tai. Cả nhóm im lặng nhìn cho tới khi chim bay.",
+      "say": [
+        {
+          "who": "b",
+          "en": "It passed the bird test.",
+          "vi": "Nó được cả chim chấp nhận rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

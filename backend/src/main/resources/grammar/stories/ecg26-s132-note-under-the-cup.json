@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s132-note-under-the-cup",
+  "title": "Mẩu thư dưới đáy cốc",
+  "summary": "Một người cha nhớ đã để thư dưới cốc nhưng bàn đã được dọn. Cha đinh ninh mình chưa từng đưa thư cho ai.",
+  "level": "B1",
+  "topics": [
+    "verb-ing-or-infinitive",
+    "stop-remember-try"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Thoa",
+      "role": "Người nhận thư"
+    },
+    {
+      "id": "b",
+      "name": "Kha",
+      "role": "Người giao thư"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Trong sổ trực, Thoa ghi nhận đúng cốc men xanh và một phong bì ướt ở góc. Kha cần phần ký ức của cha để nhận dạng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I remember the ring the cup left.",
+          "vi": "Tôi nhớ vệt tròn chiếc cốc để lại."
+        },
+        {
+          "who": "b",
+          "en": "Ask what he remembers doing, not what he still needs to do.",
+          "vi": "Hỏi việc ông nhớ mình đã làm, không hỏi việc cần nhớ làm sau này."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn câu hỏi về ký ức của sự việc đã qua.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Do you remember putting the letter under the blue cup?",
+            "note": "Remember putting hỏi có nhớ trải nghiệm đã đặt thư không. The blue cup gợi một chi tiết cụ thể.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Will you remember to put it under the cup?",
+            "note": "Remember to put hướng tới việc cần thực hiện sau, chưa hỏi được ký ức nhận dạng. Câu có thể là lời nhắc đúng ở một dịp khác.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Ông nhớ phong bì còn vướng sợi chỉ xanh từ tay áo con. Trong khay thất lạc, sợi chỉ vẫn nằm cạnh vệt cốc.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The stain did the work of a stamp.",
+          "vi": "Vết nước đã làm công việc của con dấu."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Cha xin giữ nguyên vệt tròn vì đó chính là dấu giúp thư tìm lại người gửi.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Cha định đặt chiếc thư khác xuống cốc. Thoa kịp đưa khay cho ông xem. Ông nhận ra sợi chỉ xanh mắc trên phong bì của mình.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We'll remember to keep the cup away this time.",
+          "vi": "Lần này ta sẽ nhớ đặt cốc ra xa."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Từ hôm ấy phòng thư có một cái đĩa riêng để khách đặt đồ uống, và một câu chuyện dưới đáy đĩa.",
+      "end": true
+    }
+  ]
+}

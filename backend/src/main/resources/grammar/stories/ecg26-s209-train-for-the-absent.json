@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s209-train-for-the-absent",
+  "title": "Chuyến tàu dành cho người ở lại",
+  "level": "B2",
+  "topics": [
+    "mixed-conditionals"
+  ],
+  "scene": "station",
+  "summary": "Nếu Tấn đã lên chuyến tàu mười năm trước, cậu có thể đang sống ở thành phố. Cậu ở lại chăm ga làng, còn Ava vừa quay về với cây đàn đã hứa.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Tấn",
+      "role": "Người từng bán vé"
+    },
+    {
+      "id": "b",
+      "name": "Ava",
+      "role": "Bạn thuở nhỏ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Trên ghế là chiếc vé cũ chưa bấm. Ava không muốn an ủi bằng cách đoán chắc cuộc đời bạn lẽ ra tốt hơn. Cô muốn giữ khả năng và dành chỗ cho điều đang có.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Sometimes I wonder where I'd be.",
+          "vi": "Đôi khi tôi tự hỏi giờ mình ở đâu nếu đã đi."
+        },
+        {
+          "who": "b",
+          "en": "I can imagine a different town, not a whole different happiness.",
+          "vi": "Tôi hình dung được một nơi khác, chứ đâu biết hạnh phúc ở đó ra sao."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Ava nêu hoàn cảnh hiện tại có thể khác sau lựa chọn quá khứ.",
+        "options": [
+          {
+            "t": "If you take the train tomorrow, you will have lived there for ten years already.",
+            "note": "Việc đi ngày mai không thể tự tạo mười năm cư trú đã qua trong câu chuyện này. Mốc already xung đột với giả định đang xét.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "If you'd taken that train, you might be living in the city now.",
+            "note": "Had taken giả định ngược quá khứ; might be living now nói khả năng hiện tại, không chứng minh cuộc sống tốt hay xấu.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Tấn nhìn bàn tay còn dính sơn sửa ghế và đề nghị Ava chơi nhạc ở đây. Tiếng đàn vang trên sân ga mà mười năm trước cả hai suýt bỏ lại.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I might have had a city. We have a concert.",
+          "vi": "Có thể tôi đã có một thành phố. Giờ chúng ta có buổi hòa nhạc."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Tấn rút lịch chuyến ngày mai, mua vé khứ hồi đi nghe Ava biểu diễn ở thành phố. Một chuyến đi mới không thể trả mười năm cũ nhưng vẫn mở được một ngày khác.",
+      "say": [
+        {
+          "who": "a",
+          "en": "This ticket only needs to change tomorrow.",
+          "vi": "Vé này chỉ cần thay đổi ngày mai thôi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

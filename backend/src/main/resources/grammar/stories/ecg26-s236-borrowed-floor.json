@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s236-borrowed-floor",
+  "title": "Nền nhà cho mượn",
+  "level": "C1",
+  "topics": [
+    "apposition",
+    "complex-noun-phrases"
+  ],
+  "scene": "home",
+  "summary": "Một hồi ký nói một người “gave us the floor”. Bản dịch tưởng ông nhường lời, trong khi gia đình vẫn giữ sáu viên gạch ông tháo từ nhà mình.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mỹ",
+      "role": "Người dịch hồi ký"
+    },
+    {
+      "id": "b",
+      "name": "Tano",
+      "role": "Con người lát gạch"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Bản thảo gọi ông là Bảy, our neighbour and a tiler, rồi mô tả cảnh bê gạch. Hai vai thuộc cùng một người. Tano muốn tên cha ở dưới tấm ảnh đúng với việc ông đã làm.",
+      "say": [
+        {
+          "who": "a",
+          "en": "He didn't have a speech to give. He had tiles.",
+          "vi": "Cha tôi không có bài diễn văn nào để đọc. Ông có gạch."
+        },
+        {
+          "who": "b",
+          "en": "How many people do you hear in that description?",
+          "vi": "Trong lời mô tả ấy chị nghe ra mấy người?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Mỹ giữ cụm đồng vị và nghĩa đen của món quà.",
+        "options": [
+          {
+            "t": "Bảy, our neighbour and a tiler, brought tiles from his own kitchen.",
+            "note": "Cụm giữa dấu phẩy gắn hai vai với Bảy. Brought tiles và own kitchen chọn nghĩa đen từ chi tiết sau đó.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "Our neighbour introduced a tiler and gave him the floor.",
+            "note": "Câu tạo thêm một người thợ khác, thêm hành động giới thiệu và chuyển give the floor sang nghĩa nhường lời. Không chi tiết nào phù hợp cảnh bê gạch.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Tano lật một viên, thấy vết sơn từ gian bếp cũ. Dưới ảnh chỉ có một tên, nhưng tên được đọc tại cả hai căn nhà từng chung nền gạch.",
+      "say": [
+        {
+          "who": "b",
+          "en": "My father moved a little piece of home.",
+          "vi": "Cha tôi dời một mảnh nhà nhỏ sang đây."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Mỹ tự kê sáu viên gạch lên bản nháp. Chúng che hết đoạn diễn văn cô đã tưởng tượng. Cô sửa bằng một câu ngắn về đôi tay ông Bảy.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Six tiles left me just enough room for the truth.",
+          "vi": "Sáu viên gạch chừa vừa đủ chỗ để tôi viết sự thật."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

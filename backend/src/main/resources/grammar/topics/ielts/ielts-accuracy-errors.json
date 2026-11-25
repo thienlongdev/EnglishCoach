@@ -1,0 +1,517 @@
+{
+  "schema": 1,
+  "slug": "ielts-accuracy-errors",
+  "version": 1,
+  "domain": "ielts",
+  "order": 80,
+  "kind": "application",
+  "title": {
+    "vi": "Những lỗi làm giảm độ chính xác",
+    "en": "Errors that undermine accuracy"
+  },
+  "subtitle": {
+    "vi": "Tìm mẫu lỗi thật, sửa mà không thay ý.",
+    "en": "Find real patterns of error and repair them without changing meaning."
+  },
+  "aliases": [
+    "IELTS accuracy",
+    "sửa lỗi ngữ pháp IELTS",
+    "agreement articles participles",
+    "have wrote",
+    "its it's",
+    "không đếm lỗi để ra band"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Rà soát hòa hợp, cụm động từ, danh ngữ và ranh giới câu.",
+    "Phân biệt lỗi cấu trúc với cách nói khác vẫn hợp lệ.",
+    "Giữ nghĩa nguồn và tự lập bảng kiểm cá nhân."
+  ],
+  "prerequisites": [
+    "agreement-tricky-subjects",
+    "articles-in-context"
+  ],
+  "related": [
+    {
+      "slug": "ielts-range-and-accuracy",
+      "rel": "more"
+    },
+    {
+      "slug": "apostrophes",
+      "rel": "more"
+    },
+    {
+      "slug": "uncountable-traps",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": "Luyện accuracy theo câu và đoạn; không có phép trừ lỗi hoặc quy điểm quiz thành IELTS band.",
+    "toeic": null
+  },
+  "quick": {
+    "what": "Sửa accuracy là tìm chỗ hình thức không khớp ý định và cấu trúc đang dùng, không phải đổi mọi câu khác mẫu thành sai. Có thể kiểm tra theo từng lượt nhỏ.",
+    "when": "Khi tự biên tập bài viết hoặc bản chép câu trả lời nói.",
+    "examples": [
+      {
+        "en": "Each application [AUX|has] already [AUX|been] [V|checked].",
+        "vi": "Mỗi hồ sơ đã được kiểm tra."
+      },
+      {
+        "en": "I have [V|written] a report that explains the schedule.",
+        "vi": "Tôi đã viết một báo cáo giải thích lịch trình."
+      }
+    ],
+    "remember": "Ưu tiên giữ ý và sửa mẫu lặp; không có số lỗi cố định tương đương một band."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Một cách rà soát hữu ích: kiểm tra mốc/điều kiện, cụm động từ, danh ngữ/tham chiếu, rồi ranh giới câu. Đây là trình tự tự biên tập, không phải bảng trọng số chấm thi. Đọc lại xem bản sửa có làm mất phủ định, tác thể hay mức chắc chắn không."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Điểm kiểm tra",
+        "Mẫu đúng",
+        "Vì sao"
+      ],
+      "rows": [
+        [
+          "Đầu chủ ngữ",
+          "The number of applications is rising.",
+          "Number là đầu số ít của mẫu nêu tổng."
+        ],
+        [
+          "Sau trợ động từ",
+          "I have written … / I didn't know …",
+          "Phân từ sau have hoàn thành; dạng gốc sau did."
+        ],
+        [
+          "Bị động hoàn thành",
+          "Each application has already been checked.",
+          "Has theo each application; been + phân từ."
+        ],
+        [
+          "Sở hữu",
+          "The app keeps its settings.",
+          "Its là sở hữu, không phải it is/it has."
+        ],
+        [
+          "Nội dung không đếm",
+          "two pieces of information",
+          "Pieces mang số nhiều, information ở nghĩa này không thêm s."
+        ]
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "flow",
+        "start": "time",
+        "nodes": {
+          "time": {
+            "q": "Mốc và điều kiện khớp điều muốn nói chưa?",
+            "yes": "verb",
+            "no": "timefix"
+          },
+          "verb": {
+            "q": "Cụm động từ đủ và đúng dạng chưa?",
+            "yes": "ref",
+            "no": "verbfix"
+          },
+          "ref": {
+            "q": "Danh ngữ và tham chiếu rõ chưa?",
+            "yes": "end",
+            "no": "reffix"
+          },
+          "timefix": {
+            "end": "Làm rõ mốc/điều kiện, rồi tự đọc lại."
+          },
+          "verbfix": {
+            "end": "Tìm đầu chủ ngữ và trợ động từ; kiểm tra dạng theo sau."
+          },
+          "reffix": {
+            "end": "Kiểm tra nghĩa danh từ và đối tượng được nhận diện."
+          },
+          "end": {
+            "end": "Kiểm tra ranh giới câu, dấu câu và nghĩa toàn đoạn."
+          }
+        }
+      },
+      "caption": "Bảng kiểm tự biên tập, không phải thuật toán chấm band.",
+      "alt": "Ba câu hỏi dẫn tới việc sửa mốc, cụm động từ hoặc tham chiếu; khi đều rõ thì kiểm tra ranh giới và nghĩa."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "It's been useful, and its examples are clear.",
+          "vi": "Nó đã hữu ích, và ví dụ của nó rõ.",
+          "note": "It's = it has trong câu đầu; its là sở hữu ở câu sau."
+        },
+        {
+          "en": "I bought a notebook. The notebook has a red cover.",
+          "vi": "Tôi mua một cuốn sổ. Cuốn sổ có bìa đỏ.",
+          "note": "Một mẫu nối lại đối tượng; không phải mọi lần nhắc hai đều bắt buộc the."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "A guide/the guide hoặc have worked/have been working có thể đều đúng theo nghĩa. Khi sửa, tìm lỗi thật hoặc nêu rõ mục tiêu biên tập; không bác bỏ biến thể BrE/AmE chỉ vì khác mẫu."
+    },
+    {
+      "type": "p",
+      "vi": "Nếu lỗi lặp nhiều lần, viết một câu gốc và một giải thích ngắn về mẫu của mình. Danh sách này là quan sát về bài bạn vừa viết, không phải khẳng định mọi người Việt đều có cùng lỗi hoặc đã được nghiên cứu trên chính bạn."
+    },
+    {
+      "type": "try",
+      "exercise": "iac-05"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Mật độ lỗi và ảnh hưởng tới giao tiếp được xét trong sản phẩm dài. Hai lỗi có cùng tên có thể gây tác động khác tùy câu; bài này không tự gán điểm trừ hoặc dự báo điểm thi."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "The change may reduce waiting times.",
+            "vi": "Thay đổi có thể giảm thời gian chờ."
+          },
+          "b": {
+            "en": "The change will remove all delays.",
+            "vi": "Thay đổi sẽ loại bỏ mọi chậm trễ."
+          },
+          "diff": "Bản sau không phải chỉ sửa accuracy: nó tăng cam kết và thêm all. Đừng coi câu mạnh hơn là câu đúng hơn."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Với it's, thử cả it is và it has; không chỉ thử một. Với danh từ, chọn đúng nghĩa đang dùng. Với lời nói, câu đáp ngắn cần được đọc cùng câu hỏi."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "iac-m1",
+      "wrong": "The number of applications are rising.",
+      "right": "The number of applications is rising.",
+      "why": "Đầu number số ít quyết định is trong mẫu tổng số này."
+    },
+    {
+      "id": "iac-m2",
+      "wrong": "I have wrote the report.",
+      "right": "I have written the report.",
+      "why": "Have hoàn thành cần phân từ written."
+    },
+    {
+      "id": "iac-m3",
+      "wrong": "The app keeps it's settings.",
+      "right": "The app keeps its settings.",
+      "why": "Its trước settings diễn đạt quan hệ sở hữu; cả it is và it has đều không thay được ở đây."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Làm ít lỗi trong quiz có đủ dự đoán band không?",
+      "a": "Không. Quiz không bao phủ toàn bộ cấu trúc được dùng trong bài dài hoặc các tiêu chí khác."
+    },
+    {
+      "q": "Có nên thay mọi câu khác đáp án mẫu?",
+      "a": "Không. Xét cấu trúc, nghĩa và yêu cầu; đáp án chưa liệt kê có thể là câu đúng. Đừng tự gọi một biến thể là lỗi chỉ vì không giống mẫu."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "iac-01",
+      "type": "choice",
+      "level": "B1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Chọn động từ theo đầu chủ ngữ trong mẫu nêu tổng.",
+      "stem": "The number of applications … rising.",
+      "options": [
+        {
+          "t": "is",
+          "ok": true,
+          "note": "Number là đầu số ít."
+        },
+        {
+          "t": "are",
+          "note": "Applications nằm trong cụm of, không phải đầu chủ ngữ.",
+          "tag": "head-agreement"
+        }
+      ],
+      "explain": "Tìm đầu chủ ngữ thay vì chọn theo danh từ gần động từ nhất."
+    },
+    {
+      "id": "iac-02",
+      "type": "match",
+      "level": "B1",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Ghép mẫu với điểm cần kiểm tra.",
+      "pairs": [
+        {
+          "a": "have written",
+          "b": "Phân từ sau have hoàn thành."
+        },
+        {
+          "a": "didn't know",
+          "b": "Dạng gốc sau did."
+        },
+        {
+          "a": "its settings",
+          "b": "Sở hữu không có apostrophe."
+        }
+      ],
+      "explain": "Tên lỗi có ích khi gắn với một mẫu cụ thể."
+    },
+    {
+      "id": "iac-03",
+      "type": "multi",
+      "level": "B1",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Chọn các nguyên tắc sửa bài hợp lý.",
+      "stem": "Biên tập một đoạn có nhiều kiểu câu.",
+      "options": [
+        {
+          "t": "Giữ phủ định, thời gian và mức chắc chắn.",
+          "ok": true,
+          "note": "Không tự đổi nội dung."
+        },
+        {
+          "t": "Kiểm tra xem một cách khác có còn đúng theo ngữ cảnh không.",
+          "ok": true,
+          "note": "Không áp một khóa duy nhất ngoài phạm vi."
+        },
+        {
+          "t": "Thay mọi may thành will để câu chính xác hơn.",
+          "note": "Đổi mức cam kết, không phải sửa hình thức.",
+          "tag": "meaning-strengthened"
+        }
+      ],
+      "explain": "Accuracy không đồng nghĩa làm mọi nhận định mạnh hơn."
+    },
+    {
+      "id": "iac-04",
+      "type": "cloze",
+      "level": "B1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Dùng write sau have và know sau didn't.",
+      "stem": "I have {1} the report. I didn't {2} the deadline at first.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "written"
+          ],
+          "closed": true
+        },
+        "2": {
+          "accept": [
+            "know"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Hai trợ động từ đòi hai dạng khác nhau."
+    },
+    {
+      "id": "iac-05",
+      "type": "transform",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Đổi sang phủ định, giữ mốc và tân ngữ.",
+      "source": "I submitted the report yesterday.",
+      "instruction": "Dùng did not hoặc didn't và giữ the report yesterday.",
+      "accept": [
+        "I did not submit the report yesterday.",
+        "I didn't submit the report yesterday."
+      ],
+      "model": "I didn't submit the report yesterday.",
+      "explain": "Did giữ quá khứ; submit về dạng gốc."
+    },
+    {
+      "id": "iac-06",
+      "type": "error",
+      "level": "B1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sửa từ sở hữu trước settings.",
+      "segments": [
+        {
+          "t": "The app keeps "
+        },
+        {
+          "t": "it's",
+          "bad": true,
+          "fix": [
+            "its"
+          ],
+          "note": "Cần sở hữu its.",
+          "tag": "its-apostrophe"
+        },
+        {
+          "t": " settings."
+        }
+      ],
+      "explain": "Mở rộng it is/it has đều không phù hợp ở vị trí này."
+    },
+    {
+      "id": "iac-07",
+      "type": "classify",
+      "level": "B1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Phân loại bản sửa có giữ mức của nguồn không.",
+      "cats": [
+        "Giữ thông tin chính",
+        "Tăng phạm vi hoặc cam kết"
+      ],
+      "items": [
+        {
+          "t": "I didn't submit it → I did not submit it.",
+          "cat": "Giữ thông tin chính"
+        },
+        {
+          "t": "It may help some users → It will help every user.",
+          "cat": "Tăng phạm vi hoặc cam kết"
+        },
+        {
+          "t": "They checked it → It was checked by them.",
+          "cat": "Giữ thông tin chính"
+        }
+      ],
+      "explain": "Câu đúng hình thức có thể vẫn làm lệch nguồn."
+    },
+    {
+      "id": "iac-08",
+      "type": "open",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Tự biên tập một đoạn ngắn.",
+      "task": "Viết 4 câu về một công việc đã làm. Rà theo mốc, động từ, danh ngữ và ranh giới câu; ghi hai quyết định sửa hoặc giữ nguyên có lý do.",
+      "model": [
+        "Last month, I prepared a report for my team. It explained the new schedule. Each section had a clear heading. I checked the figures before sending it."
+      ],
+      "checklist": [
+        "Mốc thời gian có căn cứ.",
+        "Chủ ngữ và động từ khớp.",
+        "Đại từ chỉ đúng đối tượng.",
+        "Không tự quy số lỗi thành band."
+      ],
+      "explain": "Giữ nguyên một câu đúng cũng là một quyết định biên tập hợp lý."
+    },
+    {
+      "id": "iac-09",
+      "type": "cloze",
+      "level": "B1",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Dùng check ở hiện tại hoàn thành bị động, đặt already sau has.",
+      "context": "Tình huống minh họa: người phụ trách xác nhận mọi hồ sơ đã được kiểm tra ở hiện tại.",
+      "stem": "Each application {1}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "has already been checked"
+          ]
+        }
+      },
+      "explain": "Tạo cả cụm hữu hạn phù hợp chủ ngữ, aspect và voice, không gõ nhãn phân loại."
+    },
+    {
+      "id": "iac-10",
+      "type": "transform",
+      "level": "B1",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Diễn đạt đúng hai thông tin không đếm trực tiếp.",
+      "source": "The start time and the room number are the only two details we need.",
+      "instruction": "Viết một câu bắt đầu We need only two pieces of information: rồi giữ the start time and the room number.",
+      "accept": [
+        "We need only two pieces of information: the start time and the room number."
+      ],
+      "model": "We need only two pieces of information: the start time and the room number.",
+      "explain": "Nguồn đã xác lập đúng hai chi tiết. Pieces mang số nhiều; không tự biến information thành informations trong nghĩa này."
+    },
+    {
+      "id": "iac-11",
+      "type": "choice",
+      "level": "B1",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Chọn đánh giá đúng về một cách sửa.",
+      "stem": "The timetable may reduce delays. → The timetable will eliminate all delays.",
+      "options": [
+        {
+          "t": "Bản sửa làm mạnh kết quả và phạm vi, không chỉ sửa hình thức.",
+          "ok": true,
+          "note": "May/reduce khác will/eliminate all."
+        },
+        {
+          "t": "Hai câu chắc chắn đồng nghĩa vì đều nói tương lai.",
+          "note": "Bỏ qua mức và lượng.",
+          "tag": "meaning-drift"
+        }
+      ],
+      "explain": "Giữ ý là một phần của tự biên tập có trách nhiệm."
+    },
+    {
+      "id": "iac-12",
+      "type": "error",
+      "level": "B1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Tìm lỗi phân từ trong cụm hoàn thành.",
+      "segments": [
+        {
+          "t": "I have "
+        },
+        {
+          "t": "wrote",
+          "bad": true,
+          "fix": [
+            "written"
+          ],
+          "note": "Dùng written sau have.",
+          "tag": "perfect-participle"
+        },
+        {
+          "t": " a summary of the meeting."
+        }
+      ],
+      "explain": "Mẫu have written cần được kiểm soát trong câu trả lời thực."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "ielts-bd",
+      "note": "Đọc Writing/Speaking Key Assessment Criteria trên IELTS.org ngày2026-11-01; áp dụng giới hạn về accuracy trong sản phẩm thực, không dựng bảng trừ lỗi hoặc band. Tái sử dụng research/02."
+    },
+    {
+      "ref": "bc",
+      "note": "Tái sử dụng các ghi nhận có nguồn trong TENSE-EXERCISE-REVIEW và QUANTIFIER-REVIEW; không khẳng định những nguồn đó duyệt các câu mới."
+    },
+    {
+      "ref": "cgt",
+      "note": "Tham chiếu thêm đề xuất; không có lần đọc Cambridge hoặc sách mới cho bài này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted",
+    "note": "Bản thảo nguyên bản tự rà soát; cần review độc lập và acceptance có bằng chứng."
+  }
+}

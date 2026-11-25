@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s148-borrowed-echo",
+  "title": "Tiếng vọng mượn của mái vòm",
+  "level": "B1",
+  "topics": [
+    "used-to-and-would"
+  ],
+  "scene": "station",
+  "summary": "Sơn luôn dừng giữa đường hầm và huýt một nốt. Sau khi tu sửa, tiếng vọng không còn trở lại. Mi tưởng ông đang đợi một người bạn.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mi",
+      "role": "Người thiết kế ga mới"
+    },
+    {
+      "id": "b",
+      "name": "Sơn",
+      "role": "Nhạc công già"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Mi tìm được bản vẽ cũ: trước kia trần đường hầm cong, nay đã phẳng. Sơn không trách người thợ, chỉ muốn lưu lại ký ức về nốt thứ hai.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It used to answer me.",
+          "vi": "Ngày trước nó vẫn đáp lại tôi."
+        },
+        {
+          "who": "b",
+          "en": "What would happen when you whistled here?",
+          "vi": "Hồi ấy chuyện gì hay xảy ra khi bác huýt sáo ở đây?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Sơn kể hành động lặp trong bối cảnh quá khứ đã rõ.",
+        "options": [
+          {
+            "t": "The arch will send it back today.",
+            "note": "Will send dự đoán hôm nay, trái với việc mái cũ đã được thay. Câu không thuật thói quen Sơn đang nhớ.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "The arch would send the note back to me.",
+            "note": "Would send diễn tả phản hồi từng lặp đi lặp lại khi ông huýt. The arch xác định đặc điểm kiến trúc từng tạo tiếng vọng.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Mi thử thổi nốt ấy dưới vòm ở bến cũ bên kia phố. Tiếng vọng trở về; Sơn dẫn cả lớp tới đó nghe. Một căn ga lưu ký ức cho căn ga khác.",
+      "say": [
+        {
+          "who": "b",
+          "en": "My second note found another roof.",
+          "vi": "Nốt thứ hai của tôi tìm được mái khác rồi."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Mi tìm cách giữ lời theo nghĩa khác: cô đứng cuối đường hầm và huýt đáp. Sơn cất nốt mới nghe được vào bài nhạc, lần này ghi tên người chơi nốt thứ hai.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A person can answer where a roof used to.",
+          "vi": "Chỗ từng có mái đáp lời thì giờ có người đáp."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

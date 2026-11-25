@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s018-noisy-silence",
+  "title": "Tấm biển giữ im lặng biết kêu",
+  "summary": "Mỗi lần cửa mở, tiếng chíp vang lên dưới biển Im lặng. Oanh rón rén đi tất mà vẫn gây tiếng động.",
+  "level": "A1",
+  "topics": [
+    "present-simple",
+    "yes-no-questions"
+  ],
+  "scene": "library-mystery",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Oanh",
+      "role": "Bạn đọc mới"
+    },
+    {
+      "id": "b",
+      "name": "Luca",
+      "role": "Thủ thư"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Luca thử mở cửa bằng tay. Tiếng chíp lại vang lên, mặc dù không ai bước qua ngưỡng. Oanh ghé sát bản lề.",
+      "say": [
+        {
+          "who": "a",
+          "en": "My socks are quiet. Listen to the door.",
+          "vi": "Tất của em không kêu. Chú nghe cái cửa đi."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "We can try it again. What do you want to know?",
+          "vi": "Mình thử lại được đấy. Em muốn biết điều gì?"
+        }
+      ],
+      "choice": {
+        "prompt": "Oanh muốn kiểm tra có phải chính cánh cửa tạo tiếng chíp hay không.",
+        "options": [
+          {
+            "t": "Do my socks make the noise?",
+            "note": "Do đi với socks số nhiều là đúng. Nhưng câu hỏi lại kiểm tra tất Oanh dù hai người vừa nghe tiếng khi chỉ mở cửa.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "Does the door make the noise?",
+            "note": "Does đi với chủ ngữ số ít the door. Make ở dạng gốc. Câu hỏi cho phép Luca thử cửa để trả lời.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Luca đẩy cửa chậm. Tấm biển cọ vào một con chim cao su dắt trên tay nắm.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That's our little bird!",
+          "vi": "Chim nhỏ của thư viện đây rồi!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Luca cầm nguyên đôi tất, để Oanh đứng yên và mở cửa lần nữa. Đầu chim cao su ló ra sau tấm biển.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Your socks are innocent.",
+          "vi": "Đôi tất của em vô can rồi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Luca đặt chim cao su vào góc đọc cho trẻ nhỏ. Cửa mở ra không còn kêu nữa. Oanh mượn ngay cuốn sách kể về một con chim không chịu im.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I like this bird better in a book.",
+          "vi": "Em thích con chim này ở trong sách hơn."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

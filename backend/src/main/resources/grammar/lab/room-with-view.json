@@ -1,0 +1,40 @@
+{
+  "id": "room-with-view",
+  "title": "Cửa sổ phòng nào nhìn ra biển?",
+  "summary": "Bạn xem danh sách phòng nghỉ. Thử liên kết phòng với cửa sổ của nó, rồi với hoạt động diễn ra trong phòng.",
+  "level": "B1",
+  "topics": [
+    "whose-where-when"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Quan hệ",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Sở hữu"
+        },
+        {
+          "id": "v2",
+          "label": "Nơi diễn ra"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I'd like the room whose window faces the sea.",
+      "vi": "Tôi muốn căn phòng có cửa sổ hướng ra biển.",
+      "note": "Whose đứng trước window và dùng được với tiền ngữ chỉ vật. / Whose links the window to the room.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "I'd like the room where we had tea.",
+      "vi": "Tôi muốn căn phòng nơi chúng ta đã uống trà.",
+      "note": "Where bằng in which trong ngữ cảnh này. Nó không có nghĩa sở hữu. / Where locates the tea drinking.",
+      "verdict": "ok"
+    }
+  }
+}

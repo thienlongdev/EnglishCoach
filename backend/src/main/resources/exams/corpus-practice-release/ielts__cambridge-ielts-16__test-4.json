@@ -1,0 +1,802 @@
+{
+  "manifest" : {
+    "schemaVersion" : "1.0",
+    "packageId" : "RAW-RAW_CAMBRIDGE_IELTS_16_T4",
+    "packageVersion" : 1,
+    "contentHash" : "8085d587699abbecb1a2b400712f599210b963d1da2e0d52d4ff6368be3d0d4e",
+    "creator" : "exam-raw-extractor",
+    "specificationBaselineId" : "EC-EXAM-SPEC-2026-09-10",
+    "authoringStatus" : "DRAFT",
+    "createdAt" : null,
+    "metadata" : {
+      "humanReviewComplete" : false,
+      "reviewOnlyReferences" : {
+        "transcripts" : [ ],
+        "answerKeys" : [ {
+          "skill" : "LISTENING",
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-16/Cam16/16_academic.pdf",
+          "sha256" : "618f6c90c14ecba0ef99eeddf40a3c8dd71138d20670b56bc6968e4f8d420b2d",
+          "pages" : "128",
+          "keysParsed" : 40
+        } ],
+        "note" : "References only. Transcript text is not embedded: the learner manifest projection has no stimulus/asset role allow-list yet (EXAM-AUD-032)."
+      },
+      "ocr" : {
+        "metrics" : { },
+        "pages" : {
+          "imports/source-files/ielts/cambridge/Cambridge-ielts-16/Cam16/16_academic.pdf" : [ 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 128, 129 ]
+        }
+      },
+      "practiceProjection" : {
+        "fullSimulationGranted" : false,
+        "humanApprovalCreated" : false,
+        "sourceContentHash" : "ebd45dde100f70d335098b8ad44c9e9520222dbc1dc33a567e73cac77c81a570",
+        "version" : "exam-practice-projection-v1",
+        "retainedScopes" : [ "IELTS_SPEAKING_PART_2", "IELTS_SPEAKING_PART_3", "IELTS_WRITING_TASK_2" ],
+        "excludedScopes" : {
+          "IELTS_LISTENING_SECTION_3" : [ "QA_SCOPE_PENDING", "SCOPE_NOT_SELECTED" ],
+          "IELTS_LISTENING_SECTION_4" : [ "SCOPE_NOT_SELECTED" ]
+        },
+        "sourcePackageId" : "RAW-RAW_CAMBRIDGE_IELTS_16_T4"
+      },
+      "audioQAStatus" : "AUTOMATED_TECHNICAL_QA_ONLY_HUMAN_QA_REQUIRED",
+      "sourceProvenance" : {
+        "collection" : "cambridge",
+        "book" : "cambridge-ielts-16",
+        "test" : "TEST_4",
+        "rawSourceFile" : {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-16/Cam16/16_academic.pdf",
+          "sha256" : "618f6c90c14ecba0ef99eeddf40a3c8dd71138d20670b56bc6968e4f8d420b2d"
+        },
+        "pageRange" : "80-98",
+        "audio" : [ {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-16/Cam16/audio/Test 4 Part 3.wav",
+          "sha256" : "d2c1de855fd8dc97355150caf63d5c229fb678256d6449ebf4963336d24bf993",
+          "section" : "PART_3",
+          "confidence" : "CONFIDENT"
+        }, {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-16/Cam16/audio/Test 4 Part 4.wav",
+          "sha256" : "bcafde0ed99ceb2a6709d332c7301f86058f3ced1d65d9dd1c6b4a4a15aba23c",
+          "section" : "PART_4",
+          "confidence" : "CONFIDENT"
+        } ],
+        "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json#ielts/cambridge-ielts-16/test-4",
+        "extractorName" : "exam-raw-extractor",
+        "extractorVersion" : "3.8.6",
+        "reviewStatus" : "UNREVIEWED"
+      },
+      "sourceIdentity" : {
+        "publisher" : "Cambridge University Press & Assessment",
+        "collection" : "cambridge",
+        "book" : "cambridge-ielts-16",
+        "bookTitle" : "Cambridge IELTS 16",
+        "test" : 4,
+        "rawSourceSha256" : "618f6c90c14ecba0ef99eeddf40a3c8dd71138d20670b56bc6968e4f8d420b2d"
+      },
+      "displayName" : {
+        "current" : "Cambridge IELTS 16 — Test 4 (source extraction, draft)",
+        "ownerSelected" : null,
+        "status" : "PROVISIONAL_SOURCE_TITLE",
+        "policy" : "DISPLAY_NAME_MAY_CHANGE_SOURCE_PROVENANCE_MUST_NOT",
+        "renameTargets" : [ "form.title", "catalogNodes[].title" ]
+      },
+      "visualQAStatus" : "PAGE_REGION_RENDERING_HUMAN_QA_REQUIRED",
+      "rightsReviewStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED_PROJECT_USE_OWNER_AUTHORIZED",
+      "audioSegments" : [ ],
+      "sourceDocuments" : [ {
+        "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-16/Cam16/16_academic.pdf",
+        "sha256" : "618f6c90c14ecba0ef99eeddf40a3c8dd71138d20670b56bc6968e4f8d420b2d",
+        "role" : "QUESTION_BOOK",
+        "textLayer" : "SCANNED"
+      } ],
+      "extraction" : {
+        "status" : "NEEDS_REVIEW",
+        "extractorVersion" : "3.8.6",
+        "blockingCodes" : [ "IMAGE_NOT_BOUND", "PART_OMITTED", "QUESTION_NUMBER_GAP", "SECTION_NOT_FOUND", "SECTION_OMITTED", "SPEAKING_TURN_STRUCTURE_UNPROVEN" ],
+        "reviewCodes" : [ "ANSWER_KEY_OCR_REPAIRED", "ANSWER_KEY_WORD_LIMIT_CONFLICT", "OCR_TEXT_USED" ]
+      },
+      "projectUsageAuthorization" : {
+        "status" : "OWNER_AUTHORIZED",
+        "scope" : "ENGLISHCOACH_PROJECT_USE",
+        "authorizedBy" : "PROJECT_OWNER",
+        "decisionDate" : "2026-10-06",
+        "decisionRef" : "EXAMS_CORPUS_OWNER_PRODUCTION_AUTHORIZATION_20261006",
+        "appliesTo" : "EXISTING_REPOSITORY_SOURCE_CORPUS",
+        "permits" : [ "EXTRACTION", "CANONICAL_PACKAGE_PREPARATION", "STAGING_VALIDATION", "LOCAL_STAGING_IMPORT_PREPARATION", "PRODUCTION_IMPORT", "PUBLICATION", "LEARNER_RUNTIME", "PRACTICE", "SIMULATION", "MEDIA", "SCORING", "RESULTS", "REVIEW" ],
+        "productionImport" : "OWNER_AUTHORIZED_PRODUCTION_USE",
+        "publisherLicence" : "NOT_ESTABLISHED",
+        "publisherEndorsement" : false
+      }
+    }
+  },
+  "sources" : [ {
+    "id" : "29817100-3a16-55ee-b2ef-b9c1aaa9dad6",
+    "code" : "RAW_CAMBRIDGE_CAMBRIDGE_IELTS_16",
+    "name" : "Cambridge IELTS 16",
+    "owner" : "Cambridge University Press & Assessment",
+    "publisher" : "Cambridge University Press & Assessment",
+    "sourceType" : "THIRD_PARTY_PUBLICATION",
+    "referenceMeta" : {
+      "rawCorpusRoot" : "imports/source-files/",
+      "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json",
+      "rightsStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED",
+      "projectUsageAuthorization" : "OWNER_AUTHORIZED",
+      "primaryDocument" : "imports/source-files/ielts/cambridge/Cambridge-ielts-16/Cam16/16_academic.pdf"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  }, {
+    "id" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "code" : "EC_INTERNAL_ORIGINAL",
+    "name" : "English Coach original content",
+    "owner" : "English Coach",
+    "publisher" : "English Coach",
+    "sourceType" : "INTERNAL_ORIGINAL",
+    "referenceMeta" : {
+      "declaration" : "Rubrics and scoring metadata authored by English Coach; no external text"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "licenses" : [ {
+    "id" : "f5451fa8-35ef-5300-9844-0b80b7143eb8",
+    "sourceId" : "29817100-3a16-55ee-b2ef-b9c1aaa9dad6",
+    "licenseCode" : "UNKNOWN-RAW_CAMBRIDGE_CAMBRIDGE_IELTS_16",
+    "provenanceCategory" : "UNKNOWN",
+    "commercialRights" : false,
+    "redistributionRights" : false,
+    "derivativeRights" : false,
+    "permittedPurposes" : {
+      "LOCAL_PRIVATE_REVIEW" : true
+    },
+    "permittedTerritories" : { },
+    "validFrom" : null,
+    "validUntil" : null,
+    "attribution" : "Cambridge IELTS 16 — Cambridge University Press & Assessment. Publisher licence not established; used under the EnglishCoach project owner's authorization (2026-10-03), which is not a publisher licence or endorsement.",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  }, {
+    "id" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseCode" : "EC-ORIGINAL-DRAFT-PENDING-LEGAL",
+    "provenanceCategory" : "ORIGINAL",
+    "commercialRights" : true,
+    "redistributionRights" : true,
+    "derivativeRights" : true,
+    "permittedPurposes" : {
+      "EXAM" : true,
+      "SIMULATION" : true,
+      "PRACTICE" : true,
+      "CONTENT" : true
+    },
+    "permittedTerritories" : {
+      "GLOBAL" : true
+    },
+    "validFrom" : 1790985600.000000000,
+    "validUntil" : null,
+    "attribution" : "English Coach original draft; legal review pending",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  } ],
+  "provenances" : [ {
+    "id" : "806e21d1-e7fb-5022-bcf6-e6bc7e58ac8a",
+    "sourceId" : "29817100-3a16-55ee-b2ef-b9c1aaa9dad6",
+    "licenseId" : "f5451fa8-35ef-5300-9844-0b80b7143eb8",
+    "creator" : "exam-raw-extractor",
+    "acquisitionMethod" : "RAW_CORPUS_EXTRACTION",
+    "originalReference" : "Cambridge IELTS 16 / Test 4",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  }, {
+    "id" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseId" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "creator" : "English Coach",
+    "acquisitionMethod" : "ORIGINAL_AUTHORING",
+    "originalReference" : "EC-RUBRIC-AND-SCORING-METADATA",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  } ],
+  "catalogNodes" : [ {
+    "id" : "28b93ad4-b55a-5dd1-becc-a7364f559ffb",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "sourceId" : "29817100-3a16-55ee-b2ef-b9c1aaa9dad6",
+    "parentId" : null,
+    "kind" : "VOLUME",
+    "title" : "Cambridge IELTS 16",
+    "year" : null,
+    "ordinal" : 0,
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "specifications" : [ {
+    "id" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SPEC",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "deliveryMode" : "COMPUTER_SIMULATION",
+    "blueprint" : {
+      "source" : "RAW_CORPUS_EXTRACTION",
+      "family" : "IELTS",
+      "variant" : "ACADEMIC",
+      "scope" : "FULL"
+    },
+    "timingPolicy" : {
+      "listeningSeconds" : 1800,
+      "readingSeconds" : 3600,
+      "writingSeconds" : 3600,
+      "speakingSeconds" : 840
+    },
+    "navigationPolicy" : {
+      "sectionNavigation" : "fixed_sequence"
+    },
+    "playbackPolicy" : {
+      "mode" : "ONCE"
+    },
+    "sourceReferences" : {
+      "baseline" : "EC-EXAM-SPEC-2026-09-10"
+    },
+    "contentHash" : "01a9a5d6615e4c044e33620aacc7f229326296fc975b4c54a3fc1cc0d69efd4c",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "rubrics" : [ {
+    "id" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "logicalCode" : "EC_RAW_IELTS_WRITING_RUBRIC",
+    "version" : 1,
+    "family" : "IELTS",
+    "skill" : "WRITING",
+    "taskFamily" : "IELTS_WRITING",
+    "criteria" : {
+      "taskAchievement" : {
+        "weight" : 1
+      },
+      "coherenceAndCohesion" : {
+        "weight" : 1
+      },
+      "lexicalResource" : {
+        "weight" : 1
+      },
+      "grammaticalRangeAndAccuracy" : {
+        "weight" : 1
+      }
+    },
+    "ordinalScale" : {
+      "min" : 0,
+      "max" : 9,
+      "steps" : [ 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0 ]
+    },
+    "provenanceId" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "contentHash" : "0d542a6e2c855fb3a6fa51ef83026cb296280b0f51f9073604b6756d4752e253",
+    "approvedAt" : null,
+    "createdAt" : null
+  }, {
+    "id" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "logicalCode" : "EC_RAW_IELTS_SPEAKING_RUBRIC",
+    "version" : 1,
+    "family" : "IELTS",
+    "skill" : "SPEAKING",
+    "taskFamily" : "IELTS_SPEAKING",
+    "criteria" : {
+      "fluencyAndCoherence" : {
+        "weight" : 1
+      },
+      "lexicalResource" : {
+        "weight" : 1
+      },
+      "grammaticalRangeAndAccuracy" : {
+        "weight" : 1
+      },
+      "pronunciation" : {
+        "weight" : 1
+      }
+    },
+    "ordinalScale" : {
+      "min" : 0,
+      "max" : 9,
+      "steps" : [ 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0 ]
+    },
+    "provenanceId" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "contentHash" : "17e0b72d560b377684b287d73acc780a48e7da645e0cdaad159f2471e51f9be1",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "calibrations" : [ ],
+  "scoringSchemes" : [ {
+    "id" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SCORING",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "normalizationVersion" : "EC-NORM-V1",
+    "rubricReferences" : { },
+    "calibrationId" : null,
+    "mappingTable" : {
+      "metrics" : [ "LISTENING", "READING", "WRITING", "SPEAKING", "FULL_OVERALL" ],
+      "status" : "DRAFT_NOT_CALIBRATED",
+      "scoreLabel" : "English Coach estimated band"
+    },
+    "aggregationRules" : {
+      "officialEquating" : false,
+      "version" : "EC-AGGREGATION-DRAFT-V1",
+      "creditUnitsPerItem" : 1,
+      "task1Weight" : 1,
+      "task2Weight" : 2,
+      "overall" : "mean_of_four_quarter_rounding"
+    },
+    "contentHash" : "0780e29af069b167dab0956ac01663b2c8b509ca0f03839208766aa0b62ed428",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "form" : {
+    "id" : "cb609f7a-dfa1-5f5c-ba4c-49b486d82030",
+    "logicalKey" : "RAW_CAMBRIDGE_IELTS_16_T4",
+    "version" : 1,
+    "title" : "Cambridge IELTS 16 — Test 4 (source extraction, draft)",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "catalogNodeId" : "28b93ad4-b55a-5dd1-becc-a7364f559ffb",
+    "specificationId" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "lifecycleState" : "DRAFT",
+    "provenanceId" : "806e21d1-e7fb-5022-bcf6-e6bc7e58ac8a",
+    "authorId" : null,
+    "contentHash" : "276b9556d1fdce52c00b029be4c2a0dc2dd689534c8a5b8133815fe8276d9e2f",
+    "publishedAt" : null,
+    "retiredAt" : null,
+    "createdAt" : null,
+    "primaryHealthStatus" : null
+  },
+  "formComponents" : [ ],
+  "sections" : [ {
+    "id" : "020a1f43-d2c1-5fc4-8a43-8792c4f21dbd",
+    "formId" : "cb609f7a-dfa1-5f5c-ba4c-49b486d82030",
+    "skill" : "WRITING",
+    "ordinal" : 2,
+    "specSectionKey" : "WRITING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 3600,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  }, {
+    "id" : "c27991ea-d71a-5420-b1e3-d5ec87002598",
+    "formId" : "cb609f7a-dfa1-5f5c-ba4c-49b486d82030",
+    "skill" : "SPEAKING",
+    "ordinal" : 3,
+    "specSectionKey" : "SPEAKING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 840,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  } ],
+  "parts" : [ {
+    "id" : "d1defa85-514d-5002-b7b2-2598401174fb",
+    "sectionId" : "020a1f43-d2c1-5fc4-8a43-8792c4f21dbd",
+    "partCode" : "WRITING_TASK_2",
+    "ordinal" : 1,
+    "instructions" : null,
+    "timingPolicy" : {
+      "recommendedMinutes" : 40
+    }
+  }, {
+    "id" : "f3f4aff7-9644-5f2c-b434-897b85698368",
+    "sectionId" : "c27991ea-d71a-5420-b1e3-d5ec87002598",
+    "partCode" : "SPEAKING_PART_2",
+    "ordinal" : 1,
+    "instructions" : null,
+    "timingPolicy" : { }
+  }, {
+    "id" : "b00da9ff-cdb5-5110-bded-1c7124411563",
+    "sectionId" : "c27991ea-d71a-5420-b1e3-d5ec87002598",
+    "partCode" : "SPEAKING_PART_3",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : { }
+  } ],
+  "groups" : [ {
+    "id" : "019921d4-d559-5ab1-8770-85e9d03777fb",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_16_T4_WRITING_TASK_2",
+    "version" : 1,
+    "questionType" : "WRITING_TASK_2",
+    "construct" : "written_production",
+    "skill" : "WRITING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "806e21d1-e7fb-5022-bcf6-e6bc7e58ac8a",
+    "contentHash" : "d34e5809dd80d64b1556ffbe6aa9b4ebfdaccf998bf133ebe8502b4a90aa13a9",
+    "createdAt" : null
+  }, {
+    "id" : "bcc8c79a-7cf1-5770-9834-3dbdab6f8351",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_16_T4_SPEAKING_PART_2",
+    "version" : 1,
+    "questionType" : "SPEAKING_PART_2",
+    "construct" : "spoken_production",
+    "skill" : "SPEAKING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "806e21d1-e7fb-5022-bcf6-e6bc7e58ac8a",
+    "contentHash" : "fdc04789c147976b95a182bb5f8173de979505987ae46708e62a868f54feee7a",
+    "createdAt" : null
+  }, {
+    "id" : "a960497b-8655-5071-862e-4f84e5884a73",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_16_T4_SPEAKING_PART_3",
+    "version" : 1,
+    "questionType" : "SPEAKING_PART_3",
+    "construct" : "spoken_production",
+    "skill" : "SPEAKING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "806e21d1-e7fb-5022-bcf6-e6bc7e58ac8a",
+    "contentHash" : "7197c7d4b7ca9029e6564cef9c56c87924207847569c48ff0a83363e6f54d9ae",
+    "createdAt" : null
+  } ],
+  "formGroups" : [ {
+    "id" : "91cbd461-d6d9-5b7b-ad5f-fce8b12d5175",
+    "partId" : "d1defa85-514d-5002-b7b2-2598401174fb",
+    "groupId" : "019921d4-d559-5ab1-8770-85e9d03777fb",
+    "ordinal" : 1,
+    "displayNumbering" : "Task 2"
+  }, {
+    "id" : "5ffd3ef5-b0be-5a0d-a9fb-a1d1ea7bf5e0",
+    "partId" : "f3f4aff7-9644-5f2c-b434-897b85698368",
+    "groupId" : "bcc8c79a-7cf1-5770-9834-3dbdab6f8351",
+    "ordinal" : 1,
+    "displayNumbering" : "Part 2"
+  }, {
+    "id" : "ce0014bc-763c-522a-be6b-b0f323445f1c",
+    "partId" : "b00da9ff-cdb5-5110-bded-1c7124411563",
+    "groupId" : "a960497b-8655-5071-862e-4f84e5884a73",
+    "ordinal" : 1,
+    "displayNumbering" : "Part 3"
+  } ],
+  "stimuli" : [ {
+    "id" : "78b7f8cb-32bb-5edb-9c19-cba30d54c089",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_16_T4_WRITING_TASK_2_PROMPT",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "promptContext" : "You should spend about 40 minutes on this task Write about the followina topic: O 4 In the future all cars; buses and trucks will be driverless. The only people travelling inside these vehicles will be passengers: 1 Do you think the advantages of driverless vehicles outweigh the disadvantages? 1 Give reasons for your answer and include any relevant examples from your own knowledge Or experience. Write at least 250 words. C 96 7/0 p. 138/"
+    },
+    "provenanceId" : "806e21d1-e7fb-5022-bcf6-e6bc7e58ac8a",
+    "contentHash" : "8d47d0456756b306cb0b97df1651f45202170b235065b8ae624493a6ec5bf580",
+    "createdAt" : null
+  }, {
+    "id" : "b51f9299-f5d5-53b0-af49-8a15b78214a4",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_16_T4_SPEAKING_PART_2_PROMPTS",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "prompts" : [ "Describe some technology (e.g: an app, phone,", "software program) that you decided to stop using:", "You should say:", "when and where you got this technology", "why you started using this technology", "why you decided to stop using it", "and explain how you feel about the decision", "you made." ],
+      "sourceRole" : "SOURCE_SPEAKING_PROMPTS",
+      "runtimeUse" : "PINNED_SOURCE_ITEMS"
+    },
+    "provenanceId" : "806e21d1-e7fb-5022-bcf6-e6bc7e58ac8a",
+    "contentHash" : "3a1b786fbb343dde8ba858a801464a153311360aaef9e81d18c37f3a1236ccdb",
+    "createdAt" : null
+  }, {
+    "id" : "b07c60e2-7a59-53a9-bb0b-bf79fac093da",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_16_T4_SPEAKING_PART_3_PROMPTS",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "prompts" : [ "Discussion topics:", "Computer games", "What kinds of computer games do people play in your country?", "Why do people enjoy playing computer games?", "Do you think that all computer games should have a minimum age for players?", "Technology in the classroom", "In what ways can technology in the classroom be helpful?", "Do you agree that students are Often better at using technology than their teachers?", "Do you believe that computers will ever replace human teachers?", "97" ],
+      "sourceRole" : "SOURCE_SPEAKING_PROMPTS",
+      "runtimeUse" : "PINNED_SOURCE_ITEMS"
+    },
+    "provenanceId" : "806e21d1-e7fb-5022-bcf6-e6bc7e58ac8a",
+    "contentHash" : "d0319c5d56581709dd82a02923014a4742cc131d044f737fd7bd1dbe07654957",
+    "createdAt" : null
+  } ],
+  "groupStimuli" : [ {
+    "id" : "edbc7025-77b0-540c-8deb-8973d92c85dc",
+    "groupId" : "019921d4-d559-5ab1-8770-85e9d03777fb",
+    "stimulusId" : "78b7f8cb-32bb-5edb-9c19-cba30d54c089",
+    "role" : "PRIMARY_PROMPT",
+    "ordinal" : 2
+  }, {
+    "id" : "12fe503f-ed86-51ac-910a-f5f6f2282bb6",
+    "groupId" : "bcc8c79a-7cf1-5770-9834-3dbdab6f8351",
+    "stimulusId" : "b51f9299-f5d5-53b0-af49-8a15b78214a4",
+    "role" : "PRIMARY",
+    "ordinal" : 1
+  }, {
+    "id" : "d263528c-0676-5e4e-a798-47bdedf8ca41",
+    "groupId" : "a960497b-8655-5071-862e-4f84e5884a73",
+    "stimulusId" : "b07c60e2-7a59-53a9-bb0b-bf79fac093da",
+    "role" : "PRIMARY",
+    "ordinal" : 1
+  } ],
+  "items" : [ {
+    "id" : "8c4d381a-b00f-5567-b0e4-de540d726787",
+    "groupId" : "019921d4-d559-5ab1-8770-85e9d03777fb",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T4_W2",
+    "version" : 1,
+    "prompt" : "You should spend about 40 minutes on this task Write about the followina topic: O 4 In the future all cars; buses and trucks will be driverless. The only people travelling inside these vehicles will be passengers: 1 Do you think the advantages of driverless vehicles outweigh the disadvantages? 1 Give reasons for your answer and include any relevant examples from your own knowledge Or experience. Write at least 250 words. C 96 7/0 p. 138/",
+    "interactionType" : "WRITING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "free_text",
+      "minimumWords" : 250,
+      "recommendedMinutes" : 40
+    },
+    "construct" : "writing_task",
+    "provenanceId" : "806e21d1-e7fb-5022-bcf6-e6bc7e58ac8a",
+    "contentHash" : "68898061b4fcc42d6fa5d53cec1077ba6fe0b339480fd57268bf0d7af319a155",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "a8ce75d0-4ed0-5ff0-88cc-54ba981d2dc8",
+    "groupId" : "bcc8c79a-7cf1-5770-9834-3dbdab6f8351",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T4_S2_T1",
+    "version" : 1,
+    "prompt" : "Describe some technology (e.g: an app, phone, software program) that you decided to stop using: You should say: when and where you got this technology why you started using this technology why you decided to stop using it and explain how you feel about the decision you made.",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "806e21d1-e7fb-5022-bcf6-e6bc7e58ac8a",
+    "contentHash" : "39fae0a98fc8b15e8cfa22b574a689ddb971845ddeae04053c2be7bf2801dacf",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "93ab1628-4879-51ae-a195-605ed2837bf3",
+    "groupId" : "a960497b-8655-5071-862e-4f84e5884a73",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T4_S3_T1",
+    "version" : 1,
+    "prompt" : "What kinds of computer games do people play in your country?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "806e21d1-e7fb-5022-bcf6-e6bc7e58ac8a",
+    "contentHash" : "7814580c45a0bf7d1ba156abe95f35fde5c4f64b9c448527242124103635b28a",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "27b5c939-eba1-572d-8342-05df8ef62eef",
+    "groupId" : "a960497b-8655-5071-862e-4f84e5884a73",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T4_S3_T2",
+    "version" : 1,
+    "prompt" : "Why do people enjoy playing computer games?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "806e21d1-e7fb-5022-bcf6-e6bc7e58ac8a",
+    "contentHash" : "b4ad2c4df6b92c9cd14a30ea2b96508cfe6176e827977de5249dfee81c3ec5f1",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "c77c7071-94ec-5f88-a001-a8a82da26d7a",
+    "groupId" : "a960497b-8655-5071-862e-4f84e5884a73",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T4_S3_T3",
+    "version" : 1,
+    "prompt" : "Do you think that all computer games should have a minimum age for players?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "806e21d1-e7fb-5022-bcf6-e6bc7e58ac8a",
+    "contentHash" : "7c616b0c8fc6148bb6e4e5126415499af593a81594440839b991d12dadc56747",
+    "createdAt" : null,
+    "ordinal" : 3
+  }, {
+    "id" : "1f2d3f89-3afc-5e6a-8a24-db3f327ec466",
+    "groupId" : "a960497b-8655-5071-862e-4f84e5884a73",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T4_S3_T4",
+    "version" : 1,
+    "prompt" : "In what ways can technology in the classroom be helpful?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "806e21d1-e7fb-5022-bcf6-e6bc7e58ac8a",
+    "contentHash" : "c106dbb0f9d3ebda81c6655756e133c09f8bdf76773b52dffcc4fe66da9bba38",
+    "createdAt" : null,
+    "ordinal" : 4
+  }, {
+    "id" : "1acda338-f4a3-5ecf-9037-c50f0a9d834a",
+    "groupId" : "a960497b-8655-5071-862e-4f84e5884a73",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T4_S3_T5",
+    "version" : 1,
+    "prompt" : "Do you agree that students are Often better at using technology than their teachers?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "806e21d1-e7fb-5022-bcf6-e6bc7e58ac8a",
+    "contentHash" : "82a49c7c8da63a65c926edd7a823d8965925b918de5e0874d8988d82c67cda6e",
+    "createdAt" : null,
+    "ordinal" : 5
+  }, {
+    "id" : "31cec3d8-578e-5f52-9b1b-983dbdc7f476",
+    "groupId" : "a960497b-8655-5071-862e-4f84e5884a73",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T4_S3_T6",
+    "version" : 1,
+    "prompt" : "Do you believe that computers will ever replace human teachers?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "806e21d1-e7fb-5022-bcf6-e6bc7e58ac8a",
+    "contentHash" : "5e05f6958039efce2cff5bd49c61addfca053670cdebe90c8cb7b86a6b1ae1e8",
+    "createdAt" : null,
+    "ordinal" : 6
+  } ],
+  "answerSpecs" : [ {
+    "id" : "ff595c9e-d01d-5b31-8bcc-b9120dfd352c",
+    "itemId" : "8c4d381a-b00f-5567-b0e4-de540d726787",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "minimumWords" : 250
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-WRITING-TEXT-V1",
+      "preserveParagraphs" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "createdAt" : null
+  }, {
+    "id" : "054a9e7e-e66c-5dc1-81d7-a84faab43eba",
+    "itemId" : "a8ce75d0-4ed0-5ff0-88cc-54ba981d2dc8",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "e4cd72ec-65cb-5bbd-8812-abba116570be",
+    "itemId" : "93ab1628-4879-51ae-a195-605ed2837bf3",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "f80d145d-f3fc-5ff4-b5dc-46ab09b9e502",
+    "itemId" : "27b5c939-eba1-572d-8342-05df8ef62eef",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "7202cefd-c56e-5619-8d64-acb9befe46a3",
+    "itemId" : "c77c7071-94ec-5f88-a001-a8a82da26d7a",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "565a5e4d-b061-5c08-a107-67c1c791edb4",
+    "itemId" : "1f2d3f89-3afc-5e6a-8a24-db3f327ec466",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "950f6a52-bea7-57d1-9dcd-d72387279484",
+    "itemId" : "1acda338-f4a3-5ecf-9037-c50f0a9d834a",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "97a50b8f-2d2e-594e-ad65-3cd7e81a8ecd",
+    "itemId" : "31cec3d8-578e-5f52-9b1b-983dbdc7f476",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  } ],
+  "assets" : [ ],
+  "stimulusAssets" : [ ]
+}

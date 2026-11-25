@@ -1,0 +1,520 @@
+{
+  "schema": 1,
+  "slug": "ielts-task1-trends",
+  "version": 1,
+  "domain": "ielts",
+  "order": 30,
+  "kind": "application",
+  "title": {
+    "vi": "Task 1: mô tả xu hướng và số liệu",
+    "en": "Task 1: trends and figures"
+  },
+  "subtitle": {
+    "vi": "Giữ đúng mốc, đơn vị và phạm vi so sánh.",
+    "en": "Keep time, units and comparison scope accurate."
+  },
+  "aliases": [
+    "IELTS Task 1 xu hướng",
+    "ielts-task1-comparison",
+    "Task 1 so sánh dữ liệu",
+    "rise by rise to",
+    "percentage points",
+    "tăng đều từ hai mốc"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Dùng động từ và danh từ xu hướng với from/to/by/of.",
+    "So sánh lượng cùng đơn vị, giữ đúng năm và nhóm.",
+    "Không suy đường đi hoặc nguyên nhân ngoài số liệu."
+  ],
+  "prerequisites": [
+    "comparatives",
+    "past-simple"
+  ],
+  "related": [
+    {
+      "slug": "ielts-task1-process-map",
+      "rel": "contrast"
+    },
+    {
+      "slug": "comparison-advanced",
+      "rel": "more"
+    },
+    {
+      "slug": "present-perfect-vs-past-simple",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": "Luyện mô tả dữ liệu Academic Task 1 bằng ví dụ giả định; không phải đề thi thật hay phép chấm band.",
+    "toeic": null
+  },
+  "quick": {
+    "what": "Mô tả xu hướng nối thời gian với đại lượng: rose from 80 to 120 nói hai mốc; rose by 40 nói mức chênh. So sánh phải giữ cùng đơn vị và khoảng thời gian.",
+    "when": "Khi dữ liệu cho giá trị đầu/cuối hoặc nhiều chuỗi cần đối chiếu.",
+    "examples": [
+      {
+        "en": "Enrolments in Course A [V|rose] from 80 to 120 between 2020 and 2024.",
+        "vi": "Lượt đăng ký khóa A tăng từ 80 lên 120 trong 2020–2024."
+      },
+      {
+        "en": "Course A had ten more enrolments than Course B in 2024.",
+        "vi": "Khóa A có nhiều hơn khóa B mười lượt đăng ký vào 2024."
+      }
+    ],
+    "remember": "Số liệu bên dưới hoàn toàn minh họa, không mô tả tổ chức hay người học thật."
+  },
+  "lesson": [
+    {
+      "type": "table",
+      "head": [
+        "Lượt đăng ký giả định",
+        "2020",
+        "2024"
+      ],
+      "rows": [
+        [
+          "Course A",
+          "80",
+          "120"
+        ],
+        [
+          "Course B",
+          "100",
+          "110"
+        ]
+      ],
+      "caption": "Bộ dữ liệu tự đặt cho cả phần giải thích; chỉ có hai mốc, không có giá hoặc ngân sách."
+    },
+    {
+      "type": "p",
+      "vi": "Với hai năm đã kết thúc, quá khứ đơn là cách báo cáo tự nhiên: rose, increased, remained. Một khung đang kéo dài đến hiện tại có thể cho phép present perfect, nhưng không đổi mọi số liệu lịch sử sang hoàn thành chỉ vì chúng còn đáng quan tâm."
+    },
+    {
+      "type": "formula",
+      "lines": [
+        {
+          "label": "Điểm đầu và cuối",
+          "parts": [
+            {
+              "t": "S + rose from"
+            },
+            {
+              "t": "80"
+            },
+            {
+              "t": "to"
+            },
+            {
+              "t": "120"
+            }
+          ]
+        },
+        {
+          "label": "Độ thay đổi",
+          "parts": [
+            {
+              "t": "S + rose by"
+            },
+            {
+              "t": "40"
+            }
+          ]
+        },
+        {
+          "label": "Danh từ xu hướng",
+          "parts": [
+            {
+              "t": "There was a rise of"
+            },
+            {
+              "t": "40"
+            }
+          ]
+        }
+      ],
+      "note": "By/of gắn với chênh lệch 40 trong ví dụ này, không phải giá trị cuối 120."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "scale",
+        "from": "0 lượt",
+        "to": "120 lượt",
+        "items": [
+          {
+            "pos": 66.67,
+            "t": "A, 2020: 80"
+          },
+          {
+            "pos": 100,
+            "t": "A, 2024: 120"
+          },
+          {
+            "pos": 83.33,
+            "t": "B, 2020: 100"
+          },
+          {
+            "pos": 91.67,
+            "t": "B, 2024: 110"
+          }
+        ]
+      },
+      "caption": "Vị trí biểu diễn lượng trong dữ liệu giả định; đây không phải trục thời gian hay biểu đồ tỷ lệ phần trăm.",
+      "alt": "Bốn giá trị được đặt trên thang 0–120: A 80 rồi 120, B 100 rồi 110."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "Course A had more enrolments than Course B in 2024.",
+            "vi": "A có nhiều lượt đăng ký hơn B vào 2024."
+          },
+          "b": {
+            "en": "Course A had fewer enrolments than Course B in 2020.",
+            "vi": "A có ít lượt đăng ký hơn B vào 2020."
+          },
+          "diff": "Thứ hạng đổi theo năm. Không bỏ năm nếu điều đó làm mất phạm vi so sánh."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Chỉ hai điểm đầu/cuối không chứng minh tăng đều từng năm, không có dao động hoặc quảng cáo gây tăng. Từ steadily hay một lý do vì thế cần thêm dữ kiện. Độ mạnh của sharp/slight còn phụ thuộc thang và ngữ cảnh; không có phần trăm cố định cho mọi đồ thị."
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Phân biệt tỷ lệ với điểm phần trăm. Trong ví dụ độc lập, tỷ lệ từ 20% lên 25% tăng năm điểm phần trăm; mức tăng tương đối là một phép tính khác. Không gọi mọi chênh giữa hai tỷ lệ là phần trăm tăng."
+    },
+    {
+      "type": "try",
+      "exercise": "itr-05"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Không đồng nhất lượt đăng ký với số người duy nhất nếu nguồn chỉ đếm lượt. Khi đổi tên đại lượng, kiểm tra nghĩa của đơn vị. Cũng không lấy dữ liệu về số lượng để khẳng định giá rẻ hơn."
+    },
+    {
+      "type": "p",
+      "vi": "Tổng quan có thể chọn đặc điểm chính: A vượt B ở mốc cuối dù bắt đầu thấp hơn. Đây là đọc quan hệ đã có, không phải dự báo A sẽ tiếp tục dẫn đầu sau 2024."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Thêm nhiều cấu trúc so sánh không bù việc sai số hoặc thiếu đơn vị. Bài chỉ kiểm tra một số câu riêng, không đánh giá toàn bộ task response hay cấp band."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "itr-m1",
+      "wrong": "The number of enrolments were 120 in 2024.",
+      "right": "The number of enrolments was 120 in 2024.",
+      "why": "The number là đầu chủ ngữ số ít trong mẫu nêu tổng này."
+    },
+    {
+      "id": "itr-m2",
+      "wrong": "A rose by 120. [Dữ kiện: từ 80 lên 120 lượt.] ",
+      "right": "A rose to 120. / A rose by 40.",
+      "why": "120 là giá trị cuối; mức chênh là 40."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có from/to rồi còn cần by không?",
+      "a": "Không bắt buộc. From/to nêu đầu và cuối; by nêu độ thay đổi. Chọn điều cần làm rõ và tránh lặp rườm rà."
+    },
+    {
+      "q": "Hai số tăng có đủ viết steadily không?",
+      "a": "Không tự đủ. Hai mốc không cho biết đường đi giữa chúng."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "itr-01",
+      "type": "choice",
+      "level": "B2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Dùng đúng mức thay đổi của A trong bảng.",
+      "stem": "Enrolments in Course A increased … between 2020 and 2024.",
+      "options": [
+        {
+          "t": "by 40",
+          "ok": true,
+          "note": "120 trừ 80 bằng 40 lượt."
+        },
+        {
+          "t": "from 40",
+          "note": "From 40 đặt điểm đầu khác dữ kiện 80.",
+          "tag": "baseline-changed"
+        }
+      ],
+      "explain": "Phân biệt giá trị với độ chênh, không chỉ nhìn một số lớn."
+    },
+    {
+      "id": "itr-02",
+      "type": "match",
+      "level": "B2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Ghép cụm với chức năng.",
+      "pairs": [
+        {
+          "a": "rose from 80 to 120",
+          "b": "Nêu điểm đầu và cuối."
+        },
+        {
+          "a": "rose by 40",
+          "b": "Nêu chênh lệch."
+        },
+        {
+          "a": "a rise of 40",
+          "b": "Nêu độ thay đổi bằng cụm danh từ."
+        }
+      ],
+      "explain": "Các khung không thay giới từ một cách tùy ý."
+    },
+    {
+      "id": "itr-03",
+      "type": "multi",
+      "level": "B2",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Chọn các câu đúng theo bảng minh họa.",
+      "stem": "Chỉ dùng dữ liệu được cho.",
+      "options": [
+        {
+          "t": "Course A had 120 enrolments in 2024.",
+          "ok": true,
+          "note": "Giá trị cuối của A."
+        },
+        {
+          "t": "Course B had more enrolments than A in 2020.",
+          "ok": true,
+          "note": "100 lớn hơn 80 ở năm đó."
+        },
+        {
+          "t": "Course A was cheaper than B in 2024.",
+          "note": "Không có dữ liệu giá.",
+          "tag": "unsupported-variable"
+        }
+      ],
+      "explain": "Một câu ngữ pháp đúng vẫn có thể đưa thêm thông tin không có trong nguồn."
+    },
+    {
+      "id": "itr-04",
+      "type": "cloze",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Điền from hoặc to cho đúng hai mốc.",
+      "stem": "A rose {1} 80 {2} 120.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "from"
+          ],
+          "closed": true
+        },
+        "2": {
+          "accept": [
+            "to"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "From gắn đầu, to gắn cuối trong mẫu này."
+    },
+    {
+      "id": "itr-05",
+      "type": "transform",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Đổi sang cụm danh từ xu hướng.",
+      "source": "Enrolments rose by 40.",
+      "instruction": "Dùng nguyên khung There was a rise of … enrolments, giữ số 40.",
+      "accept": [
+        "There was a rise of 40 enrolments."
+      ],
+      "model": "There was a rise of 40 enrolments.",
+      "explain": "Động từ rose chuyển sang danh từ rise; of giữ độ chênh."
+    },
+    {
+      "id": "itr-06",
+      "type": "error",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sửa từ nối dùng cho so sánh.",
+      "segments": [
+        {
+          "t": "In 2024, A had more enrolments "
+        },
+        {
+          "t": "then",
+          "bad": true,
+          "fix": [
+            "than"
+          ],
+          "note": "Đang so sánh A với B, cần than.",
+          "tag": "comparison-link"
+        },
+        {
+          "t": " B."
+        }
+      ],
+      "explain": "Then thường nối trình tự khác; ở quan hệ so sánh này dùng than."
+    },
+    {
+      "id": "itr-07",
+      "type": "classify",
+      "level": "B2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Phân loại điều bảng cho biết và điều chưa được cho.",
+      "cats": [
+        "Dữ liệu hỗ trợ",
+        "Thông tin chưa có"
+      ],
+      "items": [
+        {
+          "t": "B có 110 lượt năm 2024.",
+          "cat": "Dữ liệu hỗ trợ"
+        },
+        {
+          "t": "A tăng vì quảng cáo tốt hơn.",
+          "cat": "Thông tin chưa có"
+        },
+        {
+          "t": "A vượt B ở mốc cuối.",
+          "cat": "Dữ liệu hỗ trợ"
+        },
+        {
+          "t": "A tăng đều ở mọi năm giữa hai mốc.",
+          "cat": "Thông tin chưa có"
+        }
+      ],
+      "explain": "Không chuyển liên hệ thời gian thành nguyên nhân hoặc đường đi chưa quan sát."
+    },
+    {
+      "id": "itr-08",
+      "type": "open",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết đoạn mô tả bảng giả định.",
+      "task": "Viết 3–4 câu: tổng quan thứ hạng đổi, một mô tả from/to, một so sánh cùng năm. Không bịa nguyên nhân hoặc năm ở giữa.",
+      "model": [
+        "Course A overtook Course B by the final year shown. A rose from 80 enrolments in 2020 to 120 in 2024. In 2024, it had ten more enrolments than B."
+      ],
+      "checklist": [
+        "Giữ đúng đơn vị lượt đăng ký.",
+        "Giữ năm khi so sánh.",
+        "Không thêm steadily hoặc lý do chưa có.",
+        "Không quy kết quả đoạn thành band."
+      ],
+      "explain": "Các đoạn khác có thể đúng khi trung thành với dữ liệu."
+    },
+    {
+      "id": "itr-09",
+      "type": "cloze",
+      "level": "B2",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Viết cụm với quá khứ của rise, nêu điểm đầu và cuối của A; giữ chữ số 80 và 120.",
+      "stem": "Between 2020 and 2024, enrolments in Course A {1}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "rose from 80 to 120"
+          ]
+        }
+      },
+      "explain": "Phải tạo cụm tiếng Anh nêu diễn biến đúng số, không chỉ gõ nhãn xu hướng."
+    },
+    {
+      "id": "itr-10",
+      "type": "transform",
+      "level": "B2",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Diễn đạt chênh lệch cùng năm.",
+      "source": "Course A had 120 enrolments in 2024. Course B had 110.",
+      "instruction": "Viết một câu bắt đầu Course A had, dùng more enrolments than Course B và giữ in 2024 ở cuối.",
+      "accept": [
+        "Course A had 10 more enrolments than Course B in 2024.",
+        "Course A had ten more enrolments than Course B in 2024."
+      ],
+      "model": "Course A had ten more enrolments than Course B in 2024.",
+      "explain": "10 là độ chênh ở 2024; không chuyển nó thành tỷ lệ."
+    },
+    {
+      "id": "itr-11",
+      "type": "choice",
+      "level": "B2",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Chọn nhận xét đúng về hai mốc trong bảng.",
+      "stem": "Người viết thêm A increased steadily throughout the period.",
+      "options": [
+        {
+          "t": "Cần dữ liệu giữa hai mốc để khẳng định tăng đều suốt giai đoạn.",
+          "ok": true,
+          "note": "Hai điểm không xác định đường đi."
+        },
+        {
+          "t": "Chỉ cần số cuối lớn hơn là steadily luôn đúng.",
+          "note": "Có thể đã giảm hoặc dao động ở giữa.",
+          "tag": "unsupported-path"
+        }
+      ],
+      "explain": "Từ chỉ hình dạng xu hướng cũng là một tuyên bố về dữ liệu."
+    },
+    {
+      "id": "itr-12",
+      "type": "error",
+      "level": "B2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Tìm lỗi hòa hợp khi nêu tổng.",
+      "segments": [
+        {
+          "t": "The number of enrolments "
+        },
+        {
+          "t": "were",
+          "bad": true,
+          "fix": [
+            "was"
+          ],
+          "note": "Đầu chủ ngữ là the number số ít.",
+          "tag": "number-head-agreement"
+        },
+        {
+          "t": " 120 in 2024."
+        }
+      ],
+      "explain": "Không lấy enrolments bên trong of để chia động từ."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "ielts-bd",
+      "note": "Đọc IELTS Writing Key Assessment Criteria, phần Academic Task 1, ngày2026-11-01: thông tin từ visual input và không suy đoán ngoài dữ liệu. Ví dụ/số liệu trong bài tự đặt, không phải đề thật."
+    },
+    {
+      "ref": "cgt",
+      "note": "Tham chiếu thêm về so sánh và giới từ xu hướng; chưa đọc trang mới. Tái sử dụng các giới hạn về thì trong TENSE-EXERCISE-REVIEW và research/02."
+    }
+  ],
+  "editorial": {
+    "status": "drafted",
+    "note": "Bộ dữ liệu và ví dụ nguyên bản minh họa; chưa có review độc lập hoặc human acceptance."
+  }
+}

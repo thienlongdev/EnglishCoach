@@ -1,0 +1,41 @@
+{
+  "id": "interview-possessor",
+  "title": "Hai tên riêng, một đại từ her",
+  "summary": "Trong câu Lena wrote to Noor about her interview, her có thể chỉ ai? Giữ người viết và người nhận, chỉ thay cách nhận diện người trả lời phỏng vấn.",
+  "level": "C1",
+  "topics": [
+    "pronoun-reference",
+    "structural-ambiguity"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Người được phỏng vấn",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Người viết"
+        },
+        {
+          "id": "v2",
+          "label": "Người nhận thư"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Lena wrote to Noor about the interview Lena had just given.",
+      "vi": "Lena viết cho Noor về cuộc phỏng vấn mà chính Lena vừa trả lời.",
+      "note": "Lena là chủ ngữ của had just given. Lặp tên trong mệnh đề quan hệ giúp loại cách hiểu Noor là người trả lời phỏng vấn. / Repeating Lena fixes the reference on the writer.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Lena wrote to Noor about the interview Noor had just given.",
+      "vi": "Lena viết cho Noor về cuộc phỏng vấn mà Noor vừa trả lời.",
+      "note": "Người viết và người nhận giữ nguyên vai. Chỉ người được nhắc trong thông tin về cuộc phỏng vấn thay đổi. / Repeating Noor fixes the reference on the addressee.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,1795 @@
+/* Material Symbols: the self-hosted @font-face below only (no third-party stylesheet import; PERF-26). */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Canonical Material Symbols Global Icon System ─── */
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: block;
+    src: url('/fonts/material-symbols-outlined.woff2') format('woff2'),
+        url('https://fonts.gstatic.com/s/materialsymbolsoutlined/v374/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2') format('woff2');
+}
+
+.material-symbols-outlined,
+.material-symbols-rounded,
+.material-symbols-sharp,
+.material-symbols,
+.material-icons {
+    font-family: 'Material Symbols Outlined' !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal !important;
+    text-transform: none !important;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'liga' 1;
+    font-variant-ligatures: normal;
+    user-select: none;
+    vertical-align: middle;
+}
+
+@layer base {
+    :root {
+        color-scheme: light;
+        --background: 251 249 245;
+        /* #fbf9f5 */
+        --foreground: 27 28 26;
+        /* #1b1c1a */
+        --card: 255 255 255;
+        --card-foreground: 27 28 26;
+        --popover: 255 255 255;
+        --popover-foreground: 27 28 26;
+        --primary-foreground: 255 255 255;
+        --secondary-foreground: 255 255 255;
+        --muted: 239 238 234;
+        --muted-foreground: 70 69 84;
+        --accent: 239 238 234;
+        --accent-foreground: 27 28 26;
+        --destructive: 186 26 26;
+        --border: rgb(199 196 215);
+        --input: rgb(199 196 215);
+        --ring: rgb(67 56 202);
+        --radius: 0.625rem;
+        --sidebar: 10 10 10;
+        --sidebar-foreground: 255 255 255;
+        --sidebar-primary: 67 56 202;
+        --sidebar-primary-foreground: 255 255 255;
+        --sidebar-accent: 30 30 30;
+        --sidebar-accent-foreground: 255 255 255;
+        --sidebar-border: rgb(38 46 69);
+        --sidebar-ring: rgb(67 56 202);
+
+        /* Material 3 & Writing Semantic Tokens - Light Mode */
+        --surface: 251 249 245;
+        /* #fbf9f5 */
+        --surface-dim: 219 218 214;
+        --surface-bright: 251 249 245;
+        --surface-container-lowest: 255 255 255;
+        /* #ffffff */
+        --surface-container-low: 245 243 239;
+        /* #f5f3ef */
+        --surface-container: 239 238 234;
+        /* #efeeea */
+        --surface-container-high: 234 232 228;
+        /* #eae8e4 */
+        --surface-container-highest: 228 226 222;
+        /* #e4e2de */
+        --surface-variant: 228 226 222;
+        --on-surface: 27 28 26;
+        /* #1b1c1a */
+        --on-surface-variant: 70 69 84;
+        /* #464554 */
+        --inverse-surface: 48 49 46;
+        --inverse-on-surface: 242 240 237;
+        --outline: 119 117 134;
+        /* #777586 */
+        --outline-variant: 199 196 215;
+        /* #c7c4d7 */
+        --surface-tint: 81 72 215;
+        --primary: 67 56 202;
+        /* #4338ca */
+        --on-primary: 255 255 255;
+        --primary-container: 67 56 202;
+        --on-primary-container: 193 190 255;
+        --inverse-primary: 195 192 255;
+        --primary-fixed: 227 223 255;
+        --primary-fixed-dim: 195 192 255;
+        --on-primary-fixed: 16 0 105;
+        --on-primary-fixed-variant: 55 42 191;
+        --secondary: 113 42 226;
+        --on-secondary: 255 255 255;
+        --secondary-container: 138 76 252;
+        --on-secondary-container: 255 251 255;
+        --secondary-fixed: 234 221 255;
+        --secondary-fixed-dim: 210 187 255;
+        --on-secondary-fixed: 37 0 90;
+        --on-secondary-fixed-variant: 90 0 198;
+        --tertiary: 0 68 45;
+        --on-tertiary: 255 255 255;
+        --tertiary-container: 0 94 64;
+        --on-tertiary-container: 102 218 168;
+        --tertiary-fixed: 133 248 196;
+        --tertiary-fixed-dim: 104 219 169;
+        --on-tertiary-fixed: 0 33 20;
+        --on-tertiary-fixed-variant: 0 81 55;
+        --error: 186 26 26;
+        --on-error: 255 255 255;
+        --error-container: 255 218 214;
+        --on-error-container: 147 0 10;
+    }
+
+    .dark {
+        color-scheme: dark;
+        --background: 11 15 25;
+        /* #0b0f19 */
+        --foreground: 241 245 249;
+        /* #f1f5f9 */
+        --card: 19 24 38;
+        --card-foreground: 241 245 249;
+        --popover: 19 24 38;
+        --popover-foreground: 241 245 249;
+        --primary-foreground: 15 23 42;
+        --secondary-foreground: 15 23 42;
+        --muted: 30 37 56;
+        --muted-foreground: 148 163 184;
+        --accent: 30 37 56;
+        --accent-foreground: 241 245 249;
+        --destructive: 251 113 133;
+        --border: rgb(51 65 85);
+        --input: rgb(51 65 85);
+        --ring: rgb(129 140 248);
+        --sidebar: 8 12 20;
+        --sidebar-foreground: 241 245 249;
+        --sidebar-primary: 129 140 248;
+        --sidebar-primary-foreground: 15 23 42;
+        --sidebar-accent: 24 30 46;
+        --sidebar-accent-foreground: 241 245 249;
+        --sidebar-border: rgb(38 46 69);
+        --sidebar-ring: rgb(129 140 248);
+
+        /* Material 3 & Writing Semantic Tokens - Dark Mode (Rich Ink & Charcoal Canvas) */
+        --surface: 11 15 25;
+        /* #0b0f19 - deep navy-charcoal Writing canvas */
+        --surface-dim: 8 12 20;
+        /* #080c14 */
+        --surface-bright: 19 24 38;
+        /* #131826 */
+        --surface-container-lowest: 19 24 38;
+        /* #131826 - dark paper/cards */
+        --surface-container-low: 24 30 46;
+        /* #181e2e - layered card surface */
+        --surface-container: 30 37 56;
+        /* #1e2538 - controls/tabs/tags */
+        --surface-container-high: 38 46 69;
+        /* #262e45 - low-contrast slate/violet borders */
+        --surface-container-highest: 49 58 86;
+        /* #313a56 - elevated borders/highlights */
+        --surface-variant: 38 46 69;
+        --on-surface: 241 245 249;
+        /* #f1f5f9 - warm off-white */
+        --on-surface-variant: 148 163 184;
+        /* #94a3b8 - cool lavender-gray */
+        --inverse-surface: 241 245 249;
+        --inverse-on-surface: 15 23 42;
+        --outline: 100 116 139;
+        /* #64748b */
+        --outline-variant: 51 65 85;
+        /* #334155 */
+        --surface-tint: 129 140 248;
+        /* #818cf8 */
+        --primary: 129 140 248;
+        /* #818cf8 - vibrant dark-safe purple/indigo */
+        --on-primary: 15 23 42;
+        --primary-container: 79 70 229;
+        /* #4f46e5 */
+        --on-primary-container: 224 231 255;
+        --inverse-primary: 67 56 202;
+        --primary-fixed: 49 46 129;
+        /* #312e81 */
+        --primary-fixed-dim: 55 48 163;
+        --on-primary-fixed: 224 231 255;
+        --on-primary-fixed-variant: 199 210 254;
+        --secondary: 167 139 250;
+        /* #a78bfa */
+        --on-secondary: 15 23 42;
+        --secondary-container: 109 40 217;
+        --on-secondary-container: 245 243 255;
+        --secondary-fixed: 59 29 130;
+        --secondary-fixed-dim: 76 29 149;
+        --on-secondary-fixed: 237 233 254;
+        --on-secondary-fixed-variant: 221 214 254;
+        --tertiary: 52 211 153;
+        /* #34d399 - muted emerald */
+        --on-tertiary: 6 78 59;
+        --tertiary-container: 6 78 59;
+        --on-tertiary-container: 167 243 208;
+        --tertiary-fixed: 6 95 70;
+        --tertiary-fixed-dim: 4 120 87;
+        --on-tertiary-fixed: 209 250 229;
+        --on-tertiary-fixed-variant: 167 243 208;
+        --error: 251 113 133;
+        /* #fb7185 - controlled rose */
+        --on-error: 69 10 10;
+        --error-container: 69 10 10;
+        --on-error-container: 254 205 211;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root:not(.light) {
+            color-scheme: dark;
+            --background: 11 15 25;
+            --foreground: 241 245 249;
+            --card: 19 24 38;
+            --card-foreground: 241 245 249;
+            --popover: 19 24 38;
+            --popover-foreground: 241 245 249;
+            --primary-foreground: 15 23 42;
+            --secondary-foreground: 15 23 42;
+            --muted: 30 37 56;
+            --muted-foreground: 148 163 184;
+            --accent: 30 37 56;
+            --accent-foreground: 241 245 249;
+            --destructive: 251 113 133;
+            --border: rgb(51 65 85);
+            --input: rgb(51 65 85);
+            --ring: rgb(129 140 248);
+            --sidebar: 8 12 20;
+            --sidebar-foreground: 241 245 249;
+            --sidebar-primary: 129 140 248;
+            --sidebar-primary-foreground: 15 23 42;
+            --sidebar-accent: 24 30 46;
+            --sidebar-accent-foreground: 241 245 249;
+            --sidebar-border: rgb(38 46 69);
+            --sidebar-ring: rgb(129 140 248);
+
+            /* Material 3 & Writing Semantic Tokens - Dark Mode via System Prefers */
+            --surface: 11 15 25;
+            --surface-dim: 8 12 20;
+            --surface-bright: 19 24 38;
+            --surface-container-lowest: 19 24 38;
+            --surface-container-low: 24 30 46;
+            --surface-container: 30 37 56;
+            --surface-container-high: 38 46 69;
+            --surface-container-highest: 49 58 86;
+            --surface-variant: 38 46 69;
+            --on-surface: 241 245 249;
+            --on-surface-variant: 148 163 184;
+            --inverse-surface: 241 245 249;
+            --inverse-on-surface: 15 23 42;
+            --outline: 100 116 139;
+            --outline-variant: 51 65 85;
+            --surface-tint: 129 140 248;
+            --primary: 129 140 248;
+            --on-primary: 15 23 42;
+            --primary-container: 79 70 229;
+            --on-primary-container: 224 231 255;
+            --inverse-primary: 67 56 202;
+            --primary-fixed: 49 46 129;
+            --primary-fixed-dim: 55 48 163;
+            --on-primary-fixed: 224 231 255;
+            --on-primary-fixed-variant: 199 210 254;
+            --secondary: 167 139 250;
+            --on-secondary: 15 23 42;
+            --secondary-container: 109 40 217;
+            --on-secondary-container: 245 243 255;
+            --secondary-fixed: 59 29 130;
+            --secondary-fixed-dim: 76 29 149;
+            --on-secondary-fixed: 237 233 254;
+            --on-secondary-fixed-variant: 221 214 254;
+            --tertiary: 52 211 153;
+            --on-tertiary: 6 78 59;
+            --tertiary-container: 6 78 59;
+            --on-tertiary-container: 167 243 208;
+            --tertiary-fixed: 6 95 70;
+            --tertiary-fixed-dim: 4 120 87;
+            --on-tertiary-fixed: 209 250 229;
+            --on-tertiary-fixed-variant: 167 243 208;
+            --error: 251 113 133;
+            --on-error: 69 10 10;
+            --error-container: 69 10 10;
+            --on-error-container: 254 205 211;
+        }
+    }
+}
+
+@layer base {
+    * {
+        border-color: var(--border);
+        outline-color: var(--ring);
+    }
+
+    /* Quicksand is the one product typeface (owner choice 2026-10-15; `--font-quicksand` from app/layout.tsx).
+       Its Regular (400) is drawn with a light stroke, so running text without an explicit weight sits at 500;
+       `font-normal` still reaches 400 where a component asks for it. Headings get a touch of negative tracking
+       because the round letterforms set wide at display sizes. */
+    body {
+        background-color: rgb(var(--surface));
+        color: rgb(var(--on-surface));
+        font-family: var(--font-quicksand), Quicksand, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-weight: 500;
+        font-optical-sizing: auto;
+        text-rendering: optimizeLegibility;
+    }
+
+    /* Fields: one focus ring, drawn by the browser along the field's own rounded corners. A field drawn by a wrapper (search bars,
+       composers) shows focus on that wrapper instead and turns this off (outline: none on the inner control). */
+    :where(input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"], [type="color"], [type="hidden"]), textarea, select, [contenteditable="true"]):focus-visible {
+        outline: 2px solid rgb(var(--primary) / 0.55);
+        outline-offset: 2px;
+    }
+
+    /* Form controls do not inherit the page font by default. */
+    button,
+    input,
+    select,
+    textarea {
+        font-family: inherit;
+    }
+
+    h1,
+    h2,
+    h3 {
+        letter-spacing: -0.012em;
+        text-wrap: balance;
+    }
+
+    p {
+        text-wrap: pretty;
+    }
+}
+
+.bg-parchment-pattern {
+    background-color: rgb(var(--surface));
+    background-image: radial-gradient(rgba(44, 39, 32, 0.06) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.dark .bg-parchment-pattern {
+    background-color: rgb(var(--surface));
+    background-image: radial-gradient(rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.dot-canvas-bg {
+    background-color: rgb(var(--surface));
+    background-image: radial-gradient(#d6d3cb 1px, transparent 1px);
+    background-size: 18px 18px;
+}
+
+.dark .dot-canvas-bg {
+    background-color: rgb(var(--surface));
+    background-image: radial-gradient(rgba(148, 163, 184, 0.14) 1px, transparent 1px);
+    background-size: 18px 18px;
+}
+
+.ruled-canvas-line {
+    box-shadow: inset 3.5rem 0 0 0 rgba(225, 29, 72, 0.04), inset 3.55rem 0 0 0 rgba(225, 29, 72, 0.12);
+}
+
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page-transition-animate {
+    animation: pageFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/*
+ * View entry for routes and root tabs (navigation polish 2026-10-15). Opacity only and no fill mode: nothing slides or
+ * overshoots, the content is readable from the first frame (CSS runs before hydration), and once it ends the wrapper
+ * keeps neither a transform (fixed layers stay viewport-based) nor a stacking context (modals keep their z-index).
+ */
+@keyframes ecViewEnter {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.ec-view-enter {
+    animation: ecViewEnter 170ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ec-view-enter {
+        animation: none;
+    }
+}
+
+@keyframes gradient-x {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-gradient-x {
+    animation: gradient-x 3s ease infinite;
+    background-size: 200% 200%;
+}
+
+/* Reading Studio Typography & Utilities */
+/* The reading body keeps the learner's own Aa font choice (inline style, Georgia by default) for long-form comfort;
+   this rule only supplies the same default before that preference is read. */
+.font-reading {
+    font-family: Georgia, "Times New Roman", serif;
+    font-feature-settings: "kern", "liga", "clig", "calt";
+    text-rendering: optimizeLegibility;
+    line-height: 1.82;
+    letter-spacing: 0.005em;
+}
+
+.drop-cap::first-letter {
+    font-family: inherit;
+    font-size: 3.5rem;
+    font-weight: 700;
+    float: left;
+    margin-right: 0.75rem;
+    line-height: 0.85;
+    padding-top: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.35);
+    border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(148, 163, 184, 0.55);
+}
+
+/* Stitch Dashboard Styles */
+.hero-mesh-gradient {
+    background: linear-gradient(135deg, #4338ca 0%, #6366f1 35%, #7c3aed 70%, #9333ea 100%);
+    background-size: 200% 200%;
+}
+
+.hero-glow-blob {
+    filter: blur(60px);
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+.shadow-card-subtle {
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+}
+
+.shadow-card-hover {
+    box-shadow: 0 12px 30px -4px rgba(15, 23, 42, 0.1);
+}
+
+/* ─── Streak Flame Micro-Animation ─────────────────────────────────────── */
+@keyframes flameFlicker {
+
+    0%,
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 0.92;
+    }
+
+    25% {
+        transform: scale(1.04, 0.98) rotate(-1deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(0.98, 1.05) rotate(1deg);
+        opacity: 0.88;
+    }
+
+    75% {
+        transform: scale(1.03, 1.02) rotate(-0.5deg);
+        opacity: 0.98;
+    }
+}
+
+.streak-flame-icon {
+    display: inline-block;
+    transform-origin: 50% 85%;
+    will-change: transform, opacity;
+    filter: drop-shadow(0 0 3px rgba(249, 115, 22, 0.55));
+    animation: flameFlicker 2.2s ease-in-out infinite;
+    transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.streak-flame-icon:hover,
+*:hover>.streak-flame-icon {
+    filter: drop-shadow(0 0 6px rgba(249, 115, 22, 0.85)) brightness(1.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .streak-flame-icon {
+        animation: none !important;
+        transform: none !important;
+        filter: none !important;
+    }
+}
+
+/* ─── Role-Play Audio Waveform / Equalizer Micro-Animation ───────────────── */
+@keyframes roleplayEqualizer1 {
+
+    0%,
+    100% {
+        height: 4px;
+    }
+
+    50% {
+        height: 12px;
+    }
+}
+
+@keyframes roleplayEqualizer2 {
+
+    0%,
+    100% {
+        height: 12px;
+    }
+
+    50% {
+        height: 5px;
+    }
+}
+
+@keyframes roleplayEqualizer3 {
+
+    0%,
+    100% {
+        height: 6px;
+    }
+
+    50% {
+        height: 14px;
+    }
+}
+
+.rp-equalizer-bar-1 {
+    animation: roleplayEqualizer1 0.75s ease-in-out infinite;
+}
+
+.rp-equalizer-bar-2 {
+    animation: roleplayEqualizer2 0.75s ease-in-out infinite 0.18s;
+}
+
+.rp-equalizer-bar-3 {
+    animation: roleplayEqualizer3 0.75s ease-in-out infinite 0.36s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .rp-equalizer-bar-1,
+    .rp-equalizer-bar-2,
+    .rp-equalizer-bar-3 {
+        animation: none !important;
+        height: 8px !important;
+    }
+}
+
+/* ─── Premium UI Polish Styles ───────────────────────────────────────── */
+@keyframes premiumNavShimmer {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.premium-nav-btn {
+    background: linear-gradient(135deg, #1d4ed8 0%, #4338ca 40%, #d97706 85%, #f59e0b 100%);
+    background-size: 250% 250%;
+    animation: premiumNavShimmer 6s ease infinite;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.premium-nav-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px 0 rgba(79, 70, 229, 0.4), 0 0 8px 1px rgba(245, 158, 11, 0.35);
+    filter: brightness(1.08);
+}
+
+.premium-nav-btn:active {
+    transform: scale(0.97);
+}
+
+@keyframes badgeSubtlePulse {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35), 0 0 0 0 rgba(99, 102, 241, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 6px 16px rgba(245, 158, 11, 0.5), 0 0 0 3px rgba(99, 102, 241, 0.25);
+    }
+}
+
+.premium-badge-popular {
+    animation: badgeSubtlePulse 3s ease-in-out infinite;
+}
+
+@keyframes cardShineSweep {
+    0% {
+        transform: translateX(-150%) skewX(-20deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.25;
+    }
+
+    100% {
+        transform: translateX(250%) skewX(-20deg);
+        opacity: 0;
+    }
+}
+
+.premium-card-shine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    pointer-events: none;
+    opacity: 0;
+    z-index: 10;
+}
+
+.group:hover .premium-card-shine {
+    animation: cardShineSweep 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .premium-nav-btn {
+        animation: none !important;
+        background-position: 50% 50% !important;
+    }
+
+    .premium-badge-popular {
+        animation: none !important;
+    }
+
+    .premium-card-shine {
+        display: none !important;
+        animation: none !important;
+    }
+
+    /* reduced motion: the golden colour alone tells of unread notifications; the bell never moves */
+    .animate-bell-ring {
+        animation: none !important;
+    }
+}
+
+/* ─── Realtime Notification Bell Animation ─── */
+@keyframes bellSwingRing {
+    0% { transform: rotate(0); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-12deg); }
+    30% { transform: rotate(10deg); }
+    40% { transform: rotate(-8deg); }
+    50% { transform: rotate(6deg); }
+    60% { transform: rotate(-4deg); }
+    70% { transform: rotate(2deg); }
+    80% { transform: rotate(-1deg); }
+    90%, 100% { transform: rotate(0); }
+}
+
+@keyframes bellHighlightPulse {
+    0%, 100% {
+        filter: drop-shadow(0 0 0 transparent);
+    }
+    50% {
+        filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.9));
+    }
+}
+
+.animate-bell-ring {
+    transform-origin: top center;
+    animation: bellSwingRing 1.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.bell-highlight {
+    animation: bellHighlightPulse 1.2s ease-in-out both;
+}
+
+/* ─── Avatar Frame Prestige Micro-Animations ─────────────────────────── */
+@keyframes frameDragonBreathe {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+@keyframes frameDragonAura {
+    0%, 100% {
+        opacity: 0.45;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.85;
+        transform: scale(1.035);
+    }
+}
+
+@keyframes frameCelestialWingBreathe {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.94;
+    }
+    50% {
+        transform: scale(1.018);
+        opacity: 1;
+    }
+}
+
+@keyframes frameCelestialGleam {
+    0%, 100% {
+        opacity: 0.84;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.018);
+    }
+}
+
+@keyframes frameArcanePulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.88;
+    }
+    50% {
+        transform: scale(1.015);
+        opacity: 1;
+    }
+}
+
+@keyframes frameKnightSweep {
+    0%, 100% {
+        opacity: 0.86;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.012);
+    }
+}
+
+@keyframes frameFlameSubtlePulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.88;
+    }
+    50% {
+        transform: scale(1.015);
+        opacity: 1;
+    }
+}
+
+@keyframes frameMoteRise {
+    0% {
+        transform: translateY(0) scale(0.6);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.75;
+    }
+    80% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(-14px) scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes frameNaturePulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.88;
+    }
+    50% {
+        transform: scale(1.015);
+        opacity: 1;
+    }
+}
+
+@keyframes frameStormPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.88;
+    }
+    50% {
+        transform: scale(1.018);
+        opacity: 1;
+    }
+}
+
+@keyframes frameCelestialPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.88;
+    }
+    50% {
+        transform: scale(1.016);
+        opacity: 1;
+    }
+}
+
+@keyframes frameAncientPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.88;
+    }
+    50% {
+        transform: scale(1.014);
+        opacity: 1;
+    }
+}
+
+@keyframes framePrismSweep {
+    0%, 100% {
+        opacity: 0.86;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.012);
+    }
+}
+
+/* ── SSS Phoenix Rebirth Flagship Animations ── */
+@keyframes framePhoenixWingBreathe {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.026);
+        opacity: 1;
+    }
+}
+
+@keyframes framePhoenixAura {
+    0%, 100% {
+        transform: scale(1.6) rotate(0deg);
+        opacity: 0.55;
+    }
+    50% {
+        transform: scale(1.72) rotate(2deg);
+        opacity: 0.85;
+    }
+}
+
+/* ── Four Seasons Animations ── */
+@keyframes frameSpringBreathe {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.02);
+        opacity: 1;
+    }
+}
+
+@keyframes frameSpringAura {
+    0%, 100% {
+        transform: scale(1.22);
+        opacity: 0.35;
+    }
+    50% {
+        transform: scale(1.29);
+        opacity: 0.65;
+    }
+}
+
+@keyframes frameSummerRadiance {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.024);
+        opacity: 1;
+    }
+}
+
+@keyframes frameSummerAura {
+    0%, 100% {
+        transform: scale(1.24);
+        opacity: 0.4;
+    }
+    50% {
+        transform: scale(1.32);
+        opacity: 0.7;
+    }
+}
+
+@keyframes frameAutumnVortex {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.02);
+        opacity: 1;
+    }
+}
+
+@keyframes frameAutumnAura {
+    0%, 100% {
+        transform: scale(1.22);
+        opacity: 0.35;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 0.65;
+    }
+}
+
+@keyframes frameWinterFrost {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.022);
+        opacity: 1;
+    }
+}
+
+@keyframes frameWinterAura {
+    0%, 100% {
+        transform: scale(1.22);
+        opacity: 0.35;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 0.7;
+    }
+}
+
+/* ── Premium Sovereign Imperial Animations ── */
+@keyframes frameImperialSovereign {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.025);
+        opacity: 1;
+    }
+}
+
+@keyframes frameImperialAura {
+    0%, 100% {
+        transform: scale(1.4);
+        opacity: 0.45;
+    }
+    50% {
+        transform: scale(1.48);
+        opacity: 0.75;
+    }
+}
+
+/* ── Floating Feather / Petal / Flake / Spark Particle Animations ── */
+@keyframes frameFeatherDrift {
+    0% {
+        transform: translateY(0) rotate(0deg) scale(0.6);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.85;
+    }
+    80% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-16px) rotate(15deg) scale(1.05);
+        opacity: 0;
+    }
+}
+
+@keyframes framePetalSway {
+    0% {
+        transform: translateY(0) rotate(-10deg) scale(0.7);
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.8;
+    }
+    75% {
+        opacity: 0.65;
+    }
+    100% {
+        transform: translateY(-14px) rotate(20deg) scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes frameFlakeDescend {
+    0% {
+        transform: translateY(0) scale(0.6);
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.9;
+    }
+    80% {
+        opacity: 0.75;
+    }
+    100% {
+        transform: translateY(14px) scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes frameSparkBurst {
+    0% {
+        transform: scale(0.5) translate(0, 0);
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.9;
+    }
+    70% {
+        opacity: 0.75;
+    }
+    100% {
+        transform: scale(1.1) translate(4px, -12px);
+        opacity: 0;
+    }
+}
+
+.frame-anim-dragon {
+    animation: frameDragonBreathe 4.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    transform-origin: center center;
+}
+
+.frame-anim-dragon-aura {
+    filter: drop-shadow(0 0 9px rgba(234, 179, 8, 0.55)) drop-shadow(0 0 4px rgba(220, 38, 38, 0.45));
+    animation: frameDragonAura 3.6s ease-in-out infinite;
+    will-change: transform, opacity;
+}
+
+.frame-anim-phoenix {
+    filter: drop-shadow(0 0 10px rgba(249, 115, 22, 0.7)) drop-shadow(0 0 5px rgba(239, 68, 68, 0.6));
+    animation: framePhoenixWingBreathe 4.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    transform-origin: center center;
+    will-change: transform, opacity;
+}
+
+.frame-anim-phoenix-aura {
+    filter: blur(12px);
+    animation: framePhoenixAura 3.4s ease-in-out infinite;
+    will-change: transform, opacity;
+}
+
+.frame-anim-spring-breathe {
+    filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.6)) drop-shadow(0 0 3px rgba(244, 114, 182, 0.45));
+    animation: frameSpringBreathe 4.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    transform-origin: center center;
+    will-change: transform, opacity;
+}
+
+.frame-anim-spring-aura {
+    filter: blur(6px);
+    animation: frameSpringAura 3.8s ease-in-out infinite;
+    will-change: transform, opacity;
+}
+
+.frame-anim-summer-radiance {
+    filter: drop-shadow(0 0 9px rgba(245, 158, 11, 0.68)) drop-shadow(0 0 4px rgba(234, 88, 12, 0.55));
+    animation: frameSummerRadiance 4.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    transform-origin: center center;
+    will-change: transform, opacity;
+}
+
+.frame-anim-summer-aura {
+    filter: blur(7px);
+    animation: frameSummerAura 3.5s ease-in-out infinite;
+    will-change: transform, opacity;
+}
+
+.frame-anim-autumn-vortex {
+    filter: drop-shadow(0 0 8px rgba(217, 119, 6, 0.62)) drop-shadow(0 0 3px rgba(220, 38, 38, 0.5));
+    animation: frameAutumnVortex 4.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    transform-origin: center center;
+    will-change: transform, opacity;
+}
+
+.frame-anim-autumn-aura {
+    filter: blur(6px);
+    animation: frameAutumnAura 3.8s ease-in-out infinite;
+    will-change: transform, opacity;
+}
+
+.frame-anim-winter-frost {
+    filter: drop-shadow(0 0 9px rgba(56, 189, 248, 0.68)) drop-shadow(0 0 4px rgba(224, 242, 254, 0.6));
+    animation: frameWinterFrost 4.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    transform-origin: center center;
+    will-change: transform, opacity;
+}
+
+.frame-anim-winter-aura {
+    filter: blur(7px);
+    animation: frameWinterAura 4s ease-in-out infinite;
+    will-change: transform, opacity;
+}
+
+.frame-anim-imperial-sovereign {
+    filter: drop-shadow(0 0 11px rgba(245, 158, 11, 0.7)) drop-shadow(0 0 5px rgba(153, 27, 27, 0.55));
+    animation: frameImperialSovereign 4.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    transform-origin: center center;
+    will-change: transform, opacity;
+}
+
+.frame-anim-imperial-aura {
+    filter: blur(9px);
+    animation: frameImperialAura 3.6s ease-in-out infinite;
+    will-change: transform, opacity;
+}
+
+.frame-anim-celestial {
+    animation: frameCelestialWingBreathe 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    transform-origin: center center;
+}
+
+.frame-anim-celestial-gleam {
+    filter: drop-shadow(0 0 7px rgba(254, 240, 138, 0.55)) drop-shadow(0 0 2px rgba(255, 255, 255, 0.75));
+    animation: frameCelestialGleam 4s ease-in-out infinite;
+    will-change: transform, opacity;
+}
+
+.frame-anim-arcane {
+    filter: drop-shadow(0 0 7px rgba(168, 85, 247, 0.55));
+    animation: frameArcanePulse 4.2s ease-in-out infinite;
+    transform-origin: center center;
+    will-change: transform, opacity;
+}
+
+.frame-anim-nature-pulse {
+    filter: drop-shadow(0 0 7px rgba(16, 185, 129, 0.55)) drop-shadow(0 0 2px rgba(245, 158, 11, 0.4));
+    animation: frameNaturePulse 4.2s ease-in-out infinite;
+    transform-origin: center center;
+    will-change: transform, opacity;
+}
+
+.frame-anim-storm-pulse {
+    filter: drop-shadow(0 0 8px rgba(6, 182, 212, 0.58)) drop-shadow(0 0 3px rgba(234, 179, 8, 0.5));
+    animation: frameStormPulse 3.8s ease-in-out infinite;
+    transform-origin: center center;
+    will-change: transform, opacity;
+}
+
+.frame-anim-celestial-pulse {
+    filter: drop-shadow(0 0 7px rgba(56, 189, 248, 0.55)) drop-shadow(0 0 2px rgba(255, 255, 255, 0.7));
+    animation: frameCelestialPulse 4.5s ease-in-out infinite;
+    transform-origin: center center;
+    will-change: transform, opacity;
+}
+
+.frame-anim-ancient-pulse {
+    filter: drop-shadow(0 0 6px rgba(180, 83, 9, 0.52));
+    animation: frameAncientPulse 4.6s ease-in-out infinite;
+    transform-origin: center center;
+    will-change: transform, opacity;
+}
+
+.frame-anim-knight {
+    filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.5));
+    animation: frameKnightSweep 4s ease-in-out infinite;
+    will-change: transform, opacity;
+}
+
+.frame-anim-flame {
+    filter: drop-shadow(0 0 5px rgba(249, 115, 22, 0.55));
+    animation: frameFlameSubtlePulse 3.2s ease-in-out infinite;
+    transform-origin: center center;
+    will-change: transform, opacity;
+}
+
+.frame-anim-prism-sweep {
+    filter: drop-shadow(0 0 6px rgba(192, 132, 252, 0.5)) drop-shadow(0 0 3px rgba(125, 211, 252, 0.45));
+    animation: framePrismSweep 4s ease-in-out infinite;
+    will-change: transform, opacity;
+}
+
+.frame-mote-1 {
+    animation: frameMoteRise 3.6s ease-out infinite;
+}
+
+.frame-mote-2 {
+    animation: frameMoteRise 4.2s ease-out 1.2s infinite;
+}
+
+.frame-mote-3 {
+    animation: frameMoteRise 3.9s ease-out 2.1s infinite;
+}
+
+.frame-feather-mote-1 {
+    animation: frameFeatherDrift 3.4s ease-out infinite;
+}
+
+.frame-feather-mote-2 {
+    animation: frameFeatherDrift 4s ease-out 1.1s infinite;
+}
+
+.frame-feather-mote-3 {
+    animation: frameFeatherDrift 3.7s ease-out 2s infinite;
+}
+
+.frame-petal-mote-1 {
+    animation: framePetalSway 3.6s ease-out infinite;
+}
+
+.frame-petal-mote-2 {
+    animation: framePetalSway 4.2s ease-out 1.3s infinite;
+}
+
+.frame-petal-mote-3 {
+    animation: framePetalSway 3.8s ease-out 2.2s infinite;
+}
+
+.frame-flake-mote-1 {
+    animation: frameFlakeDescend 3.8s ease-in-out infinite;
+}
+
+.frame-flake-mote-2 {
+    animation: frameFlakeDescend 4.4s ease-in-out 1.2s infinite;
+}
+
+.frame-flake-mote-3 {
+    animation: frameFlakeDescend 4.1s ease-in-out 2.1s infinite;
+}
+
+.frame-spark-mote-1 {
+    animation: frameSparkBurst 3.2s ease-out infinite;
+}
+
+.frame-spark-mote-2 {
+    animation: frameSparkBurst 3.8s ease-out 1.2s infinite;
+}
+
+.frame-spark-mote-3 {
+    animation: frameSparkBurst 3.5s ease-out 2s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .frame-anim-dragon,
+    .frame-anim-dragon-aura,
+    .frame-anim-phoenix,
+    .frame-anim-phoenix-aura,
+    .frame-anim-spring-breathe,
+    .frame-anim-spring-aura,
+    .frame-anim-summer-radiance,
+    .frame-anim-summer-aura,
+    .frame-anim-autumn-vortex,
+    .frame-anim-autumn-aura,
+    .frame-anim-winter-frost,
+    .frame-anim-winter-aura,
+    .frame-anim-imperial-sovereign,
+    .frame-anim-imperial-aura,
+    .frame-anim-celestial,
+    .frame-anim-celestial-gleam,
+    .frame-anim-arcane,
+    .frame-anim-nature-pulse,
+    .frame-anim-storm-pulse,
+    .frame-anim-celestial-pulse,
+    .frame-anim-ancient-pulse,
+    .frame-anim-knight,
+    .frame-anim-flame,
+    .frame-anim-prism-sweep,
+    .frame-mote-1,
+    .frame-mote-2,
+    .frame-mote-3,
+    .frame-feather-mote-1,
+    .frame-feather-mote-2,
+    .frame-feather-mote-3,
+    .frame-petal-mote-1,
+    .frame-petal-mote-2,
+    .frame-petal-mote-3,
+    .frame-flake-mote-1,
+    .frame-flake-mote-2,
+    .frame-flake-mote-3,
+    .frame-spark-mote-1,
+    .frame-spark-mote-2,
+    .frame-spark-mote-3 {
+        animation: none !important;
+        transform: none !important;
+        filter: none !important;
+    }
+
+    [class*="animate-[chibi-"] {
+        animation: none !important;
+        transform: none !important;
+        filter: none !important;
+    }
+}
+
+/* ─── Community Chibi Reaction Micro-Animations ─── */
+@keyframes chibi-love {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.12); }
+}
+
+@keyframes chibi-haha {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-3px) rotate(-6deg); }
+    75% { transform: translateY(-3px) rotate(6deg); }
+}
+
+@keyframes chibi-punch {
+    0%, 100% { transform: translateY(0) scale(1); }
+    40% { transform: translateY(-4px) scale(1.08); }
+    60% { transform: translateY(-1px) scale(0.98); }
+}
+
+@keyframes chibi-sad {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(2px) scale(0.96); }
+}
+
+@keyframes chibi-bulb {
+    0%, 100% { transform: scale(1); filter: drop-shadow(0 0 2px rgba(250, 204, 21, 0.4)); }
+    50% { transform: scale(1.08); filter: drop-shadow(0 0 6px rgba(250, 204, 21, 0.8)); }
+}
+
+@keyframes chibi-wow {
+    0%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-3px) scale(1.05); }
+}
+
+@keyframes chibi-wobble {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-8deg); }
+    75% { transform: rotate(8deg); }
+}
+
+@keyframes chibi-shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-1.5px); }
+    75% { transform: translateX(1.5px); }
+}
+
+@keyframes chibi-clap {
+    0%, 100% { transform: scale(1); }
+    30% { transform: scale(0.9) rotate(-4deg); }
+    60% { transform: scale(1.1) rotate(4deg); }
+}
+
+@keyframes chibi-fire {
+    0%, 100% { transform: scale(1) translateY(0); }
+    50% { transform: scale(1.06, 1.1) translateY(-2px); }
+}
+
+@keyframes chibi-tilt {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(8deg) translateY(-1px); }
+}
+
+@keyframes chibi-celebrate {
+    0%, 100% { transform: rotate(0deg) scale(1); }
+    30% { transform: rotate(-10deg) scale(1.08); }
+    70% { transform: rotate(10deg) scale(1.04); }
+}
+
+/* Hangman layout and alphabet tokens. The layered scene owns its scoped motion stylesheet. */
+.hm-lobby { position: relative; isolation: isolate; background: linear-gradient(135deg, #effcf7 0%, #dff8f3 52%, #c8edf0 100%); box-shadow: 0 24px 70px -44px #176078; }
+.hm-lobby::before, .hm-lobby::after { content: ''; position: absolute; border-radius: 999px; filter: blur(2px); pointer-events: none; }
+.hm-lobby::before { width: 19rem; height: 19rem; right: -5rem; top: -8rem; background: #ffd56866; }
+.hm-lobby::after { width: 14rem; height: 14rem; left: -5rem; bottom: -8rem; background: #65c5c766; }
+.hm-lobby-glow { position: absolute; inset: auto 8% 12% auto; width: 8rem; height: 8rem; border-radius: 50%; background: #fff8d9aa; filter: blur(20px); pointer-events: none; }
+.hm-key { box-shadow: 0 3px 0 #173b52; }
+.hm-key:active { transform: translateY(2px); box-shadow: 0 1px 0 #173b52; }
+.hm-key-prefilled { border-color: #247f79; background: #bfe6df; color: #155d5a; box-shadow: 0 3px 0 #247f79; }
+.hm-key-hinted { border-color: #aa7f2c; background: #ffe9a7; color: #704f08; box-shadow: 0 3px 0 #aa7f2c; }
+.hm-key-correct { border-color: #218e74; background: #d0f4df; color: #176044; box-shadow: 0 3px 0 #218e74; }
+.hm-key-wrong { border-color: #c56b5e; background: #ffd6c4; color: #8a3e39; box-shadow: 0 3px 0 #c56b5e; }
+@media (max-width: 639px) {
+  body:has([data-hangman-route]) [data-purpose="main-navigation-sidebar"],
+  body:has([data-hangman-route]) .echo-launcher,
+  body:has([data-hangman-route]) .echo-discovery { display: none; }
+}
+@media (max-width: 380px) {
+  .hm-page { padding-inline: .65rem; }
+  .hm-key { width: 2rem; height: 2.25rem; font-size: .95rem; }
+  .hm-word-slots { gap: .375rem; }
+  .hm-word-slot { min-width: 1.5rem; font-size: 1.35rem; }
+}
+@media (prefers-reduced-motion: reduce) { .hm-key, .hm-lobby { transition: none; } }
+
+
+/* ─── Echo Ocean atmosphere (owner brief 2026-11-14) ───
+ * The workspace frame paints the Pearl × Abyss atmosphere (components/atmosphere) instead of a flat colour. The same PAGE-LEVEL
+ * wrappers the wallpaper rule lets through (full-height `bg-surface` shells) let the atmosphere through as well, from the first
+ * paint (the attribute is in the frame's server markup). The atmosphere stays in the surface's own luminance band, so nothing
+ * that sat on those shells loses contrast; cards, inputs, dialogs, readers and modules with their own page sky keep their
+ * backgrounds. Study Space and the standalone routes have no such frame and are not affected. */
+[data-atmosphere-frame] main[data-app-scroll] .bg-surface:is(.min-h-full, .h-full, .min-h-screen, .min-h-64) {
+    background-color: transparent;
+}
+
+/* ─── Hình nền (wallpapers) — one rule set for every workspace module ───
+ * Set by WallpaperStage only while a wallpaper is really on screen. The workspace scroll area and the PAGE-LEVEL
+ * wrappers (full-height `bg-surface` shells of the root tabs, Listening, Speaking, Writing; the Games fallbacks) let
+ * the wallpaper through; cards, inputs, dialogs, readers and practice surfaces keep their own backgrounds. No blur,
+ * no `!important`: these selectors simply out-rank the single `.bg-surface` utility. The veil lives in the stage. */
+html[data-wallpaper] main[data-app-scroll],
+html[data-wallpaper] main[data-app-scroll] .bg-surface:is(.min-h-full, .h-full, .min-h-screen, .min-h-64) {
+    background-color: transparent;
+}
+/* Light "glass" cards (a pale tint at 40–90 % alpha, exact class tokens only — never hover:/dark: variants or the
+ * bg-white/10–25 chips of dark heroes) get a near-solid pearl base over a wallpaper, so their small text keeps its
+ * contrast on any scene. Dark-theme surfaces are dark-on-dark under the ink veil and stay as designed. */
+html[data-wallpaper]:not(.dark) main[data-app-scroll] :is(
+    [class~="bg-white/40"], [class~="bg-white/50"], [class~="bg-white/60"], [class~="bg-white/70"], [class~="bg-white/75"], [class~="bg-white/80"],
+    [class~="bg-slate-50/40"], [class~="bg-slate-50/50"], [class~="bg-slate-50/60"], [class~="bg-slate-50/70"], [class~="bg-slate-50/80"], [class~="bg-slate-50/90"],
+    [class~="bg-gray-50/50"], [class~="bg-gray-50/60"], [class~="bg-gray-50/70"], [class~="bg-gray-50/80"],
+    [class~="bg-indigo-50/30"], [class~="bg-indigo-50/40"], [class~="bg-indigo-50/50"],
+    [class~="bg-purple-50/40"], [class~="bg-amber-50/40"], [class~="bg-sky-50/40"], [class~="bg-emerald-50/40"], [class~="bg-blue-50/40"], [class~="bg-indigo-50/60"], [class~="bg-indigo-50/70"], [class~="bg-indigo-50/80"],
+    [class~="bg-sky-50/50"], [class~="bg-sky-50/60"], [class~="bg-sky-50/70"], [class~="bg-sky-50/80"],
+    [class~="bg-blue-50/50"], [class~="bg-blue-50/60"], [class~="bg-blue-50/70"], [class~="bg-blue-50/80"],
+    [class~="bg-purple-50/50"], [class~="bg-purple-50/60"], [class~="bg-purple-50/70"], [class~="bg-violet-50/60"], [class~="bg-violet-50/70"],
+    [class~="bg-emerald-50/50"], [class~="bg-emerald-50/60"], [class~="bg-emerald-50/70"], [class~="bg-emerald-50/80"],
+    [class~="bg-amber-50/50"], [class~="bg-amber-50/60"], [class~="bg-amber-50/70"], [class~="bg-amber-50/80"],
+    [class~="bg-rose-50/60"], [class~="bg-rose-50/70"], [class~="bg-cyan-50/60"], [class~="bg-cyan-50/70"], [class~="bg-teal-50/60"], [class~="bg-teal-50/70"]
+) {
+    background-color: rgb(252 253 255 / 0.93);
+}
+/* Reading plate: page-level text that sits straight on the scene (section headings, page leads) carries `.ec-wp-plate`.
+ * Over a wallpaper it gets a small surface of the app's own colour BEHIND it (a pseudo-element: no layout change, no
+ * margin or padding touched); without a wallpaper the class does nothing. Local, not a full-screen wash. */
+html[data-wallpaper] main[data-app-scroll] .ec-wp-plate {
+    position: relative;
+    isolation: isolate;
+}
+html[data-wallpaper] main[data-app-scroll] .ec-wp-plate::before {
+    content: "";
+    position: absolute;
+    inset: -0.375rem -0.75rem;
+    z-index: -1;
+    border-radius: 0.875rem;
+    background-color: rgb(var(--surface));
+    box-shadow: 0 0 0 1px rgb(255 255 255 / 0.7) inset, 0 14px 34px -26px rgb(15 23 42 / 0.55);
+    pointer-events: none;
+}
+html.dark[data-wallpaper] main[data-app-scroll] .ec-wp-plate::before {
+    background-color: rgb(var(--surface));
+    box-shadow: 0 0 0 1px rgb(255 255 255 / 0.06) inset, 0 14px 34px -26px rgb(0 0 0 / 0.7);
+}
+/* Dark theme: a translucent dark card (exact `dark:bg-*` class tokens below — dark neutrals 700–950 and colour 800–950 at
+ * 20–95 %, the faint white glass of 2–8 %, dark arbitrary colours) is composited over the app's own surface instead of the
+ * scene, i.e. it looks exactly as it does without a wallpaper, so its small grey text keeps its plain-app contrast over
+ * bright scenes. The tint is kept (`--ec-wp-tint`, the token's own colour). Overlays / positioned layers and gradient
+ * surfaces are left alone. Generated from the class tokens in use (2026-10-19); a new translucent dark card token is added here. */
+html.dark[data-wallpaper] main[data-app-scroll] :is(
+    [class~="dark:bg-[#0a1230]/70"],
+    [class~="dark:bg-[#0a1230]/95"],
+    [class~="dark:bg-[#0c0f1d]/95"],
+    [class~="dark:bg-[#0c1530]/80"],
+    [class~="dark:bg-[#0E131F]/60"],
+    [class~="dark:bg-[#0E131F]/95"],
+    [class~="dark:bg-[#0E1527]/90"],
+    [class~="dark:bg-[#0e1729]/70"],
+    [class~="dark:bg-amber-900/20"],
+    [class~="dark:bg-amber-900/30"],
+    [class~="dark:bg-amber-900/40"],
+    [class~="dark:bg-amber-900/50"],
+    [class~="dark:bg-amber-900/60"],
+    [class~="dark:bg-amber-900/80"],
+    [class~="dark:bg-amber-950/20"],
+    [class~="dark:bg-amber-950/30"],
+    [class~="dark:bg-amber-950/40"],
+    [class~="dark:bg-amber-950/50"],
+    [class~="dark:bg-amber-950/60"],
+    [class~="dark:bg-amber-950/70"],
+    [class~="dark:bg-blue-900/40"],
+    [class~="dark:bg-blue-900/60"],
+    [class~="dark:bg-blue-950/20"],
+    [class~="dark:bg-blue-950/30"],
+    [class~="dark:bg-blue-950/40"],
+    [class~="dark:bg-blue-950/50"],
+    [class~="dark:bg-blue-950/60"],
+    [class~="dark:bg-blue-950/80"],
+    [class~="dark:bg-cyan-950/60"],
+    [class~="dark:bg-cyan-950/70"],
+    [class~="dark:bg-cyan-950/80"],
+    [class~="dark:bg-emerald-900/40"],
+    [class~="dark:bg-emerald-900/50"],
+    [class~="dark:bg-emerald-900/60"],
+    [class~="dark:bg-emerald-900/80"],
+    [class~="dark:bg-emerald-950/20"],
+    [class~="dark:bg-emerald-950/30"],
+    [class~="dark:bg-emerald-950/40"],
+    [class~="dark:bg-emerald-950/50"],
+    [class~="dark:bg-emerald-950/60"],
+    [class~="dark:bg-emerald-950/70"],
+    [class~="dark:bg-emerald-950/80"],
+    [class~="dark:bg-gray-700/50"],
+    [class~="dark:bg-gray-700/60"],
+    [class~="dark:bg-gray-800/40"],
+    [class~="dark:bg-gray-800/60"],
+    [class~="dark:bg-gray-800/70"],
+    [class~="dark:bg-gray-800/80"],
+    [class~="dark:bg-gray-800/90"],
+    [class~="dark:bg-gray-800/95"],
+    [class~="dark:bg-gray-900/30"],
+    [class~="dark:bg-gray-900/40"],
+    [class~="dark:bg-gray-900/50"],
+    [class~="dark:bg-gray-900/60"],
+    [class~="dark:bg-gray-900/70"],
+    [class~="dark:bg-gray-900/80"],
+    [class~="dark:bg-gray-900/90"],
+    [class~="dark:bg-indigo-900/40"],
+    [class~="dark:bg-indigo-900/50"],
+    [class~="dark:bg-indigo-900/60"],
+    [class~="dark:bg-indigo-900/80"],
+    [class~="dark:bg-indigo-950/20"],
+    [class~="dark:bg-indigo-950/30"],
+    [class~="dark:bg-indigo-950/40"],
+    [class~="dark:bg-indigo-950/50"],
+    [class~="dark:bg-indigo-950/60"],
+    [class~="dark:bg-indigo-950/70"],
+    [class~="dark:bg-indigo-950/80"],
+    [class~="dark:bg-orange-900/50"],
+    [class~="dark:bg-orange-950/30"],
+    [class~="dark:bg-orange-950/60"],
+    [class~="dark:bg-orange-950/80"],
+    [class~="dark:bg-pink-950/80"],
+    [class~="dark:bg-purple-900/50"],
+    [class~="dark:bg-purple-900/60"],
+    [class~="dark:bg-purple-900/80"],
+    [class~="dark:bg-purple-950/30"],
+    [class~="dark:bg-purple-950/40"],
+    [class~="dark:bg-purple-950/50"],
+    [class~="dark:bg-purple-950/60"],
+    [class~="dark:bg-purple-950/70"],
+    [class~="dark:bg-purple-950/80"],
+    [class~="dark:bg-red-900/40"],
+    [class~="dark:bg-red-950/40"],
+    [class~="dark:bg-red-950/50"],
+    [class~="dark:bg-red-950/60"],
+    [class~="dark:bg-rose-900/40"],
+    [class~="dark:bg-rose-950/20"],
+    [class~="dark:bg-rose-950/30"],
+    [class~="dark:bg-rose-950/40"],
+    [class~="dark:bg-rose-950/50"],
+    [class~="dark:bg-rose-950/60"],
+    [class~="dark:bg-rose-950/70"],
+    [class~="dark:bg-sky-900/30"],
+    [class~="dark:bg-sky-900/50"],
+    [class~="dark:bg-sky-900/60"],
+    [class~="dark:bg-sky-950/30"],
+    [class~="dark:bg-sky-950/40"],
+    [class~="dark:bg-sky-950/70"],
+    [class~="dark:bg-sky-950/80"],
+    [class~="dark:bg-slate-800/20"],
+    [class~="dark:bg-slate-800/40"],
+    [class~="dark:bg-slate-800/50"],
+    [class~="dark:bg-slate-800/60"],
+    [class~="dark:bg-slate-800/70"],
+    [class~="dark:bg-slate-800/80"],
+    [class~="dark:bg-slate-800/90"],
+    [class~="dark:bg-slate-900/30"],
+    [class~="dark:bg-slate-900/40"],
+    [class~="dark:bg-slate-900/50"],
+    [class~="dark:bg-slate-900/60"],
+    [class~="dark:bg-slate-900/70"],
+    [class~="dark:bg-slate-900/80"],
+    [class~="dark:bg-slate-900/90"],
+    [class~="dark:bg-slate-950/60"],
+    [class~="dark:bg-slate-950/95"],
+    [class~="dark:bg-violet-900/60"],
+    [class~="dark:bg-violet-950/40"],
+    [class~="dark:bg-violet-950/50"],
+    [class~="dark:bg-violet-950/70"],
+    [class~="dark:bg-white/[0.015]"],
+    [class~="dark:bg-white/[0.02]"],
+    [class~="dark:bg-white/[0.03]"],
+    [class~="dark:bg-white/[0.04]"],
+    [class~="dark:bg-white/[0.05]"],
+    [class~="dark:bg-white/[0.06]"],
+    [class~="dark:bg-white/[0.07]"],
+    [class~="dark:bg-white/[0.08]"],
+    [class~="dark:bg-white/5"],
+    [class~="dark:bg-yellow-950/30"],
+    [class~="dark:bg-yellow-950/80"]
+):not(.fixed, .absolute, [class*="bg-gradient"], [class*="bg-[url"]) {
+    background-color: rgb(var(--surface) / 0.96);
+    background-image: linear-gradient(var(--ec-wp-tint), var(--ec-wp-tint));
+}
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-[#0a1230]/70"] { --ec-wp-tint: rgb(10 18 48 / 0.7); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-[#0a1230]/95"] { --ec-wp-tint: rgb(10 18 48 / 0.95); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-[#0c0f1d]/95"] { --ec-wp-tint: rgb(12 15 29 / 0.95); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-[#0c1530]/80"] { --ec-wp-tint: rgb(12 21 48 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-[#0E131F]/60"] { --ec-wp-tint: rgb(14 19 31 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-[#0E131F]/95"] { --ec-wp-tint: rgb(14 19 31 / 0.95); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-[#0E1527]/90"] { --ec-wp-tint: rgb(14 21 39 / 0.9); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-[#0e1729]/70"] { --ec-wp-tint: rgb(14 23 41 / 0.7); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-amber-900/20"] { --ec-wp-tint: rgb(120 53 15 / 0.2); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-amber-900/30"] { --ec-wp-tint: rgb(120 53 15 / 0.3); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-amber-900/40"] { --ec-wp-tint: rgb(120 53 15 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-amber-900/50"] { --ec-wp-tint: rgb(120 53 15 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-amber-900/60"] { --ec-wp-tint: rgb(120 53 15 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-amber-900/80"] { --ec-wp-tint: rgb(120 53 15 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-amber-950/20"] { --ec-wp-tint: rgb(69 26 3 / 0.2); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-amber-950/30"] { --ec-wp-tint: rgb(69 26 3 / 0.3); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-amber-950/40"] { --ec-wp-tint: rgb(69 26 3 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-amber-950/50"] { --ec-wp-tint: rgb(69 26 3 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-amber-950/60"] { --ec-wp-tint: rgb(69 26 3 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-amber-950/70"] { --ec-wp-tint: rgb(69 26 3 / 0.7); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-blue-900/40"] { --ec-wp-tint: rgb(30 58 138 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-blue-900/60"] { --ec-wp-tint: rgb(30 58 138 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-blue-950/20"] { --ec-wp-tint: rgb(23 37 84 / 0.2); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-blue-950/30"] { --ec-wp-tint: rgb(23 37 84 / 0.3); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-blue-950/40"] { --ec-wp-tint: rgb(23 37 84 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-blue-950/50"] { --ec-wp-tint: rgb(23 37 84 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-blue-950/60"] { --ec-wp-tint: rgb(23 37 84 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-blue-950/80"] { --ec-wp-tint: rgb(23 37 84 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-cyan-950/60"] { --ec-wp-tint: rgb(8 51 68 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-cyan-950/70"] { --ec-wp-tint: rgb(8 51 68 / 0.7); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-cyan-950/80"] { --ec-wp-tint: rgb(8 51 68 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-emerald-900/40"] { --ec-wp-tint: rgb(6 78 59 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-emerald-900/50"] { --ec-wp-tint: rgb(6 78 59 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-emerald-900/60"] { --ec-wp-tint: rgb(6 78 59 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-emerald-900/80"] { --ec-wp-tint: rgb(6 78 59 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-emerald-950/20"] { --ec-wp-tint: rgb(2 44 34 / 0.2); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-emerald-950/30"] { --ec-wp-tint: rgb(2 44 34 / 0.3); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-emerald-950/40"] { --ec-wp-tint: rgb(2 44 34 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-emerald-950/50"] { --ec-wp-tint: rgb(2 44 34 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-emerald-950/60"] { --ec-wp-tint: rgb(2 44 34 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-emerald-950/70"] { --ec-wp-tint: rgb(2 44 34 / 0.7); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-emerald-950/80"] { --ec-wp-tint: rgb(2 44 34 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-gray-700/50"] { --ec-wp-tint: rgb(55 65 81 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-gray-700/60"] { --ec-wp-tint: rgb(55 65 81 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-gray-800/40"] { --ec-wp-tint: rgb(31 41 55 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-gray-800/60"] { --ec-wp-tint: rgb(31 41 55 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-gray-800/70"] { --ec-wp-tint: rgb(31 41 55 / 0.7); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-gray-800/80"] { --ec-wp-tint: rgb(31 41 55 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-gray-800/90"] { --ec-wp-tint: rgb(31 41 55 / 0.9); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-gray-800/95"] { --ec-wp-tint: rgb(31 41 55 / 0.95); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-gray-900/30"] { --ec-wp-tint: rgb(17 24 39 / 0.3); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-gray-900/40"] { --ec-wp-tint: rgb(17 24 39 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-gray-900/50"] { --ec-wp-tint: rgb(17 24 39 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-gray-900/60"] { --ec-wp-tint: rgb(17 24 39 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-gray-900/70"] { --ec-wp-tint: rgb(17 24 39 / 0.7); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-gray-900/80"] { --ec-wp-tint: rgb(17 24 39 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-gray-900/90"] { --ec-wp-tint: rgb(17 24 39 / 0.9); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-indigo-900/40"] { --ec-wp-tint: rgb(49 46 129 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-indigo-900/50"] { --ec-wp-tint: rgb(49 46 129 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-indigo-900/60"] { --ec-wp-tint: rgb(49 46 129 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-indigo-900/80"] { --ec-wp-tint: rgb(49 46 129 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-indigo-950/20"] { --ec-wp-tint: rgb(30 27 75 / 0.2); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-indigo-950/30"] { --ec-wp-tint: rgb(30 27 75 / 0.3); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-indigo-950/40"] { --ec-wp-tint: rgb(30 27 75 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-indigo-950/50"] { --ec-wp-tint: rgb(30 27 75 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-indigo-950/60"] { --ec-wp-tint: rgb(30 27 75 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-indigo-950/70"] { --ec-wp-tint: rgb(30 27 75 / 0.7); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-indigo-950/80"] { --ec-wp-tint: rgb(30 27 75 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-orange-900/50"] { --ec-wp-tint: rgb(124 45 18 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-orange-950/30"] { --ec-wp-tint: rgb(67 20 7 / 0.3); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-orange-950/60"] { --ec-wp-tint: rgb(67 20 7 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-orange-950/80"] { --ec-wp-tint: rgb(67 20 7 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-pink-950/80"] { --ec-wp-tint: rgb(80 7 36 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-purple-900/50"] { --ec-wp-tint: rgb(88 28 135 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-purple-900/60"] { --ec-wp-tint: rgb(88 28 135 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-purple-900/80"] { --ec-wp-tint: rgb(88 28 135 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-purple-950/30"] { --ec-wp-tint: rgb(59 7 100 / 0.3); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-purple-950/40"] { --ec-wp-tint: rgb(59 7 100 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-purple-950/50"] { --ec-wp-tint: rgb(59 7 100 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-purple-950/60"] { --ec-wp-tint: rgb(59 7 100 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-purple-950/70"] { --ec-wp-tint: rgb(59 7 100 / 0.7); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-purple-950/80"] { --ec-wp-tint: rgb(59 7 100 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-red-900/40"] { --ec-wp-tint: rgb(127 29 29 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-red-950/40"] { --ec-wp-tint: rgb(69 10 10 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-red-950/50"] { --ec-wp-tint: rgb(69 10 10 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-red-950/60"] { --ec-wp-tint: rgb(69 10 10 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-rose-900/40"] { --ec-wp-tint: rgb(136 19 55 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-rose-950/20"] { --ec-wp-tint: rgb(76 5 25 / 0.2); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-rose-950/30"] { --ec-wp-tint: rgb(76 5 25 / 0.3); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-rose-950/40"] { --ec-wp-tint: rgb(76 5 25 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-rose-950/50"] { --ec-wp-tint: rgb(76 5 25 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-rose-950/60"] { --ec-wp-tint: rgb(76 5 25 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-rose-950/70"] { --ec-wp-tint: rgb(76 5 25 / 0.7); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-sky-900/30"] { --ec-wp-tint: rgb(12 74 110 / 0.3); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-sky-900/50"] { --ec-wp-tint: rgb(12 74 110 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-sky-900/60"] { --ec-wp-tint: rgb(12 74 110 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-sky-950/30"] { --ec-wp-tint: rgb(8 47 73 / 0.3); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-sky-950/40"] { --ec-wp-tint: rgb(8 47 73 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-sky-950/70"] { --ec-wp-tint: rgb(8 47 73 / 0.7); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-sky-950/80"] { --ec-wp-tint: rgb(8 47 73 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-slate-800/20"] { --ec-wp-tint: rgb(30 41 59 / 0.2); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-slate-800/40"] { --ec-wp-tint: rgb(30 41 59 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-slate-800/50"] { --ec-wp-tint: rgb(30 41 59 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-slate-800/60"] { --ec-wp-tint: rgb(30 41 59 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-slate-800/70"] { --ec-wp-tint: rgb(30 41 59 / 0.7); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-slate-800/80"] { --ec-wp-tint: rgb(30 41 59 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-slate-800/90"] { --ec-wp-tint: rgb(30 41 59 / 0.9); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-slate-900/30"] { --ec-wp-tint: rgb(15 23 42 / 0.3); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-slate-900/40"] { --ec-wp-tint: rgb(15 23 42 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-slate-900/50"] { --ec-wp-tint: rgb(15 23 42 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-slate-900/60"] { --ec-wp-tint: rgb(15 23 42 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-slate-900/70"] { --ec-wp-tint: rgb(15 23 42 / 0.7); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-slate-900/80"] { --ec-wp-tint: rgb(15 23 42 / 0.8); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-slate-900/90"] { --ec-wp-tint: rgb(15 23 42 / 0.9); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-slate-950/60"] { --ec-wp-tint: rgb(2 6 23 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-slate-950/95"] { --ec-wp-tint: rgb(2 6 23 / 0.95); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-violet-900/60"] { --ec-wp-tint: rgb(76 29 149 / 0.6); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-violet-950/40"] { --ec-wp-tint: rgb(46 16 101 / 0.4); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-violet-950/50"] { --ec-wp-tint: rgb(46 16 101 / 0.5); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-violet-950/70"] { --ec-wp-tint: rgb(46 16 101 / 0.7); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-white/[0.015]"] { --ec-wp-tint: rgb(255 255 255 / 0.015); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-white/[0.02]"] { --ec-wp-tint: rgb(255 255 255 / 0.02); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-white/[0.03]"] { --ec-wp-tint: rgb(255 255 255 / 0.03); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-white/[0.04]"] { --ec-wp-tint: rgb(255 255 255 / 0.04); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-white/[0.05]"] { --ec-wp-tint: rgb(255 255 255 / 0.05); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-white/[0.06]"] { --ec-wp-tint: rgb(255 255 255 / 0.06); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-white/[0.07]"] { --ec-wp-tint: rgb(255 255 255 / 0.07); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-white/[0.08]"] { --ec-wp-tint: rgb(255 255 255 / 0.08); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-white/5"] { --ec-wp-tint: rgb(255 255 255 / 0.05); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-yellow-950/30"] { --ec-wp-tint: rgb(66 32 6 / 0.3); }
+html.dark[data-wallpaper] main[data-app-scroll] [class~="dark:bg-yellow-950/80"] { --ec-wp-tint: rgb(66 32 6 / 0.8); }
+
+/* A page loaded in the middle of a journey (10 §BK): the same water as the passage, from the first paint. It clears itself even if the app's code never runs. */
+html[data-journey-boot] body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  pointer-events: none;
+  background:
+    radial-gradient(90% 70% at 50% 42%, rgb(112 216 255 / 0.5), rgb(112 216 255 / 0) 62%),
+    linear-gradient(180deg, #0b4fc0 0%, #0a3aa8 40%, #05206f 100%);
+  animation: ec-journey-boot-out 400ms ease 9s forwards;
+}
+html.dark[data-journey-boot] body::after {
+  background:
+    radial-gradient(90% 70% at 50% 42%, rgb(70 120 230 / 0.42), rgb(70 120 230 / 0) 62%),
+    linear-gradient(180deg, #071a58 0%, #050e38 45%, #030722 100%);
+}
+@keyframes ec-journey-boot-out { to { opacity: 0; visibility: hidden; } }

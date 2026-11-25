@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s165-two-kinds-of-only",
+  "title": "Chỉ một mái nhà",
+  "summary": "Một bức ảnh chụp được đúng một mái nhà còn nguyên sau trận gió. Chỉ nửa con phố nằm trong khung.",
+  "level": "B2",
+  "topics": [
+    "focus-adverbs"
+  ],
+  "scene": "newsroom",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Linh",
+      "role": "Phóng viên trực đêm"
+    },
+    {
+      "id": "b",
+      "name": "Ari",
+      "role": "Biên tập viên"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Phóng viên khác định viết đây là mái nhà duy nhất còn nguyên cả phố. Linh nhận ra mép ảnh dừng ở cửa hiệu số 12 trong khi phố còn dài.",
+      "say": [
+        {
+          "who": "a",
+          "en": "There are houses beyond the edge.",
+          "vi": "Ngoài mép ảnh vẫn còn nhà."
+        },
+        {
+          "who": "b",
+          "en": "Tell me what the photograph actually includes.",
+          "vi": "Nói rõ tấm ảnh thật sự thu được gì đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Đặt phạm vi khẳng định vào tấm ảnh hoặc vào toàn con phố.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Only one intact roof is visible in this photograph.",
+            "note": "In this photograph giới hạn việc đếm vào khung ảnh. Only one mô tả số mái nguyên nhìn thấy.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Only one roof on the street survived.",
+            "note": "On the street mở rộng phạm vi tới cả con đường. Ảnh nửa phố không cho phép kết luận về các nhà ngoài khung.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Ari in bản đồ nhỏ có mảng tô đúng đoạn đã chụp. Người đọc ở đầu kia phố gửi thêm ảnh hai mái còn nguyên.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We can finally see past number twelve.",
+          "vi": "Cuối cùng ta đã nhìn được qua khỏi số mười hai."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Hai nửa phố xuất hiện cạnh nhau trong số sau. Bản đồ cũ vẫn hữu ích vì người xem biết tấm đầu kết thúc ở đâu.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Linh đi bộ qua cửa số 12. Dưới mái còn nguyên ở số 14, chủ nhà mời cô trú cơn mưa vừa tới.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I was standing under the part we hadn't counted.",
+          "vi": "Tôi vừa đứng ngay dưới phần ta chưa đếm đến."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Dòng tít đổi thành Mái nhà mời khách trú mưa. Người ở số 14 tự tay viết địa chỉ cuối bài để người cần biết nơi gõ cửa.",
+      "end": true
+    }
+  ]
+}

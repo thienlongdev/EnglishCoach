@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s179-unlocked-sentence",
+  "title": "Câu chưa khóa cửa",
+  "summary": "Đêm mất điện, căn nhà nói “I wish you were here”. Sương đứng ngay trong nhà và tưởng mình vô hình.",
+  "level": "B2",
+  "topics": [
+    "unreal-past-forms"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sương",
+      "role": "Người thừa kế ngôi nhà"
+    },
+    {
+      "id": "b",
+      "name": "Lio",
+      "role": "Người đóng cửa chớp"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Lời ấy vang lên từ đồng hồ có ống thu. Lio từng nghe mẹ Sương nói câu đó với người chị ở xa. Sương có thể thu lời đáp cho mẹ hoặc gửi tới dì.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I thought were meant I had already gone.",
+          "vi": "Tôi tưởng were có nghĩa tôi đã đi rồi."
+        },
+        {
+          "who": "b",
+          "en": "Listen to what wish can do to a present absence.",
+          "vi": "Nghe wish diễn tả sự vắng mặt ngay hiện tại thế nào."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Sương diễn giải lời ước ở thời điểm ban đầu.",
+        "options": [
+          {
+            "ok": true,
+            "t": "She wanted someone absent to be there at the time.",
+            "note": "Were sau wish diễn tả tình huống trái với mong muốn lúc nói. Nó không tự đặt sự vắng mặt vào một thời trước đó.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "She was confirming that the person used to live there.",
+            "note": "Wish không xác nhận lịch sử cư trú. Người được mong có thể chưa từng sống trong nhà. Dạng were sau wish chưa đủ cho kết luận ấy.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Sương gọi dì; dì nhận ra giọng em gái ngay tiếng đầu. Dì đáp bằng lời kể về căn phòng bên đầu dây xa.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Now the clock tells two kinds of time.",
+          "vi": "Giờ đồng hồ kể được hai thứ thời gian."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Lio lắp hai nút trên đồng hồ, một nút phát lời ước, một nút phát câu trả lời đã tới muộn hai mươi năm.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Sương lật sổ khách: dì chỉ tới chơi một lần. Cô ghi lên vỏ băng “mẹ mong dì có mặt”, rồi gửi cả cuốn cho dì.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A wish can get someone through the door.",
+          "vi": "Một điều ước cũng có thể đưa ai đó tới cửa."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Một tuần sau dì tới thăm lần thứ hai. Chiếc ghế khách cuối cùng có người ngồi thật.",
+      "end": true
+    }
+  ]
+}

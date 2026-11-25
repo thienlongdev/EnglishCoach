@@ -1,0 +1,309 @@
+{
+  "schema": 1,
+  "slug": "subject-and-predicate",
+  "version": 2,
+  "domain": "foundations",
+  "order": 20,
+  "kind": "grammar",
+  "title": { "vi": "Chủ ngữ và vị ngữ", "en": "Subject and predicate" },
+  "subtitle": { "vi": "Cắt mỗi câu làm đôi: nói về ai hay cái gì, và nói điều gì về nó", "en": "Cut every clause in two: who or what it is about, and what is said about it" },
+  "aliases": ["subject", "predicate", "chủ ngữ", "vị ngữ", "tìm chủ ngữ", "chủ ngữ là gì", "subject of a sentence", "complete subject", "simple subject", "câu thiếu chủ ngữ", "câu thiếu động từ", "my mother very busy", "thiếu be"],
+  "level": "preA1",
+  "levelBasis": "editorial",
+  "uses": [
+    { "level": "preA1", "vi": "Nhìn một câu đơn giản và nói được đâu là chủ ngữ, đâu là vị ngữ." },
+    { "level": "A2", "vi": "Tìm chủ ngữ thật khi có cụm từ chen giữa chủ ngữ và động từ." },
+    { "level": "B1", "vi": "Hiểu chủ ngữ của câu bị động, chủ ngữ là mệnh đề và chủ ngữ giả it, there." }
+  ],
+  "objectives": [
+    "Chia một câu khẳng định đơn giản thành chủ ngữ và vị ngữ",
+    "Tìm từ chính trong chủ ngữ là một cụm danh từ không phối hợp, và nhận ra chủ ngữ có thể có cấu trúc khác",
+    "Tìm động từ làm trung tâm vị ngữ trong các câu kể hữu hạn đầy đủ của bài",
+    "Nhớ rằng vị ngữ tiếng Anh luôn có động từ, kể cả khi tiếng Việt không cần"
+  ],
+  "prerequisites": ["what-is-a-sentence"],
+  "related": [
+    { "slug": "basic-word-order", "rel": "more" },
+    { "slug": "verb-be", "rel": "more" },
+    { "slug": "subject-verb-agreement-basics", "rel": "more" },
+    { "slug": "subject-object-pronouns", "rel": "more" },
+    { "slug": "dummy-it", "rel": "special" },
+    { "slug": "passive-form", "rel": "special" }
+  ],
+  "exam": {
+    "ielts": "Writing và Speaking đều chấm độ chính xác của ngữ pháp. Câu thiếu chủ ngữ, thiếu động từ be và động từ chia sai với chủ ngữ dài là lỗi hay gặp.",
+    "toeic": "Part 5 có những câu hỏi về động từ đi với chủ ngữ, trong đó đôi khi có cụm từ chen giữa chủ ngữ và động từ. Cần tìm đúng từ chính của chủ ngữ."
+  },
+  "quick": {
+    "what": "Trong câu kể hữu hạn đơn giản đang học, chủ ngữ (subject) thường là phần nêu ai hay cái gì được nói tới; chủ ngữ giả như it không chỉ vật cụ thể. Vị ngữ (predicate) có động từ làm trung tâm và nói điều gì về chủ ngữ. Nó không bắt buộc bắt đầu ngay bằng động từ: usually works cũng có thể là vị ngữ.",
+    "when": "Dùng để tìm chủ ngữ và chọn dạng động từ trong các câu kể đầy đủ đơn giản. Không áp dụng máy móc cho mệnh lệnh, lời đáp ngắn, câu đảo hoặc mệnh đề không chia thì.",
+    "examples": [
+      { "en": "[S|Linh] [V|sings] in a choir.", "vi": "Linh hát trong một dàn hợp xướng. (chủ ngữ một từ)" },
+      { "en": "[S|The bus to the airport] [V|leaves] every twenty minutes.", "vi": "Xe buýt ra sân bay cứ hai mươi phút một chuyến. (chủ ngữ dài, từ chính là bus)" },
+      { "en": "[S|It] [V|is raining].", "vi": "Trời đang mưa. (it là chủ ngữ giả, không chỉ vật nào)" }
+    ],
+    "remember": "Tìm khối chủ ngữ và động từ của mệnh đề, không chỉ cắt ở từ đầu tiên giống động từ. Trong Linh usually sings, chủ ngữ là Linh và vị ngữ là usually sings."
+  },
+  "lesson": [
+    { "type": "p", "vi": "Bài này bắt đầu với câu kể hữu hạn đơn giản: thường có khối chủ ngữ rồi đến vị ngữ. Chủ ngữ là một chức năng ngữ pháp, không đồng nghĩa với người làm hành động. Vị ngữ có động từ làm trung tâm, nhưng còn có thể có trạng từ ở trước động từ: Linh usually sings in a choir." },
+    { "type": "diagram",
+      "spec": { "kind": "tree", "bracket": "[S [NP The tall boy in the red shirt] [VP [V plays] [NP football]]]" },
+      "caption": "Câu cắt làm đôi: cụm danh từ làm chủ ngữ, và cụm động từ bắt đầu bằng plays làm vị ngữ.",
+      "alt": "Sơ đồ cây: câu gồm hai nhánh. Nhánh trái là cụm danh từ The tall boy in the red shirt, tức chủ ngữ. Nhánh phải là cụm động từ plays football, tức vị ngữ, gồm động từ plays và cụm danh từ football." },
+    { "type": "table",
+      "caption": "Mỗi câu một nhát cắt",
+      "head": ["Chủ ngữ", "Vị ngữ"],
+      "rows": [
+        ["Linh", "usually sings in a choir."],
+        ["My two older brothers", "work for the same company."],
+        ["The bus to the airport", "leaves every twenty minutes."],
+        ["Everyone in the room", "stopped talking."],
+        ["It", "is raining."]
+      ] },
+    { "type": "p", "vi": "Chủ ngữ có thể là một từ hoặc một cụm dài. Trong các câu kể cơ bản ở đây, nó thường đứng trước vị ngữ. Câu hỏi và câu đảo có thể có vị trí khác; một số chủ ngữ còn là mệnh đề." },
+    { "type": "h", "vi": "Ba cách tìm chủ ngữ" },
+    { "type": "p", "vi": "**Cách một: hỏi Ai hay Cái gì cộng động từ.** Với The tall boy in the red shirt plays football, hãy hỏi \"Who plays football?\". Câu trả lời trọn vẹn là The tall boy in the red shirt." },
+    { "type": "p", "vi": "**Cách hai: thay bằng đại từ.** Chủ ngữ là khối có thể thay bằng một trong I, you, he, she, it, we, they mà câu vẫn đúng." },
+    { "type": "diagram",
+      "spec": { "kind": "transform", "steps": [
+        { "label": "Câu gốc", "sentence": "The tall boy in the red shirt plays football." },
+        { "label": "Thay chủ ngữ bằng đại từ", "sentence": "He plays football." }
+      ], "changed": ["He"] },
+      "caption": "Cả khối The tall boy in the red shirt được thay bằng một từ he. Phần còn lại giữ nguyên.",
+      "alt": "Hai bước: câu The tall boy in the red shirt plays football, rồi câu He plays football, trong đó cả cụm chủ ngữ được thay bằng đại từ he." },
+    { "type": "p", "vi": "**Cách ba: đổi thành câu hỏi có hoặc không.** Chủ ngữ là khối đứng sau trợ động từ đầu tiên." },
+    { "type": "diagram",
+      "spec": { "kind": "transform", "steps": [
+        { "label": "Câu khẳng định", "sentence": "The new teacher is from Canada." },
+        { "label": "Câu hỏi", "sentence": "Is the new teacher from Canada?" }
+      ], "changed": ["Is"] },
+      "caption": "Is nhảy lên đầu, còn cả khối The new teacher đứng ngay sau nó.",
+      "alt": "Hai bước: The new teacher is from Canada, rồi Is the new teacher from Canada, trong đó động từ be đảo lên trước cụm chủ ngữ." },
+    { "type": "h", "vi": "Với chủ ngữ là cụm danh từ, tìm từ chính" },
+    { "type": "p", "vi": "Với chủ ngữ là một cụm danh từ không phối hợp như the price of the tickets, tìm danh từ chính price để chọn động từ. Không lấy danh từ đứng gần động từ nhất. Nhưng không phải chủ ngữ nào cũng có một danh từ chính: Mai and Nam gồm hai phần phối hợp, còn What she said là một mệnh đề." },
+    { "type": "examples", "items": [
+      { "en": "[S|The price of these tickets] [V|is] too high.", "vi": "Giá những tấm vé này quá cao.", "note": "Danh từ chính là price, số ít, nên dùng is. Tickets chỉ nằm trong cụm of these tickets." },
+      { "en": "[S|The tickets for the concert] [V|are] on sale.", "vi": "Vé xem buổi hòa nhạc đang được bán.", "note": "Danh từ chính là tickets, số nhiều, nên dùng are." }
+    ] },
+    { "type": "try", "exercise": "sap-02" },
+    { "type": "h", "vi": "Vị ngữ của các câu kể đầy đủ này có động từ" },
+    { "type": "p", "vi": "Vị ngữ có động từ làm trung tâm, không nhất thiết bắt đầu bằng động từ: trong Linh usually sings, usually đứng trước sings nhưng vẫn thuộc vị ngữ theo cách phân tích ở đây. Khi nói về tình trạng, có thể dùng be hoặc một động từ nối phù hợp khác: My mother is busy, My mother seems busy." },
+    { "type": "note", "kind": "vn", "vi": "Trong tiếng Việt, tính từ có thể làm vị ngữ trực tiếp: \"Mẹ tôi rất bận\", \"Trời lạnh\". Tiếng Anh không làm vậy: My mother is very busy. It is cold. Nghiên cứu về người Việt học tiếng Anh ghi nhận việc bỏ động từ be ở những câu thế này; lỗi này thường xuất hiện khi câu có tính từ làm vị ngữ, không phải khi câu có động từ khác." },
+    { "type": "note", "kind": "vn", "vi": "Tiếng Việt hay nêu chủ đề rồi nhắc lại bằng đại từ. Tiếng Anh cũng có thể dùng My father, he works in a bank trong lời nói với dụng ý nêu chủ đề (left dislocation). Trong câu kể trung tính của bài viết này, chỉ cần My father works in a bank. Đừng gọi mọi cách nhắc lại chủ đề là sai ngữ pháp." },
+    { "type": "try", "exercise": "sap-01" }
+  ],
+  "deep": [
+    { "type": "h", "vi": "Chủ ngữ không phải lúc nào cũng là người làm hành động" },
+    { "type": "p", "vi": "Nhiều người học nhớ \"chủ ngữ là người làm\". Điều đó đúng ở The wind broke the window, nhưng sai ở câu bị động: The window was broken by the wind. Ở đây chủ ngữ là the window, vật nhận tác động. Chủ ngữ là phần câu nói về, không phải lúc nào cũng là kẻ gây ra." },
+    { "type": "examples", "items": [
+      { "en": "[S|The wind] [V|broke] [O|the window].", "vi": "Gió làm vỡ cửa sổ.", "note": "Chủ ngữ là bên gây ra." },
+      { "en": "[S|The window] [V|was broken] [A|by the wind].", "vi": "Cửa sổ bị gió làm vỡ.", "note": "Chủ ngữ là bên nhận tác động." }
+    ] },
+    { "type": "h", "vi": "Chủ ngữ có thể không phải là danh từ" },
+    { "type": "p", "vi": "Chủ ngữ có thể là dạng -ing, dạng to + động từ, hoặc cả một mệnh đề. Những chủ ngữ này thường đi với động từ số ít." },
+    { "type": "examples", "items": [
+      { "en": "[S|Learning new words every day] [V|takes] patience.", "vi": "Học từ mới mỗi ngày cần kiên nhẫn." },
+      { "en": "[S|What she said] [V|surprised] everyone.", "vi": "Điều cô ấy nói làm mọi người ngạc nhiên." }
+    ] },
+    { "type": "h", "vi": "Chủ ngữ không phải lúc nào cũng đứng trước động từ" },
+    { "type": "p", "vi": "Trong câu hỏi, chủ ngữ đứng sau trợ động từ đầu tiên: Does your sister work here? Với There is, There are, tiếng Anh dùng there làm chủ ngữ giả, còn điều được nói tới đứng sau động từ và quyết định cách chia: There are two buses. Trong Here comes the bus, chủ ngữ the bus cũng đứng sau động từ. Câu mệnh lệnh như Sit down không viết chủ ngữ ra; người nghe hiểu là you." },
+    { "type": "h", "vi": "It và there: chủ ngữ giả" },
+    { "type": "p", "vi": "Trong It is raining và It is important to sleep well, it không thay cho vật nào cụ thể. Tiếng Anh vẫn cần một chủ ngữ cho vị trí đó, nên dùng it. Cách dùng này nằm ở bài riêng về chủ ngữ giả." },
+    { "type": "h", "vi": "Phần đứng đầu câu không phải lúc nào cũng là chủ ngữ" },
+    { "type": "p", "vi": "Every morning trong Every morning, Lan runs by the river là trạng ngữ đầu câu, không phải chủ ngữ. Các sách có thể đặt trạng ngữ trong cấu trúc vị ngữ hoặc phân tích nó thành phần riêng tùy mô hình. Bài này không dựa vào việc đứng đầu để gọi chủ ngữ; khi xác định chủ ngữ, hãy tìm Lan và quan hệ của nó với runs." },
+    { "type": "note", "kind": "register", "vi": "Trong lời nói rất thân mật, nhật ký và tin nhắn, người ta hay bỏ chủ ngữ: \"Went to the market. Bought some fruit.\" Đó là cách viết tắt có chủ ý của người bản ngữ. Trong bài thi và văn viết thông thường, hãy viết đủ chủ ngữ." }
+  ],
+  "mistakes": [
+    {
+      "id": "sap-subject-missing",
+      "wrong": "Went to the market yesterday.",
+      "right": "I went to the market yesterday.",
+      "why": "Nếu bài yêu cầu câu kể đầy đủ với chủ ngữ viết ra, thêm chủ ngữ thích hợp như I. Went to the market yesterday vẫn có thể là lời ghi chép hoặc lời đáp rút gọn tự nhiên khi ngữ cảnh đã rõ.",
+      "vn": "Tiếng Việt hay bỏ chủ ngữ khi người nghe đã biết ai làm: \"Hôm qua đi chợ\". Người học có thể mang thói quen đó sang tiếng Anh."
+    },
+    {
+      "id": "sap-copula-omission",
+      "wrong": "My mother very busy.",
+      "right": "My mother is very busy.",
+      "why": "Trong câu kể hữu hạn đầy đủ này, very busy là cụm tính từ; cần động từ như is để tạo vị ngữ.",
+      "vn": "Tiếng Việt nói \"Mẹ tôi rất bận\" mà không cần từ nào như \"là\" hay \"thì\". Lỗi bỏ be ở câu có tính từ làm vị ngữ được ghi nhận ở người Việt học tiếng Anh."
+    },
+    {
+      "id": "sap-agreement-distance",
+      "wrong": "The price of the tickets are too high.",
+      "right": "The price of the tickets is too high.",
+      "why": "Động từ chia theo danh từ chính price, số ít, không chia theo tickets đứng gần nó.",
+      "vn": "Tiếng Việt không đổi động từ theo chủ ngữ, nên bước tìm danh từ chính ít khi thành thói quen."
+    }
+  ],
+  "faq": [
+    { "q": "Chủ ngữ có luôn đứng trước động từ không?", "a": "Trong câu kể thông thường, chủ ngữ thường đứng trước vị ngữ. Câu hỏi có đảo đưa trợ động từ trước chủ ngữ; câu hỏi chủ ngữ như Who called? không theo phép đảo đó. Here comes the bus là một ví dụ chủ ngữ đứng sau động từ. Không chỉ dựa vào vị trí để xác định chức năng." },
+    { "q": "Chủ ngữ có phải luôn là người làm hành động không?", "a": "Không. Trong câu bị động, chủ ngữ là vật hay người nhận tác động: The window was broken by the wind. Chủ ngữ là phần câu nói về, không nhất thiết là kẻ gây ra việc." },
+    { "q": "Khi chủ ngữ dài, động từ chia theo từ nào?", "a": "Với cụm danh từ như the price of the tickets, động từ theo danh từ chính price: is. Nhưng chủ ngữ phối hợp như Mai and Nam hoặc chủ ngữ là mệnh đề cần xét cấu trúc của cả khối; không phải luôn tìm được một danh từ chính duy nhất." },
+    { "q": "It trong It is raining là chủ ngữ gì?", "a": "Là chủ ngữ giả (dummy subject). It không chỉ một vật cụ thể, nhưng tiếng Anh cần một chủ ngữ ở vị trí này. Bạn sẽ gặp lại trong các bài về it và there." }
+  ],
+  "exercises": [
+    { "id": "sap-01", "type": "classify", "level": "preA1", "use": "practice", "skill": "recognition",
+      "prompt": "Xếp mỗi cụm vào phần của câu mà nó thuộc về.",
+      "cats": ["Chủ ngữ", "Vị ngữ"],
+      "items": [
+        { "t": "The tall boy", "cat": "Chủ ngữ" },
+        { "t": "usually plays football every Sunday", "cat": "Vị ngữ" },
+        { "t": "My two older brothers", "cat": "Chủ ngữ" },
+        { "t": "work for the same company", "cat": "Vị ngữ" },
+        { "t": "Everyone in the room", "cat": "Chủ ngữ" },
+        { "t": "stopped talking", "cat": "Vị ngữ" }
+      ],
+      "explain": "Trong các ví dụ này, vị ngữ chứa động từ và nói về chủ ngữ. Usually plays football every Sunday vẫn là vị ngữ dù bắt đầu bằng trạng từ usually." },
+    { "id": "sap-02", "type": "choice", "level": "preA1", "use": "practice", "skill": "recognition",
+      "prompt": "Chọn toàn bộ chủ ngữ của câu, tức phần đứng trước vị ngữ.",
+      "context": "The bus to the airport leaves every twenty minutes.",
+      "stem": "Toàn bộ chủ ngữ là gì?",
+      "options": [
+        { "t": "The bus", "note": "Bus là danh từ chính, nhưng chủ ngữ đầy đủ còn có to the airport. Cả khối này thay được bằng it.", "tag": "subject-head-only" },
+        { "t": "The bus to the airport", "ok": true, "note": "Cả khối đứng trước động từ leaves. Thay được bằng it: It leaves every twenty minutes." },
+        { "t": "leaves every twenty minutes", "note": "Đây là vị ngữ: nó bắt đầu bằng động từ leaves.", "tag": "subject-predicate-swap" }
+      ],
+      "explain": "Chủ ngữ là khối đứng trước động từ. Bạn kiểm tra bằng cách thay nó bằng một đại từ: It leaves every twenty minutes." },
+    { "id": "sap-03", "type": "choice", "level": "preA1", "use": "check", "skill": "use",
+      "prompt": "Thay toàn bộ chủ ngữ bằng một đại từ.",
+      "context": "The price of the tickets is too high.",
+      "stem": "___ is too high.",
+      "options": [
+        { "t": "It", "ok": true, "note": "Cả khối The price of the tickets chỉ một thứ là giá, số ít, nên thay bằng it." },
+        { "t": "They", "note": "They thay cho tickets, nhưng tickets chỉ nằm trong cụm of the tickets. Từ chính của chủ ngữ là price.", "tag": "agreement-distance" },
+        { "t": "He", "note": "He dành cho một người nam. Chủ ngữ ở đây là một vật.", "tag": "pronoun-wrong-referent" }
+      ],
+      "explain": "Động từ is cho bạn biết chủ ngữ là số ít. Danh từ chính price là số ít; tickets không phải từ chính." },
+    { "id": "sap-04", "type": "error", "level": "preA1", "use": "practice", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "The price of the tickets" },
+        { "t": "are", "bad": true, "fix": ["is"], "note": "Động từ chia theo danh từ chính price, số ít. Tickets chỉ nằm trong cụm of the tickets.", "tag": "agreement-distance" },
+        { "t": "too high." }
+      ],
+      "explain": "Câu đúng là The price of the tickets is too high. Hãy tìm danh từ chính của chủ ngữ rồi mới chọn dạng động từ." },
+    { "id": "sap-05", "type": "error", "level": "preA1", "use": "check", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "My mother" },
+        { "t": "very busy", "bad": true, "fix": ["is very busy", "'s very busy"], "note": "Thiếu động từ be. Very busy là cụm tính từ, chưa phải vị ngữ đầy đủ.", "tag": "copula-omission" },
+        { "t": "this week." }
+      ],
+      "explain": "Câu đúng là My mother is very busy this week. Vị ngữ tiếng Anh cần một động từ, ở đây là is." },
+    { "id": "sap-06", "type": "cloze", "level": "preA1", "use": "practice", "skill": "production",
+      "prompt": "Điền am, is hoặc are.",
+      "stem": "The students in my class {1} very friendly. The key to the rooms {2} on the desk.",
+      "blanks": {
+        "1": { "accept": ["are"], "closed": true },
+        "2": { "accept": ["is"], "closed": true }
+      },
+      "explain": "Câu đầu: danh từ chính students là số nhiều, nên dùng are. Câu sau: danh từ chính key là số ít, nên dùng is. Rooms chỉ nằm trong cụm to the rooms." },
+    { "id": "sap-07", "type": "order", "level": "preA1", "use": "practice", "skill": "form",
+      "prompt": "Sắp xếp thành câu kể, giữ nguyên khối chủ ngữ the bus to the airport.",
+      "tokens": ["the", "bus", "to", "the", "airport", "leaves", "at", "six"],
+      "end": ".",
+      "accept": [
+        [
+          "the",
+          "bus",
+          "to",
+          "the",
+          "airport",
+          "leaves",
+          "at",
+          "six"
+        ],
+        [
+          "at",
+          "six",
+          "the",
+          "bus",
+          "to",
+          "the",
+          "airport",
+          "leaves"
+        ],
+        [
+          "the",
+          "bus",
+          "to",
+          "the",
+          "airport",
+          "at",
+          "six",
+          "leaves"
+        ]
+      ],
+      "explain": "At six thường đứng đầu hoặc cuối câu; nó cũng có thể chen giữa khối chủ ngữ và leaves để nhấn giờ. Chủ ngữ vẫn là the bus to the airport." },
+    { "id": "sap-08", "type": "transform", "level": "preA1", "use": "practice", "skill": "production",
+      "prompt": "Viết lại câu.",
+      "source": "My two older brothers work for the same company.",
+      "instruction": "Thay toàn bộ chủ ngữ bằng một đại từ.",
+      "accept": ["They work for the same company"],
+      "model": "They work for the same company.",
+      "known": [
+        { "t": "He works for the same company", "verdict": "wrong", "note": "My two older brothers là nhiều người, nên đại từ là they và động từ giữ nguyên dạng work." }
+      ],
+      "explain": "Cả khối My two older brothers là chủ ngữ số nhiều. They thay cho cả khối đó, và work giữ nguyên." },
+    { "id": "sap-09", "type": "match", "level": "preA1", "use": "practice", "skill": "recognition",
+      "prompt": "Nối mỗi câu với chủ ngữ của nó.",
+      "pairs": [
+        { "a": "Swimming in the river is dangerous.", "b": "Swimming in the river" },
+        { "a": "Everyone in the room stopped talking.", "b": "Everyone in the room" },
+        { "a": "It is five o'clock.", "b": "It" },
+        { "a": "The tickets for the concert are cheap.", "b": "The tickets for the concert" }
+      ],
+      "explain": "Chủ ngữ là khối đứng trước động từ is hoặc are hoặc stopped. Nó có thể là một từ, một cụm dài, hoặc cả một cụm -ing." },
+    { "id": "sap-10", "type": "choice", "level": "A2", "use": "check", "skill": "meaning",
+      "prompt": "Chọn câu có chủ ngữ là bên nhận tác động, không phải bên làm.",
+      "stem": "Câu nào?",
+      "options": [
+        { "t": "The window was broken by the wind.", "ok": true, "note": "Chủ ngữ the window chịu tác động của gió. Đây là câu bị động." },
+        { "t": "The wind broke the window.", "note": "Chủ ngữ the wind là bên gây ra việc.", "tag": "subject-equals-doer" },
+        { "t": "The wind blew all night.", "note": "Chủ ngữ the wind là bên làm, và câu này không có bên nhận tác động.", "tag": "subject-equals-doer" }
+      ],
+      "explain": "Chủ ngữ là phần câu nói về, không nhất thiết là kẻ gây ra. Ở câu bị động, chủ ngữ nhận tác động." },
+    { "id": "sap-11", "type": "multi", "level": "preA1", "use": "check", "skill": "recognition",
+      "prompt": "Chọn tất cả các câu có đủ chủ ngữ và động từ.",
+      "stem": "Câu nào đủ cả hai?",
+      "options": [
+        { "t": "My mother is very busy.", "ok": true, "note": "Chủ ngữ my mother, động từ is." },
+        { "t": "My mother very busy.", "note": "Thiếu động từ be.", "tag": "copula-omission" },
+        { "t": "It is raining now.", "ok": true, "note": "Chủ ngữ it, động từ is raining." },
+        { "t": "Is raining now.", "note": "Thiếu chủ ngữ. Về thời tiết, chủ ngữ là it.", "tag": "subject-missing" },
+        { "t": "The students are in the library.", "ok": true, "note": "Chủ ngữ the students, động từ are." }
+      ],
+      "explain": "Các đáp án được chọn là những câu kể đầy đủ có chủ ngữ và vị ngữ hữu hạn. Chỉ có chủ ngữ với động từ chưa đủ cho mọi câu: because she left chẳng hạn vẫn là mệnh đề phụ thuộc." },
+    { "id": "sap-12", "type": "error", "level": "preA1", "use": "check", "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "noError": true,
+      "segments": [
+        { "t": "Everyone in the room" },
+        { "t": "was" },
+        { "t": "surprised." }
+      ],
+      "explain": "Câu đúng. Everyone là đại từ bất định làm từ chính của cụm chủ ngữ và dùng động từ số ít was. Cụm in the room không đổi cách hòa hợp này." },
+    { "id": "sap-13", "type": "cloze", "level": "A1", "use": "check", "skill": "form",
+      "prompt": "Điền chủ ngữ giả thích hợp để nói về giờ giấc và thời tiết.",
+      "stem": "{1} is nearly midnight, and {2} is still raining.",
+      "blanks": {
+        "1": { "accept": ["It"], "closed": true },
+        "2": { "accept": ["it"], "closed": true }
+      },
+      "explain": "Về giờ giấc và thời tiết, tiếng Anh dùng it làm chủ ngữ giả. It is nearly midnight. It is still raining." },
+    { "id": "sap-14", "type": "open", "level": "preA1", "use": "practice", "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Viết ba câu về gia đình hoặc bạn bè của bạn. Mỗi câu có chủ ngữ và động từ. Câu thứ hai có chủ ngữ là một cụm dài, ví dụ có cụm với in hoặc of.",
+      "model": ["My uncle lives in Da Nang. The shop next to his house sells coffee. His children go to school by bicycle."],
+      "checklist": ["Mỗi câu có một chủ ngữ được viết ra", "Mỗi câu có một động từ chia thì", "Câu thứ hai có chủ ngữ dài, và động từ chia theo danh từ chính", "Trong các câu kể trung tính này, không nhắc lại chủ ngữ bằng đại từ ngay bên cạnh"],
+      "explain": "Sau khi viết, hãy gạch dưới chủ ngữ và khoanh tròn động từ trong từng câu. Nếu một câu thiếu một trong hai, đó là chỗ cần sửa." }
+  ],
+  "sources": [
+    { "ref": "cgt", "note": "Mục về subject và predicate" },
+    { "ref": "swan-peu", "note": "Phần về chủ ngữ, kể cả there và it" },
+    { "ref": "cgel", "note": "Cách phân tích chủ ngữ và vị ngữ trong mệnh đề" },
+    { "ref": "murphy-essential", "note": "Phần về cấu trúc câu đơn giản và hòa hợp chủ ngữ và động từ" }
+  ],
+  "editorial": { "status": "drafted" }
+}

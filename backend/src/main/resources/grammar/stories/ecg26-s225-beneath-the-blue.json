@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s225-beneath-the-blue",
+  "title": "Điều nằm dưới màu lam",
+  "level": "C1",
+  "topics": [
+    "fronting",
+    "given-before-new"
+  ],
+  "scene": "library-mystery",
+  "summary": "Dưới lớp màu lam có một con đường đỏ. Người nghe câu chuyện sẽ đi tìm hai thứ khác nhau tùy Chi bắt đầu từ đâu.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Chi",
+      "role": "Người đọc bản đồ"
+    },
+    {
+      "id": "b",
+      "name": "Pavel",
+      "role": "Thợ mực"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Pavel chỉ màu lam trên bản đồ lụa. Thuốc nhuộm nhạt dần, làm lộ một đường chạy ra khỏi hồ đã cạn. Ông giao Chi dẫn khách xuống gian trưng bày.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The villagers remember the lake. They don't know about the road.",
+          "vi": "Dân làng nhớ cái hồ. Họ chưa biết chuyện con đường."
+        },
+        {
+          "who": "b",
+          "en": "Where will you bring their eyes first?",
+          "vi": "Cháu sẽ đưa mắt họ nhìn vào đâu trước?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Chọn cách sắp xếp thông tin. Cả hai đều đúng cấu trúc nhưng dẫn khách nhìn khác nhau.",
+        "options": [
+          {
+            "t": "Beneath the blue lay a road no one remembered.",
+            "note": "Đưa nơi chốn quen thuộc lên trước rồi đảo lay trước a road giúp giới thiệu phát hiện mới ở cuối.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "A forgotten road lay beneath the blue.",
+            "note": "Cụm a forgotten road ở đầu đặt điều vừa phát hiện thành nhân vật chính ngay từ đầu. Câu vẫn mô tả cùng địa điểm.",
+            "ok": true,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Khách già chạm vào vùng lam trước, rồi ngạc nhiên khi lần ngón tay theo con đường ra khỏi hồ. Một bà nhận ra cây cầu thời con gái và kể lại tên nó.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The lake brought her back to the bridge.",
+          "vi": "Cái hồ đã dẫn bà trở về cây cầu."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Bọn trẻ chăm chú tìm đường đỏ rồi lần ngược ra nơi từng là bến cá. Chúng vẽ thêm bản sao có cả tên hồ cũ lẫn con đường nay mới biết.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Now they can enter the map from either end.",
+          "vi": "Giờ các em có thể bước vào bản đồ từ cả hai phía."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

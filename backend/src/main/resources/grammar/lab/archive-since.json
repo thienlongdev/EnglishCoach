@@ -1,0 +1,72 @@
+{
+  "id": "archive-since",
+  "title": "Kho lưu trữ đã mở bao lâu?",
+  "summary": "Kho mở từ tháng Ba và hiện vẫn hoạt động. Thử nhập mốc bắt đầu hoặc độ dài thời gian. Có thể giữ nguyên giới từ không?",
+  "level": "B1",
+  "topics": [
+    "present-perfect-since-for"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Cách đo",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Mốc bắt đầu"
+        },
+        {
+          "id": "v2",
+          "label": "Độ dài"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The archive has been open since March.",
+      "vi": "Kho lưu trữ mở cửa từ tháng Ba đến nay.",
+      "note": "Since March chọn tháng Ba làm điểm đầu, còn hiện tại là điểm nhìn. / Since names the left boundary.",
+      "verdict": "ok",
+      "timeline": {
+        "sentence": "The archive has been open since March.",
+        "now": 80,
+        "events": [
+          {
+            "kind": "point",
+            "at": 20,
+            "label": "Tháng Ba",
+            "role": "ref"
+          },
+          {
+            "kind": "span",
+            "from": 20,
+            "to": 80,
+            "label": "Kho đang hoạt động",
+            "role": "main"
+          }
+        ]
+      }
+    },
+    "v2": {
+      "en": "The archive has been open for six months.",
+      "vi": "Kho lưu trữ đã mở được sáu tháng.",
+      "note": "For six months đo quãng thời gian thay vì nêu tên tháng bắt đầu. / For measures the whole interval.",
+      "verdict": "ok",
+      "timeline": {
+        "sentence": "The archive has been open for six months.",
+        "now": 80,
+        "events": [
+          {
+            "kind": "span",
+            "from": 20,
+            "to": 80,
+            "label": "Sáu tháng tính tới hiện tại",
+            "role": "main"
+          }
+        ]
+      }
+    }
+  }
+}

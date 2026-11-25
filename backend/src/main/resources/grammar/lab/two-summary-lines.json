@@ -1,0 +1,40 @@
+{
+  "id": "two-summary-lines",
+  "title": "Câu sau giải nghĩa hay đứng ngang hàng?",
+  "summary": "Bạn biên tập một tờ thông báo đóng cửa sớm. Thử dấu hai chấm để nêu lý do và dấu chấm phẩy để đặt hai thông tin cạnh nhau.",
+  "level": "B2",
+  "topics": [
+    "semicolons-colons-dashes"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Quan hệ giữa hai vế",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Giải thích"
+        },
+        {
+          "id": "v2",
+          "label": "Đặt cạnh nhau"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The gallery closed early: the roof was leaking.",
+      "vi": "Phòng tranh đóng cửa sớm vì mái nhà đang dột.",
+      "note": "Dấu hai chấm hướng người đọc hiểu vế sau giải thích lý do đóng cửa. / The colon presents the leak as the explanation.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The gallery closed early; the café stayed open.",
+      "vi": "Phòng tranh đóng cửa sớm, còn quán cà phê vẫn mở.",
+      "note": "Hai vế tự đứng được. Dấu chấm phẩy giữ chúng trong cùng đơn vị trình bày để người đọc đối chiếu. / The semicolon joins related independent clauses.",
+      "verdict": "ok"
+    }
+  }
+}

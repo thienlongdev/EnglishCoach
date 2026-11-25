@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s008-rice-tin",
+  "title": "Bữa cơm trong chiếc hộp thiếc",
+  "summary": "Mất điện đúng tối hai người định nấu bữa đầu tiên ở nhà mới.",
+  "level": "A1",
+  "topics": [
+    "some-and-any",
+    "countable-uncountable"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Huy",
+      "role": "Người nấu cơm"
+    },
+    {
+      "id": "b",
+      "name": "Inez",
+      "role": "Bạn cùng nhà"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Inez mở tủ. Có nửa hộp cơm nguội từ bữa trưa được giữ lạnh và hai quả trứng luộc. Bếp điện vẫn tối.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We have two eggs. What about rice?",
+          "vi": "Chúng mình có hai quả trứng. Còn cơm thì sao?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "There's rice in this tin. It's cold.",
+          "vi": "Có cơm trong hộp này. Cơm nguội rồi."
+        }
+      ],
+      "choice": {
+        "prompt": "Huy viết vào mảnh giấy để bạn về muộn biết trong hộp vẫn còn cơm. Chọn câu giữ đúng lượng đã thấy.",
+        "options": [
+          {
+            "t": "We don't have any rice.",
+            "note": "Don't have any nghĩa là chẳng còn chút nào. Cấu trúc đúng nhưng trái với chiếc hộp đang mở.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "We have some rice.",
+            "note": "Some đứng trước rice để nói có một lượng cơm, không cần đếm bằng hạt hay bằng bát.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Inez chia ra ba phần nhỏ. Mảnh giấy được dán cạnh phần để dành.",
+      "say": [
+        {
+          "who": "b",
+          "en": "One bowl for each of us.",
+          "vi": "Mỗi người một bát."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Inez gõ thìa vào đáy hộp. Huy nhìn thấy phần cơm và lật mặt giấy để viết lại.",
+      "say": [
+        {
+          "who": "b",
+          "en": "There's some right here.",
+          "vi": "Có một ít ngay đây mà."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Người bạn về muộn mang theo ba quả cà chua. Ba người chia nhau bữa cơm nguội trong ánh đèn pin. Huy giữ mảnh giấy làm trang đầu của sổ công thức chung.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Our first dinner has a name: cold rice night.",
+          "vi": "Bữa cơm đầu tiên có tên rồi: tối cơm nguội."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

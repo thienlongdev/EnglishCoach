@@ -1,0 +1,41 @@
+{
+  "id": "permit-ambiguity",
+  "title": "May not là cấm hay có thể không?",
+  "summary": "Hội thảo có phòng kín. Chọn giọng người quản lý hoặc người dự đoán lịch khách rồi kiểm tra cách hiểu may not.",
+  "level": "C1",
+  "topics": [
+    "modals-overview",
+    "negation-scope"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Nguồn phát ngôn",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Quy định vào phòng"
+        },
+        {
+          "id": "v2",
+          "label": "Dự báo số người"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Visitors may not enter this room.",
+      "vi": "Khách không được vào phòng này.",
+      "note": "Thông báo cho khách có chức năng cấm. May không nêu xác suất ở cách đọc này. / In a rule, may not can deny permission.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Some guests may not attend the session.",
+      "vi": "Một số khách có thể không dự phiên họp.",
+      "note": "Người dự báo để mở khả năng vắng mặt. Không có hàm ý ban tổ chức cấm họ dự. / Possibility takes scope over non-attendance.",
+      "verdict": "ok"
+    }
+  }
+}

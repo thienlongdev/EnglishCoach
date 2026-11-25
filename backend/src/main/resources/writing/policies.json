@@ -1,0 +1,30 @@
+{
+  "policyVersion": 1,
+  "recurrence": {
+    "minOccurrences": 3,
+    "minIndependentContexts": 2
+  },
+  "prioritization": {
+    "maxInitialPriorityIssues": 4,
+    "severityWeights": {
+      "CRITICAL": 100,
+      "MAJOR": 50,
+      "MINOR": 20,
+      "SUGGESTION": 5
+    }
+  },
+  "limits": {
+    "maxSentenceLengthChars": 2000,
+    "maxDraftWordCount": 2000,
+    "maxDraftCharCount": 25000,
+    "maxAttemptsPerPracticeEpisode": 3
+  },
+  "adaptiveScheduling": {
+    "initialIntervalDays": 1,
+    "assistedSuccessMultiplier": 1.5,
+    "independentSuccessMultiplier": 2.5,
+    "failureIntervalDays": 1,
+    "masteryRetrievalDaysThreshold": 7,
+    "masteryContextsThreshold": 3
+  }
+}

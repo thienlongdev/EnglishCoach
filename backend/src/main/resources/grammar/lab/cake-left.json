@@ -1,0 +1,40 @@
+{
+  "id": "cake-left",
+  "title": "Hết bánh rồi nói sao?",
+  "summary": "Trên khay không còn chiếc bánh nào. Thử thông báo với danh từ cakes, rồi trả lời khi người nghe đã nhắc tới bánh.",
+  "level": "A2",
+  "topics": [
+    "no-none-neither-either"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Có nhắc lại danh từ?",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Có"
+        },
+        {
+          "id": "v2",
+          "label": "Không"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "There are no cakes left.",
+      "vi": "Không còn chiếc bánh nào.",
+      "note": "No xác định số lượng bằng không cho danh từ cakes theo sau. / No goes directly before cakes.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "There are none left.",
+      "vi": "Không còn chiếc nào.",
+      "note": "None thay cả cụm danh từ khi hai bên đều biết đang nói về bánh. / None can stand alone.",
+      "verdict": "ok"
+    }
+  }
+}

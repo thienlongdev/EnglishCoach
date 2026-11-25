@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s109-standstill-suitcase",
+  "title": "Vali đứng yên ở cả ba thành phố",
+  "summary": "Ba ảnh cho thấy cùng chiếc vali trên một băng ghế, phía sau lần lượt là ba thành phố. Không một chuyến tàu nào đủ nhanh.",
+  "level": "B1",
+  "topics": [
+    "past-perfect",
+    "narrative-tenses"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vi",
+      "role": "Nhân viên ga"
+    },
+    {
+      "id": "b",
+      "name": "Nam",
+      "role": "Người học việc"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Mặt sau ghế có giá gài ảnh lớn. Trước lúc đứa trẻ ngồi vào, người chụp đã thay phông địa danh. Cái vali không hề dịch chuyển.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The scratch on the seat stays in the same place.",
+          "vi": "Vết xước trên ghế vẫn đúng chỗ ấy."
+        },
+        {
+          "who": "b",
+          "en": "Tell me what had happened before the second picture.",
+          "vi": "Kể tôi việc đã xảy ra trước bức thứ hai."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Nam kể thay phông trước, chụp sau.",
+        "options": [
+          {
+            "ok": false,
+            "t": "They changed the backdrop after they took that picture.",
+            "note": "After gán việc thay phông cho lúc sau ảnh thứ hai. Nó không giải thích được phông trong chính lần chụp đó.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "They had changed the backdrop before they took the picture.",
+            "note": "Had changed đặt đổi phông trước lúc chụp; before cũng tự làm rõ thứ tự.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Vi rút phông thứ ba, thấy dòng chữ Chuyến đi cho ông. Ông của bé không thể đi xa nên cả nhà đem ba thành phố đến một ghế.",
+      "say": [
+        {
+          "who": "b",
+          "en": "They brought his own station home.",
+          "vi": "Họ mang cả nhà ga cũ về nhà cho ông."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Vi giao lại ảnh và tặng thêm tấm phông vẽ đúng sân ga ông từng làm việc.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Vi xếp ba ảnh và ba phông lên bàn, để Nam tự diễn lại thứ tự. Tới cảnh cuối, đứa trẻ ghé vào và xin chọn một nơi nữa.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The last city was one he'd drawn himself.",
+          "vi": "Thành phố cuối là do chính ông vẽ nên."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Hai người giúp em đặt phông là bầu trời do ông vẽ. Lần này cả em và ông đều là người tạo chuyến đi.",
+      "end": true
+    }
+  ]
+}

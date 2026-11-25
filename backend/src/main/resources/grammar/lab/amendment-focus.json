@@ -1,0 +1,41 @@
+{
+  "id": "amendment-focus",
+  "title": "Đối chiếu người nhận hay vật được gửi?",
+  "summary": "Biên tập viên muốn viết một đính chính với not … but. Thử giới hạn cặp đối chiếu vào hai tân ngữ hoặc hai người nhận. Làm sao tránh ngộ nhận cả hai vai đều thay đổi?",
+  "level": "C1",
+  "topics": [
+    "parallelism",
+    "negation-scope"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Khe đối chiếu",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Hai vật"
+        },
+        {
+          "id": "v2",
+          "label": "Hai người nhận"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "We sent the board not a bill but an estimate.",
+      "vi": "Chúng tôi gửi hội đồng bản dự toán, chứ không phải hóa đơn.",
+      "note": "Not a bill but an estimate nối hai cụm danh từ cùng vai vật được gửi. The board giữ nguyên vai người nhận. / The recipient stays fixed while the objects contrast.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "We sent the bill not to the board but to the treasurer.",
+      "vi": "Chúng tôi gửi hóa đơn cho thủ quỹ, chứ không phải hội đồng.",
+      "note": "Hai cụm to nêu rõ cặp đối lập là người nhận. The bill vẫn là cùng một vật được gửi. / Parallel to-phrases contrast the recipients.",
+      "verdict": "ok"
+    }
+  }
+}

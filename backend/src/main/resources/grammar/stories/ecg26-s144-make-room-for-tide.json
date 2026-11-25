@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s144-make-room-for-tide",
+  "title": "Chỗ trống cho thủy triều",
+  "level": "B1",
+  "topics": [
+    "real-conditionals",
+    "unless-provided-as-long-as"
+  ],
+  "scene": "station",
+  "summary": "Một con đường trên cát xuất hiện giữa hai đảo. Jin háo hức vẽ nó như cây cầu thường trực.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Huệ",
+      "role": "Người vẽ bản đồ"
+    },
+    {
+      "id": "b",
+      "name": "Jin",
+      "role": "Bé tham quan"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Tấm biển cũ ghi đường chỉ lộ khi nước rút. Huệ muốn em vẽ thời điểm nhìn thấy chứ không hứa người khác luôn qua được.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can see the whole path from here.",
+          "vi": "Em nhìn thấy cả lối đi từ đây."
+        },
+        {
+          "who": "b",
+          "en": "Put the water level into your sentence.",
+          "vi": "Em đưa mực nước vào câu đi."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Jin mô tả điều kiện nhìn thấy lối cho người chỉ đọc bản đồ.",
+        "options": [
+          {
+            "t": "You can see the path unless the tide is low.",
+            "note": "Unless ... low biến nước thấp thành ngoại lệ khiến không thấy đường. Ý ấy ngược với cảnh hiện ra lúc nước rút.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "You can see the path when the tide is low.",
+            "note": "When the tide is low gắn tầm nhìn với mực nước thấp. Câu chỉ việc thấy, không cam kết an toàn để qua.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Jin vẽ thêm hai lớp giấy xanh có thể trượt lên xuống. Khi nước lên thật, em đẩy giấy và thấy bản đồ biến đổi giống ngoài khơi. Huệ treo bản đồ động sau cửa kính ở bến.",
+      "say": [
+        {
+          "who": "b",
+          "en": "My map can have a tide too!",
+          "vi": "Bản đồ của em cũng có thủy triều!"
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Huệ giữ Jin ở điểm quan sát. Khi nước dâng che lối, em sửa unless thành when rồi vẽ một gạch đứt ở chỗ con đường biến mất. Bản đồ ấy nhắc khách xem triều trước mỗi chuyến.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A dotted line leaves room for the sea.",
+          "vi": "Đường nét đứt chừa chỗ cho biển."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

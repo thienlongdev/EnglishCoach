@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s189-spare-sound",
+  "title": "Tiếng chuông dự phòng",
+  "summary": "Buổi trưng bày chuông câm kết thúc mà khách không được nghe tiếng mẫu. Mộc giữ bản ghi trong điện thoại suốt buổi.",
+  "level": "B2",
+  "topics": [
+    "modal-perfect-regret"
+  ],
+  "scene": "university",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mộc",
+      "role": "Sinh viên thiết kế"
+    },
+    {
+      "id": "b",
+      "name": "Teo",
+      "role": "Người phụ trách xưởng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Cô nhận ra mình có thể phát nó nhưng đã mải dẫn khách xem hình. Teo hỏi cô muốn làm khác điều gì.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The recording was in my pocket all afternoon.",
+          "vi": "Cả chiều bản thu nằm trong túi tôi."
+        },
+        {
+          "who": "b",
+          "en": "What's the chance we missed?",
+          "vi": "Ta đã bỏ lỡ cơ hội nào?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Mộc nêu một khả năng đã không tận dụng.",
+        "options": [
+          {
+            "ok": false,
+            "t": "I must have played them the sound.",
+            "note": "Must have played suy đoán mạnh rằng đã phát, trái với việc Mộc nhớ mình quên. Nó không diễn đạt tiếc một cơ hội.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "I could have played them the sound.",
+            "note": "Could have played ở đây nói cơ hội đã có. Them là người nghe, the sound là thứ có thể phát.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Cô gửi vé nghe lại cho từng khách. Một người khiếm thị là người đầu tiên hồi âm, phân biệt được hai chuông bằng độ ngân.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We can invite the sound back for a second visit.",
+          "vi": "Ta có thể mời âm thanh tới thăm lần thứ hai."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Mộc mời anh thu lời mô tả ở đợt trưng bày sau.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Teo mở lịch sử phát, không có lượt nào tại phòng. Mộc đem chuông câm ra sân và phát tiếng mẫu ngay dưới mái hiên lúc khách cuối đang về.",
+      "say": [
+        {
+          "who": "a",
+          "en": "That was a small audience worth catching.",
+          "vi": "Nhóm khán giả nhỏ ấy đáng để mình chạy theo."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Hai người quay lại; họ nhắm mắt nghe trọn bản ghi thay vì vội nhìn đồng hồ.",
+      "end": true
+    }
+  ]
+}

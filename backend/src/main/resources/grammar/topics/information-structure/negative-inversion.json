@@ -1,0 +1,558 @@
+{
+  "schema": 1,
+  "slug": "negative-inversion",
+  "version": 2,
+  "domain": "information-structure",
+  "order": 30,
+  "kind": "grammar",
+  "title": {
+    "vi": "Đảo ngữ sau từ phủ định: Never have I…",
+    "en": "Inversion after negative adverbials"
+  },
+  "subtitle": {
+    "vi": "Đảo đúng phần và đúng phạm vi nhấn",
+    "en": "Invert the right part within the right scope"
+  },
+  "aliases": [
+    "đảo ngữ phủ định",
+    "negative inversion",
+    "never have I",
+    "so-such-inversion",
+    "đảo ngữ so such only",
+    "only then did",
+    "not until"
+  ],
+  "level": "C1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Tạo đảo sau negative adverbials.",
+    "Phân biệt only trạng ngữ và chủ ngữ.",
+    "Dùng so/such đảo theo mẫu nhấn mức độ."
+  ],
+  "prerequisites": [
+    "negation-scope"
+  ],
+  "related": [
+    {
+      "slug": "fronting",
+      "rel": "contrast"
+    },
+    {
+      "slug": "negation-scope",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Một số trạng ngữ phủ định hoặc hạn định ở đầu kích hoạt đảo trợ động từ và chủ ngữ. So/such có các mẫu đảo nhấn mức độ riêng. Không phải mọi từ đầu câu đều gây đảo.",
+    "when": "Dùng có chọn lọc trong văn phong nhấn mạnh.",
+    "examples": [
+      {
+        "en": "[NEG|Never] [AUX|have] [S|I] [V|seen] this before.",
+        "vi": "Tôi chưa bao giờ thấy điều này trước đây."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Never have I seen this before đưa never lên đầu và đảo have trước I. Nếu câu thường không có trợ động từ, có thể cần do-support: Only then did I understand. Sau did dùng dạng gốc."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Phần nhấn đầu",
+            "items": [
+              "Only then"
+            ]
+          },
+          {
+            "label": "Trợ động từ",
+            "items": [
+              "did"
+            ]
+          },
+          {
+            "label": "Chủ ngữ",
+            "items": [
+              "I"
+            ]
+          },
+          {
+            "label": "Dạng gốc",
+            "items": [
+              "understand"
+            ]
+          }
+        ],
+        "sentence": "{0} {1} {2} {3}."
+      },
+      "caption": "Did đứng trước I và mang dấu quá khứ; understand giữ dạng gốc.",
+      "alt": "Did đứng trước I và mang dấu quá khứ; understand giữ dạng gốc."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Phần đầu",
+        "Mẫu",
+        "Giới hạn"
+      ],
+      "rows": [
+        [
+          "never/rarely/little trong mẫu phủ định",
+          "Never have I seen ...",
+          "đảo trợ động từ đầu"
+        ],
+        [
+          "only then/only after ...",
+          "Only then did I understand.",
+          "only làm trạng ngữ"
+        ],
+        [
+          "only + chủ ngữ",
+          "Only Lan understood.",
+          "không cùng phép đảo"
+        ],
+        [
+          "not until ...",
+          "Not until she arrived did we start.",
+          "đảo ở mệnh đề chính"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Not until she arrived did we start giữ she arrived trật tự thường trong mệnh đề thời gian. Đảo là did we start, không arrived she."
+    },
+    {
+      "type": "p",
+      "vi": "So/such nhấn mức độ: So loud was the music that we could not talk; Such was her relief that she laughed. Đây là mẫu đánh dấu văn phong, không phải mọi so hoặc such trong câu đều bắt đảo."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Mẫu nhấn",
+        "Ví dụ",
+        "Lưu ý"
+      ],
+      "rows": [
+        [
+          "so + tính từ/trạng từ + đảo",
+          "So heavy was the box that we needed help.",
+          "giữ quan hệ mức độ–kết quả"
+        ],
+        [
+          "such + be + danh ngữ",
+          "Such was the noise that we left.",
+          "mẫu riêng, không đổi mọi such + noun"
+        ],
+        [
+          "not only đầu câu",
+          "Not only did she help, but she also stayed.",
+          "phạm vi nhấn và hai vế cần rõ"
+        ]
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Hardly had ... when ... và no sooner had ... than ... là các mẫu quan hệ thời gian thường gặp. Khi luyện, giữ đúng chuỗi và mốc; đừng đảo mọi mệnh đề chỉ vì có một phần đầu."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Under no circumstances should you open it có modal should đảo, không thêm did. Trong Never had I felt ... đảo had, không đảo toàn bộ had felt như một khối trước chủ ngữ."
+    },
+    {
+      "type": "p",
+      "vi": "Đảo thường có sắc thái trang trọng hoặc nhấn. Không hứa dùng nhiều đảo sẽ tự tăng điểm thi. Nếu ngữ cảnh chỉ cần câu trung tính, trật tự thường có thể rõ hơn."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "negative-inversion-m1",
+      "wrong": "Only then did I understood.",
+      "right": "Only then did I understand.",
+      "why": "Did cần dạng gốc."
+    },
+    {
+      "id": "negative-inversion-m2",
+      "wrong": "Not until arrived she did we start.",
+      "right": "Not until she arrived did we start.",
+      "why": "Giữ trật tự thường trong mệnh đề until."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Mọi only đều làm đảo không?",
+      "a": "Không. Only Lan understood có only thuộc chủ ngữ nên không đảo như only then."
+    },
+    {
+      "q": "Sau not until đảo mệnh đề nào?",
+      "a": "Ở mẫu đang học, đảo mệnh đề chính: Not until she arrived did we start."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "negative-inversion-01",
+      "prompt": "Chọn mẫu đảo sau Never đầu câu.",
+      "explain": "Trợ động từ đầu đứng trước chủ ngữ khi negative adverbial được đưa lên đầu ở mẫu này.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "I have never seen such a view.",
+      "options": [
+        {
+          "t": "Never have I seen such a view.",
+          "ok": true,
+          "note": "Have đảo trước I."
+        },
+        {
+          "t": "Never I have seen such a view.",
+          "ok": false,
+          "note": "Không đảo theo mẫu đang yêu cầu.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Never have seen I such a view.",
+          "ok": false,
+          "note": "I cần đứng sau have, trước seen.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "negative-inversion-02",
+      "prompt": "Ghép theo cả cấu trúc và nghĩa được nêu; không chỉ nhìn khả năng đảo.",
+      "explain": "Đảo phụ thuộc cấu trúc và phạm vi phần đầu.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "Never ... (tôi chưa bao giờ thấy điều này trước đây)",
+          "b": "have I seen this before."
+        },
+        {
+          "a": "Only then ... (chỉ lúc đó tôi mới hiểu)",
+          "b": "did I understand."
+        },
+        {
+          "a": "Not until she arrived ... (chỉ khi cô ấy tới chúng tôi mới bắt đầu)",
+          "b": "did we start."
+        }
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "negative-inversion-03",
+      "prompt": "Phân loại có đảo ở mẫu đã cho hay không.",
+      "explain": "Only gắn với chủ ngữ không kích hoạt cùng phép đảo.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Có đảo",
+        "Không đảo"
+      ],
+      "items": [
+        {
+          "t": "Only then did I understand.",
+          "cat": "Có đảo"
+        },
+        {
+          "t": "Only Lan understood.",
+          "cat": "Không đảo"
+        },
+        {
+          "t": "Never have I seen it.",
+          "cat": "Có đảo"
+        }
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "negative-inversion-04",
+      "prompt": "Điền dạng gốc sau did và phân từ sau have.",
+      "explain": "Did cần understand; have cần seen.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "Only then did I {1} (understand). Never have I {2} (see) this before.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "understand"
+          ]
+        },
+        "2": {
+          "accept": [
+            "seen"
+          ]
+        }
+      },
+      "level": "C1"
+    },
+    {
+      "id": "negative-inversion-05",
+      "prompt": "Sửa dạng sau did trong câu đảo.",
+      "explain": "Dấu quá khứ nằm ở did, không giữ understood.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "Only then did I"
+        },
+        {
+          "t": "understood",
+          "bad": true,
+          "fix": [
+            "understand"
+          ],
+          "note": "Did cần dạng gốc.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "the problem."
+        }
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "negative-inversion-06",
+      "prompt": "Sắp xếp bắt đầu bằng Not until she arrived.",
+      "explain": "Mệnh đề sau until giữ trật tự thường; đảo ở mệnh đề chính.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "Not until she arrived",
+        "did",
+        "we",
+        "start"
+      ],
+      "accept": [
+        [
+          "Not until she arrived",
+          "did",
+          "we",
+          "start"
+        ]
+      ],
+      "end": ".",
+      "level": "C1"
+    },
+    {
+      "id": "negative-inversion-07",
+      "prompt": "Đưa Never lên đầu.",
+      "explain": "Đảo have trước chủ ngữ, không đảo phân từ.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "I have never seen this before.",
+      "instruction": "Bắt đầu Never, giữ have, I và seen this before theo mẫu đảo.",
+      "accept": [
+        "Never have I seen this before"
+      ],
+      "model": "Never have I seen this before",
+      "level": "C1"
+    },
+    {
+      "id": "negative-inversion-08",
+      "prompt": "Viết có chọn lọc theo văn phong.",
+      "explain": "Tự đối chiếu, không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết một câu never đảo, một only then đảo và một câu only gắn chủ ngữ không đảo. Thêm câu so/such nhấn mức độ theo các mẫu bài.",
+      "model": [
+        "Never have I seen this before. Only then did I understand. Only Lan understood. So loud was the music that we could not talk."
+      ],
+      "checklist": [
+        "Đảo đúng trợ động từ đầu.",
+        "Sau did dùng dạng gốc.",
+        "Only chủ ngữ không bị ép đảo.",
+        "Văn phong nhấn mạnh phù hợp ngữ cảnh."
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "negative-inversion-09",
+      "prompt": "Điền be quá khứ trong hai mẫu nhấn mức độ.",
+      "explain": "So + tính từ + be + chủ ngữ; such + be + chủ ngữ trong mẫu đã cho.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "So loud {1} the music that we could not talk. Such {2} her relief that she laughed. Dùng quá khứ đơn của be.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "was"
+          ]
+        },
+        "2": {
+          "accept": [
+            "was"
+          ]
+        }
+      },
+      "level": "C1"
+    },
+    {
+      "id": "negative-inversion-10",
+      "prompt": "Chọn nhận xét đúng về such.",
+      "explain": "Such was ... là mẫu nhấn mức độ trang trọng, không đổi mọi such + danh từ tùy tiện.",
+      "skill": "use",
+      "use": "practice",
+      "type": "choice",
+      "stem": "Such was her relief that she laughed.",
+      "options": [
+        {
+          "t": "Mẫu làm nổi bật mức độ nhẹ nhõm, thường trang trọng hoặc giàu tính kể.",
+          "ok": true,
+          "note": "Có đảo was trước her relief."
+        },
+        {
+          "t": "Such luôn buộc mọi danh từ theo sau đứng sau be.",
+          "ok": false,
+          "note": "Có nhiều cấu trúc such không đảo.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Câu phủ nhận cô ấy nhẹ nhõm.",
+          "ok": false,
+          "note": "Không có nghĩa phủ định.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "negative-inversion-11",
+      "prompt": "Điền dạng theo khung đảo.",
+      "explain": "Did cần know/start; have cần heard.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "Little did I {1} (know). Not until noon did we {2} (start). Never have I {3} (hear) that story.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "know"
+          ]
+        },
+        "2": {
+          "accept": [
+            "start"
+          ]
+        },
+        "3": {
+          "accept": [
+            "heard"
+          ]
+        }
+      },
+      "level": "C1"
+    },
+    {
+      "id": "negative-inversion-12",
+      "prompt": "Đưa Only after lên đầu, đảo mệnh đề chính.",
+      "explain": "After-clause không đảo; did check ở mệnh đề chính.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "We checked the figures only after Lan arrived.",
+      "instruction": "Bắt đầu Only after Lan arrived, dùng did ở mệnh đề chính; giữ we và the figures.",
+      "accept": [
+        "Only after Lan arrived did we check the figures"
+      ],
+      "model": "Only after Lan arrived did we check the figures",
+      "level": "C1"
+    },
+    {
+      "id": "negative-inversion-13",
+      "prompt": "Chọn tất cả mẫu chuẩn.",
+      "explain": "Không đảo only khi nó hạn định chủ ngữ.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "Only Lan knew the answer.",
+          "ok": true,
+          "note": "Only thuộc chủ ngữ."
+        },
+        {
+          "t": "Only then did Lan understand.",
+          "ok": true,
+          "note": "Only then là trạng ngữ đưa đầu."
+        },
+        {
+          "t": "Only then did Lan understood.",
+          "ok": false,
+          "note": "Did cần understand.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Not until arrived she did we start.",
+          "ok": false,
+          "note": "Mệnh đề until cần she arrived.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "negative-inversion-14",
+      "prompt": "Chọn nhận xét đúng về mức độ nhấn.",
+      "explain": "Các kiểu đảo là lựa chọn văn phong, không thay mọi câu thường như yêu cầu bắt buộc.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "Never have I ... / So loud was ... / Such was ...",
+      "options": [
+        {
+          "t": "Có thể hữu ích để nhấn, nhưng không tự làm mọi bài viết tốt hơn.",
+          "ok": true,
+          "note": "Cần mục đích và người đọc."
+        },
+        {
+          "t": "Mọi câu có only phải đảo.",
+          "ok": false,
+          "note": "Only chủ ngữ là ví dụ khác.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Sau một cụm đầu, luôn đảo toàn bộ các mệnh đề phụ.",
+          "ok": false,
+          "note": "Chỉ phần phù hợp với cấu trúc đảo.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "C1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "lgswe",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

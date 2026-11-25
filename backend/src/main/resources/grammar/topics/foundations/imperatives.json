@@ -1,0 +1,317 @@
+{
+  "schema": 1,
+  "slug": "imperatives",
+  "version": 2,
+  "domain": "foundations",
+  "order": 70,
+  "kind": "grammar",
+  "title": { "vi": "Câu mệnh lệnh", "en": "Imperatives" },
+  "subtitle": { "vi": "Động từ dạng gốc, thường lược chủ ngữ: chỉ đường, nhờ, mời và cảnh báo", "en": "A base-form verb, usually with the subject unexpressed: directions, requests, invitations and warnings" },
+  "aliases": ["imperative", "command", "mệnh lệnh", "câu mệnh lệnh", "don't", "do not", "let's", "please", "chỉ đường", "hướng dẫn", "lời khuyên", "don't late", "not touch that", "please to sit down", "let's to go", "be careful", "đừng", "hãy"],
+  "level": "A1",
+  "levelBasis": "editorial",
+  "uses": [
+    { "level": "A1", "vi": "Hiểu và dùng lệnh đơn giản: Sit down. Open your book. Don't run." },
+    { "level": "A2", "vi": "Chỉ đường, đọc công thức, nhờ bằng please, rủ bằng Let's." },
+    { "level": "B1", "vi": "Chọn giữa lệnh trần, lệnh có please và câu hỏi lịch sự, theo người nghe." }
+  ],
+  "objectives": [
+    "Tạo câu mệnh lệnh khẳng định bằng động từ dạng gốc, thường không viết chủ ngữ",
+    "Tạo câu mệnh lệnh phủ định bằng Don't, kể cả với be: Don't be late",
+    "Dùng please và Let's cho đúng chỗ",
+    "Chọn mức lịch sự phù hợp với người nghe thay vì mặc định dùng lệnh trần"
+  ],
+  "prerequisites": [],
+  "related": [
+    { "slug": "what-is-a-sentence", "rel": "more" },
+    { "slug": "verb-be", "rel": "more" },
+    { "slug": "statements-negatives-questions", "rel": "contrast" },
+    { "slug": "permission-and-requests", "rel": "alternative" },
+    { "slug": "reporting-commands-requests", "rel": "more" },
+    { "slug": "politeness-indirectness", "rel": "alternative" }
+  ],
+  "exam": {
+    "ielts": "Trong General Training Writing Task 1, thư gửi bạn bè hoặc đồng nghiệp thường dùng lệnh lịch sự như Please let me know. Bài luận học thuật ít dùng lệnh.",
+    "toeic": "Email, thông báo và hướng dẫn trong Reading thường dùng lệnh lịch sự: Please submit the form. Do not leave bags unattended."
+  },
+  "quick": {
+    "what": "Câu mệnh lệnh (imperative) dùng động từ ở dạng gốc và thường không viết chủ ngữ vì người nghe đã rõ. Chủ ngữ vẫn có thể xuất hiện để nhấn hoặc chọn người: Everyone sit down. Phủ định thông thường dùng Don't, kể cả với be. Rủ cùng làm thường dùng Let's.",
+    "when": "Dùng để chỉ đường, đưa hướng dẫn, nhờ, mời, cảnh báo và khuyên. Với người lạ hoặc người lớn tuổi, thêm please hoặc dùng một câu hỏi lịch sự.",
+    "examples": [
+      { "en": "[V|Open] [O|the window].", "vi": "Mở cửa sổ ra." },
+      { "en": "[AUX|Don't] [V|touch] [O|that].", "vi": "Đừng chạm vào cái đó." },
+      { "en": "[V|Be] [C|careful].", "vi": "Cẩn thận." }
+    ],
+    "remember": "Mệnh lệnh dùng dạng gốc, không thêm -s theo người nghe; thường lược chủ ngữ. Mẫu phủ định thông dụng là Don't + động từ, kể cả Don't be late."
+  },
+  "lesson": [
+    { "type": "p", "vi": "Câu mệnh lệnh (imperative) dùng động từ dạng gốc để chỉ đường, hướng dẫn, nhờ, mời, khuyên hoặc ra lệnh. Chủ ngữ thường được hiểu là người nghe nên không viết ra; không phải quy tắc cấm chủ ngữ. Phần sâu có You stay here và Somebody call an ambulance." },
+    { "type": "formula", "lines": [
+      { "label": "Khẳng định", "parts": [ { "t": "động từ dạng gốc", "role": "V" }, { "t": "phần còn lại" } ] },
+      { "label": "Phủ định", "parts": [ { "t": "Don't", "role": "AUX" }, { "t": "động từ dạng gốc", "role": "V" }, { "t": "phần còn lại" } ] },
+      { "label": "Với be", "parts": [ { "t": "Be", "role": "V" }, { "t": "tính từ hay danh từ", "role": "C" } ] },
+      { "label": "Phủ định với be", "parts": [ { "t": "Don't", "role": "AUX" }, { "t": "be", "role": "V" }, { "t": "tính từ hay danh từ", "role": "C" } ] },
+      { "label": "Rủ cùng làm", "parts": [ { "t": "Let's", "role": "AUX" }, { "t": "động từ dạng gốc", "role": "V" }, { "t": "phần còn lại" } ] }
+    ] },
+    { "type": "diagram",
+      "spec": { "kind": "transform", "steps": [
+        { "label": "Câu có chủ ngữ you", "sentence": "You open the window." },
+        { "label": "Mệnh lệnh: bỏ chủ ngữ", "sentence": "Open the window." },
+        { "label": "Lịch sự hơn: thêm please", "sentence": "Please open the window." },
+        { "label": "Phủ định: thêm Don't", "sentence": "Don't open the window." }
+      ], "changed": ["You", "Please", "Don't"] },
+      "caption": "Các mệnh lệnh cơ bản ở đây dùng dạng gốc và lược chủ ngữ. Có những mệnh lệnh viết chủ ngữ ra, được nêu ở phần sâu.",
+      "alt": "Bốn bước: You open the window; Open the window với chủ ngữ you bị bỏ; Please open the window với please thêm vào đầu; Don't open the window với Don't thêm vào đầu và động từ giữ dạng gốc." },
+    { "type": "h", "vi": "Một dạng, nhiều việc" },
+    { "type": "examples", "items": [
+      { "en": "[V|Turn] left at the bank and [V|go] straight.", "vi": "Rẽ trái ở chỗ ngân hàng rồi đi thẳng.", "note": "Chỉ đường.", "tag": "spoken" },
+      { "en": "[V|Add] two eggs and [V|stir] slowly.", "vi": "Cho hai quả trứng vào và khuấy chậm.", "note": "Hướng dẫn, như trong công thức nấu ăn.", "tag": "written" },
+      { "en": "Please [V|send] me the file.", "vi": "Làm ơn gửi cho tôi tệp đó.", "note": "Nhờ lịch sự." },
+      { "en": "[V|Come] in and [V|have] a seat.", "vi": "Mời vào và ngồi đi.", "note": "Mời.", "tag": "spoken" },
+      { "en": "[V|Watch] out!", "vi": "Cẩn thận!", "note": "Cảnh báo.", "tag": "spoken" },
+      { "en": "[V|Take] an umbrella. It might rain.", "vi": "Mang ô theo đi. Trời có thể mưa.", "note": "Khuyên.", "tag": "spoken" }
+    ] },
+    { "type": "h", "vi": "Phủ định bằng Don't" },
+    { "type": "contrast",
+      "items": [
+        { "a": { "en": "[V|Open] [O|the window].", "vi": "Mở cửa sổ ra." }, "b": { "en": "[AUX|Don't] [V|open] [O|the window].", "vi": "Đừng mở cửa sổ." }, "diff": "Thêm Don't, động từ vẫn ở dạng gốc. Không viết Not open." },
+        { "a": { "en": "[V|Be] [C|quiet].", "vi": "Hãy yên lặng." }, "b": { "en": "[AUX|Don't] [V|be] [C|noisy].", "vi": "Đừng ồn ào." }, "diff": "Phủ định thông dụng với be là Don't be. Be not có thể gặp trong văn phong cổ hoặc trang trọng đặc biệt; nó không phải mẫu trung tính của hội thoại này." }
+      ] },
+    { "type": "try", "exercise": "imp-01" },
+    { "type": "h", "vi": "Be trong câu mệnh lệnh" },
+    { "type": "p", "vi": "Be là động từ gốc, nên mệnh lệnh với tính từ hoặc danh từ dùng Be: Be careful. Be quiet. Be a good listener. Khác với câu thường (He isn't late), phủ định của mệnh lệnh với be vẫn dùng Don't: Don't be late. Don't be afraid." },
+    { "type": "note", "kind": "vn", "vi": "Tiếng Việt nói \"Đừng sợ\", \"Cẩn thận\", \"Yên lặng\", \"Đừng muộn\": tính từ đi thẳng sau \"đừng\" hay đứng một mình. Tiếng Anh cần be: Don't be afraid. Be careful. Be quiet. Don't be late. Người học có thể viết Don't late hoặc Don't afraid." },
+    { "type": "note", "kind": "vn", "vi": "\"Đừng\" của tiếng Việt là một từ. Tiếng Anh dùng Don't cộng động từ gốc, không dùng not hay no đứng một mình: Don't touch that, không phải Not touch that. Các từ \"hãy\", \"đi\", \"nào\", \"nhé\" của tiếng Việt không có từ tương ứng đơn lẻ; tiếng Anh dùng please, giọng nói, hoặc Let's." },
+    { "type": "h", "vi": "Let's: rủ cùng làm" },
+    { "type": "examples", "items": [
+      { "en": "[AUX|Let's] [V|go] home.", "vi": "Mình về nhà đi.", "note": "Let's gồm cả người nói. Sau Let's là động từ dạng gốc, không có to." },
+      { "en": "[AUX|Let's] [NEG|not] [V|wait].", "vi": "Mình đừng chờ nữa.", "note": "Phủ định: Let's not. Trong tiếng Anh Anh còn có Don't let's." }
+    ] },
+    { "type": "h", "vi": "Mệnh lệnh không phải lúc nào cũng cộc" },
+    { "type": "p", "vi": "Mệnh lệnh trần như Sit down là bình thường với người thân, trong hướng dẫn, khi cảnh báo. Với người lạ hoặc người lớn tuổi, bạn có thể thêm please hoặc dùng câu hỏi lịch sự. Giọng nói cũng thay đổi mức độ của câu." },
+    { "type": "diagram",
+      "spec": { "kind": "scale", "from": "Thẳng", "to": "Mềm mỏng",
+        "items": [
+          { "pos": 5, "t": "Mệnh lệnh trần", "en": "Sit down.", "vi": "Hợp với hướng dẫn, với người thân và khi cần nhanh. Với người lạ có thể nghe cộc." },
+          { "pos": 30, "t": "Thêm please", "en": "Please sit down.", "vi": "Lịch sự hơn, vẫn là một mệnh lệnh." },
+          { "pos": 75, "t": "Câu hỏi lịch sự", "en": "Could you sit down, please?", "vi": "Hợp khi nhờ người lạ hoặc người lớn tuổi." },
+          { "pos": 95, "t": "Trang trọng", "en": "Would you mind sitting down?", "vi": "Rất lịch sự, hợp với tình huống trang trọng." }
+        ] },
+      "caption": "Cùng một yêu cầu, từ thẳng đến mềm mỏng. Chọn mức theo người nghe và hoàn cảnh, không có mức nào đúng cho mọi lúc.",
+      "alt": "Thang từ thẳng đến mềm mỏng: Sit down; Please sit down; Could you sit down, please; Would you mind sitting down." },
+    { "type": "try", "exercise": "imp-08" },
+    { "type": "note", "kind": "tip", "vi": "Một câu mệnh lệnh chỉ có một dạng, dùng cho một người hay nhiều người: Open your books, please. Không đổi theo số lượng người nghe." }
+  ],
+  "deep": [
+    { "type": "h", "vi": "Không có thì, không có -s" },
+    { "type": "p", "vi": "Mệnh lệnh không mang thì và không có -s: Close the door, không phải Closes the door. Nó cũng không dùng will trong cách nói thông thường. Đây là dạng gốc của động từ, giống dạng dùng sau will hay can." },
+    { "type": "h", "vi": "Chủ ngữ you có thể xuất hiện" },
+    { "type": "p", "vi": "Chủ ngữ có thể được nói ra để nhấn mạnh, đối chiếu hoặc gọi đích danh: You take this one, and I'll take that one. Dùng You một mình như You sit there! có thể nghe như đang quát. Bạn cũng có thể dùng chủ ngữ khác để chọn người trong nhóm: Somebody call an ambulance! Everyone sit down. Nobody move!" },
+    { "type": "examples", "items": [
+      { "en": "[S|Somebody] [V|call] an ambulance!", "vi": "Ai đó gọi xe cấp cứu đi!" },
+      { "en": "John, [V|come] here.", "vi": "John, lại đây.", "note": "Tên người được gọi (vocative) tách bằng dấu phẩy." }
+    ] },
+    { "type": "h", "vi": "Do nhấn mạnh" },
+    { "type": "p", "vi": "Do có thể đứng đầu mệnh lệnh khẳng định để nhấn mạnh hoặc nghe mời mọc hơn: Do sit down. Do be careful. Trong văn viết hướng dẫn và biển báo, phủ định hay viết đủ: Do not enter. Do not leave bags unattended." },
+    { "type": "h", "vi": "Câu hỏi đuôi sau mệnh lệnh" },
+    { "type": "p", "vi": "Sau mệnh lệnh, người ta có thể thêm will you, would you, can you, và sau Let's thêm shall we: Close the door, will you? Don't be late, will you? Let's go, shall we? Dạng này thân mật, và tùy giọng nói mà nghe lịch sự hoặc sốt ruột." },
+    { "type": "h", "vi": "Mệnh lệnh làm điều kiện" },
+    { "type": "p", "vi": "Mệnh lệnh có thể đi với and hoặc or để nêu một điều kiện: Hurry up and you'll catch the train. Hurry up or you'll miss the train. Đây là cách nói thân mật, cùng nghĩa với câu có if." },
+    { "type": "h", "vi": "Careful! và Be careful!" },
+    { "type": "p", "vi": "Careful! Quiet! Hands up! là những câu rút gọn (minor sentence), không phải mệnh lệnh có động từ, và chúng hoàn toàn tự nhiên trong lời nói. Be careful! và Be quiet! mới là mệnh lệnh với be." },
+    { "type": "note", "kind": "register", "vi": "Be not afraid là mẫu có trong văn học cổ; người viết hiện đại có thể dùng để tạo giọng cổ hoặc trang trọng đặc biệt. Mẫu trung tính để dùng trong hội thoại là Don't be afraid." }
+  ],
+  "mistakes": [
+    { "id": "imp-not-for-dont", "wrong": "Not touch that!", "right": "Don't touch that!", "why": "Phủ định của mệnh lệnh cần Don't (do not). Not đứng một mình không dùng trước động từ.", "vn": "\"Đừng\" của tiếng Việt là một từ đứng trước động từ, nên người học có thể thay bằng một từ phủ định tiếng Anh duy nhất." },
+    { "id": "imp-to-infinitive", "wrong": "Please to sit down.", "right": "Please sit down.", "why": "Mệnh lệnh dùng động từ dạng gốc, không có to." },
+    { "id": "imp-dont-adjective", "wrong": "Don't late for the meeting!", "right": "Don't be late for the meeting!", "why": "Late là tính từ. Cần be giữa Don't và tính từ.", "vn": "Tiếng Việt nói \"Đừng muộn họp nhé\" với tính từ ngay sau \"đừng\"." },
+    { "id": "imp-lets-to", "wrong": "Let's to go home.", "right": "Let's go home.", "why": "Sau Let's là động từ dạng gốc, không có to." }
+  ],
+  "faq": [
+    { "q": "Câu mệnh lệnh có luôn bất lịch sự không?", "a": "Không. Chỉ đường, đọc công thức, mời vào nhà hay chúc (Have a nice day) đều dùng mệnh lệnh một cách tự nhiên. Nhưng một mệnh lệnh trần với người lạ có thể nghe cộc. Thêm please hoặc dùng câu hỏi như Could you…? khi cần lịch sự." },
+    { "q": "Vì sao là Don't be late mà không phải Be not late?", "a": "Don't be late là mẫu phủ định thông dụng trong tiếng Anh hiện nay. Be not late có thể mang giọng cổ hoặc văn chương; không nên gọi nó sai ngữ pháp tuyệt đối. Khi nói chuyện hằng ngày, dùng Don't be late." },
+    { "q": "Tôi có thể thêm you vào mệnh lệnh không?", "a": "Được, nhưng nó thường có nghĩa nhấn mạnh hoặc đối chiếu (You take this one) và có thể nghe như quát. Bình thường không cần you." },
+    { "q": "Let's khác Let us thế nào?", "a": "Let's go thường rủ cả người nói cùng đi. Let us go có thể là xin phép cho chúng tôi đi, nhưng let us cũng là dạng đầy đủ trang trọng để rủ cùng làm, như lời mở một cuộc họp. Ngữ cảnh và ngữ điệu quyết định; không phải mọi let us đều loại người nghe." },
+    { "q": "Câu mệnh lệnh có thì không?", "a": "Không. Nó dùng dạng gốc của động từ, không có thì hay -s. Thời điểm làm việc đó do ngữ cảnh quyết định." }
+  ],
+  "exercises": [
+    { "id": "imp-01", "type": "choice", "level": "A1", "use": "practice", "skill": "form",
+      "prompt": "Chọn câu tiếng Anh đúng cho nghĩa: \"Đừng chạm vào cái đó!\"",
+      "stem": "Đừng chạm vào cái đó!",
+      "options": [
+        { "t": "Don't touch that!", "ok": true, "note": "Phủ định của mệnh lệnh: Don't cộng động từ dạng gốc." },
+        { "t": "Not touch that!", "note": "Not không đứng một mình trước động từ trong mệnh lệnh. Cần Don't.", "tag": "imperative-not-dont" },
+        { "t": "Don't to touch that!", "note": "Sau Don't là động từ dạng gốc, không có to.", "tag": "imperative-to-infinitive" }
+      ],
+      "explain": "Mệnh lệnh phủ định: Don't cộng động từ gốc." },
+    { "id": "imp-02", "type": "choice", "level": "A1", "use": "check", "skill": "form",
+      "prompt": "Chọn câu tiếng Anh đúng cho nghĩa: \"Đừng đến muộn.\"",
+      "stem": "Đừng đến muộn.",
+      "options": [
+        { "t": "Don't be late.", "ok": true, "note": "Late là tính từ, nên cần be: Don't be late." },
+        { "t": "Don't late.", "note": "Thiếu be giữa Don't và tính từ.", "tag": "copula-omission" },
+        { "t": "Not be late.", "note": "Phủ định của mệnh lệnh cần Don't, kể cả với be.", "tag": "imperative-not-dont" }
+      ],
+      "explain": "Be cần cho tính từ, và phủ định mệnh lệnh vẫn dùng Don't: Don't be late." },
+    { "id": "imp-03", "type": "order", "level": "A1", "use": "practice", "skill": "form",
+      "prompt": "Sắp xếp thành một mệnh lệnh lịch sự.",
+      "tokens": ["please", "close", "the", "door"],
+      "end": ".",
+      "accept": [
+        ["please", "close", "the", "door"],
+        ["close", "the", "door", "please"]
+      ],
+      "explain": "Please có thể đứng đầu hoặc cuối. Khi đứng cuối, thường thêm dấu phẩy: Close the door, please." },
+    { "id": "imp-04", "type": "order", "level": "A1", "use": "practice", "skill": "form",
+      "prompt": "Sắp xếp thành một mệnh lệnh phủ định.",
+      "tokens": ["don't", "be", "afraid", "of", "the", "dog"],
+      "end": ".",
+      "accept": [["don't", "be", "afraid", "of", "the", "dog"]],
+      "explain": "Don't, rồi be, rồi tính từ afraid, rồi cụm of the dog." },
+    { "id": "imp-05", "type": "transform", "level": "A1", "use": "practice", "skill": "production",
+      "prompt": "Viết lại câu thành một mệnh lệnh.",
+      "source": "You open the window.",
+      "instruction": "Bỏ chủ ngữ.",
+      "accept": ["Open the window"],
+      "model": "Open the window.",
+      "explain": "Mệnh lệnh bỏ chủ ngữ you và giữ động từ ở dạng gốc." },
+    { "id": "imp-06", "type": "transform", "level": "A1", "use": "check", "skill": "production",
+      "prompt": "Viết lại câu thành mệnh lệnh phủ định.",
+      "source": "Touch the screen.",
+      "instruction": "Dùng Don't hoặc Do not.",
+      "accept": ["Don't touch the screen", "Do not touch the screen"],
+      "model": "Don't touch the screen.",
+      "known": [
+        { "t": "Not touch the screen", "verdict": "wrong", "note": "Cần Don't hoặc Do not, không dùng Not đứng một mình.", "tag": "imperative-not-dont" },
+        { "t": "Doesn't touch the screen", "verdict": "wrong", "note": "Mệnh lệnh dùng Don't, không dùng Doesn't.", "tag": "imperative-doesnt" }
+      ],
+      "explain": "Phủ định của mệnh lệnh: Don't hoặc Do not, cộng động từ gốc." },
+    { "id": "imp-07", "type": "transform", "level": "A1", "use": "practice", "skill": "production",
+      "prompt": "Viết lại câu thành mệnh lệnh phủ định.",
+      "source": "Be rude to the guests.",
+      "instruction": "Dùng Don't hoặc Do not theo mẫu thông dụng trong hội thoại.",
+      "accept": ["Don't be rude to the guests", "Do not be rude to the guests"],
+      "model": "Don't be rude to the guests.",
+      "known": [
+        {
+          "t": "Be not rude to the guests",
+          "verdict": "acceptable",
+          "note": "Be not rude to the guests có thể dùng với giọng cổ hoặc văn chương. Nó không theo mẫu Don't/Do not đang luyện, nhưng không phải sai ngữ pháp tuyệt đối."
+        },
+        { "t": "Don't rude to the guests", "verdict": "wrong", "note": "Thiếu be giữa Don't và tính từ rude.", "tag": "copula-omission" }
+      ],
+      "explain": "Mẫu thông dụng là Don't be rude to the guests hoặc Do not be rude to the guests. Be not thuộc một văn phong khác; không suy ra mệnh lệnh phủ định luôn bắt buộc có do trong mọi thời kỳ." },
+    { "id": "imp-08", "type": "choice", "level": "A2", "use": "practice", "skill": "use",
+      "prompt": "Chọn câu phù hợp nhất để nhờ một người lạ trên tàu nhường chỗ.",
+      "stem": "Bạn muốn nhờ một người lạ nhích vào một chút.",
+      "options": [
+        { "t": "Move!", "note": "Đúng ngữ pháp nhưng quá thẳng với người lạ, nghe như ra lệnh.", "tag": "imperative-too-direct" },
+        { "t": "You move over now.", "note": "Có chủ ngữ you và now, nghe như quát hoặc ra lệnh.", "tag": "imperative-too-direct" },
+        { "t": "Could you move over a little, please?", "ok": true, "note": "Câu hỏi lịch sự kèm please, hợp để nhờ người lạ." }
+      ],
+      "explain": "Với người lạ, câu hỏi lịch sự thường mềm hơn mệnh lệnh trần. Mệnh lệnh trần phù hợp hơn với người thân hoặc khi hướng dẫn." },
+    { "id": "imp-09", "type": "error", "level": "A1", "use": "practice", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "Please" },
+        { "t": "to sit", "bad": true, "fix": ["sit"], "note": "Mệnh lệnh dùng động từ dạng gốc, không có to.", "tag": "imperative-to-infinitive" },
+        { "t": "down." }
+      ],
+      "explain": "Câu đúng là Please sit down." },
+    { "id": "imp-10", "type": "error", "level": "A1", "use": "check", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "Don't" },
+        { "t": "late", "bad": true, "fix": ["be late"], "note": "Late là tính từ, cần be: Don't be late.", "tag": "copula-omission" },
+        { "t": "for the meeting!" }
+      ],
+      "explain": "Câu đúng là Don't be late for the meeting! Tính từ cần be, kể cả sau Don't." },
+    { "id": "imp-11", "type": "error", "level": "A1", "use": "check", "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "noError": true,
+      "segments": [
+        { "t": "Be" },
+        { "t": "careful" },
+        { "t": "with the knife." }
+      ],
+      "explain": "Câu đúng. Be careful là mệnh lệnh với be và tính từ." },
+    { "id": "imp-12", "type": "error", "level": "A1", "use": "check", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "Let's" },
+        { "t": "to go", "bad": true, "fix": ["go"], "note": "Sau Let's là động từ dạng gốc, không có to.", "tag": "imperative-to-infinitive" },
+        { "t": "home." }
+      ],
+      "explain": "Câu đúng là Let's go home." },
+    { "id": "imp-13", "type": "match", "level": "A1", "use": "practice", "skill": "use",
+      "prompt": "Nối mỗi việc cần làm với câu mệnh lệnh phù hợp.",
+      "pairs": [
+        { "a": "Chỉ đường", "b": "Turn left at the bank." },
+        { "a": "Nhờ lịch sự", "b": "Please send me the file." },
+        { "a": "Mời", "b": "Come in and have a seat." },
+        { "a": "Cảnh báo", "b": "Watch out!" },
+        { "a": "Rủ cùng làm", "b": "Let's go." },
+        { "a": "Cấm", "b": "Don't touch that." }
+      ],
+      "explain": "Một dạng mệnh lệnh làm được nhiều việc, tùy ngữ cảnh và giọng nói." },
+    { "id": "imp-14", "type": "classify", "level": "A1", "use": "check", "skill": "recognition",
+      "prompt": "Phân loại theo ngữ cảnh: They wait here kể thói quen của họ; Everyone sit down là lời yêu cầu cả nhóm ngồi.",
+      "cats": ["Câu mệnh lệnh", "Không phải câu mệnh lệnh"],
+      "items": [
+        {
+          "t": "Please wait here.",
+          "cat": "Câu mệnh lệnh"
+        },
+        {
+          "t": "They wait here.",
+          "cat": "Không phải câu mệnh lệnh"
+        },
+        {
+          "t": "Be careful.",
+          "cat": "Câu mệnh lệnh"
+        },
+        {
+          "t": "He is careful.",
+          "cat": "Không phải câu mệnh lệnh"
+        },
+        {
+          "t": "Take an umbrella.",
+          "cat": "Câu mệnh lệnh"
+        },
+        {
+          "t": "I took an umbrella.",
+          "cat": "Không phải câu mệnh lệnh"
+        },
+        {
+          "t": "Everyone sit down.",
+          "cat": "Câu mệnh lệnh"
+        }
+      ],
+      "explain": "Các mệnh lệnh ở đây dùng dạng gốc và thường lược chủ ngữ, nhưng Everyone sit down viết rõ người được yêu cầu. They wait here kể thói quen trong ngữ cảnh đã cho. Không chỉ nhìn xem có chủ ngữ hay không để phân loại." },
+    { "id": "imp-15", "type": "multi", "level": "A1", "use": "check", "skill": "form",
+      "prompt": "Chọn tất cả các câu mệnh lệnh đúng.",
+      "stem": "Những câu nào đúng?",
+      "options": [
+        { "t": "Close the door, please.", "ok": true, "note": "Mệnh lệnh khẳng định với please ở cuối." },
+        { "t": "Closes the door.", "note": "Mệnh lệnh không có -s.", "tag": "imperative-agreement" },
+        { "t": "Don't forget your passport.", "ok": true, "note": "Don't cộng động từ gốc." },
+        { "t": "Please to wait.", "note": "Không có to trong mệnh lệnh.", "tag": "imperative-to-infinitive" },
+        { "t": "Be quiet.", "ok": true, "note": "Be cộng tính từ." },
+        { "t": "Don't noisy.", "note": "Thiếu be: Don't be noisy.", "tag": "copula-omission" }
+      ],
+      "explain": "Câu đúng dùng động từ dạng gốc, Don't cộng dạng gốc, hoặc Be cộng tính từ." },
+    { "id": "imp-16", "type": "open", "level": "A1", "use": "practice", "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Viết 4 bước hướng dẫn cho một người bạn đi từ cổng trường đến thư viện, hoặc cách nấu một món đơn giản. Mỗi bước là một mệnh lệnh. Thêm một câu cảnh báo bắt đầu bằng Don't.",
+      "model": ["Go through the main gate. Turn right at the canteen. Walk past the sports hall. Enter the blue building through the front door. Don't use the side door; it is closed."],
+      "checklist": ["Bốn bước dùng dạng gốc; với bài hướng dẫn này, lược chủ ngữ để viết gọn", "Có một câu cảnh báo với Don't hoặc Do not", "Không có -s hoặc -ed trong các mệnh lệnh", "Nếu dùng tính từ, có Be hoặc Don't be"],
+      "explain": "Khi tự kiểm tra, tìm động từ đầu câu và xem nó có ở dạng gốc không. Chỉ đường, hướng dẫn và công thức nấu ăn là nơi mệnh lệnh được dùng thường xuyên nhất." }
+  ],
+  "sources": [
+    { "ref": "cgt", "note": "Mục về imperatives và Let's" },
+    { "ref": "swan-peu", "note": "Phần về imperative, do nhấn mạnh và Let's" },
+    { "ref": "cgel", "note": "Cách phân tích mệnh lệnh như một loại mệnh đề" },
+    { "ref": "murphy-essential", "note": "Phần về mệnh lệnh và Let's" }
+  ],
+  "editorial": { "status": "drafted" }
+}

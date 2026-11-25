@@ -1,0 +1,50 @@
+{
+  "id": "should-rain",
+  "title": "Bỏ if có đổi độ chắc chắn không?",
+  "summary": "Bạn sửa một thông báo dự phòng tại sân khấu ngoài trời. Thay if … should bằng đảo ngữ, rồi so với trường hợp giả định quá khứ. Trợ động từ nào có thể ra đầu?",
+  "level": "C1",
+  "topics": [
+    "inverted-conditionals"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Kiểu điều kiện",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Dự phòng với if"
+        },
+        {
+          "id": "v2",
+          "label": "Dự phòng đảo ngữ"
+        },
+        {
+          "id": "v3",
+          "label": "Nhìn lại"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "If the canopy should tear, move the instruments indoors.",
+      "vi": "Nếu chẳng may mái che rách, hãy chuyển nhạc cụ vào trong.",
+      "note": "Should trong mệnh đề if nêu tình huống dự phòng chứ không khuyên mái che phải rách. / Should marks a tentative contingency.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Should the canopy tear, move the instruments indoors.",
+      "vi": "Nếu chẳng may mái che rách, hãy chuyển nhạc cụ vào trong.",
+      "note": "Should đứng trước chủ ngữ canopy khi bỏ if. Lời chỉ dẫn vẫn áp dụng nếu sự cố xảy ra. / Inversion replaces if without changing the precaution.",
+      "verdict": "ok"
+    },
+    "v3": {
+      "en": "Had the canopy torn, we would have moved the instruments indoors.",
+      "vi": "Giả sử lúc đó mái che rách, chúng tôi đã chuyển nhạc cụ vào trong.",
+      "note": "Had … torn thay if … had torn. Đây là nhìn lại giả định cũ, không còn là thông báo cho sự việc sắp tới. / Initial had introduces a counterfactual past condition.",
+      "verdict": "ok"
+    }
+  }
+}

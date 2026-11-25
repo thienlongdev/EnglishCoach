@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s191-yesterdays-yellow",
+  "title": "Màu vàng của ngày hôm qua",
+  "summary": "Một khách gọi màu sơn khô hôm nay là màu nắng hôm qua. Mộc muốn thuật lại lời ấy mà không biến nó thành số đo ánh sáng.",
+  "level": "B2",
+  "topics": [
+    "direct-and-reported",
+    "backshift"
+  ],
+  "scene": "university",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mộc",
+      "role": "Sinh viên thiết kế"
+    },
+    {
+      "id": "b",
+      "name": "Teo",
+      "role": "Người phụ trách xưởng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Khách nói đúng nguyên văn It looks warmer today. Teo xem cùng tấm dưới hai bóng đèn khác nhau.",
+      "say": [
+        {
+          "who": "a",
+          "en": "She said how it looked to her.",
+          "vi": "Bà nói màu trông thế nào dưới mắt bà."
+        },
+        {
+          "who": "b",
+          "en": "Keep her impression in the sentence.",
+          "vi": "Hãy giữ cảm nhận của bà trong câu."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn lời thuật không nâng cảm nhận thành đo nhiệt độ.",
+        "options": [
+          {
+            "ok": true,
+            "t": "She said it looked warmer that day.",
+            "note": "Said ... looked thuật cảm nhận. That day giữ mốc của lời nói khi kể lại về sau. Warmer ở đây có thể nói sắc màu.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "She measured a rise in temperature that day.",
+            "note": "Measured và temperature đưa thêm phép đo vật lý chưa từng thực hiện. Đó không phải cách thuật lại looks warmer.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Mộc đặt hai mẫu dưới hai ngọn đèn và cho khách ghi cảm nhận. Những tên màu viết tay đầy cả mép bàn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The visitor gave yellow an address.",
+          "vi": "Vị khách cho màu vàng một địa chỉ."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Một người viết Màu nhà bà. Mộc giữ lại mép giấy ấy thay cho bảng số vô nghĩa trong cuộc trưng bày này.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Teo đặt nhiệt kế bên tấm sơn, nhiệt độ không đổi khi đổi bóng đèn. Mộc thêm dưới ảnh hai chữ To me của người khách.",
+      "say": [
+        {
+          "who": "a",
+          "en": "There was a memory inside that colour.",
+          "vi": "Bên trong sắc màu ấy có một ký ức."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Lần tới bà quay lại với chiếc khăn vàng thời nhỏ. Cả xưởng mới hiểu vì sao bà chọn chữ warmer.",
+      "end": true
+    }
+  ]
+}

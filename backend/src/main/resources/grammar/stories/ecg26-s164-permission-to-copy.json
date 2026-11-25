@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s164-permission-to-copy",
+  "title": "Quyền được chép tay",
+  "summary": "Một bà cụ cho Linh chép tay một câu trong sổ nhưng chưa cho đăng ảnh cả trang.",
+  "level": "B2",
+  "topics": [
+    "passive-tenses-modals"
+  ],
+  "scene": "newsroom",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Linh",
+      "role": "Phóng viên trực đêm"
+    },
+    {
+      "id": "b",
+      "name": "Ari",
+      "role": "Biên tập viên"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Trên trang còn có địa chỉ của người thân. Tòa soạn chỉ cần lời bà mô tả ngày cầu mở. Bà đóng nắp máy ảnh nhưng đẩy bút chì sang.",
+      "say": [
+        {
+          "who": "a",
+          "en": "She left the pencil on the sentence.",
+          "vi": "Bà đặt bút chì ngay chỗ câu ấy."
+        },
+        {
+          "who": "b",
+          "en": "What exactly can appear in print?",
+          "vi": "Chính xác thì thứ gì được phép lên báo?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Ari cần một lời ghi quyền hạn giữ nguyên đối tượng bà đã cho phép.",
+        "options": [
+          {
+            "ok": true,
+            "t": "The sentence may be copied by hand.",
+            "note": "May be copied cấp phép cho việc chép riêng câu và phương thức bằng tay. Phần còn lại của trang nằm ngoài lời cho phép này.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "The whole page may be photographed.",
+            "note": "Cùng cấu trúc may be nhưng đổi đối tượng và hành động thành chụp toàn trang, vượt lời bà.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Linh chép lại rồi đọc cho bà nghe. Bà sửa tên chiếc cầu bằng nét chữ nghiêng nhỏ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "One sentence was the whole story we needed.",
+          "vi": "Chỉ một câu đã đủ cho câu chuyện ta cần."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Báo in đúng tên cầu kèm lời bà. Người thân gửi về ảnh buổi mở cầu để bà tự chọn lần sau có muốn chia sẻ hay không.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Linh nhìn địa chỉ cạnh mép ảnh ngắm rồi hạ máy. Cô xin lại đúng câu, chép tay và gập phần còn lại vào sổ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Her pencil had a clearer boundary than my lens.",
+          "vi": "Cây bút của bà biết dừng đúng chỗ hơn ống kính của tôi."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Bà tặng Linh chính cây bút chì cũ. Ở số báo sau, cô vẫn ghi chú phạm vi được phép bằng cây bút ấy.",
+      "end": true
+    }
+  ]
+}

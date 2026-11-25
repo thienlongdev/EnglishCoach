@@ -1,0 +1,41 @@
+{
+  "id": "summer-flat",
+  "title": "Mượn đúng chiếc quạt hay mua cùng loại?",
+  "summary": "Bạn khen chiếc quạt của bạn cùng nhà. Đổi it thành one rồi xem người nói còn muốn đúng chiếc quạt đang chỉ không.",
+  "level": "B1",
+  "topics": [
+    "one-and-ones",
+    "pronoun-reference"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Đối tượng",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Chính chiếc đó"
+        },
+        {
+          "id": "v2",
+          "label": "Một chiếc cùng loại"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Can I borrow it?",
+      "vi": "Tôi mượn chiếc đó được không?",
+      "note": "It nhắc lại đúng chiếc quạt đã xác định. / It tracks the particular fan.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Where can I buy one?",
+      "vi": "Tôi có thể mua một chiếc như thế ở đâu?",
+      "note": "One không đòi hỏi chiếc sẽ mua phải là chiếc quạt đang đứng trước mặt. / One stands for a countable item of the same kind.",
+      "verdict": "ok"
+    }
+  }
+}

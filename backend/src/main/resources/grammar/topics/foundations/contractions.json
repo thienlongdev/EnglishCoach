@@ -1,0 +1,292 @@
+{
+  "schema": 1,
+  "slug": "contractions",
+  "version": 2,
+  "domain": "foundations",
+  "order": 130,
+  "kind": "grammar",
+  "title": { "vi": "Dạng rút gọn: I'm, don't, she's", "en": "Contractions" },
+  "subtitle": { "vi": "Rút hai từ thành một bằng dấu nháy: I am thành I'm, do not thành don't. Tự nhiên khi nói, cần cân nhắc khi viết trang trọng", "en": "Joining two words with an apostrophe: I am becomes I'm. Natural in speech, to be weighed in formal writing" },
+  "aliases": ["contractions", "dạng rút gọn", "i'm don't she's", "dấu nháy trong tiếng Anh", "dont cant wont", "it's or its", "yes i'm", "gonna wanna"],
+  "level": "A1",
+  "levelBasis": "editorial",
+  "uses": [
+    { "level": "A1", "vi": "Nói và đọc I'm, you're, isn't, don't, can't trong câu đơn giản." },
+    { "level": "A2", "vi": "Dùng I'll, I've, won't, let's và biết 's là is hay has." },
+    { "level": "B1", "vi": "Chọn rút gọn hay đầy đủ theo văn phong, và phân biệt 'd là would hay had." }
+  ],
+  "objectives": [
+    "Đọc và viết các dạng rút gọn thông dụng: I'm, you're, she's, isn't, don't, can't, I'll",
+    "Đặt dấu nháy đúng chỗ, thay cho chữ cái bị bỏ",
+    "Phân biệt it's với its, you're với your, they're với their",
+    "Phân biệt rút gọn chủ ngữ và động từ với dạng phủ định n't ở cuối mệnh đề, và chọn theo văn phong",
+    "Nhận ra 's là is hay has"
+  ],
+  "prerequisites": ["verb-be"],
+  "related": [
+    { "slug": "verb-be", "rel": "more" },
+    { "slug": "apostrophes", "rel": "more" },
+    { "slug": "possessive-determiners", "rel": "confusion" },
+    { "slug": "register-formal-informal", "rel": "more" },
+    { "slug": "spoken-grammar", "rel": "more" },
+    { "slug": "auxiliaries", "rel": "more" },
+    { "slug": "have-and-have-got", "rel": "more" },
+    { "slug": "future-will", "rel": "more" }
+  ],
+  "exam": {
+    "ielts": "Speaking: dạng rút gọn (I'm, don't, it's) là tự nhiên; nói đầy đủ từng từ thường nghe cứng. Writing học thuật có giọng trang trọng nên thường viết đầy đủ (do not, cannot); thư thân mật gửi bạn (General Training Task 1) thì rút gọn phù hợp.",
+    "toeic": "Phần Nghe: nhận ra các dạng như she's, they've, I'd, we'll và phân biệt 's là is hay has theo từ đi sau. Phần Đọc: email và tin nhắn thân mật dùng rút gọn; các câu hỏi Part 5 hiếm khi hỏi trực tiếp về chúng."
+  },
+  "quick": {
+    "what": "Dạng rút gọn (contraction) nối hai từ thành một và dùng dấu nháy (') thay cho chữ cái bị bỏ: I am thành I'm, do not thành don't, she is thành she's. Chúng rất phổ biến trong lời nói và văn viết thân mật.",
+    "when": "Dạng rút gọn bình thường trong lời nói, tin nhắn và email thân mật. Văn viết trang trọng thường dùng dạng đầy đủ. Dạng chủ ngữ + động từ như I'm, she's không đứng một mình ở cuối mệnh đề: Yes, I am. Dạng phủ định n't thì được: No, she isn't.",
+    "examples": [
+      { "en": "[S|I][AUX|'m] [NEG|not] [C|ready].", "vi": "Tôi chưa sẵn sàng. (I am not)" },
+      { "en": "[S|She] [AUX|doesn't] [V|like] [O|coffee].", "vi": "Cô ấy không thích cà phê. (does not)" },
+      { "en": "[S|We][AUX|'ll] [V|call] [O|you] [T|tomorrow].", "vi": "Chúng tôi sẽ gọi bạn ngày mai. (we will)" }
+    ],
+    "remember": "Dấu nháy đứng đúng chỗ chữ cái bị bỏ: do not thành don't (bỏ chữ o). Trả lời Yes ngắn thì không rút gọn: Yes, I am."
+  },
+  "lesson": [
+    { "type": "p", "vi": "Khi nói, người bản ngữ ít khi đọc rõ từng từ như I am hay do not; họ nói liền thành I'm và don't. Chữ viết ghi lại cách nói đó gọi là **dạng rút gọn** (contraction): hai từ hợp lại thành một, và **dấu nháy** (apostrophe, ') đứng thay cho chữ cái bị bỏ. Rút gọn không phải lỗi hay tiếng lóng: nó là cách viết chuẩn trong lời nói và văn viết thân mật." },
+    { "type": "diagram",
+      "spec": { "kind": "matrix",
+        "rows": ["I", "you", "he, she, it", "we", "they"],
+        "cols": ["am, is, are", "have, has", "will", "would, had"],
+        "cells": [
+          [ { "t": "I'm" }, { "t": "I've" }, { "t": "I'll" }, { "t": "I'd", "note": "would hoặc had" } ],
+          [ { "t": "you're" }, { "t": "you've" }, { "t": "you'll" }, { "t": "you'd", "note": "would hoặc had" } ],
+          [ { "t": "he's, she's, it's", "note": "'s là is" }, { "t": "he's, she's, it's", "note": "'s là has" }, { "t": "he'll, she'll, it'll" }, { "t": "he'd, she'd, it'd", "note": "would hoặc had" } ],
+          [ { "t": "we're" }, { "t": "we've" }, { "t": "we'll" }, { "t": "we'd", "note": "would hoặc had" } ],
+          [ { "t": "they're" }, { "t": "they've" }, { "t": "they'll" }, { "t": "they'd", "note": "would hoặc had" } ]
+        ] },
+      "caption": "Đại từ cộng trợ động từ. Hai cột 's và 'd có hai nghĩa; nhìn từ đi sau để biết.",
+      "alt": "Bảng rút gọn của đại từ với am, is, are; have, has; will; would, had. I: I'm, I've, I'll, I'd. You: you're, you've, you'll, you'd. He, she, it: he's là is, he's là has, he'll, he'd. We: we're, we've, we'll, we'd. They: they're, they've, they'll, they'd." },
+    { "type": "table",
+      "caption": "Dạng phủ định rút gọn",
+      "head": ["Đầy đủ", "Rút gọn", "Ghi chú"],
+      "rows": [
+        ["is not, are not", "isn't, aren't", "Cũng có thể viết he's not, you're not."],
+        ["was not, were not", "wasn't, weren't", ""],
+        ["do not, does not, did not", "don't, doesn't, didn't", ""],
+        ["have not, has not, had not", "haven't, hasn't, hadn't", ""],
+        ["cannot", "can't", "Dạng đầy đủ thường viết liền: cannot."],
+        ["will not", "won't", "Không phải willn't."],
+        ["should not, must not", "shouldn't, mustn't", ""],
+        ["I am not", "I'm not", "I'm not là dạng thông dụng; amn't có ở tiếng Anh Ireland và Scotland."]
+      ] },
+    { "type": "examples", "items": [
+      { "en": "[S|I][AUX|'m] [C|late].", "vi": "Tôi trễ rồi.", "note": "I am thành I'm: dấu nháy thay chữ a." },
+      { "en": "[S|They][AUX|'re] [A|at home].", "vi": "Họ đang ở nhà.", "note": "They are thành they're." },
+      { "en": "[S|She] [AUX|isn't] [A|here].", "vi": "Cô ấy không có ở đây.", "note": "Is not thành isn't: dấu nháy thay chữ o của not." },
+      { "en": "[S|I] [AUX|don't] [V|know].", "vi": "Tôi không biết.", "note": "Do not thành don't." },
+      { "en": "[S|We][AUX|'ll] [V|call] [O|you].", "vi": "Chúng tôi sẽ gọi bạn.", "note": "We will thành we'll." },
+      { "en": "[FOCUS|Let's] [V|go].", "vi": "Đi thôi.", "note": "Let's là let us, dùng để rủ cùng làm." }
+    ] },
+    { "type": "try", "exercise": "ct-01" },
+    { "type": "h", "vi": "Không phải lúc nào cũng rút gọn được" },
+    { "type": "diagram",
+      "spec": { "kind": "flow", "start": "formal",
+        "nodes": {
+          "formal": { "q": "Đây là bài viết trang trọng (luận, thư xin việc, bài thi viết học thuật)?", "yes": "full", "no": "ending" },
+          "ending": { "q": "Đây là dạng rút gọn chủ ngữ và động từ như I'm hoặc she's, đứng ở cuối mệnh đề?", "yes": "keep", "no": "short" },
+          "full": { "end": "Viết đầy đủ", "note": "I do not agree. It is not possible. They cannot attend." },
+          "keep": { "end": "Giữ dạng đầy đủ", "note": "Yes, I am. I know where she is. Dạng phủ định thì được: No, she isn't." },
+          "short": { "end": "Rút gọn được", "note": "I'm late. She isn't here. No, I haven't." }
+        } },
+      "caption": "Chọn theo văn phong và loại rút gọn; n't vẫn có thể đứng cuối mệnh đề.",
+      "alt": "Nếu là văn viết trang trọng, thường viết đầy đủ. Nếu dạng chủ ngữ và động từ như I'm đứng cuối mệnh đề, giữ dạng đầy đủ: Yes, I am. Dạng phủ định như isn't hoặc haven't vẫn đứng cuối được." },
+    { "type": "note", "kind": "warn", "vi": "It's có thể là it is hoặc it has; dấu nháy ghi phần chữ bị lược khi ghép từ. Its không có dấu nháy nghĩa là \"của nó\": The cat licked its paw. Tương tự: you're là you are, your là \"của bạn\"; they're là they are, their là \"của họ\", còn there chỉ nơi chốn hoặc mở cấu trúc there is." },
+    { "type": "note", "kind": "vn", "vi": "Tiếng Việt không có dấu nháy trong từ, nên người học hay viết dont, cant hoặc do'nt. Quy tắc: dấu nháy đứng đúng chỗ chữ cái bị bỏ. Do not thành don't, vì chữ o của not bị bỏ, không phải do'nt. Trong tin nhắn nhanh nhiều người bỏ dấu nháy, nhưng trong bài viết thì cần có." },
+    { "type": "try", "exercise": "ct-09" }
+  ],
+  "deep": [
+    { "type": "p", "vi": "**'s là is hay has, 'd là would hay had.** Phải xét cả cấu trúc. She's studying là she is; She's lost her keys là she has. Phân từ quá khứ không đủ để kết luận: The gate's locked every night là the gate is locked, một câu bị động. 'd + dạng gốc thường là would; 'd + phân từ trong thì hoàn thành là had. Riêng I'd better là I had better." },
+    { "type": "p", "vi": "**Dấu nháy sở hữu không phải rút gọn.** Mai's bag nghĩa là \"túi của Mai\", và dấu nháy ở đây chỉ sở hữu. Còn Mai's here là Mai is here, là rút gọn. Dấu nháy sở hữu được bàn ở bài Dấu nháy." },
+    { "type": "p", "vi": "**Rút gọn với danh từ và từ để hỏi.** Trong lời nói thân mật, bạn gặp rút gọn sau cả danh từ và từ để hỏi: Mai's coming. The bus'll be late. What's the time? Who's that? Where's the bank? Những câu có từ để hỏi như What's, Who's, Where's rất thông thường; còn rút gọn sau danh từ như the bus'll thì thân mật hơn." },
+    { "type": "p", "vi": "**Gonna, wanna, gotta, ain't.** Gonna (going to), wanna (want to) và gotta (got to) là cách viết của lời nói nhanh, thường gặp trong lời bài hát, truyện và tin nhắn. Ain't là dạng không chuẩn nhưng rất phổ biến trong lời nói của nhiều cộng đồng. Đừng dùng chúng trong bài thi; hãy nhận ra khi nghe." },
+    { "type": "note", "kind": "regional", "vi": "Shan't, mightn't và mayn't có mức độ thông dụng khác nhau; mayn't rất hiếm. Amn't có trong tiếng Anh Ireland và Scotland. Với người mới học, dùng I'm not trong câu kể và aren't I? trong câu hỏi đuôi; đừng xem các dạng vùng là từ không tồn tại." },
+    { "type": "p", "vi": "**Chọn giữa hai kiểu phủ định.** She isn't và She's not cùng nghĩa cơ bản; cách nhấn có thể khác. Với I, dùng I'm not trong tiếng Anh phổ thông; amn't thuộc một số biến thể vùng." }
+  ],
+  "mistakes": [
+    { "id": "ct-no-apostrophe", "wrong": "I dont know.", "right": "I don't know.", "why": "Dạng rút gọn của do not cần dấu nháy thay cho chữ o. Thiếu dấu nháy là lỗi chính tả trong bài viết." },
+    { "id": "ct-wrong-place", "wrong": "Do'nt worry.", "right": "Don't worry.", "why": "Dấu nháy đứng đúng chỗ chữ cái bị bỏ. Chữ o của not bị bỏ nên là don't." },
+    { "id": "ct-its", "wrong": "Its raining outside.", "right": "It's raining outside.", "why": "It's là it is. Its không có dấu nháy nghĩa là \"của nó\"." },
+    { "id": "ct-its-possessive", "wrong": "The cat is washing it's face.", "right": "The cat is washing its face.", "why": "Its sở hữu không có dấu nháy. It's chỉ là it is hoặc it has." },
+    { "id": "ct-yes-short", "wrong": "Are you a student? Yes, I'm.", "right": "Are you a student? Yes, I am.", "why": "Trong câu trả lời Yes ngắn, từ be không rút gọn vì nó đứng cuối và được nhấn. Câu trả lời No thì rút gọn được: No, I'm not." },
+    { "id": "ct-your", "wrong": "Your late again.", "right": "You're late again.", "why": "You're là you are. Your là \"của bạn\" và đi trước danh từ." }
+  ],
+  "faq": [
+    { "q": "Tôi có nên dùng dạng rút gọn trong bài viết không?", "a": "Tùy văn phong. Tin nhắn, email thân mật, truyện và bài nói: rút gọn là bình thường. Luận, thư xin việc và bài thi viết học thuật: thường viết đầy đủ để giữ giọng trang trọng. Nếu không chắc, viết đầy đủ là lựa chọn an toàn hơn." },
+    { "q": "She's là she is hay she has?", "a": "Cả hai. She's studying là she is, còn She's lost her keys là she has. Sau 's là phân từ chưa đủ để chọn has, vì is cũng đi với phân từ trong câu bị động: The gate's painted every spring nghĩa là The gate is painted every spring." },
+    { "q": "Cannot hay can not?", "a": "Dạng thông thường là cannot, viết liền một từ, hoặc rút gọn can't. Can not viết rời gặp ít hơn." },
+    { "q": "Vì sao won't, không phải willn't?", "a": "Won't là dạng bất quy tắc có từ rất lâu, nên không theo quy tắc thêm n't. Bạn chỉ cần học thuộc nó." },
+    { "q": "Ain't là gì?", "a": "Ain't là dạng không chuẩn dùng thay cho am not, is not, are not, has not hoặc have not. Nó rất phổ biến trong lời nói của nhiều cộng đồng và trong bài hát, nhưng không dùng trong bài thi hay văn viết chuẩn." }
+  ],
+  "exercises": [
+    { "id": "ct-01", "type": "cloze", "level": "A1", "use": "practice", "skill": "form",
+      "prompt": "Điền dạng rút gọn của cụm trong ngoặc.",
+      "stem": "Hurry up! {1} (we are) late. She {2} (is not) at home. I {3} (do not) like coffee.",
+      "blanks": {
+        "1": { "accept": ["We're"],
+          "known": [ { "t": "Were", "verdict": "wrong", "note": "Were là quá khứ của be, không phải we are. Dạng rút gọn cần dấu nháy: we're.", "tag": "were-vs-we-re" } ] },
+        "2": { "accept": ["isn't", "'s not"] },
+        "3": { "accept": ["don't"],
+          "known": [ { "t": "dont", "verdict": "wrong", "note": "Thiếu dấu nháy thay chữ o của not.", "tag": "missing-apostrophe" } ] }
+      },
+      "explain": "We are thành we're, is not thành isn't (hoặc 's not), do not thành don't. Dấu nháy thay cho chữ cái bị bỏ." },
+    { "id": "ct-02", "type": "choice", "level": "A1", "use": "practice", "skill": "meaning",
+      "prompt": "Chọn nghĩa của 's trong câu sau.",
+      "stem": "She's lived here for years.",
+      "options": [
+        { "t": "has", "ok": true, "note": "Lived là phân từ quá khứ, nên 's là has: she has lived." },
+        { "t": "is", "note": "She is lived here không phải câu đúng: lived là phân từ quá khứ của hoàn thành, nên đi với has, không đi với is.", "tag": "is-has-confusion" },
+        { "t": "was", "note": "Dạng rút gọn 's không đại diện cho was.", "tag": "wrong-expansion" }
+      ],
+      "explain": "Trong câu này, lived here for years diễn tả việc cư trú kéo dài, nên 's là has. Đừng biến thành quy tắc cho mọi phân từ: 's còn là is trong câu bị động." },
+    { "id": "ct-03", "type": "choice", "level": "A1", "use": "check", "skill": "form",
+      "prompt": "Chọn dạng rút gọn đúng của will not.",
+      "stem": "will not → ___",
+      "options": [
+        { "t": "won't", "ok": true, "note": "Won't là dạng rút gọn bất quy tắc của will not." },
+        { "t": "willn't", "note": "Không có dạng willn't. Won't không theo quy tắc thêm n't.", "tag": "regular-n-t" },
+        { "t": "wo'nt", "note": "Dấu nháy phải đứng trước chữ t cuối (thay chữ o của not): won't.", "tag": "apostrophe-place" }
+      ],
+      "explain": "Will not thành won't. Đây là dạng bất quy tắc, cần học thuộc." },
+    { "id": "ct-04", "type": "choice", "level": "A1", "use": "check", "skill": "use",
+      "prompt": "Chọn câu trả lời ngắn đúng.",
+      "stem": "A: Are you a student?  B: Yes, ___.",
+      "options": [
+        { "t": "I am", "ok": true, "note": "Câu trả lời Yes ngắn không rút gọn." },
+        { "t": "I'm", "note": "Be đứng cuối câu trả lời ngắn và được nhấn nên không rút gọn.", "tag": "short-answer-contraction" },
+        { "t": "I do", "note": "Câu hỏi dùng are, nên câu trả lời lặp lại be (am), không dùng do.", "tag": "wrong-auxiliary" }
+      ],
+      "explain": "Khi trả lời Yes ngắn, lặp lại trợ động từ của câu hỏi và không rút gọn: Are you …? Yes, I am." },
+    { "id": "ct-05", "type": "error", "level": "A1", "use": "practice", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "I" },
+        { "t": "dont", "bad": true, "fix": ["don't", "do not"], "note": "Thiếu dấu nháy thay chữ o.", "tag": "missing-apostrophe" },
+        { "t": "like cold weather." }
+      ],
+      "explain": "Câu đúng là I don't like cold weather. Dạng rút gọn của do not cần dấu nháy." },
+    { "id": "ct-06", "type": "error", "level": "A1", "use": "check", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "Its", "bad": true, "fix": ["It's", "It is"], "note": "Its nghĩa là \"của nó\". Ở đây cần it is, viết rút gọn là it's.", "tag": "its-vs-it-s" },
+        { "t": "raining outside." }
+      ],
+      "explain": "Câu đúng là It's raining outside. It's là it is, còn its là \"của nó\"." },
+    { "id": "ct-07", "type": "error", "level": "A1", "use": "check", "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "noError": true,
+      "segments": [
+        { "t": "We" },
+        { "t": "aren't" },
+        { "t": "ready yet." }
+      ],
+      "explain": "Câu đúng. Aren't là dạng rút gọn của are not." },
+    { "id": "ct-08", "type": "error", "level": "A1", "use": "practice", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "Your", "bad": true, "fix": ["You're", "You are"], "note": "Your là \"của bạn\". Ở đây cần you are, viết rút gọn là you're.", "tag": "your-vs-you-re" },
+        { "t": "late again." }
+      ],
+      "explain": "Câu đúng là You're late again. You're là you are; your đi trước một danh từ, như your bag." },
+    { "id": "ct-09", "type": "transform", "level": "A1", "use": "practice", "skill": "production",
+      "prompt": "Viết lại câu bằng dạng rút gọn.",
+      "source": "I do not know the answer.",
+      "instruction": "Rút gọn do not.",
+      "accept": ["I don't know the answer"],
+      "model": "I don't know the answer.",
+      "known": [
+        { "t": "I dont know the answer", "verdict": "wrong", "note": "Thiếu dấu nháy thay chữ o.", "tag": "missing-apostrophe" }
+      ],
+      "explain": "Do not thành don't. Dấu nháy đứng thay chữ o của not." },
+    { "id": "ct-10", "type": "transform", "level": "A1", "use": "check", "skill": "production",
+      "prompt": "Viết lại câu, rút gọn mọi chỗ có thể.",
+      "source": "They are not at home and they will not be back soon.",
+      "instruction": "Dùng dạng rút gọn cho are not (hoặc they are) và will not.",
+      "accept": [
+        "They aren't at home and they won't be back soon",
+        "They're not at home and they won't be back soon",
+        "They're not at home and they'll not be back soon"
+      ],
+      "model": "They aren't at home and they won't be back soon.",
+      "known": [
+        { "t": "They aren't at home and they willn't be back soon", "verdict": "wrong", "note": "Dạng rút gọn của will not là won't.", "tag": "regular-n-t" }
+      ],
+      "explain": "Are not có thể thành aren't hoặc they're not. Will not thường thành won't; they'll not cũng đúng, với will rút gọn vào they." },
+    { "id": "ct-11", "type": "transform", "level": "A1", "use": "practice", "skill": "use",
+      "prompt": "Viết lại cho một email trang trọng.",
+      "source": "I can't attend the meeting because I'm abroad.",
+      "instruction": "Viết đầy đủ, không rút gọn.",
+      "accept": ["I cannot attend the meeting because I am abroad"],
+      "model": "I cannot attend the meeting because I am abroad.",
+      "known": [
+        { "t": "I can not attend the meeting because I am abroad", "verdict": "acceptable", "note": "Cũng gặp, nhưng cannot (một từ) là dạng thông thường." }
+      ],
+      "explain": "Trong email trang trọng, can't thành cannot và I'm thành I am." },
+    { "id": "ct-12", "type": "match", "level": "A1", "use": "practice", "skill": "form",
+      "prompt": "Nối dạng rút gọn với dạng đầy đủ.",
+      "pairs": [
+        { "a": "won't", "b": "will not" },
+        { "a": "let's", "b": "let us" },
+        { "a": "they're", "b": "they are" },
+        { "a": "can't", "b": "cannot" },
+        { "a": "doesn't", "b": "does not" }
+      ],
+      "explain": "Mỗi dấu nháy thay cho chữ cái bị bỏ. Won't là bất quy tắc, còn let's là let us và dùng để rủ cùng làm." },
+    { "id": "ct-13", "type": "classify", "level": "A1", "use": "check", "skill": "form",
+      "prompt": "Trong mỗi câu, 's là is hay has?",
+      "cats": ["is", "has"],
+      "items": [
+        {
+          "t": "She's studying English.",
+          "cat": "is"
+        },
+        {
+          "t": "He's lost his keys.",
+          "cat": "has"
+        },
+        {
+          "t": "It's been a long day.",
+          "cat": "has"
+        },
+        {
+          "t": "The soup's hot.",
+          "cat": "is"
+        },
+        {
+          "t": "She's got two cats.",
+          "cat": "has"
+        },
+        {
+          "t": "My mum's at work.",
+          "cat": "is"
+        },
+        {
+          "t": "The gate's painted every spring.",
+          "cat": "is"
+        }
+      ],
+      "explain": "Xét cả cụm: studying đi với is; lost his keys, been và got trong các câu này đi với has. Painted every spring là bị động, nên 's là is." },
+    { "id": "ct-14", "type": "multi", "level": "A1", "use": "check", "skill": "form",
+      "prompt": "Chọn tất cả các câu đúng.",
+      "stem": "Những câu nào đúng?",
+      "options": [
+        { "t": "She's not here.", "ok": true, "note": "Rút gọn she is thành she's, rồi thêm not." },
+        { "t": "I'm not ready.", "ok": true, "note": "I'm not là dạng thông dụng trong tiếng Anh phổ thông; amn't có ở một số vùng." },
+        { "t": "Yes, we're.", "note": "Trả lời Yes ngắn thì không rút gọn: Yes, we are.", "tag": "short-answer-contraction" },
+        { "t": "Do'nt worry.", "note": "Dấu nháy đặt sai chỗ. Chữ o của not bị bỏ nên là don't.", "tag": "apostrophe-place" },
+        { "t": "He isn't a doctor.", "ok": true, "note": "Is not thành isn't." }
+      ],
+      "explain": "Ba câu đúng dùng rút gọn đúng chỗ. Hai câu sai: Yes, we're (rút gọn ở cuối câu trả lời ngắn) và Do'nt (dấu nháy sai chỗ)." }
+  ],
+  "sources": [
+    { "ref": "cgt", "note": "Mô tả dạng rút gọn với be, have, will, would và dạng phủ định." },
+    { "ref": "swan-peu", "note": "Khi nào không rút gọn, 's là is hay has, shan't và các dạng ít dùng." },
+    { "ref": "carter-cge", "note": "Dạng rút gọn trong lời nói thân mật và các dạng như gonna, wanna." }
+  ],
+  "editorial": { "status": "drafted" }
+}

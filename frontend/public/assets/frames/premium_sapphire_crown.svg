@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- [ASSET_REQUIRED] Production-grade vector artwork -->
+  <!-- Series: premium_membership | Tier: S | Slug: premium_sapphire_crown | Plan: PLAN_3_MONTHS -->
+  <!-- Center: (50, 50), Avatar aperture: r=40.5, Canvas: 100x100 -->
+  <defs>
+    <linearGradient id="saphPlatinumGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#fef08a"/>
+      <stop offset="55%" stop-color="#eab308"/>
+      <stop offset="85%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+
+    <linearGradient id="saphGemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="35%" stop-color="#3b82f6"/>
+      <stop offset="70%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
+
+    <radialGradient id="saphAura" cx="50%" cy="50%" r="50%">
+      <stop offset="68%" stop-color="#3b82f6" stop-opacity="0"/>
+      <stop offset="88%" stop-color="#60a5fa" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1e40af" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="saphGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Radiant Sapphire Aura Backdrop -->
+  <circle cx="50" cy="50" r="47.5" fill="url(#saphAura)" />
+
+  <!-- Royal Beveled Frame Ring -->
+  <circle cx="50" cy="50" r="45" stroke="url(#saphPlatinumGold)" stroke-width="2.8" />
+  <circle cx="50" cy="50" r="43.2" stroke="#1d4ed8" stroke-width="1.2" stroke-dasharray="12 4" />
+  <circle cx="50" cy="50" r="41.5" stroke="#fde047" stroke-width="0.8" opacity="0.9" />
+
+  <!-- Grand Royal Sapphire Crown Crest (Top Center) -->
+  <g transform="translate(50, 7)" filter="url(#saphGlow)">
+    <!-- 3-Pronged Golden Crown -->
+    <path d="M -8 2 L -5 -4 L -2 0 L 0 -6 L 2 0 L 5 -4 L 8 2 Z" fill="url(#saphPlatinumGold)" stroke="#fef08a" stroke-width="0.6" />
+    <!-- Center Royal Sapphire Jewel -->
+    <polygon points="0,-1 2.5,2 0,5 -2.5,2" fill="url(#saphGemGrad)" stroke="#ffffff" stroke-width="0.5" />
+    <circle cx="0" cy="2" r="0.8" fill="#ffffff" />
+  </g>
+
+  <!-- Winged Side Ornaments (East & West) -->
+  <g filter="url(#saphGlow)">
+    <!-- West Wing Accent -->
+    <path d="M 6 50 C 4 44 9 40 11 44 C 9 48 9 52 11 56 C 9 60 4 56 6 50 Z" fill="url(#saphPlatinumGold)" />
+    <circle cx="9" cy="50" r="1.8" fill="url(#saphGemGrad)" stroke="#fff" stroke-width="0.4" />
+
+    <!-- East Wing Accent -->
+    <path d="M 94 50 C 96 44 91 40 89 44 C 91 48 91 52 89 56 C 91 60 96 56 94 50 Z" fill="url(#saphPlatinumGold)" />
+    <circle cx="91" cy="50" r="1.8" fill="url(#saphGemGrad)" stroke="#fff" stroke-width="0.4" />
+  </g>
+
+  <!-- Bottom Aegis Seal & Jewels -->
+  <g transform="translate(50, 93)" filter="url(#saphGlow)">
+    <polygon points="0,5 5,0 0,-1 -5,0" fill="url(#saphPlatinumGold)" />
+    <circle cx="0" cy="1" r="1.5" fill="url(#saphGemGrad)" stroke="#fef08a" stroke-width="0.4" />
+  </g>
+
+  <!-- Center Aperture: r=40.5 transparent for avatar face -->
+</svg>

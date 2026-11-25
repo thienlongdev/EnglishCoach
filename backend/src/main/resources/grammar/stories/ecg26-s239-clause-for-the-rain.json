@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s239-clause-for-the-rain",
+  "title": "Mệnh đề viết dưới áo mưa",
+  "summary": "Vở diễn ngoài sân phải quyết định làm gì nếu mưa đến. Trên tờ giấy ướt chỉ còn “Had it rained…” từ buổi tổng duyệt hôm qua.",
+  "level": "C1",
+  "topics": [
+    "inverted-conditionals"
+  ],
+  "scene": "lecture",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vera",
+      "role": "Đạo diễn"
+    },
+    {
+      "id": "b",
+      "name": "Khuê",
+      "role": "Người dịch"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Hôm qua trời khô. Hôm nay mây mới kéo tới. Khuê cần tách lời nhìn lại với chỉ dẫn cho khán giả đang xếp hàng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Yesterday's umbrella stayed folded.",
+          "vi": "Chiếc ô hôm qua vẫn gấp nguyên."
+        },
+        {
+          "who": "b",
+          "en": "The people outside need today's instruction.",
+          "vi": "Người ngoài sân cần chỉ dẫn hôm nay."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Đưa điều kiện còn mở cho buổi diễn sắp tới.",
+        "options": [
+          {
+            "ok": false,
+            "t": "Had it rained, we would have taken the cushions inside.",
+            "note": "Câu đúng cho tình huống ngược với hôm qua, nhưng không giao việc cho khán giả hôm nay. Hai cấu trúc đảo có thời gian khác nhau.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "Should it rain, take your cushions indoors.",
+            "note": "Should it rain là điều kiện còn có thể xảy ra. Mệnh lệnh take hướng hành động tương lai cho khán giả.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Khi giọt đầu tiên rơi, cả hàng ghế lần lượt mang đệm vào phòng tập. Vở kịch bắt đầu với tiếng mưa gõ nhịp ngoài mái.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Even the rain followed its cue.",
+          "vi": "Đến mưa cũng vào đúng hiệu lệnh."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Tờ giấy tổng duyệt được phơi khô cạnh cửa, hai mốc thời gian không còn chen vào nhau.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Một khán giả hỏi vậy có cần cầm đệm bây giờ không. Khuê lập tức viết thêm tấm biển hiện tại và đứng cửa giúp từng người.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A question at the door saved the last seat.",
+          "vi": "Một câu hỏi ngoài cửa cứu được chiếc ghế cuối."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Đệm cuối cùng khô ráo; người hỏi trở thành người dẫn hàng ở suất sau.",
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "noise-nominal",
+  "title": "Danh hóa có giữ trách nhiệm trong báo cáo không?",
+  "summary": "Báo cáo viết The board rejected the bid. Chuyển sự kiện thành cụm danh từ và lần lượt giữ hoặc bỏ người ra quyết định. Điều nào còn được phát biểu rõ?",
+  "level": "C1",
+  "topics": [
+    "nominalization",
+    "passive-use"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Người ra quyết định",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Nêu rõ"
+        },
+        {
+          "id": "v2",
+          "label": "Không xác định"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The board's rejection of the bid delayed the launch.",
+      "vi": "Việc hội đồng bác đề xuất làm chậm buổi ra mắt.",
+      "note": "The board's là tác nhân của rejection, còn of the bid chỉ đối tượng bị bác. / The possessive identifies the rejecter in this context.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The rejection of the bid delayed the launch.",
+      "vi": "Việc đề xuất bị bác làm chậm buổi ra mắt.",
+      "note": "Bỏ the board's vẫn giữ quan hệ sự kiện và hệ quả. Không thể dựa vào câu này để quy trách nhiệm cho hội đồng. / The event survives nominalisation without an explicit agent.",
+      "verdict": "ok"
+    }
+  }
+}

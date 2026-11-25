@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s055-doctor-for-a-clock",
+  "title": "Bác sĩ của chiếc đồng hồ",
+  "level": "A2",
+  "topics": [
+    "should-ought-to",
+    "imperatives"
+  ],
+  "scene": "office",
+  "summary": "Chiếc đồng hồ cơ chỉ chạy khi được cầm thẳng. Khách đến trước giờ ăn trưa, mong nghe lại nhịp tích tắc trong ngày.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Tâm",
+      "role": "Thợ học việc"
+    },
+    {
+      "id": "b",
+      "name": "Eva",
+      "role": "Người giữ đồng hồ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Đế gỗ bị nghiêng, còn quả lắc vẫn chuyển động khi Eva giữ thẳng đồng hồ. Có thể thử vị trí trước khi quyết định sửa máy.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It runs in your hands.",
+          "vi": "Khi cô cầm thì nó chạy."
+        },
+        {
+          "who": "b",
+          "en": "Then what should we try first?",
+          "vi": "Vậy mình nên thử gì trước?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Tâm khuyên Eva thử một việc có thể kiểm tra ngay.",
+        "options": [
+          {
+            "t": "We should put it on a flat shelf.",
+            "note": "Should nêu lời khuyên thử đặt lên kệ phẳng. Đây là phép thử cho giả thuyết đế nghiêng.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "We should stop the clock in your hands.",
+            "note": "Should vẫn là lời khuyên đúng cấu trúc. Nhưng dừng máy đúng lúc nó chạy không kiểm tra được chiếc đế.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Eva kê chiếc đồng hồ trên kệ có tờ giấy gấp dưới chân. Nó gõ đúng mười hai tiếng. Bà lấy tờ giấy ghi lại tên người đã sửa buổi trưa của mình.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I can hear lunchtime again.",
+          "vi": "Tôi lại nghe được giờ ăn trưa rồi."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Đồng hồ im. Eva hỏi vì sao cô phải bỏ mất tiếng vừa tìm lại. Tâm đặt đồng hồ thẳng lên kệ, quả lắc lại chạy. Cậu dùng tiếng chuông để trả lời.",
+      "say": [
+        {
+          "who": "a",
+          "en": "You're right. Let it show us.",
+          "vi": "Cô nói đúng. Cứ để nó chỉ cho mình."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s117-one-door-early",
+  "title": "Cửa mở sớm một lần",
+  "summary": "Mỗi giờ cửa vườn tự mở sớm một giây. Sao nhận ra sự lệch nhỏ đã lặp suốt ba ngày.",
+  "level": "B1",
+  "topics": [
+    "present-perfect-continuous"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Uyên",
+      "role": "Người ghi nhật ký"
+    },
+    {
+      "id": "b",
+      "name": "Sao",
+      "role": "Kỹ thuật viên"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Uyên nghe bản lề bật trước chuông, lần thứ ba trong ca. Vườn vẫn đóng kín sau mỗi lần thử. Sao hỏi báo cáo cần nói cửa đang mở suốt hay chỉ mở lặp lại.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It's shut now. I watched it close.",
+          "vi": "Bây giờ cửa đóng. Tôi đã thấy nó khép lại."
+        },
+        {
+          "who": "b",
+          "en": "Tell me what's been happening, not just where it is now.",
+          "vi": "Kể điều lặp lại tới giờ đi, đừng chỉ nói trạng thái hiện tại."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Uyên báo mẫu sự kiện lặp trước chuông suốt nhiều lần.",
+        "options": [
+          {
+            "ok": false,
+            "t": "It has been open for three days.",
+            "note": "Has been open tả trạng thái mở liên tục ba ngày. Việc Uyên vừa thấy cửa đóng bác lời ấy.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "It has been opening just before the bell.",
+            "note": "Has been opening ở đây diễn tả chuỗi lần mở lặp lại, không có nghĩa cửa mở suốt. Just before giữ độ lệch theo hướng sớm.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Sao đặt đồng hồ cạnh cửa. Họ tìm ra chuông phát chậm đúng một giây, còn cửa vẫn đúng giờ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "It was the bell that needed waking up.",
+          "vi": "Thứ cần đánh thức lại là chiếc chuông."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Thay vì sửa cửa, Sao chỉnh âm báo. Sáng sau, trẻ nghe tiếng chuông và thấy hoa cùng lúc.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Sao đặt một miếng giấy ở mép cửa. Giấy rơi rồi bị kẹp lại chứng tỏ cửa mở và đóng, không hề mở suốt.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One adjective nearly sent us to the wrong machine.",
+          "vi": "Chỉ một tính từ suýt đưa ta tới nhầm thiết bị."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Bằng tờ giấy kẻ vạch và đồng hồ, họ đo được chuông chậm. Bản ghi đầu tiên cứu họ khỏi tháo nhầm cửa.",
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s240-gift-of-a-pause",
+  "title": "Món quà là một khoảng ngừng",
+  "summary": "Cô bé diễn vai vua muốn Vera ngừng nhắc lời nhưng sợ làm cô buồn. Khuê dịch hộ một yêu cầu ngay khi cô bé tự tin nhất.",
+  "level": "C1",
+  "topics": [
+    "pragmatic-softening"
+  ],
+  "scene": "lecture",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vera",
+      "role": "Đạo diễn"
+    },
+    {
+      "id": "b",
+      "name": "Khuê",
+      "role": "Người dịch"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Bản dịch phải cho Vera hiểu cần im đúng một cảnh, chứ không nghỉ việc hay bỏ hết hỗ trợ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "She looked at me when the whisper came.",
+          "vi": "Lúc nghe tiếng nhắc, em ấy nhìn tôi."
+        },
+        {
+          "who": "b",
+          "en": "I'd rather hear the request in her own size of voice.",
+          "vi": "Tôi muốn nghe lời đề nghị vừa đúng giọng của em ấy."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Khuê chọn cách nói lịch sự và giới hạn rõ phạm vi.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Would you mind letting me try this scene without a prompt?",
+            "note": "Would you mind + -ing là lời xin mềm. This scene khoanh phạm vi và try giữ chỗ để thử lại.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Might I suggest you never prompt anyone again?",
+            "note": "Might I suggest mềm ở phần mở, nhưng never và anyone mở rộng yêu cầu ra mọi cảnh và mọi diễn viên. Lịch sự không sửa được phạm vi sai.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Vera đặt sổ xuống nhưng vẫn ngồi hàng đầu. Cô bé quên một chữ, tự tìm được từ khác và diễn tiếp.",
+      "say": [
+        {
+          "who": "b",
+          "en": "She needed an audience for that line.",
+          "vi": "Câu ấy em cần người nghe."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Đêm ấy Vera gạch đúng một dòng nhắc, thay bằng hình tai đang lắng nghe.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Vera hỏi lại bằng một ngón tay chỉ đúng cảnh. Cô bé gật đầu. Sự im lặng cần thiết được giữ mà bạn diễn khác vẫn có người nhắc.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Her request fitted inside one scene.",
+          "vi": "Điều em xin gói gọn trong một cảnh."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Khuê viết vào sổ người dịch: đừng để never nói to hơn đứa trẻ.",
+      "end": true
+    }
+  ]
+}

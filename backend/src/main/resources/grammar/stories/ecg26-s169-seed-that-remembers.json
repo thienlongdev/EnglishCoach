@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s169-seed-that-remembers",
+  "title": "Hạt nhớ mùi gió",
+  "summary": "Một hạt cây biển chỉ nở nếu từng được phơi gió mặn. Cây duy nhất đang nảy trên tàu đến từ chiếc áo cũ của Hà.",
+  "level": "B2",
+  "topics": [
+    "mixed-conditionals"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hà",
+      "role": "Người chăm kho hạt"
+    },
+    {
+      "id": "b",
+      "name": "Pax",
+      "role": "Người lái tàu"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Hà từng mặc áo ấy ở bờ muối. Hạt mắc trong gấu áo từ trước chuyến bay. Pax muốn biết việc cũ liên quan gì tới mầm xanh hôm nay.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It travelled in my coat, not in the seed bank.",
+          "vi": "Nó đi trong áo tôi chứ chẳng qua kho hạt."
+        },
+        {
+          "who": "b",
+          "en": "What would be different now if you'd washed the coat?",
+          "vi": "Bây giờ có gì khác nếu hôm đó cô đã giặt áo?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Hà nói hệ quả hiện tại của một việc không xảy ra trong quá khứ.",
+        "options": [
+          {
+            "ok": false,
+            "t": "If I wash it tomorrow, the shoot won't be here yesterday.",
+            "note": "Tomorrow nêu việc tương lai nhưng yesterday bị gắn vào hệ quả với won't. Trình tự ấy không diễn đạt hệ quả ngày nay của lần giặt giả định.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "If I'd washed it, this shoot wouldn't be here now.",
+            "note": "Had washed giả định trái việc cũ. Wouldn't be here now đặt hệ quả ở hiện tại.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Pax treo chiếc áo cạnh khay, ghi nó như bến cảng đầu tiên của cây.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That seam was our smallest greenhouse.",
+          "vi": "Gấu áo ấy là nhà kính nhỏ nhất của ta."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Ngày mầm mở lá, Hà cắt chính sợi chỉ từng giữ hạt để làm dây đỡ thân.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Hà vẽ ba ô bờ biển, áo, mầm. Pax đặt mốc now cạnh mầm, rồi hai người kể lại câu chuyện theo đúng trật tự.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A little seed has a very long yesterday.",
+          "vi": "Một hạt bé xíu có một ngày hôm qua dài thật dài."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Sơ đồ được gửi về quê trong bưu thiếp đầu tiên viết bằng mực xanh của trạm.",
+      "end": true
+    }
+  ]
+}

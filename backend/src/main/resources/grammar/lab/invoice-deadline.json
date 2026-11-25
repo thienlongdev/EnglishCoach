@@ -1,0 +1,41 @@
+{
+  "id": "invoice-deadline",
+  "title": "Đã trả tiền dù không cần?",
+  "summary": "Kế toán xem lại một hóa đơn được miễn phí. So sánh câu khẳng định đã trả thừa với câu chỉ nói không có nghĩa vụ trả.",
+  "level": "B2",
+  "topics": [
+    "modal-perfect-regret",
+    "semi-modals"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Điều có thể suy ra",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Đã chi"
+        },
+        {
+          "id": "v2",
+          "label": "Không bắt buộc"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "We needn't have paid the fee.",
+      "vi": "Chúng tôi đã trả phí dù không cần.",
+      "note": "Needn't have paid nhìn lại khoản đã trả và đánh giá là không cần thiết. / The payment happened and was unnecessary.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "We didn't have to pay the fee.",
+      "vi": "Chúng tôi không phải trả khoản phí đó.",
+      "note": "Didn't have to chỉ phủ định yêu cầu trả. Thường có thể hiểu là không trả, nhưng ngữ cảnh có thể xác nhận đã trả. / The absence of obligation does not settle whether you paid.",
+      "verdict": "ok"
+    }
+  }
+}

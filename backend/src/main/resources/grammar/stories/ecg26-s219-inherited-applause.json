@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s219-inherited-applause",
+  "title": "Tiếng vỗ tay thừa kế",
+  "summary": "Sau mỗi lần Ro tập cúi chào, tiếng vỗ tay vang lên từ một chiếc ghế trống. Ula sợ họ đang bật nhầm băng của người diễn viên cũ.",
+  "level": "C1",
+  "topics": [
+    "fronting",
+    "negative-inversion"
+  ],
+  "scene": "lecture",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Ro",
+      "role": "Diễn viên tập sự"
+    },
+    {
+      "id": "b",
+      "name": "Ula",
+      "role": "Người dựng rạp"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Ro đứng giữa sàn và cúi đầu. Rạp im. Cậu bước lùi lên tấm thảm đỏ, cúi lần nữa. Từ hộc dưới ghế, một tràng pháo tay ngắn bật lên. Hai người thử lại ba lần.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I thought it was the bow. It happens even if I just stand here.",
+          "vi": "Tôi tưởng do mình cúi chào. Chỉ cần tôi đứng đây là nó cũng kêu."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Tell me which movement actually starts the recording.",
+          "vi": "Cậu nói xem chuyển động nào thật sự bật băng lên."
+        }
+      ],
+      "choice": {
+        "prompt": "Ro nhấn mạnh rằng việc bước lên thảm là điều kiện kích hoạt duy nhất quan sát được trong các lần thử.",
+        "options": [
+          {
+            "t": "When only I stepped onto the mat, the applause began.",
+            "note": "Only đặt trước I thường làm nổi bật người bước, như thể Ro bước một mình hoặc chỉ Ro mới bật được băng. Các lần thử chưa so sánh những người khác nhau.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "Only when I stepped onto the mat did the applause begin.",
+            "note": "Only when đưa mốc điều kiện lên đầu. Did đứng trước chủ ngữ của mệnh đề chính. Câu mô tả kết quả trong các lần thử.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Ula sờ dưới mép thảm và chạm vào công tắc. Trên vỏ máy có chữ Dành cho buổi tập cuối.",
+      "say": [
+        {
+          "who": "b",
+          "en": "It's a present to whoever rehearses alone.",
+          "vi": "Đây là quà cho bất cứ ai tập một mình."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Ula tự bước lên thảm. Tiếng vỗ tay lại vang lên. Ro gạch dưới chữ mat trên ghi chép của mình.",
+      "say": [
+        {
+          "who": "b",
+          "en": "It works for the understudy too.",
+          "vi": "Diễn viên dự bị cũng được vỗ tay."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Trong buổi tập cuối, Ro mời người thợ quét sân khấu bước lên thảm cùng. Lần đầu tiên, người thợ nghe tiếng vỗ tay dành cho mình khi đèn rạp còn sáng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "All those years the floor knew how to say thank you.",
+          "vi": "Bấy nhiêu năm, sàn diễn vẫn biết nói lời cảm ơn."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

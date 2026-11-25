@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s056-farther-window",
+  "title": "Ô cửa xa hơn",
+  "level": "A2",
+  "topics": [
+    "demonstratives",
+    "one-and-ones"
+  ],
+  "scene": "office",
+  "summary": "Trên bàn có hai ảnh cửa sổ giống hệt nhau. Chỉ một ảnh chụp từ phòng thời thơ ấu của An.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "An",
+      "role": "Người chọn ảnh"
+    },
+    {
+      "id": "b",
+      "name": "Mia",
+      "role": "Nhiếp ảnh gia"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Ảnh gần An có tán cây bên trái, ảnh ở đầu xa có mái nhà bên phải. Mỗi ảnh đều gợi một ký ức khác. Mia cho phép An cầm về một tấm.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I remember the tree, and I remember that roof.",
+          "vi": "Tôi nhớ cả cái cây lẫn mái nhà kia."
+        },
+        {
+          "who": "b",
+          "en": "Which one would you like to keep?",
+          "vi": "Bạn muốn giữ tấm nào?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "An chọn một tấm bằng từ chỉ khoảng cách. Tấm nào sẽ theo anh về?",
+        "options": [
+          {
+            "t": "That one, at your end of the table.",
+            "note": "That one cùng at your end chỉ tấm xa An và gần Mia, tức tấm có mái.",
+            "ok": true,
+            "next": "ending-2"
+          },
+          {
+            "t": "This one, by my hand.",
+            "note": "This one thay cho this photograph ở ngay gần tay An. Phần by my hand xác định tấm có cây.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Ở nhà, An nhận ra một cái xích đu nấp trong lá. Anh treo ảnh thấp vừa tầm tay con mình, nơi ngày xưa anh thường trèo lên ngắm cây.",
+      "say": [
+        {
+          "who": "a",
+          "en": "There was room for two on that swing.",
+          "vi": "Cái xích đu ấy đủ chỗ cho hai người."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Trên mái nhà trong ảnh có một miếng ngói khác màu. An nhớ buổi cha cùng anh sửa nó và tặng ảnh cho cha ngay chiều hôm ấy.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I didn't know one roof could mean so much.",
+          "vi": "Tôi đâu ngờ một mái nhà lại có ý nghĩa đến vậy."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

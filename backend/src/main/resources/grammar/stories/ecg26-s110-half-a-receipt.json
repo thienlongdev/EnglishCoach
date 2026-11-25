@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s110-half-a-receipt",
+  "title": "Nửa tờ biên nhận",
+  "summary": "Hai người cùng cầm nửa biên nhận chiếc kèn. Vi không biết ai giao và ai nhận.",
+  "level": "B1",
+  "topics": [
+    "passive-use"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vi",
+      "role": "Nhân viên ga"
+    },
+    {
+      "id": "b",
+      "name": "Nam",
+      "role": "Người học việc"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Trên nửa của Nam có chữ by Sol, nửa kia có chữ to Ren. Khi ghép giấy, cả hai cụm đứng sau was handed. Hai người trong phòng đều nhận đúng là mình ký.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can see two names but only one trumpet.",
+          "vi": "Em thấy hai tên mà chỉ có một cây kèn."
+        },
+        {
+          "who": "b",
+          "en": "Work out which way it went.",
+          "vi": "Thử tìm xem nó đã đi theo chiều nào."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Nam khôi phục lời bàn giao theo vai của hai giới từ.",
+        "options": [
+          {
+            "ok": true,
+            "t": "It was handed to Ren by Sol.",
+            "note": "To đánh dấu người nhận Ren, by chỉ người trao Sol trong câu bị động. Trật tự hai cụm có thể thay đổi nhưng vai vẫn thế.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "It was handed to Sol by Ren.",
+            "note": "Đổi tên sau to và by đảo người nhận và người trao. Cấu trúc vẫn là bị động nhưng nói một sự kiện khác.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Ren mở hộp. Bên trong là cây kèn Sol từng tập khi còn nhỏ. Hai nửa biên nhận hóa ra là cách cha tặng lại kèn cho con.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The trumpet went forward one generation.",
+          "vi": "Cây kèn đã đi thêm một thế hệ."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Sol giữ nửa có tên người nhận, như giữ lại bằng chứng thứ nhạc mình yêu vẫn còn đi tiếp.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Sol trao nửa giấy của mình cho Nam và diễn lại động tác chuyền hộp về phía con. Nam viết lại đúng chiều rồi trả giấy.",
+      "say": [
+        {
+          "who": "a",
+          "en": "You can hear who has it now.",
+          "vi": "Giờ nghe thôi cũng biết ai đang giữ kèn."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Ren thổi nốt đầu tiên trước khi cả hai ra khỏi ga. Lúc ấy không ai còn lẫn người nhận nữa.",
+      "end": true
+    }
+  ]
+}

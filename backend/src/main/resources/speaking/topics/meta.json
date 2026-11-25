@@ -1,0 +1,31 @@
+{
+  "version": "2026.10.14-1",
+  "provenance": "ORIGINAL — written for English Coach by the implementing agent on 2026-10-14; no third-party question bank, no official IELTS material reproduced; not externally or professionally reviewed",
+  "reviewStatus": "AGENT_REVIEWED",
+  "schema": {
+    "quick.json items": "[id, category, cefr, task, cluster, prompt]",
+    "deep.json items": "[id, category, cefr, task, cluster, prompt, term?, definitionEn?, definitionVi?]",
+    "ielts.json part1/part3": "{id, cat, level, cluster, title, q[3-6], linked? (Part 3 -> Part 2 card id)}",
+    "ielts.json part2": "{id, cat, level, cluster, title, task ('Describe ...'), bullets[3-4], explain ('and explain ...')}",
+    "task": "internal cognitive-task metadata for variety; never shown to learners",
+    "cluster": "internal semantic family; consecutive draws avoid the same cluster"
+  },
+  "categories": [
+    {"key": "daily-life", "vi": "Đời sống & thói quen", "en": "Everyday life & habits"},
+    {"key": "people", "vi": "Gia đình, bạn bè & giao tiếp", "en": "Family, friends & communication"},
+    {"key": "memories", "vi": "Kỷ niệm & trải nghiệm", "en": "Memories & experiences"},
+    {"key": "learning", "vi": "Học tập & giáo dục", "en": "Learning & education"},
+    {"key": "work", "vi": "Công việc & sự nghiệp", "en": "Work & careers"},
+    {"key": "mind", "vi": "Bản thân & tư duy", "en": "Self, mindset & decisions"},
+    {"key": "creativity", "vi": "Sáng tạo, sách & giải trí", "en": "Creativity, books & entertainment"},
+    {"key": "technology", "vi": "Công nghệ & mạng xã hội", "en": "Technology & social media"},
+    {"key": "travel", "vi": "Du lịch & đi lại", "en": "Travel & transport"},
+    {"key": "food-culture", "vi": "Ẩm thực, văn hoá & truyền thống", "en": "Food, culture & traditions"},
+    {"key": "environment", "vi": "Thiên nhiên & môi trường", "en": "Nature & environment"},
+    {"key": "cities", "vi": "Thành phố & cộng đồng", "en": "Cities & communities"},
+    {"key": "health", "vi": "Sức khoẻ & lối sống", "en": "Health & wellbeing"},
+    {"key": "society", "vi": "Xã hội, giá trị & xu hướng", "en": "Society, values & trends"},
+    {"key": "science", "vi": "Khoa học & khám phá", "en": "Science & discovery"},
+    {"key": "what-if", "vi": "Tình huống giả định & giải quyết vấn đề", "en": "What-if scenarios & problem-solving"}
+  ]
+}

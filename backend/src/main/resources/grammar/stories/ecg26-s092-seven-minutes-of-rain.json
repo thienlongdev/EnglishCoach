@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s092-seven-minutes-of-rain",
+  "title": "Bảy phút mưa trên quỹ đạo",
+  "summary": "Trong vườn ươm trên quỹ đạo, cơn mưa nhân tạo đầu tiên kéo dài quá lâu. Hai đồng nghiệp phải thống nhất một con số.",
+  "level": "B1",
+  "topics": [
+    "present-perfect-since-for"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Tú",
+      "role": "Người làm vườn"
+    },
+    {
+      "id": "b",
+      "name": "Ren",
+      "role": "Kỹ sư trạm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Tú ghi giờ khi giọt đầu tiên chạm chiếc lá. Đồng hồ lúc đó chỉ 14:00. Giờ là 14:07 và nước vẫn rơi. Ren đứng bên bảng điều khiển.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The first drop landed at two exactly.",
+          "vi": "Giọt đầu rơi đúng hai giờ."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "I need the length of the shower for the log.",
+          "vi": "Tôi cần ghi thời lượng trận mưa vào nhật ký."
+        }
+      ],
+      "choice": {
+        "prompt": "Tú cần báo khoảng thời gian đã trôi qua tính đến bây giờ.",
+        "options": [
+          {
+            "t": "It has been raining since two.",
+            "note": "Since two đúng về mốc bắt đầu, nhưng người ghi nhật ký đang cần độ dài. Ren phải tự trừ hai mốc.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "It has been raining for seven minutes.",
+            "note": "For seven minutes đo độ dài từ giọt đầu tới hiện tại. Has been raining diễn tả quá trình đang kéo dài.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Ren ghi số bảy. Họ khép van khi chiếc lá lớn nhất vừa đủ nước để nghiêng xuống.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Seven minutes makes that leaf tip.",
+          "vi": "Bảy phút là đủ để chiếc lá đó nghiêng xuống."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Ren gạch 14:07 dưới 14:00 và tính ra bảy phút. Chiếc lá lớn vừa lúc nghiêng làm giọt nước rơi xuống khay.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Now we have our number.",
+          "vi": "Giờ ta có con số rồi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Ngày hôm sau, bảng điều khiển được hẹn bảy phút. Tú dán bên cạnh một chiếc lá giấy gập xuống để ca sau hiểu số bảy bắt nguồn từ đâu.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The leaf taught us how long to run the rain.",
+          "vi": "Chiếc lá dạy chúng tôi phải cho mưa chạy bao lâu."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

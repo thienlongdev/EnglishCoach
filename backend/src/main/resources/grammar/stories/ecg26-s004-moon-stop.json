@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s004-moon-stop",
+  "title": "Điểm dừng Mặt Trăng",
+  "summary": "Hà có vé đến Mặt Trăng trên chuyến tàu đồ chơi nhưng sân ga tối om.",
+  "level": "A1",
+  "topics": [
+    "wh-questions",
+    "prepositions-time"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hà",
+      "role": "Hành khách nhỏ"
+    },
+    {
+      "id": "b",
+      "name": "Mo",
+      "role": "Người soát vé"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Trên vé vẽ trăng tròn. Có hai nút hỏi trên máy bán vé, một cái có hình đồng hồ, cái kia có hình bản đồ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I have a ticket, but I can't see the train.",
+          "vi": "Cháu có vé nhưng chẳng thấy tàu đâu."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "The train is here. The lights are off.",
+          "vi": "Tàu ở đây rồi. Đèn đang tắt."
+        }
+      ],
+      "choice": {
+        "prompt": "Hà đã biết tàu ở đâu. Hỏi để biết lúc nào tàu chạy.",
+        "options": [
+          {
+            "t": "Where does it go?",
+            "note": "Where hỏi nơi đến. Vé đã cho biết điểm đến, nhưng chưa cho biết giờ chạy.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "When does it leave?",
+            "note": "When hỏi thời điểm. Does đi với động từ nguyên mẫu leave.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Mo chỉ vào chiếc đồng hồ hình mặt trăng. Kim dài vừa chạm số mười hai.",
+      "say": [
+        {
+          "who": "b",
+          "en": "At six. That's now!",
+          "vi": "Lúc sáu giờ. Chính là bây giờ!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Mo lật vé và chỉ hình trăng. Hà chạm vào hình đồng hồ, Mo mới hiểu điều em cần biết.",
+      "say": [
+        {
+          "who": "b",
+          "en": "At six, we go to the moon.",
+          "vi": "Sáu giờ, ta đi đến Mặt Trăng."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Đèn bật sáng trong đường hầm. Mặt Trăng bằng giấy có một ô cửa nhỏ. Hà vẫy tay, và người dán vé phía sau ô cửa vẫy lại.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The moon has a window!",
+          "vi": "Mặt Trăng có cửa sổ kìa!"
+        }
+      ],
+      "end": true
+    }
+  ]
+}

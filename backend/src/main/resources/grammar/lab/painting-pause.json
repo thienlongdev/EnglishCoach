@@ -1,0 +1,77 @@
+{
+  "id": "painting-pause",
+  "title": "Chuông reo giữa buổi vẽ",
+  "summary": "Bạn kể chuyện vẽ biển hiệu. Khi chuông reo, việc vẽ đang dở hay mới bắt đầu sau tiếng chuông?",
+  "level": "A2",
+  "topics": [
+    "past-simple-vs-continuous"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Quan hệ thời gian",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Đang dở"
+        },
+        {
+          "id": "v2",
+          "label": "Bắt đầu lúc đó"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I was painting the sign when the bell rang.",
+      "vi": "Tôi đang vẽ biển hiệu thì chuông reo.",
+      "note": "Was painting cho thấy hoạt động vẽ đã diễn ra vào thời điểm chuông reo. / The bell interrupts a scene already in progress.",
+      "verdict": "ok",
+      "timeline": {
+        "sentence": "I was painting the sign when the bell rang.",
+        "now": 90,
+        "events": [
+          {
+            "kind": "span",
+            "from": 15,
+            "to": 70,
+            "label": "Đang vẽ",
+            "role": "main"
+          },
+          {
+            "kind": "point",
+            "at": 45,
+            "label": "Chuông reo",
+            "role": "ref"
+          }
+        ]
+      }
+    },
+    "v2": {
+      "en": "I started painting the sign when the bell rang.",
+      "vi": "Tôi bắt đầu vẽ biển hiệu khi chuông reo.",
+      "note": "Started đặt điểm bắt đầu vẽ vào lúc chuông reo, không mô tả một hoạt động đang dở. / Started marks the beginning.",
+      "verdict": "ok",
+      "timeline": {
+        "sentence": "I started painting the sign when the bell rang.",
+        "now": 90,
+        "events": [
+          {
+            "kind": "point",
+            "at": 45,
+            "label": "Chuông reo",
+            "role": "ref"
+          },
+          {
+            "kind": "point",
+            "at": 46,
+            "label": "Bắt đầu vẽ",
+            "role": "main"
+          }
+        ]
+      }
+    }
+  }
+}

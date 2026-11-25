@@ -1,0 +1,477 @@
+{
+  "schema": 1,
+  "slug": "parallelism",
+  "version": 3,
+  "domain": "clauses",
+  "order": 130,
+  "kind": "grammar",
+  "title": {
+    "vi": "Cấu trúc song song",
+    "en": "Parallel structure"
+  },
+  "subtitle": {
+    "vi": "Giữ các mục cùng vai trò và dễ theo dõi",
+    "en": "Keep coordinated items aligned and readable"
+  },
+  "aliases": [
+    "cấu trúc song song",
+    "parallelism",
+    "parallel structure",
+    "to check and saves",
+    "danh sách và to dùng chung"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Tạo danh sách có quan hệ rõ với từ dẫn nhập.",
+    "Dùng chung to hoặc trợ động từ khi phù hợp.",
+    "Phân biệt lỗi hình thức với sở thích biên tập."
+  ],
+  "prerequisites": [
+    "coordination"
+  ],
+  "related": [
+    {
+      "slug": "coordination",
+      "rel": "more"
+    },
+    {
+      "slug": "tense-consistency",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Cấu trúc song song (parallel structure) giúp các mục được phối hợp có vai trò và hình thức tương ứng, làm ý dễ theo dõi.",
+    "when": "Dùng khi liệt kê nhiệm vụ, so sánh hoặc nối các ý tương đương.",
+    "examples": [
+      {
+        "en": "We need [V|to check] the file and [V|save] a copy.",
+        "vi": "Chúng ta cần kiểm tra tệp và lưu một bản."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Trong The role involves checking records, answering emails, and filing reports, cả ba cụm -ing cùng bổ sung cho involves. Đừng đổi một mục sang mẫu không phù hợp với từ dẫn nhập rồi chỉ sửa dấu phẩy."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Từ dẫn nhập",
+            "items": [
+              "involves"
+            ]
+          },
+          {
+            "label": "Mục 1",
+            "items": [
+              "checking records"
+            ]
+          },
+          {
+            "label": "Mục 2",
+            "items": [
+              "answering emails"
+            ]
+          },
+          {
+            "label": "Mục 3",
+            "items": [
+              "filing reports"
+            ]
+          }
+        ],
+        "sentence": "The role {0} {1}, {2}, and {3}."
+      },
+      "caption": "Ba nhiệm vụ cùng nối với involves, giữ thứ bậc rõ.",
+      "alt": "Ba nhiệm vụ cùng nối với involves, giữ thứ bậc rõ."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Cấp phối hợp",
+        "Ví dụ",
+        "Điểm cần nhớ"
+      ],
+      "rows": [
+        [
+          "Danh từ",
+          "the time, the cost, and the risk",
+          "các yếu tố cùng được liệt kê"
+        ],
+        [
+          "Nguyên thể",
+          "to check and save",
+          "to có thể dùng chung"
+        ],
+        [
+          "-ing",
+          "checking and saving",
+          "cùng khung sau involves"
+        ],
+        [
+          "Mệnh đề",
+          "I checked it, and she saved it.",
+          "mỗi mệnh đề có thể có chủ ngữ riêng"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "To có thể lặp hoặc dùng chung: to check and to save / to check and save. Tương tự She can read and write không cần lặp can. Không đánh dấu việc thiếu từ lặp là lỗi nếu từ đầu đã chi phối các mục."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Song song là hướng dẫn quan trọng về độ rõ, nhưng không có luật mọi phần nối bằng and phải giống hệt hình thức. Các mệnh đề có thể khác chủ ngữ hoặc thì khi nghĩa đòi hỏi."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Với both ... and, either ... or, not only ... but also, đặt hai vế sao cho người đọc nhận ra các mục được đối chiếu. Khi di chuyển từ nối, kiểm tra phạm vi ý nghĩa thay vì chỉ đếm số từ."
+    },
+    {
+      "type": "p",
+      "vi": "Một số kết hợp pha hình thức vẫn có thể ngữ pháp hoặc là lựa chọn tu từ. Không chữa I like reading and to swim như lỗi tuyệt đối chỉ từ hình thức; có thể đề nghị câu song song hơn khi mục tiêu là văn phong."
+    },
+    {
+      "type": "p",
+      "vi": "Không làm mất ý để có danh sách đẹp. She worked here last year and will return next month có hai mốc nên hai dạng là hợp lý. Ép cả hai về quá khứ sẽ đổi thông tin."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "parallelism-m1",
+      "wrong": "She can read and writes in English.",
+      "right": "She can read and write in English.",
+      "why": "Can chi phối cả hai dạng gốc."
+    },
+    {
+      "id": "parallelism-m2",
+      "wrong": "We plan to check and saves the file.",
+      "right": "We plan to check and save the file.",
+      "why": "Sau to dùng hai dạng gốc."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có luôn phải lặp to không?",
+      "a": "Không. To có thể chi phối nhiều động từ phối hợp, hoặc lặp để làm rõ."
+    },
+    {
+      "q": "Mọi phần nối and có phải cùng thì không?",
+      "a": "Không. Thì có thể khác khi nói các mốc khác nhau. Cần giữ quan hệ rõ và đúng hình thức trong mỗi khung."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "parallelism-01",
+      "prompt": "Chọn danh sách theo mẫu ba động từ nguyên thể có to được yêu cầu.",
+      "explain": "Bài kiểm tra độ khớp với mẫu biên tập, không nói mọi cách phối hợp khác đều sai.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "The plan is ...",
+      "options": [
+        {
+          "t": "to check the files, to update the list, and to send a summary.",
+          "ok": true,
+          "note": "Ba cụm đều theo to + dạng gốc."
+        },
+        {
+          "t": "to check the files, updating the list, and to send a summary.",
+          "ok": false,
+          "note": "Không theo ba cụm nguyên thể được yêu cầu.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "to checks the files, to update the list, and to send a summary.",
+          "ok": false,
+          "note": "Sau to cần check, không checks.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "parallelism-02",
+      "prompt": "Nối danh sách với khung hình thức.",
+      "explain": "Song song có thể ở nhiều cấp: danh từ, -ing, hoặc mệnh đề.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "the cost, the time, and the risk",
+          "b": "Ba cụm danh từ"
+        },
+        {
+          "a": "checking, editing, and saving",
+          "b": "Ba dạng -ing"
+        },
+        {
+          "a": "we checked, we edited, and we saved",
+          "b": "Ba mệnh đề hữu hạn"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "parallelism-03",
+      "prompt": "Phân loại khung của các mục được phối hợp.",
+      "explain": "Không có một khung duy nhất cho mọi danh sách.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Cụm danh từ",
+        "Cụm nguyên thể",
+        "Cụm -ing"
+      ],
+      "items": [
+        {
+          "t": "the fee and the deposit",
+          "cat": "Cụm danh từ"
+        },
+        {
+          "t": "to read and to write",
+          "cat": "Cụm nguyên thể"
+        },
+        {
+          "t": "reading and writing",
+          "cat": "Cụm -ing"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "parallelism-04",
+      "prompt": "Điền dạng được yêu cầu: -ing sau enjoy, dạng gốc sau to.",
+      "explain": "Enjoy lấy các hoạt động -ing; to đi với dạng gốc.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "I enjoy reading and {1} (write). We plan to check and {2} (save) the file.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "writing"
+          ]
+        },
+        "2": {
+          "accept": [
+            "save"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "parallelism-05",
+      "prompt": "Sửa dạng động từ sau to; giữ cả hai nhiệm vụ.",
+      "explain": "To được dùng chung cho check và save; không dùng saves.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "We plan to check and"
+        },
+        {
+          "t": "saves",
+          "bad": true,
+          "fix": [
+            "save"
+          ],
+          "note": "Dạng gốc save song song với check.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "the file."
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "parallelism-06",
+      "prompt": "Sắp xếp câu bắt đầu bằng We, giữ thứ tự kiểm tra rồi lưu.",
+      "explain": "To có thể dùng chung cho hai động từ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "We",
+        "plan",
+        "to",
+        "check",
+        "and",
+        "save",
+        "the file"
+      ],
+      "accept": [
+        [
+          "We",
+          "plan",
+          "to",
+          "check",
+          "and",
+          "save",
+          "the file"
+        ]
+      ],
+      "end": ".",
+      "level": "B2"
+    },
+    {
+      "id": "parallelism-07",
+      "prompt": "Biên tập danh sách theo ba dạng -ing.",
+      "explain": "Đây là yêu cầu chọn một hình thức nhất quán, không phán mọi danh sách pha hình thức đều không ngữ pháp.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "The job involves checking records, to answer emails, and filing reports.",
+      "instruction": "Giữ các mục và thứ tự; đổi mục giữa sang -ing để cả ba phụ thuộc involves.",
+      "accept": [
+        "The job involves checking records, answering emails, and filing reports"
+      ],
+      "model": "The job involves checking records, answering emails, and filing reports",
+      "level": "B2"
+    },
+    {
+      "id": "parallelism-08",
+      "prompt": "Viết mô tả công việc dễ đọc.",
+      "explain": "Tự đối chiếu hình thức và ý nghĩa; không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết ba nhiệm vụ sau involves bằng -ing, rồi viết lại bằng We need to với ba động từ nguyên thể. Có thể dùng chung to hoặc lặp lại to.",
+      "model": [
+        "The role involves checking records, answering emails, and filing reports. We need to check records, answer emails, and file reports."
+      ],
+      "checklist": [
+        "Các mục cùng quan hệ với từ dẫn nhập.",
+        "Mọi nhiệm vụ được giữ khi viết lại.",
+        "Không coi chia sẻ to là thiếu từ."
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "parallelism-09",
+      "prompt": "Dùng dạng gốc sau can và dạng -ing sau enjoy.",
+      "explain": "Can dùng chung cho read và write; enjoy dùng chung cho reading và writing.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "She can read and {1} (write) in English. She enjoys reading and {2} (write).",
+      "blanks": {
+        "1": {
+          "accept": [
+            "write"
+          ]
+        },
+        "2": {
+          "accept": [
+            "writing"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "parallelism-10",
+      "prompt": "Viết lại ba cụm với to được dùng chung.",
+      "explain": "Một to có thể chi phối ba động từ theo mẫu này.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "We need to check the address, to call the guide, and to confirm the time.",
+      "instruction": "Bỏ hai to lặp sau dấu phẩy; giữ mọi từ còn lại theo thứ tự, giữ dấu phẩy.",
+      "accept": [
+        "We need to check the address, call the guide, and confirm the time"
+      ],
+      "model": "We need to check the address, call the guide, and confirm the time",
+      "level": "B2"
+    },
+    {
+      "id": "parallelism-11",
+      "prompt": "Chọn tất cả mẫu chuẩn.",
+      "explain": "Dùng chung to hoặc lặp to đều được; sau can không thêm -s.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "We need to check and save the file.",
+          "ok": true,
+          "note": "To dùng chung."
+        },
+        {
+          "t": "We need to check and to save the file.",
+          "ok": true,
+          "note": "To lặp lại cũng chuẩn."
+        },
+        {
+          "t": "She can read and writes.",
+          "ok": false,
+          "note": "Sau can cần write.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "We plan to checks and save it.",
+          "ok": false,
+          "note": "Sau to cần check.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "parallelism-12",
+      "prompt": "Chọn nhận xét đúng về việc phối hợp thì.",
+      "explain": "Song song không bắt buộc mọi động từ có cùng thì nếu quan hệ thời gian khác nhau.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "She worked here last year and will return next month.",
+      "options": [
+        {
+          "t": "Có thể chuẩn; hai mốc thời gian giải thích hai dạng động từ.",
+          "ok": true,
+          "note": "Giữ logic quan trọng hơn sao chép hình thức."
+        },
+        {
+          "t": "Sai chỉ vì worked khác dạng will return.",
+          "ok": false,
+          "note": "Không có lệnh mọi phối hợp phải cùng thì.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Phải bỏ last year để câu được đúng.",
+          "ok": false,
+          "note": "Last year cung cấp mốc phù hợp.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

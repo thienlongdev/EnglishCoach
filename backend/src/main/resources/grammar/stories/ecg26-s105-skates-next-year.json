@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s105-skates-next-year",
+  "title": "Đôi giày trượt của năm sau",
+  "summary": "Một cậu bé muốn nhận đôi giày trượt bỏ quên nhưng chân em còn nhỏ hơn giày hai cỡ.",
+  "level": "B1",
+  "topics": [
+    "unreal-present-conditionals"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vi",
+      "role": "Nhân viên ga"
+    },
+    {
+      "id": "b",
+      "name": "Nam",
+      "role": "Người học việc"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Em thành thật nói mình chưa từng có đôi giày ấy. Em chỉ luôn tưởng tượng được đi trên băng. Vi cần giữ riêng mơ ước này với một lời nhận chủ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "They'd fit me next winter, perhaps.",
+          "vi": "Có lẽ mùa đông sau chúng sẽ vừa chân cháu."
+        },
+        {
+          "who": "b",
+          "en": "How would he put that wish in his own words?",
+          "vi": "Cậu bé sẽ nói điều ước ấy thế nào?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn câu nói về điều không đúng ở hiện tại, không nhận mình đang sở hữu đôi giày.",
+        "options": [
+          {
+            "ok": false,
+            "t": "My feet were bigger when I bought them.",
+            "note": "Quá khứ đơn when I bought them kể như thể đã mua thật. Bằng chứng hiện có chỉ là một mong ước.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "If my feet were bigger, I could skate in them.",
+            "note": "Were bigger dựng giả định khác thực tế. Could skate nói khả năng trong giả định, không nói đã đi đôi giày.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Nam cất giày chờ chủ thật rồi lấy hai miếng bìa bằng chân em. Em trượt thử trên nền giấy do chính mình vẽ một hồ băng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "He kept the wish and returned the skates.",
+          "vi": "Em giữ được ước mơ mà vẫn trả được đôi giày."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Ngày chủ giày trở lại, em đã có tấm thiệp hình hồ băng để tặng. Hai người hẹn cùng tới sân trượt thuê giày đúng cỡ.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Vi đưa thước cho em đo lại chân. Em cười nhận mình chưa hề mua rồi vẽ chân mình sẽ lớn đến đâu trên tờ giấy.",
+      "say": [
+        {
+          "who": "a",
+          "en": "You grew into the story first.",
+          "vi": "Em đã lớn lên cùng câu chuyện trước rồi."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Vi treo tờ giấy ở góc trò chơi. Mùa sau em trở lại đo đúng dấu bút cũ và kể chuyện lần trượt đầu tiên.",
+      "end": true
+    }
+  ]
+}

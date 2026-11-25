@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s183-pictures-from-the-well",
+  "title": "Bức thư nhặt ở giếng cạn",
+  "summary": "Một lá thư rơi khỏi xô ở giếng nhà Sương. Phong bì ghi “the woman to whom the well was left”. Hai người từng kéo nước ở đó.",
+  "level": "B2",
+  "topics": [
+    "relative-with-prepositions"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sương",
+      "role": "Người thừa kế ngôi nhà"
+    },
+    {
+      "id": "b",
+      "name": "Lio",
+      "role": "Người đóng cửa chớp"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Di chúc để giếng cho dì Mai. Bà Hoa là người kéo xô lên sáng nay và giữ nó trên tay. Lio cần giao đúng người ghi trên phong bì.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Hoa found the letter. Mai inherited the well.",
+          "vi": "Bà Hoa tìm ra thư. Dì Mai được thừa kế giếng."
+        },
+        {
+          "who": "b",
+          "en": "Which fact does to whom ask us to follow?",
+          "vi": "To whom bảo ta theo dữ kiện nào?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn người mà cụm quan hệ trên phong bì xác định.",
+        "options": [
+          {
+            "ok": false,
+            "t": "Give it to Hoa, the woman by whom it was found.",
+            "note": "By whom it was found chỉ người phát hiện thư. Đó là sự kiện khác với việc thừa kế giếng mà lời ghi đang mô tả.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "Give it to Mai, the woman the well was left to.",
+            "note": "To whom và dạng để to cuối mệnh đề đều chỉ người được để lại cái giếng. Đó là Mai.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Mai mở thư thấy sơ đồ một ngăn đáy xô. Bên trong có ảnh hai người đàn bà cùng kéo nước thời trẻ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "It took both women to bring that picture up.",
+          "vi": "Phải nhờ cả hai người mới kéo được bức ảnh ấy lên."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Bà Hoa tìm được thư, dì Mai được nhận, còn ảnh được phóng hai bản để cả hai giữ.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Bà Hoa đọc dòng đầu, lập tức gọi Mai sang. Chính tay bà trao lại bức thư cho bạn cũ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "They've been handing each other things for years.",
+          "vi": "Họ đã chuyền đồ cho nhau suốt bao nhiêu năm rồi."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Trong ảnh lộ ra ở đáy xô, hai người cũng đang thực hiện đúng động tác chuyền tay ấy.",
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s077-night-painter",
+  "title": "Người tô bầu trời đêm",
+  "level": "A2",
+  "topics": [
+    "past-continuous",
+    "past-simple"
+  ],
+  "scene": "office",
+  "summary": "Bức tranh bầu trời xuất hiện một vệt xanh giữa những vì sao trắng. Suri lại tìm thấy cây cọ xanh đã khô từ lâu.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Phan",
+      "role": "Người vẽ phông"
+    },
+    {
+      "id": "b",
+      "name": "Suri",
+      "role": "Bảo vệ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Phan đang tô những chấm trắng thì chiếc xe ngoài ngõ chiếu đèn qua kính màu. Vệt xanh chỉ có trong bức ảnh Suri chụp lúc ấy.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The blue line never touched my brush.",
+          "vi": "Vệt xanh chưa bao giờ chạm cọ của tôi."
+        },
+        {
+          "who": "b",
+          "en": "What were you doing when the car came past?",
+          "vi": "Khi chiếc xe chạy ngang thì anh đang làm gì?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Phan kể việc đã đang diễn ra lúc đèn quét qua bức tranh.",
+        "options": [
+          {
+            "t": "I painted it after the car left.",
+            "note": "After đưa hành động vẽ sang sau lúc xe đi khỏi. Nó không trả lời đúng việc đang làm trong khoảnh khắc hỏi tới.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "I was painting the stars.",
+            "note": "Was painting đặt việc tô sao làm nền cho khoảnh khắc xe tới. Phan không xác nhận từng vẽ nét xanh.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Suri đợi chuyến xe cuối đi ngang và chụp vệt xanh thứ hai. Hai người tặng tài xế bản in, ghi tên anh ở mục Ánh sáng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "He painted with his headlights.",
+          "vi": "Anh ấy vẽ bằng đèn xe."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Suri đặt hai ảnh cạnh nhau. Sau khi xe đi chỉ còn sao trắng. Phan vẽ một chiếc xe bé xíu ở mép tranh để khách tự đoán nguồn của vệt xanh.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Now the picture has its own clue.",
+          "vi": "Giờ chính bức tranh có manh mối rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

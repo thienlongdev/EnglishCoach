@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s064-my-other-brother",
+  "title": "Anh trai còn lại của bức tượng",
+  "level": "A2",
+  "topics": [
+    "other-another"
+  ],
+  "scene": "library-mystery",
+  "summary": "Phi có đúng hai anh trai. Một người làm đầu tượng gỗ, người kia khắc tên ở đáy.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Phi",
+      "role": "Người nhận quà"
+    },
+    {
+      "id": "b",
+      "name": "Noe",
+      "role": "Anh trai"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Noe gửi cho Phi một bức tượng giống hệt mình. Trong hộp có chữ ký của cả Noe và Dan. Khách thăm hỏi ai đã khắc dòng chữ cuối.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I made the face. Dan did the writing.",
+          "vi": "Anh làm khuôn mặt. Dan khắc chữ."
+        },
+        {
+          "who": "b",
+          "en": "How will you describe Dan to someone who only knows me?",
+          "vi": "Em giới thiệu Dan thế nào với người chỉ biết anh?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Phi nhắc tới đúng người còn lại trong hai anh em đã biết.",
+        "options": [
+          {
+            "t": "I need another brother to carve the name.",
+            "note": "Another ở đây xin thêm một anh trai để làm việc trong tương lai. Nhưng Dan đã khắc chữ rồi.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "My other brother carved the name.",
+            "note": "My other brother chỉ anh trai còn lại so với Noe. Carved the name phân biệt việc khắc chữ với việc tạc mặt.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Phi xoay tượng, dưới tên còn có nét vẽ hình kính của Dan. Bức tượng không chỉ có gương mặt của một người nữa.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Both of you are in this little face.",
+          "vi": "Trong khuôn mặt nhỏ này có cả hai anh."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Noe cười, xoay mặt đáy về phía Phi. Hai người tô một lớp phấn nhẹ, nét chữ Dan hiện đủ. Phi gửi ảnh cho Dan kèm lời cảm ơn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Two brothers were quite enough!",
+          "vi": "Hai anh trai là quá đủ rồi!"
+        }
+      ],
+      "end": true
+    }
+  ]
+}

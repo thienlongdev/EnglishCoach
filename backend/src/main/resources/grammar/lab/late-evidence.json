@@ -1,0 +1,41 @@
+{
+  "id": "late-evidence",
+  "title": "Đặt một mệnh đề dài ở đầu hay cuối?",
+  "summary": "Báo cáo mở bằng nhận định về việc mực nước tăng sau khi đóng van. Dời mệnh đề that và xem chủ ngữ hình thức nào giữ chỗ khi thông tin nặng ra cuối.",
+  "level": "C1",
+  "topics": [
+    "extraposition",
+    "noun-clauses-that"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Bố trí",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Mệnh đề làm chủ ngữ"
+        },
+        {
+          "id": "v2",
+          "label": "Ngoại trí"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "That the water level rose after closure remains unexplained.",
+      "vi": "Việc mực nước tăng sau khi đóng van vẫn chưa được giải thích.",
+      "note": "Cả mệnh đề đầu là điều chưa giải thích. Người đọc phải giữ nó trong trí nhớ trước khi gặp vị ngữ. / A finite that-clause can occupy subject position.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "It remains unexplained that the water level rose after closure.",
+      "vi": "Vẫn chưa giải thích được vì sao mực nước tăng sau khi đóng van.",
+      "note": "It là chủ ngữ hình thức. Mệnh đề dài ra cuối, trọng tâm thông tin có thể rơi vào diễn biến mực nước. / Anticipatory it allows the long clause to follow.",
+      "verdict": "ok"
+    }
+  }
+}

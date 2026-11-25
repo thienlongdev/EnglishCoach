@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s149-edge-of-the-room",
+  "title": "Mép phòng mang tên “nhà”",
+  "level": "B1",
+  "topics": [
+    "prepositions-place",
+    "indirect-questions"
+  ],
+  "scene": "home",
+  "summary": "Bưu kiện đầu tiên của mẹ Yen đến khi cô chưa tìm được cách gọi phòng trọ là nhà. Mẹ ghi một câu hỏi trong nắp hộp.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Yen",
+      "role": "Sinh viên xa nhà"
+    },
+    {
+      "id": "b",
+      "name": "Oli",
+      "role": "Bạn ở ghép"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Bên trong có ba cái móc áo của căn bếp cũ. Mẹ hỏi Where do you hang your keys now? Oli định chuyển câu hỏi ấy vào thiệp trả lời.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Mum wants to picture our door.",
+          "vi": "Mẹ muốn hình dung cánh cửa nhà mình."
+        },
+        {
+          "who": "b",
+          "en": "Tell me what she wants to know.",
+          "vi": "Cậu kể lại mẹ muốn biết gì đi."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Yen đổi câu hỏi trực tiếp thành lời kể với trật tự từ phù hợp.",
+        "options": [
+          {
+            "t": "She wants to know where do we hang our keys.",
+            "note": "Do we hang là trật tự câu hỏi trực tiếp. Nối vào wants to know cần bỏ đảo và dùng where we hang.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "She wants to know where we hang our keys.",
+            "note": "Where we hang giữ chủ ngữ trước động từ trong câu hỏi gián tiếp. We và our mở rộng sang căn phòng chung hiện tại.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Oli đóng hai chiếc móc cạnh cửa. Móc thứ ba hai bạn để trống và viết tên mẹ Yen lên. Bức ảnh trả lời cho mẹ thấy chỗ bà sẽ treo chìa nếu tới.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We've saved a place for her keys too.",
+          "vi": "Mình chừa cả chỗ cho chìa khóa của mẹ rồi."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Yen đọc lại như mẹ đang hỏi thẳng rồi tự trả lời bằng một bức vẽ. Gần hai chiếc chìa, cô viết lần đầu tiên chữ home mà không thấy lạ. Mẹ nhận được một câu trả lời dài hơn địa chỉ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I know what to call this door now.",
+          "vi": "Giờ mình biết gọi cánh cửa này là gì rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

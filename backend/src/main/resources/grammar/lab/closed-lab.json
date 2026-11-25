@@ -1,0 +1,41 @@
+{
+  "id": "closed-lab",
+  "title": "Đoán lý do đèn tắt",
+  "summary": "Bạn đứng ngoài xưởng đã tắt đèn. Đổi độ mạnh của kết luận rằng mọi người đã về. Dạng nào để ngỏ nhiều khả năng hơn?",
+  "level": "B1",
+  "topics": [
+    "may-might-could-possibility",
+    "must-cant-deduction"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Mức tin",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Một khả năng"
+        },
+        {
+          "id": "v2",
+          "label": "Suy đoán mạnh"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "They might be at home.",
+      "vi": "Có thể họ đang ở nhà.",
+      "note": "Might nêu một phỏng đoán. Chỉ riêng đèn tắt chưa loại hết các khả năng khác. / Might leaves other explanations open.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "They must be at home.",
+      "vi": "Chắc hẳn họ đang ở nhà.",
+      "note": "Must diễn đạt độ tin tưởng cao của người suy luận. Nó không biến phỏng đoán thành điều đã kiểm chứng. / Must presents a strong inference.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "picnic-owner",
+  "title": "Bữa trưa của ai?",
+  "summary": "Hai bạn mở hộp cơm giống nhau. Nếu người cầm hộp đổi vai từ người nói sang người nghe, từ nào xác định chủ hộp?",
+  "level": "A1",
+  "topics": [
+    "possessive-determiners",
+    "subject-object-pronouns"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Chủ hộp",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Người nói"
+        },
+        {
+          "id": "v2",
+          "label": "Người nghe"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "My lunch is in the blue box.",
+      "vi": "Bữa trưa của tôi ở trong hộp xanh.",
+      "note": "My đứng trước lunch và cho biết bữa trưa thuộc về người nói. / My points back to the speaker.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Your lunch is in the blue box.",
+      "vi": "Bữa trưa của bạn ở trong hộp xanh.",
+      "note": "Your đổi chủ sở hữu dù màu hộp và món ăn không đổi. / Your identifies the listener as the owner.",
+      "verdict": "ok"
+    }
+  }
+}

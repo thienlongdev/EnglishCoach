@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s199-double-handset",
+  "title": "Ống nghe ở hai thành phố",
+  "summary": "Một bà cụ để quên ống nghe điện thoại cổ ở sân bay. Bà kể con trai từng dặn: “Keep it until I come home.”",
+  "level": "B2",
+  "topics": [
+    "reporting-verbs",
+    "backshift"
+  ],
+  "scene": "airport",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Như",
+      "role": "Người phụ trách quầy"
+    },
+    {
+      "id": "b",
+      "name": "Nico",
+      "role": "Người nhận dạng đồ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Người con đã về từ nhiều năm trước. Bà vẫn giữ ống nghe vì đó là phần đầu hai mẹ con từng tháo lắp cùng nhau. Như cần viết lời kể gốc mà không biến lời xưa thành mệnh lệnh mới.",
+      "say": [
+        {
+          "who": "a",
+          "en": "He's home already. She keeps it because she chooses to.",
+          "vi": "Anh ấy đã về rồi. Nay bà giữ vì tự bà muốn."
+        },
+        {
+          "who": "b",
+          "en": "Keep that old until in the report.",
+          "vi": "Hãy giữ mốc until cũ trong lời thuật."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Như kể cả người được nhờ lẫn giới hạn lời nhờ.",
+        "options": [
+          {
+            "ok": true,
+            "t": "He asked her to keep it until he came home.",
+            "note": "Asked her to keep thuật lời dặn, he came home đặt mốc về nhà trong câu chuyện đã qua. Không tạo nghĩa vụ vô hạn về sau.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "He insists that she keep it until he comes home.",
+            "note": "Insists ở hiện tại biến chuyện đã xong thành yêu cầu còn hiệu lực, comes home như thể mốc còn ở phía trước. Cấu trúc giả định sau insist không phải lỗi.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Nico hỏi bà muốn giữ riêng hay trao lại cho con. Bà mượn điện thoại quầy và gọi anh đến lấy cùng mình.",
+      "say": [
+        {
+          "who": "b",
+          "en": "They've both come home to it now.",
+          "vi": "Giờ cả hai đã trở về với món đồ ấy."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Hai mẹ con mang mỗi người một đầu dây bước khỏi sân bay như đang nối lại cuộc gọi cũ.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Người con đang đứng ngoài cửa bước vào, làm cả quầy cười vì lời thuật chưa theo kịp thời gian. Như đổi sang asked.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A past request shouldn't choose her next gift.",
+          "vi": "Lời dặn cũ không nên quyết thay món quà tiếp theo."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Bà tự chọn tặng ống nghe cho cháu gái. Quyết định mới thuộc về bà chứ không thuộc lời dặn cũ.",
+      "end": true
+    }
+  ]
+}

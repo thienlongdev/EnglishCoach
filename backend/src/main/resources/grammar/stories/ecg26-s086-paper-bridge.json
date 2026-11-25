@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s086-paper-bridge",
+  "title": "Cây cầu gấp tư",
+  "summary": "Một tấm ảnh đề năm 1962 có cây cầu mà cả làng nhớ là đã mất từ năm 1960.",
+  "level": "B1",
+  "topics": [
+    "past-perfect",
+    "past-simple-vs-continuous"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Nhi",
+      "role": "Người vẽ bản đồ"
+    },
+    {
+      "id": "b",
+      "name": "Cam",
+      "role": "Ông của Nhi, người lái đò"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Nhi nhận ra bốt thu phí của ông Cam trong ảnh. Hồi trẻ ông làm ở cầu rồi chuyển sang lái đò. Ông đặt trước mặt cháu gái chiếc vé đò đầu tiên, đề ngày tháng năm 1960.",
+      "say": [
+        {
+          "who": "a",
+          "en": "You sold this ticket after the bridge came down, didn’t you?",
+          "vi": "Bác bán vé này sau khi cầu sập, phải không ạ?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Read the back carefully. Does it say when they took the picture?",
+          "vi": "Đọc kỹ mặt sau xem. Người ta có ghi lúc chụp ảnh không?"
+        }
+      ],
+      "choice": {
+        "prompt": "Mặt sau chỉ ghi Printed in 1962. Nhi nên nói thế nào để phân biệt thời điểm chụp với thời điểm in?",
+        "options": [
+          {
+            "t": "They printed it in 1962, but they may have taken it earlier.",
+            "note": "Printed xác định lúc in. May have taken để ngỏ khả năng ảnh được chụp trước đó.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "The bridge was still there in 1962.",
+            "note": "Câu đúng ngữ pháp nhưng biến ngày in ảnh thành bằng chứng cầu còn tồn tại. Dòng ghi chú không cho biết ngày chụp.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Cam mở phong bì đựng vé. Bên trong có một âm bản cũ đúng bằng cỡ ảnh.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The negative was here all along.",
+          "vi": "Hóa ra tấm phim vẫn ở đây từ trước tới giờ."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Cam đặt phong bì lên cửa sổ. Trên dải phim cùng khung ảnh cây cầu, bé Nhi còn nằm trong nôi.",
+      "say": [
+        {
+          "who": "b",
+          "en": "You were already at school in 1962.",
+          "vi": "Năm 1962 cháu đã đi học rồi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Phòng ảnh viết ngày nhận phim lên phong bì. Đó là năm 1959. Nhi thêm vào bản đồ hai mốc riêng cho ngày chụp và ngày in, rồi vẽ một chiếc đò nhỏ nơi cây cầu từng đứng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Grandpa kept a picture of his old job beside the first ticket for his new one.",
+          "vi": "Ông cất bức ảnh nghề cũ bên tấm vé đầu tiên của nghề mới."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "article-next-sound",
+  "title": "A hay an: nghe từ đứng ngay sau",
+  "summary": "Bạn đang mô tả tài liệu và hoạt động ở quầy thông tin. Đổi mạo từ không xác định (indefinite article) rồi đổi cụm theo sau. Các danh từ ở đây đều đếm được số ít; hãy xét âm đầu của từ ngay sau mạo từ, kể cả khi từ ấy là tính từ.",
+  "level": "A2",
+  "topics": ["a-and-an"],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "article",
+      "label": "Mạo từ",
+      "values": [
+        { "id": "a", "label": "a" },
+        { "id": "an", "label": "an" }
+      ]
+    },
+    {
+      "id": "phrase",
+      "label": "Cụm đứng ngay sau; đọc theo cách phát âm thông thường",
+      "values": [
+        { "id": "useful", "label": "useful guide: một cẩm nang hữu ích" },
+        { "id": "unusual", "label": "unusual guide: một cẩm nang khác thường" },
+        { "id": "old", "label": "old map: một tấm bản đồ cũ" },
+        { "id": "one-page", "label": "one-page map: một tấm bản đồ một trang" },
+        { "id": "hour-long", "label": "hour-long workshop: một buổi thực hành dài một giờ" }
+      ]
+    }
+  ],
+  "results": {
+    "a|useful": {
+      "en": "This is a useful guide.",
+      "vi": "Đây là một cẩm nang hữu ích.",
+      "note": "Useful bắt đầu bằng âm /j/, như âm đầu của you. Đó là phụ âm nên dùng a. Guide là danh từ chính, nhưng từ đứng sát mạo từ ở đây là useful.",
+      "verdict": "ok"
+    },
+    "a|unusual": {
+      "en": "This is a unusual guide.",
+      "vi": "Ý định: đây là một cẩm nang khác thường; câu tiếng Anh cần sửa.",
+      "note": "Unusual bắt đầu bằng nguyên âm /ʌ/, nên sửa thành This is an unusual guide. Đừng chọn a chỉ vì guide bắt đầu bằng phụ âm: unusual đứng ngay sau mạo từ.",
+      "verdict": "bad"
+    },
+    "a|old": {
+      "en": "This is a old map.",
+      "vi": "Ý định: đây là một tấm bản đồ cũ; câu tiếng Anh cần sửa.",
+      "note": "Old bắt đầu bằng nguyên âm. Câu chuẩn là This is an old map. Khi thêm old trước map, âm sát mạo từ đổi, nên cách chọn a hoặc an cũng đổi.",
+      "verdict": "bad"
+    },
+    "a|one-page": {
+      "en": "This is a one-page map.",
+      "vi": "Đây là một tấm bản đồ một trang.",
+      "note": "One bắt đầu bằng /w/, một phụ âm, dù chữ đầu là o. Vì thế a one-page map tự nhiên. Dấu nối không quyết định mạo từ; âm đầu của one mới quyết định.",
+      "verdict": "ok"
+    },
+    "a|hour-long": {
+      "en": "This is a hour-long workshop.",
+      "vi": "Ý định: đây là một buổi thực hành dài một giờ; câu tiếng Anh cần sửa.",
+      "note": "Hour có h câm nên bắt đầu bằng nguyên âm. Giữ nguyên cụm thì sửa thành This is an hour-long workshop. Không phải mọi chữ h đều câm; nhận xét này nói về hour.",
+      "verdict": "bad"
+    },
+    "an|useful": {
+      "en": "This is an useful guide.",
+      "vi": "Ý định: đây là một cẩm nang hữu ích; câu tiếng Anh cần sửa.",
+      "note": "Useful có âm đầu /j/, một phụ âm, nên sửa thành This is a useful guide. Useful và unusual cùng bắt đầu bằng chữ u nhưng khác âm đầu; chữ viết không đủ để chọn mạo từ.",
+      "verdict": "bad"
+    },
+    "an|unusual": {
+      "en": "This is an unusual guide.",
+      "vi": "Đây là một cẩm nang khác thường.",
+      "note": "Unusual có âm đầu là nguyên âm /ʌ/, nên dùng an. Câu nhận xét một cẩm nang có cách trình bày khác thường; khác thường không tự có nghĩa là khó dùng hay sai.",
+      "verdict": "ok"
+    },
+    "an|old": {
+      "en": "This is an old map.",
+      "vi": "Đây là một tấm bản đồ cũ.",
+      "note": "An đi theo âm đầu nguyên âm của old, không theo âm /m/ của map. Cả cụm old map vẫn chỉ một vật đếm được số ít.",
+      "verdict": "ok"
+    },
+    "an|one-page": {
+      "en": "This is an one-page map.",
+      "vi": "Ý định: đây là một tấm bản đồ một trang; câu tiếng Anh cần sửa.",
+      "note": "One bắt đầu bằng phụ âm /w/. Sửa thành This is a one-page map. Không áp dụng mẹo nhìn chữ o rồi tự động chọn an.",
+      "verdict": "bad"
+    },
+    "an|hour-long": {
+      "en": "This is an hour-long workshop.",
+      "vi": "Đây là một buổi thực hành dài một giờ.",
+      "note": "Hour bắt đầu bằng nguyên âm vì h không được đọc. An phù hợp dù từ được viết bằng chữ h ở đầu. Workshop là danh từ chính; âm của hour đứng ngay sau mạo từ quyết định lựa chọn.",
+      "verdict": "ok"
+    }
+  }
+}

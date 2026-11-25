@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s152-unlocked-sea",
+  "title": "Biển ở ngăn kéo thứ hai",
+  "summary": "Một con thuyền giấy trong ngăn kéo cứ mỗi ngày lại trôi thêm một chút. Maks nói đó là vì Liên đã quên một việc từ năm ngoái.",
+  "level": "B2",
+  "topics": [
+    "mixed-conditionals"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Liên",
+      "role": "Thợ sửa đồ chơi"
+    },
+    {
+      "id": "b",
+      "name": "Maks",
+      "role": "Người làm rối"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Ngăn kéo là sân khấu bỏ túi của mẹ Liên. Chiếc nam châm dưới thuyền bị tháo ra mùa hè trước, còn nền gỗ vẫn nghiêng. Đó là lý do con thuyền cứ trượt đi.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The magnet used to hold it on that tiny blue wave.",
+          "vi": "Trước kia nam châm giữ nó trên con sóng xanh tí xíu ấy."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "You took it out last summer. Look where the boat is now.",
+          "vi": "Mùa hè năm ngoái cháu đã lấy nam châm ra. Nhìn xem bây giờ thuyền đang ở đâu."
+        }
+      ],
+      "choice": {
+        "prompt": "Liên muốn hình dung vị trí hiện tại nếu năm ngoái cô đã để nguyên nam châm.",
+        "options": [
+          {
+            "t": "If I had left it in, the boat would still be on the wave.",
+            "note": "Had left giả định ngược việc đã làm mùa hè trước. Would still be chỉ vị trí giả định lúc này.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "If I put it back today, it will stay on the wave.",
+            "note": "Đây là phương án thật sự còn có thể làm hôm nay. Cấu trúc đúng nhưng không hình dung hệ quả hiện tại của quyết định năm ngoái.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Liên lướt ngón tay qua vệt xước dài trên sàn gỗ. Ở cuối vệt là một bến cảng mẹ cô vẽ từ lâu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Maybe she always meant it to travel.",
+          "vi": "Có lẽ mẹ cháu luôn muốn cho thuyền đi xa."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Maks mang nam châm ra định gắn lại. Khi nâng thuyền, ông trông thấy bến cảng nhỏ ở góc ngăn kéo.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Look where it was heading.",
+          "vi": "Xem nó đang hướng tới đâu này."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Liên gắn nam châm ở bến cảng thay vì giữa sóng. Tối đó trẻ con nhìn con thuyền lần đầu cập bến, còn Maks kéo tấm màn nhung nhỏ che mặt cười của mình.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I think that wave was the beginning, not the ending.",
+          "vi": "Cháu nghĩ con sóng ấy là mở đầu, còn kết thúc là ở đây."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

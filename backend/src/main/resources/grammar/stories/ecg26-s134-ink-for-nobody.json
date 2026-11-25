@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s134-ink-for-nobody",
+  "title": "Lọ mực không của riêng ai",
+  "summary": "Hai hộp thư cùng có vệt mực xanh nên hai bạn trực đổ lỗi cho nhau. Trên bàn có lọ mực chung và một vết nghiêng từ đêm mưa.",
+  "level": "B1",
+  "topics": [
+    "no-none-neither-either"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Thoa",
+      "role": "Người nhận thư"
+    },
+    {
+      "id": "b",
+      "name": "Kha",
+      "role": "Người giao thư"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Trong ảnh lúc tiệm đóng, lọ còn đứng. Sáng sau cành cây chọc cửa hé đã nằm ngang trên bàn. Thoa muốn chấm dứt việc gán lỗi khi chứng cứ chưa đủ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Both of us used that ink.",
+          "vi": "Cả hai chúng tôi đều dùng lọ mực đó."
+        },
+        {
+          "who": "b",
+          "en": "Using it isn't the same as knocking it over.",
+          "vi": "Dùng nó đâu có nghĩa là làm đổ nó."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn lời đúng về điều có thể kết luận từ màu xanh.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Neither colour mark tells us who spilled the ink.",
+            "note": "Neither xét riêng hai vệt và phủ định khả năng nhận diện người làm đổ từ mỗi vệt. Nó không tuyên bố không ai có thể liên quan.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Neither of us could ever have touched the ink.",
+            "note": "Could ever have touched loại mọi lần chạm tới mực, trái việc cả hai đã dùng. Nó đi xa hơn cả điều cần chứng minh.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Kha nhìn hướng vệt theo cành cây. Họ chuyển lọ và sửa then cửa. Hai bạn trực cùng rửa hộp thư thay vì tiếp tục trách nhau.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The colour stopped being an accusation.",
+          "vi": "Màu ấy thôi còn là lời buộc tội."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Màu xanh còn lại thành con sóng vẽ tay dưới đáy hộp.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Thoa cho hai bạn in dấu ngón cái lên giấy: màu giống hệt nhưng dấu khác. Họ hiểu chung một màu không chỉ được người làm đổ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "At least we know who made today's marks.",
+          "vi": "Ít ra hôm nay ta biết ai làm ra những dấu này."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Cành cây được cắt tỉa. Hai bạn ký tên dưới một bức vẽ sóng màu xanh tặng tiệm.",
+      "end": true
+    }
+  ]
+}

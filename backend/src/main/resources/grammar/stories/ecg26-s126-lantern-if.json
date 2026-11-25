@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s126-lantern-if",
+  "title": "Nếu đèn chưa tắt",
+  "summary": "Quán chỉ mở cửa muộn khi đèn bếp còn sáng. Một khách lỡ chuyến đứng ngoài sân với hộp cơm rỗng.",
+  "level": "B1",
+  "topics": [
+    "unless-provided-as-long-as"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sa",
+      "role": "Người nấu bếp"
+    },
+    {
+      "id": "b",
+      "name": "Linh",
+      "role": "Người phục vụ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Đèn hành lang vẫn sáng nhưng đèn bếp mới là tín hiệu quy định. Tối nay Sa vừa châm lại đèn bếp để nấu nồi súp cuối.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The hall light stays on all night.",
+          "vi": "Đèn sảnh sáng suốt đêm."
+        },
+        {
+          "who": "b",
+          "en": "Which light are people supposed to follow?",
+          "vi": "Khách phải nhìn theo ngọn đèn nào?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Sa chỉ dẫn sao cho khách ngoài sân biết mình còn được vào.",
+        "options": [
+          {
+            "ok": false,
+            "t": "You can come in unless the kitchen light is on.",
+            "note": "Unless đảo điều kiện: câu cho vào trừ khi đèn bếp sáng. Nó ngăn khách đúng lúc quán đang phục vụ.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "You can come in as long as the kitchen light is on.",
+            "note": "As long as đặt điều kiện rõ vào đèn bếp. Tối nay điều kiện đang thỏa vì Sa vừa bật lại.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Khách vào, xin mang súp ra sân để chia cho người lái xe cuối. Sa thắp thêm nến trên khay cho hai người nhìn thấy nhau.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The last table didn't need a roof.",
+          "vi": "Bàn cuối hôm nay không cần mái."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Đèn bếp tắt sau cùng; ngoài sân vẫn còn tiếng thìa rất lâu.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Linh ra tận cửa xoay mặt tấm biển. Sa thay chữ unless bằng if và đưa một phần súp nóng qua ô cửa nhỏ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Now the picture can speak for us.",
+          "vi": "Giờ hình vẽ nói thay mình được rồi."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Sáng sau, khách quay lại vẽ chiếc đèn bếp kèm mũi tên để người không đọc được biển vẫn tìm được bữa ăn.",
+      "end": true
+    }
+  ]
+}

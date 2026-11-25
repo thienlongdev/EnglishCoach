@@ -1,0 +1,563 @@
+{
+  "schema": 1,
+  "slug": "adjectives-vs-adverbs",
+  "version": 2,
+  "domain": "adjectives-adverbs",
+  "order": 90,
+  "kind": "grammar",
+  "title": {
+    "vi": "Tính từ hay trạng từ? hard, hardly, late, lately",
+    "en": "Adjective or adverb?"
+  },
+  "level": "A2",
+  "levelBasis": "editorial",
+  "prerequisites": [
+    "adjective-position"
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "subtitle": {
+    "vi": "Chọn theo việc từ đang mô tả, không chỉ theo đuôi -ly",
+    "en": "Describe a person, a thing or an action"
+  },
+  "aliases": [
+    "tính từ trạng từ",
+    "hard hardly",
+    "late lately",
+    "good well",
+    "fast fastly"
+  ],
+  "objectives": [
+    "Phân biệt tính từ mô tả chủ thể với trạng từ mô tả cách làm.",
+    "Dùng hard/hardly và late/lately theo đúng nghĩa.",
+    "Nhận ra trạng từ không có -ly và tính từ có -ly."
+  ],
+  "related": [
+    {
+      "slug": "adjective-position",
+      "rel": "more"
+    },
+    {
+      "slug": "adverb-position",
+      "rel": "more"
+    }
+  ],
+  "quick": {
+    "what": "Tính từ (adjective) thường mô tả người hoặc vật; trạng từ (adverb) có thể mô tả cách hành động diễn ra. Không phải mọi trạng từ đều có -ly, và thêm -ly đôi khi đổi hẳn nghĩa.",
+    "when": "Dùng khi nói người trông thế nào, công việc được làm ra sao hoặc việc xảy ra lúc nào.",
+    "examples": [
+      {
+        "en": "[S|The technician] [V|is] [C|careful].",
+        "vi": "Kỹ thuật viên cẩn thận."
+      },
+      {
+        "en": "[S|The technician] [V|works] [ADV|carefully].",
+        "vi": "Kỹ thuật viên làm việc cẩn thận."
+      }
+    ],
+    "remember": "Hỏi từ đang mô tả ai hoặc điều gì; sau đó mới chọn dạng."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Trong The soup smells good, good mô tả món súp qua cảm nhận mùi. Trong The cook checked the temperature carefully, carefully mô tả cách kiểm tra. Đứng sau động từ không tự động có nghĩa phải dùng trạng từ."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Nhiệm vụ",
+        "Cấu trúc",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "Mô tả danh từ",
+          "adjective + noun",
+          "a quiet engine"
+        ],
+        [
+          "Mô tả chủ thể qua động từ nối",
+          "be/seem/look + adjective",
+          "The engine seems quiet."
+        ],
+        [
+          "Mô tả cách hành động",
+          "verb + adverb",
+          "The engine runs quietly."
+        ]
+      ]
+    },
+    {
+      "type": "formula",
+      "parts": [
+        {
+          "t": "chủ ngữ",
+          "role": "S"
+        },
+        {
+          "t": "động từ hành động",
+          "role": "V"
+        },
+        {
+          "t": "trạng từ cách thức",
+          "role": "ADV"
+        }
+      ]
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|Your explanation] [V|was] [C|clear].",
+          "vi": "Lời giải thích của bạn rõ ràng."
+        },
+        {
+          "en": "[S|You] [V|explained] [O|the changes] [ADV|clearly].",
+          "vi": "Bạn giải thích các thay đổi rõ ràng."
+        },
+        {
+          "en": "[S|The courier] [V|drove] [ADV|fast].",
+          "vi": "Nhân viên chuyển phát lái xe nhanh.",
+          "note": "Fast vừa có cách dùng tính từ vừa có cách dùng trạng từ; không cần fastly."
+        }
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "flow",
+        "start": "job",
+        "nodes": {
+          "job": {
+            "q": "Trong hai mẫu này, từ bổ sung mô tả điều gì?",
+            "choices": [
+              {
+                "t": "Tính chất của chủ thể sau seems",
+                "to": "adj"
+              },
+              {
+                "t": "Cách thực hiện sau works",
+                "to": "adv"
+              }
+            ]
+          },
+          "adj": {
+            "end": "She seems careful.",
+            "note": "Careful mô tả cô ấy."
+          },
+          "adv": {
+            "end": "She works carefully.",
+            "note": "Carefully mô tả cách làm việc."
+          }
+        }
+      },
+      "caption": "Hai nhiệm vụ của từ bổ nghĩa",
+      "alt": "She seems careful nói tính chất của người; She works carefully nói cách hành động diễn ra. Đây là hai mẫu minh họa, không phải thuật toán cho mọi động từ."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Cặp",
+        "Nghĩa thứ nhất",
+        "Nghĩa thứ hai"
+      ],
+      "rows": [
+        [
+          "hard / hardly",
+          "work hard: làm chăm chỉ",
+          "hardly work: hầu như không làm"
+        ],
+        [
+          "late / lately",
+          "arrive late: đến muộn",
+          "lately: gần đây"
+        ],
+        [
+          "good / well",
+          "a good performance: màn trình diễn tốt",
+          "perform well: trình diễn tốt"
+        ]
+      ]
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "The team worked hard.",
+            "vi": "Đội làm việc chăm chỉ."
+          },
+          "b": {
+            "en": "The team hardly worked.",
+            "vi": "Đội hầu như không làm việc."
+          },
+          "diff": "Hardly không phải cách làm chăm chỉ hơn; nó mang nghĩa gần phủ định."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Friendly và lovely thường là tính từ dù tận cùng -ly. Có thể nói in a friendly way khi cần nêu cách làm. Well cũng có thể là tính từ chỉ sức khỏe: I feel well."
+    },
+    {
+      "type": "try",
+      "exercise": "adjectives-vs-adverbs-1"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Một số dạng không có -ly là trạng từ chuẩn: fast, hard, late, straight. Một số cặp khác nhau về nghĩa hoặc văn phong, như close/closely. Không tự thêm -ly mà chưa biết từ tạo thành có tồn tại và mang nghĩa gì."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "She looked tired.",
+            "vi": "Cô ấy trông mệt."
+          },
+          "b": {
+            "en": "She looked carefully at the label.",
+            "vi": "Cô ấy nhìn kỹ nhãn."
+          },
+          "diff": "Look là động từ nối ở câu đầu; ở câu sau là hành động nhìn. Chính cách dùng của động từ giúp chọn tính từ hoặc trạng từ."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Hardly mang nghĩa gần phủ định trong tiếng Anh chuẩn; We hardly ever use it nghĩa là chúng tôi rất hiếm dùng. Lately thường nói giai đoạn gần đây và hay gặp với hiện tại hoàn thành, nhưng không phải tín hiệu bắt buộc một thì trong mọi câu."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "av-fast",
+      "wrong": "The train moves fastly.",
+      "right": "The train moves fast.",
+      "why": "Fast là trạng từ chuẩn cho tốc độ trong câu này."
+    },
+    {
+      "id": "av-clear",
+      "wrong": "She explained the policy clear.",
+      "right": "She explained the policy clearly.",
+      "why": "Trong cách viết chuẩn đang học, clearly bổ nghĩa cách giải thích."
+    },
+    {
+      "id": "av-hard",
+      "wrong": "He studies hardly every evening.",
+      "right": "He studies hard every evening.",
+      "why": "Nếu muốn nói học chăm mỗi tối, dùng hard. Hardly mang nghĩa hầu như không."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Sau động từ có luôn dùng trạng từ không?",
+      "a": "Không. Động từ nối như seem hoặc look trong nghĩa trông có thể đi với tính từ mô tả chủ thể."
+    },
+    {
+      "q": "Good và well có thay nhau được không?",
+      "a": "Không tùy ý. A good speaker dùng tính từ; speaks well dùng trạng từ. Well còn có nghĩa khỏe trong I feel well."
+    },
+    {
+      "q": "Lately có phải là dạng của late nghĩa muộn không?",
+      "a": "Không trong nghĩa thông thường đang học. Late là muộn; lately là gần đây."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "adjectives-vs-adverbs-1",
+      "level": "A2",
+      "use": "practice",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn một phương án có thể mô tả cách giải thích; xem phản hồi về cách dùng trung tính và biến thể.",
+      "stem": "The trainer explained the procedure ___.",
+      "options": [
+        {
+          "t": "clearly",
+          "ok": true,
+          "note": "Clearly nói cách giải thích."
+        },
+        {
+          "t": "clear",
+          "note": "Clear cũng có cách dùng trạng từ không -ly. Clearly là lựa chọn trung tính thông dụng cho cách giải thích trong câu này.",
+          "ok": true
+        },
+        {
+          "t": "clearness",
+          "tag": "grammar-pattern",
+          "note": "Danh từ clearness không bổ nghĩa trực tiếp như vậy."
+        }
+      ],
+      "explain": "Clearly là dạng thông dụng; flat adverb clear cũng được chấp nhận với lưu ý về văn phong. Clearness là danh từ nên không phù hợp vị trí này."
+    },
+    {
+      "id": "adjectives-vs-adverbs-2",
+      "level": "A2",
+      "use": "practice",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Điền fast hoặc fastly.",
+      "stem": "The new printer works {1}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "fast"
+          ]
+        }
+      },
+      "explain": "Fast là trạng từ chuẩn, không cần thêm -ly."
+    },
+    {
+      "id": "adjectives-vs-adverbs-3",
+      "level": "A2",
+      "use": "practice",
+      "type": "match",
+      "skill": "meaning",
+      "prompt": "Nối cụm với nghĩa.",
+      "pairs": [
+        {
+          "a": "work hard",
+          "b": "làm việc chăm chỉ"
+        },
+        {
+          "a": "hardly work",
+          "b": "hầu như không làm việc"
+        },
+        {
+          "a": "arrive late",
+          "b": "đến muộn"
+        },
+        {
+          "a": "have been busy lately",
+          "b": "gần đây bận"
+        }
+      ],
+      "explain": "Những cặp gần hình thức có thể khác nghĩa lớn."
+    },
+    {
+      "id": "adjectives-vs-adverbs-4",
+      "level": "A2",
+      "use": "practice",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn tính từ mô tả chủ thể qua seem.",
+      "stem": "After the repairs, the room seems ___.",
+      "options": [
+        {
+          "t": "quiet",
+          "ok": true,
+          "note": "Quiet mô tả căn phòng."
+        },
+        {
+          "t": "quietly",
+          "tag": "grammar-pattern",
+          "note": "Không dùng trạng từ cách thức làm bổ ngữ tính chất ở đây."
+        },
+        {
+          "t": "quietness",
+          "tag": "grammar-pattern",
+          "note": "Danh từ không tạo mẫu mô tả này."
+        }
+      ],
+      "explain": "Seem nối chủ thể với tính chất, không yêu cầu -ly."
+    },
+    {
+      "id": "adjectives-vs-adverbs-5",
+      "level": "A2",
+      "use": "practice",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Điền hard hoặc hardly để nói người đó gần như không ngủ.",
+      "stem": "The noise was so loud that I {1} slept.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "hardly"
+          ]
+        }
+      },
+      "explain": "Hardly slept nghĩa hầu như không ngủ."
+    },
+    {
+      "id": "adjectives-vs-adverbs-6",
+      "level": "A2",
+      "use": "practice",
+      "type": "classify",
+      "skill": "recognition",
+      "prompt": "Phân loại từ in đậm theo vai trò trong cụm đã cho.",
+      "cats": [
+        "Tính từ",
+        "Trạng từ"
+      ],
+      "items": [
+        {
+          "t": "a friendly receptionist: friendly",
+          "cat": "Tính từ"
+        },
+        {
+          "t": "drive fast: fast",
+          "cat": "Trạng từ"
+        },
+        {
+          "t": "a fast charger: fast",
+          "cat": "Tính từ"
+        },
+        {
+          "t": "speak softly: softly",
+          "cat": "Trạng từ"
+        }
+      ],
+      "explain": "Một hình thức có thể làm nhiệm vụ khác nhau; -ly không đủ để nhận diện."
+    },
+    {
+      "id": "adjectives-vs-adverbs-7",
+      "level": "A2",
+      "use": "practice",
+      "type": "transform",
+      "skill": "production",
+      "prompt": "Chuyển mô tả người sang mô tả cách làm.",
+      "source": "She is a careful driver.",
+      "instruction": "Viết câu bắt đầu She drives.",
+      "accept": [
+        "She drives carefully."
+      ],
+      "model": "She drives carefully.",
+      "explain": "Careful mô tả driver; carefully mô tả drives."
+    },
+    {
+      "id": "adjectives-vs-adverbs-8",
+      "level": "A2",
+      "use": "practice",
+      "type": "open",
+      "skill": "production",
+      "prompt": "Viết rồi tự đối chiếu với bài mẫu.",
+      "task": "Viết hai câu về một người: một tính chất và một cách làm. Thêm một câu dùng lately nghĩa gần đây.",
+      "model": [
+        "Our mentor is patient.",
+        "She explains each step patiently.",
+        "She has been working from home lately."
+      ],
+      "checklist": [
+        "Tính từ có mô tả người không?",
+        "Trạng từ có mô tả cách làm không?",
+        "Lately có nghĩa gần đây, không phải muộn không?"
+      ],
+      "explain": "Dùng nội dung riêng của bạn và đối chiếu chức năng của từng từ."
+    },
+    {
+      "id": "adjectives-vs-adverbs-9",
+      "level": "A2",
+      "use": "check",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn cách hiểu đúng.",
+      "stem": "They hardly used the spare room.",
+      "options": [
+        {
+          "t": "Họ hầu như không dùng phòng dự phòng.",
+          "ok": true,
+          "note": "Hardly mang nghĩa gần phủ định."
+        },
+        {
+          "t": "Họ dùng phòng rất chăm chỉ.",
+          "tag": "grammar-pattern",
+          "note": "Đó là nhầm hardly với hard."
+        },
+        {
+          "t": "Họ chỉ dùng phòng muộn vào đêm.",
+          "tag": "grammar-pattern",
+          "note": "Không có nghĩa thời gian muộn ở hardly."
+        }
+      ],
+      "explain": "Hardly không chỉ mức độ nỗ lực."
+    },
+    {
+      "id": "adjectives-vs-adverbs-10",
+      "level": "A2",
+      "use": "check",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Điền late hoặc lately để nói thời điểm đến muộn.",
+      "stem": "The last guest arrived {1}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "late"
+          ]
+        }
+      },
+      "explain": "Late bổ nghĩa thời điểm đến; lately nghĩa gần đây và không thay thế trong ý đã cho."
+    },
+    {
+      "id": "adjectives-vs-adverbs-11",
+      "level": "A2",
+      "use": "check",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn câu dùng well như trạng từ chỉ chất lượng.",
+      "stem": "Bạn muốn nói nhóm trình bày tốt.",
+      "options": [
+        {
+          "t": "The team presented the results well.",
+          "ok": true,
+          "note": "Well bổ nghĩa cách trình bày."
+        },
+        {
+          "t": "The team presented the results good.",
+          "tag": "grammar-pattern",
+          "note": "Trong cách viết chuẩn mục tiêu, dùng well."
+        },
+        {
+          "t": "The team presented the results wellness.",
+          "tag": "grammar-pattern",
+          "note": "Wellness là danh từ, không dùng như trạng từ."
+        }
+      ],
+      "explain": "Good và well khác vai trò trong cấu trúc này."
+    },
+    {
+      "id": "adjectives-vs-adverbs-12",
+      "level": "A2",
+      "use": "check",
+      "type": "error",
+      "skill": "form",
+      "prompt": "Sửa trạng từ tốc độ.",
+      "segments": [
+        {
+          "t": "The conveyor moves "
+        },
+        {
+          "t": "fastly",
+          "bad": true,
+          "fix": [
+            "fast"
+          ],
+          "note": "Fast đã là trạng từ tốc độ chuẩn.",
+          "tag": "grammar-pattern"
+        },
+        {
+          "t": " when the sensor is clear."
+        }
+      ],
+      "explain": "Fast đã là trạng từ tốc độ chuẩn."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham chiếu đề xuất: tính từ và trạng từ, hard/hardly, late/lately, good/well. Chưa kiểm chứng trực tiếp từng mệnh đề hoặc khóa đáp án trong lượt soạn này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham chiếu đề xuất cho mẫu dùng và ngoại lệ; không khẳng định đã đọc một trang hay ấn bản cụ thể."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

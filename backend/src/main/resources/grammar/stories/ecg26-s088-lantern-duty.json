@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s088-lantern-duty",
+  "title": "Chiếc đèn không ai phải thắp",
+  "summary": "Ga mới có đồng hồ điện nhưng bà bán hoa mù vẫn hỏi khi nào chiếc chuông cũ sẽ reo.",
+  "level": "B1",
+  "topics": [
+    "mustnt-dont-have-to"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Duy",
+      "role": "Nhân viên tập sự"
+    },
+    {
+      "id": "b",
+      "name": "Noor",
+      "role": "Trưởng ga"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Thông báo tiếng Anh ở phòng trực ghi rằng nhân viên không còn bắt buộc kéo chuông. Duy cầm dây chuông nhưng ngừng tay. Cậu sợ vi phạm quy định.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The clock works now. Is the old bell against the rules?",
+          "vi": "Đồng hồ chạy rồi. Thế dùng chuông cũ là trái quy định sao?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Read it again. They gave us a choice.",
+          "vi": "Đọc lại đi. Họ để chúng ta tự chọn."
+        }
+      ],
+      "choice": {
+        "prompt": "Duy sẽ nhắn cho ca sau thế nào để họ biết việc kéo chuông là tự nguyện?",
+        "options": [
+          {
+            "t": "You mustn't ring the bell.",
+            "note": "Mustn't là cấm. Lời nhắn sẽ ngăn người trực làm một việc mà quy định vẫn cho phép.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "You don't have to ring the bell.",
+            "note": "Don't have to bỏ nghĩa vụ. Người trực vẫn có thể kéo chuông cho người cần nghe.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Noor viết thêm giờ xe vào sổ. Những ai muốn giữ tiếng chuông có thể ký tên cạnh giờ trực.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I'll take the six o'clock bell.",
+          "vi": "Tôi nhận kéo chuông lúc sáu giờ."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Một đồng nghiệp buông dây. Duy đọc lại bản gốc và sửa tờ nhắn trước khi chuyến xe đến.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Good. She knows that sound.",
+          "vi": "Tốt rồi. Bà ấy nhận ra âm thanh đó."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Bà bán hoa quay mặt về phía sân ga khi chuông reo. Sáng hôm sau, một nhánh hoa nhỏ buộc vào dây. Duy để bên cạnh một cây bút để ai muốn trực có thể ký.",
+      "say": [
+        {
+          "who": "a",
+          "en": "An old bell can still do a job.",
+          "vi": "Một chiếc chuông cũ vẫn có việc để làm."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

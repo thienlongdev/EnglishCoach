@@ -1,0 +1,67 @@
+{
+  "id": "scope-two-readings",
+  "title": "Một người kiểm mọi bản hay mỗi bản có người kiểm?",
+  "summary": "Có ba bản thảo. Bạn kiểm một chính sách bằng hai lịch phân công khác nhau. Cụm every draft có buộc cùng một người đọc hết không? Nhận xét xét cả câu lẫn lịch đã chọn.",
+  "level": "C1",
+  "topics": [
+    "structural-ambiguity",
+    "negation-scope"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Phân công",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Mai đọc hết"
+        },
+        {
+          "id": "v2",
+          "label": "Ba người chia đều"
+        }
+      ]
+    },
+    {
+      "id": "axis-2",
+      "label": "Chính sách cần kiểm",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Một người bao quát"
+        },
+        {
+          "id": "v2",
+          "label": "Mỗi bản có người"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1|v1": {
+      "en": "Mai read all three. One reader checked every draft.",
+      "vi": "Mai đọc cả ba bản. Có một người đã kiểm tất cả bản thảo.",
+      "note": "One reader chọn một người đáp ứng yêu cầu với mọi bản. Ở lịch này, Mai là người đó. / Mai witnesses the single-reader claim.",
+      "verdict": "ok"
+    },
+    "v1|v2": {
+      "en": "Mai read all three. Each draft was checked by at least one reader.",
+      "vi": "Mai đọc cả ba bản. Mỗi bản đều có ít nhất một người kiểm.",
+      "note": "Each draft phân phối yêu cầu theo bản, không buộc người đọc phải khác nhau. / The same reader may satisfy each separate requirement.",
+      "verdict": "ok"
+    },
+    "v2|v1": {
+      "en": "Each reader checked a different draft and nothing else. One reader checked every draft.",
+      "vi": "Mỗi người chỉ kiểm một bản khác nhau. Có một người đã kiểm tất cả bản thảo.",
+      "note": "Trong nhóm ba người này không ai đọc cả ba bản. Vấn đề là kết luận sai với lịch, không phải ngữ pháp. / The second sentence conflicts with this assignment.",
+      "verdict": "odd"
+    },
+    "v2|v2": {
+      "en": "Each reader checked a different draft. All three drafts had a reader.",
+      "vi": "Mỗi người kiểm một bản khác nhau. Cả ba bản đều có người đọc.",
+      "note": "Quy định chỉ đòi mỗi bản có người đọc. Phân công ba người cho ba bản vẫn đáp ứng. / The distributed requirement permits different readers.",
+      "verdict": "ok"
+    }
+  }
+}

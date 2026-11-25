@@ -1,0 +1,37 @@
+/* Adaptive Cinematic HUD of the immersive worlds (lib/ui/cinematicHud.ts). Controls marked `.chrome` + data-hud-chrome
+   fade together when the world has the screen, and come back together. `translate` (not transform) moves them, so a
+   control's own transform (centring, lifts) is never replaced. No blur over the live scene, never an important flag. */
+.root { --hud-ease: cubic-bezier(.2, .8, .2, 1); }
+.root .chrome { transition: opacity .34s var(--hud-ease), translate .46s var(--hud-ease), visibility 0s linear 0s; }
+.root[data-hud="immersive"] .chrome { opacity: 0; pointer-events: none; transition: opacity .42s var(--hud-ease), translate .52s var(--hud-ease); }
+.root[data-hud="immersive"] .chrome[data-hud-chrome="top"] { translate: 0 -12px; }
+.root[data-hud="immersive"] .chrome[data-hud-chrome="bottom"] { translate: 0 12px; }
+.root[data-hud="immersive"] .chrome[data-hud-chrome="left"] { translate: -12px 0; }
+.root[data-hud="immersive"] .chrome[data-hud-chrome="right"] { translate: 12px 0; }
+/* Coming back: a light stagger, top first, so the controls read as one instrument waking up. */
+.root[data-hud="revealed"] .chrome[data-hud-chrome="right"], .root[data-hud="discovery"] .chrome[data-hud-chrome="right"] { transition-delay: 40ms; }
+.root[data-hud="revealed"] .chrome[data-hud-chrome="bottom"], .root[data-hud="discovery"] .chrome[data-hud-chrome="bottom"] { transition-delay: 70ms; }
+
+/* Parts of the location puck that unfold with the controls (the trail of a path, secondary labels). */
+.fold { display: inline-flex; align-items: center; min-width: 0; max-width: 72vw; overflow: hidden; white-space: nowrap; transition: max-width .44s var(--hud-ease), opacity .3s var(--hud-ease); }
+.root[data-hud="immersive"] .fold { max-width: 0; opacity: 0; }
+
+/* The one-time "how to explore" hint and the contextual one: a small pearl note, bottom centre, never covering a control. */
+.hint { position: absolute; left: 50%; bottom: max(22px, env(safe-area-inset-bottom)); z-index: 40; translate: -50% 0; display: flex; align-items: center; gap: 12px; max-width: min(640px, calc(100% - 32px));
+  padding: 10px 10px 10px 16px; border-radius: 999px; background: rgb(250 252 255 / .94); color: #0d1b2e; border: 1px solid rgb(255 255 255 / .9);
+  box-shadow: 0 1px 0 rgb(255 255 255 / .9) inset, 0 16px 40px -18px rgb(2 8 23 / .7), 0 2px 8px rgb(2 8 23 / .18); font-size: 13.5px; font-weight: 700; line-height: 1.35;
+  animation: hintIn .5s var(--hud-ease, ease-out) both; }
+.hint ul { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0; padding: 0; list-style: none; }
+.hint li { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.hint kbd { display: inline-grid; place-items: center; min-width: 22px; height: 20px; padding: 0 5px; border-radius: 6px; background: #e8eef7; border: 1px solid #c9d5e6; font: inherit; font-size: 11px; font-weight: 800; color: #24364f; }
+.hint button { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border: 0; border-radius: 50%; background: #e8eef7; color: #24364f; cursor: pointer; }
+.hint button:hover { background: #dbe5f2; }
+@keyframes hintIn { from { opacity: 0; translate: -50% 10px; } to { opacity: 1; translate: -50% 0; } }
+@media (max-width: 640px) { .hint { border-radius: 18px; font-size: 12.5px; bottom: max(84px, env(safe-area-inset-bottom)); } .hint li { white-space: normal; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .root .chrome, .root[data-hud="immersive"] .chrome { transition: opacity .12s linear; }
+  .root[data-hud="immersive"] .chrome[data-hud-chrome] { translate: none; }
+  .fold { transition: none; }
+  .hint { animation: none; }
+}

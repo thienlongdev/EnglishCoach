@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s096-roof-tent",
+  "title": "Chiếc lều không chạm đất",
+  "summary": "Hai chị em muốn ngủ ngoài sân đêm có sao. Bãi cỏ còn quá ướt cho lều, nhưng trên hiên có một ô sàn khô.",
+  "level": "B1",
+  "topics": [
+    "unless-provided-as-long-as"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Thư",
+      "role": "Chị gái"
+    },
+    {
+      "id": "b",
+      "name": "Ông Dần",
+      "role": "Người trông sân"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Ông Dần đặt tờ giấy phép cắm trại tự viết lên bàn. Điều kiện là sàn bên dưới phải khô. Hiên có mái, còn mọi chỗ trên cỏ vẫn đọng nước.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Does that mean our camping night is over?",
+          "vi": "Thế là đêm cắm trại của tụi cháu hết rồi ạ?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Read the condition, then feel the floor.",
+          "vi": "Con đọc điều kiện rồi sờ xuống sàn xem."
+        }
+      ],
+      "choice": {
+        "prompt": "Thư muốn chuyển đúng quy định “chỉ cắm ở chỗ khô” thành lời hứa với ông.",
+        "options": [
+          {
+            "t": "We won't put up the tent unless the ground under it is dry.",
+            "note": "Unless ở đây gần với if ... not. Nếu mặt dưới chưa khô thì hai chị em sẽ không dựng lều.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "We won't put up the tent if the ground under it is dry.",
+            "note": "If ... is dry nói sẽ không dựng khi khô, đảo điều kiện mà ông đặt ra. Câu đúng cấu trúc nhưng sẽ loại chính chỗ được phép.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Thư thử sàn hiên bằng tờ giấy. Giấy vẫn khô. Cả hai dựng lều đúng dưới khoảng trời nhìn được qua mái kính.",
+      "say": [
+        {
+          "who": "b",
+          "en": "You found a dry little island.",
+          "vi": "Con tìm được một hòn đảo khô nho nhỏ rồi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Ông đặt tờ giấy lên cỏ rồi lên hiên. Một góc giấy ướt, góc kia khô. Thư đổi lại lời hứa và chọn sàn hiên.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Keep the dry corner for your tent.",
+          "vi": "Giữ góc khô ấy để dựng lều nhé."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Đêm ấy, từ trong lều hai chị em thấy sao phản chiếu cả trong vũng nước lẫn trên mái kính. Ông Dần ghi tên chỗ cắm trại mới lên giấy phép: Đảo giữa hai bầu trời.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We didn't need to go far to go camping.",
+          "vi": "Tụi cháu chẳng cần đi xa mới được cắm trại."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

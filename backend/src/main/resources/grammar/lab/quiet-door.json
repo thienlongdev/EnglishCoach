@@ -1,0 +1,40 @@
+{
+  "id": "quiet-door",
+  "title": "Tấm biển trên cửa",
+  "summary": "Cửa phòng thu có thể phải mở hoặc đóng suốt buổi. Cùng động từ open, làm sao đổi lời hướng dẫn thành lời cấm?",
+  "level": "A1",
+  "topics": [
+    "imperatives"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Yêu cầu trên biển",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Yêu cầu mở"
+        },
+        {
+          "id": "v2",
+          "label": "Yêu cầu đừng mở"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Open the door, please.",
+      "vi": "Vui lòng mở cửa.",
+      "note": "Câu yêu cầu bắt đầu bằng open. Người thực hiện là người đọc biển. / A bare verb gives an instruction.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Please don't open the door.",
+      "vi": "Vui lòng đừng mở cửa.",
+      "note": "Don't đặt trước động từ nguyên mẫu để yêu cầu người đọc tránh hành động. / Don't reverses the instruction.",
+      "verdict": "ok"
+    }
+  }
+}

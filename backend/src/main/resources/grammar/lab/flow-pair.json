@@ -1,0 +1,35 @@
+{
+  "id": "flow-pair",
+  "title": "Do that cần một hành động đã biết",
+  "summary": "Hai câu trong hướng dẫn bảo quản chỉ có một câu nêu đích danh hành động. Đảo hai câu rồi đọc như người vừa mở tài liệu. Khi nào do that rõ ngay?",
+  "level": "B2",
+  "topics": [
+    "reference-chains",
+    "given-before-new"
+  ],
+  "kind": "arrange",
+  "tokens": [
+    "Do that before opening the box.",
+    "Scan the label."
+  ],
+  "orders": [
+    {
+      "seq": [
+        "Scan the label.",
+        "Do that before opening the box."
+      ],
+      "verdict": "ok",
+      "note": "Câu đầu cung cấp hành động để do that nhắc lại và câu sau thêm điều kiện thời gian. / Do that refers back to scanning the label.",
+      "effect": "Quét nhãn. Hãy làm việc đó trước khi mở hộp."
+    },
+    {
+      "seq": [
+        "Do that before opening the box.",
+        "Scan the label."
+      ],
+      "verdict": "odd",
+      "note": "Nếu không có hình minh họa hoặc lời nói trước, that chưa rõ chỉ việc gì. Từng câu vẫn đúng ngữ pháp. / The opening instruction needs an available referent.",
+      "effect": "Hãy làm việc đó trước khi mở hộp. Quét nhãn."
+    }
+  ]
+}

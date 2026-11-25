@@ -1,0 +1,50 @@
+{
+  "id": "breakfast-frequency",
+  "title": "Bao nhiêu buổi sáng có bánh mì?",
+  "summary": "Bạn cùng phòng đoán thói quen ăn sáng. Đổi trạng từ rồi xem khi nào một buổi không ăn bánh mì vẫn phù hợp.",
+  "level": "A1",
+  "topics": [
+    "adverbs-of-frequency"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Tần suất",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Luôn luôn"
+        },
+        {
+          "id": "v2",
+          "label": "Đôi lúc"
+        },
+        {
+          "id": "v3",
+          "label": "Không bao giờ"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I always eat bread for breakfast.",
+      "vi": "Bữa sáng nào tôi cũng ăn bánh mì.",
+      "note": "Always đứng trước eat và diễn đạt thói quen không có ngoại lệ trong phạm vi đang nói. / Always includes every breakfast in the routine.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "I sometimes eat bread for breakfast.",
+      "vi": "Đôi khi tôi ăn bánh mì vào bữa sáng.",
+      "note": "Sometimes cho phép nhiều buổi ăn món khác. / Sometimes allows other breakfasts.",
+      "verdict": "ok"
+    },
+    "v3": {
+      "en": "I never eat bread for breakfast.",
+      "vi": "Tôi không bao giờ ăn bánh mì vào bữa sáng.",
+      "note": "Never tự mang nghĩa phủ định. Không cần thêm don't ở đây. / Never supplies the negative meaning.",
+      "verdict": "ok"
+    }
+  }
+}

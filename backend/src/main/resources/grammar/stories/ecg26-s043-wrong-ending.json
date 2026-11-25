@@ -1,0 +1,129 @@
+{
+  "id": "ecg26-s043-wrong-ending",
+  "title": "Cái kết in ngược",
+  "summary": "Một cuốn truyện tự làm có hai trang cuối không giống nhau. Dấu sơn trên tay người đóng sách giúp hai bạn tìm ra thứ tự thật.",
+  "level": "A2",
+  "topics": [
+    "past-simple",
+    "exclamations"
+  ],
+  "scene": "library-mystery",
+  "cast": [
+    {
+      "id": "ana",
+      "name": "Ana",
+      "role": "Người vẽ truyện"
+    },
+    {
+      "id": "hai",
+      "name": "Hải",
+      "role": "Bạn đóng sách"
+    }
+  ],
+  "beats": [
+    {
+      "id": "paint",
+      "narrate": "Ana mở cuốn truyện chuẩn bị tặng em gái. Ở trang cuối, chú cáo bước ra khỏi nhà rồi biến mất. Trong tranh gốc, nó còn quay lại với một ổ bánh. Mép cuốn sách vẫn còn thơm mùi hồ.",
+      "say": [
+        {
+          "who": "ana",
+          "en": "My fox never came home!",
+          "vi": "Cáo của mình không về nhà nữa rồi!"
+        },
+        {
+          "who": "hai",
+          "en": "I put all the pages in last night. Let's count them.",
+          "vi": "Tối qua mình đã xếp đủ các trang. Đếm thử nhé."
+        }
+      ],
+      "next": "count"
+    },
+    {
+      "id": "count",
+      "narrate": "Họ tìm thấy hai số 8 cạnh nhau. Bản vẽ đầu chỉ có một số 8 và một số 9. Mực ở số thứ hai bị lem, trông giống số 8.",
+      "choice": {
+        "prompt": "Hải kể lại việc đã xong tối qua để Ana hiểu tại sao trang 9 lọt ra phía trước.",
+        "options": [
+          {
+            "t": "I read the nine as an eight.",
+            "note": "Read ở quá khứ vẫn viết như hiện tại nhưng đọc là /red/. Nó kể một lần đọc nhầm đã xảy ra.",
+            "ok": true,
+            "next": "turn",
+            "consequence": "Ana quay tờ bị lem lại để nhìn nét cong số 9."
+          },
+          {
+            "t": "I'm reading the nine as an eight.",
+            "note": "I'm reading nói việc đang diễn ra ngay lúc kể. Hải cần kể việc xếp nhầm đêm qua.",
+            "ok": false,
+            "next": "then",
+            "consequence": "Ana chưa hiểu việc nhầm xảy ra khi nào."
+          }
+        ]
+      }
+    },
+    {
+      "id": "then",
+      "say": [
+        {
+          "who": "hai",
+          "en": "Yesterday, when the ink was wet. I can see the nine now.",
+          "vi": "Hôm qua, lúc mực còn ướt ấy. Giờ mình nhìn ra số chín rồi."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "narrate": "Ana lật tờ giấy về phía sáng. Bên kia là chú cáo về nhà ôm ổ bánh tròn. Mặt trời trên mái nhà bỗng giống một quả cam.",
+      "say": [
+        {
+          "who": "hai",
+          "en": "That's the ending I remember.",
+          "vi": "Đó mới là cái kết mình nhớ."
+        }
+      ],
+      "choice": {
+        "prompt": "Ana muốn reo lên vì sung sướng trước bức tranh cuối cùng. Chọn đúng ý định.",
+        "options": [
+          {
+            "t": "What a beautiful page!",
+            "note": "What a + tính từ + danh từ đếm được số ít tạo lời cảm thán. Ana đang khen trang tranh.",
+            "ok": true,
+            "next": "give",
+            "consequence": "Hải đổi lại thứ tự và lau vết mực."
+          },
+          {
+            "t": "What page is it?",
+            "note": "Đây là câu hỏi về trang nào, không thể hiện trực tiếp cảm xúc khen ngợi. Nó vẫn đúng ngữ pháp.",
+            "ok": false,
+            "next": "number",
+            "consequence": "Hải chỉ lại con số thay vì ngắm bức tranh."
+          }
+        ]
+      }
+    },
+    {
+      "id": "number",
+      "say": [
+        {
+          "who": "ana",
+          "en": "Page nine, yes. I mean I love it!",
+          "vi": "Trang chín, đúng rồi. Ý mình là mình thích nó lắm!"
+        }
+      ],
+      "next": "give"
+    },
+    {
+      "id": "give",
+      "narrate": "Em gái Ana giở tới cuối, sờ vào ổ bánh và nói muốn biết chú cáo mua bánh ở đâu. Ana đưa cho em một tờ giấy trắng để tự vẽ tiếp. Tờ mới mang số 10.",
+      "say": [
+        {
+          "who": "hai",
+          "en": "This time we'll wait for the ink to dry.",
+          "vi": "Lần này mình sẽ chờ mực khô."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

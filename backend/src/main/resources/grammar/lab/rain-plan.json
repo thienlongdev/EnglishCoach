@@ -1,0 +1,41 @@
+{
+  "id": "rain-plan",
+  "title": "Dự báo từ mây hay quyết định lấy ô?",
+  "summary": "Bạn nhìn mây đen rồi chợt nhớ chiếc ô. Đổi vai của lời nói từ dự báo sang quyết định tức thời.",
+  "level": "A2",
+  "topics": [
+    "future-going-to",
+    "future-will"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Lượt lời",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Thấy dấu hiệu"
+        },
+        {
+          "id": "v2",
+          "label": "Vừa quyết định"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "It's going to rain.",
+      "vi": "Trời sắp mưa.",
+      "note": "Going to gắn dự báo với dấu hiệu đang thấy, không phải dự định của thời tiết. / The clouds support a prediction.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "I'll take an umbrella.",
+      "vi": "Tôi sẽ mang ô.",
+      "note": "I'll take là quyết định nảy ra khi người nói thấy mây. / Will voices a decision made now.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,671 @@
+{
+  "manifest": {
+    "schemaVersion": "1.0",
+    "packageId": "RAW-RAW_CAMBRIDGE_IELTS_4_T1",
+    "packageVersion": 1,
+    "contentHash": "62acba543bdcd681ecb3cb1ed5e8c32690056a5b2913b4a9794114b94f6fe8de",
+    "creator": "exam-raw-extractor",
+    "specificationBaselineId": "EC-EXAM-SPEC-2026-09-10",
+    "authoringStatus": "DRAFT",
+    "createdAt": null,
+    "metadata": {
+      "extraction": {
+        "status": "NEEDS_REVIEW",
+        "extractorVersion": "3.8.6",
+        "blockingCodes": [
+          "ANSWER_KEY_NOT_FOUND",
+          "GROUP_STRUCTURE_AMBIGUOUS",
+          "PART_OMITTED",
+          "SECTION_OMITTED",
+          "SOURCE_AUDIO_UNMAPPED",
+          "SPEAKING_TURN_STRUCTURE_UNPROVEN"
+        ],
+        "reviewCodes": [
+          "LAYOUT_LINEARIZED",
+          "WRITING_VISUAL_NOT_FOUND"
+        ]
+      },
+      "sourceDocuments": [
+        {
+          "path": "imports/source-files/ielts/cambridge/Cambridge-ielts-4/Cambridge Practice Tests for IELTS 4.PDF",
+          "sha256": "681b62e7be01190a09cef50c008ca3852bf6b70cb8969a89f44ccab285181ab5",
+          "role": "QUESTION_BOOK",
+          "textLayer": "MIXED"
+        }
+      ],
+      "audioSegments": [],
+      "rightsReviewStatus": "PUBLISHER_LICENCE_NOT_ESTABLISHED_PROJECT_USE_OWNER_AUTHORIZED",
+      "visualQAStatus": "PAGE_REGION_RENDERING_HUMAN_QA_REQUIRED",
+      "sourceIdentity": {
+        "publisher": "Cambridge University Press & Assessment",
+        "collection": "cambridge",
+        "book": "cambridge-ielts-4",
+        "bookTitle": "Cambridge IELTS 4",
+        "test": 1,
+        "rawSourceSha256": "681b62e7be01190a09cef50c008ca3852bf6b70cb8969a89f44ccab285181ab5"
+      },
+      "displayName": {
+        "current": "Cambridge IELTS 4 — Test 1 (source extraction, draft)",
+        "ownerSelected": null,
+        "status": "PROVISIONAL_SOURCE_TITLE",
+        "policy": "DISPLAY_NAME_MAY_CHANGE_SOURCE_PROVENANCE_MUST_NOT",
+        "renameTargets": [
+          "form.title",
+          "catalogNodes[].title"
+        ]
+      },
+      "sourceProvenance": {
+        "collection": "cambridge",
+        "book": "cambridge-ielts-4",
+        "test": "TEST_1",
+        "rawSourceFile": {
+          "path": "imports/source-files/ielts/cambridge/Cambridge-ielts-4/Cambridge Practice Tests for IELTS 4.PDF",
+          "sha256": "681b62e7be01190a09cef50c008ca3852bf6b70cb8969a89f44ccab285181ab5"
+        },
+        "pageRange": "25-27",
+        "audio": [
+          {
+            "path": "imports/source-files/ielts/cambridge/Cambridge-ielts-4/Test1.Section4.mp3",
+            "sha256": "79a1f2c63fdae72f76fd63e3c07641a805f0aee5a85bf0e037699841c1feec2a",
+            "section": "PART_4",
+            "confidence": "CONFIDENT"
+          }
+        ],
+        "rawManifestRef": "imports/exams/manifests/raw-source/raw_source_manifest.json#ielts/cambridge-ielts-4/test-1",
+        "extractorName": "exam-raw-extractor",
+        "extractorVersion": "3.8.6",
+        "reviewStatus": "UNREVIEWED"
+      },
+      "audioQAStatus": "AUTOMATED_TECHNICAL_QA_ONLY_HUMAN_QA_REQUIRED",
+      "ocr": {},
+      "practiceProjection": {
+        "retainedScopes": [
+          "IELTS_SPEAKING_PART_2",
+          "IELTS_WRITING_TASK_2"
+        ],
+        "version": "exam-practice-projection-v1",
+        "sourceContentHash": "ef5518b785acb1cf099b2098e6b7e840a0ff4b9ced4a59452e33ef55c0c3407b",
+        "humanApprovalCreated": false,
+        "fullSimulationGranted": false,
+        "sourcePackageId": "RAW-RAW_CAMBRIDGE_IELTS_4_T1",
+        "excludedScopes": {
+          "IELTS_WRITING_TASK_1": [
+            "QA_SCOPE_PENDING",
+            "SCOPE_NOT_SELECTED",
+            "VISUAL_MISSING"
+          ]
+        }
+      },
+      "reviewOnlyReferences": {
+        "transcripts": [],
+        "answerKeys": [],
+        "note": "References only. Transcript text is not embedded: the learner manifest projection has no stimulus/asset role allow-list yet (EXAM-AUD-032)."
+      },
+      "humanReviewComplete": false,
+      "projectUsageAuthorization": {
+        "status": "OWNER_AUTHORIZED",
+        "scope": "ENGLISHCOACH_PROJECT_USE",
+        "authorizedBy": "PROJECT_OWNER",
+        "decisionDate": "2026-10-06",
+        "decisionRef": "EXAMS_CORPUS_OWNER_PRODUCTION_AUTHORIZATION_20261006",
+        "appliesTo": "EXISTING_REPOSITORY_SOURCE_CORPUS",
+        "permits": [
+          "EXTRACTION",
+          "CANONICAL_PACKAGE_PREPARATION",
+          "STAGING_VALIDATION",
+          "LOCAL_STAGING_IMPORT_PREPARATION",
+          "PRODUCTION_IMPORT",
+          "PUBLICATION",
+          "LEARNER_RUNTIME",
+          "PRACTICE",
+          "SIMULATION",
+          "MEDIA",
+          "SCORING",
+          "RESULTS",
+          "REVIEW"
+        ],
+        "productionImport": "OWNER_AUTHORIZED_PRODUCTION_USE",
+        "publisherLicence": "NOT_ESTABLISHED",
+        "publisherEndorsement": false
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "7baeff95-ec76-5a8f-a509-331b382688f3",
+      "code": "RAW_CAMBRIDGE_CAMBRIDGE_IELTS_4",
+      "name": "Cambridge IELTS 4",
+      "owner": "Cambridge University Press & Assessment",
+      "publisher": "Cambridge University Press & Assessment",
+      "sourceType": "THIRD_PARTY_PUBLICATION",
+      "referenceMeta": {
+        "rawCorpusRoot": "imports/source-files/",
+        "rawManifestRef": "imports/exams/manifests/raw-source/raw_source_manifest.json",
+        "rightsStatus": "PUBLISHER_LICENCE_NOT_ESTABLISHED",
+        "projectUsageAuthorization": "OWNER_AUTHORIZED",
+        "primaryDocument": "imports/source-files/ielts/cambridge/Cambridge-ielts-4/Cambridge Practice Tests for IELTS 4.PDF"
+      },
+      "retiredAt": null,
+      "createdAt": null
+    },
+    {
+      "id": "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+      "code": "EC_INTERNAL_ORIGINAL",
+      "name": "English Coach original content",
+      "owner": "English Coach",
+      "publisher": "English Coach",
+      "sourceType": "INTERNAL_ORIGINAL",
+      "referenceMeta": {
+        "declaration": "Rubrics and scoring metadata authored by English Coach; no external text"
+      },
+      "retiredAt": null,
+      "createdAt": null
+    }
+  ],
+  "licenses": [
+    {
+      "id": "3c5ff0c0-134d-5a42-9be5-11f4a81402ef",
+      "sourceId": "7baeff95-ec76-5a8f-a509-331b382688f3",
+      "licenseCode": "UNKNOWN-RAW_CAMBRIDGE_CAMBRIDGE_IELTS_4",
+      "provenanceCategory": "UNKNOWN",
+      "commercialRights": false,
+      "redistributionRights": false,
+      "derivativeRights": false,
+      "permittedPurposes": {
+        "LOCAL_PRIVATE_REVIEW": true
+      },
+      "permittedTerritories": {},
+      "validFrom": null,
+      "validUntil": null,
+      "attribution": "Cambridge IELTS 4 — Cambridge University Press & Assessment. Publisher licence not established; used under the EnglishCoach project owner's authorization (2026-10-03), which is not a publisher licence or endorsement.",
+      "evidenceAssetId": null,
+      "legalStatus": "PENDING",
+      "createdAt": null
+    },
+    {
+      "id": "a417c4a8-54b9-500d-b856-e865d257ac69",
+      "sourceId": "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+      "licenseCode": "EC-ORIGINAL-DRAFT-PENDING-LEGAL",
+      "provenanceCategory": "ORIGINAL",
+      "commercialRights": true,
+      "redistributionRights": true,
+      "derivativeRights": true,
+      "permittedPurposes": {
+        "EXAM": true,
+        "SIMULATION": true,
+        "PRACTICE": true,
+        "CONTENT": true
+      },
+      "permittedTerritories": {
+        "GLOBAL": true
+      },
+      "validFrom": 1790985600.0,
+      "validUntil": null,
+      "attribution": "English Coach original draft; legal review pending",
+      "evidenceAssetId": null,
+      "legalStatus": "PENDING",
+      "createdAt": null
+    }
+  ],
+  "provenances": [
+    {
+      "id": "8b432f97-f62a-569e-a2a6-f24d65536195",
+      "sourceId": "7baeff95-ec76-5a8f-a509-331b382688f3",
+      "licenseId": "3c5ff0c0-134d-5a42-9be5-11f4a81402ef",
+      "creator": "exam-raw-extractor",
+      "acquisitionMethod": "RAW_CORPUS_EXTRACTION",
+      "originalReference": "Cambridge IELTS 4 / Test 1",
+      "derivativeParentId": null,
+      "aiGenerationMeta": null,
+      "createdAt": null
+    },
+    {
+      "id": "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+      "sourceId": "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+      "licenseId": "a417c4a8-54b9-500d-b856-e865d257ac69",
+      "creator": "English Coach",
+      "acquisitionMethod": "ORIGINAL_AUTHORING",
+      "originalReference": "EC-RUBRIC-AND-SCORING-METADATA",
+      "derivativeParentId": null,
+      "aiGenerationMeta": null,
+      "createdAt": null
+    }
+  ],
+  "catalogNodes": [
+    {
+      "id": "46f2b9bd-73a1-57db-8481-a69fef3f0fb9",
+      "family": "IELTS",
+      "variant": "ACADEMIC",
+      "sourceId": "7baeff95-ec76-5a8f-a509-331b382688f3",
+      "parentId": null,
+      "kind": "VOLUME",
+      "title": "Cambridge IELTS 4",
+      "year": null,
+      "ordinal": 0,
+      "retiredAt": null,
+      "createdAt": null
+    }
+  ],
+  "specifications": [
+    {
+      "id": "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+      "logicalCode": "EC_RAW_IELTS_ACADEMIC_FULL_SPEC",
+      "version": 1,
+      "family": "IELTS",
+      "variant": "ACADEMIC",
+      "deliveryMode": "COMPUTER_SIMULATION",
+      "blueprint": {
+        "source": "RAW_CORPUS_EXTRACTION",
+        "family": "IELTS",
+        "variant": "ACADEMIC",
+        "scope": "FULL"
+      },
+      "timingPolicy": {
+        "listeningSeconds": 1800,
+        "readingSeconds": 3600,
+        "writingSeconds": 3600,
+        "speakingSeconds": 840
+      },
+      "navigationPolicy": {
+        "sectionNavigation": "fixed_sequence"
+      },
+      "playbackPolicy": {
+        "mode": "ONCE"
+      },
+      "sourceReferences": {
+        "baseline": "EC-EXAM-SPEC-2026-09-10"
+      },
+      "contentHash": "01a9a5d6615e4c044e33620aacc7f229326296fc975b4c54a3fc1cc0d69efd4c",
+      "approvedAt": null,
+      "createdAt": null
+    }
+  ],
+  "rubrics": [
+    {
+      "id": "f030d044-0c12-536e-bac2-9086d89de6a9",
+      "logicalCode": "EC_RAW_IELTS_WRITING_RUBRIC",
+      "version": 1,
+      "family": "IELTS",
+      "skill": "WRITING",
+      "taskFamily": "IELTS_WRITING",
+      "criteria": {
+        "taskAchievement": {
+          "weight": 1
+        },
+        "coherenceAndCohesion": {
+          "weight": 1
+        },
+        "lexicalResource": {
+          "weight": 1
+        },
+        "grammaticalRangeAndAccuracy": {
+          "weight": 1
+        }
+      },
+      "ordinalScale": {
+        "min": 0,
+        "max": 9,
+        "steps": [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          4.5,
+          5.0,
+          5.5,
+          6.0,
+          6.5,
+          7.0,
+          7.5,
+          8.0,
+          8.5,
+          9.0
+        ]
+      },
+      "provenanceId": "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+      "contentHash": "0d542a6e2c855fb3a6fa51ef83026cb296280b0f51f9073604b6756d4752e253",
+      "approvedAt": null,
+      "createdAt": null
+    },
+    {
+      "id": "0d568eaa-ba20-5aef-8151-403390533c50",
+      "logicalCode": "EC_RAW_IELTS_SPEAKING_RUBRIC",
+      "version": 1,
+      "family": "IELTS",
+      "skill": "SPEAKING",
+      "taskFamily": "IELTS_SPEAKING",
+      "criteria": {
+        "fluencyAndCoherence": {
+          "weight": 1
+        },
+        "lexicalResource": {
+          "weight": 1
+        },
+        "grammaticalRangeAndAccuracy": {
+          "weight": 1
+        },
+        "pronunciation": {
+          "weight": 1
+        }
+      },
+      "ordinalScale": {
+        "min": 0,
+        "max": 9,
+        "steps": [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          4.5,
+          5.0,
+          5.5,
+          6.0,
+          6.5,
+          7.0,
+          7.5,
+          8.0,
+          8.5,
+          9.0
+        ]
+      },
+      "provenanceId": "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+      "contentHash": "17e0b72d560b377684b287d73acc780a48e7da645e0cdaad159f2471e51f9be1",
+      "approvedAt": null,
+      "createdAt": null
+    }
+  ],
+  "calibrations": [],
+  "scoringSchemes": [
+    {
+      "id": "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+      "logicalCode": "EC_RAW_IELTS_ACADEMIC_FULL_SCORING",
+      "version": 1,
+      "family": "IELTS",
+      "variant": "ACADEMIC",
+      "scope": "FULL",
+      "normalizationVersion": "EC-NORM-V1",
+      "rubricReferences": {},
+      "calibrationId": null,
+      "mappingTable": {
+        "metrics": [
+          "LISTENING",
+          "READING",
+          "WRITING",
+          "SPEAKING",
+          "FULL_OVERALL"
+        ],
+        "status": "DRAFT_NOT_CALIBRATED",
+        "scoreLabel": "English Coach estimated band"
+      },
+      "aggregationRules": {
+        "officialEquating": false,
+        "version": "EC-AGGREGATION-DRAFT-V1",
+        "creditUnitsPerItem": 1,
+        "task1Weight": 1,
+        "task2Weight": 2,
+        "overall": "mean_of_four_quarter_rounding"
+      },
+      "contentHash": "0780e29af069b167dab0956ac01663b2c8b509ca0f03839208766aa0b62ed428",
+      "approvedAt": null,
+      "createdAt": null
+    }
+  ],
+  "form": {
+    "id": "6beee8ce-f3b9-5548-ae14-25a213dada90",
+    "logicalKey": "RAW_CAMBRIDGE_IELTS_4_T1",
+    "version": 1,
+    "title": "Cambridge IELTS 4 — Test 1 (source extraction, draft)",
+    "family": "IELTS",
+    "variant": "ACADEMIC",
+    "scope": "FULL",
+    "catalogNodeId": "46f2b9bd-73a1-57db-8481-a69fef3f0fb9",
+    "specificationId": "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "scoringSchemeId": "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "lifecycleState": "DRAFT",
+    "provenanceId": "8b432f97-f62a-569e-a2a6-f24d65536195",
+    "authorId": null,
+    "contentHash": "b4d6d6239b606a3e35629ce30a2a84b069d430225dba951d2d679b1a83aae6a5",
+    "publishedAt": null,
+    "retiredAt": null,
+    "createdAt": null,
+    "primaryHealthStatus": null
+  },
+  "formComponents": [],
+  "sections": [
+    {
+      "id": "553ddc30-6e08-5a1a-978c-7db27a601253",
+      "formId": "6beee8ce-f3b9-5548-ae14-25a213dada90",
+      "skill": "WRITING",
+      "ordinal": 1,
+      "specSectionKey": "WRITING",
+      "scoringSchemeId": "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+      "durationSeconds": 3600,
+      "timingPolicy": {
+        "source": "BLUEPRINT_DEFAULT"
+      },
+      "isRunnable": true,
+      "healthStatus": null
+    },
+    {
+      "id": "19f79052-2830-5acc-96b2-de6496878d5b",
+      "formId": "6beee8ce-f3b9-5548-ae14-25a213dada90",
+      "skill": "SPEAKING",
+      "ordinal": 2,
+      "specSectionKey": "SPEAKING",
+      "scoringSchemeId": "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+      "durationSeconds": 840,
+      "timingPolicy": {
+        "source": "BLUEPRINT_DEFAULT"
+      },
+      "isRunnable": true,
+      "healthStatus": null
+    }
+  ],
+  "parts": [
+    {
+      "id": "d909f73e-adb3-57fa-a3ab-c8ee51513631",
+      "sectionId": "553ddc30-6e08-5a1a-978c-7db27a601253",
+      "partCode": "WRITING_TASK_2",
+      "ordinal": 2,
+      "instructions": null,
+      "timingPolicy": {
+        "recommendedMinutes": 40
+      }
+    },
+    {
+      "id": "8f92c224-ea96-5adf-ba42-2320ba47f1dd",
+      "sectionId": "19f79052-2830-5acc-96b2-de6496878d5b",
+      "partCode": "SPEAKING_PART_2",
+      "ordinal": 1,
+      "instructions": null,
+      "timingPolicy": {}
+    }
+  ],
+  "groups": [
+    {
+      "id": "8def7345-f67c-5fff-ac6e-01c11842d64b",
+      "logicalGroupKey": "RAW_CAMBRIDGE_IELTS_4_T1_WRITING_TASK_2",
+      "version": 1,
+      "questionType": "WRITING_TASK_2",
+      "construct": "written_production",
+      "skill": "WRITING",
+      "topic": null,
+      "difficultyEstimate": null,
+      "provenanceId": "8b432f97-f62a-569e-a2a6-f24d65536195",
+      "contentHash": "7504145a6f02751592eccf2f95598c777cb5baedbdf4cbc230553ae87f75022a",
+      "createdAt": null
+    },
+    {
+      "id": "2016d193-22da-5362-975d-33c3b7debb5a",
+      "logicalGroupKey": "RAW_CAMBRIDGE_IELTS_4_T1_SPEAKING_PART_2",
+      "version": 1,
+      "questionType": "SPEAKING_PART_2",
+      "construct": "spoken_production",
+      "skill": "SPEAKING",
+      "topic": null,
+      "difficultyEstimate": null,
+      "provenanceId": "8b432f97-f62a-569e-a2a6-f24d65536195",
+      "contentHash": "dfb2b1d1b1f06b0dc98d30e39e8fd21047b8f5d307f45fd950a822faef6256f8",
+      "createdAt": null
+    }
+  ],
+  "formGroups": [
+    {
+      "id": "fe7d2f21-7b5d-561a-b851-a694293b7ced",
+      "partId": "d909f73e-adb3-57fa-a3ab-c8ee51513631",
+      "groupId": "8def7345-f67c-5fff-ac6e-01c11842d64b",
+      "ordinal": 1,
+      "displayNumbering": "Task 2"
+    },
+    {
+      "id": "c257ebba-312e-5105-a0ff-cb92aa3f182f",
+      "partId": "8f92c224-ea96-5adf-ba42-2320ba47f1dd",
+      "groupId": "2016d193-22da-5362-975d-33c3b7debb5a",
+      "ordinal": 1,
+      "displayNumbering": "Part 2"
+    }
+  ],
+  "stimuli": [
+    {
+      "id": "9b7d2e20-ba92-5dac-a380-ad0e2776ee8d",
+      "logicalStimulusKey": "RAW_CAMBRIDGE_IELTS_4_T1_WRITING_TASK_2_PROMPT",
+      "version": 1,
+      "kind": "TEXT",
+      "title": null,
+      "bodyPayload": {
+        "promptContext": "You should spend about 40 minutes on this task. Write about the following topic: Compare the advantages and disadvantages of three of the following as media for communicating information. State which you consider to be the most effective. • comics • books • radio • television • ﬁlm • theatre Give reasons for your answer and include any relevant examples from your own knowledge or experience. Write at least 250 words."
+      },
+      "provenanceId": "8b432f97-f62a-569e-a2a6-f24d65536195",
+      "contentHash": "2cc814116c819862aaf3ba96270b20040d4b99d6f75115e7d36fec264778b094",
+      "createdAt": null
+    },
+    {
+      "id": "247dc20f-b981-5c99-ae96-addc82824a96",
+      "logicalStimulusKey": "RAW_CAMBRIDGE_IELTS_4_T1_SPEAKING_PART_2_PROMPTS",
+      "version": 1,
+      "kind": "TEXT",
+      "title": null,
+      "bodyPayload": {
+        "prompts": [
+          "Describe an interesting historic place.",
+          "You should say:",
+          "what it is",
+          "where it is located",
+          "what you can see there now",
+          "and explain why this place is interesting."
+        ],
+        "sourceRole": "SOURCE_SPEAKING_PROMPTS",
+        "runtimeUse": "PINNED_SOURCE_ITEMS"
+      },
+      "provenanceId": "8b432f97-f62a-569e-a2a6-f24d65536195",
+      "contentHash": "d43a26c15522e2666463ddaa6dab0db59818e25e93becc4d923fe39ab1d81bb1",
+      "createdAt": null
+    }
+  ],
+  "groupStimuli": [
+    {
+      "id": "07e200f8-2fec-5067-91de-01a15199417a",
+      "groupId": "8def7345-f67c-5fff-ac6e-01c11842d64b",
+      "stimulusId": "9b7d2e20-ba92-5dac-a380-ad0e2776ee8d",
+      "role": "PRIMARY_PROMPT",
+      "ordinal": 2
+    },
+    {
+      "id": "aaa611ef-5198-5d1f-9933-973c044de7e6",
+      "groupId": "2016d193-22da-5362-975d-33c3b7debb5a",
+      "stimulusId": "247dc20f-b981-5c99-ae96-addc82824a96",
+      "role": "PRIMARY",
+      "ordinal": 1
+    }
+  ],
+  "items": [
+    {
+      "id": "87ec00f6-7083-5331-8245-b46ca9d66234",
+      "groupId": "8def7345-f67c-5fff-ac6e-01c11842d64b",
+      "logicalItemKey": "RAW_CAMBRIDGE_IELTS_4_T1_W2",
+      "version": 1,
+      "prompt": "You should spend about 40 minutes on this task. Write about the following topic: Compare the advantages and disadvantages of three of the following as media for communicating information. State which you consider to be the most effective. • comics • books • radio • television • ﬁlm • theatre Give reasons for your answer and include any relevant examples from your own knowledge or experience. Write at least 250 words.",
+      "interactionType": "WRITING_RESPONSE",
+      "optionDefinitions": {
+        "responseMode": "free_text",
+        "minimumWords": 250,
+        "recommendedMinutes": 40
+      },
+      "construct": "writing_task",
+      "provenanceId": "8b432f97-f62a-569e-a2a6-f24d65536195",
+      "contentHash": "ccb9472d75557e3eacf75fd26f30833173a1726d96a13e806f9d68c0e5bd9a65",
+      "createdAt": null,
+      "ordinal": 2
+    },
+    {
+      "id": "6003a326-54ec-5a51-80e2-b21a2741b104",
+      "groupId": "2016d193-22da-5362-975d-33c3b7debb5a",
+      "logicalItemKey": "RAW_CAMBRIDGE_IELTS_4_T1_S2_T1",
+      "version": 1,
+      "prompt": "Describe an interesting historic place. You should say: what it is where it is located what you can see there now and explain why this place is interesting.",
+      "interactionType": "SPEAKING_RESPONSE",
+      "optionDefinitions": {
+        "responseMode": "learner_audio",
+        "simulation": true,
+        "speakingPromptBasis": "PINNED_CORPUS_SOURCE"
+      },
+      "construct": "speaking_task",
+      "provenanceId": "8b432f97-f62a-569e-a2a6-f24d65536195",
+      "contentHash": "6b31fd26157d475b31c50c57091300061494863637299eb3b8708d23e028ba23",
+      "createdAt": null,
+      "ordinal": 1
+    }
+  ],
+  "answerSpecs": [
+    {
+      "id": "f5a6fafd-09d8-5c43-901c-b799590098ee",
+      "itemId": "87ec00f6-7083-5331-8245-b46ca9d66234",
+      "acceptedAnswers": {
+        "policy": "productive_response",
+        "minimumWords": 250
+      },
+      "normalizationPolicy": {
+        "version": "EC-WRITING-TEXT-V1",
+        "preserveParagraphs": true
+      },
+      "cardinality": 1,
+      "wordLimit": null,
+      "creditUnits": 1.0,
+      "explanation": "Productive task: evaluate with the pinned rubric only.",
+      "rubricId": "f030d044-0c12-536e-bac2-9086d89de6a9",
+      "createdAt": null
+    },
+    {
+      "id": "b77bf962-3446-5a08-9500-321ec5efbde7",
+      "itemId": "6003a326-54ec-5a51-80e2-b21a2741b104",
+      "acceptedAnswers": {
+        "policy": "productive_response",
+        "evidenceRequired": [
+          "learner_recording"
+        ]
+      },
+      "normalizationPolicy": {
+        "version": "EC-SPEECH-TEXT-V1",
+        "preserveAudio": true
+      },
+      "cardinality": 1,
+      "wordLimit": null,
+      "creditUnits": 1.0,
+      "explanation": "Productive task: evaluate with the pinned rubric only.",
+      "rubricId": "0d568eaa-ba20-5aef-8151-403390533c50",
+      "createdAt": null
+    }
+  ],
+  "assets": [],
+  "stimulusAssets": []
+}

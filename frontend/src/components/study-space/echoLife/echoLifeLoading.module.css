@@ -1,0 +1,703 @@
+/*
+ * Echo Life Pre-Entry Sanctuary — Echo Liquid Glass (Pearl Opal Light and Deep Ocean Pearl Abyss .dark).
+ * Zero backdrop blur (10 §AF / §CE), zero priority overrides, Quicksand inherited (10 §AA), explicit :global(.dark) only (10 §Y),
+ * pointer-tracked specular highlight (--mx / --my), masked 1px refractive rim, full prefers-reduced-motion compliance.
+ */
+
+.overlay {
+  --el-boot-progress: 0.1;
+  --el-load-ink: #0f1f3d;
+  --el-load-ink-2: #3d5075;
+  --el-load-ink-3: #5b6f94;
+  --el-load-accent: #0284c7;
+  --el-load-accent-2: #4f46e5;
+  --el-load-teal: #0d9488;
+  --el-load-ok: #059669;
+  --el-load-danger: #be123c;
+  --el-load-card-bg: linear-gradient(
+    168deg,
+    rgb(255 255 255 / 0.97) 0%,
+    rgb(245 249 255 / 0.95) 56%,
+    rgb(235 244 254 / 0.93) 100%
+  );
+  --el-load-rim: linear-gradient(
+    152deg,
+    rgb(255 255 255 / 0.98) 0%,
+    rgb(148 188 238 / 0.54) 36%,
+    rgb(165 180 252 / 0.28) 68%,
+    rgb(255 255 255 / 0.92) 100%
+  );
+  --el-load-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.98),
+    inset 0 -1px 2px rgb(30 58 138 / 0.08),
+    0 30px 68px -24px rgb(15 40 105 / 0.34),
+    0 6px 18px -6px rgb(15 40 105 / 0.12);
+  --el-load-well: linear-gradient(172deg, rgb(255 255 255 / 0.86), rgb(236 245 255 / 0.78));
+  --el-load-well-border: rgb(148 179 230 / 0.4);
+  --el-load-track: rgb(15 40 105 / 0.1);
+  --el-load-chip-bg: rgb(2 132 199 / 0.1);
+  --el-load-chip-border: rgb(2 132 199 / 0.28);
+
+  position: fixed;
+  inset: 0;
+  z-index: 48;
+  display: grid;
+  place-items: center;
+  padding: clamp(14px, 3vw, 28px);
+  overflow: hidden;
+  isolation: isolate;
+  pointer-events: auto;
+  color: var(--el-load-ink);
+  font-family: var(--font-quicksand), ui-sans-serif, system-ui, sans-serif;
+  background:
+    radial-gradient(62% 52% at 16% 18%, rgb(255 239 214 / 0.78), transparent 68%),
+    radial-gradient(58% 54% at 86% 16%, rgb(219 214 255 / 0.82), transparent 70%),
+    radial-gradient(56% 48% at 50% 88%, rgb(186 230 253 / 0.74), transparent 72%),
+    linear-gradient(162deg, #d7e8ff 0%, #e7ecff 40%, #f1eaff 72%, #def1fe 100%);
+  opacity: 1;
+  transition: opacity 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.overlay[data-exiting='true'] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+:global(.dark) .overlay {
+  --el-load-ink: #f1f6ff;
+  --el-load-ink-2: #bfd0ec;
+  --el-load-ink-3: #8ca5cc;
+  --el-load-accent: #7dd3fc;
+  --el-load-accent-2: #a5b4fc;
+  --el-load-teal: #5eead4;
+  --el-load-ok: #6ee7b7;
+  --el-load-danger: #fda4af;
+  --el-load-card-bg: linear-gradient(
+    170deg,
+    rgb(14 28 62 / 0.96) 0%,
+    rgb(10 20 46 / 0.96) 58%,
+    rgb(6 14 34 / 0.97) 100%
+  );
+  --el-load-rim: linear-gradient(
+    158deg,
+    rgb(186 230 253 / 0.56) 0%,
+    rgb(56 189 248 / 0.18) 32%,
+    rgb(129 140 248 / 0.18) 68%,
+    rgb(103 232 249 / 0.44) 100%
+  );
+  --el-load-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.16),
+    inset 0 -2px 5px rgb(1 5 18 / 0.65),
+    0 32px 72px -22px rgb(0 2 12 / 0.88),
+    0 6px 18px -4px rgb(2 8 28 / 0.72);
+  --el-load-well: linear-gradient(172deg, rgb(22 39 82 / 0.82), rgb(14 27 58 / 0.86));
+  --el-load-well-border: rgb(125 211 252 / 0.22);
+  --el-load-track: rgb(255 255 255 / 0.12);
+  --el-load-chip-bg: rgb(56 189 248 / 0.14);
+  --el-load-chip-border: rgb(125 211 252 / 0.34);
+
+  background:
+    radial-gradient(64% 52% at 14% 12%, rgb(14 165 233 / 0.24), transparent 66%),
+    radial-gradient(58% 54% at 88% 88%, rgb(99 102 241 / 0.22), transparent 68%),
+    radial-gradient(48% 42% at 50% 42%, rgb(8 47 73 / 0.32), transparent 72%),
+    linear-gradient(168deg, #050b1d 0%, #091533 46%, #0d1d44 76%, #040917 100%);
+}
+
+/* ── Ambient Celestial and Ocean Backdrop (pure CSS, pointer-free) ──────────────────────── */
+.atmosphere {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.aurora {
+  position: absolute;
+  inset: -12% -10% 18% -10%;
+  opacity: calc(0.32 + var(--el-boot-progress, 0.1) * 0.36);
+  background:
+    radial-gradient(52% 46% at 26% 28%, rgb(255 229 196 / 0.46), transparent 68%),
+    radial-gradient(50% 44% at 74% 34%, rgb(165 180 252 / 0.38), transparent 70%),
+    radial-gradient(46% 36% at 52% 72%, rgb(125 211 252 / 0.34), transparent 72%);
+  animation: elAuroraDrift 18s ease-in-out infinite alternate;
+  transition: opacity 500ms ease;
+}
+
+:global(.dark) .aurora {
+  opacity: calc(0.36 + var(--el-boot-progress, 0.1) * 0.4);
+  background:
+    radial-gradient(54% 44% at 24% 26%, rgb(56 189 248 / 0.26), transparent 68%),
+    radial-gradient(50% 42% at 76% 30%, rgb(129 140 248 / 0.24), transparent 70%),
+    radial-gradient(44% 34% at 50% 76%, rgb(45 212 191 / 0.16), transparent 72%);
+}
+
+@keyframes elAuroraDrift {
+  from {
+    transform: translate3d(-2%, -1.5%, 0) scale(1);
+  }
+  to {
+    transform: translate3d(2.5%, 2%, 0) scale(1.06);
+  }
+}
+
+.stars {
+  position: absolute;
+  inset: 0 0 28% 0;
+  opacity: 0;
+  background-image:
+    radial-gradient(1.4px 1.4px at 9% 16%, #ffffff, transparent),
+    radial-gradient(1.1px 1.1px at 21% 34%, #bae6fd, transparent),
+    radial-gradient(1.5px 1.5px at 34% 12%, #ffffff, transparent),
+    radial-gradient(1.1px 1.1px at 49% 25%, #ddd6fe, transparent),
+    radial-gradient(1.6px 1.6px at 66% 14%, #ffffff, transparent),
+    radial-gradient(1.2px 1.2px at 81% 29%, #bae6fd, transparent),
+    radial-gradient(1.3px 1.3px at 92% 18%, #ffffff, transparent),
+    radial-gradient(1.1px 1.1px at 15% 58%, #e0f2fe, transparent),
+    radial-gradient(1.2px 1.2px at 86% 54%, #e0e7ff, transparent);
+}
+
+:global(.dark) .stars {
+  opacity: 0.78;
+  animation: elStarBreathe 8s ease-in-out infinite alternate;
+}
+
+@keyframes elStarBreathe {
+  from {
+    opacity: 0.56;
+  }
+  to {
+    opacity: 0.88;
+  }
+}
+
+/* ── Central Echo Liquid Glass Sanctuary Card ───────────────────────────────────────────── */
+.card {
+  --mx: 0.34;
+  --my: 0.14;
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  width: min(568px, 100%);
+  max-height: calc(100dvh - 28px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 26px 28px 24px;
+  border-radius: 28px;
+  background:
+    radial-gradient(
+      120% 88% at calc(var(--mx) * 100%) calc(var(--my) * 100%),
+      rgb(255 255 255 / 0.88),
+      transparent 54%
+    ),
+    radial-gradient(88% 92% at 92% 106%, rgb(186 230 253 / 0.42), transparent 60%),
+    radial-gradient(76% 84% at 10% 106%, rgb(221 214 254 / 0.36), transparent 60%),
+    var(--el-load-card-bg);
+  box-shadow: var(--el-load-shadow);
+}
+
+:global(.dark) .card {
+  background:
+    radial-gradient(
+      120% 88% at calc(var(--mx) * 100%) calc(var(--my) * 100%),
+      rgb(56 189 248 / 0.17),
+      transparent 54%
+    ),
+    radial-gradient(88% 92% at 92% 106%, rgb(99 102 241 / 0.16), transparent 60%),
+    radial-gradient(76% 84% at 10% 106%, rgb(45 212 191 / 0.12), transparent 60%),
+    var(--el-load-card-bg);
+}
+
+/* Signature Echo Liquid Glass masked 1px specular border rim */
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: var(--el-load-rim);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Top convex glass sheen */
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 1px 22px auto;
+  height: 54px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.65), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+:global(.dark) .card::after {
+  background: linear-gradient(180deg, rgb(186 230 253 / 0.1), transparent);
+}
+
+.card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Header: Echo Whale Medallion + Determinate SVG Ring + Title ────────────────────────── */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.medallion {
+  position: relative;
+  width: 62px;
+  height: 62px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 24%,
+    rgb(255 255 255 / 0.98) 0%,
+    rgb(236 246 255 / 0.92) 56%,
+    rgb(219 234 254 / 0.88) 100%
+  );
+  box-shadow:
+    inset 0 1.5px 1px rgb(255 255 255 / 0.98),
+    inset 0 -3px 6px rgb(30 64 175 / 0.12),
+    0 12px 26px -12px rgb(2 132 199 / 0.42);
+}
+
+:global(.dark) .medallion {
+  background: radial-gradient(
+    circle at 30% 24%,
+    rgb(56 189 248 / 0.32) 0%,
+    rgb(20 38 82 / 0.92) 56%,
+    rgb(10 22 52 / 0.96) 100%
+  );
+  box-shadow:
+    inset 0 1.5px 1px rgb(186 230 253 / 0.34),
+    inset 0 -3px 8px rgb(0 2 12 / 0.72),
+    0 14px 30px -12px rgb(14 165 233 / 0.46);
+}
+
+.medallionRing {
+  position: absolute;
+  inset: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  transform: rotate(-90deg);
+  pointer-events: none;
+}
+
+.ringTrack {
+  fill: none;
+  stroke: var(--el-load-track);
+  stroke-width: 3;
+}
+
+.ringFill {
+  fill: none;
+  stroke-width: 3.2;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.medallionImg {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+}
+
+.titleBlock {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.titleRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(19px, 2.2vw, 22px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--el-load-ink);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: var(--el-load-accent);
+  background: var(--el-load-chip-bg);
+  border: 1px solid var(--el-load-chip-border);
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.42;
+  color: var(--el-load-ink-2);
+}
+
+/* ── Calm First-Visit / Returning Notice ────────────────────────────────────────────────── */
+.notice {
+  margin: 0;
+  padding: 12px 15px;
+  border-radius: 16px;
+  background: var(--el-load-well);
+  border: 1px solid var(--el-load-well-border);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.55);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.54;
+  color: var(--el-load-ink-2);
+}
+
+:global(.dark) .notice {
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08);
+}
+
+/* ── Determinate Progress Bar and Active Stage Readout ──────────────────────────────────── */
+.progressPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progressHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.stageLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--el-load-ink);
+}
+
+.stageDot {
+  width: 8px;
+  height: 8px;
+  flex: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0ea5e9, #14b8a6);
+  box-shadow: 0 0 0 3px rgb(14 165 233 / 0.2);
+  animation: elStagePulse 1.9s ease-in-out infinite;
+}
+
+:global(.dark) .stageDot {
+  background: linear-gradient(135deg, #38bdf8, #5eead4);
+  box-shadow: 0 0 0 3px rgb(56 189 248 / 0.24);
+}
+
+@keyframes elStagePulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(0.86);
+  }
+}
+
+.stageDetail {
+  margin: -4px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--el-load-ink-3);
+}
+
+.pct {
+  flex: none;
+  font-size: 15px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--el-load-accent);
+}
+
+.track {
+  position: relative;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--el-load-track);
+  overflow: hidden;
+  box-shadow: inset 0 1px 2px rgb(15 23 42 / 0.12);
+}
+
+.fill {
+  position: relative;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #0284c7 0%, #38bdf8 48%, #14b8a6 100%);
+  box-shadow: 0 0 14px rgb(56 189 248 / 0.45);
+  transition: width 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:global(.dark) .fill {
+  background: linear-gradient(90deg, #38bdf8 0%, #6366f1 52%, #2dd4bf 100%);
+  box-shadow: 0 0 16px rgb(56 189 248 / 0.55);
+}
+
+/* ── 5-Stage Vietnamese Milestone Stepper ───────────────────────────────────────────────── */
+.stepper {
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  display: grid;
+  gap: 6px;
+  border-radius: 18px;
+  background: var(--el-load-well);
+  border: 1px solid var(--el-load-well-border);
+}
+
+.stepItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 6px;
+  border-radius: 10px;
+  font-size: 12.8px;
+  font-weight: 600;
+  color: var(--el-load-ink-3);
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.stepItem[data-state='done'] {
+  color: var(--el-load-ink-2);
+}
+
+.stepItem[data-state='active'] {
+  color: var(--el-load-ink);
+  font-weight: 800;
+  background: rgb(2 132 199 / 0.1);
+}
+
+:global(.dark) .stepItem[data-state='active'] {
+  background: rgb(56 189 248 / 0.14);
+}
+
+.stepMarker {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 800;
+  border: 1.5px solid var(--el-load-well-border);
+  background: transparent;
+  color: var(--el-load-ink-3);
+}
+
+.stepItem[data-state='done'] .stepMarker {
+  border-color: rgb(5 150 105 / 0.48);
+  background: rgb(16 185 129 / 0.16);
+  color: var(--el-load-ok);
+}
+
+.stepItem[data-state='active'] .stepMarker {
+  border-color: var(--el-load-accent);
+  background: var(--el-load-chip-bg);
+  color: var(--el-load-accent);
+}
+
+.stepPulseCore {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--el-load-accent);
+}
+
+.stepStateTag {
+  margin-left: auto;
+  flex: none;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--el-load-ink-3);
+}
+
+.stepItem[data-state='done'] .stepStateTag {
+  color: var(--el-load-ok);
+}
+
+.stepItem[data-state='active'] .stepStateTag {
+  color: var(--el-load-accent);
+}
+
+/* ── Guidance Footer and Slow-Device Action ─────────────────────────────────────────────── */
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 2px;
+}
+
+.tip {
+  margin: 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--el-load-ink-3);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.secondaryBtn,
+.primaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 12px;
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 180ms cubic-bezier(0.22, 1, 0.36, 1), background-color 160ms ease, border-color 160ms ease;
+}
+
+.secondaryBtn {
+  color: var(--el-load-ink);
+  background: var(--el-load-well);
+  border: 1px solid var(--el-load-well-border);
+}
+
+.secondaryBtn:hover {
+  transform: translateY(-1px);
+  border-color: var(--el-load-accent);
+}
+
+.primaryBtn {
+  color: #ffffff;
+  border: 1px solid rgb(2 132 199 / 0.48);
+  background: linear-gradient(135deg, #0284c7, #2563eb);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.38),
+    0 10px 22px -10px rgb(2 132 199 / 0.65);
+}
+
+:global(.dark) .primaryBtn {
+  color: #031528;
+  border-color: rgb(125 211 252 / 0.65);
+  background: linear-gradient(135deg, #7dd3fc, #38bdf8 55%, #2dd4bf);
+}
+
+.primaryBtn:hover {
+  transform: translateY(-1px);
+}
+
+.secondaryBtn:focus-visible,
+.primaryBtn:focus-visible {
+  outline: 2px solid var(--el-load-accent);
+  outline-offset: 2px;
+}
+
+/* ── Recoverable Error Box (Vietnamese Pre-Entry) ───────────────────────────────────────── */
+.errorBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid rgb(225 29 72 / 0.34);
+  background: rgb(255 241 242 / 0.88);
+  color: #881337;
+}
+
+:global(.dark) .errorBox {
+  border-color: rgb(251 113 133 / 0.38);
+  background: rgb(76 5 25 / 0.56);
+  color: #ffe4e6;
+}
+
+.errorHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  font-weight: 800;
+}
+
+.errorText {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@media (max-width: 560px) {
+  .card {
+    padding: 20px 18px 18px;
+    border-radius: 22px;
+    gap: 13px;
+  }
+  .medallion {
+    width: 54px;
+    height: 54px;
+  }
+  .medallionImg {
+    width: 34px;
+    height: 34px;
+  }
+  .stepper {
+    padding: 8px 10px;
+  }
+  .stepItem {
+    font-size: 12.2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay,
+  .aurora,
+  .stars,
+  .ringFill,
+  .stageDot,
+  .fill,
+  .stepItem,
+  .secondaryBtn,
+  .primaryBtn {
+    animation: none;
+    transition: none;
+  }
+}

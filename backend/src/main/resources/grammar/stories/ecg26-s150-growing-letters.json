@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s150-growing-letters",
+  "title": "Những chữ lớn dần theo nước",
+  "level": "B1",
+  "topics": [
+    "cause-effect-language",
+    "real-conditionals"
+  ],
+  "scene": "university",
+  "summary": "Di viết lời chúc cho bà lên giấy gấp hình hoa. Thả hoa vào nước thì cánh mở, để lộ chữ bên trong. Cô muốn ghi hướng dẫn để bà tự mở được.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mẫn",
+      "role": "Người phụ phòng tranh"
+    },
+    {
+      "id": "b",
+      "name": "Di",
+      "role": "Học sinh"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Bàn có cả túi hạt và chậu cây, khiến người xem dễ lầm hoa giấy cần trồng xuống đất. Mẫn đưa em cốc nước nông vừa tầm bàn tay bà.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Grandma likes opening her own presents.",
+          "vi": "Bà thích tự mở quà lắm."
+        },
+        {
+          "who": "b",
+          "en": "Tell her exactly what makes the petals open.",
+          "vi": "Nói đúng thứ gì làm cánh mở ra nhé."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Di dùng điều kiện nêu thao tác và kết quả quan sát được.",
+        "options": [
+          {
+            "t": "If the petals open, put the flower under the soil.",
+            "note": "Đảo việc mở cánh thành điều kiện và thay thao tác đặt nổi bằng vùi xuống đất. Câu tạo một chỉ dẫn khác, không giúp bà xem chữ.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "If you place the paper flower on water, its petals open.",
+            "note": "If đặt thao tác thật, hiện tại đơn open nêu kết quả thường thấy trong trò này. On water chỉ đặt nổi trên mặt.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Bà thả hoa vào đĩa, từng cánh mở ra thành tên những người cháu. Cánh cuối ghi tên bà, ở ngay giữa cả gia đình.",
+      "say": [
+        {
+          "who": "b",
+          "en": "My name was the last petal!",
+          "vi": "Tên bà là cánh cuối cùng kìa!"
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Mẫn cho Di thử trên bông giấy nháp. Cánh không mở giữa đất khô. Hai bà cháu sửa lời hướng dẫn rồi dùng đất trồng một hạt hoa thật bên cạnh món quà giấy đã nở.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One flower opened today. The other can take its time.",
+          "vi": "Một bông nở hôm nay. Bông kia cứ thong thả mà lớn."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

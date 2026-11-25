@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s137-feather-instead-of-key",
+  "title": "Chiếc lông thay cho chìa khóa",
+  "summary": "Nếu cánh cửa tủ không bị kẹt, Giang đã mở được bằng chiếc chìa cũ. Nay chìa quay nhưng cửa nằm im, trong khe có một chiếc lông.",
+  "level": "B1",
+  "topics": [
+    "unreal-present-conditionals"
+  ],
+  "scene": "library-mystery",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Giang",
+      "role": "Người giữ thư viện"
+    },
+    {
+      "id": "b",
+      "name": "Aki",
+      "role": "Người thu âm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Aki thử nhấc nhẹ cánh cửa và thấy một con chim sẻ bên trong. Anh không muốn đẩy mạnh. Giang phải hiểu câu giả định trước khi bỏ chìa vào túi.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The key still fits.",
+          "vi": "Chìa vẫn vừa ổ."
+        },
+        {
+          "who": "b",
+          "en": "But something is holding the door from inside.",
+          "vi": "Nhưng có thứ chặn cánh cửa từ trong."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Nói điều sẽ đúng ở hiện tại nếu cánh cửa không bị kẹt.",
+        "options": [
+          {
+            "ok": false,
+            "t": "The key opened it yesterday.",
+            "note": "Quá khứ đơn kể một lần mở hôm qua chưa được chứng minh. Nó không thử điều kiện cửa hiện đang kẹt.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "If the door weren't stuck, the key would open it.",
+            "note": "Weren't stuck dựng tình huống khác hiện tại. Would open là hệ quả giả định, không khẳng định cửa đã mở thật.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Giang dừng xoay chìa, kéo rèm để chim thấy cửa sổ. Nó tự lùi khỏi khe rồi bay ra. Cửa tủ mở nhẹ như chưa từng kẹt.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We kept the feather and let the reader go.",
+          "vi": "Ta giữ chiếc lông và để độc giả nhỏ bay đi."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Chiếc lông được đặt làm dấu sách ở trang vẽ chim sẻ.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Aki xin đừng thử lại bằng lực; anh thổi nhẹ, lông rung và chim lùi ra. Giang chờ chim bay rồi mới mở tủ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A working key wasn't all the answer.",
+          "vi": "Chìa còn tốt vẫn chưa phải toàn bộ câu trả lời."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Sổ trực hôm ấy chỉ có câu Chìa vẫn tốt, kèm một hình cánh chim đang bay.",
+      "end": true
+    }
+  ]
+}

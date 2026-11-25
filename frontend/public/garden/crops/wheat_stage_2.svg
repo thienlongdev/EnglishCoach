@@ -1,0 +1,43 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="wBedSoil2" cx="64" cy="98" r="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4E342E"/>
+      <stop offset="70%" stop-color="#3E2723"/>
+      <stop offset="100%" stop-color="#2D150B" stop-opacity="0.8"/>
+    </radialGradient>
+    <linearGradient id="wTillerGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#166534"/>
+      <stop offset="60%" stop-color="#16A34A"/>
+      <stop offset="100%" stop-color="#4ADE80"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Soil Bed Base -->
+  <ellipse cx="64" cy="102" rx="40" ry="14" fill="url(#wBedSoil2)"/>
+  <ellipse cx="64" cy="100" rx="34" ry="10" fill="#3E2723" opacity="0.6"/>
+
+  <!-- Left Wheat Plant Tillers -->
+  <g transform="translate(38, 96)">
+    <path d="M0 0 Q-6 -16 -10 -32" stroke="url(#wTillerGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M0 0 Q-2 -18 -4 -38" stroke="url(#wTillerGrad)" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M0 0 Q4 -16 6 -34" stroke="url(#wTillerGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M0 0 Q8 -12 14 -26" stroke="url(#wTillerGrad)" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Center Main Wheat Plant Tillers (Taller) -->
+  <g transform="translate(64, 94)">
+    <path d="M0 0 Q-10 -20 -14 -42" stroke="url(#wTillerGrad)" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M0 0 Q-4 -24 -6 -48" stroke="url(#wTillerGrad)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M0 0 Q2 -26 3 -50" stroke="url(#wTillerGrad)" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M0 0 Q8 -24 10 -46" stroke="url(#wTillerGrad)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M0 0 Q14 -18 18 -38" stroke="url(#wTillerGrad)" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right Wheat Plant Tillers -->
+  <g transform="translate(90, 96)">
+    <path d="M0 0 Q-8 -14 -12 -28" stroke="url(#wTillerGrad)" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M0 0 Q-3 -18 -5 -36" stroke="url(#wTillerGrad)" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M0 0 Q3 -20 5 -40" stroke="url(#wTillerGrad)" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M0 0 Q9 -16 12 -32" stroke="url(#wTillerGrad)" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+</svg>

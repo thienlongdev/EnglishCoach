@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s040-new-shoes-tuesday",
+  "title": "Đôi giày thứ Ba",
+  "summary": "Mỗi thứ Ba Gil đều đi giày chuông khi giao thư. Tuần này Diệp nghe chuông vào thứ Năm.",
+  "level": "A2",
+  "topics": [
+    "present-simple-vs-continuous"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Gil",
+      "role": "Nhân viên giao thư"
+    },
+    {
+      "id": "b",
+      "name": "Diệp",
+      "role": "Đồng nghiệp mới"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Đêm qua giày thường của Gil bị ngấm mưa. Hôm nay anh phải dùng tạm đôi giày có chuông dành cho thứ Ba. Diệp nhìn lịch rồi đi bên anh một đoạn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "These bells sound strange on a Thursday.",
+          "vi": "Tiếng chuông này nghe lạ thật vào thứ Năm."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Then is Thursday the new bell day?",
+          "vi": "Vậy từ nay thứ Năm là ngày đi giày chuông à?"
+        }
+      ],
+      "choice": {
+        "prompt": "Gil chọn lời nhắn để đồng nghiệp hiểu đây là ngoại lệ trong hôm nay.",
+        "options": [
+          {
+            "t": "I wear them every Thursday.",
+            "note": "Hiện tại đơn cùng every Thursday biến ngoại lệ thành lệ mới. Câu đúng nhưng sẽ khiến Diệp sửa cả lịch.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "I'm wearing them today because my other shoes are wet.",
+            "note": "Hiện tại tiếp diễn cùng today cho biết đây là việc tạm thời trong hôm nay. Because dẫn lý do anh dùng đôi giày có chuông.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Diệp vẽ một chiếc chuông nhỏ vào riêng ô hôm nay. Gil đặt đôi giày cũ còn sũng nước lên báo cho khô.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I'll leave next Thursday blank.",
+          "vi": "Tôi sẽ để trống ô thứ Năm tuần tới."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Diệp định đánh dấu tất cả thứ Năm. Gil chỉ vào hộp đựng đôi giày cũ, nước còn nhỏ bên dưới.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Just this Thursday, then.",
+          "vi": "Vậy chỉ thứ Năm này thôi nhé."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Khi giày mới đến, Gil tháo một quả chuông treo bên hộp thư. Từ đó cả phòng nghe tiếng thư đến vào bất cứ ngày nào mà không cần đoán lịch.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Now the letters have their own bell.",
+          "vi": "Giờ thư có chuông riêng rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

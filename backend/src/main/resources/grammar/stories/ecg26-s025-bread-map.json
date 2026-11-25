@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s025-bread-map",
+  "title": "Ổ bánh chỉ đường về",
+  "summary": "Remy bỏ quên túi bánh ở chợ. Em nhớ hàng bán bánh có một con cá trên mái, nhưng cả dãy chợ treo ảnh cá.",
+  "level": "A1",
+  "topics": [
+    "prepositions-place",
+    "imperatives"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vi",
+      "role": "Con gái người bán bánh"
+    },
+    {
+      "id": "b",
+      "name": "Remy",
+      "role": "Khách nhỏ tuổi"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Vi đem ra bức vẽ ba quầy liền nhau. Quầy bên trái bán cá, quầy bên phải bán hoa. Chính giữa là nhà Vi với lò bánh đỏ. Chiếc túi nằm ngay trên lò đã nguội.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I know that red oven!",
+          "vi": "Mình nhận ra cái lò đỏ kia!"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "a",
+          "en": "Then tell me where our shop is.",
+          "vi": "Thế bạn chỉ xem tiệm nhà mình ở đâu nào."
+        }
+      ],
+      "choice": {
+        "prompt": "Remy cần mô tả vị trí tiệm bánh cho mẹ đang cầm bức vẽ.",
+        "options": [
+          {
+            "t": "It's behind the fish shop.",
+            "note": "Behind chỉ phía sau. Tiệm bánh lại nằm cùng hàng, kẹp giữa tiệm cá và tiệm hoa.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "It's between the fish shop and the flower shop.",
+            "note": "Between đặt tiệm bánh ở giữa hai mốc đã biết. And nối hai mốc ấy.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Mẹ nhìn đúng vào lò đỏ. Vi nhấc chiếc túi xuống, tên Remy vẫn còn trên quai.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Your bread is safe.",
+          "vi": "Bánh của bạn đây, vẫn nguyên nhé."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Mẹ lật tờ giấy tìm quầy phía sau. Vi chỉ lò đỏ ở giữa rồi cho Remy thấy túi bánh.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Right here in the middle.",
+          "vi": "Ngay đây, ở chính giữa."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Remy vẽ thêm hình cá bên trái, hoa bên phải lên túi. Trên đường về, mỗi khi nhìn túi em lại biết nên rẽ vào lối nào để lần sau gặp Vi.",
+      "say": [
+        {
+          "who": "b",
+          "en": "My bag is a little map now.",
+          "vi": "Bây giờ túi của mình là bản đồ nhỏ rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "spoken-plan",
+  "title": "Bỏ chủ ngữ trong tin nhắn hẹn giờ?",
+  "summary": "Bạn nhắn nhanh cho bạn đã biết mình đang ở đâu. So sánh lời báo đầy đủ với dạng rút trong trò chuyện. Khi đứng độc lập trên báo cáo, dạng nào đủ mệnh đề?",
+  "level": "B2",
+  "topics": [
+    "spoken-grammar",
+    "register-formal-informal"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Văn cảnh",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Báo cáo đầy đủ"
+        },
+        {
+          "id": "v2",
+          "label": "Tin nhắn thân mật"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I'm waiting outside the main entrance.",
+      "vi": "Tôi đang đợi bên ngoài lối vào chính.",
+      "note": "I'm waiting có chủ ngữ và trợ động từ hiện rõ, thích hợp cả khi chưa có ngữ cảnh tin nhắn. / The finite clause states its subject and auxiliary.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Waiting outside the main entrance.",
+      "vi": "Đang đợi bên ngoài lối vào chính nhé.",
+      "note": "Trong cuộc hẹn, người nhận suy được I am. Đây là lối tỉnh lược hội thoại, không cần chấm là sai trong tin nhắn. / A message can omit an obvious I am.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,693 @@
+{
+  "schema": 1,
+  "slug": "future-perfect",
+  "version": 2,
+  "domain": "tense-aspect",
+  "order": 190,
+  "kind": "grammar",
+  "title": {
+    "vi": "Tương lai hoàn thành",
+    "en": "Future perfect"
+  },
+  "subtitle": {
+    "vi": "Nhìn tại mốc hoặc nhìn lùi từ mốc tương lai",
+    "en": "Look at or back from a future reference time"
+  },
+  "aliases": [
+    "tương lai hoàn thành",
+    "future perfect",
+    "future-continuous",
+    "tương lai tiếp diễn",
+    "future-perfect-continuous",
+    "tương lai hoàn thành tiếp diễn",
+    "will have wrote"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Tạo will have + phân từ.",
+    "Đối chiếu will be + -ing với thành quả trước mốc.",
+    "Dùng will have been + -ing cho độ dài quá trình.",
+    "Không đồng nhất mọi hoàn thành với kết thúc."
+  ],
+  "prerequisites": [
+    "future-will",
+    "present-perfect-basics"
+  ],
+  "related": [
+    {
+      "slug": "future-will",
+      "rel": "more"
+    },
+    {
+      "slug": "time-clauses",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Tương lai hoàn thành (future perfect) nhìn lùi từ một mốc tương lai; tương lai tiếp diễn (future continuous) nhìn hoạt động tại mốc; hoàn thành tiếp diễn nhấn quá trình tính đến mốc.",
+    "when": "Chọn theo trọng tâm thời gian và nghĩa động từ.",
+    "examples": [
+      {
+        "en": "[S|We] [MOD|will] [AUX|have] [V|finished] [T|by Friday].",
+        "vi": "Đến thứ Sáu chúng tôi sẽ đã làm xong."
+      },
+      {
+        "en": "[S|We] [MOD|will] [AUX|be] [V|working] [T|at noon].",
+        "vi": "Lúc trưa chúng tôi sẽ đang làm việc."
+      }
+    ]
+  },
+  "lesson": [
+  {
+    "type": "p",
+    "vi": "Tương lai hoàn thành có will + have + phân từ: will have finished. By Friday nghĩa là không muộn hơn mốc thứ Sáu được hiểu trong ngữ cảnh; không phải lúc nào cũng hoàn tất đúng tại mốc. Chọn giờ cụ thể nếu một hạn chót cần rõ."
+  },
+  {
+    "type": "diagram",
+    "spec": {
+      "kind": "timeline",
+      "sentence": "By Friday, we will have finished the repair.",
+      "now": 15,
+      "events": [
+        {
+          "kind": "span",
+          "to": 65,
+          "label": "sửa chữa",
+          "from": 30
+        },
+        {
+          "kind": "point",
+          "at": 80,
+          "label": "thứ Sáu: mốc nhìn lại"
+        }
+      ]
+    },
+    "caption": "Một khả năng được dự đoán: sửa xong trước thứ Sáu. By Friday cũng cho phép đúng hạn; hình không quy định thời điểm bắt đầu của mọi sự việc tương lai hoàn thành.",
+    "alt": "Minh họa một khả năng: hiện tại ở15, sửa chữa từ30 đến65, mốc thứ Sáu ở80. Câu không bắt buộc công việc luôn bắt đầu sau hiện tại hoặc hoàn tất sớm hơn hạn."
+  },
+  {
+    "type": "formula",
+    "lines": [
+      {
+        "label": "Phủ định tiếp diễn",
+        "parts": [
+          {
+            "t": "S",
+            "role": "S"
+          },
+          {
+            "t": "will not / won't be",
+            "role": "AUX"
+          },
+          {
+            "t": "V-ing",
+            "role": "V"
+          }
+        ]
+      },
+      {
+        "label": "Câu hỏi tiếp diễn",
+        "parts": [
+          {
+            "t": "Will",
+            "role": "MOD"
+          },
+          {
+            "t": "S",
+            "role": "S"
+          },
+          {
+            "t": "be + V-ing?"
+          }
+        ]
+      },
+      {
+        "label": "Phủ định hoàn thành",
+        "parts": [
+          {
+            "t": "S",
+            "role": "S"
+          },
+          {
+            "t": "will not / won't have",
+            "role": "AUX"
+          },
+          {
+            "t": "phân từ",
+            "role": "V"
+          }
+        ]
+      },
+      {
+        "label": "Câu hỏi hoàn thành",
+        "parts": [
+          {
+            "t": "Will",
+            "role": "MOD"
+          },
+          {
+            "t": "S",
+            "role": "S"
+          },
+          {
+            "t": "have + phân từ?"
+          }
+        ]
+      },
+      {
+        "label": "Phủ định hoàn thành tiếp diễn",
+        "parts": [
+          {
+            "t": "S",
+            "role": "S"
+          },
+          {
+            "t": "will not / won't have been",
+            "role": "AUX"
+          },
+          {
+            "t": "V-ing",
+            "role": "V"
+          }
+        ]
+      },
+      {
+        "label": "Câu hỏi về độ dài",
+        "parts": [
+          {
+            "t": "How long will"
+          },
+          {
+            "t": "S",
+            "role": "S"
+          },
+          {
+            "t": "have been + V-ing + by then?"
+          }
+        ]
+      }
+    ],
+    "note": "Will không đổi theo chủ ngữ; không thêm do để hỏi. Khác biệt là be, have hoặc have been sau will; giữ đúng dạng động từ phía sau."
+  },
+  {
+    "type": "contrast",
+    "items": [
+      {
+        "a": {
+          "en": "By five tomorrow, I will have checked twelve files.",
+          "vi": "Đến năm giờ ngày mai, tôi sẽ đã kiểm tra mười hai hồ sơ."
+        },
+        "b": {
+          "en": "At five tomorrow, I will have been checking files for three hours.",
+          "vi": "Lúc năm giờ ngày mai, tôi sẽ đã kiểm tra hồ sơ được ba giờ."
+        },
+          "diff": "Câu đầu nêu số kết quả; câu sau nêu độ dài quá trình, không tự xác định số hồ sơ hoặc khẳng định đã xong toàn bộ công việc. Trong câu thứ hai, ba giờ tính đến năm giờ tương ứng bắt đầu khoảng hai giờ ngày mai."
+      }
+    ]
+  },
+  {
+    "type": "table",
+    "head": [
+      "Trọng tâm",
+      "Khung",
+      "Ví dụ"
+    ],
+    "rows": [
+      [
+        "Nhìn lùi từ mốc",
+        "will have + phân từ",
+        "By six, I will have finished."
+      ],
+      [
+        "Hoạt động tại mốc",
+        "will be + -ing",
+        "At five, I will be working."
+      ],
+      [
+        "Độ dài đến mốc",
+        "will have been + -ing",
+        "By six, I will have been working for four hours."
+      ]
+    ]
+  },
+  {
+    "type": "p",
+    "vi": "Tương lai tiếp diễn: At ten, I will be interviewing a guest đặt mốc mười giờ bên trong hoạt động dự kiến. Không khẳng định buổi phỏng vấn bắt đầu đúng mười giờ hoặc sẽ kéo dài chính xác bao lâu."
+  },
+  {
+    "type": "examples",
+    "items": [
+      {
+        "en": "[T|At noon], [S|I] [MOD|will] [AUX|be] [V|travelling].",
+        "vi": "Lúc trưa tôi sẽ đang di chuyển."
+      },
+      {
+        "en": "[T|By noon], [S|I] [MOD|will] [AUX|have] [V|arrived].",
+        "vi": "Đến trưa tôi sẽ đã đến nơi."
+      }
+    ]
+  },
+  {
+    "type": "p",
+    "vi": "Tương lai hoàn thành tiếp diễn: will have been working. Nó làm nổi bật quá trình hoặc độ dài tính đến một mốc tương lai: By noon, I will have been working for four hours. Mốc ấy không nhất thiết là lúc công việc kết thúc. Không tự chứng minh hoạt động liên tục từng giây hay chắc chắn còn tiếp tục sau mốc. For thường giới thiệu độ dài, nhưng không bắt buộc luôn xuất hiện; when hoặc by the time có thể đặt mốc nhìn."
+  },
+  {
+    "type": "examples",
+    "items": [
+      {
+        "en": "[T|By July], [S|we] [MOD|will] [AUX|have] [AUX|been] [V|training] for six months.",
+        "vi": "Đến tháng Bảy chúng tôi sẽ đã tập luyện được sáu tháng."
+      }
+    ]
+  },
+  {
+    "type": "note",
+    "kind": "warn",
+    "vi": "Các hình thức này là cách nhìn dự kiến, không phải bảo đảm sự việc sẽ diễn ra. Không dùng một mốc by/at đơn lẻ làm mẹo quyết định mọi đáp án."
+  }
+],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Hoàn thành đơn cũng có trạng thái tiếp tục: By June, I will have known Lan for ten years. Không đổi know thành been knowing để diễn tả độ dài. Nghĩa của động từ giới hạn khả năng dùng tiếp diễn."
+    },
+    {
+      "type": "p",
+      "vi": "Will be working có thể nêu việc dự kiến theo tiến trình, sự thu xếp, hoặc hỏi kế hoạch của người khác. Will you be using the car tomorrow? có thể hỏi cả quãng ngày mai, không chỉ một thời điểm. Cách hỏi này có thể giúp người nói dò lịch trước khi nhờ xe, nhưng độ lịch sự còn tùy giọng và quan hệ."
+    },
+    {
+      "type": "p",
+      "vi": "Will have worked và will have been working đôi khi cùng phù hợp với độ dài làm việc. Dạng tiếp diễn nhấn quá trình; dạng đơn có thể nhấn tổng thời gian hoặc sự việc. Không luôn chấm một dạng là sai khi ngữ cảnh cho phép cả hai."
+    },
+    {
+      "type": "p",
+      "vi": "Trong mệnh đề thời gian: By the time you arrive, we will have finished. Phần you arrive dùng hiện tại đơn theo cấu trúc mệnh đề thời gian tương lai; will have finished nằm ở mệnh đề chính. Will have + phân từ và will have been + -ing còn có thể nêu suy đoán về quá khứ/hiện tại, như The office is dark; they will have gone home by now. Vì vậy không dùng riêng hình thức này để kết luận mọi mốc nhìn đều thuộc tương lai; các bài ở đây chỉ định cách hiểu tương lai."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "future-perfect-m1",
+      "wrong": "She will have wrote it.",
+      "right": "She will have written it.",
+      "why": "Sau have cần phân từ written."
+    },
+    {
+      "id": "future-perfect-m2",
+      "wrong": "We will be work at noon.",
+      "right": "We will be working at noon.",
+      "why": "Tiếp diễn cần -ing."
+    },
+    {
+      "id": "future-perfect-m3",
+      "wrong": "I will have been wait for an hour.",
+      "right": "I will have been waiting for an hour.",
+      "why": "Hoàn thành tiếp diễn cần been + -ing."
+    }
+  ],
+  "faq": [
+    {
+      "q": "By Friday có nghĩa đúng thứ Sáu không?",
+      "a": "Không. Thường là trước hoặc không muộn hơn hạn được hiểu. Nếu cần chính xác, ghi rõ ngày giờ."
+    },
+    {
+      "q": "Tương lai hoàn thành có luôn là việc chấm dứt không?",
+      "a": "Không. Một trạng thái như quen biết có thể tiếp tục sau mốc. Với finish và by + hạn chót, thành quả đạt không muộn hơn hạn, kể cả đúng tại hạn được hiểu."
+    },
+    {
+      "q": "Có nhất thiết dùng tiếp diễn khi nêu độ dài không?",
+      "a": "Không. Nghĩa trạng thái thường dùng dạng đơn, và một số hoạt động cho phép cả hai với trọng tâm khác nhau."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "fpf-01",
+      "prompt": "Chọn khung tương lai hoàn thành chuẩn.",
+      "explain": "Will have cần phân từ finished.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "By Friday, we ___ the repair.",
+      "options": [
+        {
+          "t": "will have finished",
+          "ok": true,
+          "note": "Will + have + phân từ."
+        },
+        {
+          "t": "will have finish",
+          "ok": false,
+          "note": "Cần finished sau have.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "will has finished",
+          "ok": false,
+          "note": "Sau will là have, không phải has.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "fpf-02",
+      "prompt": "Nối khung với trọng tâm diễn đạt.",
+      "explain": "Trọng tâm khác nhau, không phải chỉ một khung có thể nói về một tình huống.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "I will be working at noon.",
+          "b": "Nhìn hoạt động đang diễn ra tại mốc tương lai"
+        },
+        {
+          "a": "I will have finished by noon.",
+          "b": "Nhìn lùi từ mốc tương lai về việc hoàn tất"
+        },
+        {
+          "a": "I will have been working for four hours by noon.",
+          "b": "Nhấn quá trình kéo dài đến mốc tương lai"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "fpf-03",
+      "prompt": "Phân loại theo cấu trúc.",
+      "explain": "Have been working vừa có hoàn thành vừa có tiếp diễn.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Tương lai tiếp diễn",
+        "Tương lai hoàn thành",
+        "Tương lai hoàn thành tiếp diễn"
+      ],
+      "items": [
+        {
+          "t": "I will be waiting.",
+          "cat": "Tương lai tiếp diễn"
+        },
+        {
+          "t": "I will have arrived.",
+          "cat": "Tương lai hoàn thành"
+        },
+        {
+          "t": "I will have been waiting.",
+          "cat": "Tương lai hoàn thành tiếp diễn"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "fpf-04",
+      "prompt": "Điền dạng của finish và work theo các khung.",
+      "explain": "Have cần phân từ; be cần -ing.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "We will have {1} (finish) by six. At five, we will be {2} (work).",
+      "blanks": {
+        "1": {
+          "accept": [
+            "finished"
+          ]
+        },
+        "2": {
+          "accept": [
+            "working"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "fpf-05",
+      "prompt": "Sửa phân từ trong khung tương lai hoàn thành.",
+      "explain": "Written là phân từ của write.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "She will have"
+        },
+        {
+          "t": "wrote",
+          "bad": true,
+          "fix": [
+            "written"
+          ],
+          "note": "Sau have cần written.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "the report by Monday."
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "fpf-06",
+      "prompt": "Sắp xếp câu bắt đầu bằng We; để by noon cuối câu.",
+      "explain": "Will have sent gồm will, have và phân từ sent.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "We",
+        "will",
+        "have",
+        "sent",
+        "the parcel",
+        "by noon"
+      ],
+      "accept": [
+        [
+          "We",
+          "will",
+          "have",
+          "sent",
+          "the parcel",
+          "by noon"
+        ]
+      ],
+      "end": ".",
+      "level": "B2"
+    },
+    {
+  "id": "fpf-07",
+  "prompt": "Chuyển sang câu nhìn từ mốc hoàn thành tương lai.",
+  "explain": "Giữ expect để không làm mất mức dự kiến của nguồn. Will have finished đặt việc hoàn tất trước hạn Friday đã nêu; đổi cấu trúc không được tự xóa lớp đánh giá của người nói.",
+  "skill": "production",
+  "use": "practice",
+  "type": "transform",
+  "source": "We expect to finish the work before Friday.",
+  "instruction": "Giữ mức dự kiến bằng We expect (that) we will hoặc We expect (that) we'll; dùng have finished the work và giữ before Friday ở cuối.",
+  "accept": [
+    "We expect that we will have finished the work before Friday.",
+    "We expect we will have finished the work before Friday.",
+    "We expect that we'll have finished the work before Friday.",
+    "We expect we'll have finished the work before Friday."
+  ],
+  "model": "We expect that we will have finished the work before Friday.",
+  "level": "B2"
+},
+    {
+      "id": "fpf-08",
+      "prompt": "Viết lịch công việc với ba góc nhìn.",
+      "explain": "Tự kiểm tra sự nhất quán thời gian; bài mở không được chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Chọn ngày mai: viết một hoạt động đang diễn ra tại một giờ, một việc xong trước giờ khác, và một quá trình kéo dài đến một mốc. Dùng cả ba khung của bài.",
+      "model": [
+        "At ten, I will be interviewing a guest. By noon, I will have finished the interview. By noon, I will have been working for four hours."
+      ],
+      "checklist": [
+        "Có mốc tương lai rõ.",
+        "Will be đi với -ing; will have đi với phân từ.",
+        "Will have been + -ing có độ dài hợp lý."
+      ],
+      "level": "B2"
+    },
+    {
+  "id": "fpf-09",
+  "prompt": "Dùng tương lai hoàn thành tiếp diễn của wait để nhìn về độ dài chờ tại mốc ngày mai.",
+  "explain": "Will have been waiting nhìn từ năm giờ ngày mai về hai giờ chờ bắt đầu lúc ba giờ. Việc tiếp tục sau năm giờ được ngữ cảnh riêng xác nhận, không phải một bảo đảm do hình thức ngữ pháp.",
+  "skill": "form",
+  "use": "practice",
+  "type": "cloze",
+  "stem": "At five tomorrow, she {1} for two hours.",
+  "blanks": {
+    "1": {
+      "accept": [
+        "will have been waiting"
+      ],
+      "known": [
+        {
+          "t": "will have been wait",
+          "verdict": "wrong",
+          "note": "Sau have been trong khung tiếp diễn cần waiting.",
+          "tag": "perfect-continuous-form"
+        }
+      ]
+    }
+  },
+  "level": "B2",
+  "context": "Ngày mai cô ấy sẽ bắt đầu chờ lúc ba giờ và vẫn chờ lúc năm giờ; người nói dự kiến việc chờ kéo dài tới năm giờ rưỡi."
+},
+    {
+      "id": "fpf-10",
+      "prompt": "Chọn nhận xét đúng về know.",
+      "explain": "Hoàn thành đơn có thể diễn tả trạng thái tiếp tục đến mốc, không nhất thiết kết thúc.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "choice",
+      "stem": "By June, I will have known Lan for ten years.",
+      "options": [
+        {
+          "t": "Thời gian quen Lan tính đến tháng Sáu là mười năm; câu không nói sẽ ngừng quen.",
+          "ok": true,
+          "note": "Know là trạng thái có thể tiếp tục."
+        },
+        {
+          "t": "Câu bắt buộc nghĩa tháng Sáu tình bạn chấm dứt.",
+          "ok": false,
+          "note": "Hoàn thành không luôn nghĩa kết thúc trạng thái.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Phải dùng will have been knowing.",
+          "ok": false,
+          "note": "Know ở nghĩa này thường dùng dạng đơn.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "fpf-11",
+      "prompt": "Điền dạng theo từng khung đã có.",
+      "explain": "Written là phân từ; travelling/traveling và waiting là -ing.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "By Friday, she will have {1} (write) the article. At noon, we will be {2} (travel). By two, they will have been {3} (wait) for an hour.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "written"
+          ]
+        },
+        "2": {
+          "accept": [
+            "travelling",
+            "traveling"
+          ]
+        },
+        "3": {
+          "accept": [
+            "waiting"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "fpf-12",
+      "prompt": "Tạo câu hỏi về hoạt động tại mốc tương lai.",
+      "explain": "Đảo will lên đầu; be waiting giữ nguyên.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "You will be waiting at six.",
+      "instruction": "Chuyển thành câu hỏi yes/no, giữ mọi từ.",
+      "accept": [
+        "Will you be waiting at six?"
+      ],
+      "model": "Will you be waiting at six?",
+      "level": "B2"
+    },
+    {
+      "id": "fpf-13",
+      "prompt": "Chọn tất cả khung chuẩn.",
+      "explain": "Hoàn thành tiếp diễn có have been -ing; tiếp diễn tương lai có be -ing.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "We will be travelling at noon.",
+          "ok": true,
+          "note": "Khung tiếp diễn chuẩn."
+        },
+        {
+          "t": "We will have been travelling for six hours by noon.",
+          "ok": true,
+          "note": "Khung hoàn thành tiếp diễn chuẩn."
+        },
+        {
+          "t": "We will have travelling by noon.",
+          "ok": false,
+          "note": "Thiếu been nếu muốn hoàn thành tiếp diễn.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "We will be travelled at noon.",
+          "ok": false,
+          "note": "Không tạo hoạt động đi lại chủ động bằng be travelled.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+  "id": "fpf-14",
+  "prompt": "Phân loại trọng tâm của các câu rõ nghĩa.",
+  "explain": "Will be writing đặt hoạt động tại mốc mà không ấn định lúc bắt đầu. By ten nói kết quả đạt không muộn hơn mốc mười giờ, có thể đúng tại mốc; will have been writing nhấn độ dài tính đến mốc.",
+  "skill": "meaning",
+  "use": "check",
+  "type": "classify",
+  "cats": [
+    "Hoạt động tại mốc",
+    "Thành quả đạt không muộn hơn mốc",
+    "Độ dài quá trình đến mốc"
+  ],
+  "items": [
+    {
+      "t": "At nine, I will be writing the summary.",
+      "cat": "Hoạt động tại mốc"
+    },
+    {
+      "t": "By ten, I will have finished the summary.",
+      "cat": "Thành quả đạt không muộn hơn mốc"
+    },
+    {
+      "t": "By ten, I will have been writing for two hours.",
+      "cat": "Độ dài quá trình đến mốc"
+    }
+  ],
+  "level": "B2"
+}
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Reviewer đã đọc phần chính Future continuous and future perfect của British Council ngày2026-11-01: khung, hoạt động tại mốc, nhìn lùi và các trạng thái. Không dùng bình luận người học trên trang làm nguồn cho hoàn thành tiếp diễn. Đối chiếu bổ sung BBC 6 Minute Grammar, Future perfect continuous, bản PDF chính thức: độ dài quá trình, for không luôn bắt buộc, hình thức và suy đoán; nguồn BBC ghi riêng trong FUTURE-CONTENT-REVIEW.md, không quy cho British Council."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

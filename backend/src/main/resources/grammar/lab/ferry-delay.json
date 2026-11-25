@@ -1,0 +1,77 @@
+{
+  "id": "ferry-delay",
+  "title": "Lúc đến bến, phà sẽ ở đâu?",
+  "summary": "Bạn đoán lịch phà lúc tám giờ. Đổi giữa thời điểm phà rời bến và hạn mà việc rời bến đã hoàn tất.",
+  "level": "B1",
+  "topics": [
+    "future-perfect",
+    "future-will"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Góc nhìn lúc tám giờ",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Sự kiện đúng giờ"
+        },
+        {
+          "id": "v2",
+          "label": "Nhìn lại từ hạn"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The ferry will leave at eight.",
+      "vi": "Phà sẽ rời bến lúc tám giờ.",
+      "note": "Tám giờ là lúc diễn ra việc rời bến. / At eight locates the departure.",
+      "verdict": "ok",
+      "timeline": {
+        "sentence": "The ferry will leave at eight.",
+        "now": 15,
+        "events": [
+          {
+            "kind": "point",
+            "at": 80,
+            "label": "Tám giờ",
+            "role": "ref"
+          },
+          {
+            "kind": "point",
+            "at": 80,
+            "label": "Phà rời bến",
+            "role": "main"
+          }
+        ]
+      }
+    },
+    "v2": {
+      "en": "The ferry will have left by eight.",
+      "vi": "Đến tám giờ thì phà sẽ rời bến rồi.",
+      "note": "Will have left dự đoán việc rời bến hoàn tất chậm nhất vào tám giờ, có thể sớm hơn. / By eight sets a completion boundary.",
+      "verdict": "ok",
+      "timeline": {
+        "sentence": "The ferry will have left by eight.",
+        "now": 15,
+        "events": [
+          {
+            "kind": "point",
+            "at": 80,
+            "label": "Hạn tám giờ",
+            "role": "ref"
+          },
+          {
+            "kind": "point",
+            "at": 63,
+            "label": "Ví dụ: đã rời trước hạn",
+            "role": "main"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s026-dog-on-the-list",
+  "title": "Chú chó trong danh sách lớp",
+  "summary": "Danh sách trại hè có tên Bim nhưng không ai đứng lên nhận thẻ. Bên cửa sổ, một chú chó ngồi im cạnh Sam.",
+  "level": "A1",
+  "topics": [
+    "verb-be",
+    "subject-object-pronouns"
+  ],
+  "scene": "university",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Lý",
+      "role": "Lớp trưởng"
+    },
+    {
+      "id": "b",
+      "name": "Sam",
+      "role": "Bạn nuôi chó"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Sam đã đăng ký cả mình lẫn chó cho buổi chụp hình cuối khóa. Thẻ Bim có hình dấu chân nhỏ. Lý giơ thẻ về phía Sam.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Is Bim your friend from school?",
+          "vi": "Bim là bạn học của cậu à?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Bim is here. Look down!",
+          "vi": "Bim ở đây mà. Cậu nhìn xuống đi!"
+        }
+      ],
+      "choice": {
+        "prompt": "Lý muốn chỉ đúng Bim cho người chụp hình. Cô nói câu nào?",
+        "options": [
+          {
+            "t": "He's the boy by the window.",
+            "note": "By the window vẫn đúng vị trí nhưng the boy gọi Sam chứ không xác định Bim. Người chụp sẽ hướng máy lên quá cao.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "He's the dog by the window.",
+            "note": "He dùng được cho con vật quen thuộc mà người nói biết là con đực. By the window chỉ nơi Bim đang ngồi.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Người chụp ảnh hạ máy xuống tầm mắt của Bim. Cái đuôi chó lắc mạnh đến mức chạm vào chân ghế.",
+      "say": [
+        {
+          "who": "b",
+          "en": "He's ready for his picture.",
+          "vi": "Nó sẵn sàng chụp hình rồi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Sam hạ chiếc thẻ xuống sát vòng cổ Bim. Người chụp ảnh mới thấy dấu chân in trên thẻ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That's his name on the card.",
+          "vi": "Tên của nó ở trên thẻ đấy."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Cuối buổi, ảnh Bim được dán cạnh ảnh lớp. Dưới tấm ảnh là cùng một chữ Bim nhưng thay chữ ký bằng một vết chân nhỏ xíu.",
+      "say": [
+        {
+          "who": "a",
+          "en": "His name is on our wall now.",
+          "vi": "Giờ tên nó có trên tường lớp rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

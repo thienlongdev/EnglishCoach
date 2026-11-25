@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- [ASSET_REQUIRED] Production-grade vector artwork (Hand-crafted vector finalization) -->
+  <!-- Series: vocab_mastery | Stage: 3 | Tier: S | Slug: vocab_mastery_stage_3 | Achievement Lineage: Grimoire Arcane Amethyst & Floating Runes -->
+  <!-- Production Vector Quality: PRODUCTION_READY_VECTOR | External Studio/Rive Hand-off: ASSET_REQUIRED -->
+  <!-- Center: (50, 50), Avatar Aperture: r=40 (80px boundary) -->
+  <defs>
+    <linearGradient id="vocabSArcaneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d0fe"/>
+      <stop offset="30%" stop-color="#c084fc"/>
+      <stop offset="70%" stop-color="#7e22ce"/>
+      <stop offset="100%" stop-color="#3b0764"/>
+    </linearGradient>
+
+    <linearGradient id="vocabSAmethystCore" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#581c87"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#fdf4ff"/>
+    </linearGradient>
+
+    <filter id="vocabSDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#3b0764" flood-opacity="0.5"/>
+    </filter>
+
+    <filter id="vocabSArcaneGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Arcane Orbital Ring with Ancient Alphabet Inscriptions -->
+  <g class="vocab-s-orbit" opacity="0.6">
+    <circle cx="50" cy="50" r="48" stroke="url(#vocabSAmethystCore)" stroke-width="0.8" stroke-dasharray="2 4 8 4"/>
+    <!-- Floating Arcane Runes (A, Ω, Σ, Ψ, Φ, Δ, Λ, Θ) around orbital circumference -->
+    <text x="50" y="8" fill="#e9d5ff" font-size="3.5" font-family="serif" text-anchor="middle" font-weight="bold">Ω</text>
+    <text x="92" y="51" fill="#e9d5ff" font-size="3.5" font-family="serif" text-anchor="middle" font-weight="bold">Ψ</text>
+    <text x="50" y="96" fill="#e9d5ff" font-size="3.5" font-family="serif" text-anchor="middle" font-weight="bold">Σ</text>
+    <text x="8" y="51" fill="#e9d5ff" font-size="3.5" font-family="serif" text-anchor="middle" font-weight="bold">Δ</text>
+  </g>
+
+  <!-- Core Grimoire Frame Ring -->
+  <g class="vocab-s-core" filter="url(#vocabSDropShadow)">
+    <circle cx="50" cy="50" r="45.5" stroke="#3b0764" stroke-width="5"/>
+    <circle cx="50" cy="50" r="44.5" stroke="url(#vocabSArcaneGrad)" stroke-width="3.5"/>
+    <circle cx="50" cy="50" r="40.8" stroke="#ffffff" stroke-width="1.2"/>
+  </g>
+
+  <!-- 4 Cardinal Amethyst Crystal Spires (Spire Seals of the Archmage) -->
+  <g class="vocab-s-spires" filter="url(#vocabSArcaneGlow)">
+    <!-- Top Apex: The Archmage's Grimoire Sigil (2000-Vocab Milestone) -->
+    <g fill="url(#vocabSAmethystCore)" stroke="#f5d0fe" stroke-width="0.6">
+      <polygon points="50,0 55,7 50,13 45,7"/>
+      <!-- Inner Glowing Core -->
+      <polygon points="50,2 53,7 50,11 47,7" fill="#ffffff"/>
+      <!-- Arcane Flanking Wings -->
+      <path d="M45 8 C38 4, 30 5, 26 9 C32 11, 38 11, 44 10 Z" fill="url(#vocabSArcaneGrad)"/>
+      <path d="M55 8 C62 4, 70 5, 74 9 C68 11, 62 11, 56 10 Z" fill="url(#vocabSArcaneGrad)"/>
+    </g>
+
+    <!-- Bottom Cardinal Seal -->
+    <polygon points="50,100 54,93 50,87 46,93" fill="url(#vocabSAmethystCore)" stroke="#f5d0fe" stroke-width="0.6"/>
+    <!-- Left Cardinal Seal -->
+    <polygon points="0,50 7,46 13,50 7,54" fill="url(#vocabSAmethystCore)" stroke="#f5d0fe" stroke-width="0.6"/>
+    <!-- Right Cardinal Seal -->
+    <polygon points="100,50 93,46 87,50 93,54" fill="url(#vocabSAmethystCore)" stroke="#f5d0fe" stroke-width="0.6"/>
+
+    <!-- Diagonal Runic Glyphs -->
+    <circle cx="19" cy="19" r="2" fill="#c084fc" stroke="#ffffff" stroke-width="0.5"/>
+    <circle cx="81" cy="19" r="2" fill="#c084fc" stroke="#ffffff" stroke-width="0.5"/>
+    <circle cx="19" cy="81" r="2" fill="#c084fc" stroke="#ffffff" stroke-width="0.5"/>
+    <circle cx="81" cy="81" r="2" fill="#c084fc" stroke="#ffffff" stroke-width="0.5"/>
+  </g>
+</svg>

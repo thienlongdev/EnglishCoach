@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s138-spilled-sunlight",
+  "title": "Vệt nắng đổ lên bài kiểm tra",
+  "summary": "Một bản nhạc có mảng vàng trông như vết trà. Aki muốn xóa nó khi quét ảnh. Giang nghi có người cố tình vẽ nắng lên khuông nhạc.",
+  "level": "B1",
+  "topics": [
+    "clauses-contrast",
+    "despite-although-however"
+  ],
+  "scene": "library-mystery",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Giang",
+      "role": "Người giữ thư viện"
+    },
+    {
+      "id": "b",
+      "name": "Aki",
+      "role": "Người thu âm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Ở mặt sau, nhạc sĩ ghi “play more softly here” đúng ngay ô vàng. Những ô khác có cùng màu và cùng lời nhắc.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The colour looks accidental.",
+          "vi": "Màu ấy trông như vết vô tình để lại."
+        },
+        {
+          "who": "b",
+          "en": "Can you put its appearance and its pattern in one sentence?",
+          "vi": "Ghép vẻ bề ngoài và quy luật của nó vào cùng một câu được không?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Giữ cả hai sự thật bằng một cấu trúc nhượng bộ đúng.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Although it looks like a stain, it marks every quiet passage.",
+            "note": "Although theo sau bằng mệnh đề đầy đủ it looks ... Sự đối chiếu nêu lý do không nên xóa ngay.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": true,
+            "t": "Despite its messy edges, the mark appears in the same musical places.",
+            "note": "Despite nhận cụm danh từ its messy edges. Chỗ xuất hiện lặp lại cung cấp chứng cứ khác với vẻ lem.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Aki thử chơi nhỏ ở vùng vàng. Bài nhạc ngân thành tiếng buổi sáng dìu dịu mà nhạc sĩ từng tả trong thư.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That patch was a direction for the hands.",
+          "vi": "Vệt ấy là lời chỉ dẫn cho đôi tay."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Bản quét giữ nguyên màu, còn trong phòng nghe có thêm phiên bản chơi theo nắng.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Giang in chồng ba bản nhạc lên giấy trong. Các mảng vàng trùng những lần giai điệu lắng xuống. Aki tắt chế độ tẩy vết tự động.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A colour gave the music another door.",
+          "vi": "Một màu mở cho âm nhạc thêm một cánh cửa."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Một học viên nghe khiếm thính đọc được độ nhẹ qua màu dù chưa nghe từng nốt.",
+      "end": true
+    }
+  ]
+}

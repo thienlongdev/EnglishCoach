@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s083-weekend-cloud",
+  "title": "Đám mây dành cho cuối tuần",
+  "level": "A2",
+  "topics": [
+    "future-going-to",
+    "future-will"
+  ],
+  "scene": "home",
+  "summary": "Lam đã hứa treo mây giấy hôm Chủ nhật. Một cơn gió thứ Bảy xô gãy giàn hoa đang chống những đám mây ấy.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Lam",
+      "role": "Người thả bóng bay"
+    },
+    {
+      "id": "b",
+      "name": "Pô",
+      "role": "Bạn làm vườn"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Pô chỉ còn một tay giữ giàn và cần người giúp ngay. Lam đặt cuộn dây còn nguyên xuống chân.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The clouds can wait until tomorrow.",
+          "vi": "Mấy đám mây chờ mai được mà."
+        },
+        {
+          "who": "b",
+          "en": "Can someone hold this end now?",
+          "vi": "Giờ ai giữ giúp đầu này được không?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Lam đáp lời nhờ bằng quyết định vừa đưa ra.",
+        "options": [
+          {
+            "t": "I held it yesterday.",
+            "note": "Quá khứ đơn kể hành động hôm qua, không nhận việc giữ đầu giàn bây giờ. Câu chưa đáp được nhu cầu trước mắt.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "I'll hold it for you.",
+            "note": "I'll hold it là lời nhận giúp ngay khi nghe yêu cầu. Nó khác kế hoạch treo mây đã có trước.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Hai người buộc lại giàn. Chủ nhật mây giấy đung đưa trên những bông hoa còn nguyên. Lam đặt tên một đám mây là Bàn tay thứ hai.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Yesterday's help is still standing.",
+          "vi": "Công giúp hôm qua vẫn đứng vững đây này."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Gió kéo mạnh làm Lam giật mình chụp lấy dây. Hành động trả lời thay miệng. Pô tặng cô bông hoa đầu tiên trên giàn vừa cứu.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I mean I can hold it right now!",
+          "vi": "Ý mình là mình giữ ngay bây giờ được!"
+        }
+      ],
+      "end": true
+    }
+  ]
+}

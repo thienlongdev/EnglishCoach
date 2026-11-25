@@ -1,0 +1,67 @@
+{
+  "id": "hiring-panel",
+  "title": "Lá phiếu có khớp với biên bản?",
+  "summary": "Hội đồng có sáu người. Chọn một kết quả kiểm phiếu rồi thử hai câu tóm tắt. Câu tiếng Anh có thể đúng ngữ pháp nhưng vẫn sai với số phiếu thực tế.",
+  "level": "B2",
+  "topics": [
+    "negation-scope",
+    "all-both-each-every"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Kết quả bỏ phiếu",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Bốn người đồng ý"
+        },
+        {
+          "id": "v2",
+          "label": "Không ai đồng ý"
+        }
+      ]
+    },
+    {
+      "id": "axis-2",
+      "label": "Câu tóm tắt",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Không phải tất cả"
+        },
+        {
+          "id": "v2",
+          "label": "Không ai"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1|v1": {
+      "en": "Four voted yes. Not everyone agreed.",
+      "vi": "Bốn người bỏ phiếu thuận. Không phải ai cũng đồng ý.",
+      "note": "Hai người không bỏ phiếu thuận nên not everyone agreed khớp với số phiếu. / The tally supports the denial of unanimity.",
+      "verdict": "ok"
+    },
+    "v1|v2": {
+      "en": "Four voted yes. No one agreed.",
+      "vi": "Bốn người bỏ phiếu thuận. Không ai đồng ý.",
+      "note": "Với cùng cuộc biểu quyết và cùng nghĩa của agree, câu sau mâu thuẫn số phiếu. Cần đổi thành Not everyone agreed. / The grammatical summary contradicts four yes votes.",
+      "verdict": "odd"
+    },
+    "v2|v1": {
+      "en": "There were no yes votes. Not everyone agreed.",
+      "vi": "Không có phiếu thuận. Không phải ai cũng đồng ý.",
+      "note": "Khi không ai đồng ý, tất nhiên không phải ai cũng đồng ý. Lời tóm tắt đúng nhưng có thể gợi sai ấn tượng rằng có vài người tán thành. / The summary is true but less informative than the tally.",
+      "verdict": "ok"
+    },
+    "v2|v2": {
+      "en": "There were no yes votes. No one agreed.",
+      "vi": "Không có phiếu thuận. Không ai đồng ý.",
+      "note": "No one phủ định với từng thành viên và truyền đạt đầy đủ kết quả kiểm phiếu. / The strong negative matches zero yes votes.",
+      "verdict": "ok"
+    }
+  }
+}

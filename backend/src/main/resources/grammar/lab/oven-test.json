@@ -1,0 +1,41 @@
+{
+  "id": "oven-test",
+  "title": "Nếm súp hay súp có vị?",
+  "summary": "Đầu bếp nếm súp trước giờ mở cửa. Đổi chủ ngữ giữa món súp và người đang nếm. Câu nào tự nhiên ở tiếp diễn?",
+  "level": "B1",
+  "topics": [
+    "stative-dynamic",
+    "linking-verbs"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Vai trò của taste",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Nêu vị"
+        },
+        {
+          "id": "v2",
+          "label": "Hành động thử"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The soup tastes salty.",
+      "vi": "Món súp có vị mặn.",
+      "note": "Tastes là động từ nối. Salty nêu đặc điểm được cảm nhận. / Taste links the food to a property.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The cook is tasting the soup.",
+      "vi": "Đầu bếp đang nếm súp.",
+      "note": "Chủ ngữ chủ động nếm thử nên is tasting diễn đạt việc đang xảy ra. / Tasting describes a deliberate action.",
+      "verdict": "ok"
+    }
+  }
+}

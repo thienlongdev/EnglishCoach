@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s005-bread-bell",
+  "title": "Tiếng chuông của ổ bánh",
+  "summary": "Tiệm bánh đã đóng cửa nhưng chuông vẫn reo. Kim thấy một ổ bánh đang di chuyển.",
+  "level": "A1",
+  "topics": [
+    "present-continuous",
+    "present-simple"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Kim",
+      "role": "Con cô thợ bánh"
+    },
+    {
+      "id": "b",
+      "name": "Ada",
+      "role": "Thợ bánh"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Một túi giấy nhích dần ra cửa bếp. Chuông treo trên quai túi va xuống sàn. Ada ở phòng bên nên chưa thấy gì.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Mum, the bread is moving!",
+          "vi": "Mẹ ơi, ổ bánh đang di chuyển!"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Right now? Tell me what you see.",
+          "vi": "Ngay bây giờ à? Con kể mẹ nghe con thấy gì đi."
+        }
+      ],
+      "choice": {
+        "prompt": "Kim muốn tả ngay lúc nhìn vào túi. Nói thế nào?",
+        "options": [
+          {
+            "t": "A cat pulls the bag every day.",
+            "note": "Every day biến lời kể thành một thói quen. Kim chỉ mới thấy việc này một lần.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "A cat is pulling the bag.",
+            "note": "Is pulling cho thấy việc kéo túi đang diễn ra trước mắt Kim.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Ada bước vào thật nhẹ. Một cái đuôi sọc thò ra sau túi.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I can see its tail!",
+          "vi": "Mẹ thấy đuôi nó rồi!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Ada nhìn vào cuốn lịch. Kim kéo nhẹ tay áo mẹ và chỉ xuống sàn đúng lúc cái đuôi mèo ló ra.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Oh, you mean now!",
+          "vi": "À, ý con là ngay bây giờ!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Ada nhấc quai túi khỏi chân mèo. Nó đi ra ngoài mà chẳng ngó đến bánh. Kim tháo chuông khỏi quai, treo lên cửa tiệm.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Now the door has a bell.",
+          "vi": "Giờ thì cửa tiệm có chuông rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

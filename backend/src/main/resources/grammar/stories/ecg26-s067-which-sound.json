@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s067-which-sound",
+  "title": "Chiếc thìa hợp giọng ai?",
+  "level": "A2",
+  "topics": [
+    "comparatives"
+  ],
+  "scene": "restaurant",
+  "summary": "Quán không có đàn để lấy giọng. Hồng thử gõ hai chiếc thìa lên hai cốc khác nhau.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hồng",
+      "role": "Người hát"
+    },
+    {
+      "id": "b",
+      "name": "Ira",
+      "role": "Chủ quán"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Cốc cao cho nốt trầm vừa giọng Hồng, cốc thấp cho nốt cao hợp với cậu bồi bàn thích hát bè. Ira bảo cả hai nốt đều được giữ nếu biết ai sẽ mở đầu.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can start low. Our waiter can answer high.",
+          "vi": "Tôi hát mở đầu ở nốt trầm được. Cậu phục vụ hát đáp ở nốt cao được."
+        },
+        {
+          "who": "b",
+          "en": "Which note shall I give you first?",
+          "vi": "Tôi gõ nốt nào trước cho chị?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Hồng chọn thứ tự biểu diễn bằng một từ so sánh.",
+        "options": [
+          {
+            "t": "Give me the lower one first.",
+            "note": "Lower one thay cho nốt thấp hơn trong hai nốt. Hồng mở đầu được ngay ở âm vực của mình.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "Give him the higher one first.",
+            "note": "Higher one chọn nốt cao hơn và him chuyển lượt đầu sang cậu phục vụ. Hồng sẽ vào bè sau.",
+            "ok": true,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Hồng hát một câu ngắn. Cậu bồi bàn nghe từ bếp, hát đáp ở nốt cao. Hai người không thấy nhau vẫn hát trọn bài.",
+      "say": [
+        {
+          "who": "a",
+          "en": "He found me by the sound.",
+          "vi": "Cậu ấy tìm được giọng tôi bằng âm thanh."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Cậu bồi bàn đặt khay xuống lần đầu đứng trước khách. Hồng hát bè từ bàn ăn. Hôm đó tiền boa có kèm mảnh giấy xin tên cậu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "He'd never started a song here before.",
+          "vi": "Trước nay cậu ấy chưa bao giờ mở đầu bài hát ở đây."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

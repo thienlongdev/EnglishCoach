@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s075-apple-for-the-late-guest",
+  "title": "Quả táo của người đến muộn",
+  "level": "A2",
+  "topics": [
+    "indefinite-pronouns",
+    "some-and-any"
+  ],
+  "scene": "home",
+  "summary": "Ai đó để một quả táo trên chiếc đĩa trống mỗi tối. Nga chưa biết người tặng là ai.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Nga",
+      "role": "Người chia quả"
+    },
+    {
+      "id": "b",
+      "name": "Kia",
+      "role": "Bạn cùng nhà"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Có ba người cùng giữ chìa khóa và cả ba đều đi làm sáng sớm. Kia muốn cảm ơn đúng người. Trên táo có nếp gấp vuông do giấy bọc.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The apple was there when I got home.",
+          "vi": "Lúc mình về nhà thì táo đã ở đó."
+        },
+        {
+          "who": "b",
+          "en": "Do you know who puts it there?",
+          "vi": "Cậu biết ai để đó không?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Nga muốn nói có người làm việc ấy nhưng chưa xác định danh tính.",
+        "options": [
+          {
+            "t": "Someone leaves it for us.",
+            "note": "Someone dùng được khi biết có người nhưng chưa rõ là ai. Leaves ở ngôi số ít.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "Nobody leaves it for us.",
+            "note": "Nobody phủ định có người để táo, không chỉ có nghĩa chưa biết tên. Điều đó không hợp với những quả táo đã bày lên đĩa.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Kia viết lời cảm ơn chung và gấp đúng kiểu giấy bọc. Hôm sau cả ba người để lại chữ ký; hóa ra họ thay nhau tặng táo.",
+      "say": [
+        {
+          "who": "b",
+          "en": "One apple, three friends.",
+          "vi": "Một quả táo, ba người bạn."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Nga dán mẩu giấy hỏi quả táo tự đi bằng cách nào. Sáng hôm sau trên đó có ba hình bàn chân vẽ bằng ba màu mực. Bí mật ba người thay phiên lộ ra.",
+      "say": [
+        {
+          "who": "a",
+          "en": "So nobody has three different pens!",
+          "vi": "Hóa ra “không ai” lại có ba cây bút khác nhau!"
+        }
+      ],
+      "end": true
+    }
+  ]
+}

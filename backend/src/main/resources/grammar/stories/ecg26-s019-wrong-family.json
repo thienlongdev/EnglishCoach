@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s019-wrong-family",
+  "title": "Bức ảnh “gia đình” của đàn vịt",
+  "summary": "Zoe tìm thấy một bức ảnh chỉ có vịt trong trang đề Gia đình mình. Em tưởng album bị đóng nhầm.",
+  "level": "A1",
+  "topics": [
+    "possessive-determiners"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hòa",
+      "role": "Người giữ album"
+    },
+    {
+      "id": "b",
+      "name": "Zoe",
+      "role": "Cháu đến chơi"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Hòa nhớ rõ bố em bấm máy. Lúc ấy cả nhà đứng sau tấm kính cho vịt ăn, chân mọi người phản chiếu rất mờ trong nước.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Dad took this photo. Look at the water.",
+          "vi": "Bố mình chụp tấm này. Nhìn mặt nước đi."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "I see shoes! Are those your father's shoes?",
+          "vi": "Mình thấy giày! Có phải giày của bố bạn không?"
+        }
+      ],
+      "choice": {
+        "prompt": "Hòa chỉ vào đôi giày đỏ của chính mình và muốn nhận ra mình trong ảnh.",
+        "options": [
+          {
+            "t": "Those are my shoes.",
+            "note": "My đặt trước shoes cho biết người nói là chủ đôi giày. Those chỉ đôi giày ở trong ảnh.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "Those are her shoes.",
+            "note": "Her quy đôi giày cho một người nữ khác với người nói. Nó không dùng để Hòa nhận đôi giày của mình.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Zoe lần theo mặt nước và nhận ra đôi ủng lớn bên cạnh. Hóa ra cả nhà đều có mặt từ mắt cá chân trở xuống.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I see your mother too!",
+          "vi": "Mình cũng thấy mẹ bạn nữa!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Zoe tìm đôi giày đỏ trên chân mẹ. Hòa giơ chân mình lên, vẫn là đôi đỏ ấy. Zoe cười và nhìn tiếp xuống nước.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Oh, they belong to you!",
+          "vi": "Ồ, chúng là của bạn!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Zoe viết tên mọi người dưới những đôi giày phản chiếu. Riêng đàn vịt, em ghi là khách. Hòa trả ảnh vào đúng trang Gia đình mình.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We all fit in the water.",
+          "vi": "Cả nhà mình đều vừa trong mặt nước."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

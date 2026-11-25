@@ -1,0 +1,738 @@
+{
+  "schema": 1,
+  "slug": "present-perfect-vs-past-simple",
+  "version": 4,
+  "domain": "tense-aspect",
+  "order": 120,
+  "kind": "grammar",
+  "title": {
+    "vi": "Hiện tại hoàn thành hay quá khứ đơn?",
+    "en": "Present perfect or past simple?"
+  },
+  "subtitle": {
+    "vi": "Khung thời gian và cách người nói nối tình huống với hiện tại",
+    "en": "Time frames and the speaker's connection to the present"
+  },
+  "aliases": [
+    "i have lived vs i lived",
+    "have seen hay saw",
+    "đã làm gì",
+    "ppps",
+    "hiện tại hoàn thành khác quá khứ đơn",
+    "present perfect past simple difference",
+    "have been vs went",
+    "i have seen him yesterday"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "uses": [
+    {
+      "level": "A2",
+      "vi": "Phân biệt trải nghiệm chung (Have you ever…?) với một lần cụ thể (When did you…?)."
+    },
+    {
+      "level": "B1",
+      "vi": "Chọn thì theo khung thời gian đã kết thúc hay còn mở."
+    },
+    {
+      "level": "B2",
+      "vi": "Tin mới, kết quả còn liên quan, và cách một đoạn văn chuyển từ tin mới sang chi tiết."
+    }
+  ],
+  "objectives": [
+    "Chọn quá khứ đơn khi câu gắn với một thời điểm đã kết thúc",
+    "Chọn hiện tại hoàn thành khi khung thời gian còn mở hoặc kết quả còn liên quan tới bây giờ",
+    "Giải thích vì sao hai câu cùng đúng ngữ pháp lại khác nghĩa",
+    "Nhận ra cách tiếng Anh Mỹ thân mật đôi khi dùng quá khứ đơn ở chỗ tiếng Anh Anh thường dùng hoàn thành"
+  ],
+  "prerequisites": [
+    "past-simple",
+    "present-perfect-basics"
+  ],
+  "related": [
+    {
+      "slug": "present-perfect-since-for",
+      "rel": "more"
+    },
+    {
+      "slug": "present-perfect-continuous",
+      "rel": "contrast"
+    },
+    {
+      "slug": "past-perfect",
+      "rel": "more"
+    },
+    {
+      "slug": "british-american-tense-use",
+      "rel": "special"
+    },
+    {
+      "slug": "interview-grammar",
+      "rel": "application"
+    }
+  ],
+  "exam": {
+    "ielts": "Có thể vận dụng khi kể trải nghiệm, thói quen hoặc diễn biến trong Speaking/Writing; bài này không xác nhận tần suất xuất hiện trong đề hay mức điểm.",
+    "toeic": "Có thể vận dụng khi đọc hội thoại, thư và thông báo công việc; đây không phải nhận định đã đo về tần suất câu hỏi TOEIC."
+  },
+  "quick": {
+    "what": "Quá khứ đơn đặt sự việc hoặc trạng thái trong một khung quá khứ. Hiện tại hoàn thành nhìn tình huống từ bây giờ: trải nghiệm, kết quả liên quan hoặc trạng thái còn tiếp. Perfect không có nghĩa mọi tình huống đều đã kết thúc.",
+    "when": "Yesterday hoặc in 2019 trực tiếp định thời điểm sự việc thường cần quá khứ đơn. Với today hoặc this week, cả hai thì có thể đúng: đang tổng kết tới nay hay kể một sự việc đã hoàn tất? Không có từ chỉ thời gian cũng chưa đủ để chọn hoàn thành.",
+    "examples": [
+      {
+        "en": "I [V|saw] that film [T|last night].",
+        "vi": "Tôi xem bộ phim đó tối qua. (khoảng thời gian đã khép)"
+      },
+      {
+        "en": "I[AUX|'ve] [V|seen] that film.",
+        "vi": "Tôi xem phim đó rồi. (không nói lúc nào, điều quan trọng là bây giờ tôi đã biết nó)"
+      }
+    ],
+    "remember": "Hỏi: câu này đứng ở bây giờ nhìn lại, hay đứng hẳn trong quá khứ?"
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Người Việt thường dịch cả hai thì thành **đã**, nên rất dễ thấy chúng giống nhau. Nhưng tiếng Anh bắt người nói chọn một việc mà tiếng Việt không bắt: khoảng thời gian đang nói tới **đã khép lại** hay **còn nối tới bây giờ**."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "timeline",
+        "now": 80,
+        "sentence": "I lost my keys.",
+        "events": [
+          {
+            "kind": "point",
+            "at": 35,
+            "label": "Mất chìa khóa",
+            "role": "main"
+          }
+        ]
+      },
+      "caption": "Quá khứ đơn: sự việc nằm trọn trong quá khứ. Câu không cho biết bây giờ đã tìm thấy chìa khóa hay chưa.",
+      "alt": "Trục thời gian có một điểm nằm ở quá khứ, cách xa thời điểm hiện tại, không có đường nối tới hiện tại."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "timeline",
+        "now": 80,
+        "sentence": "I've lost my keys, and I can't unlock the door.",
+        "events": [
+          {
+            "kind": "point",
+            "at": 55,
+            "label": "Mất chìa khóa",
+            "role": "main"
+          },
+          {
+            "kind": "span",
+            "from": 55,
+            "to": 80,
+            "label": "Kết quả: bây giờ vẫn không có chìa khóa",
+            "role": "ghost"
+          }
+        ]
+      },
+      "caption": "Hiện tại hoàn thành: sự việc được nhìn từ bây giờ. Điều người nói quan tâm là tình trạng hiện tại.",
+      "alt": "Trục thời gian có một điểm ở quá khứ và một đường nhạt nối từ điểm đó đến thời điểm hiện tại, biểu thị kết quả còn liên quan."
+    },
+    {
+      "type": "h",
+      "vi": "Ba câu hỏi để chọn thì"
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "flow",
+        "start": "time",
+        "nodes": {
+          "time": {
+            "q": "Một cụm như yesterday hoặc in 2019 trực tiếp đặt sự việc chính vào thời điểm quá khứ đã kết thúc? (Không phải mốc sau since hay thời điểm của mệnh đề khác.)",
+            "yes": "past",
+            "no": "open"
+          },
+          "open": {
+            "q": "Bạn đang tổng kết một khoảng tính tới bây giờ hoặc nói tình huống còn tiếp, thay vì kể riêng một sự việc đã khép?",
+            "yes": "perfect",
+            "no": "now"
+          },
+          "now": {
+            "q": "Bạn đang nói về điều mà kết quả hoặc giá trị vẫn còn liên quan tới bây giờ?",
+            "yes": "perfect",
+            "no": "story"
+          },
+          "past": {
+            "end": "Quá khứ đơn",
+            "note": "I saw him yesterday."
+          },
+          "perfect": {
+            "end": "Hiện tại hoàn thành thường phù hợp",
+            "note": "Có thể dùng I've seen him twice this week để tổng kết đến nay. Khi kể một lần gặp đã xong, quá khứ đơn cũng có thể tự nhiên, kể cả trong tuần này."
+          },
+          "story": {
+            "end": "Thường là quá khứ đơn",
+            "note": "Khi đang kể một chuyện đã xảy ra, ngữ cảnh đã đặt người nghe vào quá khứ, dù câu không có từ chỉ thời gian."
+          }
+        }
+      },
+      "caption": "Đường đi quyết định. Đây là cách nghĩ thường đúng, không phải một công thức tuyệt đối.",
+      "alt": "Sơ đồ gợi ý: sự việc chính định thời điểm bằng mốc quá khứ đã khép thường dùng quá khứ đơn; tổng kết tới nay, trạng thái còn tiếp hoặc nhấn liên quan hiện tại thường dùng hoàn thành. Today và this week không tự loại quá khứ đơn."
+    },
+    {
+      "type": "h",
+      "vi": "Cùng một sự việc, hai cách đứng"
+    },
+    {
+      "type": "contrast",
+      "labelA": "Quá khứ đơn",
+      "labelB": "Hiện tại hoàn thành",
+      "items": [
+        {
+          "a": {
+            "en": "He [V|worked] here for ten years.",
+            "vi": "Anh ấy làm ở đây mười năm."
+          },
+          "b": {
+            "en": "He[AUX|'s] [V|worked] here for ten years.",
+            "vi": "Anh ấy làm ở đây được mười năm rồi."
+          },
+          "diff": "Bên trái: khoảng mười năm đã kết thúc, thường anh ấy không còn làm ở đây. Bên phải: khoảng thời gian kéo tới bây giờ."
+        },
+        {
+          "a": {
+            "en": "Did you [V|see] the news [T|this morning]?",
+            "vi": "Sáng nay bạn có xem tin không?"
+          },
+          "b": {
+            "en": "[AUX|Have] you [V|seen] the news [T|this morning]?",
+            "vi": "Sáng nay bạn xem tin chưa?"
+          },
+          "diff": "Hiện tại hoàn thành thường nhìn từ trong buổi sáng và tổng kết tới lúc nói. Quá khứ đơn có thể dùng khi buổi sáng đã qua, hoặc ngay trong buổi sáng nếu nói về một lần hay bản tin đã kết thúc. Không thể suy chính xác giờ nói chỉ từ thì."
+        },
+        {
+          "a": {
+            "en": "Shakespeare [V|wrote] many plays.",
+            "vi": "Shakespeare viết nhiều vở kịch."
+          },
+          "b": {
+            "en": "Ngoc [AUX|has] [V|written] three plays.",
+            "vi": "Ngọc đã viết ba vở kịch."
+          },
+          "diff": "Shakespeare wrote nói về sự nghiệp đã kết thúc. Ngoc has written trình bày số tác phẩm tính tới nay, không tự chứng minh Ngọc còn sống hay sẽ viết thêm; cần ngữ cảnh để xác định khung thời gian."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Tin mới rồi chi tiết"
+    },
+    {
+      "type": "p",
+      "vi": "Trong tin tức và trong lời kể hằng ngày, người ta thường mở bằng hiện tại hoàn thành để báo tin, rồi chuyển sang quá khứ đơn khi đi vào chi tiết, vì lúc đó câu chuyện đã có thời điểm."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "A fire [AUX|has] [V|destroyed] part of the old market. It [V|started] just after midnight and [V|spread] quickly.",
+          "vi": "Một đám cháy đã phá hủy một phần khu chợ cũ. Lửa bắt đầu ngay sau nửa đêm và lan rất nhanh.",
+          "note": "Câu đầu báo tin. Hai động từ sau đã có thời điểm cụ thể.",
+          "tag": "written"
+        },
+        {
+          "en": "I[AUX|'ve] [V|broken] my phone. I [V|dropped] it on the stairs.",
+          "vi": "Tôi làm hỏng điện thoại rồi. Tôi đánh rơi nó ở cầu thang.",
+          "tag": "spoken"
+        }
+      ]
+    },
+    {
+      "type": "try",
+      "exercise": "ppps-01"
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Tiếng Việt có thể nói \"Tôi đã gặp anh ấy hôm qua\" với chữ **đã**, nên nhiều người viết \"I have met him yesterday\". Hãy coi yesterday như một ổ khóa: nó đã khép thời gian lại, nên câu cần quá khứ đơn."
+    },
+    {
+      "type": "note",
+      "kind": "regional",
+      "vi": "Trong tiếng Anh Mỹ, nhất là khi nói thân mật, Did you eat yet? và I just saw him là chuyện bình thường. Tiếng Anh Anh thường nói Have you eaten yet? và I've just seen him. Trong bài thi và văn viết trang trọng, dạng hoàn thành an toàn ở cả hai vùng."
+    }
+  ],
+  "deep": [
+    {
+      "type": "h",
+      "vi": "Không phải mọi từ chỉ thời gian đều khóa thì"
+    },
+    {
+      "type": "p",
+      "vi": "Khi yesterday, in 2019 hoặc last week trực tiếp định thời điểm sự việc chính đã khép, văn viết chuẩn thường dùng quá khứ đơn. Mốc quá khứ vẫn xuất hiện được sau since hoặc trong mệnh đề khác của câu có hiện tại hoàn thành. Today, this month, recently, already và just không tự quyết định thì."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "I [V|spoke] to her [T|recently].",
+          "vi": "Gần đây tôi có nói chuyện với cô ấy."
+        },
+        {
+          "en": "I[AUX|'ve] [V|spoken] to her [T|recently].",
+          "vi": "Gần đây tôi có nói chuyện với cô ấy.",
+          "note": "Cả hai đều dùng được. Cách thứ hai nhấn sự liên quan tới bây giờ."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Hoàn thành với thời điểm đã rõ từ ngữ cảnh"
+    },
+    {
+      "type": "p",
+      "vi": "Câu không có từ chỉ thời gian vẫn có thể cần quá khứ đơn nếu ngữ cảnh đã xác định lúc nào. \"Where did you buy that coat?\" dùng quá khứ đơn dù không có từ chỉ thời gian: chiếc áo đã ở đây, nên việc mua chắc chắn thuộc một lần cụ thể đã qua."
+    },
+    {
+      "type": "h",
+      "vi": "Giới hạn của quy tắc \"có người còn sống\""
+    },
+    {
+      "type": "p",
+      "vi": "Mẹo \"người đã mất thì dùng quá khứ đơn\" chỉ là hệ quả, không phải quy tắc riêng. Vẫn có thể nói \"Shakespeare has influenced generations of writers\" vì điều được nói là ảnh hưởng còn tiếp diễn tới nay."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Bài này luyện các mẫu trung tính trong văn viết chuẩn. Các cách dùng vùng miền và kể chuyện có thể khác; không suy tính đúng sai của cả một biến thể từ một câu ngoài ngữ cảnh."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "ppps-time-marker",
+      "wrong": "I have seen him yesterday.",
+      "right": "I saw him yesterday.",
+      "why": "Yesterday là khoảng đã khép, cần quá khứ đơn.",
+      "vn": "Do dịch thẳng từ \"đã\", thói quen này rất phổ biến."
+    },
+    {
+      "id": "ppps-since-past",
+      "wrong": "I live here since 2020.",
+      "right": "I have lived here since 2020.",
+      "why": "Since 2020 mở một khoảng thời gian kéo tới bây giờ, nên cần dạng hoàn thành.",
+      "vn": "Tiếng Việt không đổi động từ: \"Tôi sống ở đây từ năm 2020\"."
+    },
+    {
+      "id": "ppps-ever-when",
+      "wrong": "When have you arrived?",
+      "right": "When did you arrive?",
+      "why": "Hỏi When là hỏi một thời điểm, nên thường dùng quá khứ đơn."
+    },
+    {
+      "id": "ppps-been-gone",
+      "wrong": "She has been to Da Nang, so she isn't here now.",
+      "right": "She has gone to Da Nang, so she isn't here now.",
+      "why": "Has been to: đã đi và đã về. Has gone to: đã đi và chưa về."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Câu \"I lived here for five years\" có sai không?",
+      "a": "Không sai. Câu đó có nghĩa khoảng năm năm đã kết thúc, thường là bạn không còn sống ở đây. Nếu bạn vẫn đang sống ở đây thì nói I have lived here for five years."
+    },
+    {
+      "q": "Today đi với thì nào?",
+      "a": "Tùy lúc nói. Nếu ngày hôm nay chưa hết và còn có thể xảy ra thêm: I've had three coffees today. Nếu buổi đã qua và đang kể lại: I had a good meeting today cũng hoàn toàn tự nhiên."
+    },
+    {
+      "q": "Tiếng Anh Mỹ có bỏ hiện tại hoàn thành không?",
+      "a": "Không. Người Mỹ vẫn dùng thì này rất nhiều. Khác biệt chủ yếu ở just, already, yet và lời nói thân mật, nơi quá khứ đơn cũng được chấp nhận."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ppps-01",
+      "type": "choice",
+      "level": "B1",
+      "use": "both",
+      "skill": "use",
+      "prompt": "Chọn câu phù hợp với ngữ cảnh.",
+      "context": "Lan vừa về nhà sau chuyến đi và kể cho bạn nghe.",
+      "stem": "I ___ to Hue last month.",
+      "options": [
+        {
+          "t": "went",
+          "ok": true,
+          "note": "Last month là khoảng đã khép, nên dùng quá khứ đơn."
+        },
+        {
+          "t": "have gone",
+          "note": "Have gone không đi với last month, và thường có nghĩa người đó chưa trở về.",
+          "tag": "tense-time-marker"
+        },
+        {
+          "t": "have been",
+          "note": "Have been to nói về trải nghiệm, nhưng không đi với một thời điểm đã khép như last month.",
+          "tag": "tense-time-marker"
+        }
+      ],
+      "explain": "Dấu hiệu quyết định ở đây là last month: một khoảng thời gian đã kết thúc."
+    },
+    {
+      "id": "ppps-02",
+      "type": "choice",
+      "level": "B1",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Trong ngữ cảnh này, câu nào diễn đạt thời gian làm việc kéo tới hiện tại?",
+      "stem": "Công ty đó",
+      "options": [
+        {
+          "t": "I worked there for six years.",
+          "note": "Khoảng sáu năm đã kết thúc: thường hiểu là không còn làm ở đó.",
+          "tag": "perfect-open-period"
+        },
+        {
+          "t": "I've worked there for six years.",
+          "ok": true,
+          "note": "Trong ngữ cảnh đã nêu, hiện tại hoàn thành diễn đạt sáu năm tính tới hiện tại."
+        },
+        {
+          "t": "I had worked there for six years.",
+          "note": "Quá khứ hoàn thành nhìn từ một mốc trong quá khứ, không nói về hiện tại.",
+          "tag": "perfect-open-period"
+        }
+      ],
+      "explain": "Ngữ cảnh xác nhận người nói vẫn làm việc. Hiện tại hoàn thành phù hợp để tính độ dài đến nay; riêng dạng thì không luôn chứng minh tình trạng hiện tại trong mọi cách kể.",
+      "context": "Người nói vẫn đang làm ở công ty và muốn nói tổng thời gian làm việc liên tục tính tới hôm nay."
+    },
+    {
+      "id": "ppps-03",
+      "type": "cloze",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Điền dạng đúng của động từ trong ngoặc. Nếu dùng được dạng rút gọn, bạn có thể dùng.",
+      "stem": "A: Is Minh here? B: No, he {1} (go) to the bank. He {2} (leave) about ten minutes ago.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "has gone",
+            "'s gone"
+          ],
+          "known": [
+            {
+              "t": "went",
+              "verdict": "acceptable",
+              "note": "Went cũng tự nhiên trong ngữ cảnh này ở cả BrE và AmE; has gone trực tiếp trình bày chuyến đi chưa kết thúc."
+            },
+            {
+              "t": "has been",
+              "verdict": "wrong",
+              "note": "Has been to nghĩa là đã đi và đã về, không giải thích được vì sao anh ấy không có ở đây.",
+              "tag": "been-gone"
+            }
+          ]
+        },
+        "2": {
+          "accept": [
+            "left"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "has left",
+              "verdict": "wrong",
+              "note": "Ten minutes ago là thời điểm đã khép, nên không đi với hiện tại hoàn thành.",
+              "tag": "tense-time-marker"
+            }
+          ]
+        }
+      },
+      "explain": "Câu đầu báo một tình trạng của bây giờ: anh ấy không có ở đây. Câu sau đưa thời điểm cụ thể, nên chuyển sang quá khứ đơn."
+    },
+    {
+      "id": "ppps-04",
+      "type": "error",
+      "level": "B1",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        {
+          "t": "We"
+        },
+        {
+          "t": "have visited",
+          "bad": true,
+          "fix": [
+            "visited"
+          ],
+          "note": "In 2022 là mốc đã khép, nên cần quá khứ đơn.",
+          "tag": "tense-time-marker"
+        },
+        {
+          "t": "Da Lat"
+        },
+        {
+          "t": "in 2022."
+        }
+      ],
+      "explain": "Đổi thành We visited Da Lat in 2022. Nếu muốn dùng hoàn thành, hãy bỏ mốc thời gian: We've visited Da Lat."
+    },
+    {
+      "id": "ppps-05",
+      "type": "error",
+      "level": "B1",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "noError": true,
+      "segments": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "didn't see"
+        },
+        {
+          "t": "her"
+        },
+        {
+          "t": "this morning."
+        }
+      ],
+      "explain": "Câu đúng khi buổi sáng đã qua; cũng có thể đúng khi vẫn còn sáng nếu người nói xét một dịp gặp đã khép. I haven't seen her this morning nhìn cả buổi sáng tính tới lúc nói. Thì không phải đồng hồ xác định giờ nói."
+    },
+    {
+      "id": "ppps-06",
+      "type": "transform",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lại câu, giữ nguyên ý.",
+      "source": "I started learning English in 2019, and I am still learning it.",
+      "instruction": "Dùng since hoặc for.",
+      "accept": [
+        "I have been learning English since 2019",
+        "I've been learning English since 2019",
+        "I have learned English since 2019",
+        "I've learned English since 2019",
+        "I have learnt English since 2019",
+        "I've learnt English since 2019"
+      ],
+      "model": "I've been learning English since 2019.",
+      "known": [
+        {
+          "t": "I learned English since 2019",
+          "verdict": "wrong",
+          "note": "Since mở khoảng thời gian tới bây giờ, nên cần dạng hoàn thành.",
+          "tag": "tense-time-marker"
+        },
+        {
+          "t": "I am learning English since 2019",
+          "verdict": "wrong",
+          "note": "Tiếng Anh dùng dạng hoàn thành, không dùng hiện tại tiếp diễn với since.",
+          "tag": "tense-since-present"
+        }
+      ],
+      "explain": "Việc bắt đầu trong quá khứ và còn tiếp tục, nên cần dạng hoàn thành. Dạng tiếp diễn nhấn quá trình đang diễn ra và là lựa chọn rất tự nhiên ở đây. Với for bạn phải tính số năm theo thời điểm hiện tại."
+    },
+    {
+      "id": "ppps-07",
+      "type": "match",
+      "level": "B1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Nối mỗi câu với ý của nó.",
+      "pairs": [
+        {
+          "a": "She has gone to Japan.",
+          "b": "Cô ấy đang ở Nhật hoặc đang trên đường đi."
+        },
+        {
+          "a": "She has been to Japan.",
+          "b": "Cô ấy từng đến Nhật và đã trở về."
+        },
+        {
+          "a": "She went to Japan in May.",
+          "b": "Một chuyến đi vào một thời điểm đã qua."
+        }
+      ],
+      "explain": "Been và gone đều là phân từ của go trong nghĩa này, nhưng gone nghĩa là chưa quay lại."
+    },
+    {
+      "id": "ppps-08",
+      "type": "classify",
+      "level": "B1",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Từ chỉ thời gian nào thường đi với thì nào trong tiếng Anh chuẩn? Xếp vào nhóm.",
+      "cats": [
+        "Thường đi với quá khứ đơn",
+        "Thường đi với hiện tại hoàn thành"
+      ],
+      "items": [
+        {
+          "t": "two years ago",
+          "cat": "Thường đi với quá khứ đơn"
+        },
+        {
+          "t": "last Tuesday",
+          "cat": "Thường đi với quá khứ đơn"
+        },
+        {
+          "t": "when I was a child",
+          "cat": "Thường đi với quá khứ đơn"
+        },
+        {
+          "t": "so far",
+          "cat": "Thường đi với hiện tại hoàn thành"
+        },
+        {
+          "t": "since Monday",
+          "cat": "Thường đi với hiện tại hoàn thành"
+        }
+      ],
+      "explain": "Nhóm đầu là khoảng đã khép. Nhóm sau kéo tới bây giờ. Những từ như today, this week hay recently không có trong bài vì chúng đi được với cả hai."
+    },
+    {
+      "id": "ppps-09",
+      "type": "order",
+      "level": "A2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sắp xếp thành câu hỏi về trải nghiệm, đặt ever ngay trước eaten.",
+      "tokens": [
+        "you",
+        "ever",
+        "Have",
+        "eaten",
+        "durian"
+      ],
+      "end": "?",
+      "accept": [
+        [
+          "Have",
+          "you",
+          "ever",
+          "eaten",
+          "durian"
+        ]
+      ],
+      "explain": "Trợ động từ have đứng đầu câu hỏi, ever đứng ngay trước phân từ."
+    },
+    {
+      "id": "ppps-10",
+      "type": "choice",
+      "level": "B2",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Câu nào hợp nhất để mở đầu một bản tin?",
+      "stem": "Mở đầu bản tin về tàu mới",
+      "options": [
+        {
+          "t": "The city has opened its first metro line.",
+          "ok": true,
+          "note": "Bản tin thường mở bằng dạng hoàn thành để báo tin mới."
+        },
+        {
+          "t": "The city had opened its first metro line.",
+          "note": "Quá khứ hoàn thành cần một mốc trong quá khứ để nhìn lại. Câu mở đầu chưa có mốc nào.",
+          "tag": "past-perfect-no-reference"
+        },
+        {
+          "t": "The city was opening its first metro line.",
+          "note": "Was opening có thể mở một câu chuyện về quá trình trong quá khứ, nhưng không xác nhận việc mở tuyến đã hoàn tất theo ngữ cảnh này.",
+          "tag": "continuous-for-news"
+        }
+      ],
+      "explain": "Sau câu báo tin, văn bản thường chuyển sang quá khứ đơn: The first train left at six this morning.",
+      "context": "Báo tin tuyến tàu đã chính thức mở và hiện đang phục vụ; không kể một cảnh mở tuyến đang dở hay nhìn lại từ mốc quá khứ khác."
+    },
+    {
+      "id": "ppps-11",
+      "type": "multi",
+      "level": "B1",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Chọn tất cả câu phù hợp: bây giờ là 3 giờ chiều; hôm nay bạn uống một cà phê lúc 9 giờ và một lúc 2 giờ.",
+      "stem": "Hôm nay vẫn chưa hết",
+      "options": [
+        {
+          "t": "I've had two coffees today.",
+          "ok": true,
+          "note": "Hôm nay còn mở, bạn có thể uống thêm."
+        },
+        {
+          "t": "I had a coffee an hour ago.",
+          "ok": true,
+          "note": "An hour ago là thời điểm đã qua, quá khứ đơn là đúng."
+        },
+        {
+          "t": "I've had a coffee an hour ago.",
+          "note": "An hour ago không đi với hiện tại hoàn thành.",
+          "tag": "tense-time-marker"
+        }
+      ],
+      "explain": "Một khoảng thời gian còn mở và một thời điểm đã qua có thể nằm cạnh nhau trong cùng một cuộc trò chuyện: mỗi câu chọn thì theo cách nó đóng khung thời gian."
+    },
+    {
+      "id": "ppps-12",
+      "type": "open",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Viết hai câu về một nơi bạn đã đến: câu đầu nói bạn từng đến đó, không nói lúc nào; câu sau nói bạn đến đó khi nào.",
+      "model": [
+        "I've been to Hoi An. I went there with my family in 2023.",
+        "I've visited Seoul twice. The first time I went was in 2021."
+      ],
+      "checklist": [
+        "Câu đầu dùng have/has + phân từ và không có mốc thời gian đã khép",
+        "Câu sau dùng quá khứ đơn và có mốc thời gian"
+      ],
+      "explain": "Đây là cách người bản xứ thường nối hai thì: mở bằng trải nghiệm, rồi đi vào chi tiết."
+    },
+    {
+      "type": "transform",
+      "skill": "production",
+      "prompt": "Kết hợp hai thông tin bằng hiện tại hoàn thành đơn.",
+      "context": "Người nói sống ở đây liên tục từ lúc chuyển đến năm 2020 tới hiện tại, không có quãng chuyển đi.",
+      "source": "I moved here in 2020. I still live here.",
+      "instruction": "Bắt đầu I, dùng live ở hiện tại hoàn thành đơn và since 2020; giữ here. Có thể viết tắt.",
+      "accept": [
+        "I have lived here since 2020.",
+        "I've lived here since 2020."
+      ],
+      "model": "I have lived here since 2020.",
+      "explain": "Ngữ cảnh xác nhận việc sống liên tục nên have lived here since 2020 giữ nghĩa. Since giới thiệu mốc bắt đầu, không đặt toàn bộ việc sống vào một khoảng đã kết thúc. Hiện tại hoàn thành tiếp diễn cũng có thể tự nhiên trong chính ngữ cảnh này, nhưng bài yêu cầu hoàn thành đơn; một cách viết khác chưa được nhận diện cần đối chiếu, không bị khẳng định là sai ngữ pháp.",
+      "id": "present-perfect-vs-past-simple-production-check-01",
+      "level": "B1",
+      "use": "check"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham khảo thêm về chủ điểm; chưa trực tiếp kiểm tra đoạn hoặc ấn bản trong lượt rà soát này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham khảo thêm về chủ điểm; chưa trực tiếp kiểm tra đoạn hoặc ấn bản trong lượt rà soát này."
+    },
+    {
+      "ref": "bc",
+      "note": "Các đoạn đã đối chiếu hoặc tái sử dụng có ghi rõ tại docs/grammar/TENSE-EXERCISE-REVIEW.md; không suy ra toàn bộ nguồn đã được đọc."
+    },
+    {
+      "ref": "lgswe",
+      "note": "Tham khảo thêm về chủ điểm; chưa trực tiếp kiểm tra đoạn hoặc ấn bản trong lượt rà soát này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

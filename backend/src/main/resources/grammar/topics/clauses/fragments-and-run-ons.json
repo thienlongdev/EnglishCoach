@@ -1,0 +1,470 @@
+{
+  "schema": 1,
+  "slug": "fragments-and-run-ons",
+  "version": 2,
+  "domain": "clauses",
+  "order": 140,
+  "kind": "grammar",
+  "title": {
+    "vi": "Câu thiếu và câu dính",
+    "en": "Fragments and run-ons"
+  },
+  "subtitle": {
+    "vi": "Kiểm tra khung câu và ranh giới giữa các ý",
+    "en": "Check clause completeness and sentence boundaries"
+  },
+  "aliases": [
+    "câu thiếu",
+    "câu dính",
+    "fragments run-ons",
+    "comma splice",
+    "because it was raining đứng riêng"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Nhận diện phần câu chưa độc lập trong văn viết.",
+    "Sửa ranh giới hai mệnh đề độc lập.",
+    "Phân biệt yêu cầu báo cáo với hội thoại hoặc tu từ."
+  ],
+  "prerequisites": [
+    "subordination"
+  ],
+  "related": [
+    {
+      "slug": "subordination",
+      "rel": "more"
+    },
+    {
+      "slug": "coordination",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Fragment là phần chưa tạo câu độc lập đầy đủ trong ngữ cảnh yêu cầu đó; run-on nối các mệnh đề độc lập không đúng cấu trúc. Comma splice chỉ dùng dấu phẩy ngăn hai mệnh đề độc lập.",
+    "when": "Kiểm khung và ranh giới câu trong văn viết trung tính, không đo lỗi bằng độ dài.",
+    "examples": [
+      {
+        "en": "The bus left; we walked home.",
+        "vi": "Xe buýt rời đi; chúng tôi đi bộ về nhà."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Because the road was closed là mệnh đề phụ. Nếu bài báo cáo yêu cầu câu độc lập, nối nó với We waited. Một câu rất ngắn như We waited vẫn đầy đủ; phần dài có because vẫn có thể chỉ là mệnh đề phụ."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "matrix",
+        "rows": [
+          "Hai câu",
+          "Một câu với chấm phẩy",
+          "Một câu với so"
+        ],
+        "cols": [
+          "Bản biên tập đầy đủ"
+        ],
+        "cells": [
+          [
+            {
+              "t": "The bus left. We walked home."
+            }
+          ],
+          [
+            {
+              "t": "The bus left; we walked home."
+            }
+          ],
+          [
+            {
+              "t": "The bus left, so we walked home.",
+              "note": "Dùng khi muốn nêu việc đi bộ là hệ quả."
+            }
+          ]
+        ]
+      },
+      "caption": "Hai mệnh đề độc lập cần ranh giới hoặc cách nối phù hợp với kiểu văn bản.",
+      "alt": "Hai mệnh đề độc lập cần ranh giới hoặc cách nối phù hợp với kiểu văn bản."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Vấn đề",
+        "Ví dụ cần sửa trong báo cáo",
+        "Một cách sửa"
+      ],
+      "rows": [
+        [
+          "Fragment",
+          "Because it was raining.",
+          "We stayed because it was raining."
+        ],
+        [
+          "Fused sentence",
+          "The bus left we walked home.",
+          "The bus left. We walked home."
+        ],
+        [
+          "Comma splice",
+          "The bus left, we walked home.",
+          "The bus left, so we walked home."
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Dấu chấm phẩy có thể nối hai mệnh đề độc lập liên quan. Một dấu phẩy đơn thuần không làm cùng công việc trong báo cáo trung tính. However là trạng từ nối, không tự làm dấu phẩy trước nó đủ để nối hai mệnh đề độc lập."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Câu trả lời Because I was tired có thể tự nhiên sau Why did you leave? Quảng cáo, tiêu đề và văn chương cũng có thể dùng fragment có chủ ý. Phải giữ ngữ cảnh khi nhận xét, không cấm mọi phần câu đứng riêng."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Run-on không có nghĩa “câu quá dài”. Một câu dài có mệnh đề phụ và dấu nối phù hợp vẫn có thể chuẩn; hai mệnh đề rất ngắn dính nhau vẫn có thể mắc lỗi ranh giới."
+    },
+    {
+      "type": "p",
+      "vi": "Comma splice có thể được dùng có chủ ý trong văn chương hoặc lời nói được chép lại. Bài này luyện chuẩn báo cáo trung tính, không phán mọi lựa chọn tu từ là lỗi ở mọi thể loại."
+    },
+    {
+      "type": "p",
+      "vi": "Không nối ý bằng so nếu quan hệ thật không phải kết quả. Chọn and, but, mệnh đề phụ hoặc tách câu theo ý nghĩa, không chỉ để qua kiểm tra dấu câu."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "fragments-and-run-ons-m1",
+      "wrong": "The bus left we walked home.",
+      "right": "The bus left. We walked home.",
+      "why": "Ngăn hai mệnh đề độc lập."
+    },
+    {
+      "id": "fragments-and-run-ons-m2",
+      "wrong": "The room dark yesterday.",
+      "right": "The room was dark yesterday.",
+      "why": "Câu kể trạng thái cần động từ hữu hạn."
+    },
+    {
+      "id": "fragments-and-run-ons-m3",
+      "wrong": "Because it was raining. We stayed.",
+      "right": "We stayed because it was raining.",
+      "why": "Trong bài yêu cầu câu độc lập nêu lý do, nối phần phụ vào phần chính."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Mọi fragment có sai không?",
+      "a": "Không. Hội thoại, tiêu đề và văn chương có những cách dùng chủ ý. Bài này chỉ định văn viết trung tính cần câu đầy đủ."
+    },
+    {
+      "q": "Câu dài có phải run-on không?",
+      "a": "Không. Cấu trúc nối và ranh giới mệnh đề quyết định, không phải số từ."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "frr-01",
+      "prompt": "Chọn câu độc lập đầy đủ cho báo cáo trung tính.",
+      "explain": "Mệnh đề phụ because cần gắn với khung chính khi yêu cầu một câu độc lập.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "Lý do ở lại là trời mưa.",
+      "options": [
+        {
+          "t": "We stayed because it was raining.",
+          "ok": true,
+          "note": "Có sự việc chính và lý do."
+        },
+        {
+          "t": "Because it was raining.",
+          "ok": false,
+          "note": "Chỉ là lý do đứng riêng theo yêu cầu bài.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "We stayed it was raining.",
+          "ok": false,
+          "note": "Hai mệnh đề chưa được nối hoặc ngăn đúng.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "frr-02",
+      "prompt": "Nối mục với chẩn đoán trong văn viết trung tính.",
+      "explain": "Phân loại theo cấu trúc, không theo số từ.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "Because the road was closed.",
+          "b": "Mệnh đề phụ rời khi cần câu độc lập"
+        },
+        {
+          "a": "The road was closed we waited.",
+          "b": "Hai mệnh đề độc lập dính không dấu nối"
+        },
+        {
+          "a": "The road was closed, we waited.",
+          "b": "Comma splice: chỉ có dấu phẩy giữa hai mệnh đề độc lập"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "frr-03",
+      "prompt": "Phân loại trong yêu cầu viết câu đầy đủ.",
+      "explain": "Một câu ngắn vẫn có thể đầy đủ; một phần dài vẫn có thể thiếu.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Câu đầy đủ",
+        "Phần câu chưa độc lập"
+      ],
+      "items": [
+        {
+          "t": "We waited.",
+          "cat": "Câu đầy đủ"
+        },
+        {
+          "t": "Because the main entrance to the station was closed.",
+          "cat": "Phần câu chưa độc lập"
+        },
+        {
+          "t": "When the bus finally arrived.",
+          "cat": "Phần câu chưa độc lập"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "frr-04",
+      "prompt": "Điền dạng quá khứ của be để có mệnh đề hữu hạn.",
+      "explain": "Was/were hoàn thành khung vị ngữ; còn cần xem quan hệ giữa các mệnh đề.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "The gate {1} locked. The guests {2} outside.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "was"
+          ]
+        },
+        "2": {
+          "accept": [
+            "were"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "frr-05",
+      "prompt": "Sửa phần thiếu động từ trong câu kể đầy đủ.",
+      "explain": "Yesterday we were very tired after the trip có động từ hữu hạn were. We tired không có very lại có thể chứa động từ tire nghĩa trở nên mệt, nên không dùng nó làm lỗi thiếu be tuyệt đối.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "Yesterday"
+        },
+        {
+          "t": "we very tired",
+          "bad": true,
+          "fix": [
+            "we were very tired"
+          ],
+          "note": "Trong câu kể đầy đủ này, very tired là cụm tính từ cần were.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "after the trip."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "frr-06",
+      "prompt": "Sắp xếp, bắt đầu bằng The bus left; và giữ dấu đã cho.",
+      "explain": "Dấu chấm phẩy nối hai mệnh đề độc lập liên quan.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "The bus left;",
+        "we",
+        "walked home"
+      ],
+      "accept": [
+        [
+          "The bus left;",
+          "we",
+          "walked home"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "frr-07",
+      "prompt": "Nối hai câu bằng dấu chấm phẩy.",
+      "explain": "Chấm phẩy có thể ngăn hai mệnh đề độc lập; dấu chấm cuối là phần yêu cầu.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "The bus left. We walked home.",
+      "instruction": "Giữ từ và thứ tự; dùng một dấu chấm phẩy thay chấm thứ nhất, we viết thường sau đó. Kết thúc bằng dấu chấm.",
+      "accept": [
+        "The bus left; we walked home."
+      ],
+      "model": "The bus left; we walked home.",
+      "terminalPunctuationMatters": true,
+      "caseMatters": true,
+      "level": "B1"
+    },
+    {
+      "id": "frr-08",
+      "prompt": "Viết và sửa một đoạn báo cáo ngắn.",
+      "explain": "Tự đối chiếu cấu trúc; không chấm tự động bài mở.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết ba câu đầy đủ về một sự cố giao thông. Sau đó chọn hai mệnh đề độc lập và viết hai bản nối: một bản dấu chấm phẩy, một bản liên từ so hoặc and.",
+      "model": [
+        "The bus broke down. We waited for a taxi. We arrived late. The bus broke down; we waited for a taxi. The bus broke down, so we waited for a taxi."
+      ],
+      "checklist": [
+        "Mỗi phần độc lập có khung hữu hạn đủ nghĩa.",
+        "Không chỉ đặt dấu phẩy giữa hai mệnh đề độc lập theo yêu cầu báo cáo.",
+        "Liên từ giữ quan hệ ý thật."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "frr-09",
+      "prompt": "Điền dạng be ở quá khứ rồi đọc cả hai câu đầy đủ.",
+      "explain": "Room số ít was; windows số nhiều were.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "The room {1} dark. The windows {2} closed.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "was"
+          ]
+        },
+        "2": {
+          "accept": [
+            "were"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "frr-10",
+      "prompt": "Sửa mệnh đề phụ rời bằng cách gắn vào câu chính.",
+      "explain": "Câu because đứng riêng được nối vào sự việc chính theo yêu cầu văn viết.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "Because the road was closed. We waited.",
+      "instruction": "Viết một câu, bắt đầu We waited rồi because và lý do; bỏ dấu chấm giữa hai phần.",
+      "accept": [
+        "We waited because the road was closed"
+      ],
+      "model": "We waited because the road was closed",
+      "level": "B1"
+    },
+    {
+      "id": "frr-11",
+      "prompt": "Chọn tất cả cách nối phù hợp cho báo cáo trung tính.",
+      "explain": "Hai mệnh đề độc lập cần cấu trúc ngăn hoặc nối phù hợp; độ dài không quyết định.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Giữ hai ý xe rời đi và chúng tôi đi bộ.",
+      "options": [
+        {
+          "t": "The bus left; we walked home.",
+          "ok": true,
+          "note": "Chấm phẩy nối hai phần độc lập."
+        },
+        {
+          "t": "The bus left, so we walked home.",
+          "ok": true,
+          "note": "So nêu kết quả."
+        },
+        {
+          "t": "The bus left we walked home.",
+          "ok": false,
+          "note": "Dính hai mệnh đề không dấu nối.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "The bus left, we walked home.",
+          "ok": false,
+          "note": "Chỉ dấu phẩy giữa hai mệnh đề độc lập không phù hợp yêu cầu báo cáo trung tính.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "frr-12",
+      "prompt": "Chọn nhận xét đúng về hội thoại.",
+      "explain": "Ngữ cảnh có thể làm phần câu rời thành lời đáp tự nhiên; khác yêu cầu báo cáo.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "Why did you wait? — Because the road was closed.",
+      "options": [
+        {
+          "t": "Lời đáp có thể tự nhiên vì câu hỏi cung cấp ngữ cảnh.",
+          "ok": true,
+          "note": "Không gọi mọi fragment là lỗi ở mọi thể loại."
+        },
+        {
+          "t": "Lời đáp không bao giờ được dùng trong tiếng Anh.",
+          "ok": false,
+          "note": "Hội thoại cho phép cách đáp này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Mọi câu dài đều là run-on.",
+          "ok": false,
+          "note": "Run-on là vấn đề cấu trúc nối, không độ dài.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

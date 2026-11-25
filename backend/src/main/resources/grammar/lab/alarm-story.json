@@ -1,0 +1,77 @@
+{
+  "id": "alarm-story",
+  "title": "Khi chuông báo vang, cửa đã khóa chưa?",
+  "summary": "Bạn thuật lại hai sự kiện tại bảo tàng. Giữ thời điểm chuông báo rồi thay dạng lock để đổi thứ tự được hiểu.",
+  "level": "B1",
+  "topics": [
+    "past-perfect",
+    "narrative-tenses"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Lúc khóa cửa",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Trước chuông"
+        },
+        {
+          "id": "v2",
+          "label": "Khi nghe chuông"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "When the alarm rang, we had locked the door.",
+      "vi": "Khi chuông báo vang, chúng tôi đã khóa cửa từ trước.",
+      "note": "Had locked lùi hành động khóa về trước mốc rang. / Past perfect places locking before the alarm.",
+      "verdict": "ok",
+      "timeline": {
+        "sentence": "When the alarm rang, we had locked the door.",
+        "now": 90,
+        "events": [
+          {
+            "kind": "point",
+            "at": 25,
+            "label": "Khóa cửa",
+            "role": "main"
+          },
+          {
+            "kind": "point",
+            "at": 55,
+            "label": "Chuông báo",
+            "role": "ref"
+          }
+        ]
+      }
+    },
+    "v2": {
+      "en": "When the alarm rang, we locked the door.",
+      "vi": "Khi chuông báo vang, chúng tôi khóa cửa.",
+      "note": "Hai động từ quá khứ đơn trong lời kể này gợi rằng tiếng chuông là tín hiệu để khóa cửa. / The simple past suggests a response here.",
+      "verdict": "ok",
+      "timeline": {
+        "sentence": "When the alarm rang, we locked the door.",
+        "now": 90,
+        "events": [
+          {
+            "kind": "point",
+            "at": 50,
+            "label": "Chuông báo",
+            "role": "ref"
+          },
+          {
+            "kind": "point",
+            "at": 54,
+            "label": "Khóa cửa",
+            "role": "main"
+          }
+        ]
+      }
+    }
+  }
+}

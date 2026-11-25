@@ -1,0 +1,40 @@
+{
+  "id": "key-delivery-deadline",
+  "title": "Đúng trưa hay trước hạn trưa?",
+  "summary": "Bạn cần mang chìa khóa đến quán trước buổi tiệc. Thử hai lời dặn. Đến lúc 11 giờ có đáp ứng cả hai không?",
+  "level": "A2",
+  "topics": [
+    "prepositions-time"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Loại hẹn",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Mốc hẹn"
+        },
+        {
+          "id": "v2",
+          "label": "Hạn chót"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Bring the key at noon.",
+      "vi": "Hãy mang chìa khóa đến lúc giữa trưa.",
+      "note": "At noon chọn chính buổi trưa làm giờ hẹn. / At fixes the appointment time.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Bring the key by noon.",
+      "vi": "Hãy mang chìa khóa đến chậm nhất là giữa trưa.",
+      "note": "By noon đặt hạn cuối. Giao lúc 11 giờ vẫn đúng yêu cầu. / By allows an earlier delivery.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s196-orange-violet",
+  "title": "Va li tím dưới đèn cam",
+  "summary": "Một hành khách gọi vali tím của mình là nâu khi nhìn ảnh chụp trong kho. Nhân viên suýt từ chối trả.",
+  "level": "B2",
+  "topics": [
+    "hedging"
+  ],
+  "scene": "airport",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Như",
+      "role": "Người phụ trách quầy"
+    },
+    {
+      "id": "b",
+      "name": "Nico",
+      "role": "Người nhận dạng đồ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Như mang một miếng vải tím vào dưới đèn cam. Nó trông nâu trong ảnh nhưng trở về tím ngoài trời. Vali có vết khâu hình chữ L mà khách chưa hề nhìn thấy trên ảnh.",
+      "say": [
+        {
+          "who": "a",
+          "en": "He got the colour wrong but drew the stitch exactly.",
+          "vi": "Ông gọi sai màu nhưng vẽ đúng đường khâu."
+        },
+        {
+          "who": "b",
+          "en": "Tell me what the lamp test actually supports.",
+          "vi": "Phép thử đèn thực sự cho biết điều gì?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Như nêu lý do có thể giải thích hai cách gọi màu, chưa lấy màu làm bằng chứng duy nhất.",
+        "options": [
+          {
+            "ok": true,
+            "t": "The lamp could account for the different descriptions.",
+            "note": "Could account for nêu lời giải thích khả dĩ. Việc vải đổi vẻ dưới đèn là kiểm tra trực tiếp cho khả năng ấy.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "The test proves that every brown case is purple.",
+            "note": "Proves và every mở một phép thử riêng thành kết luận cho mọi vali nâu. Có thể còn vali thật sự màu nâu.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Nico đưa vali ra ánh ngày và đối chiếu vết khâu. Dưới lớp vải là đúng chữ con gái vị khách khâu cho cha.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The stitch kept its shape when the colour changed.",
+          "vi": "Màu đổi mà đường khâu vẫn giữ hình."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Khách được nhận vali bằng hai dấu hiệu độc lập và tặng quầy miếng vải thử màu lần sau.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Như đặt bên cạnh một vali nâu thật. Cả hai giống nhau dưới đèn nhưng khác ngoài trời. Nico quay lại tìm dấu khâu chữ L.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Two cases taught us more than one sample.",
+          "vi": "Hai chiếc vali dạy ta nhiều hơn một mẫu vải."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Ông khách đem về đúng chiếc tím. Họ đặt mẫu hai màu cạnh camera để khỏi gọi một màu thay cho tất cả.",
+      "end": true
+    }
+  ]
+}

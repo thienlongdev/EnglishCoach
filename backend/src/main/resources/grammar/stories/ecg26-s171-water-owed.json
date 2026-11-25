@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s171-water-owed",
+  "title": "Giọt nước còn nợ",
+  "summary": "Hà tưới cây tưởng niệm trễ một ngày. Lá trên cùng gục xuống, nhưng dưới gốc còn một chồi mới.",
+  "level": "B2",
+  "topics": [
+    "modal-perfect-regret"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hà",
+      "role": "Người chăm kho hạt"
+    },
+    {
+      "id": "b",
+      "name": "Pax",
+      "role": "Người lái tàu"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Pax tìm thấy lời nhắc trong túi áo Hà, chưa bóc. Cô muốn nhận trách nhiệm về việc đã bỏ lỡ nhưng không đổ hết nguyên nhân chiếc lá gục lên mình.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I missed yesterday's turn.",
+          "vi": "Tôi đã quên lượt hôm qua."
+        },
+        {
+          "who": "b",
+          "en": "Say what you regret. We still need to check the soil.",
+          "vi": "Nói điều cô tiếc đi. Ta vẫn cần kiểm tra đất."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Hà nhận mình đáng ra phải tưới đúng hẹn.",
+        "options": [
+          {
+            "ok": false,
+            "t": "I must have watered it yesterday.",
+            "note": "Must have watered suy ra rằng có lẽ cô đã tưới, gần như chắc chắn trong cách nói này. Nó ngược với việc Hà vừa nhận mình quên.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "I should have watered it yesterday.",
+            "note": "Should have watered đánh giá việc trong quá khứ mà Hà thực tế đã bỏ lỡ. Nó không tự khẳng định nguyên nhân lá héo.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Pax đo thấy khay cũng bị rò. Hà nhận phần trực bù, cả hai sửa khay. Chồi mới lớn lên cạnh chiếc lá cũ được ép trong sổ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "A regret and a leak can both be real.",
+          "vi": "Một điều đáng tiếc và một chỗ rò đều có thể cùng là thật."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Trang sổ mang hai ghi chú riêng: quên tưới, khay rò. Mỗi việc đều có người sửa.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Pax đưa tờ nhắc chưa bóc. Hà sửa nhật ký và viết lịch mới trên tay nắm cửa khay, nơi cả hai cùng nhìn thấy.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Let's put the reminder where the plant lives.",
+          "vi": "Ta đặt lời nhắc ngay nơi cây sống nhé."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Tháng sau lá non che gần hết chữ, nhưng mỗi sáng vẫn có hai người nhớ ghé kiểm tra.",
+      "end": true
+    }
+  ]
+}

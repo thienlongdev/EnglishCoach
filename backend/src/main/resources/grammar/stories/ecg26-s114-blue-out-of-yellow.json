@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s114-blue-out-of-yellow",
+  "title": "Màu xanh ra từ hộp vàng",
+  "summary": "Khay màu của trạm chỉ có hộp vàng mà tranh Trái Đất vừa in lại có cả đại dương xanh.",
+  "level": "B1",
+  "topics": [
+    "passive-use"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Uyên",
+      "role": "Người ghi nhật ký"
+    },
+    {
+      "id": "b",
+      "name": "Sao",
+      "role": "Kỹ thuật viên"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Máy in giấy chỉ in đường bờ. Uyên đã tô biển bằng tay với mực xanh riêng của mình. Sao cần ghi đúng ai làm phần nào.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The machine drew the coasts. I did the water.",
+          "vi": "Máy vẽ bờ biển. Tôi tô phần nước."
+        },
+        {
+          "who": "b",
+          "en": "Who should get the little blue credit line?",
+          "vi": "Dòng ghi công màu xanh nên mang tên ai?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Uyên mô tả việc tô biển ở thể bị động, nêu người tô.",
+        "options": [
+          {
+            "ok": true,
+            "t": "The oceans were coloured by hand by Uyên.",
+            "note": "Were coloured đặt đại dương ở vị trí nhận việc tô. By hand là phương thức, by Uyên là người làm. Hai cụm by có vai khác nhau.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Uyên was coloured by the oceans.",
+            "note": "Bị động đúng hình thức nhưng đặt Uyên thành người bị tô, còn đại dương thành tác nhân. Nó không ghi công người tô.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Sao in tên Uyên dọc một bờ biển. Dòng chữ nhỏ lấp đúng chỗ đường bờ bị mất một nét.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Your name has become an island.",
+          "vi": "Tên cô thành một hòn đảo rồi."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Bức tranh được treo bên kính nhìn về Trái Đất. Ở xa đến vậy, tên Uyên trông như một hòn đảo.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Uyên giơ ngón tay dính xanh và đùa rằng câu này đúng theo cách khác. Cô in dấu tay lên lề rồi bổ sung tên người tô dưới dấu vân.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The oceans did colour my fingers, at least.",
+          "vi": "Ít ra đại dương cũng đã nhuộm xanh mấy ngón tay tôi."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Bản tranh có chữ ký độc nhất trong cả chuyến bay.",
+      "end": true
+    }
+  ]
+}

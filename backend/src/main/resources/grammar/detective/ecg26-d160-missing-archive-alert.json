@@ -1,0 +1,53 @@
+{
+  "id": "ecg26-d160-missing-archive-alert",
+  "title": "Tệp “đã xóa” trong cảnh báo",
+  "level": "B2",
+  "topics": [
+    "reporting-verbs",
+    "modal-perfect-deduction"
+  ],
+  "brief": "Bản tin nội bộ đổi “không tìm thấy trong chỉ mục” thành “đã bị xóa”. Bản lưu độc lập vẫn mở được. Đọc lời trực ca rồi xác định có đủ căn cứ kết luận mất dữ liệu hay chưa.",
+  "paragraph": [
+    {
+      "t": "The analyst denied "
+    },
+    {
+      "t": "to have deleted",
+      "bad": true,
+      "fix": [
+        "having deleted",
+        "deleting"
+      ],
+      "cat": "word-form",
+      "note": "Deny nhận dạng -ing. Having deleted nhấn việc bị phủ nhận nằm trước lời khai. Không tự biến lời phủ nhận thành chứng cứ minh oan."
+    },
+    {
+      "t": " the records. "
+    },
+    {
+      "t": "The index was empty, as she said.",
+      "note": "As she said nhắc lại điều có thể đối chiếu: chỉ mục trống. Bản lưu vẫn đọc được nên cảnh báo ban đầu không đủ để kết luận tất cả bản sao đã mất.",
+      "decoy": true
+    },
+    {
+      "t": " The records could still "
+    },
+    {
+      "t": "be readed",
+      "bad": true,
+      "fix": [
+        "be read"
+      ],
+      "cat": "word-form",
+      "note": "Sau could still cần be + phân từ read, viết giống dạng gốc nhưng đọc là /red/. Bằng chứng này xác nhận khả năng đọc bản lưu, không khẳng định tình trạng của mọi bản gốc."
+    },
+    {
+      "t": " from the independent archive. "
+    },
+    {
+      "t": "A missing index entry proves that someone erased the original.",
+      "note": "Câu cuối đúng ngữ pháp nhưng proves vượt quá chứng cứ. Không thấy trong chỉ mục có thể do lỗi lập chỉ mục hoặc thay đổi vị trí; nhật ký chưa xác nhận ai xóa tệp.",
+      "style": true
+    }
+  ]
+}

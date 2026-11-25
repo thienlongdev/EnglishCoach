@@ -1,0 +1,40 @@
+{
+  "id": "parcel-label",
+  "title": "Nhãn hàng nói về việc đã làm hay cần làm?",
+  "summary": "Kho vận in nhãn lên thùng. Giữ thùng làm chủ ngữ rồi đổi giữa báo cáo việc đã cân và hướng dẫn phải cân.",
+  "level": "B1",
+  "topics": [
+    "passive-tenses-modals"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Trạng thái",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Đã làm"
+        },
+        {
+          "id": "v2",
+          "label": "Phải làm"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The parcel has been weighed.",
+      "vi": "Bưu kiện đã được cân.",
+      "note": "Hiện tại hoàn thành bị động cho biết đã có kết quả cân liên quan tới hiện tại. / Has been weighed reports a completed action.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The parcel must be weighed.",
+      "vi": "Bưu kiện phải được cân.",
+      "note": "Sau must dùng be và quá khứ phân từ. Câu không xác nhận việc cân đã xảy ra. / Must be weighed specifies a requirement.",
+      "verdict": "ok"
+    }
+  }
+}

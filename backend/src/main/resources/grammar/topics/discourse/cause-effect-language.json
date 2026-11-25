@@ -1,0 +1,478 @@
+{
+  "schema": 1,
+  "slug": "cause-effect-language",
+  "version": 2,
+  "domain": "discourse",
+  "order": 30,
+  "kind": "grammar",
+  "title": {
+    "vi": "Because of, due to, therefore, as a result",
+    "en": "Cause and effect"
+  },
+  "subtitle": {
+    "vi": "Giữ hướng nguyên nhân và mức độ chứng cứ",
+    "en": "Preserve causal direction and evidential strength"
+  },
+  "aliases": [
+    "ngôn ngữ nguyên nhân kết quả",
+    "because of due to therefore",
+    "as a result",
+    "result in from",
+    "lead to doing"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Chọn danh ngữ/mệnh đề sau từ nối.",
+    "Phân biệt result in và result from.",
+    "Không dùng từ nhân quả mạnh hơn chứng cứ."
+  ],
+  "prerequisites": [
+    "clauses-reason-result"
+  ],
+  "related": [
+    {
+      "slug": "clauses-reason-result",
+      "rel": "more"
+    },
+    {
+      "slug": "hedging",
+      "rel": "more"
+    },
+    {
+      "slug": "connectors-overview",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Because of/due to thường lấy danh ngữ; because lấy mệnh đề; therefore/as a result nối kết quả giữa ý. Các động từ cause, lead to, result in/from có khung và hướng riêng.",
+    "when": "Giữ nguyên nhân, kết quả và mức độ được xác nhận.",
+    "examples": [
+      {
+        "en": "The fault resulted [PREP|in] a delay.",
+        "vi": "Lỗi gây ra sự chậm trễ trong tình huống được nêu."
+      },
+      {
+        "en": "The delay resulted [PREP|from] a fault.",
+        "vi": "Sự chậm trễ bắt nguồn từ một lỗi."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "We moved indoors because it rained có mệnh đề lý do. We moved indoors because of the rain có danh ngữ. Không thay because bằng because of mà giữ it rained theo cùng khung."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Nguyên nhân trong ví dụ",
+            "items": [
+              "A signal fault"
+            ]
+          },
+          {
+            "label": "Quan hệ được nêu",
+            "items": [
+              "resulted in"
+            ]
+          },
+          {
+            "label": "Kết quả",
+            "items": [
+              "a delay"
+            ]
+          }
+        ],
+        "sentence": "{0} {1} {2}."
+      },
+      "caption": "Result in hướng đến kết quả; result from hướng về nguồn nguyên nhân.",
+      "alt": "Result in hướng đến kết quả; result from hướng về nguồn nguyên nhân."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Khung",
+        "Ví dụ",
+        "Quan hệ"
+      ],
+      "rows": [
+        [
+          "because of/due to + danh ngữ",
+          "because of the rain",
+          "lý do"
+        ],
+        [
+          "therefore/as a result",
+          "It rained. As a result, we moved.",
+          "nối ý kết quả"
+        ],
+        [
+          "cause + object + to",
+          "caused us to wait",
+          "gây hành động/kết quả"
+        ],
+        [
+          "lead to + danh ngữ/-ing",
+          "led to waiting",
+          "to là giới từ"
+        ],
+        [
+          "result in/from",
+          "resulted in a delay / from a fault",
+          "hai hướng khác nhau"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Due to được dùng sau be và ở đầu câu nêu nguyên nhân trong tiếng Anh hiện nay. Một số quy ước biên tập có thể thích because of, nhưng không dạy due to đầu câu luôn sai."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Từ như caused/resulted in nêu quan hệ mạnh hơn chỉ cùng xảy ra. Trong văn dữ liệu, không bịa quan hệ nguyên nhân hoặc nguồn nghiên cứu để làm câu chắc hơn."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Therefore và as a result cần ranh giới câu phù hợp khi nối mệnh đề độc lập trong văn bản biên tập. Chúng không thay conjunction so theo mọi vị trí và dấu."
+    },
+    {
+      "type": "p",
+      "vi": "May contribute to hoặc may be associated with có thể phản ánh chứng cứ yếu/khác hơn cause, nhưng không thay chỉ để nghe học thuật. Chọn đúng điều dữ liệu thực sự hỗ trợ; xem hedging."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "cause-effect-language-m1",
+      "wrong": "We moved because of it rained.",
+      "right": "We moved because it rained.",
+      "why": "Because lấy mệnh đề."
+    },
+    {
+      "id": "cause-effect-language-m2",
+      "wrong": "The fault caused us to waited.",
+      "right": "The fault caused us to wait.",
+      "why": "To-infinitive dùng dạng gốc."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Result in và result from giống nhau không?",
+      "a": "Không. In đi đến kết quả; from chỉ nguồn nguyên nhân."
+    },
+    {
+      "q": "Thêm therefore có chứng minh nhân quả không?",
+      "a": "Không. Cần căn cứ nội dung riêng ngoài từ nối."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "cause-effect-language-01",
+      "prompt": "Chọn cấu trúc theo sau cụm danh từ.",
+      "explain": "Because of lấy cụm danh từ, because lấy mệnh đề.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "The event moved indoors ___ the rain.",
+      "options": [
+        {
+          "t": "because of",
+          "ok": true,
+          "note": "The rain là cụm danh từ."
+        },
+        {
+          "t": "because",
+          "ok": false,
+          "note": "Không có mệnh đề sau because ở đây.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "therefore",
+          "ok": false,
+          "note": "Không lấy the rain làm bổ sung giới từ.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "cause-effect-language-02",
+      "prompt": "Ghép theo thành phần hoặc khung được chỉ rõ trong mỗi câu, không ghép mọi cách diễn giải cùng sự việc.",
+      "explain": "In và from hướng về hai phía khác nhau.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "The delay resulted from a signal problem. Xét a signal problem sau from.",
+          "b": "Signal problem là nguyên nhân"
+        },
+        {
+          "a": "The signal problem resulted in a delay. Xét a delay sau in.",
+          "b": "Delay là kết quả"
+        },
+        {
+          "a": "A signal problem caused the delay. Xét cách cause nối hai thành phần.",
+          "b": "Cause đặt nguyên nhân ở chủ ngữ và kết quả ở tân ngữ trong câu này"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "cause-effect-language-03",
+      "prompt": "Phân loại cách nối.",
+      "explain": "Danh ngữ, mệnh đề và trạng từ nối không có cùng cấu trúc.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Giới từ + danh ngữ",
+        "Liên từ + mệnh đề",
+        "Trạng từ nối"
+      ],
+      "items": [
+        {
+          "t": "because of the rain",
+          "cat": "Giới từ + danh ngữ"
+        },
+        {
+          "t": "because it rained",
+          "cat": "Liên từ + mệnh đề"
+        },
+        {
+          "t": "Therefore, we moved indoors.",
+          "cat": "Trạng từ nối"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "cause-effect-language-04",
+      "prompt": "Điền in hoặc from theo hướng được nêu.",
+      "explain": "Result from chỉ nguồn; result in chỉ kết quả.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "The delay resulted {1} a signal problem. The signal problem resulted {2} a delay.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "from"
+          ]
+        },
+        "2": {
+          "accept": [
+            "in"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "cause-effect-language-05",
+      "prompt": "Sửa vì because of không nhận trực tiếp mệnh đề này.",
+      "explain": "Giữ it rained thì dùng because.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "We moved indoors"
+        },
+        {
+          "t": "because of",
+          "bad": true,
+          "fix": [
+            "because"
+          ],
+          "note": "Because lấy mệnh đề hữu hạn ở đây.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "it rained."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "cause-effect-language-06",
+      "prompt": "Sắp xếp bắt đầu bằng The closure.",
+      "explain": "Led to + danh ngữ nêu kết quả.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "The closure",
+        "led",
+        "to",
+        "a delay"
+      ],
+      "accept": [
+        [
+          "The closure",
+          "led",
+          "to",
+          "a delay"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "cause-effect-language-07",
+      "prompt": "Đổi because sang because of với danh ngữ.",
+      "explain": "The rain giữ nguyên nhân được nêu trong tình huống.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "We moved indoors because it rained.",
+      "instruction": "Dùng because of the rain sau We moved indoors.",
+      "accept": [
+        "We moved indoors because of the rain"
+      ],
+      "model": "We moved indoors because of the rain",
+      "level": "B1"
+    },
+    {
+      "id": "cause-effect-language-08",
+      "prompt": "Viết quan hệ nhân quả và giới hạn chứng cứ.",
+      "explain": "Tự đối chiếu; không bịa dữ liệu và không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Đặt một tình huống hư cấu có nguyên nhân rõ. Viết bằng because of, result in và hai câu có therefore/as a result. Thêm một câu nhắc rằng cùng xảy ra không tự chứng minh nhân quả trong dữ liệu thực.",
+      "model": [
+        "In this fictional story, a signal fault caused a delay. The delay happened because of a signal fault. The fault resulted in a delay. There was a fault. As a result, the train was delayed. In real data, association alone does not prove cause."
+      ],
+      "checklist": [
+        "Hướng nguyên nhân/kết quả đúng.",
+        "Cấu trúc sau từng từ đúng.",
+        "Không biến ví dụ hư cấu thành kết quả nghiên cứu thật."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "cause-effect-language-09",
+      "prompt": "Điền dạng gốc hoặc -ing theo khung.",
+      "explain": "Cause someone to wait; lead to waiting có to là giới từ.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "The closure caused us to {1} (wait). The closure led to {2} (wait) in a long queue.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "wait"
+          ]
+        },
+        "2": {
+          "accept": [
+            "waiting"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "cause-effect-language-10",
+      "prompt": "Đổi cách nêu kết quả sang nêu nguồn nguyên nhân.",
+      "explain": "Resulted from đảo thứ tự hai thành phần nhưng giữ quan hệ.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "A signal problem resulted in a delay.",
+      "instruction": "Bắt đầu The delay; dùng resulted from rồi a signal problem.",
+      "accept": [
+        "The delay resulted from a signal problem"
+      ],
+      "model": "The delay resulted from a signal problem",
+      "level": "B1"
+    },
+    {
+      "id": "cause-effect-language-11",
+      "prompt": "Chọn tất cả mẫu chuẩn.",
+      "explain": "Due to được dùng với danh ngữ; không cấm nó chỉ vì ở đầu câu.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "The delay was due to a signal fault.",
+          "ok": true,
+          "note": "Due to + danh ngữ."
+        },
+        {
+          "t": "Due to heavy rain, the event moved indoors.",
+          "ok": true,
+          "note": "Cách dùng nguyên nhân đầu câu được dùng hiện nay."
+        },
+        {
+          "t": "We moved indoors because of it rained.",
+          "ok": false,
+          "note": "Because of không lấy trực tiếp mệnh đề này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "The fault caused us to waited.",
+          "ok": false,
+          "note": "To cần wait.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "cause-effect-language-12",
+      "prompt": "Chọn nhận xét đúng về bằng chứng.",
+      "explain": "Therefore không tự cấp chứng cứ nhân quả.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "Hai biến số cùng thay đổi trong một quan sát.",
+      "options": [
+        {
+          "t": "Cần thêm căn cứ trước khi viết một biến caused biến kia.",
+          "ok": true,
+          "note": "Tương quan không tự xác nhận nhân quả."
+        },
+        {
+          "t": "Thêm therefore làm mọi quan hệ thành nguyên nhân đã chứng minh.",
+          "ok": false,
+          "note": "Từ nối không tạo chứng cứ.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Không bao giờ được mô tả bất kỳ nguyên nhân nào trong tiếng Anh.",
+          "ok": false,
+          "note": "Có thể khi nội dung và bằng chứng hỗ trợ.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "lgswe",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "which-route",
+  "title": "Hai đường tới bến phà",
+  "summary": "Bạn so sánh đường ven hồ với đường qua làng. Đổi kết quả đo rồi tìm cấu trúc dành cho hai quãng đường bằng nhau.",
+  "level": "A2",
+  "topics": [
+    "as-as-comparisons",
+    "comparatives"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Kết quả đo",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Bằng nhau"
+        },
+        {
+          "id": "v2",
+          "label": "Ngắn hơn"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The lake route is as long as the village route.",
+      "vi": "Đường ven hồ dài bằng đường qua làng.",
+      "note": "As kẹp hai bên long để nói hai tuyến dài bằng nhau. / As long as expresses equality in length.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The lake route is shorter than the village route.",
+      "vi": "Đường ven hồ ngắn hơn đường qua làng.",
+      "note": "Shorter và than cho biết hướng chênh lệch, thay vì xác nhận sự bằng nhau. / Shorter than orders the two lengths.",
+      "verdict": "ok"
+    }
+  }
+}

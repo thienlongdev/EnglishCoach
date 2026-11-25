@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s104-train-of-tins",
+  "title": "Đoàn tàu hộp thiếc",
+  "summary": "Có bảy hộp thiếc nối đuôi nhau dưới ghế bến. Một hộp nặng hơn hẳn sáu hộp còn lại.",
+  "level": "B1",
+  "topics": [
+    "phrasal-verbs-separable"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vi",
+      "role": "Nhân viên ga"
+    },
+    {
+      "id": "b",
+      "name": "Nam",
+      "role": "Người học việc"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Nam nhấc hộp nặng ra. Bên trong có vé tàu của một đứa trẻ và mẩu giấy xin trả nguyên đoàn tàu cho lớp mẫu giáo.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I don't want to break their little train.",
+          "vi": "Em không muốn làm hỏng đoàn tàu của các bé."
+        },
+        {
+          "who": "b",
+          "en": "You've lifted the last carriage. Tell me what to do with it.",
+          "vi": "Em đã nhấc toa cuối lên rồi. Giờ bảo tôi làm gì với nó đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Giữ đại từ it khi nhờ đặt toa vào lại đúng chỗ.",
+        "options": [
+          {
+            "ok": false,
+            "t": "Please put back it at the end.",
+            "note": "Với tân ngữ đại từ ngắn it, khung này cần put it back. Put back the carriage lại có thể dùng khi tân ngữ là cụm danh từ.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "Please put it back at the end.",
+            "note": "Put ... back tách được. Đại từ it đứng giữa put và back. At the end chọn đuôi đoàn.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Vi đặt hộp xuống, tấm vé trong hộp chạm nam châm ẩn và phát một tiếng tách. Đoàn tàu đã nối lại.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That was the sound they were waiting for.",
+          "vi": "Đó chính là tiếng các em chờ nghe."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Các bé nhận ra tiếng tách trước cả khi nhìn thấy rương đồ. Vé thật được gia đình giữ lại, còn đoàn tàu thiếc tiếp tục chuyến đi.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Nam tự sửa bằng danh từ đầy đủ rồi chỉ đúng toa cuối. Vi nhìn thấy chữ ký của cả lớp dưới đáy hộp.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The names travel underneath.",
+          "vi": "Những cái tên đi tàu ở mặt dưới."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Trước khi trả, họ chụp mặt đáy bảy toa. Ghép bảy ảnh lại thành một đoàn tàu chở tên từng em.",
+      "end": true
+    }
+  ]
+}

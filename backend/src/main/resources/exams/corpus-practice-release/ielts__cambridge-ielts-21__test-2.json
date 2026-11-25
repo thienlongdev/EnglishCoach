@@ -1,0 +1,3264 @@
+{
+  "manifest" : {
+    "schemaVersion" : "1.0",
+    "packageId" : "RAW-RAW_CAMBRIDGE_IELTS_21_T2",
+    "packageVersion" : 1,
+    "contentHash" : "fb17d861dbfc55f457704fc3f045196959321d3972d6da96e8c1d96b15af9074",
+    "creator" : "exam-raw-extractor",
+    "specificationBaselineId" : "EC-EXAM-SPEC-2026-09-10",
+    "authoringStatus" : "DRAFT",
+    "createdAt" : null,
+    "metadata" : {
+      "humanReviewComplete" : false,
+      "reviewOnlyReferences" : {
+        "transcripts" : [ {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21.pdf",
+          "sha256" : "72086a3101919125c0d66c480b34bb55b5447339501bbd2241b5888a2b36af2e",
+          "pages" : "103-107"
+        } ],
+        "answerKeys" : [ {
+          "skill" : "LISTENING",
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21.pdf",
+          "sha256" : "72086a3101919125c0d66c480b34bb55b5447339501bbd2241b5888a2b36af2e",
+          "pages" : "120",
+          "keysParsed" : 40
+        }, {
+          "skill" : "READING",
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21.pdf",
+          "sha256" : "72086a3101919125c0d66c480b34bb55b5447339501bbd2241b5888a2b36af2e",
+          "pages" : "121",
+          "keysParsed" : 40
+        } ],
+        "note" : "References only. Transcript text is not embedded: the learner manifest projection has no stimulus/asset role allow-list yet (EXAM-AUD-032)."
+      },
+      "ocr" : { },
+      "practiceProjection" : {
+        "fullSimulationGranted" : false,
+        "humanApprovalCreated" : false,
+        "sourceContentHash" : "133eeeca0966344d44f388c2dc4b3a7bd05e917d69c92c2fc516c45caa3ed12c",
+        "version" : "exam-practice-projection-v1",
+        "retainedScopes" : [ "IELTS_LISTENING_SECTION_3", "IELTS_LISTENING_SECTION_4", "IELTS_READING_PASSAGE_2", "IELTS_SPEAKING_PART_1", "IELTS_SPEAKING_PART_2", "IELTS_SPEAKING_PART_3", "IELTS_WRITING_TASK_2" ],
+        "excludedScopes" : {
+          "IELTS_LISTENING_SECTION_1" : [ "QA_SCOPE_PENDING", "SCOPE_NOT_SELECTED" ],
+          "IELTS_READING_PASSAGE_1" : [ "QA_SCOPE_PENDING", "SCOPE_NOT_SELECTED" ],
+          "IELTS_READING_PASSAGE_3" : [ "QA_SCOPE_PENDING", "SCOPE_NOT_SELECTED" ],
+          "IELTS_WRITING_TASK_1" : [ "MEDIA_IMAGE_PENDING", "QA_SCOPE_PENDING", "SCOPE_NOT_SELECTED" ]
+        },
+        "sourcePackageId" : "RAW-RAW_CAMBRIDGE_IELTS_21_T2"
+      },
+      "audioQAStatus" : "AUTOMATED_TECHNICAL_QA_ONLY_HUMAN_QA_REQUIRED",
+      "sourceProvenance" : {
+        "collection" : "cambridge",
+        "book" : "cambridge-ielts-21",
+        "test" : "TEST_2",
+        "rawSourceFile" : {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21.pdf",
+          "sha256" : "72086a3101919125c0d66c480b34bb55b5447339501bbd2241b5888a2b36af2e"
+        },
+        "pageRange" : "33-54",
+        "audio" : [ {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21 Audio/Cambridge 21 - Test 2.mp3",
+          "sha256" : "5fd7d47a6cfdcc6d43d7da7d5fd285a672bd71b77e61362830114a4a4a9445c4",
+          "section" : "PART_1",
+          "confidence" : "CONFIDENT"
+        }, {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21 Audio/Cambridge 21 - Test 2.mp3",
+          "sha256" : "5fd7d47a6cfdcc6d43d7da7d5fd285a672bd71b77e61362830114a4a4a9445c4",
+          "section" : "PART_3",
+          "confidence" : "CONFIDENT"
+        }, {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21 Audio/Cambridge 21 - Test 2.mp3",
+          "sha256" : "5fd7d47a6cfdcc6d43d7da7d5fd285a672bd71b77e61362830114a4a4a9445c4",
+          "section" : "PART_4",
+          "confidence" : "CONFIDENT"
+        } ],
+        "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json#ielts/cambridge-ielts-21/test-2",
+        "extractorName" : "exam-raw-extractor",
+        "extractorVersion" : "3.8.6",
+        "reviewStatus" : "UNREVIEWED"
+      },
+      "sourceIdentity" : {
+        "publisher" : "Cambridge University Press & Assessment",
+        "collection" : "cambridge",
+        "book" : "cambridge-ielts-21",
+        "bookTitle" : "Cambridge IELTS 21",
+        "test" : 2,
+        "rawSourceSha256" : "72086a3101919125c0d66c480b34bb55b5447339501bbd2241b5888a2b36af2e"
+      },
+      "displayName" : {
+        "current" : "Cambridge IELTS 21 — Test 2 (source extraction, draft)",
+        "ownerSelected" : null,
+        "status" : "PROVISIONAL_SOURCE_TITLE",
+        "policy" : "DISPLAY_NAME_MAY_CHANGE_SOURCE_PROVENANCE_MUST_NOT",
+        "renameTargets" : [ "form.title", "catalogNodes[].title" ]
+      },
+      "visualQAStatus" : "PAGE_REGION_RENDERING_HUMAN_QA_REQUIRED",
+      "rightsReviewStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED_PROJECT_USE_OWNER_AUTHORIZED",
+      "audioSegments" : [ {
+        "parentPath" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21 Audio/Cambridge 21 - Test 2.mp3",
+        "parentSha256" : "5fd7d47a6cfdcc6d43d7da7d5fd285a672bd71b77e61362830114a4a4a9445c4",
+        "startMs" : 0,
+        "endMs" : 499200,
+        "stagedPath" : "imports/exams/staging/assets/audio/65d28551b1a0463f1637a9f8bf9e9f76f53891f6b424a771e588777e57ba78fe.mp3",
+        "method" : "IELTS_SPOKEN_PART_ANNOUNCEMENT_V1",
+        "evidence" : [ "S6 spoken 'Part 2' announcement opens the speech after a >= 15 s silence", "S6 spoken 'Part 3' announcement opens the speech after a >= 15 s silence", "S6 spoken 'Part 4' announcement opens the speech after a >= 15 s silence" ],
+        "part" : 1,
+        "segmentSha256" : "65d28551b1a0463f1637a9f8bf9e9f76f53891f6b424a771e588777e57ba78fe"
+      }, {
+        "parentPath" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21 Audio/Cambridge 21 - Test 2.mp3",
+        "parentSha256" : "5fd7d47a6cfdcc6d43d7da7d5fd285a672bd71b77e61362830114a4a4a9445c4",
+        "startMs" : 861200,
+        "endMs" : 1301200,
+        "stagedPath" : "imports/exams/staging/assets/audio/c1fb86996c6c9ac1babfa9ff55274da2ccd8f462de54a069a92635c39958af13.mp3",
+        "method" : "IELTS_SPOKEN_PART_ANNOUNCEMENT_V1",
+        "evidence" : [ "S6 spoken 'Part 2' announcement opens the speech after a >= 15 s silence", "S6 spoken 'Part 3' announcement opens the speech after a >= 15 s silence", "S6 spoken 'Part 4' announcement opens the speech after a >= 15 s silence" ],
+        "part" : 3,
+        "segmentSha256" : "c1fb86996c6c9ac1babfa9ff55274da2ccd8f462de54a069a92635c39958af13"
+      }, {
+        "parentPath" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21 Audio/Cambridge 21 - Test 2.mp3",
+        "parentSha256" : "5fd7d47a6cfdcc6d43d7da7d5fd285a672bd71b77e61362830114a4a4a9445c4",
+        "startMs" : 1301200,
+        "endMs" : 1760900,
+        "stagedPath" : "imports/exams/staging/assets/audio/3addbca5ac869513de01e9d461585609f5a26ec3909af4884df8c121e0a28dae.mp3",
+        "method" : "IELTS_SPOKEN_PART_ANNOUNCEMENT_V1",
+        "evidence" : [ "S6 spoken 'Part 2' announcement opens the speech after a >= 15 s silence", "S6 spoken 'Part 3' announcement opens the speech after a >= 15 s silence", "S6 spoken 'Part 4' announcement opens the speech after a >= 15 s silence" ],
+        "part" : 4,
+        "segmentSha256" : "3addbca5ac869513de01e9d461585609f5a26ec3909af4884df8c121e0a28dae"
+      } ],
+      "sourceDocuments" : [ {
+        "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21.pdf",
+        "sha256" : "72086a3101919125c0d66c480b34bb55b5447339501bbd2241b5888a2b36af2e",
+        "role" : "QUESTION_BOOK",
+        "textLayer" : "TEXT"
+      } ],
+      "extraction" : {
+        "status" : "NEEDS_REVIEW",
+        "extractorVersion" : "3.8.6",
+        "blockingCodes" : [ "IMAGE_NOT_BOUND", "PART_OMITTED" ],
+        "reviewCodes" : [ "ANSWER_KEY_OCR_REPAIRED", "IMAGE_REGION_HEURISTIC", "LAYOUT_LINEARIZED", "OPTION_LABEL_RESTORED" ]
+      },
+      "projectUsageAuthorization" : {
+        "status" : "OWNER_AUTHORIZED",
+        "scope" : "ENGLISHCOACH_PROJECT_USE",
+        "authorizedBy" : "PROJECT_OWNER",
+        "decisionDate" : "2026-10-06",
+        "decisionRef" : "EXAMS_CORPUS_OWNER_PRODUCTION_AUTHORIZATION_20261006",
+        "appliesTo" : "EXISTING_REPOSITORY_SOURCE_CORPUS",
+        "permits" : [ "EXTRACTION", "CANONICAL_PACKAGE_PREPARATION", "STAGING_VALIDATION", "LOCAL_STAGING_IMPORT_PREPARATION", "PRODUCTION_IMPORT", "PUBLICATION", "LEARNER_RUNTIME", "PRACTICE", "SIMULATION", "MEDIA", "SCORING", "RESULTS", "REVIEW" ],
+        "productionImport" : "OWNER_AUTHORIZED_PRODUCTION_USE",
+        "publisherLicence" : "NOT_ESTABLISHED",
+        "publisherEndorsement" : false
+      }
+    }
+  },
+  "sources" : [ {
+    "id" : "106fda5c-07dc-5056-9eb1-852632e86bd1",
+    "code" : "RAW_CAMBRIDGE_CAMBRIDGE_IELTS_21",
+    "name" : "Cambridge IELTS 21",
+    "owner" : "Cambridge University Press & Assessment",
+    "publisher" : "Cambridge University Press & Assessment",
+    "sourceType" : "THIRD_PARTY_PUBLICATION",
+    "referenceMeta" : {
+      "rawCorpusRoot" : "imports/source-files/",
+      "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json",
+      "rightsStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED",
+      "projectUsageAuthorization" : "OWNER_AUTHORIZED",
+      "primaryDocument" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21.pdf"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  }, {
+    "id" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "code" : "EC_INTERNAL_ORIGINAL",
+    "name" : "English Coach original content",
+    "owner" : "English Coach",
+    "publisher" : "English Coach",
+    "sourceType" : "INTERNAL_ORIGINAL",
+    "referenceMeta" : {
+      "declaration" : "Rubrics and scoring metadata authored by English Coach; no external text"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "licenses" : [ {
+    "id" : "5a6c3233-e361-559f-9812-a40731e0fd3c",
+    "sourceId" : "106fda5c-07dc-5056-9eb1-852632e86bd1",
+    "licenseCode" : "UNKNOWN-RAW_CAMBRIDGE_CAMBRIDGE_IELTS_21",
+    "provenanceCategory" : "UNKNOWN",
+    "commercialRights" : false,
+    "redistributionRights" : false,
+    "derivativeRights" : false,
+    "permittedPurposes" : {
+      "LOCAL_PRIVATE_REVIEW" : true
+    },
+    "permittedTerritories" : { },
+    "validFrom" : null,
+    "validUntil" : null,
+    "attribution" : "Cambridge IELTS 21 — Cambridge University Press & Assessment. Publisher licence not established; used under the EnglishCoach project owner's authorization (2026-10-03), which is not a publisher licence or endorsement.",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  }, {
+    "id" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseCode" : "EC-ORIGINAL-DRAFT-PENDING-LEGAL",
+    "provenanceCategory" : "ORIGINAL",
+    "commercialRights" : true,
+    "redistributionRights" : true,
+    "derivativeRights" : true,
+    "permittedPurposes" : {
+      "EXAM" : true,
+      "SIMULATION" : true,
+      "PRACTICE" : true,
+      "CONTENT" : true
+    },
+    "permittedTerritories" : {
+      "GLOBAL" : true
+    },
+    "validFrom" : 1790985600.000000000,
+    "validUntil" : null,
+    "attribution" : "English Coach original draft; legal review pending",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  } ],
+  "provenances" : [ {
+    "id" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "sourceId" : "106fda5c-07dc-5056-9eb1-852632e86bd1",
+    "licenseId" : "5a6c3233-e361-559f-9812-a40731e0fd3c",
+    "creator" : "exam-raw-extractor",
+    "acquisitionMethod" : "RAW_CORPUS_EXTRACTION",
+    "originalReference" : "Cambridge IELTS 21 / Test 2",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  }, {
+    "id" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseId" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "creator" : "English Coach",
+    "acquisitionMethod" : "ORIGINAL_AUTHORING",
+    "originalReference" : "EC-RUBRIC-AND-SCORING-METADATA",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  } ],
+  "catalogNodes" : [ {
+    "id" : "ca2b4ef4-c295-5318-a79e-b4138f330216",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "sourceId" : "106fda5c-07dc-5056-9eb1-852632e86bd1",
+    "parentId" : null,
+    "kind" : "VOLUME",
+    "title" : "Cambridge IELTS 21",
+    "year" : null,
+    "ordinal" : 0,
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "specifications" : [ {
+    "id" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SPEC",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "deliveryMode" : "COMPUTER_SIMULATION",
+    "blueprint" : {
+      "source" : "RAW_CORPUS_EXTRACTION",
+      "family" : "IELTS",
+      "variant" : "ACADEMIC",
+      "scope" : "FULL"
+    },
+    "timingPolicy" : {
+      "listeningSeconds" : 1800,
+      "readingSeconds" : 3600,
+      "writingSeconds" : 3600,
+      "speakingSeconds" : 840
+    },
+    "navigationPolicy" : {
+      "sectionNavigation" : "fixed_sequence"
+    },
+    "playbackPolicy" : {
+      "mode" : "ONCE"
+    },
+    "sourceReferences" : {
+      "baseline" : "EC-EXAM-SPEC-2026-09-10"
+    },
+    "contentHash" : "01a9a5d6615e4c044e33620aacc7f229326296fc975b4c54a3fc1cc0d69efd4c",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "rubrics" : [ {
+    "id" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "logicalCode" : "EC_RAW_IELTS_WRITING_RUBRIC",
+    "version" : 1,
+    "family" : "IELTS",
+    "skill" : "WRITING",
+    "taskFamily" : "IELTS_WRITING",
+    "criteria" : {
+      "taskAchievement" : {
+        "weight" : 1
+      },
+      "coherenceAndCohesion" : {
+        "weight" : 1
+      },
+      "lexicalResource" : {
+        "weight" : 1
+      },
+      "grammaticalRangeAndAccuracy" : {
+        "weight" : 1
+      }
+    },
+    "ordinalScale" : {
+      "min" : 0,
+      "max" : 9,
+      "steps" : [ 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0 ]
+    },
+    "provenanceId" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "contentHash" : "0d542a6e2c855fb3a6fa51ef83026cb296280b0f51f9073604b6756d4752e253",
+    "approvedAt" : null,
+    "createdAt" : null
+  }, {
+    "id" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "logicalCode" : "EC_RAW_IELTS_SPEAKING_RUBRIC",
+    "version" : 1,
+    "family" : "IELTS",
+    "skill" : "SPEAKING",
+    "taskFamily" : "IELTS_SPEAKING",
+    "criteria" : {
+      "fluencyAndCoherence" : {
+        "weight" : 1
+      },
+      "lexicalResource" : {
+        "weight" : 1
+      },
+      "grammaticalRangeAndAccuracy" : {
+        "weight" : 1
+      },
+      "pronunciation" : {
+        "weight" : 1
+      }
+    },
+    "ordinalScale" : {
+      "min" : 0,
+      "max" : 9,
+      "steps" : [ 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0 ]
+    },
+    "provenanceId" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "contentHash" : "17e0b72d560b377684b287d73acc780a48e7da645e0cdaad159f2471e51f9be1",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "calibrations" : [ ],
+  "scoringSchemes" : [ {
+    "id" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SCORING",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "normalizationVersion" : "EC-NORM-V1",
+    "rubricReferences" : { },
+    "calibrationId" : null,
+    "mappingTable" : {
+      "metrics" : [ "LISTENING", "READING", "WRITING", "SPEAKING", "FULL_OVERALL" ],
+      "status" : "DRAFT_NOT_CALIBRATED",
+      "scoreLabel" : "English Coach estimated band"
+    },
+    "aggregationRules" : {
+      "officialEquating" : false,
+      "version" : "EC-AGGREGATION-DRAFT-V1",
+      "creditUnitsPerItem" : 1,
+      "task1Weight" : 1,
+      "task2Weight" : 2,
+      "overall" : "mean_of_four_quarter_rounding"
+    },
+    "contentHash" : "0780e29af069b167dab0956ac01663b2c8b509ca0f03839208766aa0b62ed428",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "form" : {
+    "id" : "090e8d14-0a3d-5bf2-b1eb-cb16966511bf",
+    "logicalKey" : "RAW_CAMBRIDGE_IELTS_21_T2",
+    "version" : 1,
+    "title" : "Cambridge IELTS 21 — Test 2 (source extraction, draft)",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "catalogNodeId" : "ca2b4ef4-c295-5318-a79e-b4138f330216",
+    "specificationId" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "lifecycleState" : "DRAFT",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "authorId" : null,
+    "contentHash" : "501d7a77cc3c9d1fda218f058a32b7dc629b27911eff9721674293d807f4b36f",
+    "publishedAt" : null,
+    "retiredAt" : null,
+    "createdAt" : null,
+    "primaryHealthStatus" : null
+  },
+  "formComponents" : [ ],
+  "sections" : [ {
+    "id" : "6fc6da9b-5de0-5cab-b8f4-6ba7b82b738b",
+    "formId" : "090e8d14-0a3d-5bf2-b1eb-cb16966511bf",
+    "skill" : "LISTENING",
+    "ordinal" : 1,
+    "specSectionKey" : "LISTENING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 1800,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  }, {
+    "id" : "f24d7e5c-d16d-51cf-bec7-313dfb02f41e",
+    "formId" : "090e8d14-0a3d-5bf2-b1eb-cb16966511bf",
+    "skill" : "READING",
+    "ordinal" : 2,
+    "specSectionKey" : "READING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 3600,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  }, {
+    "id" : "549ce2cd-f158-54bd-a83e-19f6c9f61147",
+    "formId" : "090e8d14-0a3d-5bf2-b1eb-cb16966511bf",
+    "skill" : "WRITING",
+    "ordinal" : 3,
+    "specSectionKey" : "WRITING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 3600,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  }, {
+    "id" : "f449edfa-4549-54c6-bd70-9bf482cfc3c5",
+    "formId" : "090e8d14-0a3d-5bf2-b1eb-cb16966511bf",
+    "skill" : "SPEAKING",
+    "ordinal" : 4,
+    "specSectionKey" : "SPEAKING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 840,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  } ],
+  "parts" : [ {
+    "id" : "6ac29f05-9320-577c-8212-faf94a59ca2a",
+    "sectionId" : "6fc6da9b-5de0-5cab-b8f4-6ba7b82b738b",
+    "partCode" : "LISTENING_PART_3",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : {
+      "partNumber" : 3
+    }
+  }, {
+    "id" : "017d2bd1-5073-555d-aeda-b3147925740e",
+    "sectionId" : "6fc6da9b-5de0-5cab-b8f4-6ba7b82b738b",
+    "partCode" : "LISTENING_PART_4",
+    "ordinal" : 3,
+    "instructions" : null,
+    "timingPolicy" : {
+      "partNumber" : 4
+    }
+  }, {
+    "id" : "c8acda28-c107-5157-adc1-d660cdcfe1bf",
+    "sectionId" : "f24d7e5c-d16d-51cf-bec7-313dfb02f41e",
+    "partCode" : "READING_PASSAGE_2",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : {
+      "partNumber" : 2
+    }
+  }, {
+    "id" : "1cc4493e-1899-59d1-929c-db436fe34622",
+    "sectionId" : "549ce2cd-f158-54bd-a83e-19f6c9f61147",
+    "partCode" : "WRITING_TASK_2",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : {
+      "recommendedMinutes" : 40
+    }
+  }, {
+    "id" : "9163b43b-74af-50fc-a069-f6768ba60b9f",
+    "sectionId" : "f449edfa-4549-54c6-bd70-9bf482cfc3c5",
+    "partCode" : "SPEAKING_PART_1",
+    "ordinal" : 1,
+    "instructions" : null,
+    "timingPolicy" : { }
+  }, {
+    "id" : "5df717ed-1c2e-5b86-82ac-b9d95f902569",
+    "sectionId" : "f449edfa-4549-54c6-bd70-9bf482cfc3c5",
+    "partCode" : "SPEAKING_PART_2",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : { }
+  }, {
+    "id" : "773e4b07-f4bb-5b3c-8022-96f9a4fa3b17",
+    "sectionId" : "f449edfa-4549-54c6-bd70-9bf482cfc3c5",
+    "partCode" : "SPEAKING_PART_3",
+    "ordinal" : 3,
+    "instructions" : null,
+    "timingPolicy" : { }
+  } ],
+  "groups" : [ {
+    "id" : "8a3be435-7fac-5fc9-ab94-0e40d33d3edb",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T2_LISTENING_PART_3_Q21",
+    "version" : 1,
+    "questionType" : "MULTI_SELECT",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "de8d9dd49ee46c0369aba3a4d776fb30748217f0edd918e82b4f12c5c94e2f1a",
+    "createdAt" : null
+  }, {
+    "id" : "620bdef3-2c3a-5fd2-98ab-563baafabcef",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T2_LISTENING_PART_3_Q23",
+    "version" : 1,
+    "questionType" : "MULTI_SELECT",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "e165e596a63177cbbf63be7fde9cbce24c92110a0f337673a82d8783a351654f",
+    "createdAt" : null
+  }, {
+    "id" : "ff5e2867-0aaa-5cfc-a970-a7bdbfe8c63c",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T2_LISTENING_PART_3_Q25",
+    "version" : 1,
+    "questionType" : "MULTI_SELECT",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "db8ef2256952f989d9ff7e8672d8b113f80ceeaf32127a0a7bd4c228318042eb",
+    "createdAt" : null
+  }, {
+    "id" : "b6fb6890-8200-5ec7-ba70-16e3a868984c",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T2_LISTENING_PART_3_Q27",
+    "version" : 1,
+    "questionType" : "MATCHING",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "c0f302b0b20703ac68ea6f1dc192377ca9b340ca603a5b60aa489aefba120b9f",
+    "createdAt" : null
+  }, {
+    "id" : "bf115b5a-4070-525d-a453-fdd84300aa53",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T2_LISTENING_PART_4_Q31",
+    "version" : 1,
+    "questionType" : "GAP_COMPLETION",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "3360b2494ec6172d7e7a300b1d52f1e7e7945ffff45fd3c2fe494d357f5a4322",
+    "createdAt" : null
+  }, {
+    "id" : "2987d0a9-a63d-57de-a2af-eb8487b2b093",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T2_READING_PASSAGE_2_Q14",
+    "version" : 1,
+    "questionType" : "MATCHING",
+    "construct" : "reading_comprehension",
+    "skill" : "READING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "d831c7afe18549b61db3ad7b7fa0406327260fc9f2efdfe30623c22ce1b6f15c",
+    "createdAt" : null
+  }, {
+    "id" : "1a3fa854-ab17-5c25-bc1f-0d5fb127c039",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T2_READING_PASSAGE_2_Q20",
+    "version" : 1,
+    "questionType" : "MULTI_SELECT",
+    "construct" : "reading_comprehension",
+    "skill" : "READING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "24b7b1bd2d493ac2c1fa3ce5a693288b342bc5986fe933dad66a8e429d3ba3b9",
+    "createdAt" : null
+  }, {
+    "id" : "59faa073-56c4-5d5a-81a6-dee80ae51b8e",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T2_READING_PASSAGE_2_Q22",
+    "version" : 1,
+    "questionType" : "GAP_COMPLETION",
+    "construct" : "reading_comprehension",
+    "skill" : "READING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "11305c894af5e2384511f9638fdd74f79f264cb66248bbef600e8efa49ed49ff",
+    "createdAt" : null
+  }, {
+    "id" : "eb2ab1da-4415-57d4-8baa-cdbdde7110a3",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T2_WRITING_TASK_2",
+    "version" : 1,
+    "questionType" : "WRITING_TASK_2",
+    "construct" : "written_production",
+    "skill" : "WRITING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "994196964295c8dca0ffcf75aac2c1b92318621fe36fa7a04cf34c2f1d579ccb",
+    "createdAt" : null
+  }, {
+    "id" : "0f167bec-a3cb-54da-9159-1b24a1b04a49",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T2_SPEAKING_PART_1",
+    "version" : 1,
+    "questionType" : "SPEAKING_PART_1",
+    "construct" : "spoken_production",
+    "skill" : "SPEAKING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "efe075a67c5ea674abad32dca014c1272128446b92e1f438020fe537c41d877d",
+    "createdAt" : null
+  }, {
+    "id" : "53abdae5-839a-5dc2-abb9-cab1d1b50967",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T2_SPEAKING_PART_2",
+    "version" : 1,
+    "questionType" : "SPEAKING_PART_2",
+    "construct" : "spoken_production",
+    "skill" : "SPEAKING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "0585c69a48c5c23c08b125dcbe22430972164072a872f8fe20faf0c289827cd6",
+    "createdAt" : null
+  }, {
+    "id" : "2bf9605b-10c3-5605-8a4e-741f56610b1e",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T2_SPEAKING_PART_3",
+    "version" : 1,
+    "questionType" : "SPEAKING_PART_3",
+    "construct" : "spoken_production",
+    "skill" : "SPEAKING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "c8a2171ad0794cd105c2f2abd3465e2c7b95e42d2d2427252ef2e73d964e9924",
+    "createdAt" : null
+  } ],
+  "formGroups" : [ {
+    "id" : "d3b4ce0d-d0dd-57c8-821b-7762a854659e",
+    "partId" : "6ac29f05-9320-577c-8212-faf94a59ca2a",
+    "groupId" : "8a3be435-7fac-5fc9-ab94-0e40d33d3edb",
+    "ordinal" : 1,
+    "displayNumbering" : "21-22"
+  }, {
+    "id" : "0cbec858-59e7-59bb-a4c9-2db7a232eacd",
+    "partId" : "6ac29f05-9320-577c-8212-faf94a59ca2a",
+    "groupId" : "620bdef3-2c3a-5fd2-98ab-563baafabcef",
+    "ordinal" : 2,
+    "displayNumbering" : "23-24"
+  }, {
+    "id" : "b1ebfa1e-bfd8-5f4a-8271-33e03c57b860",
+    "partId" : "6ac29f05-9320-577c-8212-faf94a59ca2a",
+    "groupId" : "ff5e2867-0aaa-5cfc-a970-a7bdbfe8c63c",
+    "ordinal" : 3,
+    "displayNumbering" : "25-26"
+  }, {
+    "id" : "be7aee5e-3670-50d9-9a1f-2cbc4f8c9a40",
+    "partId" : "6ac29f05-9320-577c-8212-faf94a59ca2a",
+    "groupId" : "b6fb6890-8200-5ec7-ba70-16e3a868984c",
+    "ordinal" : 4,
+    "displayNumbering" : "27-30"
+  }, {
+    "id" : "849c015b-39ae-5943-84b0-32841128a6f2",
+    "partId" : "017d2bd1-5073-555d-aeda-b3147925740e",
+    "groupId" : "bf115b5a-4070-525d-a453-fdd84300aa53",
+    "ordinal" : 1,
+    "displayNumbering" : "31-40"
+  }, {
+    "id" : "9b4643da-70db-5045-bedf-1beb371a2194",
+    "partId" : "c8acda28-c107-5157-adc1-d660cdcfe1bf",
+    "groupId" : "2987d0a9-a63d-57de-a2af-eb8487b2b093",
+    "ordinal" : 1,
+    "displayNumbering" : "14-19"
+  }, {
+    "id" : "64e3abd4-183c-532b-9839-25ddf1d33c79",
+    "partId" : "c8acda28-c107-5157-adc1-d660cdcfe1bf",
+    "groupId" : "1a3fa854-ab17-5c25-bc1f-0d5fb127c039",
+    "ordinal" : 2,
+    "displayNumbering" : "20-21"
+  }, {
+    "id" : "3aeac07d-0d4c-51f4-85e5-0e158aff40c1",
+    "partId" : "c8acda28-c107-5157-adc1-d660cdcfe1bf",
+    "groupId" : "59faa073-56c4-5d5a-81a6-dee80ae51b8e",
+    "ordinal" : 3,
+    "displayNumbering" : "22-26"
+  }, {
+    "id" : "5c95f717-55f3-5e23-bc38-8aba17f048a2",
+    "partId" : "1cc4493e-1899-59d1-929c-db436fe34622",
+    "groupId" : "eb2ab1da-4415-57d4-8baa-cdbdde7110a3",
+    "ordinal" : 1,
+    "displayNumbering" : "Task 2"
+  }, {
+    "id" : "8bc91105-7633-5646-aebb-286c70e28d66",
+    "partId" : "9163b43b-74af-50fc-a069-f6768ba60b9f",
+    "groupId" : "0f167bec-a3cb-54da-9159-1b24a1b04a49",
+    "ordinal" : 1,
+    "displayNumbering" : "Part 1"
+  }, {
+    "id" : "a77d91f1-4069-58cc-93c2-d29a28ffeed5",
+    "partId" : "5df717ed-1c2e-5b86-82ac-b9d95f902569",
+    "groupId" : "53abdae5-839a-5dc2-abb9-cab1d1b50967",
+    "ordinal" : 1,
+    "displayNumbering" : "Part 2"
+  }, {
+    "id" : "68ec9e00-3840-54a0-8781-b74ccb27dfe6",
+    "partId" : "773e4b07-f4bb-5b3c-8022-96f9a4fa3b17",
+    "groupId" : "2bf9605b-10c3-5605-8a4e-741f56610b1e",
+    "ordinal" : 1,
+    "displayNumbering" : "Part 3"
+  } ],
+  "stimuli" : [ {
+    "id" : "2433e5ac-47cc-5037-bfd3-e823b28a4050",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_21_T2_LISTENING_PART_3_AUDIO",
+    "version" : 1,
+    "kind" : "AUDIO",
+    "title" : "Listening Part 3 recording",
+    "bodyPayload" : {
+      "playback" : "ONCE",
+      "sourceRole" : "PART_RECORDING",
+      "questionRange" : "21-30",
+      "transcriptAvailable" : true,
+      "transcriptEmbedded" : false,
+      "mappingConfidence" : "CONFIDENT"
+    },
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "99c477e01fe3b1107048d9bcb1593419c1a39c208a022d25bf5c54fa03568c82",
+    "createdAt" : null
+  }, {
+    "id" : "fe4cab40-588d-5649-a62b-29511f476b72",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_21_T2_LISTENING_PART_4_AUDIO",
+    "version" : 1,
+    "kind" : "AUDIO",
+    "title" : "Listening Part 4 recording",
+    "bodyPayload" : {
+      "playback" : "ONCE",
+      "sourceRole" : "PART_RECORDING",
+      "questionRange" : "31-40",
+      "transcriptAvailable" : true,
+      "transcriptEmbedded" : false,
+      "mappingConfidence" : "CONFIDENT"
+    },
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "8aaff3e6e1f1a20b098bb10589a1171e066080ea327138bf7e3419bfae92db59",
+    "createdAt" : null
+  }, {
+    "id" : "b60f7b67-8154-53e4-bf77-ef577ada2c48",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_21_T2_READING_PASSAGE_2_PASSAGE",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : "Mapungubwe",
+    "bodyPayload" : {
+      "title" : "Mapungubwe",
+      "text" : "Located in southern Africa just below the Limpopo River, the kingdom of Mapungubwe, flourished between the 11th and 13th century CE\n\nA  Mapungubwe, which was one of the first states in southern Africa, was formed by Bantu-speaking peoples who were farmers. The area controlled by the rulers of Mapungubwe had at its heart a large sandstone plateau, which was easily defended due to its inaccessibility. As with other kingdoms in the region of southern Africa, cattle herding and other types of farming brought plenty of food and a surplus that could be traded for needed goods. Archaeology has revealed extensive layers of bones and manure, which indicate that from the 9th century CE there were large cattle herds, the traditional source of political power in southern African communities. The archaeological record for the 10th century shows a marked increase in the number of domesticated cattle in the area as well as cotton cultivation and weaving, as indicated by abundant finds of spindle whorls.\n\nB  The total population of Mapungubwe at its peak in the mid-13th century was around 5,000 people. The chief or king of Mapungubwe was likely the wealthiest individual in the society, and would have owned more cattle and precious materials than anyone else. The king and his advisers dwelt in a stone enclosure composed of stone walls and housing built on the highest level of the community's territory, a natural sandstone hill which is some 30 metres high and 100 metres in length. Occupation on the hill dates from the 11 th century and the entire complex was surrounded by a wooden palisade*, as indicated by postholes made in the rock. The rest of the community lived in mud and thatch housing spread out below the hill, although there is one stone structure here. This settlement, known as Babandyanalo, covers around 5 hectares (12.3 acres) and predates the hilltop structures.\n\nC  The kings of Mapungubwe were buried at the top of the hill site in a demarcated area away from the dwellings, while other members of the community were buried at the surrounding valley level. A wooden staircase connected the two levels, the sockets for the steps being clearly visible in the sandstone cliff face. There were some grander residences dotted around the outskirts of Babandyanalo, and these probably belonged to male relatives of the king. There are many other smaller but still impressive sites across the Mapungubwe plateau, which are located anywhere from 15 to 100 kilometres from the major hill site. Containing stone residences and walls, they likely belonged to local chiefs who acted as servants to the king.\n\nD  The Mapungubwe plateau has a very high number of carnivore animal remains and ivory splinters, suggesting that the skins of these large animals and ivory elephant tusks were accumulated, probably for trade with coastal areas reached by the Limpopo River. The presence of glass beads, almost certainly from India, indicate there was trade of some sort with other states on the coast who, in turn, traded with merchants travelling from India by sea. Mapungubwe also benefitted from locally-sourced copper and the gold trade as it passed from the kingdom of Great Zimbabwe (12-15th century), situated to the north of Mapungubwe, to the coastal city of Kosala. It is likely that trade links led to a strengthening of political authority in order to control and even monopolise these lucrative interregional connections.\n\nE  Archaeological discoveries reveal that pottery was produced on a scale large enough to suggest the presence of professional potters, and is another indicator of the prosperity of Mapungubwe society. Archaeological finds include spherical vessels with short necks, beakers, and bowls, many of which have decorative stamps. There are also ceramic discs, and whistles. In addition, cattle, sheep, and goat figurines, and small figures of highly stylised humans with elongated bodies and short limbs have been found. The figures may have been used in ceremonies as offerings to ancestors, but their precise function is not known. Other discoveries include small jewellery items made from locally sourced copper.\n\nF  Beautifully decorated artefacts made of gold have also been found at Mapungubwe. A type of decoration, found nowhere else except Great Zimbabwe, involved the crafting of gold into small rectangular sheets and carving geometrical patterns into it. These sheets were then used to cover wooden objects (which have not survived) using small tacks, also made of gold. One such object that has been discovered may have been a sceptre, while additional evidence of local gold-working is a rhinoceros figurine made from small hammered sheets, and thousands of small gold beads. These objects were all found at the royal burial site and date to c. 1150. They are the first known indicators that gold had an intrinsic value of its own (as opposed to that of a currency) in southern Africa.\n\nG  The kingdom of Mapungubwe was already in decline by the late 13th century, probably because overpopulation placed too much stress on local resources, a situation that may have been brought to a crisis point by a series of droughts. Trade routes may also have shifted northwards. Certainly, the areas that now prospered were to the north, such as Great Zimbabwe.\n\n* palisade: typically a row of closely placed, high vertical wooden or iron posts used as a means of defence",
+      "paragraphs" : [ {
+        "id" : null,
+        "text" : "Located in southern Africa just below the Limpopo River, the kingdom of Mapungubwe, flourished between the 11th and 13th century CE"
+      }, {
+        "id" : "A",
+        "text" : "Mapungubwe, which was one of the first states in southern Africa, was formed by Bantu-speaking peoples who were farmers. The area controlled by the rulers of Mapungubwe had at its heart a large sandstone plateau, which was easily defended due to its inaccessibility. As with other kingdoms in the region of southern Africa, cattle herding and other types of farming brought plenty of food and a surplus that could be traded for needed goods. Archaeology has revealed extensive layers of bones and manure, which indicate that from the 9th century CE there were large cattle herds, the traditional source of political power in southern African communities. The archaeological record for the 10th century shows a marked increase in the number of domesticated cattle in the area as well as cotton cultivation and weaving, as indicated by abundant finds of spindle whorls."
+      }, {
+        "id" : "B",
+        "text" : "The total population of Mapungubwe at its peak in the mid-13th century was around 5,000 people. The chief or king of Mapungubwe was likely the wealthiest individual in the society, and would have owned more cattle and precious materials than anyone else. The king and his advisers dwelt in a stone enclosure composed of stone walls and housing built on the highest level of the community's territory, a natural sandstone hill which is some 30 metres high and 100 metres in length. Occupation on the hill dates from the 11 th century and the entire complex was surrounded by a wooden palisade*, as indicated by postholes made in the rock. The rest of the community lived in mud and thatch housing spread out below the hill, although there is one stone structure here. This settlement, known as Babandyanalo, covers around 5 hectares (12.3 acres) and predates the hilltop structures."
+      }, {
+        "id" : "C",
+        "text" : "The kings of Mapungubwe were buried at the top of the hill site in a demarcated area away from the dwellings, while other members of the community were buried at the surrounding valley level. A wooden staircase connected the two levels, the sockets for the steps being clearly visible in the sandstone cliff face. There were some grander residences dotted around the outskirts of Babandyanalo, and these probably belonged to male relatives of the king. There are many other smaller but still impressive sites across the Mapungubwe plateau, which are located anywhere from 15 to 100 kilometres from the major hill site. Containing stone residences and walls, they likely belonged to local chiefs who acted as servants to the king."
+      }, {
+        "id" : "D",
+        "text" : "The Mapungubwe plateau has a very high number of carnivore animal remains and ivory splinters, suggesting that the skins of these large animals and ivory elephant tusks were accumulated, probably for trade with coastal areas reached by the Limpopo River. The presence of glass beads, almost certainly from India, indicate there was trade of some sort with other states on the coast who, in turn, traded with merchants travelling from India by sea. Mapungubwe also benefitted from locally-sourced copper and the gold trade as it passed from the kingdom of Great Zimbabwe (12-15th century), situated to the north of Mapungubwe, to the coastal city of Kosala. It is likely that trade links led to a strengthening of political authority in order to control and even monopolise these lucrative interregional connections."
+      }, {
+        "id" : "E",
+        "text" : "Archaeological discoveries reveal that pottery was produced on a scale large enough to suggest the presence of professional potters, and is another indicator of the prosperity of Mapungubwe society. Archaeological finds include spherical vessels with short necks, beakers, and bowls, many of which have decorative stamps. There are also ceramic discs, and whistles. In addition, cattle, sheep, and goat figurines, and small figures of highly stylised humans with elongated bodies and short limbs have been found. The figures may have been used in ceremonies as offerings to ancestors, but their precise function is not known. Other discoveries include small jewellery items made from locally sourced copper."
+      }, {
+        "id" : "F",
+        "text" : "Beautifully decorated artefacts made of gold have also been found at Mapungubwe. A type of decoration, found nowhere else except Great Zimbabwe, involved the crafting of gold into small rectangular sheets and carving geometrical patterns into it. These sheets were then used to cover wooden objects (which have not survived) using small tacks, also made of gold. One such object that has been discovered may have been a sceptre, while additional evidence of local gold-working is a rhinoceros figurine made from small hammered sheets, and thousands of small gold beads. These objects were all found at the royal burial site and date to c. 1150. They are the first known indicators that gold had an intrinsic value of its own (as opposed to that of a currency) in southern Africa."
+      }, {
+        "id" : "G",
+        "text" : "The kingdom of Mapungubwe was already in decline by the late 13th century, probably because overpopulation placed too much stress on local resources, a situation that may have been brought to a crisis point by a series of droughts. Trade routes may also have shifted northwards. Certainly, the areas that now prospered were to the north, such as Great Zimbabwe."
+      } ],
+      "notes" : [ "* palisade: typically a row of closely placed, high vertical wooden or iron posts used as a means of defence" ],
+      "sourcePages" : "43-44"
+    },
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "4703ecb06eade098a0d725d064ce58b1ddab2dc4460ebc51965ea7c3c43ece48",
+    "createdAt" : null
+  }, {
+    "id" : "501a1d7e-1429-5a97-a476-f33feeccd89c",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_21_T2_WRITING_TASK_2_PROMPT",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "promptContext" : "You should spend about 40 minutes on this task. Write about the following topic: Some people say that in the digital age, theatres and cinemas are no longer important as people can watch all the entertainment they want online. Others argue that theatres and cinemas are still important both economically and culturally. Discuss both these views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience. Write at least 250 words ."
+    },
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "1d2a48e63206a37eeb67e5e3cc1e2c5ec4a67e7206f0d522ad990d67ed6b6e62",
+    "createdAt" : null
+  }, {
+    "id" : "81160b05-b911-5eb8-8cf8-50695322def3",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_21_T2_SPEAKING_PART_1_PROMPTS",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "prompts" : [ "The examiner asks you about yourself, your home, work or studies and other", "familiar topics.", "Cities", "How well do you know the capital city of your country?", "Do you think cities are exciting places to live?", "Why do some people dislike living in a city?", "If you could visit any city in the world, where would you go?" ],
+      "sourceRole" : "SOURCE_SPEAKING_PROMPTS",
+      "runtimeUse" : "PINNED_SOURCE_ITEMS"
+    },
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "2fa84a003d41554ea2988a93b829042925f902095722eccf383ddc028f651de0",
+    "createdAt" : null
+  }, {
+    "id" : "5feab9ac-0fbc-52ae-aed4-ba4b0edc8c1a",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_21_T2_SPEAKING_PART_2_PROMPTS",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "prompts" : [ "Describe a time when you read or heard", "that you thought was not true.", "You should say:", "where you read/heard this", "what you read/heard", "why you thought it was not true", "and explain how you felt about reading/hearing", "this thing that you thought was not true." ],
+      "sourceRole" : "SOURCE_SPEAKING_PROMPTS",
+      "runtimeUse" : "PINNED_SOURCE_ITEMS"
+    },
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "6dd0b580d9a8701b2044755164860cbad2e1d8d65d53ea08c778eb07b7bd3300",
+    "createdAt" : null
+  }, {
+    "id" : "e633f7a4-815e-529d-8aa3-38785b5213eb",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_21_T2_SPEAKING_PART_3_PROMPTS",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "prompts" : [ "Discussion topics:", "Honesty and children", "Do you think children are more honest than adults?", "Why do adults tell children it's important to be honest?", "Do you think there are sometimes good reasons for adults not to tell children the truth?", "Honesty and advertising", "Are there any claims in advertisements that are sometimes not true?", "Why do people still buy things even when they know advertisements aren't", "completely accurate?", "Do you think advertisements that are dishonest should be banned?" ],
+      "sourceRole" : "SOURCE_SPEAKING_PROMPTS",
+      "runtimeUse" : "PINNED_SOURCE_ITEMS"
+    },
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "2a6bac20f6b063d3f47e22d2f7bbcf45ae5ecad985c391dc619f8b69505a8746",
+    "createdAt" : null
+  } ],
+  "groupStimuli" : [ {
+    "id" : "a8730a10-1d75-504f-bcf1-70bc3126e168",
+    "groupId" : "8a3be435-7fac-5fc9-ab94-0e40d33d3edb",
+    "stimulusId" : "2433e5ac-47cc-5037-bfd3-e823b28a4050",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "6f42a9a7-9a50-530b-9458-92caf3ae0238",
+    "groupId" : "620bdef3-2c3a-5fd2-98ab-563baafabcef",
+    "stimulusId" : "2433e5ac-47cc-5037-bfd3-e823b28a4050",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "9a56aebc-fd8c-52c7-97eb-09776fa7e985",
+    "groupId" : "ff5e2867-0aaa-5cfc-a970-a7bdbfe8c63c",
+    "stimulusId" : "2433e5ac-47cc-5037-bfd3-e823b28a4050",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "14d5db22-65fc-5a39-b7c8-ea4534337124",
+    "groupId" : "b6fb6890-8200-5ec7-ba70-16e3a868984c",
+    "stimulusId" : "2433e5ac-47cc-5037-bfd3-e823b28a4050",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "01b486c3-7b01-5b93-971b-6e3ca9a250b5",
+    "groupId" : "bf115b5a-4070-525d-a453-fdd84300aa53",
+    "stimulusId" : "fe4cab40-588d-5649-a62b-29511f476b72",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "5a41918b-49b4-5fe5-8c00-feb0ed42c384",
+    "groupId" : "2987d0a9-a63d-57de-a2af-eb8487b2b093",
+    "stimulusId" : "b60f7b67-8154-53e4-bf77-ef577ada2c48",
+    "role" : "PASSAGE",
+    "ordinal" : 1
+  }, {
+    "id" : "e0fb956a-bb50-5022-be31-4d7347bf793d",
+    "groupId" : "1a3fa854-ab17-5c25-bc1f-0d5fb127c039",
+    "stimulusId" : "b60f7b67-8154-53e4-bf77-ef577ada2c48",
+    "role" : "PASSAGE",
+    "ordinal" : 1
+  }, {
+    "id" : "99c087ac-64c0-595d-ab39-8f9c6a0b176e",
+    "groupId" : "59faa073-56c4-5d5a-81a6-dee80ae51b8e",
+    "stimulusId" : "b60f7b67-8154-53e4-bf77-ef577ada2c48",
+    "role" : "PASSAGE",
+    "ordinal" : 1
+  }, {
+    "id" : "bde3dc6e-282f-5342-b19f-457f8dd5320b",
+    "groupId" : "eb2ab1da-4415-57d4-8baa-cdbdde7110a3",
+    "stimulusId" : "501a1d7e-1429-5a97-a476-f33feeccd89c",
+    "role" : "PRIMARY_PROMPT",
+    "ordinal" : 2
+  }, {
+    "id" : "28bb02e8-ea7d-5fb8-9586-a67fea36c1b6",
+    "groupId" : "0f167bec-a3cb-54da-9159-1b24a1b04a49",
+    "stimulusId" : "81160b05-b911-5eb8-8cf8-50695322def3",
+    "role" : "PRIMARY",
+    "ordinal" : 1
+  }, {
+    "id" : "2ccadf81-93f4-5b1c-9e52-c804edc24509",
+    "groupId" : "53abdae5-839a-5dc2-abb9-cab1d1b50967",
+    "stimulusId" : "5feab9ac-0fbc-52ae-aed4-ba4b0edc8c1a",
+    "role" : "PRIMARY",
+    "ordinal" : 1
+  }, {
+    "id" : "b1bd6f17-8101-5690-942c-ee7b3d9c8565",
+    "groupId" : "2bf9605b-10c3-5605-8a4e-741f56610b1e",
+    "stimulusId" : "e633f7a4-815e-529d-8aa3-38785b5213eb",
+    "role" : "PRIMARY",
+    "ordinal" : 1
+  } ],
+  "items" : [ {
+    "id" : "a1dbba09-6ee7-5d42-a3bd-cfbccb83be79",
+    "groupId" : "8a3be435-7fac-5fc9-ab94-0e40d33d3edb",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L021",
+    "version" : 1,
+    "prompt" : "Which TWO facts in the sessions on food safety were new information for Nadia and Fergus?",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "the amount of plastic in the ocean"
+      }, {
+        "id" : "B",
+        "text" : "the number of diseases caused by contaminated food"
+      }, {
+        "id" : "C",
+        "text" : "the amount of food that is wasted"
+      }, {
+        "id" : "D",
+        "text" : "the number of people who are obese"
+      }, {
+        "id" : "E",
+        "text" : "the result of treating animals with antibiotics"
+      } ],
+      "questionNumber" : 21,
+      "group" : {
+        "kind" : "MULTI_SELECT",
+        "questions" : "21-22",
+        "instructions" : [ "Choose TWO letters, A-E.", "Which TWO facts in the sessions on food safety were new information for Nadia" ],
+        "stem" : "Which TWO facts in the sessions on food safety were new information for Nadia and Fergus?"
+      },
+      "selection" : {
+        "count" : 2,
+        "questions" : [ 21, 22 ]
+      }
+    },
+    "construct" : "multi_select",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "6fb8ed65cee86479d8e5b251907532546018ad3ef9166695d3bc804fa1332bf5",
+    "createdAt" : null,
+    "ordinal" : 21
+  }, {
+    "id" : "e7d53ff9-0cc1-5efd-b47e-840a3897bb24",
+    "groupId" : "8a3be435-7fac-5fc9-ab94-0e40d33d3edb",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L022",
+    "version" : 1,
+    "prompt" : "Which TWO facts in the sessions on food safety were new information for Nadia and Fergus?",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "the amount of plastic in the ocean"
+      }, {
+        "id" : "B",
+        "text" : "the number of diseases caused by contaminated food"
+      }, {
+        "id" : "C",
+        "text" : "the amount of food that is wasted"
+      }, {
+        "id" : "D",
+        "text" : "the number of people who are obese"
+      }, {
+        "id" : "E",
+        "text" : "the result of treating animals with antibiotics"
+      } ],
+      "questionNumber" : 22,
+      "group" : {
+        "kind" : "MULTI_SELECT",
+        "questions" : "21-22",
+        "instructions" : [ "Choose TWO letters, A-E.", "Which TWO facts in the sessions on food safety were new information for Nadia" ],
+        "stem" : "Which TWO facts in the sessions on food safety were new information for Nadia and Fergus?"
+      },
+      "selection" : {
+        "count" : 2,
+        "questions" : [ 21, 22 ]
+      }
+    },
+    "construct" : "multi_select",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "eb10b9ae15ecac13c71e32c4b17566c27385c9086864166e6ed07a5f8a11e121",
+    "createdAt" : null,
+    "ordinal" : 22
+  }, {
+    "id" : "eccec167-3f9b-530c-9927-8f8b9a230793",
+    "groupId" : "620bdef3-2c3a-5fd2-98ab-563baafabcef",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L023",
+    "version" : 1,
+    "prompt" : "Which TWO features of a project aiming to prevent food fraud impressed Fergus?",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "the new technology it used"
+      }, {
+        "id" : "B",
+        "text" : "the publicity it received"
+      }, {
+        "id" : "C",
+        "text" : "the use of multiple tests on food items"
+      }, {
+        "id" : "D",
+        "text" : "the variety of dietary requirements included"
+      }, {
+        "id" : "E",
+        "text" : "the way information was made widely accessible"
+      } ],
+      "questionNumber" : 23,
+      "group" : {
+        "kind" : "MULTI_SELECT",
+        "questions" : "23-24",
+        "instructions" : [ "Choose TWO letters, A-E.", "Which TWO features of a project aiming to prevent food fraud impressed Fergus?" ],
+        "stem" : "Which TWO features of a project aiming to prevent food fraud impressed Fergus?"
+      },
+      "selection" : {
+        "count" : 2,
+        "questions" : [ 23, 24 ]
+      }
+    },
+    "construct" : "multi_select",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "89ac4feb9912243273e0c9e59be3fb552b65b647ad6daffc9f96b4da8519e374",
+    "createdAt" : null,
+    "ordinal" : 23
+  }, {
+    "id" : "530bf6cf-ae54-51ef-a2f9-a3fb372c9482",
+    "groupId" : "620bdef3-2c3a-5fd2-98ab-563baafabcef",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L024",
+    "version" : 1,
+    "prompt" : "Which TWO features of a project aiming to prevent food fraud impressed Fergus?",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "the new technology it used"
+      }, {
+        "id" : "B",
+        "text" : "the publicity it received"
+      }, {
+        "id" : "C",
+        "text" : "the use of multiple tests on food items"
+      }, {
+        "id" : "D",
+        "text" : "the variety of dietary requirements included"
+      }, {
+        "id" : "E",
+        "text" : "the way information was made widely accessible"
+      } ],
+      "questionNumber" : 24,
+      "group" : {
+        "kind" : "MULTI_SELECT",
+        "questions" : "23-24",
+        "instructions" : [ "Choose TWO letters, A-E.", "Which TWO features of a project aiming to prevent food fraud impressed Fergus?" ],
+        "stem" : "Which TWO features of a project aiming to prevent food fraud impressed Fergus?"
+      },
+      "selection" : {
+        "count" : 2,
+        "questions" : [ 23, 24 ]
+      }
+    },
+    "construct" : "multi_select",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "9e42432d835947dac0c1763f54c60005795dee9404eb97f2f1a6228ed87cbaff",
+    "createdAt" : null,
+    "ordinal" : 24
+  }, {
+    "id" : "3c995bd6-7cf3-585a-baa2-1cc0616b91b3",
+    "groupId" : "ff5e2867-0aaa-5cfc-a970-a7bdbfe8c63c",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L025",
+    "version" : 1,
+    "prompt" : "Which TWO topics do both students recommend should be included in the course?",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "sustainable fishing"
+      }, {
+        "id" : "B",
+        "text" : "targeted nutrition"
+      }, {
+        "id" : "C",
+        "text" : "global differences in consumption"
+      }, {
+        "id" : "D",
+        "text" : "sustainable agriculture"
+      }, {
+        "id" : "E",
+        "text" : "digital technology and food"
+      } ],
+      "questionNumber" : 25,
+      "group" : {
+        "kind" : "MULTI_SELECT",
+        "questions" : "25-26",
+        "instructions" : [ "Choose TWO letters, A-E.", "Which TWO topics do both students recommend should be included in the course?" ],
+        "stem" : "Which TWO topics do both students recommend should be included in the course?"
+      },
+      "selection" : {
+        "count" : 2,
+        "questions" : [ 25, 26 ]
+      }
+    },
+    "construct" : "multi_select",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "8fd9d3be1bc1431459213198a1cd8f50ca8abbaa3c318f49914fa162333ec8ab",
+    "createdAt" : null,
+    "ordinal" : 25
+  }, {
+    "id" : "c9908ffc-7016-5197-90e2-6a22d3b29602",
+    "groupId" : "ff5e2867-0aaa-5cfc-a970-a7bdbfe8c63c",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L026",
+    "version" : 1,
+    "prompt" : "Which TWO topics do both students recommend should be included in the course?",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "sustainable fishing"
+      }, {
+        "id" : "B",
+        "text" : "targeted nutrition"
+      }, {
+        "id" : "C",
+        "text" : "global differences in consumption"
+      }, {
+        "id" : "D",
+        "text" : "sustainable agriculture"
+      }, {
+        "id" : "E",
+        "text" : "digital technology and food"
+      } ],
+      "questionNumber" : 26,
+      "group" : {
+        "kind" : "MULTI_SELECT",
+        "questions" : "25-26",
+        "instructions" : [ "Choose TWO letters, A-E.", "Which TWO topics do both students recommend should be included in the course?" ],
+        "stem" : "Which TWO topics do both students recommend should be included in the course?"
+      },
+      "selection" : {
+        "count" : 2,
+        "questions" : [ 25, 26 ]
+      }
+    },
+    "construct" : "multi_select",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "cb6669ffd275f0ff989d6eb61d0198644d2f60945f6061db8715cbea04aa95f2",
+    "createdAt" : null,
+    "ordinal" : 26
+  }, {
+    "id" : "bbda5176-4ffe-52d7-b41f-3729df5a6d65",
+    "groupId" : "b6fb6890-8200-5ec7-ba70-16e3a868984c",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L027",
+    "version" : 1,
+    "prompt" : "Initial aim / ______",
+    "interactionType" : "MATCHING",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "This was challenging but enjoyable."
+      }, {
+        "id" : "B",
+        "text" : "This led to some disagreement."
+      }, {
+        "id" : "C",
+        "text" : "This was easy to decide on."
+      }, {
+        "id" : "D",
+        "text" : "This was helped by the guidelines provided."
+      }, {
+        "id" : "E",
+        "text" : "This seemed like an unnecessary stage."
+      }, {
+        "id" : "F",
+        "text" : "This involved selecting a new ingredient."
+      } ],
+      "questionNumber" : 27,
+      "group" : {
+        "kind" : "MATCHING",
+        "questions" : "27-30",
+        "instructions" : [ "Complete the flow-chart below.", "Choose FOUR answers from the box and write the correct letter, A-F, next to", "Questions 27-30." ],
+        "stem" : "Student project: developing a new food product\nInitial aim\n(27) ______\nLiterature review\n(28) ______\nProduct development\n(29) ______\nProduct production\n(30) ______"
+      }
+    },
+    "construct" : "matching",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "127df5a0f1629fbdc8cf827d32ff9c58ddbf3ae497d894a4b6bafd43ce9d2cdf",
+    "createdAt" : null,
+    "ordinal" : 27
+  }, {
+    "id" : "055f07a5-ba2d-594b-9512-314c45126d4f",
+    "groupId" : "b6fb6890-8200-5ec7-ba70-16e3a868984c",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L028",
+    "version" : 1,
+    "prompt" : "Literature review / ______",
+    "interactionType" : "MATCHING",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "This was challenging but enjoyable."
+      }, {
+        "id" : "B",
+        "text" : "This led to some disagreement."
+      }, {
+        "id" : "C",
+        "text" : "This was easy to decide on."
+      }, {
+        "id" : "D",
+        "text" : "This was helped by the guidelines provided."
+      }, {
+        "id" : "E",
+        "text" : "This seemed like an unnecessary stage."
+      }, {
+        "id" : "F",
+        "text" : "This involved selecting a new ingredient."
+      } ],
+      "questionNumber" : 28,
+      "group" : {
+        "kind" : "MATCHING",
+        "questions" : "27-30",
+        "instructions" : [ "Complete the flow-chart below.", "Choose FOUR answers from the box and write the correct letter, A-F, next to", "Questions 27-30." ],
+        "stem" : "Student project: developing a new food product\nInitial aim\n(27) ______\nLiterature review\n(28) ______\nProduct development\n(29) ______\nProduct production\n(30) ______"
+      }
+    },
+    "construct" : "matching",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "c2c20822c5526b94979980de2645239b0b96b1d9235055f0639e939b6084406e",
+    "createdAt" : null,
+    "ordinal" : 28
+  }, {
+    "id" : "8eb1ed1a-a638-5110-9298-5bc2f032cc45",
+    "groupId" : "b6fb6890-8200-5ec7-ba70-16e3a868984c",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L029",
+    "version" : 1,
+    "prompt" : "Product development / ______",
+    "interactionType" : "MATCHING",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "This was challenging but enjoyable."
+      }, {
+        "id" : "B",
+        "text" : "This led to some disagreement."
+      }, {
+        "id" : "C",
+        "text" : "This was easy to decide on."
+      }, {
+        "id" : "D",
+        "text" : "This was helped by the guidelines provided."
+      }, {
+        "id" : "E",
+        "text" : "This seemed like an unnecessary stage."
+      }, {
+        "id" : "F",
+        "text" : "This involved selecting a new ingredient."
+      } ],
+      "questionNumber" : 29,
+      "group" : {
+        "kind" : "MATCHING",
+        "questions" : "27-30",
+        "instructions" : [ "Complete the flow-chart below.", "Choose FOUR answers from the box and write the correct letter, A-F, next to", "Questions 27-30." ],
+        "stem" : "Student project: developing a new food product\nInitial aim\n(27) ______\nLiterature review\n(28) ______\nProduct development\n(29) ______\nProduct production\n(30) ______"
+      }
+    },
+    "construct" : "matching",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "9f503f897565937b991ff8d1e8d918dcffa038c95df12492a464d0d8a376d01d",
+    "createdAt" : null,
+    "ordinal" : 29
+  }, {
+    "id" : "7b18e008-7a88-5191-a9d3-62ae2b9c25e0",
+    "groupId" : "b6fb6890-8200-5ec7-ba70-16e3a868984c",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L030",
+    "version" : 1,
+    "prompt" : "Product production / ______",
+    "interactionType" : "MATCHING",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "This was challenging but enjoyable."
+      }, {
+        "id" : "B",
+        "text" : "This led to some disagreement."
+      }, {
+        "id" : "C",
+        "text" : "This was easy to decide on."
+      }, {
+        "id" : "D",
+        "text" : "This was helped by the guidelines provided."
+      }, {
+        "id" : "E",
+        "text" : "This seemed like an unnecessary stage."
+      }, {
+        "id" : "F",
+        "text" : "This involved selecting a new ingredient."
+      } ],
+      "questionNumber" : 30,
+      "group" : {
+        "kind" : "MATCHING",
+        "questions" : "27-30",
+        "instructions" : [ "Complete the flow-chart below.", "Choose FOUR answers from the box and write the correct letter, A-F, next to", "Questions 27-30." ],
+        "stem" : "Student project: developing a new food product\nInitial aim\n(27) ______\nLiterature review\n(28) ______\nProduct development\n(29) ______\nProduct production\n(30) ______"
+      }
+    },
+    "construct" : "matching",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "a17a9921a739060ca6682b5af744f2aadb745dc74a86875e0202b3ce8e482906",
+    "createdAt" : null,
+    "ordinal" : 30
+  }, {
+    "id" : "3d33bb57-f7cb-57ca-b603-066f61dad1f4",
+    "groupId" : "bf115b5a-4070-525d-a453-fdd84300aa53",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L031",
+    "version" : 1,
+    "prompt" : "Problems with overtourism / ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 31,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Challenges facing the cruise ship industry\nProblems with overtourism\n(31) ______\nis one of the worst problems.\nA tourist (32) ______\nis being introduced in some cities to reduce\nnumbers, e.g. Barcelona.\nBruges: action was taken to limit day trips from the nearby port because the\ncity was becoming a 'theme park' (e.g. many shops were only stocking\n(33) ______\nand souvenirs).\n.\nDubrovnik: limits the number of tourists by managing the (34) ______\nof cruise ship arrivals.\nProblems of perception\nCruises are generally associated with the elderly.\nThere is an assumption about the (35) ______\nof cruises.\n.\nPeople think there may be too many (36) ______\nSolutions\nCruise lines are attracting younger customers by:\nbecoming more sustainable e.g. using hybrid engines.\nhaving a wide range of activities e.g. boxing, (37) ______\nand well-\nbeing programmes.\noffering a diverse selection of food including (38) ______\noptions.\n.\nproviding reliable (39) ______\n.\nimproving marketing on social media with high quality (40) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "c0ac8098bd7175e51a30b6649f95882ea9117c56fe938e9746a568c5bd4e8bcf",
+    "createdAt" : null,
+    "ordinal" : 31
+  }, {
+    "id" : "a1556f75-eac0-5bf9-b04e-ca7396881c6c",
+    "groupId" : "bf115b5a-4070-525d-a453-fdd84300aa53",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L032",
+    "version" : 1,
+    "prompt" : "is one of the worst problems. / A tourist ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 32,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Challenges facing the cruise ship industry\nProblems with overtourism\n(31) ______\nis one of the worst problems.\nA tourist (32) ______\nis being introduced in some cities to reduce\nnumbers, e.g. Barcelona.\nBruges: action was taken to limit day trips from the nearby port because the\ncity was becoming a 'theme park' (e.g. many shops were only stocking\n(33) ______\nand souvenirs).\n.\nDubrovnik: limits the number of tourists by managing the (34) ______\nof cruise ship arrivals.\nProblems of perception\nCruises are generally associated with the elderly.\nThere is an assumption about the (35) ______\nof cruises.\n.\nPeople think there may be too many (36) ______\nSolutions\nCruise lines are attracting younger customers by:\nbecoming more sustainable e.g. using hybrid engines.\nhaving a wide range of activities e.g. boxing, (37) ______\nand well-\nbeing programmes.\noffering a diverse selection of food including (38) ______\noptions.\n.\nproviding reliable (39) ______\n.\nimproving marketing on social media with high quality (40) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "691d7845f193626dafd07697a4ab9b15b49f5d87c4ca0cb7a7585f1d92ffc661",
+    "createdAt" : null,
+    "ordinal" : 32
+  }, {
+    "id" : "d6fdf923-6045-52b4-8962-f037c01fcfe7",
+    "groupId" : "bf115b5a-4070-525d-a453-fdd84300aa53",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L033",
+    "version" : 1,
+    "prompt" : "city was becoming a 'theme park' (e.g. many shops were only stocking / ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 33,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Challenges facing the cruise ship industry\nProblems with overtourism\n(31) ______\nis one of the worst problems.\nA tourist (32) ______\nis being introduced in some cities to reduce\nnumbers, e.g. Barcelona.\nBruges: action was taken to limit day trips from the nearby port because the\ncity was becoming a 'theme park' (e.g. many shops were only stocking\n(33) ______\nand souvenirs).\n.\nDubrovnik: limits the number of tourists by managing the (34) ______\nof cruise ship arrivals.\nProblems of perception\nCruises are generally associated with the elderly.\nThere is an assumption about the (35) ______\nof cruises.\n.\nPeople think there may be too many (36) ______\nSolutions\nCruise lines are attracting younger customers by:\nbecoming more sustainable e.g. using hybrid engines.\nhaving a wide range of activities e.g. boxing, (37) ______\nand well-\nbeing programmes.\noffering a diverse selection of food including (38) ______\noptions.\n.\nproviding reliable (39) ______\n.\nimproving marketing on social media with high quality (40) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "55bd8ec5a0d6af4f9c3ef9a684606fc1989f29fa0966d9c7bbc7e10ad3f77714",
+    "createdAt" : null,
+    "ordinal" : 33
+  }, {
+    "id" : "695c7ee7-bfa7-528e-8309-31064b3f547a",
+    "groupId" : "bf115b5a-4070-525d-a453-fdd84300aa53",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L034",
+    "version" : 1,
+    "prompt" : "Dubrovnik: limits the number of tourists by managing the ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 34,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Challenges facing the cruise ship industry\nProblems with overtourism\n(31) ______\nis one of the worst problems.\nA tourist (32) ______\nis being introduced in some cities to reduce\nnumbers, e.g. Barcelona.\nBruges: action was taken to limit day trips from the nearby port because the\ncity was becoming a 'theme park' (e.g. many shops were only stocking\n(33) ______\nand souvenirs).\n.\nDubrovnik: limits the number of tourists by managing the (34) ______\nof cruise ship arrivals.\nProblems of perception\nCruises are generally associated with the elderly.\nThere is an assumption about the (35) ______\nof cruises.\n.\nPeople think there may be too many (36) ______\nSolutions\nCruise lines are attracting younger customers by:\nbecoming more sustainable e.g. using hybrid engines.\nhaving a wide range of activities e.g. boxing, (37) ______\nand well-\nbeing programmes.\noffering a diverse selection of food including (38) ______\noptions.\n.\nproviding reliable (39) ______\n.\nimproving marketing on social media with high quality (40) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "9d63aeac69db3e2f4e69ab684dc4992636df91f75b59f3f8f46c2f7dc08d97fc",
+    "createdAt" : null,
+    "ordinal" : 34
+  }, {
+    "id" : "5625808f-42da-5f4d-8c71-babcc4446bb1",
+    "groupId" : "bf115b5a-4070-525d-a453-fdd84300aa53",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L035",
+    "version" : 1,
+    "prompt" : "There is an assumption about the ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 35,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Challenges facing the cruise ship industry\nProblems with overtourism\n(31) ______\nis one of the worst problems.\nA tourist (32) ______\nis being introduced in some cities to reduce\nnumbers, e.g. Barcelona.\nBruges: action was taken to limit day trips from the nearby port because the\ncity was becoming a 'theme park' (e.g. many shops were only stocking\n(33) ______\nand souvenirs).\n.\nDubrovnik: limits the number of tourists by managing the (34) ______\nof cruise ship arrivals.\nProblems of perception\nCruises are generally associated with the elderly.\nThere is an assumption about the (35) ______\nof cruises.\n.\nPeople think there may be too many (36) ______\nSolutions\nCruise lines are attracting younger customers by:\nbecoming more sustainable e.g. using hybrid engines.\nhaving a wide range of activities e.g. boxing, (37) ______\nand well-\nbeing programmes.\noffering a diverse selection of food including (38) ______\noptions.\n.\nproviding reliable (39) ______\n.\nimproving marketing on social media with high quality (40) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "9285ab7e15f6656c150a1aa6fe380583e248d1c27e356e83f7132befe7465202",
+    "createdAt" : null,
+    "ordinal" : 35
+  }, {
+    "id" : "d10bea71-7658-5d69-9806-a8be3ff94549",
+    "groupId" : "bf115b5a-4070-525d-a453-fdd84300aa53",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L036",
+    "version" : 1,
+    "prompt" : "People think there may be too many ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 36,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Challenges facing the cruise ship industry\nProblems with overtourism\n(31) ______\nis one of the worst problems.\nA tourist (32) ______\nis being introduced in some cities to reduce\nnumbers, e.g. Barcelona.\nBruges: action was taken to limit day trips from the nearby port because the\ncity was becoming a 'theme park' (e.g. many shops were only stocking\n(33) ______\nand souvenirs).\n.\nDubrovnik: limits the number of tourists by managing the (34) ______\nof cruise ship arrivals.\nProblems of perception\nCruises are generally associated with the elderly.\nThere is an assumption about the (35) ______\nof cruises.\n.\nPeople think there may be too many (36) ______\nSolutions\nCruise lines are attracting younger customers by:\nbecoming more sustainable e.g. using hybrid engines.\nhaving a wide range of activities e.g. boxing, (37) ______\nand well-\nbeing programmes.\noffering a diverse selection of food including (38) ______\noptions.\n.\nproviding reliable (39) ______\n.\nimproving marketing on social media with high quality (40) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "f0aa720f726cb83a019fc5682a8ef8a5443d1e351117d95b8bc21892185bdcf0",
+    "createdAt" : null,
+    "ordinal" : 36
+  }, {
+    "id" : "8efb1f17-9d4a-5e65-a24d-e4f4ea588722",
+    "groupId" : "bf115b5a-4070-525d-a453-fdd84300aa53",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L037",
+    "version" : 1,
+    "prompt" : "having a wide range of activities e.g. boxing, ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 37,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Challenges facing the cruise ship industry\nProblems with overtourism\n(31) ______\nis one of the worst problems.\nA tourist (32) ______\nis being introduced in some cities to reduce\nnumbers, e.g. Barcelona.\nBruges: action was taken to limit day trips from the nearby port because the\ncity was becoming a 'theme park' (e.g. many shops were only stocking\n(33) ______\nand souvenirs).\n.\nDubrovnik: limits the number of tourists by managing the (34) ______\nof cruise ship arrivals.\nProblems of perception\nCruises are generally associated with the elderly.\nThere is an assumption about the (35) ______\nof cruises.\n.\nPeople think there may be too many (36) ______\nSolutions\nCruise lines are attracting younger customers by:\nbecoming more sustainable e.g. using hybrid engines.\nhaving a wide range of activities e.g. boxing, (37) ______\nand well-\nbeing programmes.\noffering a diverse selection of food including (38) ______\noptions.\n.\nproviding reliable (39) ______\n.\nimproving marketing on social media with high quality (40) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "765b3245ec401adbdeaea43051a9c98c2b1fa177f16a0458d492a64a10f7fc7d",
+    "createdAt" : null,
+    "ordinal" : 37
+  }, {
+    "id" : "04b3e633-0622-5a60-a6de-7c5f6997c165",
+    "groupId" : "bf115b5a-4070-525d-a453-fdd84300aa53",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L038",
+    "version" : 1,
+    "prompt" : "offering a diverse selection of food including ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 38,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Challenges facing the cruise ship industry\nProblems with overtourism\n(31) ______\nis one of the worst problems.\nA tourist (32) ______\nis being introduced in some cities to reduce\nnumbers, e.g. Barcelona.\nBruges: action was taken to limit day trips from the nearby port because the\ncity was becoming a 'theme park' (e.g. many shops were only stocking\n(33) ______\nand souvenirs).\n.\nDubrovnik: limits the number of tourists by managing the (34) ______\nof cruise ship arrivals.\nProblems of perception\nCruises are generally associated with the elderly.\nThere is an assumption about the (35) ______\nof cruises.\n.\nPeople think there may be too many (36) ______\nSolutions\nCruise lines are attracting younger customers by:\nbecoming more sustainable e.g. using hybrid engines.\nhaving a wide range of activities e.g. boxing, (37) ______\nand well-\nbeing programmes.\noffering a diverse selection of food including (38) ______\noptions.\n.\nproviding reliable (39) ______\n.\nimproving marketing on social media with high quality (40) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "bbdce2483527351b31c5fc87ce655e2862aec70ff1a5df8cbfe8144fc7eec006",
+    "createdAt" : null,
+    "ordinal" : 38
+  }, {
+    "id" : "850b8faa-8c40-5b89-9943-eecd1bdcb27e",
+    "groupId" : "bf115b5a-4070-525d-a453-fdd84300aa53",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L039",
+    "version" : 1,
+    "prompt" : ". / providing reliable ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 39,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Challenges facing the cruise ship industry\nProblems with overtourism\n(31) ______\nis one of the worst problems.\nA tourist (32) ______\nis being introduced in some cities to reduce\nnumbers, e.g. Barcelona.\nBruges: action was taken to limit day trips from the nearby port because the\ncity was becoming a 'theme park' (e.g. many shops were only stocking\n(33) ______\nand souvenirs).\n.\nDubrovnik: limits the number of tourists by managing the (34) ______\nof cruise ship arrivals.\nProblems of perception\nCruises are generally associated with the elderly.\nThere is an assumption about the (35) ______\nof cruises.\n.\nPeople think there may be too many (36) ______\nSolutions\nCruise lines are attracting younger customers by:\nbecoming more sustainable e.g. using hybrid engines.\nhaving a wide range of activities e.g. boxing, (37) ______\nand well-\nbeing programmes.\noffering a diverse selection of food including (38) ______\noptions.\n.\nproviding reliable (39) ______\n.\nimproving marketing on social media with high quality (40) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "334da2f11610469eefc82e395b825817cb19511a404de1e22d3a4d59db352ab7",
+    "createdAt" : null,
+    "ordinal" : 39
+  }, {
+    "id" : "0b8d21dd-62ad-5e15-b805-7ec8d5187ad5",
+    "groupId" : "bf115b5a-4070-525d-a453-fdd84300aa53",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_L040",
+    "version" : 1,
+    "prompt" : "improving marketing on social media with high quality ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 40,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Challenges facing the cruise ship industry\nProblems with overtourism\n(31) ______\nis one of the worst problems.\nA tourist (32) ______\nis being introduced in some cities to reduce\nnumbers, e.g. Barcelona.\nBruges: action was taken to limit day trips from the nearby port because the\ncity was becoming a 'theme park' (e.g. many shops were only stocking\n(33) ______\nand souvenirs).\n.\nDubrovnik: limits the number of tourists by managing the (34) ______\nof cruise ship arrivals.\nProblems of perception\nCruises are generally associated with the elderly.\nThere is an assumption about the (35) ______\nof cruises.\n.\nPeople think there may be too many (36) ______\nSolutions\nCruise lines are attracting younger customers by:\nbecoming more sustainable e.g. using hybrid engines.\nhaving a wide range of activities e.g. boxing, (37) ______\nand well-\nbeing programmes.\noffering a diverse selection of food including (38) ______\noptions.\n.\nproviding reliable (39) ______\n.\nimproving marketing on social media with high quality (40) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "fa38903676f3c29f26f6c8dc4103b5aebcee9a77c9747b71632d56b6fe845168",
+    "createdAt" : null,
+    "ordinal" : 40
+  }, {
+    "id" : "2b79d84f-902d-50fc-88c8-283270ba3018",
+    "groupId" : "2987d0a9-a63d-57de-a2af-eb8487b2b093",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_R014",
+    "version" : 1,
+    "prompt" : "a mention of the uncertainty regarding the purpose of certain objects",
+    "interactionType" : "MATCHING",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Paragraph A"
+      }, {
+        "id" : "B",
+        "text" : "Paragraph B"
+      }, {
+        "id" : "C",
+        "text" : "Paragraph C"
+      }, {
+        "id" : "D",
+        "text" : "Paragraph D"
+      }, {
+        "id" : "E",
+        "text" : "Paragraph E"
+      }, {
+        "id" : "F",
+        "text" : "Paragraph F"
+      }, {
+        "id" : "G",
+        "text" : "Paragraph G"
+      } ],
+      "questionNumber" : 14,
+      "group" : {
+        "kind" : "MATCHING",
+        "questions" : "14-19",
+        "instructions" : [ "Reading Passage 2 has seven paragraphs, A-G.", "Which paragraph contains the following information?", "Write the correct letter, A-G, in boxes 14-19 on your answer sheet." ]
+      }
+    },
+    "construct" : "matching",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "ad5855e8bc2900198b58dbda76896f35ed90dfb6cd9c5fbdab2b3cbfb07f19fb",
+    "createdAt" : null,
+    "ordinal" : 14
+  }, {
+    "id" : "ff6eb0b1-bf65-53a7-bae3-346952322013",
+    "groupId" : "2987d0a9-a63d-57de-a2af-eb8487b2b093",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_R015",
+    "version" : 1,
+    "prompt" : "the likelihood that a climatic factor increased the problems Mapungubwe faced",
+    "interactionType" : "MATCHING",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Paragraph A"
+      }, {
+        "id" : "B",
+        "text" : "Paragraph B"
+      }, {
+        "id" : "C",
+        "text" : "Paragraph C"
+      }, {
+        "id" : "D",
+        "text" : "Paragraph D"
+      }, {
+        "id" : "E",
+        "text" : "Paragraph E"
+      }, {
+        "id" : "F",
+        "text" : "Paragraph F"
+      }, {
+        "id" : "G",
+        "text" : "Paragraph G"
+      } ],
+      "questionNumber" : 15,
+      "group" : {
+        "kind" : "MATCHING",
+        "questions" : "14-19",
+        "instructions" : [ "Reading Passage 2 has seven paragraphs, A-G.", "Which paragraph contains the following information?", "Write the correct letter, A-G, in boxes 14-19 on your answer sheet." ]
+      }
+    },
+    "construct" : "matching",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "b01b91a593d2e0b96667435e13a90e2692e24e692a770f44134051f64529003f",
+    "createdAt" : null,
+    "ordinal" : 15
+  }, {
+    "id" : "6fc4fde3-c515-50cc-a2c6-04618b51df71",
+    "groupId" : "2987d0a9-a63d-57de-a2af-eb8487b2b093",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_R016",
+    "version" : 1,
+    "prompt" : "a mention of the location where members of the king's family are thought to have lived",
+    "interactionType" : "MATCHING",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Paragraph A"
+      }, {
+        "id" : "B",
+        "text" : "Paragraph B"
+      }, {
+        "id" : "C",
+        "text" : "Paragraph C"
+      }, {
+        "id" : "D",
+        "text" : "Paragraph D"
+      }, {
+        "id" : "E",
+        "text" : "Paragraph E"
+      }, {
+        "id" : "F",
+        "text" : "Paragraph F"
+      }, {
+        "id" : "G",
+        "text" : "Paragraph G"
+      } ],
+      "questionNumber" : 16,
+      "group" : {
+        "kind" : "MATCHING",
+        "questions" : "14-19",
+        "instructions" : [ "Reading Passage 2 has seven paragraphs, A-G.", "Which paragraph contains the following information?", "Write the correct letter, A-G, in boxes 14-19 on your answer sheet." ]
+      }
+    },
+    "construct" : "matching",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "22419e88866ccb3b965d71355f1eb88b3b6c9cf21a36a008e4b6d89471ecd3ae",
+    "createdAt" : null,
+    "ordinal" : 16
+  }, {
+    "id" : "0b1bd5c3-86de-504c-83ee-17e6b23c1a85",
+    "groupId" : "2987d0a9-a63d-57de-a2af-eb8487b2b093",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_R017",
+    "version" : 1,
+    "prompt" : "a reference to people who brought goods by ship",
+    "interactionType" : "MATCHING",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Paragraph A"
+      }, {
+        "id" : "B",
+        "text" : "Paragraph B"
+      }, {
+        "id" : "C",
+        "text" : "Paragraph C"
+      }, {
+        "id" : "D",
+        "text" : "Paragraph D"
+      }, {
+        "id" : "E",
+        "text" : "Paragraph E"
+      }, {
+        "id" : "F",
+        "text" : "Paragraph F"
+      }, {
+        "id" : "G",
+        "text" : "Paragraph G"
+      } ],
+      "questionNumber" : 17,
+      "group" : {
+        "kind" : "MATCHING",
+        "questions" : "14-19",
+        "instructions" : [ "Reading Passage 2 has seven paragraphs, A-G.", "Which paragraph contains the following information?", "Write the correct letter, A-G, in boxes 14-19 on your answer sheet." ]
+      }
+    },
+    "construct" : "matching",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "f9d3dda8ca9fb38254778febc1e01e7641e6a94a05404c92f74f92ae82c38151",
+    "createdAt" : null,
+    "ordinal" : 17
+  }, {
+    "id" : "c3b28bdb-7eec-58e0-8b83-4aed39190846",
+    "groupId" : "2987d0a9-a63d-57de-a2af-eb8487b2b093",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_R018",
+    "version" : 1,
+    "prompt" : "an estimate of the size to which the Mapungubwe community grew",
+    "interactionType" : "MATCHING",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Paragraph A"
+      }, {
+        "id" : "B",
+        "text" : "Paragraph B"
+      }, {
+        "id" : "C",
+        "text" : "Paragraph C"
+      }, {
+        "id" : "D",
+        "text" : "Paragraph D"
+      }, {
+        "id" : "E",
+        "text" : "Paragraph E"
+      }, {
+        "id" : "F",
+        "text" : "Paragraph F"
+      }, {
+        "id" : "G",
+        "text" : "Paragraph G"
+      } ],
+      "questionNumber" : 18,
+      "group" : {
+        "kind" : "MATCHING",
+        "questions" : "14-19",
+        "instructions" : [ "Reading Passage 2 has seven paragraphs, A-G.", "Which paragraph contains the following information?", "Write the correct letter, A-G, in boxes 14-19 on your answer sheet." ]
+      }
+    },
+    "construct" : "matching",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "821bda67ac44a3ed5319589c105fff67b6cf12eebd1dd7304909c97413e9d11b",
+    "createdAt" : null,
+    "ordinal" : 18
+  }, {
+    "id" : "76d001ce-3195-5a5a-a1b6-18b025f8351b",
+    "groupId" : "2987d0a9-a63d-57de-a2af-eb8487b2b093",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_R019",
+    "version" : 1,
+    "prompt" : "a mention of agricultural produce being exchanged for other items",
+    "interactionType" : "MATCHING",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Paragraph A"
+      }, {
+        "id" : "B",
+        "text" : "Paragraph B"
+      }, {
+        "id" : "C",
+        "text" : "Paragraph C"
+      }, {
+        "id" : "D",
+        "text" : "Paragraph D"
+      }, {
+        "id" : "E",
+        "text" : "Paragraph E"
+      }, {
+        "id" : "F",
+        "text" : "Paragraph F"
+      }, {
+        "id" : "G",
+        "text" : "Paragraph G"
+      } ],
+      "questionNumber" : 19,
+      "group" : {
+        "kind" : "MATCHING",
+        "questions" : "14-19",
+        "instructions" : [ "Reading Passage 2 has seven paragraphs, A-G.", "Which paragraph contains the following information?", "Write the correct letter, A-G, in boxes 14-19 on your answer sheet." ]
+      }
+    },
+    "construct" : "matching",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "32f4ae129b3e6a1a6a3741c2e1f8100d8f2b07f0614564e8c2735747e0f2e8a0",
+    "createdAt" : null,
+    "ordinal" : 19
+  }, {
+    "id" : "f3a2c0ec-854f-549a-9e69-5c25adc2e304",
+    "groupId" : "1a3fa854-ab17-5c25-bc1f-0d5fb127c039",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_R020",
+    "version" : 1,
+    "prompt" : "The archaeological record reveals information about gold and the kingdom of Mapungubwe. Which TWO pieces of information are mentioned by the writer?",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Not everyone in Mapungubwe used gold as a form of payment."
+      }, {
+        "id" : "B",
+        "text" : "Items of gold were placed close to where Mapungubwe kings were buried."
+      }, {
+        "id" : "C",
+        "text" : "The most valuable item discovered in Mapungubwe was a sceptre made of gold."
+      }, {
+        "id" : "D",
+        "text" : "The way gold was decorated in Mapungubwe was also practised in another kingdom."
+      }, {
+        "id" : "E",
+        "text" : "Working with gold was a respected occupation in the Mapungubwe community."
+      } ],
+      "questionNumber" : 20,
+      "group" : {
+        "kind" : "MULTI_SELECT",
+        "questions" : "20-21",
+        "instructions" : [ "Choose TWO letters, A-E.", "Write the correct letters in boxes 20 and 21 on your answer sheet." ],
+        "stem" : "The archaeological record reveals information about gold and the kingdom of Mapungubwe. Which TWO pieces of information are mentioned by the writer?"
+      },
+      "selection" : {
+        "count" : 2,
+        "questions" : [ 20, 21 ]
+      }
+    },
+    "construct" : "multi_select",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "e869ccbd29bac700fc110b0fe8b2ad68788856986bdeda999f479ab465761292",
+    "createdAt" : null,
+    "ordinal" : 20
+  }, {
+    "id" : "c291f9d4-cad2-5228-8aaf-7f859838ce74",
+    "groupId" : "1a3fa854-ab17-5c25-bc1f-0d5fb127c039",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_R021",
+    "version" : 1,
+    "prompt" : "The archaeological record reveals information about gold and the kingdom of Mapungubwe. Which TWO pieces of information are mentioned by the writer?",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Not everyone in Mapungubwe used gold as a form of payment."
+      }, {
+        "id" : "B",
+        "text" : "Items of gold were placed close to where Mapungubwe kings were buried."
+      }, {
+        "id" : "C",
+        "text" : "The most valuable item discovered in Mapungubwe was a sceptre made of gold."
+      }, {
+        "id" : "D",
+        "text" : "The way gold was decorated in Mapungubwe was also practised in another kingdom."
+      }, {
+        "id" : "E",
+        "text" : "Working with gold was a respected occupation in the Mapungubwe community."
+      } ],
+      "questionNumber" : 21,
+      "group" : {
+        "kind" : "MULTI_SELECT",
+        "questions" : "20-21",
+        "instructions" : [ "Choose TWO letters, A-E.", "Write the correct letters in boxes 20 and 21 on your answer sheet." ],
+        "stem" : "The archaeological record reveals information about gold and the kingdom of Mapungubwe. Which TWO pieces of information are mentioned by the writer?"
+      },
+      "selection" : {
+        "count" : 2,
+        "questions" : [ 20, 21 ]
+      }
+    },
+    "construct" : "multi_select",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "92700fafdb44bf2d2bdfd75e23b60a07f03c55c61bb5ff7adb4d69c3618845d4",
+    "createdAt" : null,
+    "ordinal" : 21
+  }, {
+    "id" : "16588c89-4c12-5463-8be7-98e6857cac57",
+    "groupId" : "59faa073-56c4-5d5a-81a6-dee80ae51b8e",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_R022",
+    "version" : 1,
+    "prompt" : "The Mapungubwe community's ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 22,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "22-26",
+        "instructions" : [ "Complete the summary below.", "Choose ONE WORD ONLY from the passage for each answer.", "Write your answers in boxes 22-26 on your answer sheet." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Archaeological discoveries\nThe Mapungubwe community's (22) ______\nis indicated by the amount of\nprofessionally made pottery discovered at the site. Many of these objects, such as\nbeakers and bowls, are highly decorated and have been marked with stamps. Other\nfinds include round ceramic objects, (23) ______\nand figures of various\nanimals, as well as models of people with stretched (24) ______\nIt is possible\nthat these had a role in ceremonies to honour (25) ______\nIn addition, pieces\nof (26) ______\nmade from a local metal have been found at the site."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "8580d319bd949b6547d79fb490965b795831e584979bff62aeb9d87e5d3569ae",
+    "createdAt" : null,
+    "ordinal" : 22
+  }, {
+    "id" : "08c2c627-934b-5a97-9c0a-c6c56e603b23",
+    "groupId" : "59faa073-56c4-5d5a-81a6-dee80ae51b8e",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_R023",
+    "version" : 1,
+    "prompt" : "finds include round ceramic objects, ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 23,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "22-26",
+        "instructions" : [ "Complete the summary below.", "Choose ONE WORD ONLY from the passage for each answer.", "Write your answers in boxes 22-26 on your answer sheet." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Archaeological discoveries\nThe Mapungubwe community's (22) ______\nis indicated by the amount of\nprofessionally made pottery discovered at the site. Many of these objects, such as\nbeakers and bowls, are highly decorated and have been marked with stamps. Other\nfinds include round ceramic objects, (23) ______\nand figures of various\nanimals, as well as models of people with stretched (24) ______\nIt is possible\nthat these had a role in ceremonies to honour (25) ______\nIn addition, pieces\nof (26) ______\nmade from a local metal have been found at the site."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "a1b942d708956a9b38b1188dda19441ba19fd953ea384f8438c2a2dc2150699c",
+    "createdAt" : null,
+    "ordinal" : 23
+  }, {
+    "id" : "d0ffa678-7ff2-5166-bed5-45db99219f01",
+    "groupId" : "59faa073-56c4-5d5a-81a6-dee80ae51b8e",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_R024",
+    "version" : 1,
+    "prompt" : "animals, as well as models of people with stretched ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 24,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "22-26",
+        "instructions" : [ "Complete the summary below.", "Choose ONE WORD ONLY from the passage for each answer.", "Write your answers in boxes 22-26 on your answer sheet." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Archaeological discoveries\nThe Mapungubwe community's (22) ______\nis indicated by the amount of\nprofessionally made pottery discovered at the site. Many of these objects, such as\nbeakers and bowls, are highly decorated and have been marked with stamps. Other\nfinds include round ceramic objects, (23) ______\nand figures of various\nanimals, as well as models of people with stretched (24) ______\nIt is possible\nthat these had a role in ceremonies to honour (25) ______\nIn addition, pieces\nof (26) ______\nmade from a local metal have been found at the site."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "98af6e3ec80f90181bb935250a1e724f424e256446b4405f454ca89ecba34eac",
+    "createdAt" : null,
+    "ordinal" : 24
+  }, {
+    "id" : "c3b8579b-9229-5a04-aac9-5f3101d5f8d2",
+    "groupId" : "59faa073-56c4-5d5a-81a6-dee80ae51b8e",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_R025",
+    "version" : 1,
+    "prompt" : "that these had a role in ceremonies to honour ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 25,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "22-26",
+        "instructions" : [ "Complete the summary below.", "Choose ONE WORD ONLY from the passage for each answer.", "Write your answers in boxes 22-26 on your answer sheet." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Archaeological discoveries\nThe Mapungubwe community's (22) ______\nis indicated by the amount of\nprofessionally made pottery discovered at the site. Many of these objects, such as\nbeakers and bowls, are highly decorated and have been marked with stamps. Other\nfinds include round ceramic objects, (23) ______\nand figures of various\nanimals, as well as models of people with stretched (24) ______\nIt is possible\nthat these had a role in ceremonies to honour (25) ______\nIn addition, pieces\nof (26) ______\nmade from a local metal have been found at the site."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "0b38fafe681353c43d87d4c6993969841ddf36443828cf703901dc811ab08c86",
+    "createdAt" : null,
+    "ordinal" : 25
+  }, {
+    "id" : "92bbf5b0-bea4-5654-bdd2-db68fa2e8322",
+    "groupId" : "59faa073-56c4-5d5a-81a6-dee80ae51b8e",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_R026",
+    "version" : 1,
+    "prompt" : "In addition, pieces / of ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 26,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "22-26",
+        "instructions" : [ "Complete the summary below.", "Choose ONE WORD ONLY from the passage for each answer.", "Write your answers in boxes 22-26 on your answer sheet." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Archaeological discoveries\nThe Mapungubwe community's (22) ______\nis indicated by the amount of\nprofessionally made pottery discovered at the site. Many of these objects, such as\nbeakers and bowls, are highly decorated and have been marked with stamps. Other\nfinds include round ceramic objects, (23) ______\nand figures of various\nanimals, as well as models of people with stretched (24) ______\nIt is possible\nthat these had a role in ceremonies to honour (25) ______\nIn addition, pieces\nof (26) ______\nmade from a local metal have been found at the site."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "ae4a378439973a2e393712cab74778c1f84fdcd4e0c676268e0810a5c5f394ce",
+    "createdAt" : null,
+    "ordinal" : 26
+  }, {
+    "id" : "0ad23098-92b6-5969-b7c0-8a7deaefec79",
+    "groupId" : "eb2ab1da-4415-57d4-8baa-cdbdde7110a3",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_W2",
+    "version" : 1,
+    "prompt" : "You should spend about 40 minutes on this task. Write about the following topic: Some people say that in the digital age, theatres and cinemas are no longer important as people can watch all the entertainment they want online. Others argue that theatres and cinemas are still important both economically and culturally. Discuss both these views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience. Write at least 250 words .",
+    "interactionType" : "WRITING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "free_text",
+      "minimumWords" : 250,
+      "recommendedMinutes" : 40
+    },
+    "construct" : "writing_task",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "def423211c7ded665ea1e5e5dd68de45237f89ecd3cfe8f359385b7668a34d13",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "15a862a2-c244-58a2-842a-62ec9c12c149",
+    "groupId" : "0f167bec-a3cb-54da-9159-1b24a1b04a49",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_S1_T1",
+    "version" : 1,
+    "prompt" : "How well do you know the capital city of your country?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "880a1e88d6ffa8ae1ae3f4a2536d03e6a6893667a6e4345705c1c8dea0260cfc",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "75af001d-22e6-5df6-9a4a-e95969312d60",
+    "groupId" : "0f167bec-a3cb-54da-9159-1b24a1b04a49",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_S1_T2",
+    "version" : 1,
+    "prompt" : "Do you think cities are exciting places to live?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "7150736dd48b4658a24eb7c5e20028a6e9fa9cd6ff78a9da36f2c236830897a4",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "bc2ee9d6-b577-514c-90f3-f77fd9f23a0b",
+    "groupId" : "0f167bec-a3cb-54da-9159-1b24a1b04a49",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_S1_T3",
+    "version" : 1,
+    "prompt" : "Why do some people dislike living in a city?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "4843b9d4f48ab2a71a3a37ff0ebe5917f997974af8ee8b9c3f4fab916ed8570c",
+    "createdAt" : null,
+    "ordinal" : 3
+  }, {
+    "id" : "499dbc7b-adf2-52d7-ae28-647bc6283298",
+    "groupId" : "0f167bec-a3cb-54da-9159-1b24a1b04a49",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_S1_T4",
+    "version" : 1,
+    "prompt" : "If you could visit any city in the world, where would you go?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "7466e7851af12506cb750c3502f34582d4998ad5eba8a0083c706792f1c4a021",
+    "createdAt" : null,
+    "ordinal" : 4
+  }, {
+    "id" : "5c7c6af7-ce91-5606-91ec-eedb437cdae1",
+    "groupId" : "53abdae5-839a-5dc2-abb9-cab1d1b50967",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_S2_T1",
+    "version" : 1,
+    "prompt" : "Describe a time when you read or heard that you thought was not true. You should say: where you read/heard this what you read/heard why you thought it was not true and explain how you felt about reading/hearing this thing that you thought was not true.",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "049ea2ddcf713e84920ae83840b8dd7b7d4435e0747c4d0227b8c39360dbee3f",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "f276078e-26c0-5567-b747-d179158b8f2e",
+    "groupId" : "2bf9605b-10c3-5605-8a4e-741f56610b1e",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_S3_T1",
+    "version" : 1,
+    "prompt" : "Do you think children are more honest than adults?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "7f6ab0a70db5b356ea21c25abac70ec601e224c1949590b235949919b8d56f0f",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "a1a18048-8a31-544a-bd58-acb226ef0cc7",
+    "groupId" : "2bf9605b-10c3-5605-8a4e-741f56610b1e",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_S3_T2",
+    "version" : 1,
+    "prompt" : "Why do adults tell children it's important to be honest?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "fd2c02857587c661b5cdb4c5bade36e5eab8002a1f00138d76b3388f3feb4681",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "8ec84d05-dc8c-5911-b910-3931dd5c8920",
+    "groupId" : "2bf9605b-10c3-5605-8a4e-741f56610b1e",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_S3_T3",
+    "version" : 1,
+    "prompt" : "Do you think there are sometimes good reasons for adults not to tell children the truth?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "61d31437eb8453ad038bee854a55115c3f109792136234dad918f0177af738f9",
+    "createdAt" : null,
+    "ordinal" : 3
+  }, {
+    "id" : "4cc5b334-34ef-5be8-b891-d33d6506c2b2",
+    "groupId" : "2bf9605b-10c3-5605-8a4e-741f56610b1e",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_S3_T4",
+    "version" : 1,
+    "prompt" : "Are there any claims in advertisements that are sometimes not true?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "42d83513b5ae93e77482798e60c04008cbab9c3ce76a0ddc73d22f371747edc2",
+    "createdAt" : null,
+    "ordinal" : 4
+  }, {
+    "id" : "c4de3afe-3c42-54a8-b858-6ee059f53f8f",
+    "groupId" : "2bf9605b-10c3-5605-8a4e-741f56610b1e",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_S3_T5",
+    "version" : 1,
+    "prompt" : "Why do people still buy things even when they know advertisements aren't completely accurate?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "ebf189dadd581143c1ef2cb09cab8e69d88badf09e551e5ea1e695270c04dac4",
+    "createdAt" : null,
+    "ordinal" : 5
+  }, {
+    "id" : "442141ef-92c7-501d-8d6c-9b8e8bae703e",
+    "groupId" : "2bf9605b-10c3-5605-8a4e-741f56610b1e",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T2_S3_T6",
+    "version" : 1,
+    "prompt" : "Do you think advertisements that are dishonest should be banned?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "contentHash" : "be213bc451ac37c7c102ee044f247eed83b1b3e58d5a6316047760edbbcab48c",
+    "createdAt" : null,
+    "ordinal" : 6
+  } ],
+  "answerSpecs" : [ {
+    "id" : "820cd5b2-fb7f-5d24-9dc1-a6b7c654f064",
+    "itemId" : "a1dbba09-6ee7-5d42-a3bd-cfbccb83be79",
+    "acceptedAnswers" : {
+      "values" : [ "B", "E" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      },
+      "unorderedSet" : {
+        "questions" : [ 21, 22 ],
+        "values" : [ "B", "E" ],
+        "creditPerQuestion" : 1
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "36ade812-f020-53a1-93e7-dbb5bcaa417f",
+    "itemId" : "e7d53ff9-0cc1-5efd-b47e-840a3897bb24",
+    "acceptedAnswers" : {
+      "values" : [ "B", "E" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      },
+      "unorderedSet" : {
+        "questions" : [ 21, 22 ],
+        "values" : [ "B", "E" ],
+        "creditPerQuestion" : 1
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "dcc90c0a-b61c-50b7-b3fa-4379ecf92ddf",
+    "itemId" : "eccec167-3f9b-530c-9927-8f8b9a230793",
+    "acceptedAnswers" : {
+      "values" : [ "C", "D" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      },
+      "unorderedSet" : {
+        "questions" : [ 23, 24 ],
+        "values" : [ "C", "D" ],
+        "creditPerQuestion" : 1
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "8cd24082-a384-5b73-bdc9-b9207364ce30",
+    "itemId" : "530bf6cf-ae54-51ef-a2f9-a3fb372c9482",
+    "acceptedAnswers" : {
+      "values" : [ "C", "D" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      },
+      "unorderedSet" : {
+        "questions" : [ 23, 24 ],
+        "values" : [ "C", "D" ],
+        "creditPerQuestion" : 1
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "cda00eb8-7c5d-5f18-968d-e02ae2598778",
+    "itemId" : "3c995bd6-7cf3-585a-baa2-1cc0616b91b3",
+    "acceptedAnswers" : {
+      "values" : [ "A", "C" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      },
+      "unorderedSet" : {
+        "questions" : [ 25, 26 ],
+        "values" : [ "A", "C" ],
+        "creditPerQuestion" : 1
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "7d750266-4dc5-5e4c-96bb-65287ca55c89",
+    "itemId" : "c9908ffc-7016-5197-90e2-6a22d3b29602",
+    "acceptedAnswers" : {
+      "values" : [ "A", "C" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      },
+      "unorderedSet" : {
+        "questions" : [ 25, 26 ],
+        "values" : [ "A", "C" ],
+        "creditPerQuestion" : 1
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "3b47caf2-3b69-5ad3-afd2-74f3f8e3f0d5",
+    "itemId" : "bbda5176-4ffe-52d7-b41f-3729df5a6d65",
+    "acceptedAnswers" : {
+      "values" : [ "C" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "7d98562b-da76-51c2-80fb-a273a340a3f6",
+    "itemId" : "055f07a5-ba2d-594b-9512-314c45126d4f",
+    "acceptedAnswers" : {
+      "values" : [ "D" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "fcfe21c6-a2b0-5fbd-8b6a-e91faab1a20a",
+    "itemId" : "8eb1ed1a-a638-5110-9298-5bc2f032cc45",
+    "acceptedAnswers" : {
+      "values" : [ "F" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "4f2ce21b-582a-50af-b540-b3ed9bf9450e",
+    "itemId" : "7b18e008-7a88-5191-a9d3-62ae2b9c25e0",
+    "acceptedAnswers" : {
+      "values" : [ "A" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "789bd0bd-f16f-5ff6-a6bf-15dcb75f03d9",
+    "itemId" : "3d33bb57-f7cb-57ca-b603-066f61dad1f4",
+    "acceptedAnswers" : {
+      "values" : [ "Pollution" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "6c98129b-823c-5ea5-9369-6f42d61a05b7",
+    "itemId" : "a1556f75-eac0-5bf9-b04e-ca7396881c6c",
+    "acceptedAnswers" : {
+      "values" : [ "tax" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "af96248c-ea31-5d17-bcc8-024cf500b292",
+    "itemId" : "d6fdf923-6045-52b4-8962-f037c01fcfe7",
+    "acceptedAnswers" : {
+      "values" : [ "chocolate" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "c907bdab-667d-56ef-a823-145052aa17c1",
+    "itemId" : "695c7ee7-bfa7-528e-8309-31064b3f547a",
+    "acceptedAnswers" : {
+      "values" : [ "timing" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "ec891d54-77f1-5e90-bd2f-ebc85246f238",
+    "itemId" : "5625808f-42da-5f4d-8c71-babcc4446bb1",
+    "acceptedAnswers" : {
+      "values" : [ "cost" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "29e893fd-a85e-5458-8a92-a157abbdf3f6",
+    "itemId" : "d10bea71-7658-5d69-9806-a8be3ff94549",
+    "acceptedAnswers" : {
+      "values" : [ "rules" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "f869bbf7-4d39-5a17-a48f-89c9f99eb77d",
+    "itemId" : "8efb1f17-9d4a-5e65-a24d-e4f4ea588722",
+    "acceptedAnswers" : {
+      "values" : [ "diving" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "376477f8-7dcd-5673-acf7-a8d7a8f6a5cb",
+    "itemId" : "04b3e633-0622-5a60-a6de-7c5f6997c165",
+    "acceptedAnswers" : {
+      "values" : [ "vegan" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "221e66ef-5f10-576e-88f3-1a2473ba6cbc",
+    "itemId" : "850b8faa-8c40-5b89-9943-eecd1bdcb27e",
+    "acceptedAnswers" : {
+      "values" : [ "wifi" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "7a1b2e0b-5ac0-5f21-b054-521f11f07d31",
+    "itemId" : "0b8d21dd-62ad-5e15-b805-7ec8d5187ad5",
+    "acceptedAnswers" : {
+      "values" : [ "videos" ],
+      "keySource" : {
+        "page" : 120,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "50b6613e-c765-5cb3-bdb0-56b8ce845d7d",
+    "itemId" : "2b79d84f-902d-50fc-88c8-283270ba3018",
+    "acceptedAnswers" : {
+      "values" : [ "E" ],
+      "keySource" : {
+        "page" : 121,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "c6bdb35e-c248-539d-8be4-48fa0b630bea",
+    "itemId" : "ff6eb0b1-bf65-53a7-bae3-346952322013",
+    "acceptedAnswers" : {
+      "values" : [ "G" ],
+      "keySource" : {
+        "page" : 121,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "f49a4042-5889-5bc4-b35d-20b21b22dec3",
+    "itemId" : "6fc4fde3-c515-50cc-a2c6-04618b51df71",
+    "acceptedAnswers" : {
+      "values" : [ "C" ],
+      "keySource" : {
+        "page" : 121,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "ea02ced9-5390-50f3-8f0b-652524e03dd8",
+    "itemId" : "0b1bd5c3-86de-504c-83ee-17e6b23c1a85",
+    "acceptedAnswers" : {
+      "values" : [ "D" ],
+      "keySource" : {
+        "page" : 121,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "56765d9e-f1fe-5606-83df-27fc3c344369",
+    "itemId" : "c3b28bdb-7eec-58e0-8b83-4aed39190846",
+    "acceptedAnswers" : {
+      "values" : [ "B" ],
+      "keySource" : {
+        "page" : 121,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "81587710-fa1d-50db-bc6e-8168a772adfe",
+    "itemId" : "76d001ce-3195-5a5a-a1b6-18b025f8351b",
+    "acceptedAnswers" : {
+      "values" : [ "A" ],
+      "keySource" : {
+        "page" : 121,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "f856ce3b-93aa-50e1-a330-1eac87830805",
+    "itemId" : "f3a2c0ec-854f-549a-9e69-5c25adc2e304",
+    "acceptedAnswers" : {
+      "values" : [ "B", "D" ],
+      "keySource" : {
+        "page" : 121,
+        "confidence" : "CONFIDENT"
+      },
+      "unorderedSet" : {
+        "questions" : [ 20, 21 ],
+        "values" : [ "B", "D" ],
+        "creditPerQuestion" : 1
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "6300e794-7589-5d75-a81c-ae70dfe3cce9",
+    "itemId" : "c291f9d4-cad2-5228-8aaf-7f859838ce74",
+    "acceptedAnswers" : {
+      "values" : [ "B", "D" ],
+      "keySource" : {
+        "page" : 121,
+        "confidence" : "CONFIDENT"
+      },
+      "unorderedSet" : {
+        "questions" : [ 20, 21 ],
+        "values" : [ "B", "D" ],
+        "creditPerQuestion" : 1
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "6c88383d-34a8-5cd0-a57c-3bf21d643704",
+    "itemId" : "16588c89-4c12-5463-8be7-98e6857cac57",
+    "acceptedAnswers" : {
+      "values" : [ "prosperity" ],
+      "keySource" : {
+        "page" : 121,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "8c01280f-9bd9-5ba4-8cb1-72828f95e830",
+    "itemId" : "08c2c627-934b-5a97-9c0a-c6c56e603b23",
+    "acceptedAnswers" : {
+      "values" : [ "whistles" ],
+      "keySource" : {
+        "page" : 121,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "d118ad93-799f-5c37-84f1-9f1c950de90a",
+    "itemId" : "d0ffa678-7ff2-5166-bed5-45db99219f01",
+    "acceptedAnswers" : {
+      "values" : [ "bodies" ],
+      "keySource" : {
+        "page" : 121,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "262bbbe8-e11b-5936-958e-981bdd6fbe12",
+    "itemId" : "c3b8579b-9229-5a04-aac9-5f3101d5f8d2",
+    "acceptedAnswers" : {
+      "values" : [ "ancestors" ],
+      "keySource" : {
+        "page" : 121,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "4da99ecb-aaf6-5a50-961d-b9c2f43f975d",
+    "itemId" : "92bbf5b0-bea4-5654-bdd2-db68fa2e8322",
+    "acceptedAnswers" : {
+      "values" : [ "jewellery", "jewelry" ],
+      "keySource" : {
+        "page" : 121,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "06a06ab9-75d4-562d-b73f-c85f54a5ab0e",
+    "itemId" : "0ad23098-92b6-5969-b7c0-8a7deaefec79",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "minimumWords" : 250
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-WRITING-TEXT-V1",
+      "preserveParagraphs" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "createdAt" : null
+  }, {
+    "id" : "d70bf3b6-2d60-5392-b69c-6844db6e8696",
+    "itemId" : "15a862a2-c244-58a2-842a-62ec9c12c149",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "68b55ef4-9be6-5b44-bc59-1f174b563f02",
+    "itemId" : "75af001d-22e6-5df6-9a4a-e95969312d60",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "2d6a4dda-9ef3-5c1b-9111-8b82fc73c26f",
+    "itemId" : "bc2ee9d6-b577-514c-90f3-f77fd9f23a0b",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "c2da72eb-569a-5df5-985c-fc38a3519066",
+    "itemId" : "499dbc7b-adf2-52d7-ae28-647bc6283298",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "1597fd2f-24cb-5e6c-833e-89849d5ae317",
+    "itemId" : "5c7c6af7-ce91-5606-91ec-eedb437cdae1",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "e3d4d4d8-1909-5859-ac6b-42f9964bd759",
+    "itemId" : "f276078e-26c0-5567-b747-d179158b8f2e",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "0ac15f50-666d-55fe-8fd6-3b3c61200c49",
+    "itemId" : "a1a18048-8a31-544a-bd58-acb226ef0cc7",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "5e774bde-614b-5e40-8571-8cd0f295bc88",
+    "itemId" : "8ec84d05-dc8c-5911-b910-3931dd5c8920",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "6bffd4c9-7033-5d7c-a828-f3c8aa20e98d",
+    "itemId" : "4cc5b334-34ef-5be8-b891-d33d6506c2b2",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "0b66b510-0e6b-50ed-9d4e-c98c17e36e31",
+    "itemId" : "c4de3afe-3c42-54a8-b858-6ee059f53f8f",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "9c414290-b217-57b8-bab2-5c68c23d608a",
+    "itemId" : "442141ef-92c7-501d-8d6c-9b8e8bae703e",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  } ],
+  "assets" : [ {
+    "id" : "8d6bcec7-28c1-5945-b5cf-daef2bdcf993",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "objectKey" : "extracted/audio/c1fb86996c6c9ac1babfa9ff55274da2ccd8f462de54a069a92635c39958af13.mp3",
+    "versionId" : "1",
+    "sha256Hash" : "c1fb86996c6c9ac1babfa9ff55274da2ccd8f462de54a069a92635c39958af13",
+    "mimeType" : "audio/mpeg",
+    "byteSize" : 10560886,
+    "durationMs" : 440007,
+    "dimensions" : null,
+    "validationState" : "VALIDATED",
+    "createdAt" : null
+  }, {
+    "id" : "4efe8d88-27e8-5e60-9542-89c7dc273712",
+    "provenanceId" : "df49a4a2-1887-5952-970a-5bd72a09ca96",
+    "objectKey" : "extracted/audio/3addbca5ac869513de01e9d461585609f5a26ec3909af4884df8c121e0a28dae.mp3",
+    "versionId" : "1",
+    "sha256Hash" : "3addbca5ac869513de01e9d461585609f5a26ec3909af4884df8c121e0a28dae",
+    "mimeType" : "audio/mpeg",
+    "byteSize" : 11033597,
+    "durationMs" : 459703,
+    "dimensions" : null,
+    "validationState" : "VALIDATED",
+    "createdAt" : null
+  } ],
+  "stimulusAssets" : [ {
+    "id" : "b457ef98-481c-5d80-bbbd-55d1f22f4020",
+    "stimulusId" : "2433e5ac-47cc-5037-bfd3-e823b28a4050",
+    "assetId" : "8d6bcec7-28c1-5945-b5cf-daef2bdcf993",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "da7788f8-86d6-5001-9e36-6105a0af43dc",
+    "stimulusId" : "fe4cab40-588d-5649-a62b-29511f476b72",
+    "assetId" : "4efe8d88-27e8-5e60-9542-89c7dc273712",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  } ]
+}

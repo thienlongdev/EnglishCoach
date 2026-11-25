@@ -1,0 +1,540 @@
+{
+  "schema": 1,
+  "slug": "ielts-task1-process-map",
+  "version": 2,
+  "domain": "ielts",
+  "order": 40,
+  "kind": "application",
+  "title": {
+    "vi": "Task 1: quy trình và bản đồ",
+    "en": "Task 1: processes and maps"
+  },
+  "subtitle": {
+    "vi": "Chọn chủ ngữ, thời gian và vị trí theo đầu vào.",
+    "en": "Choose subjects, time and location from the input."
+  },
+  "aliases": [
+    "IELTS quy trình bản đồ",
+    "process map Task 1",
+    "passive voice process",
+    "was replaced by",
+    "to the north of",
+    "bản đồ đề xuất"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Dùng bị động hoặc chủ động theo vai trò được cho.",
+    "Phân biệt quy trình chung, thay đổi lịch sử và đề xuất.",
+    "Mô tả vị trí, thay thế và phần giữ nguyên mà không bịa tác nhân."
+  ],
+  "prerequisites": [
+    "passive-use"
+  ],
+  "related": [
+    {
+      "slug": "passive-form",
+      "rel": "more"
+    },
+    {
+      "slug": "ielts-task1-trends",
+      "rel": "contrast"
+    },
+    {
+      "slug": "prepositions-place",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": "Ứng dụng vào Academic Task 1; đầu vào dưới đây tự đặt để luyện ngữ pháp, không phải đề thật.",
+    "toeic": null
+  },
+  "quick": {
+    "what": "Quy trình cần thứ tự và vai trò; bản đồ cần vị trí và mốc thời gian. Bị động hữu ích khi tập trung vào vật được xử lý hoặc thay đổi, nhưng không bắt buộc cho mọi câu.",
+    "when": "Khi đầu vào cho các giai đoạn, hai bản đồ theo năm hoặc một phương án dự kiến.",
+    "examples": [
+      {
+        "en": "The bottles [AUX|are] [V|washed] before they are dried.",
+        "vi": "Chai được rửa trước khi được làm khô."
+      },
+      {
+        "en": "The field [AUX|was] [V|replaced] by a library between 2010 and 2024.",
+        "vi": "Cánh đồng được thay bằng thư viện trong giai đoạn giữa hai mốc 2010 và 2024."
+      }
+    ],
+    "remember": "Đề xuất không phải công trình đã hoàn thành; không tự thêm ai xây."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Hai đầu vào giả định độc lập: quy trình chai có các bước phân loại → rửa → làm khô → đóng gói. Bản đồ nhỏ có cánh đồng ở phía bắc ao năm 2010; năm 2024 thư viện thay đúng khu cánh đồng, còn ao giữ nguyên. Không có thông tin nhà thầu, vật liệu hoặc lợi ích kinh tế."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "flow",
+        "start": "sort",
+        "nodes": {
+          "sort": {
+            "q": "Bottles are sorted. Bước tiếp theo?",
+            "choices": [
+              {
+                "t": "Rửa",
+                "to": "wash"
+              }
+            ]
+          },
+          "wash": {
+            "q": "The bottles are washed. Tiếp theo?",
+            "choices": [
+              {
+                "t": "Làm khô",
+                "to": "dry"
+              }
+            ]
+          },
+          "dry": {
+            "q": "The bottles are dried. Bước cuối?",
+            "choices": [
+              {
+                "t": "Đóng gói",
+                "to": "pack"
+              }
+            ]
+          },
+          "pack": {
+            "end": "The bottles are packed."
+          }
+        }
+      },
+      "caption": "Trình tự giả định để luyện mô tả, không phải hướng dẫn xử lý thực tế.",
+      "alt": "Bốn bước lần lượt phân loại, rửa, làm khô, đóng gói chai; chỉ một đường đi được cho."
+    },
+    {
+      "type": "formula",
+      "lines": [
+        {
+          "label": "Quy trình chung",
+          "parts": [
+            {
+              "t": "The bottles",
+              "role": "S"
+            },
+            {
+              "t": "are",
+              "role": "AUX"
+            },
+            {
+              "t": "washed / dried",
+              "role": "V"
+            }
+          ]
+        },
+        {
+          "label": "Thay đổi quá khứ",
+          "parts": [
+            {
+              "t": "The field",
+              "role": "S"
+            },
+            {
+              "t": "was",
+              "role": "AUX"
+            },
+            {
+              "t": "replaced by/with a library"
+            }
+          ]
+        },
+        {
+          "label": "Đề xuất",
+          "parts": [
+            {
+              "t": "The plan proposes a library."
+            }
+          ]
+        }
+      ],
+      "note": "Be chia theo chủ ngữ và mốc; phân từ không tự biến mọi câu thành quá khứ."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Bản đồ giả định",
+        "2010",
+        "2024"
+      ],
+      "rows": [
+        [
+          "Khu phía bắc ao",
+          "a field",
+          "a library replacing the field"
+        ],
+        [
+          "Ao ở phía nam khu đó",
+          "a pond",
+          "the same pond"
+        ]
+      ],
+      "caption": "Chỉ mô tả thay đổi được cho; không suy diện tích từ tên địa điểm."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "The pond is shown in the same location on the 2010 and 2024 maps.",
+          "vi": "Ao được thể hiện ở cùng vị trí trên hai bản đồ 2010 và 2024."
+        },
+        {
+          "en": "The library is to the north of the pond in the 2024 map.",
+          "vi": "Trên bản đồ 2024, thư viện nằm phía bắc ao.",
+          "note": "Hiện tại mô tả hình đang nhìn; cũng có thể dùng was trong tường thuật lịch sử nhất quán."
+        },
+        {
+          "en": "The diagram shows bottles passing through four stages.",
+          "vi": "Sơ đồ thể hiện chai trải qua bốn giai đoạn.",
+          "note": "Chủ động có thể giới thiệu đầu vào."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không suy tác nhân từ bị động: was replaced không cho biết hội đồng, công ty hay cư dân thực hiện. Một bản đồ đề xuất chỉ cho điều được dự kiến, không chứng minh đã xây hoặc chắc chắn sẽ xây."
+    },
+    {
+      "type": "try",
+      "exercise": "ipm-05"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Sau after/before có thể có mệnh đề hoặc mẫu không hữu hạn thích hợp: After the bottles are washed, they are dried. Khi rút gọn, kiểm tra chủ thể hiểu ngầm và vai trò để tránh gán việc rửa cho nhầm người/vật."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "The 2024 map shows a library on the former field.",
+            "vi": "Bản đồ 2024 thể hiện thư viện ở khu cánh đồng cũ."
+          },
+          "b": {
+            "en": "The council built a profitable library using local stone.",
+            "vi": "Hội đồng xây thư viện có lãi bằng đá địa phương."
+          },
+          "diff": "Bản sau thêm tác nhân, lợi nhuận và vật liệu không có trong đầu vào; cấu trúc đúng không làm thông tin ấy hợp lệ."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Overview có thể nêu khu bắc thay đổi còn ao giữ nguyên. Không cần nhét mọi bước và vị trí vào một câu; dùng câu riêng để giữ tham chiếu rõ."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "ipm-m1",
+      "wrong": "The bottles is washed.",
+      "right": "The bottles are washed.",
+      "why": "Bottles số nhiều cần are trong khung này."
+    },
+    {
+      "id": "ipm-m2",
+      "wrong": "The field was replace by a library.",
+      "right": "The field was replaced by a library.",
+      "why": "Bị động cần phân từ replaced sau was."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Mô tả quy trình phải toàn bị động?",
+      "a": "Không. Chọn theo trọng tâm và dữ kiện. Bị động tập trung vào vật được xử lý; chủ động có thể giới thiệu hình hoặc tác nhân đã được cho."
+    },
+    {
+      "q": "Bản đồ tương lai có dùng quá khứ không?",
+      "a": "Nếu đó là đề xuất chưa thực hiện, đừng tường thuật như thay đổi đã xong. Dùng plan/proposed hoặc cấu trúc dự kiến có căn cứ."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ipm-01",
+      "type": "choice",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Chọn be cho chủ ngữ số nhiều trong quy trình chung.",
+      "stem": "The bottles … washed before drying.",
+      "options": [
+        {
+          "t": "are",
+          "ok": true,
+          "note": "Are washed hợp số nhiều."
+        },
+        {
+          "t": "is",
+          "note": "Is không hòa hợp bottles.",
+          "tag": "passive-agreement"
+        }
+      ],
+      "explain": "Bị động vẫn cần hòa hợp chủ ngữ."
+    },
+    {
+      "id": "ipm-02",
+      "type": "match",
+      "level": "B2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Ghép mẫu với công việc.",
+      "pairs": [
+        {
+          "a": "are washed",
+          "b": "Nêu bước xử lý theo quy trình chung."
+        },
+        {
+          "a": "was replaced",
+          "b": "Tường thuật thay đổi đã xảy ra ở quá khứ."
+        },
+        {
+          "a": "the plan proposes",
+          "b": "Nêu nội dung một phương án."
+        }
+      ],
+      "explain": "Không dùng một mốc thời gian cho mọi loại đầu vào."
+    },
+    {
+      "id": "ipm-03",
+      "type": "multi",
+      "level": "B2",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Chọn thông tin được đầu vào giả định hỗ trợ.",
+      "stem": "Chỉ dùng hai đầu vào đã nêu.",
+      "options": [
+        {
+          "t": "The bottles are washed before drying.",
+          "ok": true,
+          "note": "Thứ tự được cho."
+        },
+        {
+          "t": "The pond remained in the same location.",
+          "ok": true,
+          "note": "Đối chiếu hai bản đồ cho thấy ao ở cùng vị trí; không phải quan sát liên tục mọi lúc giữa hai mốc."
+        },
+        {
+          "t": "The library was profitable.",
+          "note": "Không có số liệu tài chính.",
+          "tag": "unsupported-detail"
+        }
+      ],
+      "explain": "Ngữ pháp không cho phép bổ sung lợi ích chưa được nêu."
+    },
+    {
+      "id": "ipm-04",
+      "type": "cloze",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Dùng wash ở bị động hiện tại đơn.",
+      "stem": "The bottles {1} before they are dried.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "are washed"
+          ]
+        }
+      },
+      "explain": "Bottles nhận tác động; are + washed tạo khung được yêu cầu."
+    },
+    {
+      "id": "ipm-05",
+      "type": "transform",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Đặt vật được xử lý làm chủ ngữ.",
+      "source": "Workers sort the bottles.",
+      "instruction": "Dùng The bottles are, giữ tác nhân bằng by workers.",
+      "accept": [
+        "The bottles are sorted by workers."
+      ],
+      "model": "The bottles are sorted by workers.",
+      "explain": "Đây là câu riêng đã cung cấp workers; không suy mọi sơ đồ đều có tác nhân ấy."
+    },
+    {
+      "id": "ipm-06",
+      "type": "error",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sửa phân từ trong câu quá khứ bị động.",
+      "segments": [
+        {
+          "t": "The field was "
+        },
+        {
+          "t": "replace",
+          "bad": true,
+          "fix": [
+            "replaced"
+          ],
+          "note": "Was cần phân từ replaced ở đây.",
+          "tag": "passive-participle"
+        },
+        {
+          "t": " by a library."
+        }
+      ],
+      "explain": "Động từ be hữu hạn không thay thế phân từ."
+    },
+    {
+      "id": "ipm-07",
+      "type": "classify",
+      "level": "B2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Phân loại tuyên bố theo căn cứ trong đầu vào.",
+      "cats": [
+        "Được cho",
+        "Tự thêm"
+      ],
+      "items": [
+        {
+          "t": "Khu cánh đồng đổi thành thư viện.",
+          "cat": "Được cho"
+        },
+        {
+          "t": "Thư viện dùng đá địa phương.",
+          "cat": "Tự thêm"
+        },
+        {
+          "t": "Ao không đổi vị trí.",
+          "cat": "Được cho"
+        },
+        {
+          "t": "Mọi chai được rửa bằng nước nóng.",
+          "cat": "Tự thêm"
+        }
+      ],
+      "explain": "Chỉ có bước rửa, chưa có nhiệt độ hoặc vật liệu."
+    },
+    {
+      "id": "ipm-08",
+      "type": "open",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết hai đoạn ngắn cho hai đầu vào.",
+      "task": "Viết hai câu về quy trình chai và hai câu về bản đồ 2010/2024. Giữ thứ tự, hướng và phần không đổi; không tự thêm người xây.",
+      "model": [
+        "The bottles are sorted and then washed. They are dried before packing. A library replaced the field to the north of the pond. The pond appears in the same location in both maps."
+      ],
+      "checklist": [
+        "Đúng thứ tự bốn bước.",
+        "Be và phân từ hợp chủ ngữ/mốc.",
+        "Vị trí thư viện so với ao đúng.",
+        "Không bịa tác nhân hoặc kết quả kinh tế."
+      ],
+      "explain": "Mẫu không phải đáp án duy nhất; tự đối chiếu thông tin."
+    },
+    {
+      "id": "ipm-09",
+      "type": "cloze",
+      "level": "B2",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Viết cụm quá khứ bị động của wash.",
+      "context": "Báo cáo một lần xử lý chai diễn ra hôm qua.",
+      "stem": "The bottles {1} yesterday before drying.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "were washed"
+          ]
+        }
+      },
+      "explain": "Phải tạo be ở quá khứ số nhiều cùng phân từ."
+    },
+    {
+      "id": "ipm-10",
+      "type": "transform",
+      "level": "B2",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Đặt khu cũ làm chủ ngữ.",
+      "source": "A library replaced the old field in 2024.",
+      "instruction": "Bắt đầu The old field, dùng replace ở quá khứ bị động, giữ a library và in 2024.",
+      "accept": [
+        "The old field was replaced by a library in 2024.",
+        "The old field was replaced with a library in 2024."
+      ],
+      "model": "The old field was replaced by a library in 2024.",
+      "explain": "By/with có cách dùng hợp lệ cho vật thay thế ở đây; không tự thêm nhà thầu.",
+      "context": "Câu nguồn riêng của bài viết lại này nêu rõ việc thay thế diễn ra trong năm 2024. Giữ dữ kiện đó; không suy năm xây chính xác chỉ từ hai bản đồ đầu bài."
+    },
+    {
+      "id": "ipm-11",
+      "type": "choice",
+      "level": "B2",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Chọn kết luận phù hợp một bản đồ đề xuất chưa thực hiện.",
+      "stem": "The plan proposes a library for 2030.",
+      "options": [
+        {
+          "t": "Đó là nội dung đề xuất, chưa xác nhận đã xây.",
+          "ok": true,
+          "note": "Proposes nêu phương án."
+        },
+        {
+          "t": "Thư viện chắc chắn đã xây xong ở hiện tại.",
+          "note": "Không được nguồn hỗ trợ.",
+          "tag": "proposal-as-fact"
+        }
+      ],
+      "explain": "Giữ giá trị dự kiến của đầu vào."
+    },
+    {
+      "id": "ipm-12",
+      "type": "error",
+      "level": "B2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Sửa be trong quy trình hiện tại chung.",
+      "segments": [
+        {
+          "t": "The sorted bottles "
+        },
+        {
+          "t": "is",
+          "bad": true,
+          "fix": [
+            "are"
+          ],
+          "note": "Chủ ngữ số nhiều cần are.",
+          "tag": "passive-agreement"
+        },
+        {
+          "t": " washed next."
+        }
+      ],
+      "explain": "Đừng bỏ kiểm soát mẫu cơ bản trong câu mô tả quá trình."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "ielts-bd",
+      "note": "Đọc IELTS Writing Key Assessment Criteria ngày2026-11-01, phần Academic Task 1 về visual input gồm diagram/map và giới hạn thông tin nguồn. Dữ liệu/quy trình/bản đồ trong bài tự đặt; không phải đề thật."
+    },
+    {
+      "ref": "cgt",
+      "note": "Tham chiếu ngữ pháp đề xuất về voice và vị trí. Không đọc trang mới hoặc ấn bản mới cho các câu này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted",
+    "note": "Ví dụ gốc tự rà soát, chưa có independent/human acceptance."
+  }
+}

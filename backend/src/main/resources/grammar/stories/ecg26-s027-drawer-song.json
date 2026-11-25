@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s027-drawer-song",
+  "title": "Lời hát ở ngăn bàn thứ ba",
+  "summary": "Bà Hạ không nhớ lời cuối của bài ru. Bà nhớ mình đã cất mẩu giấy ở ngăn thứ ba tính từ trên.",
+  "level": "A1",
+  "topics": [
+    "numbers-dates-measures"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Noa",
+      "role": "Cháu ngoại"
+    },
+    {
+      "id": "b",
+      "name": "Hạ",
+      "role": "Bà ngoại"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Tủ có bốn ngăn. Noa đặt tay ở ngăn trên cùng và đếm xuống. Bà vẫn ngân phần giai điệu còn nhớ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One, two, three. Is this the one?",
+          "vi": "Một, hai, ba. Đây đúng ngăn không bà?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Yes. I need one drawer, not three drawers.",
+          "vi": "Đúng. Bà chỉ cần một ngăn, chứ không phải ba ngăn."
+        }
+      ],
+      "choice": {
+        "prompt": "Noa ghi lên nhãn đúng vị trí của ngăn có mẩu giấy.",
+        "options": [
+          {
+            "t": "The third drawer.",
+            "note": "Third nói thứ tự của một ngăn. Từ ngăn trên cùng, đây là ngăn số ba.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "Three drawers.",
+            "note": "Three đếm số lượng ngăn, không nói mở ngăn nào. Cụm này đúng ngữ pháp nhưng chưa phải nhãn vị trí.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Trong ngăn có chiếc phong bì tím. Mẹ Noa hồi bé đã viết lại lời ru bằng chữ to nghiêng hẳn sang bên.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That's your mum's writing.",
+          "vi": "Chữ của mẹ cháu đấy."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Noa mở cả ba ngăn. Bà đóng hai ngăn trên lại, để lộ phong bì tím ở ngăn còn mở.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Just this one, dear.",
+          "vi": "Chỉ ngăn này thôi, cháu à."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Lời cuối chỉ có hai chữ về nhà. Noa hát thử, bà Hạ hát cùng. Buổi tối, Noa dán lại nhãn thật thấp để khi em trai lớn thêm một chút cũng có thể tìm được bài ru.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It's our song too now.",
+          "vi": "Giờ đó cũng là bài hát của chúng cháu rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

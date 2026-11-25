@@ -1,0 +1,457 @@
+{
+  "schema": 1,
+  "slug": "conditionals-overview",
+  "version": 2,
+  "domain": "conditionals",
+  "order": 10,
+  "kind": "grammar",
+  "title": {
+    "vi": "Câu điều kiện: nghĩ theo thế giới",
+    "en": "Conditionals: thinking in worlds"
+  },
+  "subtitle": {
+    "vi": "Chọn góc nhìn trước công thức",
+    "en": "Choose a viewpoint before a formula"
+  },
+  "aliases": [
+    "tổng quan câu điều kiện",
+    "conditionals worlds",
+    "zero first second third",
+    "if I had time now"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Phân biệt điều kiện mở và giả định xa thực tế.",
+    "Xác định mốc điều kiện và kết quả.",
+    "Không xem bốn loại là toàn bộ ngữ pháp điều kiện."
+  ],
+  "prerequisites": [],
+  "related": [
+    {
+      "slug": "real-conditionals",
+      "rel": "more"
+    },
+    {
+      "slug": "unreal-present-conditionals",
+      "rel": "contrast"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Câu điều kiện liên hệ một giả thiết với kết quả hoặc điều người nói muốn làm trong trường hợp ấy. Cần xem thời gian và góc nhìn.",
+    "when": "Hỏi điều kiện ở lúc nào, được để mở hay đặt xa thực tế.",
+    "examples": [
+      {
+        "en": "[COND|If it rains], [RES|we will stay inside].",
+        "vi": "Nếu mưa, chúng tôi sẽ ở trong nhà."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "If it rains tomorrow không xác nhận sẽ mưa hay không. “Real” thường là nhãn cách trình bày còn mở, không phải bằng chứng sự việc đã thật xảy ra."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Giả thiết",
+            "items": [
+              "If it rains tomorrow"
+            ]
+          },
+          {
+            "label": "Kết quả khi đó",
+            "items": [
+              "we will stay inside"
+            ]
+          }
+        ],
+        "sentence": "{0}, {1}."
+      },
+      "caption": "Giả thiết và kết quả được xét cùng nhau; câu không xác nhận ngày mai mưa.",
+      "alt": "Giả thiết và kết quả được xét cùng nhau; câu không xác nhận ngày mai mưa."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Góc nhìn",
+        "Ví dụ",
+        "Mốc điều kiện"
+      ],
+      "rows": [
+        [
+          "Mở",
+          "If it rains, we will stay.",
+          "tương lai theo ngữ cảnh"
+        ],
+        [
+          "Xa hiện tại",
+          "If I had time now, I would help.",
+          "hiện tại"
+        ],
+        [
+          "Khác quá khứ",
+          "If I had known, I would have helped.",
+          "quá khứ"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Had trong If I had time now đánh dấu khoảng cách giả định, không phải thời gian hôm qua. Had known nhìn một điều kiện quá khứ khác thực tế được nêu hoặc gợi trong ngữ cảnh."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không có phần trăm xác suất cố định cho first hay second conditional. Người nói chọn cách nhìn, không đọc một thang đo xác suất."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Kết quả có thể là mệnh lệnh hoặc có can/may/might, không chỉ will/would. If you need help, call me là câu điều kiện chuẩn."
+    },
+    {
+      "type": "p",
+      "vi": "Mốc điều kiện và kết quả có thể khác: If I had studied medicine, I would be a doctor now kết nối quá khứ và hiện tại. Xem mixed-conditionals."
+    },
+    {
+      "type": "p",
+      "vi": "Will sau if không bị cấm tuyệt đối: có cách dùng sự sẵn lòng hay lời yêu cầu. Mặc định hiện tại sau if chủ yếu áp dụng điều kiện tương lai thông thường."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "conditionals-overview-m1",
+      "wrong": "If she call, I will answer.",
+      "right": "If she calls, I will answer.",
+      "why": "She dùng calls."
+    },
+    {
+      "id": "conditionals-overview-m2",
+      "wrong": "If I had time, I would helps.",
+      "right": "If I had time, I would help.",
+      "why": "Would cần dạng gốc."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Real có nghĩa điều kiện chắc chắn đúng không?",
+      "a": "Không. Nó thường là tên cho cách trình bày để điều kiện còn mở."
+    },
+    {
+      "q": "Có đúng bốn loại duy nhất không?",
+      "a": "Bốn loại là nhóm mẫu hữu ích, không bao hết mọi cấu trúc và chức năng của if."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "cno-01",
+      "prompt": "Chọn điều có thể suy ra.",
+      "explain": "If nêu giả thiết, không xác nhận nó đúng.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "choice",
+      "stem": "If it rains tomorrow, we will stay inside.",
+      "options": [
+        {
+          "t": "Khả năng mưa được để mở.",
+          "ok": true,
+          "note": "Câu xét trường hợp mưa."
+        },
+        {
+          "t": "Chắc chắn sẽ mưa.",
+          "ok": false,
+          "note": "If không khẳng định điều kiện.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Chắc chắn không mưa.",
+          "ok": false,
+          "note": "Không có suy luận đó.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "cno-02",
+      "prompt": "Nối câu với góc nhìn theo ngữ cảnh.",
+      "explain": "Các nhãn mô tả góc nhìn, không đo phần trăm.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "If it rains tomorrow, we will stay.",
+          "b": "Khả năng tương lai mở"
+        },
+        {
+          "a": "I have no car. If I had one, I would drive.",
+          "b": "Giả định xa hiện tại"
+        },
+        {
+          "a": "I missed the train. If I had left earlier, I would have caught it.",
+          "b": "Khác quá khứ"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "cno-03",
+      "prompt": "Phân loại mốc điều kiện.",
+      "explain": "Dạng quá khứ có thể nêu giả định hiện tại.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Giả định hiện tại",
+        "Giả định quá khứ"
+      ],
+      "items": [
+        {
+          "t": "If I had time now, I would help.",
+          "cat": "Giả định hiện tại"
+        },
+        {
+          "t": "If I had left earlier yesterday, I would have arrived on time.",
+          "cat": "Giả định quá khứ"
+        },
+        {
+          "t": "If we lived closer now, we could walk.",
+          "cat": "Giả định hiện tại"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "cno-04",
+      "prompt": "Dùng hiện tại đơn của call ở điều kiện tương lai thông thường, và dạng gốc của help sau would.",
+      "explain": "She calls; would đi với help.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "If she {1} (call), I will answer. If I had time, I would {2} (help).",
+      "blanks": {
+        "1": {
+          "accept": [
+            "calls"
+          ]
+        },
+        "2": {
+          "accept": [
+            "help"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "cno-05",
+      "prompt": "Sửa dạng sau would.",
+      "explain": "Would cần dạng gốc.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "If I had time, I would"
+        },
+        {
+          "t": "helps",
+          "bad": true,
+          "fix": [
+            "help"
+          ],
+          "note": "Dùng help.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "you."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "cno-06",
+      "prompt": "Sắp xếp, bắt đầu bằng If; giữ điều kiện trước.",
+      "explain": "Hai phần liên hệ giả thiết và kết quả.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "If",
+        "it rains,",
+        "we",
+        "will",
+        "stay inside"
+      ],
+      "accept": [
+        [
+          "If",
+          "it rains,",
+          "we",
+          "will",
+          "stay inside"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "cno-07",
+      "prompt": "Đổi vị trí hai phần.",
+      "explain": "Mệnh đề if có thể đứng cuối.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "If it rains, we will stay inside.",
+      "instruction": "Đưa we will stay inside lên đầu; đặt if ở cuối, bỏ dấu phẩy.",
+      "accept": [
+        "We will stay inside if it rains"
+      ],
+      "model": "We will stay inside if it rains",
+      "level": "B1"
+    },
+    {
+      "id": "cno-08",
+      "prompt": "Viết ba góc nhìn có ngữ cảnh.",
+      "explain": "Tự đối chiếu, không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết một khả năng ngày mai, một điều hình dung khác hiện tại và một điều hình dung khác hôm qua. Nêu thực tế nếu cần rõ.",
+      "model": [
+        "If it rains tomorrow, I will take the bus. I have no bike. If I had one, I would cycle. I missed the bus. If I had left earlier, I would have caught it."
+      ],
+      "checklist": [
+        "Mốc rõ.",
+        "Không xác nhận điều kiện chỉ vì có if.",
+        "Would đi với dạng phù hợp."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "cno-09",
+      "prompt": "Dùng hiện tại đơn của rain ở điều kiện mở tương lai thông thường, và phân từ của help sau would have.",
+      "explain": "Điều kiện mở rains; would have cần helped.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "If it {1} (rain), we will stay. If I had known, I would have {2} (help).",
+      "blanks": {
+        "1": {
+          "accept": [
+            "rains"
+          ]
+        },
+        "2": {
+          "accept": [
+            "helped"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "cno-10",
+      "prompt": "Tạo lời khuyên giả định.",
+      "explain": "If I were you là mẫu lời khuyên quen thuộc.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "My advice is: take a break.",
+      "instruction": "Dùng If I were you ở đầu và would trong mệnh đề kết quả; giữ take a break.",
+      "accept": [
+        "If I were you, I would take a break",
+        "If I were you, I'd take a break"
+      ],
+      "model": "If I were you, I would take a break",
+      "level": "B1"
+    },
+    {
+      "id": "cno-11",
+      "prompt": "Chọn tất cả câu chuẩn.",
+      "explain": "Kết quả có thể là mệnh lệnh hoặc có can.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "If you need help, call me.",
+          "ok": true,
+          "note": "Kết quả là lời yêu cầu."
+        },
+        {
+          "t": "If you finish early, you can leave.",
+          "ok": true,
+          "note": "Can nêu cho phép."
+        },
+        {
+          "t": "If she call, I will answer.",
+          "ok": false,
+          "note": "She cần calls.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "If I had time, I would helps.",
+          "ok": false,
+          "note": "Would cần help.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "cno-12",
+      "prompt": "Chọn nguyên tắc học phù hợp.",
+      "explain": "Bốn loại là bản đồ học, không là toàn bộ tiếng Anh.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "Các nhãn zero/first/second/third conditional",
+      "options": [
+        {
+          "t": "Giúp học mẫu thường gặp nhưng không bao hết mọi câu có if.",
+          "ok": true,
+          "note": "Còn hỗn hợp thời gian và chức năng khác."
+        },
+        {
+          "t": "Mọi câu có if phải theo đúng một trong bốn công thức duy nhất.",
+          "ok": false,
+          "note": "Đó là khái quát quá mức.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Dạng quá khứ sau if luôn chỉ hôm qua.",
+          "ok": false,
+          "note": "Có thể chỉ khoảng cách giả định.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

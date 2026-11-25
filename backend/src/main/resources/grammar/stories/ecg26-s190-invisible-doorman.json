@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s190-invisible-doorman",
+  "title": "Người gác cửa bằng sức nặng",
+  "summary": "Cửa mô hình chỉ mở khi có đồng xu thật đặt lên đĩa. Một chiếc vé giấy đã mở được cửa trước mặt cả lớp.",
+  "level": "B2",
+  "topics": [
+    "past-unreal-conditionals"
+  ],
+  "scene": "university",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mộc",
+      "role": "Sinh viên thiết kế"
+    },
+    {
+      "id": "b",
+      "name": "Teo",
+      "role": "Người phụ trách xưởng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Dưới vé Mộc tìm thấy một chiếc cúc nặng bị dính bằng hồ. Bản thân vé nhẹ hơn ngưỡng mở. Teo muốn cô giải thích lần mở vừa rồi.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I thought it knew how to read tickets.",
+          "vi": "Tôi cứ tưởng nó biết đọc vé."
+        },
+        {
+          "who": "b",
+          "en": "Take away the button in your explanation.",
+          "vi": "Trong lời giải thích, thử bỏ chiếc cúc đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Nêu hệ quả giả định nếu tấm vé đã đi một mình.",
+        "options": [
+          {
+            "ok": true,
+            "t": "If the button hadn't been stuck to it, the door wouldn't have opened.",
+            "note": "Hai mệnh đề cùng nhìn lại lần đã xảy ra. Hadn't been stuck bỏ nguyên nhân thực, wouldn't have opened nêu kết quả trái thực.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "If the button comes off tomorrow, the door won't open.",
+            "note": "Điều kiện hiện thực về ngày mai có thể đúng nhưng không giải thích lần mở vừa rồi. Mốc thời gian đã đổi.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Mộc thử tấm vé sạch; cửa nằm im. Cô gắn cúc vào vé bằng một sợi chỉ để các bạn tự chọn có “người gác cửa” hay không.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The button bought the ticket its way in.",
+          "vi": "Chính chiếc cúc mua đường vào cho tấm vé."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Một em xin mang thiết kế về làm hộp tiết kiệm chỉ nhận đồ vật có chuyện kể.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Teo cho cúc rơi xuống bàn ngay bây giờ. Mộc thử vé, rồi thử cúc riêng. Chỉ cúc làm cửa mở.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We didn't have to wait until tomorrow.",
+          "vi": "Ta đâu cần đợi đến ngày mai."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Hai thí nghiệm dán lên hai mặt một tấm biển lật. Người tìm đúng mặt được đi qua cửa mô hình.",
+      "end": true
+    }
+  ]
+}

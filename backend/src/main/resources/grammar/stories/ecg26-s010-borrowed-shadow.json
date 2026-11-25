@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s010-borrowed-shadow",
+  "title": "Chiếc bóng ngồi ghế số 4",
+  "summary": "Ghế số 4 có một cái đầu đen sì. Trà tới gần thì thấy không có ai ngồi ở đó.",
+  "level": "A1",
+  "topics": [
+    "there-is-there-are"
+  ],
+  "scene": "lecture",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Trà",
+      "role": "Người dẫn chỗ"
+    },
+    {
+      "id": "b",
+      "name": "Emil",
+      "role": "Khách xem kịch"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Sân khấu chỉ bật một bóng đèn. Trên ghế là chiếc mũ đen. Từ cửa vào, cái mũ trông giống hệt tóc của người đang ngồi.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It's my seat. I have number four.",
+          "vi": "Đây là chỗ của mình. Mình có vé số bốn."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Can I sit there? I see something black.",
+          "vi": "Mình ngồi đó được không? Mình thấy có thứ gì đen đen."
+        }
+      ],
+      "choice": {
+        "prompt": "Trà muốn nói ghế chỉ có một chiếc mũ, không có người.",
+        "options": [
+          {
+            "t": "There is a man on the seat.",
+            "note": "There is dùng đúng, nhưng a man làm người nghe tưởng ghế đã có người ngồi. Trong cảnh này đó chỉ là chiếc mũ.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "There is a hat on the seat.",
+            "note": "There is giới thiệu một vật số ít, a hat. Người nghe biết cần nhấc cái gì lên.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Emil nhấc mũ. Một mảnh vé cũ rơi ra, cũng mang số 4.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Even the hat has a ticket!",
+          "vi": "Đến chiếc mũ cũng có vé!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Emil chào cái mũ. Trà nhấc nó lên và một tấm vé số 4 rơi ra.",
+      "say": [
+        {
+          "who": "b",
+          "en": "A hat can't say hello.",
+          "vi": "Chiếc mũ đâu biết chào."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Trà nhìn lại vé trong tay mình. Đó là vé hàng B, còn Emil cầm vé hàng A. Hai bạn tìm đúng hai chiếc ghế số 4 và giao chiếc mũ cho người dẫn chỗ ca sau.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Two rows, two seats.",
+          "vi": "Hai hàng, hai chỗ ngồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

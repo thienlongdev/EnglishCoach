@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s175-address-to-earth",
+  "title": "Thư gửi một địa danh không còn trên bản đồ",
+  "summary": "Đảo nơi Hà chào đời vừa đổi tên. Máy phân loại thư chỉ biết tên mới, còn mẹ cô chỉ viết tên cũ.",
+  "level": "B2",
+  "topics": [
+    "preposition-stranding",
+    "relative-with-prepositions"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hà",
+      "role": "Người chăm kho hạt"
+    },
+    {
+      "id": "b",
+      "name": "Pax",
+      "role": "Người lái tàu"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Hai tên trỏ cùng một đảo có đúng một trạm nhận. Pax đề nghị dán một chú thích trên mặt sau cho máy và người cùng hiểu.",
+      "say": [
+        {
+          "who": "a",
+          "en": "My mother's name for home won't fit in that box.",
+          "vi": "Tên mẹ gọi quê nhà không điền vừa ô ấy."
+        },
+        {
+          "who": "b",
+          "en": "Then give the island a sentence of its own.",
+          "vi": "Vậy dành hẳn một câu cho hòn đảo đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn một trong hai lối viết mệnh đề quan hệ cùng nghĩa gửi tới đảo.",
+        "options": [
+          {
+            "ok": true,
+            "t": "This is the island that the letter is addressed to.",
+            "note": "Để to cuối mệnh đề xác định là tự nhiên. That liên hệ island với đích nhận thư.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": true,
+            "t": "This is the island to which the letter is addressed.",
+            "note": "To which đặt giới từ trước đại từ quan hệ, trang trọng hơn. Đích thư vẫn không đổi.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Hà giữ chữ của mẹ trên phong bì, in tên mới dưới câu chú thích. Nhân viên bưu chính đọc lên và nhớ luôn cả tên cũ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Two names, one doorstep.",
+          "vi": "Hai cái tên, cùng một bậc cửa."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Thư tới mẹ với hai dấu bưu điện, mỗi dấu một tên đảo.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Pax dùng câu này trên mẫu chuyển chính thức. Hà vẽ đường bờ đảo bên cạnh, mẹ nhận ra hình bờ biển trước cả khi đọc tên mới.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We didn't lose the old name after all.",
+          "vi": "Cuối cùng ta vẫn giữ được tên cũ."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Bức thư hồi âm chỉ ghi hình đảo ở góc, còn trong phong bì là một danh sách tên cũ do cả làng nhớ lại.",
+      "end": true
+    }
+  ]
+}

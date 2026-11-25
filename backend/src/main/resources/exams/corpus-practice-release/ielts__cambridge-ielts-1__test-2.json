@@ -1,0 +1,1505 @@
+{
+  "manifest" : {
+    "schemaVersion" : "1.0",
+    "packageId" : "RAW-RAW_CAMBRIDGE_IELTS_1_T2",
+    "packageVersion" : 1,
+    "contentHash" : "f8b29093728a62b380b9ed6ef105b1c4320980e5ad5662a4dd95080e9468ebc6",
+    "creator" : "exam-raw-extractor",
+    "specificationBaselineId" : "EC-EXAM-SPEC-2026-09-10",
+    "authoringStatus" : "DRAFT",
+    "createdAt" : null,
+    "metadata" : {
+      "humanReviewComplete" : false,
+      "reviewOnlyReferences" : {
+        "transcripts" : [ {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+          "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3",
+          "pages" : "118-123"
+        } ],
+        "answerKeys" : [ {
+          "skill" : "LISTENING",
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+          "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3",
+          "pages" : "140",
+          "keysParsed" : 41
+        }, {
+          "skill" : "READING",
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+          "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3",
+          "pages" : "141-142",
+          "keysParsed" : 19
+        } ],
+        "note" : "References only. Transcript text is not embedded: the learner manifest projection has no stimulus/asset role allow-list yet (EXAM-AUD-032)."
+      },
+      "ocr" : { },
+      "practiceProjection" : {
+        "fullSimulationGranted" : false,
+        "humanApprovalCreated" : false,
+        "sourceContentHash" : "31e05157fbdf357dabf8dce66f7415a9d0c1b770b337d1a5bb18b52d3e66e4bb",
+        "version" : "exam-practice-projection-v1",
+        "retainedScopes" : [ "IELTS_LISTENING_SECTION_1", "IELTS_LISTENING_SECTION_2", "IELTS_WRITING_TASK_2" ],
+        "excludedScopes" : {
+          "IELTS_WRITING_TASK_1" : [ "QA_SCOPE_PENDING", "SCOPE_NOT_SELECTED", "VISUAL_MISSING" ]
+        },
+        "sourcePackageId" : "RAW-RAW_CAMBRIDGE_IELTS_1_T2"
+      },
+      "audioQAStatus" : "AUTOMATED_TECHNICAL_QA_ONLY_HUMAN_QA_REQUIRED",
+      "sourceProvenance" : {
+        "collection" : "cambridge",
+        "book" : "cambridge-ielts-1",
+        "test" : "TEST_2",
+        "rawSourceFile" : {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+          "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3"
+        },
+        "pageRange" : "40-58",
+        "audio" : [ {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Test 2 - Section 1.mp3",
+          "sha256" : "5f803374c3a8aa1b4842b0afd7aad09d9372bf16f82c4e1c2b3a5d5100014133",
+          "section" : "PART_1",
+          "confidence" : "CONFIDENT"
+        }, {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Test 2 - Section 2.mp3",
+          "sha256" : "05779f8c7d72bc73b2cc9047eb3605f5b2ced322e398a8ca8bd824ef07ba4a82",
+          "section" : "PART_2",
+          "confidence" : "CONFIDENT"
+        } ],
+        "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json#ielts/cambridge-ielts-1/test-2",
+        "extractorName" : "exam-raw-extractor",
+        "extractorVersion" : "3.8.5",
+        "reviewStatus" : "UNREVIEWED"
+      },
+      "sourceIdentity" : {
+        "publisher" : "Cambridge University Press & Assessment",
+        "collection" : "cambridge",
+        "book" : "cambridge-ielts-1",
+        "bookTitle" : "Cambridge IELTS 1",
+        "test" : 2,
+        "rawSourceSha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3"
+      },
+      "displayName" : {
+        "current" : "Cambridge IELTS 1 — Test 2 (source extraction, draft)",
+        "ownerSelected" : null,
+        "status" : "PROVISIONAL_SOURCE_TITLE",
+        "policy" : "DISPLAY_NAME_MAY_CHANGE_SOURCE_PROVENANCE_MUST_NOT",
+        "renameTargets" : [ "form.title", "catalogNodes[].title" ]
+      },
+      "visualQAStatus" : "PAGE_REGION_RENDERING_HUMAN_QA_REQUIRED",
+      "rightsReviewStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED_PROJECT_USE_OWNER_AUTHORIZED",
+      "audioSegments" : [ ],
+      "sourceDocuments" : [ {
+        "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+        "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3",
+        "role" : "QUESTION_BOOK",
+        "textLayer" : "TEXT"
+      } ],
+      "extraction" : {
+        "status" : "NEEDS_REVIEW",
+        "extractorVersion" : "3.8.5",
+        "blockingCodes" : [ "ANSWER_KEY_GARBAGE_REJECTED", "ANSWER_KEY_MISSING_ITEM", "ANSWER_KEY_TYPE_MISMATCH", "GROUP_TYPE_UNKNOWN", "OPTION_PARSE_FAILED", "PART_OMITTED", "SECTION_OMITTED" ],
+        "reviewCodes" : [ "LAYOUT_LINEARIZED", "WRITING_VISUAL_NOT_FOUND" ]
+      },
+      "projectUsageAuthorization" : {
+        "status" : "OWNER_AUTHORIZED",
+        "scope" : "ENGLISHCOACH_PROJECT_USE",
+        "authorizedBy" : "PROJECT_OWNER",
+        "decisionDate" : "2026-10-06",
+        "decisionRef" : "EXAMS_CORPUS_OWNER_PRODUCTION_AUTHORIZATION_20261006",
+        "appliesTo" : "EXISTING_REPOSITORY_SOURCE_CORPUS",
+        "permits" : [ "EXTRACTION", "CANONICAL_PACKAGE_PREPARATION", "STAGING_VALIDATION", "LOCAL_STAGING_IMPORT_PREPARATION", "PRODUCTION_IMPORT", "PUBLICATION", "LEARNER_RUNTIME", "PRACTICE", "SIMULATION", "MEDIA", "SCORING", "RESULTS", "REVIEW" ],
+        "productionImport" : "OWNER_AUTHORIZED_PRODUCTION_USE",
+        "publisherLicence" : "NOT_ESTABLISHED",
+        "publisherEndorsement" : false
+      }
+    }
+  },
+  "sources" : [ {
+    "id" : "2c7b9d14-802e-5297-9138-1d52febf3afd",
+    "code" : "RAW_CAMBRIDGE_CAMBRIDGE_IELTS_1",
+    "name" : "Cambridge IELTS 1",
+    "owner" : "Cambridge University Press & Assessment",
+    "publisher" : "Cambridge University Press & Assessment",
+    "sourceType" : "THIRD_PARTY_PUBLICATION",
+    "referenceMeta" : {
+      "rawCorpusRoot" : "imports/source-files/",
+      "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json",
+      "rightsStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED",
+      "projectUsageAuthorization" : "OWNER_AUTHORIZED",
+      "primaryDocument" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  }, {
+    "id" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "code" : "EC_INTERNAL_ORIGINAL",
+    "name" : "English Coach original content",
+    "owner" : "English Coach",
+    "publisher" : "English Coach",
+    "sourceType" : "INTERNAL_ORIGINAL",
+    "referenceMeta" : {
+      "declaration" : "Rubrics and scoring metadata authored by English Coach; no external text"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "licenses" : [ {
+    "id" : "a8cdb4e4-8e52-57a5-a1bb-38e90866ed4a",
+    "sourceId" : "2c7b9d14-802e-5297-9138-1d52febf3afd",
+    "licenseCode" : "UNKNOWN-RAW_CAMBRIDGE_CAMBRIDGE_IELTS_1",
+    "provenanceCategory" : "UNKNOWN",
+    "commercialRights" : false,
+    "redistributionRights" : false,
+    "derivativeRights" : false,
+    "permittedPurposes" : {
+      "LOCAL_PRIVATE_REVIEW" : true
+    },
+    "permittedTerritories" : { },
+    "validFrom" : null,
+    "validUntil" : null,
+    "attribution" : "Cambridge IELTS 1 — Cambridge University Press & Assessment. Publisher licence not established; used under the EnglishCoach project owner's authorization (2026-10-03), which is not a publisher licence or endorsement.",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  }, {
+    "id" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseCode" : "EC-ORIGINAL-DRAFT-PENDING-LEGAL",
+    "provenanceCategory" : "ORIGINAL",
+    "commercialRights" : true,
+    "redistributionRights" : true,
+    "derivativeRights" : true,
+    "permittedPurposes" : {
+      "EXAM" : true,
+      "SIMULATION" : true,
+      "PRACTICE" : true,
+      "CONTENT" : true
+    },
+    "permittedTerritories" : {
+      "GLOBAL" : true
+    },
+    "validFrom" : 1790985600.000000000,
+    "validUntil" : null,
+    "attribution" : "English Coach original draft; legal review pending",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  } ],
+  "provenances" : [ {
+    "id" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "sourceId" : "2c7b9d14-802e-5297-9138-1d52febf3afd",
+    "licenseId" : "a8cdb4e4-8e52-57a5-a1bb-38e90866ed4a",
+    "creator" : "exam-raw-extractor",
+    "acquisitionMethod" : "RAW_CORPUS_EXTRACTION",
+    "originalReference" : "Cambridge IELTS 1 / Test 2",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  }, {
+    "id" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseId" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "creator" : "English Coach",
+    "acquisitionMethod" : "ORIGINAL_AUTHORING",
+    "originalReference" : "EC-RUBRIC-AND-SCORING-METADATA",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  } ],
+  "catalogNodes" : [ {
+    "id" : "6d41d0b0-cf70-5af7-b980-0e72ef59b21b",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "sourceId" : "2c7b9d14-802e-5297-9138-1d52febf3afd",
+    "parentId" : null,
+    "kind" : "VOLUME",
+    "title" : "Cambridge IELTS 1",
+    "year" : null,
+    "ordinal" : 0,
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "specifications" : [ {
+    "id" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SPEC",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "deliveryMode" : "COMPUTER_SIMULATION",
+    "blueprint" : {
+      "source" : "RAW_CORPUS_EXTRACTION",
+      "family" : "IELTS",
+      "variant" : "ACADEMIC",
+      "scope" : "FULL"
+    },
+    "timingPolicy" : {
+      "listeningSeconds" : 1800,
+      "readingSeconds" : 3600,
+      "writingSeconds" : 3600,
+      "speakingSeconds" : 840
+    },
+    "navigationPolicy" : {
+      "sectionNavigation" : "fixed_sequence"
+    },
+    "playbackPolicy" : {
+      "mode" : "ONCE"
+    },
+    "sourceReferences" : {
+      "baseline" : "EC-EXAM-SPEC-2026-09-10"
+    },
+    "contentHash" : "01a9a5d6615e4c044e33620aacc7f229326296fc975b4c54a3fc1cc0d69efd4c",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "rubrics" : [ {
+    "id" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "logicalCode" : "EC_RAW_IELTS_WRITING_RUBRIC",
+    "version" : 1,
+    "family" : "IELTS",
+    "skill" : "WRITING",
+    "taskFamily" : "IELTS_WRITING",
+    "criteria" : {
+      "taskAchievement" : {
+        "weight" : 1
+      },
+      "coherenceAndCohesion" : {
+        "weight" : 1
+      },
+      "lexicalResource" : {
+        "weight" : 1
+      },
+      "grammaticalRangeAndAccuracy" : {
+        "weight" : 1
+      }
+    },
+    "ordinalScale" : {
+      "min" : 0,
+      "max" : 9,
+      "steps" : [ 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0 ]
+    },
+    "provenanceId" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "contentHash" : "0d542a6e2c855fb3a6fa51ef83026cb296280b0f51f9073604b6756d4752e253",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "calibrations" : [ ],
+  "scoringSchemes" : [ {
+    "id" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SCORING",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "normalizationVersion" : "EC-NORM-V1",
+    "rubricReferences" : { },
+    "calibrationId" : null,
+    "mappingTable" : {
+      "metrics" : [ "LISTENING", "READING", "WRITING", "SPEAKING", "FULL_OVERALL" ],
+      "status" : "DRAFT_NOT_CALIBRATED",
+      "scoreLabel" : "English Coach estimated band"
+    },
+    "aggregationRules" : {
+      "officialEquating" : false,
+      "version" : "EC-AGGREGATION-DRAFT-V1",
+      "creditUnitsPerItem" : 1,
+      "task1Weight" : 1,
+      "task2Weight" : 2,
+      "overall" : "mean_of_four_quarter_rounding"
+    },
+    "contentHash" : "0780e29af069b167dab0956ac01663b2c8b509ca0f03839208766aa0b62ed428",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "form" : {
+    "id" : "9a30699c-57d5-5858-ade6-7460a326abce",
+    "logicalKey" : "RAW_CAMBRIDGE_IELTS_1_T2",
+    "version" : 1,
+    "title" : "Cambridge IELTS 1 — Test 2 (source extraction, draft)",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "catalogNodeId" : "6d41d0b0-cf70-5af7-b980-0e72ef59b21b",
+    "specificationId" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "lifecycleState" : "DRAFT",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "authorId" : null,
+    "contentHash" : "73e87124ff24895a0d1c5d5348feb0d042678eda432a3e4bf9788bf8692c1cb2",
+    "publishedAt" : null,
+    "retiredAt" : null,
+    "createdAt" : null,
+    "primaryHealthStatus" : null
+  },
+  "formComponents" : [ ],
+  "sections" : [ {
+    "id" : "33fb529e-1256-5dbb-9431-376d08890ed6",
+    "formId" : "9a30699c-57d5-5858-ade6-7460a326abce",
+    "skill" : "LISTENING",
+    "ordinal" : 1,
+    "specSectionKey" : "LISTENING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 1800,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  }, {
+    "id" : "38c31af7-f96e-5edd-b3df-0462061217a9",
+    "formId" : "9a30699c-57d5-5858-ade6-7460a326abce",
+    "skill" : "WRITING",
+    "ordinal" : 2,
+    "specSectionKey" : "WRITING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 3600,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  } ],
+  "parts" : [ {
+    "id" : "469681f5-3878-5b82-88ae-f6960f277372",
+    "sectionId" : "33fb529e-1256-5dbb-9431-376d08890ed6",
+    "partCode" : "LISTENING_PART_1",
+    "ordinal" : 1,
+    "instructions" : null,
+    "timingPolicy" : {
+      "partNumber" : 1
+    }
+  }, {
+    "id" : "c50822c6-32e7-5e88-8520-11b85bc93f4c",
+    "sectionId" : "33fb529e-1256-5dbb-9431-376d08890ed6",
+    "partCode" : "LISTENING_PART_2",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : {
+      "partNumber" : 2
+    }
+  }, {
+    "id" : "f3b0395d-27f9-5055-bfe8-81061e02184f",
+    "sectionId" : "38c31af7-f96e-5edd-b3df-0462061217a9",
+    "partCode" : "WRITING_TASK_2",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : {
+      "recommendedMinutes" : 40
+    }
+  } ],
+  "groups" : [ {
+    "id" : "8ca2151e-1014-5591-b86d-87c3277642d3",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_1_T2_LISTENING_PART_1_Q1",
+    "version" : 1,
+    "questionType" : "GAP_COMPLETION",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "3de08f89bb8e96f426399f6ad04f6f419fed33f5a66de31f9140ab6541851c43",
+    "createdAt" : null
+  }, {
+    "id" : "b048414d-525c-5e98-8fa8-34d711ee1324",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_1_T2_LISTENING_PART_2_Q11",
+    "version" : 1,
+    "questionType" : "GAP_COMPLETION",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "9e3149e03cfdabfdb5604938242b04b3d9f5428573ed6a9ab5aeecf84598a40e",
+    "createdAt" : null
+  }, {
+    "id" : "f17fb9f0-076a-51fc-83c9-7eaa6fdb8050",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_1_T2_WRITING_TASK_2",
+    "version" : 1,
+    "questionType" : "WRITING_TASK_2",
+    "construct" : "written_production",
+    "skill" : "WRITING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "b6135fc8114b4f6a5d6c36d75996ee910459effb2ae40be67c2fdf1914b9258e",
+    "createdAt" : null
+  } ],
+  "formGroups" : [ {
+    "id" : "1f3e27f0-913c-5e5e-b371-7c2c78daf876",
+    "partId" : "469681f5-3878-5b82-88ae-f6960f277372",
+    "groupId" : "8ca2151e-1014-5591-b86d-87c3277642d3",
+    "ordinal" : 1,
+    "displayNumbering" : "1-10"
+  }, {
+    "id" : "8e3211be-13a2-5e34-9b2b-b64d4bca599b",
+    "partId" : "c50822c6-32e7-5e88-8520-11b85bc93f4c",
+    "groupId" : "b048414d-525c-5e98-8fa8-34d711ee1324",
+    "ordinal" : 1,
+    "displayNumbering" : "11-20"
+  }, {
+    "id" : "50b9221b-c747-5dfa-8836-3531e7387849",
+    "partId" : "f3b0395d-27f9-5055-bfe8-81061e02184f",
+    "groupId" : "f17fb9f0-076a-51fc-83c9-7eaa6fdb8050",
+    "ordinal" : 1,
+    "displayNumbering" : "Task 2"
+  } ],
+  "stimuli" : [ {
+    "id" : "7dd5721a-2e12-5601-b35b-6e9365059a11",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_1_T2_LISTENING_PART_1_AUDIO",
+    "version" : 1,
+    "kind" : "AUDIO",
+    "title" : "Listening Part 1 recording",
+    "bodyPayload" : {
+      "playback" : "ONCE",
+      "sourceRole" : "PART_RECORDING",
+      "questionRange" : "1-10",
+      "transcriptAvailable" : true,
+      "transcriptEmbedded" : false,
+      "mappingConfidence" : "CONFIDENT"
+    },
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "86febbe6c2c3f12ddf794c3c1deb9c667f5f6ddfcabb4c9d6485d1ee3f85ac92",
+    "createdAt" : null
+  }, {
+    "id" : "40907063-82fb-50f6-a9cc-f7c31dec2f8e",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_1_T2_LISTENING_PART_2_AUDIO",
+    "version" : 1,
+    "kind" : "AUDIO",
+    "title" : "Listening Part 2 recording",
+    "bodyPayload" : {
+      "playback" : "ONCE",
+      "sourceRole" : "PART_RECORDING",
+      "questionRange" : "11-20",
+      "transcriptAvailable" : true,
+      "transcriptEmbedded" : false,
+      "mappingConfidence" : "CONFIDENT"
+    },
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "5e37e2aeb376a125f24a786970a5688339621fe74d05b55b3b2c58d98a14bab7",
+    "createdAt" : null
+  }, {
+    "id" : "60a848a7-7b91-5aa0-8b2a-554432058a59",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_1_T2_WRITING_TASK_2_PROMPT",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "promptContext" : "You should spend about 40 minutes on this task. Present a written argument or case to an educated reader with no specialist knowledge of the following topic. Should wealthy nations be required to share their wealth among poorer nations by providing such things as food and education? Or is it the responsibility of the governments of poorer nations to look after their citizens themselves? You should write at least 250 words. Use your own ideas, knowledge and experience and support your arguments with examples and with relevant evidence."
+    },
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "b63691af0bec4fc48f1b18f89191399ac1f65534de8f6a1701f93410114a5ea8",
+    "createdAt" : null
+  } ],
+  "groupStimuli" : [ {
+    "id" : "b068874f-350a-5f1d-a8d7-f23969695ab4",
+    "groupId" : "8ca2151e-1014-5591-b86d-87c3277642d3",
+    "stimulusId" : "7dd5721a-2e12-5601-b35b-6e9365059a11",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "6ca2ed0a-a90d-501d-98d7-e4afd5aa8ac7",
+    "groupId" : "b048414d-525c-5e98-8fa8-34d711ee1324",
+    "stimulusId" : "40907063-82fb-50f6-a9cc-f7c31dec2f8e",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "3b5ef7ba-f4c8-5a4c-8f26-ac245db54a40",
+    "groupId" : "f17fb9f0-076a-51fc-83c9-7eaa6fdb8050",
+    "stimulusId" : "60a848a7-7b91-5aa0-8b2a-554432058a59",
+    "role" : "PRIMARY_PROMPT",
+    "ordinal" : 2
+  } ],
+  "items" : [ {
+    "id" : "d2a10f33-777a-5448-9b0e-b8575b4adb10",
+    "groupId" : "8ca2151e-1014-5591-b86d-87c3277642d3",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L001",
+    "version" : 1,
+    "prompt" : "Type of accommodation ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 1,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the notes. Use NO MORE THAN THREE WORDS for each answer.", "Example Quiet" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "KATE\nHer first impressions of the\ntown\nType of accommodation (1) ______\nHer feelings about the\n(2) ______\naccommodation\nHer feelings about the other\n(3) ______\nstudents\nName of course Environmental Studies\nDifficulties experienced on the\n(4) ______\ncourse\nSuggestions for improving the\n(5) ______\ncourse\nLUKI\nFirst type of accommodation (6) ______\nProblem with the first\n(7) ______\naccommodation\nSecond type of\n(8) ______\naccommodation\nName of course (9) ______\nComments about the\nComputer room busy\ncourse\nSuggestions for improving the\n(10) ______\ncourse"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "6d966d3f8686755a43bac870cd52378367acf86fa5b57e15d4710865f7ae67bd",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "4c9cba58-5d57-5d6f-b6fe-db6d8fc440de",
+    "groupId" : "8ca2151e-1014-5591-b86d-87c3277642d3",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L002",
+    "version" : 1,
+    "prompt" : "Her feelings about the / ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 2,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the notes. Use NO MORE THAN THREE WORDS for each answer.", "Example Quiet" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "KATE\nHer first impressions of the\ntown\nType of accommodation (1) ______\nHer feelings about the\n(2) ______\naccommodation\nHer feelings about the other\n(3) ______\nstudents\nName of course Environmental Studies\nDifficulties experienced on the\n(4) ______\ncourse\nSuggestions for improving the\n(5) ______\ncourse\nLUKI\nFirst type of accommodation (6) ______\nProblem with the first\n(7) ______\naccommodation\nSecond type of\n(8) ______\naccommodation\nName of course (9) ______\nComments about the\nComputer room busy\ncourse\nSuggestions for improving the\n(10) ______\ncourse"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "8d39933963a01e8fdcf968d39f843cf5b52999b9e7e180d14c3b4fe233439c29",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "3348b56f-dc2d-52e9-bc71-db8a4db21560",
+    "groupId" : "8ca2151e-1014-5591-b86d-87c3277642d3",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L003",
+    "version" : 1,
+    "prompt" : "Her feelings about the other / ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 3,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the notes. Use NO MORE THAN THREE WORDS for each answer.", "Example Quiet" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "KATE\nHer first impressions of the\ntown\nType of accommodation (1) ______\nHer feelings about the\n(2) ______\naccommodation\nHer feelings about the other\n(3) ______\nstudents\nName of course Environmental Studies\nDifficulties experienced on the\n(4) ______\ncourse\nSuggestions for improving the\n(5) ______\ncourse\nLUKI\nFirst type of accommodation (6) ______\nProblem with the first\n(7) ______\naccommodation\nSecond type of\n(8) ______\naccommodation\nName of course (9) ______\nComments about the\nComputer room busy\ncourse\nSuggestions for improving the\n(10) ______\ncourse"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "582fe01b1cd1aa3e20b1a6ad11d7c9d19397e95c64cf90189c1416ed7618f490",
+    "createdAt" : null,
+    "ordinal" : 3
+  }, {
+    "id" : "57e07caf-900b-527f-8d58-061b2a6f2fe1",
+    "groupId" : "8ca2151e-1014-5591-b86d-87c3277642d3",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L004",
+    "version" : 1,
+    "prompt" : "Difficulties experienced on the / ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 4,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the notes. Use NO MORE THAN THREE WORDS for each answer.", "Example Quiet" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "KATE\nHer first impressions of the\ntown\nType of accommodation (1) ______\nHer feelings about the\n(2) ______\naccommodation\nHer feelings about the other\n(3) ______\nstudents\nName of course Environmental Studies\nDifficulties experienced on the\n(4) ______\ncourse\nSuggestions for improving the\n(5) ______\ncourse\nLUKI\nFirst type of accommodation (6) ______\nProblem with the first\n(7) ______\naccommodation\nSecond type of\n(8) ______\naccommodation\nName of course (9) ______\nComments about the\nComputer room busy\ncourse\nSuggestions for improving the\n(10) ______\ncourse"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "fde2cc7a42a2f68b60574cd6f52ecf80dc53c094276b4813fb2b6500f6a4cd44",
+    "createdAt" : null,
+    "ordinal" : 4
+  }, {
+    "id" : "6fc4c01f-d580-5362-8425-a62fcba4696c",
+    "groupId" : "8ca2151e-1014-5591-b86d-87c3277642d3",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L005",
+    "version" : 1,
+    "prompt" : "Suggestions for improving the / ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 5,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the notes. Use NO MORE THAN THREE WORDS for each answer.", "Example Quiet" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "KATE\nHer first impressions of the\ntown\nType of accommodation (1) ______\nHer feelings about the\n(2) ______\naccommodation\nHer feelings about the other\n(3) ______\nstudents\nName of course Environmental Studies\nDifficulties experienced on the\n(4) ______\ncourse\nSuggestions for improving the\n(5) ______\ncourse\nLUKI\nFirst type of accommodation (6) ______\nProblem with the first\n(7) ______\naccommodation\nSecond type of\n(8) ______\naccommodation\nName of course (9) ______\nComments about the\nComputer room busy\ncourse\nSuggestions for improving the\n(10) ______\ncourse"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "3e43c8719911a19ea46ae05f268df64d60f143e3b9441c1d6844bdbdc5e9eae2",
+    "createdAt" : null,
+    "ordinal" : 5
+  }, {
+    "id" : "4aad85cd-4f89-5804-a041-bffa37a7a798",
+    "groupId" : "8ca2151e-1014-5591-b86d-87c3277642d3",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L006",
+    "version" : 1,
+    "prompt" : "First type of accommodation ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 6,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the notes. Use NO MORE THAN THREE WORDS for each answer.", "Example Quiet" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "KATE\nHer first impressions of the\ntown\nType of accommodation (1) ______\nHer feelings about the\n(2) ______\naccommodation\nHer feelings about the other\n(3) ______\nstudents\nName of course Environmental Studies\nDifficulties experienced on the\n(4) ______\ncourse\nSuggestions for improving the\n(5) ______\ncourse\nLUKI\nFirst type of accommodation (6) ______\nProblem with the first\n(7) ______\naccommodation\nSecond type of\n(8) ______\naccommodation\nName of course (9) ______\nComments about the\nComputer room busy\ncourse\nSuggestions for improving the\n(10) ______\ncourse"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "0b223227427b62b8ac503056bb9483a98c83fdd4eace140f5f770c0b2af071cf",
+    "createdAt" : null,
+    "ordinal" : 6
+  }, {
+    "id" : "99c20ac5-60e2-5f31-aa36-ba79c3771047",
+    "groupId" : "8ca2151e-1014-5591-b86d-87c3277642d3",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L007",
+    "version" : 1,
+    "prompt" : "Problem with the first / ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 7,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the notes. Use NO MORE THAN THREE WORDS for each answer.", "Example Quiet" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "KATE\nHer first impressions of the\ntown\nType of accommodation (1) ______\nHer feelings about the\n(2) ______\naccommodation\nHer feelings about the other\n(3) ______\nstudents\nName of course Environmental Studies\nDifficulties experienced on the\n(4) ______\ncourse\nSuggestions for improving the\n(5) ______\ncourse\nLUKI\nFirst type of accommodation (6) ______\nProblem with the first\n(7) ______\naccommodation\nSecond type of\n(8) ______\naccommodation\nName of course (9) ______\nComments about the\nComputer room busy\ncourse\nSuggestions for improving the\n(10) ______\ncourse"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "11385b6daea4fb6f204cb5b80644c82c114d7268362962f5401dc418cce2d104",
+    "createdAt" : null,
+    "ordinal" : 7
+  }, {
+    "id" : "ce505221-6ece-5ccd-9925-e3b438167311",
+    "groupId" : "8ca2151e-1014-5591-b86d-87c3277642d3",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L008",
+    "version" : 1,
+    "prompt" : "Second type of / ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 8,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the notes. Use NO MORE THAN THREE WORDS for each answer.", "Example Quiet" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "KATE\nHer first impressions of the\ntown\nType of accommodation (1) ______\nHer feelings about the\n(2) ______\naccommodation\nHer feelings about the other\n(3) ______\nstudents\nName of course Environmental Studies\nDifficulties experienced on the\n(4) ______\ncourse\nSuggestions for improving the\n(5) ______\ncourse\nLUKI\nFirst type of accommodation (6) ______\nProblem with the first\n(7) ______\naccommodation\nSecond type of\n(8) ______\naccommodation\nName of course (9) ______\nComments about the\nComputer room busy\ncourse\nSuggestions for improving the\n(10) ______\ncourse"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "b3a59c67a76c2f5828d8ed9692a4b9e065c6548d0728ee94694e3c7d78d621f6",
+    "createdAt" : null,
+    "ordinal" : 8
+  }, {
+    "id" : "8147111e-e8e3-5438-8fc6-214aa523a583",
+    "groupId" : "8ca2151e-1014-5591-b86d-87c3277642d3",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L009",
+    "version" : 1,
+    "prompt" : "Name of course ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 9,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the notes. Use NO MORE THAN THREE WORDS for each answer.", "Example Quiet" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "KATE\nHer first impressions of the\ntown\nType of accommodation (1) ______\nHer feelings about the\n(2) ______\naccommodation\nHer feelings about the other\n(3) ______\nstudents\nName of course Environmental Studies\nDifficulties experienced on the\n(4) ______\ncourse\nSuggestions for improving the\n(5) ______\ncourse\nLUKI\nFirst type of accommodation (6) ______\nProblem with the first\n(7) ______\naccommodation\nSecond type of\n(8) ______\naccommodation\nName of course (9) ______\nComments about the\nComputer room busy\ncourse\nSuggestions for improving the\n(10) ______\ncourse"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "546f84cd618f23ea7d52a9b4c61ab5c2151ec8fa2eded37534f3619695a11336",
+    "createdAt" : null,
+    "ordinal" : 9
+  }, {
+    "id" : "15a21332-a281-573b-8f5a-99b424c54ee3",
+    "groupId" : "8ca2151e-1014-5591-b86d-87c3277642d3",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L010",
+    "version" : 1,
+    "prompt" : "Suggestions for improving the / ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 10,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the notes. Use NO MORE THAN THREE WORDS for each answer.", "Example Quiet" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "KATE\nHer first impressions of the\ntown\nType of accommodation (1) ______\nHer feelings about the\n(2) ______\naccommodation\nHer feelings about the other\n(3) ______\nstudents\nName of course Environmental Studies\nDifficulties experienced on the\n(4) ______\ncourse\nSuggestions for improving the\n(5) ______\ncourse\nLUKI\nFirst type of accommodation (6) ______\nProblem with the first\n(7) ______\naccommodation\nSecond type of\n(8) ______\naccommodation\nName of course (9) ______\nComments about the\nComputer room busy\ncourse\nSuggestions for improving the\n(10) ______\ncourse"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "017a7ffe02a15df5e6f4cee16ee94ef80634c7b6e350a96a88e4e44edbeee548",
+    "createdAt" : null,
+    "ordinal" : 10
+  }, {
+    "id" : "c2d079a9-9c0a-53f6-9857-bc336af0a073",
+    "groupId" : "b048414d-525c-5e98-8fa8-34d711ee1324",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L011",
+    "version" : 1,
+    "prompt" : "touring / ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 11,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "11-20",
+        "instructions" : [ "Complete the notes below. Use NO MORE THAN THREE WORDS for each answer." ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "There are many kinds of bicycles available:\nracing\ntouring\n(11) ______\nordinary\nThey vary in price and (12) ______\nPrices range from $50.00 to (13) ______\nSingle speed cycles are suitable for (14) ______\nThree speed cycles are suitable for (15) ______\nFive and ten speed cycles are suitable for longer distances, hills\nand (16) ______\nTen speed bikes are better because they are (17) ______ in\nprice but (18) ______\nBuying a cycle is like (19) ______\nThe size of the bicycle is determined by the size of\nthe (20) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "0c35295d9badf8658064d6a2fd7e206852c5d9e65a6e3e1222aea89a31894b1e",
+    "createdAt" : null,
+    "ordinal" : 11
+  }, {
+    "id" : "6add772b-50dd-5f28-85d8-b9ac48862591",
+    "groupId" : "b048414d-525c-5e98-8fa8-34d711ee1324",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L012",
+    "version" : 1,
+    "prompt" : "They vary in price and ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 12,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "11-20",
+        "instructions" : [ "Complete the notes below. Use NO MORE THAN THREE WORDS for each answer." ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "There are many kinds of bicycles available:\nracing\ntouring\n(11) ______\nordinary\nThey vary in price and (12) ______\nPrices range from $50.00 to (13) ______\nSingle speed cycles are suitable for (14) ______\nThree speed cycles are suitable for (15) ______\nFive and ten speed cycles are suitable for longer distances, hills\nand (16) ______\nTen speed bikes are better because they are (17) ______ in\nprice but (18) ______\nBuying a cycle is like (19) ______\nThe size of the bicycle is determined by the size of\nthe (20) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "6a500a6e8d73bf749332c04f5bed5864c91915998c4658f67b45711fc7a7cd3e",
+    "createdAt" : null,
+    "ordinal" : 12
+  }, {
+    "id" : "2cc0e98a-9ac0-5a90-9f47-513f35647b28",
+    "groupId" : "b048414d-525c-5e98-8fa8-34d711ee1324",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L013",
+    "version" : 1,
+    "prompt" : "Prices range from $50.00 to ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 13,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "11-20",
+        "instructions" : [ "Complete the notes below. Use NO MORE THAN THREE WORDS for each answer." ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "There are many kinds of bicycles available:\nracing\ntouring\n(11) ______\nordinary\nThey vary in price and (12) ______\nPrices range from $50.00 to (13) ______\nSingle speed cycles are suitable for (14) ______\nThree speed cycles are suitable for (15) ______\nFive and ten speed cycles are suitable for longer distances, hills\nand (16) ______\nTen speed bikes are better because they are (17) ______ in\nprice but (18) ______\nBuying a cycle is like (19) ______\nThe size of the bicycle is determined by the size of\nthe (20) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "730e6fd6678f90d39ac6f15d611364bb59e958b39cfba7c108a9cb5d74984e2d",
+    "createdAt" : null,
+    "ordinal" : 13
+  }, {
+    "id" : "e79577b5-8416-56eb-b261-58d6fef22f1d",
+    "groupId" : "b048414d-525c-5e98-8fa8-34d711ee1324",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L014",
+    "version" : 1,
+    "prompt" : "Single speed cycles are suitable for ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 14,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "11-20",
+        "instructions" : [ "Complete the notes below. Use NO MORE THAN THREE WORDS for each answer." ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "There are many kinds of bicycles available:\nracing\ntouring\n(11) ______\nordinary\nThey vary in price and (12) ______\nPrices range from $50.00 to (13) ______\nSingle speed cycles are suitable for (14) ______\nThree speed cycles are suitable for (15) ______\nFive and ten speed cycles are suitable for longer distances, hills\nand (16) ______\nTen speed bikes are better because they are (17) ______ in\nprice but (18) ______\nBuying a cycle is like (19) ______\nThe size of the bicycle is determined by the size of\nthe (20) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "155d59aa78ef3d6114d02612f16936d693f2dab5f802892e36508e53d7237c26",
+    "createdAt" : null,
+    "ordinal" : 14
+  }, {
+    "id" : "a7477302-2b72-5a87-a0a6-4bde16b56152",
+    "groupId" : "b048414d-525c-5e98-8fa8-34d711ee1324",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L015",
+    "version" : 1,
+    "prompt" : "Three speed cycles are suitable for ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 15,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "11-20",
+        "instructions" : [ "Complete the notes below. Use NO MORE THAN THREE WORDS for each answer." ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "There are many kinds of bicycles available:\nracing\ntouring\n(11) ______\nordinary\nThey vary in price and (12) ______\nPrices range from $50.00 to (13) ______\nSingle speed cycles are suitable for (14) ______\nThree speed cycles are suitable for (15) ______\nFive and ten speed cycles are suitable for longer distances, hills\nand (16) ______\nTen speed bikes are better because they are (17) ______ in\nprice but (18) ______\nBuying a cycle is like (19) ______\nThe size of the bicycle is determined by the size of\nthe (20) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "ccb029f6224fd59e1425b9560876c4492337d073489f9e465f3af79abbaa1821",
+    "createdAt" : null,
+    "ordinal" : 15
+  }, {
+    "id" : "c2064b96-9daa-577a-9461-8f1fb599d0ac",
+    "groupId" : "b048414d-525c-5e98-8fa8-34d711ee1324",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L016",
+    "version" : 1,
+    "prompt" : "Five and ten speed cycles are suitable for longer distances, hills / and ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 16,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "11-20",
+        "instructions" : [ "Complete the notes below. Use NO MORE THAN THREE WORDS for each answer." ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "There are many kinds of bicycles available:\nracing\ntouring\n(11) ______\nordinary\nThey vary in price and (12) ______\nPrices range from $50.00 to (13) ______\nSingle speed cycles are suitable for (14) ______\nThree speed cycles are suitable for (15) ______\nFive and ten speed cycles are suitable for longer distances, hills\nand (16) ______\nTen speed bikes are better because they are (17) ______ in\nprice but (18) ______\nBuying a cycle is like (19) ______\nThe size of the bicycle is determined by the size of\nthe (20) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "8e6e33479d35437595ee85e68c690f225c21ea9f7ddd377657be4a8fe3b7d454",
+    "createdAt" : null,
+    "ordinal" : 16
+  }, {
+    "id" : "c87215fe-2f0a-5146-abcd-79c472a1697c",
+    "groupId" : "b048414d-525c-5e98-8fa8-34d711ee1324",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L017",
+    "version" : 1,
+    "prompt" : "Ten speed bikes are better because they are ______ in",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 17,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "11-20",
+        "instructions" : [ "Complete the notes below. Use NO MORE THAN THREE WORDS for each answer." ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "There are many kinds of bicycles available:\nracing\ntouring\n(11) ______\nordinary\nThey vary in price and (12) ______\nPrices range from $50.00 to (13) ______\nSingle speed cycles are suitable for (14) ______\nThree speed cycles are suitable for (15) ______\nFive and ten speed cycles are suitable for longer distances, hills\nand (16) ______\nTen speed bikes are better because they are (17) ______ in\nprice but (18) ______\nBuying a cycle is like (19) ______\nThe size of the bicycle is determined by the size of\nthe (20) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "dada6c3ec4e65ce3867c034b2e470e1747129146af03106b976a46e4c1627519",
+    "createdAt" : null,
+    "ordinal" : 17
+  }, {
+    "id" : "1bb17960-a41d-5318-8ed0-0b9a92b35d2e",
+    "groupId" : "b048414d-525c-5e98-8fa8-34d711ee1324",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L018",
+    "version" : 1,
+    "prompt" : "Ten speed bikes are better because they are (17) ______ in / price but ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 18,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "11-20",
+        "instructions" : [ "Complete the notes below. Use NO MORE THAN THREE WORDS for each answer." ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "There are many kinds of bicycles available:\nracing\ntouring\n(11) ______\nordinary\nThey vary in price and (12) ______\nPrices range from $50.00 to (13) ______\nSingle speed cycles are suitable for (14) ______\nThree speed cycles are suitable for (15) ______\nFive and ten speed cycles are suitable for longer distances, hills\nand (16) ______\nTen speed bikes are better because they are (17) ______ in\nprice but (18) ______\nBuying a cycle is like (19) ______\nThe size of the bicycle is determined by the size of\nthe (20) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "3c2df24572c87e50ca461025d5ded60a984faffc2070980e94573194c376cfbc",
+    "createdAt" : null,
+    "ordinal" : 18
+  }, {
+    "id" : "6d25c614-757c-575b-8aac-19a70a76f460",
+    "groupId" : "b048414d-525c-5e98-8fa8-34d711ee1324",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L019",
+    "version" : 1,
+    "prompt" : "Buying a cycle is like ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 19,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "11-20",
+        "instructions" : [ "Complete the notes below. Use NO MORE THAN THREE WORDS for each answer." ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "There are many kinds of bicycles available:\nracing\ntouring\n(11) ______\nordinary\nThey vary in price and (12) ______\nPrices range from $50.00 to (13) ______\nSingle speed cycles are suitable for (14) ______\nThree speed cycles are suitable for (15) ______\nFive and ten speed cycles are suitable for longer distances, hills\nand (16) ______\nTen speed bikes are better because they are (17) ______ in\nprice but (18) ______\nBuying a cycle is like (19) ______\nThe size of the bicycle is determined by the size of\nthe (20) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "d0f6170c64cb71e60e6db6a575f5158d1208613cdd7b257ce083d5e0b6c8d4de",
+    "createdAt" : null,
+    "ordinal" : 19
+  }, {
+    "id" : "ec3b59b4-a19a-5c8e-831c-e44249400beb",
+    "groupId" : "b048414d-525c-5e98-8fa8-34d711ee1324",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_L020",
+    "version" : 1,
+    "prompt" : "The size of the bicycle is determined by the size of / the ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 20,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "11-20",
+        "instructions" : [ "Complete the notes below. Use NO MORE THAN THREE WORDS for each answer." ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "There are many kinds of bicycles available:\nracing\ntouring\n(11) ______\nordinary\nThey vary in price and (12) ______\nPrices range from $50.00 to (13) ______\nSingle speed cycles are suitable for (14) ______\nThree speed cycles are suitable for (15) ______\nFive and ten speed cycles are suitable for longer distances, hills\nand (16) ______\nTen speed bikes are better because they are (17) ______ in\nprice but (18) ______\nBuying a cycle is like (19) ______\nThe size of the bicycle is determined by the size of\nthe (20) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "b6fe52e6f09c494be7ef1790bc19b6670d1664365b2f21f34460602e40e38e0a",
+    "createdAt" : null,
+    "ordinal" : 20
+  }, {
+    "id" : "e02a5b71-66da-57f2-a147-c62ce75cfb03",
+    "groupId" : "f17fb9f0-076a-51fc-83c9-7eaa6fdb8050",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T2_W2",
+    "version" : 1,
+    "prompt" : "You should spend about 40 minutes on this task. Present a written argument or case to an educated reader with no specialist knowledge of the following topic. Should wealthy nations be required to share their wealth among poorer nations by providing such things as food and education? Or is it the responsibility of the governments of poorer nations to look after their citizens themselves? You should write at least 250 words. Use your own ideas, knowledge and experience and support your arguments with examples and with relevant evidence.",
+    "interactionType" : "WRITING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "free_text",
+      "minimumWords" : 250,
+      "recommendedMinutes" : 40
+    },
+    "construct" : "writing_task",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "contentHash" : "ea58ecfa3dfd4b77a0b123462b920088562cbab7a36b602affad2fae49661bf3",
+    "createdAt" : null,
+    "ordinal" : 2
+  } ],
+  "answerSpecs" : [ {
+    "id" : "f12a333d-4ec0-5ffb-a884-5fa7eb1dceae",
+    "itemId" : "d2a10f33-777a-5448-9b0e-b8575b4adb10",
+    "acceptedAnswers" : {
+      "values" : [ "student accommodation", "hostel" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "a256ee23-a7c7-5c39-b3a4-d22a57b7743c",
+    "itemId" : "4c9cba58-5d57-5d6f-b6fe-db6d8fc440de",
+    "acceptedAnswers" : {
+      "values" : [ "awful food" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "d2a601fc-ccd3-59fe-b6bc-1682bfe7bba0",
+    "itemId" : "3348b56f-dc2d-52e9-bc71-db8a4db21560",
+    "acceptedAnswers" : {
+      "values" : [ "not friendly", "kept to themselves" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      },
+      "rejectedAnswers" : [ "lonely" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "7ecc7b0c-8bdd-5670-b636-53cb160b43d7",
+    "itemId" : "57e07caf-900b-527f-8d58-061b2a6f2fe1",
+    "acceptedAnswers" : {
+      "values" : [ "lecturers too busy", "lecturers busy" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "03e9dafb-152d-54bd-b31d-1f7dd4be2e4d",
+    "itemId" : "6fc4c01f-d580-5362-8425-a62fcba4696c",
+    "acceptedAnswers" : {
+      "values" : [ "regular meetings", "meetings with lecturers", "fortnightly meetings" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "a82fe492-c2a4-5d67-9b9c-c3bd4bb32ff0",
+    "itemId" : "4aad85cd-4f89-5804-a041-bffa37a7a798",
+    "acceptedAnswers" : {
+      "values" : [ "family", "homestay" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "8315485c-3e45-5057-aeec-446596c12dc0",
+    "itemId" : "99c20ac5-60e2-5f31-aa36-ba79c3771047",
+    "acceptedAnswers" : {
+      "values" : [ "lot of noise", "children made noise", "difficult to study" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "b48f44c3-9280-5a44-83fe-daeaed8cdb02",
+    "itemId" : "ce505221-6ece-5ccd-9925-e3b438167311",
+    "acceptedAnswers" : {
+      "values" : [ "student house" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "991fff1e-ec52-5a41-98f9-c18fff8c0477",
+    "itemId" : "8147111e-e8e3-5438-8fc6-214aa523a583",
+    "acceptedAnswers" : {
+      "values" : [ "Bachelor of Computing", "Computing" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "7458427f-769d-5e34-bdc5-a0f05586938d",
+    "itemId" : "15a21332-a281-573b-8f5a-99b424c54ee3",
+    "acceptedAnswers" : {
+      "values" : [ "reserve computer time" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "6bcf2a7d-3745-5424-a14f-f338c680616d",
+    "itemId" : "c2d079a9-9c0a-53f6-9857-bc336af0a073",
+    "acceptedAnswers" : {
+      "values" : [ "mountain" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "86296c60-6d8c-573f-a5e4-9dfb8da6eca7",
+    "itemId" : "6add772b-50dd-5f28-85d8-b9ac48862591",
+    "acceptedAnswers" : {
+      "values" : [ "quality" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "9a2a0be0-2277-5694-a976-4ea844d96cbf",
+    "itemId" : "2cc0e98a-9ac0-5a90-9f47-513f35647b28",
+    "acceptedAnswers" : {
+      "values" : [ "$2,000" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "ac5d3371-25bd-57b2-8ab4-0d9465f763e1",
+    "itemId" : "e79577b5-8416-56eb-b261-58d6fef22f1d",
+    "acceptedAnswers" : {
+      "values" : [ "short", "casual rides" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "f8362133-764f-51b5-aeaf-aab12f7ae512",
+    "itemId" : "a7477302-2b72-5a87-a0a6-4bde16b56152",
+    "acceptedAnswers" : {
+      "values" : [ "town riding", "shopping" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "1f492e0c-2ee1-5033-ac63-30cf74e23bf8",
+    "itemId" : "c2064b96-9daa-577a-9461-8f1fb599d0ac",
+    "acceptedAnswers" : {
+      "values" : [ "serious touring" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "2dd5f45d-3dbe-5b98-acbd-aeb21df3350e",
+    "itemId" : "c87215fe-2f0a-5146-abcd-79c472a1697c",
+    "acceptedAnswers" : {
+      "values" : [ "similar", "almost the same" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "df4f0358-121d-559e-a241-6907e7e09d16",
+    "itemId" : "1bb17960-a41d-5318-8ed0-0b9a92b35d2e",
+    "acceptedAnswers" : {
+      "values" : [ "better quality components", "better quality" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "5db73265-69bc-5fd5-94d3-97479811f11b",
+    "itemId" : "6d25c614-757c-575b-8aac-19a70a76f460",
+    "acceptedAnswers" : {
+      "values" : [ "buying clothes" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "12220b61-eb45-5e63-baa5-ea13d935ab7d",
+    "itemId" : "ec3b59b4-a19a-5c8e-831c-e44249400beb",
+    "acceptedAnswers" : {
+      "values" : [ "frame" ],
+      "keySource" : {
+        "page" : 140,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "de88dd5d-da42-5c42-adb1-8cd0a588040b",
+    "itemId" : "e02a5b71-66da-57f2-a147-c62ce75cfb03",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "minimumWords" : 250
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-WRITING-TEXT-V1",
+      "preserveParagraphs" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "createdAt" : null
+  } ],
+  "assets" : [ {
+    "id" : "a6e16b6b-3ee6-51c8-b368-5c08d0a62e07",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "objectKey" : "extracted/audio/5f803374c3a8aa1b4842b0afd7aad09d9372bf16f82c4e1c2b3a5d5100014133.mp3",
+    "versionId" : "1",
+    "sha256Hash" : "5f803374c3a8aa1b4842b0afd7aad09d9372bf16f82c4e1c2b3a5d5100014133",
+    "mimeType" : "audio/mpeg",
+    "byteSize" : 980577,
+    "durationMs" : 488240,
+    "dimensions" : null,
+    "validationState" : "VALIDATED",
+    "createdAt" : null
+  }, {
+    "id" : "c06fa013-25dd-5be6-909f-e1aa97d3946d",
+    "provenanceId" : "4290be2f-b03e-5368-b991-a0a99b4c25a7",
+    "objectKey" : "extracted/audio/05779f8c7d72bc73b2cc9047eb3605f5b2ced322e398a8ca8bd824ef07ba4a82.mp3",
+    "versionId" : "1",
+    "sha256Hash" : "05779f8c7d72bc73b2cc9047eb3605f5b2ced322e398a8ca8bd824ef07ba4a82",
+    "mimeType" : "audio/mpeg",
+    "byteSize" : 496789,
+    "durationMs" : 246346,
+    "dimensions" : null,
+    "validationState" : "VALIDATED",
+    "createdAt" : null
+  } ],
+  "stimulusAssets" : [ {
+    "id" : "48343925-47c7-52a3-89f4-e8ac4d381ac5",
+    "stimulusId" : "7dd5721a-2e12-5601-b35b-6e9365059a11",
+    "assetId" : "a6e16b6b-3ee6-51c8-b368-5c08d0a62e07",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "7c75abce-d997-5383-aad7-7a8358c6ea11",
+    "stimulusId" : "40907063-82fb-50f6-a9cc-f7c31dec2f8e",
+    "assetId" : "c06fa013-25dd-5be6-909f-e1aa97d3946d",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  } ]
+}

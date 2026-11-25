@@ -1,0 +1,849 @@
+{
+  "schema": 1,
+  "slug": "adjective-position",
+  "version": 2,
+  "domain": "adjectives-adverbs",
+  "order": 10,
+  "kind": "grammar",
+  "title": {
+    "vi": "Vị trí của tính từ",
+    "en": "Where adjectives go"
+  },
+  "subtitle": {
+    "vi": "Hai vị trí thường gặp: trước danh từ và sau động từ nối; không chia tính từ theo số",
+    "en": "Two usual adjective positions, without number agreement"
+  },
+  "aliases": [
+    "adjective position",
+    "vị trí tính từ",
+    "tính từ đứng ở đâu",
+    "attributive predicative",
+    "a phone new",
+    "a house big",
+    "she tall",
+    "interestings books"
+  ],
+  "level": "A1",
+  "levelBasis": "editorial",
+  "uses": [
+    {
+      "level": "A1",
+      "vi": "Đặt tính từ trước danh từ và sau be: a new phone, The phone is new."
+    },
+    {
+      "level": "A2",
+      "vi": "Dùng look, feel, sound với tính từ; đặt tính từ sau something, anything: something new."
+    },
+    {
+      "level": "B1",
+      "vi": "Xếp hai hay nhiều tính từ theo thứ tự tự nhiên: a beautiful old house."
+    }
+  ],
+  "objectives": [
+    "Đặt tính từ trước danh từ: a new phone, không phải a phone new",
+    "Dùng tính từ sau be và các động từ nối như look, feel, seem",
+    "Không thêm -s vào tính từ, kể cả khi danh từ ở số nhiều",
+    "Chọn a hay an theo âm đầu của tính từ đứng ngay sau nó"
+  ],
+  "prerequisites": [
+    "parts-of-speech"
+  ],
+  "related": [
+    {
+      "slug": "adjective-order",
+      "rel": "more"
+    },
+    {
+      "slug": "adjectives-vs-adverbs",
+      "rel": "confusion"
+    },
+    {
+      "slug": "linking-verbs",
+      "rel": "more"
+    },
+    {
+      "slug": "ed-and-ing-adjectives",
+      "rel": "more"
+    },
+    {
+      "slug": "a-and-an",
+      "rel": "more"
+    },
+    {
+      "slug": "verb-be",
+      "rel": "more"
+    },
+    {
+      "slug": "indefinite-pronouns",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": "Hỗ trợ mô tả rõ người và vật. Mức đánh giá phụ thuộc toàn bộ bài; không suy điểm từ một cấu trúc đơn lẻ.",
+    "toeic": "Hỗ trợ chọn dạng trong cụm danh từ và bổ ngữ đặc điểm; không suy rằng mọi chỗ sau be đều phải là tính từ."
+  },
+  "quick": {
+    "what": "Tính từ thường mô tả danh từ trước nó (a new phone) hoặc làm bổ ngữ sau động từ nối (The phone is new). Tính từ không thêm -s để hòa hợp số nhiều. Có những mẫu tính từ đứng sau danh từ hoặc đại từ, được giới thiệu ở phần sâu.",
+    "when": "Dùng khi mô tả người, vật hoặc nơi chốn. Mẫu cơ bản trong bài là a small room và The room is small; đây là mặc định hữu ích, không phải mọi vị trí có thể có.",
+    "examples": [
+      {
+        "en": "[S|She] [V|has] a [ADJ|new] [N|phone].",
+        "vi": "Cô ấy có một chiếc điện thoại mới."
+      },
+      {
+        "en": "[S|The phone] [V|is] [ADJ|new].",
+        "vi": "Chiếc điện thoại này mới."
+      },
+      {
+        "en": "[S|They] [V|look] [ADJ|tired].",
+        "vi": "Trông họ mệt."
+      },
+      {
+        "en": "[S|We] [V|bought] two [ADJ|cheap] [N|tickets].",
+        "vi": "Chúng tôi mua hai vé rẻ."
+      }
+    ],
+    "remember": "Tính từ thuộc ngữ thường trước danh từ; sau be/look/feel khi chúng nối với đặc điểm chủ ngữ. Không thêm -s để hòa hợp số nhiều."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Tính từ cho ta biết một người, một vật hay một nơi như thế nào: mới hay cũ, to hay nhỏ, vui hay buồn. Tiếng Anh có hai chỗ chính để đặt tính từ. Chỗ thứ nhất là ngay trước danh từ. Chỗ thứ hai là sau be hoặc một động từ nối như look, feel, seem. Ở cả hai chỗ, tính từ giữ nguyên một dạng."
+    },
+    {
+      "type": "formula",
+      "lines": [
+        {
+          "label": "Trước danh từ",
+          "parts": [
+            {
+              "t": "a / the / my",
+              "role": "DET"
+            },
+            {
+              "t": "tính từ",
+              "role": "ADJ"
+            },
+            {
+              "t": "danh từ",
+              "role": "N"
+            }
+          ]
+        },
+        {
+          "label": "Sau be",
+          "parts": [
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "be",
+              "role": "V"
+            },
+            {
+              "t": "tính từ",
+              "role": "ADJ"
+            }
+          ]
+        },
+        {
+          "label": "Sau động từ nối",
+          "parts": [
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "look / feel / seem",
+              "role": "V"
+            },
+            {
+              "t": "tính từ",
+              "role": "ADJ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Từ hạn định",
+            "items": [
+              "a",
+              "the",
+              "my",
+              "two"
+            ]
+          },
+          {
+            "label": "Tính từ",
+            "items": [
+              "new",
+              "small",
+              "old",
+              "cheap"
+            ]
+          },
+          {
+            "label": "Danh từ",
+            "items": [
+              "phone",
+              "room",
+              "hotel",
+              "laptops"
+            ]
+          }
+        ],
+        "sentence": "{0} {1} {2}",
+        "fixedOrder": true
+      },
+      "caption": "Thử khung từ hạn định + tính từ + danh từ. Không phải mọi tổ hợp đều đúng: a cần danh từ số ít và đổi thành an trước old; two cần laptops số nhiều.",
+      "alt": "Ba ô có bốn lựa chọn mỗi ô, tạo 64 tổ hợp. The và my hợp cả số ít/số nhiều; a chỉ hợp phone/room/hotel và cần an trước old; two chỉ hợp laptops. Đây là bài khám phá, không phải bộ sinh mọi câu đúng."
+    },
+    {
+      "type": "h",
+      "vi": "Trước danh từ"
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|I] [V|bought] a [ADJ|cheap] [N|laptop].",
+          "vi": "Tôi mua một chiếc laptop rẻ.",
+          "note": "Tính từ nằm giữa a và danh từ."
+        },
+        {
+          "en": "[S|She] [V|has] two [ADJ|young] [N|children].",
+          "vi": "Cô ấy có hai đứa con nhỏ.",
+          "note": "Children ở số nhiều nhưng young không đổi."
+        },
+        {
+          "en": "[S|We] [V|stayed] in an [ADJ|old] [N|hotel].",
+          "vi": "Chúng tôi ở một khách sạn cũ.",
+          "note": "Dùng an vì từ ngay sau nó là old, bắt đầu bằng nguyên âm."
+        },
+        {
+          "en": "[S|It] [V|is] a [ADJ|beautiful] [N|city].",
+          "vi": "Đó là một thành phố đẹp."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Sau be và các động từ nối"
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|The soup] [V|is] [ADJ|hot].",
+          "vi": "Món súp nóng.",
+          "note": "Sau be."
+        },
+        {
+          "en": "[S|My room] [V|is] [ADJ|small], but [S|it] [V|is] [ADJ|quiet].",
+          "vi": "Phòng tôi nhỏ nhưng yên tĩnh."
+        },
+        {
+          "en": "[S|You] [V|look] [ADJ|tired].",
+          "vi": "Trông bạn mệt.",
+          "note": "Look, feel, seem, sound đi với tính từ."
+        },
+        {
+          "en": "[S|The children] [V|are] [ADJ|happy].",
+          "vi": "Bọn trẻ vui.",
+          "note": "Danh từ số nhiều nhưng tính từ không thêm -s."
+        },
+        {
+          "en": "[S|This music] [V|sounds] [ADJ|great].",
+          "vi": "Bản nhạc này nghe hay quá."
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "I have a phone new.",
+            "vi": "Tôi có một chiếc điện thoại mới."
+          },
+          "b": {
+            "en": "I have a new phone.",
+            "vi": "Tôi có một chiếc điện thoại mới."
+          },
+          "diff": "Trong mẫu mô tả thuộc ngữ trung tính được luyện, dùng a new phone. Không suy ra mọi tính từ sau danh từ đều sai.",
+          "aBad": true
+        },
+        {
+          "a": {
+            "en": "My brother tall.",
+            "vi": "Anh tôi cao."
+          },
+          "b": {
+            "en": "My brother is tall.",
+            "vi": "Anh tôi cao."
+          },
+          "diff": "Giữa chủ ngữ và tính từ cần có be.",
+          "aBad": true
+        },
+        {
+          "a": {
+            "en": "two interestings books",
+            "vi": "hai cuốn sách thú vị"
+          },
+          "b": {
+            "en": "two interesting books",
+            "vi": "hai cuốn sách thú vị"
+          },
+          "diff": "Tính từ không thêm -s, dù danh từ ở số nhiều.",
+          "aBad": true
+        },
+        {
+          "a": {
+            "en": "She looks happily.",
+            "vi": "Trông cô ấy vui."
+          },
+          "b": {
+            "en": "She looks happy.",
+            "vi": "Trông cô ấy vui."
+          },
+          "diff": "Nếu look nghĩa trông có vẻ, dùng happy làm bổ ngữ. Nếu look nghĩa nhìn, happily có thể mô tả cách nhìn; đó là cấu trúc khác.",
+          "aBad": true
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Tiếng Việt thường đặt tính từ sau danh từ và không cần be trong vị ngữ tính chất. Với câu đầy đủ tiếng Anh đang học, dựng a new phone hoặc The phone is new. Đừng mở rộng mẹo này thành lệnh cấm mọi tính từ sau danh từ hoặc mọi cấu trúc rút gọn."
+    },
+    {
+      "type": "try",
+      "exercise": "adjp-01"
+    }
+  ],
+  "deep": [
+    {
+      "type": "h",
+      "vi": "Có tính từ chỉ đứng ở một chỗ"
+    },
+    {
+      "type": "p",
+      "vi": "Phần lớn tính từ đứng được ở cả hai chỗ: a new phone, The phone is new. Nhưng một số tính từ bị giới hạn. Afraid, alone, asleep, awake, alive, aware thường chỉ đứng sau be hoặc động từ nối: The baby is asleep. Khi cần một tính từ trước danh từ, ta dùng từ khác: the sleeping baby. Ngược lại, main, only, chief thường chỉ đứng trước danh từ: the main road, the only problem. Ta không nói The road is main."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|The baby] [V|is] [ADJ|asleep].",
+          "vi": "Em bé đang ngủ.",
+          "note": "Asleep thường ở vị trí bổ ngữ sau be; sleeping là lựa chọn thông dụng trước baby."
+        },
+        {
+          "en": "[V|Don't wake] the [ADJ|sleeping] [N|baby].",
+          "vi": "Đừng đánh thức em bé đang ngủ.",
+          "note": "Trước danh từ dùng sleeping."
+        },
+        {
+          "en": "The [ADJ|main] [N|road] [V|is] closed.",
+          "vi": "Con đường chính đã đóng.",
+          "note": "Main thường chỉ đứng trước danh từ."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Sau something, anything, someone: tính từ đứng sau"
+    },
+    {
+      "type": "p",
+      "vi": "Có một chỗ thường gặp khác: sau các đại từ như something, anything, nothing, someone, anyone. Tính từ đứng sau đại từ: something new, anything interesting, nothing special. Bạn sẽ gặp lại điều này ở bài về đại từ bất định."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|I] [V|want] to try [N|something] [ADJ|new].",
+          "vi": "Tôi muốn thử một điều gì đó mới.",
+          "note": "Tính từ đứng sau something."
+        },
+        {
+          "en": "[AUX|Is] there [N|anything] [ADJ|interesting] on TV?",
+          "vi": "Trên tivi có gì hay không?",
+          "note": "Tính từ đứng sau anything."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Nhiều tính từ, và a hay an"
+    },
+    {
+      "type": "p",
+      "vi": "Khi có hai tính từ, chúng đi theo một thứ tự khá cố định: a beautiful old house nghe tự nhiên hơn an old beautiful house. Thứ tự chi tiết nằm ở bài Order of adjectives. Còn a hay an do âm đầu của từ ngay sau nó, kể cả khi đó là tính từ: a car nhưng an expensive car; a house nhưng an old house; a useful tip vẫn dùng a vì useful bắt đầu bằng âm /juː/."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "adjp-after-noun",
+      "wrong": "I have a phone new.",
+      "right": "I have a new phone.",
+      "why": "Chọn mẫu thuộc ngữ cơ bản a new phone trong ý mô tả này; tính từ sau danh từ có các cấu trúc khác cần học riêng.",
+      "vn": "Tiếng Việt nói điện thoại mới, danh từ trước tính từ sau. Tiếng Anh đảo thứ tự này."
+    },
+    {
+      "id": "adjp-plural-s",
+      "wrong": "I read two interestings books.",
+      "right": "I read two interesting books.",
+      "why": "Tính từ không đổi dạng theo số của danh từ. Chỉ danh từ mới thêm -s."
+    },
+    {
+      "id": "adjp-missing-be",
+      "wrong": "My brother tall.",
+      "right": "My brother is tall.",
+      "why": "Giữa chủ ngữ và tính từ cần be hoặc một động từ nối.",
+      "vn": "Tiếng Việt nói Anh ấy cao mà không cần từ là, nên người học dễ bỏ be."
+    },
+    {
+      "id": "adjp-adverb-after-look",
+      "wrong": "She looks happily.",
+      "right": "She looks happy.",
+      "why": "Nếu muốn nói trông cô ấy vui, dùng looks happy. Looks happily có thể nói hành động nhìn một cách vui vẻ; không phải lỗi phổ quát trong mọi ngữ cảnh."
+    },
+    {
+      "id": "adjp-asleep-before-noun",
+      "wrong": "Don't wake the asleep baby.",
+      "right": "Don't wake the sleeping baby.",
+      "why": "Asleep thường chỉ đứng sau be. Trước danh từ ta dùng sleeping."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có khi nào tính từ đứng sau danh từ không, như trong thơ hay để nhấn mạnh?",
+      "a": "Có, không chỉ trong thơ: all items available có available sau items; something new có new sau đại từ. Tính từ có phần bổ sung cũng thường đứng sau danh từ, như a room full of boxes. Mặc định trước danh từ hữu ích cho mẫu cơ bản, không phải luật cấm."
+    },
+    {
+      "q": "Tính từ có số nhiều không?",
+      "a": "Không. Tính từ giữ nguyên dạng với danh từ số ít và số nhiều: a tall boy, two tall boys. Nếu bạn muốn thêm -s, hãy kiểm tra lại: có thể bạn đang nghĩ đến danh từ."
+    },
+    {
+      "q": "Sau look, feel, sound dùng tính từ hay trạng từ?",
+      "a": "Khi look, feel hoặc sound là động từ nối, tính từ mô tả chủ ngữ: She looks happy. Khi chúng mang nghĩa hành động, trạng từ có thể mô tả cách làm. Xem nghĩa của động từ, không chỉ chữ đứng trước."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "adjp-01",
+      "type": "choice",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Chọn mẫu có new làm tính từ thuộc ngữ trước danh từ bag, không dùng bổ ngữ mô tả trạng thái vật lúc mua.",
+      "stem": "Câu nào đặt tính từ đúng chỗ?",
+      "options": [
+        {
+          "t": "I bought a new bag.",
+          "ok": true,
+          "note": "Đúng. Tính từ new nằm giữa a và bag."
+        },
+        {
+          "t": "I bought a bag new.",
+          "note": "Câu này không dùng mẫu new trước bag được yêu cầu; cấu trúc bought something new có thể có phân tích khác theo ngữ cảnh.",
+          "tag": "adjective-after-noun"
+        },
+        {
+          "t": "I bought new a bag.",
+          "note": "A phải đứng trước tính từ: a new bag.",
+          "tag": "adjective-before-article"
+        }
+      ],
+      "explain": "Thứ tự trong cụm danh từ là a, rồi tính từ, rồi danh từ: a new bag."
+    },
+    {
+      "id": "adjp-02",
+      "type": "choice",
+      "level": "A1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn câu đúng.",
+      "stem": "Câu nào đúng?",
+      "options": [
+        {
+          "t": "My room is small.",
+          "ok": true,
+          "note": "Đúng. Chủ ngữ, be, rồi tính từ."
+        },
+        {
+          "t": "My room small.",
+          "note": "Thiếu be giữa chủ ngữ và tính từ.",
+          "tag": "missing-be"
+        },
+        {
+          "t": "My room is smalls.",
+          "note": "Tính từ không thêm -s.",
+          "tag": "adjective-plural-s"
+        }
+      ],
+      "explain": "Sau be, tính từ đứng một mình và giữ nguyên dạng: My room is small."
+    },
+    {
+      "id": "adjp-03",
+      "type": "cloze",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Điền hai từ new và bike vào đúng chỗ trống.",
+      "stem": "She has a {1} {2}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "new"
+          ],
+          "known": [
+            {
+              "t": "bike",
+              "verdict": "wrong",
+              "note": "Tính từ phải đứng trước danh từ: a new bike.",
+              "tag": "adjective-after-noun"
+            }
+          ]
+        },
+        "2": {
+          "accept": [
+            "bike"
+          ]
+        }
+      },
+      "explain": "New là tính từ nên đứng trước danh từ bike: a new bike."
+    },
+    {
+      "id": "adjp-04",
+      "type": "cloze",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Điền động từ be ở dạng đúng cho hiện tại.",
+      "context": "Em trai mình rất cao.",
+      "stem": "My brother {1} very tall.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "is",
+            "'s"
+          ],
+          "known": [
+            {
+              "t": "looks",
+              "verdict": "acceptable",
+              "note": "Looks very tall cũng đúng ngữ pháp, nhưng bài này hỏi be."
+            },
+            {
+              "t": "seems",
+              "verdict": "acceptable",
+              "note": "Seems very tall cũng đúng ngữ pháp, nhưng bài này hỏi be."
+            }
+          ]
+        }
+      },
+      "explain": "Sau chủ ngữ số ít và trước tính từ cần be ở hiện tại: is."
+    },
+    {
+      "id": "adjp-05",
+      "type": "order",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sắp xếp thành câu khẳng định bắt đầu I bought; cheap đứng trước laptop.",
+      "tokens": [
+        "I",
+        "bought",
+        "a",
+        "cheap",
+        "laptop"
+      ],
+      "end": ".",
+      "accept": [
+        [
+          "I",
+          "bought",
+          "a",
+          "cheap",
+          "laptop"
+        ]
+      ],
+      "explain": "Tính từ cheap nằm giữa a và laptop: I bought a cheap laptop."
+    },
+    {
+      "id": "adjp-06",
+      "type": "order",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sắp xếp câu khẳng định bắt đầu The room, dùng very trước clean.",
+      "tokens": [
+        "is",
+        "the",
+        "very",
+        "room",
+        "clean"
+      ],
+      "end": ".",
+      "accept": [
+        [
+          "the",
+          "room",
+          "is",
+          "very",
+          "clean"
+        ]
+      ],
+      "explain": "The room là chủ ngữ, be đứng sau, rồi tính từ có very đứng trước: The room is very clean."
+    },
+    {
+      "id": "adjp-07",
+      "type": "transform",
+      "level": "A1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lại câu.",
+      "source": "This laptop is expensive.",
+      "instruction": "Bắt đầu bằng This is, và đặt tính từ trước danh từ.",
+      "accept": [
+        "This is an expensive laptop"
+      ],
+      "known": [
+        {
+          "t": "This is a expensive laptop",
+          "verdict": "wrong",
+          "note": "Expensive bắt đầu bằng nguyên âm nên dùng an.",
+          "tag": "a-an"
+        }
+      ],
+      "model": "This is an expensive laptop.",
+      "explain": "Khi tính từ chuyển lên trước danh từ, a hay an do tính từ quyết định: an expensive laptop."
+    },
+    {
+      "id": "adjp-08",
+      "type": "error",
+      "level": "A1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Đổi cụm sang mẫu thuộc ngữ thông thường: big đứng trước house; giữ phần còn lại.",
+      "segments": [
+        {
+          "t": "She has"
+        },
+        {
+          "t": "a house big",
+          "bad": true,
+          "fix": [
+            "a big house"
+          ],
+          "note": "Nhiệm vụ yêu cầu a big house, với tính từ thuộc ngữ trước danh từ.",
+          "tag": "adjective-after-noun"
+        },
+        {
+          "t": "near the park."
+        }
+      ],
+      "explain": "Câu đúng là She has a big house near the park."
+    },
+    {
+      "id": "adjp-09",
+      "type": "error",
+      "level": "A1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        {
+          "t": "I read two"
+        },
+        {
+          "t": "interestings",
+          "bad": true,
+          "fix": [
+            "interesting"
+          ],
+          "note": "Tính từ không thêm -s.",
+          "tag": "adjective-plural-s"
+        },
+        {
+          "t": "books last week."
+        }
+      ],
+      "explain": "Câu đúng là I read two interesting books last week. Chỉ danh từ books mang -s."
+    },
+    {
+      "id": "adjp-10",
+      "type": "error",
+      "level": "A1",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "noError": true,
+      "segments": [
+        {
+          "t": "We stayed in a small hotel"
+        },
+        {
+          "t": "near the beach."
+        }
+      ],
+      "explain": "Câu này đúng. Tính từ small đứng giữa a và danh từ hotel."
+    },
+    {
+      "id": "adjp-11",
+      "type": "match",
+      "level": "A1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Nối mỗi câu tiếng Việt với cách nói đúng trong tiếng Anh.",
+      "pairs": [
+        {
+          "a": "một chiếc áo khoác dài",
+          "b": "a long coat"
+        },
+        {
+          "a": "Cô ấy trông mệt.",
+          "b": "She looks tired."
+        },
+        {
+          "a": "những cuốn sách thú vị",
+          "b": "interesting books"
+        },
+        {
+          "a": "Cái hộp rất nặng.",
+          "b": "The box is very heavy."
+        },
+        {
+          "a": "một ngôi nhà cổ",
+          "b": "an old house"
+        }
+      ],
+      "explain": "Trong cụm danh từ, tính từ đứng trước danh từ. Sau be và look, tính từ đứng một mình. An old house dùng an vì old bắt đầu bằng nguyên âm."
+    },
+    {
+      "id": "adjp-12",
+      "type": "classify",
+      "level": "A1",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Phân loại theo mẫu đích của bài: tính từ thuộc ngữ trước danh từ hoặc tính từ làm bổ ngữ sau be. Các cấu trúc khác không được xem là lỗi trong mọi hoàn cảnh.",
+      "cats": [
+        "Theo mẫu đích",
+        "Không theo mẫu đích"
+      ],
+      "items": [
+        {
+          "t": "I want a cold drink.",
+          "cat": "Theo mẫu đích"
+        },
+        {
+          "t": "I want a drink cold.",
+          "cat": "Không theo mẫu đích"
+        },
+        {
+          "t": "The weather is warm today.",
+          "cat": "Theo mẫu đích"
+        },
+        {
+          "t": "The weather warm is today.",
+          "cat": "Không theo mẫu đích"
+        },
+        {
+          "t": "They are happy students.",
+          "cat": "Theo mẫu đích"
+        },
+        {
+          "t": "They are students happy.",
+          "cat": "Không theo mẫu đích"
+        }
+      ],
+      "explain": "Cold drink và happy students là cụm thuộc ngữ; is warm có bổ ngữ sau be. Các thứ tự khác không đáp ứng mẫu đang luyện; không suy mọi tính từ sau danh từ đều sai."
+    },
+    {
+      "id": "adjp-13",
+      "type": "multi",
+      "level": "A1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn các câu theo mẫu thuộc ngữ trước danh từ hoặc bổ ngữ sau be, với tính từ không chia số nhiều.",
+      "stem": "Những câu nào đúng?",
+      "options": [
+        {
+          "t": "He is a kind man.",
+          "ok": true,
+          "note": "Đúng: tính từ kind trước danh từ man."
+        },
+        {
+          "t": "He is a man kind.",
+          "note": "Không theo mẫu thuộc ngữ trung tính của nhiệm vụ; không dùng để cấm mọi cách đặt tính từ sau danh từ.",
+          "tag": "adjective-after-noun"
+        },
+        {
+          "t": "The man is kind.",
+          "ok": true,
+          "note": "Đúng: tính từ kind sau be."
+        },
+        {
+          "t": "Two tall men came.",
+          "ok": true,
+          "note": "Đúng: tall giữ nguyên dạng trước men số nhiều."
+        },
+        {
+          "t": "Two talls men came.",
+          "note": "Tính từ không thêm -s.",
+          "tag": "adjective-plural-s"
+        }
+      ],
+      "explain": "Câu đúng đặt tính từ trước danh từ hoặc sau be, và không thêm -s vào tính từ."
+    },
+    {
+      "id": "adjp-14",
+      "type": "open",
+      "level": "A1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Viết 4 câu miêu tả căn phòng hoặc chiếc điện thoại của bạn. Hai câu có tính từ trước danh từ, hai câu có tính từ sau be.",
+      "model": [
+        "I have a small room. It has a big window. The room is quiet. The walls are white."
+      ],
+      "checklist": [
+        "Hai câu có tính từ đứng trước danh từ",
+        "Hai câu có be rồi tính từ",
+        "Theo nhiệm vụ này, hai câu thuộc ngữ đặt tính từ trước danh từ; các mẫu sau danh từ được học riêng.",
+        "Không có tính từ nào thêm -s"
+      ],
+      "explain": "Khi tự kiểm tra, gạch dưới từng tính từ và nhìn xem nó đứng ngay trước một danh từ hay ngay sau be."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Mục về adjectives và vị trí của tính từ"
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Phần về adjectives: position"
+    },
+    {
+      "ref": "cgel",
+      "note": "Cách phân tích tính từ đứng trước danh từ và tính từ làm bổ ngữ"
+    },
+    {
+      "ref": "quirk",
+      "note": "Phần về tính từ đứng trước danh từ và đứng sau động từ"
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

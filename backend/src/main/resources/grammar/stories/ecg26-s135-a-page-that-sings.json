@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s135-a-page-that-sings",
+  "title": "Trang sách hát khi không ai chạm",
+  "summary": "Buổi tối, tiếng ngân trong phòng sách đều đặn lặp ba lần. Không ai thấy trang sách nào tự lật.",
+  "level": "B1",
+  "topics": [
+    "present-perfect-continuous"
+  ],
+  "scene": "library-mystery",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Giang",
+      "role": "Người giữ thư viện"
+    },
+    {
+      "id": "b",
+      "name": "Aki",
+      "role": "Người thu âm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Một khe gió thổi qua ống đựng bản đồ. Mỗi lần xe ngoài đường đi qua, cánh cửa rung và ống ngân. Giang cần nói rõ âm thanh lặp, không kéo dài liên tục.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It's quiet between the buses.",
+          "vi": "Giữa hai chuyến xe thì nó im."
+        },
+        {
+          "who": "b",
+          "en": "What has it been doing all evening?",
+          "vi": "Suốt buổi tối nó vẫn làm gì?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Mô tả âm thanh quay lại nhiều lần tới hiện tại.",
+        "options": [
+          {
+            "ok": true,
+            "t": "It has been singing every time a bus goes by.",
+            "note": "Has been singing cùng every time diễn tả hoạt động lặp, cho phép quãng im ở giữa. Góc nghe biến ống bản đồ thành tiếng hát.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "It has made one long sound without a break.",
+            "note": "Without a break khẳng định liên tục, trái với quãng yên giữa hai chuyến. Thì hoàn thành không tự bắt buộc ý nghĩa liên tục ấy.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Aki chặn khe bằng giấy; chuyến xe sau chỉ còn tiếng bánh. Hai người mở lại khe đúng phút thư viện đóng cửa.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We've found a closing bell that runs on buses.",
+          "vi": "Ta tìm được chuông đóng cửa chạy bằng xe buýt."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Từ đó tiếng ngân cuối trở thành lời chào của cả căn phòng.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Giang ghi hai đoạn im bằng máy thu. Khi nghe cả im lẫn âm, cô tìm đúng chiếc ống đang rỗng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The silence was part of the tune.",
+          "vi": "Khoảng yên là một phần của giai điệu."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Họ đặt tấm biển Giai điệu có dấu lặng cạnh ống và mời trẻ em tự gõ nhịp chờ xe.",
+      "end": true
+    }
+  ]
+}

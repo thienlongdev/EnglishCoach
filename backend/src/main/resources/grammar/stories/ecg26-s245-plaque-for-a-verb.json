@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s245-plaque-for-a-verb",
+  "title": "Tấm biển cho một động từ",
+  "level": "C1",
+  "topics": [
+    "academic-grammar",
+    "nominalization"
+  ],
+  "scene": "university",
+  "summary": "Hai bản ghi mâu thuẫn về “the discovery of the spring”. Một người tìm thấy nguồn nước, người kia chứng minh nó có nước quanh năm.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hà",
+      "role": "Người viết bảng triển lãm"
+    },
+    {
+      "id": "b",
+      "name": "Zen",
+      "role": "Người giữ kho"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Hà có bản đồ đầu tiên ký Nhi và mười hai phiếu đo sau đó ký Minh. Hai người đều đáng có tên, nhưng không thể vì cùng dùng từ discovery mà gộp đóng góp.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One name is on a map. The other is on twelve measurements.",
+          "vi": "Một tên ở trên bản đồ. Tên kia ở trên mười hai phiếu đo."
+        },
+        {
+          "who": "b",
+          "en": "Give each signature a verb it can support.",
+          "vi": "Hãy giao cho mỗi chữ ký một động từ có chứng cứ."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Chọn lời ghi phân biệt phát hiện vị trí với quan sát theo thời gian.",
+        "options": [
+          {
+            "t": "Nhi mapped the spring; Minh recorded its flow across twelve months.",
+            "note": "Hai động từ cụ thể gắn hai loại bằng chứng với hai người. Across twelve months không tuyên bố kết quả đúng cho mọi năm.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "The discovery was jointly achieved by both researchers.",
+            "note": "Danh hóa discovery và jointly gộp vai trò và có thể khiến người đọc tưởng hai người cùng tìm thấy vị trí. Câu đúng cấu trúc nhưng kém chính xác hơn chứng từ.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Zen đặt mười hai hạt thủy tinh dọc chân bản đồ. Một em nhỏ lần từng hạt và đọc đúng tên người ký phiếu. Tấm biển được giữ cho cả hai gia đình.",
+      "say": [
+        {
+          "who": "b",
+          "en": "They share a spring without having to share a single verb.",
+          "vi": "Họ chung một con suối mà không cần chung một động từ."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Hà bỏ chữ jointly khi người con của Nhi hỏi cha mình có từng đo nước không. Cô kể lại bằng hai câu có hai động từ. Gia đình Minh gửi thêm bản đồ mùa khô cho phòng trưng bày.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The longer label left room for both lives.",
+          "vi": "Tấm nhãn dài hơn đã chừa chỗ cho cả hai cuộc đời."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

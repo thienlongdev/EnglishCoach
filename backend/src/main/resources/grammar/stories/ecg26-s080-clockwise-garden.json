@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s080-clockwise-garden",
+  "title": "Vườn rau xoay vòng",
+  "level": "A2",
+  "topics": [
+    "adjectives-vs-adverbs"
+  ],
+  "scene": "home",
+  "summary": "Mỗi sáng hoa hướng dương trong chậu nhìn một hướng khác. Rey lắp máy quay để xem ai xoay nó.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Na",
+      "role": "Người trồng rau"
+    },
+    {
+      "id": "b",
+      "name": "Rey",
+      "role": "Bạn cùng nhà"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Trong phim chỉ thấy Na cầm quai và xoay chậu thật chậm, cho mọi cây con đều được nắng. Góc máy không thu tiếng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It looks like the room is moving.",
+          "vi": "Trông cứ như căn phòng đang quay."
+        },
+        {
+          "who": "b",
+          "en": "How did I move the pot?",
+          "vi": "Mình đã xoay chậu như thế nào?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Rey tả cách Na xoay chậu.",
+        "options": [
+          {
+            "t": "It was a slow room.",
+            "note": "Slow là tính từ tả room trong câu này. Nó bỏ mất hành động của Na và không trả lời câu hỏi về cái chậu.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "You turned it slowly.",
+            "note": "Slowly bổ nghĩa cho turned. Nó mô tả nhịp chuyển động chứ không gán chuyển động cho căn phòng.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Hai người đánh dấu một vạch nhỏ trên thành chậu. Hôm sau Rey tự xoay đúng một vạch, và lần đầu cây con ở góc tối nhận được nắng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Your turn to turn it tomorrow.",
+          "vi": "Mai lại đến lượt cậu xoay nhé."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Na đặt một bức ảnh phòng cạnh màn hình. Bàn ghế không hề dịch, chỉ chiếc chậu đổi góc. Rey ghi nhãn phim: Điệu xoay buổi sáng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The room can sit this dance out.",
+          "vi": "Căn phòng khỏi phải nhảy điệu này."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

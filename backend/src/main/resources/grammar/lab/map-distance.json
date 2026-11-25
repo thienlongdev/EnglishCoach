@@ -1,0 +1,41 @@
+{
+  "id": "map-distance",
+  "title": "Bao xa hay bao lâu?",
+  "summary": "Bạn đang tính đường đạp xe về nhà. Đổi từ hỏi rồi kiểm tra một câu trả lời bằng kilômét có còn đủ không.",
+  "level": "A2",
+  "topics": [
+    "wh-questions",
+    "numbers-dates-measures"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Đại lượng",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Quãng đường"
+        },
+        {
+          "id": "v2",
+          "label": "Thời gian"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "How far is the ride home?",
+      "vi": "Đạp xe về nhà bao xa?",
+      "note": "How far hỏi khoảng cách, chẳng hạn ba kilômét. / Answer in units of distance.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "How long is the ride home?",
+      "vi": "Đạp xe về nhà mất bao lâu?",
+      "note": "Với chuyến đi này, how long hỏi thời lượng, chẳng hạn mười lăm phút. / Answer in units of time here.",
+      "verdict": "ok"
+    }
+  }
+}

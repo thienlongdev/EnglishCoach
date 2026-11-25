@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s054-watercolour-boot",
+  "title": "Chiếc ủng màu nước",
+  "level": "A2",
+  "topics": [
+    "past-continuous"
+  ],
+  "scene": "home",
+  "summary": "Một đám màu lam hình bàn chân xuất hiện ngay giữa bức bưu thiếp vẽ biển.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Linh",
+      "role": "Người vẽ bưu thiếp"
+    },
+    {
+      "id": "b",
+      "name": "Rin",
+      "role": "Em họ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Linh nhìn thấy hai thứ lúc màu còn ướt. Rin đang vẽ sóng, con gà nhấc chân khỏi mép giấy. Chỉ kịp kể một chi tiết cho bà trước khi bà nhấc tranh.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The sea has a footprint!",
+          "vi": "Biển có dấu chân rồi!"
+        },
+        {
+          "who": "b",
+          "en": "Tell Grandma what was happening just then.",
+          "vi": "Kể bà nghe lúc ấy đang có chuyện gì đi."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Cả hai lời đều mô tả một việc đang diễn ra. Chi tiết nào sẽ khiến bà nhìn thấy phần nào của câu chuyện?",
+        "options": [
+          {
+            "t": "Rin was painting the waves.",
+            "note": "Was painting phác phần việc của Rin khi vết chân xuất hiện, chưa nói em tạo vết.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "The hen was walking across the paper.",
+            "note": "Was walking đưa hành động của gà ra trước mắt người nghe. Across giải thích đường chân đi ngang bức vẽ.",
+            "ok": true,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Bà nhìn những con sóng xanh. Rin thêm một cánh buồm lên vết chân. Bà nhận tấm thiệp bờ biển có con thuyền hình chiếc ủng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Our boat has three toes.",
+          "vi": "Thuyền của mình có ba ngón chân."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Bà lần theo ba dấu chân rồi tìm ra con gà đang đậu trên ghế. Bà đặt tên thiệp là Chuyến ra khơi đầu tiên của gà mái.",
+      "say": [
+        {
+          "who": "a",
+          "en": "She signed the picture herself.",
+          "vi": "Nó tự ký lên bức tranh luôn rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

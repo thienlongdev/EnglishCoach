@@ -1,0 +1,407 @@
+{
+  "manifest" : {
+    "schemaVersion" : "1.0",
+    "packageId" : "RAW-RAW_IELTS_TRAINER_1_T5",
+    "packageVersion" : 1,
+    "contentHash" : "4efe7848b24e211ecfc6d47041ab1c0d228f5bcb6cb9bf9105ade69557b4f41b",
+    "creator" : "exam-raw-extractor",
+    "specificationBaselineId" : "EC-EXAM-SPEC-2026-09-10",
+    "authoringStatus" : "DRAFT",
+    "createdAt" : null,
+    "metadata" : {
+      "rightsReviewStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED_PROJECT_USE_OWNER_AUTHORIZED",
+      "visualQAStatus" : "PAGE_REGION_RENDERING_HUMAN_QA_REQUIRED",
+      "displayName" : {
+        "current" : "IELTS Trainer 1 — Test 5 (source extraction, draft)",
+        "ownerSelected" : null,
+        "status" : "PROVISIONAL_SOURCE_TITLE",
+        "policy" : "DISPLAY_NAME_MAY_CHANGE_SOURCE_PROVENANCE_MUST_NOT",
+        "renameTargets" : [ "form.title", "catalogNodes[].title" ]
+      },
+      "sourceIdentity" : {
+        "publisher" : "Cambridge University Press & Assessment",
+        "collection" : "ielts-trainer",
+        "book" : "ielts-trainer-1",
+        "bookTitle" : "IELTS Trainer 1",
+        "test" : 5,
+        "rawSourceSha256" : "a80567fe26de7fe195dcef1ff1e478325aebd4f2d2077789d4cbca00f81820db"
+      },
+      "audioQAStatus" : "AUTOMATED_TECHNICAL_QA_ONLY_HUMAN_QA_REQUIRED",
+      "sourceProvenance" : {
+        "collection" : "ielts-trainer",
+        "book" : "ielts-trainer-1",
+        "test" : "TEST_5",
+        "rawSourceFile" : {
+          "path" : "imports/source-files/ielts/ielts-trainer/Quyển 1 - IELTS Trainer - Six Practice Tests with Answers.pdf",
+          "sha256" : "a80567fe26de7fe195dcef1ff1e478325aebd4f2d2077789d4cbca00f81820db"
+        },
+        "pageRange" : "153",
+        "audio" : [ ],
+        "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json#ielts/ielts-trainer-1/test-5",
+        "extractorName" : "exam-raw-extractor",
+        "extractorVersion" : "3.8.1",
+        "reviewStatus" : "UNREVIEWED"
+      },
+      "ocr" : { },
+      "practiceProjection" : {
+        "sourceContentHash" : "8abaa053a6764061a70615ef7105a6362d0f3dbe74f42ddd9cebc0f2dde0082f",
+        "humanApprovalCreated" : false,
+        "fullSimulationGranted" : false,
+        "sourcePackageId" : "RAW-RAW_IELTS_TRAINER_1_T5",
+        "excludedScopes" : { },
+        "retainedScopes" : [ "IELTS_WRITING_TASK_2" ],
+        "version" : "exam-practice-projection-v1"
+      },
+      "reviewOnlyReferences" : {
+        "transcripts" : [ ],
+        "answerKeys" : [ ],
+        "note" : "References only. Transcript text is not embedded: the learner manifest projection has no stimulus/asset role allow-list yet (EXAM-AUD-032)."
+      },
+      "humanReviewComplete" : false,
+      "projectUsageAuthorization" : {
+        "status" : "OWNER_AUTHORIZED",
+        "scope" : "ENGLISHCOACH_PROJECT_USE",
+        "authorizedBy" : "PROJECT_OWNER",
+        "decisionDate" : "2026-10-06",
+        "decisionRef" : "EXAMS_CORPUS_OWNER_PRODUCTION_AUTHORIZATION_20261006",
+        "appliesTo" : "EXISTING_REPOSITORY_SOURCE_CORPUS",
+        "permits" : [ "EXTRACTION", "CANONICAL_PACKAGE_PREPARATION", "STAGING_VALIDATION", "LOCAL_STAGING_IMPORT_PREPARATION", "PRODUCTION_IMPORT", "PUBLICATION", "LEARNER_RUNTIME", "PRACTICE", "SIMULATION", "MEDIA", "SCORING", "RESULTS", "REVIEW" ],
+        "productionImport" : "OWNER_AUTHORIZED_PRODUCTION_USE",
+        "publisherLicence" : "NOT_ESTABLISHED",
+        "publisherEndorsement" : false
+      },
+      "extraction" : {
+        "status" : "NEEDS_REVIEW",
+        "extractorVersion" : "3.8.1",
+        "blockingCodes" : [ "SECTION_NOT_FOUND", "SECTION_OMITTED" ],
+        "reviewCodes" : [ ]
+      },
+      "sourceDocuments" : [ {
+        "path" : "imports/source-files/ielts/ielts-trainer/Quyển 1 - IELTS Trainer - Six Practice Tests with Answers.pdf",
+        "sha256" : "a80567fe26de7fe195dcef1ff1e478325aebd4f2d2077789d4cbca00f81820db",
+        "role" : "ANSWER_KEY",
+        "textLayer" : "TEXT"
+      } ],
+      "audioSegments" : [ ]
+    }
+  },
+  "sources" : [ {
+    "id" : "019f9e33-7aa0-58a3-928f-b744085a31bd",
+    "code" : "RAW_IELTS_TRAINER_IELTS_TRAINER_1",
+    "name" : "IELTS Trainer 1",
+    "owner" : "Cambridge University Press & Assessment",
+    "publisher" : "Cambridge University Press & Assessment",
+    "sourceType" : "THIRD_PARTY_PUBLICATION",
+    "referenceMeta" : {
+      "rawCorpusRoot" : "imports/source-files/",
+      "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json",
+      "rightsStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED",
+      "projectUsageAuthorization" : "OWNER_AUTHORIZED",
+      "primaryDocument" : "imports/source-files/ielts/ielts-trainer/Quyển 1 - IELTS Trainer - Six Practice Tests with Answers.pdf"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  }, {
+    "id" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "code" : "EC_INTERNAL_ORIGINAL",
+    "name" : "English Coach original content",
+    "owner" : "English Coach",
+    "publisher" : "English Coach",
+    "sourceType" : "INTERNAL_ORIGINAL",
+    "referenceMeta" : {
+      "declaration" : "Rubrics and scoring metadata authored by English Coach; no external text"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "licenses" : [ {
+    "id" : "461ea033-7d98-5af9-b6a6-8eb731695003",
+    "sourceId" : "019f9e33-7aa0-58a3-928f-b744085a31bd",
+    "licenseCode" : "UNKNOWN-RAW_IELTS_TRAINER_IELTS_TRAINER_1",
+    "provenanceCategory" : "UNKNOWN",
+    "commercialRights" : false,
+    "redistributionRights" : false,
+    "derivativeRights" : false,
+    "permittedPurposes" : {
+      "LOCAL_PRIVATE_REVIEW" : true
+    },
+    "permittedTerritories" : { },
+    "validFrom" : null,
+    "validUntil" : null,
+    "attribution" : "IELTS Trainer 1 — Cambridge University Press & Assessment. Publisher licence not established; used under the EnglishCoach project owner's authorization (2026-10-03), which is not a publisher licence or endorsement.",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  }, {
+    "id" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseCode" : "EC-ORIGINAL-DRAFT-PENDING-LEGAL",
+    "provenanceCategory" : "ORIGINAL",
+    "commercialRights" : true,
+    "redistributionRights" : true,
+    "derivativeRights" : true,
+    "permittedPurposes" : {
+      "EXAM" : true,
+      "SIMULATION" : true,
+      "PRACTICE" : true,
+      "CONTENT" : true
+    },
+    "permittedTerritories" : {
+      "GLOBAL" : true
+    },
+    "validFrom" : 1790985600.000000000,
+    "validUntil" : null,
+    "attribution" : "English Coach original draft; legal review pending",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  } ],
+  "provenances" : [ {
+    "id" : "534723db-ba64-5769-a43f-d762e823312a",
+    "sourceId" : "019f9e33-7aa0-58a3-928f-b744085a31bd",
+    "licenseId" : "461ea033-7d98-5af9-b6a6-8eb731695003",
+    "creator" : "exam-raw-extractor",
+    "acquisitionMethod" : "RAW_CORPUS_EXTRACTION",
+    "originalReference" : "IELTS Trainer 1 / Test 5",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  }, {
+    "id" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseId" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "creator" : "English Coach",
+    "acquisitionMethod" : "ORIGINAL_AUTHORING",
+    "originalReference" : "EC-RUBRIC-AND-SCORING-METADATA",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  } ],
+  "catalogNodes" : [ {
+    "id" : "dde6e9fe-6291-5598-a163-c10afe95b818",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "sourceId" : "019f9e33-7aa0-58a3-928f-b744085a31bd",
+    "parentId" : null,
+    "kind" : "VOLUME",
+    "title" : "IELTS Trainer 1",
+    "year" : null,
+    "ordinal" : 0,
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "specifications" : [ {
+    "id" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SPEC",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "deliveryMode" : "COMPUTER_SIMULATION",
+    "blueprint" : {
+      "source" : "RAW_CORPUS_EXTRACTION",
+      "family" : "IELTS",
+      "variant" : "ACADEMIC",
+      "scope" : "FULL"
+    },
+    "timingPolicy" : {
+      "listeningSeconds" : 1800,
+      "readingSeconds" : 3600,
+      "writingSeconds" : 3600,
+      "speakingSeconds" : 840
+    },
+    "navigationPolicy" : {
+      "sectionNavigation" : "fixed_sequence"
+    },
+    "playbackPolicy" : {
+      "mode" : "ONCE"
+    },
+    "sourceReferences" : {
+      "baseline" : "EC-EXAM-SPEC-2026-09-10"
+    },
+    "contentHash" : "01a9a5d6615e4c044e33620aacc7f229326296fc975b4c54a3fc1cc0d69efd4c",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "rubrics" : [ {
+    "id" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "logicalCode" : "EC_RAW_IELTS_WRITING_RUBRIC",
+    "version" : 1,
+    "family" : "IELTS",
+    "skill" : "WRITING",
+    "taskFamily" : "IELTS_WRITING",
+    "criteria" : {
+      "taskAchievement" : {
+        "weight" : 1
+      },
+      "coherenceAndCohesion" : {
+        "weight" : 1
+      },
+      "lexicalResource" : {
+        "weight" : 1
+      },
+      "grammaticalRangeAndAccuracy" : {
+        "weight" : 1
+      }
+    },
+    "ordinalScale" : {
+      "min" : 0,
+      "max" : 9,
+      "steps" : [ 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0 ]
+    },
+    "provenanceId" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "contentHash" : "0d542a6e2c855fb3a6fa51ef83026cb296280b0f51f9073604b6756d4752e253",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "calibrations" : [ ],
+  "scoringSchemes" : [ {
+    "id" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SCORING",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "normalizationVersion" : "EC-NORM-V1",
+    "rubricReferences" : { },
+    "calibrationId" : null,
+    "mappingTable" : {
+      "metrics" : [ "LISTENING", "READING", "WRITING", "SPEAKING", "FULL_OVERALL" ],
+      "status" : "DRAFT_NOT_CALIBRATED",
+      "scoreLabel" : "English Coach estimated band"
+    },
+    "aggregationRules" : {
+      "officialEquating" : false,
+      "version" : "EC-AGGREGATION-DRAFT-V1",
+      "creditUnitsPerItem" : 1,
+      "task1Weight" : 1,
+      "task2Weight" : 2,
+      "overall" : "mean_of_four_quarter_rounding"
+    },
+    "contentHash" : "0780e29af069b167dab0956ac01663b2c8b509ca0f03839208766aa0b62ed428",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "form" : {
+    "id" : "9f7b715c-7a05-539c-9b5b-6e48f68329c2",
+    "logicalKey" : "RAW_IELTS_TRAINER_1_T5",
+    "version" : 1,
+    "title" : "IELTS Trainer 1 — Test 5 (source extraction, draft)",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "catalogNodeId" : "dde6e9fe-6291-5598-a163-c10afe95b818",
+    "specificationId" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "lifecycleState" : "DRAFT",
+    "provenanceId" : "534723db-ba64-5769-a43f-d762e823312a",
+    "authorId" : null,
+    "contentHash" : "174e03d3c170faac47105264c09052e39bc03a302b298b416bf191e53d9bf338",
+    "publishedAt" : null,
+    "retiredAt" : null,
+    "createdAt" : null,
+    "primaryHealthStatus" : null
+  },
+  "formComponents" : [ ],
+  "sections" : [ {
+    "id" : "3582a8c9-1b14-5f4e-90cd-cb74654a8802",
+    "formId" : "9f7b715c-7a05-539c-9b5b-6e48f68329c2",
+    "skill" : "WRITING",
+    "ordinal" : 1,
+    "specSectionKey" : "WRITING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 3600,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  } ],
+  "parts" : [ {
+    "id" : "c03e3fd8-bfc7-5cac-80a4-678956226319",
+    "sectionId" : "3582a8c9-1b14-5f4e-90cd-cb74654a8802",
+    "partCode" : "WRITING_TASK_2",
+    "ordinal" : 1,
+    "instructions" : null,
+    "timingPolicy" : {
+      "recommendedMinutes" : 40
+    }
+  } ],
+  "groups" : [ {
+    "id" : "a44e1091-72b6-5a3c-9440-51aaa9a44ba3",
+    "logicalGroupKey" : "RAW_IELTS_TRAINER_1_T5_WRITING_TASK_2",
+    "version" : 1,
+    "questionType" : "WRITING_TASK_2",
+    "construct" : "written_production",
+    "skill" : "WRITING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "534723db-ba64-5769-a43f-d762e823312a",
+    "contentHash" : "be72ba9ddd4afd7423d83279a97ff3e4e5e8d9a6be31e3196e706fbc87ca89f0",
+    "createdAt" : null
+  } ],
+  "formGroups" : [ {
+    "id" : "33a7a3e3-f387-55bd-9dec-5da9102027c2",
+    "partId" : "c03e3fd8-bfc7-5cac-80a4-678956226319",
+    "groupId" : "a44e1091-72b6-5a3c-9440-51aaa9a44ba3",
+    "ordinal" : 1,
+    "displayNumbering" : "Task 2"
+  } ],
+  "stimuli" : [ {
+    "id" : "c2668df5-883a-508a-931f-4619cf9e7eb9",
+    "logicalStimulusKey" : "RAW_IELTS_TRAINER_1_T5_WRITING_TASK_2_PROMPT",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "promptContext" : "You should spend about 40 minutes on this task. Write about the following topic: In some countries it is thought advisable that children begin formal education at four years old, while in others they do not have to start school until they are seven or eight. How far do you agree with either of these views? Give reasons for your answer and include any relevant examples from your own knowledge or experience. Write at least 250 words. 1 5 2 I T est S Wri t i n g"
+    },
+    "provenanceId" : "534723db-ba64-5769-a43f-d762e823312a",
+    "contentHash" : "2f82b6fabb9cbf13e54d800cec504075a690ceecce39cadec4a4a81ae325d3b7",
+    "createdAt" : null
+  } ],
+  "groupStimuli" : [ {
+    "id" : "5db10bda-993d-5bfc-ba2f-9428fbc1f20f",
+    "groupId" : "a44e1091-72b6-5a3c-9440-51aaa9a44ba3",
+    "stimulusId" : "c2668df5-883a-508a-931f-4619cf9e7eb9",
+    "role" : "PRIMARY_PROMPT",
+    "ordinal" : 2
+  } ],
+  "items" : [ {
+    "id" : "f3d2ccad-e50c-5761-a3aa-fdea48665d74",
+    "groupId" : "a44e1091-72b6-5a3c-9440-51aaa9a44ba3",
+    "logicalItemKey" : "RAW_IELTS_TRAINER_1_T5_W2",
+    "version" : 1,
+    "prompt" : "You should spend about 40 minutes on this task. Write about the following topic: In some countries it is thought advisable that children begin formal education at four years old, while in others they do not have to start school until they are seven or eight. How far do you agree with either of these views? Give reasons for your answer and include any relevant examples from your own knowledge or experience. Write at least 250 words. 1 5 2 I T est S Wri t i n g",
+    "interactionType" : "WRITING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "free_text",
+      "minimumWords" : 250,
+      "recommendedMinutes" : 40
+    },
+    "construct" : "writing_task",
+    "provenanceId" : "534723db-ba64-5769-a43f-d762e823312a",
+    "contentHash" : "9092f9445b2336c13ee857ed24e3cc95054030217a9ae830987f438be2c5dbbf",
+    "createdAt" : null,
+    "ordinal" : 2
+  } ],
+  "answerSpecs" : [ {
+    "id" : "ed412d17-b1a9-5e92-b231-1301684ed3b9",
+    "itemId" : "f3d2ccad-e50c-5761-a3aa-fdea48665d74",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "minimumWords" : 250
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-WRITING-TEXT-V1",
+      "preserveParagraphs" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "createdAt" : null
+  } ],
+  "assets" : [ ],
+  "stimulusAssets" : [ ]
+}

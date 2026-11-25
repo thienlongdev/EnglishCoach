@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s051-two-ways-to-give",
+  "title": "Hai cách tặng một chiếc khăn",
+  "level": "A2",
+  "topics": [
+    "future-will",
+    "future-going-to"
+  ],
+  "scene": "station",
+  "summary": "Chiếc khăn Mơ đan cho bà sắp theo tàu ra biển. Ở sân ga có người đang run vì lạnh.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mơ",
+      "role": "Chị gái"
+    },
+    {
+      "id": "b",
+      "name": "Emi",
+      "role": "Em gái"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Emi mở gói quà. Bà đã có chăn trên tàu, còn cô bé gần đó mặc áo mỏng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Grandma has a blanket, but that girl is cold.",
+          "vi": "Bà có chăn rồi, còn bạn kia đang lạnh."
+        },
+        {
+          "who": "b",
+          "en": "What do you want to do with the scarf?",
+          "vi": "Chị muốn làm gì với chiếc khăn?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Mơ có thể giữ kế hoạch từ tối qua hoặc quyết định ngay tại sân ga. Chọn lời nói và xem chiếc khăn đi đâu.",
+        "options": [
+          {
+            "t": "I'll give it to the girl now.",
+            "note": "I'll give trong lời đáp ngay lúc này thể hiện quyết định mới. Người nhận đổi từ bà sang cô bé.",
+            "ok": true,
+            "next": "ending-2"
+          },
+          {
+            "t": "I'm going to give it to Grandma, as we planned.",
+            "note": "Going to cùng as we planned nhắc lại dự định đã có. Mơ còn cần tìm cách khác giúp cô bé.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Bà quấn khăn lên cổ rồi đưa chiếc chăn đang đắp cho cô bé. Khi tàu chạy, hai màu len cùng vẫy qua ô cửa.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Look, they're sharing the warm things.",
+          "vi": "Nhìn kìa, bà và bạn ấy đang chia nhau đồ ấm."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Cô bé choàng khăn và tặng lại Mơ một vỏ sò. Mơ đặt vỏ sò vào hộp quà của bà. Bà chưa ra biển đã được nghe tiếng biển.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Grandma, listen to your present.",
+          "vi": "Bà ơi, bà nghe quà của bà này."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

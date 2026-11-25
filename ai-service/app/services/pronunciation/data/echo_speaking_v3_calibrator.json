@@ -1,0 +1,79 @@
+{
+  "version": "ECHO_SPEAKING_V3_HYBRID_CALIB_20261124",
+  "trained_on": "SpeechOcean762 v1.2.0 train/ (N=600, 125 train speakers) + LibriSpeech dev-clean (N=60 native)",
+  "zero_test_leakage_verified": true,
+  "phone_error_logreg": {
+    "features": [
+      "err_p",
+      "weak_p",
+      "neg_gop",
+      "blank_dom",
+      "zero_fr",
+      "ctc_conf"
+    ],
+    "coef": [
+      6.435513,
+      -0.489609,
+      0.454336,
+      1.4045,
+      0.0,
+      0.031129
+    ],
+    "intercept": -6.56727,
+    "tau_error": 0.38,
+    "tau_weak": 0.171
+  },
+  "phone_deletion_logreg": {
+    "features": [
+      "err_p",
+      "neg_gop",
+      "blank_dom",
+      "zero_fr",
+      "dur_norm"
+    ],
+    "coef": [
+      3.293353,
+      0.37366,
+      3.059865,
+      0.0,
+      -0.666207
+    ],
+    "intercept": -7.918987,
+    "tau_deletion": 0.19
+  },
+  "utt_accuracy_ridge": {
+    "features": [
+      "mean_err_p",
+      "max_err_p",
+      "mean_neg_gop",
+      "mean_weak_p"
+    ],
+    "coef": [
+      -2.942468,
+      -1.516688,
+      -1.184215,
+      0.211811
+    ],
+    "intercept": 9.472557
+  },
+  "utt_total_ridge": {
+    "features": [
+      "mean_err_p",
+      "mean_neg_gop",
+      "raw_flu",
+      "raw_pros"
+    ],
+    "coef": [
+      -0.651716,
+      -0.840662,
+      0.243459,
+      0.416861
+    ],
+    "intercept": 2.493802
+  },
+  "lexical_stress": {
+    "method": "NEURAL_CTC_MULTICUE_V2",
+    "dev_native_n_words": 318,
+    "err_margin_threshold": 0.4078
+  }
+}

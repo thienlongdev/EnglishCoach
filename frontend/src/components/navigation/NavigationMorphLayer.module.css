@@ -1,0 +1,155 @@
+/*
+ * Cinematic Shared-Element Morph Layer (Sidebar <-> Liquid Glass Dock).
+ * Pure DOM + analytic spring physics; zero WebGL, zero canvas, pointer-events: none.
+ */
+
+.layer {
+  position: fixed;
+  inset: 0;
+  z-index: 48;
+  pointer-events: none;
+  overflow: hidden;
+  contain: strict;
+}
+
+.morphShell {
+  position: absolute;
+  left: 0;
+  top: 0;
+  isolation: isolate;
+  contain: layout paint;
+  background:
+    radial-gradient(125% 85% at 50% -15%, rgb(255 255 255 / 0.9), transparent 58%),
+    radial-gradient(90% 90% at 15% 110%, rgb(186 230 253 / 0.52), transparent 62%),
+    radial-gradient(90% 90% at 85% 110%, rgb(221 214 254 / 0.48), transparent 62%),
+    linear-gradient(180deg, rgb(255 255 255 / 0.92), rgb(240 246 255 / 0.88));
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.95),
+    0 24px 52px -18px rgb(18 46 118 / 0.38),
+    0 0 42px -14px rgb(var(--eo-ambient, 112 150 240) / 0.52);
+  will-change: transform, width, height, border-radius, opacity;
+}
+
+:global(.dark) .morphShell {
+  background:
+    radial-gradient(125% 85% at 50% -15%, rgb(125 211 252 / 0.22), transparent 58%),
+    radial-gradient(90% 90% at 85% 110%, rgb(139 92 246 / 0.22), transparent 62%),
+    linear-gradient(180deg, rgb(13 26 61 / 0.93), rgb(7 15 38 / 0.93));
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.16),
+    0 28px 58px -18px rgb(1 4 16 / 0.9),
+    0 0 44px -14px rgb(var(--eo-ambient, 56 189 248) / 0.5);
+}
+
+.morphShell::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    165deg,
+    rgb(255 255 255 / 0.92) 0%,
+    rgb(147 197 253 / 0.65) 32%,
+    rgb(196 181 253 / 0.48) 66%,
+    rgb(103 232 249 / 0.78) 100%
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+}
+
+:global(.dark) .morphShell::before {
+  background: linear-gradient(
+    165deg,
+    rgb(186 230 253 / 0.65) 0%,
+    rgb(96 165 250 / 0.18) 32%,
+    rgb(139 92 246 / 0.22) 66%,
+    rgb(103 232 249 / 0.56) 100%
+  );
+}
+
+.flyingGlyph {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 0.85rem;
+  background:
+    radial-gradient(
+      120% 120% at 30% 18%,
+      rgb(var(--tone, 56 189 248) / 0.26),
+      rgb(var(--tone, 56 189 248) / 0.08) 65%,
+      transparent 100%
+    ),
+    rgb(255 255 255 / 0.88);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.95),
+    inset 0 0 0 1px rgb(var(--tone, 56 189 248) / 0.34),
+    0 8px 18px -8px rgb(15 40 105 / 0.32);
+  will-change: transform, opacity;
+}
+
+:global(.dark) .flyingGlyph {
+  background:
+    radial-gradient(
+      120% 120% at 30% 18%,
+      rgb(var(--tone, 56 189 248) / 0.34),
+      rgb(var(--tone, 56 189 248) / 0.1) 65%,
+      transparent 100%
+    ),
+    rgb(18 32 72 / 0.88);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.22),
+    inset 0 0 0 1px rgb(var(--tone, 56 189 248) / 0.32),
+    0 10px 22px -8px rgb(0 0 0 / 0.72);
+}
+
+.flyingGlyphActive {
+  background: linear-gradient(145deg, #1a55d4 0%, #2478ec 52%, #1cb0e8 100%);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.6),
+    0 12px 24px -10px rgb(24 98 225 / 0.85);
+}
+
+:global(.dark) .flyingGlyphActive {
+  background: linear-gradient(145deg, #123e96 0%, #1968db 50%, #1aa4df 100%);
+}
+
+.flyingGlyph[data-tone="home"] { --tone: 56 189 248; }
+.flyingGlyph[data-tone="path"] { --tone: 96 165 250; }
+.flyingGlyph[data-tone="cosmos"] { --tone: 167 139 250; }
+.flyingGlyph[data-tone="cards"] { --tone: 129 140 248; }
+.flyingGlyph[data-tone="grammar"] { --tone: 232 121 249; }
+.flyingGlyph[data-tone="games"] { --tone: 167 139 250; }
+.flyingGlyph[data-tone="reading"] { --tone: 45 212 191; }
+.flyingGlyph[data-tone="listening"] { --tone: 251 191 36; }
+.flyingGlyph[data-tone="speaking"] { --tone: 244 114 182; }
+.flyingGlyph[data-tone="writing"] { --tone: 20 184 166; }
+.flyingGlyph[data-tone="exams"] { --tone: 147 197 253; }
+.flyingGlyph[data-tone="rank"] { --tone: 250 204 21; }
+.flyingGlyph[data-tone="community"] { --tone: 192 132 252; }
+.flyingGlyph[data-tone="bell"] { --tone: 96 165 250; }
+.flyingGlyph[data-tone="admin"] { --tone: 245 158 11; }
+.flyingGlyph[data-tone="security"] { --tone: 52 211 153; }
+.flyingGlyph[data-tone="music"] { --tone: 167 139 250; }
+.flyingGlyph[data-tone="wallpaper"] { --tone: 232 121 249; }
+.flyingGlyph[data-tone="space"] { --tone: 129 140 248; }
+
+.flyingIcon {
+  width: 52%;
+  height: 52%;
+  stroke-width: 2.15;
+}
+
+.flyingGlyphActive .flyingIcon {
+  stroke: #ffffff;
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .layer {
+    display: none;
+  }
+}

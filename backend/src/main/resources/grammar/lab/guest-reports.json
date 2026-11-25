@@ -1,0 +1,41 @@
+{
+  "id": "guest-reports",
+  "title": "Người nghe có biết câu trả lời không?",
+  "summary": "Bạn tóm tắt buổi phỏng vấn sau chuyến đi. So sánh asked whether với found out that. Dạng bổ ngữ có mặc định nội dung là sự thật không?",
+  "level": "B2",
+  "topics": [
+    "backshift",
+    "reporting-questions"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Động từ dẫn",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Còn là câu hỏi"
+        },
+        {
+          "id": "v2",
+          "label": "Đã có thông tin"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "She asked whether the boat was insured.",
+      "vi": "Cô ấy hỏi liệu thuyền có được bảo hiểm không.",
+      "note": "Câu thuật câu hỏi không cung cấp câu trả lời về bảo hiểm. / Whether presents alternatives without choosing one.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "She found out that the boat was insured.",
+      "vi": "Cô ấy biết được rằng thuyền đã được bảo hiểm.",
+      "note": "Found out that cho biết người nói xem thông tin về bảo hiểm là điều đã được xác định. / Found out that presents the complement as a fact.",
+      "verdict": "ok"
+    }
+  }
+}

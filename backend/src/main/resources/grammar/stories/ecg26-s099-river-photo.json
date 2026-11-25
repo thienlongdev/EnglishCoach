@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s099-river-photo",
+  "title": "Bức ảnh dòng sông đứng yên",
+  "summary": "Làng gửi phản ánh con sông ngừng chảy mỗi trưa. Bức ảnh nào chụp cũng có cùng một chiếc lá trên mặt nước.",
+  "level": "B1",
+  "topics": [
+    "adverb-position",
+    "adverbs-of-frequency"
+  ],
+  "scene": "newsroom",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Na",
+      "role": "Người ghi âm"
+    },
+    {
+      "id": "b",
+      "name": "Duy",
+      "role": "Người chụp ảnh"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Na tới bờ. Chiếc lá được buộc bằng sợi chỉ để đánh dấu mực nước. Cành khô nhỏ hơn đang trôi qua nó. Tin nhắn cho tòa soạn cần phân biệt điều lặp lại với điều đang xảy ra.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Every picture shows that yellow leaf.",
+          "vi": "Tấm nào cũng có chiếc lá vàng ấy."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Does the river really stop, or does the leaf always stay there?",
+          "vi": "Có thật sông ngừng chảy, hay chỉ là chiếc lá lúc nào cũng ở đó?"
+        }
+      ],
+      "choice": {
+        "prompt": "Na dùng always để nói về vật lặp lại cùng vị trí trong mọi ảnh.",
+        "options": [
+          {
+            "t": "The leaf is always in the same place.",
+            "note": "Với be, trạng từ tần suất thường đứng sau động từ. Chủ ngữ the leaf giới hạn nhận xét vào chiếc lá.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "The river always stands still at noon.",
+            "note": "Always trước stands dùng đúng vị trí, nhưng chủ ngữ the river mở rộng kết luận ra cả dòng sông. Cành cây đang trôi là phản chứng.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Duy kéo ống kính rộng ra. Cành khô đang trôi vào khung, qua lá rồi trôi ra. Hai tấm liên tiếp ghi đủ chuyển động.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Now the water has a witness.",
+          "vi": "Giờ thì dòng nước có nhân chứng rồi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Na thả một cánh hoa không buộc dây. Duy chụp nó đi qua lá. Họ gạch dòng chữ sông đứng yên khỏi bản nháp.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Only the marker stays.",
+          "vi": "Chỉ vật đánh dấu là đứng yên."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Tòa soạn đăng hai bức ảnh cạnh nhau. Trẻ con trong làng chơi trò tìm điểm khác biệt và tìm được cánh hoa trước cả người lớn. Chiếc lá vẫn ở đúng chỗ cũ để báo mực nước ngày mai.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One still leaf can help us see a moving river.",
+          "vi": "Một chiếc lá đứng yên có thể giúp mình nhìn thấy dòng sông đang chảy."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

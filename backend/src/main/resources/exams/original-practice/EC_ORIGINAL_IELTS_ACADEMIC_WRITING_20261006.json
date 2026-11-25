@@ -1,0 +1,408 @@
+{
+  "manifest" : {
+    "schemaVersion" : "1.0",
+    "packageId" : "EC_ORIGINAL_IELTS_ACADEMIC_WRITING_20261006",
+    "packageVersion" : 1,
+    "contentHash" : "b369a964716b13aa725adcdca60305f5384a03b5eefcef25e7e258de043ab214",
+    "creator" : "ENGLISHCOACH_ORIGINAL_RECOVERY",
+    "specificationBaselineId" : "EC-EXAM-SPEC-2026-09-10",
+    "authoringStatus" : "DRAFT",
+    "createdAt" : "2026-10-06T00:00:00Z",
+    "metadata" : {
+      "provenanceLabel" : "EnglishCoach Original IELTS Practice",
+      "ownerAuthorizedOriginalPractice" : "2026-10-06",
+      "humanReviewComplete" : false,
+      "officialIELTS" : false,
+      "publisherEndorsement" : false
+    }
+  },
+  "sources" : [ {
+    "id" : "454f605c-5ef4-5d39-a3af-b89a0448bb43",
+    "code" : "EC_ORIGINAL_IELTS_ACADEMIC_WRITING_20261006_SOURCE",
+    "name" : "EnglishCoach Original IELTS Practice",
+    "owner" : "English Coach",
+    "publisher" : "English Coach",
+    "sourceType" : "INTERNAL_ORIGINAL",
+    "referenceMeta" : {
+      "declaration" : "Original practice; no publisher content or endorsement."
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "licenses" : [ {
+    "id" : "2b7fef10-9146-5c5f-a62c-1d7dd5ac4215",
+    "sourceId" : "454f605c-5ef4-5d39-a3af-b89a0448bb43",
+    "licenseCode" : "EC_ORIGINAL_IELTS_ACADEMIC_WRITING_20261006_ORIGINAL_PENDING",
+    "provenanceCategory" : "ORIGINAL",
+    "commercialRights" : true,
+    "redistributionRights" : true,
+    "derivativeRights" : true,
+    "permittedPurposes" : {
+      "EXAM" : true,
+      "SIMULATION" : true,
+      "PRACTICE" : true,
+      "CONTENT" : true,
+      "REDISTRIBUTION" : true
+    },
+    "permittedTerritories" : {
+      "GLOBAL" : true
+    },
+    "validFrom" : "2026-09-10T00:00:00Z",
+    "validUntil" : null,
+    "attribution" : "EnglishCoach Original IELTS Practice; human review pending",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  } ],
+  "provenances" : [ {
+    "id" : "c0d06041-caa3-50d7-9707-3c54be038c68",
+    "sourceId" : "454f605c-5ef4-5d39-a3af-b89a0448bb43",
+    "licenseId" : "2b7fef10-9146-5c5f-a62c-1d7dd5ac4215",
+    "creator" : "ENGLISHCOACH_ORIGINAL_RECOVERY",
+    "acquisitionMethod" : "ORIGINAL_GENERATION",
+    "originalReference" : "EC_ORIGINAL_IELTS_ACADEMIC_WRITING_20261006",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : {
+      "generatedAt" : "2026-10-06",
+      "humanReviewComplete" : false
+    },
+    "createdAt" : null
+  } ],
+  "catalogNodes" : [ {
+    "id" : "787a48a3-ab42-5b23-abf2-170a969ed5b6",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "sourceId" : "454f605c-5ef4-5d39-a3af-b89a0448bb43",
+    "parentId" : null,
+    "kind" : "COLLECTION",
+    "title" : "EnglishCoach Original IELTS Practice",
+    "year" : 2026,
+    "ordinal" : 1,
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "specifications" : [ {
+    "id" : "a293d87f-329e-587e-b423-8d91e9b3ec79",
+    "logicalCode" : "EC_ORIGINAL_IELTS_ACADEMIC_WRITING_20261006_5e82cf5c7cd2",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "deliveryMode" : "COMPUTER_SIMULATION",
+    "blueprint" : {
+      "sectionCount" : 1,
+      "itemCount" : 2,
+      "targetItemCount" : 2,
+      "deliveryMode" : "COMPUTER_SIMULATION"
+    },
+    "timingPolicy" : {
+      "writingSeconds" : 3600,
+      "taskCount" : 2,
+      "task1Minutes" : 20,
+      "task2Minutes" : 40
+    },
+    "navigationPolicy" : {
+      "sectionNavigation" : "free_within_section"
+    },
+    "playbackPolicy" : {
+      "mode" : "NONE"
+    },
+    "sourceReferences" : {
+      "baseline" : "EC-EXAM-SPEC-2026-09-10"
+    },
+    "contentHash" : "ac1e70f65b21d74fdfa209db93257e7ba039c404a283907afa41ed8ec4082c4c",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "rubrics" : [ {
+    "id" : "f04e7f4d-6043-5f90-b96b-e8a050218769",
+    "logicalCode" : "EC_ORIGINAL_IELTS_ACADEMIC_WRITING_20261006_IELTS_WRITING_RUBRIC",
+    "version" : 1,
+    "family" : "IELTS",
+    "skill" : "WRITING",
+    "taskFamily" : null,
+    "criteria" : {
+      "taskAchievement" : {
+        "weight" : 1
+      },
+      "coherenceAndCohesion" : {
+        "weight" : 1
+      },
+      "lexicalResource" : {
+        "weight" : 1
+      },
+      "grammaticalRangeAndAccuracy" : {
+        "weight" : 1
+      }
+    },
+    "ordinalScale" : {
+      "min" : 0,
+      "max" : 9,
+      "steps" : [ 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9 ]
+    },
+    "provenanceId" : "c0d06041-caa3-50d7-9707-3c54be038c68",
+    "contentHash" : "4ee75783f110c41ed756978329b7d11dbdff2e649801357d975616f5dfb4b3d3",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "calibrations" : [ ],
+  "scoringSchemes" : [ {
+    "id" : "e00dadd7-3f3a-5696-823b-a9e7ac4e50d3",
+    "logicalCode" : "EC_ORIGINAL_IELTS_ACADEMIC_WRITING_20261006_9a89de677021",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "WRITING",
+    "normalizationVersion" : "EC-NORM-V1",
+    "rubricReferences" : {
+      "writing" : "f04e7f4d-6043-5f90-b96b-e8a050218769"
+    },
+    "calibrationId" : null,
+    "mappingTable" : {
+      "metrics" : [ "WRITING" ],
+      "rawItemCount" : 2,
+      "targetItemCount" : 2,
+      "status" : "DRAFT_NOT_CALIBRATED",
+      "scoreLabel" : "English Coach estimated band"
+    },
+    "aggregationRules" : {
+      "task1Weight" : 1,
+      "task2Weight" : 2,
+      "officialEquating" : false,
+      "version" : "EC-AGGREGATION-DRAFT-V1"
+    },
+    "contentHash" : "67b94670ef800470a88a48140bfb3194bfaf958c3ff4585a66b3173bd48df61d",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "form" : {
+    "id" : "7aee77b4-a9d3-5d08-a9a2-677bc7598fc5",
+    "logicalKey" : "EC_ORIGINAL_IELTS_ACADEMIC_WRITING_20261006",
+    "version" : 1,
+    "title" : "EnglishCoach Original IELTS Academic Writing - Renewable energy",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "WRITING",
+    "catalogNodeId" : "787a48a3-ab42-5b23-abf2-170a969ed5b6",
+    "specificationId" : "a293d87f-329e-587e-b423-8d91e9b3ec79",
+    "scoringSchemeId" : "e00dadd7-3f3a-5696-823b-a9e7ac4e50d3",
+    "lifecycleState" : "DRAFT",
+    "provenanceId" : "c0d06041-caa3-50d7-9707-3c54be038c68",
+    "authorId" : null,
+    "contentHash" : "2bab653f1cf00ee3cc6c6d812fbf1d230d6bfdfd34e4aef7cf9f315a4b6cf433",
+    "publishedAt" : null,
+    "retiredAt" : null,
+    "createdAt" : null,
+    "primaryHealthStatus" : null
+  },
+  "formComponents" : [ ],
+  "sections" : [ {
+    "id" : "eded20c8-c404-58c7-a2a3-d04148da58cc",
+    "formId" : "7aee77b4-a9d3-5d08-a9a2-677bc7598fc5",
+    "skill" : "WRITING",
+    "ordinal" : 1,
+    "specSectionKey" : "WRITING",
+    "scoringSchemeId" : "e00dadd7-3f3a-5696-823b-a9e7ac4e50d3",
+    "durationSeconds" : 3600,
+    "timingPolicy" : {
+      "sectionCount" : 1,
+      "targetItemCount" : 2,
+      "draftItemCount" : 2
+    },
+    "isRunnable" : true,
+    "healthStatus" : "HEALTHY"
+  } ],
+  "parts" : [ {
+    "id" : "36ff5b16-2d73-549c-af39-9a72551adaf7",
+    "sectionId" : "eded20c8-c404-58c7-a2a3-d04148da58cc",
+    "partCode" : "ACADEMIC_WRITING",
+    "ordinal" : 1,
+    "instructions" : "Complete both writing tasks within 60 minutes. Spend about 20 minutes on Task 1 and 40 minutes on Task 2.",
+    "timingPolicy" : {
+      "durationSeconds" : 3600
+    }
+  } ],
+  "groups" : [ {
+    "id" : "8bce3f1e-1eea-5960-a73b-040ab7783215",
+    "logicalGroupKey" : "EC_ORIGINAL_IELTS_ACADEMIC_WRITING_20261006_IELTS_ACAD_W_P1_G01",
+    "version" : 1,
+    "questionType" : "ACADEMIC_WRITING_TASK_1",
+    "construct" : "visual_data_reporting",
+    "skill" : "WRITING",
+    "topic" : "global renewable energy investment",
+    "difficultyEstimate" : 0.6,
+    "provenanceId" : "c0d06041-caa3-50d7-9707-3c54be038c68",
+    "contentHash" : "822457fdd64e273df88e7bf763b141357a5088f0dfb44c508ae50b92f3c40ef7",
+    "createdAt" : null
+  }, {
+    "id" : "8b3fd942-443e-529a-ab2f-a20aacdcd2d0",
+    "logicalGroupKey" : "EC_ORIGINAL_IELTS_ACADEMIC_WRITING_20261006_IELTS_ACAD_W_P2_G01",
+    "version" : 1,
+    "questionType" : "ACADEMIC_WRITING_TASK_2",
+    "construct" : "discursive_argument",
+    "skill" : "WRITING",
+    "topic" : "public transport and roads",
+    "difficultyEstimate" : 0.7,
+    "provenanceId" : "c0d06041-caa3-50d7-9707-3c54be038c68",
+    "contentHash" : "14ec7b5c9c7c6bf65dc096ffcce5305bed239f647b0138c2b257567e9089f8bf",
+    "createdAt" : null
+  } ],
+  "formGroups" : [ {
+    "id" : "5963a574-e1f7-523b-be1c-1f8cdc4c67ff",
+    "partId" : "36ff5b16-2d73-549c-af39-9a72551adaf7",
+    "groupId" : "8bce3f1e-1eea-5960-a73b-040ab7783215",
+    "ordinal" : 1,
+    "displayNumbering" : "Task 1"
+  }, {
+    "id" : "53331ca9-ed63-5acb-ab39-93ff54c9b4a9",
+    "partId" : "36ff5b16-2d73-549c-af39-9a72551adaf7",
+    "groupId" : "8b3fd942-443e-529a-ab2f-a20aacdcd2d0",
+    "ordinal" : 2,
+    "displayNumbering" : "Task 2"
+  } ],
+  "stimuli" : [ {
+    "id" : "21647db7-857e-5817-90cb-5e8a2172a392",
+    "logicalStimulusKey" : "EC_ORIGINAL_IELTS_ACADEMIC_WRITING_20261006_IELTS_ACAD_W_P1_STIM",
+    "version" : 1,
+    "kind" : "CHART",
+    "title" : "Global Investment in Renewable Energy Sectors (2015-2025)",
+    "bodyPayload" : {
+      "chartType" : "bar_chart",
+      "title" : "Global Investment in Renewable Energy Sectors (2015 - 2025)",
+      "unit" : "Billions of USD",
+      "years" : [ 2015, 2020, 2025 ],
+      "sectors" : [ {
+        "name" : "Solar",
+        "values" : [ 85, 130, 190 ]
+      }, {
+        "name" : "Wind",
+        "values" : [ 70, 110, 165 ]
+      }, {
+        "name" : "Hydroelectric",
+        "values" : [ 60, 65, 70 ]
+      }, {
+        "name" : "Bioenergy",
+        "values" : [ 45, 40, 35 ]
+      } ]
+    },
+    "provenanceId" : "c0d06041-caa3-50d7-9707-3c54be038c68",
+    "contentHash" : "6c6089b6fb9c74e2258e76b78dd8b06f3dbcd05f47aa5891eabe58537e52f37a",
+    "createdAt" : null
+  }, {
+    "id" : "9f92fe70-b071-5b3f-a96e-064c9902c75a",
+    "logicalStimulusKey" : "EC_ORIGINAL_IELTS_ACADEMIC_WRITING_20261006_IELTS_ACAD_W_P2_STIM",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : "Public Funding and Open Access in Scientific Publishing",
+    "bodyPayload" : {
+      "prompt" : "Some people believe that governments should invest more in improving public transport, while others think that building roads is the better priority. Discuss both views and give your own opinion. Write at least 250 words."
+    },
+    "provenanceId" : "c0d06041-caa3-50d7-9707-3c54be038c68",
+    "contentHash" : "c4e49c37dab2809e876b82e898e255f97f4a10e1a54ae6554b9eb1e7e04fba86",
+    "createdAt" : null
+  } ],
+  "groupStimuli" : [ {
+    "id" : "7310b409-ca48-545d-b4f8-033bbec5873e",
+    "groupId" : "8bce3f1e-1eea-5960-a73b-040ab7783215",
+    "stimulusId" : "21647db7-857e-5817-90cb-5e8a2172a392",
+    "role" : "PRIMARY_VISUAL",
+    "ordinal" : 1
+  }, {
+    "id" : "380b2a32-ec6a-51ce-bd21-c4e1c340e7ec",
+    "groupId" : "8b3fd942-443e-529a-ab2f-a20aacdcd2d0",
+    "stimulusId" : "9f92fe70-b071-5b3f-a96e-064c9902c75a",
+    "role" : "PRIMARY_PROMPT",
+    "ordinal" : 1
+  } ],
+  "items" : [ {
+    "id" : "e1def639-3963-5f98-a2ba-4a0d90f41fc7",
+    "groupId" : "8bce3f1e-1eea-5960-a73b-040ab7783215",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_ACADEMIC_WRITING_20261006_IELTS_ACAD_W_P1_TASK",
+    "version" : 1,
+    "prompt" : "The chart shows invented practice data for investment in four renewable energy sectors in 2015, 2020 and 2025, in billions of US dollars. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+    "interactionType" : "writing_response",
+    "optionDefinitions" : {
+      "responseMode" : "free_text",
+      "minimumWords" : 150,
+      "recommendedMinutes" : 20
+    },
+    "construct" : "visual_data_reporting",
+    "provenanceId" : "c0d06041-caa3-50d7-9707-3c54be038c68",
+    "contentHash" : "b09c8710f2e602f360bc25fac40839f51f70f17829748286a249ce3924b17879",
+    "createdAt" : null,
+    "ordinal" : null
+  }, {
+    "id" : "90c1b6f3-6f80-5439-b88a-be78ce7493dd",
+    "groupId" : "8b3fd942-443e-529a-ab2f-a20aacdcd2d0",
+    "logicalItemKey" : "EC_ORIGINAL_IELTS_ACADEMIC_WRITING_20261006_IELTS_ACAD_W_P2_TASK",
+    "version" : 1,
+    "prompt" : "Some people believe that governments should invest more in improving public transport, while others think that building roads is the better priority. Discuss both views and give your own opinion. Write at least 250 words.",
+    "interactionType" : "writing_response",
+    "optionDefinitions" : {
+      "responseMode" : "free_text",
+      "minimumWords" : 250,
+      "recommendedMinutes" : 40
+    },
+    "construct" : "discursive_argument",
+    "provenanceId" : "c0d06041-caa3-50d7-9707-3c54be038c68",
+    "contentHash" : "d64129ccd960ea17c9e7234fdbbdba1bc2ec8a39aa24295841512d7d65777961",
+    "createdAt" : null,
+    "ordinal" : null
+  } ],
+  "answerSpecs" : [ {
+    "id" : "ed2d9969-9fad-5244-bcce-dead50052c2b",
+    "itemId" : "e1def639-3963-5f98-a2ba-4a0d90f41fc7",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "minimumWords" : 150,
+      "requiredActs" : [ "provide an overview describing the dominant upward trend of Solar and Wind compared to the stagnation of Hydroelectric and decline of Bioenergy", "report specific comparative figures for 2015, 2020, and 2025 across sectors", "accurately group and contrast high-growth sectors versus low-growth/declining sectors" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-WRITING-TEXT-V1",
+      "preserveParagraphs" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive Task 1: Evaluate using the pinned IELTS Writing rubric criteria (Task Achievement, Coherence and Cohesion, Lexical Resource, Grammatical Range and Accuracy). Requires clear overview, accurate data reporting, and logical comparisons.",
+    "rubricId" : "f04e7f4d-6043-5f90-b96b-e8a050218769",
+    "createdAt" : null
+  }, {
+    "id" : "8b8a7cbc-5e34-5349-959d-89a66f7f191b",
+    "itemId" : "90c1b6f3-6f80-5439-b88a-be78ce7493dd",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "minimumWords" : 250,
+      "requiredActs" : [ "Discuss both transport priorities", "Give and support your own opinion" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-WRITING-TEXT-V1",
+      "preserveParagraphs" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive Task 2: Evaluate using the pinned IELTS Writing rubric criteria (Task Response, Coherence and Cohesion, Lexical Resource, Grammatical Range and Accuracy). Requires balanced discussion of both perspectives and a sustained, justified personal position.",
+    "rubricId" : "f04e7f4d-6043-5f90-b96b-e8a050218769",
+    "createdAt" : null
+  } ],
+  "assets" : [ {
+    "id" : "86468ced-d004-568c-9a53-e7c9e98b4c7a",
+    "provenanceId" : "c0d06041-caa3-50d7-9707-3c54be038c68",
+    "objectKey" : "assets/recovery20261006/8e6847ffca936e802aaf52f2006f9d66f9a629423ba751f834f9eb13a74b6644.svg",
+    "versionId" : "1",
+    "sha256Hash" : "8e6847ffca936e802aaf52f2006f9d66f9a629423ba751f834f9eb13a74b6644",
+    "mimeType" : "image/svg+xml",
+    "byteSize" : 5225,
+    "durationMs" : null,
+    "dimensions" : "800x500",
+    "validationState" : "VALIDATED",
+    "createdAt" : null
+  } ],
+  "stimulusAssets" : [ {
+    "id" : "abe3918e-b787-569b-a6f1-75236e45cbdf",
+    "stimulusId" : "21647db7-857e-5817-90cb-5e8a2172a392",
+    "assetId" : "86468ced-d004-568c-9a53-e7c9e98b4c7a",
+    "role" : "CHART_IMAGE",
+    "ordinal" : 1
+  } ]
+}

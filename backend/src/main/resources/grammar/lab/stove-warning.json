@@ -1,0 +1,40 @@
+{
+  "id": "stove-warning",
+  "title": "Không được làm hay tùy chọn?",
+  "summary": "Ở bếp chung, một biển cấm dùng bếp, biển kia nói khách có thể ăn ngoài. Câu nào vẫn cho phép tự nấu?",
+  "level": "A2",
+  "topics": [
+    "mustnt-dont-have-to"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Quy định",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Bị cấm"
+        },
+        {
+          "id": "v2",
+          "label": "Không bắt buộc"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "You mustn't cook here.",
+      "vi": "Bạn không được nấu ăn ở đây.",
+      "note": "Mustn't đặt lệnh cấm lên hành động nấu ăn. / Mustn't prohibits cooking.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "You don't have to cook here.",
+      "vi": "Bạn không bắt buộc phải nấu ăn ở đây.",
+      "note": "Don't have to chỉ phủ định sự cần thiết. Câu không cấm người nghe nấu ăn. / Cooking is optional.",
+      "verdict": "ok"
+    }
+  }
+}

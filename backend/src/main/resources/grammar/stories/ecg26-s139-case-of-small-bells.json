@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s139-case-of-small-bells",
+  "title": "Tủ chuông không có chuông",
+  "summary": "Một ngăn tủ đề “bells since 1980” giờ chỉ còn bốn chiếc nút phát âm. Trẻ tưởng có bốn chuông giấu trong gỗ.",
+  "level": "B1",
+  "topics": [
+    "present-perfect-since-for"
+  ],
+  "scene": "library-mystery",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Giang",
+      "role": "Người giữ thư viện"
+    },
+    {
+      "id": "b",
+      "name": "Aki",
+      "role": "Người thu âm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Năm 1980 thư viện thu tiếng chuông ở các bến. Những quả chuông thật chưa từng rời bến. Giang phải nói rõ thứ được lưu qua thời gian.",
+      "say": [
+        {
+          "who": "a",
+          "en": "These buttons were added last week.",
+          "vi": "Mấy nút bấm này mới gắn tuần trước."
+        },
+        {
+          "who": "b",
+          "en": "What has been here since 1980?",
+          "vi": "Thế thứ gì đã ở đây từ năm 1980?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Mô tả đúng vật kéo dài qua mốc năm xưa.",
+        "options": [
+          {
+            "ok": false,
+            "t": "The buttons have been here for 1980.",
+            "note": "For cần khoảng thời gian, không đi với con số năm lịch theo nghĩa mốc ở đây. Chính các nút lại mới gắn tuần trước.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "The recordings have been here since 1980.",
+            "note": "Since 1980 là mốc bắt đầu. Chủ ngữ recordings giữ lời nhận định về bản thu, không suy sang phần cứng phát hiện nay.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Một em bấm nút số ba, nhận ra tiếng bến ngay dưới cửa nhà ông. Em mang bản thu tới cho ông nghe lại.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We can listen to decades in two minutes.",
+          "vi": "Ta có thể nghe mấy chục năm trong hai phút."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Ông xin thu thêm tiếng chuông hôm nay để trẻ nghe được điều gì đã đổi qua hai thế hệ.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Giang nâng tấm nhãn, bên dưới còn ổ cắm của máy phát đời cũ. Aki vẽ dòng thời gian cho âm thanh và thiết bị ở hai hàng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A new button can open an old morning.",
+          "vi": "Một nút mới có thể mở ra một buổi sáng cũ."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Trẻ tự đặt một nút giấy vào tuần này và vẫn nhận được âm thanh thuộc năm xa xưa.",
+      "end": true
+    }
+  ]
+}

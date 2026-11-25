@@ -1,0 +1,40 @@
+{
+  "id": "train-return",
+  "title": "Đi rồi hay đi về rồi?",
+  "summary": "Ở văn phòng, mọi người hỏi về chuyến công tác của Ben. Chọn been hoặc gone rồi đoán Ben có đang ở văn phòng không.",
+  "level": "A2",
+  "topics": [
+    "present-perfect-basics"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Tình trạng chuyến đi",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Đã trở về"
+        },
+        {
+          "id": "v2",
+          "label": "Vẫn đang đi"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Ben has been to Hue.",
+      "vi": "Ben từng đến Huế.",
+      "note": "Has been to nói về kinh nghiệm đã đi Huế, thường hiểu chuyến đi đó đã kết thúc. / Been to presents a visit as experience.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Ben has gone to Hue.",
+      "vi": "Ben đã đi Huế rồi.",
+      "note": "Has gone to trong lời giải thích này cho biết Ben đã đi và chưa trở lại văn phòng. / Gone to explains Ben's present absence.",
+      "verdict": "ok"
+    }
+  }
+}

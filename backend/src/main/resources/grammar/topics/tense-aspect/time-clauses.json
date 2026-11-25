@@ -1,0 +1,503 @@
+{
+  "schema": 1,
+  "slug": "time-clauses",
+  "version": 2,
+  "domain": "tense-aspect",
+  "order": 210,
+  "kind": "grammar",
+  "title": {
+    "vi": "Mệnh đề thời gian: when I arrive, as soon as",
+    "en": "Time clauses"
+  },
+  "subtitle": {
+    "vi": "Xác định quan hệ thời gian giữa hai mệnh đề",
+    "en": "Relate the timing of two clauses"
+  },
+  "aliases": [
+    "mệnh đề thời gian",
+    "time clauses",
+    "when I arrive",
+    "as soon as",
+    "until và by",
+    "when will she arrive"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Dùng before, after, until và as soon as đúng quan hệ.",
+    "Dùng dạng hiện tại trong mệnh đề thời gian tương lai thông thường.",
+    "Phân biệt when thời gian với when câu hỏi gián tiếp."
+  ],
+  "prerequisites": [
+    "future-will"
+  ],
+  "related": [
+    {
+      "slug": "future-will",
+      "rel": "more"
+    },
+    {
+      "slug": "future-perfect",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Mệnh đề thời gian (time clause) cho biết sự việc chính xảy ra trước, sau, trong hoặc cho đến một sự việc khác.",
+    "when": "Với tương lai thông thường, mệnh đề sau when/after/as soon as thường dùng dạng hiện tại; mệnh đề chính có thể có will.",
+    "examples": [
+      {
+        "en": "[S|I] [MOD|will] [V|call] [SUB|when] [S|I] [V|arrive].",
+        "vi": "Tôi sẽ gọi khi đến nơi."
+      },
+      {
+        "en": "[SUB|After] [S|I] [AUX|have] [V|checked] it, [S|I] [MOD|will] [V|send] it.",
+        "vi": "Kiểm tra xong tôi sẽ gửi."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Liên từ cho biết quan hệ, không tự quyết định mọi thì. Trong We ate after she arrived, hai sự việc đều ở quá khứ. Trong We will eat after she arrives, arrives có dạng hiện tại nhưng nói về tương lai."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Cụm nối",
+        "Quan hệ",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "before",
+          "trước",
+          "Check it before you send it."
+        ],
+        [
+          "after",
+          "sau",
+          "We will eat after she arrives."
+        ],
+        [
+          "as soon as",
+          "ngay khi",
+          "Call as soon as you land."
+        ],
+        [
+          "until",
+          "kéo dài đến",
+          "Wait until the light changes."
+        ],
+        [
+          "while",
+          "trong lúc",
+          "I cooked while she read."
+        ]
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Sự việc làm mốc",
+            "items": [
+              "she arrives"
+            ]
+          },
+          {
+            "label": "Sự việc chính sau mốc",
+            "items": [
+              "We will eat"
+            ]
+          }
+        ],
+        "sentence": "{1} after {0}."
+      },
+      "caption": "After đặt bữa ăn sau việc đến; hình thức arrives không làm mốc thành hiện tại.",
+      "alt": "After đặt bữa ăn sau việc đến; hình thức arrives không làm mốc thành hiện tại."
+    },
+    {
+      "type": "p",
+      "vi": "Trong mệnh đề thời gian tương lai thông thường, dùng hiện tại đơn hoặc khi phù hợp hiện tại hoàn thành: after I finish / after I have finished. Hoàn thành làm nổi bật điều kiện xong việc; không bắt buộc thêm have sau mọi after."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|I] [MOD|will] [V|call] [SUB|when] she arrives.",
+          "vi": "Tôi sẽ gọi lúc cô ấy đến."
+        },
+        {
+          "en": "[S|I] [V|do not know] [Q|when] she will arrive.",
+          "vi": "Tôi không biết khi nào cô ấy sẽ đến."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không học luật “sau when không bao giờ có will”. Câu hỏi gián tiếp như I do not know when she will arrive cho phép will. Cấu trúc và ý nghĩa của when phải được xác định trước."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Until thường gắn với sự kéo dài: wait until six. By six thường là hạn không muộn hơn: finish by six. He did not leave until six phủ nhận việc rời đi trước sáu giờ; người nghe thường hiểu là rời lúc sáu giờ, nhưng cần ngữ cảnh để khẳng định đúng thời điểm. Until không bắt buộc luôn ở câu phủ định."
+    },
+    {
+      "type": "p",
+      "vi": "While thường chỉ chồng thời gian nhưng không bắt buộc cả hai mệnh đề dùng quá khứ tiếp diễn. I cooked while she read là câu có thể tự nhiên. Cách nhìn sự việc quyết định lựa chọn dạng."
+    },
+    {
+      "type": "p",
+      "vi": "Khi đưa mệnh đề thời gian lên đầu, dấu phẩy thường giúp phân tách: When I arrive, I will call. Đừng bỏ chủ ngữ hoặc động từ hữu hạn trong câu đầy đủ chỉ vì hai chủ ngữ giống nhau; các mệnh đề rút gọn có điều kiện riêng."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "time-clauses-m1",
+      "wrong": "I will call when she arrives will.",
+      "right": "I will call when she arrives.",
+      "why": "Will không đặt cuối mệnh đề; ở nghĩa thời gian thông thường dùng arrives."
+    },
+    {
+      "id": "time-clauses-m2",
+      "wrong": "Do you know when will she arrive?",
+      "right": "Do you know when she will arrive?",
+      "why": "Câu hỏi gián tiếp có trật tự chủ ngữ trước will."
+    },
+    {
+      "id": "time-clauses-m3",
+      "wrong": "I will call when she arrive.",
+      "right": "I will call when she arrives.",
+      "why": "She đi với arrives trong hiện tại đơn."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có phải luôn cấm will sau when không?",
+      "a": "Không. When trong câu hỏi gián tiếp có thể đi với will. Quy tắc mặc định đang học là mệnh đề thời gian tương lai thông thường."
+    },
+    {
+      "q": "Sau after có bắt buộc hiện tại hoàn thành không?",
+      "a": "Không. After I finish và after I have finished đều có thể dùng; dạng hoàn thành nhấn xong việc."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "tmc-01",
+      "prompt": "Chọn câu chuẩn cho mệnh đề chỉ thời điểm tương lai.",
+      "explain": "When I arrive là mệnh đề thời gian; lời hứa nằm ở mệnh đề chính.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "Tôi sẽ nhắn khi đến khách sạn.",
+      "options": [
+        {
+          "t": "I will text you when I arrive at the hotel.",
+          "ok": true,
+          "note": "Dạng hiện tại trong mệnh đề thời gian tương lai."
+        },
+        {
+          "t": "I will text you when I arrives at the hotel.",
+          "ok": false,
+          "note": "I dùng arrive.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "I will text you when I arriving at the hotel.",
+          "ok": false,
+          "note": "Arriving thiếu động từ hữu hạn.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "tmc-02",
+      "prompt": "Nối liên từ hoặc cụm với quan hệ thời gian.",
+      "explain": "Before, after và until thể hiện ba quan hệ khác nhau.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "before the meeting starts",
+          "b": "trước khi cuộc họp bắt đầu"
+        },
+        {
+          "a": "after the meeting ends",
+          "b": "sau khi cuộc họp kết thúc"
+        },
+        {
+          "a": "until the meeting ends",
+          "b": "kéo dài cho đến khi cuộc họp kết thúc"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "tmc-03",
+      "prompt": "Phân loại when theo chức năng, không chỉ hình thức từ.",
+      "explain": "Mệnh đề thời gian cho biết lúc hành động chính; câu hỏi gián tiếp là thông tin chưa biết.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Mệnh đề thời gian",
+        "Câu hỏi gián tiếp"
+      ],
+      "items": [
+        {
+          "t": "I will call when she arrives.",
+          "cat": "Mệnh đề thời gian"
+        },
+        {
+          "t": "I do not know when she will arrive.",
+          "cat": "Câu hỏi gián tiếp"
+        },
+        {
+          "t": "Can you tell me when the train will arrive?",
+          "cat": "Câu hỏi gián tiếp"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "tmc-04",
+      "prompt": "Dùng hiện tại đơn của arrive và finish trong các mệnh đề thời gian.",
+      "explain": "She arrives; I finish. Không cần will để đánh dấu tương lai ở đây.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "I will call as soon as she {1} (arrive). We will leave after I {2} (finish).",
+      "blanks": {
+        "1": {
+          "accept": [
+            "arrives"
+          ]
+        },
+        "2": {
+          "accept": [
+            "finish"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "tmc-05",
+      "prompt": "Sửa hòa hợp trong mệnh đề thời gian.",
+      "explain": "He là ngôi ba số ít: arrives.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "We will start when he"
+        },
+        {
+          "t": "arrive",
+          "bad": true,
+          "fix": [
+            "arrives"
+          ],
+          "note": "Hiện tại đơn cần -s với he.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "tomorrow."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "tmc-06",
+      "prompt": "Sắp xếp câu bắt đầu bằng I; đặt mệnh đề when ở cuối.",
+      "explain": "Arrive là dạng gốc hữu hạn theo I trong hiện tại đơn.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "I",
+        "will",
+        "call",
+        "when",
+        "I",
+        "arrive"
+      ],
+      "accept": [
+        [
+          "I",
+          "will",
+          "call",
+          "when",
+          "I",
+          "arrive"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "tmc-07",
+      "prompt": "Đặt mệnh đề thời gian lên đầu.",
+      "explain": "Hai thứ tự đều được; mệnh đề đầu thường ngăn bằng dấu phẩy.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "I will call you when I arrive.",
+      "instruction": "Bắt đầu When I arrive, rồi giữ I will call you; có thể rút gọn I will.",
+      "accept": [
+        "When I arrive, I will call you",
+        "When I arrive, I’ll call you",
+        "When I arrive I will call you",
+        "When I arrive I'll call you"
+      ],
+      "model": "When I arrive, I will call you",
+      "level": "B1"
+    },
+    {
+      "id": "tmc-08",
+      "prompt": "Soạn hướng dẫn đến nơi hẹn.",
+      "explain": "Bài mở tự đối chiếu quan hệ thời gian.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết ba câu về ngày mai với before, as soon as và until. Thêm một câu hỏi gián tiếp có when và will, giữ chủ ngữ trước will trong mệnh đề gián tiếp.",
+      "model": [
+        "Charge your phone before you leave. I will text you as soon as I arrive. I will wait until the bus comes. Do you know when the bus will arrive?"
+      ],
+      "checklist": [
+        "Mệnh đề thời gian dùng hình thức phù hợp.",
+        "Until chỉ kéo dài đến mốc, không nhầm hạn hoàn tất by.",
+        "Câu hỏi gián tiếp có chủ ngữ trước will."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "tmc-09",
+      "prompt": "Điền hiện tại đơn theo khung thời gian.",
+      "explain": "He finishes; the shop opens; they arrive.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "We will eat after he {1} (finish). I will wait until the shop {2} (open). Text me as soon as they {3} (arrive).",
+      "blanks": {
+        "1": {
+          "accept": [
+            "finishes"
+          ]
+        },
+        "2": {
+          "accept": [
+            "opens"
+          ]
+        },
+        "3": {
+          "accept": [
+            "arrive"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "tmc-10",
+      "prompt": "Viết câu hỏi gián tiếp đúng trật tự.",
+      "explain": "When the office will open có chủ ngữ trước will, không đảo như câu hỏi trực tiếp.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "When will the office open?",
+      "instruction": "Mở đầu bằng Do you know rồi giữ when, the office, will, open; không thêm từ khác.",
+      "accept": [
+        "Do you know when the office will open?"
+      ],
+      "model": "Do you know when the office will open?",
+      "level": "B1"
+    },
+    {
+      "id": "tmc-11",
+      "prompt": "Chọn tất cả câu chuẩn.",
+      "explain": "Có thể dùng hiện tại hoàn thành để nhấn hoàn tất; when gián tiếp cho phép will.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "I will send it after I have checked it.",
+          "ok": true,
+          "note": "Hiện tại hoàn thành nhấn kiểm tra xong."
+        },
+        {
+          "t": "I do not know when she will return.",
+          "ok": true,
+          "note": "When là câu hỏi gián tiếp."
+        },
+        {
+          "t": "I will call when she arrive.",
+          "ok": false,
+          "note": "She cần arrives.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Do you know when will she return?",
+          "ok": false,
+          "note": "Trong câu hỏi gián tiếp dùng when she will return.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "tmc-12",
+      "prompt": "Chọn nghĩa của until trong câu này.",
+      "explain": "Wait until làm sự chờ kéo dài đến mốc.",
+      "skill": "meaning",
+      "use": "check",
+      "type": "choice",
+      "stem": "We will wait until the office opens.",
+      "options": [
+        {
+          "t": "Việc chờ kéo dài đến lúc văn phòng mở.",
+          "ok": true,
+          "note": "Until đánh dấu điểm kết thúc sự chờ."
+        },
+        {
+          "t": "Chúng tôi phải hoàn tất một bản báo cáo trước giờ mở.",
+          "ok": false,
+          "note": "Không có nội dung bản báo cáo.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Chắc chắn chúng tôi sẽ không chờ.",
+          "ok": false,
+          "note": "Câu khẳng định sẽ chờ.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

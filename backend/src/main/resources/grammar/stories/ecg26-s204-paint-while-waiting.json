@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s204-paint-while-waiting",
+  "title": "Bức tranh chưa kịp khô",
+  "summary": "Một hành khách vẽ chiếc máy bay lúc chờ, rồi bỏ quên bức tranh ngay tại cửa ra. Một nhân chứng nói máy bay đã “vẽ chính nó”.",
+  "level": "B2",
+  "topics": [
+    "participle-clauses"
+  ],
+  "scene": "airport",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Như",
+      "role": "Người phụ trách quầy"
+    },
+    {
+      "id": "b",
+      "name": "Nico",
+      "role": "Người nhận dạng đồ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Bản nháp chú thích mở bằng Waiting at Gate Six. Như thấy dưới ghế có hộp màu của hành khách, bánh xe trên tranh còn ướt.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The plane never held a brush.",
+          "vi": "Máy bay chưa bao giờ cầm bút."
+        },
+        {
+          "who": "b",
+          "en": "Make the waiting person the subject.",
+          "vi": "Cho chính người ngồi chờ làm chủ ngữ đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn câu trong đó cụm phân từ có đúng chủ thể.",
+        "options": [
+          {
+            "ok": false,
+            "t": "Waiting at Gate Six, the plane was painted by a passenger.",
+            "note": "Chủ ngữ chính là the plane nên cụm waiting tự nhiên gắn với máy bay; có thể hợp nếu muốn tả máy bay đang đợi, nhưng không xác định hành khách đang đợi theo yêu cầu.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "Waiting at Gate Six, a passenger painted the plane.",
+            "note": "Người chờ là chủ ngữ a passenger, cũng là người vẽ. The plane ở vị trí tân ngữ của painted.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Một hành khách nhận ra cách người ấy vẽ bánh xe vuông và chỉ tới khoang trẻ em. Tác giả còn rất nhỏ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That's a signature only this pilot could make.",
+          "vi": "Chỉ vị phi công này mới ký như thế được."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Như trả tranh, xin em ký tên. Em ký bằng một bánh xe tròn đầu tiên ở góc dưới.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Nico hỏi phi công và được chỉ sang hành khách nhỏ đang ngủ. Như đặt bức tranh bên hộp màu để em tỉnh dậy nhận ra.",
+      "say": [
+        {
+          "who": "a",
+          "en": "He waited long enough to finish the sky.",
+          "vi": "Em đã chờ đủ lâu để vẽ nốt bầu trời."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Khi máy bay nhấc bánh thật, cậu bé mở mắt và vẽ thêm trời xanh vào đúng chỗ còn trống.",
+      "end": true
+    }
+  ]
+}

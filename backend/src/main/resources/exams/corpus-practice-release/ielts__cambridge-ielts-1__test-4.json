@@ -1,0 +1,921 @@
+{
+  "manifest" : {
+    "schemaVersion" : "1.0",
+    "packageId" : "RAW-RAW_CAMBRIDGE_IELTS_1_T4",
+    "packageVersion" : 1,
+    "contentHash" : "0b782281bff52fe5068a9a12171620acf3262c36994035d5ea7cdb273144df1f",
+    "creator" : "exam-raw-extractor",
+    "specificationBaselineId" : "EC-EXAM-SPEC-2026-09-10",
+    "authoringStatus" : "DRAFT",
+    "createdAt" : null,
+    "metadata" : {
+      "humanReviewComplete" : false,
+      "reviewOnlyReferences" : {
+        "transcripts" : [ {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+          "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3",
+          "pages" : "129-135"
+        } ],
+        "answerKeys" : [ {
+          "skill" : "LISTENING",
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+          "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3",
+          "pages" : "148",
+          "keysParsed" : 42
+        } ],
+        "note" : "References only. Transcript text is not embedded: the learner manifest projection has no stimulus/asset role allow-list yet (EXAM-AUD-032)."
+      },
+      "ocr" : { },
+      "practiceProjection" : {
+        "fullSimulationGranted" : false,
+        "humanApprovalCreated" : false,
+        "sourceContentHash" : "5e1fa9aa1caac0abb576694bc763df06fc06d25300ad2500f66d898971a790a3",
+        "version" : "exam-practice-projection-v1",
+        "retainedScopes" : [ "IELTS_LISTENING_SECTION_2", "IELTS_WRITING_TASK_2" ],
+        "excludedScopes" : {
+          "IELTS_WRITING_TASK_1" : [ "QA_SCOPE_PENDING", "SCOPE_NOT_SELECTED", "VISUAL_MISSING" ]
+        },
+        "sourcePackageId" : "RAW-RAW_CAMBRIDGE_IELTS_1_T4"
+      },
+      "audioQAStatus" : "AUTOMATED_TECHNICAL_QA_ONLY_HUMAN_QA_REQUIRED",
+      "sourceProvenance" : {
+        "collection" : "cambridge",
+        "book" : "cambridge-ielts-1",
+        "test" : "TEST_4",
+        "rawSourceFile" : {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+          "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3"
+        },
+        "pageRange" : "83-98",
+        "audio" : [ {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Test 4 - Section 2.mp3",
+          "sha256" : "3507355be656d7e9a740ba91065e63c5b8e8600a6a0db43782944080f4c4549c",
+          "section" : "PART_2",
+          "confidence" : "CONFIDENT"
+        } ],
+        "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json#ielts/cambridge-ielts-1/test-4",
+        "extractorName" : "exam-raw-extractor",
+        "extractorVersion" : "3.8.5",
+        "reviewStatus" : "UNREVIEWED"
+      },
+      "sourceIdentity" : {
+        "publisher" : "Cambridge University Press & Assessment",
+        "collection" : "cambridge",
+        "book" : "cambridge-ielts-1",
+        "bookTitle" : "Cambridge IELTS 1",
+        "test" : 4,
+        "rawSourceSha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3"
+      },
+      "displayName" : {
+        "current" : "Cambridge IELTS 1 — Test 4 (source extraction, draft)",
+        "ownerSelected" : null,
+        "status" : "PROVISIONAL_SOURCE_TITLE",
+        "policy" : "DISPLAY_NAME_MAY_CHANGE_SOURCE_PROVENANCE_MUST_NOT",
+        "renameTargets" : [ "form.title", "catalogNodes[].title" ]
+      },
+      "visualQAStatus" : "PAGE_REGION_RENDERING_HUMAN_QA_REQUIRED",
+      "rightsReviewStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED_PROJECT_USE_OWNER_AUTHORIZED",
+      "audioSegments" : [ ],
+      "sourceDocuments" : [ {
+        "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+        "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3",
+        "role" : "QUESTION_BOOK",
+        "textLayer" : "TEXT"
+      } ],
+      "extraction" : {
+        "status" : "NEEDS_REVIEW",
+        "extractorVersion" : "3.8.5",
+        "blockingCodes" : [ "DUPLICATE_QUESTION_NUMBER", "GROUP_TYPE_UNKNOWN", "OPTION_PARSE_FAILED", "PART_OMITTED", "QUESTION_BLOCK_NOT_FOUND", "QUESTION_NUMBER_GAP", "SECTION_OMITTED" ],
+        "reviewCodes" : [ "WRITING_VISUAL_NOT_FOUND" ]
+      },
+      "projectUsageAuthorization" : {
+        "status" : "OWNER_AUTHORIZED",
+        "scope" : "ENGLISHCOACH_PROJECT_USE",
+        "authorizedBy" : "PROJECT_OWNER",
+        "decisionDate" : "2026-10-06",
+        "decisionRef" : "EXAMS_CORPUS_OWNER_PRODUCTION_AUTHORIZATION_20261006",
+        "appliesTo" : "EXISTING_REPOSITORY_SOURCE_CORPUS",
+        "permits" : [ "EXTRACTION", "CANONICAL_PACKAGE_PREPARATION", "STAGING_VALIDATION", "LOCAL_STAGING_IMPORT_PREPARATION", "PRODUCTION_IMPORT", "PUBLICATION", "LEARNER_RUNTIME", "PRACTICE", "SIMULATION", "MEDIA", "SCORING", "RESULTS", "REVIEW" ],
+        "productionImport" : "OWNER_AUTHORIZED_PRODUCTION_USE",
+        "publisherLicence" : "NOT_ESTABLISHED",
+        "publisherEndorsement" : false
+      }
+    }
+  },
+  "sources" : [ {
+    "id" : "2c7b9d14-802e-5297-9138-1d52febf3afd",
+    "code" : "RAW_CAMBRIDGE_CAMBRIDGE_IELTS_1",
+    "name" : "Cambridge IELTS 1",
+    "owner" : "Cambridge University Press & Assessment",
+    "publisher" : "Cambridge University Press & Assessment",
+    "sourceType" : "THIRD_PARTY_PUBLICATION",
+    "referenceMeta" : {
+      "rawCorpusRoot" : "imports/source-files/",
+      "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json",
+      "rightsStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED",
+      "projectUsageAuthorization" : "OWNER_AUTHORIZED",
+      "primaryDocument" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  }, {
+    "id" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "code" : "EC_INTERNAL_ORIGINAL",
+    "name" : "English Coach original content",
+    "owner" : "English Coach",
+    "publisher" : "English Coach",
+    "sourceType" : "INTERNAL_ORIGINAL",
+    "referenceMeta" : {
+      "declaration" : "Rubrics and scoring metadata authored by English Coach; no external text"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "licenses" : [ {
+    "id" : "a8cdb4e4-8e52-57a5-a1bb-38e90866ed4a",
+    "sourceId" : "2c7b9d14-802e-5297-9138-1d52febf3afd",
+    "licenseCode" : "UNKNOWN-RAW_CAMBRIDGE_CAMBRIDGE_IELTS_1",
+    "provenanceCategory" : "UNKNOWN",
+    "commercialRights" : false,
+    "redistributionRights" : false,
+    "derivativeRights" : false,
+    "permittedPurposes" : {
+      "LOCAL_PRIVATE_REVIEW" : true
+    },
+    "permittedTerritories" : { },
+    "validFrom" : null,
+    "validUntil" : null,
+    "attribution" : "Cambridge IELTS 1 — Cambridge University Press & Assessment. Publisher licence not established; used under the EnglishCoach project owner's authorization (2026-10-03), which is not a publisher licence or endorsement.",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  }, {
+    "id" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseCode" : "EC-ORIGINAL-DRAFT-PENDING-LEGAL",
+    "provenanceCategory" : "ORIGINAL",
+    "commercialRights" : true,
+    "redistributionRights" : true,
+    "derivativeRights" : true,
+    "permittedPurposes" : {
+      "EXAM" : true,
+      "SIMULATION" : true,
+      "PRACTICE" : true,
+      "CONTENT" : true
+    },
+    "permittedTerritories" : {
+      "GLOBAL" : true
+    },
+    "validFrom" : 1790985600.000000000,
+    "validUntil" : null,
+    "attribution" : "English Coach original draft; legal review pending",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  } ],
+  "provenances" : [ {
+    "id" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "sourceId" : "2c7b9d14-802e-5297-9138-1d52febf3afd",
+    "licenseId" : "a8cdb4e4-8e52-57a5-a1bb-38e90866ed4a",
+    "creator" : "exam-raw-extractor",
+    "acquisitionMethod" : "RAW_CORPUS_EXTRACTION",
+    "originalReference" : "Cambridge IELTS 1 / Test 4",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  }, {
+    "id" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseId" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "creator" : "English Coach",
+    "acquisitionMethod" : "ORIGINAL_AUTHORING",
+    "originalReference" : "EC-RUBRIC-AND-SCORING-METADATA",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  } ],
+  "catalogNodes" : [ {
+    "id" : "6d41d0b0-cf70-5af7-b980-0e72ef59b21b",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "sourceId" : "2c7b9d14-802e-5297-9138-1d52febf3afd",
+    "parentId" : null,
+    "kind" : "VOLUME",
+    "title" : "Cambridge IELTS 1",
+    "year" : null,
+    "ordinal" : 0,
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "specifications" : [ {
+    "id" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SPEC",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "deliveryMode" : "COMPUTER_SIMULATION",
+    "blueprint" : {
+      "source" : "RAW_CORPUS_EXTRACTION",
+      "family" : "IELTS",
+      "variant" : "ACADEMIC",
+      "scope" : "FULL"
+    },
+    "timingPolicy" : {
+      "listeningSeconds" : 1800,
+      "readingSeconds" : 3600,
+      "writingSeconds" : 3600,
+      "speakingSeconds" : 840
+    },
+    "navigationPolicy" : {
+      "sectionNavigation" : "fixed_sequence"
+    },
+    "playbackPolicy" : {
+      "mode" : "ONCE"
+    },
+    "sourceReferences" : {
+      "baseline" : "EC-EXAM-SPEC-2026-09-10"
+    },
+    "contentHash" : "01a9a5d6615e4c044e33620aacc7f229326296fc975b4c54a3fc1cc0d69efd4c",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "rubrics" : [ {
+    "id" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "logicalCode" : "EC_RAW_IELTS_WRITING_RUBRIC",
+    "version" : 1,
+    "family" : "IELTS",
+    "skill" : "WRITING",
+    "taskFamily" : "IELTS_WRITING",
+    "criteria" : {
+      "taskAchievement" : {
+        "weight" : 1
+      },
+      "coherenceAndCohesion" : {
+        "weight" : 1
+      },
+      "lexicalResource" : {
+        "weight" : 1
+      },
+      "grammaticalRangeAndAccuracy" : {
+        "weight" : 1
+      }
+    },
+    "ordinalScale" : {
+      "min" : 0,
+      "max" : 9,
+      "steps" : [ 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0 ]
+    },
+    "provenanceId" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "contentHash" : "0d542a6e2c855fb3a6fa51ef83026cb296280b0f51f9073604b6756d4752e253",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "calibrations" : [ ],
+  "scoringSchemes" : [ {
+    "id" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SCORING",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "normalizationVersion" : "EC-NORM-V1",
+    "rubricReferences" : { },
+    "calibrationId" : null,
+    "mappingTable" : {
+      "metrics" : [ "LISTENING", "READING", "WRITING", "SPEAKING", "FULL_OVERALL" ],
+      "status" : "DRAFT_NOT_CALIBRATED",
+      "scoreLabel" : "English Coach estimated band"
+    },
+    "aggregationRules" : {
+      "officialEquating" : false,
+      "version" : "EC-AGGREGATION-DRAFT-V1",
+      "creditUnitsPerItem" : 1,
+      "task1Weight" : 1,
+      "task2Weight" : 2,
+      "overall" : "mean_of_four_quarter_rounding"
+    },
+    "contentHash" : "0780e29af069b167dab0956ac01663b2c8b509ca0f03839208766aa0b62ed428",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "form" : {
+    "id" : "900d62ec-6323-5806-9181-cde5b0b2428d",
+    "logicalKey" : "RAW_CAMBRIDGE_IELTS_1_T4",
+    "version" : 1,
+    "title" : "Cambridge IELTS 1 — Test 4 (source extraction, draft)",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "catalogNodeId" : "6d41d0b0-cf70-5af7-b980-0e72ef59b21b",
+    "specificationId" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "lifecycleState" : "DRAFT",
+    "provenanceId" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "authorId" : null,
+    "contentHash" : "755feda075885019dc3a6d1a375db11fbffc78d4d93a55ecc9a4b3e92d7ed086",
+    "publishedAt" : null,
+    "retiredAt" : null,
+    "createdAt" : null,
+    "primaryHealthStatus" : null
+  },
+  "formComponents" : [ ],
+  "sections" : [ {
+    "id" : "a85cde38-ddff-532e-9404-77be771cbd42",
+    "formId" : "900d62ec-6323-5806-9181-cde5b0b2428d",
+    "skill" : "LISTENING",
+    "ordinal" : 1,
+    "specSectionKey" : "LISTENING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 1800,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  }, {
+    "id" : "976e3b75-62da-5d81-94ad-1ef80bee3b70",
+    "formId" : "900d62ec-6323-5806-9181-cde5b0b2428d",
+    "skill" : "WRITING",
+    "ordinal" : 2,
+    "specSectionKey" : "WRITING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 3600,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  } ],
+  "parts" : [ {
+    "id" : "eedf949f-d30f-51d7-858d-918c190ba86c",
+    "sectionId" : "a85cde38-ddff-532e-9404-77be771cbd42",
+    "partCode" : "LISTENING_PART_2",
+    "ordinal" : 1,
+    "instructions" : null,
+    "timingPolicy" : {
+      "partNumber" : 2
+    }
+  }, {
+    "id" : "426fe3d3-4c6a-5b22-92dc-f3168d87ca34",
+    "sectionId" : "976e3b75-62da-5d81-94ad-1ef80bee3b70",
+    "partCode" : "WRITING_TASK_2",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : {
+      "recommendedMinutes" : 40
+    }
+  } ],
+  "groups" : [ {
+    "id" : "231128b7-9e71-5566-aca3-8e23a75f0e0a",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_1_T4_LISTENING_PART_2_Q13",
+    "version" : 1,
+    "questionType" : "GAP_COMPLETION",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "contentHash" : "e0e2428e7c838608fa464d12ae73658e99f264b26c612b1ab8b3835a49983e4d",
+    "createdAt" : null
+  }, {
+    "id" : "f94276ad-b672-55fb-96f4-841802830181",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_1_T4_WRITING_TASK_2",
+    "version" : 1,
+    "questionType" : "WRITING_TASK_2",
+    "construct" : "written_production",
+    "skill" : "WRITING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "contentHash" : "83f1cce2e342d1a8db48842c22f0e0db55aef40d620121193a9a4a69ca72f1e7",
+    "createdAt" : null
+  } ],
+  "formGroups" : [ {
+    "id" : "9ce934d4-2de1-5a15-8807-e258c9df1ab9",
+    "partId" : "eedf949f-d30f-51d7-858d-918c190ba86c",
+    "groupId" : "231128b7-9e71-5566-aca3-8e23a75f0e0a",
+    "ordinal" : 1,
+    "displayNumbering" : "13-21"
+  }, {
+    "id" : "a16d7f7f-7a61-5e65-baad-6a7718f8b172",
+    "partId" : "426fe3d3-4c6a-5b22-92dc-f3168d87ca34",
+    "groupId" : "f94276ad-b672-55fb-96f4-841802830181",
+    "ordinal" : 1,
+    "displayNumbering" : "Task 2"
+  } ],
+  "stimuli" : [ {
+    "id" : "1451dc37-144e-5237-bd74-3bb5cb852f90",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_1_T4_LISTENING_PART_2_AUDIO",
+    "version" : 1,
+    "kind" : "AUDIO",
+    "title" : "Listening Part 2 recording",
+    "bodyPayload" : {
+      "playback" : "ONCE",
+      "sourceRole" : "PART_RECORDING",
+      "questionRange" : "13-21",
+      "transcriptAvailable" : true,
+      "transcriptEmbedded" : false,
+      "mappingConfidence" : "CONFIDENT"
+    },
+    "provenanceId" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "contentHash" : "79601f36c691c87abef7f156ebcd8ec8fea12eac68ca4d23aa0b3246a26603d5",
+    "createdAt" : null
+  }, {
+    "id" : "9478f3c5-8c8e-5342-83c1-2807791bac6a",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_1_T4_WRITING_TASK_2_PROMPT",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "promptContext" : "You should spend about 40 minutes on this task. Present a written argument or case to an educated reader with no specialist knowledge of the following topic: The idea of having a single career is becoming an old fashioned one. The new fashion mil be to have several careers or ways of earning money and further education will be something that continues throughout life. You should write at least 250 words. Use your own ideas, knowledge and experience and support your arguments with examples and relevant evidence."
+    },
+    "provenanceId" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "contentHash" : "3312cb330a8a05251a7104f3f7513cc59d2bfcff292d8e47609412401b773837",
+    "createdAt" : null
+  } ],
+  "groupStimuli" : [ {
+    "id" : "ea69309e-806d-58fa-8ca0-1c4812fc0666",
+    "groupId" : "231128b7-9e71-5566-aca3-8e23a75f0e0a",
+    "stimulusId" : "1451dc37-144e-5237-bd74-3bb5cb852f90",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "5a1a8d85-a0ac-5865-9bb6-b81b05112140",
+    "groupId" : "f94276ad-b672-55fb-96f4-841802830181",
+    "stimulusId" : "9478f3c5-8c8e-5342-83c1-2807791bac6a",
+    "role" : "PRIMARY_PROMPT",
+    "ordinal" : 2
+  } ],
+  "items" : [ {
+    "id" : "d39f5e09-98c5-5c38-873c-1468bd221634",
+    "groupId" : "231128b7-9e71-5566-aca3-8e23a75f0e0a",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T4_L013",
+    "version" : 1,
+    "prompt" : "Lloyds City Plaza / Midland ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 13,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "13-21",
+        "instructions" : [ "Complete the notes. Write NO MORE THAN THREE WORDS for each answer.", "Recommended Banks Location" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "STUDENT BANKING\nBarclays Realty Square\nNational Westminster Example: Preston Park\nLloyds City Plaza\nMidland (13) ______\nNote: May not be allowed all facilities given to resident students.\nFunding\nMust provide (14) ______ I can support myself.\nServices will depend on personal circumstances and discretion of Bank Manager.\nOpening an account\nTake with me: (15) ______ ______ and letter of enrolment.\nRecommended account: (16) ______\nBank supplies: (17) ______ and chequecard which guarantees\ncheques.\nOther services\nCashcard: (you can (18) ______ cash at any time.)\nSwitch/Delta cards: (take the money (19) ______ the account.)\nOverdraft\nMust have (20) ______\nSometimes must pay interest.\nOpening times\nMost banks open until (21) ______ during the week.\nSome open for a limited time on Saturdays."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "contentHash" : "a5a4ab1c0a2ab1003dcf250e7b88fe1c59e61946b8498ae7f685da41af88ddf9",
+    "createdAt" : null,
+    "ordinal" : 13
+  }, {
+    "id" : "eec1556f-31fc-5a0d-a971-f16213abf39f",
+    "groupId" : "231128b7-9e71-5566-aca3-8e23a75f0e0a",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T4_L014",
+    "version" : 1,
+    "prompt" : "Must provide ______ I can support myself.",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 14,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "13-21",
+        "instructions" : [ "Complete the notes. Write NO MORE THAN THREE WORDS for each answer.", "Recommended Banks Location" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "STUDENT BANKING\nBarclays Realty Square\nNational Westminster Example: Preston Park\nLloyds City Plaza\nMidland (13) ______\nNote: May not be allowed all facilities given to resident students.\nFunding\nMust provide (14) ______ I can support myself.\nServices will depend on personal circumstances and discretion of Bank Manager.\nOpening an account\nTake with me: (15) ______ ______ and letter of enrolment.\nRecommended account: (16) ______\nBank supplies: (17) ______ and chequecard which guarantees\ncheques.\nOther services\nCashcard: (you can (18) ______ cash at any time.)\nSwitch/Delta cards: (take the money (19) ______ the account.)\nOverdraft\nMust have (20) ______\nSometimes must pay interest.\nOpening times\nMost banks open until (21) ______ during the week.\nSome open for a limited time on Saturdays."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "contentHash" : "39f34ab64f20794250d25fc26186d6fe219d8324276568766f5131d6e61fb7db",
+    "createdAt" : null,
+    "ordinal" : 14
+  }, {
+    "id" : "21b5a6e7-6f56-514c-b644-ce4eae73037e",
+    "groupId" : "231128b7-9e71-5566-aca3-8e23a75f0e0a",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T4_L015",
+    "version" : 1,
+    "prompt" : "Take with me: ______ ______ and letter of enrolment.",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 15,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "13-21",
+        "instructions" : [ "Complete the notes. Write NO MORE THAN THREE WORDS for each answer.", "Recommended Banks Location" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "STUDENT BANKING\nBarclays Realty Square\nNational Westminster Example: Preston Park\nLloyds City Plaza\nMidland (13) ______\nNote: May not be allowed all facilities given to resident students.\nFunding\nMust provide (14) ______ I can support myself.\nServices will depend on personal circumstances and discretion of Bank Manager.\nOpening an account\nTake with me: (15) ______ ______ and letter of enrolment.\nRecommended account: (16) ______\nBank supplies: (17) ______ and chequecard which guarantees\ncheques.\nOther services\nCashcard: (you can (18) ______ cash at any time.)\nSwitch/Delta cards: (take the money (19) ______ the account.)\nOverdraft\nMust have (20) ______\nSometimes must pay interest.\nOpening times\nMost banks open until (21) ______ during the week.\nSome open for a limited time on Saturdays."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "contentHash" : "a818ba789f77718d720e245b7594fb6096a2605aed76cb91e42d5ff233764a9f",
+    "createdAt" : null,
+    "ordinal" : 15
+  }, {
+    "id" : "13cf0691-5e92-51ba-af67-76c773f12f4f",
+    "groupId" : "231128b7-9e71-5566-aca3-8e23a75f0e0a",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T4_L016",
+    "version" : 1,
+    "prompt" : "Take with me: (15) ______ ______ and letter of enrolment. / Recommended account: ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 16,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "13-21",
+        "instructions" : [ "Complete the notes. Write NO MORE THAN THREE WORDS for each answer.", "Recommended Banks Location" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "STUDENT BANKING\nBarclays Realty Square\nNational Westminster Example: Preston Park\nLloyds City Plaza\nMidland (13) ______\nNote: May not be allowed all facilities given to resident students.\nFunding\nMust provide (14) ______ I can support myself.\nServices will depend on personal circumstances and discretion of Bank Manager.\nOpening an account\nTake with me: (15) ______ ______ and letter of enrolment.\nRecommended account: (16) ______\nBank supplies: (17) ______ and chequecard which guarantees\ncheques.\nOther services\nCashcard: (you can (18) ______ cash at any time.)\nSwitch/Delta cards: (take the money (19) ______ the account.)\nOverdraft\nMust have (20) ______\nSometimes must pay interest.\nOpening times\nMost banks open until (21) ______ during the week.\nSome open for a limited time on Saturdays."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "contentHash" : "64d04aff7313a235fdd84ffad11dd738d29b8db0ef8bcc0a675e2414b2cd3dde",
+    "createdAt" : null,
+    "ordinal" : 16
+  }, {
+    "id" : "9ac0b31b-00ea-51f8-bad2-749918805810",
+    "groupId" : "231128b7-9e71-5566-aca3-8e23a75f0e0a",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T4_L017",
+    "version" : 1,
+    "prompt" : "Bank supplies: ______ and chequecard which guarantees",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 17,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "13-21",
+        "instructions" : [ "Complete the notes. Write NO MORE THAN THREE WORDS for each answer.", "Recommended Banks Location" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "STUDENT BANKING\nBarclays Realty Square\nNational Westminster Example: Preston Park\nLloyds City Plaza\nMidland (13) ______\nNote: May not be allowed all facilities given to resident students.\nFunding\nMust provide (14) ______ I can support myself.\nServices will depend on personal circumstances and discretion of Bank Manager.\nOpening an account\nTake with me: (15) ______ ______ and letter of enrolment.\nRecommended account: (16) ______\nBank supplies: (17) ______ and chequecard which guarantees\ncheques.\nOther services\nCashcard: (you can (18) ______ cash at any time.)\nSwitch/Delta cards: (take the money (19) ______ the account.)\nOverdraft\nMust have (20) ______\nSometimes must pay interest.\nOpening times\nMost banks open until (21) ______ during the week.\nSome open for a limited time on Saturdays."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "contentHash" : "90cef03ed9b2b9224cf65076d57114b9d13f134f0f82675e9fc9433040f4558a",
+    "createdAt" : null,
+    "ordinal" : 17
+  }, {
+    "id" : "e6a34869-f74f-5d1d-8576-f7e293e397d8",
+    "groupId" : "231128b7-9e71-5566-aca3-8e23a75f0e0a",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T4_L018",
+    "version" : 1,
+    "prompt" : "Cashcard: (you can ______ cash at any time.)",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 18,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "13-21",
+        "instructions" : [ "Complete the notes. Write NO MORE THAN THREE WORDS for each answer.", "Recommended Banks Location" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "STUDENT BANKING\nBarclays Realty Square\nNational Westminster Example: Preston Park\nLloyds City Plaza\nMidland (13) ______\nNote: May not be allowed all facilities given to resident students.\nFunding\nMust provide (14) ______ I can support myself.\nServices will depend on personal circumstances and discretion of Bank Manager.\nOpening an account\nTake with me: (15) ______ ______ and letter of enrolment.\nRecommended account: (16) ______\nBank supplies: (17) ______ and chequecard which guarantees\ncheques.\nOther services\nCashcard: (you can (18) ______ cash at any time.)\nSwitch/Delta cards: (take the money (19) ______ the account.)\nOverdraft\nMust have (20) ______\nSometimes must pay interest.\nOpening times\nMost banks open until (21) ______ during the week.\nSome open for a limited time on Saturdays."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "contentHash" : "bad3d5f46aaf0d1bba3e90a47f1f6a18a2d4212f5a9e25471159abc76b9e9cc9",
+    "createdAt" : null,
+    "ordinal" : 18
+  }, {
+    "id" : "b95d1d6d-ba45-5eab-83a7-1d5ee33a3808",
+    "groupId" : "231128b7-9e71-5566-aca3-8e23a75f0e0a",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T4_L019",
+    "version" : 1,
+    "prompt" : "Switch/Delta cards: (take the money ______ the account.)",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 19,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "13-21",
+        "instructions" : [ "Complete the notes. Write NO MORE THAN THREE WORDS for each answer.", "Recommended Banks Location" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "STUDENT BANKING\nBarclays Realty Square\nNational Westminster Example: Preston Park\nLloyds City Plaza\nMidland (13) ______\nNote: May not be allowed all facilities given to resident students.\nFunding\nMust provide (14) ______ I can support myself.\nServices will depend on personal circumstances and discretion of Bank Manager.\nOpening an account\nTake with me: (15) ______ ______ and letter of enrolment.\nRecommended account: (16) ______\nBank supplies: (17) ______ and chequecard which guarantees\ncheques.\nOther services\nCashcard: (you can (18) ______ cash at any time.)\nSwitch/Delta cards: (take the money (19) ______ the account.)\nOverdraft\nMust have (20) ______\nSometimes must pay interest.\nOpening times\nMost banks open until (21) ______ during the week.\nSome open for a limited time on Saturdays."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "contentHash" : "d50fe3b95f3559e62809eca1d183d1e80748fc32d4be698d353af86b24268002",
+    "createdAt" : null,
+    "ordinal" : 19
+  }, {
+    "id" : "44c3aeaa-d5ad-5939-9929-5d8a9362bb8f",
+    "groupId" : "231128b7-9e71-5566-aca3-8e23a75f0e0a",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T4_L020",
+    "version" : 1,
+    "prompt" : "Overdraft / Must have ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 20,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "13-21",
+        "instructions" : [ "Complete the notes. Write NO MORE THAN THREE WORDS for each answer.", "Recommended Banks Location" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "STUDENT BANKING\nBarclays Realty Square\nNational Westminster Example: Preston Park\nLloyds City Plaza\nMidland (13) ______\nNote: May not be allowed all facilities given to resident students.\nFunding\nMust provide (14) ______ I can support myself.\nServices will depend on personal circumstances and discretion of Bank Manager.\nOpening an account\nTake with me: (15) ______ ______ and letter of enrolment.\nRecommended account: (16) ______\nBank supplies: (17) ______ and chequecard which guarantees\ncheques.\nOther services\nCashcard: (you can (18) ______ cash at any time.)\nSwitch/Delta cards: (take the money (19) ______ the account.)\nOverdraft\nMust have (20) ______\nSometimes must pay interest.\nOpening times\nMost banks open until (21) ______ during the week.\nSome open for a limited time on Saturdays."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "contentHash" : "04d7df247c2d897e7ae31ff2bd05a10f57bd2399ab4012fe46c56731fad89908",
+    "createdAt" : null,
+    "ordinal" : 20
+  }, {
+    "id" : "7d5e6f9a-bcb7-5048-b621-00b2ffa396b1",
+    "groupId" : "231128b7-9e71-5566-aca3-8e23a75f0e0a",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T4_L021",
+    "version" : 1,
+    "prompt" : "Most banks open until ______ during the week.",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 21,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "13-21",
+        "instructions" : [ "Complete the notes. Write NO MORE THAN THREE WORDS for each answer.", "Recommended Banks Location" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "STUDENT BANKING\nBarclays Realty Square\nNational Westminster Example: Preston Park\nLloyds City Plaza\nMidland (13) ______\nNote: May not be allowed all facilities given to resident students.\nFunding\nMust provide (14) ______ I can support myself.\nServices will depend on personal circumstances and discretion of Bank Manager.\nOpening an account\nTake with me: (15) ______ ______ and letter of enrolment.\nRecommended account: (16) ______\nBank supplies: (17) ______ and chequecard which guarantees\ncheques.\nOther services\nCashcard: (you can (18) ______ cash at any time.)\nSwitch/Delta cards: (take the money (19) ______ the account.)\nOverdraft\nMust have (20) ______\nSometimes must pay interest.\nOpening times\nMost banks open until (21) ______ during the week.\nSome open for a limited time on Saturdays."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "contentHash" : "fcb322e3425969a28019cc79d52812d9835a6c6083aebb0e1b07aacee22a9c6e",
+    "createdAt" : null,
+    "ordinal" : 21
+  }, {
+    "id" : "00a8578b-9055-50f1-98f2-30eff7bee175",
+    "groupId" : "f94276ad-b672-55fb-96f4-841802830181",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T4_W2",
+    "version" : 1,
+    "prompt" : "You should spend about 40 minutes on this task. Present a written argument or case to an educated reader with no specialist knowledge of the following topic: The idea of having a single career is becoming an old fashioned one. The new fashion mil be to have several careers or ways of earning money and further education will be something that continues throughout life. You should write at least 250 words. Use your own ideas, knowledge and experience and support your arguments with examples and relevant evidence.",
+    "interactionType" : "WRITING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "free_text",
+      "minimumWords" : 250,
+      "recommendedMinutes" : 40
+    },
+    "construct" : "writing_task",
+    "provenanceId" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "contentHash" : "211bc5b1849fe5dc2e167b2c659e069a602f8582bb0eda588ee14cc35cc37ccb",
+    "createdAt" : null,
+    "ordinal" : 2
+  } ],
+  "answerSpecs" : [ {
+    "id" : "1755feaf-1c86-5df6-921c-9f09d77d30e5",
+    "itemId" : "d39f5e09-98c5-5c38-873c-1468bd221634",
+    "acceptedAnswers" : {
+      "values" : [ "Hope Street" ],
+      "keySource" : {
+        "page" : 148,
+        "confidence" : "CONFIDENT",
+        "notes" : [ "CAPITALS_REQUIRED" ]
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : false,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false,
+      "caseSensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "6bedbd1c-1299-5cfd-a364-10ef25c65db5",
+    "itemId" : "eec1556f-31fc-5a0d-a971-f16213abf39f",
+    "acceptedAnswers" : {
+      "values" : [ "evidence" ],
+      "keySource" : {
+        "page" : 148,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "a0fbf216-188e-5815-b66c-82e54ada8d1d",
+    "itemId" : "21b5a6e7-6f56-514c-b644-ce4eae73037e",
+    "acceptedAnswers" : {
+      "values" : [ "passport" ],
+      "keySource" : {
+        "page" : 148,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "9cd2cc64-9db0-5f2c-b230-8d240f552cc2",
+    "itemId" : "13cf0691-5e92-51ba-af67-76c773f12f4f",
+    "acceptedAnswers" : {
+      "values" : [ "current", "student account", "student" ],
+      "keySource" : {
+        "page" : 148,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "560ffebc-0b70-5025-9a3c-5b9941dbb991",
+    "itemId" : "9ac0b31b-00ea-51f8-bad2-749918805810",
+    "acceptedAnswers" : {
+      "values" : [ "chequebook" ],
+      "keySource" : {
+        "page" : 148,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "cee793f0-4726-50a4-b6bb-e903a8a0325e",
+    "itemId" : "e6a34869-f74f-5d1d-8576-f7e293e397d8",
+    "acceptedAnswers" : {
+      "values" : [ "withdraw", "draw out", "draw", "take out" ],
+      "keySource" : {
+        "page" : 148,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "3d9a797e-f90f-50d7-9673-f9c9d1a65749",
+    "itemId" : "b95d1d6d-ba45-5eab-83a7-1d5ee33a3808",
+    "acceptedAnswers" : {
+      "values" : [ "directly from", "right out of" ],
+      "keySource" : {
+        "page" : 148,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "86f6b4ea-a375-5521-8bba-e730ac22af28",
+    "itemId" : "44c3aeaa-d5ad-5939-9929-5d8a9362bb8f",
+    "acceptedAnswers" : {
+      "values" : [ "permission of", "from bank" ],
+      "keySource" : {
+        "page" : 148,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "3a2f429e-4b46-5d78-9d5f-30a811c15c18",
+    "itemId" : "7d5e6f9a-bcb7-5048-b621-00b2ffa396b1",
+    "acceptedAnswers" : {
+      "values" : [ "4.30 pm or", "to 5 pm" ],
+      "keySource" : {
+        "page" : 148,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "05dcca8e-1865-50c2-8bfe-e053475f2e11",
+    "itemId" : "00a8578b-9055-50f1-98f2-30eff7bee175",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "minimumWords" : 250
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-WRITING-TEXT-V1",
+      "preserveParagraphs" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "createdAt" : null
+  } ],
+  "assets" : [ {
+    "id" : "7326183e-ae00-5b21-8531-be9e917f3700",
+    "provenanceId" : "60e7ad93-a6dc-5ae9-ba2e-672d9cc3e93a",
+    "objectKey" : "extracted/audio/3507355be656d7e9a740ba91065e63c5b8e8600a6a0db43782944080f4c4549c.mp3",
+    "versionId" : "1",
+    "sha256Hash" : "3507355be656d7e9a740ba91065e63c5b8e8600a6a0db43782944080f4c4549c",
+    "mimeType" : "audio/mpeg",
+    "byteSize" : 790196,
+    "durationMs" : 393050,
+    "dimensions" : null,
+    "validationState" : "VALIDATED",
+    "createdAt" : null
+  } ],
+  "stimulusAssets" : [ {
+    "id" : "79f9db08-6645-5e4e-821b-c326b948b43c",
+    "stimulusId" : "1451dc37-144e-5237-bd74-3bb5cb852f90",
+    "assetId" : "7326183e-ae00-5b21-8531-be9e917f3700",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  } ]
+}

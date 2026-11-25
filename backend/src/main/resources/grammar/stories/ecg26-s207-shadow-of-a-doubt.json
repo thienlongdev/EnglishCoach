@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s207-shadow-of-a-doubt",
+  "title": "Tiếng chân dưới căn phòng trống",
+  "level": "B2",
+  "topics": [
+    "modal-perfect-deduction",
+    "hedging"
+  ],
+  "scene": "home",
+  "summary": "Bảo nghe tiếng chân đi qua dưới sàn dù căn phòng dưới đang khóa. Cậu lo có người lạ quay về mỗi tối.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Bảo",
+      "role": "Người thuê gác"
+    },
+    {
+      "id": "b",
+      "name": "Mina",
+      "role": "Hàng xóm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Mina chỉ một đường ống nối sàn với cầu thang chung. Cô bước một bước ngoài hành lang, Bảo ở trên nghe tiếng đúng dưới bàn mình. Họ chỉ mới thử được một lần.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Your shoes sounded like they were under my chair.",
+          "vi": "Giày chị nghe như ngay dưới ghế tôi."
+        },
+        {
+          "who": "b",
+          "en": "Does that tell us who made last night's sound?",
+          "vi": "Điều đó có cho biết ai gây tiếng đêm qua không?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Bảo chọn kết luận phản ánh phép thử mà không xác định người khi chưa có chứng cứ.",
+        "options": [
+          {
+            "t": "Last night's steps might have travelled along the same pipe.",
+            "note": "Might have travelled nêu một con đường âm khả dĩ trong quá khứ. Thử nghiệm chứng minh khả năng truyền, chưa nhận dạng người.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "You must have been in the locked room last night.",
+            "note": "Must have been là suy luận chắc và gán cả người lẫn vị trí. Phép thử vừa cho thấy không cần vào căn phòng mới tạo tiếng.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Mina để lại mảnh giấy xin người về muộn gõ hai nhịp chào. Tối đó hai nhịp chạy lên sàn rồi tiếng chổi nhẹ đi. Người quét cầu thang ngày mai ghé chào bằng cửa chính.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It was a neighbour's journey, not a stranger's room.",
+          "vi": "Đó là đường về của hàng xóm, chẳng phải căn phòng của người lạ."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Mina đưa Bảo xuống cầu thang và để cậu nghe chính bước mình vọng qua ô sắt. Cậu rút lại lời đoán, viết lời nhắn chào người trực đêm và ngủ được khi tiếng chổi trở lại.",
+      "say": [
+        {
+          "who": "b",
+          "en": "A sound can visit without its owner.",
+          "vi": "Âm thanh đến thăm được mà chủ nó không cần vào."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

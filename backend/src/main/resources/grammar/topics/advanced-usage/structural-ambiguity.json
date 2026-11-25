@@ -1,0 +1,509 @@
+{
+  "schema": 1,
+  "slug": "structural-ambiguity",
+  "version": 2,
+  "domain": "advanced-usage",
+  "order": 30,
+  "kind": "grammar",
+  "title": {
+    "vi": "Câu có hai cách hiểu",
+    "en": "Structural ambiguity"
+  },
+  "subtitle": {
+    "vi": "Cùng những từ ấy, hai cách nhóm và gắn thành phần",
+    "en": "Different structures behind the same words"
+  },
+  "aliases": [
+    "mơ hồ cấu trúc",
+    "structural ambiguity",
+    "attachment ambiguity",
+    "phạm vi tính từ",
+    "câu hai nghĩa"
+  ],
+  "level": "C1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Nhận ra hai cách gắn một cụm giới từ khi cả hai cách đều hợp nghĩa.",
+    "Phân biệt mơ hồ cấu trúc với từ vựng và quy chiếu.",
+    "Viết lại để làm rõ nghĩa cần truyền đạt mà không gọi mọi câu đa nghĩa là sai."
+  ],
+  "prerequisites": [
+    "complex-noun-phrases"
+  ],
+  "related": [
+    {
+      "slug": "pronoun-reference",
+      "rel": "confusion"
+    },
+    {
+      "slug": "adverb-position",
+      "rel": "more"
+    },
+    {
+      "slug": "parallelism",
+      "rel": "application"
+    }
+  ],
+  "exam": {
+    "ielts": "Tăng độ rõ của danh ngữ và câu phức khi viết; không suy ra band từ bài này.",
+    "toeic": "Hỗ trợ đọc đúng phạm vi bổ nghĩa trong thông báo và đơn hàng."
+  },
+  "quick": {
+    "what": "Mơ hồ cấu trúc (structural ambiguity) xuất hiện khi cùng một chuỗi từ có từ hai cách nhóm hoặc gắn thành phần, dẫn đến các cách hiểu khác nhau. Câu có thể đúng ngữ pháp mà chưa đủ rõ trong một ngữ cảnh.",
+    "when": "Cần chú ý khi cụm giới từ đứng sau tân ngữ, khi tính từ đứng trước hai danh từ phối hợp, hoặc khi trạng ngữ có thể gắn ở hơn một mức. Không phải mọi câu dạng đó đều thực tế gây nhầm.",
+    "examples": [
+      {
+        "en": "The curator photographed the visitor with a phone.",
+        "vi": "Người quản lý chụp khách bằng điện thoại, hoặc chụp người khách đang có điện thoại."
+      },
+      {
+        "en": "We ordered blue notebooks and folders.",
+        "vi": "Blue có thể chỉ mô tả vở, hoặc mô tả cả vở lẫn bìa hồ sơ."
+      }
+    ],
+    "remember": "Có hai cách phân tích không đồng nghĩa có lỗi. Chỉ sửa khi ý định hoặc nhu cầu rõ nghĩa đòi hỏi."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Hãy hình dung bảo tàng đang ghi lại một buổi tham quan. Người quản lý nói The curator photographed the visitor with a phone. Người nghe có thể gắn with a phone với hành động chụp hoặc với người khách. Những từ đã cho vẫn giữ nguyên; chỗ gắn của cụm mới thay đổi."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "tree",
+        "bracket": "[S [NP The curator] [VP [V photographed] [NP the visitor] [PP with a phone]]]"
+      },
+      "caption": "Cách gắn với hành động: cụm with a phone ở trong VP, cạnh cụm tân ngữ.",
+      "alt": "Chủ ngữ The curator. Cụm động từ gồm photographed, tân ngữ the visitor và cụm giới từ with a phone bổ nghĩa cho hành động chụp."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "tree",
+        "bracket": "[S [NP The curator] [VP [V photographed] [NP the visitor [PP with a phone]]]]"
+      },
+      "caption": "Cách gắn với danh từ: with a phone nằm trong NP the visitor with a phone.",
+      "alt": "Chủ ngữ The curator. Cụm động từ photographed nhận tân ngữ là cả cụm the visitor with a phone; cụm giới từ mô tả khách."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "The curator used a phone to photograph the visitor.",
+            "vi": "Nói rõ dụng cụ chụp."
+          },
+          "b": {
+            "en": "The curator photographed the visitor who had a phone with them.",
+            "vi": "Nói rõ khách mang theo điện thoại."
+          },
+          "diff": "Hai bản viết lại chọn hai ý định khác nhau. With a phone không tự xác định khách cầm điện thoại trên tay; chỉ dùng who was holding a phone khi có thêm thông tin ấy. Bản thứ hai cũng không phủ định người quản lý dùng điện thoại để chụp."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Với phối hợp, tính từ có thể áp dụng cho riêng danh từ đầu hoặc cho nhóm: blue notebooks and folders. Nếu đơn hàng cần cả hai màu xanh, lặp lại blue giúp tránh tốn công hỏi lại. Nếu chỉ vở cần màu xanh, có thể tách câu: We need blue notebooks. The folders can be any colour."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không chọn cách hiểu bằng nguyên tắc “gắn với từ gần nhất”. Vị trí, khả năng kết hợp, kiến thức về tình huống và điều người nói đang bàn tới đều có vai trò. Một cách hiểu thường gặp hơn không tự làm cách khác sai."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Nguồn gây nhầm",
+        "Điều thay đổi",
+        "Cách xử lý thường hữu ích"
+      ],
+      "rows": [
+        [
+          "Cấu trúc",
+          "Cách nhóm hoặc gắn cụm từ",
+          "Viết lại cấu trúc, nêu rõ quan hệ"
+        ],
+        [
+          "Từ vựng",
+          "Nghĩa của một từ như bank",
+          "Chọn từ chính xác hoặc thêm ngữ cảnh"
+        ],
+        [
+          "Quy chiếu",
+          "Đối tượng của she, they, this",
+          "Nêu lại tên hoặc danh ngữ cần chỉ"
+        ]
+      ]
+    },
+    {
+      "type": "try",
+      "exercise": "samb-01"
+    },
+    {
+      "type": "p",
+      "vi": "Trước khi sửa, hãy hỏi người đọc cần phân biệt điều gì. Trong hội thoại có vật đang ở trước mắt, ngữ cảnh có thể đã đủ. Trong hợp đồng, hướng dẫn hoặc báo cáo, làm rõ ngay trong câu thường đáng giá hơn việc tiết kiệm vài từ. Tính rõ nghĩa là quyết định theo mục đích giao tiếp, không phải lệnh cấm câu có nhiều cách phân tích."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Phân biệt một cấu trúc có thể được ngữ pháp cho phép với một cách hiểu thực tế người nghe dễ chọn. Một cách gắn có thể rất khó hình dung nếu danh từ hoặc hành động không hợp với nó. Vì vậy không cứ thấy cụm with là suy ra chính xác hai nghĩa; phải thử diễn giải từng cách trong ngữ cảnh."
+    },
+    {
+      "type": "p",
+      "vi": "Một câu có thể vừa mơ hồ về cấu trúc vừa có từ nhiều nghĩa hoặc đại từ chưa rõ đối tượng. Các lớp này có thể tương tác, nhưng không nên gọi chung mọi sự thiếu thông tin là lỗi cú pháp. Câu The visitor arrived không nêu tên khách nhưng vẫn có cấu trúc rõ."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Trong văn bản kỹ thuật, độ rõ của phạm vi bổ nghĩa và phối hợp thường quan trọng. Không có quy tắc học thuật rằng câu càng dài càng giỏi: tách thành hai câu có quan hệ rõ có thể là lựa chọn tốt hơn."
+    },
+    {
+      "type": "p",
+      "vi": "Dấu phẩy, ngữ điệu và nhấn giọng có thể góp phần chọn cách hiểu, nhưng không thay thế mọi thay đổi cú pháp. Kiểm tra lại bản viết khi không có giọng đọc. Nếu hai cách đọc vẫn còn và sự khác biệt quan trọng, hãy nêu rõ chủ thể hoặc lặp phần bổ nghĩa cần thiết."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "samb-ambiguity-error",
+      "wrong": "Mọi câu có hai cách hiểu đều sai ngữ pháp.",
+      "right": "Một câu có thể đúng ngữ pháp nhưng cần thêm ngữ cảnh hoặc viết rõ hơn.",
+      "why": "Tính đúng cấu trúc và độ rõ của thông điệp là hai tiêu chí riêng."
+    },
+    {
+      "id": "samb-nearest",
+      "wrong": "Cụm with luôn bổ nghĩa cho danh từ gần nhất.",
+      "right": "Xét cả cách gắn vào danh từ lẫn cách gắn vào cụm động từ nếu chúng hợp nghĩa.",
+      "why": "Cụm giới từ sau tân ngữ có thể mô tả tân ngữ hoặc hành động."
+    },
+    {
+      "id": "samb-scope-negation",
+      "wrong": "Blue notebooks and folders chắc chắn nói bìa hồ sơ không màu xanh.",
+      "right": "Ở cách gắn hẹp, màu bìa hồ sơ chỉ chưa được nêu.",
+      "why": "Không mô tả một thuộc tính không đồng nghĩa phủ định thuộc tính ấy."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có cần tìm mọi cách hiểu trong mọi câu không?",
+      "a": "Không. Khi ngữ cảnh đã chọn nghĩa rõ ràng, phân tích thêm có thể không giúp giao tiếp. Cần kiểm tra khi các cách hiểu dẫn đến hành động hoặc kết luận khác nhau."
+    },
+    {
+      "q": "Cứ đưa cụm từ ra đầu là hết mơ hồ sao?",
+      "a": "Không. Di chuyển có thể giúp một trường hợp nhưng gây vấn đề khác. Đọc lại bản sửa để chắc rằng nó chọn đúng đối tượng bổ nghĩa và không làm mất thông tin."
+    },
+    {
+      "q": "Đáp án viết lại khác mẫu có thể đúng không?",
+      "a": "Có. Danh sách tự động không bao quát mọi bản viết đúng. Câu không có trong mẫu được để người học đối chiếu thay vì chấm sai chỉ vì khác chuỗi chữ."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "samb-01",
+      "type": "choice",
+      "level": "C1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Chọn nhận xét chính xác về câu khi chưa có ngữ cảnh.",
+      "explain": "With a phone có thể bổ nghĩa cho visitor hoặc cho photographed. Hai cấu trúc đều có thể đúng; ngữ cảnh mới chọn cách hiểu.",
+      "stem": "The curator photographed the visitor with a phone.",
+      "options": [
+        {
+          "t": "Có thể nói người quản lý dùng điện thoại chụp, hoặc khách mang điện thoại.",
+          "ok": true,
+          "note": "Cụm with a phone có hai chỗ gắn hợp lý."
+        },
+        {
+          "t": "Chắc chắn khách dùng điện thoại chụp.",
+          "note": "Chủ ngữ của photographed là the curator; khách không trở thành người chụp.",
+          "tag": "attachment-agent-confusion"
+        },
+        {
+          "t": "Câu sai vì with luôn đứng sát danh từ mà nó bổ nghĩa.",
+          "note": "Cụm giới từ cũng có thể bổ nghĩa cho hành động.",
+          "tag": "attachment-nearest-word"
+        }
+      ]
+    },
+    {
+      "id": "samb-02",
+      "type": "multi",
+      "level": "C1",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Chọn TẤT CẢ những điều câu này có thể biểu đạt.",
+      "explain": "Không có ngữ cảnh, blue có thể nằm trong riêng cụm notebooks hoặc bao trùm cả hai nhóm. Không bắt buộc folders không màu xanh khi blue chỉ bổ nghĩa cho notebooks.",
+      "stem": "We ordered blue notebooks and folders.",
+      "options": [
+        {
+          "t": "Cả vở và bìa hồ sơ đều được mô tả là màu xanh.",
+          "ok": true,
+          "note": "Blue có thể bổ nghĩa cho toàn bộ nhóm phối hợp."
+        },
+        {
+          "t": "Chỉ vở được câu này mô tả là màu xanh; màu bìa hồ sơ chưa xác định.",
+          "ok": true,
+          "note": "Blue có thể chỉ nằm trong cụm blue notebooks."
+        },
+        {
+          "t": "Câu bắt buộc nói bìa hồ sơ không màu xanh.",
+          "note": "Không nêu màu không có nghĩa phủ định màu.",
+          "tag": "scope-absence-is-negation"
+        },
+        {
+          "t": "Blue là động từ chính của câu.",
+          "note": "Ordered là động từ; blue là tính từ.",
+          "tag": "form-function-confusion"
+        }
+      ]
+    },
+    {
+      "id": "samb-03",
+      "type": "classify",
+      "level": "C1",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Phân loại nguồn gây hai cách hiểu.",
+      "explain": "Một từ nhiều nghĩa, đại từ chưa rõ người được nhắc và hai cách gắn cụm từ là những vấn đề khác nhau. Ngữ cảnh có thể giải quyết cả ba nhưng cách phân tích không giống nhau.",
+      "cats": [
+        "Cấu trúc",
+        "Từ vựng",
+        "Quy chiếu"
+      ],
+      "items": [
+        {
+          "t": "The curator photographed the visitor with a phone: điện thoại gắn với người hay hành động.",
+          "cat": "Cấu trúc"
+        },
+        {
+          "t": "Bank được dùng theo nghĩa ngân hàng hay bờ sông.",
+          "cat": "Từ vựng"
+        },
+        {
+          "t": "Trong một hội thoại có hai người nữ, she chưa rõ chỉ ai.",
+          "cat": "Quy chiếu"
+        }
+      ]
+    },
+    {
+      "id": "samb-04",
+      "type": "transform",
+      "level": "C1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lại để người đọc chắc chắn hiểu điện thoại là dụng cụ chụp. Giữ cả người quản lý và người khách.",
+      "explain": "Using a phone đặt dụng cụ ở phần mô tả hành động. Đây chỉ là các mẫu tham khảo; một cách viết khác đúng mà chưa có trong danh sách sẽ được đối chiếu thay vì bị kết luận sai.",
+      "source": "The curator photographed the visitor with a phone.",
+      "instruction": "Nói rõ người quản lý dùng điện thoại để chụp khách.",
+      "accept": [
+        "The curator used a phone to photograph the visitor.",
+        "Using a phone, the curator photographed the visitor."
+      ],
+      "model": "The curator used a phone to photograph the visitor."
+    },
+    {
+      "id": "samb-05",
+      "type": "transform",
+      "level": "C1",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Viết lại để điện thoại chắc chắn thuộc phần mô tả người khách, không phải dụng cụ chụp.",
+      "explain": "Mệnh đề who was holding a phone gắn rõ với the visitor. Câu này không tự phủ định việc người chụp cũng dùng điện thoại; nó chỉ làm rõ thông tin cần truyền đạt.",
+      "source": "The curator photographed the visitor with a phone.",
+      "instruction": "Mô tả người khách đang cầm điện thoại.",
+      "context": "Trong cách hiểu cần diễn đạt, đã biết người khách đang cầm điện thoại trên tay.",
+      "accept": [
+        "The curator photographed the visitor who was holding a phone.",
+        "The visitor who was holding a phone was photographed by the curator."
+      ],
+      "model": "The curator photographed the visitor who was holding a phone."
+    },
+    {
+      "id": "samb-06",
+      "type": "choice",
+      "level": "C1",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Chọn cách sửa truyền đạt đúng yêu cầu của người đặt hàng.",
+      "explain": "Nêu lại tính từ trước từng danh từ giúp người đọc xác định cả hai nhóm. Điều này hữu ích khi độ chính xác quan trọng hơn sự ngắn gọn.",
+      "context": "Đơn hàng yêu cầu cả vở lẫn bìa hồ sơ đều màu xanh.",
+      "stem": "Cách ghi nào rõ nhất?",
+      "options": [
+        {
+          "t": "Blue notebooks and blue folders.",
+          "ok": true,
+          "note": "Màu của cả hai nhóm được nêu rõ."
+        },
+        {
+          "t": "Blue notebooks and folders.",
+          "note": "Vẫn có hai phạm vi của blue; không đáp ứng yêu cầu làm rõ.",
+          "tag": "coordination-modifier-scope"
+        },
+        {
+          "t": "Notebooks and folders.",
+          "note": "Bỏ mất yêu cầu về màu.",
+          "tag": "rewrite-meaning-loss"
+        }
+      ]
+    },
+    {
+      "id": "samb-07",
+      "type": "cloze",
+      "level": "C1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Điền thuật ngữ tiếng Anh: attachment hoặc tense.",
+      "explain": "Attachment là quan hệ gắn một cụm vào thành phần mà nó bổ nghĩa; tense là thì. Không giải quyết attachment bằng cách chỉ đổi thì động từ.",
+      "stem": "The question of which phrase a modifier belongs to is a question of {1}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "attachment"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "tense",
+              "verdict": "wrong",
+              "note": "Tense không phải tên quan hệ gắn thành phần.",
+              "tag": "attachment-tense-confusion"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "samb-08",
+      "type": "match",
+      "level": "C1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Nối ý định với cách diễn đạt rõ ràng.",
+      "explain": "Ba câu viết lại làm rõ dụng cụ chụp, đặc điểm của khách hoặc màu của hai nhóm. Một câu rõ vẫn phải giữ đúng điều người nói định diễn đạt.",
+      "pairs": [
+        {
+          "a": "Người quản lý dùng điện thoại làm dụng cụ chụp.",
+          "b": "The curator used a phone to photograph the visitor."
+        },
+        {
+          "a": "Khách là người đang cầm điện thoại.",
+          "b": "The visitor who was holding a phone was photographed by the curator."
+        },
+        {
+          "a": "Cả hai loại đồ dùng đều màu xanh.",
+          "b": "We ordered blue notebooks and blue folders."
+        }
+      ]
+    },
+    {
+      "id": "samb-09",
+      "type": "choice",
+      "level": "C1",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chọn nhận xét phù hợp với câu dưới đây.",
+      "explain": "Vị trí gần không phải thuật toán đủ để chọn cấu trúc. Cần xét cú pháp, ý nghĩa và ngữ cảnh; một cách hiểu phổ biến hơn không làm cách còn lại tự động sai.",
+      "stem": "Một cụm giới từ đứng ngay sau danh từ.",
+      "options": [
+        {
+          "t": "Cần xét ngữ cảnh và cấu trúc; cụm đó có thể bổ nghĩa cho danh từ hoặc cho hành động.",
+          "ok": true,
+          "note": "Cả hai loại gắn đều tồn tại."
+        },
+        {
+          "t": "Nó luôn bổ nghĩa cho danh từ sát bên trái.",
+          "note": "Cụm sau tân ngữ vẫn có thể bổ nghĩa cho hành động.",
+          "tag": "attachment-nearest-word"
+        },
+        {
+          "t": "Nếu có hai cách hiểu thì cả câu luôn sai ngữ pháp.",
+          "note": "Tính đa nghĩa và tính đúng ngữ pháp là hai vấn đề riêng.",
+          "tag": "ambiguity-is-ungrammatical"
+        }
+      ]
+    },
+    {
+      "id": "samb-10",
+      "type": "error",
+      "level": "C1",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Tìm lỗi ngữ pháp trong câu theo ngữ cảnh; nếu không có lỗi, chọn câu này đúng.",
+      "explain": "Ngữ cảnh đã chọn cách gắn với hành động: điện thoại của người quản lý dùng để chụp. Câu đúng và không cần sửa chỉ vì ngoài ngữ cảnh nó có thể hai nghĩa.",
+      "context": "Người quản lý kể mình vừa dùng camera điện thoại chụp một người khách.",
+      "segments": [
+        {
+          "t": "The curator photographed"
+        },
+        {
+          "t": "the visitor"
+        },
+        {
+          "t": "with a phone."
+        }
+      ],
+      "noError": true
+    },
+    {
+      "id": "samb-11",
+      "type": "multi",
+      "level": "C1",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Chọn các chiến lược có thể làm rõ ý mà vẫn phải kiểm tra nghĩa.",
+      "explain": "Lặp tính từ, đưa cụm về vị trí khác và thay bằng mệnh đề rõ chủ thể là các công cụ. Thêm dấu phẩy hay chọn câu ngắn nhất không bảo đảm truyền đúng ý.",
+      "stem": "Khi sửa một câu có hai cách gắn cụm từ:",
+      "options": [
+        {
+          "t": "Viết lại mệnh đề để nêu rõ ai có đặc điểm đó.",
+          "ok": true,
+          "note": "Mệnh đề quan hệ có thể xác định đối tượng nhận phần mô tả."
+        },
+        {
+          "t": "Lặp tính từ trước từng danh từ nếu nó phải áp dụng cho cả hai.",
+          "ok": true,
+          "note": "Lặp có chủ đích làm rõ phạm vi."
+        },
+        {
+          "t": "Chỉ cần thêm dấu phẩy ở bất cứ chỗ nào.",
+          "note": "Dấu phẩy tùy tiện có thể sai hoặc vẫn không giải quyết cách hiểu.",
+          "tag": "punctuation-magic-fix"
+        }
+      ]
+    },
+    {
+      "id": "samb-12",
+      "type": "open",
+      "level": "C1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết hai câu diễn đạt rõ hai cách hiểu của một câu có thể gây nhầm.",
+      "explain": "Đây là nhiệm vụ viết mở: đối chiếu tiêu chí và mẫu, không tự động chấm thành thạo. Một bản sửa tốt làm rõ đúng điều cần biết mà không thêm thông tin trái ý.",
+      "task": "Dùng câu The curator photographed the visitor with a phone. Viết một câu nêu rõ dụng cụ chụp. Với cách hiểu gắn vào khách, cho thêm thông tin khách đang cầm điện thoại trên tay rồi viết câu làm rõ điều đó. Giải thích bằng tiếng Việt khác biệt về cách gắn cụm và chỉ ra thông tin vừa thêm.",
+      "model": [
+        "The curator used a phone to photograph the visitor.",
+        "The curator photographed the visitor who was holding a phone."
+      ],
+      "checklist": [
+        "Một câu xác định rõ điện thoại là dụng cụ người chụp dùng.",
+        "Một câu gắn việc cầm điện thoại với khách và nhận ra chi tiết cầm trên tay là thông tin được đề bổ sung.",
+        "Không khẳng định thông tin không có trong ý định như người khách là người chụp.",
+        "Giải thích được khác biệt cấu trúc, không chỉ dịch hai câu."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgel",
+      "note": "Tham chiếu để kiểm tra quan hệ gắn cụm và phối hợp; chưa đối chiếu trực tiếp ấn bản trong lượt biên soạn này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham chiếu thêm về độ rõ của cấu trúc và phần bổ nghĩa; chưa xác minh đoạn/ấn bản cụ thể trong lượt này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

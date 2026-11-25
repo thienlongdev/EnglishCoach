@@ -1,0 +1,41 @@
+{
+  "id": "box-on-plinth",
+  "title": "Một chiếc hộp xuất hiện ở cuối câu",
+  "summary": "Trong truyện, độc giả đã biết bệ đá nhưng chưa thấy hộp. Thử đặt địa điểm lên đầu với đảo chủ ngữ, rồi thử khi vật đã được thay bằng it.",
+  "level": "C1",
+  "topics": [
+    "given-before-new",
+    "fronting"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Thông tin về vật",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Giới thiệu vật mới"
+        },
+        {
+          "id": "v2",
+          "label": "Vật đã biết"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "On the plinth stood a cedar box.",
+      "vi": "Trên bệ đá có một chiếc hộp gỗ tuyết tùng.",
+      "note": "On the plinth làm nền địa điểm. Chủ ngữ đầy đủ a cedar box theo sau stood để xuất hiện sau cùng. / Locative inversion places a newly introduced noun phrase last.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "On the plinth it stood, exactly as before.",
+      "vi": "Nó vẫn ở trên bệ đá, đúng như trước.",
+      "note": "It đã có đối tượng rõ, nên đứng trước stood dù địa điểm vẫn lên đầu. Cách kể có sắc thái văn chương. / A known pronominal subject normally precedes the verb here.",
+      "verdict": "ok"
+    }
+  }
+}

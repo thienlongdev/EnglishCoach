@@ -1,0 +1,41 @@
+{
+  "id": "mirror-reflection",
+  "title": "Ai được nhìn thấy trong gương?",
+  "summary": "Mai nhìn vào gương ở tiệm cắt tóc. Đổi đại từ để người trong gương là Mai hoặc một cô gái khác.",
+  "level": "A2",
+  "topics": [
+    "reflexive-pronouns",
+    "subject-object-pronouns"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Người trong gương",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Chính Mai"
+        },
+        {
+          "id": "v2",
+          "label": "Người khác"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Mai sees herself in the mirror.",
+      "vi": "Mai nhìn thấy chính mình trong gương.",
+      "note": "Đại từ phản thân cho biết người nhìn và người được nhìn là một. / Herself points back to Mai.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Mai sees her in the mirror.",
+      "vi": "Mai nhìn thấy cô ấy trong gương.",
+      "note": "Với her, câu được hiểu là Mai thấy một người nữ khác mà hai bên đã biết. / Her can refer to another girl in view.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s017-ten-toes",
+  "title": "Mười ngón chân ngoài cửa",
+  "summary": "Có mười vết ngón chân màu cam trên bậc cửa nhưng ngoài sân chỉ có một chiếc dép.",
+  "level": "A1",
+  "topics": [
+    "regular-plurals",
+    "numbers-dates-measures"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Ari",
+      "role": "Người làm thiệp"
+    },
+    {
+      "id": "b",
+      "name": "Ly",
+      "role": "Em gái"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Ly mang thiệp bằng bìa ra phơi. Một dải giấy dài dính sơn nằm cạnh khay. Trên mỗi đầu dải giấy là hình năm ngón chân bìa.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Is there a monster outside?",
+          "vi": "Ngoài đó có quái vật à?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Let's count the toes on the step.",
+          "vi": "Mình đếm các ngón chân trên bậc cửa đi."
+        }
+      ],
+      "choice": {
+        "prompt": "Ari viết số ngón chân lên tấm thiệp đùa. Chọn dòng giữ đúng số lượng và dạng danh từ.",
+        "options": [
+          {
+            "t": "Ten orange toe!",
+            "note": "Ten chỉ số nhiều nên danh từ đếm được toe cần thêm s. Mất s ở đây không làm số mười thành số một.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "Ten orange toes!",
+            "note": "Sau ten, toes là số nhiều của toe. Danh từ toe thêm s, không cần thêm một âm tiết mới trong cách viết.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Ly áp hai đầu dải giấy lên vết màu. Cả mười ngón bìa vừa khít.",
+      "say": [
+        {
+          "who": "b",
+          "en": "They fit! It's our paper monster.",
+          "vi": "Vừa khít rồi! Là quái vật giấy của mình."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Ly chỉ vào từng hình ngón chân rồi thêm s vào chữ cuối. Hai đầu dải giấy in lại đủ mười vết.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Five here and five there.",
+          "vi": "Năm ngón đây và năm ngón kia."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Không có con quái vật nào chạy khỏi nhà. Gió đã lật dải giấy dính sơn lên bậc cửa. Ari gắn thêm hai mắt giấy và mang nó đến sinh nhật Ly.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Our monster can come to the party.",
+          "vi": "Quái vật của mình có thể đi dự tiệc rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+# The ONE production AI service on the Windows GPU PC (rules 10 §BE, §BM). Port 8000, reached only by the VPS over Tailscale, as before.
+#
+#   docker compose -p englishcoach-gpu -f deploy/ai/docker-compose.gpu.yml up -d --no-build
+#   powershell -File deploy/ai/verify-ai-service.ps1
+#
+# Its own Compose project on purpose: Docker Desktop's "Start" on the old project `docker` starts every container of that group,
+# and that is how an obsolete AI service came back on 2026-10-31. The secrets live outside the repository (EC_AI_ENV_FILE, key names in 09).
+# mdd-service stays in the old project (`docker-mdd-service-1`): this service reaches it through the shared network `docker_default`.
+name: englishcoach-gpu
+services:
+  ai-service:
+    # Echo microphone transcription uses isolated int8_float16 large-v3-turbo; Listening stays on large-v3.
+    # 2026-11-25 Echo voice recovery (deploy/ai/Dockerfile.gpu-echo): local Qwen3-4B tier runs in a 12,288-token FP16 KV
+    # window (`flash_attn=False`, `threads=12/16`, `batch=512/512`) with 100% immutable system+history KV reuse.
+    # Rollback: englishcoach-ai-whisperx:echo-jarvis-agentic-20261125 (7c1db41a9f86).
+    image: englishcoach-ai-whisperx:echo-voice-repair-20261125
+    container_name: englishcoach-ai-whisperx
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    # Comes back by itself whenever the Docker engine starts (a Windows restart used to leave it stopped with exit 255).
+    restart: unless-stopped
+    gpus: all
+    env_file:
+      - ${EC_AI_ENV_FILE:-C:/Users/Admin/.englishcoach/ai-gpu.env}
+    ports:
+      - "8000:8000"
+    volumes:
+      - "C:/My Workspace English Coach/english-coach-exams-integration/audit_artifacts:/app/audit_artifacts:ro"
+      - "C:/My Workspace English Coach/english-coach-exams-integration/real_mic_acceptance_pack:/app/real_mic_acceptance_pack:ro"
+      - "C:/Users/Admin/.cache/huggingface:/root/.cache/huggingface"
+    networks:
+      docker_default:
+        aliases: [ai-service, docker-ai-service-1]
+    # Readiness, not liveness: healthy only when large-v3 and the alignment model are really in GPU memory.
+    healthcheck:
+      test: ["CMD", "python", "-c", "import json,sys,urllib.request as u; sys.exit(0 if json.load(u.urlopen('http://127.0.0.1:8000/api/v1/listening/capabilities',timeout=5))['ready'] else 1)"]
+      interval: 30s
+      timeout: 8s
+      retries: 4
+      start_period: 150s
+networks:
+  docker_default:
+    external: true

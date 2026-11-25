@@ -1,0 +1,51 @@
+{
+  "id": "few-seats",
+  "title": "Bán vé theo ngưỡng hay theo con số gần đúng?",
+  "summary": "Trưởng đoàn cần đúng mười ghế. Đổi cách người bán mô tả lượng vé và tính xem có thể kết luận đủ cho đoàn không.",
+  "level": "B1",
+  "topics": [
+    "much-many-a-lot",
+    "comparison-advanced"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Cách định lượng",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Dưới ngưỡng"
+        },
+        {
+          "id": "v2",
+          "label": "Ít nhất bằng ngưỡng"
+        },
+        {
+          "id": "v3",
+          "label": "Xấp xỉ"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Fewer than ten seats are available.",
+      "vi": "Còn dưới mười ghế trống.",
+      "note": "Fewer than ten là nhiều nhất chín ghế nên chắc chắn thiếu chỗ cho đoàn. / The upper bound excludes ten.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "No fewer than ten seats are available.",
+      "vi": "Còn không dưới mười ghế trống.",
+      "note": "No fewer than đảo chiều giới hạn. Số ghế có thể đúng mười hoặc lớn hơn mười. / Ten is now an inclusive lower bound.",
+      "verdict": "ok"
+    },
+    "v3": {
+      "en": "About ten seats are available.",
+      "vi": "Còn khoảng mười ghế trống.",
+      "note": "About không cam kết đủ mười. Nếu cần vé cho cả đoàn thì vẫn phải kiểm lại. / An approximation permits a small shortfall.",
+      "verdict": "ok"
+    }
+  }
+}

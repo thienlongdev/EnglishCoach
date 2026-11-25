@@ -1,0 +1,508 @@
+{
+  "schema": 1,
+  "slug": "narrative-tenses",
+  "version": 2,
+  "domain": "tense-aspect",
+  "order": 220,
+  "kind": "grammar",
+  "title": {
+    "vi": "Thì trong văn kể chuyện",
+    "en": "Narrative tenses"
+  },
+  "subtitle": {
+    "vi": "Dẫn chuyện, tạo nền và nhìn lùi",
+    "en": "Advance a story, set a scene and look back"
+  },
+  "aliases": [
+    "thì kể chuyện",
+    "narrative tenses",
+    "past simple continuous perfect",
+    "had wrote",
+    "quá khứ hoàn thành tiếp diễn trong kể chuyện"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Tổ chức chuỗi sự việc và cảnh nền.",
+    "Dùng hoàn thành để nhìn lùi từ mốc quá khứ.",
+    "Không suy kết quả hoàn tất chỉ từ tiếp diễn."
+  ],
+  "prerequisites": [
+    "past-perfect",
+    "past-simple-vs-continuous"
+  ],
+  "related": [
+    {
+      "slug": "past-perfect",
+      "rel": "more"
+    },
+    {
+      "slug": "past-simple-vs-continuous",
+      "rel": "more"
+    },
+    {
+      "slug": "tense-consistency",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Trong văn kể quá khứ, quá khứ đơn thường đưa sự việc chính tiến lên; quá khứ tiếp diễn tạo góc nhìn đang diễn ra; quá khứ hoàn thành nhìn lùi về trước một mốc quá khứ.",
+    "when": "Kết hợp theo ý nghĩa câu chuyện thay vì đổi thì cho đủ loại.",
+    "examples": [
+      {
+        "en": "[S|I] [V|entered]. Rain [AUX|was] [V|falling] outside.",
+        "vi": "Tôi bước vào. Ngoài trời mưa đang rơi."
+      },
+      {
+        "en": "Someone [AUX|had] [V|left] a note.",
+        "vi": "Ai đó đã để lại một mẩu giấy trước đó."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Quá khứ đơn thường kể các bước: I unlocked the door, stepped inside and switched on the light. Thứ tự ngữ cảnh giúp hiểu chuỗi. Không phải mọi câu quá khứ đơn bắt buộc nói việc tiếp theo; nó cũng có thể miêu tả trạng thái như The room was cold."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Góc nhìn",
+        "Khung",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "Sự việc chính",
+          "quá khứ đơn",
+          "I opened the door."
+        ],
+        [
+          "Nền đang diễn ra",
+          "was/were + -ing",
+          "Rain was falling."
+        ],
+        [
+          "Trước mốc quá khứ",
+          "had + phân từ",
+          "Someone had left a note."
+        ],
+        [
+          "Quá trình trước mốc",
+          "had been + -ing",
+          "I had been waiting for an hour."
+        ]
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Trước lúc đến",
+            "items": [
+              "The train had left"
+            ]
+          },
+          {
+            "label": "Mốc kể",
+            "items": [
+              "we arrived"
+            ]
+          },
+          {
+            "label": "Sự việc tiếp theo",
+            "items": [
+              "We called a taxi"
+            ]
+          }
+        ],
+        "sentence": "{0} before {1}. {2}."
+      },
+      "caption": "Had left nhìn lùi từ arrived; called đưa câu chuyện đi tiếp.",
+      "alt": "Had left nhìn lùi từ arrived; called đưa câu chuyện đi tiếp."
+    },
+    {
+      "type": "p",
+      "vi": "Tiếp diễn không có nghĩa hoạt động bắt đầu đúng lúc mốc kể hoặc chắc chắn hoàn tất sau đó. I was writing when the phone rang nhìn vào quá trình đang viết tại thời điểm điện thoại reo."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|I] [V|arrived] at nine. The guests [AUX|were] [V|leaving].",
+          "vi": "Tôi đến lúc chín giờ. Khách đang ra về."
+        },
+        {
+          "en": "[S|I] [V|arrived] at nine. The guests [AUX|had] [V|left].",
+          "vi": "Tôi đến lúc chín giờ. Khách đã ra về trước đó."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Khi before/after và ngữ cảnh đã rõ, quá khứ đơn cũng có thể diễn tả thứ tự: After she locked the door, she left. Không bắt buộc sự việc sớm hơn luôn dùng had."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Sau khi thiết lập một đoạn hồi tưởng bằng quá khứ hoàn thành, người kể có thể tiếp tục bằng quá khứ đơn khi mốc đã rõ. Không dạy mỗi câu hồi tưởng đều phải lặp had như một quy tắc tuyệt đối."
+    },
+    {
+      "type": "p",
+      "vi": "Had been waiting nhấn quá trình trước một mốc; had waited có thể phù hợp khi nhìn tổng thời gian. Không gọi một dạng chắc chắn sai nếu ngữ cảnh chấp nhận cả hai."
+    },
+    {
+      "type": "p",
+      "vi": "Hiện tại kịch tính như So I open the door, and there he is là một lựa chọn kể chuyện có chủ ý. Một đoạn trung tính cần mốc nhất quán, nhưng đổi sang hiện tại không tự động là lỗi ở mọi thể loại."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "narrative-tenses-m1",
+      "wrong": "They was talking when I entered.",
+      "right": "They were talking when I entered.",
+      "why": "They cần were."
+    },
+    {
+      "id": "narrative-tenses-m2",
+      "wrong": "Someone had wrote a note.",
+      "right": "Someone had written a note.",
+      "why": "Had cần phân từ written."
+    },
+    {
+      "id": "narrative-tenses-m3",
+      "wrong": "I was opened the door when the bell rang.",
+      "right": "I was opening the door when the bell rang.",
+      "why": "Muốn miêu tả hành động mở đang diễn ra dùng was opening."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Việc sớm hơn có luôn dùng quá khứ hoàn thành không?",
+      "a": "Không. Ngữ cảnh và từ nối có thể đủ rõ. Hoàn thành là cách nhìn lùi, không là dấu bắt buộc cho mọi sự việc sớm hơn."
+    },
+    {
+      "q": "Văn kể có thể dùng hiện tại không?",
+      "a": "Có, như hiện tại kịch tính. Cần mục đích và cách duy trì mốc rõ, không đổi ngẫu nhiên trong đoạn trung tính."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "nrt-01",
+      "prompt": "Chọn câu đầy đủ để tả hoạt động nền đang diễn ra.",
+      "explain": "Past continuous cần was/were và -ing.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "At eight that evening, the guard ___ the cameras.",
+      "options": [
+        {
+          "t": "was checking",
+          "ok": true,
+          "note": "Nhìn hoạt động đang diễn ra tại mốc."
+        },
+        {
+          "t": "was check",
+          "ok": false,
+          "note": "Sau was trong tiếp diễn cần checking.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "checking",
+          "ok": false,
+          "note": "Thiếu động từ hữu hạn.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "nrt-02",
+      "prompt": "Nối câu với vai trò trong đoạn kể đã cho.",
+      "explain": "Vai trò thuộc cách viết đoạn này; không buộc mọi người kể phải chọn cùng dạng.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "I opened the door and stepped inside.",
+          "b": "Đưa chuỗi sự việc chính tiến lên"
+        },
+        {
+          "a": "Rain was falling outside.",
+          "b": "Tạo nền đang diễn ra"
+        },
+        {
+          "a": "Someone had left a note before I arrived.",
+          "b": "Nhìn lùi về việc trước mốc đến"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "nrt-03",
+      "prompt": "Phân loại hình thức động từ.",
+      "explain": "Had been waiting kết hợp hoàn thành và tiếp diễn.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Quá khứ đơn",
+        "Quá khứ tiếp diễn",
+        "Quá khứ hoàn thành",
+        "Quá khứ hoàn thành tiếp diễn"
+      ],
+      "items": [
+        {
+          "t": "She opened the gate.",
+          "cat": "Quá khứ đơn"
+        },
+        {
+          "t": "She was opening the gate.",
+          "cat": "Quá khứ tiếp diễn"
+        },
+        {
+          "t": "She had opened the gate.",
+          "cat": "Quá khứ hoàn thành"
+        },
+        {
+          "t": "She had been waiting.",
+          "cat": "Quá khứ hoàn thành tiếp diễn"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "nrt-04",
+      "prompt": "Dùng quá khứ đơn của open và quá khứ tiếp diễn của wait.",
+      "explain": "Opened kể hành động; was waiting tạo nền cho người đang chờ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "I {1} (open) the door. A courier {2} (wait) outside.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "opened"
+          ]
+        },
+        "2": {
+          "accept": [
+            "was waiting"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "nrt-05",
+      "prompt": "Sửa phân từ của leave trong khung đã có.",
+      "explain": "Had cần phân từ left.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "Someone had"
+        },
+        {
+          "t": "leaved",
+          "bad": true,
+          "fix": [
+            "left"
+          ],
+          "note": "Leave bất quy tắc: left.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "a note on the desk."
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "nrt-06",
+      "prompt": "Sắp xếp câu kể bắt đầu bằng The train; giữ before we arrived cuối.",
+      "explain": "Had left nhìn lùi so với we arrived.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "The train",
+        "had",
+        "left",
+        "before we arrived"
+      ],
+      "accept": [
+        [
+          "The train",
+          "had",
+          "left",
+          "before we arrived"
+        ]
+      ],
+      "end": ".",
+      "level": "B2"
+    },
+    {
+      "id": "nrt-07",
+      "prompt": "Kết hợp hai sự việc, nhìn lùi từ lúc đến.",
+      "explain": "Had locked thể hiện việc khóa xảy ra trước mốc đến.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "The guard locked the door. Later, we arrived.",
+      "instruction": "Bắt đầu When we arrived, the guard had; giữ locked the door.",
+      "accept": [
+        "When we arrived, the guard had locked the door"
+      ],
+      "model": "When we arrived, the guard had locked the door",
+      "level": "B2"
+    },
+    {
+      "id": "nrt-08",
+      "prompt": "Viết đoạn kể ngắn có trật tự rõ.",
+      "explain": "Tự đánh giá quan hệ sự việc; không tự động cấp mastery.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết 4–5 câu về một lần đến muộn. Có chuỗi quá khứ đơn, một cảnh nền tiếp diễn và một việc xảy ra trước đó bằng had + phân từ. Không cần mọi câu dùng had.",
+      "model": [
+        "I reached the hall at nine. People were leaving. The organiser had changed the starting time. I checked my messages and went home."
+      ],
+      "checklist": [
+        "Mốc kể và thứ tự sự việc hiểu được.",
+        "Cảnh nền không tự khẳng định sự việc hoàn tất.",
+        "Quá khứ hoàn thành gắn với một mốc quá khứ khác."
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "nrt-09",
+      "prompt": "Dùng quá khứ đơn của step, quá khứ tiếp diễn của rain và phân từ của leave.",
+      "explain": "Các khung chỉ định ba góc nhìn khác nhau.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "I {1} (step) inside. It {2} (rain) outside. Someone had {3} (leave) an umbrella by the door.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "stepped"
+          ]
+        },
+        "2": {
+          "accept": [
+            "was raining"
+          ]
+        },
+        "3": {
+          "accept": [
+            "left"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "nrt-10",
+      "prompt": "Thêm góc nhìn hoàn thành tiếp diễn cho quá trình trước mốc.",
+      "explain": "Had been waiting nhấn thời gian chờ tính đến lúc xe đến.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "I waited for an hour before the bus came.",
+      "instruction": "Dùng quá khứ hoàn thành tiếp diễn của wait; giữ chủ ngữ, độ dài for an hour và mệnh đề before ở cuối.",
+      "accept": [
+        "I had been waiting for an hour before the bus came",
+        "I'd been waiting for an hour before the bus came"
+      ],
+      "model": "I had been waiting for an hour before the bus came",
+      "level": "B2"
+    },
+    {
+      "id": "nrt-11",
+      "prompt": "Chọn tất cả câu chuẩn trong một đoạn kể quá khứ.",
+      "explain": "Past perfect và past continuous là lựa chọn góc nhìn; hình thức vẫn cần đúng.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "I found a note that someone had left.",
+          "ok": true,
+          "note": "Had left nhìn lùi từ found."
+        },
+        {
+          "t": "The guests were chatting when I entered.",
+          "ok": true,
+          "note": "Were chatting tạo nền."
+        },
+        {
+          "t": "The guests was chatting when I entered.",
+          "ok": false,
+          "note": "Guests số nhiều cần were.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Someone had wrote a note.",
+          "ok": false,
+          "note": "Sau had cần written.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "nrt-12",
+      "prompt": "Chọn điều câu thực sự nói.",
+      "explain": "Tiếp diễn đặt mốc trong hoạt động nhưng không tự bảo đảm kết quả hoàn tất.",
+      "skill": "meaning",
+      "use": "check",
+      "type": "choice",
+      "stem": "At nine, Hoa was writing the report.",
+      "options": [
+        {
+          "t": "Lúc chín giờ việc viết đang được trình bày như diễn ra; chưa đủ biết báo cáo có viết xong không.",
+          "ok": true,
+          "note": "Không tự suy ra kết quả."
+        },
+        {
+          "t": "Báo cáo chắc chắn hoàn tất trước chín giờ.",
+          "ok": false,
+          "note": "Câu không nói điều đó.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Hoa chắc chắn không viết một chữ nào.",
+          "ok": false,
+          "note": "Ngược với hoạt động được kể.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

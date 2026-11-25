@@ -1,0 +1,40 @@
+{
+  "id": "recipe-request",
+  "title": "Kể lại lời nhờ khi nấu ăn",
+  "summary": "Đầu bếp nói Please pass the salt hoặc Please don't add salt. Khi kể lại, đặt not ở đâu so với to?",
+  "level": "B1",
+  "topics": [
+    "reporting-commands-requests"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Nội dung lời nhờ",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Đưa muối"
+        },
+        {
+          "id": "v2",
+          "label": "Đừng thêm muối"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The cook asked me to pass the salt.",
+      "vi": "Đầu bếp nhờ tôi đưa muối.",
+      "note": "Me vừa là người được nhờ vừa là người sẽ đưa muối. / Asked me to identifies the intended actor.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The cook asked me not to add salt.",
+      "vi": "Đầu bếp nhờ tôi đừng thêm muối.",
+      "note": "Not to add phủ định việc thêm muối. Lời nhờ vẫn thực sự được đưa ra. / Not to negates the requested action.",
+      "verdict": "ok"
+    }
+  }
+}

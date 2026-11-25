@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s097-missing-stroke",
+  "title": "Nét bút trên lưỡi chuông",
+  "summary": "Một quả chuông có hai cái tên khắc bên trong. Một là tên người đúc; người kia bảy tuổi khi chuông ra đời.",
+  "level": "B1",
+  "topics": [
+    "passive-use",
+    "passive-form"
+  ],
+  "scene": "lecture",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Rosa",
+      "role": "Sinh viên làm bảng giới thiệu"
+    },
+    {
+      "id": "b",
+      "name": "Nghĩa",
+      "role": "Thợ đúc chuông"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Hóa đơn xưởng ghi bà Linh đúc chuông. Tấm ảnh cũ cho thấy con gái bà đặt một chiếc lá vào khuôn. Vết gân lá vẫn nổi bên hai cái tên.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can still see the tiny leaf.",
+          "vi": "Cháu vẫn nhìn thấy chiếc lá nhỏ xíu."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Can your label tell people who cast the bell and who added the leaf?",
+          "vi": "Nhãn của cháu có thể cho biết ai đúc chuông, ai thêm chiếc lá không?"
+        }
+      ],
+      "choice": {
+        "prompt": "Chọn cách giữ đúng hai người làm hai việc.",
+        "options": [
+          {
+            "t": "The bell was cast by Linh. Her daughter added the leaf.",
+            "note": "By Linh nêu người thực hiện cast trong câu bị động. Câu sau dùng chủ động để giao việc thêm lá cho người con.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "The bell cast Linh, and the leaf added her daughter.",
+            "note": "Hai động từ ở chủ động khiến chuông thành người đúc và lá thành người thêm. Đó là đảo vai tác nhân và vật nhận hành động.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Nghĩa rọi đèn vào lòng chuông. Bên cạnh gân lá là một dấu tay chỉ bằng nửa ngón tay của Rosa.",
+      "say": [
+        {
+          "who": "b",
+          "en": "She left a fingerprint too.",
+          "vi": "Cô bé còn để lại cả dấu vân tay."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Rosa diễn thử bằng cách nhấc chuông lên như nhấc người. Hai ông cháu bật cười. Nghĩa cho cô thấy dấu tay bé xíu bên chiếc lá.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Here's the print her finger made.",
+          "vi": "Đây là dấu ngón tay cô bé để lại này."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Ngày khánh thành, Rosa để nhãn thấp vừa tầm mắt trẻ con. Người đọc đầu tiên dùng hai ngón tay đo dấu tay trên ảnh rồi xin mẹ dạy cách ép lá vào đất sét.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The smallest hand still has a story to tell.",
+          "vi": "Bàn tay nhỏ nhất vẫn còn chuyện để kể."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

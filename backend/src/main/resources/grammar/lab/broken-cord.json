@@ -1,0 +1,40 @@
+{
+  "id": "broken-cord",
+  "title": "Ai làm đứt sợi dây?",
+  "summary": "Thợ sân khấu ghi lại sự cố. So sánh cách kể dây đứt với cách nói có người làm đứt. Có cần thêm be để bỏ tác nhân không?",
+  "level": "B1",
+  "topics": [
+    "transitive-intransitive"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Góc nhìn",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Chỉ sự cố"
+        },
+        {
+          "id": "v2",
+          "label": "Nêu người gây ra"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The cord broke.",
+      "vi": "Sợi dây đã đứt.",
+      "note": "Broke đứng một mình sau the cord, không phải dạng bị động. / Break is intransitive in this clause.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "I broke the cord.",
+      "vi": "Tôi làm đứt sợi dây.",
+      "note": "I là chủ ngữ, the cord là tân ngữ. Việc có chủ thể gây ra không tự hàm ý cố ý. / The same verb can take an object.",
+      "verdict": "ok"
+    }
+  }
+}

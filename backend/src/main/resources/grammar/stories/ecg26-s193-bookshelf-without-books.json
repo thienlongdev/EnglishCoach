@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s193-bookshelf-without-books",
+  "title": "Kệ sách không cần sách",
+  "summary": "Năm xưa Teo hứa làm một kệ cho lớp. Đến ngày giao, cậu bé được hứa đã lớn và muốn giữ nhạc trên kệ thay vì sách.",
+  "level": "B2",
+  "topics": [
+    "future-in-the-past"
+  ],
+  "scene": "university",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mộc",
+      "role": "Sinh viên thiết kế"
+    },
+    {
+      "id": "b",
+      "name": "Teo",
+      "role": "Người phụ trách xưởng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Vật đặt hàng lúc đầu là một cái kệ; bản phác không ghi rằng nó phải chứa sách mãi. Mộc đọc lại tờ hẹn cũ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It was a promise about the shelf itself.",
+          "vi": "Lời hứa là về chính chiếc kệ."
+        },
+        {
+          "who": "b",
+          "en": "Say what I promised back then.",
+          "vi": "Kể đúng điều tôi hứa ngày ấy đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Mộc kể lời hứa về việc sẽ làm, nhìn từ quá khứ.",
+        "options": [
+          {
+            "ok": true,
+            "t": "You said you would build him a shelf.",
+            "note": "Would build là tương lai nhìn từ lúc said. Him chỉ người nhận, còn a shelf không hạn chế thứ đặt lên sau này.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "You said he'd already built you a shelf.",
+            "note": "He'd already built chuyển việc sang trước lúc nói và đảo người làm với người nhận. Lời hẹn cũ không nói vậy.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Teo giao kệ, chàng trai đặt lên đó ba bản thu lời ru của mẹ. Mỗi chiều kệ “đọc” cho lớp một câu chuyện bằng tiếng hát.",
+      "say": [
+        {
+          "who": "b",
+          "en": "A promise can outgrow its first use.",
+          "vi": "Một lời hứa có thể lớn hơn công dụng ban đầu."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Mặt dưới kệ vẫn còn dấu bút chì từ khi cậu nhỏ hơn chính nó.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Mộc so nét chữ ký của thợ với bản vẽ. Cô đổi lại đại từ và ghi tên chàng trai ở ô người chọn công dụng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We left him the last sentence.",
+          "vi": "Ta chừa câu cuối cho cậu ấy."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Kệ được tặng với một ô trống ở nhãn để chủ mới tự viết điều sẽ đặt lên.",
+      "end": true
+    }
+  ]
+}

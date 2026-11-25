@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s221-three-seats-down",
+  "title": "Ba ghế về bên trái",
+  "summary": "Elsa nhớ một khán giả đã đứng dậy trong đêm diễn thất bại. Bản hồi ký lại nói cả rạp bỏ về.",
+  "level": "C1",
+  "topics": [
+    "negation-scope",
+    "focus-adverbs"
+  ],
+  "scene": "interview",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Duyên",
+      "role": "Người phỏng vấn"
+    },
+    {
+      "id": "b",
+      "name": "Elsa",
+      "role": "Nghệ sĩ từng đi lưu diễn"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Duyên đặt ghi âm lên bàn. Ở câu cuối, Elsa nói Not all of them stayed seated. Sau đó là tiếng bước rất nhẹ và một giọng nhỏ xin thêm ghế cho người lớn tuổi.",
+      "say": [
+        {
+          "who": "a",
+          "en": "When you said not all, I pictured an empty hall.",
+          "vi": "Khi bà nói not all, cháu lại hình dung cả rạp trống trơn."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Then start by telling me what my sentence actually commits me to.",
+          "vi": "Vậy cháu hãy nói xem chính câu đó buộc bà phải khẳng định điều gì."
+        }
+      ],
+      "choice": {
+        "prompt": "Chọn câu diễn giải tối thiểu mà không tự thêm số lượng hay động cơ.",
+        "options": [
+          {
+            "t": "At least one person didn't remain seated.",
+            "note": "Phủ định all chỉ cần có ít nhất một ngoại lệ. Remain seated còn nói tư thế, không đồng nghĩa với ở lại hay bỏ rạp.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "Most people walked out.",
+            "note": "Most gán số đông, walked out thêm hành động rời khỏi rạp. Không ý nào suy ra từ not all ... stayed seated.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Elsa lấy ngón tay gõ ba ghế trên sơ đồ chỗ ngồi. Khán giả chỉ dịch sang bên trái nhường đường cho một người dùng gậy.",
+      "say": [
+        {
+          "who": "b",
+          "en": "He made space. He didn't make an exit.",
+          "vi": "Ông ấy nhường chỗ. Ông ấy đâu có bỏ về."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Duyên nghe lại tiếng xin ghế và nhận ra không hề có tiếng cửa mở. Cô bỏ dự thảo tiêu đề nói về cuộc bỏ về tập thể.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Listen to the chair legs, not the front door.",
+          "vi": "Cháu nghe tiếng chân ghế ấy, đâu phải tiếng cửa ngoài."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Duyên đưa đoạn ghi mới cho Elsa duyệt. Trong hồi ký có thêm một bức vẽ người lạ đứng dậy nhường ghế giữa đêm diễn buồn. Lần này Elsa nhớ ra mình đã hát trọn bài nhờ nhìn thấy cử chỉ đó.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One person standing gave you a reason to stay on stage.",
+          "vi": "Một người đứng dậy đã cho bà lý do để ở lại trên sân khấu."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,574 @@
+{
+  "schema": 1,
+  "slug": "complex-noun-phrases",
+  "version": 3,
+  "domain": "nouns",
+  "order": 80,
+  "kind": "grammar",
+  "title": {
+    "vi": "Cụm danh từ dài",
+    "en": "Complex noun phrases"
+  },
+  "level": "B2",
+  "levelBasis": "editorial",
+  "prerequisites": [
+    "compound-nouns"
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "subtitle": {
+    "vi": "Giữ trung tâm rõ khi thêm nhiều thông tin",
+    "en": "Keeping the head clear as detail grows"
+  },
+  "aliases": [
+    "cụm danh từ dài",
+    "complex noun phrase",
+    "head noun",
+    "premodifier postmodifier",
+    "of students is",
+    "cụm danh từ phức"
+  ],
+  "objectives": [
+    "Tìm trung tâm trong một cụm danh từ có nhiều thành phần",
+    "Phân biệt phần bổ nghĩa trước và sau danh từ",
+    "Mở rộng hoặc rút gọn cụm mà giữ rõ quan hệ và chủ thể"
+  ],
+  "related": [
+    {
+      "slug": "agreement-tricky-subjects",
+      "rel": "more"
+    },
+    {
+      "slug": "nominalization",
+      "rel": "more"
+    }
+  ],
+  "quick": {
+    "what": "Cụm danh từ phức (complex noun phrase) có một danh từ trung tâm cùng các thành phần xác định hoặc bổ nghĩa. Cụm có thể dài nhưng trung tâm vẫn cho biết cả cụm đang nói về loại người, vật hay ý tưởng nào.",
+    "when": "Dùng khi cần xác định chính xác đối tượng hoặc nén thông tin trong văn bản học thuật và công việc.",
+    "examples": [
+      {
+        "en": "The report on air quality in coastal cities is ready.",
+        "vi": "Báo cáo về chất lượng không khí tại các thành phố ven biển đã sẵn sàng."
+      }
+    ],
+    "remember": "Tìm trung tâm trước; đừng để danh từ đứng gần động từ nhất đánh lạc hướng."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Trong the detailed report on air quality, report là trung tâm (head). The xác định, detailed bổ nghĩa trước (premodifier), còn on air quality bổ nghĩa sau (postmodifier). Cụm dài thêm không có nghĩa mọi danh từ trong đó ngang vai nhau."
+    },
+    {
+      "type": "formula",
+      "parts": [
+        {
+          "t": "từ hạn định",
+          "role": "DET"
+        },
+        {
+          "t": "bổ nghĩa trước"
+        },
+        {
+          "t": "danh từ trung tâm",
+          "role": "N"
+        },
+        {
+          "t": "bổ nghĩa sau"
+        }
+      ],
+      "note": "the detailed report on air quality"
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "tree",
+        "bracket": "[NP [DET the] [ADJ detailed] [N report] [PP [P on] [NP [N air] [N quality]]]]"
+      },
+      "caption": "Report là trung tâm toàn cụm; quality là trung tâm của air quality, còn air là danh từ bổ nghĩa trước.",
+      "alt": "Cụm gồm the, detailed, trung tâm report và phần on air quality. Trong cụm lồng air quality, cả air và quality đều là danh từ, nhưng air bổ nghĩa cho trung tâm quality; quality không thay report làm trung tâm toàn cụm."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Phần bổ nghĩa sau",
+        "Ví dụ",
+        "Nhiệm vụ"
+      ],
+      "rows": [
+        [
+          "Cụm giới từ",
+          "the report on air quality",
+          "Nêu chủ đề của báo cáo"
+        ],
+        [
+          "Mệnh đề quan hệ",
+          "the report that the council published",
+          "Xác định báo cáo bằng thông tin có động từ"
+        ],
+        [
+          "Cụm phân từ bị động",
+          "the report published last week",
+          "Rút gọn ý được xuất bản"
+        ],
+        [
+          "Cụm phân từ chủ động",
+          "the people waiting outside",
+          "Nêu hoạt động của những người ấy"
+        ],
+        [
+          "Cụm nguyên mẫu",
+          "a plan to reduce waste",
+          "Nêu nội dung hoặc mục tiêu của kế hoạch"
+        ]
+      ]
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|The report on air quality in coastal cities] [V|is] ready.",
+          "vi": "Báo cáo về chất lượng không khí tại các thành phố ven biển đã sẵn sàng."
+        },
+        {
+          "en": "[S|The reports on air quality] [V|are] ready.",
+          "vi": "Các báo cáo về chất lượng không khí đã sẵn sàng."
+        },
+        {
+          "en": "Please contact the people waiting outside.",
+          "vi": "Hãy liên hệ những người đang đợi bên ngoài."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Mở rộng mà không đổi trung tâm"
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "The proposal is practical.",
+            "vi": "Đề xuất đó khả thi."
+          },
+          "b": {
+            "en": "The proposal for a new cycle lane near the school is practical.",
+            "vi": "Đề xuất về một làn xe đạp mới gần trường khả thi."
+          },
+          "diff": "Proposal vẫn là trung tâm; lane và school nằm trong phần bổ nghĩa. Động từ vẫn là is."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Một phần bổ nghĩa có thể gắn ở hai tầng mà câu vẫn đúng ngữ pháp: the assistant of the curator with a blue badge có thể nói người trợ lý hoặc người phụ trách bảo tàng đeo thẻ xanh. Nếu muốn nói người trợ lý đeo thẻ, có thể viết the assistant who wears a blue badge and works for the curator. Viết dài hơn đôi khi giúp rõ nghĩa hơn."
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Trong lần đọc đầu, tạm gác phần bắt đầu bằng of, on, with hoặc mệnh đề quan hệ để tìm trung tâm và động từ chính. Sau đó đọc lại từng phần để khôi phục đầy đủ nghĩa; đây là cách đọc, không phải quy tắc xóa mọi cụm giới từ."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Bổ nghĩa có thể lồng nhiều tầng: the results of the survey of local residents. Results là trung tâm toàn cụm; survey là trung tâm của cụm sau of đầu tiên; residents ở tầng tiếp theo. Phải biết đang xét tầng nào trước khi quyết định số ít hay số nhiều."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "The volunteers who arrived early received badges.",
+            "vi": "Những tình nguyện viên đến sớm được nhận thẻ."
+          },
+          "b": {
+            "en": "The volunteers, who arrived early, received badges.",
+            "vi": "Các tình nguyện viên, vốn đã đến sớm, được nhận thẻ."
+          },
+          "diff": "Không có dấu phẩy, mệnh đề thường giúp chọn nhóm tình nguyện viên. Có dấu phẩy, thông tin thường được trình bày như bổ sung về nhóm đã xác định; phạm vi ý nghĩa thay đổi."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Không phải mệnh đề nào cũng rút gọn bằng cách xóa who hoặc that. The people who need help không tự thành the people need help như một cụm danh từ. Khi dùng people needing help, cấu trúc và cách trình bày cũng đổi; cần xét nghĩa và độ tự nhiên của toàn câu."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Các chuỗi nhiều danh từ thường gặp trong tiêu đề và báo cáo, nhưng có thể che quan hệ. Đổi a city transport emissions reduction strategy thành a strategy for reducing emissions from city transport nếu người đọc cần quan hệ rõ. Không coi mọi cụm dài là văn phong tốt hơn."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "complex-head",
+      "wrong": "The list of available rooms are online.",
+      "right": "The list of available rooms is online.",
+      "why": "List là trung tâm số ít; rooms nằm trong cụm of."
+    },
+    {
+      "id": "complex-reduced",
+      "wrong": "I called the people works upstairs.",
+      "right": "I called the people who work upstairs.",
+      "why": "Cụm xác định people cần mệnh đề quan hệ phù hợp; không ghép works trực tiếp sau people."
+    },
+    {
+      "id": "complex-determiner",
+      "wrong": "Please send detailed the report.",
+      "right": "Please send the detailed report.",
+      "why": "The đứng trước tính từ bổ nghĩa và danh từ."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Danh từ cuối cụm có luôn là trung tâm không?",
+      "a": "Không. Trong the report on air quality, quality nằm cuối nhưng report là trung tâm toàn cụm. Mẫu danh từ + danh từ đơn giản không bao phủ mọi cụm phức."
+    },
+    {
+      "q": "Có phải cụm dài thì luôn dùng động từ số nhiều?",
+      "a": "Không. Số của trung tâm thường quyết định hòa hợp: the list of names is, the lists of names are. Một số cấu trúc định lượng có quy tắc riêng."
+    },
+    {
+      "q": "Làm sao biết phần bổ nghĩa gắn với từ nào?",
+      "a": "Xét nghĩa, vị trí và cấu trúc từng tầng. Nếu còn hai cách hiểu hợp lý, sửa câu để nêu rõ quan hệ thay vì bắt người đọc đoán."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "complex-noun-phrases-1",
+      "level": "B2",
+      "use": "practice",
+      "type": "choice",
+      "skill": "meaning",
+      "prompt": "Chọn trung tâm của toàn cụm.",
+      "stem": "the results of the survey of local residents",
+      "options": [
+        {
+          "t": "results",
+          "ok": true,
+          "note": "Results là thứ toàn cụm đang gọi tên."
+        },
+        {
+          "t": "survey",
+          "note": "Survey là trung tâm ở tầng bổ nghĩa bên trong.",
+          "tag": "noun-phrase-head"
+        },
+        {
+          "t": "residents",
+          "note": "Residents ở tầng sâu hơn, không phải trung tâm toàn cụm.",
+          "tag": "noun-phrase-head"
+        }
+      ],
+      "explain": "Bóc từng tầng: results → of the survey → of local residents."
+    },
+    {
+      "id": "complex-noun-phrases-2",
+      "level": "B2",
+      "use": "practice",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Dùng dạng đúng của be ở hiện tại.",
+      "stem": "The report on local parks {1} ready.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "is"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Report số ít là trung tâm; parks không quyết định động từ chính."
+    },
+    {
+      "id": "complex-noun-phrases-3",
+      "level": "B2",
+      "use": "practice",
+      "type": "match",
+      "skill": "recognition",
+      "prompt": "Ghép phần sau danh từ với loại cấu trúc.",
+      "pairs": [
+        {
+          "a": "on air quality",
+          "b": "cụm giới từ"
+        },
+        {
+          "a": "that the council published",
+          "b": "mệnh đề quan hệ có động từ hữu hạn"
+        },
+        {
+          "a": "published last week",
+          "b": "cụm phân từ bị động"
+        },
+        {
+          "a": "to reduce waste",
+          "b": "cụm nguyên mẫu"
+        }
+      ],
+      "explain": "Những hình thức khác nhau đều có thể bổ nghĩa sau danh từ trong các cụm đã học."
+    },
+    {
+      "id": "complex-noun-phrases-4",
+      "level": "B2",
+      "use": "practice",
+      "type": "transform",
+      "skill": "production",
+      "prompt": "Rút gọn mệnh đề quan hệ bị động theo hướng dẫn.",
+      "source": "the report that was published yesterday",
+      "instruction": "Bỏ that was, giữ phần phân từ và thời gian.",
+      "accept": [
+        "the report published yesterday"
+      ],
+      "model": "the report published yesterday",
+      "explain": "Published yesterday bổ nghĩa cho report và giữ ý báo cáo được xuất bản."
+    },
+    {
+      "id": "complex-noun-phrases-5",
+      "level": "B2",
+      "use": "practice",
+      "type": "error",
+      "skill": "form",
+      "prompt": "Tìm phần sai về hòa hợp.",
+      "segments": [
+        {
+          "t": "The proposal for two new libraries "
+        },
+        {
+          "t": "are",
+          "bad": true,
+          "fix": [
+            "is"
+          ],
+          "note": "Proposal là trung tâm số ít; libraries nằm trong phần bổ nghĩa.",
+          "tag": "noun-form"
+        },
+        {
+          "t": " under review."
+        }
+      ],
+      "explain": "Proposal là trung tâm số ít; libraries nằm trong phần bổ nghĩa."
+    },
+    {
+      "id": "complex-noun-phrases-6",
+      "level": "B2",
+      "use": "practice",
+      "type": "choice",
+      "skill": "meaning",
+      "prompt": "Chọn cách viết làm rõ người đi xe đạp đội mũ.",
+      "stem": "Một bức ảnh chụp một người đi xe đạp đang đội mũ đỏ",
+      "options": [
+        {
+          "t": "a photo of a cyclist who is wearing a red helmet",
+          "ok": true,
+          "note": "Who xác định người đi xe đạp là người đội mũ."
+        },
+        {
+          "t": "a photo of a cyclist who are wearing a red helmet",
+          "note": "Cyclist số ít cần is.",
+          "tag": "agreement-relative"
+        },
+        {
+          "t": "a photo of a cyclist wearing are a red helmet",
+          "note": "Are không đứng sau wearing theo cấu trúc này.",
+          "tag": "relative-reduction"
+        }
+      ],
+      "explain": "Who is wearing gắn việc đội mũ với cyclist; chủ thể số ít cần is. Ngữ cảnh thông thường cũng làm rõ người đội mũ trong a photo of a cyclist with a red helmet, nên không phải mọi chuỗi giới từ đều có hai cách hiểu hợp lý."
+    },
+    {
+      "id": "complex-noun-phrases-7",
+      "level": "B2",
+      "use": "practice",
+      "type": "classify",
+      "skill": "recognition",
+      "prompt": "Xếp phần bổ nghĩa theo vị trí so với trung tâm report.",
+      "cats": [
+        "Bổ nghĩa trước",
+        "Bổ nghĩa sau"
+      ],
+      "items": [
+        {
+          "t": "detailed trong a detailed report",
+          "cat": "Bổ nghĩa trước"
+        },
+        {
+          "t": "on energy use trong a report on energy use",
+          "cat": "Bổ nghĩa sau"
+        },
+        {
+          "t": "recent trong a recent report",
+          "cat": "Bổ nghĩa trước"
+        },
+        {
+          "t": "published in May trong a report published in May",
+          "cat": "Bổ nghĩa sau"
+        }
+      ],
+      "explain": "Vị trí được xét quanh trung tâm report, không quanh từ cuối toàn cụm."
+    },
+    {
+      "id": "complex-noun-phrases-8",
+      "level": "B2",
+      "use": "practice",
+      "type": "open",
+      "skill": "production",
+      "prompt": "Tự viết rồi đối chiếu với mẫu và bảng kiểm.",
+      "task": "Viết một câu có chủ ngữ là report hoặc reports, thêm một cụm giới từ và một thông tin xác định nữa.",
+      "model": [
+        "The report on water use published last month is available online."
+      ],
+      "checklist": [
+        "Tìm được trung tâm chủ ngữ.",
+        "Động từ chính hòa hợp với trung tâm.",
+        "Các phần bổ nghĩa không gây hiểu nhầm ai làm gì."
+      ],
+      "explain": "Mẫu không phải đáp án duy nhất; ưu tiên quan hệ rõ hơn độ dài."
+    },
+    {
+      "id": "complex-noun-phrases-9",
+      "level": "B2",
+      "use": "check",
+      "type": "choice",
+      "skill": "meaning",
+      "prompt": "Chọn động từ chính của câu.",
+      "stem": "The report that the editors requested is ready.",
+      "options": [
+        {
+          "t": "is",
+          "ok": true,
+          "note": "Is là động từ hữu hạn của mệnh đề chính; toàn bộ vị ngữ chính là is ready."
+        },
+        {
+          "t": "requested",
+          "note": "Requested nằm trong mệnh đề quan hệ.",
+          "tag": "main-embedded-verb"
+        },
+        {
+          "t": "report",
+          "note": "Report là danh từ trung tâm.",
+          "tag": "word-function"
+        }
+      ],
+      "explain": "Mệnh đề that the editors requested nằm bên trong cụm chủ ngữ."
+    },
+    {
+      "id": "complex-noun-phrases-10",
+      "level": "B2",
+      "use": "practice",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Dùng dạng đúng của be ở hiện tại.",
+      "stem": "The reports on public transport {1} ready.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "are"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Reports là trung tâm số nhiều; transport không đổi điều đó."
+    },
+    {
+      "id": "complex-noun-phrases-11",
+      "level": "B2",
+      "use": "check",
+      "type": "choice",
+      "skill": "meaning",
+      "prompt": "Chọn phát biểu đúng về dấu phẩy.",
+      "stem": "the volunteers who arrived early",
+      "options": [
+        {
+          "t": "Mệnh đề thường giúp chọn những tình nguyện viên đến sớm.",
+          "ok": true,
+          "note": "Không có dấu phẩy, thông tin thường có tính xác định nhóm."
+        },
+        {
+          "t": "Dấu phẩy không bao giờ ảnh hưởng nghĩa của cụm.",
+          "note": "Dấu phẩy có thể thay đổi cách xác định đối tượng.",
+          "tag": "relative-restriction"
+        },
+        {
+          "t": "Who luôn phải bỏ khi có danh từ số nhiều.",
+          "note": "Who vẫn dùng với người số nhiều.",
+          "tag": "relative-pronoun"
+        }
+      ],
+      "explain": "So với mệnh đề bổ sung có dấu phẩy, mệnh đề này thường giới hạn nhóm được nói đến."
+    },
+    {
+      "id": "complex-noun-phrases-12",
+      "level": "B2",
+      "use": "check",
+      "type": "error",
+      "skill": "form",
+      "prompt": "Tìm phần sai về trật tự trong cụm.",
+      "segments": [
+        {
+          "t": "Please email "
+        },
+        {
+          "t": "detailed the report",
+          "bad": true,
+          "fix": [
+            "the detailed report"
+          ],
+          "note": "Từ hạn định the đứng trước tính từ detailed và trung tâm report.",
+          "tag": "noun-form"
+        },
+        {
+          "t": " before lunch."
+        }
+      ],
+      "explain": "Từ hạn định the đứng trước tính từ detailed và trung tâm report."
+    },
+    {
+      "id": "complex-noun-phrases-13",
+      "level": "B2",
+      "use": "check",
+      "type": "transform",
+      "skill": "production",
+      "prompt": "Ghép thành một câu bắt đầu bằng The council approved. Dùng một cụm danh từ có plan làm trung tâm và phần bổ nghĩa nêu rõ người đã chuẩn bị kế hoạch.",
+      "source": "The council approved a plan. Local residents had prepared the plan.",
+      "instruction": "Giữ hội đồng là bên phê duyệt và cư dân địa phương là bên chuẩn bị. Có thể dùng mệnh đề quan hệ hoặc cụm phân từ phù hợp.",
+      "model": "The council approved the plan that local residents had prepared.",
+      "accept": [
+        "The council approved the plan that local residents had prepared.",
+        "The council approved the plan which local residents had prepared.",
+        "The council approved the plan local residents had prepared.",
+        "The council approved the plan that had been prepared by local residents.",
+        "The council approved the plan which had been prepared by local residents.",
+        "The council approved the plan prepared by local residents."
+      ],
+      "known": [
+        {
+          "t": "The residents approved the plan that the council had prepared.",
+          "verdict": "wrong",
+          "note": "Câu đúng ngữ pháp nhưng đổi bên phê duyệt và bên chuẩn bị, nên không giữ nghĩa của hai câu nguồn.",
+          "tag": "noun-phrase-roles"
+        }
+      ],
+      "explain": "The plan là trung tâm cụm tân ngữ; phần bổ nghĩa xác định kế hoạch nào và giữ local residents là người chuẩn bị. Trong mệnh đề quan hệ, plan là tân ngữ nên that/which có thể lược bỏ. Prepared by local residents cũng bổ nghĩa cho plan trong ngữ cảnh đã cho."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Đã đọc phần giải thích Premodifiers và Postmodifiers trong Noun phrases ngày 2026-11-01; phạm vi đối chiếu ghi tại docs/grammar/ADVANCED-REVIEW.md."
+    },
+    {
+      "ref": "cgt",
+      "note": "Tham khảo thêm về cấu trúc cụm danh từ, bổ nghĩa trước và sau, hòa hợp với trung tâm; chưa đối chiếu trực tiếp trang nguồn trong lượt soạn này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham khảo thêm cùng chủ điểm; không xác nhận đã kiểm tra mục hoặc trang sách."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

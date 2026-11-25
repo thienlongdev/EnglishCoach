@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s115-half-grown",
+  "title": "Lá non cao bằng ai?",
+  "summary": "Sổ trồng cây ghi mầm cao bằng “him”. Trên trạm có Sao cao mét tám và một tượng phi công cao năm xăng-ti-mét.",
+  "level": "B1",
+  "topics": [
+    "as-as-comparisons"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Uyên",
+      "role": "Người ghi nhật ký"
+    },
+    {
+      "id": "b",
+      "name": "Sao",
+      "role": "Kỹ thuật viên"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Uyên thấy ảnh chụp cây và tượng đặt sát nhau. Đỉnh hai vật ngang đúng một vạch trên giấy kẻ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It's grown, but it hasn't reached your chin!",
+          "vi": "Nó lớn rồi, nhưng chưa cao tới cằm anh đâu!"
+        },
+        {
+          "who": "b",
+          "en": "Then tell the children who the comparison is with.",
+          "vi": "Vậy bảo bọn trẻ xem mình đang so với ai đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Ghi lại so sánh bằng để trẻ biết chính xác mốc đo.",
+        "options": [
+          {
+            "ok": true,
+            "t": "The shoot is as tall as the little pilot.",
+            "note": "As tall as nêu hai vật bằng nhau theo chiều cao. Little pilot xác định bức tượng thay vì Sao.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "The shoot is taller than the little pilot.",
+            "note": "Taller than nói mầm đã vượt tượng, khác hai đỉnh đang ngang nhau trên vạch đo.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Trẻ đặt thêm một phi công giấy cao hơn một vạch để đợi lần đo tới. Cây có cả một hàng nhân chứng nhỏ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "He finally has a tree for shade.",
+          "vi": "Cuối cùng anh chàng có cây che bóng rồi."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Khi lá đầu tiên che mũ tượng, Uyên gửi về ảnh chú phi công đang đứng dưới cây thật của mình.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Sao hạ mắt xuống ngang kệ cho camera khỏi nhìn xiên. Hai đỉnh bằng nhau hiện rõ. Họ giữ lại hai ảnh để chỉ trẻ cách đặt mắt đo.",
+      "say": [
+        {
+          "who": "a",
+          "en": "This time the extra millimetre is real.",
+          "vi": "Lần này một milimét thêm là thật."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Lần sau chính đứa trẻ nhỏ nhất nhắc người lớn hạ máy, và đo được mầm đã vượt tượng thật.",
+      "end": true
+    }
+  ]
+}

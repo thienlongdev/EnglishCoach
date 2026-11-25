@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s160-sunday-after-sunday",
+  "title": "Chủ nhật của tuần nào?",
+  "summary": "Nina tìm thấy một bức thư hẹn gặp vào Chủ nhật tới. Hôm nay là thứ Bảy, nhưng chiếc tem mang dấu bưu điện của mười lăm năm trước.",
+  "level": "B2",
+  "topics": [
+    "backshift",
+    "future-in-the-past"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Nina",
+      "role": "Người tìm thư"
+    },
+    {
+      "id": "b",
+      "name": "Quang",
+      "role": "Anh họ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Trong thư còn vé tàu mua hôm 4 tháng 5 năm ấy. Lời hẹn viết từ thứ Hai: I'll be at the lake this Sunday. Nina muốn đối chiếu với cuốn sổ có ảnh gia đình chụp đúng ngày 10 tháng 5 của năm ấy.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The ink looks new, but the promise is fifteen years old.",
+          "vi": "Mực trông còn mới, nhưng lời hẹn đã mười lăm năm rồi."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "If you tell the children about it now, which Sunday will they hear?",
+          "vi": "Nếu bây giờ em kể cho lũ trẻ, chúng sẽ nghĩ đến Chủ nhật nào?"
+        }
+      ],
+      "choice": {
+        "prompt": "Nina cần thuật lại đúng Chủ nhật đặt sau ngày viết thư trong quá khứ.",
+        "options": [
+          {
+            "t": "She wrote that she'll be at the lake this Sunday.",
+            "note": "Không lùi thì đôi khi phù hợp với kế hoạch còn hiệu lực. Nhưng this Sunday khi kể hôm nay dễ chỉ ngày mai, trong khi thư và vé đều thuộc mười lăm năm trước.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "She wrote that she would be at the lake the following Sunday.",
+            "note": "Would be đặt buổi gặp sau lúc viết. The following Sunday neo ngày vào thứ Hai trong câu chuyện, tránh kéo nó về tuần hiện tại.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Quang lật album tới ảnh ở hồ ngày 10 tháng 5. Người viết thư đang ở sau máy ảnh nên chỉ thấy bóng của bà trên bến.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Look at that long shadow with the hat.",
+          "vi": "Nhìn cái bóng dài có đội mũ kia kìa."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Bọn trẻ chạy đi lấy áo bơi. Nina mở album và đọc rõ năm trên vé. Quang chỉ cái bóng đội mũ bên bờ hồ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That's the Sunday she meant.",
+          "vi": "Đó mới là Chủ nhật dì định nói."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Bức ảnh được treo cạnh lá thư. Chủ nhật kế tiếp, cả nhà trở lại bến và chụp thêm một tấm có cả bóng của người cầm máy. Nina viết ngày tháng đầy đủ lên mặt sau.",
+      "say": [
+        {
+          "who": "a",
+          "en": "This Sunday gets its own date.",
+          "vi": "Chủ nhật lần này có ngày tháng riêng của nó."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

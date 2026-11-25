@@ -1,0 +1,134 @@
+{
+  "id": "campus-repair-cafe",
+  "title": "Một buổi ở quán sửa đồ trong trường",
+  "summary": "Bạn là Dương, tình nguyện viên có kinh nghiệm thiết kế và kỹ thuật. Chọn vai trò cho buổi hôm nay, rồi chuẩn bị biển hướng dẫn hoặc bàn dụng cụ. Mỗi lựa chọn đúng làm đổi nhiệm vụ thực tế; cả bốn nhánh đều có đoạn kết trọn vẹn.",
+  "level": "A2",
+  "topics": ["a-and-an", "subject-verb-agreement-basics"],
+  "scene": "university",
+  "cast": [
+    { "id": "duong", "name": "Dương", "role": "Tình nguyện viên; bạn chọn lời của Dương" },
+    { "id": "rosa", "name": "Rosa", "role": "Điều phối buổi sửa đồ miễn phí" }
+  ],
+  "beats": [
+    {
+      "id": "welcome",
+      "narrate": "Dương vừa tới quán sửa đồ trong khuôn viên trường. Dương làm kỹ thuật và cũng nhận việc thiết kế, nên có thể hỗ trợ một trong hai bàn hôm nay. Rosa hỏi để chia việc.",
+      "say": [{ "who": "rosa", "en": "Welcome! Tell me about your work.", "vi": "Chào bạn! Kể tôi nghe công việc của bạn nhé." }],
+      "choice": {
+        "prompt": "Giới thiệu vai trò bạn muốn dùng hôm nay. Hai nghề đều phù hợp với kinh nghiệm của Dương.",
+        "options": [
+          { "t": "I'm a designer.", "ok": true, "note": "Designer bắt đầu bằng phụ âm /d/ nên dùng a. Bạn chọn hỗ trợ bàn biển hướng dẫn.", "next": "signs", "consequence": "Rosa đưa bạn xem các biển chỉ đường." },
+          { "t": "I'm an engineer.", "ok": true, "note": "Engineer bắt đầu bằng nguyên âm nên dùng an. Đây là một vai trò khác, cũng đúng; bạn chọn bàn kiểm tra thiết bị.", "next": "equipment", "consequence": "Rosa mời bạn chuẩn bị bàn dụng cụ." },
+          { "t": "I'm an designer.", "ok": false, "note": "Designer bắt đầu bằng phụ âm. Sửa thành I'm a designer. Đây là lỗi chọn mạo từ không xác định (indefinite article), không phải lý do từ chối vai trò thiết kế.", "next": "repair-role", "consequence": "Dương nói lại lời giới thiệu rồi nhận việc ở bàn biển hướng dẫn." }
+        ]
+      },
+      "explain": [{ "type": "p", "vi": "Khi nói nghề nghiệp theo cách này, cả designer và engineer đều là danh từ đếm được số ít và cần a hoặc an. Âm đầu của từ ngay sau mạo từ quyết định dạng nào, không phải độ quan trọng của nghề." }]
+    },
+    {
+      "id": "repair-role",
+      "say": [
+        { "who": "duong", "en": "I'm a designer. I make signs for community events.", "vi": "Tôi làm thiết kế. Tôi làm biển hướng dẫn cho các sự kiện cộng đồng." },
+        { "who": "rosa", "en": "Great. Our signs need a fresh look.", "vi": "Tốt quá. Các biển hướng dẫn của chúng tôi cần diện mạo mới." }
+      ],
+      "next": "signs"
+    },
+    {
+      "id": "signs",
+      "narrate": "Có một biển lớn ở cổng và hai biển nhỏ bên trong. Bạn có thể nhận sửa riêng biển cổng hoặc cả hai biển nhỏ; Rosa đều sắp xếp được.",
+      "say": [{ "who": "rosa", "en": "Which signs do you want to work on?", "vi": "Bạn muốn sửa những biển nào?" }],
+      "choice": {
+        "prompt": "Chọn phần việc và giữ đúng số lượng trong câu. Hai câu đúng giao hai phần việc khác nhau.",
+        "options": [
+          { "t": "The sign by the gates needs a new title.", "ok": true, "note": "Danh từ chính của chủ ngữ là sign, số ít; động từ là needs. Gates ở trong cụm by the gates không quyết định dạng động từ. Bạn nhận một biển cổng.", "next": "gate-desk", "consequence": "Rosa mang biển cổng và bút sơn tới." },
+          { "t": "The signs by the door need new titles.", "ok": true, "note": "Signs là số nhiều nên dùng need. Door là số ít nhưng chỉ nằm trong cụm chỉ vị trí. Bạn nhận hai biển trong nhà.", "next": "indoor-desk", "consequence": "Rosa đặt hai biển nhỏ lên bàn." },
+          { "t": "The signs by the door needs new titles.", "ok": false, "note": "Giữ chủ ngữ signs số nhiều thì sửa needs thành need. Không để danh từ door đứng gần động từ làm bạn quên danh từ chính.", "next": "repair-signs", "consequence": "Dương xác nhận nhận hai biển rồi nói lại câu." }
+        ]
+      },
+      "explain": [{ "type": "p", "vi": "Hòa hợp chủ ngữ với động từ (subject–verb agreement) đi theo danh từ chính sign hoặc signs trong các câu này. Đổi số lượng chủ ngữ làm động từ đổi; đổi danh từ trong cụm chỉ vị trí không tự làm động từ đổi." }]
+    },
+    {
+      "id": "equipment",
+      "narrate": "Một góc bàn hơi tối, còn ổ cắm nằm xa chiếc đèn hiện có. Rosa có thể mang thêm đèn hoặc tìm một bộ chuyển đổi phù hợp. Bạn chọn cách chuẩn bị trước.",
+      "say": [{ "who": "rosa", "en": "What do we need for this table?", "vi": "Bàn này cần thêm gì?" }],
+      "choice": {
+        "prompt": "Chọn một đề nghị. Hai món đồ khác nhau đều có thể giúp chuẩn bị bàn.",
+        "options": [
+          { "t": "We need an extra lamp.", "ok": true, "note": "Extra đứng ngay sau mạo từ và bắt đầu bằng nguyên âm nên dùng an, dù lamp bắt đầu bằng phụ âm. Chủ ngữ we đi với need. Bạn chọn chiếu sáng bằng đèn bổ sung.", "next": "lamp-desk", "consequence": "Rosa mang tới một chiếc đèn dùng pin." },
+          { "t": "We need a useful adapter.", "ok": true, "note": "Useful đứng ngay sau mạo từ và bắt đầu bằng phụ âm /j/ nên dùng a. Không nhìn qua useful để chọn theo âm đầu của adapter. Bạn chọn dùng bộ chuyển đổi cho đèn hiện có.", "next": "adapter-desk", "consequence": "Rosa mang hộp bộ chuyển đổi để bạn kiểm tra loại phù hợp." },
+          { "t": "We need an useful adapter.", "ok": false, "note": "Âm đầu của useful là /j/, một phụ âm. Sửa thành We need a useful adapter. Không cần đổi need vì we đã đi đúng với động từ dạng gốc.", "next": "repair-adapter", "consequence": "Dương nói lại đề nghị, rồi Rosa mang hộp bộ chuyển đổi tới." }
+        ]
+      }
+    },
+    {
+      "id": "repair-signs",
+      "say": [{ "who": "duong", "en": "The signs by the door need new titles. I'll work on both.", "vi": "Các biển cạnh cửa cần tiêu đề mới. Tôi sẽ sửa cả hai." }],
+      "next": "indoor-desk"
+    },
+    {
+      "id": "repair-adapter",
+      "say": [{ "who": "duong", "en": "We need a useful adapter. This lamp works, but the socket is too far away.", "vi": "Chúng ta cần một bộ chuyển đổi dùng được cho việc này. Đèn vẫn hoạt động, nhưng ổ cắm ở xa quá." }],
+      "next": "adapter-desk"
+    },
+    {
+      "id": "gate-desk",
+      "say": [
+        { "who": "duong", "en": "This title helps visitors find the entrance.", "vi": "Tiêu đề này giúp khách tìm lối vào." },
+        { "who": "rosa", "en": "Yes. The arrow below the words points to the right place.", "vi": "Đúng rồi. Mũi tên dưới dòng chữ chỉ đúng chỗ." }
+      ],
+      "narrate": "Dương viết lại tiêu đề lớn và kiểm tra biển từ phía ngoài cổng.",
+      "next": "gate-end"
+    },
+    {
+      "id": "gate-end",
+      "say": [{ "who": "rosa", "en": "The sign looks clear from here. Thanks!", "vi": "Từ đây nhìn biển rõ rồi. Cảm ơn bạn!" }],
+      "narrate": "Khách đầu tiên tìm đúng lối vào. Bạn hoàn thành một biển lớn; các động từ needs, helps và looks đi cùng chủ ngữ ngôi thứ ba số ít trong các câu này.",
+      "end": true
+    },
+    {
+      "id": "indoor-desk",
+      "say": [
+        { "who": "duong", "en": "These titles show visitors where to wait.", "vi": "Các tiêu đề này chỉ cho khách chỗ chờ." },
+        { "who": "rosa", "en": "The signs look clear. The volunteers know where to put them.", "vi": "Các biển trông rõ rồi. Tình nguyện viên biết chỗ đặt chúng." }
+      ],
+      "narrate": "Hai biển nhỏ được đặt ở khu nhận đồ và khu chờ.",
+      "next": "indoor-end"
+    },
+    {
+      "id": "indoor-end",
+      "say": [{ "who": "duong", "en": "Both signs are ready. We have a clear waiting area now.", "vi": "Cả hai biển xong rồi. Giờ khu chờ đã rõ ràng." }],
+      "narrate": "Khách có thể tự tìm khu chờ. Bạn hoàn thành hai biển nhỏ; signs là số nhiều nên đi với need, look và are ở các câu tương ứng.",
+      "end": true
+    },
+    {
+      "id": "lamp-desk",
+      "say": [
+        { "who": "rosa", "en": "This lamp has fresh batteries.", "vi": "Đèn này có pin mới." },
+        { "who": "duong", "en": "Good. It lights up the whole table.", "vi": "Tốt quá. Nó chiếu sáng cả bàn." }
+      ],
+      "narrate": "Dương đặt đèn ở góc bàn và kiểm tra vùng sáng.",
+      "next": "lamp-end"
+    },
+    {
+      "id": "lamp-end",
+      "say": [{ "who": "duong", "en": "The table is ready. Every visitor has a bright place to work.", "vi": "Bàn sẵn sàng rồi. Mỗi vị khách có một chỗ làm đủ sáng." }],
+      "narrate": "Nhánh đèn bổ sung kết thúc với bàn làm việc đủ sáng. An extra lamp chọn an theo extra; this lamp và every visitor đều đi với has khi nói hiện tại trong các câu này.",
+      "end": true
+    },
+    {
+      "id": "adapter-desk",
+      "say": [
+        { "who": "duong", "en": "This adapter fits the lamp. The other adapters stay in the box.", "vi": "Bộ chuyển đổi này vừa với đèn. Các bộ còn lại để trong hộp." },
+        { "who": "rosa", "en": "Good. The cable doesn't cross the walkway.", "vi": "Tốt rồi. Dây điện không vắt ngang lối đi." }
+      ],
+      "narrate": "Dương kiểm tra bộ chuyển đổi và xếp gọn dây trước khi khách tới.",
+      "next": "adapter-end"
+    },
+    {
+      "id": "adapter-end",
+      "say": [{ "who": "duong", "en": "The lamp works now. We have a useful setup for the afternoon.", "vi": "Giờ đèn hoạt động rồi. Chúng ta có một cách bố trí hữu ích cho buổi chiều." }],
+      "narrate": "Bạn dùng được chiếc đèn sẵn có và giữ lối đi thông thoáng. Nhánh này hoàn tất bằng bộ chuyển đổi, khác với nhánh mang thêm đèn.",
+      "explain": [{ "type": "p", "vi": "A useful adapter chọn a theo âm /j/ của useful. This adapter fits là số ít; the other adapters stay là số nhiều. Trong doesn't cross, does đã mang dạng ngôi thứ ba nên cross ở dạng gốc." }],
+      "end": true
+    }
+  ]
+}

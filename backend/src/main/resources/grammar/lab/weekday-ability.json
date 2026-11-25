@@ -1,0 +1,41 @@
+{
+  "id": "weekday-ability",
+  "title": "Một đặc điểm hiện tại giải thích việc đã qua",
+  "summary": "Minh thường bị say tàu. Đổi mốc cuộc đi biển từ hôm qua sang ngày mai nhưng giữ nguyên đặc điểm của Minh.",
+  "level": "B2",
+  "topics": [
+    "mixed-conditionals",
+    "unreal-present-conditionals"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Mốc chuyến đi",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Đã qua"
+        },
+        {
+          "id": "v2",
+          "label": "Sắp tới"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "If Minh were a better sailor, he would have joined us yesterday.",
+      "vi": "Nếu Minh đi biển giỏi hơn, hôm qua anh ấy đã đi cùng chúng tôi.",
+      "note": "Were nói về đặc điểm tương đối ổn định, would have joined nói về một cơ hội cũ. / A lasting trait explains a past non-event.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "If Minh were a better sailor, he would join us tomorrow.",
+      "vi": "Nếu Minh đi biển giỏi hơn, ngày mai anh ấy sẽ đi cùng chúng tôi.",
+      "note": "Would join chuyển hệ quả sang ngày mai. Không cần thay were bằng thì tương lai. / The same imagined trait can support a future result.",
+      "verdict": "ok"
+    }
+  }
+}

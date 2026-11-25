@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- [ASSET_REQUIRED] Production-grade vector artwork (Hand-crafted vector finalization) -->
+  <!-- Series: cefr_proficiency | Tier: A | Slug: cefr_b2_scholar | Standard Lineage: University Silver & Academic Laurel -->
+  <!-- Production Vector Quality: PRODUCTION_READY_VECTOR | External Studio/Rive Hand-off: ASSET_REQUIRED -->
+  <!-- Center: (50, 50), Avatar Aperture: r=40 (80px boundary) -->
+  <defs>
+    <linearGradient id="b2SilverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#cbd5e1"/>
+      <stop offset="75%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+
+    <linearGradient id="b2SlateBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+
+    <filter id="b2DropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#0f172a" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Core Academic Silver Ring -->
+  <g class="b2-core-frame" filter="url(#b2DropShadow)">
+    <circle cx="50" cy="50" r="44.5" stroke="#1e293b" stroke-width="4"/>
+    <circle cx="50" cy="50" r="43.8" stroke="url(#b2SilverGrad)" stroke-width="2.8"/>
+    <circle cx="50" cy="50" r="41" stroke="url(#b2SlateBlueGrad)" stroke-width="1.2"/>
+  </g>
+
+  <!-- Classical Academic Laurel Wreath (Lower Rim) -->
+  <g class="b2-laurel-leaves" fill="url(#b2SilverGrad)" stroke="#475569" stroke-width="0.4" filter="url(#b2DropShadow)">
+    <!-- Left Leaves -->
+    <path d="M46 90 C42 89, 38 86, 36 82 C39 83, 43 85, 45 88 Z"/>
+    <path d="M40 85 C36 84, 32 80, 31 75 C34 77, 38 80, 39 83 Z"/>
+    <path d="M34 79 C30 77, 27 73, 26 68 C29 70, 32 74, 33 77 Z"/>
+    <!-- Right Leaves -->
+    <path d="M54 90 C58 89, 62 86, 64 82 C61 83, 57 85, 55 88 Z"/>
+    <path d="M60 85 C64 84, 68 80, 69 75 C66 77, 62 80, 61 83 Z"/>
+    <path d="M66 79 C70 77, 73 73, 74 68 C71 70, 68 74, 67 77 Z"/>
+    <!-- Central Laurel Binding Ribbon -->
+    <circle cx="50" cy="91" r="2.5" fill="url(#b2SlateBlueGrad)" stroke="#ffffff" stroke-width="0.5"/>
+  </g>
+
+  <!-- Academic Crest at Top Apex (Scholar's Chevron & Quill) -->
+  <g class="b2-crest-apex" filter="url(#b2DropShadow)">
+    <path d="M50 4 L55 12 L50 15 L45 12 Z" fill="url(#b2SilverGrad)" stroke="#334155" stroke-width="0.6"/>
+    <polygon points="50,6 53,11 50,13 47,11" fill="url(#b2SlateBlueGrad)"/>
+    <circle cx="50" cy="10" r="1" fill="#ffffff"/>
+  </g>
+</svg>

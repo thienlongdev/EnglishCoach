@@ -1,0 +1,40 @@
+{
+  "id": "travel-means",
+  "title": "Đi bằng xe buýt hay ở trên chiếc xe đó?",
+  "summary": "Trên hành trình, bạn nói phương tiện thường dùng hoặc vị trí hiện tại. Đổi kiểu thông tin và tìm khi nào cần the.",
+  "level": "B1",
+  "topics": [
+    "means-agent-purpose"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Góc nhìn",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Phương thức"
+        },
+        {
+          "id": "v2",
+          "label": "Vị trí hiện tại"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I travel by bus.",
+      "vi": "Tôi đi lại bằng xe buýt.",
+      "note": "By bus nêu phương tiện như một cách đi, không gắn với chiếc xe cụ thể. / By bus identifies a means of travel.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "I'm on the bus.",
+      "vi": "Tôi đang ở trên xe buýt.",
+      "note": "On the bus chỉ vị trí trên chiếc xe có thể xác định từ ngữ cảnh. / On the bus locates the speaker.",
+      "verdict": "ok"
+    }
+  }
+}

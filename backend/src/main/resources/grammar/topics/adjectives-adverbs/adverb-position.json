@@ -1,0 +1,519 @@
+{
+  "schema": 1,
+  "slug": "adverb-position",
+  "version": 1,
+  "domain": "adjectives-adverbs",
+  "order": 110,
+  "kind": "grammar",
+  "title": {
+    "vi": "Vị trí trạng từ trong câu",
+    "en": "Adverb position"
+  },
+  "level": "B1",
+  "levelBasis": "editorial",
+  "prerequisites": [
+    "adverbs-of-frequency"
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "subtitle": {
+    "vi": "Đặt trạng từ theo chức năng, trọng tâm và nhịp câu",
+    "en": "Position, scope and natural sentence rhythm"
+  },
+  "aliases": [
+    "vị trí trạng từ",
+    "mid position end position",
+    "often carefully yesterday",
+    "has already finished"
+  ],
+  "objectives": [
+    "Dùng vị trí giữa câu cho trạng từ tần suất thông dụng.",
+    "Đặt trạng từ cách thức, nơi chốn và thời gian ở vị trí tự nhiên.",
+    "Nhận ra nhiều trật tự hợp lệ và tránh tách động từ khỏi tân ngữ theo mẫu không tự nhiên."
+  ],
+  "related": [
+    {
+      "slug": "adverbs-of-frequency",
+      "rel": "more"
+    },
+    {
+      "slug": "focus-adverbs",
+      "rel": "more"
+    }
+  ],
+  "quick": {
+    "what": "Trạng từ có thể đứng đầu, giữa hoặc cuối câu. Vị trí tùy loại trạng từ, điều nó bổ nghĩa và thông tin người nói muốn nhấn; không có một chỗ duy nhất cho mọi trạng từ.",
+    "when": "Dùng để nói việc thường xảy ra, cách làm, nơi và lúc xảy ra mà câu vẫn dễ hiểu.",
+    "examples": [
+      {
+        "en": "[S|We] [ADV|usually] [V|check] [O|the figures].",
+        "vi": "Chúng tôi thường kiểm tra số liệu."
+      },
+      {
+        "en": "[S|We] [V|checked] [O|the figures] [ADV|carefully] [T|yesterday].",
+        "vi": "Hôm qua chúng tôi kiểm tra số liệu cẩn thận."
+      }
+    ],
+    "remember": "Dùng mẫu quen trước; khi đổi vị trí, kiểm tra phạm vi nghĩa và độ tự nhiên."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Vị trí giữa thường nằm trước động từ chính, sau be khi be là động từ chính, hoặc sau trợ động từ đầu tiên. Đây là khung hữu ích cho usually, often, already và nhiều trạng từ khác, không phải lệnh cấm mọi vị trí khác."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Mẫu",
+        "Ví dụ",
+        "Điểm cần thấy"
+      ],
+      "rows": [
+        [
+          "Trước động từ chính",
+          "We usually arrive early.",
+          "Usually trước arrive."
+        ],
+        [
+          "Sau be chính",
+          "The office is usually quiet.",
+          "Usually sau is."
+        ],
+        [
+          "Sau trợ động từ đầu",
+          "They have already sent it.",
+          "Already sau have."
+        ],
+        [
+          "Cuối câu",
+          "She read the note carefully.",
+          "Cách thức sau tân ngữ."
+        ],
+        [
+          "Đầu câu",
+          "Yesterday, we tested the alarm.",
+          "Thời gian được đặt làm bối cảnh."
+        ]
+      ]
+    },
+    {
+      "type": "formula",
+      "parts": [
+        {
+          "t": "chủ ngữ",
+          "role": "S"
+        },
+        {
+          "t": "trợ động từ đầu",
+          "role": "AUX"
+        },
+        {
+          "t": "trạng từ giữa",
+          "role": "ADV"
+        },
+        {
+          "t": "phần động từ còn lại",
+          "role": "V"
+        }
+      ]
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|The account] [MOD|may] [ADV|already] [V|have been closed].",
+          "vi": "Tài khoản có thể đã được đóng rồi."
+        },
+        {
+          "en": "[S|She] [ADV|carefully] [V|checked] [O|the seal].",
+          "vi": "Cô ấy kiểm tra niêm phong cẩn thận."
+        },
+        {
+          "en": "[S|She] [V|checked] [O|the seal] [ADV|carefully].",
+          "vi": "Cô ấy kiểm tra niêm phong cẩn thận.",
+          "note": "Cả hai vị trí của carefully đều tự nhiên ở đây."
+        }
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "transform",
+        "steps": [
+          {
+            "label": "Thời gian cuối",
+            "sentence": "We tested the alarm yesterday."
+          },
+          {
+            "label": "Thời gian làm bối cảnh đầu",
+            "sentence": "Yesterday, we tested the alarm."
+          }
+        ]
+      },
+      "caption": "Đổi vị trí mà giữ nội dung thời gian",
+      "alt": "Yesterday có thể ở cuối hoặc đầu câu; đầu câu đặt bối cảnh sớm hơn. Không vì vị trí khác đáp án mẫu mà đánh dấu sai."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "She carefully opened the parcel.",
+            "vi": "Cô ấy cẩn thận mở bưu kiện."
+          },
+          "b": {
+            "en": "She opened the parcel carefully.",
+            "vi": "Cô ấy mở bưu kiện một cách cẩn thận."
+          },
+          "diff": "Cả hai mô tả cách mở. Không cần ép mọi trạng từ cách thức ra cuối; tránh cách chen opened carefully the parcel trong mẫu trung tính này."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Khi có nhiều cụm cuối câu, cách thức – nơi chốn – thời gian là thứ tự thường gặp: We worked quietly in the archive yesterday. Có thể đưa thời gian lên đầu; không phải mọi câu đều cần đủ ba phần."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Vị trí có thể đổi nghĩa, nhất là only, even và just. Bài này không xem mọi phép di chuyển là tương đương; bài focus-adverbs xử lý riêng phạm vi của chúng."
+    },
+    {
+      "type": "try",
+      "exercise": "adverb-position-1"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Tân ngữ dài có thể làm vị trí trạng từ thay đổi để câu dễ xử lý. Các động từ, kiểu trạng từ và văn phong cũng ảnh hưởng. Không dạy “trạng từ không bao giờ chen giữa động từ và tân ngữ” như luật không có ngoại lệ; thay vào đó học mẫu trung tính cho từng câu."
+    },
+    {
+      "type": "p",
+      "vi": "Always có thể xuất hiện đầu câu trong mệnh lệnh: Always check the date. Vì vậy quy tắc vị trí dựa trên câu trần thuật có chủ ngữ không áp nguyên xi cho mệnh lệnh."
+    },
+    {
+      "type": "p",
+      "vi": "Not thường theo trợ động từ; vị trí của trạng từ quanh not có thể ảnh hưởng phạm vi: not always nghĩa không phải lúc nào cũng vậy. Đừng sửa thành always not chỉ để tuân một bảng vị trí mà làm thay đổi ý định."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "ap-object",
+      "wrong": "She read carefully the short notice.",
+      "right": "She read the short notice carefully.",
+      "why": "Với tân ngữ ngắn và cách đọc trung tính ở đây, đặt carefully sau tân ngữ; cũng có thể She carefully read the short notice."
+    },
+    {
+      "id": "ap-aux",
+      "wrong": "They have sent already it.",
+      "right": "They have already sent it.",
+      "why": "Với tân ngữ đại từ ngắn it, không chen already vào giữa sent và it trong mẫu này; có thể đặt already sau have hoặc ở cuối câu."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Carefully có bắt buộc ở cuối không?",
+      "a": "Không. She carefully checked it và She checked it carefully đều tự nhiên."
+    },
+    {
+      "q": "Yesterday đầu câu có cần dấu phẩy không?",
+      "a": "Một trạng từ thời gian ngắn ở đầu có thể có hoặc không có dấu phẩy tùy nhịp và phong cách. Không nên kiểm tra như một lựa chọn ngữ pháp tuyệt đối."
+    },
+    {
+      "q": "Usually đứng ở đâu với be?",
+      "a": "Trong câu trần thuật trung tính, thường sau be: She is usually early. Có thể có vị trí khác vì nhấn mạnh."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "adverb-position-1",
+      "level": "B1",
+      "use": "practice",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn vị trí giữa thông thường với động từ chính.",
+      "stem": "Chọn câu trung tính về thói quen.",
+      "options": [
+        {
+          "t": "We usually check the seals.",
+          "ok": true,
+          "note": "Usually trước check là mẫu thường dùng."
+        },
+        {
+          "t": "We check usually the seals.",
+          "tag": "grammar-pattern",
+          "note": "Không phải vị trí trung tính mục tiêu với tân ngữ ngắn."
+        },
+        {
+          "t": "We usually the seals check.",
+          "tag": "grammar-pattern",
+          "note": "Sai trật tự động từ và tân ngữ trong câu này."
+        }
+      ],
+      "explain": "Mẫu mục tiêu là chủ ngữ + usually + động từ chính."
+    },
+    {
+      "id": "adverb-position-2",
+      "level": "B1",
+      "use": "practice",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Viết lại is quiet với usually ở vị trí giữa thông thường.",
+      "stem": "The reception area {1}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "is usually quiet"
+          ]
+        }
+      },
+      "explain": "Với be là động từ chính, usually thường đứng sau be."
+    },
+    {
+      "id": "adverb-position-3",
+      "level": "B1",
+      "use": "practice",
+      "type": "match",
+      "skill": "meaning",
+      "prompt": "Nối vị trí với ví dụ.",
+      "pairs": [
+        {
+          "a": "Đầu câu làm bối cảnh",
+          "b": "Yesterday, we inspected the roof."
+        },
+        {
+          "a": "Giữa, sau trợ động từ",
+          "b": "We have already inspected it."
+        },
+        {
+          "a": "Cuối, sau tân ngữ",
+          "b": "We inspected it carefully."
+        }
+      ],
+      "explain": "Vị trí liên quan chức năng và cấu trúc, không chỉ độ dài trạng từ."
+    },
+    {
+      "id": "adverb-position-4",
+      "level": "B1",
+      "use": "practice",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn nhận xét đúng.",
+      "stem": "She carefully checked the label. / She checked the label carefully.",
+      "options": [
+        {
+          "t": "Cả hai đều có thể tự nhiên với nghĩa kiểm tra cẩn thận.",
+          "ok": true,
+          "note": "Trạng từ cách thức có hơn một vị trí ở đây."
+        },
+        {
+          "t": "Câu đầu luôn sai vì carefully phải cuối.",
+          "tag": "grammar-pattern",
+          "note": "Đó là quy tắc quá cứng."
+        },
+        {
+          "t": "Câu sau không có tân ngữ.",
+          "tag": "grammar-pattern",
+          "note": "The label là tân ngữ."
+        }
+      ],
+      "explain": "Cần chấp nhận cả vị trí hợp lệ khi bài không yêu cầu một vị trí cụ thể."
+    },
+    {
+      "id": "adverb-position-5",
+      "level": "B1",
+      "use": "practice",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Ghép have, already, arrived theo vị trí giữa thông thường.",
+      "stem": "The delegates {1}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "have already arrived"
+          ]
+        }
+      },
+      "explain": "Already thường sau trợ động từ have trong mẫu này."
+    },
+    {
+      "id": "adverb-position-6",
+      "level": "B1",
+      "use": "practice",
+      "type": "classify",
+      "skill": "recognition",
+      "prompt": "Xếp trạng từ theo chức năng trong cụm.",
+      "cats": [
+        "Tần suất",
+        "Cách thức",
+        "Thời gian"
+      ],
+      "items": [
+        {
+          "t": "usually checks",
+          "cat": "Tần suất"
+        },
+        {
+          "t": "checks carefully",
+          "cat": "Cách thức"
+        },
+        {
+          "t": "checked yesterday",
+          "cat": "Thời gian"
+        }
+      ],
+      "explain": "Nhận diện chức năng giúp chọn vị trí thích hợp."
+    },
+    {
+      "id": "adverb-position-7",
+      "level": "B1",
+      "use": "practice",
+      "type": "transform",
+      "skill": "production",
+      "prompt": "Đưa thời gian lên đầu, giữ nội dung.",
+      "source": "We photographed the samples yesterday.",
+      "instruction": "Bắt đầu Yesterday.",
+      "accept": [
+        "Yesterday, we photographed the samples.",
+        "Yesterday we photographed the samples."
+      ],
+      "model": "Yesterday, we photographed the samples.",
+      "explain": "Cả có và không có dấu phẩy sau trạng từ đầu ngắn đều có thể dùng."
+    },
+    {
+      "id": "adverb-position-8",
+      "level": "B1",
+      "use": "practice",
+      "type": "open",
+      "skill": "production",
+      "prompt": "Viết rồi tự đối chiếu với bài mẫu.",
+      "task": "Viết ba câu về quy trình: một usually ở giữa, một trạng từ cách thức và một câu có thời gian đầu câu.",
+      "model": [
+        "We usually label the jars.",
+        "We check each label carefully.",
+        "This morning, we replaced the faded labels."
+      ],
+      "checklist": [
+        "Usually có vị trí tự nhiên không?",
+        "Trạng từ cách thức có bổ nghĩa đúng hành động không?",
+        "Đưa thời gian lên đầu có giữ nghĩa không?"
+      ],
+      "explain": "Có nhiều câu đúng; đối chiếu cấu trúc và điều muốn nhấn."
+    },
+    {
+      "id": "adverb-position-9",
+      "level": "B1",
+      "use": "check",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn câu với already sau trợ động từ đầu.",
+      "stem": "Tài liệu đã được gửi.",
+      "options": [
+        {
+          "t": "It has already been sent.",
+          "ok": true,
+          "note": "Already theo has, trợ động từ đầu."
+        },
+        {
+          "t": "It has been sent already.",
+          "tag": "adverb-position",
+          "note": "Câu có thể đúng, nhưng already ở cuối, không ở vị trí mà đề yêu cầu."
+        },
+        {
+          "t": "It already has been sent.",
+          "tag": "adverb-position",
+          "note": "Có thể dùng khi nhấn mạnh, nhưng already trước trợ động từ đầu, không đáp ứng vị trí được yêu cầu."
+        }
+      ],
+      "explain": "Has already been sent là vị trí giữa thông thường; dạng It has been sent already cũng có thể đúng trong ngữ cảnh khác."
+    },
+    {
+      "id": "adverb-position-10",
+      "level": "B1",
+      "use": "check",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Thêm carefully bằng cách đặt sau tân ngữ như đề yêu cầu.",
+      "stem": "She opened the box. → She {1}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "opened the box carefully"
+          ]
+        }
+      },
+      "explain": "Đề yêu cầu vị trí sau tân ngữ; She carefully opened the box cũng đúng nhưng là vị trí khác."
+    },
+    {
+      "id": "adverb-position-11",
+      "level": "B1",
+      "use": "check",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn cách hiểu đúng.",
+      "stem": "We do not always print the attachments.",
+      "options": [
+        {
+          "t": "Không phải lần nào chúng tôi cũng in tệp đính kèm.",
+          "ok": true,
+          "note": "Not always phủ định tính luôn luôn."
+        },
+        {
+          "t": "Chúng tôi tuyệt đối không bao giờ in.",
+          "tag": "grammar-pattern",
+          "note": "Not always không có nghĩa never."
+        },
+        {
+          "t": "Câu sai vì always không đứng đầu.",
+          "tag": "grammar-pattern",
+          "note": "Always có thể ở vị trí giữa như ở đây."
+        }
+      ],
+      "explain": "Vị trí quanh phủ định liên quan phạm vi nghĩa."
+    },
+    {
+      "type": "error",
+      "skill": "form",
+      "prompt": "Sửa vị trí already trong câu có tân ngữ đại từ ngắn.",
+      "segments": [
+        {
+          "t": "The office has "
+        },
+        {
+          "t": "sent already it",
+          "bad": true,
+          "fix": [
+            "already sent it",
+            "sent it already"
+          ],
+          "note": "Không chen already giữa sent và it trong mẫu này; đặt sau has hoặc sau it đều có thể tự nhiên.",
+          "tag": "grammar-pattern"
+        },
+        {
+          "t": " to the guests."
+        }
+      ],
+      "explain": "Không chen already giữa sent và it trong mẫu này; đặt sau has hoặc sau it đều có thể tự nhiên.",
+      "id": "adverb-position-12",
+      "level": "B1",
+      "use": "check"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham chiếu đề xuất: vị trí trạng từ đầu, giữa và cuối câu. Chưa kiểm chứng trực tiếp từng mệnh đề hoặc khóa đáp án trong lượt soạn này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham chiếu đề xuất cho mẫu dùng và ngoại lệ; không khẳng định đã đọc một trang hay ấn bản cụ thể."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

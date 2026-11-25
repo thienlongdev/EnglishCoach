@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s187-wooden-voice",
+  "title": "Giọng nói qua khúc gỗ",
+  "summary": "Hai khúc gỗ nằm hai bên cửa. Chỉ một khúc rỗng truyền được lời chào từ phòng bên.",
+  "level": "B2",
+  "topics": [
+    "relative-with-prepositions"
+  ],
+  "scene": "university",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mộc",
+      "role": "Sinh viên thiết kế"
+    },
+    {
+      "id": "b",
+      "name": "Teo",
+      "role": "Người phụ trách xưởng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Không ai nhìn thấy đầu kia của ống. Mộc nói thử hello rồi nghe một em bé đáp. Teo cần gắn nhãn cho khách thử đúng khúc.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One piece carried an answer.",
+          "vi": "Có một khúc mang về lời đáp."
+        },
+        {
+          "who": "b",
+          "en": "Write which one they should speak through.",
+          "vi": "Ghi rõ họ nên nói qua khúc nào."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn một cách viết mệnh đề xác định ống gỗ. Cả hai đều chỉ đúng vật.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Use the tube you can hear a reply through.",
+            "note": "Có thể để through cuối mệnh đề xác định và lược đại từ quan hệ làm bổ ngữ. Nghĩa đường truyền âm vẫn giữ.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "Use the tube through which you can hear a reply.",
+            "note": "Giới từ through đứng trước which; mệnh đề mô tả ống có đường cho âm đi qua. Cách này hợp với nhãn trang trọng.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Teo khắc câu lên giá. Một khách nhắm mắt phân biệt được ống rỗng chỉ nhờ chính tiếng chào vọng lại.",
+      "say": [
+        {
+          "who": "b",
+          "en": "A reply gave the wood a name.",
+          "vi": "Một lời đáp đặt tên cho khúc gỗ."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Từ đó người chưa bao giờ gặp nhau vẫn chào nhau ở hai cửa.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Mộc đọc câu ngắn lên mic rồi phát lời hướng dẫn từ chính đầu ống rỗng. Trẻ con lần theo tiếng đến đúng chỗ nghe.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Our instructions needed a listener.",
+          "vi": "Lời chỉ dẫn của mình cần có người lắng nghe."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Hai người giữ nguyên một nhãn bằng lời nói, chỉ nghe được nếu biết tới gần một chút.",
+      "end": true
+    }
+  ]
+}

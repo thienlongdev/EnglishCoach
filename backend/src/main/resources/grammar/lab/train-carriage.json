@@ -1,0 +1,41 @@
+{
+  "id": "train-carriage",
+  "title": "Hỏi ai hay hỏi ở đâu?",
+  "summary": "Trên tàu có một người quen ngồi cạnh cửa. Đổi phần bạn muốn biết. Một cái tên có trả lời được cả hai câu không?",
+  "level": "A1",
+  "topics": [
+    "wh-questions",
+    "prepositions-place"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Chỗ trống thông tin",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Danh tính"
+        },
+        {
+          "id": "v2",
+          "label": "Vị trí"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Who is by the door?",
+      "vi": "Ai đang ở cạnh cửa?",
+      "note": "Who hỏi về người. By the door là vị trí đã biết. / Answer with a person.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Where is Kim?",
+      "vi": "Kim đang ở đâu?",
+      "note": "Kim đã được xác định. Where hỏi vị trí của Kim. / Answer with a place.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s167-ticket-without-travel",
+  "title": "Vé đã in mà người chưa đi",
+  "summary": "Tòa soạn nhận được vé in tên một ca sĩ nổi tiếng, nhưng người ta chỉ thấy chiếc ghế bỏ trống trên phà.",
+  "level": "B2",
+  "topics": [
+    "reporting-passives",
+    "hedging"
+  ],
+  "scene": "newsroom",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Linh",
+      "role": "Phóng viên trực đêm"
+    },
+    {
+      "id": "b",
+      "name": "Ari",
+      "role": "Biên tập viên"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Vé được đặt qua điện thoại. Người bán nghe một giọng tự xưng là quản lý; ông chưa thấy ai sử dụng vé.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I've got her name, not her face.",
+          "vi": "Tôi có tên bà ấy, chưa thấy mặt bà."
+        },
+        {
+          "who": "b",
+          "en": "How much of this can we put our name to?",
+          "vi": "Ta có thể đứng tên xác nhận đến đâu?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn cách giữ đúng tình trạng nguồn tin.",
+        "options": [
+          {
+            "ok": false,
+            "t": "She is known to have sailed on the ferry.",
+            "note": "Known to have sailed nâng nguồn chưa kiểm tra thành việc đi phà đã được xác nhận. Vé một mình không đủ.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "A seat is reported to have been reserved in her name.",
+            "note": "Is reported và nguyên mẫu hoàn thành bị động giới hạn câu vào tin có đặt chỗ, không khẳng định bà lên phà.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Bài chỉ ghi một dòng tin ngắn. Sau đó ca sĩ gọi tới: bà đặt chỗ cho cây đàn cổ đi cùng thợ đàn, không phải cho mình.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We waited for a star and met the person who keeps her in tune.",
+          "vi": "Ta chờ một ngôi sao nhưng lại gặp người giữ đàn cho bà ấy đúng dây."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Linh tới bến đón chiếc đàn. Nó tới trong hộp gỗ có cùng cái tên trên vé, và chính người thợ được phỏng vấn lần đầu.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Linh xem sổ lên phà: thợ đàn và một kiện gỗ đã nhận chỗ. Cô gọi sửa lời giới thiệu trước khi chương trình lên sóng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The note travelled even though she stayed home.",
+          "vi": "Nốt nhạc vẫn lên đường dù bà ở nhà."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Buổi phát bắt đầu bằng một nốt đàn trên bến thay cho lời đồn về ca sĩ. Khách nghe nhận ra nhạc cụ trước cả người nổi tiếng.",
+      "end": true
+    }
+  ]
+}

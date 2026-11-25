@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s078-starboard-toast",
+  "title": "Bánh mì phía bên phải",
+  "level": "A2",
+  "topics": [
+    "prepositions-movement"
+  ],
+  "scene": "starship",
+  "summary": "Trọng lực tắt đúng lúc hai người chia bữa sáng. Một lát bánh trôi từ khoang ăn về phía khe thông gió.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vân",
+      "role": "Người nấu ăn"
+    },
+    {
+      "id": "b",
+      "name": "Liu",
+      "role": "Phi công"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Liu ở giữa lát bánh và bức tường, tay cầm cái hộp mở. Vân phải nói quỹ đạo của bánh.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Don't chase it. Hold your box still.",
+          "vi": "Đừng đuổi theo. Giữ yên hộp nhé."
+        },
+        {
+          "who": "b",
+          "en": "Which way is it going?",
+          "vi": "Nó đang đi về hướng nào?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Chọn hướng giữ bánh trong hộp thay vì nhìn theo nó trôi mất.",
+        "options": [
+          {
+            "t": "It's moving away from you.",
+            "note": "Away from you nói khoảng cách tăng. Liu sẽ quay tìm về phía đối diện dù bánh đang tới gần.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "It's coming towards you.",
+            "note": "Towards you cho biết khoảng cách tới Liu đang giảm. Anh có thể chờ ngay trên đường bánh đến.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Lát bánh chui vừa miệng hộp. Liu khép nắp rồi mở chia đôi: hai người ăn mừng bữa sáng đã tự tìm tới bàn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Next time I'll order flying eggs.",
+          "vi": "Lần sau tôi gọi trứng biết bay nhé."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Bánh chạm vai Liu. Anh đỡ được bằng chiếc khăn quanh cổ rồi gói nó như quà. Hôm ấy hai người ăn bánh vụn trong một chiếc khăn sạch.",
+      "say": [
+        {
+          "who": "a",
+          "en": "At least we caught breakfast.",
+          "vi": "Ít ra mình bắt được bữa sáng."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[Unit]
+Description=English Coach Cloudflare origin allowlist
+Wants=network-online.target
+After=network-online.target
+Before=docker.service
+ConditionPathExists=/etc/english-coach-origin-enabled
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /root/english-coach/ops/ec-origin-allowlist.sh restore
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

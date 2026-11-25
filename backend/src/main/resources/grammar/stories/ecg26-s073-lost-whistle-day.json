@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s073-lost-whistle-day",
+  "title": "Ngày mất còi",
+  "level": "A2",
+  "topics": [
+    "past-simple",
+    "irregular-verbs"
+  ],
+  "scene": "university",
+  "summary": "Sổ đấu rơi vào vũng nước. Chỉ còn đọc được hai chữ whistle và yesterday. Hôm nay còi lại nằm ngay trong túi Lý.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Lý",
+      "role": "Trọng tài lớp"
+    },
+    {
+      "id": "b",
+      "name": "Mara",
+      "role": "Đội trưởng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Hôm qua Lý đánh mất còi, còn sáng nay em nhặt lại dưới ghế. Mara muốn ghi một câu về việc hôm qua.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can blow it now. Listen!",
+          "vi": "Giờ mình thổi được rồi. Nghe nhé!"
+        },
+        {
+          "who": "b",
+          "en": "Yes, but what happened yesterday?",
+          "vi": "Ừ, nhưng hôm qua có chuyện gì?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Chọn câu đúng mốc thời gian trong sổ.",
+        "options": [
+          {
+            "t": "I'm losing my whistle now.",
+            "note": "Am losing cùng now tả điều đang xảy ra, không kể việc mất hôm qua. Hơn nữa còi đang trong tay.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "I lost my whistle yesterday.",
+            "note": "Lost là quá khứ đơn của lose, đúng với sự kiện ở yesterday. Câu không nói hiện còn mất hay đã tìm lại.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Mara ghi thêm Found this morning. Hai dòng ngắn giải thích vì sao hôm qua dùng tiếng vỗ tay, còn trận hôm nay có tiếng còi.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Two days need two lines.",
+          "vi": "Hai ngày cần hai dòng nhỉ."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Mara chỉ tờ giấy ướt rồi đưa bút. Lý vẽ cái ghế đánh dấu chỗ nhặt, ghi mốc hôm qua và hôm nay. Trận sau đội trưởng cột còi vào dây đỏ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Tomorrow it stays with me.",
+          "vi": "Ngày mai nó sẽ ở bên mình."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

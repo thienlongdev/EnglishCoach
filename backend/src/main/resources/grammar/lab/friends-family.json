@@ -1,0 +1,41 @@
+{
+  "id": "friends-family",
+  "title": "Túi của một hay nhiều bạn?",
+  "summary": "Bạn ghi nhãn một chiếc túi dùng trong buổi dã ngoại. Dời dấu nháy và dự đoán có bao nhiêu chủ sở hữu.",
+  "level": "A1",
+  "topics": [
+    "possessive-s-and-of",
+    "apostrophes"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Chủ túi",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Một người bạn"
+        },
+        {
+          "id": "v2",
+          "label": "Nhiều người bạn"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "This is my friend's bag.",
+      "vi": "Đây là túi của một người bạn của tôi.",
+      "note": "Friend là số ít. Thêm 's để chỉ chiếc túi thuộc về người bạn ấy. / The apostrophe comes before s for one friend.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "This is my friends' bag.",
+      "vi": "Đây là chiếc túi chung của các bạn tôi.",
+      "note": "Friends đã có s số nhiều. Dấu nháy phía sau s cho thấy nhiều người cùng sở hữu chiếc túi. / The apostrophe follows the plural s.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,649 @@
+/* ============================================================================
+ * ArenaFishingHud.module.css — Minimal Unobstructed Echo Liquid Glass HUD (9.4)
+ * Pure refractive linear/radial sheen gradients + 1px specular bevels (no blur
+ * compositor passes, no forced specificity overrides).
+ * Full Light ("Tropical Pearl") + Dark ("Deep Lagoon Abyss") parity.
+ * ============================================================================ */
+
+.hudScope {
+  --af-bg:
+    radial-gradient(120% 140% at 15% 0%, rgba(255, 255, 255, 0.97) 0%, rgba(242, 250, 253, 0.94) 58%, rgba(232, 245, 250, 0.95) 100%);
+  --af-card-bg:
+    linear-gradient(162deg, rgba(255, 255, 255, 0.97) 0%, rgba(243, 250, 253, 0.96) 100%);
+  --af-border: rgba(12, 133, 163, 0.24);
+  --af-sheen: inset 0 1px 0 rgba(255, 255, 255, 0.92);
+  --af-shadow: 0 10px 26px -12px rgba(7, 29, 43, 0.22);
+  --af-ink: #0a2230;
+  --af-muted: #35586b;
+  --af-soft: #597c8f;
+  --af-accent: #0987a0;
+  --af-accent-strong: #066c82;
+  --af-accent-soft: rgba(9, 135, 160, 0.12);
+  --af-track: rgba(10, 34, 48, 0.12);
+  --af-chip-bg: rgba(9, 135, 160, 0.09);
+  --af-chip-border: rgba(9, 135, 160, 0.2);
+  --af-safe: #10b981;
+  --af-caution: #f59e0b;
+  --af-danger: #ef4444;
+  color: var(--af-ink);
+  font-family: var(--font-sans, system-ui, -apple-system, sans-serif);
+}
+
+:global(html.dark) .hudScope {
+  --af-bg:
+    radial-gradient(125% 150% at 16% 0%, rgba(16, 42, 60, 0.94) 0%, rgba(9, 24, 36, 0.95) 62%, rgba(7, 19, 30, 0.96) 100%);
+  --af-card-bg:
+    linear-gradient(162deg, rgba(13, 33, 48, 0.96) 0%, rgba(8, 21, 32, 0.97) 100%);
+  --af-border: rgba(56, 189, 248, 0.26);
+  --af-sheen: inset 0 1px 0 rgba(186, 230, 253, 0.15);
+  --af-shadow: 0 14px 32px -12px rgba(2, 8, 18, 0.66);
+  --af-ink: #edf8fc;
+  --af-muted: #a6cadb;
+  --af-soft: #7aa3b8;
+  --af-accent: #38bdf8;
+  --af-accent-strong: #0ea5e9;
+  --af-accent-soft: rgba(56, 189, 248, 0.15);
+  --af-track: rgba(186, 230, 253, 0.14);
+  --af-chip-bg: rgba(56, 189, 248, 0.12);
+  --af-chip-border: rgba(56, 189, 248, 0.24);
+  --af-safe: #34d399;
+  --af-caution: #fbbf24;
+  --af-danger: #f87171;
+}
+
+.fishingHud {
+  position: absolute;
+  left: 50%;
+  bottom: 102px;
+  transform: translateX(-50%);
+  z-index: 13;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  max-width: calc(100vw - 24px);
+  pointer-events: none;
+}
+
+.mono {
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+}
+
+/* ── 1. Auto-Fading 1-Line Contextual Hint Pill (2.8 s fade-out) ── */
+.hintPill {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--af-bg);
+  border: 1px solid var(--af-border);
+  box-shadow: var(--af-sheen), var(--af-shadow);
+  font-size: 11.5px;
+  font-weight: 650;
+  line-height: 1.25;
+  white-space: nowrap;
+  max-width: calc(100vw - 28px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 260ms ease, transform 260ms ease;
+}
+
+.hintHidden {
+  opacity: 0;
+  transform: translateY(4px);
+  pointer-events: none;
+}
+
+.hintChipBtn {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--af-chip-border);
+  background: var(--af-accent-soft);
+  color: var(--af-accent);
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background-color 140ms ease, transform 120ms ease;
+}
+
+.hintChipBtn:hover {
+  background: var(--af-chip-bg);
+}
+
+.hintChipBtn:active {
+  transform: scale(0.97);
+}
+
+/* ── 2. Sleek Minimal Horizontal Cast Power Bar (`charging`, ~40 px tall) ── */
+.powerBarWrap {
+  pointer-events: none;
+  width: clamp(208px, 23vw, 268px);
+  padding: 7px 12px 8px;
+  border-radius: 12px;
+  background: var(--af-bg);
+  border: 1px solid var(--af-border);
+  box-shadow: var(--af-sheen), var(--af-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.barMetaRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1.15;
+}
+
+.barLabel {
+  color: var(--af-muted);
+  letter-spacing: 0.01em;
+}
+
+.barValue {
+  color: var(--af-ink);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.powerTrack {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--af-track);
+  overflow: hidden;
+}
+
+.powerFill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #10b981 0%, #0ea5c6 56%, #f59e0b 100%);
+  transition: width 36ms linear;
+}
+
+/* ── 3. Compact Bite Alert Pill (`bite_alert`, ~38 px tall) ── */
+.bitePill {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 6px 5px 13px;
+  border-radius: 999px;
+  background: var(--af-bg);
+  border: 1.5px solid var(--af-caution);
+  box-shadow: var(--af-sheen), var(--af-shadow);
+  animation: bitePulse 760ms ease-in-out infinite alternate;
+}
+
+@keyframes bitePulse {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-1.5px) scale(1.015);
+  }
+}
+
+.biteLabel {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--af-ink);
+  white-space: nowrap;
+}
+
+.strikeBtn {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+  color: #ffffff;
+  font-size: 11.5px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.strikeBtn:active {
+  transform: scale(0.97);
+}
+
+/* ── 4. Minimal Horizontal Reeling Tension + Progress Bar (`reeling`, ~44 px tall) ── */
+.tensionBar {
+  pointer-events: auto;
+  width: clamp(232px, 25vw, 286px);
+  padding: 7px 12px 8px;
+  border-radius: 13px;
+  background: var(--af-bg);
+  border: 1px solid var(--af-border);
+  box-shadow: var(--af-sheen), var(--af-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  user-select: none;
+  touch-action: none;
+}
+
+.tensionBar[data-zone='caution'] {
+  border-color: rgba(245, 158, 11, 0.52);
+}
+
+.tensionBar[data-zone='danger'] {
+  border-color: rgba(239, 68, 68, 0.68);
+}
+
+.reelHoldSurface {
+  pointer-events: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  touch-action: none;
+}
+
+.zoneCue {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.zoneDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--af-safe);
+  flex-shrink: 0;
+}
+
+.zoneCue[data-zone='caution'] .zoneDot {
+  background: var(--af-caution);
+}
+
+.zoneCue[data-zone='danger'] .zoneDot {
+  background: var(--af-danger);
+}
+
+.zoneCue[data-zone='danger'] {
+  color: var(--af-danger);
+}
+
+.tensionTrack {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--af-track);
+  overflow: hidden;
+}
+
+.tensionFill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--af-safe);
+  transition: width 42ms linear, background-color 120ms ease;
+}
+
+.tensionFill[data-zone='caution'] {
+  background: var(--af-caution);
+}
+
+.tensionFill[data-zone='danger'] {
+  background: var(--af-danger);
+}
+
+.dangerTick {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 82%;
+  width: 1.5px;
+  background: rgba(239, 68, 68, 0.65);
+  pointer-events: none;
+}
+
+.reelHairlineTrack {
+  width: 100%;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--af-track);
+  overflow: hidden;
+}
+
+.reelHairlineFill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #06b6d4 0%, #22d3ee 100%);
+  transition: width 60ms linear;
+}
+
+/* ── 5. Compact Catch Result Card (`caught`) ── */
+.catchCard {
+  pointer-events: auto;
+  width: min(352px, calc(100vw - 24px));
+  padding: 13px 15px;
+  border-radius: 18px;
+  background: var(--af-card-bg);
+  border: 1px solid var(--af-border);
+  box-shadow: var(--af-sheen), var(--af-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardTopRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.badgeGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.rarityBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  background: var(--af-chip-bg);
+  border: 1px solid var(--af-chip-border);
+  color: var(--af-accent);
+}
+
+.rarityBadge[data-rarity='uncommon'] {
+  color: #0d9488;
+  border-color: rgba(13, 148, 136, 0.3);
+  background: rgba(13, 148, 136, 0.11);
+}
+
+:global(html.dark) .rarityBadge[data-rarity='uncommon'] {
+  color: #2dd4bf;
+}
+
+.rarityBadge[data-rarity='rare'] {
+  color: #0284c7;
+  border-color: rgba(2, 132, 199, 0.32);
+  background: rgba(2, 132, 199, 0.12);
+}
+
+:global(html.dark) .rarityBadge[data-rarity='rare'] {
+  color: #38bdf8;
+}
+
+.rarityBadge[data-rarity='legendary'] {
+  color: #d97706;
+  border-color: rgba(217, 119, 6, 0.36);
+  background: rgba(245, 158, 11, 0.14);
+}
+
+:global(html.dark) .rarityBadge[data-rarity='legendary'] {
+  color: #fbbf24;
+}
+
+.iconBtn {
+  pointer-events: auto;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  border: 1px solid var(--af-chip-border);
+  background: var(--af-chip-bg);
+  color: var(--af-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.iconBtn:hover {
+  color: var(--af-ink);
+}
+
+.catchHero {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.fishArtBadge {
+  width: 72px;
+  height: 54px;
+  border-radius: 12px;
+  background: var(--af-chip-bg);
+  border: 1px solid var(--af-chip-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.speciesTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.speciesSub {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--af-accent);
+  line-height: 1.3;
+}
+
+.speciesSci {
+  font-weight: 600;
+  color: var(--af-muted);
+}
+
+.speciesHabitat {
+  display: block;
+  font-size: 11px;
+  color: var(--af-soft);
+  line-height: 1.25;
+}
+
+.catchStatsRow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.scoreCell {
+  padding: 5px 8px;
+  border-radius: 10px;
+  background: var(--af-chip-bg);
+  border: 1px solid var(--af-chip-border);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.scoreCell small {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--af-soft);
+}
+
+.scoreCell b {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--af-ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.vocabGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.vocabChip {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--af-chip-bg);
+  border: 1px solid var(--af-chip-border);
+  font-size: 11px;
+  color: var(--af-ink);
+}
+
+.cueBox {
+  padding: 8px 10px;
+  border-radius: 11px;
+  background: var(--af-chip-bg);
+  border: 1px solid var(--af-chip-border);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cueBox small {
+  font-size: 10.5px;
+  font-weight: 750;
+  color: var(--af-accent);
+}
+
+.promptTextEn {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.35;
+  color: var(--af-ink);
+}
+
+.promptTextVi {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.35;
+  color: var(--af-muted);
+}
+
+.cardActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.secondaryActions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btnPrimary {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 11px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, var(--af-accent) 0%, var(--af-accent-strong) 100%);
+  color: #ffffff;
+  font-size: 11.5px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+:global(html.dark) .btnPrimary {
+  color: #04131d;
+}
+
+.btn {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--af-chip-border);
+  background: var(--af-chip-bg);
+  color: var(--af-ink);
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .fishingHud {
+    bottom: 92px;
+  }
+
+  .powerBarWrap {
+    width: min(244px, calc(100vw - 28px));
+  }
+
+  .tensionBar {
+    width: min(264px, calc(100vw - 28px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hintPill,
+  .powerFill,
+  .tensionFill,
+  .reelHairlineFill {
+    transition: none;
+  }
+
+  .bitePill {
+    animation: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .hintPill,
+  .powerBarWrap,
+  .bitePill,
+  .tensionBar,
+  .catchCard {
+    border: 1px solid ButtonText;
+    background: Canvas;
+    color: CanvasText;
+  }
+
+  .powerFill,
+  .tensionFill,
+  .reelHairlineFill {
+    background: Highlight;
+  }
+}

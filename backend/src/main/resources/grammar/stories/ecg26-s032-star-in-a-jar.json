@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s032-star-in-a-jar",
+  "title": "Ngôi sao trong lọ",
+  "summary": "Mộc tin có một ngôi sao đang ngủ trong lọ. Khi Lía tắt đèn, chấm sáng trên viên sỏi cũng tắt.",
+  "level": "A1",
+  "topics": [
+    "contractions",
+    "statements-negatives-questions"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Lía",
+      "role": "Người sưu tầm sỏi"
+    },
+    {
+      "id": "b",
+      "name": "Mộc",
+      "role": "Em họ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Lía xoay đèn bàn. Chấm sáng di chuyển theo ánh đèn. Viên sỏi có mặt lấp lánh nhưng không tự sáng. Mộc đợi chị viết nhãn cho lọ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It's a stone from the beach.",
+          "vi": "Đó là viên sỏi từ bãi biển."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Is it a real star?",
+          "vi": "Nó là sao thật không chị?"
+        }
+      ],
+      "choice": {
+        "prompt": "Lía muốn trả lời ngắn gọn bằng dạng rút gọn phủ định.",
+        "options": [
+          {
+            "t": "No, it isn't.",
+            "note": "Isn't là is not. It thay cho vật vừa được hỏi và no trả lời phủ định câu hỏi Is it ...? ",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "Yes, it is.",
+            "note": "Đây là câu trả lời khẳng định đúng cấu trúc, nhưng xác nhận nó là sao thật, trái với phép thử ánh đèn.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Mộc thử tắt đèn rồi bật lại. Mỗi lần bật, viên sỏi lại mượn được một ngôi sao.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I can turn it on!",
+          "vi": "Em bật được sao lên rồi!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Lía che đèn bằng tay. Sao biến mất. Mộc nhìn kỹ viên sỏi, rồi bật cười khi đèn rọi lại.",
+      "say": [
+        {
+          "who": "b",
+          "en": "It's a shiny stone.",
+          "vi": "Nó là viên sỏi lấp lánh."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Mộc viết hai chữ Sao mượn lên nhãn lọ. Đêm đó cô bé để lọ bên giường, đợi nắng mai đánh thức ngôi sao.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It isn't lost when the light goes out.",
+          "vi": "Đèn tắt đâu có nghĩa ngôi sao mất rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,533 @@
+{
+  "schema": 1,
+  "slug": "may-might-could-possibility",
+  "version": 1,
+  "domain": "modality",
+  "order": 70,
+  "kind": "grammar",
+  "title": {
+    "vi": "May, might, could: khả năng xảy ra",
+    "en": "Possibility: may, might, could"
+  },
+  "level": "B1",
+  "levelBasis": "editorial",
+  "prerequisites": [
+    "modals-overview"
+  ],
+  "subtitle": {
+    "vi": "Để ngỏ một khả năng mà không biến phỏng đoán thành sự thật",
+    "en": "Leave a possibility open without claiming certainty"
+  },
+  "aliases": [
+    "may might could",
+    "khả năng xảy ra",
+    "có lẽ",
+    "might not may not",
+    "couldn't may not",
+    "might fifty percent"
+  ],
+  "objectives": [
+    "Dùng may, might và could để nêu khả năng hiện tại hoặc tương lai",
+    "Phân biệt khả năng không xảy ra với việc loại trừ khả năng",
+    "Nhận ra nhiều modal có thể phù hợp cùng một câu",
+    "Không gán xác suất số học cố định cho từng modal"
+  ],
+  "related": [
+    {
+      "slug": "must-cant-deduction",
+      "rel": "contrast"
+    },
+    {
+      "slug": "modality-degrees-of-certainty",
+      "rel": "more"
+    },
+    {
+      "slug": "can-could-ability",
+      "rel": "contrast"
+    }
+  ],
+  "exam": {
+    "ielts": "Giúp giới hạn mức khẳng định theo chứng cứ khi nêu dự đoán hoặc giải thích.",
+    "toeic": "Giúp hiểu khả năng thay đổi lịch và tình trạng chưa được xác nhận."
+  },
+  "quick": {
+    "what": "May, might và could có thể nêu một khả năng chưa chắc đúng: The delivery might be late. Chúng không tự cung cấp tỷ lệ phần trăm; lựa chọn còn tùy ngữ cảnh và giọng nói.",
+    "when": "Dùng khi một lời giải thích hoặc sự kiện hiện tại, tương lai là có thể nhưng chưa được xác nhận. May not và might not nêu khả năng điều gì không đúng hoặc không xảy ra.",
+    "examples": [
+      {
+        "en": "The office may be closed.",
+        "vi": "Có thể văn phòng đang đóng cửa."
+      },
+      {
+        "en": "The courier might arrive after six.",
+        "vi": "Có lẽ người giao hàng sẽ đến sau sáu giờ."
+      },
+      {
+        "en": "The noise could be a loose panel.",
+        "vi": "Tiếng động có thể do một tấm ốp bị lỏng."
+      }
+    ],
+    "remember": "Có thể đúng không đồng nghĩa chắc chắn đúng; may not không giống can't."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Bạn thấy đèn tắt ở văn phòng nhưng chưa biết lịch. The staff may be at lunch là một cách giải thích có thể đúng. Might và could cũng có thể phù hợp nếu bạn chỉ đang nêu khả năng, không có dữ kiện bắt buộc chọn riêng một từ."
+    },
+    {
+      "type": "formula",
+      "parts": [
+        {
+          "t": "chủ ngữ",
+          "role": "S"
+        },
+        {
+          "t": "may / might / could",
+          "role": "MOD"
+        },
+        {
+          "t": "dạng gốc",
+          "role": "V"
+        }
+      ],
+      "note": "Dạng gốc có thể là be: may be closed, could be busy."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Ý cần nói",
+        "Ví dụ",
+        "Không tự suy ra"
+      ],
+      "rows": [
+        [
+          "Một khả năng",
+          "They may move the meeting.",
+          "Chưa bảo đảm sẽ đổi."
+        ],
+        [
+          "Một lời giải thích",
+          "The screen could be faulty.",
+          "Chưa xác nhận màn hình hỏng."
+        ],
+        [
+          "Khả năng không xảy ra",
+          "They might not come.",
+          "Chưa nói chắc không đến."
+        ],
+        [
+          "Điều bị loại trừ theo suy luận",
+          "They can't be here yet.",
+          "Mạnh hơn lời nêu khả năng."
+        ]
+      ],
+      "caption": "Đặt phủ định đúng chỗ và đọc đúng mức cam kết."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "She might not know the code.",
+            "vi": "Có thể cô ấy không biết mã."
+          },
+          "b": {
+            "en": "She can't know the code; it hasn't been created yet.",
+            "vi": "Cô ấy không thể biết mã; mã còn chưa được tạo."
+          },
+          "diff": "Might not để ngỏ cả biết và không biết. Can't trong ngữ cảnh sau loại trừ khả năng biết theo bằng chứng."
+        }
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "branch",
+        "root": "Chưa biết vì sao văn phòng tối.",
+        "branches": [
+          {
+            "cond": "The staff may be at lunch.",
+            "result": "This is one possible explanation.",
+            "world": "real",
+            "note": "Có thể đang nghỉ trưa."
+          },
+          {
+            "cond": "The staff might be in a meeting.",
+            "result": "This is another possible explanation.",
+            "world": "real",
+            "note": "Có thể đang họp."
+          }
+        ]
+      },
+      "caption": "Nêu nhiều khả năng chưa được xác nhận.",
+      "alt": "Văn phòng tối có thể do nhân viên nghỉ trưa hoặc đang họp. Cả hai chỉ là giả thuyết, chưa là sự thật."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "We could take the later train.",
+          "vi": "Chúng ta có thể đi chuyến tàu muộn hơn.",
+          "note": "Could ở đây có thể nêu một lựa chọn thực tế."
+        },
+        {
+          "en": "The train may be delayed tomorrow.",
+          "vi": "Ngày mai tàu có thể bị chậm."
+        },
+        {
+          "en": "I might not have enough time.",
+          "vi": "Có thể tôi không có đủ thời gian."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không lập bảng may = 60%, might = 30%, could = 20% như sự thật ngữ pháp. Might thường làm lời nói dè dặt hơn trong nhiều ngữ cảnh, nhưng không có tỷ lệ cố định dùng để chấm mọi câu."
+    },
+    {
+      "type": "try",
+      "exercise": "mmc-04"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Can thường nêu khả năng chung: This road can be icy in winter nói hiện tượng có thể xảy ra. It may be icy now nêu một khả năng cụ thể hiện tại. Ranh giới cách dùng cần đọc cùng loại phát biểu, không chỉ chọn từ đồng nghĩa."
+    },
+    {
+      "type": "p",
+      "vi": "Could không luôn là quá khứ: We could meet tomorrow đề xuất lựa chọn tương lai. Ngược lại, trong She could swim at five, could là khả năng quá khứ. Mẫu và ngữ cảnh phân biệt hai nghĩa."
+    },
+    {
+      "type": "p",
+      "vi": "May not có thể mang nghĩa không được phép trong một quy định: Visitors may not enter. Điều này khác với The visitors may not arrive today là khả năng không đến. Could not trong suy luận thường loại trừ khả năng, không phải thay thế tự do cho might not."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "mmc-to",
+      "wrong": "It might to rain.",
+      "right": "It might rain.",
+      "why": "Sau might dùng dạng gốc không to."
+    },
+    {
+      "id": "mmc-s",
+      "wrong": "The bus may arrives late.",
+      "right": "The bus may arrive late.",
+      "why": "Sau may dùng arrive, không thêm -s."
+    },
+    {
+      "id": "mmc-be",
+      "wrong": "The office could closed.",
+      "right": "The office could be closed.",
+      "why": "Closed trong ý trạng thái này cần be sau could."
+    }
+  ],
+  "faq": [
+    {
+      "q": "May, might và could có ba phần trăm riêng không?",
+      "a": "Không. Chúng diễn đạt mức cam kết theo ngữ cảnh, không phải ba giá trị xác suất cố định."
+    },
+    {
+      "q": "Có lúc cả ba đều đúng không?",
+      "a": "Có, nhất là khi chỉ nêu một khả năng. Đáp án cần nhận các lựa chọn hợp nghĩa hoặc đề phải giới hạn rõ."
+    },
+    {
+      "q": "Might not và can't giống nhau không?",
+      "a": "Không. Might not để ngỏ khả năng không đúng; can't trong suy luận thường loại trừ khả năng đúng theo bằng chứng."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "mmc-01",
+      "level": "B1",
+      "use": "practice",
+      "skill": "recognition",
+      "type": "choice",
+      "prompt": "Chọn cách diễn giải đúng.",
+      "stem": "The delivery might arrive tomorrow.",
+      "options": [
+        {
+          "t": "Đến ngày mai là một khả năng chưa được xác nhận.",
+          "ok": true,
+          "note": "Might nêu khả năng."
+        },
+        {
+          "t": "Chắc chắn ngày mai sẽ đến.",
+          "note": "Mạnh hơn nội dung câu.",
+          "tag": "possibility-certainty"
+        },
+        {
+          "t": "Chắc chắn không đến ngày mai.",
+          "note": "Câu không phủ định khả năng đến.",
+          "tag": "possibility-certainty"
+        }
+      ],
+      "explain": "Might không bảo đảm sự kiện, cũng không loại trừ nó."
+    },
+    {
+      "id": "mmc-02",
+      "level": "B1",
+      "use": "practice",
+      "skill": "recognition",
+      "type": "match",
+      "prompt": "Nối câu với nội dung.",
+      "pairs": [
+        {
+          "a": "It might rain.",
+          "b": "Mưa là một khả năng"
+        },
+        {
+          "a": "It might not rain.",
+          "b": "Không mưa là một khả năng"
+        },
+        {
+          "a": "We could take a taxi.",
+          "b": "Đi taxi là một lựa chọn"
+        }
+      ],
+      "explain": "Phủ định và ngữ cảnh thay đổi nội dung được để ngỏ."
+    },
+    {
+      "id": "mmc-03",
+      "level": "B1",
+      "use": "practice",
+      "skill": "recognition",
+      "type": "classify",
+      "prompt": "Xếp theo ý rõ trong ngữ cảnh.",
+      "cats": [
+        "Khả năng xảy ra",
+        "Khả năng của người"
+      ],
+      "items": [
+        {
+          "t": "The key could be in my bag.",
+          "cat": "Khả năng xảy ra"
+        },
+        {
+          "t": "She could swim when she was six.",
+          "cat": "Khả năng của người"
+        },
+        {
+          "t": "The road might be closed.",
+          "cat": "Khả năng xảy ra"
+        }
+      ],
+      "explain": "Could có thể nói phỏng đoán hoặc khả năng quá khứ; xem phần còn lại."
+    },
+    {
+      "id": "mmc-04",
+      "level": "B1",
+      "use": "practice",
+      "skill": "form",
+      "type": "cloze",
+      "prompt": "Nêu khả năng bằng may, might hoặc could; không cần phân hạng chắc chắn.",
+      "stem": "The office {1} be closed. It {2} rain later.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "may",
+            "might",
+            "could"
+          ],
+          "closed": true
+        },
+        "2": {
+          "accept": [
+            "may",
+            "might",
+            "could"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Trong hai ngữ cảnh không giới hạn này, cả may, might và could đều có thể nêu khả năng."
+    },
+    {
+      "id": "mmc-05",
+      "level": "B1",
+      "use": "practice",
+      "skill": "form",
+      "type": "order",
+      "prompt": "Xếp câu kể bắt đầu bằng She.",
+      "tokens": [
+        "She",
+        "might",
+        "not",
+        "come"
+      ],
+      "accept": [
+        [
+          "She",
+          "might",
+          "not",
+          "come"
+        ]
+      ],
+      "end": ".",
+      "explain": "Might not come nêu khả năng cô ấy không đến."
+    },
+    {
+      "id": "mmc-06",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "type": "transform",
+      "prompt": "Nêu khả năng bằng might.",
+      "source": "Perhaps the gate is locked.",
+      "instruction": "Bắt đầu bằng The gate và dùng might be locked.",
+      "accept": [
+        "The gate might be locked"
+      ],
+      "model": "The gate might be locked.",
+      "explain": "Might be locked nêu khả năng của trạng thái hiện tại."
+    },
+    {
+      "id": "mmc-07",
+      "level": "B1",
+      "use": "practice",
+      "skill": "recognition",
+      "type": "error",
+      "prompt": "Sửa dạng từ sau could.",
+      "segments": [
+        {
+          "t": "The noise could"
+        },
+        {
+          "t": "is",
+          "bad": true,
+          "fix": [
+            "be"
+          ],
+          "note": "Sau could cần dạng gốc be.",
+          "tag": "aux-main-form"
+        },
+        {
+          "t": "a loose panel."
+        }
+      ],
+      "explain": "Could be là hình thức đúng để nêu một cách giải thích."
+    },
+    {
+      "id": "mmc-08",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "type": "open",
+      "prompt": "Viết hai giả thuyết có giới hạn.",
+      "task": "Một đồng nghiệp chưa đến cuộc họp. Nêu hai khả năng bằng might hoặc could, tránh khẳng định như sự thật.",
+      "model": [
+        "She might be on another call.",
+        "Her train could be delayed."
+      ],
+      "checklist": [
+        "Nêu khả năng, không bịa là đã biết",
+        "Dạng gốc sau modal",
+        "Không tự gán tỷ lệ số học"
+      ],
+      "explain": "Tự kiểm tra mức khẳng định và cấu trúc; bài không chấm tự động."
+    },
+    {
+      "id": "mmc-09",
+      "level": "B1",
+      "use": "check",
+      "skill": "form",
+      "type": "cloze",
+      "prompt": "Điền may hoặc might để nêu khả năng không đến, không phải cấm đến.",
+      "stem": "He {1} not come tomorrow; he hasn't decided.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "may",
+            "might"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "May not và might not phù hợp với việc chưa quyết định. Đề giới hạn hai từ để tránh biến thành suy luận không thể."
+    },
+    {
+      "id": "mmc-10",
+      "level": "B1",
+      "use": "check",
+      "skill": "production",
+      "type": "transform",
+      "prompt": "Viết lại bằng could.",
+      "source": "Perhaps the battery is flat.",
+      "instruction": "Giữ the battery, dùng could be flat.",
+      "accept": [
+        "The battery could be flat"
+      ],
+      "model": "The battery could be flat.",
+      "explain": "Could be flat chỉ là khả năng giải thích sự cố."
+    },
+    {
+      "id": "mmc-11",
+      "level": "B1",
+      "use": "check",
+      "skill": "recognition",
+      "type": "multi",
+      "prompt": "Chọn tất cả câu đúng về hình thức.",
+      "stem": "Các câu nêu khả năng.",
+      "options": [
+        {
+          "t": "It may be expensive.",
+          "ok": true,
+          "note": "May cộng be."
+        },
+        {
+          "t": "It might cost more.",
+          "ok": true,
+          "note": "Might cộng cost."
+        },
+        {
+          "t": "It could arrives late.",
+          "note": "Sau could cần arrive.",
+          "tag": "aux-main-form"
+        },
+        {
+          "t": "It may to change.",
+          "note": "Không thêm to.",
+          "tag": "modal-to"
+        }
+      ],
+      "explain": "Modal đi với dạng gốc, kể cả be."
+    },
+    {
+      "id": "mmc-12",
+      "level": "B1",
+      "use": "check",
+      "skill": "recognition",
+      "type": "choice",
+      "prompt": "Chọn nhận xét đúng về đáp án ngôn ngữ.",
+      "stem": "The parcel ___ arrive later; we have no confirmation.",
+      "options": [
+        {
+          "t": "May, might và could đều có thể phù hợp khi chỉ nêu khả năng.",
+          "ok": true,
+          "note": "Không có dữ kiện ép một tỷ lệ hay sắc thái duy nhất."
+        },
+        {
+          "t": "Chỉ might đúng vì mọi khả năng chưa xác nhận luôn dùng might.",
+          "note": "Đó là quy tắc tuyệt đối không đúng.",
+          "tag": "possibility-single-key"
+        }
+      ],
+      "explain": "Đáp án phải tính đến các lựa chọn hợp nghĩa, không chỉ từ mà người soạn nghĩ đầu tiên."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham khảo chung: could, may và might."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham khảo chung: khả năng, phủ định và ngữ cảnh."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

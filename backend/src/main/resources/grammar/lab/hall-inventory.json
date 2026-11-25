@@ -1,0 +1,40 @@
+{
+  "id": "hall-inventory",
+  "title": "Kiểm kê phòng sinh hoạt",
+  "summary": "Mở cửa phòng và thông báo thứ bạn nhìn thấy. Đoán phần nào phải đổi khi danh sách tăng từ một món lên hai món.",
+  "level": "A1",
+  "topics": [
+    "there-is-there-are"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Danh sách",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Một chiếc quạt"
+        },
+        {
+          "id": "v2",
+          "label": "Hai chiếc quạt"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "There is a fan in the hall.",
+      "vi": "Có một chiếc quạt trong phòng.",
+      "note": "There is giới thiệu sự hiện diện của một vật, trước khi nói vật đó ở đâu. / Introduce one item with there is.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "There are two fans in the hall.",
+      "vi": "Có hai chiếc quạt trong phòng.",
+      "note": "Trong thông báo viết, danh từ số nhiều fans đi với there are. / The plural list takes are in standard written English.",
+      "verdict": "ok"
+    }
+  }
+}

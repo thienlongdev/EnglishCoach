@@ -1,0 +1,74 @@
+import assert from 'node:assert/strict';
+import { tsLoader } from './lib/ts-load.mjs';
+import { readFileSync } from 'node:fs';
+import { createRequire } from 'node:module';
+import { runInNewContext } from 'node:vm';
+import * as THREE from 'three';
+import { MeshBVH, acceleratedRaycast } from 'three-mesh-bvh';
+import R from '@dimforge/rapier3d-compat';
+const require=createRequire(import.meta.url),babel=require('next/dist/compiled/babel/bundle.js');
+const root=new URL('../src/',import.meta.url);
+function load(file,deps={}){const {code}=babel.core().transformSync(readFileSync(new URL(file,root),'utf8'),{filename:file,configFile:false,babelrc:false,presets:[babel.presetTypescript()],plugins:[babel.pluginTransformModulesCommonjs()]});const exports={};runInNewContext(code,{exports,require:p=>deps[p]??require(p),console});return exports;}
+await R.init();
+const {StudyPhysics}=tsLoader({three:THREE})('components/study-space/world/physics.ts');
+const stage=new THREE.Group();
+function entry(id,kind,pos,dimensions){const group=new THREE.Group();const mesh=new THREE.Mesh(new THREE.BoxGeometry(...dimensions),new THREE.MeshBasicMaterial());mesh.position.y=dimensions[1]/2;group.add(mesh);group.position.set(...pos);stage.add(group);return{group,obj:{id,kind,pos,rotY:0,scale:1,hidden:false,locked:false}};}
+const mug=entry('cup','mug',[0,.8,0],[.15,.18,.15]),desk=entry('desk','desk.wood',[0,0,0],[1.4,.8,.7]);
+const wall=entry('cabinet','shelf.tall',[0,0,-.8],[1.5,2,.12]);
+const saved=[],world=new StudyPhysics(R,(...args)=>saved.push(args));
+world.sync([mug,desk,wall],6);assert.equal(world.pick(mug,[mug,desk,wall],6),true);
+world.aim(1,new THREE.Vector3(0,1.5,-1.4));for(let i=0;i<180;i++)world.update(1/60);
+assert.ok(mug.group.position.z>-.7,'held object cannot tunnel through a solid shelf');
+assert.ok(mug.group.position.y>.8,'spring hold lifts the actual object');
+world.release(1);for(let i=0;i<540;i++)world.update(1/60);
+assert.equal(saved.length,1,'a settled placement is committed once');assert.ok(saved[0][1].every(Number.isFinite));assert.ok(saved[0][1][1]>=0);assert.ok(Number.isFinite(saved[0][2]),'it lands with a yaw');
+assert.equal(StudyPhysics.canPick({...mug.obj,locked:true}),false);assert.equal(StudyPhysics.canPick(desk.obj),false);
+// A drawer runs on a joint: it goes where the hand takes it, stops at its travel, and a body in the way stops it.
+const joints=new StudyPhysics(R,()=>{});joints.sync([],6);
+const drawer=joints.slider(new THREE.Vector3(0,.5,0),new THREE.Vector3(0,0,1),.3,[.12,.05,.012],1.6,0);
+for(let i=0;i<120;i++){drawer.drive(.2);joints.update(1/60);}assert.ok(Math.abs(drawer.value()-.2)<.012,'the motor takes the drawer where the hand wants it: '+drawer.value());
+for(let i=0;i<120;i++){drawer.drive(9);joints.update(1/60);}assert.ok(drawer.value()<=.305,'it stops at its travel: '+drawer.value());
+drawer.dispose();assert.equal(joints.diagnostics.mechanisms,0);
+const door=joints.hinge(new THREE.Vector3(1,1.16,3),new THREE.Vector3(0,1,0),new THREE.Vector3(.47,0,0),[.47,1.14,.028],[-1.05,0],14,0);
+for(let i=0;i<240;i++){door.drive(-1.05);joints.update(1/60);}assert.ok(Math.abs(door.value()+1.05)<.05,'a door swings to its open limit, outward: '+door.value());
+for(let i=0;i<60;i++){door.drive(-3);joints.update(1/60);}assert.ok(door.value()>=-1.1,'and no further: '+door.value());
+for(let i=0;i<240;i++){door.drive(0);joints.update(1/60);}assert.ok(Math.abs(door.value())<.05,'it closes: '+door.value());
+door.dispose();joints.dispose();
+// Lift the bottom book and the one on top loses its support.
+const under=entry('b1','book.single',[2,0,2],[.16,.03,.22]),over=entry('b2','book.single',[2,.03,2],[.16,.03,.22]);
+const stack=[],books=new StudyPhysics(R,(...a)=>stack.push(a));books.sync([under,over],6);assert.equal(books.pick(under,[under,over],6,1),true);
+assert.equal(books.owns('b2'),true,'what rested on it comes alive');
+books.aim(1,new THREE.Vector3(2.5,.8,2));for(let i=0;i<120;i++)books.update(1/60);
+assert.equal(books.holding,'b1');assert.ok(under.group.position.y>.5);books.dispose();
+world.dispose();world.dispose();
+const cancelled=[],scoped=new StudyPhysics(R,(...args)=>cancelled.push(args));
+scoped.pick(mug,[mug,desk],6);scoped.sync([{...mug,obj:{...mug.obj,locked:true}},desk],6);
+assert.equal(scoped.holding,null);assert.equal(scoped.diagnostics.bodies,0);assert.equal(cancelled.length,0,'locking an active prop discards its pending write');
+scoped.pick(mug,[mug,desk],6);scoped.dispose();assert.equal(cancelled.length,0,'scope disposal cannot write into the next room');
+const spring=load('lib/morph/spring.ts'),tokens=load('lib/morph/tokens.ts');
+const {ScenePassage,markWorldPassage,takeWorldPassage}=load('lib/morph/scene.ts',{'@/lib/morph/spring':spring,'./tokens':tokens});
+markWorldPassage('/speaking/arena');assert.equal(takeWorldPassage('/speaking/arena'),true);assert.equal(takeWorldPassage('/speaking/arena'),false);
+markWorldPassage('https://example.com');assert.equal(takeWorldPassage('https://example.com'),false);
+const passage=new ScenePassage();passage.leave(true);for(let i=0;i<30;i++)passage.update(1/60,false);
+passage.leave(false);for(let i=0;i<120;i++)passage.update(1/60,false);assert.ok(Math.abs(passage.update(1/60,false))<.001,'failed departure settles back without a navigation delay');
+assert.equal(new ScenePassage(true).update(1/60,true),0,'reduced motion suppresses scene lens travel');
+const {ArenaCamera}=load('components/features/speaking/arena/ArenaCamera.ts',{'three':THREE});
+const {solveArm,alignWrist,UPPER_ARM,FOREARM}=load('lib/embodiment/arms.ts',{'three':THREE});
+for(const side of [-1,1])for(const target of [[side*.23,-.34,-.42],[side*.185,-.14,-.42],[side*.3,.1,-.7]]){
+ const s=new THREE.Vector3(side*.19,-.26,.035),p=new THREE.Vector3(side*.37,-.53,-.09);
+ const arm=solveArm(s,new THREE.Vector3(...target),p);
+ assert.ok(Math.abs(arm.shoulder.distanceTo(arm.elbow)-UPPER_ARM)<1e-6,'upper arm does not stretch');
+ assert.ok(Math.abs(arm.elbow.distanceTo(arm.wrist)-FOREARM)<1e-6,'forearm does not stretch');
+ assert.ok(arm.elbow.x*side>0,'elbow stays on its anatomical side');
+ const rotation=new THREE.Quaternion().setFromEuler(new THREE.Euler(.07,0,side*.2));
+ const axis=arm.wrist.clone().sub(arm.elbow).normalize();alignWrist(rotation,axis,.10);
+ assert.ok(new THREE.Vector3(0,1,0).applyQuaternion(rotation).angleTo(axis)<=.100001,'palm follows the lifted forearm without an exposed wrist bend');
+}
+const rig=new ArenaCamera(),blocker=new THREE.Mesh(new THREE.BoxGeometry(10,5,.2),new THREE.MeshBasicMaterial());blocker.position.set(0,1.5,1);blocker.updateMatrixWorld();rig.view='third';rig.yaw=Math.PI;
+const testRay=new THREE.Raycaster(new THREE.Vector3(0,1.5,0),new THREE.Vector3(0,0,1)),normalHit=testRay.intersectObject(blocker)[0].distance;
+blocker.geometry.boundsTree=new MeshBVH(blocker.geometry);blocker.raycast=acceleratedRaycast;testRay.firstHitOnly=true;
+assert.equal(testRay.intersectObject(blocker)[0].distance,normalHit,'BVH preserves the exact static camera obstruction');
+for(let i=0;i<180;i++)rig.update(1/60,new THREE.Vector3(),[blocker],false);
+assert.ok(rig.camera.position.z<.9,'third-person camera stays in front of the wall');
+rig.view='first';for(let i=0;i<120;i++)rig.update(1/60,new THREE.Vector3(),[blocker],false);assert.ok(Math.abs(rig.camera.position.y-rig.eyeHeight)<.02);
+console.log('PASS embodiment: real Rapier pickup, shelf collision, drop/commit, locked objects, disposal; camera obstruction; arm lengths and wrist limits.');

@@ -1,0 +1,41 @@
+{
+  "id": "pencil-owner",
+  "title": "Nhận bút chì của mình",
+  "summary": "Hai bạn cùng tìm bút. Thử nhận là bút của mình có và không nhắc lại pencil. My có đứng một mình được ở cuối câu không?",
+  "level": "A2",
+  "topics": [
+    "possessive-determiners",
+    "one-and-ones"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Có danh từ theo sau?",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Có"
+        },
+        {
+          "id": "v2",
+          "label": "Không"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "That's my pencil.",
+      "vi": "Đó là bút chì của tôi.",
+      "note": "My là từ hạn định đứng trước pencil. / My needs a following noun here.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "That pencil is mine.",
+      "vi": "Chiếc bút chì đó là của tôi.",
+      "note": "Mine là đại từ sở hữu, thay được cả cụm my pencil. / Mine stands on its own.",
+      "verdict": "ok"
+    }
+  }
+}

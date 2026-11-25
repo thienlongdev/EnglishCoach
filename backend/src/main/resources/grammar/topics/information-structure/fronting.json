@@ -1,0 +1,467 @@
+{
+  "schema": 1,
+  "slug": "fronting",
+  "version": 2,
+  "domain": "information-structure",
+  "order": 20,
+  "kind": "grammar",
+  "title": {
+    "vi": "Đưa thành phần lên đầu câu",
+    "en": "Fronting"
+  },
+  "subtitle": {
+    "vi": "Đưa một phần lên đầu với mục đích rõ",
+    "en": "Put a constituent first for a clear discourse purpose"
+  },
+  "aliases": [
+    "đưa thành phần lên đầu",
+    "fronting",
+    "this chapter I liked",
+    "locative inversion",
+    "here it comes"
+  ],
+  "level": "C1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Phân biệt phần đầu câu với chủ ngữ.",
+    "Giữ quan hệ vai nghĩa khi fronting.",
+    "Không đảo chủ ngữ sau mọi phần đưa lên đầu."
+  ],
+  "prerequisites": [
+    "given-before-new"
+  ],
+  "related": [
+    {
+      "slug": "given-before-new",
+      "rel": "more"
+    },
+    {
+      "slug": "negative-inversion",
+      "rel": "contrast"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Fronting đưa một thành phần như tân ngữ hoặc trạng ngữ lên đầu để tạo mạch, đối chiếu hoặc nhấn. Một số mẫu có đảo, nhiều mẫu không có.",
+    "when": "Chọn khi ngữ cảnh cần điểm xuất phát khác, không để làm mọi câu cầu kỳ.",
+    "examples": [
+      {
+        "en": "[O|This chapter] [S|I] [V|liked].",
+        "vi": "Chương này thì tôi thích."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "This chapter I liked đặt tân ngữ lên trước chủ ngữ, thường có đối chiếu với phần khác. I vẫn là người thích, chapter vẫn là thứ được thích. Không đổi thành This chapter liked I."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Tân ngữ lên đầu",
+            "items": [
+              "This chapter"
+            ]
+          },
+          {
+            "label": "Chủ ngữ",
+            "items": [
+              "I"
+            ]
+          },
+          {
+            "label": "Động từ",
+            "items": [
+              "liked"
+            ]
+          }
+        ],
+        "sentence": "{0} {1} {2}."
+      },
+      "caption": "Tân ngữ đứng trước nhưng vai người thích và thứ được thích không đổi.",
+      "alt": "Tân ngữ đứng trước nhưng vai người thích và thứ được thích không đổi."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Kiểu",
+        "Ví dụ",
+        "Đảo?"
+      ],
+      "rows": [
+        [
+          "Tân ngữ",
+          "This chapter I liked.",
+          "không tự đảo"
+        ],
+        [
+          "Thời gian",
+          "Yesterday she called.",
+          "không tự đảo"
+        ],
+        [
+          "Nơi chốn",
+          "On the hill stood a tower.",
+          "có trong mẫu này"
+        ],
+        [
+          "Here với đại từ",
+          "Here it comes.",
+          "không dùng mẫu danh từ đảo giống hệt"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Một số câu nơi chốn như On the hill stood a tower dùng động từ trước chủ ngữ danh từ, thường giới thiệu cảnh. Không đổi mọi câu có cụm nơi chốn thành đảo; ngữ cảnh và loại chủ ngữ quan trọng."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Yesterday đầu câu không buộc did she call. Đảo do từ phủ định hoặc only có điều kiện riêng ở bài negative-inversion."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Trong lời nói, That report, I have not read it yet có thể là topic tách ra rồi dùng đại từ nối lại. Đây không cùng mẫu fronting không đại từ lặp; không gọi mọi cấu trúc topic có it là lỗi."
+    },
+    {
+      "type": "p",
+      "vi": "Fronting có thể nghe đánh dấu hoặc văn chương nếu không có ngữ cảnh đối chiếu. Sự tự nhiên là vấn đề văn phong và mạch, không phải mọi câu marked đều sai ngữ pháp."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "fronting-m1",
+      "wrong": "This chapter liked I.",
+      "right": "This chapter I liked.",
+      "why": "Giữ I làm chủ ngữ sau tân ngữ đưa đầu."
+    },
+    {
+      "id": "fronting-m2",
+      "wrong": "Here comes the buses.",
+      "right": "Here come the buses.",
+      "why": "Hòa hợp với buses số nhiều."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Fronting có luôn đảo không?",
+      "a": "Không. This chapter I liked và Yesterday she called không đảo."
+    },
+    {
+      "q": "Có nên đưa mọi tân ngữ lên đầu không?",
+      "a": "Không. Cần mục đích mạch, nhấn hoặc đối chiếu phù hợp."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "fronting-01",
+      "prompt": "Chọn câu đưa tân ngữ lên đầu theo đúng nhiệm vụ.",
+      "explain": "Fronting giữ một vị trí tân ngữ liên hệ với cụm đầu; không đổi vai sang chủ ngữ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "I liked this chapter. Đưa this chapter lên đầu, không thêm đại từ lặp.",
+      "options": [
+        {
+          "t": "This chapter I liked.",
+          "ok": true,
+          "note": "Tân ngữ được đưa lên trước I."
+        },
+        {
+          "t": "This chapter liked I.",
+          "ok": false,
+          "note": "Đổi trật tự chủ ngữ/động từ không phù hợp mẫu này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "This chapter I liked it.",
+          "ok": false,
+          "note": "Không theo nhiệm vụ fronting không đại từ lặp; cấu trúc topic có đại từ là chủ đề khác.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "fronting-02",
+      "prompt": "Nối câu với phần đưa lên đầu.",
+      "explain": "Không phải mọi phần đầu câu là chủ ngữ.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "This chapter I liked.",
+          "b": "Tân ngữ"
+        },
+        {
+          "a": "Yesterday she called.",
+          "b": "Trạng ngữ thời gian"
+        },
+        {
+          "a": "On the hill stood a tower.",
+          "b": "Cụm nơi chốn"
+        }
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "fronting-03",
+      "prompt": "Phân loại có đảo chủ ngữ/động từ trong ví dụ hay không.",
+      "explain": "Tân ngữ và thời gian đầu câu không tự bắt đảo.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Có đảo trong ví dụ",
+        "Không đảo trong ví dụ"
+      ],
+      "items": [
+        {
+          "t": "On the hill stood a tower.",
+          "cat": "Có đảo trong ví dụ"
+        },
+        {
+          "t": "This chapter I liked.",
+          "cat": "Không đảo trong ví dụ"
+        },
+        {
+          "t": "Yesterday she called.",
+          "cat": "Không đảo trong ví dụ"
+        }
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "fronting-04",
+      "prompt": "Dùng present simple của come theo chủ ngữ.",
+      "explain": "The bus số ít comes; pronoun it đứng trước comes trong mẫu này.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "Here {1} (come) the bus. Here it {2} (come).",
+      "blanks": {
+        "1": {
+          "accept": [
+            "comes"
+          ]
+        },
+        "2": {
+          "accept": [
+            "comes"
+          ]
+        }
+      },
+      "level": "C1"
+    },
+    {
+      "id": "fronting-05",
+      "prompt": "Sửa hòa hợp trong mẫu here.",
+      "explain": "Buses số nhiều cần come.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "Here"
+        },
+        {
+          "t": "comes",
+          "bad": true,
+          "fix": [
+            "come"
+          ],
+          "note": "Chủ ngữ the buses là số nhiều.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "the buses."
+        }
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "fronting-06",
+      "prompt": "Sắp xếp bắt đầu bằng That report; không thêm đại từ lặp.",
+      "explain": "Fronted object không buộc đảo trợ động từ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "That report",
+        "I",
+        "have not",
+        "read"
+      ],
+      "accept": [
+        [
+          "That report",
+          "I",
+          "have not",
+          "read"
+        ]
+      ],
+      "end": ".",
+      "level": "C1"
+    },
+    {
+      "id": "fronting-07",
+      "prompt": "Đưa tân ngữ lên đầu để đối chiếu.",
+      "explain": "Câu có thể dùng dấu phẩy để làm ranh giới rõ, nhưng không bắt buộc ở nhiệm vụ này.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "I liked this chapter.",
+      "instruction": "Bắt đầu This chapter, giữ I liked sau đó; không thêm it.",
+      "accept": [
+        "This chapter I liked",
+        "This chapter, I liked"
+      ],
+      "model": "This chapter I liked",
+      "level": "C1"
+    },
+    {
+      "id": "fronting-08",
+      "prompt": "Viết một đoạn có đối chiếu và một cảnh.",
+      "explain": "Tự đối chiếu, không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết hai ý đối chiếu có một tân ngữ đưa lên đầu. Thêm câu thời gian đầu câu không đảo và câu nơi chốn đầu câu có hoặc không đảo phù hợp.",
+      "model": [
+        "The first chapter was difficult. This chapter I liked. Yesterday I finished it. On the hill stood a small tower."
+      ],
+      "checklist": [
+        "Ngữ cảnh giải thích vì sao nhấn phần đầu.",
+        "Không đảo chỉ vì có yesterday.",
+        "Không áp quy tắc locative inversion cho mọi đại từ."
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "fronting-09",
+      "prompt": "Điền dạng quá khứ của stand và hiện tại của be theo khung.",
+      "explain": "Stood là quá khứ; there/locative form vẫn phải theo chủ ngữ và mốc.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "On the hill {1} (stand) a tower in 1920. Today, at the top of the hill, it {2} (be) a ruin.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "stood"
+          ]
+        },
+        "2": {
+          "accept": [
+            "is"
+          ]
+        }
+      },
+      "level": "C1"
+    },
+    {
+      "id": "fronting-10",
+      "prompt": "Đưa tân ngữ lên đầu, giữ phủ định hoàn thành.",
+      "explain": "Have not/haven’t giữ nghĩa chưa đọc; không đảo theo mẫu câu hỏi.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "I have not read that report.",
+      "instruction": "Bắt đầu That report; giữ I và khung phủ định, không thêm it. Cho phép dấu phẩy sau phần đầu.",
+      "accept": [
+        "That report I have not read",
+        "That report, I have not read",
+        "That report I haven’t read",
+        "That report, I haven’t read"
+      ],
+      "model": "That report I have not read",
+      "level": "C1"
+    },
+    {
+      "id": "fronting-11",
+      "prompt": "Chọn tất cả câu chuẩn.",
+      "explain": "Có nhiều kiểu fronting; mẫu với đại từ khác danh từ mới ở locative inversion.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "Yesterday she called.",
+          "ok": true,
+          "note": "Trạng ngữ trước, trật tự thường."
+        },
+        {
+          "t": "Here it comes.",
+          "ok": true,
+          "note": "Đại từ đứng trước động từ."
+        },
+        {
+          "t": "Here comes the bus.",
+          "ok": true,
+          "note": "Danh từ chủ ngữ sau động từ trong mẫu này."
+        },
+        {
+          "t": "Here comes the buses.",
+          "ok": false,
+          "note": "Cần come với buses.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "fronting-12",
+      "prompt": "Chọn nhận xét đúng về topic trong lời nói.",
+      "explain": "Left dislocation có đại từ lặp là cấu trúc khác, không tự lỗi ở mọi thể loại.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "That report, I have not read it yet.",
+      "options": [
+        {
+          "t": "Có thể là topic có đại từ nối lại trong lời nói; khác nhiệm vụ fronting không đại từ lặp.",
+          "ok": true,
+          "note": "Phải phân biệt cấu trúc và văn phong."
+        },
+        {
+          "t": "Mọi câu có topic và it luôn sai mọi tiếng Anh.",
+          "ok": false,
+          "note": "Có cấu trúc lời nói như vậy.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Mọi phần đưa đầu câu đều bắt đảo chủ ngữ.",
+          "ok": false,
+          "note": "Không đúng với object fronting hay yesterday.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "C1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "lgswe",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "key-on-hook",
+  "title": "Chìa khóa ở đâu?",
+  "summary": "Ở quầy lễ tân có một chiếc hộp. Đổi vị trí chìa khóa rồi đoán người nghe sẽ tìm ở đâu.",
+  "level": "A1",
+  "topics": [
+    "prepositions-place"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Vị trí",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Bên trong"
+        },
+        {
+          "id": "v2",
+          "label": "Trên mặt"
+        },
+        {
+          "id": "v3",
+          "label": "Bên dưới"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The key is in the box.",
+      "vi": "Chìa khóa ở trong hộp.",
+      "note": "In đặt vật trong khoảng không của hộp. / Look inside it.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The key is on the box.",
+      "vi": "Chìa khóa nằm trên hộp.",
+      "note": "On cho biết chìa khóa tiếp xúc với mặt hộp. / Look on its surface.",
+      "verdict": "ok"
+    },
+    "v3": {
+      "en": "The key is under the box.",
+      "vi": "Chìa khóa ở dưới hộp.",
+      "note": "Under lấy hộp làm mốc ở phía trên chìa khóa. / Lift the box to look.",
+      "verdict": "ok"
+    }
+  }
+}

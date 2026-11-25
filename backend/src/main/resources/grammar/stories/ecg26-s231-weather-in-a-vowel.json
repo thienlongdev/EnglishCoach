@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s231-weather-in-a-vowel",
+  "title": "Thời tiết nằm trong một nguyên âm",
+  "level": "C1",
+  "topics": [
+    "pragmatic-softening",
+    "modality-degrees-of-certainty"
+  ],
+  "scene": "interview",
+  "summary": "Trong bản ghi cuối, mẹ Nga ngập ngừng trước chữ “perhaps”. Gia đình tưởng bà biết trước cơn bão nhưng không chịu nói.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Nga",
+      "role": "Người thu giọng nói"
+    },
+    {
+      "id": "b",
+      "name": "Yara",
+      "role": "Người đọc dự báo"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Yara tìm được phiếu dự báo ghi hai khả năng ngang nhau, cùng nét chữ của mẹ. Giọng run còn có thể vì micro quá lạnh.",
+      "say": [
+        {
+          "who": "a",
+          "en": "She paused on perhaps. I've listened to it for years.",
+          "vi": "Mẹ ngập ngừng ở chữ perhaps. Tôi đã nghe nó suốt bao năm."
+        },
+        {
+          "who": "b",
+          "en": "A pause has no label telling us why it's there.",
+          "vi": "Khoảng ngừng đâu có nhãn cho ta biết vì sao nó ở đó."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Nga định viết lời dẫn cho bản thu gia đình. Chọn mức độ khẳng định phù hợp.",
+        "options": [
+          {
+            "t": "She may have been weighing the two forecasts.",
+            "note": "May have been weighing giữ việc cân nhắc như một khả năng quá khứ. Nó phù hợp với phiếu, chưa đoán chắc động cơ.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "She must have been hiding the storm from us.",
+            "note": "Must have been hiding suy ra cả tri thức lẫn ý giấu tin. Phiếu có hai khả năng và âm thanh ngập ngừng chưa đủ để đi xa thế.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Nga để khoảng ngừng nguyên vẹn. Lần đầu người em nghe tới câu sau: Perhaps the boats should stay. Gia đình nghe được lời dè dặt có tác dụng thật.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I've finally let her finish the sentence.",
+          "vi": "Cuối cùng tôi đã để mẹ nói hết câu."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Yara phát lại đoạn sau, nơi người mẹ nói rõ cả hai kịch bản. Nga bỏ lời buộc tội khỏi băng, giữ tiếng mẹ thở trước khi thốt lời khuyên.",
+      "say": [
+        {
+          "who": "b",
+          "en": "You can hear the care without inventing a secret.",
+          "vi": "Ta nghe được sự thận trọng mà không cần dựng ra bí mật."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

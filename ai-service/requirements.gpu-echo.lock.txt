@@ -1,0 +1,104 @@
+# ==============================================================================
+# English Coach — Canonical GPU Echo AI Runtime Lockfile (Commercial-Clean Stack)
+# ==============================================================================
+# Verified against live production GPU container on 2026-11-25:
+#   Container : englishcoach-ai-whisperx
+#   Image     : englishcoach-ai-whisperx:echo-voice-repair-20261125
+#   Image SHA : sha256:839cb47723fb53bc4571c1f2849aaa0342575e6c6a56fd3e186e311d1d13ec49
+#   Python    : 3.11.16 (Linux x86_64, RTX 5070 CUDA host)
+#   Compose   : deploy/ai/docker-compose.gpu.yml + deploy/ai/Dockerfile.gpu-echo
+#
+# Licensing & Exclusion Guarantees:
+# - ZERO in-process GPLv3+ speech/G2P libraries (`phonemizer`, `phonemizer-fork`,
+#   `espeakng-loader`, `libespeak-ng` are excluded; `PID1_ESPEAK_SO=NONE`).
+# - Retired packages intentionally omitted from this commercial-clean lock:
+#   * `phonemizer` (GPL-3.0+; orphaned dist-info in legacy base layer, not importable)
+#   * `langgraph` (MIT; 0 imports/references across `ai-service/`)
+#
+# Mounted Commercial-Clean Model Weights (`/root/.cache/huggingface`):
+# - Local CPU Instruct LLM (`echo-local-llm-v3`, `n_gpu_layers=0`, `0 MiB` VRAM, `n_ctx=12288` FP16 KV):
+#   * `unsloth/Qwen3-4B-Instruct-2507-GGUF` @ `a06e946bb6b655725eafa393f4a9745d460374c9` (`Apache-2.0`)
+#   * Fallback: `Qwen/Qwen2.5-1.5B-Instruct-GGUF` @ `91cad51170dc346986eccefdc2dd33a9da36ead9` (`Apache-2.0`)
+# - Bilingual Streaming TTS (`jarvis-tts-v2`):
+#   * EN: `hexgrad/Kokoro-82M` v1.0 (`Apache-2.0`, CUDA, via `kokoro.model.KModel` + `KokoroOovFallback`)
+#   * VI & EN-VI CS: `pnnbao-ump/VieNeu-TTS-v3-Turbo` @ `61b85e3d937fbbacb387714180e8182823512523` (`Apache-2.0`, CPU ONNX INT8)
+#   * Codec: `OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano-ONNX` @ `ceff0d0749bfb3fa2d61149794ec6feef0d1e1ae` (`Apache-2.0`)
+# - Isolated Echo ASR & Semantic Turn Detection:
+#   * `mobiuslabsgmbh/faster-whisper-large-v3-turbo` (`MIT`, `int8_float16` CUDA)
+#   * `Smart Turn v3.2` (`BSD-2-Clause`, CPU ONNX)
+# - Listening YouTube Import ASR & Forced Alignment:
+#   * `faster-whisper` `large-v3` (`MIT`, CUDA) + `whisperx` (`BSD-2-Clause`) + `WAV2VEC2_ASR_BASE_960H`
+# ==============================================================================
+
+# --- 1. Web API & Async Server ---
+fastapi==0.141.1                                      # MIT
+uvicorn==0.53.0                                       # BSD-3-Clause
+starlette==1.6.0                                      # BSD-3-Clause
+pydantic==2.13.5                                      # MIT
+pydantic_core==2.46.5                                 # MIT
+httpx==0.28.1                                         # BSD-3-Clause
+python-multipart==0.0.32                              # Apache-2.0
+aiofiles==25.1.0                                      # Apache-2.0
+anyio==4.15.1                                         # MIT
+h11==0.16.0                                           # MIT
+httptools==0.8.0                                      # MIT
+websockets==16.1.1                                    # BSD-3-Clause
+uvloop==0.22.1                                        # MIT OR Apache-2.0
+watchfiles==1.3.0                                     # MIT
+orjson==3.12.0                                        # Apache-2.0 OR MIT (with MPL-2.0 components)
+python-dotenv==1.2.3                                  # BSD-3-Clause
+
+# --- 2. Local CPU Instruct LLM (`echo-local-llm-v3`, 0 MiB VRAM) ---
+llama_cpp_python==0.3.38                              # MIT (prebuilt CPU wheel, n_gpu_layers=0)
+
+# --- 3. Bilingual Streaming TTS (`jarvis-tts-v2`, 0 GPLv3+ / 0 CC-BY-NC) ---
+kokoro==0.9.4                                         # Apache-2.0 (loaded via kokoro.model.KModel only)
+misaki==0.9.4                                         # Apache-2.0 (loaded via misaki.en.G2P + KokoroOovFallback; never misaki.espeak)
+vieneu==3.8.5                                         # Apache-2.0 (CPU ONNX INT8 Vietnamese + EN-VI CS)
+sea-g2p==0.10.0                                       # Apache-2.0 (Rust Vietnamese G2P)
+onnxruntime==1.31.1                                   # MIT (VieNeu-TTS INT8 + Smart Turn v3.2)
+spacy==3.8.18                                         # MIT (English POS tagging for Misaki)
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl#sha256=1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85  # MIT
+num2words==0.5.14                                     # LGPL-2.1 (dynamic Python dependency of misaki)
+soundfile==0.14.0                                     # BSD-3-Clause
+soxr==1.1.0                                           # LGPL-2.1-or-later (audio resampling)
+loguru==0.8.0                                         # MIT
+
+# --- 4. ASR, Forced Alignment, Audio & Pronunciation ---
+faster-whisper==1.2.1                                 # MIT
+ctranslate2==4.8.4                                    # MIT
+whisperx==3.8.6                                       # BSD-2-Clause (installed --no-deps)
+av==18.1.0                                            # BSD-3-Clause
+pocketsphinx==5.1.1                                   # BSD-2-Clause
+kaldi_native_fbank==1.23.3                            # Apache-2.0
+nltk==3.10.3                                          # Apache-2.0
+yt-dlp==2026.8.19                                     # Unlicense
+youtube-transcript-api==1.2.4                         # MIT
+
+# --- 5. Core Deep Learning, Transformers, CUDA & Scientific ---
+torch==2.14.0                                         # BSD-3-Clause / Apache-2.0
+torchaudio==2.11.0                                    # BSD-2-Clause
+torchvision==0.29.0                                   # BSD-3-Clause
+transformers==5.17.0                                  # Apache-2.0
+huggingface_hub==1.32.0                               # Apache-2.0
+tokenizers==0.23.2                                    # Apache-2.0
+safetensors==0.8.0                                    # Apache-2.0
+tiktoken==0.14.0                                      # MIT
+numpy==2.4.6                                          # BSD-3-Clause
+scipy==1.17.1                                         # BSD-3-Clause
+scikit-learn==1.9.1                                   # BSD-3-Clause
+pandas==3.0.6                                         # BSD-3-Clause
+nvidia-cublas-cu12==12.9.2.10                         # LicenseRef-NVIDIA-Proprietary (CUDA 12 cuBLAS for CTranslate2)
+
+# --- 6. OCR, Document Parsing & Cloud LLM Client ---
+easyocr==1.7.2                                        # Apache-2.0
+opencv-python-headless==5.0.0.93                      # Apache-2.0
+pillow==12.3.0                                        # MIT-CMU
+pymupdf==1.28.2                                       # Dual Licensed: AGPL-3.0 OR Artifex Commercial License
+openai==3.16.2                                        # Apache-2.0
+langchain==1.4.2                                      # MIT
+langchain-core==1.6.3                                 # MIT
+langchain-openai==1.6.2                               # MIT
+
+# --- 7. Test Runner ---
+pytest==8.3.5                                         # MIT

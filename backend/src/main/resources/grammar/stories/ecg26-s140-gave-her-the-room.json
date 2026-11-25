@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s140-gave-her-the-room",
+  "title": "Căn phòng trao cho ai?",
+  "summary": "Nhạc công già nói “She gave the children her room for an hour”. Aki suýt ghi thư viện đã tặng đứt căn phòng cho các em.",
+  "level": "B1",
+  "topics": [
+    "two-object-verbs"
+  ],
+  "scene": "library-mystery",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Giang",
+      "role": "Người giữ thư viện"
+    },
+    {
+      "id": "b",
+      "name": "Aki",
+      "role": "Người thu âm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Sau một giờ, trẻ trao chìa lại cho nhạc công. Trong giờ đó các em được nghe mưa gõ trên mái bằng thiếc. Căn phòng vẫn thuộc về bà.",
+      "say": [
+        {
+          "who": "a",
+          "en": "They returned the key at four.",
+          "vi": "Các em đã trả chìa lúc bốn giờ."
+        },
+        {
+          "who": "b",
+          "en": "Tell the story without taking her home away.",
+          "vi": "Kể chuyện mà đừng lấy mất nhà của bà nhé."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn lời diễn đạt đúng giới hạn thời gian và người hưởng.",
+        "options": [
+          {
+            "ok": true,
+            "t": "She let the children use her room for an hour.",
+            "note": "Let the children use nói cho phép sử dụng, for an hour giới hạn thời lượng. Nó làm rõ nghĩa tạm thời của lời gave trong cảnh này.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "The children gave her their room for an hour.",
+            "note": "Đảo the children lên chủ ngữ và đổi her room thành their room làm đổi hướng cho mượn. Điều trả chìa cho bà không phù hợp.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Aki đặt tên bản thu là Một giờ ở nhà bà. Trẻ gửi bà bản nhạc đầu tiên làm từ tiếng mưa trên mái.",
+      "say": [
+        {
+          "who": "b",
+          "en": "They brought the hour back, not the house.",
+          "vi": "Các em đem về một giờ đồng hồ chứ không đem ngôi nhà."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Chiếc chìa trở về túi chủ, còn âm thanh ở lại trong thư viện.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Giang mời trẻ diễn lại động tác chuyền chìa rồi nhận về. Mỗi em tự chọn một từ chỉ vai, người cho hay người mượn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Five minutes was enough for the last sound.",
+          "vi": "Năm phút đủ để thu nốt âm thanh cuối."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Bà cười và cho cả nhóm mượn thêm đúng năm phút để thu tiếng chìa lách cách.",
+      "end": true
+    }
+  ]
+}

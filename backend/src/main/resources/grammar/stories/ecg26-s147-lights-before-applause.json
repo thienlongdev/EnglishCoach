@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s147-lights-before-applause",
+  "title": "Tiếng vỗ tay trước khi đèn lên",
+  "level": "B1",
+  "topics": [
+    "time-clauses"
+  ],
+  "scene": "lecture",
+  "summary": "Tối đầu biểu diễn, Bo nghe tiếng vỗ tay trong bóng tối liền cúi chào. Khán giả vẫn chưa vào. Đó là người thử máy âm thanh.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Ly",
+      "role": "Người chỉnh đèn"
+    },
+    {
+      "id": "b",
+      "name": "Bo",
+      "role": "Người kể chuyện"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Ly hứa chỉ bật đèn lúc cửa khán phòng đã đóng. Bo cần một tín hiệu không thể nhầm với băng vỗ tay.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I bowed to twelve empty seats.",
+          "vi": "Tôi vừa cúi chào mười hai ghế trống."
+        },
+        {
+          "who": "b",
+          "en": "Wait for my light next time.",
+          "vi": "Lượt tới đợi đèn của tôi nhé."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Bo nêu kế hoạch hành động sau tín hiệu.",
+        "options": [
+          {
+            "t": "I started before the light came on.",
+            "note": "Câu kể một sự kiện đã qua, còn before đặt nó trước tín hiệu. Nó tả được lỗi cũ chứ chưa nói kế hoạch lượt tới.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "I'll start when the light comes on.",
+            "note": "When + hiện tại đơn comes on chỉ mốc tương lai, còn will start là hành động sau tín hiệu. Chọn đúng tín hiệu thật của Ly.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Tiếng băng thử vang lần nữa, Bo đứng yên. Đèn bật lên lúc có cô bé hàng đầu chờ em kể. Bo dành câu đầu tiên cho em: Chuyện này từng được kể cho mười hai chiếc ghế.",
+      "say": [
+        {
+          "who": "a",
+          "en": "They were very patient chairs.",
+          "vi": "Mấy chiếc ghế ấy kiên nhẫn lắm."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Ly tắt băng thử, chỉ cho Bo xem bóng đầu tiên ở hàng ghế. Hai người tập lại một lần với ngọn đèn thật. Khi cửa đóng, em biết đêm diễn đã bắt đầu mà chẳng cần tiếng vỗ tay.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I can tell a beginning from an ending now.",
+          "vi": "Giờ em phân biệt được lúc mở màn với lúc hạ màn."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

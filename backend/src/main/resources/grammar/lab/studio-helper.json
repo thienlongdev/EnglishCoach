@@ -1,0 +1,41 @@
+{
+  "id": "studio-helper",
+  "title": "Có thể bỏ who ở đâu?",
+  "summary": "Bạn viết danh sách khách mời cho xưởng. Khi bỏ từ quan hệ, hãy kiểm tra mệnh đề sau danh từ đã có chủ ngữ riêng chưa.",
+  "level": "B1",
+  "topics": [
+    "relative-clauses-defining",
+    "subject-object-questions"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Vai trò người khách",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Khách thực hiện"
+        },
+        {
+          "id": "v2",
+          "label": "Tôi gọi khách"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The guest who called me is here.",
+      "vi": "Vị khách đã gọi cho tôi đang ở đây.",
+      "note": "Sau who là động từ called chưa có chủ ngữ nào khác. Trong mẫu này cần giữ từ quan hệ. / Who is the subject of called.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The guest I called is here.",
+      "vi": "Vị khách mà tôi gọi đang ở đây.",
+      "note": "I là chủ ngữ của called. Vị trí tân ngữ chỉ the guest nên không bắt buộc có whom hoặc that. / The object relative can be left unexpressed.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "schema": 1,
+  "slug": "noun-clauses-wh-if",
+  "version": 2,
+  "domain": "clauses",
+  "order": 110,
+  "kind": "grammar",
+  "title": {
+    "vi": "Mệnh đề danh từ với wh-, if, whether",
+    "en": "Wh- and if-clauses as nouns"
+  },
+  "subtitle": {
+    "vi": "Nhúng câu hỏi và nội dung chưa biết",
+    "en": "Embed questions and uncertain information"
+  },
+  "aliases": [
+    "mệnh đề danh từ wh if whether",
+    "embedded questions",
+    "where is she sau know",
+    "if to apply",
+    "whether or not"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Dùng trật tự trần thuật trong mệnh đề gián tiếp.",
+    "Phân biệt if gián tiếp và if điều kiện.",
+    "Nhận ra những vị trí cần whether thay vì if."
+  ],
+  "prerequisites": [
+    "noun-clauses-that",
+    "indirect-questions"
+  ],
+  "related": [
+    {
+      "slug": "noun-clauses-that",
+      "rel": "contrast"
+    },
+    {
+      "slug": "indirect-questions",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Mệnh đề wh- và if/whether có thể nêu thông tin chưa biết hoặc câu hỏi được nhúng vào cấu trúc khác.",
+    "when": "Khung ngoài có thể là câu hỏi; mệnh đề trong thường giữ chủ ngữ trước động từ.",
+    "examples": [
+      {
+        "en": "Do you know [Q|where] the office is?",
+        "vi": "Bạn biết văn phòng ở đâu không?"
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Where is the office? là câu hỏi trực tiếp. Trong Do you know where the office is?, do thuộc khung ngoài, còn mệnh đề where the office is không đảo động từ lên trước chủ ngữ."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Khung câu hỏi ngoài",
+            "items": [
+              "Do you know"
+            ]
+          },
+          {
+            "label": "Nội dung trong",
+            "items": [
+              "where the office is"
+            ]
+          }
+        ],
+        "sentence": "{0} {1}?"
+      },
+      "caption": "The office đứng trước is bên trong mệnh đề nội dung.",
+      "alt": "The office đứng trước is bên trong mệnh đề nội dung."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Ý nghĩa/vị trí",
+        "Mẫu",
+        "Giới hạn"
+      ],
+      "rows": [
+        [
+          "Thông tin mở",
+          "I know where she works.",
+          "wh- phù hợp điều cần biết"
+        ],
+        [
+          "Có/không sau wonder",
+          "I wonder if/whether she is free.",
+          "cả hai có thể dùng"
+        ],
+        [
+          "Trước to-infinitive",
+          "whether to apply",
+          "không if to"
+        ],
+        [
+          "Sau giới từ",
+          "talk about whether to apply",
+          "dùng whether"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "If còn nêu điều kiện: I will call if I need help. Đây không phải câu hỏi có/không được nhúng. Trong I wonder if she needs help, người nói đang phân vân về câu trả lời."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Who có thể làm chủ ngữ: I know who called. Không thêm một chủ ngữ lặp hoặc bắt buộc do chỉ vì thấy từ hỏi."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Whether có thể đi với or not trước nội dung: whether or not she agrees. Với if, or not thường ở cuối: if she agrees or not. Không thay whether bằng if ở mọi vị trí."
+    },
+    {
+      "type": "p",
+      "vi": "Whether she agrees is unclear là một mẫu làm chủ ngữ. Trong văn viết chuẩn trung tính, whether là lựa chọn phù hợp cho mẫu đầu câu này; không suy mọi if đều thay tự do."
+    },
+    {
+      "type": "p",
+      "vi": "What có thể nêu một câu hỏi được nhúng hoặc một nội dung kiểu “điều mà”: I know what she wants / What she wants is a quiet room. Tên gọi “mệnh đề danh từ” giúp học chức năng, không có nghĩa mọi wh-clause phân tích hoàn toàn giống nhau."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "noun-clauses-wh-if-m1",
+      "wrong": "Do you know where is she?",
+      "right": "Do you know where she is?",
+      "why": "Không đảo bên trong câu hỏi gián tiếp."
+    },
+    {
+      "id": "noun-clauses-wh-if-m2",
+      "wrong": "I cannot decide if to apply.",
+      "right": "I cannot decide whether to apply.",
+      "why": "Dùng whether trước to-infinitive."
+    }
+  ],
+  "faq": [
+    {
+      "q": "If và whether có luôn đổi cho nhau không?",
+      "a": "Không. Sau wonder có thể cả hai; trước to-infinitive hoặc sau giới từ trong các mẫu đang học dùng whether."
+    },
+    {
+      "q": "Câu ngoài là câu hỏi thì câu trong có đảo không?",
+      "a": "Thông thường không. Do you know where she is? có đảo ở ngoài nhưng where she is giữ trật tự trần thuật."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ncw-01",
+      "prompt": "Chọn trật tự câu hỏi gián tiếp.",
+      "explain": "Mệnh đề sau know không đảo is lên trước the office.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "Do you know ___",
+      "options": [
+        {
+          "t": "where the office is?",
+          "ok": true,
+          "note": "Chủ ngữ the office trước is."
+        },
+        {
+          "t": "where is the office?",
+          "ok": false,
+          "note": "Đây là trật tự câu hỏi trực tiếp, không phù hợp bên trong know.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "where the office it is?",
+          "ok": false,
+          "note": "Lặp chủ ngữ it.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ncw-02",
+      "prompt": "Nối câu với loại thông tin mà mệnh đề nêu, có thể là chưa biết hoặc đã biết.",
+      "explain": "Wh- nêu thông tin mở; if/whether nêu khả năng có hay không.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "I wonder where she works.",
+          "b": "Nơi làm việc"
+        },
+        {
+          "a": "I wonder whether she works here.",
+          "b": "Có làm ở đây hay không"
+        },
+        {
+          "a": "I know who called.",
+          "b": "Người đã gọi"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ncw-03",
+      "prompt": "Phân loại if theo ý đích: câu Ask him yêu cầu hỏi xem văn phòng mở hay không, không đặt điều kiện cho việc hỏi.",
+      "explain": "If có thể nêu điều kiện hoặc câu hỏi có/không.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Điều kiện",
+        "Câu hỏi có/không gián tiếp"
+      ],
+      "items": [
+        {
+          "t": "I will call if I need help.",
+          "cat": "Điều kiện"
+        },
+        {
+          "t": "I wonder if she needs help.",
+          "cat": "Câu hỏi có/không gián tiếp"
+        },
+        {
+          "t": "Ask him if the office is open.",
+          "cat": "Câu hỏi có/không gián tiếp"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ncw-04",
+      "prompt": "Điền if hoặc whether nơi có thể; sau about dùng mẫu phù hợp.",
+      "explain": "Cả if/whether sau wonder được; sau giới từ about dùng whether.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "I wonder {1} she is free. We talked about {2} to apply.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "if",
+            "whether"
+          ]
+        },
+        "2": {
+          "accept": [
+            "whether"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "ncw-05",
+      "prompt": "Sửa câu hỏi gián tiếp với where.",
+      "explain": "Dùng chủ ngữ trước động từ trong mệnh đề gián tiếp.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "I do not know"
+        },
+        {
+          "t": "where is she",
+          "bad": true,
+          "fix": [
+            "where she is"
+          ],
+          "note": "Không đảo is lên trước she.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "now."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ncw-06",
+      "prompt": "Sắp xếp câu hỏi bắt đầu bằng Do you know.",
+      "explain": "Do thuộc khung câu hỏi ngoài; where she works không đảo.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "Do you know",
+        "where",
+        "she",
+        "works"
+      ],
+      "accept": [
+        [
+          "Do you know",
+          "where",
+          "she",
+          "works"
+        ]
+      ],
+      "end": "?",
+      "level": "B1"
+    },
+    {
+      "id": "ncw-07",
+      "prompt": "Chuyển câu hỏi trực tiếp thành nội dung sau know.",
+      "explain": "Đưa was sau the meeting trong mệnh đề gián tiếp.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "Why was the meeting cancelled?",
+      "instruction": "Mở đầu I do not know hoặc I don’t know; giữ why, the meeting, was, cancelled.",
+      "accept": [
+        "I do not know why the meeting was cancelled",
+        "I don’t know why the meeting was cancelled"
+      ],
+      "model": "I do not know why the meeting was cancelled",
+      "level": "B1"
+    },
+    {
+      "id": "ncw-08",
+      "prompt": "Viết hai câu hỏi thông tin lịch sự và một câu diễn đạt sự phân vân.",
+      "explain": "Tự đối chiếu cấu trúc; không chấm tự động bài mở.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Hỏi vị trí văn phòng bằng Do you know where, hỏi mở cửa hay không bằng Could you tell me if/whether, rồi viết câu phân vân whether to apply.",
+      "model": [
+        "Do you know where the office is? Could you tell me whether it is open? I am not sure whether to apply."
+      ],
+      "checklist": [
+        "Mệnh đề trong không đảo như câu hỏi trực tiếp.",
+        "Whether to + dạng gốc, không dùng if to.",
+        "If điều kiện và if gián tiếp không bị nhầm nghĩa."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ncw-09",
+      "prompt": "Điền dạng hiện tại của be/work và từ whether hoặc if phù hợp trước to.",
+      "explain": "Is và works theo chủ ngữ số ít; to-infinitive dùng whether.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "Do you know where Lan {1} (work)? I wonder whether she {2} (be) free now. I cannot decide {3} to call.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "works"
+          ]
+        },
+        "2": {
+          "accept": [
+            "is"
+          ]
+        },
+        "3": {
+          "accept": [
+            "whether"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "ncw-10",
+      "prompt": "Chuyển sang câu hỏi gián tiếp có/không.",
+      "explain": "If và whether đều dùng sau know trong mẫu này.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "Is the office open?",
+      "instruction": "Mở đầu Do you know, dùng if hoặc whether, giữ the office và open.",
+      "accept": [
+        "Do you know if the office is open?",
+        "Do you know whether the office is open?"
+      ],
+      "model": "Do you know if the office is open?",
+      "level": "B1"
+    },
+    {
+      "id": "ncw-11",
+      "prompt": "Chọn tất cả mẫu chuẩn.",
+      "explain": "Whether dùng sau giới từ và trước to; if có thể sau wonder.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "I wonder if she is free.",
+          "ok": true,
+          "note": "If nêu câu hỏi có/không."
+        },
+        {
+          "t": "I cannot decide whether to apply.",
+          "ok": true,
+          "note": "Whether to-infinitive chuẩn."
+        },
+        {
+          "t": "I cannot decide if to apply.",
+          "ok": false,
+          "note": "Không dùng if to theo mẫu này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Do you know where is she?",
+          "ok": false,
+          "note": "Cần where she is.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ncw-12",
+      "prompt": "Chọn nhận xét đúng về who làm chủ ngữ.",
+      "explain": "Who called không cần đổi thành did who call; trật tự nhìn giống câu trực tiếp vì who là chủ ngữ.",
+      "skill": "recognition",
+      "use": "check",
+      "type": "choice",
+      "stem": "I know who called.",
+      "options": [
+        {
+          "t": "Who làm chủ ngữ của called trong mệnh đề nội dung.",
+          "ok": true,
+          "note": "Không phải mọi wh-clause có một chủ ngữ khác sau wh."
+        },
+        {
+          "t": "Câu phải thêm did ngay sau who trong mọi ngữ cảnh.",
+          "ok": false,
+          "note": "Không cần do hỗ trợ theo mẫu này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Who luôn là tân ngữ trong mọi mệnh đề.",
+          "ok": false,
+          "note": "Who có thể làm chủ ngữ.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

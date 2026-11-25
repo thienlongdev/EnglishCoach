@@ -1,0 +1,700 @@
+{
+  "schema": 1,
+  "slug": "past-perfect",
+  "version": 1,
+  "domain": "tense-aspect",
+  "order": 140,
+  "kind": "grammar",
+  "title": {
+    "vi": "Quá khứ hoàn thành và hoàn thành tiếp diễn",
+    "en": "Past perfect simple and continuous"
+  },
+  "subtitle": {
+    "vi": "Nhìn lùi từ một mốc trong quá khứ",
+    "en": "Looking back from a past reference point"
+  },
+  "aliases": [
+    "past perfect",
+    "past-perfect-continuous",
+    "quá khứ hoàn thành tiếp diễn",
+    "had done had been doing",
+    "before after had",
+    "had known"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "prerequisites": [
+    "present-perfect-basics"
+  ],
+  "related": [
+    {
+      "slug": "past-simple",
+      "rel": "contrast"
+    },
+    {
+      "slug": "past-continuous",
+      "rel": "contrast"
+    },
+    {
+      "slug": "narrative-tenses",
+      "rel": "application"
+    },
+    {
+      "slug": "past-unreal-conditionals",
+      "rel": "more"
+    },
+    {
+      "slug": "present-perfect-continuous",
+      "rel": "more"
+    }
+  ],
+  "objectives": [
+    "Xác định mốc nhìn trong quá khứ và việc được nhìn lùi từ mốc đó.",
+    "Phân biệt had + phân từ với had been + -ing về trọng tâm kết quả hoặc quá trình.",
+    "Không ép quá khứ hoàn thành cho mọi sự kiện xảy ra trước sự kiện khác."
+  ],
+  "exam": {
+    "ielts": "Kể lại kinh nghiệm hoặc diễn biến có nhiều mốc; dùng hoàn thành khi cần quan hệ thời gian rõ, không để tăng số cấu trúc một cách máy móc.",
+    "toeic": "Hiểu thông tin về việc đã hoàn tất hoặc đang kéo dài tới một thời điểm trong email/báo cáo quá khứ."
+  },
+  "quick": {
+    "what": "Trong kể chuyện, **had + phân từ quá khứ** thường nhìn lùi từ một mốc quá khứ: một việc đã xảy ra trước đó hoặc một trạng thái đã kéo dài tới mốc ấy. **Had been + -ing** nhấn quá trình hoặc thời lượng trước/tới mốc, có thể còn tiếp tục hoặc vừa dừng theo ngữ cảnh.",
+    "when": "Khi người đọc cần biết điều gì đã xảy ra trước điểm đang kể, hoặc vì sao có một kết quả ở thời điểm đó. Không cần biến mọi động từ trước một sự kiện khác thành had done nếu thứ tự đã rõ và cách kể không cần nhấn quan hệ ấy.",
+    "examples": [
+      {
+        "en": "When we reached the station, the last shuttle [AUX|had] already [V|left].",
+        "vi": "Khi chúng tôi tới ga, chuyến xe trung chuyển cuối đã rời đi."
+      },
+      {
+        "en": "At six, they [AUX|had been] [V|waiting] for an hour and were still in the queue.",
+        "vi": "Lúc sáu giờ, họ đã chờ một giờ và vẫn đang xếp hàng."
+      }
+    ],
+    "remember": "Mốc nhìn là quá khứ, không phải hiện tại. Perfect không luôn đồng nghĩa một trạng thái đã chấm dứt."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Trong câu When we reached the station, the shuttle had left, điểm đang kể là lúc tới ga. Việc xe rời đi nằm trước điểm ấy. Had left khiến quan hệ này rõ ngay cả khi thứ tự câu nhắc đến việc tới trước rồi mới nói việc xe rời. Trái lại, We reached the station and the shuttle left thường được đọc như một chuỗi; ngữ cảnh đầy đủ vẫn cần được xét."
+    },
+    {
+      "type": "formula",
+      "lines": [
+        {
+          "label": "Khẳng định",
+          "parts": [
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "had",
+              "role": "AUX"
+            },
+            {
+              "t": "phân từ quá khứ",
+              "role": "V"
+            }
+          ]
+        },
+        {
+          "label": "Phủ định",
+          "parts": [
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "had not / hadn't",
+              "role": "AUX"
+            },
+            {
+              "t": "phân từ quá khứ",
+              "role": "V"
+            }
+          ]
+        },
+        {
+          "label": "Câu hỏi",
+          "parts": [
+            {
+              "t": "Had",
+              "role": "AUX"
+            },
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "phân từ quá khứ?",
+              "role": "V"
+            }
+          ]
+        },
+        {
+          "label": "Hoàn thành tiếp diễn",
+          "parts": [
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "had (not) been",
+              "role": "AUX"
+            },
+            {
+              "t": "động từ -ing",
+              "role": "V"
+            }
+          ]
+        }
+      ],
+      "note": "Had không đổi theo I/she/they. Phân từ có thể bất quy tắc: left,written,seen. 'd trước phân từ trong cấu trúc hoàn thành thường là had; 'd cũng có thể là would ở cấu trúc khác."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "timeline",
+        "sentence": "When we reached the station, the shuttle had left.",
+        "now": 92,
+        "events": [
+          {
+            "kind": "point",
+            "at": 28,
+            "label": "Xe rời ga",
+            "role": "main"
+          },
+          {
+            "kind": "point",
+            "at": 60,
+            "label": "Chúng tôi tới ga: mốc nhìn quá khứ",
+            "role": "ref"
+          }
+        ]
+      },
+      "caption": "Thứ tự sự kiện và thứ tự nhắc trong câu có thể khác nhau.",
+      "alt": "Trục thời gian có xe rời ở28, tới ga ở60 và hiện tại ở92. Had left nhìn từ lúc tới ga về việc xe đã rời trước đó."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "I couldn't open the cabinet because I [AUX|had] [V|lost] the key.",
+          "vi": "Tôi không mở được tủ vì đã làm mất chìa khóa.",
+          "note": "Việc mất chìa liên quan tới tình trạng tại mốc quá khứ."
+        },
+        {
+          "en": "By the time she joined the project, she [AUX|had] [V|known] the coordinator for years.",
+          "vi": "Đến lúc tham gia dự án, cô ấy đã quen người điều phối nhiều năm.",
+          "note": "Trạng thái biết/quen kéo dài tới mốc, không bị coi là kết thúc chỉ vì dùng hoàn thành."
+        },
+        {
+          "en": "They [AUX|had] never [V|used] that software before the workshop.",
+          "vi": "Họ chưa từng dùng phần mềm đó trước buổi tập huấn."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Had been working nhìn vào quá trình trước/tới mốc quá khứ: The floor was wet because the cleaner had been washing it. Câu không bắt buộc người lao công vẫn đang lau tại mốc được kể; có thể vừa dừng và còn dấu vết. Nếu muốn khẳng định đang tiếp tục, thêm ngữ cảnh như and was still at work. Thời lượng là dữ kiện hữu ích, không phải mọi câu hoàn thành tiếp diễn bắt buộc phải chứa for hoặc since."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "By noon, Mira had painted the door.",
+            "vi": "Đến trưa, Mira đã sơn xong cánh cửa."
+          },
+          "b": {
+            "en": "At noon, Mira had been painting the door for an hour.",
+            "vi": "Lúc trưa, Mira đã sơn cửa được một giờ."
+          },
+          "diff": "Với paint the door ở nghĩa thông thường, bản đơn nhấn thành quả trọn việc; bản tiếp diễn nhấn quá trình/thời lượng, không tự khẳng định đã xong hay chắc chắn chưa xong."
+        },
+        {
+          "a": {
+            "en": "By 2020, he had worked there for ten years.",
+            "vi": "Đến năm2020, anh ấy đã làm ở đó mười năm."
+          },
+          "b": {
+            "en": "By 2020, he had been working there for ten years.",
+            "vi": "Đến năm2020, anh ấy đã làm ở đó được mười năm."
+          },
+          "diff": "Cả hai có thể đúng trong cùng tình huống. Bản tiếp diễn làm nổi quá trình; bản đơn có thể trình bày quãng làm việc như một sự thật. Không suy ra tự động anh ấy đã nghỉ."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "head": [
+        "Ý định",
+        "Cách chọn",
+        "Điều không được suy ra máy móc"
+      ],
+      "rows": [
+        [
+          "Đếm kết quả đã đạt",
+          "had written three reports",
+          "Không bắt buộc mọi hoạt động viết đã dừng mãi"
+        ],
+        [
+          "Nhấn thời lượng/quá trình",
+          "had been writing for hours",
+          "Không bảo đảm hoạt động còn đang diễn ra"
+        ],
+        [
+          "Trạng thái know trong nghĩa biết",
+          "had known",
+          "Không đổi thành had been knowing chỉ vì kéo dài"
+        ],
+        [
+          "Thứ tự đã rõ qua after",
+          "after I checked / after I had checked",
+          "Hai lựa chọn có thể cùng hợp lệ, trọng tâm khác"
+        ]
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Before và after có thể làm thứ tự rõ mà không cần perfect: After she checked the figures, she sent the report. Had checked cũng có thể dùng để nhấn việc kiểm tra đã hoàn tất trước lúc gửi. Không đánh dấu quá khứ đơn là sai chỉ vì có hai hành động và một hành động xảy ra trước."
+    },
+    {
+      "type": "try",
+      "exercise": "ppf-04"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Mốc nhìn không bắt buộc xuất hiện trong cùng câu. Một đoạn đang kể lúc nhân vật bước vào phòng có thể tiếp: Someone had moved the chairs. Người đọc dùng mốc đã thiết lập. Ngược lại, dùng had done không có mốc nào có thể làm câu chuyện khó theo dõi; không cần bịa thêm một sự kiện chỉ để hợp công thức."
+    },
+    {
+      "type": "p",
+      "vi": "Past perfect còn xuất hiện trong giả định quá khứ và wish: If I had checked the address ... Không đọc mọi had checked thành sự kiện thực đã xảy ra. Bài này tập trung kể chuyện; xem past-unreal-conditionals và wish-if-only để học giá trị giả định."
+    },
+    {
+      "type": "p",
+      "vi": "Với before, câu They left before I had finished có thể nói việc hoàn thành chưa đạt ở lúc họ đi. Không thể dùng quy tắc mọi past perfect đều là hành động thực hoàn tất trước mọi động từ quá khứ khác. Quan hệ before và phạm vi của mệnh đề quyết định cách hiểu."
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Had hoped thường mở một hy vọng trước mốc kể, đôi khi ngữ cảnh cho thấy không thành. Nhưng hình thức này không tự khẳng định thất bại: I had hoped to meet her, and eventually I did. Kiểm tra thông tin theo câu, không theo một tín hiệu đơn lẻ."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Kể chuyện có thể chuyển lại quá khứ đơn sau khi đã định vị một đoạn hồi tưởng, nhất là khi thứ tự rõ. Không cần giữ had trước mọi động từ của cả đoạn. Chọn cấu trúc giúp người đọc theo dòng thời gian và giữ sắc thái cần thiết."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "ppf-participle",
+      "wrong": "She had went home before we called.",
+      "right": "She had gone home before we called.",
+      "why": "Sau had hoàn thành dùng phân từ gone, không dùng quá khứ đơn went."
+    },
+    {
+      "id": "ppf-auxiliary",
+      "wrong": "Did you had checked the address?",
+      "right": "Had you checked the address?",
+      "why": "Had là trợ động từ cho mẫu hoàn thành; đảo had thay vì thêm did."
+    },
+    {
+      "id": "ppf-continuous",
+      "wrong": "They had been wait for an hour.",
+      "right": "They had been waiting for an hour.",
+      "why": "Mẫu hoàn thành tiếp diễn cần been + -ing."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có before/after là bắt buộc quá khứ hoàn thành?",
+      "a": "Không. Quá khứ đơn có thể đủ khi liên từ và ngữ cảnh đã xác định thứ tự. Past perfect có thể làm rõ hoặc nhấn quan hệ nhìn lùi."
+    },
+    {
+      "q": "Had been doing luôn có nghĩa chưa xong?",
+      "a": "Không. Nó không khẳng định hoàn tất mục tiêu, nhưng cũng không tự chứng minh chưa xong. Hoạt động có thể còn diễn ra hoặc vừa dừng; cần ngữ cảnh."
+    },
+    {
+      "q": "Had known for years có nghĩa không còn biết nữa?",
+      "a": "Không. Trạng thái có thể tiếp tục sau mốc nhìn. Hình thức hoàn thành không tự làm trạng thái kết thúc."
+    },
+    {
+      "q": "Past perfect có phải lúc nào cũng kể sự thật?",
+      "a": "Không. Nó còn có giá trị giả định như If I had known. Phân biệt chức năng trong mệnh đề."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ppf-01",
+      "type": "choice",
+      "level": "B1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Chọn đúng phân từ sau had.",
+      "stem": "The courier had ___ before we reached the desk.",
+      "options": [
+        {
+          "t": "left",
+          "ok": true,
+          "note": "Left là phân từ của leave."
+        },
+        {
+          "t": "leave",
+          "note": "Cần phân từ sau had ở cấu trúc hoàn thành.",
+          "tag": "past-perfect-participle"
+        },
+        {
+          "t": "leaving",
+          "note": "Had leaving thiếu been cho cấu trúc tiếp diễn.",
+          "tag": "perfect-continuous-form"
+        }
+      ],
+      "explain": "Had left tạo quá khứ hoàn thành. Câu cho biết việc rời đi trước lúc tới quầy."
+    },
+    {
+      "id": "ppf-02",
+      "type": "cloze",
+      "level": "B1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Dùng quá khứ hoàn thành đơn của write trong chỗ trống.",
+      "stem": "By the start of the meeting, Ana {1} the summary.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "had written"
+          ],
+          "known": [
+            {
+              "t": "had wrote",
+              "verdict": "wrong",
+              "note": "Wrote là quá khứ đơn; phân từ là written.",
+              "tag": "past-perfect-participle"
+            }
+          ]
+        }
+      },
+      "explain": "Had written thể hiện phần tóm tắt đã được viết trước mốc bắt đầu họp theo dạng được yêu cầu."
+    },
+    {
+      "id": "ppf-03",
+      "type": "match",
+      "level": "B1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Ghép câu với trọng tâm được hình thức nêu rõ.",
+      "pairs": [
+        {
+          "a": "She had written four emails by noon.",
+          "b": "Số lượng kết quả đạt trước mốc"
+        },
+        {
+          "a": "She had been writing for two hours at noon.",
+          "b": "Quá trình và thời lượng tới mốc"
+        },
+        {
+          "a": "She had known the client for years by then.",
+          "b": "Trạng thái kéo dài tới mốc"
+        },
+        {
+          "a": "She had never used that tool before the course.",
+          "b": "Chưa có trải nghiệm tới mốc"
+        }
+      ],
+      "explain": "Các nhóm là trọng tâm của những ví dụ đã cho, không phải tuyên bố các cấu trúc không bao giờ chồng lấn ý nghĩa."
+    },
+    {
+      "id": "ppf-04",
+      "type": "transform",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết câu phủ định trong quá khứ hoàn thành.",
+      "source": "They had checked the locks before leaving.",
+      "instruction": "Phủ định had checked, giữ phần còn lại. Có thể viết tắt.",
+      "accept": [
+        "They had not checked the locks before leaving.",
+        "They hadn't checked the locks before leaving."
+      ],
+      "model": "They hadn't checked the locks before leaving.",
+      "explain": "Đặt not sau had; không thêm did. Dạng đầy đủ và viết tắt đều được chấp nhận."
+    },
+    {
+      "id": "ppf-05",
+      "type": "choice",
+      "level": "B1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Chọn kết luận chắc chắn được ngữ cảnh này hỗ trợ.",
+      "stem": "At six, they had been waiting for an hour and were still in the queue.",
+      "options": [
+        {
+          "t": "Họ bắt đầu chờ trước sáu giờ và vẫn đang chờ tại mốc đó.",
+          "ok": true,
+          "note": "Were still in the queue cung cấp bằng chứng đang tiếp tục."
+        },
+        {
+          "t": "Riêng had been waiting luôn khẳng định vẫn còn chờ tới hiện tại.",
+          "note": "Mốc nhìn là sáu giờ quá khứ; hình thức không tự kéo dài tới hiện tại.",
+          "tag": "perfect-time-reference"
+        },
+        {
+          "t": "Họ chỉ bắt đầu chờ sau sáu giờ.",
+          "note": "Trái với for an hour tại sáu giờ.",
+          "tag": "past-perfect-sequence"
+        }
+      ],
+      "explain": "Đọc cả cấu trúc và dữ kiện still; đừng tự thêm sự kéo dài tới hiện tại."
+    },
+    {
+      "id": "ppf-06",
+      "type": "error",
+      "level": "B1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Tìm lỗi hình thức của hoàn thành tiếp diễn.",
+      "segments": [
+        {
+          "t": "The technicians "
+        },
+        {
+          "t": "had been work",
+          "bad": true,
+          "fix": [
+            "had been working"
+          ],
+          "note": "Sau been trong mẫu tiếp diễn cần -ing.",
+          "tag": "perfect-continuous-form"
+        },
+        {
+          "t": " for hours before the test began."
+        }
+      ],
+      "explain": "Had been working diễn đạt quá trình trước mốc test began."
+    },
+    {
+      "id": "ppf-07",
+      "type": "multi",
+      "level": "B1",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Chọn mọi câu có thể dùng khi ngữ cảnh xác nhận kiểm tra xong rồi mới gửi.",
+      "stem": "Không có yêu cầu bắt buộc luyện một thì cụ thể.",
+      "options": [
+        {
+          "t": "After she checked the figures, she sent the report.",
+          "ok": true,
+          "note": "After làm rõ thứ tự; quá khứ đơn có thể phù hợp."
+        },
+        {
+          "t": "After she had checked the figures, she sent the report.",
+          "ok": true,
+          "note": "Past perfect nhấn việc đã kiểm tra trước lúc gửi."
+        },
+        {
+          "t": "After she had check the figures, she sent the report.",
+          "note": "Cần phân từ checked sau had.",
+          "tag": "past-perfect-participle"
+        }
+      ],
+      "explain": "Không loại quá khứ đơn chỉ vì một hành động xảy ra trước. Hình thức sai là had check."
+    },
+    {
+      "id": "ppf-08",
+      "type": "open",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Kể lại lúc tới một nơi.",
+      "task": "Viết3 câu: đặt một mốc quá khứ, nêu một việc đã xảy ra trước đó và một quá trình kéo dài tới/gần mốc. Làm rõ quá trình còn tiếp tục hay đã dừng nếu điều đó quan trọng.",
+      "model": [
+        "I reached the studio at nine. The host had already unlocked the doors. Two guests had been waiting outside for twenty minutes, and they were still there."
+      ],
+      "checklist": [
+        "Mốc nhìn trong quá khứ rõ.",
+        "Had + phân từ và had been + -ing đúng dạng.",
+        "Không tự kéo sự việc tới hiện tại.",
+        "Ngữ cảnh xác định tình trạng tiếp tục hoặc dừng khi cần."
+      ],
+      "explain": "Tự đối chiếu thời gian và nghĩa; không cần giống tình huống mẫu."
+    },
+    {
+      "id": "ppf-09",
+      "type": "cloze",
+      "level": "B1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Dùng quá khứ hoàn thành tiếp diễn của wait.",
+      "stem": "At eight, we {1} for forty minutes and were still outside.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "had been waiting"
+          ],
+          "known": [
+            {
+              "t": "had been wait",
+              "verdict": "wrong",
+              "note": "Mẫu tiếp diễn cần waiting.",
+              "tag": "perfect-continuous-form"
+            }
+          ]
+        }
+      },
+      "explain": "Had been waiting nhìn từ tám giờ về quá trình chờ trước đó; still xác nhận còn tiếp tục tại mốc."
+    },
+    {
+      "id": "ppf-10",
+      "type": "choice",
+      "level": "B1",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Chọn nhận xét đúng về trạng thái kéo dài.",
+      "stem": "By the time we became colleagues, I had known Mai for years.",
+      "options": [
+        {
+          "t": "Việc quen Mai bắt đầu trước mốc trở thành đồng nghiệp; câu không khẳng định nó kết thúc ở mốc đó.",
+          "ok": true,
+          "note": "Perfect với trạng thái không tự có nghĩa đã chấm dứt."
+        },
+        {
+          "t": "Had known bắt buộc nghĩa tôi đã ngừng biết Mai trước đó.",
+          "note": "Không có suy luận kết thúc bắt buộc này.",
+          "tag": "perfect-completion-absolute"
+        },
+        {
+          "t": "Phải sửa thành had been knowing chỉ vì có for years.",
+          "note": "Know ở nghĩa trạng thái này thường dùng dạng đơn.",
+          "tag": "stative-progressive"
+        }
+      ],
+      "explain": "Thời lượng không tự ép progressive. Xét nghĩa của động từ."
+    },
+    {
+      "id": "ppf-11",
+      "type": "transform",
+      "level": "B1",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Đổi thành câu hỏi yes/no trong quá khứ hoàn thành.",
+      "source": "You had seen the revised schedule before the trip.",
+      "instruction": "Đảo had lên trước chủ ngữ, giữ các từ còn lại và thêm dấu hỏi.",
+      "accept": [
+        "Had you seen the revised schedule before the trip?"
+      ],
+      "model": "Had you seen the revised schedule before the trip?",
+      "explain": "Had là trợ động từ cần đảo. Không dùng did you had seen.",
+      "terminalPunctuationMatters": true,
+      "known": [
+        {
+          "t": "Had you seen the revised schedule before the trip",
+          "verdict": "wrong",
+          "note": "Trật tự câu hỏi đã đúng, nhưng bài này yêu cầu dấu hỏi kết câu.",
+          "tag": "question-terminal-punctuation"
+        },
+        {
+          "t": "Had you seen the revised schedule before the trip.",
+          "verdict": "wrong",
+          "note": "Trật tự câu hỏi đã đúng, nhưng bài này yêu cầu dấu hỏi kết câu.",
+          "tag": "question-terminal-punctuation"
+        }
+      ]
+    },
+    {
+      "id": "ppf-12",
+      "type": "error",
+      "level": "B1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn phần sai trong cụm hoàn thành.",
+      "segments": [
+        {
+          "t": "The supplier "
+        },
+        {
+          "t": "had wrote",
+          "bad": true,
+          "fix": [
+            "had written"
+          ],
+          "note": "Phân từ của write là written.",
+          "tag": "past-perfect-participle"
+        },
+        {
+          "t": " to us before the delivery arrived."
+        }
+      ],
+      "explain": "Quá khứ đơn wrote không thay phân từ sau had."
+    },
+    {
+      "id": "ppf-13",
+      "type": "choice",
+      "level": "B1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Chọn điều không được suy ra chắc chắn từ câu này.",
+      "stem": "At noon, Mira had been painting the door for an hour.",
+      "options": [
+        {
+          "t": "Cánh cửa chắc chắn đã được sơn xong hoàn toàn.",
+          "ok": true,
+          "note": "Hình thức quá trình không tự xác nhận hoàn tất mục tiêu."
+        },
+        {
+          "t": "Quá trình sơn đã diễn ra trước/tới mốc trưa.",
+          "note": "Đây là quan hệ thời gian được câu nêu; không phải điều cần loại.",
+          "tag": "process-reading"
+        },
+        {
+          "t": "Câu nhìn về quá trình trong một giờ trước mốc được kể.",
+          "note": "For an hour đưa ra thời lượng trước/tới mốc; đây là điều được hỗ trợ.",
+          "tag": "process-reading"
+        }
+      ],
+      "explain": "Không khẳng định hoàn tất không có nghĩa khẳng định chắc chắn chưa hoàn tất. Cần ngữ cảnh để biết kết quả."
+    },
+    {
+      "id": "ppf-14",
+      "type": "choice",
+      "level": "B1",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Chọn nhận xét đúng về một cách dùng khác của had checked.",
+      "stem": "If I had checked the address, I would have found the studio sooner.",
+      "options": [
+        {
+          "t": "Đây là giả định quá khứ; không đọc had checked như xác nhận một việc thực đã xảy ra.",
+          "ok": true,
+          "note": "Mẫu điều kiện phản thực thuộc một chức năng khác."
+        },
+        {
+          "t": "Mọi had checked đều chứng minh người nói thực sự đã kiểm tra.",
+          "note": "Bỏ qua giá trị giả định của mệnh đề if.",
+          "tag": "past-perfect-factuality"
+        }
+      ],
+      "explain": "Hình thức phải được hiểu trong cấu trúc. Theo liên kết điều kiện phản thực để học sâu hơn."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Đã đọc phần chính Past perfect (https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/past-perfect),2026-11-01: forms, continuing states,process,experience và hypotheses. Ghi chú TENSE-REVIEW và TENSE-EXERCISE-REVIEW được tái sử dụng; không coi mọi bình luận dưới trang là luật tổng quát."
+    },
+    {
+      "ref": "cgt",
+      "note": "Tham khảo thêm về simple/continuous và temporal clauses; chưa mở thêm trang trực tiếp trong lượt này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham khảo đề xuất về past perfect và before; chưa đọc trực tiếp ấn bản."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

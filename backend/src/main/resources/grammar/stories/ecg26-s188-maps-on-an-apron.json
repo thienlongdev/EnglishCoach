@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s188-maps-on-an-apron",
+  "title": "Thành phố trên tạp dề",
+  "summary": "Những vết bột trên tạp dề Teo bỗng trông như bản đồ phố. Mộc muốn in chúng trước khi anh phủi sạch.",
+  "level": "B2",
+  "topics": [
+    "participle-clauses"
+  ],
+  "scene": "university",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mộc",
+      "role": "Sinh viên thiết kế"
+    },
+    {
+      "id": "b",
+      "name": "Teo",
+      "role": "Người phụ trách xưởng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Teo đã rắc bột trên mẫu phố bằng bìa rồi nhấc nó bằng hai tay. Anh mới là người tạo dấu, tạp dề là bề mặt nhận bột.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I made that street by dropping the model.",
+          "vi": "Tôi làm nên con phố đó vì đánh rơi mô hình."
+        },
+        {
+          "who": "b",
+          "en": "Then don't make the apron drop it in your caption.",
+          "vi": "Thế đừng viết như thể chiếc tạp dề đã đánh rơi nó."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn câu trong đó chủ thể ngầm của cụm phân từ đúng là Teo.",
+        "options": [
+          {
+            "ok": false,
+            "t": "Lifting the model, flour landed on Teo's apron.",
+            "note": "Flour thành chủ thể ngầm của lifting trong cách viết này, như thể bột tự nhấc mô hình. Nó không đúng diễn biến.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "Lifting the model, Teo tipped flour onto his apron.",
+            "note": "Teo ngay sau cụm mở đầu là người vừa nhấc mô hình vừa làm nghiêng bột. Hai hành động cùng chủ thể.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Họ áp vải lên giấy đen, in ra con phố trắng như tuyết. Teo tìm thấy đúng ngõ nhà cũ dù căn nhà chưa từng nằm trong bản vẽ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We baked the city after we printed it.",
+          "vi": "In thành phố xong, ta còn nướng được nó nữa."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Bản in được bán đổi lấy bột làm bánh cho buổi học cuối.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Mộc thử vẽ bột có tay rồi phá lên cười. Cô chuyển chủ ngữ sang Teo, thêm bức vẽ ngộ nghĩnh vào sổ phác.",
+      "say": [
+        {
+          "who": "a",
+          "en": "That street has a serious map and a comic one.",
+          "vi": "Con phố ấy có cả bản đồ nghiêm túc lẫn bản hài."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Teo đem tạp dề đi giặt khi bản in và bức hoạt họa đã khô. Con phố sống được ở hai thể loại.",
+      "end": true
+    }
+  ]
+}

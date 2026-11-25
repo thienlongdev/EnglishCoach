@@ -1,0 +1,41 @@
+{
+  "id": "open-shop",
+  "title": "Cửa hàng có mở Chủ nhật không?",
+  "summary": "Trên biển là giờ mở cửa. Đổi thông báo thành câu hỏi của khách rồi tìm từ mang dấu hiệu ngôi thứ ba.",
+  "level": "A1",
+  "topics": [
+    "present-simple",
+    "yes-no-questions"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Lượt lời",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Cửa hàng báo"
+        },
+        {
+          "id": "v2",
+          "label": "Khách hỏi"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The shop opens on Sundays.",
+      "vi": "Cửa hàng mở cửa vào các Chủ nhật.",
+      "note": "Opens mang s vì the shop là chủ ngữ số ít. Sundays chỉ lịch lặp lại. / Opens states a regular schedule.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Does the shop open on Sundays?",
+      "vi": "Cửa hàng có mở cửa vào các Chủ nhật không?",
+      "note": "Does mở đầu câu hỏi. Động từ chính trở về open. / Does moves before the subject.",
+      "verdict": "ok"
+    }
+  }
+}

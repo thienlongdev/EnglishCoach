@@ -1,0 +1,41 @@
+{
+  "id": "parcel-address",
+  "title": "Thông tin mới rơi vào cuối lời bàn giao",
+  "summary": "Nhân viên biết con dấu hoặc biết người nhận. Đổi câu hỏi nền rồi chọn trật tự dễ nhấn thông tin mới khi đọc trung tính.",
+  "level": "B2",
+  "topics": [
+    "given-before-new",
+    "two-object-verbs"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Điều đã biết",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Biết người nhận"
+        },
+        {
+          "id": "v2",
+          "label": "Biết vật"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "We gave her the brass seal.",
+      "vi": "Chúng tôi đã đưa cho cô ấy con dấu bằng đồng.",
+      "note": "Her là người đã biết. The brass seal ở cuối cung cấp món đồ cần xác định. / The object at the end answers what she received.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "We gave it to the archivist.",
+      "vi": "Chúng tôi đã đưa nó cho người quản lý kho lưu trữ.",
+      "note": "It nối với món đồ đã nhắc. Cụm to the archivist cung cấp người nhận mới. / The final recipient answers who got it.",
+      "verdict": "ok"
+    }
+  }
+}

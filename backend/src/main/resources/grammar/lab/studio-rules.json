@@ -1,0 +1,41 @@
+{
+  "id": "studio-rules",
+  "title": "Ở lại với điều kiện nào?",
+  "summary": "Xưởng cho nhóm ở lại nếu giữ yên lặng. Đổi liên từ giữa điều kiện đủ và điều kiện cần. Lời cam kết của quản lý có giống nhau không?",
+  "level": "B2",
+  "topics": [
+    "unless-provided-as-long-as",
+    "real-conditionals"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Điều khoản",
+      "values": [
+        {
+          "id": "v1",
+          "label": "If"
+        },
+        {
+          "id": "v2",
+          "label": "Only if"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "You can stay if you're quiet.",
+      "vi": "Nếu giữ yên lặng thì các bạn có thể ở lại.",
+      "note": "Trong lời cho phép này, giữ yên lặng là điều kiện người nói đưa ra để cho ở lại. / Quietness is offered as a sufficient condition here.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "You can stay only if you're quiet.",
+      "vi": "Các bạn chỉ được ở lại nếu giữ yên lặng.",
+      "note": "Only if loại khả năng được ở lại khi gây ồn. Về logic, nó không tự loại trừ các điều kiện khác. / Quietness is explicitly necessary.",
+      "verdict": "ok"
+    }
+  }
+}

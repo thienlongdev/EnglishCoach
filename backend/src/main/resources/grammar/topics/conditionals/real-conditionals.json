@@ -1,0 +1,459 @@
+{
+  "schema": 1,
+  "slug": "real-conditionals",
+  "version": 2,
+  "domain": "conditionals",
+  "order": 20,
+  "kind": "grammar",
+  "title": {
+    "vi": "Điều kiện có thật: If it rains…",
+    "en": "Real conditions"
+  },
+  "subtitle": {
+    "vi": "Điều kiện còn mở và kế hoạch theo trường hợp",
+    "en": "Open conditions and plans for a possible case"
+  },
+  "aliases": [
+    "điều kiện có thật",
+    "real open conditionals",
+    "zero first conditional",
+    "if she call"
+  ],
+  "level": "A2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Dùng hiện tại đơn trong điều kiện mở thông thường.",
+    "Dùng will/can hoặc mệnh lệnh ở phần kết quả.",
+    "Không xem điều kiện mở là điều đã được xác nhận."
+  ],
+  "prerequisites": [
+    "present-simple",
+    "future-will"
+  ],
+  "related": [
+    {
+      "slug": "conditionals-overview",
+      "rel": "more"
+    },
+    {
+      "slug": "unreal-present-conditionals",
+      "rel": "contrast"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Điều kiện mở (open/real condition) trình bày một trường hợp người nói còn để mở. Có thể nói quan hệ chung hoặc một khả năng cụ thể tương lai.",
+    "when": "Dùng để nêu kế hoạch, quy định hoặc lời nhờ theo trường hợp.",
+    "examples": [
+      {
+        "en": "[COND|If it rains], [RES|we will meet online].",
+        "vi": "Nếu mưa, chúng ta sẽ gặp trực tuyến."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "If it rains tomorrow, we will meet online dùng hiện tại rains trong mệnh đề if và will ở phần kết quả. Ngày mai vẫn là tương lai dù rains có hình thức hiện tại."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Trường hợp",
+            "items": [
+              "it rains tomorrow"
+            ]
+          },
+          {
+            "label": "Kế hoạch khi đó",
+            "items": [
+              "we will meet online"
+            ]
+          }
+        ],
+        "sentence": "If {0}, {1}."
+      },
+      "caption": "Người nói chưa xác nhận có mưa; câu nêu kế hoạch cho trường hợp đó.",
+      "alt": "Người nói chưa xác nhận có mưa; câu nêu kế hoạch cho trường hợp đó."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Chức năng",
+        "Ví dụ",
+        "Giới hạn"
+      ],
+      "rows": [
+        [
+          "Quan hệ chung",
+          "If you heat this wax, it melts.",
+          "Phụ thuộc điều kiện vật liệu đang nói"
+        ],
+        [
+          "Kế hoạch tương lai",
+          "If she calls, I will answer.",
+          "Không khẳng định cô ấy sẽ gọi"
+        ],
+        [
+          "Cho phép",
+          "If you finish, you can leave.",
+          "Kết quả không cần will"
+        ],
+        [
+          "Yêu cầu",
+          "If you need help, call me.",
+          "Mệnh lệnh có điều kiện"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Zero và first conditional là nhãn học cho các mẫu thường gặp. Một câu quy định cũng có thể mô tả tình huống cụ thể; cần nghĩa toàn câu, không chỉ bảng công thức."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không gán điều kiện mở một phần trăm xác suất. Người nói coi trường hợp là điều cần xét, không đo sự chắc chắn bằng hình thức."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Dạng hiện tại hoàn thành cũng có thể xuất hiện nếu điều kiện là hoàn tất: If you have finished, you can leave. Điều đó không làm câu ngoài tiếng Anh chỉ vì khác mẫu hiện tại đơn."
+    },
+    {
+      "type": "p",
+      "vi": "Will có thể xuất hiện sau if cho sự sẵn lòng hoặc lời yêu cầu, nhưng không cần dạy ngoại lệ như công thức mọi tương lai. Mặc định trong bài này là điều kiện tương lai thông thường dùng dạng hiện tại."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "real-conditionals-m1",
+      "wrong": "If she call, I will answer.",
+      "right": "If she calls, I will answer.",
+      "why": "She dùng calls."
+    },
+    {
+      "id": "real-conditionals-m2",
+      "wrong": "If it rains, she will stays home.",
+      "right": "If it rains, she will stay home.",
+      "why": "Will cần dạng gốc."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Real có nghĩa điều kiện đã xảy ra không?",
+      "a": "Không. Nó thường là tên mẫu để điều kiện còn mở."
+    },
+    {
+      "q": "Kết quả có bắt buộc will không?",
+      "a": "Không. Có thể dùng can, may hoặc mệnh lệnh khi nghĩa phù hợp."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "rco-01",
+      "prompt": "Chọn dạng hiện tại đơn với she.",
+      "explain": "Điều kiện mở tương lai thường dùng hiện tại trong mệnh đề if.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "If she ___ tomorrow, I will answer.",
+      "options": [
+        {
+          "t": "calls",
+          "ok": true,
+          "note": "She cần calls."
+        },
+        {
+          "t": "call",
+          "ok": false,
+          "note": "Thiếu -s với she.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "calling",
+          "ok": false,
+          "note": "Không có động từ hữu hạn.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "A2"
+    },
+    {
+      "id": "rco-02",
+      "prompt": "Nối câu với chức năng.",
+      "explain": "Kết quả không chỉ có will.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "If you heat this wax, it melts.",
+          "b": "Quan hệ chung trong điều kiện đang nói"
+        },
+        {
+          "a": "If it rains tomorrow, we will stay home.",
+          "b": "Khả năng cụ thể tương lai"
+        },
+        {
+          "a": "If you need help, call me.",
+          "b": "Lời yêu cầu có điều kiện"
+        }
+      ],
+      "level": "A2"
+    },
+    {
+      "id": "rco-03",
+      "prompt": "Phân loại hình thức phần kết quả.",
+      "explain": "Có thể nêu dự đoán, cho phép hoặc lời yêu cầu.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Will + dạng gốc",
+        "Can + dạng gốc",
+        "Mệnh lệnh"
+      ],
+      "items": [
+        {
+          "t": "If it rains, we will wait.",
+          "cat": "Will + dạng gốc"
+        },
+        {
+          "t": "If you finish, you can leave.",
+          "cat": "Can + dạng gốc"
+        },
+        {
+          "t": "If you need help, call me.",
+          "cat": "Mệnh lệnh"
+        }
+      ],
+      "level": "A2"
+    },
+    {
+      "id": "rco-04",
+      "prompt": "Điền hiện tại đơn của rain và finish theo chủ ngữ.",
+      "explain": "It rains; you finish.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "If it {1} (rain), we will wait. If you {2} (finish), you can leave.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "rains"
+          ]
+        },
+        "2": {
+          "accept": [
+            "finish"
+          ]
+        }
+      },
+      "level": "A2"
+    },
+    {
+      "id": "rco-05",
+      "prompt": "Sửa dạng sau will.",
+      "explain": "Will mang tính khuyết thiếu, động từ theo sau không có -s.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "If it rains, she will"
+        },
+        {
+          "t": "stays",
+          "bad": true,
+          "fix": [
+            "stay"
+          ],
+          "note": "Dùng stay sau will.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "inside."
+        }
+      ],
+      "level": "A2"
+    },
+    {
+      "id": "rco-06",
+      "prompt": "Sắp xếp bắt đầu bằng If, giữ lời yêu cầu sau dấu phẩy.",
+      "explain": "Mệnh lệnh có thể là kết quả điều kiện.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "If",
+        "you need help,",
+        "call",
+        "me"
+      ],
+      "accept": [
+        [
+          "If",
+          "you need help,",
+          "call",
+          "me"
+        ]
+      ],
+      "end": ".",
+      "level": "A2"
+    },
+    {
+      "id": "rco-07",
+      "prompt": "Đổi vị trí hai phần.",
+      "explain": "Điều kiện không bắt buộc ở đầu.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "If the shop is open, we will buy lunch.",
+      "instruction": "Đưa we will buy lunch lên đầu, giữ if the shop is open ở cuối và bỏ dấu phẩy.",
+      "accept": [
+        "We will buy lunch if the shop is open"
+      ],
+      "model": "We will buy lunch if the shop is open",
+      "level": "A2"
+    },
+    {
+      "id": "rco-08",
+      "prompt": "Viết kế hoạch dự phòng.",
+      "explain": "Tự kiểm tra; bài mở không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết một câu nếu mưa thì đổi kế hoạch, một câu cho phép với can và một lời yêu cầu bắt đầu If you need ....",
+      "model": [
+        "If it rains, we will meet online. If you finish early, you can leave. If you need the address, text me."
+      ],
+      "checklist": [
+        "If không tự khẳng định điều kiện sẽ xảy ra.",
+        "Hòa hợp hiện tại đúng.",
+        "Không thêm -s sau will/can."
+      ],
+      "level": "A2"
+    },
+    {
+      "id": "rco-09",
+      "prompt": "Dùng hiện tại đơn ở các mệnh đề điều kiện.",
+      "explain": "She needs; the bus arrives.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "If she {1} (need) help, call me. If the bus {2} (arrive) early, we will wait.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "needs"
+          ]
+        },
+        "2": {
+          "accept": [
+            "arrives"
+          ]
+        }
+      },
+      "level": "A2"
+    },
+    {
+      "id": "rco-10",
+      "prompt": "Gộp giả thiết và kế hoạch với if.",
+      "explain": "Giữ will ở phần kết quả, dùng hiện tại ở điều kiện.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "Maybe the office is open tomorrow. We will visit it in that case.",
+      "instruction": "Viết If the office is open tomorrow ở đầu, rồi we will visit it sau dấu phẩy.",
+      "accept": [
+        "If the office is open tomorrow, we will visit it"
+      ],
+      "model": "If the office is open tomorrow, we will visit it",
+      "level": "A2"
+    },
+    {
+      "id": "rco-11",
+      "prompt": "Chọn tất cả câu chuẩn.",
+      "explain": "Điều kiện mở dùng nhiều kiểu kết quả.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "If the gate is locked, call me.",
+          "ok": true,
+          "note": "Lời yêu cầu phù hợp."
+        },
+        {
+          "t": "If she calls, I will answer.",
+          "ok": true,
+          "note": "Hiện tại calls và will answer."
+        },
+        {
+          "t": "If she call, I will answer.",
+          "ok": false,
+          "note": "She cần calls.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "If the gate is locked, she will waits.",
+          "ok": false,
+          "note": "Will cần wait.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "A2"
+    },
+    {
+      "id": "rco-12",
+      "prompt": "Chọn nhận xét đúng.",
+      "explain": "“Real” là tên cách nhìn mở, không xác nhận sự thật.",
+      "skill": "meaning",
+      "use": "check",
+      "type": "choice",
+      "stem": "If the office is open tomorrow, I will visit.",
+      "options": [
+        {
+          "t": "Chưa khẳng định văn phòng sẽ mở; chỉ nêu điều kiện cho chuyến thăm.",
+          "ok": true,
+          "note": "Điều kiện còn mở."
+        },
+        {
+          "t": "Văn phòng chắc chắn mở ngày mai.",
+          "ok": false,
+          "note": "If không bảo đảm.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Mọi câu điều kiện mở đều là chân lý khoa học.",
+          "ok": false,
+          "note": "Có cả trường hợp cụ thể tương lai.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "A2"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

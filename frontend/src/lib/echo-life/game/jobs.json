@@ -1,0 +1,214 @@
+{
+  "market": {
+    "title": "Sunrise Market Clerk",
+    "leadNpc": "mai",
+    "skill": "business",
+    "microKind": "shelf_stock",
+    "microPrompt": "Face and align the produce shelf cleanly",
+    "pay": 45,
+    "steps": [
+      [
+        "market",
+        "market_shift",
+        "Clock in at the Sunrise Market counter",
+        [
+          "till"
+        ]
+      ],
+      [
+        "market",
+        "shelf",
+        "Restock the grocery shelf"
+      ],
+      [
+        "market",
+        "tea",
+        "Arrange the tea display"
+      ],
+      [
+        "market",
+        "till",
+        "Count the till and finish the shift"
+      ]
+    ]
+  },
+  "barista": {
+    "title": "Willow Bistro Barista",
+    "leadNpc": "khanhha",
+    "skill": "cooking",
+    "microKind": "espresso",
+    "microPrompt": "Pull a balanced double espresso in the crema band",
+    "pay": 60,
+    "steps": [
+      [
+        "bistro",
+        "bistro_espresso",
+        "Take a barista shift"
+      ],
+      [
+        "bistro",
+        "bistro_counter",
+        "Collect the customer order"
+      ],
+      [
+        "bistro",
+        "bistro_espresso",
+        "Pull a double espresso"
+      ],
+      [
+        "bistro",
+        "bistro_booth_a",
+        "Serve the first booth"
+      ]
+    ]
+  },
+  "delivery": {
+    "title": "Greenway Express Courier",
+    "leadNpc": "quocbao",
+    "skill": "mobility",
+    "microKind": "express_route",
+    "microPrompt": "Lock the parcel latch and check your express route",
+    "pay": 75,
+    "steps": [
+      [
+        "street",
+        "courier_board",
+        "Accept a campus delivery"
+      ],
+      [
+        "market",
+        "shelf",
+        "Collect the parcel at Sunrise Market"
+      ],
+      [
+        "greenway",
+        "greenway_checkpoint_a",
+        "Deliver the parcel at the Greenway checkpoint"
+      ]
+    ]
+  },
+  "library": {
+    "title": "University Library Archivist",
+    "leadNpc": "anchi",
+    "skill": "social",
+    "microKind": "book_page",
+    "microPrompt": "Sort the returned folio into the archive catalog",
+    "pay": 55,
+    "steps": [
+      [
+        "library",
+        "lib_catalog",
+        "Clock in for Library Archivist shift"
+      ],
+      [
+        "library",
+        "lib_stacks_l",
+        "Shelve returned books in West Stacks"
+      ],
+      [
+        "library",
+        "lib_table_a",
+        "Organize Reading Table A"
+      ],
+      [
+        "library",
+        "lib_catalog",
+        "Log archive tally and finish shift"
+      ]
+    ]
+  },
+  "cafe": {
+    "title": "Pixel Café Hardware Tech",
+    "leadNpc": "huy",
+    "skill": "technology",
+    "microKind": "calibrate",
+    "microPrompt": "Calibrate the curved display timing cleanly",
+    "pay": 65,
+    "steps": [
+      [
+        "cafe",
+        "tech_bench",
+        "Clock in for Pixel Café Tech shift"
+      ],
+      [
+        "cafe",
+        "console",
+        "Run diagnostics on Gaming Station A"
+      ],
+      [
+        "cafe",
+        "screen",
+        "Calibrate the curved arcade monitor"
+      ],
+      [
+        "cafe",
+        "tech_bench",
+        "Sign off the service log and finish shift"
+      ]
+    ]
+  },
+  "gardener": {
+    "title": "Botanical Gardener",
+    "leadNpc": "ngocbich",
+    "skill": "diy_design",
+    "microKind": "garden_water",
+    "microPrompt": "Water the herb and jasmine beds with steady cadence",
+    "pay": 55,
+    "steps": [
+      [
+        "botanical",
+        "bot_gazebo",
+        "Clock in for Botanical Gardener shift"
+      ],
+      [
+        "botanical",
+        "bot_bed_a",
+        "Water and trim the west herb bed"
+      ],
+      [
+        "botanical",
+        "bot_bed_b",
+        "Tend the moon-jasmine bed"
+      ],
+      [
+        "botanical",
+        "bot_can",
+        "Return the watering can and finish shift"
+      ]
+    ]
+  },
+  "busker": {
+    "title": "Fountain Plaza Busker",
+    "leadNpc": "haidang",
+    "skill": "social",
+    "microKind": "guitar_chord",
+    "microPrompt": "Strum a warm acoustic phrase for the courtyard crowd",
+    "pay": 60,
+    "steps": [
+      [
+        "fountain_plaza",
+        "plaza_stage",
+        "Clock in for Fountain Plaza Busker set",
+        [
+          "atelier_acoustic"
+        ]
+      ],
+      [
+        "fountain_plaza",
+        "old_fountain",
+        "Play a twilight acoustic melody by the fountain",
+        [
+          "atelier_easel_a"
+        ]
+      ],
+      [
+        "fountain_plaza",
+        "plaza_stage",
+        "Play your encore and wrap the busker set",
+        [
+          "atelier_acoustic"
+        ]
+      ]
+    ]
+  }
+}

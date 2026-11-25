@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s136-empty-shelf-m",
+  "title": "Kệ M trống trơn",
+  "summary": "Giang thấy một nhãn “the book” trong phòng có hàng nghìn sách. Aki hiểu đó phải là quyển hai người vừa cùng nhắc, nhưng họ nhắc hai tên khác nhau.",
+  "level": "B1",
+  "topics": [
+    "articles-in-context",
+    "the-basics"
+  ],
+  "scene": "library-mystery",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Giang",
+      "role": "Người giữ thư viện"
+    },
+    {
+      "id": "b",
+      "name": "Aki",
+      "role": "Người thu âm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Mảnh giấy trước đó ghi a green atlas with a torn corner. Trên kệ chỉ có một cuốn như thế. Người gửi muốn họ lấy vật đã giới thiệu.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I remember a green cover, not the title.",
+          "vi": "Tôi nhớ bìa xanh chứ không nhớ tên."
+        },
+        {
+          "who": "b",
+          "en": "That may be enough to make it the book.",
+          "vi": "Như vậy có thể đủ để biết là quyển nào rồi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Giang đọc hướng dẫn nối lần nhắc sau với cuốn atlas đã xác định.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Take the atlas with the torn corner.",
+            "note": "The cộng mô tả góc rách giúp nhận lại vật cụ thể. Không cần thuộc nhan đề nếu hai người nhìn ra cùng cuốn.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Take an atlas, any atlas will do.",
+            "note": "An atlas chưa chọn một cuốn cụ thể, còn any ... will do nói cuốn nào cũng được. Nó làm mất điều kiện góc rách.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Trong chỗ góc rách ló ra một tấm bản đồ xe lửa do độc giả cũ tự vẽ. Hai người mang nó sang tủ tư liệu địa phương.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The tear was as good as a title.",
+          "vi": "Góc rách cũng chỉ đúng sách như nhan đề vậy."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Buổi chiều chủ nhân quay lại và nhận ra cả nếp gấp mình để từ thời thơ ấu.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Aki cầm nhầm một cuốn đỏ. Giang đối chiếu giấy, đổi lại cuốn xanh và tìm được bản đồ trẻ em kẹp bên trong.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The wrong atlas still had something to show us.",
+          "vi": "Cuốn chọn nhầm vẫn có điều đáng xem."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Cuốn đỏ không bị bỏ quên: họ mở hai bản đồ cách nhau ba mươi năm cho độc giả so đường phố cũ và mới.",
+      "end": true
+    }
+  ]
+}

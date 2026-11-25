@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s074-quiet-argument",
+  "title": "Cuộc cãi nhau không lời",
+  "level": "A2",
+  "topics": [
+    "ed-and-ing-adjectives"
+  ],
+  "scene": "home",
+  "summary": "Hai con rối đứng yên khiến đoạn phim có vẻ nhàm. Jo ngỡ Tú chê mình là người tẻ nhạt.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Tú",
+      "role": "Người làm phim rối"
+    },
+    {
+      "id": "b",
+      "name": "Jo",
+      "role": "Bạn thu âm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Tú thích chuyện Jo kể, chỉ thấy đoạn phim thiếu chuyển động. Cậu cần nói cho Jo biết chính mình đang cảm thấy gì.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Your voice is the best bit.",
+          "vi": "Giọng cậu là phần hay nhất."
+        },
+        {
+          "who": "b",
+          "en": "Then who's bored here?",
+          "vi": "Thế ai đang chán?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Tú nói mình buồn chán khi nhìn phần hình đứng im.",
+        "options": [
+          {
+            "t": "I'm bored with the picture.",
+            "note": "Bored chỉ cảm xúc của Tú; with the picture hướng nó vào phần hình. Câu không gán đặc điểm tẻ nhạt cho Jo.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "I'm boring in the picture.",
+            "note": "Boring tả Tú khiến người khác chán khi xuất hiện trong hình. Nhưng Tú không ở trên màn, chỉ đang xem.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Jo gõ ba nhịp lên bàn. Tú cho hai con rối liếc nhau theo nhịp, và cảnh im lặng bỗng thành một cuộc cãi nhau buồn cười.",
+      "say": [
+        {
+          "who": "b",
+          "en": "They disagree without a word!",
+          "vi": "Chúng bất đồng mà chẳng cần nói câu nào!"
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Jo xoay máy quay thử về Tú, bắt được vẻ mặt ngơ ngác của cậu. Hai bạn dùng chính nét mặt đó làm mẫu cho con rối, rồi làm hòa.",
+      "say": [
+        {
+          "who": "a",
+          "en": "My face gave them their ending.",
+          "vi": "Mặt mình cho chúng cái kết rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

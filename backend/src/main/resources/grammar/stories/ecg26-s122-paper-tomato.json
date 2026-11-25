@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s122-paper-tomato",
+  "title": "Cà chua bằng giấy",
+  "summary": "Trên quầy có ba cà chua giấy cho trẻ tập gọi món. Chỉ một quả mở ra được và bên trong có vé ăn miễn phí.",
+  "level": "B1",
+  "topics": [
+    "relative-clauses-defining"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sa",
+      "role": "Người nấu bếp"
+    },
+    {
+      "id": "b",
+      "name": "Linh",
+      "role": "Người phục vụ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Sa làm dấu bằng một cuống lá gấp ngược. Linh phải giải thích cho khách nhỏ mà không tự mở quà.",
+      "say": [
+        {
+          "who": "a",
+          "en": "They all look red from here.",
+          "vi": "Đứng đây quả nào cũng đỏ."
+        },
+        {
+          "who": "b",
+          "en": "Give her one detail that doesn't fit all three.",
+          "vi": "Cho em bé một chi tiết mà không phải cả ba đều có đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Sa chọn mệnh đề giúp nhận ra đúng quả mở được.",
+        "options": [
+          {
+            "ok": false,
+            "t": "Choose a tomato that looks red.",
+            "note": "Mệnh đề xác định đúng ngữ pháp nhưng cả ba đều đỏ. A tomato cho phép chọn bất cứ quả nào, không giúp tìm đúng chiếc có vé.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "Choose the tomato that has a folded stem.",
+            "note": "That has a folded stem thu hẹp nhóm về chiếc cuống đặc biệt. Red không đủ vì cả ba cùng đỏ.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Em bé mở quả bằng hai ngón tay, lấy vé và mời chính mẹ dùng bữa. Sa gấp lại quả như cũ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "She passed the gift on before we served it.",
+          "vi": "Em tặng tiếp món quà trước cả lúc quán mang món ra."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Đến lượt trẻ sau, trong quả có lời nhắn mới của người mẹ: hãy chọn người muốn mời.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Em chọn quả không mở, nghe tiếng giấy sột soạt rồi nhận ra cuống khác thường bên cạnh.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Her wrong turn helped the next guest.",
+          "vi": "Cú rẽ nhầm của em giúp được khách sau."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Linh cho em bút để vẽ đường đi từ quả đoán đầu tới quả thật. Tấm bản đồ cà chua trở thành lời hướng dẫn của khách nhỏ tiếp theo.",
+      "end": true
+    }
+  ]
+}

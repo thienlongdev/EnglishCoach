@@ -1,0 +1,480 @@
+{
+  "schema": 1,
+  "slug": "ielts-task2-hypothesis",
+  "version": 1,
+  "domain": "ielts",
+  "order": 60,
+  "kind": "application",
+  "title": {
+    "vi": "Task 2: giả định và hệ quả",
+    "en": "Task 2: hypothesis and consequence"
+  },
+  "subtitle": {
+    "vi": "Tách điều kiện đang xét khỏi điều đã được chứng minh.",
+    "en": "Separate a condition under discussion from an established fact."
+  },
+  "aliases": [
+    "IELTS giả định hệ quả",
+    "hypothesis consequence",
+    "second conditional IELTS",
+    "if were could might",
+    "if past không nhất thiết quá khứ"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Phân biệt điều kiện mở và cách đặt giả định có khoảng cách.",
+    "Dùng past form với mốc tương lai khi đó là giả định.",
+    "Giữ điều kiện và mức hệ quả khi viết lại."
+  ],
+  "prerequisites": [
+    "unreal-present-conditionals"
+  ],
+  "related": [
+    {
+      "slug": "real-conditionals",
+      "rel": "contrast"
+    },
+    {
+      "slug": "past-unreal-conditionals",
+      "rel": "more"
+    },
+    {
+      "slug": "ielts-task2-argument",
+      "rel": "application"
+    }
+  ],
+  "exam": {
+    "ielts": "Luyện nêu phương án và hệ quả có điều kiện trong Task 2; không gán một cấu trúc cho một band.",
+    "toeic": null
+  },
+  "quick": {
+    "what": "Câu giả định cho phép xét một điều kiện mà chưa xác nhận nó xảy ra. Past form trong if có thể tạo khoảng cách đối với hiện tại/tương lai, không nhất thiết tường thuật quá khứ.",
+    "when": "Khi lập luận về phương án, điều kiện thực hiện hoặc một khả năng thay thế.",
+    "examples": [
+      {
+        "en": "If funding increases, we may add evening classes.",
+        "vi": "Nếu kinh phí tăng, chúng tôi có thể mở thêm lớp tối."
+      },
+      {
+        "en": "If funding increased, we could add evening classes.",
+        "vi": "Nếu kinh phí tăng, chúng tôi có thể mở thêm lớp tối.",
+        "note": "Một cách đặt phương án có khoảng cách hơn, không gán phần trăm."
+      }
+    ],
+    "remember": "Không biến hệ quả có điều kiện thành dự đoán vô điều kiện."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Xét một trung tâm giả định đang cân nhắc lớp tối. If funding increased, we could add evening classes không xác nhận đã có tiền hoặc sẽ có lớp. Nó đặt hai ý vào một quan hệ để thảo luận."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Cách nhìn",
+        "Mẫu",
+        "Không tự kết luận"
+      ],
+      "rows": [
+        [
+          "Điều kiện mở",
+          "If funding increases, we may expand.",
+          "Không phải dữ kiện kinh phí đã tăng."
+        ],
+        [
+          "Giả định có khoảng cách",
+          "If funding increased, we could expand.",
+          "Past không tự là năm đã qua hoặc một tỷ lệ bất khả thi."
+        ],
+        [
+          "Giả định quá khứ theo tình huống phản thực",
+          "If funding had increased last year, we could have expanded.",
+          "Phải xét mốc và hoàn thành, không đổi sang hiện tại vô cớ."
+        ]
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "branch",
+        "root": "Phương án lớp tối, tình huống minh họa",
+        "branches": [
+          {
+            "cond": "If funding increases",
+            "result": "we may add evening classes.",
+            "world": "real",
+            "note": "Điều kiện mở; real không có nghĩa sự kiện đã thật sự xảy ra."
+          },
+          {
+            "cond": "If funding increased",
+            "result": "we could add evening classes.",
+            "world": "unreal",
+            "note": "Khoảng cách giả định, không phải phần trăm cố định."
+          }
+        ]
+      },
+      "caption": "Hai cách đặt điều kiện; không có nhánh nào xác nhận ngân sách thực.",
+      "alt": "Nhánh if increases với may add và nhánh if increased với could add đều giữ điều kiện."
+    },
+    {
+      "type": "formula",
+      "parts": [
+        {
+          "t": "If + S + past form"
+        },
+        {
+          "t": ","
+        },
+        {
+          "t": "S + could / might / would + base verb"
+        }
+      ],
+      "note": "Chọn modal theo ý định: khả năng, tiềm năng hoặc hệ quả được người nói hình dung; không phải các từ đồng nghĩa trong mọi câu."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "If the fees were lower, more adults might enrol next year.",
+          "vi": "Nếu học phí thấp hơn, có thể nhiều người lớn hơn sẽ đăng ký năm tới.",
+          "note": "Next year cho mốc tương lai; were thể hiện giả định."
+        },
+        {
+          "en": "We could open at night if the council funded evening classes.",
+          "vi": "Chúng tôi có thể mở ban đêm nếu hội đồng cấp kinh phí lớp tối."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không suy từ không có X nên chưa có Y rằng chỉ cần X là chắc chắn có Y. Có thể còn điều kiện khác. Khi viết lại, giữ quan hệ mà nguồn thực sự nêu."
+    },
+    {
+      "type": "try",
+      "exercise": "ihy-05"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Were và was có biến thể ở một số mẫu giả định với I/he/she. Không dùng một câu không có quy cách để phủ nhận mọi was. Với the fees số nhiều trong bài, were còn là hòa hợp số nhiều nên không có tranh chấp đó."
+    },
+    {
+      "type": "p",
+      "vi": "Would trong if có thể có những chức năng khác như sự sẵn lòng hoặc yêu cầu. Bài này luyện mẫu điều kiện cơ bản, không đặt lệnh sau mọi if đều cấm will/would."
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Nếu đổi might thành would, hoặc bỏ if, hãy hỏi điều gì đã thay trong mức cam kết. Một phản thực về quá khứ cũng không tự là bằng chứng nghiên cứu rằng một chính sách chắc chắn hiệu quả."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "ihy-m1",
+      "wrong": "If fees were lower, more adults could enrols.",
+      "right": "If fees were lower, more adults could enrol.",
+      "why": "Sau could dùng dạng gốc."
+    },
+    {
+      "id": "ihy-m2",
+      "wrong": "If fees was lower, more adults might enrol.",
+      "right": "If fees were lower, more adults might enrol.",
+      "why": "Fees là chủ ngữ số nhiều nên dùng were trong mẫu này."
+    }
+  ],
+  "faq": [
+    {
+      "q": "If + quá khứ luôn nói quá khứ?",
+      "a": "Không. Trong mẫu giả định này, past form có thể nói điều kiện hiện tại hoặc tương lai. Mốc và cấu trúc cả câu quyết định."
+    },
+    {
+      "q": "Could và would đổi tự do không?",
+      "a": "Không trong mọi ngữ cảnh. Chọn theo khả năng, tiềm năng hay hệ quả được hình dung; không gán một bảng phần trăm chung."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ihy-01",
+      "type": "choice",
+      "level": "B2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Chọn điều câu không khẳng định như sự kiện.",
+      "stem": "If fees were lower, more adults might enrol next year.",
+      "options": [
+        {
+          "t": "Câu đang xét giả định, chưa xác nhận học phí sẽ giảm.",
+          "ok": true,
+          "note": "If giữ điều kiện."
+        },
+        {
+          "t": "Were chứng minh việc đăng ký chỉ thuộc năm trước.",
+          "note": "Next year đặt mốc tương lai ở đây.",
+          "tag": "past-form-time"
+        }
+      ],
+      "explain": "Past form không tự quyết định thời gian của giả định."
+    },
+    {
+      "id": "ihy-02",
+      "type": "match",
+      "level": "B2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Ghép mẫu với cách nhìn trong bài.",
+      "pairs": [
+        {
+          "a": "if funding increases",
+          "b": "Điều kiện được trình bày mở."
+        },
+        {
+          "a": "if funding increased",
+          "b": "Phương án được đặt có khoảng cách giả định."
+        },
+        {
+          "a": "if funding had increased last year",
+          "b": "Nhìn về một điều kiện ở mốc quá khứ."
+        }
+      ],
+      "explain": "Đây là các cách dùng được nêu, không phải nhãn sự thật cho mọi if."
+    },
+    {
+      "id": "ihy-03",
+      "type": "multi",
+      "level": "B2",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Chọn những điều cần giữ khi viết lại.",
+      "stem": "If funding increased, we could expand.",
+      "options": [
+        {
+          "t": "Điều kiện funding increased.",
+          "ok": true,
+          "note": "Không tự bỏ if."
+        },
+        {
+          "t": "Giá trị khả năng của could.",
+          "ok": true,
+          "note": "Không biến thành bảo đảm."
+        },
+        {
+          "t": "Viết We will expand chắc chắn giữ nguyên mọi nghĩa.",
+          "note": "Bỏ điều kiện và tăng mức cam kết.",
+          "tag": "condition-removed"
+        }
+      ],
+      "explain": "Một hệ quả giả định khác một tuyên bố độc lập."
+    },
+    {
+      "id": "ihy-04",
+      "type": "cloze",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Dùng mẫu giả định: quá khứ của be với fees và dạng của enrol sau could.",
+      "stem": "If fees {1} lower, more adults could {2}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "were"
+          ],
+          "closed": true
+        },
+        "2": {
+          "accept": [
+            "enrol",
+            "enroll"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Fees số nhiều dùng were; could cần dạng gốc, enrol/enroll đều là chính tả chuẩn."
+    },
+    {
+      "id": "ihy-05",
+      "type": "transform",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Đưa điều kiện lên đầu mà giữ ý.",
+      "source": "We could open at night if the council funded evening classes.",
+      "instruction": "Bắt đầu If the council funded evening classes, rồi giữ we could open at night.",
+      "accept": [
+        "If the council funded evening classes, we could open at night."
+      ],
+      "model": "If the council funded evening classes, we could open at night.",
+      "explain": "Đổi vị trí không xóa điều kiện."
+    },
+    {
+      "id": "ihy-06",
+      "type": "error",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sửa động từ sau modal.",
+      "segments": [
+        {
+          "t": "If funding increased, we could "
+        },
+        {
+          "t": "offers",
+          "bad": true,
+          "fix": [
+            "offer"
+          ],
+          "note": "Could đi với dạng gốc.",
+          "tag": "modal-base-form"
+        },
+        {
+          "t": " more classes."
+        }
+      ],
+      "explain": "Modal không kéo -s ở động từ sau nó."
+    },
+    {
+      "id": "ihy-07",
+      "type": "order",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Sắp xếp câu bắt đầu bằng If fees were lower; giữ nhánh điều kiện trước.",
+      "tokens": [
+        "If fees were lower,",
+        "more adults",
+        "might",
+        "enrol"
+      ],
+      "accept": [
+        [
+          "If fees were lower,",
+          "more adults",
+          "might",
+          "enrol"
+        ]
+      ],
+      "end": ".",
+      "explain": "Might giữ hiệu quả ở mức khả năng trong giả định."
+    },
+    {
+      "id": "ihy-08",
+      "type": "open",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Xét một thay đổi giả định.",
+      "task": "Viết 3–4 câu về một trung tâm muốn mở lớp tối: nêu rào cản, một giả định và hệ quả có could/might; thêm điều kiện khác nếu cần. Không bịa nghiên cứu.",
+      "model": [
+        "The centre has limited staff. If funding increased, it could hire another tutor. More adults might attend, but suitable transport would also be important."
+      ],
+      "checklist": [
+        "Không khẳng định giả định đã xảy ra.",
+        "Past form khớp cách nhìn và mốc.",
+        "Sau modal là dạng gốc.",
+        "Không biến một điều kiện thành bảo đảm đủ cho mọi hệ quả."
+      ],
+      "explain": "Đối chiếu quan hệ và mức cam kết, không đối chiếu một band."
+    },
+    {
+      "id": "ihy-09",
+      "type": "cloze",
+      "level": "B2",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Tạo mệnh đề if giả định với the library và offer more evening classes ở past form.",
+      "stem": "If {1}, more people could attend.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "the library offered more evening classes"
+          ]
+        }
+      },
+      "explain": "Bài yêu cầu viết mệnh đề tiếng Anh đầy đủ theo mẫu giả định."
+    },
+    {
+      "id": "ihy-10",
+      "type": "transform",
+      "level": "B2",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Gộp giả định và hệ quả đã được nguồn nêu.",
+      "source": "Suppose the council funded evening classes. We could then open at night.",
+      "instruction": "Dùng If ở đầu câu, giữ the council funded evening classes và we could open at night; có thể giữ then.",
+      "accept": [
+        "If the council funded evening classes, we could open at night.",
+        "If the council funded evening classes, we could then open at night."
+      ],
+      "model": "If the council funded evening classes, we could open at night.",
+      "explain": "Quan hệ đã có trong suppose/then; không tự bổ sung một hệ quả."
+    },
+    {
+      "id": "ihy-11",
+      "type": "choice",
+      "level": "B2",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Chọn kết luận đúng về mẫu trong bài.",
+      "stem": "If funding increased next year, we could add classes.",
+      "options": [
+        {
+          "t": "Increased có thể là past form cho giả định về năm tới.",
+          "ok": true,
+          "note": "Mốc tương lai tương thích mẫu giả định."
+        },
+        {
+          "t": "Câu bắt buộc sai vì past chỉ được dùng với năm đã qua.",
+          "note": "Không đúng với giá trị giả định.",
+          "tag": "past-form-time"
+        }
+      ],
+      "explain": "Phân biệt hình thức thời và thời gian được nói tới."
+    },
+    {
+      "id": "ihy-12",
+      "type": "error",
+      "level": "B2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Sửa be theo chủ ngữ số nhiều.",
+      "segments": [
+        {
+          "t": "If fees "
+        },
+        {
+          "t": "was",
+          "bad": true,
+          "fix": [
+            "were"
+          ],
+          "note": "Fees số nhiều dùng were.",
+          "tag": "plural-hypothesis-be"
+        },
+        {
+          "t": " lower, more adults might enrol."
+        }
+      ],
+      "explain": "Không nhầm vấn đề số nhiều này với biến thể was/were ở một chủ ngữ số ít."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "ielts-bd",
+      "note": "Tái sử dụng research/02 và đọc IELTS Writing Key Assessment Criteria ngày2026-11-01; tiêu chí không gán if/would cho một band. Không nguồn nào ở đây duyệt khóa cụ thể."
+    },
+    {
+      "ref": "bc",
+      "note": "Tái sử dụng giới hạn về temporal/modal forms trong TENSE-REVIEW và TENSE-EXERCISE-REVIEW; không có lần đọc mới một trang conditionals cho bài này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham chiếu đề xuất; chưa đọc ấn bản trực tiếp."
+    }
+  ],
+  "editorial": {
+    "status": "drafted",
+    "note": "Nội dung gốc tự rà soát; chưa có independent/human acceptance."
+  }
+}

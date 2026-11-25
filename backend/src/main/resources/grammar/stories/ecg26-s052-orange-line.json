@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s052-orange-line",
+  "title": "Đường cam tới buổi hòa nhạc",
+  "level": "A2",
+  "topics": [
+    "prepositions-movement"
+  ],
+  "scene": "station",
+  "summary": "Hai con đường tới nhà hát dài bằng nhau. Lối tắt duy nhất đi ngang qua buổi chợ sắp dọn.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Nhi",
+      "role": "Người mang sáo"
+    },
+    {
+      "id": "b",
+      "name": "Pim",
+      "role": "Bạn chơi trống"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Bản đồ vẽ đường quanh chợ và một đường xuyên giữa hai dãy hàng. Nhi còn năm phút để kịp nốt mở màn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can hear them tuning up.",
+          "vi": "Mình nghe thấy họ lên dây rồi."
+        },
+        {
+          "who": "b",
+          "en": "Shall we go through the market or round it?",
+          "vi": "Mình đi xuyên chợ hay vòng ngoài?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Hai lối đều tới nhà hát. Nhi chọn lối nào cho hai người và nhạc cụ?",
+        "options": [
+          {
+            "t": "Let's go through the market.",
+            "note": "Through là đi vào, qua bên trong rồi ra ở đầu kia. Câu chọn dãy hàng ở giữa.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "Let's go round the market.",
+            "note": "Round là đi vòng phía ngoài, tránh chen qua các quầy. Cũng đến nhà hát nhưng bằng một lối khác.",
+            "ok": true,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Người bán nghe tiếng dùi trống gõ lên hộp liền dạt sang hai bên. Hai bạn tới kịp, dẫn theo cả một hàng khán giả mới.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Our audience came through with us!",
+          "vi": "Khán giả đi xuyên chợ cùng mình luôn rồi!"
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Họ tới cửa sau đúng lúc một nghệ sĩ đánh rơi dùi. Pim đưa chiếc dự phòng của mình. Lần này nốt mở màn có hai người cùng gõ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We found the right door for that drumstick.",
+          "vi": "Mình tìm đúng cửa cho chiếc dùi ấy rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

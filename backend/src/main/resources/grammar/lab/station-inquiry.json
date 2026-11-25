@@ -1,0 +1,41 @@
+{
+  "id": "station-inquiry",
+  "title": "Giờ tàu trong một câu hỏi lịch sự",
+  "summary": "Khách hỏi giờ rời ga. Đặt câu hỏi vào sau Could you tell me rồi thử xem does còn xuất hiện trong mệnh đề phụ không.",
+  "level": "B1",
+  "topics": [
+    "indirect-questions",
+    "reporting-questions"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Khung câu",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Hỏi thẳng"
+        },
+        {
+          "id": "v2",
+          "label": "Hỏi gián tiếp"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "When does the train leave?",
+      "vi": "Tàu rời ga khi nào?",
+      "note": "Does đứng trước the train trong câu hỏi trực tiếp. / A direct question uses does before the subject.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Could you tell me when the train leaves?",
+      "vi": "Bạn cho tôi biết tàu rời ga khi nào được không?",
+      "note": "When the train leaves giữ trật tự chủ ngữ rồi động từ. Could ở đầu đã đánh dấu câu hỏi chính. / The embedded clause has statement word order.",
+      "verdict": "ok"
+    }
+  }
+}

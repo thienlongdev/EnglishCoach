@@ -1,0 +1,41 @@
+{
+  "id": "archive-ellipsis",
+  "title": "Hai người có sửa cùng một bản thảo không?",
+  "summary": "Mai revised her draft, and Jo did too có thể mô tả hai lịch biên tập. Mở rộng phần did too để thử hai cách hiểu của her và kiểm tra bản nào được Jo sửa.",
+  "level": "C1",
+  "topics": [
+    "ellipsis",
+    "pronoun-reference"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Cách khôi phục phần lược",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Cùng bản của Mai"
+        },
+        {
+          "id": "v2",
+          "label": "Mỗi người một bản"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Mai revised her own draft, and Jo revised Mai's draft too.",
+      "vi": "Mai sửa bản của mình, Jo cũng sửa bản của Mai.",
+      "note": "Cách đọc giữ nguyên người sở hữu trong phần lược. Hai hoạt động sửa cùng nhắm vào bản của Mai. / The possessor remains fixed when the missing predicate is expanded.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Mai revised her own draft, and Jo revised Jo's own draft too.",
+      "vi": "Mai sửa bản của mình và Jo cũng sửa bản của chính Jo.",
+      "note": "Cách đọc còn lại khôi phục quan hệ tự sửa bản của mình cho mỗi chủ ngữ. Did too trong câu mở đầu tự nó không phân xử hai cách đọc. / The possessor varies with the subject of each clause.",
+      "verdict": "ok"
+    }
+  }
+}

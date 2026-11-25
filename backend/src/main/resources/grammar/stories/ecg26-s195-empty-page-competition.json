@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s195-empty-page-competition",
+  "title": "Giải thưởng cho trang giấy trắng",
+  "summary": "Một em nộp trang trắng trong cuộc thi thiết kế bóng. Giám khảo nghe em “suggest holding it to the window” nhưng người dịch biến lời gợi ý thành lời thú nhận đã sao chép.",
+  "level": "B2",
+  "topics": [
+    "reporting-verbs"
+  ],
+  "scene": "university",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mộc",
+      "role": "Sinh viên thiết kế"
+    },
+    {
+      "id": "b",
+      "name": "Teo",
+      "role": "Người phụ trách xưởng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Khi đưa giấy lên cửa, các đường cắt nhỏ chiếu bóng thành phố lên bàn. Chính thao tác sẽ làm bài thi hiện ra.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The city is already cut into the sheet.",
+          "vi": "Thành phố đã được cắt sẵn vào tờ giấy."
+        },
+        {
+          "who": "b",
+          "en": "Which action did she suggest?",
+          "vi": "Em đã gợi ý làm việc gì?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Giữ đúng động từ tường thuật và thao tác mà em muốn giám khảo thử.",
+        "options": [
+          {
+            "ok": false,
+            "t": "She admitted copying the skyline from a photograph.",
+            "note": "Admitted copying nói em thừa nhận hành động khác hẳn. Không có lời khai hay ảnh nào làm căn cứ.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "She suggested holding the sheet up to the light.",
+            "note": "Suggest + -ing đưa ra một hành động để người nghe thử. Nó không nhận hay chối trách nhiệm tác giả.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Teo làm theo, những con phố hiện lên trên tay ông. Giải thưởng là quyền chọn nơi trưng bày, em chọn khung cửa nắng sớm của lớp.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Her design needed one more material: daylight.",
+          "vi": "Bản thiết kế của em cần thêm một vật liệu: ánh ban ngày."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Sáng sau, thành phố bóng đi dọc bàn học trước tiếng chuông.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Mộc nghe lại đúng chữ holding và đưa trang giấy ra ánh sáng. Một em khác nhận ra trong bóng có cả nhà mới xây tuần trước.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We should let the paper speak first.",
+          "vi": "Lẽ ra ta nên để tờ giấy nói trước."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Giám khảo xin phép dùng bản mẫu làm bìa chương trình. Trên đó in đúng tên bé thay cho nghi ngờ vô căn cứ.",
+      "end": true
+    }
+  ]
+}

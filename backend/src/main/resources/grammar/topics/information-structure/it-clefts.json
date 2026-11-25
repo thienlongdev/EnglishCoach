@@ -1,0 +1,528 @@
+{
+  "schema": 1,
+  "slug": "it-clefts",
+  "version": 2,
+  "domain": "information-structure",
+  "order": 40,
+  "kind": "grammar",
+  "title": {
+    "vi": "Câu chẻ: It was Lan who…",
+    "en": "It-clefts"
+  },
+  "subtitle": {
+    "vi": "Chia câu để làm một phần nổi bật",
+    "en": "Split a sentence to highlight a constituent"
+  },
+  "aliases": [
+    "câu chẻ it",
+    "it clefts",
+    "wh-clefts",
+    "what I need is",
+    "câu chẻ what",
+    "it was Lan who"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Tạo it-cleft với focus người/vật/thời gian.",
+    "Tạo wh-cleft với what-clause.",
+    "Giữ vai nghĩa và tránh đại từ lặp."
+  ],
+  "prerequisites": [
+    "relative-clauses-defining"
+  ],
+  "related": [
+    {
+      "slug": "given-before-new",
+      "rel": "more"
+    },
+    {
+      "slug": "relative-clauses-defining",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Câu chẻ (cleft) chia thông tin thành khung và phần nổi bật. It-cleft có It + be + focus + phần nối; wh-cleft có what-clause + be + focus.",
+    "when": "Dùng khi ngữ cảnh cần đối chiếu hoặc làm rõ trọng tâm.",
+    "examples": [
+      {
+        "en": "It was [FOCUS|Lan] who opened the door.",
+        "vi": "Chính Lan là người mở cửa."
+      },
+      {
+        "en": "What I need is [FOCUS|a quiet room].",
+        "vi": "Điều tôi cần là một căn phòng yên tĩnh."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Lan opened the door có thể chẻ It was Lan who opened the door để nhấn người làm. Nếu nhấn vật, It was the side door that Lan opened. Vai người làm và đối tượng phải giữ nguyên."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Khung",
+            "items": [
+              "It was"
+            ]
+          },
+          {
+            "label": "Focus",
+            "items": [
+              "Lan"
+            ]
+          },
+          {
+            "label": "Nội dung còn lại",
+            "items": [
+              "who opened the door"
+            ]
+          }
+        ],
+        "sentence": "{0} {1} {2}."
+      },
+      "caption": "Lan là phần được làm nổi bật trong sự việc mở cửa.",
+      "alt": "Lan là phần được làm nổi bật trong sự việc mở cửa."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Trọng tâm",
+        "Ví dụ",
+        "Vai"
+      ],
+      "rows": [
+        [
+          "Người",
+          "It was Lan who called.",
+          "người gọi"
+        ],
+        [
+          "Vật",
+          "It was the side door that Lan opened.",
+          "đối tượng"
+        ],
+        [
+          "Thời gian",
+          "It was yesterday that Lan called.",
+          "mốc gọi"
+        ],
+        [
+          "Nhu cầu kiểu wh",
+          "What I need is a quiet room.",
+          "điều cần"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Wh-cleft: What I need làm phần “điều tôi cần”, is nối với a quiet room. Đây không là câu hỏi What do I need? và không dùng đảo bên trong what-clause."
+    },
+    {
+      "type": "p",
+      "vi": "What I did was call Lan và What I did was to call Lan đều có thể dùng. Không suy mọi wh-cleft đều bắt buộc bỏ hoặc giữ to; mẫu cụ thể quyết định."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không lặp chủ ngữ ở It was Lan who she opened ... nếu muốn nói Lan mở cửa. Phần who đã liên hệ với vai ấy."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "That thường dùng ở nhiều it-cleft; who cũng dùng khi focus là người. Một số cleft có thể không hiện từ nối ở vị trí tân ngữ trong cách dùng phù hợp; không dạy mọi cleft đều bắt một từ duy nhất."
+    },
+    {
+      "type": "p",
+      "vi": "Cleft thường nối với thông tin hoặc kỳ vọng có trong ngữ cảnh, nhưng không là bằng chứng độc lập rằng mọi phần nội dung đã được kiểm chứng. Chọn focus vì nhu cầu giao tiếp, không để tăng độ phức tạp vô cớ."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "it-clefts-m1",
+      "wrong": "It was Lan who she opened the door.",
+      "right": "It was Lan who opened the door.",
+      "why": "Không lặp she cho cùng vai chủ ngữ."
+    },
+    {
+      "id": "it-clefts-m2",
+      "wrong": "What do I need is a quiet room.",
+      "right": "What I need is a quiet room.",
+      "why": "What-clause trong wh-cleft không đảo như câu hỏi trực tiếp."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Cleft chỉ nhấn được người không?",
+      "a": "Không. Có thể nhấn vật, thời gian hoặc các thành phần phù hợp khác."
+    },
+    {
+      "q": "Wh-cleft có phải câu hỏi không?",
+      "a": "Không nhất thiết. What I need is ... là cấu trúc nêu điều cần, không phải câu hỏi trực tiếp."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "it-clefts-01",
+      "prompt": "Chọn câu chẻ nhấn người mở cửa.",
+      "explain": "It was Lan + who/that + phần còn lại nhấn Lan.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "Lan opened the door. Nhấn người làm.",
+      "options": [
+        {
+          "t": "It was Lan who opened the door.",
+          "ok": true,
+          "note": "Lan là phần focus."
+        },
+        {
+          "t": "It was Lan who she opened the door.",
+          "ok": false,
+          "note": "Lặp chủ ngữ she cho cùng vai.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "It was Lan which opened the door.",
+          "ok": false,
+          "note": "Which không chỉ người ở mẫu này.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "it-clefts-02",
+      "prompt": "Nối câu với phần được nhấn.",
+      "explain": "Cùng sự việc có thể chọn trọng tâm khác.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "It was Lan who opened the door.",
+          "b": "Người làm: Lan"
+        },
+        {
+          "a": "It was the side door that Lan opened.",
+          "b": "Đối tượng: the side door"
+        },
+        {
+          "a": "It was yesterday that Lan called.",
+          "b": "Thời gian: yesterday"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "it-clefts-03",
+      "prompt": "Phân loại kiểu câu chẻ.",
+      "explain": "Wh-cleft dùng what-clause; it-cleft dùng it + be + focus.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "It-cleft",
+        "Wh-cleft"
+      ],
+      "items": [
+        {
+          "t": "It was Lan who called.",
+          "cat": "It-cleft"
+        },
+        {
+          "t": "What I need is a quiet room.",
+          "cat": "Wh-cleft"
+        },
+        {
+          "t": "What I did was call Lan.",
+          "cat": "Wh-cleft"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "it-clefts-04",
+      "prompt": "Điền who hoặc that khi chỉ người; không bỏ trống.",
+      "explain": "Who/that đều có thể nối ở it-cleft chỉ người.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "It was Lan {1} opened the door. It was Minh {2} sent the file.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "who",
+            "that"
+          ]
+        },
+        "2": {
+          "accept": [
+            "who",
+            "that"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "it-clefts-05",
+      "prompt": "Bỏ chủ ngữ lặp trong câu chẻ.",
+      "explain": "Who đã giữ vai chủ ngữ của opened.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "It was Lan who"
+        },
+        {
+          "t": "she opened",
+          "bad": true,
+          "fix": [
+            "opened"
+          ],
+          "note": "Không lặp she.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "the door."
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "it-clefts-06",
+      "prompt": "Sắp xếp bắt đầu bằng It; giữ Lan làm phần nhấn.",
+      "explain": "It was Lan who called là khung cleft.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "It",
+        "was",
+        "Lan",
+        "who",
+        "called"
+      ],
+      "accept": [
+        [
+          "It",
+          "was",
+          "Lan",
+          "who",
+          "called"
+        ]
+      ],
+      "end": ".",
+      "level": "B2"
+    },
+    {
+      "id": "it-clefts-07",
+      "prompt": "Chẻ câu để nhấn Lan.",
+      "explain": "Who/that đều chấp nhận trong mẫu này.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "Lan sent the file.",
+      "instruction": "Dùng It was Lan đầu câu và who/that trước sent the file.",
+      "accept": [
+        "It was Lan who sent the file",
+        "It was Lan that sent the file"
+      ],
+      "model": "It was Lan who sent the file",
+      "level": "B2"
+    },
+    {
+      "id": "it-clefts-08",
+      "prompt": "Viết cùng sự việc với hai trọng tâm.",
+      "explain": "Tự đối chiếu, không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Chọn sự việc hư cấu có người, vật và thời gian. Viết hai it-cleft nhấn hai phần khác nhau; thêm một wh-cleft với What I need ....",
+      "model": [
+        "Lan sent the file yesterday. It was Lan who sent the file yesterday. It was yesterday that Lan sent the file. What I need is a clear copy."
+      ],
+      "checklist": [
+        "Focus đúng phần muốn đối chiếu.",
+        "Không lặp chủ ngữ/tân ngữ trong phần sau.",
+        "Không chẻ mọi câu chỉ để tăng độ dài."
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "it-clefts-09",
+      "prompt": "Điền what hoặc dạng be theo mẫu.",
+      "explain": "What-clause làm phần mở của wh-cleft.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "{1} I need is a quiet room. What I did {2} call Lan, dùng quá khứ của be.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "What"
+          ]
+        },
+        "2": {
+          "accept": [
+            "was"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "it-clefts-10",
+      "prompt": "Chọn nhận xét đúng về What I did.",
+      "explain": "Sau what I did, cả dạng gốc và to-infinitive có thể dùng ở mẫu này.",
+      "skill": "use",
+      "use": "practice",
+      "type": "choice",
+      "stem": "What I did was call Lan. / What I did was to call Lan.",
+      "options": [
+        {
+          "t": "Cả hai có thể chuẩn trong mẫu này.",
+          "ok": true,
+          "note": "Không bắt buộc chỉ một cách."
+        },
+        {
+          "t": "Dạng không to luôn sai.",
+          "ok": false,
+          "note": "Mẫu dạng gốc được dùng.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "What luôn có nghĩa một câu hỏi trực tiếp.",
+          "ok": false,
+          "note": "Ở đây là mệnh đề kiểu điều mà tôi làm.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "it-clefts-11",
+      "prompt": "Điền dạng phù hợp của be và open theo khung.",
+      "explain": "It was theo mốc quá khứ; opened kể sự việc trước đó.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "It {1} Lan who opened the door yesterday, dùng quá khứ của be. It was Lan who {2} (open) it yesterday.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "was"
+          ]
+        },
+        "2": {
+          "accept": [
+            "opened"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "it-clefts-12",
+      "prompt": "Đổi nhu cầu thành wh-cleft.",
+      "explain": "What I need giữ phần nhu cầu; a quiet room là phần được làm nổi bật.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "I need a quiet room.",
+      "instruction": "Bắt đầu What I need, dùng is rồi a quiet room.",
+      "accept": [
+        "What I need is a quiet room"
+      ],
+      "model": "What I need is a quiet room",
+      "level": "B2"
+    },
+    {
+      "id": "it-clefts-13",
+      "prompt": "Chọn tất cả câu chuẩn.",
+      "explain": "Câu chẻ có thể dùng hai từ nối người hoặc wh-cleft, không lặp vai.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "It was Lan who called.",
+          "ok": true,
+          "note": "Cleft nhấn người."
+        },
+        {
+          "t": "It was Lan that called.",
+          "ok": true,
+          "note": "That cũng dùng trong mẫu người này."
+        },
+        {
+          "t": "What I need is a quiet room.",
+          "ok": true,
+          "note": "Wh-cleft chuẩn."
+        },
+        {
+          "t": "It was Lan who calleded me.",
+          "ok": false,
+          "note": "Quá khứ của call là called, không phải calleded.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "it-clefts-14",
+      "prompt": "Chọn nhận xét đúng về lựa chọn focus.",
+      "explain": "Cleft tổ chức thông tin, không chứng nhận sự việc hay luôn làm câu hay hơn.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "It was yesterday that Lan called.",
+      "options": [
+        {
+          "t": "Câu làm yesterday nổi bật, thường để đối chiếu thời gian.",
+          "ok": true,
+          "note": "Khác trọng tâm với Lan called yesterday."
+        },
+        {
+          "t": "Câu khẳng định Lan không gọi hôm qua.",
+          "ok": false,
+          "note": "Không có phủ định đó.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Mọi câu cần đổi thành cleft để được trang trọng.",
+          "ok": false,
+          "note": "Cần ngữ cảnh và trọng tâm thật.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "lgswe",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

@@ -1,0 +1,545 @@
+{
+  "schema": 1,
+  "slug": "indefinite-pronouns",
+  "version": 1,
+  "domain": "pronouns",
+  "order": 30,
+  "kind": "grammar",
+  "title": {
+    "vi": "Someone, anything, nobody",
+    "en": "Indefinite pronouns"
+  },
+  "level": "A2",
+  "levelBasis": "editorial",
+  "prerequisites": [
+    "some-and-any"
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "subtitle": {
+    "vi": "Nói về người và vật mà không cần xác định tên",
+    "en": "Referring without naming"
+  },
+  "aliases": [
+    "đại từ bất định",
+    "someone somebody",
+    "anything something",
+    "nobody everybody",
+    "something interesting"
+  ],
+  "objectives": [
+    "Chọn nhóm đại từ chỉ người hoặc vật theo nghĩa",
+    "Dùng động từ số ít với someone, everyone và nothing",
+    "Đặt tính từ và else đúng vị trí, xử lý phủ định rõ nghĩa"
+  ],
+  "related": [
+    {
+      "slug": "some-and-any",
+      "rel": "more"
+    },
+    {
+      "slug": "singular-they",
+      "rel": "more"
+    }
+  ],
+  "quick": {
+    "what": "Đại từ bất định (indefinite pronoun) như someone, anything và nobody nói về người hoặc vật mà không nêu tên cụ thể. Các dạng với one, body và thing này thường đi với động từ số ít.",
+    "when": "Dùng khi chưa biết, không cần nêu hoặc muốn bao quát một người, một vật hay cả nhóm.",
+    "examples": [
+      {
+        "en": "Someone is waiting at reception.",
+        "vi": "Có người đang đợi ở quầy tiếp tân."
+      },
+      {
+        "en": "I need something warm to drink.",
+        "vi": "Tôi cần thứ gì đó ấm để uống."
+      }
+    ],
+    "remember": "Someone is, everyone has; tính từ thường theo sau: something useful."
+  },
+  "lesson": [
+    {
+      "type": "table",
+      "head": [
+        "Nhóm nghĩa",
+        "Người",
+        "Vật hoặc sự việc"
+      ],
+      "rows": [
+        [
+          "Một người hoặc một thứ không nêu tên",
+          "someone; somebody",
+          "something"
+        ],
+        [
+          "Bất kỳ hoặc không xác định trong môi trường phù hợp",
+          "anyone; anybody",
+          "anything"
+        ],
+        [
+          "Không ai hoặc không thứ gì",
+          "no one; nobody",
+          "nothing"
+        ],
+        [
+          "Tất cả",
+          "everyone; everybody",
+          "everything"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Some thường xuất hiện khi khẳng định có người hoặc vật; any thường dùng trong câu hỏi và phủ định. Đây là khuynh hướng theo nghĩa, không phải công thức hình thức: Would you like something to eat? là lời mời tự nhiên. Anyone can apply nói bất kỳ ai đều có thể nộp."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "Someone can help you.",
+            "vi": "Có một người nào đó có thể giúp bạn."
+          },
+          "b": {
+            "en": "Anyone can help you.",
+            "vi": "Bất kỳ ai cũng có thể giúp bạn."
+          },
+          "diff": "Someone khẳng định có người giúp; anyone ở đây mở lựa chọn cho bất kỳ người nào."
+        }
+      ]
+    },
+    {
+      "type": "formula",
+      "parts": [
+        {
+          "t": "someone / everyone / nothing",
+          "role": "S"
+        },
+        {
+          "t": "is / has / động từ số ít",
+          "role": "V"
+        }
+      ],
+      "note": "Everyone has a seat. Về sau có thể dùng they để nhắc người chưa xác định giới tính."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "fixedOrder": true,
+        "slots": [
+          {
+            "label": "Đại từ chỉ vật",
+            "items": [
+              "something",
+              "anything",
+              "nothing"
+            ]
+          },
+          {
+            "label": "Tính từ theo sau",
+            "items": [
+              "useful",
+              "warm",
+              "unusual"
+            ]
+          }
+        ],
+        "sentence": "{0} {1}"
+      },
+      "caption": "Tính từ đi sau đại từ bất định trong mẫu này.",
+      "alt": "Ghép something useful, anything warm hoặc nothing unusual. Đại từ đứng trước tính từ, khác với a useful tool có tính từ trước danh từ."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "Everybody is ready, but they need a few more minutes.",
+          "vi": "Mọi người đã sẵn sàng, nhưng họ cần thêm vài phút."
+        },
+        {
+          "en": "Is there anything else we should bring?",
+          "vi": "Còn thứ gì khác chúng ta nên mang không?"
+        },
+        {
+          "en": "Nobody knows the code.",
+          "vi": "Không ai biết mã."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Phủ định và vị trí của else"
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "I did not hear anything.",
+            "vi": "Tôi không nghe thấy gì."
+          },
+          "b": {
+            "en": "I heard nothing.",
+            "vi": "Tôi không nghe thấy gì."
+          },
+          "diff": "Hai cách đều phủ định nội dung nghe thấy. Trong văn viết chuẩn, không cần ghép not với nothing để diễn đạt cùng một phủ định."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Dùng someone else cho người khác, something else cho thứ khác. Else đứng sau đại từ: Is anyone else coming? No one viết thành hai từ; nobody thường viết liền. Không hiểu every là nhiều rồi tự viết everybody are."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Nothing ở vị trí chủ ngữ không cần do not: Nothing works. Câu Everything does not work có thể gây băn khoăn phạm vi phủ định; nếu muốn nói không món nào hoạt động, Nothing works rõ hơn. Nếu chỉ một số món hỏng, Not everything works rõ hơn."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Một số phương ngữ dùng nhiều từ phủ định để thể hiện một phủ định chung. Không phủ nhận tính hệ thống của các phương ngữ đó. Bài này hướng tới văn viết chuẩn: I did not see anybody hoặc I saw nobody."
+    },
+    {
+      "type": "p",
+      "vi": "Someone hoặc somebody không nhất thiết có nghĩa người nói hoàn toàn không biết người đó. Người nói có thể biết nhưng chưa muốn nêu tên. Khi nhắc lại người ấy, they thường tự nhiên; động từ ngay sau someone vẫn theo số ít: Someone has left their bag."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "indef-agreement",
+      "wrong": "Everybody are waiting.",
+      "right": "Everybody is waiting.",
+      "why": "Everybody lấy động từ số ít dù nói tới nhiều người."
+    },
+    {
+      "id": "indef-adjective",
+      "wrong": "We need useful something.",
+      "right": "We need something useful.",
+      "why": "Trong cấu trúc này tính từ đứng sau something."
+    },
+    {
+      "id": "indef-else",
+      "wrong": "Is else anyone joining us?",
+      "right": "Is anyone else joining us?",
+      "why": "Else đứng sau anyone."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Câu hỏi có được dùng something không?",
+      "a": "Có. Lời mời như Would you like something to drink? dùng something rất tự nhiên; người nói có thể đang đề nghị một thứ có sẵn."
+    },
+    {
+      "q": "Everyone nói nhiều người, tại sao dùng has?",
+      "a": "Everyone là đại từ bất định có hòa hợp số ít trong cấu trúc này. They dùng để nhắc lại người ở câu sau không làm has đổi thành have."
+    },
+    {
+      "q": "Someone và somebody khác nghĩa nhiều không?",
+      "a": "Trong nhiều ngữ cảnh chúng thay thế được nhau. Đừng tạo một bài tập chỉ chấp nhận một dạng nếu cả hai đều tự nhiên."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "indefinite-pronouns-1",
+      "level": "A2",
+      "use": "practice",
+      "type": "choice",
+      "skill": "meaning",
+      "prompt": "Chọn động từ phù hợp.",
+      "stem": "Everyone ___ a name badge.",
+      "options": [
+        {
+          "t": "has",
+          "ok": true,
+          "note": "Everyone lấy động từ số ít."
+        },
+        {
+          "t": "have",
+          "note": "Không hòa hợp số nhiều trực tiếp với everyone.",
+          "tag": "indefinite-agreement"
+        },
+        {
+          "t": "having",
+          "note": "Cần động từ hữu hạn trong câu này.",
+          "tag": "finite-verb"
+        }
+      ],
+      "explain": "Everyone có nghĩa bao quát nhưng hình thức hòa hợp số ít."
+    },
+    {
+      "id": "indefinite-pronouns-2",
+      "level": "A2",
+      "use": "practice",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Điền dạng đúng của be ở hiện tại.",
+      "stem": "Something {1} wrong with the printer.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "is"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Something đi với is trong câu hiện tại."
+    },
+    {
+      "id": "indefinite-pronouns-3",
+      "level": "A2",
+      "use": "practice",
+      "type": "match",
+      "skill": "recognition",
+      "prompt": "Ghép đại từ với nghĩa trong cách dùng thông thường.",
+      "pairs": [
+        {
+          "a": "someone",
+          "b": "một người không nêu tên"
+        },
+        {
+          "a": "nothing",
+          "b": "không thứ gì"
+        },
+        {
+          "a": "everything",
+          "b": "mọi thứ"
+        },
+        {
+          "a": "nobody",
+          "b": "không ai"
+        }
+      ],
+      "explain": "Phân biệt nhóm chỉ người và nhóm chỉ vật hoặc sự việc."
+    },
+    {
+      "id": "indefinite-pronouns-4",
+      "level": "A2",
+      "use": "practice",
+      "type": "transform",
+      "skill": "production",
+      "prompt": "Đổi trật tự cho tự nhiên, giữ nguyên các từ.",
+      "source": "I need warm something.",
+      "instruction": "Viết lại cả câu với tính từ sau đại từ.",
+      "accept": [
+        "I need something warm."
+      ],
+      "model": "I need something warm.",
+      "explain": "Warm đứng sau something, khác trật tự tính từ trước danh từ thông thường."
+    },
+    {
+      "id": "indefinite-pronouns-5",
+      "level": "A2",
+      "use": "practice",
+      "type": "choice",
+      "skill": "meaning",
+      "prompt": "Chọn nghĩa của anyone trong câu này.",
+      "stem": "Anyone can use the public computers.",
+      "options": [
+        {
+          "t": "Bất kỳ ai cũng có thể dùng.",
+          "ok": true,
+          "note": "Anyone mang nghĩa lựa chọn tự do trong câu khẳng định này."
+        },
+        {
+          "t": "Không ai có thể dùng.",
+          "note": "Câu không có nghĩa phủ định.",
+          "tag": "noun-form"
+        },
+        {
+          "t": "Chỉ một người đã được chọn có thể dùng.",
+          "note": "Anyone không giới hạn một người được chọn ở đây.",
+          "tag": "noun-form"
+        }
+      ],
+      "explain": "Any không chỉ xuất hiện trong câu hỏi và câu phủ định."
+    },
+    {
+      "id": "indefinite-pronouns-6",
+      "level": "A2",
+      "use": "practice",
+      "type": "error",
+      "skill": "form",
+      "prompt": "Tìm phần sai.",
+      "segments": [
+        {
+          "t": "Is there "
+        },
+        {
+          "t": "else anything",
+          "bad": true,
+          "fix": [
+            "anything else"
+          ],
+          "note": "Else đứng sau anything trong cụm anything else.",
+          "tag": "noun-form"
+        },
+        {
+          "t": " we need?"
+        }
+      ],
+      "explain": "Else đứng sau anything trong cụm anything else."
+    },
+    {
+      "id": "indefinite-pronouns-7",
+      "level": "A2",
+      "use": "practice",
+      "type": "choice",
+      "skill": "meaning",
+      "prompt": "Chọn đánh giá đúng về lời mời.",
+      "stem": "Would you like something to eat?",
+      "options": [
+        {
+          "t": "Câu đúng và tự nhiên khi mời ăn.",
+          "ok": true,
+          "note": "Something có thể dùng trong câu hỏi mang tính đề nghị."
+        },
+        {
+          "t": "Luôn sai vì câu hỏi phải có anything.",
+          "note": "Đây là khuynh hướng bị biến thành luật tuyệt đối.",
+          "tag": "some-question-ban"
+        },
+        {
+          "t": "Something chỉ dùng cho người.",
+          "note": "Something chỉ vật hoặc sự việc, không phải người.",
+          "tag": "indefinite-person-thing"
+        }
+      ],
+      "explain": "Nghĩa và mục đích câu hỏi ảnh hưởng lựa chọn some hoặc any."
+    },
+    {
+      "id": "indefinite-pronouns-8",
+      "level": "A2",
+      "use": "practice",
+      "type": "open",
+      "skill": "production",
+      "prompt": "Tự viết rồi đối chiếu với mẫu và bảng kiểm.",
+      "task": "Viết một lời mời với something và một câu nói không có ai đang ở một nơi.",
+      "model": [
+        "Would you like something cold to drink?",
+        "Nobody is in the office."
+      ],
+      "checklist": [
+        "Tính từ đứng sau something nếu có.",
+        "Nobody dùng động từ số ít.",
+        "Không thêm not khi nobody đã phủ định theo mẫu văn viết chuẩn."
+      ],
+      "explain": "Lời mời và thông báo có mục đích khác nhau; kiểm tra nghĩa trước hình thức."
+    },
+    {
+      "id": "indefinite-pronouns-9",
+      "level": "A2",
+      "use": "check",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Điền dạng đúng của know ở hiện tại.",
+      "stem": "Nobody {1} where the spare key is.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "knows"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Nobody làm chủ ngữ nên know thêm s ở hiện tại."
+    },
+    {
+      "id": "indefinite-pronouns-10",
+      "level": "A2",
+      "use": "check",
+      "type": "choice",
+      "skill": "meaning",
+      "prompt": "Chọn câu nói rõ tất cả thiết bị đều không hoạt động.",
+      "stem": "Không thiết bị nào hoạt động.",
+      "options": [
+        {
+          "t": "Nothing works.",
+          "ok": true,
+          "note": "Nothing phủ định toàn bộ các thứ trong ngữ cảnh."
+        },
+        {
+          "t": "Not everything works.",
+          "note": "Câu này nói không phải mọi thứ đều hoạt động, không khẳng định tất cả đều hỏng.",
+          "tag": "negation-scope"
+        },
+        {
+          "t": "Everything works.",
+          "note": "Câu này có nghĩa mọi thứ đều hoạt động.",
+          "tag": "noun-form"
+        }
+      ],
+      "explain": "Nothing works làm rõ phạm vi phủ định toàn bộ."
+    },
+    {
+      "id": "indefinite-pronouns-11",
+      "level": "A2",
+      "use": "check",
+      "type": "error",
+      "skill": "form",
+      "prompt": "Tìm phần sai.",
+      "segments": [
+        {
+          "t": "Everyone "
+        },
+        {
+          "t": "have",
+          "bad": true,
+          "fix": [
+            "has"
+          ],
+          "note": "Everyone cần has, không phải have.",
+          "tag": "noun-form"
+        },
+        {
+          "t": " a different role."
+        }
+      ],
+      "explain": "Everyone cần has, không phải have."
+    },
+    {
+      "id": "indefinite-pronouns-12",
+      "level": "A2",
+      "use": "check",
+      "type": "choice",
+      "skill": "meaning",
+      "prompt": "Chọn cụm tự nhiên.",
+      "stem": "We should invite ___.",
+      "options": [
+        {
+          "t": "someone else",
+          "ok": true,
+          "note": "Else đứng sau someone."
+        },
+        {
+          "t": "else someone",
+          "note": "Trật tự này không phù hợp trong mẫu.",
+          "tag": "indefinite-else"
+        },
+        {
+          "t": "someone other",
+          "note": "Để nói một người khác trong mẫu này, dùng someone else.",
+          "tag": "indefinite-else"
+        }
+      ],
+      "explain": "Someone else diễn đạt một người khác mà không nêu tên."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham khảo thêm về đại từ bất định, hòa hợp, some/any và vị trí tính từ; chưa đối chiếu trực tiếp trang nguồn trong lượt soạn này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham khảo thêm cùng chủ điểm; không xác nhận đã kiểm tra mục hoặc trang sách."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

@@ -1,0 +1,528 @@
+/*
+ * Echo Memory Pulse (owner brief 2026-11-12): the effect layer of a stored rating, the study library bar and the pass
+ * completion. Transform / opacity / stroke-dashoffset only; tokens on the element that carries them (§AH); explicit .dark
+ * (§Y); no backdrop blur, no important flags, Quicksand inherited (§AA); reduced motion = still confirmations.
+ */
+
+/* ── Effect layer: positioned over the study stage, never catching the pointer ─────────────────── */
+/* Times are from the moment the server stored the rating: the card's tide motion runs 200–540 ms (flashcardStudy), the
+   next card surfaces 540–800 ms, the layer is removed at 1250 ms. */
+
+.layer { position: absolute; inset: 0; pointer-events: none; z-index: 25; overflow: visible; }
+.fx {
+  position: absolute;
+  inset: 0;
+  --tone: 225, 72, 98;
+  --tone2: 253, 164, 175;
+}
+.fx[data-quality='good'] { --tone: 79, 70, 229; --tone2: 147, 197, 253; }
+.fx[data-quality='easy'] { --tone: 13, 148, 136; --tone2: 153, 246, 228; }
+.svg { position: absolute; inset: 0; overflow: visible; }
+.trace, .current, .path { fill: none; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes fadeOut { to { opacity: 0; } }
+
+/* the card's own outline answering the rating, before the card leaves */
+.edge {
+  position: absolute;
+  left: var(--cx);
+  top: var(--cy);
+  width: var(--cw);
+  height: var(--ch);
+  border-radius: 28px;
+  box-shadow: 0 0 0 2px rgba(var(--tone), 0.5), 0 0 40px rgba(var(--tone2), 0.45);
+  opacity: 0;
+  animation: edgePulse 460ms 90ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.fx[data-quality='hard'] .edge { animation-duration: 260ms; animation-delay: 40ms; }
+@keyframes edgePulse { 0% { opacity: 0; } 40% { opacity: 1; } 100% { opacity: 0; } }
+
+.ring {
+  position: absolute;
+  left: var(--ox);
+  top: var(--oy);
+  width: 56px;
+  height: 56px;
+  margin: -28px 0 0 -28px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(var(--tone), 0.7);
+  box-shadow: 0 0 18px rgba(var(--tone2), 0.55), inset 0 0 10px rgba(var(--tone2), 0.4);
+  opacity: 0;
+  animation: ring 560ms cubic-bezier(0.15, 0.7, 0.25, 1) forwards;
+}
+.ring2 { animation-delay: 120ms; }
+.fx[data-quality='easy'] .ring { width: 40px; height: 40px; margin: -20px 0 0 -20px; animation-duration: 420ms; }
+@keyframes ring { 0% { opacity: 0.95; transform: scale(0.45); } 100% { opacity: 0; transform: scale(2.6); } }
+
+/* ── Khó — Undertow ── */
+/* coral ink blooming from the button and drawn down toward the waterline, like ink let go in water */
+.ink {
+  position: absolute;
+  left: var(--ox);
+  top: var(--oy);
+  width: 90px;
+  height: 70px;
+  margin: -35px 0 0 -45px;
+  border-radius: 46% 54% 60% 40% / 52% 44% 56% 48%;
+  background: radial-gradient(closest-side, rgba(var(--tone), 0.5), rgba(var(--tone2), 0.22) 62%, rgba(var(--tone2), 0));
+  opacity: 0;
+  animation: ink 640ms cubic-bezier(0.2, 0.6, 0.3, 1) forwards;
+}
+.ink2 { width: 60px; height: 84px; margin: -42px 0 0 -30px; border-radius: 58% 42% 38% 62% / 46% 58% 42% 54%; animation-delay: 70ms; animation-duration: 700ms; }
+@keyframes ink {
+  0% { opacity: 0; transform: translate(0, 0) scale(0.25) rotate(0deg); }
+  22% { opacity: 1; }
+  100% { opacity: 0; transform: translate(0, calc((var(--wl) - var(--oy)) * 0.55)) scale(1.7) rotate(24deg); }
+}
+.trace {
+  stroke: rgba(var(--tone), 0.8);
+  stroke-width: 1.5;
+  filter: drop-shadow(0 0 3px rgba(var(--tone2), 0.9));
+  animation: draw 150ms cubic-bezier(0.4, 0, 0.6, 1) forwards, fadeOut 120ms 170ms ease-out forwards;
+}
+/* the waterline the card sinks through: it lights up as the card crosses it */
+.waterline {
+  position: absolute;
+  left: var(--cx);
+  top: var(--wl);
+  width: var(--cw);
+  height: 2px;
+  margin-top: -1px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, rgba(var(--tone2), 0), rgba(var(--tone2), 0.95) 30%, #fff 50%, rgba(var(--tone2), 0.95) 70%, rgba(var(--tone2), 0));
+  box-shadow: 0 0 14px rgba(var(--tone), 0.55), 0 0 30px rgba(var(--tone2), 0.35);
+  opacity: 0;
+  transform: scaleX(0.15);
+  animation: waterline 760ms 180ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes waterline {
+  0% { opacity: 0; transform: scaleX(0.15); }
+  25% { opacity: 1; transform: scaleX(1); }
+  70% { opacity: 0.85; transform: scaleX(1.04); }
+  100% { opacity: 0; transform: scaleX(1.08); }
+}
+/* flattened ripples on the water where the card went under (seen at a low angle) */
+.ripple {
+  position: absolute;
+  left: var(--ox);
+  top: var(--wl);
+  width: 140px;
+  height: 26px;
+  margin: -13px 0 0 -70px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(var(--tone2), 0.85);
+  box-shadow: 0 0 10px rgba(var(--tone), 0.35);
+  opacity: 0;
+  animation: ripple 820ms 300ms cubic-bezier(0.2, 0.7, 0.3, 1) forwards;
+}
+.ripple2 { animation-delay: 430ms; }
+@keyframes ripple { 0% { opacity: 0.9; transform: scale(0.3); } 100% { opacity: 0; transform: scale(3.2); } }
+/* a few bubbles rise where it sank: the card is still due and will resurface in this session */
+.bubble {
+  position: absolute;
+  left: var(--bx);
+  top: var(--wl);
+  width: 9px;
+  height: 9px;
+  margin: -4.5px 0 0 -4.5px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(var(--tone2), 0.95);
+  background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0) 55%);
+  opacity: 0;
+  animation: bubble 480ms calc(520ms + var(--i) * 45ms) cubic-bezier(0.3, 0.6, 0.4, 1) forwards;
+}
+@keyframes bubble {
+  0% { opacity: 0; transform: translate(0, 0) scale(0.5); }
+  25% { opacity: 1; }
+  100% { opacity: 0; transform: translate(4px, var(--rise)) scale(1.1); }
+}
+
+/* ── Tốt — Drift ── */
+/* an indigo current drawn across the card: the tide that carries it three days away */
+.current {
+  stroke: rgba(var(--tone), 0.75);
+  stroke-width: 2.2;
+  filter: drop-shadow(0 0 6px rgba(var(--tone2), 0.9));
+  animation: draw 330ms 50ms cubic-bezier(0.45, 0, 0.25, 1) forwards, fadeOut 180ms 360ms ease-out forwards;
+}
+/* afterimages of the card, carried along the current a beat after it leaves */
+.ghost {
+  position: absolute;
+  left: var(--cx);
+  top: var(--cy);
+  width: var(--cw);
+  height: var(--ch);
+  border-radius: 28px;
+  border: 1.5px solid rgba(var(--tone2), 0.6);
+  background: linear-gradient(100deg, rgba(var(--tone), 0.12), rgba(var(--tone2), 0.04) 60%, transparent);
+  opacity: 0;
+  animation: ghost 360ms 190ms cubic-bezier(0.45, 0, 0.55, 1) forwards;
+}
+.ghost2 { animation-delay: 240ms; border-color: rgba(var(--tone2), 0.35); }
+@keyframes ghost {
+  0% { opacity: 0; transform: translate(0, 0) rotate(0deg) scale(0.98); }
+  25% { opacity: 0.7; }
+  100% { opacity: 0; transform: translate(calc(var(--cw) * 0.3), calc(var(--ch) * -0.03)) rotate(2.5deg) scale(0.9); }
+}
+.streak {
+  position: absolute;
+  left: var(--cx);
+  top: var(--sy);
+  width: var(--sl);
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, rgba(var(--tone2), 0), rgba(var(--tone2), 0.95) 70%, #fff);
+  box-shadow: 0 0 8px rgba(var(--tone), 0.5);
+  opacity: 0;
+  animation: streak 340ms calc(120ms + var(--i) * 45ms) cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+@keyframes streak {
+  0% { opacity: 0; transform: translateX(0) scaleX(0.3); transform-origin: left; }
+  30% { opacity: 1; }
+  100% { opacity: 0; transform: translateX(calc(var(--cw) * 0.55)) scaleX(1); }
+}
+
+/* ── Dễ — Pearl ── */
+/* motes drawn from the button into the card's heart */
+.mote {
+  position: absolute;
+  left: var(--ox);
+  top: var(--oy);
+  width: 7px;
+  height: 7px;
+  margin: -3.5px 0 0 -3.5px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff, rgb(var(--tone2)) 60%, rgba(var(--tone), 0.9));
+  box-shadow: 0 0 9px rgba(var(--tone2), 0.95);
+  opacity: 0;
+  animation: mote 480ms calc(var(--i) * 18ms) cubic-bezier(0.55, 0, 0.3, 1) forwards;
+}
+@keyframes mote {
+  0% { opacity: 0; transform: translate(var(--sx), var(--sy)) scale(0.6); }
+  20% { opacity: 1; }
+  60% { opacity: 1; transform: translate(calc(var(--wx) * 0.55 + var(--sy)), calc(var(--wy) * 0.55 - var(--sx))) scale(1); }
+  100% { opacity: 0; transform: translate(var(--wx), var(--wy)) scale(0.4); }
+}
+/* a nacre halo closing together with the card (iridescence: a slowly turning conic gradient seen through a ring mask) */
+.nacre {
+  position: absolute;
+  left: var(--mx);
+  top: var(--my);
+  width: calc(var(--ch) * 0.95);
+  height: calc(var(--ch) * 0.95);
+  margin: calc(var(--ch) * -0.475) 0 0 calc(var(--ch) * -0.475);
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #a7f3d0, #bae6fd, #ddd6fe, #fbcfe8, #fef3c7, #a7f3d0);
+  -webkit-mask: radial-gradient(closest-side, transparent 84%, #000 89%, #000 93%, transparent 99%);
+  mask: radial-gradient(closest-side, transparent 84%, #000 89%, #000 93%, transparent 99%);
+  opacity: 0;
+  animation: nacre 380ms 200ms cubic-bezier(0.7, 0, 0.84, 0) forwards;
+}
+@keyframes nacre {
+  0% { opacity: 0; transform: scale(1.05) rotate(0deg); }
+  30% { opacity: 0.7; }
+  100% { opacity: 0.25; transform: scale(0.04) rotate(160deg); }
+}
+.pearl {
+  position: absolute;
+  left: var(--mx);
+  top: var(--my);
+  width: 22px;
+  height: 22px;
+  margin: -11px 0 0 -11px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 26%, #ffffff 0 18%, transparent 34%),
+    conic-gradient(from 200deg, #ecfeff, #ccfbf1, #e0e7ff, #fce7f3, #fef9c3, #ecfeff);
+  box-shadow: 0 0 16px rgba(var(--tone2), 0.95), 0 0 42px rgba(var(--tone), 0.45), inset -3px -4px 8px rgba(13, 148, 136, 0.35);
+  opacity: 0;
+  animation: pearlForm 200ms 450ms cubic-bezier(0.3, 1.6, 0.5, 1) forwards, pearlFly 440ms 650ms cubic-bezier(0.5, 0, 0.2, 1) forwards;
+}
+@keyframes pearlForm { from { opacity: 0; transform: scale(0.1); } to { opacity: 1; transform: scale(1); } }
+@keyframes pearlFly {
+  from { opacity: 1; transform: translate(0, 0) scale(1); }
+  85% { opacity: 1; }
+  to { opacity: 0; transform: translate(var(--tx), var(--ty)) scale(0.5); }
+}
+.path {
+  stroke: rgba(var(--tone2), 0.6);
+  stroke-width: 1.4;
+  animation: draw 440ms 650ms cubic-bezier(0.5, 0, 0.2, 1) forwards, fadeOut 240ms 1000ms ease-out forwards;
+}
+/* the progress line receives the pearl: a soft horizontal flare (a lens line, never a star / sparkle) */
+.flare {
+  position: absolute;
+  left: var(--gx);
+  top: var(--gy);
+  width: 120px;
+  height: 3px;
+  margin: -1.5px 0 0 -60px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, transparent, rgba(var(--tone2), 0.95), #fff, rgba(var(--tone2), 0.95), transparent);
+  box-shadow: 0 0 12px rgba(var(--tone2), 0.9);
+  opacity: 0;
+  animation: flare 300ms 1040ms cubic-bezier(0.2, 0.8, 0.3, 1) forwards;
+}
+@keyframes flare { 0% { opacity: 0; transform: scaleX(0.2); } 40% { opacity: 1; transform: scaleX(1); } 100% { opacity: 0; transform: scaleX(1.3); } }
+
+/* reduced motion: one still, toned confirmation at the button and on the card's edge */
+.still {
+  position: absolute;
+  left: var(--ox);
+  top: var(--oy);
+  width: 46px;
+  height: 46px;
+  margin: -23px 0 0 -23px;
+  border-radius: 50%;
+  border: 2px solid rgba(var(--tone), 0.8);
+  box-shadow: 0 0 14px rgba(var(--tone2), 0.7);
+}
+.fx[data-reduced='true'] .edge { animation: none; opacity: 0.8; }
+
+/* ── Study library pill (Echo Memory Theater, 2026-11-20) ────────────────────────────────────────
+   During a study pass the vocabulary library is ONE glass pill at the theater's bottom-left; opened, its panel rises above the
+   pill as an overlay over the scene (it never pushes the card away) and scrolls inside itself. Phones: a bottom sheet. */
+
+.libraryBar {
+  --ink: var(--th-ink, #181a4a);
+  --sub: var(--th-ink-3, #6c73a6);
+  --line: rgba(125, 112, 235, 0.28);
+  --edge: rgba(255, 255, 255, 0.96);
+  --panel: linear-gradient(162deg, rgba(252, 251, 255, 0.97) 0%, rgba(242, 240, 255, 0.95) 54%, rgba(232, 244, 255, 0.96) 100%);
+  position: relative;
+}
+:global(.dark) .libraryBar {
+  --line: rgba(164, 150, 255, 0.34);
+  --edge: rgba(214, 208, 255, 0.32);
+  --panel: linear-gradient(162deg, rgba(36, 32, 98, 0.96) 0%, rgba(22, 20, 68, 0.96) 56%, rgba(16, 22, 62, 0.97) 100%);
+}
+.libraryToggle {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-height: 52px;
+  padding: 6px 16px 6px 7px;
+  border-radius: 999px;
+  color: var(--ink);
+  text-align: left;
+  background: var(--th-glass, #ffffff);
+  box-shadow:
+    inset 0 1.5px 1px var(--edge),
+    inset 0 0 0 1px var(--th-edge, #ffffff),
+    0 0 0 1px var(--th-rim, rgba(125, 112, 235, 0.26)),
+    var(--th-shadow, 0 12px 30px -20px rgba(58, 48, 168, 0.45));
+  transition: translate 220ms cubic-bezier(0.22, 1.4, 0.36, 1), scale 140ms ease, box-shadow 200ms ease;
+}
+.libraryToggle:hover {
+  translate: 0 -2px;
+  box-shadow:
+    inset 0 1.5px 2px var(--edge),
+    inset 0 0 0 1px var(--th-edge, #ffffff),
+    0 0 0 1px var(--th-rim-strong, rgba(99, 78, 240, 0.44)),
+    var(--th-shadow-lift, 0 18px 36px -18px rgba(58, 48, 168, 0.56));
+}
+.libraryToggle:active {
+  translate: 0 0;
+  scale: 0.97;
+}
+.libraryToggle:focus-visible { outline: 3px solid rgba(106, 84, 240, 0.45); outline-offset: 2px; }
+.libraryIcon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: #5b49e6;
+  background: radial-gradient(circle at 32% 26%, #ffffff, #ece8ff 64%, #dcd6ff 100%);
+  box-shadow: inset 0 1.5px 1px #ffffff, inset 0 0 0 1px rgba(131, 118, 236, 0.3);
+}
+:global(.dark) .libraryIcon {
+  color: #e4deff;
+  background: radial-gradient(circle at 32% 26%, rgba(156, 140, 255, 0.56), rgba(60, 46, 160, 0.8) 68%, rgba(36, 28, 112, 0.9));
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.32), inset 0 0 0 1px rgba(186, 174, 255, 0.35);
+}
+.libraryTitle { font-size: 0.9rem; font-weight: 800; letter-spacing: -0.01em; white-space: nowrap; }
+.libraryCount { font-size: 0.76rem; font-weight: 700; color: var(--sub); white-space: nowrap; }
+.libraryAction { margin-left: 8px; display: inline-flex; align-items: center; gap: 4px; font-size: 0.78rem; font-weight: 800; color: var(--th-accent, #4f46e5); }
+.libraryActionText { white-space: nowrap; }
+.chevron { width: 16px; height: 16px; rotate: 180deg; transition: rotate 260ms cubic-bezier(0.22, 1, 0.36, 1); }
+.libraryToggle[aria-expanded='true'] .chevron { rotate: 0deg; }
+.libraryPanel {
+  position: absolute;
+  z-index: 32;
+  left: 0;
+  bottom: calc(100% + 14px);
+  width: min(1160px, calc(100cqw - 60px));
+  max-height: min(74dvh, 740px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 30px;
+  background: var(--panel);
+  box-shadow:
+    inset 0 2px 2px var(--edge),
+    inset 0 0 0 1px var(--line),
+    0 34px 80px -28px rgba(24, 18, 96, 0.58),
+    0 0 42px -16px rgba(124, 108, 255, 0.42);
+}
+:global(.dark) .libraryPanel {
+  box-shadow:
+    inset 0 1.5px 2px var(--edge),
+    inset 0 0 0 1px var(--line),
+    0 36px 90px -24px rgba(0, 0, 0, 0.82),
+    0 0 48px -14px rgba(124, 108, 255, 0.52);
+}
+.libraryPanelHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 15px 18px 12px 20px;
+  border-bottom: 1px solid var(--line);
+}
+.libraryPanelTitleWrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.libraryPanelOrb {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 13px;
+  color: var(--th-accent, #5b49e6);
+  background: radial-gradient(circle at 32% 26%, rgba(255, 255, 255, 0.95), rgba(226, 222, 255, 0.72));
+  box-shadow: inset 0 1px 0 #ffffff, inset 0 0 0 1px var(--line);
+}
+:global(.dark) .libraryPanelOrb {
+  color: #ddd6ff;
+  background: radial-gradient(circle at 32% 26%, rgba(146, 132, 255, 0.42), rgba(56, 44, 146, 0.76));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 0 0 1px var(--line);
+}
+.libraryPanelTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+.libraryPanelSub {
+  margin: 1px 0 0;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--sub);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.libraryPanelClose {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-size: 1.35rem;
+  line-height: 1;
+  color: var(--sub);
+  background: rgba(125, 112, 235, 0.08);
+  box-shadow: inset 0 0 0 1px var(--line);
+  transition: color 160ms ease, background-color 160ms ease, scale 120ms ease;
+}
+.libraryPanelClose:hover {
+  color: var(--ink);
+  background: rgba(125, 112, 235, 0.16);
+}
+.libraryPanelClose:active {
+  scale: 0.93;
+}
+.libraryInner {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 16px 18px 20px;
+}
+@media (max-width: 640px) {
+  .libraryToggle { min-height: 48px; padding: 5px 10px 5px 5px; gap: 8px; }
+  .libraryActionText, .libraryCount { display: none; }
+  /* anchored inside the theater column on phones so it never tucks behind the collapsed left sidebar */
+  .libraryPanel { position: absolute; left: 0; bottom: calc(100% + 10px); width: calc(100cqw - 24px); max-height: 74dvh; z-index: 40; border-radius: 24px; }
+  .libraryPanelHead { padding: 12px 14px 10px; }
+  .libraryInner { padding: 10px 10px 16px; }
+}
+
+/* ── Pass completion: water resonance, pearls gathering then released, a soft settle ─────────────── */
+
+.completion { animation: completionIn 420ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+@keyframes completionIn { from { opacity: 0; translate: 0 12px; scale: 0.985; } to { opacity: 1; translate: 0 0; scale: 1; } }
+.resonance { position: absolute; inset: 0; pointer-events: none; overflow: hidden; border-radius: inherit; }
+.resonance .wave2 {
+  position: absolute;
+  left: 50%;
+  top: 34%;
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 0 -60px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(56, 189, 248, 0.45);
+  box-shadow: 0 0 24px rgba(103, 232, 249, 0.25);
+  opacity: 0;
+  animation: resonate 1500ms calc(var(--i) * 260ms) cubic-bezier(0.2, 0.7, 0.3, 1) forwards;
+}
+@keyframes resonate { 0% { opacity: 0.9; transform: scale(0.3); } 100% { opacity: 0; transform: scale(5); } }
+/* the tide line of the pass (CaughtUpView): draws itself left to right, each point lights up as the line reaches it */
+.tide { position: relative; margin: 22px 0 0; }
+.tideSvg { display: block; width: 100%; height: auto; overflow: visible; }
+.tideMean { stroke: rgba(99, 102, 241, 0.22); stroke-width: 1; stroke-dasharray: 3 6; }
+:global(.dark) .tideMean { stroke: rgba(165, 180, 252, 0.25); }
+.tideLine {
+  fill: none;
+  stroke: url(#ec-tide-stroke);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  filter: drop-shadow(0 4px 8px rgba(79, 70, 229, 0.25));
+  animation: draw 1500ms 250ms cubic-bezier(0.45, 0, 0.25, 1) forwards;
+}
+.tideFill { opacity: 0; animation: tideFillIn 900ms 1200ms ease-out forwards; }
+@keyframes tideFillIn { to { opacity: 1; } }
+.tidePoint {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: tidePoint 420ms calc(250ms + var(--t) * 1400ms) cubic-bezier(0.3, 1.6, 0.5, 1) forwards;
+}
+.tidePoint[data-q='good'] { fill: #6366f1; }
+.tidePoint[data-q='hard'] { fill: #f43f5e; }
+.tidePoint[data-q='easy'] { fill: #ecfeff; stroke: #2dd4bf; stroke-width: 1.6; filter: drop-shadow(0 0 5px rgba(45, 212, 191, 0.85)); }
+@keyframes tidePoint { from { opacity: 0; transform: scale(0.2); } to { opacity: 1; transform: scale(1); } }
+.tideCaption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 14px;
+  margin-top: 6px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #475569;
+}
+:global(.dark) .tideCaption { color: #cbd5e1; }
+.tideKey { display: inline-flex; align-items: center; gap: 6px; margin-left: auto; font-weight: 700; color: #64748b; }
+.tideKey i { display: inline-block; width: 9px; height: 9px; margin-left: 6px; border-radius: 50%; }
+.tideKey i[data-q='easy'] { background: #ecfeff; box-shadow: inset 0 0 0 1.6px #2dd4bf; }
+.tideKey i[data-q='good'] { background: #6366f1; }
+.tideKey i[data-q='hard'] { background: #f43f5e; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ring, .trace, .current, .path, .ink, .waterline, .ripple, .bubble, .ghost, .streak, .mote, .nacre, .pearl, .flare, .edge,
+  .chevron, .completion, .resonance .wave2, .tideLine, .tideFill, .tidePoint { animation: none; transition: none; }
+  .ring, .trace, .current, .path, .ink, .waterline, .ripple, .bubble, .ghost, .streak, .mote, .nacre, .pearl, .flare, .resonance { display: none; }
+  .tideLine { stroke-dashoffset: 0; }
+  .tideFill, .tidePoint { opacity: 1; }
+}

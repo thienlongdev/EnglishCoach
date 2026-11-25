@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s057-cat-on-a-contract",
+  "title": "Dấu chân trên bản cam kết",
+  "level": "A2",
+  "topics": [
+    "reflexive-pronouns"
+  ],
+  "scene": "home",
+  "summary": "Hai chị em cam kết sẽ thay nhau cho mèo ăn. Cuối giấy lại xuất hiện một dấu chân như chữ ký của chính con mèo.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Phương",
+      "role": "Chị gái"
+    },
+    {
+      "id": "b",
+      "name": "Nam",
+      "role": "Em trai"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Nam vừa giữ tờ giấy khi mèo bước lên. Chị băn khoăn ai đã đặt chân mèo xuống mực. Trên bàn không có mực, chỉ có vệt bùn từ cửa sổ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I didn't touch its paw.",
+          "vi": "Em không hề chạm chân nó."
+        },
+        {
+          "who": "b",
+          "en": "Tell me what the cat did.",
+          "vi": "Nói chị nghe mèo đã làm gì đi."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Nam muốn nhấn mạnh chính con mèo đã bước lên giấy.",
+        "options": [
+          {
+            "t": "I did it myself.",
+            "note": "Myself nhấn người nói là Nam. Câu này sẽ nhận việc mà Nam vừa nói mình không làm.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "The cat did it itself.",
+            "note": "Itself nhấn mạnh mèo tự làm. It chỉ con mèo, còn it sau did chỉ việc in dấu.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Phương mở cửa sổ. Trên bậu có cả dãy dấu chân bùn giống hệt. Chị ghi dưới tờ cam kết: mèo sẽ tự báo giờ ăn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Our cat has its own pen.",
+          "vi": "Mèo nhà mình có bút riêng rồi."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Phương đưa khăn cho Nam lau dấu. Trước khi cậu chạm tay, mèo đã bước thêm một dấu ngay trên chữ Nam. Cả hai bật cười vì vừa thấy người ký thật.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That's a second signature!",
+          "vi": "Lại thêm một chữ ký nữa!"
+        }
+      ],
+      "end": true
+    }
+  ]
+}

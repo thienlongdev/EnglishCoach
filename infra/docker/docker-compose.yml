@@ -1,0 +1,85 @@
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: ${DB_NAME:-english_coach}
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
+    ports: [ "5432:5432" ]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-postgres} -d ${DB_NAME:-english_coach}"]
+      interval: 3s
+      timeout: 3s
+      retries: 10
+    volumes:
+      - db_data:/var/lib/postgresql/data
+  backend:
+    build: ../../backend
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - DB_URL=jdbc:postgresql://postgres:5432/${DB_NAME:-english_coach}
+      - AI_SERVICE_URL=http://ai-service:8000
+      - APP_SECURITY_TEST_FILTER_ENABLED=true
+      - SPRING_APPLICATION_JSON={"app":{"security":{"test-filter":{"enabled":true}}}}
+    env_file: ../../.env
+    ports: [ "8080:8080" ]
+    volumes:
+      - backend_storage:/app/storage
+  mdd-service:
+    build: ../../mdd-service
+    ports: [ "8010:8010" ]
+    environment:
+      - REPO_ROOT=/app
+      - PYTHONUNBUFFERED=1
+      - HF_HUB_OFFLINE=0
+      - TRANSFORMERS_OFFLINE=0
+    volumes:
+      - ../../english-coach-models/crottc-if-l2-arctic:/models/crottc-if-l2-arctic:ro
+      - ../../english-coach-models/mdd-llm-llama3.2-1b:/models/mdd-llm-llama3.2-1b:ro
+      - ../../audit_artifacts:/app/audit_artifacts:ro
+      - ${HF_CACHE_DIR:-~/.cache/huggingface}:/root/.cache/huggingface
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+  ai-service:
+    build: ../../ai-service
+    depends_on: [ mdd-service ]
+    environment:
+      - REPO_ROOT=/app
+      - MDD_SERVICE_URL=http://mdd-service:8010
+      - PRONUNCIATION_MDD_ENGINE=CASCADE_MDD_LLM_CROTTC
+      - PRONUNCIATION_AUDIT_TRACE=1
+      - PYTHONUNBUFFERED=1
+    env_file: ../../.env
+    ports: [ "8000:8000" ]
+    volumes:
+      - ../../real_mic_acceptance_pack:/app/real_mic_acceptance_pack:ro
+      - ../../audit_artifacts:/app/audit_artifacts:ro
+      - ${HF_CACHE_DIR:-~/.cache/huggingface}:/root/.cache/huggingface
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+  frontend:
+    build: ../../frontend
+    ports: [ "3000:3000" ]
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8080/api/v1
+      - NEXT_PUBLIC_TURNSTILE_SITE_KEY=${NEXT_PUBLIC_TURNSTILE_SITE_KEY:-3x00000000000000000000FF}
+      - AI_SERVICE_INTERNAL_URL=http://ai-service:8000
+      - PORT=3000
+    env_file: ../../.env
+    depends_on: [ backend ]
+
+volumes:
+  db_data:
+  backend_storage:

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- [ASSET_REQUIRED] Production-grade vector artwork (Hand-crafted vector finalization) -->
+  <!-- Series: vocab_mastery | Stage: 1 | Tier: C | Slug: vocab_mastery_stage_1 | Achievement Lineage: Scholar Emerald & Quill Leaf -->
+  <!-- Production Vector Quality: PRODUCTION_READY_VECTOR | External Studio/Rive Hand-off: ASSET_REQUIRED -->
+  <!-- Center: (50, 50), Avatar Aperture: r=40 (80px boundary) -->
+  <defs>
+    <linearGradient id="vocabEmeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a7f3d0"/>
+      <stop offset="35%" stop-color="#10b981"/>
+      <stop offset="70%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+
+    <linearGradient id="vocabSilverTrim" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <filter id="vocabCDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#064e3b" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Clean Emerald Scholar Ring -->
+  <g class="vocab-c-core" filter="url(#vocabCDropShadow)">
+    <circle cx="50" cy="50" r="44.2" stroke="#064e3b" stroke-width="3.5"/>
+    <circle cx="50" cy="50" r="43.5" stroke="url(#vocabEmeraldGrad)" stroke-width="2.4"/>
+    <circle cx="50" cy="50" r="41" stroke="url(#vocabSilverTrim)" stroke-width="0.8"/>
+  </g>
+
+  <!-- Knowledge Leaf / Quill Accent at Top Apex (100-Vocab Milestone) -->
+  <g class="vocab-c-apex" filter="url(#vocabCDropShadow)">
+    <!-- Central Knowledge Leaf -->
+    <path d="M50 4 C54 8, 55 14, 50 18 C45 14, 46 8, 50 4 Z" fill="url(#vocabEmeraldGrad)" stroke="#064e3b" stroke-width="0.6"/>
+    <!-- Leaf Spine & Pearl Node -->
+    <line x1="50" y1="6" x2="50" y2="16" stroke="#a7f3d0" stroke-width="0.6"/>
+    <circle cx="50" cy="17" r="1.5" fill="#f8fafc" stroke="#047857" stroke-width="0.5"/>
+  </g>
+
+  <!-- Cardinal Bookmarker Accent Pips -->
+  <circle cx="50" cy="94" r="1.5" fill="#a7f3d0" stroke="#064e3b" stroke-width="0.5"/>
+  <circle cx="6" cy="50" r="1.5" fill="#a7f3d0" stroke="#064e3b" stroke-width="0.5"/>
+  <circle cx="94" cy="50" r="1.5" fill="#a7f3d0" stroke="#064e3b" stroke-width="0.5"/>
+</svg>

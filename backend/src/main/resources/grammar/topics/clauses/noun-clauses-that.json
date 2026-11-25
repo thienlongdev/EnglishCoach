@@ -1,0 +1,473 @@
+{
+  "schema": 1,
+  "slug": "noun-clauses-that",
+  "version": 2,
+  "domain": "clauses",
+  "order": 100,
+  "kind": "grammar",
+  "title": {
+    "vi": "Mệnh đề danh từ với that",
+    "en": "That-clauses"
+  },
+  "subtitle": {
+    "vi": "Nêu một nội dung trong cấu trúc lớn hơn",
+    "en": "Embed a proposition in a larger structure"
+  },
+  "aliases": [
+    "mệnh đề danh từ that",
+    "that clauses",
+    "mệnh đề nội dung",
+    "I know that is she",
+    "bỏ that sau think"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Tạo mệnh đề that với trật tự trần thuật.",
+    "Phân biệt that nội dung và that quan hệ.",
+    "Bỏ that khi cấu trúc cho phép, không áp dụng mọi vị trí."
+  ],
+  "prerequisites": [
+    "subordination"
+  ],
+  "related": [
+    {
+      "slug": "subordination",
+      "rel": "more"
+    },
+    {
+      "slug": "noun-clauses-wh-if",
+      "rel": "more"
+    },
+    {
+      "slug": "relative-clauses-defining",
+      "rel": "contrast"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Mệnh đề nội dung với that (that-clause) nêu một nội dung được biết, nghĩ, cảm thấy hoặc đánh giá. Nó thường được gọi là mệnh đề danh từ trong tài liệu học.",
+    "when": "Dùng sau các động từ, tính từ hoặc danh từ cho phép mẫu đó.",
+    "examples": [
+      {
+        "en": "[S|I] [V|know] [SUB|that] she agreed.",
+        "vi": "Tôi biết cô ấy đã đồng ý."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "I know that she agreed có mệnh đề she agreed đầy đủ. That là từ nối, không thay cho she. Sau that vẫn có chủ ngữ và động từ cần thiết, theo trật tự trần thuật."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Khung ngoài",
+            "items": [
+              "I know"
+            ]
+          },
+          {
+            "label": "Nội dung",
+            "items": [
+              "that she agreed"
+            ]
+          }
+        ],
+        "sentence": "{0} {1}."
+      },
+      "caption": "That nối nội dung; she vẫn là chủ ngữ của agreed.",
+      "alt": "That nối nội dung; she vẫn là chủ ngữ của agreed."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Vị trí",
+        "Ví dụ",
+        "Điểm cần nhớ"
+      ],
+      "rows": [
+        [
+          "Sau động từ",
+          "I think that it is useful.",
+          "Think cho phép mẫu này"
+        ],
+        [
+          "Sau tính từ",
+          "I am glad that you came.",
+          "Glad cho phép mẫu này"
+        ],
+        [
+          "Sau danh từ",
+          "the fact that she agreed",
+          "Nêu nội dung của fact"
+        ],
+        [
+          "Chủ ngữ",
+          "That she agreed surprised me.",
+          "Không bỏ that theo mẹo sau think"
+        ]
+      ]
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "I know that she sent the file.",
+          "vi": "Tôi biết cô ấy đã gửi tệp."
+        },
+        {
+          "en": "The file that she sent is useful.",
+          "vi": "Tệp cô ấy gửi rất hữu ích."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Trong câu quan hệ thứ hai, that liên hệ tân ngữ bị khuyết của sent với the file. Trong câu nội dung thứ nhất, she sent the file đã đầy đủ; that không lấp vai trò danh từ bên trong."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Sau một số động từ như think hoặc say, that có thể bỏ trong cấu trúc đơn giản: I think she is right. Không suy mọi động từ đều lấy that-clause hoặc mọi that đều bỏ được."
+    },
+    {
+      "type": "p",
+      "vi": "That-clause đầu câu thường được giữ that: That we need more time is clear. Một cách nhẹ hơn là It is clear that we need more time. Không áp dụng it như công thức dùng được với mọi tính từ."
+    },
+    {
+      "type": "p",
+      "vi": "Một số mẫu có người nghe đi kèm cần giới từ: explain to me that ..., không theo mẫu explain me that ... trong cách dùng chuẩn thông thường. Học theo động từ và nghĩa cụ thể."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "noun-clauses-that-m1",
+      "wrong": "I know that is she ready.",
+      "right": "I know that she is ready.",
+      "why": "Mệnh đề nội dung dùng trật tự trần thuật."
+    },
+    {
+      "id": "noun-clauses-that-m2",
+      "wrong": "I know that the files is ready.",
+      "right": "I know that the files are ready.",
+      "why": "Hòa hợp files với are."
+    }
+  ],
+  "faq": [
+    {
+      "q": "That nội dung có phải luôn là đại từ không?",
+      "a": "Không. Trong cấu trúc này nó nối một nội dung, không lấp chỗ chủ ngữ hay tân ngữ bên trong."
+    },
+    {
+      "q": "Có bỏ được that không?",
+      "a": "Có trong một số mẫu như I think she is right. Không áp dụng việc bỏ cho mọi vị trí, đặc biệt mẫu that-clause đầu câu đang học."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "nct-01",
+      "prompt": "Chọn mệnh đề nội dung đầy đủ sau know.",
+      "explain": "That không thay chủ ngữ trong mệnh đề nội dung.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "I know ___",
+      "options": [
+        {
+          "t": "that the office is closed.",
+          "ok": true,
+          "note": "The office là chủ ngữ, is là động từ."
+        },
+        {
+          "t": "that is the office closed.",
+          "ok": false,
+          "note": "Không đảo chủ ngữ như vậy trong mẫu này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "that the office closed is.",
+          "ok": false,
+          "note": "Sai trật tự của mệnh đề.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "nct-02",
+      "prompt": "Nối that-clause với vai trò.",
+      "explain": "Mệnh đề that có thể bổ sung nội dung cho động từ, tính từ hoặc danh từ.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "I know that she agreed.",
+          "b": "Nội dung sau know"
+        },
+        {
+          "a": "I am glad that she agreed.",
+          "b": "Nội dung sau glad"
+        },
+        {
+          "a": "the fact that she agreed",
+          "b": "Nội dung của fact"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "nct-03",
+      "prompt": "Phân loại that theo cấu trúc.",
+      "explain": "That nội dung không giữ vị trí chủ ngữ hoặc tân ngữ bị khuyết như that quan hệ.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Mệnh đề nội dung",
+        "Mệnh đề quan hệ"
+      ],
+      "items": [
+        {
+          "t": "I know that she sent the file.",
+          "cat": "Mệnh đề nội dung"
+        },
+        {
+          "t": "The file that she sent is useful.",
+          "cat": "Mệnh đề quan hệ"
+        },
+        {
+          "t": "The fact that she agreed surprised me.",
+          "cat": "Mệnh đề nội dung"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "nct-04",
+      "prompt": "Dùng hiện tại đơn của be trong các mệnh đề nội dung.",
+      "explain": "Office số ít dùng is; files số nhiều dùng are.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "I think that the office {1} (be) open now. I know that the files {2} (be) ready now.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "is"
+          ]
+        },
+        "2": {
+          "accept": [
+            "are"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "nct-05",
+      "prompt": "Sửa trật tự mệnh đề nội dung.",
+      "explain": "Sau know dùng chủ ngữ trước động từ, không đảo kiểu câu hỏi.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "I know that"
+        },
+        {
+          "t": "is she",
+          "bad": true,
+          "fix": [
+            "she is"
+          ],
+          "note": "Dùng she is.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "ready."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "nct-06",
+      "prompt": "Sắp xếp câu kể bắt đầu bằng I.",
+      "explain": "That nối nội dung với know; she vẫn là chủ ngữ bên trong.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "I",
+        "know",
+        "that",
+        "she",
+        "agreed"
+      ],
+      "accept": [
+        [
+          "I",
+          "know",
+          "that",
+          "she",
+          "agreed"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "nct-07",
+      "prompt": "Bỏ that sau động từ trong mẫu cho phép.",
+      "explain": "Sau think ở câu đơn giản này có thể không dùng that.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "I think that the plan is sensible.",
+      "instruction": "Bỏ that; giữ mọi từ còn lại.",
+      "accept": [
+        "I think the plan is sensible"
+      ],
+      "model": "I think the plan is sensible",
+      "level": "B1"
+    },
+    {
+      "id": "nct-08",
+      "prompt": "Viết ý kiến và thông tin, phân biệt lời tin với sự thật.",
+      "explain": "Bài mở tự đối chiếu, không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết một câu I think that, một câu I know that và một câu It is clear that trong tình huống tự đặt. Viết lại câu think không có that.",
+      "model": [
+        "I think that the route is safe. I know that the bridge is open. It is clear that we need more time. I think the route is safe."
+      ],
+      "checklist": [
+        "Mỗi mệnh đề có chủ ngữ và động từ cần thiết.",
+        "Không đảo câu hỏi bên trong.",
+        "Nêu nội dung tình huống, không bịa nguồn xác nhận."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "nct-09",
+      "prompt": "Dùng đúng dạng hiện tại đơn của be hoặc surprise.",
+      "explain": "Mệnh đề làm chủ ngữ được nhìn như một nội dung đơn nhất trong câu này.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "That the doors are locked {1} (surprise) me. I know that the key {2} (be) here now.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "surprises"
+          ]
+        },
+        "2": {
+          "accept": [
+            "is"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "nct-10",
+      "prompt": "Dùng it làm chủ ngữ dẫn nhập để câu dễ đọc.",
+      "explain": "It dẫn vào nội dung that-clause; không xóa that theo yêu cầu bài.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "That we need more time is clear.",
+      "instruction": "Đưa is clear lên sau It và giữ that we need more time ở cuối.",
+      "accept": [
+        "It is clear that we need more time"
+      ],
+      "model": "It is clear that we need more time",
+      "level": "B1"
+    },
+    {
+      "id": "nct-11",
+      "prompt": "Chọn tất cả câu chuẩn.",
+      "explain": "That sau think có thể bỏ; không thay chủ ngữ hoặc tạo đảo ngữ.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "I think she is right.",
+          "ok": true,
+          "note": "Có thể bỏ that sau think."
+        },
+        {
+          "t": "I think that she is right.",
+          "ok": true,
+          "note": "That được giữ cũng đúng."
+        },
+        {
+          "t": "I think that is she right.",
+          "ok": false,
+          "note": "Cần she is.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "I know that the files is ready.",
+          "ok": false,
+          "note": "Files số nhiều cần are.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "nct-12",
+      "prompt": "Chọn nhận xét đúng về cấu trúc đầu câu.",
+      "explain": "That-clause làm chủ ngữ đầy đủ cần giữ dấu hiệu cấu trúc ở mẫu này.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "That she agreed surprised me.",
+      "options": [
+        {
+          "t": "That she agreed là nội dung làm chủ ngữ; không bỏ that theo mẹo áp dụng sau think.",
+          "ok": true,
+          "note": "Vị trí và cấu trúc quyết định."
+        },
+        {
+          "t": "That luôn là tân ngữ của agreed.",
+          "ok": false,
+          "note": "That ở đây là từ nối nội dung.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Có thể bỏ mọi that ở mọi vị trí mà giữ cấu trúc chuẩn.",
+          "ok": false,
+          "note": "Quy tắc bỏ bị giới hạn.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

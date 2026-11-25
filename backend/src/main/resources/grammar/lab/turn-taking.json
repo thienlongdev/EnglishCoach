@@ -1,0 +1,35 @@
+{
+  "id": "turn-taking",
+  "title": "Làm mẫu theo thứ tự nào?",
+  "summary": "Hai tấm thẻ ở lớp nhảy ghi hai động tác. Đảo thẻ và đọc chúng như hai chỉ dẫn liên tiếp. Động tác nào sẽ làm trước?",
+  "level": "A1",
+  "topics": [
+    "imperatives",
+    "basic-word-order"
+  ],
+  "kind": "arrange",
+  "tokens": [
+    "Clap your hands.",
+    "Turn around."
+  ],
+  "orders": [
+    {
+      "seq": [
+        "Turn around.",
+        "Clap your hands."
+      ],
+      "verdict": "ok",
+      "note": "Hai câu mệnh lệnh độc lập. Trong chuỗi hướng dẫn này, người học xoay trước. / In a set of instructions, the first command normally comes first in time.",
+      "effect": "Quay một vòng rồi vỗ tay."
+    },
+    {
+      "seq": [
+        "Clap your hands.",
+        "Turn around."
+      ],
+      "verdict": "ok",
+      "note": "Mỗi câu vẫn đúng. Thứ tự mới yêu cầu vỗ tay trước khi xoay. / Swapping whole instructions reverses their expected sequence.",
+      "effect": "Vỗ tay rồi quay một vòng."
+    }
+  ]
+}

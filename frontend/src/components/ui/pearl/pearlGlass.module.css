@@ -1,0 +1,104 @@
+/* Echo Pearl Glass — the shared light-glass language of Vũ trụ tri thức and Echo Odyssey (owner brief 2026-11-13).
+   A bright, near-opaque pearl surface: readability never depends on what is behind it (no backdrop blur over a live 3D scene,
+   10 §AF / §BT), depth comes from layered highlights and soft shadows. Tokens are declared on `.tokens` (set on the page
+   root); components use the variables or the primitives below. Quicksand is inherited; reduced motion stops every motion. */
+.tokens {
+  --pg-ink: #0d1830;
+  --pg-soft: #354360;
+  --pg-faint: #56637d;
+  --pg-line: rgba(13, 24, 48, 0.1);
+  --pg-line-strong: rgba(13, 24, 48, 0.18);
+  --pg-accent: #0b6c86;
+  --pg-accent-fill: #14b8d4;
+  --pg-accent-soft: rgba(20, 184, 212, 0.14);
+  --pg-violet: #6d28d9;
+  --pg-gold: #a16207;
+  --pg-good: #047857;
+  --pg-bad: #be123c;
+  --pg-focus: 0 0 0 2px #fff, 0 0 0 4px #0891b2;
+  /* the surface: a pearl body with a sheen in its upper-left corner (the "refraction" highlight) */
+  /* near-opaque on purpose: labels and bright galaxy cores must never show through text (contrast does not depend on the scene) */
+  --pg-fill: radial-gradient(130% 70% at 0% 0%, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0) 58%),
+    linear-gradient(165deg, rgba(255, 255, 255, 0.99) 0%, rgba(243, 246, 251, 0.985) 55%, rgba(234, 240, 249, 0.98) 100%);
+  --pg-fill-strong: linear-gradient(165deg, #ffffff 0%, #f3f6fb 60%, #eaeff7 100%);
+  --pg-border: 1px solid rgba(255, 255, 255, 0.85);
+  --pg-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), inset 0 -1px 0 rgba(13, 24, 48, 0.06),
+    0 1px 2px rgba(2, 6, 23, 0.18), 0 22px 48px -18px rgba(2, 6, 23, 0.55);
+  --pg-radius: 18px;
+  --pg-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --pg-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --pg-key-fill: linear-gradient(180deg, #ffffff 0%, #f1f4f9 100%);
+  --pg-key-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 rgba(13, 24, 48, 0.05), 0 1px 2px rgba(2, 6, 23, 0.14), 0 4px 10px -6px rgba(2, 6, 23, 0.35);
+  --pg-key-shadow-hover: inset 0 1px 0 #fff, 0 2px 4px rgba(2, 6, 23, 0.14), 0 10px 18px -10px rgba(2, 6, 23, 0.45);
+  --pg-key-shadow-press: inset 0 1px 3px rgba(13, 24, 48, 0.18), 0 0 0 rgba(2, 6, 23, 0);
+  --pg-key-on: linear-gradient(180deg, #e3f8fc 0%, #cdeff6 100%);
+}
+
+.surface {
+  background: var(--pg-fill);
+  border: var(--pg-border);
+  border-radius: var(--pg-radius);
+  box-shadow: var(--pg-shadow);
+  color: var(--pg-ink);
+}
+
+/* a tactile key: lifts on hover, compresses on press and springs back */
+.button {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 36px; padding: 0 13px;
+  border-radius: 12px; border: 1px solid var(--pg-line); background: var(--pg-key-fill); color: var(--pg-ink);
+  font: inherit; font-size: 13px; font-weight: 650; cursor: pointer; white-space: nowrap; text-decoration: none;
+  box-shadow: var(--pg-key-shadow);
+  transition: transform 260ms var(--pg-spring), box-shadow 180ms var(--pg-ease), background-color 180ms var(--pg-ease), border-color 180ms var(--pg-ease);
+}
+.button:hover { transform: translateY(-1px); box-shadow: var(--pg-key-shadow-hover); border-color: var(--pg-line-strong); }
+.button:active { transform: translateY(0) scale(0.965); box-shadow: var(--pg-key-shadow-press); transition-duration: 90ms; }
+.button:focus-visible { outline: none; box-shadow: var(--pg-key-shadow), var(--pg-focus); }
+.button[aria-pressed='true'], .button[aria-checked='true'] { background: var(--pg-key-on); border-color: rgba(11, 108, 134, 0.35); color: #074a5c; }
+.button:disabled { opacity: 0.55; cursor: default; transform: none; }
+
+/* switch: a track and a thumb that springs across */
+.switch {
+  position: relative; flex: none; width: 38px; height: 22px; border-radius: 999px; border: 0; padding: 0; cursor: pointer;
+  background: #cfd6e2; box-shadow: inset 0 1px 2px rgba(13, 24, 48, 0.22);
+  transition: background-color 200ms var(--pg-ease);
+}
+.switch::after {
+  content: ''; position: absolute; top: 3px; left: 3px; width: 16px; height: 16px; border-radius: 50%; background: #fff;
+  box-shadow: 0 1px 3px rgba(2, 6, 23, 0.35), inset 0 -1px 0 rgba(13, 24, 48, 0.06);
+  transition: transform 300ms var(--pg-spring), width 160ms var(--pg-ease);
+}
+.switch[aria-checked='true'] { background: #0e9fbd; }
+.switch[aria-checked='true']::after { transform: translateX(16px); }
+.switch:active::after { width: 20px; }
+.switch[aria-checked='true']:active::after { transform: translateX(12px); }
+.switch:focus-visible { outline: none; box-shadow: inset 0 1px 2px rgba(13, 24, 48, 0.22), var(--pg-focus); }
+.switch:disabled { opacity: 0.55; cursor: default; }
+
+/* segmented control: one inset well, the chosen segment is a raised pearl key */
+.segmented { display: flex; gap: 2px; padding: 3px; border-radius: 13px; background: rgba(13, 24, 48, 0.06); box-shadow: inset 0 1px 2px rgba(13, 24, 48, 0.1); }
+.segment {
+  flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 32px; padding: 0 10px;
+  border: 0; border-radius: 10px; background: transparent; color: var(--pg-soft); font: inherit; font-size: 12.5px; font-weight: 650; cursor: pointer;
+  transition: background-color 180ms var(--pg-ease), color 180ms var(--pg-ease), box-shadow 180ms var(--pg-ease), transform 240ms var(--pg-spring);
+}
+.segment:hover { color: var(--pg-ink); }
+.segment:active { transform: scale(0.96); }
+.segment[aria-checked='true'] { background: #fff; color: var(--pg-ink); box-shadow: 0 1px 2px rgba(2, 6, 23, 0.16), 0 4px 10px -6px rgba(2, 6, 23, 0.3); }
+.segment:focus-visible { outline: none; box-shadow: var(--pg-focus); }
+
+.field {
+  min-height: 36px; border-radius: 12px; border: 1px solid var(--pg-line-strong); background: #fff; color: var(--pg-ink);
+  padding: 0 12px; font: inherit; font-size: 13px; box-shadow: inset 0 1px 2px rgba(13, 24, 48, 0.08);
+  transition: border-color 160ms var(--pg-ease), box-shadow 160ms var(--pg-ease);
+}
+.field::placeholder { color: var(--pg-faint); }
+.field:focus { outline: none; border-color: #0891b2; box-shadow: inset 0 1px 2px rgba(13, 24, 48, 0.08), 0 0 0 3px rgba(8, 145, 178, 0.22); }
+
+@media (prefers-reduced-motion: reduce) {
+  .button, .switch, .switch::after, .segment, .field { transition: none; }
+  .button:hover, .button:active, .segment:active { transform: none; }
+}
+@media (forced-colors: active) {
+  .surface, .button, .segment[aria-checked='true'] { border: 1px solid CanvasText; }
+  .switch[aria-checked='true'] { background: Highlight; }
+}

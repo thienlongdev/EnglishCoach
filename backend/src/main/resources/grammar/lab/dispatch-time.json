@@ -1,0 +1,41 @@
+{
+  "id": "dispatch-time",
+  "title": "Can trong thông báo được đọc lại khi nào?",
+  "summary": "Bưu cục thông báo có thể đến nhận hàng. So sánh lời nhắc khi quyền nhận vẫn còn và khi bạn chỉ thuật lại cơ hội đã hết.",
+  "level": "B2",
+  "topics": [
+    "backshift",
+    "permission-and-requests"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Hiệu lực",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Còn quyền nhận"
+        },
+        {
+          "id": "v2",
+          "label": "Chỉ kể chuyện cũ"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The clerk said I can collect it today.",
+      "vi": "Nhân viên nói hôm nay tôi có thể đến nhận.",
+      "note": "Người nói thuật lại hôm nay khi còn có thể tới nhận, nên can và today có mốc hiện tại phù hợp. / A still-valid permission can retain can.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The clerk said I could collect it that afternoon, but I was away.",
+      "vi": "Nhân viên nói chiều hôm ấy tôi có thể đến nhận, nhưng tôi đi vắng.",
+      "note": "Could cho phép kể từ một mốc đã qua. Việc người nói vắng mặt không thay đổi nội dung lời cho phép lúc đó. / Could and that afternoon report the past opportunity.",
+      "verdict": "ok"
+    }
+  }
+}

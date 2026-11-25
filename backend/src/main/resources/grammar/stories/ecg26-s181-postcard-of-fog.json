@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s181-postcard-of-fog",
+  "title": "Bưu thiếp chỉ có sương",
+  "summary": "Trên bưu thiếp cũ chỉ có một mảng xám và tên Sương. Ai cũng nghĩ người gửi chụp hỏng.",
+  "level": "B2",
+  "topics": [
+    "hedging"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sương",
+      "role": "Người thừa kế ngôi nhà"
+    },
+    {
+      "id": "b",
+      "name": "Lio",
+      "role": "Người đóng cửa chớp"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Soi dưới đèn, Sương thấy tăm tích của một bóng thuyền. Nó có thể là vết xước hoặc hình thật trong sương. Người gửi đã đóng cửa hiệu ảnh từ lâu.",
+      "say": [
+        {
+          "who": "a",
+          "en": "That's the shape of the boat we used to take.",
+          "vi": "Trông giống con thuyền mình vẫn đi."
+        },
+        {
+          "who": "b",
+          "en": "A familiar shape can still be a scratch.",
+          "vi": "Hình quen mắt vẫn có thể chỉ là vết xước."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Sương cần viết chú thích tạm dùng trước khi tìm được bản âm.",
+        "options": [
+          {
+            "ok": true,
+            "t": "The mark may show a boat partly hidden in fog.",
+            "note": "May show giữ hình thuyền như một cách giải thích có thể. Partly hidden diễn tả phần chưa thấy, không tự bổ sung chi tiết.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "The mark proves that our boat was lost in the fog.",
+            "note": "Proves quá mạnh và lost nói thêm tình trạng lạc đường không có trong vết ảnh. Bóng thuyền chưa chứng minh số phận người đi.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Lio chép chú thích lên phong bì trong. Ông lái đò cũ đọc được rồi đưa ảnh đối chiếu, cho thấy đúng đường mui có chỗ khuyết.",
+      "say": [
+        {
+          "who": "b",
+          "en": "One careful word brought us a witness.",
+          "vi": "Một chữ thận trọng mang tới một nhân chứng."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Sương giữ cả chữ may ban đầu trên một nhãn nhỏ để nhớ cách họ đã bắt đầu tìm.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Lio hỏi ngoài bến, chiếc thuyền vẫn nguyên mái. Sương bỏ dòng nói thuyền mất, xin chủ thuyền làm một chuyến chụp ảnh mới vào buổi sớm.",
+      "say": [
+        {
+          "who": "a",
+          "en": "This time the fog gave him back to the picture.",
+          "vi": "Lần này sương trả người lái lại cho bức ảnh."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Bưu thiếp thứ hai có cả thuyền lẫn người cầm lái nhìn thẳng vào máy, hoàn tất cặp ảnh đầu và cuối sương.",
+      "end": true
+    }
+  ]
+}

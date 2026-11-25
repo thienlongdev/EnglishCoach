@@ -1,0 +1,41 @@
+{
+  "id": "ticket-line",
+  "title": "Có xếp hàng hôm qua không?",
+  "summary": "Viết lời xác nhận rồi đặt câu hỏi kiểm tra về hàng người mua vé hôm qua. Queued có giữ đuôi ed sau did không?",
+  "level": "A2",
+  "topics": [
+    "past-simple",
+    "do-support"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Lượt lời",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Kể"
+        },
+        {
+          "id": "v2",
+          "label": "Hỏi"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "You queued for tickets yesterday.",
+      "vi": "Hôm qua bạn đã xếp hàng mua vé.",
+      "note": "Dấu hiệu quá khứ nằm ở queued khi không có trợ động từ. / Queued marks the past in the statement.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Did you queue for tickets yesterday?",
+      "vi": "Hôm qua bạn có xếp hàng mua vé không?",
+      "note": "Did mang thì quá khứ nên queue trở về nguyên mẫu. / Did takes the tense in the question.",
+      "verdict": "ok"
+    }
+  }
+}

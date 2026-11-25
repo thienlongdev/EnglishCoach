@@ -1,0 +1,41 @@
+{
+  "id": "contract-restriction",
+  "title": "If ngoài điều kiện làm việc",
+  "summary": "Bạn nhắc lại đường dẫn đến một hồ sơ đã gửi. Thay phần nội dung theo sau if để xem điều kiện giới hạn hành động gửi hay chỉ giải thích vì sao nhắc chuyện đó.",
+  "level": "C1",
+  "topics": [
+    "conditionals-beyond-types",
+    "discourse-markers-spoken"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Chức năng của if",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Điều kiện thực hiện"
+        },
+        {
+          "id": "v2",
+          "label": "Điều kiện liên quan"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "If you need the file, I'll send it.",
+      "vi": "Nếu bạn cần tệp thì tôi sẽ gửi.",
+      "note": "Việc gửi phụ thuộc nhu cầu người nghe trong lời hứa này. / The need conditions a future action.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "If you need the file, I sent it on Monday.",
+      "vi": "Nếu bạn cần tệp thì tôi đã gửi hôm thứ Hai rồi.",
+      "note": "Nhu cầu hiện tại không gây ra việc gửi trong quá khứ. If giải thích vì sao lời nhắc có ích bây giờ. / The need motivates mentioning a fact already true.",
+      "verdict": "ok"
+    }
+  }
+}

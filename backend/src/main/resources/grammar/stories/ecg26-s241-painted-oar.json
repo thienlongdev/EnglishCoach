@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s241-painted-oar",
+  "title": "Mái chèo được gọi là thuyền",
+  "summary": "Vở kịch cần ghi tên người tặng mái chèo. Hóa đơn có dòng “gift of Lan, the ferryman's daughter”. Một nhạc công lại tưởng Lan là món quà.",
+  "level": "C1",
+  "topics": [
+    "apposition",
+    "nominalization"
+  ],
+  "scene": "lecture",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vera",
+      "role": "Đạo diễn"
+    },
+    {
+      "id": "b",
+      "name": "Khuê",
+      "role": "Người dịch"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Chiếc mái chèo mang chữ ký Lan. Vé phà cũ trong hộp mang tên cha cô. Khuê cần dùng động từ để làm rõ vai thay cho cụm danh từ nén.",
+      "say": [
+        {
+          "who": "a",
+          "en": "If I leave it as gift of Lan, the label could be read two ways.",
+          "vi": "Giữ gift of Lan, nhãn có thể bị đọc hai cách."
+        },
+        {
+          "who": "b",
+          "en": "Then let the verb do some work.",
+          "vi": "Vậy hãy cho động từ gánh bớt phần nghĩa."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn câu nêu rõ ai tặng vật gì và giữ quan hệ gia đình.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Lan, the ferryman's daughter, gave us the oar.",
+            "note": "Đồng vị mô tả Lan; gave đặt Lan vào vai người tặng, oar ở vai vật được trao. Sự nhập nhằng của gift of không còn.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "The ferryman gave us his daughter Lan's oar.",
+            "note": "Câu này đặt ferryman làm người tặng, còn Lan thành người sở hữu mái chèo. Nó không tương đương lời Lan đã ký nhận.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Vera dựng mái chèo ở lối vào. Khi Lan đến, khán giả biết có thể hỏi cô về cha, thay vì hỏi nhầm ai đã tặng cô một chuyến đi.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The oar came with a voice after all.",
+          "vi": "Hóa ra mái chèo còn mang đến cả một giọng nói."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Hôm sau Lan mang thêm tiếng gọi đò để mở màn.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Khuê đem nhãn tới cho Lan đọc. Cô lấy mái chèo khỏi tay cha và tự đưa nó cho Vera, diễn lại động từ bằng đúng hai bàn tay.",
+      "say": [
+        {
+          "who": "a",
+          "en": "She supplied the missing subject herself.",
+          "vi": "Cô tự đặt mình vào đúng chỗ chủ ngữ còn thiếu."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Khán giả buổi tổng duyệt vỗ tay trước cử chỉ thật nhất của cả vở.",
+      "end": true
+    }
+  ]
+}

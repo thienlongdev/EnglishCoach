@@ -1,0 +1,295 @@
+{
+  "schema": 1,
+  "slug": "sentence-patterns",
+  "version": 2,
+  "domain": "foundations",
+  "order": 40,
+  "kind": "grammar",
+  "title": { "vi": "Bảy mẫu câu nền tảng", "en": "The basic clause patterns" },
+  "subtitle": { "vi": "Động từ quyết định điều gì phải đi theo nó", "en": "The verb decides what has to come after it" },
+  "aliases": ["clause patterns", "sentence patterns", "svo", "svc", "svoo", "svoc", "svoa", "sva", "sentence structure", "mẫu câu", "cấu trúc câu", "bổ ngữ", "tân ngữ", "complement", "object", "obligatory adverbial", "she gave to me a gift", "he explained me the rule", "i in hanoi"],
+  "level": "A2",
+  "levelBasis": "editorial",
+  "uses": [
+    { "level": "A2", "vi": "Nhận ra động từ cần tân ngữ, bổ ngữ hay một cụm nơi chốn đi theo." },
+    { "level": "B1", "vi": "Phân biệt tân ngữ với bổ ngữ, và chọn đúng cách dùng với give, tell, make." },
+    { "level": "B2", "vi": "Phát hiện động từ không đi với hai tân ngữ, như explain và suggest." }
+  ],
+  "objectives": [
+    "Gọi tên bảy mẫu câu cơ bản và đặt một ví dụ cho mỗi mẫu",
+    "Phân biệt tân ngữ (O) với bổ ngữ (C)",
+    "Nhận ra khi một cụm nơi chốn là bắt buộc (A) và khi nó chỉ là phần thêm",
+    "Dùng đúng các động từ như give, make, put với phần đi kèm của chúng"
+  ],
+  "prerequisites": ["basic-word-order"],
+  "related": [
+    { "slug": "transitive-intransitive", "rel": "more" },
+    { "slug": "linking-verbs", "rel": "more" },
+    { "slug": "two-object-verbs", "rel": "more" },
+    { "slug": "verb-be", "rel": "more" },
+    { "slug": "passive-form", "rel": "special" }
+  ],
+  "exam": {
+    "ielts": "Khi viết và nói, cần dùng đủ thành phần và đúng mẫu động từ. He explained me the rule không theo mẫu explain trong tiếng Anh phổ thông; dùng He explained the rule to me.",
+    "toeic": "Part 5 thường hỏi dạng từ sau động từ, ví dụ tính từ sau become hay trạng từ sau động từ thường. Nhìn ra mẫu câu giúp bạn đoán loại từ cần điền."
+  },
+  "quick": {
+    "what": "Bài này giới thiệu bảy khuôn thường dùng để phân tích câu kể đơn giản: S V, S V C, S V A, S V O, S V O O, S V O C, S V O A. Động từ và nghĩa đang dùng quyết định phần đi theo. C là bổ ngữ; A trong bảng này là trạng ngữ cần cho mẫu đang xét, thường chỉ nơi chốn.",
+    "when": "Dùng khi học một động từ mới: xem nó cần gì đi sau, một tân ngữ, một bổ ngữ hay một nơi chốn, để không bỏ sót hoặc thêm thừa.",
+    "examples": [
+      { "en": "[S|The baby] [V|slept].", "vi": "Em bé ngủ. (S V)" },
+      { "en": "[S|She] [V|became] [C|a doctor].", "vi": "Cô ấy trở thành bác sĩ. (S V C)" },
+      { "en": "[S|Linh] [V|gave] [O|Minh] [O|a gift].", "vi": "Linh tặng Minh một món quà. (S V O O)" }
+    ],
+    "remember": "Học động từ cùng phần nó cần đi theo trong nghĩa đang dùng. Phép thử bỏ một phần chỉ là gợi ý, vì ngữ cảnh có thể cho phép lược."
+  },
+  "lesson": [
+    { "type": "p", "vi": "Một động từ không đứng một mình trong mọi câu. Có động từ trọn nghĩa ngay (slept), có động từ đòi một tân ngữ (bought a bicycle), có động từ đòi một cụm nơi chốn (put the keys on the table). Tiếng Anh gom những khuôn này lại, và sách ngữ pháp mô tả thường kể **bảy khuôn**." },
+    { "type": "diagram",
+      "spec": { "kind": "matrix",
+        "rows": ["S V", "S V C", "S V A", "S V O", "S V O O", "S V O C", "S V O A"],
+        "cols": ["Chủ ngữ", "Động từ", "Phần thứ ba", "Phần thứ tư"],
+        "cells": [
+          [ { "t": "The baby" }, { "t": "slept" }, { "t": "—", "off": true }, { "t": "—", "off": true } ],
+          [ { "t": "The soup" }, { "t": "is" }, { "t": "hot", "note": "bổ ngữ: nói về chủ ngữ" }, { "t": "—", "off": true } ],
+          [ { "t": "The meeting" }, { "t": "is" }, { "t": "in room 4", "note": "trạng ngữ bắt buộc" }, { "t": "—", "off": true } ],
+          [ { "t": "Linh" }, { "t": "bought" }, { "t": "a bicycle", "note": "tân ngữ" }, { "t": "—", "off": true } ],
+          [ { "t": "Linh" }, { "t": "gave" }, { "t": "Minh", "note": "tân ngữ gián tiếp" }, { "t": "a gift", "note": "tân ngữ trực tiếp" } ],
+          [ { "t": "The news" }, { "t": "made" }, { "t": "her", "note": "tân ngữ" }, { "t": "happy", "note": "bổ ngữ: nói về tân ngữ" } ],
+          [ { "t": "She" }, { "t": "put" }, { "t": "the keys", "note": "tân ngữ" }, { "t": "on the table", "note": "trạng ngữ bắt buộc" } ]
+        ] },
+      "caption": "Bảy khuôn. Hai phần đầu luôn là chủ ngữ và động từ; động từ quyết định phần còn lại.",
+      "alt": "Bảng bảy hàng. S V: The baby slept. S V C: The soup is hot. S V A: The meeting is in room 4. S V O: Linh bought a bicycle. S V O O: Linh gave Minh a gift. S V O C: The news made her happy. S V O A: She put the keys on the table." },
+    { "type": "p", "vi": "Bảy khuôn này là một cách đếm phổ biến, không phải cách duy nhất. Sách khác dùng tên khác (nội động từ, ngoại động từ, động từ hai tân ngữ…) và chia hơi khác. Ý chính giống nhau: động từ quyết định những gì phải đi theo nó." },
+    { "type": "h", "vi": "Tân ngữ hay bổ ngữ?" },
+    { "type": "p", "vi": "**Tân ngữ** (object, O) là thành phần động từ nhận trong một mẫu ngoại động từ, thường chỉ đối tượng chịu tác động hoặc liên quan đến hành động. **Bổ ngữ** (complement, C trong bảng này) miêu tả hay xác định chủ ngữ hoặc tân ngữ. Đừng chỉ xét có phải hai người khác nhau không: She hurt herself có herself là tân ngữ dù cùng chỉ she." },
+    { "type": "contrast",
+      "items": [
+        { "a": { "en": "[S|She] [V|became] [C|a doctor].", "vi": "Cô ấy trở thành bác sĩ." }, "b": { "en": "[S|She] [V|saw] [O|a doctor].", "vi": "Cô ấy đi khám bác sĩ." }, "diff": "Bên trái: a doctor chính là cô ấy, đây là bổ ngữ. Bên phải: a doctor là một người khác, đây là tân ngữ." },
+        { "a": { "en": "[S|The soup] [V|tastes] [C|good].", "vi": "Món súp có vị ngon." }, "b": { "en": "[S|She] [V|tasted] [O|the soup].", "vi": "Cô ấy nếm thử món súp." }, "diff": "Cùng một động từ gốc, hai khuôn khác nhau. Bên trái: good nói về súp. Bên phải: có hai bên, người nếm và món súp." }
+      ] },
+    { "type": "h", "vi": "A: phần bắt buộc, không phải phần thêm" },
+    { "type": "p", "vi": "Trong những ví dụ S V A và S V O A ở đây, cụm nơi chốn hoàn thành nghĩa động từ đang dùng. Thử bỏ nó đi để so sánh với trạng ngữ thêm như yesterday. Phép thử phải giữ nghĩa và ngữ cảnh: một thành phần có thể được hiểu ngầm hoặc động từ có thể chuyển sang nghĩa khác." },
+    { "type": "contrast",
+      "items": [
+        { "a": { "en": "[S|The meeting] [V|is] [A|in room 4].", "vi": "Cuộc họp ở phòng 4." }, "b": { "en": "[S|We] [V|met] [T|yesterday].", "vi": "Hôm qua chúng tôi gặp nhau." }, "diff": "Bỏ in room 4 thì The meeting is không còn nghĩa. Bỏ yesterday thì We met vẫn là câu trọn nghĩa." },
+        { "a": { "en": "[S|She] [V|put] [O|the keys] [A|on the table].", "vi": "Cô ấy để chìa khóa lên bàn." }, "b": { "en": "[S|She] [V|found] [O|the keys] [A|on the table].", "vi": "Cô ấy tìm thấy chìa khóa trên bàn." }, "diff": "Put cần nơi chốn: She put the keys không trọn nghĩa. Found không cần: She found the keys vẫn trọn, nên on the table là phần thêm." }
+      ] },
+    { "type": "h", "vi": "Nhìn thấy khuôn nào?" },
+    { "type": "diagram",
+      "spec": { "kind": "flow", "start": "start",
+        "nodes": {
+          "start": { "q": "Bỏ các cụm chỉ thời gian và cách thức không bắt buộc. Sau động từ còn lại gì?", "choices": [
+            { "t": "Không còn gì (The baby slept.)", "to": "sv" },
+            { "t": "Một tính từ (The soup is hot.)", "to": "svc" },
+            { "t": "Một cụm nơi chốn mà bỏ đi thì câu mất nghĩa (The meeting is in room 4.)", "to": "sva" },
+            { "t": "Một cụm danh từ (a doctor, a bicycle, Minh)", "to": "noun" }
+          ] },
+          "noun": { "q": "Trong các ví dụ này, động từ là động từ nối và cụm sau nó xác định chủ ngữ, như became a doctor?", "yes": "svc", "no": "after" },
+          "after": { "q": "Sau cụm danh từ đó còn gì?", "choices": [
+            { "t": "Không còn gì (Linh bought a bicycle.)", "to": "svo" },
+            { "t": "Một cụm danh từ khác, không phải cùng người hay vật (Linh gave Minh a gift.)", "to": "svoo" },
+            { "t": "Một tính từ hoặc danh từ nói về tân ngữ (The news made her happy.)", "to": "svoc" },
+            { "t": "Một cụm nơi chốn mà bỏ đi thì câu mất nghĩa (She put the keys on the table.)", "to": "svoa" }
+          ] },
+          "sv": { "end": "S V", "note": "Động từ đứng một mình là trọn nghĩa." },
+          "svc": { "end": "S V C", "note": "Bổ ngữ nói về chủ ngữ: nó là gì hay ra sao." },
+          "sva": { "end": "S V A", "note": "Cụm nơi chốn là phần bắt buộc." },
+          "svo": { "end": "S V O", "note": "Một tân ngữ; có thể cùng chỉ chủ ngữ nếu là đại từ phản thân." },
+          "svoo": { "end": "S V O O", "note": "Hai tân ngữ: người nhận rồi vật được trao." },
+          "svoc": { "end": "S V O C", "note": "Bổ ngữ nói về tân ngữ." },
+          "svoa": { "end": "S V O A", "note": "Tân ngữ rồi một cụm nơi chốn bắt buộc." }
+        } },
+      "caption": "Gợi ý tìm mẫu cho các ví dụ đơn giản này. Vai trò phụ thuộc động từ và cách dùng, không chỉ phụ thuộc việc hai cụm có cùng người được nói tới.",
+      "alt": "Sơ đồ cho các ví dụ: không có phần bổ sung thì S V; tính từ sau động từ nối thì S V C; cụm nơi chốn cần thiết thì S V A. Với cụm danh từ, xét mẫu động từ để phân biệt bổ ngữ với tân ngữ, rồi xét các phần theo sau để chọn S V O, S V O O, S V O C hay S V O A. Tân ngữ có thể cùng chỉ chủ ngữ, như herself trong She hurt herself." },
+    { "type": "try", "exercise": "spat-01" },
+    { "type": "h", "vi": "Các khuôn có tân ngữ và một phần đi kèm" },
+    { "type": "examples", "items": [
+      { "en": "[S|Linh] [V|gave] [O|Minh] [O|a gift].", "vi": "Linh tặng Minh một món quà.", "note": "S V O O: người nhận đứng trước vật được trao. Cũng có thể nói Linh gave a gift to Minh, với cụm giới từ to Minh." },
+      { "en": "[S|The news] [V|made] [O|her] [C|happy].", "vi": "Tin ấy làm cô ấy vui.", "note": "S V O C: happy nói về her, không phải một thứ khác." },
+      { "en": "[S|They] [V|elected] [O|him] [C|president].", "vi": "Họ bầu ông ấy làm chủ tịch.", "note": "S V O C với bổ ngữ là danh từ. President chính là him." },
+      { "en": "[S|She] [V|put] [O|the keys] [A|on the table].", "vi": "Cô ấy để chìa khóa lên bàn.", "note": "S V O A: cụm nơi chốn bắt buộc." }
+    ] },
+    { "type": "try", "exercise": "spat-04" },
+    { "type": "note", "kind": "vn", "vi": "Với S V C, tiếng Việt không cần động từ khi phần sau là tính từ: \"Món súp nóng\", \"Bài kiểm tra khó\". Tiếng Anh cần: The soup is hot. The test is difficult. Còn khi phần sau là danh từ, tiếng Việt có từ \"là\" (\"Anh ấy là bác sĩ\"), nên lỗi ở đây ít hơn." },
+    { "type": "note", "kind": "vn", "vi": "Với S V A, từ \"ở\" trong tiếng Việt tự làm động từ: \"Tôi ở Hà Nội\", \"Quán ở gần ga\". Tiếng Anh cần một động từ như be hoặc live: I am in Hanoi, I live in Hanoi, The café is near the station. Người học có thể viết I in Hanoi." },
+    { "type": "note", "kind": "tip", "vi": "Give, send, show thường dùng hai mẫu: Linh gave Minh a gift hoặc Linh gave a gift to Minh. Buy thường dùng for: bought Minh a gift hoặc bought a gift for Minh. She gave to me a gift là trật tự có đánh dấu, ít tự nhiên hơn ở ngữ cảnh trung tính này, không phải lỗi ngữ pháp tuyệt đối; cụm với to có thể đứng trước tân ngữ, nhất là khi tân ngữ dài hoặc cần nhấn." },
+    { "type": "try", "exercise": "spat-02" }
+  ],
+  "deep": [
+    { "type": "h", "vi": "Bảy khuôn là một cách đếm" },
+    { "type": "p", "vi": "Cách chia thành bảy khuôn quen thuộc trong ngữ pháp mô tả. Các sách khác đếm khác: có sách chỉ chia nội động từ, ngoại động từ, động từ nối, động từ hai tân ngữ; có sách gọi cụm nơi chốn của be là bổ ngữ. Tên gọi khác nhau, nhưng điều bạn cần học thì giống nhau: xem từ điển ghi gì sau mỗi động từ." },
+    { "type": "h", "vi": "Một động từ có thể thuộc nhiều khuôn" },
+    { "type": "examples", "items": [
+      { "en": "[S|She] [V|grows] [O|tomatoes].", "vi": "Cô ấy trồng cà chua.", "note": "S V O" },
+      { "en": "[S|Tomatoes] [V|grow] [ADV|quickly].", "vi": "Cà chua lớn nhanh.", "note": "S V, với quickly là phần thêm" },
+      { "en": "[S|The tomatoes] [V|grew] [C|big].", "vi": "Những quả cà chua lớn lên to.", "note": "S V C" }
+    ] },
+    { "type": "p", "vi": "Nghĩa của động từ quyết định khuôn. Vì thế hãy học động từ cùng khuôn của nó, không học riêng từng từ." },
+    { "type": "h", "vi": "Phép thử bằng câu bị động" },
+    { "type": "p", "vi": "Tân ngữ trực tiếp thường trở thành chủ ngữ của câu bị động: Linh bought a bicycle thành A bicycle was bought by Linh. Bổ ngữ thì không: không có câu bị động từ She became a doctor. Với hai tân ngữ, tân ngữ gián tiếp cũng làm được chủ ngữ: Minh was given a gift. Phép thử này hữu ích nhưng không dùng được với mọi động từ, nên hãy coi nó là gợi ý." },
+    { "type": "h", "vi": "Động từ không đi với hai tân ngữ" },
+    { "type": "p", "vi": "Không phải động từ nào chỉ nghĩa trao cũng nhận hai tân ngữ. Explain, suggest và describe cần tân ngữ rồi cụm với to: He explained the rule to me. Nói \"He explained me the rule\" hay \"She suggested me a hotel\" là sai trong tiếng Anh chuẩn. Kiểm tra từ điển cho từng động từ mới." },
+    { "type": "h", "vi": "A không chỉ là nơi chốn" },
+    { "type": "p", "vi": "A trong cách chia này không chỉ là nơi chốn: The workshop is at nine có cụm thời gian hoàn thành ý định vị sự kiện. Không suy ra mọi cụm thời lượng đều bắt buộc: với last, thời lượng có thể được nói rõ hoặc hiểu từ ngữ cảnh. Cần xét nghĩa động từ và ngữ cảnh, không chỉ xóa từ máy móc." },
+    { "type": "h", "vi": "Phần thêm không thuộc khuôn" },
+    { "type": "p", "vi": "Thời gian, cách thức, lý do và nhiều cụm khác có thể thêm vào bất kỳ khuôn nào mà không đổi khuôn: She slept (S V) và She slept badly last night (vẫn S V). Chúng là phần thêm vào, không bắt buộc, và được dạy ở các bài về trạng ngữ." },
+    { "type": "note", "kind": "register", "vi": "Một số động từ đổi cách dùng theo vùng. Ví dụ, tiếng Anh Anh thân mật thỉnh thoảng nói gave him it thay cho gave it to him. Trong bài thi, dùng gave it to him là an toàn." }
+  ],
+  "mistakes": [
+    { "id": "spat-gave-to", "wrong": "She gave me to a gift.", "right": "She gave me a gift.", "why": "Với nghĩa tặng tôi một món quà, dùng gave me a gift hoặc gave a gift to me. To phải mở cụm người nhận, không đứng trước a gift như ở câu sai.", "vn": "Đừng dịch từng từ theo vị trí của \"cho\"; học cả mẫu động từ và người nhận." },
+    { "id": "spat-explain-me", "wrong": "He explained me the rule.", "right": "He explained the rule to me.", "why": "Explain không nhận hai tân ngữ. Đặt tân ngữ của nó trước, rồi cụm với to.", "vn": "Tiếng Việt nói \"giải thích cho tôi quy tắc\", nên mẫu S V O O dễ bị mang sang các động từ không nhận nó." },
+    { "id": "spat-sva-no-verb", "wrong": "I in Hanoi now.", "right": "I am in Hanoi now.", "why": "Cụm nơi chốn cần một động từ đi cùng, ở đây là be (hoặc live: I live in Hanoi).", "vn": "Trong tiếng Việt, \"ở\" tự là động từ: \"Tôi ở Hà Nội\"." },
+    { "id": "spat-svc-no-verb", "wrong": "The exam very difficult.", "right": "The exam is very difficult.", "why": "Very difficult là cụm tính từ. Nối chủ ngữ với tính từ cần một động từ như be.", "vn": "Tiếng Việt nói được \"Bài thi rất khó\" mà không cần từ nối." }
+  ],
+  "faq": [
+    { "q": "Vì sao có bảy mẫu câu?", "a": "Đó là cách đếm phổ biến trong ngữ pháp mô tả, nhằm gom mọi câu đơn giản vào vài khuôn. Sách khác đếm khác. Bạn không cần thuộc tên khuôn, chỉ cần biết động từ cần gì đi theo." },
+    { "q": "Làm sao biết một cụm sau động từ là tân ngữ hay bổ ngữ?", "a": "Xét mẫu động từ: become trong She became a doctor là động từ nối, nên a doctor là bổ ngữ xác định she. See trong She saw a doctor nhận tân ngữ. Phép thử \"có phải người khác không\" không đủ: trong She hurt herself, herself vẫn là tân ngữ dù cùng chỉ she." },
+    { "q": "Cụm nơi chốn nào là bắt buộc?", "a": "Trong nghĩa đặt vật của put ở bài này, thường cần nói vật được đặt và nơi đặt nó. Be định vị sự kiện trong The meeting is in room 4 cũng cần cụm hoàn thành ý ấy. Đây là phép thử theo nghĩa và ngữ cảnh; phần đã được hiểu có thể được lược, hoặc động từ có thể mang nghĩa khác." },
+    { "q": "Một động từ có thể ở nhiều khuôn không?", "a": "Có. Grow có thể là S V O (She grows tomatoes), S V (Tomatoes grow quickly) và S V C (The tomatoes grew big). Hãy học động từ cùng cách dùng." }
+  ],
+  "exercises": [
+    { "id": "spat-01", "type": "classify", "level": "A2", "use": "practice", "skill": "recognition",
+      "prompt": "Xếp mỗi câu vào nhóm đúng.",
+      "cats": ["S V (không có gì sau động từ)", "S V O (có tân ngữ)", "S V C (có bổ ngữ)"],
+      "items": [
+        { "t": "The baby slept.", "cat": "S V (không có gì sau động từ)" },
+        { "t": "Linh bought a bicycle.", "cat": "S V O (có tân ngữ)" },
+        { "t": "The soup is hot.", "cat": "S V C (có bổ ngữ)" },
+        { "t": "She became a teacher.", "cat": "S V C (có bổ ngữ)" },
+        { "t": "The children laughed.", "cat": "S V (không có gì sau động từ)" },
+        { "t": "My father fixed the roof.", "cat": "S V O (có tân ngữ)" }
+      ],
+      "explain": "Trong các ví dụ này, be và become nối chủ ngữ với bổ ngữ; buy và fix nhận tân ngữ. Vai trò do mẫu động từ quyết định, không phải chỉ do hai cụm có cùng chỉ một người hay không." },
+    { "id": "spat-02", "type": "choice", "level": "A2", "use": "practice", "skill": "recognition",
+      "prompt": "Chọn mẫu câu của câu sau.",
+      "context": "She put the keys on the table.",
+      "stem": "Mẫu nào?",
+      "options": [
+        { "t": "S V O", "note": "Có tân ngữ the keys, nhưng on the table không phải phần thêm: She put the keys không trọn nghĩa.", "tag": "obligatory-adverbial" },
+        { "t": "S V O A", "ok": true, "note": "Tân ngữ the keys, rồi cụm nơi chốn on the table bắt buộc với động từ put." },
+        { "t": "S V O O", "note": "On the table không phải tân ngữ thứ hai, mà là một cụm giới từ chỉ nơi chốn.", "tag": "obligatory-adverbial" }
+      ],
+      "explain": "Put cần cả vật được đặt và nơi nó được đặt. Bỏ cụm nơi chốn thì câu mất nghĩa, nên đó là A bắt buộc." },
+    { "id": "spat-03", "type": "choice", "level": "A2", "use": "check", "skill": "recognition",
+      "prompt": "Chọn mẫu câu của câu sau.",
+      "context": "The news made her happy.",
+      "stem": "Mẫu nào?",
+      "options": [
+        { "t": "S V O C", "ok": true, "note": "Her là tân ngữ, và happy là bổ ngữ nói về her." },
+        { "t": "S V O O", "note": "Her và happy không phải hai thứ khác nhau; happy nói về chính her.", "tag": "complement-vs-object" },
+        { "t": "S V O", "note": "Bỏ happy thì The news made her không trọn nghĩa, nên happy bắt buộc.", "tag": "complement-vs-object" }
+      ],
+      "explain": "Khi cụm thứ hai nói về cùng người hay vật với cụm thứ nhất, nó là bổ ngữ của tân ngữ, không phải một tân ngữ nữa." },
+    { "id": "spat-04", "type": "error", "level": "A2", "use": "practice", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "She" },
+        { "t": "gave me to a gift", "bad": true, "fix": ["gave me a gift", "gave a gift to me"], "note": "Trong nghĩa tặng quà, dùng gave me a gift hoặc gave a gift to me. To mở cụm người nhận.", "tag": "double-object-order" },
+        { "t": "yesterday." }
+      ],
+      "explain": "Hai mẫu thông dụng là She gave me a gift yesterday và She gave a gift to me yesterday. Không đánh đồng thứ tự ít thông dụng như gave to me a gift với lỗi ngữ pháp tuyệt đối." },
+    { "id": "spat-05", "type": "error", "level": "A2", "use": "check", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "I" },
+        { "t": "in Hanoi now", "bad": true, "fix": ["am in Hanoi now", "'m in Hanoi now", "live in Hanoi now"], "note": "Cụm nơi chốn cần một động từ: be hoặc live.", "tag": "copula-omission" },
+        { "t": "with my cousin." }
+      ],
+      "explain": "Câu đúng là I am in Hanoi now with my cousin. Cũng có thể nói I live in Hanoi now với nghĩa là bạn sống ở đó." },
+    { "id": "spat-06", "type": "error", "level": "A2", "use": "check", "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "noError": true,
+      "segments": [
+        { "t": "He" },
+        { "t": "explained the rule" },
+        { "t": "to us." }
+      ],
+      "explain": "Câu đúng. Explain nhận một tân ngữ (the rule), rồi cụm với to chỉ người nghe." },
+    { "id": "spat-07", "type": "order", "level": "A2", "use": "practice", "skill": "form",
+      "prompt": "Sắp xếp thành câu có nghĩa: Linh tặng Minh một món quà.",
+      "tokens": ["Linh", "gave", "Minh", "a", "gift"],
+      "end": ".",
+      "accept": [["Linh", "gave", "Minh", "a", "gift"]],
+      "known": [
+        { "seq": ["Minh", "gave", "Linh", "a", "gift"], "verdict": "wrong", "note": "Câu đúng ngữ pháp nhưng ngược nghĩa: ở đây Minh tặng Linh." },
+        { "seq": ["Linh", "gave", "a", "gift", "Minh"], "verdict": "wrong", "note": "Muốn đặt Minh sau a gift phải thêm to: Linh gave a gift to Minh." }
+      ],
+      "explain": "Với hai tân ngữ, người nhận đứng trước vật được trao: Linh gave Minh a gift." },
+    { "id": "spat-08", "type": "order", "level": "A2", "use": "practice", "skill": "form",
+      "prompt": "Sắp xếp theo mẫu S V O A, đặt chủ ngữ đầu câu và giữ cụm nơi chốn ở cuối.",
+      "tokens": ["she", "put", "the", "keys", "on", "the", "table"],
+      "end": ".",
+      "accept": [["she", "put", "the", "keys", "on", "the", "table"]],
+      "explain": "S V O A: chủ ngữ, động từ, tân ngữ, rồi cụm nơi chốn bắt buộc." },
+    { "id": "spat-09", "type": "transform", "level": "A2", "use": "practice", "skill": "production",
+      "prompt": "Viết lại câu, giữ nguyên ý.",
+      "source": "Linh gave a gift to Minh.",
+      "instruction": "Dùng hai tân ngữ, không dùng to.",
+      "accept": ["Linh gave Minh a gift"],
+      "model": "Linh gave Minh a gift.",
+      "explain": "Khi người nhận đứng ngay sau động từ, không cần to: gave Minh a gift." },
+    { "id": "spat-10", "type": "transform", "level": "A2", "use": "check", "skill": "production",
+      "prompt": "Sửa lại cho đúng.",
+      "source": "He explained me the rule.",
+      "instruction": "Giữ nguyên ý.",
+      "accept": [
+        "He explained the rule to me",
+        "He explained to me the rule"
+      ],
+      "model": "He explained the rule to me.",
+      "known": [
+        {
+          "t": "He explained me the rule",
+          "verdict": "wrong",
+          "note": "Explain không nhận hai tân ngữ.",
+          "tag": "double-object-overuse"
+        }
+      ],
+      "explain": "He explained the rule to me là thứ tự trung tính. He explained to me the rule cũng đúng; cụm với to có thể đứng trước tân ngữ. Explain không dùng mẫu hai tân ngữ explained me the rule trong tiếng Anh phổ thông." },
+    { "id": "spat-11", "type": "match", "level": "A2", "use": "practice", "skill": "recognition",
+      "prompt": "Nối mỗi mẫu câu với ví dụ của nó.",
+      "pairs": [
+        { "a": "S V", "b": "The baby slept." },
+        { "a": "S V C", "b": "The soup is hot." },
+        { "a": "S V A", "b": "The meeting is in room 4." },
+        { "a": "S V O O", "b": "Linh gave Minh a gift." },
+        { "a": "S V O C", "b": "The news made her happy." },
+        { "a": "S V O A", "b": "She put the keys on the table." }
+      ],
+      "explain": "Nhìn vào phần đi sau động từ: không có gì, bổ ngữ, cụm nơi chốn bắt buộc, hai tân ngữ, tân ngữ và bổ ngữ, hoặc tân ngữ và cụm nơi chốn." },
+    { "id": "spat-12", "type": "multi", "level": "A2", "use": "check", "skill": "meaning",
+      "prompt": "Chọn tất cả các câu có bổ ngữ, tức cụm đứng sau động từ và nói về chính chủ ngữ.",
+      "stem": "Những câu nào có bổ ngữ?",
+      "options": [
+        { "t": "She became a doctor.", "ok": true, "note": "A doctor chỉ chính cô ấy." },
+        { "t": "She saw a doctor.", "note": "A doctor là một người khác, đây là tân ngữ.", "tag": "complement-vs-object" },
+        { "t": "The soup tastes good.", "ok": true, "note": "Good nói về món súp." },
+        { "t": "My brother seems tired.", "ok": true, "note": "Tired nói về my brother." },
+        { "t": "He bought a laptop.", "note": "A laptop là vật khác chủ ngữ, đây là tân ngữ.", "tag": "complement-vs-object" }
+      ],
+      "explain": "Trong các câu này, become, taste và seem là động từ nối, với bổ ngữ nói về chủ ngữ. See và buy nhận tân ngữ. Với câu khác, phải xét mẫu động từ; tân ngữ phản thân vẫn có thể cùng chỉ chủ ngữ." },
+    { "id": "spat-13", "type": "choice", "level": "A2", "use": "check", "skill": "meaning",
+      "prompt": "Chọn câu có tân ngữ, không có bổ ngữ.",
+      "stem": "Câu nào?",
+      "options": [
+        { "t": "She became a doctor.", "note": "A doctor chỉ chính cô ấy, đây là bổ ngữ.", "tag": "complement-vs-object" },
+        { "t": "She married a doctor.", "ok": true, "note": "A doctor là một người khác cô ấy, đây là tân ngữ." },
+        { "t": "She felt tired.", "note": "Tired nói về cô ấy, đây là bổ ngữ.", "tag": "complement-vs-object" }
+      ],
+      "explain": "Marry trong câu này nhận tân ngữ a doctor; become và feel trong hai câu còn lại nối chủ ngữ với bổ ngữ. Cùng người hay khác người không phải phép thử đủ cho mọi câu." },
+    { "id": "spat-14", "type": "open", "level": "A2", "use": "practice", "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Viết bốn câu về cuộc sống của bạn, mỗi câu theo một mẫu khác nhau: S V, S V O, S V C, S V O O. Ghi mẫu câu cạnh mỗi câu.",
+      "model": ["My phone rang. (S V) I bought a new bag. (S V O) My mother is very patient. (S V C) I sent my cousin a message. (S V O O)"],
+      "checklist": ["Mỗi câu có chủ ngữ và động từ", "Câu S V C có động từ nối như be và một tính từ hoặc danh từ nói về chủ ngữ", "Câu S V O O có hai cụm danh từ khác nhau sau động từ", "Dùng mẫu tự nhiên với động từ đã chọn; với give có thể dùng gave someone something hoặc gave something to someone"],
+      "explain": "Xem từng động từ cần phần gì trong nghĩa bạn muốn nói. Phép thử lược bỏ là gợi ý; không tự động xem mọi phần bỏ được trong ngữ cảnh là trạng ngữ tùy chọn." }
+  ],
+  "sources": [
+    { "ref": "quirk", "note": "Phần về các mẫu mệnh đề chính (clause types)" },
+    { "ref": "cgel", "note": "Phần về các loại vị ngữ và cách phân tích khác" },
+    { "ref": "cgt", "note": "Các mục về động từ nối, tân ngữ và động từ có hai tân ngữ" },
+    { "ref": "swan-peu", "note": "Mục về động từ với hai tân ngữ" }
+  ],
+  "editorial": { "status": "drafted" }
+}

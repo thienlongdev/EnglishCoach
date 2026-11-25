@@ -1,0 +1,1146 @@
+/*
+ * Flashcard study surface (owner brief 2026-10-15).
+ * Two deliberately different faces on one 3D card: a full-colour immersive FRONT where the word is the hero, and a
+ * bright, structured BACK for meaning, examples and the memory rating. No decorative icons; richness comes from colour,
+ * material (gloss, depth) and motion. Every animation here is CSS only and stops under reduced motion.
+ */
+
+/* ── Stage + 3D card ─────────────────────────────────────────────────────────────── */
+
+.stage {
+  position: relative;
+  width: 100%;
+  /* Word sizes below are relative to the card's own width (cqi), so a long word fits a phone card on one line. */
+  container-type: inline-size;
+  perspective: 1800px;
+  perspective-origin: 50% 40%;
+}
+
+/*
+ * Echo Memory Tides — one water language for the whole study pass. The study stage has a WATERLINE at the card's lower
+ * edge: a new card SURFACES from it, and a stored rating sends the card away the way its schedule really treats it:
+ *   Khó  → Undertow: the card sinks back below the waterline (it is due again at once and will resurface this session);
+ *   Tốt  → Drift:    the card drifts away on the tide (due again in three days);
+ *   Dễ   → Pearl:    the card condenses into one pearl that rises to the progress line (mastered, leaves the reviews).
+ * Only the STAGE moves (individual translate / scale / rotate + clip-path): the card's own rotateY is never touched, so a
+ * rated back can never turn over. The tide comes from the stage's parent (`data-tide`, set by FlashcardUI at confirmation).
+ * Negative clip insets keep the card's shadow; the bottom inset is the waterline.
+ */
+
+/* A new card arrives (keyed by card id): it surfaces from the waterline, never a flip that could reveal its back. */
+.enter {
+  animation: cardSurface 260ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@keyframes cardSurface {
+  from { opacity: 0.2; translate: 0 34%; clip-path: inset(-90px -90px 34% -90px round 28px); }
+  to { opacity: 1; translate: 0 0; clip-path: inset(-90px -90px -90px -90px round 28px); }
+}
+
+/* Echo Memory Pulse: the rated card leaves (timeline phase "exit", 340 ms) while its rating's effect is still travelling.
+   Neutral tide (no data-tide yet): a short fade. Fill keeps it gone until the next card mounts. */
+.stage[data-phase='exit'] {
+  animation: cardExit 340ms cubic-bezier(0.4, 0, 0.8, 0.4) forwards;
+}
+@keyframes cardExit {
+  to { opacity: 0; translate: 0 -10px; scale: 0.97; }
+}
+
+/* Khó — Undertow: a breath upward, then the card is drawn straight down through the waterline. The translate and the
+   bottom clip move together, so the waterline stays fixed on screen while the card passes through it. */
+[data-tide='hard'] .stage[data-phase='exit'] {
+  animation: tideUndertow 340ms cubic-bezier(0.55, 0, 0.75, 0.25) forwards;
+}
+@keyframes tideUndertow {
+  0% { translate: 0 0; clip-path: inset(-90px -90px 0 -90px round 28px); }
+  14% { translate: 0 -1.5%; clip-path: inset(-90px -90px 0 -90px round 28px); }
+  100% { translate: 0 100%; clip-path: inset(-90px -90px 100% -90px round 28px); opacity: 0.9; }
+}
+
+/* Tốt — Drift: the card is carried sideways on the tide, tilting into the current, thinning out like a far sail. */
+[data-tide='good'] .stage[data-phase='exit'] {
+  animation: tideDrift 340ms cubic-bezier(0.5, 0, 0.6, 1) forwards;
+}
+@keyframes tideDrift {
+  0% { translate: 0 0; rotate: 0deg; opacity: 1; }
+  100% { translate: 22% -2%; rotate: 2deg; scale: 0.92; opacity: 0; }
+}
+
+/* Dễ — Pearl: the card's surface closes in on one point (where the pearl forms in the effect layer) and is gone. */
+[data-tide='easy'] .stage[data-phase='exit'] {
+  animation: tidePearl 340ms cubic-bezier(0.7, 0, 0.84, 0) forwards;
+}
+@keyframes tidePearl {
+  0% { clip-path: circle(80% at 50% 45%); scale: 1; filter: brightness(1); }
+  55% { filter: brightness(1.25); }
+  100% { clip-path: circle(0% at 50% 45%); scale: 0.86; filter: brightness(1.6); }
+}
+
+/* the card lifts a little as it turns over, as if a swell passed under it (translate only: rotateY stays the transition's) */
+.stage[data-phase^='flipping'] .card { animation: flipSwell 600ms cubic-bezier(0.5, 0, 0.3, 1); }
+@keyframes flipSwell {
+  0%, 100% { translate: 0 0; }
+  42% { translate: 0 -10px; }
+}
+
+/* light sweeping across the turning card (only while the timeline says it turns) */
+.flipLight {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(105deg, transparent 32%, rgba(255, 255, 255, 0.3) 50%, transparent 68%);
+  background-size: 260% 100%;
+  background-position: 110% 0;
+}
+.stage[data-phase^='flipping'] .flipLight { animation: flipLight 600ms cubic-bezier(0.5, 0, 0.3, 1); }
+@keyframes flipLight {
+  0% { opacity: 0; background-position: 110% 0; }
+  45% { opacity: 1; }
+  100% { opacity: 0; background-position: -10% 0; }
+}
+
+/* The turning card. Both faces share one grid cell, so the card is as tall as its taller face (no clipping). */
+.card {
+  position: relative;
+  display: grid;
+  transform-style: preserve-3d;
+  /* 600 ms; with this curve the card is edge-on (90°) at 255 ms — the face switch below is timed around it.
+     No permanent will-change: a card kept on its own 3D layer at rest is rasterised once and resampled (soft text). */
+  transition: transform 600ms cubic-bezier(0.5, 0, 0.3, 1);
+}
+
+.card[data-flipped='true'] {
+  transform: rotateY(180deg);
+}
+
+.face {
+  grid-area: 1 / 1;
+  position: relative;
+  min-width: 0;
+  border-radius: 28px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  /* Safety net besides backface culling: the incoming face becomes visible just before the edge-on moment (215 ms)
+     and the outgoing one is hidden just after it (300 ms), so the card is never empty and both faces can never be seen
+     at once even where a browser drops backface culling. */
+  transition: visibility 0s linear 215ms;
+}
+
+/* No translateZ: under the stage's perspective even 1px scales a face by ≈1.0006 and Chrome resamples its text. */
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.card[data-flipped='true'] .front,
+.card[data-flipped='false'] .back {
+  visibility: hidden;
+  transition-delay: 300ms;
+}
+
+/* ── FRONT — immersive colour, the word is the hero ─────────────────────────────── */
+
+/*
+ * Echo Memory Theater (2026-11-20): the front is a floating glass ARTIFACT: pearl lavender glass with navy ink in the light
+ * theme, luminous violet glass with white ink in the dark one. Each card keeps a faint tint of its own colourway (`--fc-glow`,
+ * `--fc-bloom`) in the glass. Ink tokens (`--face-*`) live on the face, so its controls and Deep Recall follow the theme.
+ * Soft wave bands of light cross the lower glass; they are painted once (no animation behind the word).
+ */
+.front {
+  --face-ink: #1b1a52;
+  --face-ink-2: #3f3f86;
+  --face-line: rgba(99, 88, 220, 0.3);
+  --face-fill: rgba(255, 255, 255, 0.62);
+  --face-fill-hover: rgba(255, 255, 255, 0.9);
+  --face-accent: #5b49e6;
+  display: flex;
+  flex-direction: column;
+  min-height: clamp(340px, 54vh, 470px);
+  padding: clamp(20px, 3.4vw, 32px);
+  overflow: hidden;
+  color: var(--face-ink);
+  cursor: pointer;
+  isolation: isolate;
+  border-radius: 32px;
+  background:
+    radial-gradient(70% 55% at 14% 8%, rgba(255, 255, 255, 0.85) 0%, transparent 60%),
+    radial-gradient(90% 80% at 100% 100%, color-mix(in srgb, var(--fc-glow) 60%, transparent) 0%, transparent 62%),
+    radial-gradient(70% 70% at 0% 100%, rgba(196, 181, 253, 0.5) 0%, transparent 70%),
+    linear-gradient(152deg, #f2eeff 0%, #e6deff 38%, #e0e4ff 70%, #ddeffd 100%);
+  box-shadow:
+    0 40px 80px -34px rgba(76, 60, 210, 0.55),
+    0 14px 30px -18px rgba(30, 27, 75, 0.28),
+    0 0 0 1px rgba(160, 148, 255, 0.45),
+    0 0 46px -12px rgba(140, 124, 255, 0.55),
+    inset 0 1px 0 #ffffff,
+    inset 0 0 0 1.5px rgba(255, 255, 255, 0.75),
+    inset 0 -40px 60px -40px rgba(124, 108, 255, 0.35);
+}
+
+:global(.dark) .front {
+  --face-ink: #ffffff;
+  --face-ink-2: rgba(236, 233, 255, 0.92);
+  --face-line: rgba(220, 212, 255, 0.4);
+  --face-fill: rgba(255, 255, 255, 0.12);
+  --face-fill-hover: rgba(255, 255, 255, 0.22);
+  --face-accent: #ffffff;
+  background:
+    radial-gradient(70% 55% at 14% 6%, rgba(255, 255, 255, 0.28) 0%, transparent 60%),
+    radial-gradient(90% 80% at 100% 100%, color-mix(in srgb, var(--fc-bloom) 55%, transparent) 0%, transparent 62%),
+    radial-gradient(80% 70% at 92% -8%, color-mix(in srgb, var(--fc-glow) 70%, transparent) 0%, transparent 60%),
+    linear-gradient(150deg, #5b2bd0 0%, #6d3ae6 30%, #4f46e5 62%, #2f6fd8 100%);
+  box-shadow:
+    0 40px 90px -34px rgba(124, 58, 237, 0.85),
+    0 14px 30px -16px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(196, 181, 253, 0.55),
+    0 0 60px -10px rgba(167, 139, 250, 0.75),
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    inset 0 0 0 1.5px rgba(255, 255, 255, 0.22),
+    inset 0 -50px 70px -40px rgba(236, 72, 153, 0.35);
+}
+
+/* Wave bands of light in the lower glass (painted, still). */
+.front::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: inherit;
+  background:
+    radial-gradient(120% 60% at 30% 118%, rgba(255, 255, 255, 0.7) 0 38%, transparent 39%),
+    radial-gradient(110% 55% at 82% 126%, rgba(167, 139, 250, 0.38) 0 40%, transparent 41%),
+    radial-gradient(130% 70% at 60% 135%, rgba(125, 211, 252, 0.32) 0 46%, transparent 47%);
+  opacity: 0.85;
+}
+:global(.dark) .front::before {
+  background:
+    radial-gradient(120% 60% at 30% 118%, rgba(255, 255, 255, 0.16) 0 38%, transparent 39%),
+    radial-gradient(110% 55% at 82% 126%, rgba(244, 114, 182, 0.3) 0 40%, transparent 41%),
+    radial-gradient(130% 70% at 60% 135%, rgba(56, 189, 248, 0.24) 0 46%, transparent 47%);
+  opacity: 0.8;
+}
+
+/* Gloss: a thin specular edge at the top only, never a haze over the word. */
+.front::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: inherit;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 12%);
+}
+:global(.dark) .front::after { background: linear-gradient(180deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0) 12%); }
+
+.frontTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 12px 5px 9px;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--face-ink-2);
+  background: var(--face-fill);
+  box-shadow: inset 0 0 0 1px var(--face-line);
+}
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff, #8b7bff 55%, #5b49e6);
+  box-shadow: 0 0 8px 1px rgba(124, 108, 255, 0.8);
+}
+
+.wordBlock {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 28px 4px;
+  text-align: center;
+}
+
+.word {
+  margin: 0;
+  max-width: 100%;
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+  text-wrap: balance;
+  color: var(--face-ink);
+  /* a tight shadow only: a wide glow around the letters reads as blur */
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+  font-size: clamp(2.4rem, 13cqi, 5.5rem);
+}
+
+/* Tuned so the longest word of each band still fits one line (≈ 0.56 em per Quicksand Bold character). */
+.word[data-len='m'] { font-size: clamp(2rem, 9.5cqi, 4.4rem); }
+.word[data-len='l'] { font-size: clamp(1.3rem, 6.2cqi, 3.4rem); letter-spacing: -0.02em; }
+.word[data-len='xl'] { font-size: clamp(1.3rem, 5.2cqi, 2.6rem); letter-spacing: -0.01em; line-height: 1.12; }
+
+/* IPA needs glyphs Quicksand does not draw (ə ɪ ˈ ː): a system face with full IPA coverage keeps it in one style. */
+.ipa {
+  font-family: 'Segoe UI', 'Noto Sans', 'Lucida Grande', 'Arial Unicode MS', system-ui, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.frontIpa {
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  color: var(--face-ink-2);
+}
+:global(.dark) .word { text-shadow: 0 1px 2px rgba(10, 14, 40, 0.35); }
+.frontNote { color: var(--face-ink-2); }
+
+.frontBottom {
+  display: flex;
+  justify-content: center;
+}
+
+.flipButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 8px 10px 8px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--face-line);
+  background: var(--face-fill);
+  color: var(--face-ink);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: 0.005em;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 8px 22px -14px rgba(76, 60, 210, 0.6);
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.flipButton:hover { background: var(--face-fill-hover); }
+.flipButton:active { transform: scale(0.97); }
+
+.kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  height: 24px;
+  padding: 0 7px;
+  border-radius: 7px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.flipButton .kbd {
+  background: rgba(106, 84, 240, 0.14);
+  color: var(--face-accent);
+}
+:global(.dark) .flipButton .kbd { background: rgba(255, 255, 255, 0.2); }
+
+.audioFront {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--face-line);
+  background: var(--face-fill);
+  color: var(--face-ink);
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.audioFront, .tool { position: relative; }
+/* sound-wave rings while the word / example is playing */
+.audioFront[aria-pressed='true']::after,
+.tool[aria-pressed='true']::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  border: 2px solid currentColor;
+  opacity: 0;
+  pointer-events: none;
+  animation: soundWave 1100ms cubic-bezier(0.2, 0.7, 0.3, 1) infinite;
+}
+.audioFront[aria-pressed='true']::after { border-color: var(--face-accent); }
+@keyframes soundWave { 0% { opacity: 0.7; transform: scale(1); } 100% { opacity: 0; transform: scale(1.45); } }
+
+.audioFront:hover { background: var(--face-fill-hover); }
+.audioFront:active { transform: scale(0.95); }
+.audioFront[aria-pressed='true'] { background: #5b49e6; color: #fff; }
+:global(.dark) .audioFront[aria-pressed='true'] { background: #fff; color: #5b2bd0; }
+
+/* ── BACK — bright, structured learning sheet ─────────────────────────────────────── */
+
+.back {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: clamp(20px, 3.2vw, 30px);
+  overflow: hidden;
+  color: #1e1b4b;
+  border-radius: 32px;
+  /* a clean pearl sheet: white with one light tint at the top (no pastel washes behind the text) and the artifact's luminous rim */
+  background:
+    linear-gradient(180deg, var(--fc-tint-2) 0%, rgba(255, 255, 255, 0) 140px),
+    #ffffff;
+  box-shadow:
+    0 40px 80px -34px rgba(76, 60, 210, 0.45),
+    0 10px 24px -14px rgba(15, 23, 42, 0.18),
+    0 0 0 1px rgba(160, 148, 255, 0.45),
+    0 0 46px -14px rgba(140, 124, 255, 0.5),
+    inset 0 1px 0 #fff,
+    inset 0 0 0 1px rgba(99, 102, 241, 0.12);
+}
+
+/* A ribbon in the front's colours ties the two faces together. */
+.back::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--fc-a), var(--fc-b) 50%, var(--fc-c));
+}
+
+:global(.dark) .back {
+  color: #eef2ff;
+  background:
+    radial-gradient(70% 55% at 100% 0%, var(--fc-tint-dark-1) 0%, transparent 70%),
+    radial-gradient(60% 50% at 0% 100%, var(--fc-tint-dark-2) 0%, transparent 70%),
+    linear-gradient(165deg, #1d1a4f 0%, #15153f 55%, #0f1230 100%);
+  box-shadow:
+    0 40px 90px -34px rgba(0, 0, 0, 0.75),
+    0 0 0 1px rgba(196, 181, 253, 0.4),
+    0 0 50px -12px rgba(139, 92, 246, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(165, 180, 252, 0.14);
+}
+
+.backHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 4px;
+}
+
+.backWord[data-len='l'] { font-size: clamp(1.25rem, 4.6cqi, 2.1rem); }
+.backWord[data-len='xl'] { font-size: clamp(1.15rem, 4cqi, 1.8rem); }
+
+.backWord {
+  margin: 0;
+  font-size: clamp(1.6rem, 6.4cqi, 2.4rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  overflow-wrap: anywhere;
+  color: inherit;
+}
+
+.backMeta {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 12px;
+  font-size: 0.9375rem;
+  color: #4c4f7a;
+}
+
+:global(.dark) .backMeta { color: #b9c0ea; }
+
+.cefr {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 7px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--fc-ink);
+  background: var(--fc-tint-1);
+}
+
+:global(.dark) .cefr { color: #e0e7ff; background: var(--fc-tint-dark-1); }
+
+.backTools {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.tool {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 40px;
+  min-width: 40px;
+  padding: 0 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(99, 102, 241, 0.16);
+  background: rgba(255, 255, 255, 0.75);
+  color: #3730a3;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.tool:hover { background: #fff; border-color: rgba(99, 102, 241, 0.32); }
+.tool:active { transform: scale(0.97); }
+.tool[aria-pressed='true'] { background: #3730a3; color: #fff; border-color: transparent; }
+
+:global(.dark) .tool { background: rgba(255, 255, 255, 0.06); color: #c7d2fe; border-color: rgba(165, 180, 252, 0.2); }
+:global(.dark) .tool:hover { background: rgba(255, 255, 255, 0.12); }
+:global(.dark) .tool[aria-pressed='true'] { background: #c7d2fe; color: #1e1b4b; }
+
+.toolIcon { padding: 0; width: 40px; }
+
+/* Meaning: the first thing the eye lands on after the turn. */
+.meaning {
+  position: relative;
+  padding: 18px 20px 18px 22px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(99, 102, 241, 0.16), 0 8px 22px -18px rgba(67, 56, 202, 0.35);
+}
+
+.meaning::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 16px;
+  bottom: 16px;
+  width: 4px;
+  border-radius: 0 4px 4px 0;
+  background: linear-gradient(180deg, var(--fc-b), var(--fc-c));
+}
+
+:global(.dark) .meaning { background: rgba(255, 255, 255, 0.05); box-shadow: inset 0 0 0 1px rgba(165, 180, 252, 0.1); }
+
+.label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fc-ink);
+}
+
+:global(.dark) .label { color: #a5b4fc; }
+
+.meaningVi {
+  margin: 0;
+  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+  font-weight: 700;
+  line-height: 1.32;
+  letter-spacing: -0.012em;
+  color: #1e1b4b;
+  overflow-wrap: anywhere;
+}
+
+:global(.dark) .meaningVi { color: #fff; }
+
+.definitions {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 6px;
+}
+
+.definitions li {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.55;
+  color: #2f3263;
+  overflow-wrap: anywhere;
+}
+
+:global(.dark) .definitions li { color: #c9cff1; }
+
+.examples {
+  display: grid;
+  gap: 10px;
+}
+
+.example {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px 12px 16px;
+  border-radius: 16px;
+  background: #f6f7fe;
+  box-shadow: inset 0 0 0 1px rgba(99, 102, 241, 0.12);
+}
+
+:global(.dark) .example { background: rgba(255, 255, 255, 0.04); }
+
+.exampleBody {
+  flex: 1;
+  min-width: 0;
+}
+
+.exampleVi {
+  margin: 4px 0 0;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: #565a8c;
+  overflow-wrap: anywhere;
+}
+
+:global(.dark) .exampleVi { color: #b9c0ea; }
+
+.pos {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 7px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--fc-ink);
+  box-shadow: inset 0 0 0 1px var(--fc-tint-1);
+}
+
+:global(.dark) .pos { color: #e0e7ff; box-shadow: inset 0 0 0 1px var(--fc-tint-dark-1); }
+
+.exampleText {
+  flex: 1;
+  margin: 0;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #26285a;
+  overflow-wrap: anywhere;
+}
+
+:global(.dark) .exampleText { color: #e0e5ff; }
+
+.exampleText mark {
+  background: none;
+  color: var(--fc-ink);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--fc-c);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+:global(.dark) .exampleText mark { color: #fff; }
+
+.examplePlay {
+  flex-shrink: 0;
+  min-height: 36px;
+  min-width: 36px;
+  width: 36px;
+  padding: 0;
+  border-radius: 10px;
+}
+
+/* ── Memory rating (on the back) ─────────────────────────────────────────────────── */
+
+/* The ratings live in the theater's dock under the pedestal (StudyDeckView `.dock`): they arrive only once the back has
+   finished turning (timeline phase "back"); before that the dock keeps its place (no layout jump) and they are inert. */
+.ratingAsk {
+  margin: 0 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2e3168;
+}
+
+:global(.dark) .ratingAsk { color: #dfe4ff; }
+
+.ratingHint {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #6b6f9c;
+}
+
+:global(.dark) .ratingHint { color: #9aa3d6; }
+
+.ratingGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 13.5rem));
+  justify-content: center;
+  gap: clamp(8px, 1.6vw, 18px);
+}
+
+.rate {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  column-gap: 10px;
+  min-height: 58px;
+  padding: 8px 14px 8px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--r-border);
+  background: var(--r-bg);
+  color: var(--r-ink);
+  text-align: left;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 10px 24px -12px var(--r-shadow), 0 0 22px -10px var(--r-shadow);
+  transition: transform 150ms ease, box-shadow 150ms ease, background-color 150ms ease, opacity 150ms ease;
+}
+.rateFace { grid-row: 1 / 3; display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--r-key); }
+.rateFace svg { width: 21px; height: 21px; }
+
+.rate:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 12px 22px -12px var(--r-shadow);
+}
+
+.rate:active:not(:disabled) { transform: translateY(0) scale(0.98); }
+.rate:disabled { cursor: not-allowed; opacity: 0.55; }
+.rate[data-pending='true'] { opacity: 1; transform: scale(0.985); }
+/* immediate, light feedback while the rating is being stored (the tone's effect plays only after the server confirmed it) */
+.rate[data-pending='true']::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 18px;
+  border: 2px solid var(--r-ring);
+  pointer-events: none;
+  animation: ratePending 900ms ease-in-out infinite;
+}
+@keyframes ratePending { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+
+.rate:focus-visible {
+  outline: 3px solid var(--r-ring);
+  outline-offset: 2px;
+}
+
+/* hover: a light sweeping in the reading direction */
+.rate::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.6) 48%, transparent 66%);
+  background-size: 260% 100%;
+  background-position: 120% 0;
+  transition: background-position 560ms cubic-bezier(0.22, 1, 0.36, 1), opacity 200ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .rate:hover:not(:disabled)::before { opacity: 1; background-position: -20% 0; }
+}
+:global(.dark) .rate::before { background-image: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.16) 48%, transparent 66%); }
+
+/* the pressed rating answers at once, the same for a click, a tap and keys 1–3 (savingQuality) */
+.hard[data-pending='true'] { box-shadow: 0 0 0 4px rgba(251, 113, 133, 0.2), 0 12px 26px -12px rgba(244, 63, 94, 0.75); }
+.good[data-pending='true'] { box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2), 0 12px 26px -12px rgba(79, 70, 229, 0.75); }
+.easy[data-pending='true'] {
+  box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.22), 0 12px 26px -12px rgba(5, 150, 105, 0.7);
+  animation: elasticPress 420ms cubic-bezier(0.3, 1.6, 0.5, 1);
+}
+@keyframes elasticPress { 0% { transform: scale(1); } 40% { transform: scale(0.955); } 75% { transform: scale(1.01); } 100% { transform: scale(0.985); } }
+
+.rateTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+  grid-column: 2 / 4;
+}
+
+.rateName {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.rateKey {
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 6px;
+  background: var(--r-key);
+  color: var(--r-ink);
+}
+
+.rateEffect {
+  grid-column: 2 / 4;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.25;
+  opacity: 0.86;
+}
+
+.effectShort { display: none; }
+
+.hard {
+  --r-bg: linear-gradient(160deg, #fff5f6, #ffe0e6);
+  --r-border: rgba(244, 63, 94, 0.36);
+  --r-ink: #9f1239;
+  --r-key: rgba(244, 63, 94, 0.14);
+  --r-shadow: rgba(225, 29, 72, 0.55);
+  --r-ring: rgba(244, 63, 94, 0.45);
+}
+
+.good {
+  --r-bg: linear-gradient(160deg, #f1f5ff, #dbe5ff);
+  --r-border: rgba(79, 110, 246, 0.38);
+  --r-ink: #1e40af;
+  --r-key: rgba(59, 130, 246, 0.14);
+  --r-shadow: rgba(37, 99, 235, 0.55);
+  --r-ring: rgba(59, 130, 246, 0.45);
+}
+
+.easy {
+  --r-bg: linear-gradient(160deg, #effdf6, #d1fae5);
+  --r-border: rgba(16, 185, 129, 0.4);
+  --r-ink: #065f46;
+  --r-key: rgba(16, 185, 129, 0.16);
+  --r-shadow: rgba(5, 150, 105, 0.55);
+  --r-ring: rgba(16, 185, 129, 0.45);
+}
+
+:global(.dark) .hard { --r-bg: linear-gradient(160deg, rgba(244, 63, 94, 0.32), rgba(136, 19, 55, 0.42)); --r-border: rgba(251, 113, 133, 0.32); --r-ink: #fecdd3; --r-key: rgba(251, 113, 133, 0.18); --r-shadow: rgba(0, 0, 0, 0.6); }
+:global(.dark) .good { --r-bg: linear-gradient(160deg, rgba(99, 102, 241, 0.4), rgba(30, 64, 175, 0.44)); --r-border: rgba(96, 165, 250, 0.34); --r-ink: #dbeafe; --r-key: rgba(96, 165, 250, 0.2); --r-shadow: rgba(0, 0, 0, 0.6); }
+:global(.dark) .easy { --r-bg: linear-gradient(160deg, rgba(16, 185, 129, 0.36), rgba(6, 95, 70, 0.44)); --r-border: rgba(52, 211, 153, 0.32); --r-ink: #d1fae5; --r-key: rgba(52, 211, 153, 0.18); --r-shadow: rgba(0, 0, 0, 0.6); }
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  animation: spin 700ms linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Session header + guide ──────────────────────────────────────────────────────── */
+
+.session {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin-bottom: 14px;
+}
+
+.sessionCount {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: rgb(var(--on-surface));
+  white-space: nowrap;
+}
+
+.sessionCount span { color: rgb(var(--on-surface-variant)); font-weight: 600; }
+
+.track {
+  flex: 1;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(99, 102, 241, 0.14);
+  overflow: hidden;
+}
+
+.trackFill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #6366f1, #06b6d4);
+  transition: width 400ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.guideButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(99, 102, 241, 0.22);
+  background: rgba(99, 102, 241, 0.06);
+  color: #4338ca;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: background-color 160ms ease;
+}
+
+.guideButton:hover { background: rgba(99, 102, 241, 0.14); }
+:global(.dark) .guideButton { color: #c7d2fe; border-color: rgba(165, 180, 252, 0.26); background: rgba(165, 180, 252, 0.08); }
+
+.dialog {
+  width: min(640px, calc(100vw - 24px));
+  max-height: min(88vh, 760px);
+  margin: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 24px;
+  color: #1e1b4b;
+  background: linear-gradient(170deg, #fffdf8, #f6f7ff);
+  box-shadow: 0 40px 80px -30px rgba(30, 27, 75, 0.55);
+  overflow: hidden;
+}
+
+.dialog::backdrop {
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(3px);
+}
+
+.dialog[open] { animation: dialogIn 200ms cubic-bezier(0.2, 0.8, 0.2, 1); }
+
+@keyframes dialogIn {
+  from { opacity: 0; transform: translate3d(0, 10px, 0) scale(0.985); }
+  to { opacity: 1; transform: none; }
+}
+
+:global(.dark) .dialog { color: #eef2ff; background: linear-gradient(170deg, #1a1c40, #11152f); }
+
+.dialogBody {
+  max-height: min(88vh, 760px);
+  overflow-y: auto;
+  padding: 26px clamp(18px, 4vw, 30px) 22px;
+}
+
+.dialogTitle {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.dialogLead {
+  margin: 6px 0 18px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #4c4f7a;
+}
+
+:global(.dark) .dialogLead { color: #b9c0ea; }
+
+.steps {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  counter-reset: step;
+}
+
+.steps li {
+  counter-increment: step;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 12px;
+  align-items: start;
+  font-size: 0.9875rem;
+  line-height: 1.55;
+}
+
+.steps li::before {
+  content: counter(step);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #fff;
+  background: linear-gradient(140deg, #4f46e5, #0891b2);
+}
+
+.steps strong { font-weight: 700; }
+
+.legend {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.legendRow {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--r-border);
+  background: var(--r-bg);
+  color: var(--r-ink);
+}
+
+.legendName { font-weight: 700; font-size: 1rem; }
+.legendText { font-size: 0.9125rem; line-height: 1.5; font-weight: 600; }
+.legendText small { display: block; font-size: 0.8125rem; font-weight: 600; opacity: 0.85; margin-top: 2px; }
+
+.shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4c4f7a;
+}
+
+:global(.dark) .shortcuts { color: #b9c0ea; }
+
+.shortcuts .kbd { background: rgba(99, 102, 241, 0.12); color: #3730a3; margin-right: 6px; }
+:global(.dark) .shortcuts .kbd { background: rgba(165, 180, 252, 0.16); color: #e0e7ff; }
+
+/* Stays in view while the guide scrolls on short screens. */
+.dialogFoot {
+  position: sticky;
+  bottom: -22px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 8px calc(-1 * clamp(18px, 4vw, 30px)) -22px;
+  padding: 14px clamp(18px, 4vw, 30px) 18px;
+  background: linear-gradient(180deg, rgba(246, 247, 255, 0) 0%, #f6f7ff 38%);
+}
+
+:global(.dark) .dialogFoot { background: linear-gradient(180deg, rgba(17, 21, 47, 0) 0%, #11152f 38%); }
+
+.primary {
+  min-height: 44px;
+  padding: 0 22px;
+  border-radius: 14px;
+  background: linear-gradient(140deg, #4338ca, #2563eb);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  box-shadow: 0 10px 22px -12px rgba(67, 56, 202, 0.7);
+  transition: transform 150ms ease, filter 150ms ease;
+}
+
+.primary:hover { filter: brightness(1.06); }
+.primary:active { transform: scale(0.98); }
+
+.closeX {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  opacity: 0.7;
+}
+
+.closeX:hover { opacity: 1; background: rgba(99, 102, 241, 0.1); }
+
+/* A rating that could not be saved: the card stays, the message says why, Thử lại repeats that same rating. */
+.reviewError {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding: 10px 12px 10px 16px;
+  border-radius: 16px;
+  border: 1px solid #fecdd3;
+  background: #fff1f2;
+  color: #9f1239;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+:global(.dark) .reviewError { border-color: rgba(251, 113, 133, 0.35); background: rgba(244, 63, 94, 0.12); color: #fecdd3; }
+
+.reviewRetry {
+  flex-shrink: 0;
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 12px;
+  background: #be123c;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.reviewRetry:disabled { opacity: 0.6; cursor: wait; }
+
+.reviewDismiss {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.reviewDismiss:hover { opacity: 1; background: rgba(190, 18, 60, 0.08); }
+
+/* ── Small screens ────────────────────────────────────────────────────────────────── */
+
+@media (max-width: 520px) {
+  .face { border-radius: 24px; }
+  .front { min-height: 360px; }
+  .ratingGrid { gap: 8px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .rate { padding: 8px 10px; min-height: 64px; border-radius: 20px; grid-template-columns: 1fr auto; }
+  .rateFace { display: none; }
+  .rateTop, .rateEffect { grid-column: 1 / 3; }
+  .rateName { font-size: 1rem; }
+  .rateEffect { font-size: 0.75rem; }
+  .effectLong { display: none; }
+  .effectShort { display: inline; }
+  .backHead { flex-direction: column; }
+  .backTools { align-self: stretch; justify-content: flex-end; }
+  .legendRow { grid-template-columns: 52px 1fr; }
+}
+
+/* ── Reduced motion: the card changes face at once; nothing drifts ────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .face { transition: none; }
+  .enter,
+  .spinner,
+  .rate[data-pending='true']::after,
+  .easy[data-pending='true'],
+  .stage[data-phase='exit'],
+  [data-tide] .stage[data-phase='exit'],
+  .stage[data-phase^='flipping'] .card,
+  .stage[data-phase^='flipping'] .flipLight,
+  .audioFront[aria-pressed='true']::after,
+  .tool[aria-pressed='true']::after,
+  .dialog[open] { animation: none; }
+  .rate,
+  .rate::before,
+  .flipButton,
+  .audioFront,
+  .tool { transition: none; }
+}

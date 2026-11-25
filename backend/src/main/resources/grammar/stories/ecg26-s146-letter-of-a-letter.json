@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s146-letter-of-a-letter",
+  "title": "Lá thư cho một chữ cái",
+  "level": "B1",
+  "topics": [
+    "one-and-ones",
+    "relative-clauses-defining"
+  ],
+  "scene": "library-mystery",
+  "summary": "Phím A của chiếc máy chữ cũ mắc kẹt đúng ngày Noa định gõ tên bạn Anna lên thư. Hộp phụ tùng có ba phím mang chữ A.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Noa",
+      "role": "Người học đánh máy"
+    },
+    {
+      "id": "b",
+      "name": "Tân",
+      "role": "Thợ máy chữ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Chỉ chiếc có khe hẹp vừa que gõ. Tân đặt cả ba lên khăn. Một phím bóng hơn hai chiếc kia nhưng rộng quá.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I need her name to come out whole.",
+          "vi": "Em muốn gõ đủ tên bạn ấy."
+        },
+        {
+          "who": "b",
+          "en": "Choose by the slot, not the shine.",
+          "vi": "Chọn theo khe chứ đừng theo độ bóng."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Noa gọi đúng chiếc phím cần người thợ đưa.",
+        "options": [
+          {
+            "t": "Pass me the ones with the widest slots.",
+            "note": "Ones gọi nhiều chiếc và widest chọn các khe rộng. Yêu cầu ấy đúng cú pháp nhưng sẽ không tìm được phím vừa que hẹp.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "Pass me the one that has the narrow slot.",
+            "note": "One thay cho key; mệnh đề that has ... chọn theo đặc điểm duy nhất phù hợp. The one nhắm một vật xác định.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Noa gõ được cả hai chữ A trong Anna. Em viết thêm mời bạn tới nghe máy chạy. Bức thư đầu tiên chỉ có tên và một lời mời mà máy phải chờ lâu mới nói được.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Two As were worth fixing it for.",
+          "vi": "Sửa cả máy vì hai chữ A cũng đáng."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Tân cho Noa thử các khe trên que mẫu. Em tự tìm được phím vừa, giữ chiếc rộng treo vào quai túi làm quà cho Anna. Bạn nhận được cả tên gõ trên giấy lẫn một chữ A bằng kim loại.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Now she can carry one of her letters.",
+          "vi": "Giờ bạn ấy mang theo được một chữ trong tên mình."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

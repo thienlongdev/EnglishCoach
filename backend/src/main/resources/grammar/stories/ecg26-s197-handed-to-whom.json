@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s197-handed-to-whom",
+  "title": "Gói quà còn treo nhầm quai",
+  "summary": "Hai chị em sinh đôi cùng nhận một kiện được ghi “the sister for whom the shoes were made”. Một người sở hữu tiệm giày, một người đi chân trái nhỏ hơn chân phải.",
+  "level": "B2",
+  "topics": [
+    "relative-with-prepositions"
+  ],
+  "scene": "airport",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Như",
+      "role": "Người phụ trách quầy"
+    },
+    {
+      "id": "b",
+      "name": "Nico",
+      "role": "Người nhận dạng đồ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Bên trong có hai chiếc thiết kế lệch nửa cỡ. Người thợ gửi thiệp chúc em vũ công múa đỡ đau chân.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One owns the shop; the other needs this pair.",
+          "vi": "Một người có cửa hàng; người kia mới cần đôi này."
+        },
+        {
+          "who": "b",
+          "en": "Follow the word for on the tag.",
+          "vi": "Nhìn theo chữ for trên nhãn đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Như gọi đúng người theo vai đã nêu.",
+        "options": [
+          {
+            "ok": true,
+            "t": "It's for the sister the shoes were made for.",
+            "note": "For whom hoặc the sister ... for đánh dấu người hưởng. Đôi lệch cỡ trùng đôi chân em vũ công.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "It's for the sister by whom the shoes were made.",
+            "note": "By whom chuyển sang người làm giày. Nhãn đang nói ai được làm cho, không nói ai chế tác.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Cô chị mở lối để em xỏ giày. Ngay ở băng chuyền, cô em xoay được một vòng không nghiêng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Both feet get a place in the picture.",
+          "vi": "Trong ảnh có chỗ cho cả hai bàn chân."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Người thợ nhận về một bức ảnh mà hai mũi giày cuối cùng cùng chạm đất.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Cô chị lật gót, nhận ra dấu búa thợ khác. Chị ngồi xuống buộc dây cho em như hồi còn nhỏ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The maker and the wearer needed different prepositions.",
+          "vi": "Người làm với người đi cần hai giới từ khác nhau."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Cô em tặng chị điệu xoay đầu thay lời cảm ơn; kiện đồ đến đúng người sau khi đôi tay chị chạm đúng việc.",
+      "end": true
+    }
+  ]
+}

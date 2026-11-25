@@ -1,0 +1,41 @@
+{
+  "id": "only-subject",
+  "title": "Only đầu câu có luôn gây đảo ngữ?",
+  "summary": "Trong báo cáo xử lý lỗi, bạn muốn giới hạn người có quyền đóng tệp, hoặc thời điểm họ được đóng. Xem only bổ nghĩa cho chủ ngữ hay trạng ngữ.",
+  "level": "C1",
+  "topics": [
+    "negative-inversion",
+    "focus-adverbs"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Phần bị giới hạn",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Người có quyền"
+        },
+        {
+          "id": "v2",
+          "label": "Điều kiện thời gian"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Only the chair may close the file.",
+      "vi": "Chỉ chủ tọa mới được đóng hồ sơ.",
+      "note": "Only the chair là cả cụm chủ ngữ. May đứng sau nó như trật tự thông thường. / Only inside the subject does not trigger inversion.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Only after the vote may the chair close the file.",
+      "vi": "Chỉ sau khi bỏ phiếu, chủ tọa mới được đóng hồ sơ.",
+      "note": "Only after the vote là trạng ngữ được đưa lên đầu. May đứng trước the chair trong mệnh đề chính. / A fronted restrictive adjunct triggers inversion in the main clause.",
+      "verdict": "ok"
+    }
+  }
+}

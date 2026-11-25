@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s045-wind-at-six",
+  "title": "Sáu giờ có gió",
+  "summary": "Kai chỉ còn một lượt xe về làng trước khi hội diều kết thúc. Tú nhìn lá cờ ở ga để quyết định có nên đi không.",
+  "level": "A2",
+  "topics": [
+    "real-conditionals",
+    "future-will"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Kai",
+      "role": "Người thả diều"
+    },
+    {
+      "id": "b",
+      "name": "Tú",
+      "role": "Bạn đi cùng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Luật của hai bạn là chỉ đi nếu cờ bay, tức trời có gió. Lúc nãy cờ rũ xuống. Bây giờ một góc vải bắt đầu nhấc lên.",
+      "say": [
+        {
+          "who": "a",
+          "en": "My kite is ready. Is the wind ready too?",
+          "vi": "Diều của mình sẵn sàng rồi. Gió sẵn sàng chưa?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Tell me our plan. We have one ticket each.",
+          "vi": "Nói lại kế hoạch nhé. Mỗi đứa chỉ có một vé thôi."
+        }
+      ],
+      "choice": {
+        "prompt": "Kai cần đặt gió làm điều kiện trước khi đi.",
+        "options": [
+          {
+            "t": "If the flag moves, we'll go.",
+            "note": "If the flag moves đặt ra phép thử. We'll go là quyết định phụ thuộc vào kết quả ấy.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "If we go, the flag will move.",
+            "note": "Câu đảo chiều điều kiện: việc đi thành điều kiện cho cờ bay. Hai bạn không điều khiển gió bằng vé xe.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Hai bạn đợi tới khi cả lá cờ căng ra. Họ lên xe với cuộn dây diều còn nguyên.",
+      "say": [
+        {
+          "who": "b",
+          "en": "There's our signal!",
+          "vi": "Tín hiệu của mình kìa!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Tú giả vờ bước lên xe. Lá cờ vẫn đứng một nhịp, rồi mới căng lên theo gió. Cả hai lúc ấy mới đi.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The wind decides, remember?",
+          "vi": "Gió quyết định mà, nhớ không?"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Họ tới hội khi mọi người đang cuộn dây về. Chỉ còn một em nhỏ nhìn lên. Cánh diều cuối ngày bay đủ cao để em chạy hết cánh đồng cùng cái bóng của nó.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One person is enough for a kite show.",
+          "vi": "Chỉ một khán giả cũng đủ cho buổi diễn diều."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

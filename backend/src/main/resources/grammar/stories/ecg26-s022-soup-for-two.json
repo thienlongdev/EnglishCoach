@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s022-soup-for-two",
+  "title": "Bát súp có hai cái bóng",
+  "summary": "Một bát súp trên bàn đổ hai cái bóng. Lan nghĩ mình đã quên bát thứ hai cho vị khách đang chờ.",
+  "level": "A1",
+  "topics": [
+    "numbers-dates-measures",
+    "there-is-there-are"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Lan",
+      "role": "Người dọn bàn"
+    },
+    {
+      "id": "b",
+      "name": "Oli",
+      "role": "Đầu bếp"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Mất điện nên bếp thắp hai cây nến ở hai đầu bàn. Một vị khách, một bát súp, nhưng hai bóng tròn hiện rõ trên khăn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I see two shadows. How many bowls do we need?",
+          "vi": "Tôi thấy hai cái bóng. Mình cần mấy bát nhỉ?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Count the people first.",
+          "vi": "Đếm người trước đã."
+        }
+      ],
+      "choice": {
+        "prompt": "Lan báo đúng số bát và số người cho bếp.",
+        "options": [
+          {
+            "t": "Two bowls for two people.",
+            "note": "Cả hai danh từ số nhiều đều đúng dạng. Tuy nhiên, trên bàn chỉ có một người; hai cái bóng không phải hai khách.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "One bowl for one person.",
+            "note": "One đi với danh từ đếm được số ít bowl và person. Số bóng không quyết định số suất ăn.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Oli che một ngọn nến. Một cái bóng biến mất nhưng bát súp vẫn ở đó.",
+      "say": [
+        {
+          "who": "b",
+          "en": "One light, one shadow now.",
+          "vi": "Giờ một ngọn đèn, một cái bóng."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Oli mang bát rỗng ra. Lan thử che một ngọn nến. Chỉ còn một bóng, hai người trả bát trống về bếp.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The candles tricked us.",
+          "vi": "Hai ngọn nến đánh lừa chúng ta rồi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Vị khách nâng thìa lên. Trên khăn có hai bóng thìa vẫy chào nhau. Ông bật cười và xin giữ cả hai ngọn nến đến hết bữa.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Our guest has two funny friends.",
+          "vi": "Khách của mình có hai người bạn vui tính."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

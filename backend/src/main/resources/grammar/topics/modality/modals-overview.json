@@ -1,0 +1,582 @@
+{
+  "schema": 1,
+  "slug": "modals-overview",
+  "version": 1,
+  "domain": "modality",
+  "order": 10,
+  "kind": "grammar",
+  "title": {
+    "vi": "Động từ khuyết thiếu: hình thức chung",
+    "en": "Modal verbs: form"
+  },
+  "level": "A2",
+  "levelBasis": "editorial",
+  "prerequisites": [],
+  "subtitle": {
+    "vi": "Một trợ động từ, nhiều cách nhìn sự việc",
+    "en": "One auxiliary, several ways to frame an event"
+  },
+  "aliases": [
+    "động từ khuyết thiếu",
+    "modal verbs",
+    "can must should",
+    "he cans",
+    "must to go",
+    "do you can"
+  ],
+  "objectives": [
+    "Dùng dạng gốc sau động từ khuyết thiếu cốt lõi",
+    "Tạo câu hỏi và phủ định không mượn do",
+    "Phân biệt khả năng, nghĩa vụ và suy đoán theo ngữ cảnh"
+  ],
+  "related": [
+    {
+      "slug": "can-could-ability",
+      "rel": "application"
+    },
+    {
+      "slug": "must-have-to",
+      "rel": "application"
+    },
+    {
+      "slug": "may-might-could-possibility",
+      "rel": "application"
+    }
+  ],
+  "exam": {
+    "ielts": "Giúp kiểm soát hình thức và lựa chọn thái độ khi nói, viết.",
+    "toeic": "Hỗ trợ hiểu yêu cầu, quyền hạn và dự đoán trong giao tiếp công việc."
+  },
+  "quick": {
+    "what": "Động từ khuyết thiếu (modal verb) như can, could, may, might, must, shall, should, will, would đứng trước dạng gốc của động từ. Chúng diễn đạt cách người nói nhìn sự việc: có thể, cần, nên hoặc dự đoán.",
+    "when": "Dùng để nói khả năng, xin phép, nêu nghĩa vụ, lời khuyên hoặc suy luận. Một từ có thể có nhiều nghĩa theo ngữ cảnh.",
+    "examples": [
+      {
+        "en": "She can repair it.",
+        "vi": "Cô ấy có thể sửa nó."
+      },
+      {
+        "en": "She must wear gloves.",
+        "vi": "Cô ấy phải đeo găng tay."
+      },
+      {
+        "en": "She might be busy.",
+        "vi": "Có lẽ cô ấy đang bận."
+      }
+    ],
+    "remember": "Không thêm -s, không thêm to sau modal cốt lõi, không mượn do để hỏi."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "So sánh She repairs bikes với She can repair bikes. Repairs nói việc cô ấy làm; can repair nêu khả năng. Can không thêm -s với she, còn repair trở về dạng gốc."
+    },
+    {
+      "type": "formula",
+      "lines": [
+        {
+          "label": "Khẳng định",
+          "parts": [
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "modal",
+              "role": "MOD"
+            },
+            {
+              "t": "dạng gốc",
+              "role": "V"
+            }
+          ]
+        },
+        {
+          "label": "Phủ định",
+          "parts": [
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "modal",
+              "role": "MOD"
+            },
+            {
+              "t": "not",
+              "role": "NEG"
+            },
+            {
+              "t": "dạng gốc",
+              "role": "V"
+            }
+          ]
+        },
+        {
+          "label": "Câu hỏi",
+          "parts": [
+            {
+              "t": "modal",
+              "role": "MOD"
+            },
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "dạng gốc",
+              "role": "V"
+            },
+            {
+              "t": "?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "head": [
+        "Ý nghĩa",
+        "Ví dụ",
+        "Điều người nói muốn nêu"
+      ],
+      "rows": [
+        [
+          "Khả năng",
+          "I can swim.",
+          "Biết hoặc có khả năng bơi."
+        ],
+        [
+          "Cho phép",
+          "You may enter.",
+          "Được phép vào."
+        ],
+        [
+          "Nghĩa vụ",
+          "You must sign here.",
+          "Cần ký ở đây."
+        ],
+        [
+          "Lời khuyên",
+          "You should rest.",
+          "Nghỉ là điều nên làm."
+        ],
+        [
+          "Khả năng xảy ra",
+          "It might rain.",
+          "Mưa là một khả năng."
+        ]
+      ],
+      "caption": "Không coi mỗi modal chỉ có một bản dịch cố định."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "transform",
+        "steps": [
+          {
+            "label": "Khẳng định",
+            "sentence": "The guests can wait."
+          },
+          {
+            "label": "Phủ định",
+            "sentence": "The guests cannot wait."
+          },
+          {
+            "label": "Câu hỏi",
+            "sentence": "Can the guests wait?"
+          }
+        ]
+      },
+      "caption": "Can tự mang phủ định và đảo câu hỏi.",
+      "alt": "The guests can wait đổi thành The guests cannot wait hoặc Can the guests wait. Không dùng do trước can."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "You must leave your bag here.",
+            "vi": "Bạn phải để túi ở đây."
+          },
+          "b": {
+            "en": "You must be tired.",
+            "vi": "Chắc hẳn bạn mệt."
+          },
+          "diff": "Must đầu nêu nghĩa vụ; must sau nêu suy luận. Cùng hình thức không bảo đảm cùng nghĩa."
+        }
+      ]
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "Should we call the organiser?",
+          "vi": "Chúng ta có nên gọi người tổ chức không?"
+        },
+        {
+          "en": "We shouldn't block the door.",
+          "vi": "Chúng ta không nên chắn cửa."
+        },
+        {
+          "en": "A: Can you stay? B: Yes, I can.",
+          "vi": "A: Bạn ở lại được không? B: Có."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Cannot thường viết liền; can't là dạng rút gọn. Những dạng như ought to, have to và be able to có cấu trúc riêng, không áp nguyên mọi quy tắc modal cốt lõi cho chúng."
+    },
+    {
+      "type": "try",
+      "exercise": "mov-04"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Could, might, would và should không luôn chỉ quá khứ. Could you help? có thể là lời nhờ ở hiện tại; It might rain tomorrow nói tương lai. Ý thời gian đến từ cả cấu trúc và ngữ cảnh."
+    },
+    {
+      "type": "p",
+      "vi": "Modal cốt lõi không có đầy đủ các dạng như động từ thường. Không nói to must hoặc musting. Khi cần cấu trúc khác, chọn cách diễn đạt phù hợp như will have to hoặc to be able to, nhưng nghĩa không phải lúc nào cũng thay thế hoàn toàn."
+    },
+    {
+      "type": "p",
+      "vi": "Trong tiếng Anh chuẩn thông dụng, không đặt hai modal cốt lõi nối nhau như will can. Có thể nói will be able to. Những chuỗi đặc thù vùng không phải mẫu chuẩn đích của bài này."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "mov-s",
+      "wrong": "She cans drive.",
+      "right": "She can drive.",
+      "why": "Can không thêm -s theo chủ ngữ."
+    },
+    {
+      "id": "mov-to",
+      "wrong": "We must to wait.",
+      "right": "We must wait.",
+      "why": "Sau must dùng dạng gốc không to."
+    },
+    {
+      "id": "mov-do",
+      "wrong": "Do you should leave?",
+      "right": "Should you leave?",
+      "why": "Đưa should ra trước chủ ngữ, không mượn do."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Sau modal có luôn là một động từ hành động không?",
+      "a": "Không. Be cũng là dạng gốc: might be late, must be tired."
+    },
+    {
+      "q": "Could luôn là quá khứ của can không?",
+      "a": "Không. Nó có thể dùng cho quá khứ, lời nhờ lịch sự hoặc khả năng xảy ra tùy cấu trúc."
+    },
+    {
+      "q": "Have to có phải theo đúng mẫu must không?",
+      "a": "Không. Have to biến đổi thành has to, had to và thường mượn do trong câu hỏi hoặc phủ định."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "mov-01",
+      "level": "A2",
+      "use": "practice",
+      "skill": "recognition",
+      "type": "choice",
+      "prompt": "Chọn câu đúng về hình thức.",
+      "stem": "Nói cô ấy biết lái xe.",
+      "options": [
+        {
+          "t": "She can drive.",
+          "ok": true,
+          "note": "Can không đổi, drive là dạng gốc."
+        },
+        {
+          "t": "She cans drive.",
+          "note": "Can không thêm -s.",
+          "tag": "modal-s"
+        },
+        {
+          "t": "She can to drive.",
+          "note": "Không thêm to sau can.",
+          "tag": "modal-to"
+        }
+      ],
+      "explain": "Can đi với dạng gốc drive, không thêm -s hoặc to."
+    },
+    {
+      "id": "mov-02",
+      "level": "A2",
+      "use": "practice",
+      "skill": "recognition",
+      "type": "match",
+      "prompt": "Nối câu với nghĩa rõ trong ngữ cảnh.",
+      "pairs": [
+        {
+          "a": "I can swim.",
+          "b": "Khả năng bơi"
+        },
+        {
+          "a": "You must sign here.",
+          "b": "Yêu cầu ký"
+        },
+        {
+          "a": "You should rest.",
+          "b": "Lời khuyên nghỉ"
+        }
+      ],
+      "explain": "Ý nghĩa modal phải được đọc cùng phần nội dung và tình huống."
+    },
+    {
+      "id": "mov-03",
+      "level": "A2",
+      "use": "practice",
+      "skill": "recognition",
+      "type": "classify",
+      "prompt": "Xếp theo dạng câu.",
+      "cats": [
+        "Khẳng định",
+        "Phủ định",
+        "Câu hỏi"
+      ],
+      "items": [
+        {
+          "t": "We might stay.",
+          "cat": "Khẳng định"
+        },
+        {
+          "t": "We must not enter.",
+          "cat": "Phủ định"
+        },
+        {
+          "t": "Should we wait?",
+          "cat": "Câu hỏi"
+        }
+      ],
+      "explain": "Phủ định đặt not sau modal; câu hỏi đặt modal trước chủ ngữ."
+    },
+    {
+      "id": "mov-04",
+      "level": "A2",
+      "use": "practice",
+      "skill": "form",
+      "type": "cloze",
+      "prompt": "Điền dạng gốc của từ trong ngoặc.",
+      "stem": "She should {1} (rest). They might {2} (be) late.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "rest"
+          ],
+          "closed": true
+        },
+        "2": {
+          "accept": [
+            "be"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Sau should và might dùng rest, be; không chia theo chủ ngữ."
+    },
+    {
+      "id": "mov-05",
+      "level": "A2",
+      "use": "practice",
+      "skill": "form",
+      "type": "order",
+      "prompt": "Xếp câu hỏi, bắt đầu bằng Should.",
+      "tokens": [
+        "Should",
+        "we",
+        "call",
+        "a taxi"
+      ],
+      "accept": [
+        [
+          "Should",
+          "we",
+          "call",
+          "a taxi"
+        ]
+      ],
+      "end": "?",
+      "explain": "Should đứng trước we, tiếp theo là dạng gốc call."
+    },
+    {
+      "id": "mov-06",
+      "level": "A2",
+      "use": "practice",
+      "skill": "production",
+      "type": "transform",
+      "prompt": "Đổi thành phủ định.",
+      "source": "They should wait.",
+      "instruction": "Giữ các từ và thêm not, có thể rút gọn.",
+      "accept": [
+        "They should not wait",
+        "They shouldn't wait"
+      ],
+      "model": "They shouldn't wait.",
+      "explain": "Not đứng sau should; shouldn't là dạng rút gọn hợp lệ."
+    },
+    {
+      "id": "mov-07",
+      "level": "A2",
+      "use": "practice",
+      "skill": "recognition",
+      "type": "error",
+      "prompt": "Sửa dạng động từ sau modal.",
+      "segments": [
+        {
+          "t": "The visitor must"
+        },
+        {
+          "t": "wears",
+          "bad": true,
+          "fix": [
+            "wear"
+          ],
+          "note": "Sau must dùng wear.",
+          "tag": "aux-main-form"
+        },
+        {
+          "t": "a badge."
+        }
+      ],
+      "explain": "Must không đi với wears; dùng dạng gốc wear."
+    },
+    {
+      "id": "mov-08",
+      "level": "A2",
+      "use": "practice",
+      "skill": "production",
+      "type": "open",
+      "prompt": "Viết ba câu rồi tự đối chiếu.",
+      "task": "Nói một khả năng của bạn, một điều cần làm và một lời khuyên cho bạn bè.",
+      "model": [
+        "I can cook.",
+        "I must finish this form.",
+        "You should take a break."
+      ],
+      "checklist": [
+        "Modal không thêm -s",
+        "Dạng gốc theo sau",
+        "Ý nghĩa phù hợp tình huống"
+      ],
+      "explain": "Nội dung có thể khác mẫu; bài tự viết không chấm tự động."
+    },
+    {
+      "id": "mov-09",
+      "level": "A2",
+      "use": "check",
+      "skill": "form",
+      "type": "cloze",
+      "prompt": "Điền dạng của động từ trong ngoặc.",
+      "stem": "Can she {1} (help)? We must {2} (leave).",
+      "blanks": {
+        "1": {
+          "accept": [
+            "help"
+          ],
+          "closed": true
+        },
+        "2": {
+          "accept": [
+            "leave"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Sau can và must đều cần dạng gốc."
+    },
+    {
+      "id": "mov-10",
+      "level": "A2",
+      "use": "check",
+      "skill": "production",
+      "type": "transform",
+      "prompt": "Đổi thành câu hỏi có hoặc không.",
+      "source": "The guests can enter.",
+      "instruction": "Giữ các từ, chỉ đổi trật tự và dấu câu.",
+      "accept": [
+        "Can the guests enter"
+      ],
+      "model": "Can the guests enter?",
+      "explain": "Can ra trước chủ ngữ; không thêm do."
+    },
+    {
+      "id": "mov-11",
+      "level": "A2",
+      "use": "check",
+      "skill": "recognition",
+      "type": "multi",
+      "prompt": "Chọn tất cả câu đúng.",
+      "stem": "Xét hình thức modal cốt lõi.",
+      "options": [
+        {
+          "t": "She might be late.",
+          "ok": true,
+          "note": "Might đi với be."
+        },
+        {
+          "t": "We should go.",
+          "ok": true,
+          "note": "Should đi với go."
+        },
+        {
+          "t": "He musts wait.",
+          "note": "Must không thêm -s.",
+          "tag": "modal-s"
+        },
+        {
+          "t": "They will can help.",
+          "note": "Trong chuẩn đích dùng will be able to help.",
+          "tag": "double-modal"
+        }
+      ],
+      "explain": "Modal cốt lõi không thêm -s và không nối trực tiếp hai modal theo mẫu này."
+    },
+    {
+      "id": "mov-12",
+      "level": "A2",
+      "use": "check",
+      "skill": "recognition",
+      "type": "choice",
+      "prompt": "Chọn nhận xét đúng.",
+      "stem": "Could you help me now?",
+      "options": [
+        {
+          "t": "Có thể là lời nhờ ở hiện tại.",
+          "ok": true,
+          "note": "Could làm lời nhờ bớt trực tiếp."
+        },
+        {
+          "t": "Chắc chắn kể việc đã xảy ra.",
+          "note": "Now và chức năng lời nhờ cho thấy không phải kể quá khứ.",
+          "tag": "modal-time"
+        }
+      ],
+      "explain": "Không suy thời gian chỉ từ hình thức could."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham khảo chung: hình thức và ý nghĩa modal."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham khảo chung: trợ động từ khuyết thiếu."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

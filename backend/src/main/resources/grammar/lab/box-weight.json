@@ -1,0 +1,41 @@
+{
+  "id": "box-weight",
+  "title": "Nặng nhưng nhấc được không?",
+  "summary": "Bạn phải nhấc một thùng giấy lên kệ. Đổi từ nhấn mức độ sang từ báo quá giới hạn rồi đoán kết quả.",
+  "level": "A2",
+  "topics": [
+    "enough-too",
+    "degree-modifiers"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Mức so với sức người",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Rất nặng"
+        },
+        {
+          "id": "v2",
+          "label": "Quá nặng"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The box is very heavy.",
+      "vi": "Thùng rất nặng.",
+      "note": "Very heavy chỉ mức nặng cao. Câu vẫn để ngỏ khả năng nhấc thùng. / Very increases degree without setting a limit.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The box is too heavy for me to lift.",
+      "vi": "Thùng quá nặng nên tôi không nhấc nổi.",
+      "note": "For me to lift xác định giới hạn sức của chính người nói. / Too marks a limit for this person.",
+      "verdict": "ok"
+    }
+  }
+}

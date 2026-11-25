@@ -1,0 +1,279 @@
+{
+  "schema": 1,
+  "slug": "what-is-a-sentence",
+  "version": 2,
+  "domain": "foundations",
+  "order": 10,
+  "kind": "grammar",
+  "title": { "vi": "Câu, cụm từ và mệnh đề", "en": "Sentences, phrases and clauses" },
+  "subtitle": { "vi": "Ba cái tên cho ba khối: nhóm từ nào đứng được một mình, nhóm từ nào còn thiếu", "en": "Three names for three building blocks: which groups of words can stand alone, and which are missing something" },
+  "aliases": ["sentence", "phrase", "clause", "câu là gì", "mệnh đề là gì", "cụm từ là gì", "fragment", "câu thiếu chủ ngữ", "câu thiếu động từ", "main clause", "dependent clause", "independent clause", "mệnh đề chính mệnh đề phụ"],
+  "level": "preA1",
+  "levelBasis": "editorial",
+  "uses": [
+    { "level": "preA1", "vi": "Nhìn một nhóm từ và biết nó đã là một câu chưa." },
+    { "level": "A2", "vi": "Gọi đúng tên mệnh đề chính và mệnh đề phụ khi học because, when, if." },
+    { "level": "B1", "vi": "Tự phát hiện mảnh câu và câu nối sai khi viết lại bài của mình." }
+  ],
+  "objectives": [
+    "Phân biệt cụm từ, mệnh đề và câu",
+    "Tìm chủ ngữ và động từ trong một mệnh đề đơn giản",
+    "Biết một câu hoàn chỉnh trong văn viết thường cần chủ ngữ và động từ, trừ câu mệnh lệnh",
+    "Nhận ra mệnh đề phụ thuộc mở đầu bằng because, when, if cần nối với mệnh đề chính trong câu đầy đủ ở bài viết"
+  ],
+  "prerequisites": [],
+  "related": [
+    { "slug": "subject-and-predicate", "rel": "more" },
+    { "slug": "capitals-and-end-punctuation", "rel": "more" },
+    { "slug": "parts-of-speech", "rel": "more" },
+    { "slug": "imperatives", "rel": "special" },
+    { "slug": "subordination", "rel": "more" },
+    { "slug": "fragments-and-run-ons", "rel": "more" }
+  ],
+  "exam": {
+    "ielts": "Tiêu chí Grammatical Range and Accuracy của Writing và Speaking tính cả độ chính xác. Câu thiếu chủ ngữ hoặc thiếu động từ là lỗi rất đáng tránh.",
+    "toeic": "Part 5 và Part 6 hỏi bạn chọn từ điền vào chỗ trống. Muốn chọn đúng, bạn cần nhìn ra chỗ trống đang thiếu chủ ngữ, động từ hay chỉ là một cụm từ."
+  },
+  "quick": {
+    "what": "Cụm từ (phrase) là một đơn vị xoay quanh từ chính và làm việc như một khối. Mệnh đề hữu hạn (finite clause) ở các ví dụ đầu bài có chủ ngữ và động từ chia thì. Câu đầy đủ thông thường gồm ít nhất một mệnh đề chính; lời đáp ngắn và mệnh lệnh có cách tổ chức riêng.",
+    "when": "Khi soát câu kể đầy đủ trong bài viết, tìm chủ ngữ, động từ chia thì và các phần động từ cần đi cùng. Đây là phép kiểm tra ban đầu; không áp dụng như định nghĩa tuyệt đối cho mệnh lệnh, lời đáp ngắn hoặc mệnh đề không chia thì.",
+    "examples": [
+      { "en": "the old market", "vi": "chợ cũ (cụm từ: có một người hay vật, chưa nói gì về nó)" },
+      { "en": "[S|The old market] [V|opens] [T|at five].", "vi": "Chợ cũ mở cửa lúc năm giờ. (câu có một mệnh đề)" },
+      { "en": "because [S|it] [V|rained] all night", "vi": "vì trời mưa suốt đêm (mệnh đề phụ thuộc: có chủ ngữ và động từ nhưng nghe như còn thiếu nửa câu)" }
+    ],
+    "remember": "Trong các ví dụ đầu bài, phân biệt cụm từ với mệnh đề hữu hạn, rồi xét mệnh đề có đứng độc lập được không."
+  },
+  "lesson": [
+    { "type": "p", "vi": "Câu tiếng Anh được dựng từ vài lớp: **từ**, **cụm từ**, **mệnh đề**, rồi **câu**. Biết tên các lớp này giúp bạn nói được vì sao một nhóm từ nghe như còn thiếu, và cần thêm gì để nó đứng được một mình." },
+    { "type": "h", "vi": "Cụm từ (phrase): một khối chưa nói trọn điều gì" },
+    { "type": "p", "vi": "Cụm từ gồm một từ chính và có thể có các từ phụ thuộc, cùng làm việc như một khối. Các cụm đơn giản dưới đây chưa có cấu trúc mệnh đề hữu hạn độc lập. Tuy nhiên, cụm từ có thể chứa mệnh đề ở bên trong; xem phần sâu." },
+    { "type": "examples", "items": [
+      { "en": "my younger sister", "vi": "em gái tôi", "note": "Cụm danh từ (noun phrase), xoay quanh sister." },
+      { "en": "in the morning", "vi": "vào buổi sáng", "note": "Cụm giới từ (prepositional phrase): giới từ in và cụm danh từ the morning." },
+      { "en": "very tired", "vi": "rất mệt", "note": "Cụm tính từ (adjective phrase), xoay quanh tired." },
+      { "en": "has been waiting", "vi": "đã đợi", "note": "Cụm động từ (verb phrase): nhiều từ cùng làm một động từ. Vẫn chưa nói ai đợi." }
+    ] },
+    { "type": "p", "vi": "Mỗi khối trên đều có ích, nhưng nếu hỏi \"Ai làm gì?\" thì không khối nào tự trả lời trọn." },
+    { "type": "h", "vi": "Mệnh đề (clause): có ai đó làm gì" },
+    { "type": "p", "vi": "Ở bước đầu, ta xét **mệnh đề hữu hạn** (finite clause) trong câu kể đầy đủ: có chủ ngữ và động từ chia thì. Động từ nói về hành động, tình trạng hoặc quan hệ. Không phải mọi mệnh đề đều có chủ ngữ viết ra hay động từ chia thì; mệnh lệnh và mệnh đề không chia thì được phân biệt ở phần sâu." },
+    { "type": "formula", "parts": [ { "t": "chủ ngữ", "role": "S" }, { "t": "động từ", "role": "V" } ], "note": "Đây chỉ là hai thành phần cần tìm đầu tiên trong các câu kể hữu hạn đang học. Động từ có thể cần thêm tân ngữ hoặc bổ ngữ: She bought a bicycle, She is tired. Không coi mọi phần sau động từ là tùy chọn." },
+    { "type": "examples", "items": [
+      { "en": "[S|The bus] [V|stopped].", "vi": "Xe buýt dừng lại." },
+      { "en": "[S|My sister] [V|works] in a bank.", "vi": "Chị tôi làm việc ở ngân hàng." },
+      { "en": "[S|We] [V|are] hungry.", "vi": "Chúng tôi đói rồi.", "note": "Với are, phần hungry nói về tình trạng của we." }
+    ] },
+    { "type": "diagram",
+      "spec": { "kind": "clauses",
+        "tree": { "t": "I stayed home because it was raining.", "kind": "main", "label": "Một câu, hai mệnh đề", "children": [
+          { "t": "I stayed home", "kind": "main", "label": "Mệnh đề chính: đứng một mình vẫn trọn ý" },
+          { "t": "because it was raining", "kind": "sub", "label": "Mệnh đề phụ thuộc: có chủ ngữ it và động từ was, nhưng cần mệnh đề chính đi kèm" }
+        ] } },
+      "caption": "Một câu có thể gồm nhiều mệnh đề. Mệnh đề chính đứng được một mình; mệnh đề phụ thuộc thì không.",
+      "alt": "Sơ đồ cây: câu I stayed home because it was raining chia thành hai mệnh đề. Mệnh đề chính I stayed home đứng một mình được. Mệnh đề phụ thuộc because it was raining có chủ ngữ và động từ nhưng cần mệnh đề chính." },
+    { "type": "p", "vi": "Mệnh đề phụ thuộc (dependent clause) mở đầu bằng một từ nối như `because`, `when`, `if`, `although`. Từ nối này làm người nghe chờ nửa còn lại: nghe \"because it was raining\" mà không có gì tiếp theo, bạn sẽ hỏi \"rồi sao?\"." },
+    { "type": "h", "vi": "Câu (sentence): đã nói xong một ý" },
+    { "type": "p", "vi": "Trong văn viết thông thường, một câu hoàn chỉnh có ít nhất một mệnh đề chính, bắt đầu bằng chữ hoa và kết thúc bằng dấu chấm, dấu hỏi hoặc dấu chấm than. Một câu có thể gồm một mệnh đề hoặc nhiều mệnh đề." },
+    { "type": "table",
+      "caption": "Cùng một chủ đề, bốn nhóm từ khác nhau",
+      "head": ["Nhóm từ", "Loại", "Vì sao"],
+      "rows": [
+        ["in front of the school", "Cụm từ", "Giới từ và danh từ, chưa nói ai làm gì."],
+        ["the red motorbike", "Cụm từ", "Chỉ có một vật, chưa có động từ."],
+        ["The red motorbike is mine.", "Câu, một mệnh đề", "Có chủ ngữ `the red motorbike` và động từ `is`, nói trọn một ý."],
+        ["when the bell rang", "Mệnh đề phụ thuộc", "Có chủ ngữ `the bell` và động từ `rang`, nhưng `when` làm nó chờ một mệnh đề chính."],
+        ["The students left when the bell rang.", "Câu, hai mệnh đề", "Mệnh đề chính cộng mệnh đề phụ thuộc."]
+      ] },
+    { "type": "h", "vi": "Một nhóm từ có phải là câu không?" },
+    { "type": "diagram",
+      "spec": { "kind": "flow", "start": "verb",
+        "nodes": {
+          "verb": { "q": "Nhóm từ có một động từ làm động từ chính không? (is, works, went, can swim). Không tính dạng đứng lẻ như going, to go, gone.", "yes": "subject", "no": "phrase" },
+          "subject": { "q": "Có chủ ngữ không? Hoặc đây là lời ra lệnh, nhờ vả với người nghe là bạn (Close the window.)?", "yes": "alone", "no": "nosubject" },
+          "alone": { "q": "Đọc to một mình, người nghe có thấy còn thiếu nửa câu không? (because it rained: còn thiếu)", "yes": "dependent", "no": "sentence" },
+          "phrase": { "end": "Chưa phải câu kể đầy đủ", "note": "Có thể là cụm từ như my best friend, very tired, hoặc mệnh đề không chia thì như to leave early. Bản thân chúng chưa phải câu kể độc lập." },
+          "nosubject": { "end": "Thiếu chủ ngữ", "note": "Is very hot. Sửa: It is very hot." },
+          "dependent": { "end": "Mệnh đề phụ thuộc", "note": "because it rained. Viết riêng như một câu thì thành mảnh câu; hãy gắn nó vào một mệnh đề chính." },
+          "sentence": { "end": "Câu hoàn chỉnh", "note": "Có động từ, có chủ ngữ (hoặc là lệnh), đứng một mình vẫn trọn ý." }
+        } },
+      "caption": "Phép kiểm tra ban đầu cho câu kể đầy đủ, có nhánh riêng cho mệnh lệnh; không phải định nghĩa mọi câu hay mệnh đề.",
+      "alt": "Kiểm tra ban đầu cho câu kể đầy đủ: tìm động từ chia thì và chủ ngữ, rồi xét câu có độc lập được không. Không có động từ chia thì chưa đủ để kết luận là cụm từ: còn có mệnh đề không chia thì. Mệnh lệnh có thể không viết chủ ngữ." },
+    { "type": "try", "exercise": "wias-01" },
+    { "type": "note", "kind": "vn", "vi": "Tiếng Việt thường bỏ chủ ngữ khi ngữ cảnh đã rõ: \"Mưa to quá\", \"Đói rồi\", \"Đi chưa?\". Tiếng Anh trong câu khẳng định thường cần chủ ngữ được nói ra, nên người học có thể viết \"Is raining\" hoặc \"Is very hot today\". Với thời tiết, giờ giấc và khoảng cách, chủ ngữ là `it`: It is raining. It is five o'clock." },
+    { "type": "note", "kind": "tip", "vi": "Khi nói chuyện, người ta vẫn dùng lời đáp rất ngắn như Yes. Thanks. Not yet. Đó là cách nói bình thường, không phải lỗi. Bài này nói về câu đầy đủ, thứ bạn cần khi viết và khi thi." }
+  ],
+  "deep": [
+    { "type": "h", "vi": "Câu mệnh lệnh không viết chủ ngữ" },
+    { "type": "p", "vi": "Sit down. Open the window. Những câu này hoàn chỉnh dù không có chủ ngữ được viết ra. Người nghe hiểu chủ ngữ là you. Đây là ngoại lệ có quy tắc, không phải lỗi thiếu chủ ngữ; bài Câu mệnh lệnh nói riêng về nó." },
+    { "type": "examples", "items": [
+      { "en": "[V|Open] [O|the window], please.", "vi": "Làm ơn mở cửa sổ ra." }
+    ] },
+    { "type": "h", "vi": "Mảnh câu dùng có chủ ý" },
+    { "type": "p", "vi": "Lời nói, biển báo, tiêu đề báo, quảng cáo và văn xuôi hư cấu có rất nhiều đơn vị không phải mệnh đề đầy đủ: No smoking. Coffee? Not yet. Sách ngữ pháp tiếng Anh gọi nhiều đơn vị như vậy là minor sentence (câu không đủ cấu trúc chủ ngữ và động từ). Chúng không phải lỗi. Khi viết bài thi hoặc văn học thuật, bạn nên viết câu đầy đủ để an toàn." },
+    { "type": "h", "vi": "Động từ phải đủ để làm động từ chính" },
+    { "type": "p", "vi": "Dạng -ing, dạng to + động từ và phân từ đứng riêng không làm vị ngữ hữu hạn của câu kể đầy đủ. She going to school thiếu be: She is going to school. Nhưng không vì vậy mà mọi nhóm này chỉ là cụm từ. Trong I plan to leave early, to leave early là mệnh đề không chia thì (non-finite clause), với chủ ngữ hiểu theo I. Các sách có thể phân tích thành phần nhỏ bên trong khác nhau. Go! là mệnh lệnh dùng dạng gốc." },
+    { "type": "h", "vi": "Cụm từ và mệnh đề lồng vào nhau" },
+    { "type": "p", "vi": "Thứ tự từ, cụm từ, mệnh đề, câu chỉ là cách học ban đầu, không phải một cái thang một chiều. Cụm danh từ có thể chứa cả một mệnh đề: trong `the man who lives next door`, cả khối là một cụm danh từ, và `who lives next door` là một mệnh đề nằm bên trong. Ngược lại, mỗi mệnh đề lại chứa các cụm từ làm chủ ngữ và trạng ngữ của nó." },
+    { "type": "h", "vi": "Dấu câu không tạo ra câu" },
+    { "type": "p", "vi": "Viết hoa và chấm cuối câu không biến cụm từ thành câu: The red motorbike in front of the school. vẫn thiếu động từ. Ngược lại, hai mệnh đề chính chỉ nối bằng dấu phẩy, như I was tired, I went to bed, thường được xem là lỗi trong văn viết chuẩn (comma splice). Sửa bằng dấu chấm, bằng từ nối như so, hoặc bằng dấu chấm phẩy. Tác giả văn học đôi khi cố ý dùng kiểu nối này để tạo nhịp." },
+    { "type": "note", "kind": "register", "vi": "And hoặc but có thể mở đầu một câu đầy đủ: But we stayed. Từ mở đầu đó không biến câu thành mảnh câu. Because có thể mở một mệnh đề phụ thuộc dùng riêng như lời đáp trong hội thoại; khi viết câu đầy đủ trong văn học thuật, thường nối nó với mệnh đề chính." }
+  ],
+  "mistakes": [
+    { "id": "wias-no-subject", "wrong": "Is very hot today.", "right": "It is very hot today.", "why": "Câu khẳng định tiếng Anh thường cần chủ ngữ được nói ra. Với thời tiết, chủ ngữ là it.", "vn": "Tiếng Việt có thể nói \"Hôm nay nóng quá\" mà không cần chủ ngữ, nên người học có thể mang cách nói đó sang tiếng Anh." },
+    { "id": "wias-no-verb", "wrong": "My brother very tall.", "right": "My brother is very tall.", "why": "Very tall là cụm tính từ, không phải động từ. Câu cần động từ be để nối chủ ngữ với tình trạng của nó.", "vn": "Tiếng Việt nói \"Anh tôi rất cao\" mà không có từ nào như \"là\" hay \"thì\"; tiếng Anh thì cần động từ." },
+    { "id": "wias-dependent-alone", "wrong": "I was late. Because the bus broke down.", "right": "I was late because the bus broke down.", "why": "Because the bus broke down là mệnh đề phụ thuộc, nó chờ một mệnh đề chính. Trong bài viết chuẩn, hãy nối nó vào câu trước.", "vn": "Trong tiếng Việt, \"Vì xe buýt hỏng.\" có thể đứng riêng như một lời giải thích; tiếng Anh viết chuẩn thì không nên." },
+    { "id": "wias-bare-ing", "wrong": "She going to school.", "right": "She is going to school.", "why": "Dạng -ing một mình không làm động từ chính. Cần thêm is để có động từ chia thì.", "vn": "Tiếng Việt nói \"Cô ấy đang đi học\" với từ đang đứng trước động từ, nên người học có thể nghĩ dạng -ing đã đủ làm động từ chính." }
+  ],
+  "faq": [
+    { "q": "Một câu có phải luôn có cả chủ ngữ và động từ không?", "a": "Trong văn viết thông thường thì có. Hai ngoại lệ chính: câu mệnh lệnh như Sit down, nơi chủ ngữ you được hiểu ngầm; và các lời đáp ngắn trong hội thoại như Thanks hay Not yet, vốn không phải lỗi." },
+    { "q": "Mệnh đề khác câu ở chỗ nào?", "a": "Các ví dụ cơ bản ở đây dùng mệnh đề hữu hạn với chủ ngữ và động từ chia thì. I stayed home because it rained có hai mệnh đề hữu hạn trong một câu. Còn có mệnh đề không chia thì, như to leave early trong I plan to leave early; chủ ngữ của nó có thể được hiểu từ ngữ cảnh." },
+    { "q": "Cụm từ nào cũng không có động từ phải không?", "a": "Không. Has been waiting là cụm động từ. Cụm danh từ còn có thể chứa mệnh đề, như the cyclist who won. Khi phân biệt, xét cấu trúc và chức năng của cả khối; đừng chỉ hỏi có từ giống động từ hay có chủ ngữ viết ra không." },
+    { "q": "Có phải mọi mệnh đề phụ thuộc đều bắt đầu bằng because, when, if?", "a": "Không. Mệnh đề phụ thuộc hữu hạn có thể có từ nối như because, although, that hoặc đại từ quan hệ như who. Có loại không viết từ nối ra; mệnh đề không chia thì như to leave early cũng có cấu trúc khác. Các từ because, when, if chỉ là những mẫu đầu tiên trong bài." }
+  ],
+  "exercises": [
+    { "id": "wias-01", "type": "classify", "level": "preA1", "use": "practice", "skill": "recognition",
+      "prompt": "Xếp mỗi nhóm từ vào đúng loại.",
+      "cats": ["Cụm từ", "Câu hoàn chỉnh"],
+      "items": [
+        { "t": "my younger sister", "cat": "Cụm từ" },
+        { "t": "My younger sister works in a bank.", "cat": "Câu hoàn chỉnh" },
+        { "t": "on the third floor", "cat": "Cụm từ" },
+        { "t": "The lift is broken.", "cat": "Câu hoàn chỉnh" },
+        { "t": "very expensive", "cat": "Cụm từ" }
+      ],
+      "explain": "Cụm từ chưa có chủ ngữ và động từ chia thì của riêng nó, nên chưa nói trọn điều gì. Câu hoàn chỉnh có cả hai và đứng một mình vẫn trọn ý." },
+    { "id": "wias-02", "type": "choice", "level": "preA1", "use": "practice", "skill": "recognition",
+      "prompt": "Chọn câu kể đầy đủ, đứng độc lập được trong bài viết.",
+      "stem": "Nhóm từ nào là câu?",
+      "options": [
+        { "t": "In the park near my house", "note": "Đây là cụm giới từ: có giới từ in và danh từ, nhưng không có động từ.", "tag": "phrase-as-sentence" },
+        { "t": "My cousin plays football in the park.", "ok": true, "note": "Chủ ngữ my cousin, động từ plays, và đứng một mình vẫn trọn ý." },
+        { "t": "Playing football in the park", "note": "Playing football in the park có thể được phân tích là mệnh đề -ing không chia thì. Nó chưa phải câu kể độc lập với động từ chia thì.", "tag": "bare-ing-as-verb" }
+      ],
+      "explain": "Trong ba lựa chọn này, chỉ My cousin plays football in the park có mệnh đề kể hữu hạn độc lập với chủ ngữ viết ra." },
+    { "id": "wias-03", "type": "choice", "level": "preA1", "use": "check", "skill": "recognition",
+      "prompt": "Chọn nhóm từ là một câu hoàn chỉnh.",
+      "stem": "Nhóm từ nào là câu?",
+      "options": [
+        { "t": "Because the window is open", "note": "Có chủ ngữ và động từ, nhưng because làm nó chờ một mệnh đề chính. Đây là mệnh đề phụ thuộc.", "tag": "dependent-as-sentence" },
+        { "t": "Close the window.", "ok": true, "note": "Câu mệnh lệnh: có động từ close, người nghe là you nên không cần viết chủ ngữ." },
+        { "t": "The window in the kitchen", "note": "Chỉ có cụm danh từ, chưa có động từ.", "tag": "phrase-as-sentence" }
+      ],
+      "explain": "Câu mệnh lệnh là ngoại lệ có quy tắc: chủ ngữ you được hiểu ngầm. Hai lựa chọn kia đều thiếu một thứ mà câu cần." },
+    { "id": "wias-04", "type": "error", "level": "preA1", "use": "practice", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "Is", "bad": true, "fix": ["It is", "It's"], "note": "Thiếu chủ ngữ. Về thời tiết, chủ ngữ là it.", "tag": "subject-missing" },
+        { "t": "very hot" },
+        { "t": "in Hue" },
+        { "t": "today." }
+      ],
+      "explain": "Câu đúng là It is very hot in Hue today. Tiếng Anh không để trống chủ ngữ trong câu khẳng định thông thường." },
+    { "id": "wias-05", "type": "error", "level": "preA1", "use": "check", "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "noError": true,
+      "segments": [
+        { "t": "Please" },
+        { "t": "wait" },
+        { "t": "here." }
+      ],
+      "explain": "Câu đúng. Đây là câu mệnh lệnh lịch sự: chủ ngữ you được hiểu ngầm nên không phải viết." },
+    { "id": "wias-06", "type": "cloze", "level": "preA1", "use": "practice", "skill": "production",
+      "prompt": "Điền một từ để câu có chủ ngữ.",
+      "stem": "{1} is raining heavily in Hanoi this morning.",
+      "blanks": {
+        "1": { "accept": ["It"], "closed": true, "hint": "Chủ ngữ cho thời tiết." }
+      },
+      "explain": "Về thời tiết, tiếng Anh dùng it làm chủ ngữ: It is raining. Ở đây it không chỉ vật nào cụ thể, nhưng câu vẫn cần nó." },
+    { "id": "wias-07", "type": "order", "level": "preA1", "use": "practice", "skill": "form",
+      "prompt": "Sắp xếp thành câu có nghĩa: Tôi ở nhà vì trời đang mưa.",
+      "tokens": ["I", "stayed", "home", "because", "it", "was", "raining"],
+      "end": ".",
+      "accept": [
+        ["I", "stayed", "home", "because", "it", "was", "raining"],
+        ["because", "it", "was", "raining", "I", "stayed", "home"]
+      ],
+      "known": [
+        { "seq": ["it", "was", "raining", "because", "I", "stayed", "home"], "verdict": "wrong", "note": "Về ngữ pháp thì đúng, nhưng nghĩa bị đảo: trời mưa vì tôi ở nhà. Bạn muốn nói tôi ở nhà vì trời mưa." }
+      ],
+      "explain": "Hai thứ tự đều giữ trời mưa làm lý do ở nhà. Cách đảo quan hệ nhân quả vẫn có thể đúng ngữ pháp nhưng không đáp ứng nghĩa được yêu cầu." },
+    { "id": "wias-08", "type": "classify", "level": "preA1", "use": "check", "skill": "recognition",
+      "prompt": "Xếp mỗi nhóm từ vào đúng loại.",
+      "cats": ["Cụm từ", "Mệnh đề phụ thuộc", "Câu hoàn chỉnh"],
+      "items": [
+        { "t": "a cup of green tea", "cat": "Cụm từ" },
+        { "t": "when the phone rang", "cat": "Mệnh đề phụ thuộc" },
+        { "t": "Minh made a cup of green tea.", "cat": "Câu hoàn chỉnh" },
+        { "t": "if you need help", "cat": "Mệnh đề phụ thuộc" },
+        { "t": "near the old bridge", "cat": "Cụm từ" },
+        { "t": "We arrived early.", "cat": "Câu hoàn chỉnh" }
+      ],
+      "explain": "Mệnh đề phụ thuộc có chủ ngữ và động từ như một câu, nhưng mở đầu bằng từ nối như when hoặc if nên cần thêm mệnh đề chính. Cụm từ không có cặp chủ ngữ và động từ chia thì của riêng nó." },
+    { "id": "wias-09", "type": "multi", "level": "preA1", "use": "check", "skill": "recognition",
+      "prompt": "Chọn tất cả những nhóm từ là câu hoàn chỉnh.",
+      "stem": "Những nhóm từ nào là câu?",
+      "options": [
+        { "t": "The bus stopped.", "ok": true, "note": "Chủ ngữ the bus và động từ stopped." },
+        { "t": "Wait here.", "ok": true, "note": "Câu mệnh lệnh: có động từ wait, chủ ngữ you được hiểu ngầm." },
+        { "t": "After the lesson ended", "note": "Có chủ ngữ và động từ, nhưng after làm nó chờ mệnh đề chính.", "tag": "dependent-as-sentence" },
+        { "t": "Is cold today.", "note": "Thiếu chủ ngữ. Câu đúng là It is cold today.", "tag": "subject-missing" },
+        { "t": "She laughed.", "ok": true, "note": "Chủ ngữ she và động từ laughed. Rất ngắn nhưng đủ." }
+      ],
+      "explain": "Câu ngắn vẫn là câu nếu có động từ và chủ ngữ (hoặc là lệnh). Mệnh đề phụ thuộc và nhóm thiếu chủ ngữ thì chưa đủ." },
+    { "id": "wias-10", "type": "match", "level": "preA1", "use": "practice", "skill": "meaning",
+      "prompt": "Nối mỗi thuật ngữ với mô tả trong các ví dụ hữu hạn cơ bản của bài này.",
+      "pairs": [
+        { "a": "cụm từ (phrase)", "b": "Một đơn vị xoay quanh từ chính và làm việc như một khối trong câu" },
+        { "a": "mệnh đề hữu hạn (finite clause)", "b": "Mệnh đề có động từ chia thì; các câu kể cơ bản trong bài có cả chủ ngữ viết ra" },
+        { "a": "mệnh đề phụ thuộc (dependent clause)", "b": "Mệnh đề mở đầu bằng từ nối như because và cần một mệnh đề chính" },
+        { "a": "câu (sentence)", "b": "Đơn vị gồm ít nhất một mệnh đề chính, viết hoa đầu và có dấu kết thúc" }
+      ],
+      "explain": "Đây là mô tả cho các ví dụ cơ bản. Mệnh đề không chia thì và mệnh lệnh có thể không viết chủ ngữ ra; cụm từ cũng có thể chứa mệnh đề." },
+    { "id": "wias-11", "type": "transform", "level": "preA1", "use": "practice", "skill": "production",
+      "prompt": "Sửa thành một câu hoàn chỉnh.",
+      "source": "My neighbour very friendly.",
+      "instruction": "Thêm be ở hiện tại đơn, giữ nguyên các từ còn lại; có thể rút gọn hoặc dùng chính tả neighbour/neighbor.",
+      "accept": [
+        "My neighbour is very friendly",
+        "My neighbour's very friendly",
+        "My neighbor is very friendly",
+        "My neighbor's very friendly"
+      ],
+      "model": "My neighbour is very friendly.",
+      "known": [
+        { "t": "My neighbour are very friendly", "verdict": "wrong", "note": "My neighbour là số ít, nên đi với is. Are dành cho nhiều người hoặc you." }
+      ],
+      "explain": "Với yêu cầu dùng be ở hiện tại đơn, thêm is hoặc dạng rút gọn 's. Những động từ khác như seems cũng có thể tạo câu đúng, nhưng không theo yêu cầu cụ thể này." },
+    { "id": "wias-12", "type": "open", "level": "preA1", "use": "practice", "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Viết ba câu về buổi sáng của bạn. Mỗi câu có chủ ngữ và động từ. Câu thứ ba có thêm because và một lý do.",
+      "model": ["I get up at six. I eat noodles for breakfast. I take the bus because my school is far from home."],
+      "checklist": ["Mỗi câu có một chủ ngữ được viết ra", "Mỗi câu có một động từ chia thì", "Câu thứ ba có mệnh đề chính, rồi because và mệnh đề phụ có chủ ngữ và động từ riêng", "Mỗi câu bắt đầu bằng chữ hoa và kết thúc bằng dấu chấm"],
+      "explain": "Khi tự kiểm tra, hãy gạch dưới chủ ngữ và động từ trong từng mệnh đề. Chỗ nào thiếu một trong hai thì đó là chỗ cần sửa." },
+    { "id": "wias-13", "type": "choice", "level": "preA1", "use": "check", "skill": "meaning",
+      "prompt": "Chọn đáp án đúng.",
+      "stem": "Câu \"We left early because the party was boring.\" có bao nhiêu mệnh đề?",
+      "options": [
+        { "t": "Một", "note": "Một mệnh đề chỉ có một cặp chủ ngữ và động từ. Câu này có hai cặp: we left và the party was.", "tag": "clause-count" },
+        { "t": "Hai", "ok": true, "note": "We left early là mệnh đề chính. Because the party was boring là mệnh đề phụ thuộc." },
+        { "t": "Ba", "note": "Early và boring không tạo mệnh đề, vì chúng không có chủ ngữ và động từ riêng.", "tag": "clause-count" }
+      ],
+      "explain": "Đếm mệnh đề bằng cách đếm số động từ chia thì đi cùng chủ ngữ: left của we, và was của the party." },
+    { "id": "wias-14", "type": "choice", "level": "preA1", "use": "check", "skill": "recognition",
+      "prompt": "Chọn đáp án đúng.",
+      "stem": "Trong câu \"We left early because the party was boring\", đâu là mệnh đề phụ thuộc?",
+      "options": [
+        { "t": "We left early", "note": "Đây là mệnh đề chính, đứng một mình vẫn trọn ý.", "tag": "main-vs-dependent" },
+        { "t": "because the party was boring", "ok": true, "note": "Mở đầu bằng because và cần mệnh đề chính đi kèm." },
+        { "t": "the party", "note": "Đây chỉ là cụm danh từ làm chủ ngữ bên trong mệnh đề phụ thuộc.", "tag": "phrase-as-sentence" }
+      ],
+      "explain": "Mệnh đề phụ thuộc bao gồm cả từ nối: because the party was boring. Bỏ because đi thì phần còn lại mới đứng một mình được." }
+  ],
+  "sources": [
+    { "ref": "cgt", "note": "Các mục về clause, phrase và sentence" },
+    { "ref": "swan-peu", "note": "Phần về câu và mệnh đề" },
+    { "ref": "cgel", "note": "Cách phân biệt clause và phrase" },
+    { "ref": "quirk", "note": "Phần về câu, mệnh đề và câu phụ (minor sentence)" }
+  ],
+  "editorial": { "status": "drafted" }
+}

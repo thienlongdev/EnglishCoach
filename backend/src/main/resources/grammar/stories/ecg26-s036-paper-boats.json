@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s036-paper-boats",
+  "title": "Con thuyền nhỏ nhất",
+  "summary": "Sâm muốn gửi lời xin lỗi qua khe cửa chưa bằng bề ngang một ngón tay.",
+  "level": "A2",
+  "topics": [
+    "comparatives",
+    "enough-too"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sâm",
+      "role": "Người gấp thuyền"
+    },
+    {
+      "id": "b",
+      "name": "Nora",
+      "role": "Bạn cùng ngõ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Ba chiếc thuyền giấy mang ba lần Sâm thử viết chữ Xin lỗi. Hai chiếc đầu mắc ở khe, chiếc thứ ba chỉ bằng nắp chai. Nora đứng bên kia nghe tiếng giấy sột soạt.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Can you see the little one?",
+          "vi": "Bạn thấy chiếc nhỏ không?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Yes. Why did you make it so small?",
+          "vi": "Có. Sao bạn gấp nó nhỏ vậy?"
+        }
+      ],
+      "choice": {
+        "prompt": "Chiếc thứ ba lọt được qua khe. Sâm giải thích thành quả thế nào?",
+        "options": [
+          {
+            "t": "It's too small to get through.",
+            "note": "Too small to nói chính sự nhỏ bé cản nó đi qua, trái với việc nó vừa lọt khe.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "It's small enough to get through.",
+            "note": "Small enough cho biết kích thước vừa đạt điều kiện để thuyền qua. Enough đứng sau tính từ.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Chiếc thuyền trôi qua khe trên nền gạch. Nora mở những nếp gấp nhỏ li ti.",
+      "say": [
+        {
+          "who": "b",
+          "en": "You wrote on both sides!",
+          "vi": "Bạn viết cả hai mặt cơ à!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Nora đưa chiếc thuyền trở lại qua khe. Sâm trông thấy nét bút bạn vừa thêm vào buồm.",
+      "say": [
+        {
+          "who": "b",
+          "en": "It fits both ways.",
+          "vi": "Nó lọt qua được cả hai chiều."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Nora mở cửa, đặt cả ba chiếc lên một chậu nước. Trên chiếc bé nhất, dưới chữ Xin lỗi của Sâm có thêm hai chữ Mình cũng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I’m glad you wrote back.",
+          "vi": "Mình vui vì bạn đã viết lại."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

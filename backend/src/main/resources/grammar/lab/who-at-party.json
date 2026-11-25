@@ -1,0 +1,41 @@
+{
+  "id": "who-at-party",
+  "title": "Nhận ra người hay nơi?",
+  "summary": "Một bức ảnh chụp buổi tiệc. Bạn giới thiệu người dạy hát hoặc căn phòng diễn ra buổi tập. Từ nối nào phù hợp với từng chỗ trống?",
+  "level": "A2",
+  "topics": [
+    "relative-clauses-defining",
+    "whose-where-when"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Đối tượng",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Người"
+        },
+        {
+          "id": "v2",
+          "label": "Nơi chốn"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "This is the woman who taught us to sing.",
+      "vi": "Đây là người phụ nữ đã dạy chúng tôi hát.",
+      "note": "Who thay người phụ nữ trong mệnh đề xác định và là người thực hiện taught. / Who supplies the subject of taught.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "This is the room where we learned to sing.",
+      "vi": "Đây là căn phòng nơi chúng tôi học hát.",
+      "note": "Where cho biết việc học diễn ra ở đâu. We mới là chủ ngữ của learned. / Where supplies a place, not a subject.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s154-second-hand-rain",
+  "title": "Mưa nghe kể lại",
+  "summary": "Dara tìm được tiếng mưa trong một cuộn băng mang tên Sa Mạc. Ai đó đã viết chữ giả vào bìa.",
+  "level": "B2",
+  "topics": [
+    "reporting-verbs",
+    "modality-degrees-of-certainty"
+  ],
+  "scene": "newsroom",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Dara",
+      "role": "Người dựng âm thanh"
+    },
+    {
+      "id": "b",
+      "name": "Hà",
+      "role": "Người ghi lời bình"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Nhân chứng duy nhất nói mưa nghe như gạo rơi vào thau. Ông chưa vào phòng thu. Dara phát lại băng và nghe thấy cuối đoạn có tiếng người đóng nắp hộp.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We know what he heard. We don't know what made it.",
+          "vi": "Ta biết ông ấy đã nghe gì. Ta chưa biết âm thanh bắt nguồn từ đâu."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Can you keep his comparison without making him confess to a trick?",
+          "vi": "Cậu giữ được cách so sánh của ông ấy mà không biến nó thành lời thú nhận đã dùng mẹo chứ?"
+        }
+      ],
+      "choice": {
+        "prompt": "Chọn cách đưa lời nhân chứng vào bản dựng.",
+        "options": [
+          {
+            "t": "He described the rain as sounding like rice falling into a bowl.",
+            "note": "Described ... as sounding like kể lại ấn tượng thính giác. Nó không gán cho người nói kiến thức về kỹ thuật thu.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "He admitted making the rain with a bowl of rice.",
+            "note": "Admitted making gán việc tạo âm thanh cho chính nhân chứng. Người này chỉ so sánh hai âm thanh và chưa vào phòng thu.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Hà giữ nguyên câu so sánh. Khi kéo hết băng, cô tìm thấy đoạn giới thiệu chưa cắt của người tạo tiếng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "He's about to tell us what he used.",
+          "vi": "Ông ấy sắp nói cho mình biết ông đã dùng gì."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Dara dừng bản dựng. Hà tìm đoạn mở đầu ở cuối cuộn băng bị quấn ngược, nơi giọng của người tạo tiếng vẫn còn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That's a different voice altogether.",
+          "vi": "Đấy là giọng một người khác hẳn."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Người tạo tiếng nói ông dùng hạt đậu khô trong hộp thiếc để dựng cảnh bão cát. Hà đổi nhãn thành Tiếng cát và để lại câu so sánh về mưa của nhân chứng như một lời nhận xét.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Two people can hear different weather in the same tin.",
+          "vi": "Hai người có thể nghe ra hai kiểu thời tiết từ cùng một chiếc hộp."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

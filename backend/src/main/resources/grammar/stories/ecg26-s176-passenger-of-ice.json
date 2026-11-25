@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s176-passenger-of-ice",
+  "title": "Hành khách tan trước cửa ga",
+  "summary": "Một mẩu băng đem từ quê đã tan thành nước trước khi tàu vào quỹ đạo. Pax lo mình làm mất món quà cuối của Hà.",
+  "level": "B2",
+  "topics": [
+    "perfect-infinitive-gerund"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hà",
+      "role": "Người chăm kho hạt"
+    },
+    {
+      "id": "b",
+      "name": "Pax",
+      "role": "Người lái tàu"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Nước còn trong ống kín. Hà từng muốn nhìn thấy mẩu băng nguyên hình, nhưng chưa ai mở ống. Hai người cần ghi thật điều đã xảy ra.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can't give you the same shape back.",
+          "vi": "Tôi không trả lại cho cô đúng hình dạng cũ được."
+        },
+        {
+          "who": "b",
+          "en": "Can you say what changed before we arrived?",
+          "vi": "Anh nói được điều gì đã thay đổi trước lúc ta tới không?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Ghi biến đổi đã xảy ra, không bịa ra một lần mở ống.",
+        "options": [
+          {
+            "ok": true,
+            "t": "The sample seems to have melted during the journey.",
+            "note": "To have melted đặt sự tan trước quan sát hiện tại. Seem giữ giới hạn suy từ nước lỏng và ống kín.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Someone admits having opened the tube.",
+            "note": "Having opened hoàn toàn đúng sau admits, nhưng câu thêm một người đã thú nhận mở ống. Không ai làm chứng cho điều ấy.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Hà nhỏ một giọt lên hạt quê nhà. Món quà từng là băng nay giúp một gốc cây đứng thẳng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The shape went away. The water got a second job.",
+          "vi": "Hình dạng mất đi. Nước lại có việc thứ hai."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Họ ghi lên ống cả hai việc thật: băng đã tan, nước vẫn còn.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Pax xoay vòng niêm phong chưa rách. Hà gạch suy đoán về người mở, đặt ống dưới ánh đèn và ngắm hình bóng quê đảo phản chiếu trong nước.",
+      "say": [
+        {
+          "who": "a",
+          "en": "No one had to open it for home to change shape.",
+          "vi": "Chẳng cần ai mở mà quê nhà vẫn đổi hình dạng."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Cô giữ nguyên ống để lần đầu được mang biển quê tới gần các vì sao.",
+      "end": true
+    }
+  ]
+}

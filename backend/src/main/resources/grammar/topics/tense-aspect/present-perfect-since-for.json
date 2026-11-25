@@ -1,0 +1,902 @@
+{
+  "schema": 1,
+  "slug": "present-perfect-since-for",
+  "version": 2,
+  "domain": "tense-aspect",
+  "order": 110,
+  "kind": "grammar",
+  "title": {
+    "vi": "Hiện tại hoàn thành với since, for, yet, already",
+    "en": "Present perfect with since, for, yet, already"
+  },
+  "subtitle": {
+    "vi": "Bao lâu tính đến bây giờ, và đã xong hay chưa",
+    "en": "How long up to now, and whether it has happened"
+  },
+  "aliases": [
+    "since for",
+    "since and for",
+    "how long have you",
+    "yet already still just",
+    "từ khi hay trong",
+    "i have lived here since",
+    "for five years",
+    "since 2020",
+    "already yet",
+    "i live here from 2020"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "uses": [
+    {
+      "level": "A2",
+      "vi": "Nói một việc kéo dài bao lâu: I've lived here for two years."
+    },
+    {
+      "level": "B1",
+      "vi": "Phân biệt since và for, hỏi How long have you...?, dùng yet, already, still và just."
+    },
+    {
+      "level": "B2",
+      "vi": "Since + mệnh đề, It's been ten years since..., và các cách dùng yet trong văn viết trang trọng."
+    }
+  ],
+  "objectives": [
+    "Dùng since với một mốc và for với một khoảng thời gian trong hiện tại hoàn thành",
+    "Hỏi và trả lời How long have you...? cho tình huống còn đúng bây giờ",
+    "Đặt already, yet, still và just đúng chỗ trong câu",
+    "Nhận ra for cũng đi với quá khứ đơn và các thì khác, không chỉ với hiện tại hoàn thành"
+  ],
+  "prerequisites": [
+    "present-perfect-basics"
+  ],
+  "related": [
+    {
+      "slug": "present-perfect-continuous",
+      "rel": "more"
+    },
+    {
+      "slug": "present-perfect-vs-past-simple",
+      "rel": "confusion"
+    },
+    {
+      "slug": "present-perfect-basics",
+      "rel": "more"
+    },
+    {
+      "slug": "past-simple",
+      "rel": "contrast"
+    },
+    {
+      "slug": "british-american-tense-use",
+      "rel": "special"
+    }
+  ],
+  "exam": {
+    "ielts": "Có thể vận dụng khi kể trải nghiệm, thói quen hoặc diễn biến trong Speaking/Writing; bài này không xác nhận tần suất xuất hiện trong đề hay mức điểm.",
+    "toeic": "Có thể vận dụng khi đọc hội thoại, thư và thông báo công việc; đây không phải nhận định đã đo về tần suất câu hỏi TOEIC."
+  },
+  "quick": {
+    "what": "Trong cách nói về tình huống kéo tới hiện tại, since nêu mốc bắt đầu (since 2021), còn for nêu độ dài (for three years). Các từ này không tự chọn thì: for cũng dùng được khi nói về quá khứ hoặc tương lai.",
+    "when": "Dùng khi tình huống còn đúng bây giờ và bạn nói về độ dài của nó. Yet (chưa) và already (rồi) nói một việc đã xảy ra hay chưa tính đến bây giờ.",
+    "examples": [
+      {
+        "en": "We[AUX|'ve] [V|lived] here [T|since 2021].",
+        "vi": "Chúng tôi sống ở đây từ năm 2021 đến giờ."
+      },
+      {
+        "en": "I[AUX|'ve] [V|known] her [T|for ten years].",
+        "vi": "Tôi biết cô ấy mười năm rồi."
+      }
+    ],
+    "remember": "Since nêu mốc, for nêu độ dài; ngữ cảnh và thì cho biết khoảng đó được nhìn từ đâu."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Tiếng Việt nói “tôi sống ở đây **từ** năm 2021” và “tôi biết cô ấy **được** mười năm rồi”, không đổi động từ. Tiếng Anh đổi động từ sang hiện tại hoàn thành, và phải chọn: bạn nêu **mốc bắt đầu** (since) hay nêu **độ dài** (for)?"
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "timeline",
+        "now": 70,
+        "sentence": "I've lived in Da Nang since 2018.",
+        "events": [
+          {
+            "kind": "point",
+            "at": 25,
+            "label": "Mốc: 2018",
+            "role": "ref"
+          },
+          {
+            "kind": "open",
+            "from": 25,
+            "to": 70,
+            "label": "Sống ở Đà Nẵng (vẫn còn)",
+            "role": "main"
+          }
+        ]
+      },
+      "caption": "Since chỉ vào điểm bắt đầu. Khoảng thời gian chạy từ điểm đó đến bây giờ và có thể còn tiếp.",
+      "alt": "Trục thời gian có một điểm mốc năm 2018 ở quá khứ, và một đoạn từ điểm đó kéo dài đến thời điểm hiện tại, mở ra phía trước, mang nhãn sống ở Đà Nẵng, vẫn còn."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "flow",
+        "start": "named",
+        "nodes": {
+          "named": {
+            "q": "Bạn nêu một mốc cụ thể: năm, tháng, thứ, giờ, hay một sự kiện? (2020, March, Monday, 8 a.m., I was a student)",
+            "yes": "since",
+            "no": "length"
+          },
+          "length": {
+            "q": "Bạn nêu độ dài bằng một con số hoặc cụm như a long time, ages? (ten minutes, three years, a long time)",
+            "yes": "for",
+            "no": "allphrase"
+          },
+          "since": {
+            "end": "since",
+            "note": "since + mốc: since 2020, since Monday, since I moved here."
+          },
+          "for": {
+            "end": "for",
+            "note": "for + độ dài: for ten years, for a while, for ages."
+          },
+          "allphrase": {
+            "end": "Không cần since hay for",
+            "note": "All day và all my life có thể đứng không cần giới từ. Đây chỉ là nhánh cho các cụm ấy, không phải kết luận cho mọi cụm chưa phân loại."
+          }
+        }
+      },
+      "caption": "Cách chọn since hay for.",
+      "alt": "Sơ đồ chọn: nếu nêu một mốc cụ thể thì dùng since; nếu nêu độ dài bằng con số hoặc cụm như a long time thì dùng for; các cụm như all day tự đã là khoảng thời gian nên không cần since hay for."
+    },
+    {
+      "type": "h",
+      "vi": "Hai cách nói cho cùng một tình huống"
+    },
+    {
+      "type": "contrast",
+      "labelA": "Since + mốc",
+      "labelB": "For + độ dài",
+      "items": [
+        {
+          "a": {
+            "en": "I[AUX|'ve] [V|studied] here [T|since March].",
+            "vi": "Tôi học ở đây từ tháng Ba đến giờ."
+          },
+          "b": {
+            "en": "I[AUX|'ve] [V|studied] here [T|for six months].",
+            "vi": "Tôi học ở đây được sáu tháng rồi."
+          },
+          "diff": "Cùng một tình huống kéo dài tới bây giờ. Một câu nêu điểm bắt đầu, câu kia nêu độ dài. Tùy mốc và hôm nay, hai con số có thể khớp nhau."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Yet, already, still, just"
+    },
+    {
+      "type": "table",
+      "head": [
+        "Từ",
+        "Nghĩa",
+        "Vị trí thường gặp",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "already",
+          "rồi (câu khẳng định; đôi khi sớm hơn dự kiến)",
+          "giữa have và phân từ, hoặc cuối câu",
+          "I've already booked the tickets."
+        ],
+        [
+          "yet",
+          "chưa (câu phủ định) và đã... chưa (câu hỏi)",
+          "cuối câu",
+          "She hasn't called yet. Have you eaten yet?"
+        ],
+        [
+          "still",
+          "vẫn chưa (nhấn việc lẽ ra đã xảy ra)",
+          "trước haven't hoặc hasn't",
+          "He still hasn't replied."
+        ],
+        [
+          "just",
+          "vừa mới",
+          "giữa have và phân từ",
+          "I've just spoken to her."
+        ]
+      ],
+      "caption": "Bốn từ và vị trí thường gặp, không phải vị trí duy nhất: already có thể ở cuối, yet cũng có thể ở giữa câu."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "timeline",
+        "now": 70,
+        "sentence": "The parcel hasn't arrived yet.",
+        "events": [
+          {
+            "kind": "span",
+            "from": 30,
+            "to": 70,
+            "label": "Chờ từ lúc gửi đến giờ: chưa tới",
+            "role": "main"
+          },
+          {
+            "kind": "point",
+            "at": 90,
+            "label": "Dự kiến sẽ tới",
+            "role": "ghost"
+          }
+        ]
+      },
+      "caption": "Yet nói rằng việc đó chưa xảy ra tính đến bây giờ, và người nói đang chờ nó.",
+      "alt": "Trục thời gian có một đoạn từ quá khứ đến hiện tại mang nhãn chờ từ lúc gửi đến giờ, chưa tới, và một điểm nhạt ở tương lai mang nhãn dự kiến sẽ tới."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "I[AUX|'ve] [ADV|already] [V|paid] the bill.",
+          "vi": "Tôi đã trả hóa đơn rồi."
+        },
+        {
+          "en": "[AUX|Have] they [V|arrived] [ADV|yet]?",
+          "vi": "Họ đến chưa?"
+        },
+        {
+          "en": "The parcel [AUX|hasn't] [V|come] [ADV|yet].",
+          "vi": "Gói hàng vẫn chưa đến."
+        },
+        {
+          "en": "She [ADV|still] [AUX|hasn't] [V|answered] my message.",
+          "vi": "Cô ấy vẫn chưa trả lời tin nhắn của tôi."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "How long"
+    },
+    {
+      "type": "contrast",
+      "labelA": "Còn đúng bây giờ",
+      "labelB": "Đã kết thúc",
+      "items": [
+        {
+          "a": {
+            "en": "How long [AUX|have] you [V|worked] at the clinic?",
+            "vi": "Bạn làm ở phòng khám được bao lâu rồi?"
+          },
+          "b": {
+            "en": "How long [AUX|did] you [V|work] at the clinic?",
+            "vi": "Bạn đã làm ở phòng khám bao lâu?"
+          },
+          "diff": "Bên trái thường hỏi thời gian làm việc tính đến nay; bên phải hỏi một giai đoạn đã khép. Đây là cách hiểu thường gặp, không phải bằng chứng tuyệt đối về việc người đó có còn làm ở phòng khám hay đã quay lại làm sau đó."
+        }
+      ]
+    },
+    {
+      "type": "try",
+      "exercise": "ppsf-01"
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Hai lỗi phổ biến vì dịch từng chữ. Một là dùng **from** thay cho since: “từ năm 2020” thành from 2020. Hai là dùng since với một con số: “được hai năm” thành since two years. Nhớ: since + mốc, for + độ dài."
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Với động từ chỉ hành động kéo dài như live, work, study, wait, bạn thường thấy cả dạng tiếp diễn: I've been working here since 2020. Bài hiện tại hoàn thành tiếp diễn nói về điều đó."
+    }
+  ],
+  "deep": [
+    {
+      "type": "h",
+      "vi": "Since cũng đi với một mệnh đề"
+    },
+    {
+      "type": "p",
+      "vi": "Sau since có thể là một mệnh đề. Mệnh đề đó thường ở quá khứ đơn, vì nó nêu mốc đã qua; vế chính ở hiện tại hoàn thành."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "I[AUX|'ve] [V|known] her [SUB|since we were at school].",
+          "vi": "Tôi biết cô ấy từ hồi chúng tôi còn đi học."
+        },
+        {
+          "en": "I[AUX|'ve] [V|had] this phone [SUB|since I started university].",
+          "vi": "Tôi dùng chiếc điện thoại này từ hồi vào đại học."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Since còn có nghĩa khác là vì: Since you're here, you can help me. Ở nghĩa này nó không đòi hiện tại hoàn thành."
+    },
+    {
+      "type": "h",
+      "vi": "For đi với mọi thì"
+    },
+    {
+      "type": "p",
+      "vi": "Một quy tắc hay được dạy là for luôn đi với hiện tại hoàn thành. Thực tế, for + khoảng thời gian đi với mọi thì: I lived in Hue for ten years. I'll be away for a week. She was studying for three hours. Điều quyết định thì là khoảng thời gian đã kết thúc hay còn tiếp tới bây giờ, không phải chữ for."
+    },
+    {
+      "type": "h",
+      "vi": "It's been ... since"
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "It[AUX|'s] been ten years [SUB|since I last saw her].",
+          "vi": "Đã mười năm kể từ lần cuối tôi gặp cô ấy."
+        },
+        {
+          "en": "It[AUX|'s] been ages [SUB|since we had a proper holiday].",
+          "vi": "Đã lâu lắm rồi kể từ kỳ nghỉ đàng hoàng gần nhất của chúng tôi."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Cấu trúc này đổi chỗ với I last saw her ten years ago. Nó là một dạng chuyển câu quen thuộc trong bài thi."
+    },
+    {
+      "type": "h",
+      "vi": "Yet trong câu khẳng định"
+    },
+    {
+      "type": "p",
+      "vi": "Yet thường xuất hiện trong câu phủ định và câu hỏi. Have yet to do mang nghĩa vẫn chưa làm dù cấu trúc không có not. Already cũng có thể dùng trong câu hỏi ngạc nhiên như Have you finished already? Chọn theo ý nghĩa, không chia cứng already chỉ khẳng định và yet chỉ phủ định."
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Since cũng đi được với một cụm có ago: She has lived here since two years ago là câu đúng. Nhưng for two years đơn giản và thường dùng hơn."
+    },
+    {
+      "type": "note",
+      "kind": "regional",
+      "vi": "Trong tiếng Anh Mỹ thân mật, I already ate và Did you eat yet? bình thường. Tiếng Anh Anh thường nói I've already eaten và Have you eaten yet? Trong bài thi và văn viết trang trọng, dạng hoàn thành an toàn ở cả hai vùng."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "ppsf-from",
+      "wrong": "I live here from 2019.",
+      "right": "I've lived here since 2019.",
+      "why": "Tiếng Anh dùng since cho mốc bắt đầu, và hiện tại hoàn thành vì tình huống kéo tới bây giờ.",
+      "vn": "Tiếng Việt nói “từ năm 2019”, và động từ không đổi."
+    },
+    {
+      "id": "ppsf-since-length",
+      "wrong": "She has been my friend since ten years.",
+      "right": "She has been my friend for ten years.",
+      "why": "Since cần một mốc; mười năm là một khoảng thời gian nên dùng for.",
+      "vn": "“Được mười năm rồi” dễ bị dịch thành since vì tiếng Việt không phân biệt mốc và độ dài bằng hai từ riêng."
+    },
+    {
+      "id": "ppsf-present",
+      "wrong": "I know her for five years.",
+      "right": "I've known her for five years.",
+      "why": "Tình huống bắt đầu trong quá khứ và còn đến bây giờ, cần hiện tại hoàn thành chứ không phải hiện tại đơn.",
+      "vn": "Tiếng Việt không đổi động từ khi nói “tôi biết cô ấy năm năm rồi”."
+    },
+    {
+      "id": "ppsf-yet-positive",
+      "wrong": "I have finished my homework yet.",
+      "right": "I've already finished my homework.",
+      "why": "Nếu ý là đã xong, dùng already để giữ nghĩa khẳng định. I haven't finished my homework yet là câu đúng nhưng đổi ý thành chưa xong."
+    },
+    {
+      "id": "ppsf-still-position",
+      "wrong": "I haven't still finished my report.",
+      "right": "I still haven't finished my report.",
+      "why": "Still đứng trước haven't hoặc hasn't, không đứng sau."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Since có đi với quá khứ đơn được không?",
+      "a": "Có: since I moved here nêu một mốc quá khứ; vế chính thường dùng hiện tại hoàn thành khi tính tới bây giờ. Nhìn từ một mốc quá khứ có thể dùng quá khứ hoàn thành. Since mang nghĩa vì thì không có yêu cầu đó."
+    },
+    {
+      "q": "For có dùng với quá khứ đơn không?",
+      "a": "Có. I lived in Hue for ten years là câu đúng, nói về khoảng thời gian đã kết thúc. For không tự quyết định thì."
+    },
+    {
+      "q": "Yet có đứng giữa câu không?",
+      "a": "Có, trong văn viết trang trọng: The report has not yet been completed. Trong lời nói thường ngày, yet đứng cuối câu."
+    },
+    {
+      "q": "Already và yet khác nhau thế nào?",
+      "a": "Already thường cho biết việc đã xảy ra, đôi khi sớm hơn dự kiến; nó cũng dùng trong câu hỏi ngạc nhiên. Yet thường hỏi việc đã xảy ra chưa hoặc nói việc chưa xảy ra; have yet to do cũng mang nghĩa chưa làm."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ppsf-01",
+      "type": "choice",
+      "level": "B1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Chọn từ đúng.",
+      "stem": "Lan has taught at this school ___ 2019.",
+      "options": [
+        {
+          "t": "since",
+          "ok": true,
+          "note": "2019 là một mốc bắt đầu, nên dùng since."
+        },
+        {
+          "t": "for",
+          "note": "For đi với độ dài như five years, không đi với mốc như 2019.",
+          "tag": "since-for-confusion"
+        },
+        {
+          "t": "from",
+          "note": "From có nhiều cách dùng, nhưng không thay since trong mẫu thời gian kéo tới hiện tại này; from 2019 to 2022 là một mẫu khác.",
+          "tag": "since-for-confusion"
+        },
+        {
+          "t": "in",
+          "note": "In 2019 là một thời điểm đã qua, không kéo tới bây giờ.",
+          "tag": "tense-time-marker"
+        }
+      ],
+      "explain": "Since + mốc bắt đầu, và hiện tại hoàn thành cho biết tình huống còn đúng bây giờ.",
+      "context": "Lan bắt đầu dạy năm 2019 và vẫn dạy ở trường này; chọn từ chỉ mốc bắt đầu của khoảng kéo tới hiện tại."
+    },
+    {
+      "id": "ppsf-02",
+      "type": "choice",
+      "level": "B1",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Chọn dạng đúng cho ý đã cho.",
+      "context": "Họ chuyển đến đây hai năm trước và vẫn sống ở đây.",
+      "stem": "They ___ here for two years.",
+      "options": [
+        {
+          "t": "have lived",
+          "ok": true,
+          "note": "Hiện tại hoàn thành kéo hai năm đó tới bây giờ."
+        },
+        {
+          "t": "live",
+          "note": "Hiện tại đơn không đi với for + khoảng thời gian bắt đầu trong quá khứ.",
+          "tag": "present-for"
+        },
+        {
+          "t": "lived",
+          "note": "Lived + for two years nói về khoảng đã kết thúc, trong khi họ vẫn đang sống ở đây.",
+          "tag": "perfect-open-period"
+        },
+        {
+          "t": "are living",
+          "note": "Hiện tại tiếp diễn không nói được khoảng thời gian đã kéo dài tới bây giờ. Ở đây cần have lived hoặc have been living.",
+          "tag": "present-for"
+        }
+      ],
+      "explain": "Tình huống bắt đầu hai năm trước và còn đúng bây giờ, nên dùng hiện tại hoàn thành (hoặc hiện tại hoàn thành tiếp diễn)."
+    },
+    {
+      "id": "ppsf-03",
+      "type": "cloze",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Dùng hiện tại hoàn thành và điền since cùng yet hoặc so far theo ngữ cảnh.",
+      "stem": "My brother {1} (work) for this company {2} 2020. He {3} (not / receive) a promotion {4}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "has worked",
+            "'s worked",
+            "has been working",
+            "'s been working"
+          ]
+        },
+        "2": {
+          "accept": [
+            "since"
+          ],
+          "closed": true
+        },
+        "3": {
+          "accept": [
+            "hasn't received",
+            "has not received"
+          ]
+        },
+        "4": {
+          "accept": [
+            "yet",
+            "so far"
+          ]
+        }
+      },
+      "explain": "Since 2020 là mốc, nên cần hiện tại hoàn thành. Hasn't received a promotion yet nói về điều chưa xảy ra tính đến bây giờ.",
+      "context": "Anh trai vẫn làm ở công ty từ năm 2020; tới giờ chưa được thăng chức."
+    },
+    {
+      "id": "ppsf-04",
+      "type": "cloze",
+      "level": "B1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Điền từ hoặc dạng đúng của động từ trong ngoặc.",
+      "stem": "A: How long {1} you {2} (know) Minh? B: Since we were in primary school.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "have"
+          ],
+          "closed": true
+        },
+        "2": {
+          "accept": [
+            "known"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "How long + have/has + chủ ngữ + quá khứ phân từ. Know là trạng thái nên không dùng dạng tiếp diễn.",
+      "context": "Hỏi về việc quen Minh từ tiểu học tới hiện tại."
+    },
+    {
+      "id": "ppsf-05",
+      "type": "error",
+      "level": "B1",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn “Câu này đúng”.",
+      "segments": [
+        {
+          "t": "She has been a nurse"
+        },
+        {
+          "t": "since",
+          "bad": true,
+          "fix": [
+            "for"
+          ],
+          "note": "Ten years là độ dài, không phải mốc. Dùng for.",
+          "tag": "since-for-confusion"
+        },
+        {
+          "t": "ten years."
+        }
+      ],
+      "explain": "Ten years nêu độ dài nên dùng for; 2015 cũng là con số nhưng nêu một năm, nên đi với since."
+    },
+    {
+      "id": "ppsf-06",
+      "type": "error",
+      "level": "B1",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào tất cả phần sai. Nếu câu không sai, chọn “Câu này đúng”.",
+      "segments": [
+        {
+          "t": "We"
+        },
+        {
+          "t": "know",
+          "bad": true,
+          "fix": [
+            "have known"
+          ],
+          "note": "Tình huống kéo từ quá khứ tới bây giờ, cần hiện tại hoàn thành.",
+          "tag": "present-for"
+        },
+        {
+          "t": "each other"
+        },
+        {
+          "t": "from",
+          "bad": true,
+          "fix": [
+            "since"
+          ],
+          "note": "Dùng since cho mốc bắt đầu.",
+          "tag": "since-for-confusion"
+        },
+        {
+          "t": "primary school."
+        }
+      ],
+      "explain": "Câu đúng là We have known each other since primary school. Vừa sai thì, vừa sai từ chỉ mốc."
+    },
+    {
+      "id": "ppsf-07",
+      "type": "error",
+      "level": "B1",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn “Câu này đúng”.",
+      "noError": true,
+      "segments": [
+        {
+          "t": "I lived in Hue"
+        },
+        {
+          "t": "for three years"
+        },
+        {
+          "t": "before I moved to Hanoi."
+        }
+      ],
+      "explain": "Câu đúng. For cũng đi với quá khứ đơn khi khoảng thời gian đã kết thúc."
+    },
+    {
+      "id": "ppsf-08",
+      "type": "error",
+      "level": "B1",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn “Câu này đúng”.",
+      "segments": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "haven't still",
+          "bad": true,
+          "fix": [
+            "still haven't"
+          ],
+          "note": "Still đứng trước haven't, không đứng sau.",
+          "tag": "still-position"
+        },
+        {
+          "t": "finished my report."
+        }
+      ],
+      "explain": "Still đứng trước trợ động từ phủ định: I still haven't finished."
+    },
+    {
+      "id": "ppsf-09",
+      "type": "transform",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lại bằng hiện tại hoàn thành.",
+      "source": "Mai moved to Can Tho in March. She still lives there.",
+      "instruction": "Viết một câu bằng hiện tại hoàn thành và since.",
+      "accept": [
+        "Mai has lived in Can Tho since March",
+        "Mai's lived in Can Tho since March",
+        "Mai has been living in Can Tho since March",
+        "Mai's been living in Can Tho since March"
+      ],
+      "model": "Mai has lived in Can Tho since March.",
+      "known": [
+        {
+          "t": "Mai lives in Can Tho since March",
+          "verdict": "wrong",
+          "note": "Since mốc cần hiện tại hoàn thành, không dùng hiện tại đơn.",
+          "tag": "present-for"
+        },
+        {
+          "t": "Mai is living in Can Tho since March",
+          "verdict": "wrong",
+          "note": "Hiện tại tiếp diễn không đi với since + mốc quá khứ.",
+          "tag": "present-for"
+        }
+      ],
+      "explain": "Tình huống bắt đầu từ tháng Ba và còn đến bây giờ, nên dùng hiện tại hoàn thành (đơn hoặc tiếp diễn) với since."
+    },
+    {
+      "id": "ppsf-10",
+      "type": "transform",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lại câu, giữ nguyên ý.",
+      "source": "I last saw her ten years ago.",
+      "instruction": "Bắt đầu bằng It's been.",
+      "accept": [
+        "It's been ten years since I last saw her",
+        "It has been ten years since I last saw her",
+        "It's been ten years since I saw her",
+        "It has been ten years since I saw her"
+      ],
+      "model": "It's been ten years since I last saw her.",
+      "explain": "Since nối khoảng thời gian với việc xảy ra lần cuối. Mệnh đề sau since ở quá khứ đơn."
+    },
+    {
+      "id": "ppsf-11",
+      "type": "order",
+      "level": "B1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sắp xếp thành một câu.",
+      "tokens": [
+        "The",
+        "film",
+        "hasn't",
+        "yet",
+        "started"
+      ],
+      "end": ".",
+      "accept": [
+        [
+          "The",
+          "film",
+          "hasn't",
+          "started",
+          "yet"
+        ],
+        [
+          "The",
+          "film",
+          "hasn't",
+          "yet",
+          "started"
+        ]
+      ],
+      "explain": "Yet thường đứng cuối câu. Đứng giữa hasn't và phân từ cũng đúng, nhưng trang trọng hơn."
+    },
+    {
+      "id": "ppsf-12",
+      "type": "match",
+      "level": "B1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Nối mỗi câu với cách hiểu theo ngữ cảnh trong ngoặc.",
+      "pairs": [
+        {
+          "a": "She's lived here for years. (She still lives here.)",
+          "b": "Cô ấy sống ở đây nhiều năm rồi và vẫn đang ở đây."
+        },
+        {
+          "a": "She lived here for years. (She now lives elsewhere.)",
+          "b": "Cô ấy từng sống ở đây nhiều năm, bây giờ thì không."
+        },
+        {
+          "a": "She hasn't lived here since 2020.",
+          "b": "Từ năm 2020 đến nay cô ấy không sống ở đây."
+        },
+        {
+          "a": "She still hasn't called.",
+          "b": "Cô ấy vẫn chưa gọi, và người nói đã mong cô ấy gọi sớm hơn."
+        }
+      ],
+      "explain": "Hiện tại hoàn thành kéo tình huống tới bây giờ. Quá khứ đơn khép khoảng thời gian lại. Still nhấn việc lẽ ra đã xảy ra."
+    },
+    {
+      "id": "ppsf-13",
+      "type": "classify",
+      "level": "B1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Mỗi cụm đi với since hay for?",
+      "cats": [
+        "since",
+        "for"
+      ],
+      "items": [
+        {
+          "t": "2019",
+          "cat": "since"
+        },
+        {
+          "t": "Friday",
+          "cat": "since"
+        },
+        {
+          "t": "I was a child",
+          "cat": "since"
+        },
+        {
+          "t": "last summer",
+          "cat": "since"
+        },
+        {
+          "t": "three weeks",
+          "cat": "for"
+        },
+        {
+          "t": "a long time",
+          "cat": "for"
+        },
+        {
+          "t": "ages",
+          "cat": "for"
+        },
+        {
+          "t": "half an hour",
+          "cat": "for"
+        }
+      ],
+      "explain": "Mốc (một năm, một ngày, một sự kiện) đi với since. Độ dài (con số, a long time, ages) đi với for."
+    },
+    {
+      "id": "ppsf-14",
+      "type": "multi",
+      "level": "B1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn tất cả các câu đúng.",
+      "stem": "Dùng already, yet và still",
+      "options": [
+        {
+          "t": "I've already seen that film.",
+          "ok": true,
+          "note": "Already đứng giữa have và phân từ."
+        },
+        {
+          "t": "He hasn't called yet.",
+          "ok": true,
+          "note": "Yet đứng cuối câu phủ định."
+        },
+        {
+          "t": "Have you eaten yet?",
+          "ok": true,
+          "note": "Yet đứng cuối câu hỏi."
+        },
+        {
+          "t": "I have yet eaten lunch.",
+          "note": "Yet trong câu khẳng định chỉ xuất hiện trong các cụm trang trọng như have yet to eat. Câu này sai.",
+          "tag": "yet-position"
+        }
+      ],
+      "explain": "Ba câu đầu dùng trạng từ phù hợp. I have yet eaten lunch không đúng theo nghĩa đã ăn hoặc chưa ăn ở đây. Có thể nói I've already eaten lunch hoặc I haven't eaten lunch yet, tùy ý định."
+    },
+    {
+      "id": "ppsf-15",
+      "type": "open",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Viết ba câu về bản thân: một câu với since, một câu với for, một câu với yet hoặc already.",
+      "model": [
+        "I've lived in this city since 2021. I've known my best friend for about ten years. I haven't visited Da Lat yet.",
+        "I've studied English since I was twelve. I've had this phone for two years. I've already booked my tickets for Tet."
+      ],
+      "checklist": [
+        "Since đi với một mốc cụ thể",
+        "For đi với một độ dài",
+        "Dùng vị trí tự nhiên: yet thường ở cuối hoặc sau have/has not; already thường ở giữa hoặc cuối câu.",
+        "Động từ dùng hiện tại hoàn thành"
+      ],
+      "explain": "Since nêu mốc, for nêu độ dài, yet và already nói việc đã xảy ra hay chưa tính đến bây giờ."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham khảo thêm về chủ điểm; chưa trực tiếp kiểm tra đoạn hoặc ấn bản trong lượt rà soát này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham khảo thêm về chủ điểm; chưa trực tiếp kiểm tra đoạn hoặc ấn bản trong lượt rà soát này."
+    },
+    {
+      "ref": "bc",
+      "note": "Các đoạn đã đối chiếu hoặc tái sử dụng có ghi rõ tại docs/grammar/TENSE-EXERCISE-REVIEW.md; không suy ra toàn bộ nguồn đã được đọc."
+    },
+    {
+      "ref": "murphy-egu",
+      "note": "Tham khảo thêm về chủ điểm; chưa trực tiếp kiểm tra đoạn hoặc ấn bản trong lượt rà soát này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

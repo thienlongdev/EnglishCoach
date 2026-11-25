@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s033-sandwich-train",
+  "title": "Chuyến tàu bánh mì",
+  "summary": "Hai anh em biến hộp cơm thành đoàn tàu. Toa đầu thiếu một quả cam làm đèn pha.",
+  "level": "A1",
+  "topics": [
+    "a-and-an",
+    "regular-plurals"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Tín",
+      "role": "Người xếp hộp cơm"
+    },
+    {
+      "id": "b",
+      "name": "May",
+      "role": "Em gái"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "May đã cắt hai miếng bánh mì làm thân tàu. Tín nhìn trong giỏ có một quả cam và hai quả táo. Em muốn quả cam đặt vào đầu tàu.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Our train needs a light.",
+          "vi": "Tàu mình cần đèn."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Tell me what to take from the basket.",
+          "vi": "Anh nói xem em cần lấy gì trong giỏ."
+        }
+      ],
+      "choice": {
+        "prompt": "Tín xin đúng một quả cam nguyên vẹn.",
+        "options": [
+          {
+            "t": "An orange, please.",
+            "note": "An đứng trước orange do từ bắt đầu bằng âm nguyên âm. Cụm chỉ đúng một quả cam.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "Two oranges, please.",
+            "note": "Two oranges đúng dạng số nhiều nhưng xin hai quả khi trong giỏ chỉ có một. Đầu tàu cũng chỉ cần một đèn.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "May đặt cam vào toa đầu. Quả cam lăn đi trước đoàn bánh mì như chiếc đèn biết chạy.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Our light can roll!",
+          "vi": "Đèn của mình biết lăn!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "May tìm dưới hai quả táo. Tín chỉ một ngón tay rồi đỡ đúng quả cam đang lăn khỏi giỏ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "One is enough.",
+          "vi": "Một quả là đủ rồi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Đến giờ ăn, hai bạn kéo đoàn tàu tới chỗ bà đang ngồi. Bà nhấc chiếc đèn tròn lên, chia cam làm ba và mời hai bác lái tàu ăn trước.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The light tastes sweet.",
+          "vi": "Đèn có vị ngọt thật."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

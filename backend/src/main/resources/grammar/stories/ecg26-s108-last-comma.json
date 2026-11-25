@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s108-last-comma",
+  "title": "Dấu phẩy của người giữ đàn",
+  "summary": "Một tờ nhắn trong hộp đàn ghi “Wait for me Jo”. Có hai người cùng tên Jo, một là người được gọi, một là tên con thuyền.",
+  "level": "B1",
+  "topics": [
+    "commas",
+    "reporting-commands-requests"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vi",
+      "role": "Nhân viên ga"
+    },
+    {
+      "id": "b",
+      "name": "Nam",
+      "role": "Người học việc"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Vi thấy một bản nhạc gấp dưới tay cầm, có lời đề tặng cho Jo, cô gái chơi cello. Cuối nhắn là nét chữ của chị cô.",
+      "say": [
+        {
+          "who": "a",
+          "en": "She wrote it before the last ferry left.",
+          "vi": "Cô ấy viết trước khi chuyến phà cuối rời bến."
+        },
+        {
+          "who": "b",
+          "en": "Put back the pause where the sister would speak it.",
+          "vi": "Đặt lại chỗ ngừng đúng như người chị sẽ nói đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Vi phải dùng dấu phẩy để chỉ người được gọi trực tiếp.",
+        "options": [
+          {
+            "ok": false,
+            "t": "Wait for Jo.",
+            "note": "For Jo chọn Jo làm người được đợi và xóa me. Nó đổi hướng lời nhắn, dù câu mệnh lệnh mới vẫn đúng.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "Wait for me, Jo.",
+            "note": "Dấu phẩy tách Jo là lời gọi. Wait for me bảo Jo đợi chính người đang nhắn.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Nam mang đàn tới sân ga. Jo nhận ra cách chị ngắt nhịp trong câu. Cô ngồi lại, kéo câu đầu bản nhạc cho tới khi chị bước xuống chuyến kế.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The comma saved her a seat beside her sister.",
+          "vi": "Dấu phẩy giữ cho cô ấy một chỗ bên chị mình."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Hai chị em chơi phần còn lại cùng nhau, không cần nhìn đồng hồ bao lâu nữa.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Nam tới bến thuyền mang tên Jo nhưng chỉ thấy cô nghệ sĩ đang ngồi kéo đàn một mình. Vi đọc lại lời đề tặng rồi chỉ người chị vừa tới.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Two Jos needed two different signs.",
+          "vi": "Hai cái tên Jo cần hai tấm biển khác nhau."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Chiếc hộp trở về với người chơi; tên con thuyền được thêm lên bản đồ bến để lần sau đỡ nhầm.",
+      "end": true
+    }
+  ]
+}

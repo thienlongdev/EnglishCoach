@@ -1,0 +1,13 @@
+/* Living Continuity: the live surface owns its pixels, material and hit testing.
+   No portal clone, generic fill, global flying highlight or hidden destination. */
+[data-morph-presence] { animation: none !important; }
+[data-morph-state="closing"] { pointer-events: none; }
+html[data-morph-ready] .ec-view-enter { animation: none; }
+.ec-morph-handle { display: none; }
+@media (max-width: 767px) {
+  .ec-morph-handle { display: flex; align-items: center; justify-content: center; width: 100%; height: 28px; flex: 0 0 28px; cursor: grab; border: 0; background: transparent; color: inherit; }
+  .ec-morph-handle::after { content: ''; width: 36px; height: 4px; border-radius: 999px; background: currentColor; opacity: .32; }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-morph-presence] { transition: none; }
+}

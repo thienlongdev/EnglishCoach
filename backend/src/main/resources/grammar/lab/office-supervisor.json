@@ -1,0 +1,40 @@
+{
+  "id": "office-supervisor",
+  "title": "Ai ký giấy nghỉ phép?",
+  "summary": "Trên mẫu đơn, danh từ gần động từ nhất là employees. Thử đổi riêng số của người quản lý rồi xem động từ thay đổi theo ai.",
+  "level": "B1",
+  "topics": [
+    "agreement-tricky-subjects"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Số quản lý",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Một"
+        },
+        {
+          "id": "v2",
+          "label": "Nhiều"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The manager of the employees signs the forms.",
+      "vi": "Người quản lý các nhân viên ký các mẫu đơn.",
+      "note": "Of the employees bổ nghĩa cho manager. Signs hòa hợp với manager số ít. / Manager is the head of the subject.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The managers of the employees sign the forms.",
+      "vi": "Các quản lý của nhóm nhân viên ký các mẫu đơn.",
+      "note": "Đổi danh từ chính thành managers khiến sign mất s dù employees không đổi. / Managers controls the plural verb.",
+      "verdict": "ok"
+    }
+  }
+}

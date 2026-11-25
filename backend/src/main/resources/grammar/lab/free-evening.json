@@ -1,0 +1,40 @@
+{
+  "id": "free-evening",
+  "title": "Xin phép hay nhờ người khác?",
+  "summary": "Trong bữa tối, cửa sổ đang đóng. Đổi chủ ngữ sau can rồi xác định ai sẽ mở cửa.",
+  "level": "A2",
+  "topics": [
+    "permission-and-requests"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Người thực hiện",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Tôi"
+        },
+        {
+          "id": "v2",
+          "label": "Bạn"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Can I open the window?",
+      "vi": "Tôi mở cửa sổ được không?",
+      "note": "Can I xin phép để người nói tự làm. / The speaker asks for permission.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Can you open the window?",
+      "vi": "Bạn mở cửa sổ giúp tôi được không?",
+      "note": "Can you hướng hành động về người nghe. Trong bữa ăn đây thường là lời nhờ. / In this setting the question requests help.",
+      "verdict": "ok"
+    }
+  }
+}

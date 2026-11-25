@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s085-last-bus-mist",
+  "title": "Nét chữ trên kính mờ",
+  "level": "A2",
+  "topics": [
+    "past-simple-vs-continuous"
+  ],
+  "scene": "station",
+  "summary": "Kính xe buýt mờ hơi nước. Tiên định viết BYE thì xe đã chạy, chỉ còn nhìn được chữ B từ sân ga.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Tiên",
+      "role": "Hành khách"
+    },
+    {
+      "id": "b",
+      "name": "Milo",
+      "role": "Bạn đưa tiễn"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Milo vẽ một con ong lên kính phía ngoài đúng khi Tiên đang viết bên trong. Từ B và hình bee trở thành lời chào riêng của hai bạn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Your bee flew into my word.",
+          "vi": "Con ong của cậu bay vào chữ của mình rồi."
+        },
+        {
+          "who": "b",
+          "en": "What were you writing when I drew it?",
+          "vi": "Lúc mình vẽ ong thì cậu đang viết gì?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Tiên kể việc đang diễn ra tại thời điểm con ong xuất hiện.",
+        "options": [
+          {
+            "t": "I finished the word before you drew it.",
+            "note": "Finished ... before nói đã viết trọn trước khi con ong xuất hiện. Điều đó trái với chữ còn dở trên kính.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "I was writing goodbye.",
+            "note": "Was writing cho biết quá trình viết đang diễn ra, không khẳng định đã viết xong. Chữ B còn dang dở khớp với lời kể.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Milo gửi tin nhắn bằng hình con ong. Tiên trả lời bằng chữ B. Từ đó hai bạn có một lời hẹn gặp lại chỉ cần một chữ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "A bee is quicker than goodbye.",
+          "vi": "Một con ong nhanh hơn cả lời tạm biệt."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Tiên chụp tấm kính từ trong xe. Chỉ một chữ và nửa cánh ong còn rõ. Cô gửi ảnh để sửa câu kể, rồi đóng khung nó trên trang đầu sổ mới.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Some goodbyes don't need the whole word.",
+          "vi": "Có những lời tạm biệt chẳng cần viết trọn từ."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "timing-forecast",
+  "title": "Đến trưa, được bao nhiêu hay làm bao lâu?",
+  "summary": "Xưởng đóng gói báo tiến độ vào buổi sáng. Chọn số hộp hoàn thành hoặc số giờ làm dự kiến. Câu nào không cam kết số hộp?",
+  "level": "B2",
+  "topics": [
+    "future-perfect",
+    "tense-aspect-system"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Thước đo",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Sản lượng"
+        },
+        {
+          "id": "v2",
+          "label": "Thời lượng"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "By noon we'll have packed fifty boxes.",
+      "vi": "Đến trưa chúng tôi sẽ đóng xong năm mươi hộp.",
+      "note": "Fifty boxes là số đơn vị dự kiến đã đóng xong trước mốc trưa. / The perfect looks back on completed units.",
+      "verdict": "ok",
+      "timeline": {
+        "sentence": "By noon we'll have packed fifty boxes.",
+        "now": 32,
+        "events": [
+          {
+            "kind": "point",
+            "at": 84,
+            "label": "Buổi trưa",
+            "role": "ref"
+          },
+          {
+            "kind": "point",
+            "at": 73,
+            "label": "Ví dụ: xong hộp thứ 50",
+            "role": "main"
+          }
+        ]
+      }
+    },
+    "v2": {
+      "en": "By noon we'll have been packing for three hours.",
+      "vi": "Đến trưa chúng tôi sẽ đóng hàng được ba giờ.",
+      "note": "For three hours đo quá trình làm việc tới mốc trưa, không cho biết có bao nhiêu hộp hoàn tất. / The perfect progressive measures accumulated activity.",
+      "verdict": "ok",
+      "timeline": {
+        "sentence": "By noon we'll have been packing for three hours.",
+        "now": 32,
+        "events": [
+          {
+            "kind": "span",
+            "from": 15,
+            "to": 84,
+            "label": "Ba giờ đóng hàng",
+            "role": "main"
+          },
+          {
+            "kind": "point",
+            "at": 84,
+            "label": "Buổi trưa",
+            "role": "ref"
+          }
+        ]
+      }
+    }
+  }
+}

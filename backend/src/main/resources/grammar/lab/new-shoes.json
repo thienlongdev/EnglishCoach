@@ -1,0 +1,40 @@
+{
+  "id": "new-shoes",
+  "title": "Đôi giày nhỏ màu đen",
+  "summary": "Bạn thêm chi tiết vào nhãn giày để phân biệt hai đôi. Khi thêm cả kích cỡ và màu, từ nào thường đứng gần shoes hơn?",
+  "level": "A2",
+  "topics": [
+    "adjective-order"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Chi tiết trên nhãn",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Chỉ màu"
+        },
+        {
+          "id": "v2",
+          "label": "Cỡ và màu"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I bought black shoes.",
+      "vi": "Tôi mua giày màu đen.",
+      "note": "Black đứng trước shoes để phân loại theo màu. / Colour goes before the noun.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "I bought small black shoes.",
+      "vi": "Tôi mua giày nhỏ màu đen.",
+      "note": "Trong thứ tự trung tính, small nói cỡ rồi black nói màu, sát danh từ hơn. / Size normally precedes colour.",
+      "verdict": "ok"
+    }
+  }
+}

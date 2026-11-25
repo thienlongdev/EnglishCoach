@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s130-ribbon-clock",
+  "title": "Chiếc ruy băng báo giờ",
+  "summary": "Một dải ruy băng tím được buộc trên hòm thư từ ngày tiệm mở. Em bé nghe “năm năm” tưởng cứ năm năm thì buộc một dải mới.",
+  "level": "B1",
+  "topics": [
+    "present-perfect-since-for"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Thoa",
+      "role": "Người nhận thư"
+    },
+    {
+      "id": "b",
+      "name": "Kha",
+      "role": "Người giao thư"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Chỉ có một cái nút cũ, nắng làm tím thành bạc. Thoa muốn ghi cả mốc bắt đầu lẫn độ dài cho triển lãm nhỏ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The knot hasn't moved.",
+          "vi": "Nút thắt vẫn nằm nguyên."
+        },
+        {
+          "who": "b",
+          "en": "Give the visitor a starting point.",
+          "vi": "Cho khách một mốc khởi đầu đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn cách nói dùng since với mốc, hoặc for với khoảng.",
+        "options": [
+          {
+            "ok": true,
+            "t": "It's been here since the shop opened.",
+            "note": "Since đi với mốc lúc tiệm mở. Has been cho biết dải vẫn ở đây.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": true,
+            "t": "It's been here for five years, since opening day.",
+            "note": "For five years cho độ dài; since opening day bổ sung mốc bắt đầu. Cả hai tả cùng một dải.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Em bé tìm lại ảnh ngày khai trương, nhận ra chính cái nút ở mép ảnh. Hai người kẹp ảnh cạnh hòm thư.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The photograph kept its first colour.",
+          "vi": "Ảnh đã giữ hộ màu đầu tiên."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Dải bạc lấy lại màu tím mỗi khi ai đó nhìn sang bức ảnh xưa.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Kha cho em tô năm ô trên thước thời gian. Ô cuối có màu bạc như ruy băng thật.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One more square, one more spring.",
+          "vi": "Thêm một ô, thêm một mùa xuân."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Năm sau em quay lại tô ô thứ sáu, buộc một nụ hoa mới cạnh nút cũ mà không tháo nút.",
+      "end": true
+    }
+  ]
+}

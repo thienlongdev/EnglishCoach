@@ -1,0 +1,41 @@
+{
+  "id": "clinic-yesterday",
+  "title": "Từ hôm nay thành hôm nào?",
+  "summary": "Hôm thứ Hai Hà nói mình bận hôm đó. So sánh hai lần kể lại, một lần ngay thứ Hai và một lần vào thứ Ba. Today có còn chỉ đúng ngày không?",
+  "level": "B1",
+  "topics": [
+    "backshift",
+    "direct-and-reported"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Thời điểm kể",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Vẫn là thứ Hai"
+        },
+        {
+          "id": "v2",
+          "label": "Đã sang thứ Ba"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Ha said she's busy today.",
+      "vi": "Hà nói hôm nay bạn ấy bận.",
+      "note": "Người kể vẫn ở thứ Hai và xem thông tin còn đúng nên có thể giữ hiện tại. / Today still names Monday during the same day.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Ha said she was busy yesterday.",
+      "vi": "Hà nói hôm qua bạn ấy bận.",
+      "note": "Kể hôm thứ Ba thì yesterday mới chỉ đúng thứ Hai. Was đặt tình trạng bận ở ngày đã qua. / Yesterday now points back to Monday.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,529 @@
+{
+  "schema": 1,
+  "slug": "adjective-order",
+  "version": 2,
+  "domain": "adjectives-adverbs",
+  "order": 20,
+  "kind": "grammar",
+  "title": {
+    "vi": "Thứ tự nhiều tính từ",
+    "en": "Order of adjectives"
+  },
+  "level": "B1",
+  "levelBasis": "editorial",
+  "prerequisites": [
+    "adjective-position"
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "subtitle": {
+    "vi": "Một thứ tự quen dùng, có chỗ cho ngữ cảnh và nhấn mạnh",
+    "en": "Usual ordering, emphasis and adjective groups"
+  },
+  "aliases": [
+    "thứ tự tính từ",
+    "opinion size age colour origin material",
+    "a wooden small box",
+    "coordinate adjectives"
+  ],
+  "objectives": [
+    "Sắp xếp một cụm tính từ ngắn theo thứ tự trung tính.",
+    "Phân biệt xu hướng thứ tự với lỗi cấu trúc thật.",
+    "Dùng dấu phẩy hoặc and khi các tính từ có vai trò ngang hàng."
+  ],
+  "related": [
+    {
+      "slug": "adjective-position",
+      "rel": "more"
+    },
+    {
+      "slug": "comparatives",
+      "rel": "more"
+    }
+  ],
+  "quick": {
+    "what": "Khi nhiều tính từ đứng trước danh từ, người nói thường đặt nhận xét chung trước các đặc điểm phân loại như xuất xứ hoặc vật liệu. Thứ tự tính từ (adjective order) là xu hướng mạnh, không phải bảng máy móc không có ngoại lệ.",
+    "when": "Dùng khi mô tả đồ vật, nhà cửa hoặc sản phẩm; thường chỉ cần hai hoặc ba tính từ.",
+    "examples": [
+      {
+        "en": "[S|They] [V|bought] [O|a compact new Japanese scanner].",
+        "vi": "Họ mua một máy quét Nhật mới, nhỏ gọn."
+      },
+      {
+        "en": "[S|We] [V|found] [O|a sturdy old metal cabinet].",
+        "vi": "Chúng tôi tìm được một tủ kim loại cũ chắc chắn."
+      }
+    ],
+    "remember": "Từ càng gắn với loại đồ vật thường càng gần danh từ. Đừng dồn mọi ô của bảng vào một cụm."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Thứ tự trung tính giúp người nghe nhận ra thông tin dễ hơn. A small wooden drawer thường trôi chảy hơn a wooden small drawer khi chỉ liệt kê đặc điểm bình thường. Cách đảo vẫn có thể xuất hiện nếu người nói đang đối chiếu một đặc điểm; không gọi mọi đảo thứ tự là sai ngữ pháp."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Vùng thường gặp",
+        "Ví dụ từ",
+        "Cụm minh họa"
+      ],
+      "rows": [
+        [
+          "Nhận xét",
+          "useful, elegant, sturdy",
+          "a useful little tool"
+        ],
+        [
+          "Kích cỡ, tuổi, hình dạng",
+          "small, new, round",
+          "a small round mirror"
+        ],
+        [
+          "Màu sắc",
+          "grey, blue",
+          "a new grey coat"
+        ],
+        [
+          "Xuất xứ, vật liệu",
+          "Korean, steel",
+          "a Korean steel frame"
+        ],
+        [
+          "Danh từ trung tâm",
+          "frame, coat, mirror",
+          "a small round wall mirror"
+        ]
+      ]
+    },
+    {
+      "type": "formula",
+      "parts": [
+        {
+          "t": "a / the / my",
+          "role": "DET"
+        },
+        {
+          "t": "tính từ miêu tả",
+          "role": "ADJ"
+        },
+        {
+          "t": "tính từ phân loại",
+          "role": "ADJ"
+        },
+        {
+          "t": "danh từ",
+          "role": "N"
+        }
+      ]
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|She] [V|restored] [O|an elegant old oak desk].",
+          "vi": "Cô ấy phục chế một bàn gỗ sồi cũ thanh nhã."
+        },
+        {
+          "en": "[S|I] [V|ordered] [O|a narrow blue steel locker].",
+          "vi": "Tôi đặt mua một tủ sắt xanh hẹp."
+        }
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Nhận xét",
+            "items": [
+              "a practical",
+              "an attractive"
+            ]
+          },
+          {
+            "label": "Tuổi",
+            "items": [
+              "new",
+              "old"
+            ]
+          },
+          {
+            "label": "Vật liệu",
+            "items": [
+              "wooden",
+              "metal"
+            ]
+          }
+        ],
+        "sentence": "{0} {1} {2} desk",
+        "fixedOrder": true
+      },
+      "caption": "Một cụm danh từ ngắn theo thứ tự thông thường",
+      "alt": "Nhận xét trước tuổi; vật liệu gần danh từ: a practical new wooden desk hoặc an attractive old metal desk. Đây là khung minh họa, không phải lệnh cấm đổi thứ tự trong ngữ cảnh đối chiếu."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "a cheerful, patient instructor",
+            "vi": "một giảng viên vui vẻ và kiên nhẫn"
+          },
+          "b": {
+            "en": "a new Italian espresso machine",
+            "vi": "một máy espresso Ý mới"
+          },
+          "diff": "Cheerful và patient là hai nhận xét ngang hàng nên có thể nối and hoặc dùng dấu phẩy. New và Italian lần lượt thu hẹp loại máy, thường không cần dấu phẩy."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Nếu cụm quá nặng, chia ra: a compact scanner that is easy to carry. Rõ nghĩa quan trọng hơn việc nhét đủ nhận xét, kích cỡ, tuổi, hình dạng, màu, xuất xứ và vật liệu."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Những từ như sleeping trong sleeping bag chỉ loại đồ dùng; không phải mọi từ trước danh từ đều là tính từ miêu tả có thể đổi vị trí tự do."
+    },
+    {
+      "type": "try",
+      "exercise": "adjective-order-1"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Nhóm tính từ và mục đích nhấn mạnh có thể làm thứ tự thay đổi. Trong ngữ cảnh đang đối chiếu NEW và OLD wooden desks, người nói có thể làm nổi bật tuổi khác cách mô tả trung tính. Bài kiểm tra thứ tự phải nói rõ yêu cầu diễn đạt trung tính, không xem xu hướng là định luật."
+    },
+    {
+      "type": "p",
+      "vi": "Phép thử and hoặc hoán đổi hai tính từ giúp nhận ra các tính từ ngang hàng, nhưng không phải thuật toán tuyệt đối. Dấu phẩy có thể phụ thuộc cách người viết nhóm ý. Không đặt dấu phẩy giữa tính từ cuối với danh từ chỉ để kết thúc một danh sách."
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Tiếng Việt thường đặt đặc điểm sau danh từ; tiếng Anh thường đặt tính từ thuộc ngữ trước danh từ. Khi dịch, trước hết dựng đúng cụm a new scanner, rồi thêm các đặc điểm cần thiết."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "ao-det",
+      "wrong": "We bought compact a scanner.",
+      "right": "We bought a compact scanner.",
+      "why": "Mạo từ a đứng đầu cụm danh từ, trước tính từ compact."
+    },
+    {
+      "id": "ao-comma",
+      "wrong": "It is a reliable, scanner.",
+      "right": "It is a reliable scanner.",
+      "why": "Không tách tính từ duy nhất khỏi danh từ bằng dấu phẩy."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Đảo thứ tự có luôn sai không?",
+      "a": "Không. Có thứ tự trung tính phổ biến và có cách đảo để đối chiếu hoặc nhóm nghĩa. Nên nói “thường tự nhiên hơn” khi chỉ là ưu tiên."
+    },
+    {
+      "q": "Có cần dùng bảy tính từ để luyện không?",
+      "a": "Không. Hai hoặc ba tính từ đủ để hiểu quy luật; cụm quá dài thường khiến câu khó đọc."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "adjective-order-1",
+      "level": "B1",
+      "use": "practice",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn cụm trung tính thông thường: kích cỡ trước vật liệu.",
+      "stem": "Bạn mô tả ngăn kéo nhỏ bằng gỗ, không đối chiếu đặc biệt.",
+      "options": [
+        {
+          "t": "a small wooden drawer",
+          "ok": true,
+          "note": "Đây là thứ tự trung tính quen dùng."
+        },
+        {
+          "t": "a wooden small drawer",
+          "tag": "preposition-pattern",
+          "note": "Có thể cần ngữ cảnh nhấn mạnh; không đáp ứng yêu cầu thứ tự trung tính ở đây."
+        },
+        {
+          "t": "small a wooden drawer",
+          "tag": "preposition-pattern",
+          "note": "A phải đứng trước tính từ trong cụm này."
+        }
+      ],
+      "explain": "Yêu cầu là cách mô tả trung tính; không phải mọi đảo thứ tự đều sai trong mọi ngữ cảnh."
+    },
+    {
+      "id": "adjective-order-2",
+      "level": "B1",
+      "use": "practice",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Đặt small và steel theo thứ tự trung tính trước locker.",
+      "stem": "We need a {1} locker.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "small steel"
+          ]
+        }
+      },
+      "explain": "Kích cỡ thường đi trước vật liệu."
+    },
+    {
+      "id": "adjective-order-3",
+      "level": "B1",
+      "use": "practice",
+      "type": "match",
+      "skill": "meaning",
+      "prompt": "Nối từ với thông tin nó nêu.",
+      "pairs": [
+        {
+          "a": "compact",
+          "b": "kích cỡ hoặc thiết kế gọn"
+        },
+        {
+          "a": "Brazilian",
+          "b": "xuất xứ"
+        },
+        {
+          "a": "wooden",
+          "b": "vật liệu"
+        },
+        {
+          "a": "elegant",
+          "b": "nhận xét"
+        }
+      ],
+      "explain": "Các nhóm giúp hình dung trật tự thường gặp, không thay thế ngữ cảnh."
+    },
+    {
+      "id": "adjective-order-4",
+      "level": "B1",
+      "use": "practice",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn cụm có mạo từ đúng vị trí.",
+      "stem": "Một chiếc gương tròn nhỏ.",
+      "options": [
+        {
+          "t": "a small round mirror",
+          "ok": true,
+          "note": "A mở đầu cụm, hai tính từ trước mirror."
+        },
+        {
+          "t": "small a round mirror",
+          "tag": "preposition-pattern",
+          "note": "A không đứng sau small trong mẫu này."
+        },
+        {
+          "t": "a small mirror round",
+          "tag": "preposition-pattern",
+          "note": "Round không đặt sau danh từ theo cấu trúc mục tiêu."
+        }
+      ],
+      "explain": "Dựng khung từ hạn định + tính từ + danh từ trước khi xét thứ tự chi tiết."
+    },
+    {
+      "id": "adjective-order-5",
+      "level": "B1",
+      "use": "practice",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Ghép a, new, blue trước coat theo cách mô tả trung tính.",
+      "stem": "She chose {1}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "a new blue coat"
+          ]
+        }
+      },
+      "explain": "Mạo từ trước tính từ; new thường đứng trước màu blue."
+    },
+    {
+      "id": "adjective-order-6",
+      "level": "B1",
+      "use": "practice",
+      "type": "classify",
+      "skill": "recognition",
+      "prompt": "Nhận diện thông tin.",
+      "cats": [
+        "Nhận xét",
+        "Tuổi",
+        "Vật liệu"
+      ],
+      "items": [
+        {
+          "t": "helpful",
+          "cat": "Nhận xét"
+        },
+        {
+          "t": "ancient",
+          "cat": "Tuổi"
+        },
+        {
+          "t": "cotton",
+          "cat": "Vật liệu"
+        }
+      ],
+      "explain": "Trong cụm danh từ, các từ này có thể làm rõ các nhóm thông tin khác nhau."
+    },
+    {
+      "id": "adjective-order-7",
+      "level": "B1",
+      "use": "practice",
+      "type": "transform",
+      "skill": "production",
+      "prompt": "Nối hai nhận xét ngang hàng.",
+      "source": "The tutor is calm. The tutor is patient.",
+      "instruction": "Viết một câu bắt đầu The tutor is, nối hai tính từ bằng and.",
+      "accept": [
+        "The tutor is calm and patient.",
+        "The tutor is patient and calm."
+      ],
+      "model": "The tutor is calm and patient.",
+      "explain": "Hai nhận xét ngang hàng có thể đổi thứ tự mà không đổi nghĩa chính."
+    },
+    {
+      "id": "adjective-order-8",
+      "level": "B1",
+      "use": "practice",
+      "type": "open",
+      "skill": "production",
+      "prompt": "Viết rồi tự đối chiếu với bài mẫu.",
+      "task": "Mô tả hai đồ vật bằng hai hoặc ba tính từ, rồi viết lại một cụm dài thành câu dễ đọc hơn.",
+      "model": [
+        "I use a small grey laptop.",
+        "We restored a sturdy old oak cupboard.",
+        "The cupboard is old, but it is sturdy and has plenty of storage space."
+      ],
+      "checklist": [
+        "Mạo từ có trước tính từ không?",
+        "Vật liệu có đứng gần danh từ trong cách mô tả trung tính không?",
+        "Cụm dài đã được chia nếu khó đọc chưa?"
+      ],
+      "explain": "Các câu mẫu cho thấy mô tả gọn thường rõ hơn chuỗi tính từ dài."
+    },
+    {
+      "id": "adjective-order-9",
+      "level": "B1",
+      "use": "check",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn nhận xét đúng.",
+      "stem": "Một tác giả đảo thứ tự tính từ để nhấn mạnh sự đối chiếu.",
+      "options": [
+        {
+          "t": "Cần xem ngữ cảnh; đảo thứ tự không tự động là lỗi.",
+          "ok": true,
+          "note": "Thứ tự tính từ có tương tác với nhấn mạnh."
+        },
+        {
+          "t": "Mọi đảo thứ tự đều sai ngữ pháp.",
+          "tag": "preposition-pattern",
+          "note": "Xu hướng trung tính không phải luật tuyệt đối."
+        },
+        {
+          "t": "Tính từ luôn phải sau danh từ.",
+          "tag": "preposition-pattern",
+          "note": "Đó không phải vị trí thông thường của tính từ thuộc ngữ."
+        }
+      ],
+      "explain": "Đánh giá tính tự nhiên và nghĩa trong ngữ cảnh."
+    },
+    {
+      "id": "adjective-order-10",
+      "level": "B1",
+      "use": "check",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Hoàn thành cả cụm danh từ: một kệ kim loại mới, thiết thực. Dùng a, practical, new, metal và shelf theo thứ tự trung tính.",
+      "stem": "They installed {1}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "a practical new metal shelf"
+          ]
+        }
+      },
+      "explain": "A mở cụm, practical là nhận xét, new nêu tuổi và metal gần danh từ shelf. Đây là mẫu trung tính theo yêu cầu, không là cấm mọi cách nhấn khác."
+    },
+    {
+      "id": "adjective-order-11",
+      "level": "B1",
+      "use": "check",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn cụm không có dấu phẩy tách tính từ khỏi danh từ.",
+      "stem": "Một người hướng dẫn kiên nhẫn.",
+      "options": [
+        {
+          "t": "a patient guide",
+          "ok": true,
+          "note": "Không cần dấu phẩy giữa patient và guide."
+        },
+        {
+          "t": "a patient, guide",
+          "tag": "preposition-pattern",
+          "note": "Dấu phẩy tách sai hai phần của cụm."
+        },
+        {
+          "t": "a, patient guide",
+          "tag": "preposition-pattern",
+          "note": "Không tách a khỏi cụm bằng dấu phẩy."
+        }
+      ],
+      "explain": "Không đặt dấu phẩy sau tính từ cuối chỉ vì trước đó có thể có nhiều tính từ."
+    },
+    {
+      "id": "adjective-order-12",
+      "level": "B1",
+      "use": "check",
+      "type": "error",
+      "skill": "form",
+      "prompt": "Sửa vị trí mạo từ trong cụm.",
+      "segments": [
+        {
+          "t": "We need "
+        },
+        {
+          "t": "reliable a",
+          "bad": true,
+          "fix": [
+            "a reliable"
+          ],
+          "note": "A đứng trước reliable trong cụm danh từ này.",
+          "tag": "preposition-pattern"
+        },
+        {
+          "t": " scanner."
+        }
+      ],
+      "explain": "A đứng trước reliable trong cụm danh từ này."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham chiếu đề xuất: thứ tự tính từ và tính từ ngang hàng. Chưa kiểm chứng trực tiếp từng mệnh đề hoặc khóa đáp án trong lượt soạn này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham chiếu đề xuất để đối chiếu cách dùng và ngoại lệ; không khẳng định đã đọc một trang hoặc ấn bản cụ thể."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

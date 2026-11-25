@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s174-before-or-by",
+  "title": "Bức ảnh chụp vào hạn chót",
+  "summary": "Bộ nhớ ảnh sắp đầy trước trận mưa sao. Hà muốn lưu loạt ảnh hạt nở xong trước 9 giờ, lúc camera đổi hướng.",
+  "level": "B2",
+  "topics": [
+    "future-perfect",
+    "time-prepositions-advanced"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hà",
+      "role": "Người chăm kho hạt"
+    },
+    {
+      "id": "b",
+      "name": "Pax",
+      "role": "Người lái tàu"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Còn một giờ và ba tấm ảnh. Pax có thể hứa hoàn tất trước hạn hoặc hứa sẽ đang làm dở. Chỉ một cách giữ được camera cho cả hai việc.",
+      "say": [
+        {
+          "who": "a",
+          "en": "At nine the camera belongs to the sky.",
+          "vi": "Chín giờ máy ảnh phải dành cho bầu trời."
+        },
+        {
+          "who": "b",
+          "en": "When can I turn it away from the tray?",
+          "vi": "Khi nào tôi được xoay máy khỏi khay?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn lời hứa đã chụp xong tính đến 9 giờ.",
+        "options": [
+          {
+            "ok": true,
+            "t": "By nine, I'll have taken all three pictures.",
+            "note": "By nine là hạn; will have taken nhấn cả ba ảnh hoàn tất trước hoặc đúng hạn. Không buộc phải chụp chính xác lúc chín.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "At nine, I'll still be taking the pictures.",
+            "note": "Still be taking nói công việc vẫn tiếp diễn lúc chín, không bảo camera đã rảnh. Nó không vừa lịch chuyển hướng.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Pax quay máy khi ảnh cuối đã lưu, kịp bắt ngôi sao băng đầu tiên.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That's a garden with its own sky.",
+          "vi": "Một khu vườn có cả bầu trời riêng."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Họ in ba ảnh hạt và một ảnh trời lên chung dải giấy. Nhìn liền nhau, chiếc lá cuối trông như nảy ra một ngôi sao.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Pax tìm chiếc gương dự phòng hướng ánh sao vào góc ảnh của khay. Cả hai sự kiện hiện trong cùng một khung dù thời gian trùng nhau.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Next time I'll promise a finish, not a start.",
+          "vi": "Lần tới tôi sẽ hẹn lúc xong, không hẹn lúc bắt đầu."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Hà sửa lời hẹn trong sổ và giữ bức ảnh hai tầng làm bằng chứng cho cách xoay xở ấy.",
+      "end": true
+    }
+  ]
+}

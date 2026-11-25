@@ -1,0 +1,23 @@
+<svg viewBox="0 0 280 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cloudPuffGrad" x1="140" y1="10" x2="140" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.88"/>
+      <stop offset="50%" stop-color="#F1F5F9" stop-opacity="0.75"/>
+      <stop offset="85%" stop-color="#E2E8F0" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#CBD5E1" stop-opacity="0.1"/>
+    </linearGradient>
+    <radialGradient id="puffCore" cx="130" cy="50" r="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#F8FAFC" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#E2E8F0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Base Soft Cloud Shading -->
+  <path d="M40 85 C20 85 8 72 8 54 C8 38 22 26 38 26 C48 12 74 6 98 8 C116 10 130 18 138 28 C150 18 174 14 196 20 C222 26 236 42 240 56 C256 56 272 68 272 84 C272 100 256 112 238 112 C200 112 80 112 40 85 Z" fill="url(#cloudPuffGrad)"/>
+
+  <!-- Luminous Cloud Top Highlights (Upper-Left Sun Light) -->
+  <ellipse cx="94" cy="28" rx="42" ry="20" fill="url(#puffCore)"/>
+  <ellipse cx="178" cy="34" rx="46" ry="22" fill="url(#puffCore)"/>
+  <ellipse cx="44" cy="46" rx="28" ry="18" fill="url(#puffCore)"/>
+</svg>

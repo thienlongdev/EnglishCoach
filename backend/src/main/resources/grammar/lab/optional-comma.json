@@ -1,0 +1,41 @@
+{
+  "id": "optional-comma",
+  "title": "Một chức danh đã đủ nhận diện chưa?",
+  "summary": "Hai sơ đồ tổ chức khác nhau. Đổi giữa một giám đốc duy nhất và nhiều giám đốc rồi thử đặt tên riêng giữa dấu phẩy.",
+  "level": "B2",
+  "topics": [
+    "commas",
+    "apposition"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Bối cảnh",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Chỉ có một"
+        },
+        {
+          "id": "v2",
+          "label": "Có nhiều người"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Our director, Leila, signed the form.",
+      "vi": "Giám đốc của chúng tôi, bà Leila, đã ký mẫu đơn.",
+      "note": "Trong bối cảnh chỉ một giám đốc, Leila bổ sung tên nên được tách bằng dấu phẩy. / The name supplements an already identifiable role.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Our director Leila signed the form.",
+      "vi": "Giám đốc Leila của chúng tôi đã ký mẫu đơn.",
+      "note": "Trong nhóm có nhiều giám đốc, tên giúp xác định đúng người. Lựa chọn dấu câu phụ thuộc cách người viết giới thiệu. / An integrated name can distinguish this director.",
+      "verdict": "ok"
+    }
+  }
+}

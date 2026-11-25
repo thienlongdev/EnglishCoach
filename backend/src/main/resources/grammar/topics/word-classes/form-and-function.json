@@ -1,0 +1,553 @@
+{
+  "schema": 1,
+  "slug": "form-and-function",
+  "version": 2,
+  "domain": "word-classes",
+  "order": 20,
+  "kind": "grammar",
+  "title": {
+    "vi": "Từ loại khác với chức năng",
+    "en": "Form versus function"
+  },
+  "level": "B1",
+  "levelBasis": "editorial",
+  "prerequisites": [
+    "parts-of-speech"
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "subtitle": {
+    "vi": "Một nhãn nói từ thuộc nhóm nào, một nhãn nói nó làm việc gì",
+    "en": "Word class names the category; function names the job"
+  },
+  "aliases": [
+    "từ loại và chức năng",
+    "form function",
+    "word-conversion",
+    "một từ nhiều từ loại",
+    "noun modifier adjective",
+    "chuyển loại"
+  ],
+  "objectives": [
+    "Phân biệt từ loại với chủ ngữ, tân ngữ và bổ nghĩa",
+    "Nhận ra danh từ không chỉ làm chủ ngữ và tính từ không chỉ đứng trước danh từ",
+    "Phân tích một từ chuyển loại dựa trên cấu trúc cụ thể"
+  ],
+  "related": [
+    {
+      "slug": "parts-of-speech",
+      "rel": "more"
+    },
+    {
+      "slug": "compound-nouns",
+      "rel": "more"
+    },
+    {
+      "slug": "word-families",
+      "rel": "contrast"
+    }
+  ],
+  "quick": {
+  "what": "Từ loại (word class) như danh từ và động từ cho biết kiểu từ; chức năng (function) như chủ ngữ và tân ngữ cho biết công việc của một thành phần trong câu. Hai hệ nhãn trả lời hai câu hỏi khác nhau.",
+  "when": "Dùng khi phân tích câu, chọn dạng từ hoặc giải thích vì sao cùng một từ đứng ở nhiều vị trí.",
+  "examples": [
+    {
+      "en": "The teacher called the student.",
+      "vi": "Giáo viên gọi học viên."
+    },
+    {
+      "en": "The student called the teacher.",
+      "vi": "Học viên gọi giáo viên."
+    }
+  ],
+  "remember": "Teacher vẫn là danh từ khi cụm chứa nó đổi từ chức năng chủ ngữ sang tân ngữ."
+},
+  "lesson": [
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "[S|The teacher] [V|called] [O|the student].",
+            "vi": "Giáo viên gọi học viên."
+          },
+          "b": {
+            "en": "[S|The student] [V|called] [O|the teacher].",
+            "vi": "Học viên gọi giáo viên."
+          },
+          "diff": "Teacher và student đều là danh từ trong cả hai câu. Các cụm chứa chúng đổi chức năng chủ ngữ và tân ngữ."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "head": [
+        "Câu hỏi",
+        "Loại nhãn",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "Từ thuộc nhóm nào?",
+          "Từ loại",
+          "noun, verb, adjective, adverb"
+        ],
+        [
+          "Thành phần làm việc gì trong cấu trúc?",
+          "Chức năng",
+          "subject, object, complement, modifier"
+        ],
+        [
+          "Thành phần được tạo theo hình thức nào?",
+          "Loại cụm hoặc mệnh đề",
+          "noun phrase, preposition phrase, clause"
+        ]
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "tree",
+        "bracket": "[S [NP [DET The] [N teacher]] [VP [V called] [NP [DET the] [N student]]]]"
+      },
+      "caption": "NP là hình thức cụm; vị trí cho biết chức năng trong câu.",
+      "alt": "Cụm danh từ The teacher làm chủ ngữ; cụm danh từ the student làm tân ngữ. Teacher và student bên trong đều là danh từ."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|The room] [V|is] [C|quiet].",
+          "vi": "Phòng yên tĩnh."
+        },
+        {
+          "en": "We booked a [ADJ|quiet] room.",
+          "vi": "Chúng tôi đặt một phòng yên tĩnh."
+        },
+        {
+          "en": "We bought two [N|coffee] cups.",
+          "vi": "Chúng tôi mua hai cốc cà phê."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Quiet là tính từ trong cả hai mẫu: a quiet room và The room is quiet. Nó có thể bổ nghĩa trước danh từ hoặc làm bổ ngữ sau be. Coffee trong coffee cups vẫn là danh từ đang bổ nghĩa cho danh từ khác; chức năng bổ nghĩa không tự biến nó thành tính từ."
+    },
+    {
+      "type": "h",
+      "vi": "Một từ, nhiều từ loại: chuyển loại (word conversion)"
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "Please send me an email.",
+            "vi": "Hãy gửi cho tôi một email."
+          },
+          "b": {
+            "en": "Please email me the details.",
+            "vi": "Hãy gửi chi tiết qua email cho tôi."
+          },
+          "diff": "Email là danh từ sau an ở câu đầu và động từ trong lời yêu cầu ở câu sau. Dạng chữ không đổi nhưng cấu trúc cho thấy từ loại khác nhau."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "head": [
+        "Từ",
+        "Cách dùng thứ nhất",
+        "Cách dùng thứ hai"
+      ],
+      "rows": [
+        [
+          "email",
+          "an email: danh từ",
+          "email the team: động từ"
+        ],
+        [
+          "bottle",
+          "a glass bottle: danh từ",
+          "bottle the juice: động từ"
+        ],
+        [
+          "fast",
+          "a fast train: tính từ",
+          "The train moves fast: trạng từ"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Muốn nhận từ loại, xét cách kết hợp trong chính câu: có a/the đứng trước không, có thể chia thì không, đang bổ nghĩa cho thành phần nào? Không chỉ nhìn nghĩa Việt hoặc vị trí gần danh từ. Chuyển loại không có nghĩa bạn được tự dùng mọi danh từ làm động từ mới."
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Trong cách nói hằng ngày, từ bổ ngữ đôi khi bị dùng quá rộng. Ở đây, chủ ngữ/tân ngữ/bổ nghĩa là chức năng; noun/verb/adjective là từ loại. Giữ hai hệ nhãn riêng giúp giải thích chính xác hơn."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Một chức năng có thể do nhiều hình thức đảm nhiệm. The new schedule trong The new schedule surprised us là cụm danh từ làm chủ ngữ. That the schedule changed trong That the schedule changed surprised us là mệnh đề làm chủ ngữ. Chủ ngữ không đồng nghĩa danh từ đơn lẻ."
+    },
+    {
+      "type": "p",
+      "vi": "Không phải mọi mục có chữ giống nhau đều có một quy trình chuyển loại đơn giản; có thể có lịch sử và nghĩa khác nhau. Khi học, mục tiêu thực dụng là nhận cấu trúc và nghĩa hiện tại của từ trong câu, không tự dựng lịch sử từ nguyên."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "The coffee cup is clean.",
+            "vi": "Cốc cà phê sạch."
+          },
+          "b": {
+            "en": "The clean cup is mine.",
+            "vi": "Chiếc cốc sạch là của tôi."
+          },
+          "diff": "Coffee là danh từ bổ nghĩa; clean là tính từ bổ nghĩa. Cùng chức năng trước cup không buộc hai từ có cùng từ loại."
+        }
+      ]
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "function-be",
+      "wrong": "The room quiet.",
+      "right": "The room is quiet.",
+      "why": "Quiet là tính từ, không tự làm động từ hữu hạn trong câu này."
+    },
+    {
+      "id": "conversion-verb",
+      "wrong": "She emails a message yesterday.",
+      "right": "She emailed a message yesterday.",
+      "why": "Khi email dùng làm động từ trong câu quá khứ này, cần chia emailed."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Từ làm chủ ngữ có nhất thiết là danh từ không?",
+      "a": "Chủ ngữ có thể là cụm danh từ, nhưng cũng có thể là mệnh đề hoặc các hình thức khác. Chủ ngữ là chức năng của một thành phần, không phải tên từ loại."
+    },
+    {
+      "q": "Coffee đứng trước cup có thành tính từ không?",
+      "a": "Không cần phân tích như vậy. Coffee là danh từ làm phần bổ nghĩa cho danh từ cup trong cụm này."
+    },
+    {
+      "q": "Một từ không đổi chữ có thể đổi từ loại không?",
+      "a": "Có. An email dùng email như danh từ; email the team dùng nó như động từ. Cấu trúc câu giúp phân biệt."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "form-and-function-1",
+      "level": "B1",
+      "use": "practice",
+      "type": "choice",
+      "skill": "meaning",
+      "prompt": "Chọn từ loại của teacher trong câu.",
+      "stem": "The student thanked the teacher.",
+      "options": [
+        {
+          "t": "Danh từ.",
+          "ok": true,
+          "note": "Teacher vẫn là danh từ trong cụm tân ngữ."
+        },
+        {
+          "t": "Động từ vì nhận lời cảm ơn.",
+          "note": "Người nhận tác động không làm từ thành động từ.",
+          "tag": "class-function-confusion"
+        },
+        {
+          "t": "Tính từ vì đứng sau the.",
+          "note": "The thường đi với cụm danh từ; không biến teacher thành tính từ.",
+          "tag": "class-function-confusion"
+        }
+      ],
+      "explain": "Từ loại khác với vai trò tân ngữ của cụm the teacher."
+    },
+    {
+      "id": "form-and-function-2",
+      "level": "B1",
+      "use": "practice",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Điền dạng quá khứ đơn của email.",
+      "stem": "Yesterday she {1} the receipt to me.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "emailed"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Email dùng làm động từ nên có thể chia quá khứ emailed."
+    },
+    {
+      "id": "form-and-function-3",
+      "level": "B1",
+      "use": "practice",
+      "type": "match",
+      "skill": "recognition",
+      "prompt": "Ghép thuật ngữ với hệ nhãn.",
+      "pairs": [
+        {
+          "a": "noun",
+          "b": "từ loại: danh từ"
+        },
+        {
+          "a": "subject",
+          "b": "chức năng: chủ ngữ"
+        },
+        {
+          "a": "object",
+          "b": "chức năng: tân ngữ"
+        },
+        {
+          "a": "noun phrase",
+          "b": "hình thức: cụm danh từ"
+        }
+      ],
+      "explain": "Một thành phần có thể đồng thời có nhãn hình thức và chức năng."
+    },
+    {
+      "id": "form-and-function-4",
+      "level": "B1",
+      "use": "practice",
+      "type": "transform",
+      "skill": "production",
+      "prompt": "Đổi cách nói bằng động từ email.",
+      "source": "Please send the receipt to me by email.",
+      "instruction": "Bắt đầu bằng Please email và giữ ý gửi biên lai cho tôi.",
+      "accept": [
+        "Please email me the receipt.",
+        "Please email the receipt to me."
+      ],
+      "model": "Please email me the receipt.",
+      "explain": "Email chuyển từ danh từ trong by email sang động từ; hai thứ tự tân ngữ nêu trong đáp án đều tự nhiên."
+    },
+    {
+      "id": "form-and-function-5",
+      "level": "B1",
+      "use": "practice",
+      "type": "choice",
+      "skill": "meaning",
+      "prompt": "Chọn phân tích của quiet.",
+      "stem": "The office is quiet.",
+      "options": [
+        {
+          "t": "Tính từ làm bổ ngữ sau be.",
+          "ok": true,
+          "note": "Quiet miêu tả office qua is."
+        },
+        {
+          "t": "Động từ vì đứng sau chủ ngữ.",
+          "note": "Is mới là động từ hữu hạn.",
+          "tag": "class-function-confusion"
+        },
+        {
+          "t": "Danh từ làm tân ngữ.",
+          "note": "Quiet trong mẫu này là tính từ, không phải tân ngữ.",
+          "tag": "class-function-confusion"
+        }
+      ],
+      "explain": "Một tính từ có thể làm bổ ngữ, không chỉ bổ nghĩa trước danh từ."
+    },
+    {
+      "id": "form-and-function-6",
+      "level": "B1",
+      "use": "practice",
+      "type": "classify",
+      "skill": "recognition",
+      "prompt": "Phân loại email theo cách dùng đã nêu.",
+      "cats": [
+        "Danh từ",
+        "Động từ"
+      ],
+      "items": [
+        {
+          "t": "I read an email.",
+          "cat": "Danh từ"
+        },
+        {
+          "t": "Email the timetable to us.",
+          "cat": "Động từ"
+        },
+        {
+          "t": "The email was short.",
+          "cat": "Danh từ"
+        },
+        {
+          "t": "She emails the team every Friday.",
+          "cat": "Động từ"
+        }
+      ],
+      "explain": "Dạng chữ không đủ để nhận từ loại; xét vị trí và khả năng chia của từ."
+    },
+    {
+  "id": "form-and-function-7",
+  "level": "B1",
+  "use": "practice",
+  "type": "error",
+  "skill": "form",
+  "prompt": "Bổ sung be ở hiện tại đơn để tạo câu trần thuật chuẩn đầy đủ, giữ nghĩa phòng thư viện đang rất yên tĩnh.",
+  "segments": [
+    {
+      "t": "The library "
+    },
+    {
+      "t": "very quiet",
+      "bad": true,
+      "fix": [
+        "is very quiet"
+      ],
+      "note": "Very quiet là cụm tính từ, cần is để tạo vị ngữ hữu hạn trong câu này.",
+      "tag": "noun-form"
+    },
+    {
+      "t": "."
+    }
+  ],
+  "explain": "Theo khung be hiện tại đơn được yêu cầu, dùng is very quiet. Những khung khác có thể tạo câu đúng trong ngữ cảnh khác; bài này không yêu cầu đoán mốc quá khứ hoặc tương lai."
+},
+    {
+      "id": "form-and-function-8",
+      "level": "B1",
+      "use": "practice",
+      "type": "open",
+      "skill": "production",
+      "prompt": "Tự viết rồi đối chiếu với mẫu và bảng kiểm.",
+      "task": "Viết hai câu dùng email: một lần làm danh từ và một lần làm động từ. Ghi chú ngắn từ đó kết hợp với gì.",
+      "model": [
+        "I received an email this morning.",
+        "Please email the invitation to me."
+      ],
+      "checklist": [
+        "Danh từ có dấu hiệu cụm danh từ.",
+        "Động từ làm hạt nhân hành động trong câu.",
+        "Không gọi chức năng tân ngữ là một từ loại."
+      ],
+      "explain": "Cùng chữ email nhưng từ loại được xác định trong cấu trúc từng câu."
+    },
+    {
+      "id": "form-and-function-9",
+      "level": "B1",
+      "use": "check",
+      "type": "choice",
+      "skill": "meaning",
+      "prompt": "Chọn chức năng của cụm được nêu.",
+      "stem": "Trong The mechanic checked the engine, cụm the engine làm gì?",
+      "options": [
+        {
+          "t": "Tân ngữ của checked.",
+          "ok": true,
+          "note": "Cụm chỉ vật được kiểm tra."
+        },
+        {
+          "t": "Chủ ngữ của checked.",
+          "note": "The mechanic mới là chủ ngữ.",
+          "tag": "sentence-function"
+        },
+        {
+          "t": "Động từ chính.",
+          "note": "Engine là danh từ, không phải động từ checked.",
+          "tag": "class-function-confusion"
+        }
+      ],
+      "explain": "The engine là cụm danh từ về hình thức và tân ngữ về chức năng."
+    },
+    {
+      "id": "form-and-function-10",
+      "level": "B1",
+      "use": "check",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Điền dạng hiện tại của bottle theo chủ ngữ she.",
+      "stem": "She {1} the juice every morning.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "bottles"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Bottle dùng làm động từ, chia bottles với she ở hiện tại."
+    },
+    {
+      "id": "form-and-function-11",
+      "level": "B1",
+      "use": "check",
+      "type": "choice",
+      "skill": "meaning",
+      "prompt": "Chọn phân tích chính xác.",
+      "stem": "a stone wall",
+      "options": [
+        {
+          "t": "Stone là danh từ đang bổ nghĩa cho wall.",
+          "ok": true,
+          "note": "Chức năng bổ nghĩa không tự đổi từ loại thành tính từ."
+        },
+        {
+          "t": "Stone bắt buộc là trạng từ vì đứng trước wall.",
+          "note": "Không có dấu hiệu trạng từ trong cấu trúc này.",
+          "tag": "class-function-confusion"
+        },
+        {
+          "t": "Wall là động từ vì đứng cuối cụm.",
+          "note": "Wall là trung tâm danh từ của cụm.",
+          "tag": "class-function-confusion"
+        }
+      ],
+      "explain": "Trong mẫu danh từ + danh từ này, stone và wall đều là danh từ nhưng làm việc khác nhau."
+    },
+    {
+      "id": "form-and-function-12",
+      "level": "B1",
+      "use": "check",
+      "type": "choice",
+      "skill": "meaning",
+      "prompt": "Chọn ý đúng về chủ ngữ.",
+      "stem": "That the timetable changed surprised us.",
+      "options": [
+        {
+          "t": "Mệnh đề That the timetable changed làm chủ ngữ.",
+          "ok": true,
+          "note": "Cả mệnh đề là điều gây ngạc nhiên."
+        },
+        {
+          "t": "Us là chủ ngữ vì chỉ người có cảm xúc.",
+          "note": "Us là tân ngữ của surprised.",
+          "tag": "subject-semantic-agent"
+        },
+        {
+          "t": "Một câu chỉ có thể có danh từ đơn làm chủ ngữ.",
+          "note": "Chủ ngữ có thể do một mệnh đề đảm nhiệm.",
+          "tag": "class-function-confusion"
+        }
+      ],
+      "explain": "Chức năng chủ ngữ không bị giới hạn vào một danh từ đơn."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham khảo thêm về từ loại, chức năng cú pháp và chuyển loại không đổi hình thức; chưa đối chiếu trực tiếp trang nguồn trong lượt soạn này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham khảo thêm cùng chủ điểm; không xác nhận đã kiểm tra mục hoặc trang sách."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

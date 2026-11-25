@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s247-shadow-rent",
+  "title": "Tiền thuê chiếc bóng",
+  "level": "C1",
+  "topics": [
+    "structural-ambiguity",
+    "advanced-complementation"
+  ],
+  "scene": "office",
+  "summary": "Một sân khấu thuê Lu biểu diễn “with the shadow of a bird”. Khách tưởng trả tiền để có con chim thật; Lu chỉ có đôi tay.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Oanh",
+      "role": "Người viết hợp đồng sân khấu"
+    },
+    {
+      "id": "b",
+      "name": "Lu",
+      "role": "Người biểu diễn bóng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Bản phác ghi with two hands ở lề. Trong ánh đèn, hai ngón cái móc vào nhau thành cánh chim. Không ai hứa giao một con vật sống.",
+      "say": [
+        {
+          "who": "a",
+          "en": "My hands are the only animals in this show.",
+          "vi": "Trong buổi diễn này đôi tay tôi là những con vật duy nhất."
+        },
+        {
+          "who": "b",
+          "en": "Write what the audience will actually receive.",
+          "vi": "Viết rõ điều khán giả thực sự được xem đi."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Oanh mô tả cơ chế của buổi diễn, giữ đúng tác nhân tạo bóng.",
+        "options": [
+          {
+            "t": "Lu will use her hands to cast a shadow shaped like a bird.",
+            "note": "To cast chỉ mục đích dùng tay; shaped like a bird mô tả bóng. Không gán cho chim thật một vai trò trong hợp đồng.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "A bird will cast its shadow with Lu present.",
+            "note": "Câu biến a bird thành tác nhân thật phải có mặt và Lu chỉ đứng cạnh. Đây là cam kết khác với đôi tay của buổi diễn.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Khách đồng ý và đưa cho Lu một chiếc vòng. Bóng chim vụt chui qua bóng vòng, đậu lên bóng bàn tay đứa trẻ ngồi hàng đầu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Your hand is its first branch.",
+          "vi": "Tay em là cành cây đầu tiên cho nó đậu."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Lu cho khách đứng sau màn để thấy hai ngón cái. Ông cười xóa chữ bird khỏi ô diễn viên và điền tên đứa trẻ sẽ giữ chiếc vòng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We found the cast without borrowing a bird.",
+          "vi": "Ta đã tìm đủ diễn viên mà chẳng phải mượn con chim nào."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "guest-pass",
+  "title": "Thẻ khách cho phép hay buộc đeo?",
+  "summary": "Ở buổi hội thảo, đọc mặt sau thẻ khách. Đổi động từ tình thái để phân biệt quyền vào phòng với nghĩa vụ đeo thẻ.",
+  "level": "B1",
+  "topics": [
+    "permission-and-requests",
+    "must-have-to"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Thông tin trên thẻ",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Quyền"
+        },
+        {
+          "id": "v2",
+          "label": "Nghĩa vụ"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "You may enter the lounge.",
+      "vi": "Bạn được phép vào phòng chờ.",
+      "note": "May trong nội quy cấp quyền vào, không yêu cầu khách phải vào. / May grants permission in a notice.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "You must wear your badge in the lounge.",
+      "vi": "Bạn phải đeo thẻ trong phòng chờ.",
+      "note": "Must đặt yêu cầu lên việc đeo thẻ khi khách ở trong phòng. / Must imposes an obligation.",
+      "verdict": "ok"
+    }
+  }
+}

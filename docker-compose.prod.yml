@@ -1,0 +1,188 @@
+services:
+  backend:
+    image: english-coach-backend:prod
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "20m"
+        max-file: "5"
+    env_file:
+      - path: .env.production
+        required: false
+    environment:
+      - PORT=8080
+      - SPRING_PROFILES_ACTIVE=prod
+      - APP_ECHO_LIFE_SHARED_WORLD=${APP_ECHO_LIFE_SHARED_WORLD:-false}
+      - APP_ECHO_LIFE_ENABLED=${APP_ECHO_LIFE_ENABLED:-false}
+      - KING_CONTENT_CHANNEL=PRODUCTION
+      - KING_SNAPSHOT_STORE=/app/king/state
+      # Capacity release 2026-10 + Performance transformation 2026-11-22: 416 MB heap + 96 MB code cache + explicit
+      # native memory caps (Metaspace 256m, DirectMemory 64m, thread stack 512k) to prevent cgroup OOM under burst load.
+      - JAVA_TOOL_OPTIONS=${JAVA_TOOL_OPTIONS:--Xms192m -Xmx416m -XX:NewRatio=3 -XX:+UseSerialGC -XX:TieredStopAtLevel=1 -XX:ReservedCodeCacheSize=96m -XX:MaxMetaspaceSize=256m -XX:MaxDirectMemorySize=64m -Xss512k -Xlog:gc}
+      # glibc keeps one malloc arena per thread by default; two are enough for this JVM and save native memory
+      - MALLOC_ARENA_MAX=2
+      - EXAMS_STORAGE_TYPE=local
+      - EXAMS_LOCAL_STORAGE_DIR=/app/storage/exams
+      - COMMUNITY_STORAGE_DIR=/app/storage/community
+      - CORS_ALLOWED_ORIGINS=${CORS_ALLOWED_ORIGINS:-https://englishcoach.io.vn,https://www.englishcoach.io.vn}
+      - APP_BASE_URL=${APP_BASE_URL:-https://englishcoach.io.vn}
+      - TURNSTILE_ENABLED=${TURNSTILE_ENABLED:-true}
+      - TURNSTILE_REQUIRED=${TURNSTILE_REQUIRED:-true}
+      - TURNSTILE_SECRET_KEY=${TURNSTILE_SECRET_KEY:-}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
+      - GRAMMAR_PROFESSOR_ENABLED=${GRAMMAR_PROFESSOR_ENABLED:-false}
+      - OPENROUTER_BASE_URL=${OPENROUTER_BASE_URL:-https://openrouter.ai/api/v1}
+      - DEFAULT_MODEL=${DEFAULT_MODEL:-google/gemini-2.0-flash-001}
+      - SENTENCE_LAB_MODEL=${SENTENCE_LAB_MODEL:-openai/gpt-5.6-luna}
+      - SENTENCE_LAB_FALLBACK_MODEL=${SENTENCE_LAB_FALLBACK_MODEL:-deepseek/deepseek-v3.2}
+      - AI_SERVICE_URL=${AI_SERVICE_URL:-http://localhost:8000}
+      - OMNIVOICE_URL=${OMNIVOICE_URL:-http://100.96.230.16:8005/tts/omnivoice}
+      - SEPAY_WEBHOOK_SECRET=${SEPAY_WEBHOOK_SECRET:-}
+      - SEPAY_ENV=${SEPAY_ENV:-LIVE}
+      - PREMIUM_PAYMENT_BANK_CODE=${PREMIUM_PAYMENT_BANK_CODE:-}
+      - PREMIUM_PAYMENT_ACCOUNT_NUMBER=${PREMIUM_PAYMENT_ACCOUNT_NUMBER:-}
+      - PREMIUM_PAYMENT_ACCOUNT_NAME=${PREMIUM_PAYMENT_ACCOUNT_NAME:-}
+      - PREMIUM_PAYMENT_CODE_PREFIX=${PREMIUM_PAYMENT_CODE_PREFIX:-EC}
+      - PREMIUM_PAYMENT_ORDER_TTL_MINUTES=${PREMIUM_PAYMENT_ORDER_TTL_MINUTES:-20}
+    volumes:
+      - backend_storage:/app/storage
+      - type: bind
+        source: ${KING_SNAPSHOT_HOST_ROOT:-./king}/packages
+        target: /app/king/packages
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${KING_SNAPSHOT_HOST_ROOT:-./king}/state
+        target: /app/king/state
+        read_only: true
+        bind:
+          create_host_path: false
+    healthcheck:
+      # Zero-Python Bash /dev/tcp HTTP 200 probe eliminates 5,760/day Python fork memory spikes inside 832M cgroup.
+      test: ["CMD", "bash", "-c", "exec 3<>/dev/tcp/127.0.0.1/8080 && printf 'GET /api/v1/exams/capabilities HTTP/1.0\\r\\nHost: localhost\\r\\n\\r\\n' >&3 && head -n1 <&3 | grep -q 200"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 180s
+    # Security closure 2026-10: the container starts with only what the entrypoint needs to hand the storage volume
+    # to uid 10001 and drop to it (chown / ownership / user switch); the Java process then runs with none at all.
+    cap_drop: [ALL]
+    cap_add: [CHOWN, DAC_OVERRIDE, FOWNER, SETUID, SETGID, SETPCAP]
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          # 2026-10-14: the 640M cgroup reached its maximum 1,098 times in one hour of normal traffic (memory.events) and
+          # the backend held 600 MB RSS at idle. Heap 416 MB + ~330 MB native (metaspace, symbols, code, threads) + margin.
+          # The VPS keeps ~400 MB free with all three services at their limits (backend 832 + frontend 256 + Nginx 96).
+          memory: 832M
+          pids: 1024
+
+  frontend:
+    image: english-coach-frontend:prod
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.prod
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-/api/v1}
+        NEXT_PUBLIC_TURNSTILE_SITE_KEY: ${NEXT_PUBLIC_TURNSTILE_SITE_KEY:-}
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "20m"
+        max-file: "5"
+    # Security closure 2026-10: the frontend no longer receives the whole environment file. It gets only what its
+    # server code reads (NextAuth, Google OAuth, the internal-call key); never AUTH_JWT_SECRET, the database, payment,
+    # mail or AI credentials, or the second-factor encryption key.
+    environment:
+      - PORT=3000
+      - DISCOVER_GOOGLE_VERIFICATION=${DISCOVER_GOOGLE_VERIFICATION:-}
+      - DISCOVER_BING_VERIFICATION=${DISCOVER_BING_VERIFICATION:-}
+      - NODE_ENV=production
+      - APP_ECHO_LIFE_ENABLED=${APP_ECHO_LIFE_ENABLED:-false}
+      - NODE_OPTIONS=--max-old-space-size=192
+      - NEXT_PUBLIC_TURNSTILE_SITE_KEY=${NEXT_PUBLIC_TURNSTILE_SITE_KEY:-}
+      - BACKEND_INTERNAL_URL=http://backend:8080
+      - NEXTAUTH_URL=${NEXTAUTH_URL:-https://englishcoach.io.vn}
+      - NEXTAUTH_SECRET=${NEXTAUTH_SECRET:-}
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID:-}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET:-}
+      - APP_SECURITY_INTERNAL_SERVICE_KEY=${APP_SECURITY_INTERNAL_SERVICE_KEY:-}
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    depends_on:
+      backend:
+        condition: service_started
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:3000/api/health || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+          pids: 256
+
+  nginx:
+    image: nginx:alpine
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "20m"
+        max-file: "5"
+    ports:
+      - "80:80"
+      - "443:443"
+    # Security closure 2026-10: read-only root filesystem (pid file and proxy temp files in small tmpfs mounts), and
+    # only the capabilities the master needs to bind 80/443 and start its unprivileged workers.
+    read_only: true
+    tmpfs:
+      - /var/cache/nginx:size=8m
+      - /var/run:size=1m
+      - /tmp:size=4m
+    # (2026-10-18) request bodies and proxy overflow files are spooled on disk here (deploy/nginx/nginx.conf), not in
+    # the 8 MiB tmpfs above: uploads above ~8 MB used to fail with 500 at the edge.
+    cap_drop: [ALL]
+    cap_add: [CHOWN, SETUID, SETGID, NET_BIND_SERVICE]
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      # worker sizing (4,096 connections per worker instead of the image's 1,024: capacity release 2026-10)
+      - ./deploy/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./deploy/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./deploy/nginx/cloudflare-realip.conf:/etc/nginx/cloudflare-realip.conf:ro
+      - ./deploy/certbot/www:/var/www/certbot:ro
+      - ./deploy/certbot/conf:/etc/letsencrypt:ro
+      - nginx_spool:/var/spool/nginx
+    depends_on:
+      - frontend
+      - backend
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost/ || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          # capacity test 2026-10: the 32M limit was reached at 250 active learners (TLS buffers and ~256 KB of gzip
+          # state per response being compressed) and a worker was killed at 500; see docs/performance/capacity-2026-10
+          memory: 160M
+          pids: 64
+
+volumes:
+  backend_storage:
+  # Nginx spool (request bodies, proxy overflow): transient files only, each removed with its request.
+  nginx_spool:

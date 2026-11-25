@@ -1,0 +1,417 @@
+spring:
+  application:
+    name: english-coach-backend
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/english_coach}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      # The pool every module shares. Sized to 24 max / 10 min-idle (below Azure PG 50 max_connections and
+      # V94 32 role limit, leaving 14+ burst slots above Garden & Echo Life bulkheads while reclaiming 18 idle slots).
+      maximum-pool-size: ${DB_POOL_MAX:24}
+      minimum-idle: ${DB_POOL_MIN_IDLE:10}
+      idle-timeout: ${DB_POOL_IDLE_TIMEOUT_MS:300000}
+      # A request that cannot get a connection within this time is answered 503 SERVICE_BUSY with Retry-After
+      # (GlobalExceptionHandler) instead of waiting the library default of 30 s and failing anyway.
+      connection-timeout: ${DB_POOL_CONNECTION_TIMEOUT_MS:10000}
+      # Background keepalive every 60 s keeps warm TCP/TLS sessions alive over WAN without idle keepalive storms.
+      keepalive-time: ${DB_POOL_KEEPALIVE_MS:60000}
+      leak-detection-threshold: ${DB_POOL_LEAK_DETECTION_MS:30000}
+      # Runtime PgJDBC tuning (scoped strictly to Hikari; never alters Flyway's own direct connection).
+      data-source-properties:
+        prepareThreshold: 3
+        preparedStatementCacheQueries: 128
+        preparedStatementCacheSizeMiB: 2
+        tcpKeepAlive: true
+        socketTimeout: 60
+  flyway:
+    enabled: true
+    schemas: exams
+    default-schema: exams
+    table: flyway_schema_history
+    locations: classpath:db/migration/exams
+    baseline-on-migrate: true
+    validate-on-migrate: false
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    # Boot's request-wide entity manager is replaced by common/config/OpenEntityManagerInViewConfig: the same for every
+    # path except the AI-wait paths it lists, which must not hold a pooled connection while a provider answers.
+    open-in-view: false
+    hibernate:
+      ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO:none}
+    properties:
+      hibernate:
+        default_batch_fetch_size: 64
+        jdbc:
+          batch_size: 50
+          fetch_size: 50
+        order_inserts: true
+        query:
+          plan_cache_max_size: 512
+  mail:
+    host: ${MAIL_HOST:${SPRING_MAIL_HOST:}}
+    port: ${MAIL_PORT:${SPRING_MAIL_PORT:587}}
+    username: ${MAIL_USERNAME:${SPRING_MAIL_USERNAME:}}
+    password: ${MAIL_PASSWORD:${SPRING_MAIL_PASSWORD:}}
+    properties:
+      mail:
+        smtp:
+          auth: ${MAIL_SMTP_AUTH:true}
+          starttls:
+            enable: ${MAIL_SMTP_STARTTLS_ENABLE:true}
+            required: ${MAIL_SMTP_STARTTLS_REQUIRED:true}
+          connectiontimeout: 10000
+          timeout: 15000
+          writetimeout: 15000
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+server:
+  port: ${PORT:8080}
+  tomcat:
+    threads:
+      # Capacity test 2026-10: under overload all 200 default threads were busy waiting for one of the pool's
+      # connections, each holding its stack and its request in memory — the 832 MB container reached its limit at 1,000
+      # learners. Threads beyond the pool (28) + the AI bulkhead (24) + long media transfers only wait; a request beyond
+      # this many waits in Tomcat's connection queue (max-connections 8192) instead of on a thread of its own.
+      max: ${SERVER_TOMCAT_THREADS_MAX:128}
+ai:
+  base-url: ${AI_SERVICE_URL:http://localhost:8000}
+  # Shared secret of the internal AI service (header X-EC-Service-Key, common/ai/AiServiceAuth). No default: without it
+  # the AI service answers 401. Never printed.
+  service-key: ${AI_SERVICE_KEY:}
+  service:
+    url: ${AI_SERVICE_URL:http://localhost:8000}
+  timeout:
+    connect: ${AI_TIMEOUT_CONNECT:10000}
+    read: ${AI_TIMEOUT_READ:120000}
+  seeding:
+    speaking-scenarios:
+      enabled: ${APP_SEEDING_SPEAKING_SCENARIOS_ENABLED:false}
+tts:
+  omnivoice:
+    url: ${OMNIVOICE_URL:http://127.0.0.1:8005/tts/omnivoice}
+    fallback-url: ${AI_SERVICE_URL:http://localhost:8000}/api/v1/tts/omnivoice
+    timeout-ms: ${TTS_OMNIVOICE_TIMEOUT_MS:45000}
+openrouter:
+  api-key: ${OPENROUTER_API_KEY:}
+  base-url: ${OPENROUTER_BASE_URL:https://openrouter.ai/api/v1}
+  default-model: ${DEFAULT_MODEL:google/gemini-2.5-flash}
+# Echo Intelligence 7.0 model tiers (features/echo-coach, docs/echo-jarvis-7/ECHO_TECHNOLOGY_SELECTION.md). FAST answers ordinary
+# tutoring with tools; STRONG only multi-source diagnosis / multi-step planning / long corrections, within a daily budget per
+# learner; each tier falls back across independent provider families on an outage or relay error.
+echo:
+  models:
+    fast: ${ECHO_FAST_MODEL:openai/gpt-6-luna}
+    fast-fallback: ${ECHO_FAST_FALLBACK_MODEL:anthropic/claude-haiku-5.5}
+    fast-fallbacks: ${ECHO_FAST_FALLBACK_MODELS:google/gemini-2.5-flash,openai/gpt-4.1-mini,anthropic/claude-haiku-4.5}
+    voice-fast: ${ECHO_VOICE_FAST_MODEL:}
+    voice-fast-fallback: ${ECHO_VOICE_FAST_FALLBACK_MODEL:}
+    voice-fast-fallbacks: ${ECHO_VOICE_FAST_FALLBACK_MODELS:}
+    strong: ${ECHO_STRONG_MODEL:openai/gpt-6.1-terra}
+    strong-fallback: ${ECHO_STRONG_FALLBACK_MODEL:openai/gpt-6-luna}
+    strong-fallbacks: ${ECHO_STRONG_FALLBACK_MODELS:google/gemini-2.5-flash,anthropic/claude-haiku-5.5,openai/gpt-4.1-mini}
+    reasoning-effort: ${ECHO_REASONING_EFFORT:none}
+    deep-reasoning-effort: ${ECHO_DEEP_REASONING_EFFORT:low}
+    strong-reasoning-effort: ${ECHO_STRONG_REASONING_EFFORT:medium}
+    provider-sort: ${ECHO_PROVIDER_SORT:latency}
+  direct:
+    enabled: ${ECHO_DIRECT_ENABLED:true}
+  # deep-analysis turns (STRONG tier) inside the message allowance; owner policy 2026-11-20
+  strong:
+    free-per-day: ${ECHO_STRONG_FREE_PER_DAY:1}
+    premium-per-day: ${ECHO_STRONG_PREMIUM_PER_DAY:3}
+    premium-per-month: ${ECHO_STRONG_PREMIUM_PER_MONTH:40}
+  max-tokens:
+    fast: ${ECHO_FAST_MAX_TOKENS:900}
+    strong: ${ECHO_STRONG_MAX_TOKENS:1400}
+    voice: ${ECHO_VOICE_MAX_TOKENS:900}
+  secondary-provider:
+    base-url: ${SECONDARY_LLM_BASE_URL:${ECHO_SECONDARY_LLM_BASE_URL:}}
+    api-key: ${SECONDARY_LLM_API_KEY:${ECHO_SECONDARY_LLM_API_KEY:}}
+    fast-model: ${SECONDARY_LLM_FAST_MODEL:${ECHO_SECONDARY_FAST_MODEL:}}
+    strong-model: ${SECONDARY_LLM_STRONG_MODEL:${ECHO_SECONDARY_STRONG_MODEL:}}
+app:
+  echo:
+    local-llm-enabled: ${APP_ECHO_LOCAL_LLM_ENABLED:true}
+    local-llm-url: ${APP_ECHO_LOCAL_LLM_URL:${ai.service.url:http://localhost:8000}}
+    local-llm-model: ${APP_ECHO_LOCAL_LLM_MODEL:echo-local-instruct}
+    openrouter-breaker-cooldown-ms: ${APP_ECHO_OPENROUTER_BREAKER_MS:180000}
+  echo-life:
+    shared-world: ${APP_ECHO_LIFE_SHARED_WORLD:false}
+    # Safe initial defaults derived from 2 vCPU / 832 MiB / 90 ms DB-RTT load test (2026-11-21):
+    # 64 active players = zero queueing, STOMP p95 <= 5 ms, 11% avg CPU, 100% core-module isolation.
+    max-rooms: ${APP_ECHO_LIFE_MAX_ROOMS:16}
+    max-concurrent-players: ${APP_ECHO_LIFE_MAX_CONCURRENT_PLAYERS:64}
+    interest-radius-meters: ${APP_ECHO_LIFE_INTEREST_RADIUS_METERS:90}
+    max-peers-per-frame: ${APP_ECHO_LIFE_MAX_PEERS_PER_FRAME:12}
+    max-concurrent-db-ops: ${APP_ECHO_LIFE_MAX_CONCURRENT_DB_OPS:10}
+    busy-wait-ms: ${APP_ECHO_LIFE_BUSY_WAIT_MS:2500}
+  vocab-deck-seed:
+    enabled: ${APP_VOCAB_DECK_SEED_ENABLED:false}
+    # optional comma lists for a maintenance run: only these slugs / only the metadata of these slugs (empty = all, as before)
+    slugs: ${APP_VOCAB_DECK_SEED_SLUGS:}
+    metadata-only-slugs: ${APP_VOCAB_DECK_SEED_METADATA_ONLY_SLUGS:}
+  # Shared contextual translation of Reading "Giải nghĩa ngữ cảnh" and My Books (ContextTranslationService). Chosen
+  # 2026-10-16 by a bounded idiom / phrasal-verb / polysemy fixture comparison (docs/reading/my-books/).
+  reading:
+    context-ai:
+      model: ${READING_CONTEXT_MODEL:openai/gpt-6.1-sol}
+      fallback-model: ${READING_CONTEXT_FALLBACK_MODEL:anthropic/claude-sonnet-5.5}
+      reasoning-effort: ${READING_CONTEXT_REASONING_EFFORT:low}
+      max-tokens: ${READING_CONTEXT_MAX_TOKENS:1800}
+  # Echo Anywhere browser extension (features/echo-anywhere). Ids that may pair with an account: the build of
+  # `extension/echo-anywhere` (stable id from its manifest key) — add the Chrome Web Store / Edge Add-ons ids here
+  # (comma list) once the listings exist. Extension sessions: idle / absolute lifetime in days; Premium AI burst limit.
+  echo-anywhere:
+    extension-ids: ${APP_ECHO_ANYWHERE_EXTENSION_IDS:kfepndgiddgljieglnilcaadlcgmdghj}
+    session-idle-days: ${APP_ECHO_ANYWHERE_SESSION_IDLE_DAYS:14}
+    session-absolute-days: ${APP_ECHO_ANYWHERE_SESSION_ABSOLUTE_DAYS:30}
+    ai-per-five-minutes: ${APP_ECHO_ANYWHERE_AI_PER_FIVE_MINUTES:20}
+  security:
+    jwt-secret: ${AUTH_JWT_SECRET:${APP_SECURITY_JWT_SECRET:a-very-secure-random-string-for-local-dev-123456}}
+    jwt-lifetime-minutes: ${APP_SECURITY_JWT_LIFETIME_MINUTES:30}
+    session-idle-lifetime-hours: ${APP_SECURITY_SESSION_IDLE_HOURS:24}
+    session-absolute-lifetime-days: ${APP_SECURITY_SESSION_ABSOLUTE_DAYS:7}
+    test-filter-enabled: ${APP_SECURITY_TEST_FILTER_ENABLED:false}
+    base-url: ${APP_BASE_URL:http://localhost:3000}
+    cors-allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:3000,http://127.0.0.1:3000}
+    google-client-id: ${GOOGLE_CLIENT_ID:}
+    turnstile-enabled: ${TURNSTILE_ENABLED:true}
+    turnstile-required: ${TURNSTILE_REQUIRED:false}
+    turnstile-secret-key: ${TURNSTILE_SECRET_KEY:1x0000000000000000000000000000000AA}
+    mail-from: ${MAIL_FROM:English Coach <no-reply@englishcoach.io.vn>}
+    mail-mode: ${APP_MAIL_MODE:auto}
+    # ISO instant after which the token-issuing auth endpoints refuse a call without the frontend server's
+    # signature (InternalServiceAuthFilter). Blank = never (local development, tests).
+    internal-auth-enforce-after: ${APP_SECURITY_INTERNAL_AUTH_ENFORCE_AFTER:}
+    # Purpose keys, independent of AUTH_JWT_SECRET (required in production; never printed).
+    internal-service-key: ${APP_SECURITY_INTERNAL_SERVICE_KEY:}
+    mfa-encryption-key: ${APP_SECURITY_MFA_ENCRYPTION_KEY:}
+    alert-email: ${APP_SECURITY_ALERT_EMAIL:}
+    # New passwords are checked against published breaches by k-anonymity (5 hex chars of SHA-1 leave the server).
+    breached-password-check:
+      enabled: ${APP_SECURITY_BREACHED_PASSWORD_CHECK:true}
+    # Administrator second factor. An enrolled factor is always demanded; "required" additionally refuses an
+    # administrator who has not enrolled one yet (set after the owner's enrolment is confirmed).
+    admin-mfa-required: ${APP_SECURITY_ADMIN_MFA_REQUIRED:false}
+    admin-step-up-minutes: ${APP_SECURITY_ADMIN_STEP_UP_MINUTES:10}
+    webauthn-rp-id: ${APP_SECURITY_WEBAUTHN_RP_ID:}
+    # Owner runbook only: a fresh random value (>= 32 characters) removes the administrator's second factors once.
+    admin-mfa-emergency-reset-token: ${APP_SECURITY_ADMIN_MFA_EMERGENCY_RESET_TOKEN:}
+  ai-voucher:
+    # Spending of issued AI vouchers (the wallet is consulted only after a feature's included quota is used up).
+    spending-enabled: ${APP_AI_VOUCHER_SPENDING_ENABLED:true}
+  payment:
+    provider: ${PAYMENT_PROVIDER:SEPAY}
+    code-prefix: ${PREMIUM_PAYMENT_CODE_PREFIX:EC}
+    order-ttl-minutes: ${PREMIUM_PAYMENT_ORDER_TTL_MINUTES:20}
+    sepay:
+      env: ${SEPAY_ENV:TEST}
+      webhook-secret: ${SEPAY_WEBHOOK_SECRET:}
+      # Signed-timestamp freshness, only when the delivery carries X-SePay-Timestamp (0 = no age limit).
+      webhook-max-age-hours: ${SEPAY_WEBHOOK_MAX_AGE_HOURS:168}
+      webhook-future-skew-minutes: ${SEPAY_WEBHOOK_FUTURE_SKEW_MINUTES:15}
+    bank:
+      bank-code: ${PREMIUM_PAYMENT_BANK_CODE:}
+      account-number: ${PREMIUM_PAYMENT_ACCOUNT_NUMBER:}
+      account-name: ${PREMIUM_PAYMENT_ACCOUNT_NAME:}
+  learning:
+    time-zone: ${APP_LEARNING_TIME_ZONE:Asia/Ho_Chi_Minh}
+  leaderboard:
+    activity:
+      # Activity Points engine (features/leaderboard.md). Bases/multipliers/caps default in
+      # ActivityScoringProperties. start-at = leaderboard_activity_start_at (ISO-8601);
+      # empty = record nothing.
+      enabled: ${APP_LEADERBOARD_ACTIVITY_ENABLED:true}
+      start-at: ${APP_LEADERBOARD_ACTIVITY_START_AT:}
+      time-zone: ${APP_LEARNING_TIME_ZONE:Asia/Ho_Chi_Minh}
+    refresh:
+      # Phase 3: rollup today + yesterday, then REFRESH both ranking views (single-flight).
+      enabled: ${APP_LEADERBOARD_REFRESH_ENABLED:true}
+      interval-ms: ${APP_LEADERBOARD_REFRESH_INTERVAL_MS:600000}
+      initial-delay-ms: ${APP_LEADERBOARD_REFRESH_INITIAL_DELAY_MS:60000}
+      # Live refresh: a committed score event / placement result triggers one debounced refresh within seconds.
+      live-enabled: ${APP_LEADERBOARD_REFRESH_LIVE_ENABLED:true}
+      live-debounce-ms: ${APP_LEADERBOARD_REFRESH_LIVE_DEBOUNCE_MS:1500}
+      live-min-interval-ms: ${APP_LEADERBOARD_REFRESH_LIVE_MIN_INTERVAL_MS:3000}
+    # Thi đua ranks only learners with a VALID placement attempt (points are recorded for everyone).
+    require-placement: ${APP_LEADERBOARD_REQUIRE_PLACEMENT:true}
+  proficiency:
+    # Proficiency Engine (features/proficiency.md). Formula parameters default in
+    # ProficiencyProperties; score anchors live in proficiency_score_mapping (V53).
+    enabled: ${APP_PROFICIENCY_ENABLED:true}
+    time-zone: ${APP_LEARNING_TIME_ZONE:Asia/Ho_Chi_Minh}
+    disabled-skills: VOCABULARY
+    nightly:
+      enabled: ${APP_PROFICIENCY_NIGHTLY_ENABLED:true}
+      cron: ${APP_PROFICIENCY_NIGHTLY_CRON:0 0 2 * * *}
+    backfill:
+      enabled: ${APP_PROFICIENCY_BACKFILL_ENABLED:false}
+    placement:
+      cta-url: ${APP_PROFICIENCY_PLACEMENT_CTA_URL:/exams}
+  garden:
+    # Echo Garden gameplay (features/echo-garden.md). OFF by default: the route keeps the visual preview and every
+    # gameplay endpoint answers 404. Allowlist / QA lists are comma-separated user ids; an empty allowlist with
+    # enabled=true means everyone (owner decision after Phase 3). Balance numbers live in garden_config (V77).
+    enabled: ${APP_GARDEN_ENABLED:false}
+    allowlist-user-ids: ${APP_GARDEN_ALLOWLIST_USER_IDS:}
+    qa-user-ids: ${APP_GARDEN_QA_USER_IDS:}
+    # Phase 4 bulkhead: garden transactions that may run at once (each holds one pooled connection for its whole
+    # duration). Keep it below the connection pool size so sign-in, learning and payments always find a connection;
+    # 0 = unbounded. A request that finds no slot within busy-wait-millis gets 503 GARDEN_BUSY and is retried by the client.
+    max-concurrent-transactions: ${APP_GARDEN_MAX_CONCURRENT_TRANSACTIONS:14}
+    busy-wait-millis: ${APP_GARDEN_BUSY_WAIT_MILLIS:15000}
+    # Phase 5: reads of one garden request travel to the database together (GardenJdbc). false = one exchange per
+    # statement, as before; an operational switch only.
+    batch-reads: ${APP_GARDEN_BATCH_READS:true}
+    # Phase 3C Echo Rewards counter. OFF by default (owner decision): contribution is recorded and the catalogue shown,
+    # nothing can be redeemed. ON opens only catalogue rows that are enabled AND have a delivery mechanism (the
+    # in-garden cultivar); Premium / AI / avatar-frame rewards have none and stay unavailable whatever this flag says.
+    rewards-enabled: ${APP_GARDEN_REWARDS_ENABLED:false}
+    # Phase 3F Premium 7-day reward (1,000,000 Echo Coins). Cost-bearing: CLOSED unless enabled AND all three budget
+    # numbers are set by the owner (monthly redemption cap, estimated VND cost of one reward, monthly VND budget).
+    premium-reward-enabled: ${APP_GARDEN_PREMIUM_REWARD_ENABLED:false}
+    premium-reward-monthly-cap: ${APP_GARDEN_PREMIUM_REWARD_MONTHLY_CAP:0}
+    premium-reward-unit-cost-vnd: ${APP_GARDEN_PREMIUM_REWARD_UNIT_COST_VND:0}
+    premium-reward-monthly-budget-vnd: ${APP_GARDEN_PREMIUM_REWARD_MONTHLY_BUDGET_VND:0}
+    # Phase 3F AI voucher sales for Echo Coins. Cost-bearing: CLOSED unless enabled AND the monthly credit cap, the
+    # estimated VND cost of one credit and the monthly VND budget are all set by the owner.
+    ai-voucher-enabled: ${APP_GARDEN_AI_VOUCHER_ENABLED:false}
+    ai-voucher-monthly-credit-cap: ${APP_GARDEN_AI_VOUCHER_MONTHLY_CREDIT_CAP:0}
+    ai-voucher-unit-cost-vnd: ${APP_GARDEN_AI_VOUCHER_UNIT_COST_VND:0}
+    ai-voucher-monthly-budget-vnd: ${APP_GARDEN_AI_VOUCHER_MONTHLY_BUDGET_VND:0}
+    # Phase 3F Echo Garden profile frames (art only): on unless switched off.
+    frames-enabled: ${APP_GARDEN_FRAMES_ENABLED:true}
+    # Phase 3E direct purchase of a cosmetic with real money. OFF by default and NOT sufficient on its own: checkout also
+    # needs a CosmeticPaymentGateway bean (none exists; the payment module sells Premium plans only) and an enabled,
+    # priced row in garden_cosmetic_sku (none seeded). With any of the three missing the endpoint answers
+    # 409 CHECKOUT_DISABLED / CHECKOUT_UNAVAILABLE and writes nothing. Cosmetics are otherwise bought with Đồng Echo.
+    cosmetic-checkout-enabled: ${APP_GARDEN_COSMETIC_CHECKOUT_ENABLED:false}
+  writing:
+    enabled: ${APP_WRITING_ENABLED:true}
+    mutations-enabled: ${APP_WRITING_MUTATIONS_ENABLED:true}
+    assessments-enabled: ${APP_WRITING_ASSESSMENTS_ENABLED:true}
+    worker-enabled: ${APP_WRITING_WORKER_ENABLED:true}
+    sentence-lab-model: ${SENTENCE_LAB_MODEL:openai/gpt-5.6-luna}
+    sentence-lab-fallback-model: ${SENTENCE_LAB_FALLBACK_MODEL:deepseek/deepseek-v3.2}
+    max-sentence-chars: 2000
+    max-draft-words: 2000
+    max-draft-chars: 25000
+    translation:
+      paragraph:
+        enabled: ${APP_WRITING_TRANSLATION_PARAGRAPH_ENABLED:${WRITING_TRANSLATION_PARAGRAPH_ENABLED:false}}
+  exams:
+    enabled: ${APP_EXAMS_ENABLED:true}
+    schema: exams
+    expected-schema-version: 4
+    strict-mode: ${APP_EXAMS_STRICT_MODE:false}
+    runtime-policy: ${EXAMS_RUNTIME_POLICY:LOCAL_PRIVATE}
+    worker:
+      enabled: ${APP_EXAMS_WORKER_ENABLED:true}
+      poll-interval-ms: ${APP_EXAMS_WORKER_POLL_MS:1000}
+      objective-concurrency: ${APP_EXAMS_OBJ_CONCURRENCY:4}
+      productive-concurrency: ${APP_EXAMS_PROD_CONCURRENCY:2}
+      lease-duration-seconds: 120
+      lease-renewal-seconds: 30
+      stage-timeout-seconds: 90
+    storage:
+      type: ${EXAMS_STORAGE_TYPE:local}
+      s3:
+        bucket: ${EXAMS_S3_BUCKET:english-coach-exams}
+        region: ${EXAMS_S3_REGION:us-east-1}
+        endpoint: ${EXAMS_S3_ENDPOINT:}
+        access-key: ${EXAMS_S3_ACCESS_KEY:}
+        secret-key: ${EXAMS_S3_SECRET_KEY:}
+        path-style-access: true
+      local:
+        base-dir: ${EXAMS_LOCAL_STORAGE_DIR:storage/exams}
+    ai:
+      url: ${AI_SERVICE_URL:http://localhost:8000}
+      timeout-seconds: 90
+      api-key: ${EXAMS_AI_INTERNAL_KEY:}
+    limits:
+      max-response-batch-size: 50
+      max-upload-chunk-bytes: 5242880
+      session-lease-seconds: 45
+      session-heartbeat-seconds: 15
+      readiness-ttl-hours: 24
+      retention-days: 180
+
+content:
+  hub:
+    show-seed-listening: ${CONTENT_HUB_SHOW_SEED_LISTENING:false}
+  rss:
+    enabled: ${CONTENT_RSS_ENABLED:true}
+    cron: "${CONTENT_RSS_CRON:0 0 */3 * * *}"
+    max-items-per-source: ${CONTENT_RSS_MAX_ITEMS_PER_SOURCE:10}
+    max-age-days: ${CONTENT_RSS_MAX_AGE_DAYS:30}
+    freshness-days: ${CONTENT_RSS_FRESHNESS_DAYS:14}
+    sources:
+      - key: bbc-world
+        name: BBC
+        url: https://feeds.bbci.co.uk/news/world/rss.xml
+        category: World
+        default-level: B2
+        typical-read-minutes: 4
+        content-policy: SUMMARY_ONLY
+      - key: guardian-world
+        name: The Guardian
+        url: https://www.theguardian.com/world/rss
+        category: World
+        default-level: C1
+        typical-read-minutes: 5
+        content-policy: SUMMARY_ONLY
+      - key: bbc-learning-english
+        name: BBC Learning English
+        url: https://podcasts.files.bbci.co.uk/p02pc9tn.rss
+        category: Learning English
+        default-level: B1
+        typical-read-minutes: 4
+        content-policy: SUMMARY_ONLY
+        enabled: true
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  jpa:
+    hibernate:
+      ddl-auto: none
+# Production serves no API description and no management endpoint beyond health; an error answer never carries an
+# exception message, a binding error or a stack trace.
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+server:
+  error:
+    include-message: never
+    include-binding-errors: never
+    include-stacktrace: never
+    include-exception: false
+app:
+  echo-anywhere:
+    extension-ids: ${APP_ECHO_ANYWHERE_EXTENSION_IDS:}
+  security:
+    base-url: ${APP_BASE_URL:https://englishcoach.io.vn}
+    cors-allowed-origins: ${CORS_ALLOWED_ORIGINS:https://englishcoach.io.vn,https://www.englishcoach.io.vn}
+    turnstile-required: ${TURNSTILE_REQUIRED:true}
+  payment:
+    sepay:
+      env: ${SEPAY_ENV:LIVE}
+
+
+

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- [ASSET_REQUIRED] Production-grade vector artwork (Hand-crafted vector finalization) -->
+  <!-- Series: legacy_founder | Tier: A | Slug: legacy_founder_2026 | Legacy Lineage: Antique Gold Astrolabe & Founder Seal -->
+  <!-- Production Vector Quality: PRODUCTION_READY_VECTOR | External Studio/Rive Hand-off: ASSET_REQUIRED -->
+  <!-- Center: (50, 50), Avatar Aperture: r=40 (80px boundary) -->
+  <defs>
+    <linearGradient id="legacyAntiqueGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="25%" stop-color="#d97706"/>
+      <stop offset="60%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+
+    <linearGradient id="legacyOxidizedBronze" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="40%" stop-color="#44403c"/>
+      <stop offset="70%" stop-color="#78716c"/>
+      <stop offset="100%" stop-color="#a8a29e"/>
+    </linearGradient>
+
+    <filter id="legacyDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.8" flood-color="#1c1917" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Antique Astrolabe Cog Teeth (12 Clockwork Chronometer Notches) -->
+  <g class="legacy-chronometer" stroke="url(#legacyAntiqueGold)" stroke-width="0.8" opacity="0.65">
+    <circle cx="50" cy="50" r="48" stroke-dasharray="2 6 2 6"/>
+    <!-- 12 Astrolabe Hours Marks -->
+    <line x1="50" y1="1" x2="50" y2="4"/>
+    <line x1="74" y1="7" x2="72" y2="10"/>
+    <line x1="93" y1="26" x2="90" y2="28"/>
+    <line x1="99" y1="50" x2="96" y2="50"/>
+    <line x1="93" y1="74" x2="90" y2="72"/>
+    <line x1="74" y1="93" x2="72" y2="90"/>
+    <line x1="50" y1="99" x2="50" y2="96"/>
+    <line x1="26" y1="93" x2="28" y2="90"/>
+    <line x1="7" y1="74" x2="10" y2="72"/>
+    <line x1="1" y1="50" x2="4" y2="50"/>
+    <line x1="7" y1="26" x2="10" y2="28"/>
+    <line x1="26" y1="7" x2="28" y2="10"/>
+  </g>
+
+  <!-- Heavy Antique Gold & Oxidized Bronze Core Rim -->
+  <g class="legacy-core" filter="url(#legacyDropShadow)">
+    <circle cx="50" cy="50" r="45.5" stroke="#1c1917" stroke-width="5"/>
+    <circle cx="50" cy="50" r="44.2" stroke="url(#legacyAntiqueGold)" stroke-width="3.5"/>
+    <circle cx="50" cy="50" r="40.8" stroke="url(#legacyOxidizedBronze)" stroke-width="1.2"/>
+  </g>
+
+  <!-- Top Apex: Ceremonial Founder Crest (The Compass Rose & Platform Monogram) -->
+  <g class="legacy-apex-crest" filter="url(#legacyDropShadow)">
+    <path d="M50 2 L56 11 L50 15 L44 11 Z" fill="url(#legacyAntiqueGold)" stroke="#451a03" stroke-width="0.8"/>
+    <polygon points="50,4 53,10 50,13 47,10" fill="#fef08a"/>
+    <circle cx="50" cy="9" r="1.2" fill="#78350f"/>
+    <!-- Antique Astrolabe Winglets -->
+    <path d="M44 11 C38 8, 30 10, 24 14 C30 16, 38 15, 43 13 Z" fill="url(#legacyAntiqueGold)"/>
+    <path d="M56 11 C62 8, 70 10, 76 14 C70 16, 62 15, 57 13 Z" fill="url(#legacyAntiqueGold)"/>
+  </g>
+
+  <!-- Bottom Anchor: Historical "2026" Ceremonial Wax Seal -->
+  <g class="legacy-seal-anchor" filter="url(#legacyDropShadow)">
+    <!-- Antique Octagonal Wax / Bronze Plaque -->
+    <polygon points="38,89 62,89 66,93 62,97 38,97 34,93" fill="url(#legacyAntiqueGold)" stroke="#1c1917" stroke-width="0.8"/>
+    <!-- Ceremonial Engraved Inscription: 2026 -->
+    <text x="50" y="94.5" fill="#451a03" font-size="4" font-family="serif" font-weight="900" text-anchor="middle" letter-spacing="0.5">2026</text>
+  </g>
+</svg>

@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s228-paying-attention",
+  "title": "Món nợ bằng một phút lắng nghe",
+  "level": "C1",
+  "topics": [
+    "advanced-complementation"
+  ],
+  "scene": "interview",
+  "summary": "Anu không nhận tiền nhuận nói chuyện. Bà chỉ yêu cầu Du dành đúng một phút để nghe tiếng nan tre khi chưa có lời bình.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Du",
+      "role": "Người làm podcast"
+    },
+    {
+      "id": "b",
+      "name": "Anu",
+      "role": "Nghệ nhân đan"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Du đã ghi đủ một phút. Người dựng muốn cắt đi vì nghĩ Anu thú nhận đã nghe trộm một cuộc nói chuyện. Bà chỉ nói về âm thanh từ chính giỏ tre trong tay.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I meant the basket. It creaks just before a strip gives way.",
+          "vi": "Tôi nói cái giỏ. Nó kêu cót két ngay trước khi một nan sắp tuột."
+        },
+        {
+          "who": "b",
+          "en": "Then put my warning in your notes before you cut anything.",
+          "vi": "Vậy ghi lời nhắc của tôi vào sổ trước khi cắt thứ gì nhé."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Du chọn cách thuật lời Anu nói chính mình đã nghe, giữ rõ đối tượng và nguồn âm.",
+        "options": [
+          {
+            "t": "She recalled hearing the basket creak before a strip came loose.",
+            "note": "Recalled hearing tường thuật ký ức. Hear + the basket + creak cho biết cái giỏ là nguồn tiếng, một nan tuột là việc theo sau.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "She recalled being heard by the basket before a strip came loose.",
+            "note": "Being heard đảo vai người được nghe và nguồn nghe. Trong câu này cái giỏ thành kẻ nghe Anu, chỉ hợp nếu cố tình nhân hóa, trái lời bà.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Du giữ nguyên phút âm thanh. Người nghe đầu tiên viết rằng mình đã nhận ra nan sắp tuột trước cả lúc bà dừng tay. Anu giữ lá thư như khoản thù lao đã hẹn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We paid you in listeners after all.",
+          "vi": "Cuối cùng chúng tôi trả công bà bằng những người biết lắng nghe."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Anu đặt giỏ vào tay Du. Khi Du nghe tiếng răng rắc và giữ kịp một nan, anh tự viết lại lời bình rồi xin bà ghi âm tiếng giỏ lần nữa.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Now your fingers know which way the sentence goes.",
+          "vi": "Giờ những ngón tay của cậu đã hiểu câu ấy phải đi theo chiều nào."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

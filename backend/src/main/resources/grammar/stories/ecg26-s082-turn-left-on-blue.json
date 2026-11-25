@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s082-turn-left-on-blue",
+  "title": "Rẽ trái ở vệt xanh",
+  "level": "A2",
+  "topics": [
+    "real-conditionals"
+  ],
+  "scene": "university",
+  "summary": "Đường đua trên sàn có hai vệt xanh giống nhau. Vệt đầu là chỗ rẽ, vệt sau là đích.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "An",
+      "role": "Người làm đường đua"
+    },
+    {
+      "id": "b",
+      "name": "Mei",
+      "role": "Tay lái xe đồ chơi"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "An gắn cờ vào vệt thứ hai. Luật của Mei chỉ nhắc làm gì khi gặp xanh có cờ, để xe khỏi dừng giữa đường.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The first blue line has no flag.",
+          "vi": "Vệt xanh đầu không có cờ."
+        },
+        {
+          "who": "b",
+          "en": "When do I stop my car?",
+          "vi": "Khi nào mình dừng xe?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "An hướng dẫn có đủ điều kiện để xe tới đích.",
+        "options": [
+          {
+            "t": "Stop if you see a blue line with a flag.",
+            "note": "If nêu điều kiện, with a flag thu hẹp về đúng vệt đích. Không cần dừng ở mọi vệt xanh.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "Stop if you see a blue line.",
+            "note": "Câu đúng nhưng thiếu with a flag. Vệt xanh đầu đã thỏa điều kiện nên xe sẽ dừng sớm.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Mei cho xe rẽ ở vệt đầu, dừng đúng lúc đầu xe làm cờ rung lên. Các bạn xin giữ lá cờ run run làm tín hiệu về đích.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The flag tells everyone I made it!",
+          "vi": "Cờ báo cho mọi người biết mình về đích rồi!"
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Mei dừng ở vệt đầu. Thấy đường còn dài, cô thêm lá cờ vào lời nhắc rồi đi tiếp. Quãng dừng nhầm thành chỗ nghỉ chính thức cho xe nhỏ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Every short race could use a snack stop.",
+          "vi": "Cả cuộc đua ngắn cũng cần chỗ dừng ăn nhẹ nhỉ."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

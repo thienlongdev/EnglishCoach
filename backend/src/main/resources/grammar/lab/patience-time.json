@@ -1,0 +1,67 @@
+{
+  "id": "patience-time",
+  "title": "Ấn bản nào giữ đúng lời hứa?",
+  "summary": "Lúc 9 giờ nhà in nhận phê duyệt và có thể xuất bản ngay. Thử hai cam kết rồi đổi giờ xuất bản thực tế. Câu nào hứa nhiều hơn việc không in sớm?",
+  "level": "B2",
+  "topics": [
+    "time-clauses",
+    "time-prepositions-advanced"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Cam kết",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Ngay khi duyệt"
+        },
+        {
+          "id": "v2",
+          "label": "Không trước khi duyệt"
+        }
+      ]
+    },
+    {
+      "id": "axis-2",
+      "label": "Giờ xuất bản",
+      "values": [
+        {
+          "id": "v1",
+          "label": "9 giờ"
+        },
+        {
+          "id": "v2",
+          "label": "15 giờ"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1|v1": {
+      "en": "We published as soon as approval arrived, at nine.",
+      "vi": "Chúng tôi xuất bản ngay khi được duyệt, lúc chín giờ.",
+      "note": "As soon as buộc hai sự kiện sát nhau trong điều kiện cho phép. Ra bản lúc chín giờ đúng như hứa. / Immediate publication fulfils as soon as.",
+      "verdict": "ok"
+    },
+    "v1|v2": {
+      "en": "We promised to publish as soon as approval arrived at nine, but chose to wait until three.",
+      "vi": "Chúng tôi hứa xuất bản ngay khi được duyệt lúc chín giờ, nhưng lại chọn chờ đến ba giờ.",
+      "note": "Trong tình huống có thể xuất bản ngay, chủ ý chờ sáu giờ không thực hiện đúng lời hứa as soon as. Lời kể vẫn đúng cấu trúc. / The sentence is grammatical and describes a broken promise.",
+      "verdict": "ok"
+    },
+    "v2|v1": {
+      "en": "We promised not to publish before approval and published at nine, when it arrived.",
+      "vi": "Chúng tôi hứa không xuất bản trước khi được duyệt và đã xuất bản lúc chín giờ, đúng lúc nhận phê duyệt.",
+      "note": "Not … before đặt giới hạn sớm nhất. Xuất bản ngay tại mốc được phép. / Publication at the boundary fulfils the restriction.",
+      "verdict": "ok"
+    },
+    "v2|v2": {
+      "en": "We promised not to publish before approval at nine and published at three that afternoon.",
+      "vi": "Chúng tôi hứa không xuất bản trước khi được duyệt lúc chín giờ và đã xuất bản lúc ba giờ chiều.",
+      "note": "Lời hứa chỉ loại thời điểm trước chín giờ. Theo riêng điều khoản này, chờ đến ba giờ vẫn giữ lời. / Later publication also satisfies this weaker promise.",
+      "verdict": "ok"
+    }
+  }
+}

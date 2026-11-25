@@ -1,0 +1,41 @@
+{
+  "id": "weather-window",
+  "title": "Nhìn qua cửa sổ",
+  "summary": "Bạn báo thời tiết rồi báo có một vật ngoài sân. So sánh từ mở đầu hai câu và đoán câu nào giới thiệu một vật mới.",
+  "level": "A1",
+  "topics": [
+    "dummy-it",
+    "there-is-there-are"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Điều quan sát",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Thời tiết"
+        },
+        {
+          "id": "v2",
+          "label": "Vật xuất hiện"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "It's cold outside.",
+      "vi": "Bên ngoài trời lạnh.",
+      "note": "It làm chủ ngữ trong lời tả thời tiết, không thay cho một đồ vật. / Weather it fills the subject position.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "There's a bike outside.",
+      "vi": "Bên ngoài có một chiếc xe đạp.",
+      "note": "There is giới thiệu sự hiện diện của xe. Outside mới là phần chỉ nơi chốn. / There introduces a bike.",
+      "verdict": "ok"
+    }
+  }
+}

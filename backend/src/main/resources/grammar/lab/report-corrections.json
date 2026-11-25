@@ -1,0 +1,41 @@
+{
+  "id": "report-corrections",
+  "title": "Ai quyết định hay có một quyết định?",
+  "summary": "Biên bản nhóm có thể dùng động từ hoặc danh từ để kể việc chọn ngày. Đổi từ gốc decide và kiểm tra phần đứng trước nó.",
+  "level": "B1",
+  "topics": [
+    "parts-of-speech",
+    "word-families"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Cách đóng câu",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Động từ"
+        },
+        {
+          "id": "v2",
+          "label": "Danh từ"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "We decided on a date.",
+      "vi": "Chúng tôi đã quyết định ngày tổ chức.",
+      "note": "Decided mang dấu hiệu quá khứ. On a date cho biết điều đã thống nhất. / Decided is the finite verb.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "We made a decision about the date.",
+      "vi": "Chúng tôi đã đưa ra quyết định về ngày tổ chức.",
+      "note": "Made mang thì, a decision là tân ngữ. Không thể dùng quyết định như một động từ tiếng Anh sau a. / Decision is a count noun after made.",
+      "verdict": "ok"
+    }
+  }
+}

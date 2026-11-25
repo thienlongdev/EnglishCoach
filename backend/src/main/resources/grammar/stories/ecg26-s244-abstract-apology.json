@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s244-abstract-apology",
+  "title": "Lời xin lỗi không tìm thấy người nói",
+  "summary": "Dòng “the removal of the child's drawing” khiến ai cũng tưởng bức vẽ bị vứt đi. Vera chỉ dời nó ra khỏi ánh đèn làm phai màu.",
+  "level": "C1",
+  "topics": [
+    "nominalization",
+    "structural-ambiguity"
+  ],
+  "scene": "lecture",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vera",
+      "role": "Đạo diễn"
+    },
+    {
+      "id": "b",
+      "name": "Khuê",
+      "role": "Người dịch"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Bức vẽ vẫn nguyên trong một bìa bảo quản. Đứa trẻ chỉ cần biết nó còn ở đâu, không cần một câu danh từ dài trên nhãn trống.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Removal sounds bigger than what I did.",
+          "vi": "Từ removal nghe nặng hơn việc tôi đã làm."
+        },
+        {
+          "who": "b",
+          "en": "Tell her where her picture went.",
+          "vi": "Hãy kể cho em bức tranh đã đi đâu."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Khuê dịch lời Vera thành câu làm rõ tác nhân, đích đến và lý do.",
+        "options": [
+          {
+            "ok": false,
+            "t": "The disappearance of the drawing was regrettable.",
+            "note": "Nominalization disappearance và was regrettable che cả người dời lẫn vị trí. Lời này dễ củng cố nhầm tưởng tranh mất dù người nói biết nó còn.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "I moved your picture into this folder to save its colours.",
+            "note": "I moved làm rõ ai dời. Into this folder cho biết đích, to save nêu mục đích. Removal đứng một mình không mang đủ ba thông tin ấy.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Em bé mở bìa và thấy nét vàng còn nguyên. Em tự vẽ một mũi tên lên nhãn cũ hướng tới chỗ cất tranh.",
+      "say": [
+        {
+          "who": "b",
+          "en": "She drew the last part of the explanation.",
+          "vi": "Em đã vẽ nốt phần cuối lời giải thích."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Buổi diễn sau, khách đi theo một mũi tên của chính tác giả nhỏ tuổi.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Đứa trẻ hỏi thẳng mất vào đâu. Vera lấy bìa ra khỏi túi và quỳ xuống để em nhìn. Khuê thay toàn bộ dòng nhãn bằng câu cô bé tự viết: tranh đang nghỉ trong bìa.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We found a verb small hands could follow.",
+          "vi": "Ta tìm được động từ bàn tay nhỏ có thể lần theo."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Khách xem cười khi thấy tên phòng nghỉ đầu tiên trên một khung tranh.",
+      "end": true
+    }
+  ]
+}

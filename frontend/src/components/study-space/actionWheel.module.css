@@ -1,0 +1,266 @@
+/*
+ * Echo Study Space — Action Wheel in Pearl Opal Liquid Glass.
+ * Zero !important, zero backdrop-filter over WebGL, coherent light & .dark modes.
+ */
+
+.backdrop {
+  --aw-sector: rgb(244 248 255 / 0.94);
+  --aw-sector-stroke: rgb(255 255 255 / 0.92);
+  --aw-sector-active: rgb(207 238 254 / 0.98);
+  --aw-sector-active-stroke: #0284c7;
+  --aw-sector-disabled: rgb(226 232 240 / 0.82);
+  --aw-ink: #0f2042;
+  --aw-muted: #64748b;
+  --aw-center-bg: linear-gradient(155deg, #ffffff 0%, #eef5ff 62%, #e0ecfe 100%);
+  --aw-center-border: rgb(255 255 255 / 0.95);
+  --aw-pill-bg: linear-gradient(168deg, rgb(255 255 255 / 0.96), rgb(241 246 255 / 0.94));
+  --aw-pill-border: rgb(255 255 255 / 0.9);
+  --aw-btn-bg: linear-gradient(180deg, #ffffff, #e8f0fc);
+  --aw-btn-border: rgb(148 179 230 / 0.55);
+
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(ellipse at center, rgb(15 32 68 / 0.24), transparent 62%);
+  pointer-events: auto;
+  color: var(--aw-ink);
+}
+
+:global(.dark) .backdrop {
+  --aw-sector: rgb(15 29 64 / 0.93);
+  --aw-sector-stroke: rgb(148 184 255 / 0.22);
+  --aw-sector-active: rgb(14 86 132 / 0.96);
+  --aw-sector-active-stroke: #7dd3fc;
+  --aw-sector-disabled: rgb(15 23 42 / 0.85);
+  --aw-ink: #f1f6ff;
+  --aw-muted: #8ea2c8;
+  --aw-center-bg: linear-gradient(155deg, rgb(22 40 84 / 0.96), rgb(11 21 48 / 0.96));
+  --aw-center-border: rgb(186 230 253 / 0.3);
+  --aw-pill-bg: linear-gradient(168deg, rgb(16 30 66 / 0.95), rgb(10 19 44 / 0.95));
+  --aw-pill-border: rgb(186 230 253 / 0.25);
+  --aw-btn-bg: linear-gradient(180deg, rgb(30 52 104 / 0.95), rgb(16 30 66 / 0.95));
+  --aw-btn-border: rgb(125 211 252 / 0.35);
+
+  background: radial-gradient(ellipse at center, rgb(4 10 28 / 0.55), transparent 64%);
+}
+
+.dialog {
+  width: min(440px, 94vw);
+  max-height: 96dvh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  outline: none;
+  animation: arrive 0.16s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.wheel {
+  position: relative;
+  width: min(430px, 90vw, 72dvh);
+  aspect-ratio: 1;
+  touch-action: none;
+  filter: drop-shadow(0 20px 38px rgb(10 25 66 / 0.32));
+}
+
+.sectors {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.sectors path {
+  fill: var(--aw-sector);
+  stroke: var(--aw-sector-stroke);
+  stroke-width: 1.25;
+  cursor: pointer;
+  transition: fill 0.14s ease, stroke 0.14s ease;
+}
+
+.sectors path[data-active] {
+  fill: var(--aw-sector-active);
+  stroke: var(--aw-sector-active-stroke);
+  stroke-width: 2;
+}
+
+.sectors path[data-disabled] {
+  fill: var(--aw-sector-disabled);
+}
+
+.choice {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  min-height: 48px;
+  border: 0;
+  border-radius: 14px;
+  background: transparent;
+  padding: 5px;
+  color: var(--aw-ink);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
+  font-size: clamp(11px, 2.8vw, 13px);
+  line-height: 1.2;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.choice[data-selected] {
+  color: var(--aw-ink);
+}
+
+.choice[aria-disabled='true'] {
+  color: var(--aw-muted);
+  cursor: not-allowed;
+}
+
+.choice:focus-visible {
+  outline: none;
+}
+
+.wheel:has(.choice:focus-visible) .sectors path[data-active] {
+  stroke: var(--aw-sector-active-stroke);
+  stroke-width: 3;
+}
+
+.choice span {
+  font-size: 16px;
+  color: #0284c7;
+  line-height: 10px;
+}
+
+:global(.dark) .choice span {
+  color: #7dd3fc;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  text-align: center;
+  background: var(--aw-center-bg);
+  border: 1.5px solid var(--aw-center-border);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.8), 0 12px 28px -12px rgb(15 40 105 / 0.35);
+  border-radius: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  color: var(--aw-ink);
+}
+
+.center small {
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: #0284c7;
+}
+
+:global(.dark) .center small {
+  color: #7dd3fc;
+}
+
+.center strong {
+  font-size: clamp(12px, 3vw, 15.5px);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.center > div {
+  display: flex;
+  gap: 6px;
+}
+
+.center button,
+.pages button {
+  display: grid;
+  place-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  border: 1px solid var(--aw-btn-border);
+  border-radius: 50%;
+  background: var(--aw-btn-bg);
+  color: var(--aw-ink);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.description {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  text-align: center;
+  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--aw-pill-border);
+  background: var(--aw-pill-bg);
+  box-shadow: 0 10px 24px -12px rgb(15 40 105 / 0.32);
+}
+
+.description strong {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.description span {
+  color: var(--aw-muted);
+  line-height: 1.4;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--aw-pill-border);
+  background: var(--aw-pill-bg);
+}
+
+.help {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--aw-ink);
+  text-align: center;
+  margin: 8px 0 0;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--aw-pill-border);
+  background: var(--aw-pill-bg);
+}
+
+@keyframes arrive {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dialog { animation: none; }
+  .sectors path { transition: none; }
+}
+
+@media (pointer: coarse) {
+  .help { display: none; }
+  .center button { min-width: 40px; min-height: 40px; }
+  .description { font-size: 12px; }
+}

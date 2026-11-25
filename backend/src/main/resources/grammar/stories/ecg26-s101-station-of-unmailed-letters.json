@@ -1,0 +1,135 @@
+{
+  "id": "ecg26-s101-station-of-unmailed-letters",
+  "title": "Ga thư chưa gửi",
+  "summary": "Mỗi chuyến tàu cuối mang về một lá thư chưa bao giờ được gửi. Nhân viên ga tìm cách trả lá cuối cùng cho chính người viết.",
+  "level": "B1",
+  "topics": [
+    "past-perfect",
+    "reporting-commands-requests"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "nhi",
+      "name": "Nhi",
+      "role": "Nhân viên ga"
+    },
+    {
+      "id": "adam",
+      "name": "Adam",
+      "role": "Khách chờ tàu"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Chiếc tàu cuối trống ghế. Ở chỗ bán vé, một phong bì rơi ra từ khe trả tiền. Nhi nhận ra nét chữ của mình hồi mười tuổi. Adam chạy vào với chiếc vé ghi đúng ngày hôm nay.",
+      "say": [
+        {
+          "who": "nhi",
+          "en": "I wrote this letter before the station opened. How did it get here?",
+          "vi": "Tôi viết thư này trước khi ga mở cửa. Sao nó lại tới đây được?"
+        },
+        {
+          "who": "adam",
+          "en": "My father built the ticket box. He kept all the little notes we gave him.",
+          "vi": "Cha tôi đóng quầy vé này. Ông giữ lại mọi mẩu thư chúng tôi đưa ông."
+        }
+      ],
+      "next": "time"
+    },
+    {
+      "id": "time",
+      "choice": {
+        "prompt": "Trong sổ bàn giao, cha Adam ghi đã cất phong bì trước chuyến tàu đầu tiên. Nhi kể lại thứ tự nào?",
+        "options": [
+          {
+            "t": "He put it away after the first train ran.",
+            "note": "After đảo thứ tự hai việc. Câu đúng ngữ pháp nhưng mâu thuẫn với sổ bàn giao.",
+            "ok": false,
+            "next": "date",
+            "consequence": "Nhi phải so ngày trên phong bì với ngày bán vé đầu tiên."
+          },
+          {
+            "t": "By the time the first train ran, he had put it away.",
+            "note": "Had put đặt việc cất thư trước mốc chuyến tàu đầu tiên chạy.",
+            "ok": true,
+            "next": "hinge",
+            "consequence": "Adam kiểm tra chỗ cha thường cất thư trong quầy vé."
+          }
+        ]
+      }
+    },
+    {
+      "id": "date",
+      "say": [
+        {
+          "who": "nhi",
+          "en": "The letter was already here. It doesn't need to have travelled by train.",
+          "vi": "Lá thư đã ở đây rồi. Nó đâu nhất thiết phải từng đi tàu."
+        }
+      ],
+      "next": "hinge"
+    },
+    {
+      "id": "hinge",
+      "narrate": "Adam mở bản lề. Mỗi lần tàu đêm rung qua, một tờ giấy trượt khỏi hốc. Phong bì của Nhi là tờ cuối. Bên trong là tranh cô vẽ chiếc ghế chờ cho mẹ, người từng phải đứng ở ga.",
+      "say": [
+        {
+          "who": "adam",
+          "en": "There was a note on the back of your picture. Can you still read it?",
+          "vi": "Sau bức tranh có một lời nhắn. Cô còn đọc được không?"
+        }
+      ],
+      "next": "message"
+    },
+    {
+      "id": "message",
+      "scene": "office",
+      "narrate": "Trong phòng trực có đèn sáng hơn. Nhi đọc thành tiếng dòng chữ trẻ con ngày xưa: Dad, please make Mum a seat.",
+      "choice": {
+        "prompt": "Nhi thuật lại lời nhờ của chính mình cho Adam. Ai được nhờ, ai sẽ có ghế?",
+        "options": [
+          {
+            "t": "I asked my mum to make a seat for my dad.",
+            "note": "Trật tự cấu trúc vẫn đúng nhưng đổi cha và mẹ, làm sai cả người được nhờ lẫn người sẽ ngồi.",
+            "ok": false,
+            "next": "parents",
+            "consequence": "Nhi nhìn lại chữ Dad ở đầu dòng."
+          },
+          {
+            "t": "I asked my dad to make a seat for my mum.",
+            "note": "My dad là người nhận lời nhờ sau asked. For my mum giữ người được hưởng chiếc ghế.",
+            "ok": true,
+            "next": "bench",
+            "consequence": "Adam nhớ tới chiếc ghế gấp luôn treo sau cửa phòng trực."
+          }
+        ]
+      }
+    },
+    {
+      "id": "parents",
+      "say": [
+        {
+          "who": "nhi",
+          "en": "Dad was the one with the tools. Mum needed the seat.",
+          "vi": "Bố mới có dụng cụ. Mẹ mới cần chỗ ngồi."
+        }
+      ],
+      "next": "bench"
+    },
+    {
+      "id": "bench",
+      "scene": "station",
+      "narrate": "Chiếc ghế sau cửa có một mặt trời ba tia đúng như hình vẽ của Nhi. Cô đặt nó bên cửa bán vé, nơi người chờ tàu sớm đầu tiên đang đứng ôm con nhỏ. Người ấy ngồi xuống và thở phào.",
+      "say": [
+        {
+          "who": "nhi",
+          "en": "It took years to get here, but someone can sit on my letter now.",
+          "vi": "Mất mấy năm mới tới được đây, nhưng giờ thì có người được ngồi lên lá thư của tôi rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

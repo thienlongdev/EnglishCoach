@@ -1,0 +1,142 @@
+{
+  "id": "ecg26-s042-backwards-stairs",
+  "title": "Cầu thang đếm ngược",
+  "summary": "Mỗi lần hai chị em bước lên cầu thang ga cũ, con số trước mặt họ lại nhỏ đi. Muốn tìm được ông, họ phải hiểu chiếc biển đang đếm thứ gì.",
+  "level": "A2",
+  "topics": [
+    "comparatives",
+    "real-conditionals"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "lu",
+      "name": "Lulu",
+      "role": "Chị gái"
+    },
+    {
+      "id": "tin",
+      "name": "Tín",
+      "role": "Em trai"
+    }
+  ],
+  "beats": [
+    {
+      "id": "seven",
+      "narrate": "Ông để lại hai vé có hình chiếc bánh xe. Tín theo chị lên cầu thang. Bậc đầu ghi số 7, bậc tiếp theo ghi số 6. Nhìn lên cao hơn, Tín trông thấy số 5.",
+      "say": [
+        {
+          "who": "tin",
+          "en": "We're going up. Why are the numbers going down?",
+          "vi": "Mình đang đi lên. Sao các con số lại nhỏ dần hả chị?"
+        },
+        {
+          "who": "lu",
+          "en": "Grandpa says the stairs tell us how far we are from him.",
+          "vi": "Ông bảo cầu thang cho mình biết còn cách ông bao xa."
+        }
+      ],
+      "next": "sign"
+    },
+    {
+      "id": "sign",
+      "choice": {
+        "prompt": "Lulu đọc dòng ghi trên vé. Nếu các số chỉ quãng đường còn lại, đi từ 7 tới 6 nghĩa là gì?",
+        "options": [
+          {
+            "t": "We're closer to him now.",
+            "note": "Closer so sánh khoảng cách mới với khoảng cách trước. Số bậc còn lại đang giảm.",
+            "ok": true,
+            "next": "near",
+            "consequence": "Tín thử gọi ông từ bậc kế tiếp."
+          },
+          {
+            "t": "We're further away now.",
+            "note": "Further away nói xa hơn. Cụm đúng trong tình huống khác, nhưng ở đây sẽ trái ý nghĩa của số bậc còn lại.",
+            "ok": false,
+            "next": "far",
+            "consequence": "Tín thử quay ngược xuống một bậc."
+          }
+        ]
+      }
+    },
+    {
+      "id": "far",
+      "say": [
+        {
+          "who": "tin",
+          "en": "Look! Seven again. This way is longer.",
+          "vi": "Nhìn kìa! Lại là số bảy. Đường này xa hơn."
+        }
+      ],
+      "narrate": "Tín quay lên. Đúng lúc đặt chân tới số năm, em nghe tiếng chuông xe đạp.",
+      "next": "bell"
+    },
+    {
+      "id": "near",
+      "say": [
+        {
+          "who": "tin",
+          "en": "Grandpa! Is that your bicycle bell?",
+          "vi": "Ông ơi! Chuông xe đạp của ông đấy à?"
+        }
+      ],
+      "narrate": "Không có tiếng trả lời, chỉ một tiếng leng keng thứ hai ở phía trên.",
+      "next": "bell"
+    },
+    {
+      "id": "bell",
+      "narrate": "Trên mặt sau vé có lời ông viết: If you hear two bells, look behind the clock. Tín đã nghe đủ hai tiếng. Đồng hồ treo ở bậc số 0, có tấm rèm bên cạnh.",
+      "say": [
+        {
+          "who": "lu",
+          "en": "There are the bells. What do we do next?",
+          "vi": "Có tiếng chuông rồi. Tiếp theo mình làm gì nhỉ?"
+        }
+      ],
+      "choice": {
+        "prompt": "Điều kiện đã xảy ra. Chọn lời nhắc đúng với chỉ dẫn của ông.",
+        "options": [
+          {
+            "t": "If we look behind the clock, we ring two bells.",
+            "note": "Đổi hai vế làm thay đổi chỉ dẫn. Câu này bảo hai chị em tự rung chuông sau khi nhìn đồng hồ.",
+            "ok": false,
+            "next": "ring",
+            "consequence": "Tín đưa tay tìm chuông trên tường."
+          },
+          {
+            "t": "If we hear two bells, we look behind the clock.",
+            "note": "If nêu điều kiện nghe đủ hai tiếng. Look behind mới là hành động tiếp theo.",
+            "ok": true,
+            "next": "curtain",
+            "consequence": "Lulu vén rèm cạnh đồng hồ."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ring",
+      "say": [
+        {
+          "who": "lu",
+          "en": "The bells are the message. We don't need to ring them.",
+          "vi": "Chuông là tín hiệu mà. Mình đâu cần tự rung."
+        }
+      ],
+      "narrate": "Tín thôi tìm và chạy tới vén rèm.",
+      "next": "curtain"
+    },
+    {
+      "id": "curtain",
+      "narrate": "Sau rèm, ông ngồi trên chiếc xe đạp cũ gắn vào máy chiếu. Khi ông đạp, màn hình hiện những tấm ảnh hai chị em ngày bé. Hai tấm vé bánh xe là vé xem phim gia đình.",
+      "say": [
+        {
+          "who": "tin",
+          "en": "Zero steps left. We've found you!",
+          "vi": "Còn không bậc nào nữa. Bọn cháu tìm thấy ông rồi!"
+        }
+      ],
+      "end": true
+    }
+  ]
+}

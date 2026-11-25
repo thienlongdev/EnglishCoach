@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s220-conditional-rent",
+  "title": "Tiền thuê cho một căn phòng biến mất",
+  "summary": "Mỗi chiều căn gác trên sơ đồ khu phố mất một bức tường. Chủ nhà muốn lấy tiền thuê trước khi phòng biến mất hẳn.",
+  "level": "C1",
+  "topics": [
+    "inverted-conditionals",
+    "tense-consistency"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Kỳ",
+      "role": "Người vẽ sơ đồ"
+    },
+    {
+      "id": "b",
+      "name": "Pia",
+      "role": "Chủ gác trọ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Kỳ chiếu tấm phim trong lên bản đồ. Bức tường chỉ xuất hiện khi hai đường mực trên hai tờ trùng nhau. Pia lật hợp đồng mô hình. Trang cuối nói về một khoản tiền sẽ được trả nếu căn phòng từng được xây.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The drawing is real. Was the room ever real, though?",
+          "vi": "Bản vẽ là thật. Nhưng căn phòng từng có thật chưa?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "The ledger lists a plan and no bricks. Keep that distinction in your translation.",
+          "vi": "Sổ ghi có bản thiết kế nhưng không có gạch. Bản dịch cần giữ sự khác nhau ấy."
+        }
+      ],
+      "choice": {
+        "prompt": "Kỳ muốn nói về khoản tiền trong tình huống giả định trái với quá khứ phòng chưa từng được xây.",
+        "options": [
+          {
+            "t": "Had the room been built, rent would have been payable.",
+            "note": "Had the room been built thay cho if the room had been built. Would have been payable đặt nghĩa vụ trả tiền trong thế giới giả định đã qua.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "Should the room be built, rent will be payable.",
+            "note": "Should the room be built nói về khả năng xây sau này. Cấu trúc hợp lệ nhưng dời điều khoản từ giả định quá khứ sang tương lai còn mở.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Pia cất sổ thu tiền đi. Bà cho Kỳ xem chiếc chìa mẫu bằng bìa chưa lần nào chạm ổ khóa.",
+      "say": [
+        {
+          "who": "b",
+          "en": "A key with nowhere to turn.",
+          "vi": "Chiếc chìa chẳng có nơi nào để xoay."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Pia tưởng phải giữ đất chờ mở công trường. Kỳ chỉ năm đóng hồ sơ ở gáy sổ rồi viết lại câu ở dạng quá khứ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That project ended before I was born.",
+          "vi": "Dự án ấy kết thúc trước cả khi bà ra đời."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Kỳ đặt tấm chìa bìa lên chỗ hai đường mực giao nhau. Dù nắng dịch đi, chiếc chìa vẫn đánh dấu được căn phòng người ta từng mong có. Pia treo bản đồ trong gian đọc miễn phí.",
+      "say": [
+        {
+          "who": "a",
+          "en": "You can keep a place for a room without charging anyone for it.",
+          "vi": "Ta vẫn có thể dành chỗ cho một căn phòng mà chẳng cần thu tiền thuê ai."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

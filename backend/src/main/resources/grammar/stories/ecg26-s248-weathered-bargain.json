@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s248-weathered-bargain",
+  "title": "Giao kèo trên tấm ván cũ",
+  "level": "C1",
+  "topics": [
+    "inverted-conditionals",
+    "conditionals-beyond-types"
+  ],
+  "scene": "station",
+  "summary": "Một tấm biển còn ba chữ “Were the light…” từ phương án dự phòng trăm năm trước. Nó bị dùng làm bằng chứng đèn bến từng tắt nhiều đêm.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Yên",
+      "role": "Người dịch tư liệu"
+    },
+    {
+      "id": "b",
+      "name": "Mai",
+      "role": "Người giữ đèn bến"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Bản sao đầy đủ ghi Were the light to fail, a bell would be rung. Trong sổ bảo trì đêm ấy, bấc vẫn cháy và chuông còn nguyên dây buộc.",
+      "say": [
+        {
+          "who": "a",
+          "en": "They planned for darkness. Did they actually have it?",
+          "vi": "Họ dự phòng bóng tối. Đêm ấy có thật sự tối không?"
+        },
+        {
+          "who": "b",
+          "en": "Keep what the sign allows separate from what the log records.",
+          "vi": "Giữ điều biển nêu ra tách khỏi điều sổ trực ghi lại."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Yên cần dịch điều kiện đảo mà không biến nó thành báo cáo sự cố.",
+        "options": [
+          {
+            "t": "Whenever the light went out, the bell was rung.",
+            "note": "Whenever và quá khứ đơn gợi các lần thật từng lặp. Bản gốc chỉ nêu một khả năng có phương án, nên câu này đổi loại bằng chứng.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "If the light were to go out, someone would ring a bell.",
+            "note": "Were the light to fail mở ra tình huống giả định. Would nói cách ứng phó dự kiến, không xác nhận đèn đã tắt hay chuông đã reo.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Mai khôi phục tấm biển đúng như phương án dự phòng. Ở dưới bà ghi một đêm cụ thể với bằng chứng bấc còn cháy. Khách học được cả cách đọc lịch sử lẫn cách tìm chuông.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A town can remember something it prepared for without claiming it happened.",
+          "vi": "Một thị trấn có thể nhớ chuyện mình đã phòng bị mà không nói nó từng xảy ra."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Yên thử tra giờ reo trong sổ và không có mốc nào cho đêm ấy. Cô thay lời dịch, treo bên cạnh một chiếc chuông khách được phép thử ban ngày.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Now the bell has a dated sound we can stand behind.",
+          "vi": "Giờ ta có một lần chuông reo rõ ngày để xác nhận."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

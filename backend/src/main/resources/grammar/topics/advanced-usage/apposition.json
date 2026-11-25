@@ -1,0 +1,465 @@
+{
+  "schema": 1,
+  "slug": "apposition",
+  "version": 2,
+  "domain": "advanced-usage",
+  "order": 20,
+  "kind": "grammar",
+  "title": {
+    "vi": "Đồng vị ngữ",
+    "en": "Apposition"
+  },
+  "subtitle": {
+    "vi": "Hai danh ngữ cùng gọi một đối tượng",
+    "en": "Two noun phrases naming the same referent"
+  },
+  "aliases": [
+    "đồng vị ngữ",
+    "apposition",
+    "noun phrase supplement",
+    "Lan a local guide",
+    "chức danh và tên"
+  ],
+  "level": "C1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Nhận ra hai cách gọi cùng đối tượng.",
+    "Đặt ranh giới phần đồng vị bổ sung rõ.",
+    "Giữ hòa hợp với chủ ngữ chính."
+  ],
+  "prerequisites": [
+    "complex-noun-phrases"
+  ],
+  "related": [
+    {
+      "slug": "complex-noun-phrases",
+      "rel": "more"
+    },
+    {
+      "slug": "relative-clauses-non-defining",
+      "rel": "contrast"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Đồng vị ngữ (apposition) liên hệ hai danh ngữ cùng gọi hoặc giải thích một đối tượng trong các mẫu như Lan, a local guide, .... Có dạng tích hợp để nhận diện và dạng bổ sung.",
+    "when": "Chọn dấu theo quan hệ thông tin, không vì cứ có hai danh từ là đặt dấu phẩy.",
+    "examples": [
+      {
+        "en": "Lan, [N|a local guide], led the walk.",
+        "vi": "Lan, một hướng dẫn viên địa phương, dẫn đoàn đi bộ."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Lan và a local guide trong ví dụ gọi cùng người. A local guide là cụm danh từ, không phải mệnh đề hữu hạn; led là động từ chính của câu."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Tên người",
+            "items": [
+              "Lan"
+            ]
+          },
+          {
+            "label": "Cách gọi bổ sung",
+            "items": [
+              "a local guide"
+            ]
+          },
+          {
+            "label": "Hành động chính",
+            "items": [
+              "led the walk"
+            ]
+          }
+        ],
+        "sentence": "{0}, {1}, {2}."
+      },
+      "caption": "Hai danh ngữ cùng chỉ Lan; cụm chen có ranh giới hai phía.",
+      "alt": "Hai danh ngữ cùng chỉ Lan; cụm chen có ranh giới hai phía."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Dạng",
+        "Ví dụ",
+        "Điểm nhận diện"
+      ],
+      "rows": [
+        [
+          "Bổ sung",
+          "Lan, a local guide, called.",
+          "người đã được xác định; phần thêm có dấu"
+        ],
+        [
+          "Tích hợp nhận diện",
+          "the poet Lan",
+          "tên/chức danh cùng giúp nhận diện theo ngữ cảnh"
+        ],
+        [
+          "Quan hệ để đối chiếu",
+          "Lan, who is a guide, called.",
+          "mệnh đề có who/is"
+        ],
+        [
+          "Giới từ để đối chiếu",
+          "the guide from Hue",
+          "from Hue không là một danh ngữ gọi lại guide"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Phần đồng vị bổ sung chen giữa thường cần dấu ở cả hai phía. Đọc khung bỏ phần chen để kiểm tra hòa hợp: Lan is here, dù phần chen là one of our guides."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Bổ sung không có nghĩa không quan trọng. Dấu phản ánh cách xác định và cách đóng gói thông tin, không đánh giá thông tin có đáng đọc không."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Danh ngữ đồng vị có thể dài hoặc giải thích một nội dung. Cần tránh đặt xa đến mức người đọc không biết nó gọi lại phần nào. Dấu gạch hoặc ngoặc cũng có thể dùng cho phần bổ sung tùy văn phong."
+    },
+    {
+      "type": "p",
+      "vi": "Không tự thêm nghề nghiệp, vai trò hay đánh giá thật cho một người để đủ câu. Các nhân vật trong bài là ví dụ hư cấu; khi viết thực tế cần giữ thông tin có căn cứ."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "apposition-m1",
+      "wrong": "Lan, one of our guides, are ready.",
+      "right": "Lan, one of our guides, is ready.",
+      "why": "Chủ ngữ Lan số ít."
+    },
+    {
+      "id": "apposition-m2",
+      "wrong": "Lan, a local guide, leading the walk.",
+      "right": "Lan, a local guide, led the walk.",
+      "why": "Câu kể đầy đủ cần động từ hữu hạn."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Đồng vị có phải mệnh đề quan hệ không?",
+      "a": "Không ở mẫu danh ngữ đang học. A local guide khác who is a local guide."
+    },
+    {
+      "q": "Có luôn dấu phẩy quanh nghề và tên không?",
+      "a": "Không. Cần xem phần ấy tích hợp để nhận diện hay bổ sung về đối tượng đã rõ."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "apposition-01",
+      "prompt": "Chọn câu có cụm danh từ bổ sung về Lan và đủ hai dấu phẩy.",
+      "explain": "A local guide gọi lại cùng người Lan; phần chen giữa có ranh giới hai phía.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "Lan là người hướng dẫn; muốn thêm nghề như thông tin chen.",
+      "options": [
+        {
+          "t": "Lan, a local guide, led the walk.",
+          "ok": true,
+          "note": "Cụm đồng vị bổ sung có hai dấu phẩy."
+        },
+        {
+          "t": "Lan, a local guide led the walk.",
+          "ok": false,
+          "note": "Thiếu dấu kết thúc phần chen theo nhiệm vụ.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Lan a local guide, led the walk.",
+          "ok": false,
+          "note": "Thiếu dấu mở phần chen theo nhiệm vụ.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "apposition-02",
+      "prompt": "Nối cụm in hoa với người/vật nó gọi lại.",
+      "explain": "Đồng vị liên hệ hai cách gọi cùng đối tượng trong các câu này.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "Lan, A LOCAL GUIDE, led the walk.",
+          "b": "a local guide gọi lại Lan"
+        },
+        {
+          "a": "We visited Hue, A CITY IN CENTRAL VIETNAM.",
+          "b": "a city ... gọi lại Hue"
+        },
+        {
+          "a": "My neighbour, A NURSE, helped us.",
+          "b": "a nurse gọi lại my neighbour"
+        }
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "apposition-03",
+      "prompt": "Phân loại phần chen theo hình thức.",
+      "explain": "Cụm danh từ đồng vị khác mệnh đề quan hệ hoặc cụm giới từ.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Cụm danh từ đồng vị",
+        "Mệnh đề quan hệ",
+        "Cụm giới từ"
+      ],
+      "items": [
+        {
+          "t": "Lan, a local guide, called.",
+          "cat": "Cụm danh từ đồng vị"
+        },
+        {
+          "t": "Lan, who works nearby, called.",
+          "cat": "Mệnh đề quan hệ"
+        },
+        {
+          "t": "the guide from Hue",
+          "cat": "Cụm giới từ"
+        }
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "apposition-04",
+      "prompt": "Điền be theo chủ ngữ chính ở hiện tại.",
+      "explain": "Chủ ngữ là Lan hoặc the guides, không danh từ bên trong phần chen.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "Lan, one of our guides, {1} (be) here. The guides, a friendly team, {2} (be) ready.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "is"
+          ]
+        },
+        "2": {
+          "accept": [
+            "are"
+          ]
+        }
+      },
+      "level": "C1"
+    },
+    {
+      "id": "apposition-05",
+      "prompt": "Sửa hòa hợp, giữ phần đồng vị.",
+      "explain": "Lan là chủ ngữ số ít.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "Lan, one of our guides,"
+        },
+        {
+          "t": "are",
+          "bad": true,
+          "fix": [
+            "is"
+          ],
+          "note": "Không hòa hợp theo guides trong phần chen.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "ready."
+        }
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "apposition-06",
+      "prompt": "Sắp xếp bắt đầu bằng Lan, và giữ phần đồng vị giữa hai dấu phẩy.",
+      "explain": "Cụm a local guide không tự có động từ hữu hạn.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "Lan,",
+        "a local guide,",
+        "led",
+        "the walk"
+      ],
+      "accept": [
+        [
+          "Lan,",
+          "a local guide,",
+          "led",
+          "the walk"
+        ]
+      ],
+      "end": ".",
+      "level": "C1"
+    },
+    {
+      "id": "apposition-07",
+      "prompt": "Gộp hai câu bằng cụm đồng vị bổ sung.",
+      "explain": "Bỏ she is để giữ cụm danh từ a local guide.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "Lan led the walk. She is a local guide.",
+      "instruction": "Đặt a local guide ngay sau Lan giữa hai dấu phẩy; giữ led the walk.",
+      "accept": [
+        "Lan, a local guide, led the walk"
+      ],
+      "model": "Lan, a local guide, led the walk",
+      "level": "C1"
+    },
+    {
+      "id": "apposition-08",
+      "prompt": "Viết hai cách xác định/giới thiệu người.",
+      "explain": "Tự đối chiếu, không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Tạo một nhân vật hư cấu. Viết câu có tên rồi nghề trong đồng vị bổ sung có dấu phẩy. Viết câu dùng chức danh và tên như một cách xác định, giải thích vì sao không sao chép dấu phẩy máy móc.",
+      "model": [
+        "Mai, a project coordinator, called us. The coordinator Mai led the discussion."
+      ],
+      "checklist": [
+        "Hai danh ngữ liên hệ cùng người.",
+        "Cụm chen đủ ranh giới.",
+        "Dấu phẩy phản ánh cách xác định trong ngữ cảnh."
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "apposition-09",
+      "prompt": "Điền động từ hiện tại đơn theo chủ ngữ chính.",
+      "explain": "Mai needs; the coordinators need.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "Mai, our coordinator, {1} (need) a copy. The coordinators, two new colleagues, {2} (need) copies.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "needs"
+          ]
+        },
+        "2": {
+          "accept": [
+            "need"
+          ]
+        }
+      },
+      "level": "C1"
+    },
+    {
+      "id": "apposition-10",
+      "prompt": "Chuyển mệnh đề quan hệ thành cụm danh từ đồng vị.",
+      "explain": "A nurse gọi lại người đã xác định; không giữ who is trong cụm danh từ.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "Lan, who is a nurse, helped us.",
+      "instruction": "Bỏ who is; giữ a nurse và hai dấu phẩy.",
+      "accept": [
+        "Lan, a nurse, helped us"
+      ],
+      "model": "Lan, a nurse, helped us",
+      "level": "C1"
+    },
+    {
+      "id": "apposition-11",
+      "prompt": "Chọn tất cả câu có khung đầy đủ.",
+      "explain": "Phần đồng vị không thay động từ chính.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "Lan, a local guide, led the walk.",
+          "ok": true,
+          "note": "Có động từ chính led."
+        },
+        {
+          "t": "Lan, one of our guides, is here.",
+          "ok": true,
+          "note": "Chủ ngữ Lan hòa hợp is."
+        },
+        {
+          "t": "Lan, one of our guides, are here.",
+          "ok": false,
+          "note": "Lan cần is.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Lan, a local guide, leading the walk.",
+          "ok": false,
+          "note": "Không có động từ hữu hạn ở mẫu câu kể đầy đủ này.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "C1"
+    },
+    {
+      "id": "apposition-12",
+      "prompt": "Chọn nguyên tắc đúng về dấu phẩy.",
+      "explain": "Không mọi danh từ cạnh tên đều là thông tin bổ sung có cùng dấu.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "Cụm nghề nghiệp/chức danh bên cạnh tên.",
+      "options": [
+        {
+          "t": "Cần xem nó giúp xác định người hay bổ sung về người đã rõ trong ngữ cảnh.",
+          "ok": true,
+          "note": "Không chèn dấu phẩy theo kiểu chỉ đếm danh từ."
+        },
+        {
+          "t": "Mọi chức danh trước tên đều bắt buộc có dấu phẩy.",
+          "ok": false,
+          "note": "Có cách dùng xác định tích hợp.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Thông tin bổ sung luôn không quan trọng với người đọc.",
+          "ok": false,
+          "note": "Bổ sung là cách đóng gói, không giá trị thông tin.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "C1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgel",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

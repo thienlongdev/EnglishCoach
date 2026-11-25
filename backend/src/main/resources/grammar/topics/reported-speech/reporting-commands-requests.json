@@ -1,0 +1,480 @@
+{
+  "schema": 1,
+  "slug": "reporting-commands-requests",
+  "version": 2,
+  "domain": "reported-speech",
+  "order": 40,
+  "kind": "grammar",
+  "title": {
+    "vi": "Tường thuật mệnh lệnh và lời đề nghị",
+    "en": "Reporting commands and requests"
+  },
+  "subtitle": {
+    "vi": "Giữ việc cần làm và lực của lời nói",
+    "en": "Preserve the requested action and force of the message"
+  },
+  "aliases": [
+    "tường thuật mệnh lệnh lời nhờ",
+    "reported commands requests",
+    "ask tell someone to",
+    "told me not to",
+    "asked to me"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Tạo ask/tell + người + to-infinitive.",
+    "Giữ phủ định trong lời yêu cầu.",
+    "Không nâng lời nhờ thành lệnh khi chưa có căn cứ."
+  ],
+  "prerequisites": [
+    "direct-and-reported"
+  ],
+  "related": [
+    {
+      "slug": "reporting-questions",
+      "rel": "contrast"
+    },
+    {
+      "slug": "reporting-verbs",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Lời nhờ hoặc chỉ dẫn thường được thuật bằng ask/tell + người nghe + to-infinitive. Với việc không làm, not to là mẫu trung tính thường dùng.",
+    "when": "Chọn động từ theo ý định lời gốc, không chỉ dấu hỏi hoặc từ please.",
+    "examples": [
+      {
+        "en": "She [V|asked] [O|me] [V|to wait].",
+        "vi": "Cô ấy nhờ tôi chờ."
+      },
+      {
+        "en": "She [V|told] [O|me] [NEG|not] [V|to wait].",
+        "vi": "Cô ấy bảo tôi đừng chờ."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Please wait có thể thành She asked me to wait. Do not touch the switch có thể thành She told me not to touch the switch. Người nghe gốc trở thành me/us/them theo vai người, không có bảng you luôn đổi một dạng."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Động từ thuật",
+            "items": [
+              "asked"
+            ]
+          },
+          {
+            "label": "Người được nhờ",
+            "items": [
+              "me"
+            ]
+          },
+          {
+            "label": "Việc cần làm",
+            "items": [
+              "to wait"
+            ]
+          }
+        ],
+        "sentence": "She {0} {1} {2}."
+      },
+      "caption": "Me là người được nhờ và cũng là người thực hiện wait.",
+      "alt": "Me là người được nhờ và cũng là người thực hiện wait."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Chức năng",
+        "Mẫu",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "Lời nhờ",
+          "ask + người + to",
+          "asked me to wait"
+        ],
+        [
+          "Chỉ dẫn",
+          "tell + người + to",
+          "told me to wait"
+        ],
+        [
+          "Chỉ dẫn phủ định",
+          "tell + người + not to",
+          "told me not to wait"
+        ],
+        [
+          "Lời khuyên",
+          "advise + người + to",
+          "advised me to rest"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Động từ thuật phải giữ mức độ: asked khác ordered. Một Could you ...? lịch sự có thể là lời nhờ, nên thuật chức năng bằng asked me to ... là lựa chọn phù hợp khi ngữ cảnh rõ."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Not to thường trung tính cho phủ định. To not cũng được dùng, nhất là khi nhấn phạm vi phủ định; không áp lệnh cấm tách infinitive tuyệt đối."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Here/there và now/then vẫn theo mốc kể thật. Nếu vẫn ở cùng nơi, có thể giữ here. Bài tập cần nêu nơi kể khi yêu cầu đổi, không thay tự động."
+    },
+    {
+      "type": "p",
+      "vi": "Ask còn có câu hỏi gián tiếp: asked me whether I was ready. Mẫu đó không giống asked me to wait. Suggest không tự theo mẫu suggest me to wait; xem reporting-verbs."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "reporting-commands-requests-m1",
+      "wrong": "She asked me wait.",
+      "right": "She asked me to wait.",
+      "why": "Mẫu này cần to."
+    },
+    {
+      "id": "reporting-commands-requests-m2",
+      "wrong": "She told to me to wait.",
+      "right": "She told me to wait.",
+      "why": "Người nghe đi trực tiếp sau told."
+    },
+    {
+      "id": "reporting-commands-requests-m3",
+      "wrong": "She asked me to waited.",
+      "right": "She asked me to wait.",
+      "why": "To-infinitive dùng dạng gốc."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Câu gốc có dấu hỏi thì phải thuật thành câu hỏi không?",
+      "a": "Không. Nếu đó là lời nhờ theo chức năng, asked someone to có thể phù hợp."
+    },
+    {
+      "q": "Có thể dùng ordered thay mọi asked không?",
+      "a": "Không. Nó đổi lực lời nói; cần ngữ cảnh về mệnh lệnh thật."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "rcr-01",
+      "prompt": "Chọn mẫu thuật lời nhờ.",
+      "explain": "Ask someone to do giữ người được nhờ và việc cần làm.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "Lan nói với tôi: “Please wait here.” Sau đó tôi kể lại ở một nơi khác.",
+      "options": [
+        {
+          "t": "Lan asked me to wait there.",
+          "ok": true,
+          "note": "Mẫu ask + người + to-infinitive; góc kể ở nơi khác."
+        },
+        {
+          "t": "Lan asked me wait there.",
+          "ok": false,
+          "note": "Mẫu này cần to.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Lan asked to me wait there.",
+          "ok": false,
+          "note": "Me đi trực tiếp sau asked trong mẫu này.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rcr-02",
+      "prompt": "Nối động từ với chức năng lời nói theo ngữ cảnh.",
+      "explain": "Không nâng lời nhờ thành mệnh lệnh nếu không có căn cứ.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "asked me to wait",
+          "b": "thuật lời nhờ"
+        },
+        {
+          "a": "ordered me to leave",
+          "b": "thuật mệnh lệnh rõ"
+        },
+        {
+          "a": "advised me to rest",
+          "b": "thuật lời khuyên"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rcr-03",
+      "prompt": "Phân loại nội dung khẳng định hay phủ định.",
+      "explain": "Not có phạm vi việc được yêu cầu không làm.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Yêu cầu làm",
+        "Yêu cầu không làm"
+      ],
+      "items": [
+        {
+          "t": "She asked me to wait.",
+          "cat": "Yêu cầu làm"
+        },
+        {
+          "t": "She told me not to wait.",
+          "cat": "Yêu cầu không làm"
+        },
+        {
+          "t": "She asked us not to open the door.",
+          "cat": "Yêu cầu không làm"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rcr-04",
+      "prompt": "Điền to hoặc dạng nguyên thể phủ định theo gợi ý.",
+      "explain": "Ask me to wait; told me not to touch theo ngữ cảnh yêu cầu không chạm.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "She asked me {1} wait. She told me {2} the switch. (not touch)",
+      "blanks": {
+        "1": {
+          "accept": [
+            "to"
+          ]
+        },
+        "2": {
+          "accept": [
+            "not to touch",
+            "to not touch"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "rcr-05",
+      "prompt": "Sửa mẫu ask với người nghe.",
+      "explain": "Ask me to là mẫu, không ask to me to.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "She"
+        },
+        {
+          "t": "asked to me to",
+          "bad": true,
+          "fix": [
+            "asked me to"
+          ],
+          "note": "Người được nhờ đi trực tiếp sau ask.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "wait."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rcr-06",
+      "prompt": "Sắp xếp câu bắt đầu bằng She; giữ not trước to theo mẫu được yêu cầu.",
+      "explain": "Told us not to leave là lời yêu cầu không rời đi.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "She",
+        "told",
+        "us",
+        "not",
+        "to",
+        "leave"
+      ],
+      "accept": [
+        [
+          "She",
+          "told",
+          "us",
+          "not",
+          "to",
+          "leave"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "rcr-07",
+      "prompt": "Thuật lời nhờ với người nghe rõ.",
+      "explain": "You là tôi trong tình huống, asked me to giữ chức năng nhờ.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "Lan said to me, “Please close the door.”",
+      "instruction": "Dùng Lan asked me to, giữ close the door.",
+      "accept": [
+        "Lan asked me to close the door"
+      ],
+      "model": "Lan asked me to close the door",
+      "level": "B1"
+    },
+    {
+      "id": "rcr-08",
+      "prompt": "Thuật ba chức năng mà không đổi mức độ.",
+      "explain": "Bài hư cấu tự đối chiếu, không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Tạo một lời nhờ lịch sự, một chỉ dẫn không làm và một lời khuyên. Thuật bằng ask/tell/advise với người nghe rõ. Không gọi lời nhờ là order nếu không có ngữ cảnh.",
+      "model": [
+        "“Please wait.” She asked me to wait. “Do not touch the switch.” She told me not to touch the switch. “You should rest.” She advised me to rest."
+      ],
+      "checklist": [
+        "Đúng người được nhờ/khuyên.",
+        "To-infinitive đầy đủ.",
+        "Giữ phủ định và mức độ lời nói."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rcr-09",
+      "prompt": "Điền dạng gốc theo to và not to.",
+      "explain": "To mở infinitive nên use/open giữ dạng gốc.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "She asked us to {1} (use) the side door. She told us not to {2} (open) the gate.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "use"
+          ]
+        },
+        "2": {
+          "accept": [
+            "open"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "rcr-10",
+      "prompt": "Thuật chỉ dẫn phủ định.",
+      "explain": "Not to và to not có thể dùng; giữ not để không đảo nghĩa.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "Lan said to me, “Do not wait outside.”",
+      "instruction": "Dùng Lan told me và infinitive phủ định với wait outside.",
+      "accept": [
+        "Lan told me not to wait outside",
+        "Lan told me to not wait outside"
+      ],
+      "model": "Lan told me not to wait outside",
+      "level": "B1"
+    },
+    {
+      "id": "rcr-11",
+      "prompt": "Chọn tất cả mẫu chuẩn.",
+      "explain": "Ask/tell có người nghe và to-infinitive; không dùng động từ quá khứ sau to.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "She asked me to wait.",
+          "ok": true,
+          "note": "Mẫu chuẩn."
+        },
+        {
+          "t": "She told me not to wait.",
+          "ok": true,
+          "note": "Infinitive phủ định."
+        },
+        {
+          "t": "She asked me to waited.",
+          "ok": false,
+          "note": "Sau to cần wait.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "She told to me to wait.",
+          "ok": false,
+          "note": "Mẫu tell người nghe không có to trước me.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rcr-12",
+      "prompt": "Chọn cách thuật giữ ý định lời nói.",
+      "explain": "Một câu hỏi lịch sự có thể thực hiện lời nhờ.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "Người nói muốn bạn mở cửa: “Could you open the door, please?”",
+      "options": [
+        {
+          "t": "She asked me to open the door có thể giữ chức năng lời nhờ.",
+          "ok": true,
+          "note": "Không bắt buộc giữ hình thức câu hỏi nếu thuật hành động nói."
+        },
+        {
+          "t": "Phải thuật thành ordered dù đó là lời nhờ.",
+          "ok": false,
+          "note": "Tự nâng mức độ.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Không thể thuật câu có could bằng bất kỳ to-infinitive nào.",
+          "ok": false,
+          "note": "Có thể thuật lời nhờ bằng ask someone to.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

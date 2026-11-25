@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s215-last-bell-first-song",
+  "title": "Tiếng chuông cuối cho bài ca đầu",
+  "level": "B2",
+  "topics": [
+    "narrative-tenses",
+    "future-in-the-past"
+  ],
+  "scene": "station",
+  "summary": "Ga đóng cửa ngày mai, nhưng Diên vẫn đánh chuông như mọi sáng. Mae từ xa trở lại vì một lời hẹn viết khi cả hai còn dạy hợp xướng ở đây.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Diên",
+      "role": "Người gác ga nghỉ hưu"
+    },
+    {
+      "id": "b",
+      "name": "Mae",
+      "role": "Học trò cũ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Lời cũ nói When the last train arrives, we will sing. Chuyến cuối chưa vào. Sau lời hẹn năm năm, giờ Mae mang cả lớp cũ đứng trên sân. Diên chưa biết họ tới đủ hay chưa.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I promised a song, not an empty platform.",
+          "vi": "Tôi hứa một bài hát, không phải một sân ga trống."
+        },
+        {
+          "who": "b",
+          "en": "Tell them what we said we would do.",
+          "vi": "Hãy kể cho họ lời chúng ta từng hứa đi."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Mae thuật lại buổi hát còn ở tương lai so với lúc hẹn, không lẫn với những lần hát đã qua.",
+        "options": [
+          {
+            "t": "We said we had sung before the last train arrived.",
+            "note": "Had sung cùng before đặt việc hát đã xong trước mốc tàu đến. Nó đổi lời hứa thành lời kể quá khứ, trái với buổi hát mọi người đang đợi.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "We said we would sing when the last train arrived.",
+            "note": "Would sing là tương lai nhìn từ lúc said. Arrived trong mệnh đề thời gian lùi theo điểm nhìn ấy; câu thuật không tự xác nhận buổi hát đã diễn ra.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Khi chuyến cuối dừng, học trò cũ lần lượt bước ra từ sau những cột đèn. Diên đánh chuông lần cuối và dùng chính nốt ấy làm âm đầu. Ga ngừng bán vé, bài ca vẫn ngân thêm đúng một sân dài.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The last bell just gave us our first note.",
+          "vi": "Chuông cuối vừa trao nốt đầu cho mình."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Diên suýt cất chuông. Từ toa cuối bật lên một giọng đơn ca, nhắc ông lời hẹn vẫn chưa xong. Ông đưa chuông cho Mae rồi bước vào hàng, tự hát thay vì đứng ngoài báo giờ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "For once I didn't have to send everyone away.",
+          "vi": "Lần này tôi không phải tiễn mọi người đi nữa."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

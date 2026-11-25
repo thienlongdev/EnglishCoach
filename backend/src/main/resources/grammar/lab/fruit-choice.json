@@ -1,0 +1,41 @@
+{
+  "id": "fruit-choice",
+  "title": "Chọn quả khác hay lấy thêm?",
+  "summary": "Có nhiều quả lê trên quầy. Khi người bán đưa một quả, bạn muốn đổi sang quả xanh hay muốn có thêm một quả?",
+  "level": "A1",
+  "topics": [
+    "other-another",
+    "one-and-ones"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Ý định",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Chọn theo màu"
+        },
+        {
+          "id": "v2",
+          "label": "Lấy thêm"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I'd like the green one.",
+      "vi": "Tôi muốn quả màu xanh.",
+      "note": "One giúp tránh lặp pear. The green chỉ ra quả nào. / One stands in for pear.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "I'd like another one.",
+      "vi": "Tôi muốn thêm một quả nữa.",
+      "note": "Nếu bạn giữ quả vừa nhận, another one là một quả bổ sung cùng loại. / Another requests one more in this context.",
+      "verdict": "ok"
+    }
+  }
+}

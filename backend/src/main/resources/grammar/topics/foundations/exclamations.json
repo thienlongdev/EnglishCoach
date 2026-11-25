@@ -1,0 +1,374 @@
+{
+  "schema": 1,
+  "slug": "exclamations",
+  "version": 2,
+  "domain": "foundations",
+  "order": 80,
+  "kind": "grammar",
+  "title": { "vi": "Câu cảm thán: What a…, How…", "en": "Exclamations" },
+  "subtitle": { "vi": "Nói rằng điều gì đó làm bạn ngạc nhiên, thích thú hay bực mình, bằng What hoặc How ở đầu câu", "en": "Saying how surprised, pleased or annoyed you are, with What or How at the front" },
+  "aliases": ["exclamation", "exclamative", "câu cảm thán", "what a", "what a beautiful day", "how beautiful", "what beautiful", "how a beautiful day", "đẹp quá", "thật là", "dấu chấm than", "exclamation mark", "what a pity", "how kind of you"],
+  "level": "A2",
+  "levelBasis": "editorial",
+  "uses": [
+    { "level": "A1", "vi": "Hiểu và dùng tiếng kêu ngắn: Wow! Great! Lovely!" },
+    { "level": "A2", "vi": "Dùng What a… và How… để khen, ngạc nhiên, tiếc nuối." },
+    { "level": "B1", "vi": "Nhận ra câu cảm thán trong lời nói, câu hỏi cảm thán (Isn't it cold!) và mệnh đề cảm thán trong câu lớn." }
+  ],
+  "objectives": [
+    "Tạo câu cảm thán với What a/an + danh từ số ít đếm được, và What + danh từ số nhiều hoặc không đếm được",
+    "Tạo câu cảm thán với How + tính từ hoặc trạng từ",
+    "Dùng trật tự chủ ngữ rồi động từ trong hai mẫu cảm thán cơ bản, và nhận ra còn có cảm thán dạng câu hỏi",
+    "Biết bỏ phần chủ ngữ và động từ khi nói, và dùng dấu chấm than vừa phải trong văn viết"
+  ],
+  "prerequisites": [],
+  "related": [
+    { "slug": "statements-negatives-questions", "rel": "contrast" },
+    { "slug": "wh-questions", "rel": "contrast" },
+    { "slug": "a-and-an", "rel": "more" },
+    { "slug": "countable-uncountable", "rel": "more" },
+    { "slug": "degree-modifiers", "rel": "alternative" },
+    { "slug": "parts-of-speech", "rel": "more" },
+    { "slug": "capitals-and-end-punctuation", "rel": "more" }
+  ],
+  "exam": {
+    "ielts": "Trong Speaking, một câu cảm thán ngắn như What a good question! nghe tự nhiên. Trong Writing Task 2 và văn bản trang trọng, thường tránh dấu chấm than.",
+    "toeic": "Hiếm khi là điểm được hỏi riêng. Cần để hiểu lời thoại thân mật và tin nhắn ngắn."
+  },
+  "quick": {
+    "what": "Câu cảm thán (exclamation) diễn tả cảm xúc mạnh. Hai mẫu cơ bản ở bài này là What + cụm danh từ (What a lovely view!) và How + tính từ hoặc trạng từ. Phần chủ ngữ + động từ theo sau thường giữ trật tự câu kể và có thể được lược trong nhiều trường hợp.",
+    "when": "Dùng khi ngạc nhiên, thích thú, thán phục hay bực mình, nhất là trong lời nói và thư từ thân mật. Với hai mẫu cơ bản, chọn What khi nhấn cụm danh từ; chọn How khi nhấn tính từ hoặc trạng từ.",
+    "examples": [
+      { "en": "[FOCUS|What a] [ADJ|lovely] [N|view]!", "vi": "Cảnh đẹp quá!" },
+      { "en": "[FOCUS|How] [ADJ|kind] of you!", "vi": "Bạn tốt quá!" },
+      { "en": "[FOCUS|How] [ADV|fast] [S|she] [V|runs]!", "vi": "Cô ấy chạy nhanh thật!" }
+    ],
+    "remember": "Mẫu cơ bản: What + cụm danh từ; How + tính từ hoặc trạng từ + chủ ngữ + động từ. Còn có những cách cảm thán khác."
+  },
+  "lesson": [
+    { "type": "p", "vi": "Tiếng Việt nói \"Đẹp quá!\", \"Hôm nay trời đẹp thật!\", \"Cô ấy chạy nhanh ghê!\": các từ **quá**, **thật**, **ghê** đứng sau tính từ. Tiếng Anh làm ngược lại. Từ cảm thán (**What** hoặc **How**) đứng ngay **đầu câu**, rồi mới đến phần bạn muốn nhấn mạnh. Câu như vậy gọi là **câu cảm thán** (exclamation)." },
+    { "type": "formula", "lines": [
+      { "label": "Danh từ số ít đếm được", "parts": [ { "t": "What", "role": "FOCUS" }, { "t": "a / an" }, { "t": "(tính từ)", "role": "ADJ" }, { "t": "danh từ", "role": "N" }, { "t": "(chủ ngữ + động từ)" } ] },
+      { "label": "Danh từ số nhiều hoặc không đếm được", "parts": [ { "t": "What", "role": "FOCUS" }, { "t": "(tính từ)", "role": "ADJ" }, { "t": "danh từ", "role": "N" }, { "t": "(chủ ngữ + động từ)" } ] },
+      { "label": "Tính từ hoặc trạng từ", "parts": [ { "t": "How", "role": "FOCUS" }, { "t": "tính từ / trạng từ", "role": "ADJ" }, { "t": "(chủ ngữ + động từ)" } ] }
+    ], "note": "Trong các mẫu ngắn này, phần chủ ngữ và động từ thường có thể lược. Cảm thán độc lập thường kết thúc bằng dấu chấm than." },
+    { "type": "h", "vi": "What: khi có một danh từ" },
+    { "type": "diagram",
+      "spec": { "kind": "transform", "steps": [
+        { "label": "Câu khẳng định", "sentence": "It is a lovely view." },
+        { "label": "Cụm danh từ lên đầu, thêm What", "sentence": "What a lovely view it is!" },
+        { "label": "Bỏ phần chủ ngữ và động từ (tùy chọn)", "sentence": "What a lovely view!" }
+      ], "changed": ["What"] },
+      "caption": "Cụm danh từ đi lên đầu câu và What đứng trước nó. Phần it is theo sau vẫn theo trật tự câu khẳng định, và có thể bỏ.",
+      "alt": "Ba bước: It is a lovely view; What a lovely view it is với cụm a lovely view chuyển lên đầu và What thêm vào; What a lovely view khi bỏ it is." },
+    { "type": "examples", "items": [
+      { "en": "[FOCUS|What a] [ADJ|great] [N|idea]!", "vi": "Ý hay quá!", "note": "Danh từ số ít đếm được: có a hoặc an." },
+      { "en": "[FOCUS|What an] [ADJ|awful] [N|smell] [S|it] [V|is]!", "vi": "Mùi gì mà kinh khủng thế!", "note": "Awful bắt đầu bằng âm nguyên âm, nên dùng an." },
+      { "en": "[FOCUS|What] [ADJ|lovely] [N|flowers]!", "vi": "Hoa đẹp quá!", "note": "Danh từ số nhiều: không có a." },
+      { "en": "[FOCUS|What] [ADJ|terrible] [N|weather]!", "vi": "Thời tiết tệ quá!", "note": "Weather không đếm được: không có a." },
+      { "en": "[FOCUS|What] [N|luck]!", "vi": "May quá!", "note": "Không có tính từ vẫn được." },
+      { "en": "[FOCUS|What a] [N|pity]!", "vi": "Tiếc quá!" }
+    ] },
+    { "type": "try", "exercise": "exc-01" },
+    { "type": "h", "vi": "How: khi chỉ có tính từ hoặc trạng từ" },
+    { "type": "diagram",
+      "spec": { "kind": "transform", "steps": [
+        { "label": "Câu khẳng định", "sentence": "She is very kind." },
+        { "label": "Tính từ lên đầu, How thay very", "sentence": "How kind she is!" },
+        { "label": "Bỏ phần chủ ngữ và động từ (tùy chọn)", "sentence": "How kind!" }
+      ], "changed": ["How"] },
+      "caption": "Mẫu cơ bản đưa How lên trước kind; very không bắt buộc. How very kind! cũng đúng khi muốn nhấn thêm.",
+      "alt": "Ba bước: She is very kind; How kind she is với kind chuyển lên đầu và How thay very; How kind khi bỏ she is." },
+    { "type": "examples", "items": [
+      { "en": "[FOCUS|How] [ADJ|expensive] [S|these shoes] [V|are]!", "vi": "Đôi giày này đắt quá!" },
+      { "en": "[FOCUS|How] [ADV|fast] [S|he] [V|types]!", "vi": "Anh ấy gõ phím nhanh thật!", "note": "Trạng từ cũng đi với How." },
+      { "en": "[FOCUS|How] [ADJ|kind] of you!", "vi": "Bạn tốt quá!", "note": "How + tính từ + of + người: nhận xét về hành động của người đó." }
+    ] },
+    { "type": "h", "vi": "Cảm thán không đảo chỗ như câu hỏi" },
+    { "type": "p", "vi": "Trong mẫu How tall he is!, chủ ngữ đứng trước động từ; câu hỏi thông tin How tall is he? đảo is lên trước. Đây là hai mẫu cơ bản để đối chiếu, không phải lệnh cấm dùng cấu trúc câu hỏi để cảm thán." },
+    { "type": "contrast",
+      "labelA": "Cảm thán",
+      "labelB": "Câu hỏi",
+      "items": [
+        { "a": { "en": "[FOCUS|How] [ADJ|tall] [S|he] [V|is]!", "vi": "Anh ấy cao quá!" }, "b": { "en": "[Q|How] [ADJ|tall] [V|is] [S|he]?", "vi": "Anh ấy cao bao nhiêu?" }, "diff": "Bên trái: chủ ngữ rồi động từ, người nói bày tỏ sự ngạc nhiên. Bên phải: động từ đảo lên trước chủ ngữ, người nói muốn biết chiều cao." },
+        { "a": { "en": "[FOCUS|How] [ADV|well] [S|she] [V|plays]!", "vi": "Cô ấy chơi hay thật!" }, "b": { "en": "[Q|How] [ADV|well] [AUX|does] [S|she] [V|play]?", "vi": "Cô ấy chơi giỏi đến mức nào?" }, "diff": "Câu hỏi có does và động từ về dạng gốc. Câu cảm thán chỉ có plays." }
+      ] },
+    { "type": "h", "vi": "What hay How?" },
+    { "type": "diagram",
+      "spec": { "kind": "flow", "start": "noun",
+        "nodes": {
+          "noun": { "q": "Điều bạn muốn nhấn mạnh có kèm một danh từ không? (view, flowers, luck)", "yes": "count", "no": "how" },
+          "count": { "q": "Danh từ đó là số ít và đếm được? (một ý tưởng, một cảnh)", "yes": "whata", "no": "what" },
+          "whata": { "end": "What a / an + (tính từ) + danh từ", "note": "What a lovely view! What an idea!" },
+          "what": { "end": "What + (tính từ) + danh từ", "note": "What lovely flowers! What terrible weather!" },
+          "how": { "end": "How + tính từ hoặc trạng từ", "note": "How lovely! How fast he runs!" }
+        } },
+      "caption": "Gợi ý chọn giữa hai mẫu cơ bản. Những cách cảm thán khác được nêu trong phần sâu.",
+      "alt": "Sơ đồ: nếu có danh từ số ít đếm được thì dùng What a hoặc What an; nếu danh từ số nhiều hoặc không đếm được thì dùng What; nếu chỉ có tính từ hoặc trạng từ thì dùng How." },
+    { "type": "note", "kind": "vn", "vi": "\"Đẹp quá!\" chỉ có tính từ, nên tiếng Anh là How beautiful!, không phải What beautiful!. Khi có danh từ, người học hay quên a hoặc thêm a sai chỗ: What a beautiful flowers! hoặc What a terrible weather!. Hãy kiểm tra danh từ: số ít đếm được mới có a." },
+    { "type": "h", "vi": "Cách khác: so và such" },
+    { "type": "p", "vi": "Bạn cũng có thể nhấn mạnh trong một câu khẳng định rồi kết thúc bằng dấu chấm than. Dùng **so** trước tính từ, và **such a** trước cụm có danh từ. Nghĩa gần với câu cảm thán, và rất thường gặp trong lời nói." },
+    { "type": "examples", "items": [
+      { "en": "The view is [ADV|so] [ADJ|beautiful]!", "vi": "Cảnh đẹp quá!", "tag": "spoken" },
+      { "en": "It[V|'s] [ADV|such a] [ADJ|beautiful] [N|view]!", "vi": "Đúng là một cảnh đẹp!", "tag": "spoken" }
+    ] },
+    { "type": "try", "exercise": "exc-03" },
+    { "type": "note", "kind": "tip", "vi": "Khi nói, người ta nhấn vào tính từ hoặc danh từ chính sau What hay How. Trong văn viết, một dấu chấm than là đủ." }
+  ],
+  "deep": [
+    {
+      "type": "h",
+      "vi": "Câu cảm thán đúng nghĩa ngữ pháp, và câu có dấu chấm than"
+    },
+    {
+      "type": "p",
+      "vi": "Theo nghĩa ngữ pháp hẹp, câu cảm thán (exclamative) là câu mở bằng What hoặc How như ở trên. Nhưng nhiều câu kết thúc bằng `!` có hình thức khác: câu khẳng định, câu mệnh lệnh, câu hỏi, hay tiếng kêu một từ. Chúng cùng diễn tả cảm xúc mạnh, nhưng cấu trúc không có gì đặc biệt."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|You][V|'re] early!",
+          "vi": "Bạn đến sớm thế!",
+          "note": "Câu khẳng định, giọng nói và dấu chấm than làm nên sự ngạc nhiên."
+        },
+        {
+          "en": "[AUX|Isn't] [S|it] [ADJ|cold]!",
+          "vi": "Trời lạnh quá nhỉ!",
+          "note": "Câu hỏi phủ định dùng như câu cảm thán: người nói chờ bạn đồng ý, và thường không cần câu trả lời.",
+          "tag": "spoken"
+        },
+        {
+          "en": "[AUX|Haven't] [S|you] [V|grown]!",
+          "vi": "Con lớn quá rồi nhỉ!",
+          "tag": "spoken"
+        },
+        {
+          "en": "Wow, brilliant!",
+          "vi": "Ôi, tuyệt vời!",
+          "tag": "spoken"
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Mệnh đề cảm thán nằm trong câu khác"
+    },
+    {
+      "type": "p",
+      "vi": "What và How cũng mở một mệnh đề cảm thán nằm trong câu lớn, sau những cụm như it's amazing, I never realised, you wouldn't believe. Ở đó trật tự vẫn là chủ ngữ rồi động từ, và không có dấu chấm than riêng."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "It[V|'s] [ADJ|amazing] [SUB|how quickly children learn].",
+          "vi": "Thật đáng ngạc nhiên là trẻ em học nhanh đến vậy."
+        },
+        {
+          "en": "I never realised [SUB|what a difference a good teacher can make].",
+          "vi": "Tôi chưa bao giờ nhận ra một giáo viên giỏi tạo nên khác biệt lớn đến mức nào."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Trong lời nói hằng ngày, câu cảm thán hay được rút gọn: What a day! hoặc chỉ Lovely! Câu đầy đủ như What a lovely day it is! vẫn hoàn toàn tự nhiên, chỉ là dài hơn."
+    },
+    {
+      "type": "h",
+      "vi": "Dấu chấm than trong văn viết"
+    },
+    {
+      "type": "p",
+      "vi": "Dấu chấm than hợp với thư từ thân mật, tin nhắn, lời thoại và quảng cáo. Văn học thuật và văn bản trang trọng, như bài luận IELTS Writing Task 2 hay báo cáo, thường tránh nó vì lập luận không cần nhấn mạnh bằng dấu câu. Dùng một dấu: các dấu liền nhau (!!!) chỉ hợp với tin nhắn rất thân mật."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "What a và such a đều là các khuôn ngắn quen thuộc, nhưng không thay được cho nhau trong mọi câu: What a lovely view! là một câu cảm thán trọn vẹn, còn It's such a lovely view! là câu khẳng định có nhấn mạnh. Cả hai đều đúng."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "How very thoughtful! hoàn toàn đúng; very thêm sắc thái nhấn mạnh. Ngoài mẫu How + tính từ hoặc trạng từ, còn có How I admire her patience!, trong đó How nhấn cả mệnh đề. Vì thế sơ đồ What/How trong bài là gợi ý cho hai mẫu cơ bản, không phải định nghĩa mọi câu cảm thán."
+    }
+  ],
+  "mistakes": [
+    { "id": "exc-what-adjective", "wrong": "What beautiful!", "right": "How beautiful!", "why": "What cần một danh từ ngay sau (có thể kèm tính từ). Khi chỉ có tính từ, dùng How.", "vn": "\"Đẹp quá!\" chỉ có tính từ, người học thêm What để cho giống \"thật là\"." },
+    { "id": "exc-a-plural", "wrong": "What a beautiful flowers!", "right": "What beautiful flowers!", "why": "A / an chỉ đứng trước danh từ số ít đếm được. Flowers là số nhiều, nên không có a.", "vn": "Tiếng Việt không đổi danh từ theo số lượng, nên người học khó thấy a và -s đi cùng nhau." },
+    { "id": "exc-a-uncountable", "wrong": "What a terrible weather!", "right": "What terrible weather!", "why": "Weather không đếm được, nên không có a. Có thể nói What a terrible day! vì day đếm được." },
+    { "id": "exc-how-a", "wrong": "How a lovely day!", "right": "What a lovely day!", "why": "Trong mẫu cơ bản đang học, không đặt a ngay sau How. Dùng What a lovely day!; nếu chỉ nhấn tính từ, dùng How lovely!" },
+    { "id": "exc-question-order", "wrong": "What a lovely day is it!", "right": "What a lovely day it is!", "why": "Câu cảm thán giữ trật tự chủ ngữ rồi động từ, không đảo như câu hỏi." }
+  ],
+  "faq": [
+    { "q": "Có bắt buộc phải nói đủ \"it is\" ở cuối không?", "a": "Không. What a lovely view! và What a lovely view it is! đều đúng. Khi nói, người ta rất hay bỏ phần chủ ngữ và động từ." },
+    { "q": "What a lovely day và How lovely the day is, hai cách này khác nhau không?", "a": "Gần nghĩa nhau. What a lovely day it is! nhấn vào cả cụm danh từ. How lovely the day is! nhấn vào tính từ. Cách đầu thường gặp hơn trong lời nói." },
+    { "q": "Khi nào nên dùng dấu chấm than?", "a": "Khi viết thư từ thân mật, tin nhắn, lời thoại, thiệp mừng. Với bài viết học thuật và văn bản trang trọng thường chỉ dùng rất ít hoặc không dùng." },
+    { "q": "So beautiful! và How beautiful!, có khác nhau không?", "a": "Cả hai đều tự nhiên và gần nghĩa. How beautiful! là một câu cảm thán hoàn chỉnh. Với so, bạn thường nói cả câu: It's so beautiful!" }
+  ],
+  "exercises": [
+    { "id": "exc-01", "type": "choice", "level": "A2", "use": "practice", "skill": "form",
+      "prompt": "Chọn từ mở đầu đúng cho câu cảm thán.",
+      "context": "Bạn bước ra ngoài sau nhiều ngày mưa liên tiếp ở Hà Nội và thấy trời nắng rực.",
+      "stem": "___ lovely weather!",
+      "options": [
+        { "t": "What", "ok": true, "note": "Weather là danh từ không đếm được, nên dùng What và không có a." },
+        { "t": "What a", "note": "Weather không đếm được, không đi với a.", "tag": "exclamation-a-with-uncountable" },
+        { "t": "How", "note": "How đi với tính từ hoặc trạng từ đứng một mình. Ở đây có danh từ weather sau lovely, nên cần What.", "tag": "what-how-confusion" }
+      ],
+      "explain": "Chỉ cần nhìn danh từ: weather không đếm được, nên là What lovely weather!. Nếu là một ngày, bạn nói What a lovely day!." },
+    { "id": "exc-02", "type": "choice", "level": "A2", "use": "check", "skill": "form",
+      "prompt": "Chọn từ mở đầu đúng.",
+      "context": "Bạn xem giá một đôi giày ở cửa hàng.",
+      "stem": "___ expensive these shoes are!",
+      "options": [
+        { "t": "How", "ok": true, "note": "Sau expensive không có danh từ trong cụm này, chỉ có tính từ, nên dùng How." },
+        { "t": "What", "note": "What cần một danh từ ngay sau. Expensive là tính từ đứng một mình.", "tag": "what-how-confusion" },
+        { "t": "What a", "note": "What a cần danh từ số ít đếm được. Shoes là số nhiều, và expensive cũng không đi kèm danh từ.", "tag": "what-how-confusion" }
+      ],
+      "explain": "Ở đây cụm these shoes là chủ ngữ của câu, không nằm trong phần sau What. Phần được nhấn mạnh chỉ có expensive, nên là How. Bạn cũng có thể nói What expensive shoes these are! nếu đưa cả cụm lên đầu." },
+    { "id": "exc-03", "type": "cloze", "level": "A2", "use": "practice", "skill": "production",
+      "prompt": "Điền How hoặc What an theo hai mẫu cảm thán cơ bản.",
+      "stem": "A: Try this soup. B: Mmm! {1} delicious it is! {2} amazing smell!",
+      "blanks": {
+        "1": { "accept": ["How"], "closed": true, "known": [
+          { "t": "What", "verdict": "wrong", "note": "Delicious là tính từ đứng một mình, nên cần How.", "tag": "what-how-confusion" }
+        ] },
+        "2": { "accept": ["What an"], "closed": true, "known": [
+          { "t": "What a", "verdict": "wrong", "note": "Amazing bắt đầu bằng âm nguyên âm, nên dùng an.", "tag": "a-an-vowel-sound" },
+          { "t": "How an", "verdict": "wrong", "note": "A hoặc an không đi ngay sau How. Có danh từ smell thì dùng What.", "tag": "what-how-confusion" }
+        ] }
+      },
+      "explain": "Câu đầu nhấn tính từ delicious nên dùng How. Câu sau có danh từ đếm được số ít smell; amazing bắt đầu bằng âm nguyên âm nên dùng What an." },
+    { "id": "exc-04", "type": "order", "level": "A2", "use": "practice", "skill": "production",
+      "prompt": "Sắp xếp thành câu cảm thán theo mẫu What + cụm danh từ + chủ ngữ + động từ.",
+      "tokens": ["a", "What", "day", "it", "was", "long"],
+      "end": "!",
+      "accept": [["What", "a", "long", "day", "it", "was"]],
+      "known": [
+        { "seq": ["What", "a", "long", "day", "was", "it"], "verdict": "wrong", "note": "Trật tự này không theo mẫu cảm thán được yêu cầu. Was it là trật tự câu hỏi; đừng suy ra mọi cảm thán đều cấm đảo.", "tag": "exclamation-question-order" }
+      ],
+      "explain": "What a long day it was!: cụm What a long day đứng đầu, rồi chủ ngữ it và động từ was theo trật tự câu khẳng định." },
+    { "id": "exc-05", "type": "transform", "level": "A2", "use": "practice", "skill": "production",
+      "prompt": "Viết lại thành câu cảm thán, giữ nguyên ý.",
+      "source": "She sings very well.",
+      "instruction": "Bắt đầu bằng How.",
+      "accept": [
+        "How well she sings",
+        "How very well she sings"
+      ],
+      "model": "How well she sings!",
+      "known": [
+        {
+          "t": "How well does she sing",
+          "verdict": "wrong",
+          "note": "Đây là câu hỏi. Câu cảm thán giữ she sings, không dùng does.",
+          "tag": "exclamation-question-order"
+        },
+        {
+          "t": "What well she sings",
+          "verdict": "wrong",
+          "note": "What cần một danh từ. Well là trạng từ, nên dùng How.",
+          "tag": "what-how-confusion"
+        }
+      ],
+      "explain": "How well she sings! và How very well she sings! đều đúng. Very có thể giữ lại để nhấn thêm; sau well vẫn là she sings." },
+    { "id": "exc-06", "type": "transform", "level": "A2", "use": "check", "skill": "production",
+      "prompt": "Viết lại thành câu cảm thán, giữ nguyên ý.",
+      "source": "It is a really nice park.",
+      "instruction": "Bắt đầu bằng What.",
+      "accept": ["What a nice park it is", "What a nice park", "What a really nice park it is", "What a really nice park"],
+      "model": "What a nice park it is!",
+      "known": [
+        { "t": "What nice park it is", "verdict": "wrong", "note": "Park là số ít đếm được, nên cần a trước nice.", "tag": "exclamation-a-missing" },
+        { "t": "What a nice park is it", "verdict": "wrong", "note": "Câu cảm thán không đảo động từ lên trước chủ ngữ.", "tag": "exclamation-question-order" },
+        { "t": "How a nice park it is", "verdict": "wrong", "note": "A không đứng ngay sau How. Có danh từ park nên dùng What a.", "tag": "what-how-confusion" }
+      ],
+      "explain": "Cụm a nice park đi lên đầu câu và What đứng trước. Really có thể bỏ vì What đã mang nghĩa nhấn mạnh. It is có thể bỏ hoặc giữ." },
+    { "id": "exc-07", "type": "error", "level": "A2", "use": "practice", "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "What" },
+        { "t": "a beautiful flowers", "bad": true, "fix": ["beautiful flowers", "a beautiful flower"], "note": "Flowers là số nhiều nên không có a. Nếu muốn có a, danh từ phải là số ít: a beautiful flower.", "tag": "exclamation-a-with-plural" },
+        { "t": "you have!" }
+      ],
+      "explain": "What beautiful flowers you have! hoặc What a beautiful flower you have!. A và danh từ số nhiều không đi cùng nhau." },
+    { "id": "exc-08", "type": "error", "level": "A2", "use": "check", "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "noError": true,
+      "segments": [
+        { "t": "How" },
+        { "t": "slowly" },
+        { "t": "the bus" },
+        { "t": "moves!" }
+      ],
+      "explain": "Câu đúng. How đứng trước trạng từ slowly, rồi chủ ngữ the bus và động từ moves theo trật tự câu khẳng định." },
+    { "id": "exc-09", "type": "error", "level": "A2", "use": "practice", "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "What a cold day" },
+        { "t": "is it", "bad": true, "fix": ["it is"], "note": "Câu cảm thán giữ chủ ngữ rồi động từ. Đảo is it là trật tự của câu hỏi.", "tag": "exclamation-question-order" },
+        { "t": "today!" }
+      ],
+      "explain": "What a cold day it is today!. Phần sau What a cold day theo trật tự của câu khẳng định." },
+    { "id": "exc-10", "type": "classify", "level": "A2", "use": "practice", "skill": "form",
+      "prompt": "Xếp mỗi cụm vào từ mở đầu phù hợp cho câu cảm thán.",
+      "cats": ["What a / What an", "What", "How"],
+      "items": [
+        { "t": "clever idea", "cat": "What a / What an" },
+        { "t": "interesting book", "cat": "What a / What an" },
+        { "t": "terrible news", "cat": "What" },
+        { "t": "lovely children", "cat": "What" },
+        { "t": "bad luck", "cat": "What" },
+        { "t": "tall", "cat": "How" },
+        { "t": "quickly", "cat": "How" }
+      ],
+      "explain": "Trong các mẫu cơ bản ở đây, danh từ số ít đếm được cần What a hoặc What an; danh từ số nhiều hoặc không đếm được dùng What. Tính từ hoặc trạng từ đứng riêng dùng How. An dựa vào âm đầu, như trong interesting." },
+    { "id": "exc-11", "type": "multi", "level": "B1", "use": "check", "skill": "use",
+      "prompt": "Chọn tất cả các câu cảm thán tự nhiên.",
+      "context": "Một người bạn mặc chiếc áo khoác mới và bạn muốn khen.",
+      "stem": "Khen chiếc áo khoác",
+      "options": [
+        { "t": "What a gorgeous jacket!", "ok": true, "note": "Jacket là số ít đếm được, nên What a. Rất tự nhiên." },
+        { "t": "How gorgeous your jacket is!", "ok": true, "note": "How + tính từ, rồi chủ ngữ và động từ. Tự nhiên." },
+        { "t": "What gorgeous your jacket is!", "note": "What cần danh từ ngay sau. Gorgeous là tính từ đứng một mình.", "tag": "what-how-confusion" },
+        { "t": "How a gorgeous jacket!", "note": "A không đứng sau How. Có danh từ thì dùng What a.", "tag": "what-how-confusion" }
+      ],
+      "explain": "Cùng một lời khen có thể nhấn vào cả cụm danh từ (What a gorgeous jacket!) hoặc vào tính từ (How gorgeous your jacket is!)." },
+    { "id": "exc-12", "type": "choice", "level": "B1", "use": "check", "skill": "form",
+      "prompt": "Chọn từ điền vào chỗ trống.",
+      "context": "Bạn nói về một cảnh nhìn từ cửa sổ khách sạn.",
+      "stem": "It's ___ a beautiful view!",
+      "options": [
+        { "t": "such", "ok": true, "note": "Such a + tính từ + danh từ số ít đếm được." },
+        { "t": "so", "note": "So đi với tính từ đứng một mình (so beautiful), không đi với a + danh từ ở dạng này.", "tag": "so-such-confusion" },
+        { "t": "very", "note": "Very không đi trước a trong cấu trúc này, và không tạo nghĩa cảm thán.", "tag": "so-such-confusion" }
+      ],
+      "explain": "Có cụm a beautiful view nên dùng such a. Với tính từ một mình, bạn nói It's so beautiful!." },
+    { "id": "exc-13", "type": "match", "level": "A2", "use": "practice", "skill": "meaning",
+      "prompt": "Nối mỗi câu cảm thán với tình huống phù hợp nhất.",
+      "pairs": [
+        { "a": "What a pity!", "b": "Bạn nghe tin buổi hòa nhạc bị hủy." },
+        { "a": "What a surprise!", "b": "Bạn mở cửa và thấy một người bạn cũ đứng đó." },
+        { "a": "How kind of you!", "b": "Một đồng nghiệp mang cho bạn một cốc trà nóng." },
+        { "a": "What a mess!", "b": "Bạn bước vào phòng và thấy sách vở rải khắp sàn." },
+        { "a": "What luck!", "b": "Bạn đến bến vừa lúc xe buýt tới." }
+      ],
+      "explain": "Pity diễn tả sự tiếc nuối. Surprise là điều bất ngờ. How kind of you! khen hành động của người khác. Mess là cảnh lộn xộn. Luck là may mắn." },
+    { "id": "exc-14", "type": "open", "level": "B1", "use": "practice", "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Viết ba câu cảm thán về một nơi hoặc món ăn bạn thích: câu thứ nhất dùng What a hoặc What an, câu thứ hai dùng What với danh từ số nhiều hoặc không đếm được, câu thứ ba dùng How.",
+      "model": ["What a crowded market! What fresh herbs! How good the coffee smells!", "What a beautiful place Ha Long Bay is! What amazing scenery! How calm the water looks!"],
+      "checklist": ["Câu thứ nhất có What a hoặc What an và một danh từ số ít đếm được", "Câu thứ hai có What và danh từ số nhiều hoặc không đếm được, không có a", "Câu thứ ba có How và một tính từ hoặc trạng từ", "Chủ ngữ và động từ (nếu có) đứng theo trật tự câu khẳng định", "Mỗi câu kết thúc bằng một dấu chấm than"],
+      "explain": "Ba khuôn này là toàn bộ câu cảm thán cơ bản. Bạn có thể đổi tính từ và danh từ tùy ý." }
+  ],
+  "sources": [
+    { "ref": "cgt", "note": "Mục exclamations" },
+    { "ref": "swan-peu", "note": "Mục exclamations: what và how" },
+    { "ref": "cgel", "note": "Phần về mệnh đề cảm thán (exclamative)" },
+    { "ref": "quirk", "note": "Phần về câu cảm thán" }
+  ],
+  "editorial": { "status": "drafted" }
+}

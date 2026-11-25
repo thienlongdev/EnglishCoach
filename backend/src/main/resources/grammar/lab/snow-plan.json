@@ -1,0 +1,41 @@
+{
+  "id": "snow-plan",
+  "title": "Dự phòng hay chờ điều kiện xảy ra?",
+  "summary": "Trước chuyến khảo sát có khả năng trời tuyết. Đổi in case thành if. Bạn cần đóng gói chăn trước hay đợi thấy tuyết?",
+  "level": "B2",
+  "topics": [
+    "unless-provided-as-long-as",
+    "conditionals-beyond-types"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Chiến lược",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Phòng trước"
+        },
+        {
+          "id": "v2",
+          "label": "Có tuyết mới làm"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Pack a blanket in case it snows.",
+      "vi": "Hãy mang theo chăn phòng khi có tuyết.",
+      "note": "In case nêu lý do phòng ngừa. Mang chăn khi chuẩn bị, kể cả sau đó không có tuyết. / Packing precedes the possible problem.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Pack a blanket if it snows.",
+      "vi": "Nếu có tuyết thì hãy xếp chăn vào hành lý.",
+      "note": "If gắn chỉ dẫn với việc có tuyết, chẳng hạn nhìn thời tiết trước khi rời nhà. / The snowfall is the condition for packing.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s233-future-witness",
+  "title": "Nhân chứng chưa từng đến",
+  "level": "C1",
+  "topics": [
+    "reporting-passives",
+    "perfect-infinitive-gerund"
+  ],
+  "scene": "newsroom",
+  "summary": "Một cáo phó cũ gọi người thợ cầu là nhân chứng ngày khánh thành. Vân tìm thấy thư ông gửi đúng hôm đó từ một làng khác.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vân",
+      "role": "Phóng viên"
+    },
+    {
+      "id": "b",
+      "name": "Ian",
+      "role": "Người lưu sổ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Thư có dấu bưu điện nhưng không chứng minh chính tay ông mang ra bưu cục. Hồ sơ đáng tin nhất chỉ xác nhận ông đã thiết kế cây cầu.",
+      "say": [
+        {
+          "who": "a",
+          "en": "He drew every bolt. That doesn't tell me where he stood that morning.",
+          "vi": "Ông vẽ từng con bu-lông. Điều đó chưa cho tôi biết sáng ấy ông đứng ở đâu."
+        },
+        {
+          "who": "b",
+          "en": "Can you preserve both the credit and the gap?",
+          "vi": "Chị giữ được cả công lao lẫn phần còn chưa rõ chứ?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Chọn lời chú thích nói giới hạn của bằng chứng.",
+        "options": [
+          {
+            "t": "He is known to have designed the bridge. His presence at the opening is less certain.",
+            "note": "To have designed nhìn lại việc đã xác nhận. Less certain tách sự có mặt khỏi công việc thiết kế.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "He is known to have watched the opening from the bridge.",
+            "note": "Cấu trúc hoàn thành đúng nhưng is known nâng một vị trí cụ thể thành sự thật. Thư và bản vẽ chưa xác nhận việc xem lễ.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Ian tìm được ảnh đám đông nhưng giữ lại lời dè dặt: trong ảnh không thấy ai rõ mặt. Vân trưng một bu-lông cạnh thư thay vì gắn tên vào hình người vô danh.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That's something his hand really gave us.",
+          "vi": "Đó mới là thứ bàn tay ông thật sự để lại."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Khi in thử, Vân nhận ra phải đặt nhãn vào một bóng người bất kỳ. Cô thay ảnh chân dung bằng bản vẽ dầm có chữ ký và ghi rõ ngày lễ còn thiếu bằng chứng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can put his name under the drawing with a steady hand.",
+          "vi": "Tôi có thể viết tên ông dưới bản vẽ mà không run tay."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

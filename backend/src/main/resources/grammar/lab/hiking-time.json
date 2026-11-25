@@ -1,0 +1,40 @@
+{
+  "id": "hiking-time",
+  "title": "Đi bộ hai giờ hay trong chuyến đi?",
+  "summary": "Sau chuyến dã ngoại, bạn ghi thời lượng và ghi lúc chụp ảnh. Đổi giới từ rồi kiểm tra cụm theo sau phải là khoảng đo hay tên sự kiện.",
+  "level": "B1",
+  "topics": [
+    "time-prepositions-advanced"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Loại mốc",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Thời lượng"
+        },
+        {
+          "id": "v2",
+          "label": "Bên trong sự kiện"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "We walked for two hours.",
+      "vi": "Chúng tôi đi bộ suốt hai giờ.",
+      "note": "Two hours đo độ dài hoạt động đi bộ. / For takes a duration.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "We took photos during the walk.",
+      "vi": "Chúng tôi chụp ảnh trong chuyến đi bộ.",
+      "note": "During the walk trả lời chụp ảnh khi nào. Nó không nói máy ảnh hoạt động liên tục hai giờ. / During locates events within the walk.",
+      "verdict": "ok"
+    }
+  }
+}

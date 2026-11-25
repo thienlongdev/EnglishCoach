@@ -1,0 +1,40 @@
+{
+  "id": "new-menu",
+  "title": "Chỉ thay món tráng miệng?",
+  "summary": "Quán đang sửa thực đơn. Chuyển only giữa người thay và món được thay. Câu nào vẫn cho phép đầu bếp đổi nhiều món?",
+  "level": "B1",
+  "topics": [
+    "focus-adverbs"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Điều bị giới hạn",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Người thực hiện"
+        },
+        {
+          "id": "v2",
+          "label": "Món ăn"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Only the chef changed the dessert.",
+      "vi": "Chỉ có đầu bếp thay món tráng miệng.",
+      "note": "Câu giới hạn người thay món. Không nói đầu bếp có thay các món khác hay không. / Only limits who changed it.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The chef changed only the dessert.",
+      "vi": "Đầu bếp chỉ thay món tráng miệng.",
+      "note": "Trong phạm vi thực đơn, các món khác không bị đầu bếp thay. Câu không loại trừ người khác tham gia. / Only limits which menu item changed.",
+      "verdict": "ok"
+    }
+  }
+}

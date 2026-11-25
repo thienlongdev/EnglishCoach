@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s044-soup-on-the-stairs",
+  "title": "Nồi súp trên cầu thang",
+  "summary": "Thang máy hỏng đúng trưa Yến mang súp nóng tới cho bà. Cái nồi vừa cánh cửa, nhưng cô nhấc lên không nổi.",
+  "level": "A2",
+  "topics": [
+    "enough-too"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Yến",
+      "role": "Người đem cơm"
+    },
+    {
+      "id": "b",
+      "name": "Lou",
+      "role": "Bạn hàng xóm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Lou tới giúp với hai cái hộp có nắp. Yến cần miêu tả trở ngại để hai người hiểu tại sao phải san súp ra.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The door is wide. That's not the problem.",
+          "vi": "Cửa rộng. Đó không phải vấn đề đâu."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Then why are we using two boxes?",
+          "vi": "Vậy tại sao mình cần hai hộp?"
+        }
+      ],
+      "choice": {
+        "prompt": "Yến muốn nói sức nặng vượt quá khả năng của một người.",
+        "options": [
+          {
+            "t": "The pot is light enough to carry alone.",
+            "note": "Light enough nói đã đủ nhẹ để bê một mình, trái với việc Yến vừa không nhấc nổi. Câu không giải thích lý do cần hai hộp.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "The pot is too heavy for me to carry alone.",
+            "note": "Too heavy diễn tả sức nặng cản việc bê một mình. Chia nhỏ có thể giải quyết đúng khó khăn ấy.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Lou múc nửa nồi sang hộp. Hai người đi lên cùng nhịp để tới nơi súp vẫn nóng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Half for each arm of the team.",
+          "vi": "Mỗi người trong đội gánh một nửa nhé."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Lou thử nhấc nồi và lập tức đặt xuống. Hai người nhìn nhau, mở nắp hộp rồi chia súp.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Now I see what you mean.",
+          "vi": "Giờ mình hiểu ý cậu rồi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Bà nhận hai hộp liền bày ba cái bát. Trưa ấy không ai phải đi bộ xuống ngay, và chiếc nồi rỗng dưới bếp hóa ra lại là thứ dễ bê nhất.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We brought lunch for three by mistake.",
+          "vi": "Mình vô tình mang đủ bữa trưa cho ba người rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

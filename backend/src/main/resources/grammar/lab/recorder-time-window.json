@@ -1,0 +1,68 @@
+{
+  "id": "recorder-time-window",
+  "title": "Thử máy ghi âm: kể lúc nào, nhìn từ đâu?",
+  "summary": "Đổi giữa quá khứ đơn (past simple) và hiện tại hoàn thành (present perfect), rồi đổi mốc thời gian. Today không tự buộc bạn chọn một thì. Mỗi dòng có nhận xét riêng; dòng sai có câu sửa trong phần giải thích.",
+  "level": "B1",
+  "topics": ["present-perfect-vs-past-simple"],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "form",
+      "label": "Cách kể",
+      "values": [
+        { "id": "past", "label": "Quá khứ đơn: tested" },
+        { "id": "perfect", "label": "Hiện tại hoàn thành: have tested" }
+      ]
+    },
+    {
+      "id": "time",
+      "label": "Mốc thời gian; giả sử bây giờ là buổi chiều",
+      "values": [
+        { "id": "yesterday", "label": "Hôm qua: yesterday" },
+        { "id": "today", "label": "Hôm nay: today" },
+        { "id": "unspecified", "label": "Không nêu lúc nào" }
+      ]
+    }
+  ],
+  "results": {
+    "past|yesterday": {
+      "en": "I tested the recorder yesterday.",
+      "vi": "Tôi thử máy ghi âm hôm qua.",
+      "note": "Yesterday đặt lần thử trong một ngày đã qua. Quá khứ đơn phù hợp; câu không tự cho biết máy hiện có dùng tốt hay không.",
+      "verdict": "ok",
+      "timeline": { "sentence": "I tested the recorder yesterday.", "now": 80, "events": [{ "kind": "point", "at": 30, "label": "Lần thử hôm qua", "role": "main" }] }
+    },
+    "past|today": {
+      "en": "I tested the recorder today.",
+      "vi": "Tôi có thử máy ghi âm hôm nay.",
+      "note": "Câu tự nhiên khi kể lại một lần thử đã xong trong ngày. Ngày chưa hết không làm quá khứ đơn thành sai. Người nói đang coi lần thử là một sự việc đã qua.",
+      "verdict": "ok",
+      "timeline": { "sentence": "I tested the recorder today.", "now": 80, "events": [{ "kind": "point", "at": 60, "label": "Lần thử đã xong hôm nay", "role": "main" }] }
+    },
+    "past|unspecified": {
+      "en": "I tested the recorder.",
+      "vi": "Tôi đã thử máy ghi âm.",
+      "note": "Không có từ chỉ thời gian vẫn dùng được quá khứ đơn. Chẳng hạn, đây là câu trả lời cho câu hỏi bạn đã làm gì trước buổi thu. Ngữ cảnh có thể xác định lần thử mà không cần viết ngày giờ trong câu.",
+      "verdict": "ok"
+    },
+    "perfect|yesterday": {
+      "en": "I have tested the recorder yesterday.",
+      "vi": "Ý định: tôi thử máy ghi âm hôm qua; câu tiếng Anh này cần sửa.",
+      "note": "Trong tiếng Anh chuẩn đang luyện ở đây, không gắn hiện tại hoàn thành với yesterday để định ngày cho chính lần thử. Giữ yesterday thì sửa thành I tested the recorder yesterday. Giữ have tested thì bỏ yesterday và kể từ góc nhìn hiện tại.",
+      "verdict": "bad"
+    },
+    "perfect|today": {
+      "en": "I have tested the recorder today.",
+      "vi": "Hôm nay tôi đã thử máy ghi âm rồi.",
+      "note": "Người nói tổng kết việc đã làm tính đến bây giờ trong ngày hôm nay. Đường thời gian biểu thị khoảng báo cáo, không có nghĩa việc thử máy diễn ra liên tục suốt khoảng đó. Dạng quá khứ đơn với today cũng dùng được khi kể một lần đã xong.",
+      "verdict": "ok",
+      "timeline": { "sentence": "I have tested the recorder today.", "now": 80, "events": [{ "kind": "span", "from": 45, "to": 80, "label": "Hôm nay tính đến lúc nói", "role": "ghost" }, { "kind": "point", "at": 60, "label": "Lần thử đã hoàn tất", "role": "main" }] }
+    },
+    "perfect|unspecified": {
+      "en": "I have tested the recorder.",
+      "vi": "Tôi thử máy ghi âm rồi.",
+      "note": "Câu báo việc thử đã hoàn tất và có liên quan đến bây giờ, chẳng hạn khi chuẩn bị bắt đầu thu. Nó không nêu ngày giờ và cũng chưa khẳng định kết quả thử là tốt. I tested the recorder vẫn đúng khi người nói kể lại một lần thử trong quá khứ.",
+      "verdict": "ok"
+    }
+  }
+}

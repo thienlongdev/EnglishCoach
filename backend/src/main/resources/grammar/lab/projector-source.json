@@ -1,0 +1,41 @@
+{
+  "id": "projector-source",
+  "title": "Mượn máy chiếu từ ai?",
+  "summary": "Trong bài phát biểu, bạn muốn cảm ơn đúng hội đã cho mượn máy. Di chuyển giới từ from và dự đoán khi nào không thể bỏ đại từ quan hệ.",
+  "level": "B2",
+  "topics": [
+    "relative-with-prepositions",
+    "preposition-stranding"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Vị trí from",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Cuối mệnh đề"
+        },
+        {
+          "id": "v2",
+          "label": "Đầu mệnh đề"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The club we borrowed the projector from is here.",
+      "vi": "Hội cho chúng tôi mượn máy chiếu đang có mặt.",
+      "note": "From nằm cuối mệnh đề. Có thể không viết đại từ quan hệ sau club. / A stranded preposition permits a zero relative here.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The club from which we borrowed the projector is here.",
+      "vi": "Hội mà chúng tôi đã mượn máy chiếu đang có mặt.",
+      "note": "From which là cụm đầy đủ, thường gặp trong văn viết trang trọng. Không bỏ riêng which sau from. / A fronted preposition requires its relative complement.",
+      "verdict": "ok"
+    }
+  }
+}

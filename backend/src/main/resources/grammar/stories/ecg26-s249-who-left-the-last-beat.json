@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s249-who-left-the-last-beat",
+  "title": "Ai bỏ nhịp cuối?",
+  "level": "C1",
+  "topics": [
+    "ellipsis",
+    "negative-inversion"
+  ],
+  "scene": "lecture",
+  "summary": "Bạn diễn cũ của Hoa để lại lời nhắn “You can stop on the fourth beat if you want to. I never did.” Suốt nhiều năm bà cứ đánh thêm một hợp âm ngoài bản nhạc.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hoa",
+      "role": "Nghệ sĩ piano"
+    },
+    {
+      "id": "b",
+      "name": "Khanh",
+      "role": "Người lật nhạc"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Khanh tìm được bản thu: người bạn vẫn im ở nhịp bốn nhưng chân trái giữ pedal cho âm ngân tiếp. Trong lời nói, stop có thể là thôi nhấn phím hoặc làm âm dứt hẳn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "His hands stopped. The music didn't.",
+          "vi": "Tay ông ấy dừng. Tiếng nhạc thì chưa."
+        },
+        {
+          "who": "b",
+          "en": "Which part can the recording settle?",
+          "vi": "Bản thu có thể giải quyết được phần nào?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Hoa chọn lời giải thích vừa tầm chứng cứ âm thanh.",
+        "options": [
+          {
+            "t": "He must have added a new note on every fourth beat.",
+            "note": "Must have và every khẳng định một hành động lặp mà tiếng ngân không chứng minh. Âm tiếp tục vẫn có thể chỉ do pedal.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "He didn't cut the sound off there, though he may have stopped playing new notes.",
+            "note": "Didn't cut the sound off hợp với đoạn ngân. May have stopped chừa khoảng cho việc không đánh nốt mới. Phần lược trong I never did vì vậy cần giải bằng nghĩa của stop trong cảnh này.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Hoa nhấc tay và giữ pedal. Ở hàng ghế trống của bạn già, tiếng hợp âm lắng dần cho tới khi chỉ còn nhịp thở của chính bà. Lần đầu bà không đánh thêm nốt nào.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can leave him the last sound.",
+          "vi": "Tôi có thể để âm cuối cho ông ấy."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Khanh đặt tay lên dây đàn trong buổi tập để Hoa nghe sự khác nhau giữa ngân và đánh lại. Bà chọn tiếng ngân dài cho bản thu tặng người bạn đã mất.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The echo was already in the instrument.",
+          "vi": "Tiếng vọng vốn đã nằm trong cây đàn."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

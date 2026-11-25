@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 175" fill="none">
+  <!-- [ASSET_REQUIRED] Production-grade vector artwork -->
+  <!-- Series: phoenix_rebirth | Tier: SSS | Slug: sss_phoenix_rebirth | Overflow: 175% footprint -->
+  <!-- Center: (87.5, 87.5), Avatar aperture: r=40.5, Outer Canvas: 175x175 (175%) -->
+  <defs>
+    <!-- Phoenix Fire & Solar Gradients -->
+    <linearGradient id="phxGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="20%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="80%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#9a3412"/>
+    </linearGradient>
+
+    <linearGradient id="phxFlameGrad" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#7f1d1d"/>
+      <stop offset="30%" stop-color="#dc2626"/>
+      <stop offset="65%" stop-color="#f97316"/>
+      <stop offset="90%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+
+    <linearGradient id="phxWingLeft" x1="100%" y1="50%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="40%" stop-color="#f97316"/>
+      <stop offset="70%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+
+    <linearGradient id="phxWingRight" x1="0%" y1="50%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="40%" stop-color="#f97316"/>
+      <stop offset="70%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+
+    <radialGradient id="phxCoreSun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#fef08a"/>
+      <stop offset="70%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </radialGradient>
+
+    <radialGradient id="phxBackAura" cx="50%" cy="50%" r="50%">
+      <stop offset="50%" stop-color="#fef08a" stop-opacity="0"/>
+      <stop offset="75%" stop-color="#f97316" stop-opacity="0.3"/>
+      <stop offset="95%" stop-color="#dc2626" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#7f1d1d" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="phxGlowFX" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 1. Background Aura Glow -->
+  <circle cx="87.5" cy="87.5" r="74" fill="url(#phxBackAura)" />
+
+  <!-- 2. Grand Phoenix Wings (Overflow Canvas Layer) -->
+  <!-- Left Wing Plumes -->
+  <g filter="url(#phxGlowFX)">
+    <!-- Primary Upper Wing Feathers Left -->
+    <path d="M 52 75 C 38 62 20 48 10 32 C 16 46 25 60 40 78 Z" fill="url(#phxWingLeft)" opacity="0.9" />
+    <path d="M 46 82 C 30 72 15 58 8 45 C 16 58 28 72 40 85 Z" fill="url(#phxWingLeft)" opacity="0.85" />
+    <path d="M 44 92 C 28 85 16 75 11 65 C 18 76 30 86 42 95 Z" fill="url(#phxFlameGrad)" opacity="0.8" />
+    <path d="M 48 68 C 36 50 26 34 22 20 C 30 32 42 48 52 64 Z" fill="url(#phxGoldGrad)" />
+
+    <!-- Primary Upper Wing Feathers Right -->
+    <path d="M 123 75 C 137 62 155 48 165 32 C 159 46 150 60 135 78 Z" fill="url(#phxWingRight)" opacity="0.9" />
+    <path d="M 129 82 C 145 72 160 58 167 45 C 159 58 147 72 135 85 Z" fill="url(#phxWingRight)" opacity="0.85" />
+    <path d="M 131 92 C 147 85 159 75 164 65 C 157 76 145 86 133 95 Z" fill="url(#phxFlameGrad)" opacity="0.8" />
+    <path d="M 127 68 C 139 50 149 34 153 20 C 145 32 133 48 123 64 Z" fill="url(#phxGoldGrad)" />
+  </g>
+
+  <!-- Wing Feather Details & Highlights -->
+  <path d="M 54 62 C 40 46 32 32 28 22 C 38 34 48 48 56 60 Z" fill="#fffbeb" opacity="0.75" />
+  <path d="M 121 62 C 135 46 143 32 147 22 C 137 34 127 48 119 60 Z" fill="#fffbeb" opacity="0.75" />
+
+  <!-- 3. Phoenix Rebirth Crest / Crown Motif (Top Center) -->
+  <g filter="url(#phxGlowFX)">
+    <!-- Central Rising Flame Plume -->
+    <path d="M 87.5 10 C 82 22 80 32 87.5 42 C 95 32 93 22 87.5 10 Z" fill="url(#phxFlameGrad)" />
+    <!-- Secondary Crown Crest Plumes -->
+    <path d="M 87.5 16 C 76 25 72 36 78 44 C 83 38 85 30 87.5 24 Z" fill="url(#phxGoldGrad)" />
+    <path d="M 87.5 16 C 99 25 103 36 97 44 C 92 38 90 30 87.5 24 Z" fill="url(#phxGoldGrad)" />
+    <!-- Solar Gem in Phoenix Forehead -->
+    <circle cx="87.5" cy="42" r="4.5" fill="url(#phxCoreSun)" stroke="#fffbeb" stroke-width="1.2" />
+    <circle cx="87.5" cy="42" r="1.8" fill="#ffffff" />
+  </g>
+
+  <!-- 4. Sweeping Tail Plumes (Bottom Overflow) -->
+  <g filter="url(#phxGlowFX)">
+    <!-- Central Long Plume -->
+    <path d="M 87.5 133 C 83 146 81 160 87.5 172 C 94 160 92 146 87.5 133 Z" fill="url(#phxFlameGrad)" opacity="0.95" />
+    <!-- Left Plume -->
+    <path d="M 82 131 C 70 144 60 156 56 168 C 65 158 75 146 84 133 Z" fill="url(#phxGoldGrad)" opacity="0.85" />
+    <!-- Right Plume -->
+    <path d="M 93 131 C 105 144 115 156 119 168 C 110 158 100 146 91 133 Z" fill="url(#phxGoldGrad)" opacity="0.85" />
+    <!-- Tail Feather Eyes -->
+    <circle cx="87.5" cy="162" r="3" fill="#ea580c" stroke="#fef08a" stroke-width="1" />
+    <circle cx="61" cy="158" r="2.5" fill="#ea580c" stroke="#fef08a" stroke-width="0.8" />
+    <circle cx="114" cy="158" r="2.5" fill="#ea580c" stroke="#fef08a" stroke-width="0.8" />
+  </g>
+
+  <!-- 5. Core Frame Ring Surrounding Center Avatar -->
+  <!-- Outer Frame Ring (Beveled Gold & Solar Orange) -->
+  <circle cx="87.5" cy="87.5" r="46.5" stroke="url(#phxGoldGrad)" stroke-width="3" stroke-linecap="round" />
+  <circle cx="87.5" cy="87.5" r="44" stroke="url(#phxFlameGrad)" stroke-width="1.5" />
+  <circle cx="87.5" cy="87.5" r="41.5" stroke="#fef08a" stroke-width="0.8" opacity="0.9" />
+
+  <!-- Solar Crest Beacons around Ring -->
+  <g fill="url(#phxCoreSun)" stroke="#fff" stroke-width="0.6">
+    <circle cx="87.5" cy="41" r="2.5" />
+    <circle cx="129" cy="63.5" r="2" />
+    <circle cx="134" cy="87.5" r="2.5" />
+    <circle cx="129" cy="111.5" r="2" />
+    <circle cx="87.5" cy="134" r="2.5" />
+    <circle cx="46" cy="111.5" r="2" />
+    <circle cx="41" cy="87.5" r="2.5" />
+    <circle cx="46" cy="63.5" r="2" />
+  </g>
+
+  <!-- Clear Inner Aperture: r=40.5 explicitly transparent to ensure learner avatar face is pristine -->
+</svg>

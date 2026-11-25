@@ -1,0 +1,2069 @@
+{
+  "manifest" : {
+    "schemaVersion" : "1.0",
+    "packageId" : "RAW-RAW_YBM_VOL_2_T10",
+    "packageVersion" : 1,
+    "contentHash" : "1c9d657c4c5c3f7a13b326a1fb51a33d73f32d2722961caa01428ea38f1f56f5",
+    "creator" : "exam-raw-extractor",
+    "specificationBaselineId" : "EC-EXAM-SPEC-2026-09-10",
+    "authoringStatus" : "DRAFT",
+    "createdAt" : null,
+    "metadata" : {
+      "rightsReviewStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED_PROJECT_USE_OWNER_AUTHORIZED",
+      "visualQAStatus" : "PAGE_REGION_RENDERING_HUMAN_QA_REQUIRED",
+      "displayName" : {
+        "current" : "YBM TOEIC LC/RC 1000 Vol 2 — Test 10 (source extraction, draft)",
+        "ownerSelected" : null,
+        "status" : "PROVISIONAL_SOURCE_TITLE",
+        "policy" : "DISPLAY_NAME_MAY_CHANGE_SOURCE_PROVENANCE_MUST_NOT",
+        "renameTargets" : [ "form.title", "catalogNodes[].title" ]
+      },
+      "sourceIdentity" : {
+        "publisher" : "TOEIC preparation publisher (scanned edition)",
+        "collection" : "ybm",
+        "book" : "ybm-vol-2",
+        "bookTitle" : "YBM TOEIC LC/RC 1000 Vol 2",
+        "test" : 10,
+        "rawSourceSha256" : "e1546254a35cf5a15e994cd5c69449cf30f3af86787472cc6c5db59a5801cb6f"
+      },
+      "audioQAStatus" : "AUTOMATED_TECHNICAL_QA_ONLY_HUMAN_QA_REQUIRED",
+      "sourceProvenance" : {
+        "collection" : "ybm",
+        "book" : "ybm-vol-2",
+        "test" : "TEST_10",
+        "rawSourceFile" : {
+          "path" : "imports/source-files/toeic/ybm/YBM VOL 2/RC.pdf",
+          "sha256" : "e1546254a35cf5a15e994cd5c69449cf30f3af86787472cc6c5db59a5801cb6f"
+        },
+        "pageRange" : "299-328",
+        "audio" : [ ],
+        "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json#toeic/ybm-vol-2/test-10",
+        "extractorName" : "exam-raw-extractor",
+        "extractorVersion" : "3.9.3",
+        "reviewStatus" : "UNREVIEWED"
+      },
+      "ocr" : {
+        "metrics" : {
+          "READING" : {
+            "pages" : "299-328",
+            "part5" : {
+              "expectedQuestions" : 30,
+              "questionsFound" : 30,
+              "questionNumberRecall" : 1.0,
+              "duplicates" : [ ],
+              "missing" : [ ],
+              "optionLabelRecall" : 1.0,
+              "readingOrderInversions" : 0,
+              "blankPreservation" : 1.0
+            },
+            "labels" : {
+              "blocks" : 119,
+              "labelsClean" : 380,
+              "labelsRecognised" : 0,
+              "labelsMissing" : 80,
+              "conflicts" : 0,
+              "locations" : [ ]
+            }
+          }
+        },
+        "pages" : {
+          "imports/source-files/toeic/ybm/YBM VOL 2/RC.pdf" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338 ]
+        }
+      },
+      "practiceProjection" : {
+        "sourceContentHash" : "75b8e5efa5a9047485a86df1324ee788b6d6a86088f15595bae3d8458f990419",
+        "humanApprovalCreated" : false,
+        "fullSimulationGranted" : false,
+        "sourcePackageId" : "RAW-RAW_YBM_VOL_2_T10",
+        "excludedScopes" : { },
+        "retainedScopes" : [ "TOEIC_PART_5" ],
+        "version" : "exam-practice-projection-v1"
+      },
+      "reviewOnlyReferences" : {
+        "transcripts" : [ ],
+        "answerKeys" : [ {
+          "skill" : "READING",
+          "path" : "imports/source-files/toeic/ybm/YBM VOL 2/RC.pdf",
+          "sha256" : "e1546254a35cf5a15e994cd5c69449cf30f3af86787472cc6c5db59a5801cb6f",
+          "pages" : "338",
+          "keysParsed" : 100,
+          "keysExpected" : 100,
+          "method" : "OCR_KEY_TABLE_V1",
+          "latticeOrientation" : "COLUMN_MAJOR",
+          "latticeSupport" : 1.0,
+          "bbox" : [ 8.0, 85.0, 499.9, 729.2 ]
+        } ],
+        "note" : "References only. Transcript text is not embedded: the learner manifest projection has no stimulus/asset role allow-list yet (EXAM-AUD-032)."
+      },
+      "humanReviewComplete" : false,
+      "projectUsageAuthorization" : {
+        "status" : "OWNER_AUTHORIZED",
+        "scope" : "ENGLISHCOACH_PROJECT_USE",
+        "authorizedBy" : "PROJECT_OWNER",
+        "decisionDate" : "2026-10-06",
+        "decisionRef" : "EXAMS_CORPUS_OWNER_PRODUCTION_AUTHORIZATION_20261006",
+        "appliesTo" : "EXISTING_REPOSITORY_SOURCE_CORPUS",
+        "permits" : [ "EXTRACTION", "CANONICAL_PACKAGE_PREPARATION", "STAGING_VALIDATION", "LOCAL_STAGING_IMPORT_PREPARATION", "PRODUCTION_IMPORT", "PUBLICATION", "LEARNER_RUNTIME", "PRACTICE", "SIMULATION", "MEDIA", "SCORING", "RESULTS", "REVIEW" ],
+        "productionImport" : "OWNER_AUTHORIZED_PRODUCTION_USE",
+        "publisherLicence" : "NOT_ESTABLISHED",
+        "publisherEndorsement" : false
+      },
+      "extraction" : {
+        "status" : "NEEDS_REVIEW",
+        "extractorVersion" : "3.9.3",
+        "blockingCodes" : [ "OPTION_PARSE_FAILED", "PART6_BLANK_MAPPING_UNPROVEN", "PART_OMITTED" ],
+        "reviewCodes" : [ "OCR_TEXT_USED", "OPTION_LABEL_RECOGNISED" ]
+      },
+      "sourceDocuments" : [ {
+        "path" : "imports/source-files/toeic/ybm/YBM VOL 2/RC.pdf",
+        "sha256" : "e1546254a35cf5a15e994cd5c69449cf30f3af86787472cc6c5db59a5801cb6f",
+        "role" : "QUESTION_BOOK",
+        "textLayer" : "SCANNED"
+      } ],
+      "audioSegments" : [ ]
+    }
+  },
+  "sources" : [ {
+    "id" : "0abcc390-877b-53d5-b35e-f63dfe0d2c4a",
+    "code" : "RAW_YBM_YBM_VOL_2",
+    "name" : "YBM TOEIC LC/RC 1000 Vol 2",
+    "owner" : "TOEIC preparation publisher (scanned edition)",
+    "publisher" : "TOEIC preparation publisher (scanned edition)",
+    "sourceType" : "THIRD_PARTY_PUBLICATION",
+    "referenceMeta" : {
+      "rawCorpusRoot" : "imports/source-files/",
+      "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json",
+      "rightsStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED",
+      "projectUsageAuthorization" : "OWNER_AUTHORIZED",
+      "primaryDocument" : "imports/source-files/toeic/ybm/YBM VOL 2/RC.pdf"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  }, {
+    "id" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "code" : "EC_INTERNAL_ORIGINAL",
+    "name" : "English Coach original content",
+    "owner" : "English Coach",
+    "publisher" : "English Coach",
+    "sourceType" : "INTERNAL_ORIGINAL",
+    "referenceMeta" : {
+      "declaration" : "Rubrics and scoring metadata authored by English Coach; no external text"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "licenses" : [ {
+    "id" : "256abd97-54c3-509c-8373-3991afcafc2a",
+    "sourceId" : "0abcc390-877b-53d5-b35e-f63dfe0d2c4a",
+    "licenseCode" : "UNKNOWN-RAW_YBM_YBM_VOL_2",
+    "provenanceCategory" : "UNKNOWN",
+    "commercialRights" : false,
+    "redistributionRights" : false,
+    "derivativeRights" : false,
+    "permittedPurposes" : {
+      "LOCAL_PRIVATE_REVIEW" : true
+    },
+    "permittedTerritories" : { },
+    "validFrom" : null,
+    "validUntil" : null,
+    "attribution" : "YBM TOEIC LC/RC 1000 Vol 2 — TOEIC preparation publisher (scanned edition). Publisher licence not established; used under the EnglishCoach project owner's authorization (2026-10-03), which is not a publisher licence or endorsement.",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  }, {
+    "id" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseCode" : "EC-ORIGINAL-DRAFT-PENDING-LEGAL",
+    "provenanceCategory" : "ORIGINAL",
+    "commercialRights" : true,
+    "redistributionRights" : true,
+    "derivativeRights" : true,
+    "permittedPurposes" : {
+      "EXAM" : true,
+      "SIMULATION" : true,
+      "PRACTICE" : true,
+      "CONTENT" : true
+    },
+    "permittedTerritories" : {
+      "GLOBAL" : true
+    },
+    "validFrom" : 1790985600.000000000,
+    "validUntil" : null,
+    "attribution" : "English Coach original draft; legal review pending",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  } ],
+  "provenances" : [ {
+    "id" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "sourceId" : "0abcc390-877b-53d5-b35e-f63dfe0d2c4a",
+    "licenseId" : "256abd97-54c3-509c-8373-3991afcafc2a",
+    "creator" : "exam-raw-extractor",
+    "acquisitionMethod" : "RAW_CORPUS_EXTRACTION",
+    "originalReference" : "YBM TOEIC LC/RC 1000 Vol 2 / Test 10",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  }, {
+    "id" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseId" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "creator" : "English Coach",
+    "acquisitionMethod" : "ORIGINAL_AUTHORING",
+    "originalReference" : "EC-RUBRIC-AND-SCORING-METADATA",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  } ],
+  "catalogNodes" : [ {
+    "id" : "eda93719-36e6-54bd-8b29-3b3b2094e328",
+    "family" : "TOEIC",
+    "variant" : "STANDARD_FIXED_FORM",
+    "sourceId" : "0abcc390-877b-53d5-b35e-f63dfe0d2c4a",
+    "parentId" : null,
+    "kind" : "VOLUME",
+    "title" : "YBM TOEIC LC/RC 1000 Vol 2",
+    "year" : null,
+    "ordinal" : 0,
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "specifications" : [ {
+    "id" : "a8c52d51-212b-59a3-9713-9a124f4fa36d",
+    "logicalCode" : "EC_RAW_TOEIC_STANDARD_FIXED_FORM_FULL_SPEC",
+    "version" : 1,
+    "family" : "TOEIC",
+    "variant" : "STANDARD_FIXED_FORM",
+    "deliveryMode" : "COMPUTER_SIMULATION",
+    "blueprint" : {
+      "source" : "RAW_CORPUS_EXTRACTION",
+      "family" : "TOEIC",
+      "variant" : "STANDARD_FIXED_FORM",
+      "scope" : "FULL",
+      "formatVersion" : "TOEIC_LR_2016"
+    },
+    "timingPolicy" : {
+      "listeningSeconds" : 2700,
+      "readingSeconds" : 4500
+    },
+    "navigationPolicy" : {
+      "sectionNavigation" : "fixed_sequence"
+    },
+    "playbackPolicy" : {
+      "mode" : "ONCE"
+    },
+    "sourceReferences" : {
+      "baseline" : "EC-EXAM-SPEC-2026-09-10"
+    },
+    "contentHash" : "11d49c6029ee1046c7b04496dde552e6a59b11713d223091cacad9fe32797fb5",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "rubrics" : [ ],
+  "calibrations" : [ ],
+  "scoringSchemes" : [ {
+    "id" : "80e9f8a5-4a18-5594-9b1a-1367740f8c1a",
+    "logicalCode" : "EC_RAW_TOEIC_STANDARD_FIXED_FORM_FULL_SCORING",
+    "version" : 1,
+    "family" : "TOEIC",
+    "variant" : "STANDARD_FIXED_FORM",
+    "scope" : "FULL",
+    "normalizationVersion" : "EC-NORM-V1",
+    "rubricReferences" : { },
+    "calibrationId" : null,
+    "mappingTable" : {
+      "metrics" : [ "LISTENING", "READING", "LR_TOTAL" ],
+      "status" : "DRAFT_NOT_CALIBRATED",
+      "scoreLabel" : "English Coach estimated scaled score"
+    },
+    "aggregationRules" : {
+      "officialEquating" : false,
+      "version" : "EC-AGGREGATION-DRAFT-V1",
+      "creditUnitsPerItem" : 1
+    },
+    "contentHash" : "4d28f14fef2211020cd74ad2978a045bb727ce691a4bc1b18cb3e7b84920e843",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "form" : {
+    "id" : "00921961-0b62-54ab-a34f-19b1f65aa5d4",
+    "logicalKey" : "RAW_YBM_VOL_2_T10",
+    "version" : 1,
+    "title" : "YBM TOEIC LC/RC 1000 Vol 2 — Test 10 (source extraction, draft)",
+    "family" : "TOEIC",
+    "variant" : "STANDARD_FIXED_FORM",
+    "scope" : "FULL",
+    "catalogNodeId" : "eda93719-36e6-54bd-8b29-3b3b2094e328",
+    "specificationId" : "a8c52d51-212b-59a3-9713-9a124f4fa36d",
+    "scoringSchemeId" : "80e9f8a5-4a18-5594-9b1a-1367740f8c1a",
+    "lifecycleState" : "DRAFT",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "authorId" : null,
+    "contentHash" : "12ebd51581e46a90c8b307e6475326d9cec251c463c374ec6df748aa5d4baef8",
+    "publishedAt" : null,
+    "retiredAt" : null,
+    "createdAt" : null,
+    "primaryHealthStatus" : null
+  },
+  "formComponents" : [ ],
+  "sections" : [ {
+    "id" : "763a2652-78c7-5556-b1e4-1a62ef26c3f9",
+    "formId" : "00921961-0b62-54ab-a34f-19b1f65aa5d4",
+    "skill" : "READING",
+    "ordinal" : 1,
+    "specSectionKey" : "READING",
+    "scoringSchemeId" : "80e9f8a5-4a18-5594-9b1a-1367740f8c1a",
+    "durationSeconds" : 4500,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  } ],
+  "parts" : [ {
+    "id" : "e551e3bf-e528-5ce8-b93a-7c35f80218e2",
+    "sectionId" : "763a2652-78c7-5556-b1e4-1a62ef26c3f9",
+    "partCode" : "READING_PART_5",
+    "ordinal" : 1,
+    "instructions" : null,
+    "timingPolicy" : {
+      "partNumber" : 5
+    }
+  } ],
+  "groups" : [ {
+    "id" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalGroupKey" : "RAW_YBM_VOL_2_T10_READING_PART_5_Q101",
+    "version" : 1,
+    "questionType" : "TOEIC_PART_5",
+    "construct" : "reading_comprehension",
+    "skill" : "READING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "f6c2c7352e1a3ef3628319f97667322c3fd6ca0fc0ffcba392bdf2177e00588b",
+    "createdAt" : null
+  } ],
+  "formGroups" : [ {
+    "id" : "7765e22f-6a68-5c63-af05-8e90b8e88999",
+    "partId" : "e551e3bf-e528-5ce8-b93a-7c35f80218e2",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "ordinal" : 1,
+    "displayNumbering" : "101-130"
+  } ],
+  "stimuli" : [ ],
+  "groupStimuli" : [ ],
+  "items" : [ {
+    "id" : "0c7e8a87-dad3-574d-bf08-7a3001dcfc77",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R101",
+    "version" : 1,
+    "prompt" : "The passenger was asked to place …… luggage in the overhead compartments after boarding the plane:",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "her"
+      }, {
+        "id" : "B",
+        "text" : "she"
+      }, {
+        "id" : "C",
+        "text" : "hers 0"
+      }, {
+        "id" : "D",
+        "text" : "herself"
+      } ],
+      "questionNumber" : 101,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "5fa6dd2b69fe84855cee5949303d4629468400990aee24a4a776a74e2362a553",
+    "createdAt" : null,
+    "ordinal" : 101
+  }, {
+    "id" : "b8d1532b-9cf6-504d-93a5-9ce1b41a1b67",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R102",
+    "version" : 1,
+    "prompt" : "…… the initial prototype and the final model of the keyboard featured customizable media keys:",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "None"
+      }, {
+        "id" : "B",
+        "text" : "Either"
+      }, {
+        "id" : "C",
+        "text" : "Both"
+      }, {
+        "id" : "D",
+        "text" : "That"
+      } ],
+      "questionNumber" : 102,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "3cac787adf6abf80edc52803686d2f813aef61b84b72626ec09d3839e2789106",
+    "createdAt" : null,
+    "ordinal" : 102
+  }, {
+    "id" : "83462fbc-0b29-567b-82a4-f6d56a73d7b8",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R103",
+    "version" : 1,
+    "prompt" : "Executives at the Cedal Corporation …… negotiations for the acquisition Of Nevix Industries two months ago.",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "begins"
+      }, {
+        "id" : "B",
+        "text" : "began"
+      }, {
+        "id" : "C",
+        "text" : "beginning"
+      }, {
+        "id" : "D",
+        "text" : "will begin"
+      } ],
+      "questionNumber" : 103,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "10e6bf2df90d03c61b7fc582bee66f95abb56f76995f1736173554e2457489a9",
+    "createdAt" : null,
+    "ordinal" : 103
+  }, {
+    "id" : "852fc00e-3e96-551f-b8fb-6c8d88d91a3e",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R104",
+    "version" : 1,
+    "prompt" : "Our associates searched the file cabinet for nearly an hour and finally found the missing receipts …… …… some travel documents.",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "at"
+      }, {
+        "id" : "B",
+        "text" : "onto"
+      }, {
+        "id" : "C",
+        "text" : "during"
+      }, {
+        "id" : "D",
+        "text" : "among"
+      } ],
+      "questionNumber" : 104,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "95e794723e11793f8eb1ff18ee7db093a165701bb2017c9b4a002bcad5f1907f",
+    "createdAt" : null,
+    "ordinal" : 104
+  }, {
+    "id" : "5c86faee-b21c-5350-bb56-990c6dbe4d2e",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R105",
+    "version" : 1,
+    "prompt" : "The fund for maintaining the community's public parks will run out …… if the city council does not make it a top priority:",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "entire"
+      }, {
+        "id" : "B",
+        "text" : "entirety"
+      }, {
+        "id" : "C",
+        "text" : "entireness"
+      }, {
+        "id" : "D",
+        "text" : "entirely"
+      } ],
+      "questionNumber" : 105,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "1fd500f30c6c1154f676f162d356f3e9ed9395acacdbdcbd798ddd2cbcf13a97",
+    "createdAt" : null,
+    "ordinal" : 105
+  }, {
+    "id" : "b492f5b4-5367-563c-bf88-f50c9c659ae7",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R106",
+    "version" : 1,
+    "prompt" : "…… …… hotels charge a fee for cancellation within 24 hours of check-in, but the Renora Inn does not",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Other"
+      }, {
+        "id" : "B",
+        "text" : "Each"
+      }, {
+        "id" : "C",
+        "text" : "Which"
+      }, {
+        "id" : "D",
+        "text" : "Another"
+      } ],
+      "questionNumber" : 106,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "552817a004b42238a19fd565c971129ef8ab48b92f9ea1967014f649a347c98e",
+    "createdAt" : null,
+    "ordinal" : 106
+  }, {
+    "id" : "2319ee62-4342-5c14-aaa9-d911319f9d7c",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R107",
+    "version" : 1,
+    "prompt" : "A legitimate …… of residency in the city can be proven via a valid apartment rental lease.",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "is claiming"
+      }, {
+        "id" : "B",
+        "text" : "claimed"
+      }, {
+        "id" : "C",
+        "text" : "claim"
+      }, {
+        "id" : "D",
+        "text" : "claims"
+      } ],
+      "questionNumber" : 107,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "f687bc1501298e30a738350640ebee27aeb25c24e2ea6c1e3b3f014e9a626d2b",
+    "createdAt" : null,
+    "ordinal" : 107
+  }, {
+    "id" : "c13830f1-4fe7-565c-948c-84833b7593c7",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R108",
+    "version" : 1,
+    "prompt" : "Please …… the sources for all Of the statistics included in your report:",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "base"
+      }, {
+        "id" : "B",
+        "text" : "direct"
+      }, {
+        "id" : "C",
+        "text" : "fulfill"
+      }, {
+        "id" : "D",
+        "text" : "cite"
+      } ],
+      "questionNumber" : 108,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "1a2ffe36b685c5dfe31eb8f3013c5795af510201b4c74319c2aaa3eb3ee1c336",
+    "createdAt" : null,
+    "ordinal" : 108
+  }, {
+    "id" : "6299d5ab-6a92-598d-ae36-d521ee50bd6e",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R109",
+    "version" : 1,
+    "prompt" : "The candidate had already won a majority by a large margin; but election officials counted the rest Of the votes …… 0",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "otherwise"
+      }, {
+        "id" : "B",
+        "text" : "ever"
+      }, {
+        "id" : "C",
+        "text" : "nonetheless"
+      }, {
+        "id" : "D",
+        "text" : "rather"
+      } ],
+      "questionNumber" : 109,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "6f5bc0af6161c99706bc4b6ce59ba53fb73cb46e17302938d0047d22cccbea8b",
+    "createdAt" : null,
+    "ordinal" : 109
+  }, {
+    "id" : "8f4cd49c-a9f4-5ee5-a52c-1923ad433dbc",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R110",
+    "version" : 1,
+    "prompt" : "Even when the drone unexpectedly encountered a storm; its operator remained in …… …… and kept the machine on course.",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "control"
+      }, {
+        "id" : "B",
+        "text" : "shape"
+      }, {
+        "id" : "C",
+        "text" : "force"
+      }, {
+        "id" : "D",
+        "text" : "order"
+      } ],
+      "questionNumber" : 110,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "26d7ca98ea0aa10f8f188c8b57914a2eb51e9f34999a71ad2a5e04f976da6ee7",
+    "createdAt" : null,
+    "ordinal" : 110
+  }, {
+    "id" : "4fd229aa-da84-58da-8438-4ddb43188895",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R111",
+    "version" : 1,
+    "prompt" : "Many construction firms delegate portions of their work to …… who can complete the job more cost-effectively:",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "contractually"
+      }, {
+        "id" : "B",
+        "text" : "contractors"
+      }, {
+        "id" : "C",
+        "text" : "contractual"
+      }, {
+        "id" : "D",
+        "text" : "contracts"
+      } ],
+      "questionNumber" : 111,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "8a37dab58f0ad33380d6368b32f320a03ed152ddbcc524ae6c70a3b76b5d843c",
+    "createdAt" : null,
+    "ordinal" : 111
+  }, {
+    "id" : "35339382-900a-55ab-a309-992ed8d21b9f",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R112",
+    "version" : 1,
+    "prompt" : "The branch manager called for an emergency meeting to tell staff …… ~the change in government policy:",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "for"
+      }, {
+        "id" : "B",
+        "text" : "through"
+      }, {
+        "id" : "C",
+        "text" : "behind"
+      }, {
+        "id" : "D",
+        "text" : "about"
+      } ],
+      "questionNumber" : 112,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "5143d660a398641328ac7da41be013fac71ab785ca0ff52337ca2a7881c32fcc",
+    "createdAt" : null,
+    "ordinal" : 112
+  }, {
+    "id" : "99b177c6-a224-5be9-85e2-2e7c9a3cf993",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R113",
+    "version" : 1,
+    "prompt" : "Fortunately; the inventory taken by the aid organization found that the shelter had …… …… levels Of reserve supplies.",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "willing"
+      }, {
+        "id" : "B",
+        "text" : "acceptable"
+      }, {
+        "id" : "C",
+        "text" : "skillful"
+      }, {
+        "id" : "D",
+        "text" : "rapid"
+      } ],
+      "questionNumber" : 113,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "eaa85a9aa76550a45a70a0c051c28c269262aa53e3535d3dd1d36ce18ae4f958",
+    "createdAt" : null,
+    "ordinal" : 113
+  }, {
+    "id" : "8d0b6573-0aee-589b-a24e-a42abcda4cc3",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R114",
+    "version" : 1,
+    "prompt" : "Owing to strong competition in the industry; the new smartphone designed by Vamiant Electronics must be marketed …… …… 0",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "consecutively"
+      }, {
+        "id" : "B",
+        "text" : "recently"
+      }, {
+        "id" : "C",
+        "text" : "strictly"
+      }, {
+        "id" : "D",
+        "text" : "aggressively"
+      } ],
+      "questionNumber" : 114,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "cbe8a6df4a41ab1e4f76c54677d6b968e680f2bd1b4b2b5dd2bb720fe409b6f9",
+    "createdAt" : null,
+    "ordinal" : 114
+  }, {
+    "id" : "42b35428-66c9-561c-a2c0-98f6c11b1bea",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R115",
+    "version" : 1,
+    "prompt" : "The natural history museum's VIP members are …… to enter the workshop and see the curators in action.",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "permitted"
+      }, {
+        "id" : "B",
+        "text" : "permitting"
+      }, {
+        "id" : "C",
+        "text" : "permits"
+      }, {
+        "id" : "D",
+        "text" : "permit"
+      } ],
+      "questionNumber" : 115,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "7b90efa5814ae4cc9dc8775c2effc4bb72255037c92459603c60f81231279ac5",
+    "createdAt" : null,
+    "ordinal" : 115
+  }, {
+    "id" : "82d6c793-88ca-565c-ab7c-0a6ae48fc703",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R116",
+    "version" : 1,
+    "prompt" : "Roonelot Manufacturing installed solar panels on its rooftops …… it could generate some Of its Own energy on site.",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "such as"
+      }, {
+        "id" : "B",
+        "text" : "regardless Of"
+      }, {
+        "id" : "C",
+        "text" : "no matter what"
+      }, {
+        "id" : "D",
+        "text" : "SO that"
+      } ],
+      "questionNumber" : 116,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "53b3bc5918dc51914e0b1e35ad44a1be46b489cb59a22e015ad3f5c47f7cda39",
+    "createdAt" : null,
+    "ordinal" : 116
+  }, {
+    "id" : "7a41150b-a70d-56df-ac61-63c214a6d0d7",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R117",
+    "version" : 1,
+    "prompt" : "Due to the prestigious nature of the award, even Ms. Donnelly's most …… colleagues traveled to watch her accept it.",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "distances"
+      }, {
+        "id" : "B",
+        "text" : "distance"
+      }, {
+        "id" : "C",
+        "text" : "distant"
+      }, {
+        "id" : "D",
+        "text" : "distantly"
+      } ],
+      "questionNumber" : 117,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "09b64d18a86c9b991a24f751a8f16eb1d9fa52b16357ddff0451917e615c537f",
+    "createdAt" : null,
+    "ordinal" : 117
+  }, {
+    "id" : "d7a04704-042e-5fc0-ad4c-11b3b9596db8",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R118",
+    "version" : 1,
+    "prompt" : "The owner of Hedley Tower may …… the building if it does not pass the upcoming safety inspection:",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "demolish"
+      }, {
+        "id" : "B",
+        "text" : "demolishing"
+      }, {
+        "id" : "C",
+        "text" : "demolished"
+      }, {
+        "id" : "D",
+        "text" : "demolishes"
+      } ],
+      "questionNumber" : 118,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "8edd9c7324b6baf038d79052c74c535ab11b58a504bbf7d0aae5b6d51e658d56",
+    "createdAt" : null,
+    "ordinal" : 118
+  }, {
+    "id" : "53e448b7-21f2-5d5a-9375-8ca202ff897e",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R119",
+    "version" : 1,
+    "prompt" : "Despite the IT director …… warning the company president of issues with the e-mail system; he did not allocate funds to fix it.",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "repetition"
+      }, {
+        "id" : "B",
+        "text" : "repetitivve"
+      }, {
+        "id" : "C",
+        "text" : "repeatedly"
+      }, {
+        "id" : "D",
+        "text" : "repeating"
+      } ],
+      "questionNumber" : 119,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "20be0f79ca7d81dd3dfdb0d1da6d23197deea3726ad6815658bb67333e27b983",
+    "createdAt" : null,
+    "ordinal" : 119
+  }, {
+    "id" : "38a38c79-13d5-5688-8fd9-b94c720e306c",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R120",
+    "version" : 1,
+    "prompt" : "By signing a sponsorship agreement with a highly respected athlete, Ferdan Sports was able to …… …… its status.",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "divide"
+      }, {
+        "id" : "B",
+        "text" : "recruit"
+      }, {
+        "id" : "C",
+        "text" : "attach"
+      }, {
+        "id" : "D",
+        "text" : "elevate"
+      } ],
+      "questionNumber" : 120,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "229457140bcf3fbf8116ecf52947b116b781572fbca532e3066c4fedbb678826",
+    "createdAt" : null,
+    "ordinal" : 120
+  }, {
+    "id" : "0a845d53-ac55-5de7-bd01-65008f89a84a",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R121",
+    "version" : 1,
+    "prompt" : "Most analysts agree that all three of the suggested tax measures offer …… alternatives to the system that is currently in piace.",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "preferences"
+      }, {
+        "id" : "B",
+        "text" : "preferring"
+      }, {
+        "id" : "C",
+        "text" : "preferable"
+      }, {
+        "id" : "D",
+        "text" : "prefer"
+      } ],
+      "questionNumber" : 121,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "6ae729c28684a7aaff4dcdd24449a8f17ec7f4c0213f9e9cf362d6db04f58336",
+    "createdAt" : null,
+    "ordinal" : 121
+  }, {
+    "id" : "a61f5fb9-4a22-56f9-a9bb-d37ea080e682",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R122",
+    "version" : 1,
+    "prompt" : "The client complained that our technicians left …… …… scratches On the glass in the process of transporting it.",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "vital"
+      }, {
+        "id" : "B",
+        "text" : "visible"
+      }, {
+        "id" : "C",
+        "text" : "reduced"
+      }, {
+        "id" : "D",
+        "text" : "accessible"
+      } ],
+      "questionNumber" : 122,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "f6fd60e5bcf7b8e8aa7902cc66e3ca645b9bfc180dade001e9dc9d59c182900c",
+    "createdAt" : null,
+    "ordinal" : 122
+  }, {
+    "id" : "aef1521e-6182-59d0-8ea8-71efaacf81a0",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R123",
+    "version" : 1,
+    "prompt" : "…… …… for the economic summit must have a professional certificate and be native speakers Of the target language.",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Interpreting"
+      }, {
+        "id" : "B",
+        "text" : "Interpretation"
+      }, {
+        "id" : "C",
+        "text" : "Interprets"
+      }, {
+        "id" : "D",
+        "text" : "Interpreters"
+      } ],
+      "questionNumber" : 123,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "db2ea849c82dbc77b4e0e457031523dc7cd53f25c4c6e8e0f3a4bbccfa952e2c",
+    "createdAt" : null,
+    "ordinal" : 123
+  }, {
+    "id" : "012d07de-6126-56f4-99bd-216ec4d34aad",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R124",
+    "version" : 1,
+    "prompt" : "When opportunities for promotion at the university are insufficient, the rate of faculty …… …… rises significantly:",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "dissatisfying"
+      }, {
+        "id" : "B",
+        "text" : "dissatisfaction"
+      }, {
+        "id" : "C",
+        "text" : "dissatisfies"
+      }, {
+        "id" : "D",
+        "text" : "dissatisfy"
+      } ],
+      "questionNumber" : 124,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "1692d8e908f906a3f23c97e25f9d0744e21a5985c019aa65c504f6a1703b0aba",
+    "createdAt" : null,
+    "ordinal" : 124
+  }, {
+    "id" : "f8e3c762-05b0-572c-870a-e7282d218b4e",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R125",
+    "version" : 1,
+    "prompt" : "Members of Parliament are expected to pass proposed …… …… to conserve the natural habitat Of a rare bird species in the southwest region;",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "regulations"
+      }, {
+        "id" : "B",
+        "text" : "transactions"
+      }, {
+        "id" : "C",
+        "text" : "affiliations"
+      }, {
+        "id" : "D",
+        "text" : "admissions"
+      } ],
+      "questionNumber" : 125,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "1628bd555cb6e33febc7b90451199ca1a94d2d0dc295f42265be85fe1670c69c",
+    "createdAt" : null,
+    "ordinal" : 125
+  }, {
+    "id" : "ac928bc7-5b67-5525-8e73-160514bf1366",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R126",
+    "version" : 1,
+    "prompt" : "If the grant for the project is not renewed by the Kogara Science Foundation; the lab's research will have to stop …… 0",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "lately"
+      }, {
+        "id" : "B",
+        "text" : "altogether"
+      }, {
+        "id" : "C",
+        "text" : "almost"
+      }, {
+        "id" : "D",
+        "text" : "much"
+      } ],
+      "questionNumber" : 126,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "13ace9766c09bd18cd9b560ac85cbd0c75e253674eff090e6009d1d512a18ca0",
+    "createdAt" : null,
+    "ordinal" : 126
+  }, {
+    "id" : "c47c7aae-bee8-5a50-8aa9-7b572b2c653f",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R127",
+    "version" : 1,
+    "prompt" : "Employees at the Soracune Corporation were encouraged …… their cubicles to create a pleasant work environment",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "being personalized"
+      }, {
+        "id" : "B",
+        "text" : "to personalize"
+      }, {
+        "id" : "C",
+        "text" : "personalized"
+      }, {
+        "id" : "D",
+        "text" : "personalizing"
+      } ],
+      "questionNumber" : 127,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "5dcf32efd1ea706c0438855a3ef629a94dfb991f7a41b264dc2492923547435c",
+    "createdAt" : null,
+    "ordinal" : 127
+  }, {
+    "id" : "f68a6985-6ac6-5a87-93d6-f4218ff182a7",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R128",
+    "version" : 1,
+    "prompt" : "In order to ensure that the participants are treated fairly by the judging panel; their identities are …… until a winner has been selected.",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "defined"
+      }, {
+        "id" : "B",
+        "text" : "concealed"
+      }, {
+        "id" : "C",
+        "text" : "verified"
+      }, {
+        "id" : "D",
+        "text" : "prohibited"
+      } ],
+      "questionNumber" : 128,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "3aa9a8ff5f01fa723ea89b3d46bf7a7fae971aabc2afbc52cb748fd96de385af",
+    "createdAt" : null,
+    "ordinal" : 128
+  }, {
+    "id" : "dae900a8-74fc-56cc-b070-1f4ef01f4689",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R129",
+    "version" : 1,
+    "prompt" : "More than half of Older adults still have a landline phone in their home, …… younger consumers depend solely on mobile technology.",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "whereas"
+      }, {
+        "id" : "B",
+        "text" : "instead Of"
+      }, {
+        "id" : "C",
+        "text" : "before"
+      }, {
+        "id" : "D",
+        "text" : "SO as to"
+      } ],
+      "questionNumber" : 129,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "9326c390d239658a63de1f108cd392a2fd273192aed9428f4cd0b0cc8e0e8f96",
+    "createdAt" : null,
+    "ordinal" : 129
+  }, {
+    "id" : "d881b0a3-853c-5d9c-81ab-7bf05b343bf0",
+    "groupId" : "5211fe6b-0aca-5847-8442-90d4d14883bc",
+    "logicalItemKey" : "RAW_YBM_VOL_2_T10_R130",
+    "version" : 1,
+    "prompt" : "Although Gassett Pharmaceuticals has experienced a great deal Of success in the past few years, its revenues are predicted to …… in the foreseeable future.",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "criticize"
+      }, {
+        "id" : "B",
+        "text" : "revolve"
+      }, {
+        "id" : "C",
+        "text" : "shrink"
+      }, {
+        "id" : "D",
+        "text" : "deduct"
+      } ],
+      "questionNumber" : 130,
+      "group" : {
+        "kind" : "TOEIC_PART_5",
+        "questions" : "101-130",
+        "instructions" : [ "Select the best answer to complete the sentence." ]
+      }
+    },
+    "construct" : "toeic_part_5",
+    "provenanceId" : "8c043fa1-af53-5210-ae03-8cb0f50f9e2b",
+    "contentHash" : "0b1f3c0018414a6b642717e2ca11446dfeda4045899438548b87ea89621f0a9b",
+    "createdAt" : null,
+    "ordinal" : 130
+  } ],
+  "answerSpecs" : [ {
+    "id" : "26d712bd-842a-5b74-90a1-dce385bfe55f",
+    "itemId" : "0c7e8a87-dad3-574d-bf08-7a3001dcfc77",
+    "acceptedAnswers" : {
+      "values" : [ "A" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "730be791-6f1a-557f-bb2b-9dacb5122514",
+    "itemId" : "b8d1532b-9cf6-504d-93a5-9ce1b41a1b67",
+    "acceptedAnswers" : {
+      "values" : [ "C" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "c4a70e04-4717-56d0-98f4-6602bc62f223",
+    "itemId" : "83462fbc-0b29-567b-82a4-f6d56a73d7b8",
+    "acceptedAnswers" : {
+      "values" : [ "B" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "089ef561-be04-51ac-a760-f2763c33b86e",
+    "itemId" : "852fc00e-3e96-551f-b8fb-6c8d88d91a3e",
+    "acceptedAnswers" : {
+      "values" : [ "D" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "cd54919d-1201-55d4-83b4-4b6a48a6aa1c",
+    "itemId" : "5c86faee-b21c-5350-bb56-990c6dbe4d2e",
+    "acceptedAnswers" : {
+      "values" : [ "D" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "96d5197a-b2bc-5942-9b90-2096c688d22f",
+    "itemId" : "b492f5b4-5367-563c-bf88-f50c9c659ae7",
+    "acceptedAnswers" : {
+      "values" : [ "A" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "75b67dac-344c-58f3-9251-506773727b79",
+    "itemId" : "2319ee62-4342-5c14-aaa9-d911319f9d7c",
+    "acceptedAnswers" : {
+      "values" : [ "C" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "9a0a85b3-a197-5f1d-bd3d-107b78918ed5",
+    "itemId" : "c13830f1-4fe7-565c-948c-84833b7593c7",
+    "acceptedAnswers" : {
+      "values" : [ "D" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "e8a16d2c-522b-57d6-bfb7-562987327356",
+    "itemId" : "6299d5ab-6a92-598d-ae36-d521ee50bd6e",
+    "acceptedAnswers" : {
+      "values" : [ "C" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "244ed6a4-8667-55fd-bf80-eb7c3c1b8736",
+    "itemId" : "8f4cd49c-a9f4-5ee5-a52c-1923ad433dbc",
+    "acceptedAnswers" : {
+      "values" : [ "A" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "fa7e4e73-54e8-5ab7-b5cb-2011b11df852",
+    "itemId" : "4fd229aa-da84-58da-8438-4ddb43188895",
+    "acceptedAnswers" : {
+      "values" : [ "B" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "352136ef-e700-51b2-8426-f333f8718675",
+    "itemId" : "35339382-900a-55ab-a309-992ed8d21b9f",
+    "acceptedAnswers" : {
+      "values" : [ "D" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "952a19d8-64ef-5f57-aaaa-ba4debb4c90e",
+    "itemId" : "99b177c6-a224-5be9-85e2-2e7c9a3cf993",
+    "acceptedAnswers" : {
+      "values" : [ "B" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "dc88ba8a-8fc7-5004-a403-efecd42c0737",
+    "itemId" : "8d0b6573-0aee-589b-a24e-a42abcda4cc3",
+    "acceptedAnswers" : {
+      "values" : [ "D" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "0ec0f9c6-9542-5e1a-8d16-ca7167c37ca3",
+    "itemId" : "42b35428-66c9-561c-a2c0-98f6c11b1bea",
+    "acceptedAnswers" : {
+      "values" : [ "A" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "83c2d7b1-71d7-5797-b9b3-7a802152076c",
+    "itemId" : "82d6c793-88ca-565c-ab7c-0a6ae48fc703",
+    "acceptedAnswers" : {
+      "values" : [ "D" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "2790ef0d-d6db-5554-a5bb-e262ebae4eae",
+    "itemId" : "7a41150b-a70d-56df-ac61-63c214a6d0d7",
+    "acceptedAnswers" : {
+      "values" : [ "C" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "1bb524fa-06bf-56c6-81cd-e95c0292a3df",
+    "itemId" : "d7a04704-042e-5fc0-ad4c-11b3b9596db8",
+    "acceptedAnswers" : {
+      "values" : [ "A" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "543f209a-2742-5550-8f8a-8c2eb9e10236",
+    "itemId" : "53e448b7-21f2-5d5a-9375-8ca202ff897e",
+    "acceptedAnswers" : {
+      "values" : [ "C" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "edcc404d-517a-5baf-8dbd-59f9b407c128",
+    "itemId" : "38a38c79-13d5-5688-8fd9-b94c720e306c",
+    "acceptedAnswers" : {
+      "values" : [ "D" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "89075a17-b8ad-5ab4-a2c8-f3f6cf45d6fd",
+    "itemId" : "0a845d53-ac55-5de7-bd01-65008f89a84a",
+    "acceptedAnswers" : {
+      "values" : [ "C" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "ff7f7876-9909-503f-8b66-8b464ca6d14a",
+    "itemId" : "a61f5fb9-4a22-56f9-a9bb-d37ea080e682",
+    "acceptedAnswers" : {
+      "values" : [ "B" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "b0d5269d-6474-5e9a-af4e-d58a51dd8173",
+    "itemId" : "aef1521e-6182-59d0-8ea8-71efaacf81a0",
+    "acceptedAnswers" : {
+      "values" : [ "D" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "a481cd08-b10b-57a7-aa53-c26b15e42806",
+    "itemId" : "012d07de-6126-56f4-99bd-216ec4d34aad",
+    "acceptedAnswers" : {
+      "values" : [ "B" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "d0c8bcc5-e399-5ec1-b098-e418ca720827",
+    "itemId" : "f8e3c762-05b0-572c-870a-e7282d218b4e",
+    "acceptedAnswers" : {
+      "values" : [ "A" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "da6c6159-1a80-5fe9-83be-e48b801eaa7d",
+    "itemId" : "ac928bc7-5b67-5525-8e73-160514bf1366",
+    "acceptedAnswers" : {
+      "values" : [ "B" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "3e407830-6cbf-57d5-9341-ca41907705f4",
+    "itemId" : "c47c7aae-bee8-5a50-8aa9-7b572b2c653f",
+    "acceptedAnswers" : {
+      "values" : [ "B" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "31a9749f-21db-51da-a5b6-7c1d4de99d55",
+    "itemId" : "f68a6985-6ac6-5a87-93d6-f4218ff182a7",
+    "acceptedAnswers" : {
+      "values" : [ "B" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "e8ab12e9-c24f-5c1a-a4cf-eb008a0bb8cb",
+    "itemId" : "dae900a8-74fc-56cc-b070-1f4ef01f4689",
+    "acceptedAnswers" : {
+      "values" : [ "A" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "530e0a48-997b-5f29-a385-98b554c9d018",
+    "itemId" : "d881b0a3-853c-5d9c-81ab-7bf05b343bf0",
+    "acceptedAnswers" : {
+      "values" : [ "C" ],
+      "keySource" : {
+        "page" : 338,
+        "confidence" : "CONFIDENT",
+        "method" : "OCR_KEY_TABLE_V1"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  } ],
+  "assets" : [ ],
+  "stimulusAssets" : [ ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "train-choice",
+  "title": "Một chuyến khác hay chuyến còn lại?",
+  "summary": "Bạn nhìn bảng giờ tàu. Nếu còn đúng hai chuyến để chọn, cách nói nào xác định được chuyến thứ hai?",
+  "level": "A2",
+  "topics": [
+    "other-another"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Các lựa chọn",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Chưa xác định"
+        },
+        {
+          "id": "v2",
+          "label": "Còn đúng một"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Let's take another train.",
+      "vi": "Mình đi chuyến khác đi.",
+      "note": "Có thể còn nhiều chuyến. Another không xác định riêng chuyến nào. / Another leaves the alternative unspecified.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Let's take the other train.",
+      "vi": "Mình đi chuyến còn lại đi.",
+      "note": "Khi đã biết chỉ có hai chuyến, the other chỉ đúng chuyến còn lại. / The other identifies the remaining alternative.",
+      "verdict": "ok"
+    }
+  }
+}

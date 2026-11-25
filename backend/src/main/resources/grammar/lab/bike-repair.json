@@ -1,0 +1,41 @@
+{
+  "id": "bike-repair",
+  "title": "Nhật ký sửa xe ghi ai hay ghi việc?",
+  "summary": "Trên phiếu bảo dưỡng có chỗ ghi xe đạp. Nếu chỉ biết xe đã được sửa, có cần tự đoán tên thợ để viết đủ câu không?",
+  "level": "A2",
+  "topics": [
+    "passive-form",
+    "past-simple"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Thông tin có sẵn",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Biết tên thợ"
+        },
+        {
+          "id": "v2",
+          "label": "Chỉ biết việc đã làm"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Jo fixed the bike yesterday.",
+      "vi": "Jo sửa xe đạp hôm qua.",
+      "note": "Jo là chủ ngữ thực hiện fixed. / The active clause names the mechanic.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The bike was fixed yesterday.",
+      "vi": "Xe đạp đã được sửa hôm qua.",
+      "note": "Was fixed dùng được khi không nêu người sửa. Câu không tự cho biết đó là Jo. / A past passive can omit the mechanic.",
+      "verdict": "ok"
+    }
+  }
+}

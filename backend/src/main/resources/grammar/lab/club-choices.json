@@ -1,0 +1,41 @@
+{
+  "id": "club-choices",
+  "title": "Cho phép dẫn bạn đi cùng",
+  "summary": "Ban tổ chức cho phép khách dẫn bạn. Dùng let hoặc allow rồi dự đoán trước bring có cần to không.",
+  "level": "B1",
+  "topics": [
+    "bare-infinitive",
+    "verb-object-infinitive"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Động từ cho phép",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Let"
+        },
+        {
+          "id": "v2",
+          "label": "Allow"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "They let us bring a friend.",
+      "vi": "Họ cho chúng tôi dẫn theo một người bạn.",
+      "note": "Sau let us dùng bring nguyên mẫu không to. / Let takes an object plus a bare infinitive.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "They allow us to bring a friend.",
+      "vi": "Họ cho phép chúng tôi dẫn theo một người bạn.",
+      "note": "Sau allow us cần to bring trong mẫu này. Quyền được cấp vẫn như cũ. / Allow takes an object plus a to-infinitive.",
+      "verdict": "ok"
+    }
+  }
+}

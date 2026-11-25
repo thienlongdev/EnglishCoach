@@ -1,0 +1,67 @@
+{
+  "id": "window-seat",
+  "title": "Chỉ chỗ bên cửa sổ",
+  "summary": "Bạn đang chỉ cho khách những ghế trống. Giữ nguyên khoảng cách rồi đổi số ghế. Sau đó thử chỉ về cuối toa.",
+  "level": "A1",
+  "topics": [
+    "demonstratives",
+    "regular-plurals"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Khoảng cách",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Gần"
+        },
+        {
+          "id": "v2",
+          "label": "Xa"
+        }
+      ]
+    },
+    {
+      "id": "axis-2",
+      "label": "Số ghế",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Một"
+        },
+        {
+          "id": "v2",
+          "label": "Nhiều"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1|v1": {
+      "en": "This seat is free.",
+      "vi": "Ghế này còn trống.",
+      "note": "This và is cùng báo hiệu một ghế ở gần. / This points to one nearby seat.",
+      "verdict": "ok"
+    },
+    "v1|v2": {
+      "en": "These seats are free.",
+      "vi": "Những ghế này còn trống.",
+      "note": "These đi với seats và are khi chỉ nhiều ghế ở gần. / These points to nearby seats.",
+      "verdict": "ok"
+    },
+    "v2|v1": {
+      "en": "That seat is free.",
+      "vi": "Ghế kia còn trống.",
+      "note": "That thay this khi người nói hướng sang ghế ở xa hơn. / That points to one more distant seat.",
+      "verdict": "ok"
+    },
+    "v2|v2": {
+      "en": "Those seats are free.",
+      "vi": "Những ghế kia còn trống.",
+      "note": "Those kết hợp khoảng cách xa với số nhiều. / Those points to more distant seats.",
+      "verdict": "ok"
+    }
+  }
+}

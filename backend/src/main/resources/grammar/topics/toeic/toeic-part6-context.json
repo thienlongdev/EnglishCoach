@@ -1,0 +1,453 @@
+{
+  "schema": 1,
+  "slug": "toeic-part6-context",
+  "version": 2,
+  "domain": "toeic",
+  "order": 60,
+  "kind": "application",
+  "title": {
+    "vi": "Part 6: ngữ pháp theo cả đoạn",
+    "en": "Part 6: grammar across a passage"
+  },
+  "subtitle": {
+    "vi": "Nối câu vào một thông báo có mục đích và trình tự",
+    "en": "Part 6: grammar across a passage"
+  },
+  "aliases": [
+    "TOEIC Part 6",
+    "liên kết đoạn",
+    "text completion",
+    "tham chiếu thông báo"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Theo dõi mốc thời gian và đối tượng qua nhiều câu",
+    "Chọn câu nối phù hợp thông tin trước và sau",
+    "Tạo câu cầu nối giữ quan hệ nguyên nhân và hành động"
+  ],
+  "prerequisites": [
+    "tense-consistency",
+    "reference-chains"
+  ],
+  "related": [
+    {
+      "slug": "tense-consistency",
+      "rel": "more"
+    },
+    {
+      "slug": "reference-chains",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": "Ứng dụng ngữ pháp trong ngữ cảnh công việc; bài tự soạn, không phải đề ETS và không quy đổi điểm."
+  },
+  "quick": {
+    "what": "Một chỗ trống trong đoạn phụ thuộc vào cả cấu trúc câu lẫn mạch thông tin. Đáp án đúng phải hợp ngữ pháp và làm đoạn có nghĩa.",
+    "when": "Khi đọc email, thông báo nội bộ, hướng dẫn và thay đổi lịch.",
+    "examples": [
+      {
+        "en": "The north entrance will be closed on Monday. Please use the south entrance instead.",
+        "vi": "Lối vào phía bắc sẽ đóng vào thứ Hai. Vui lòng dùng lối phía nam thay thế."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Trước khi điền, xác định người gửi, người nhận và việc họ cần làm. Thông báo sửa chữa thường nêu vấn đề, thời gian ảnh hưởng, rồi hướng dẫn thay thế. Đây là cách đọc văn bản, không phải khẳng định mọi đoạn đề thi đều có cùng khuôn."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Câu hỏi khi đọc",
+        "Dấu hiệu cần tìm",
+        "Sai lầm cần tránh"
+      ],
+      "rows": [
+        [
+          "Ai hoặc cái gì được nhắc lại?",
+          "it, they, this change, those orders",
+          "Chọn theo danh từ gần nhất mà bỏ nghĩa"
+        ],
+        [
+          "Thời điểm nào?",
+          "yesterday, currently, from Monday",
+          "Ép cả đoạn dùng cùng một thì"
+        ],
+        [
+          "Quan hệ hai câu?",
+          "therefore, however, instead",
+          "Chọn từ nối chỉ vì nghe trang trọng"
+        ],
+        [
+          "Người đọc phải làm gì?",
+          "please, need to, should",
+          "Chọn câu đúng ngữ pháp nhưng trái hướng dẫn"
+        ]
+      ]
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "We tested the backup system yesterday. It is now ready for use.",
+          "vi": "Hôm qua chúng tôi kiểm tra hệ thống dự phòng. Hiện nó đã sẵn sàng sử dụng."
+        },
+        {
+          "en": "The parcel has not arrived. Please contact the courier.",
+          "vi": "Kiện hàng chưa đến. Vui lòng liên hệ đơn vị giao hàng."
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "The new portal is faster. However, some users need training.",
+            "vi": "Cổng mới nhanh hơn. Tuy vậy, một số người dùng cần đào tạo."
+          },
+          "b": {
+            "en": "The new portal is faster. Therefore, staff can process more requests.",
+            "vi": "Cổng mới nhanh hơn. Vì thế, nhân viên có thể xử lý nhiều yêu cầu hơn."
+          },
+          "diff": "However nêu điều hạn chế; therefore nêu hệ quả. Cùng đúng cấu trúc nhưng phục vụ hai mạch ý khác nhau."
+        }
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "reference",
+        "text": "{a:The training session} has moved to Friday. {a<:It} will begin at nine.",
+        "note": "It chỉ buổi đào tạo, không chỉ Friday."
+      },
+      "caption": "Đại từ nối thông tin giữa hai câu.",
+      "alt": "The training session là tiền ngữ của It; thời gian mới là Friday."
+    },
+    {
+      "type": "p",
+      "vi": "Đọc lại cả đoạn sau khi chọn câu. Nếu “these measures” xuất hiện ở câu sau, trước đó cần có các biện pháp để người đọc nhận diện. Nếu câu sau ghi “For this reason”, hãy kiểm tra nguyên nhân có thực sự được nêu; liên kết ngữ pháp không thể thay cho logic."
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Các đoạn và bài tập ở đây được tự soạn để luyện ngôn ngữ. Chúng không tái tạo đề chính thức hoặc dự báo điểm TOEIC."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Nhất quán thì không có nghĩa một thì cho cả đoạn. “We installed the software last week. It is working well. We will train new users tomorrow” chuyển thời gian có lý do. Sai là chuyển thì khiến người đọc hiểu nhầm thời điểm, không phải cứ đổi hình thức là sai."
+    },
+    {
+      "type": "p",
+      "vi": "This có thể chỉ cả một sự việc, không chỉ một danh từ. “Two suppliers withdrew. This delayed the project.” rõ quan hệ sự kiện và kết quả. Khi có nhiều sự kiện cạnh tranh làm tiền ngữ, dùng cụm “This shortage” hoặc “This cancellation” để nói rõ bạn đang nối điều gì."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Nhiều câu có thể nối hợp lý trong viết tự do. Bài chọn câu chỉ có thể có đáp án duy nhất khi bối cảnh và mục đích đủ chặt; bài viết lại chưa nhận diện cần tự đối chiếu."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "toeic-part6-context-mistake-1",
+      "wrong": "The shipment arrived yesterday. They is in the loading bay.",
+      "right": "The shipment arrived yesterday. It is in the loading bay.",
+      "why": "Shipment là danh từ số ít chỉ một lô hàng."
+    },
+    {
+      "id": "toeic-part6-context-mistake-2",
+      "wrong": "The server failed. Because of it failed, staff could not log in.",
+      "right": "The server failed. Because it failed, staff could not log in.",
+      "why": "Because mở mệnh đề hữu hạn; because of không nhận trực tiếp it failed."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có nên điền chỗ trống ngay khi đọc tới?",
+      "a": "Có thể dự đoán, nhưng đọc câu sau trước khi chốt vì nó có thể quyết định tham chiếu hoặc quan hệ ý."
+    },
+    {
+      "q": "Điểm phần luyện này có đổi thành điểm TOEIC?",
+      "a": "Không. Nội dung và cách chấm nội bộ không cung cấp quy đổi thang điểm chính thức."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn câu hướng dẫn người đọc dùng một lối đi thay thế đang mở.",
+      "stem": "Notice: The west staircase is closed for repairs. ___ Follow the signs from reception.",
+      "options": [
+        {
+          "t": "Please use the east staircase.",
+          "ok": true,
+          "note": "Người đọc cần lối đi thay thế trước khi theo biển chỉ dẫn."
+        },
+        {
+          "t": "Please use the west staircase.",
+          "note": "Mâu thuẫn với thông báo đóng cầu thang phía tây.",
+          "tag": "application-form-meaning"
+        },
+        {
+          "t": "The west staircase has never needed repairs.",
+          "note": "Câu này không hướng dẫn lối đi thay thế. Nhận xét về lịch sử sửa chữa không đáp ứng yêu cầu; không cần gọi nó sai ngữ pháp.",
+          "tag": "application-form-meaning"
+        }
+      ],
+      "explain": "Người đọc cần lối đi thay thế trước khi theo biển chỉ dẫn.",
+      "id": "toeic-part6-context-01",
+      "level": "B2",
+      "use": "practice"
+    },
+    {
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Điền đại từ chủ ngữ thay cho two new scanners.",
+      "stem": "We purchased two new scanners. {1} will be installed tomorrow.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "They"
+          ]
+        }
+      },
+      "explain": "They chỉ hai máy quét.",
+      "id": "toeic-part6-context-02",
+      "level": "B2",
+      "use": "practice"
+    },
+    {
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Lô hàng chứa các bộ phận bắt buộc và chưa tới; vì thiếu chúng, hôm nay không thể lắp đặt. Chọn từ nối diễn đạt quan hệ nguyên nhân–kết quả này.",
+      "stem": "The shipment was delayed. ___, we cannot complete the installation today.",
+      "options": [
+        {
+          "t": "Therefore",
+          "ok": true,
+          "note": "Việc thiếu lô hàng gây trở ngại cho lắp đặt."
+        },
+        {
+          "t": "Nevertheless",
+          "note": "Nêu trái kỳ vọng trong khi câu sau là hệ quả trực tiếp.",
+          "tag": "application-form-meaning"
+        },
+        {
+          "t": "Similarly",
+          "note": "Không phải hai tình huống tương tự.",
+          "tag": "application-form-meaning"
+        }
+      ],
+      "explain": "Việc thiếu lô hàng gây trở ngại cho lắp đặt.",
+      "id": "toeic-part6-context-03",
+      "level": "B2",
+      "use": "practice"
+    },
+    {
+      "type": "transform",
+      "skill": "production",
+      "prompt": "Viết lại theo yêu cầu, giữ nguyên thông tin.",
+      "source": "The payment arrived. We released the order after that.",
+      "instruction": "Dùng After the payment arrived ở đầu câu.",
+      "accept": [
+        "After the payment arrived, we released the order."
+      ],
+      "model": "After the payment arrived, we released the order.",
+      "explain": "Mệnh đề After giữ đúng trình tự thanh toán rồi giải phóng đơn hàng.",
+      "id": "toeic-part6-context-04",
+      "level": "B2",
+      "use": "practice"
+    },
+    {
+      "type": "match",
+      "skill": "meaning",
+      "prompt": "Ghép cấu trúc với ý nghĩa hoặc chức năng phù hợp.",
+      "pairs": [
+        {
+          "a": "instead",
+          "b": "hành động thay thế"
+        },
+        {
+          "a": "however",
+          "b": "điều tương phản"
+        },
+        {
+          "a": "as a result",
+          "b": "kết quả của việc trước"
+        }
+      ],
+      "explain": "Chức năng nối phải khớp quan hệ trong đoạn.",
+      "id": "toeic-part6-context-05",
+      "level": "B2",
+      "use": "practice"
+    },
+    {
+      "type": "error",
+      "skill": "form",
+      "prompt": "Chọn phần sai ngữ pháp trong câu.",
+      "segments": [
+        {
+          "t": "The replacement parts arrived this morning. "
+        },
+        {
+          "t": "It",
+          "bad": true,
+          "fix": [
+            "They"
+          ],
+          "note": "Parts là số nhiều; they làm chủ ngữ của are.",
+          "tag": "application-form-meaning"
+        },
+        {
+          "t": " are stored upstairs."
+        }
+      ],
+      "explain": "Parts là số nhiều; they làm chủ ngữ của are.",
+      "id": "toeic-part6-context-06",
+      "level": "B2",
+      "use": "practice"
+    },
+    {
+      "type": "order",
+      "skill": "production",
+      "prompt": "Sắp xếp thành câu; bắt đầu bằng The new policy và kết thúc bằng please read it today. Giữ nguyên từng cụm.",
+      "tokens": [
+        "on Monday,",
+        "so",
+        "please read it today",
+        "The new policy",
+        "takes effect"
+      ],
+      "accept": [
+        [
+          "The new policy",
+          "takes effect",
+          "on Monday,",
+          "so",
+          "please read it today"
+        ]
+      ],
+      "end": ".",
+      "explain": "So nối thông tin ngày hiệu lực với đề nghị đọc trước.",
+      "id": "toeic-part6-context-07",
+      "level": "B2",
+      "use": "practice"
+    },
+    {
+      "type": "open",
+      "skill": "production",
+      "prompt": "Tự viết và đối chiếu; bài này không tự chấm mức thành thạo.",
+      "task": "Viết thông báo ba câu: phòng họp đóng ngày mai, đổi sang phòng khác, nhờ xác nhận đã đọc.",
+      "model": [
+        "The main meeting room will be closed tomorrow.",
+        "Please use Room 4 instead.",
+        "Could you confirm that you have seen this notice?"
+      ],
+      "checklist": [
+        "Thông tin thay thế rõ",
+        "Đại từ không mơ hồ",
+        "Mỗi thay đổi thì có lý do"
+      ],
+      "explain": "Có nhiều cách diễn đạt đúng; câu mẫu chỉ minh họa một cách đáp ứng nhiệm vụ.",
+      "id": "toeic-part6-context-08",
+      "level": "B2",
+      "use": "practice"
+    },
+    {
+      "type": "transform",
+      "skill": "production",
+      "prompt": "Viết lại theo yêu cầu, giữ nguyên thông tin.",
+      "source": "The delivery was delayed. We moved the installation to Friday as a result.",
+      "instruction": "Ghép bằng Because, giữ delayed và moved.",
+      "accept": [
+        "Because the delivery was delayed, we moved the installation to Friday."
+      ],
+      "model": "Because the delivery was delayed, we moved the installation to Friday.",
+      "explain": "Nguyên nhân là giao chậm; hệ quả là đổi ngày lắp.",
+      "id": "toeic-part6-context-09",
+      "level": "B2",
+      "use": "check"
+    },
+    {
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Điền một cụm động từ có đại từ, yêu cầu người đọc kiểm tra hoặc đọc lịch.",
+      "stem": "The revised timetable is attached. Please {1} before you book your journey.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "check it",
+            "review it",
+            "read it"
+          ]
+        }
+      },
+      "explain": "Cụm động từ nêu hành động với timetable; it tránh lặp danh từ.",
+      "id": "toeic-part6-context-10",
+      "level": "B2",
+      "use": "check"
+    },
+    {
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn phương án phù hợp với cấu trúc và nghĩa đã cho.",
+      "stem": "We have booked Room 8 for the workshop. It seats forty people. What does It refer to?",
+      "options": [
+        {
+          "t": "Room 8",
+          "ok": true,
+          "note": "Room 8 là không gian có sức chứa."
+        },
+        {
+          "t": "the workshop",
+          "note": "Seats mô tả sức chứa của phòng trong đoạn này.",
+          "tag": "application-form-meaning"
+        },
+        {
+          "t": "forty people",
+          "note": "It không chỉ danh từ số nhiều chưa được giới thiệu lúc đại từ xuất hiện.",
+          "tag": "application-form-meaning"
+        }
+      ],
+      "explain": "Room 8 là không gian có sức chứa.",
+      "id": "toeic-part6-context-11",
+      "level": "B2",
+      "use": "check"
+    },
+    {
+      "type": "transform",
+      "skill": "production",
+      "prompt": "Viết lại theo yêu cầu, giữ nguyên thông tin.",
+      "source": "Three employees will arrive late because their train was cancelled.",
+      "instruction": "Tách thành hai câu; câu đầu bắt đầu Their train, câu sau dùng As a result.",
+      "accept": [
+        "Their train was cancelled. As a result, three employees will arrive late.",
+        "Their train was canceled. As a result, three employees will arrive late."
+      ],
+      "model": "Their train was cancelled. As a result, three employees will arrive late.",
+      "explain": "Giữ quan hệ nhân quả và khác biệt thời gian: hủy đã xảy ra, đến muộn là dự kiến.",
+      "id": "toeic-part6-context-12",
+      "level": "B2",
+      "use": "check"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "English Grammar Today: discourse markers, pronoun reference and tense in context. Tham khảo định hướng chủ đề; không khẳng định đã đối chiếu từng câu với một đoạn nguồn cụ thể."
+    },
+    {
+      "ref": "ets-toeic",
+      "note": "Nguồn định dạng được main đọc và ghi tại BATCH-continuation-11.md: IIBC Test Format and Content, ETS paper-delivered Examinee Handbook tr.1,3,5. Chỉ dùng ngữ cảnh công việc và phạm vi Part 5/6; không sao chép câu hỏi hoặc quy đổi điểm."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

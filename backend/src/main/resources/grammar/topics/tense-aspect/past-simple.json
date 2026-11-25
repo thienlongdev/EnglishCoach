@@ -1,0 +1,1123 @@
+{
+  "schema": 1,
+  "slug": "past-simple",
+  "version": 2,
+  "domain": "tense-aspect",
+  "order": 50,
+  "kind": "grammar",
+  "title": {
+    "vi": "Quá khứ đơn",
+    "en": "Past simple"
+  },
+  "subtitle": {
+    "vi": "Việc đã xảy ra, trong một khoảng thời gian đã khép lại",
+    "en": "Things that happened, in a time that is closed"
+  },
+  "aliases": [
+    "past simple",
+    "simple past",
+    "quá khứ đơn",
+    "thì quá khứ",
+    "didn't went",
+    "did not went",
+    "ed ending",
+    "irregular past",
+    "went or goed",
+    "was were",
+    "yesterday last night ago",
+    "-ed",
+    "động từ bất quy tắc"
+  ],
+  "level": "A1",
+  "levelBasis": "editorial",
+  "uses": [
+    {
+      "level": "A1",
+      "vi": "Kể việc đã xảy ra với yesterday, last week, two days ago."
+    },
+    {
+      "level": "A2",
+      "vi": "Kể chuyện theo trình tự, nói về thói quen cũ, và hỏi bằng did."
+    },
+    {
+      "level": "B1",
+      "vi": "Kết hợp với when và while, và phân biệt với hiện tại hoàn thành."
+    },
+    {
+      "level": "B2",
+      "vi": "Dạng quá khứ để nói điều không có thật hoặc lịch sự: If I had..., I wondered if..."
+    }
+  ],
+  "objectives": [
+    "Dùng quá khứ đơn cho việc nằm trọn trong một mốc hoặc khoảng thời gian đã qua",
+    "Chia đúng động từ có quy tắc (-ed và chính tả) và những động từ bất quy tắc thông dụng",
+    "Lập câu phủ định và câu hỏi bằng did, rồi đưa động từ chính về dạng gốc",
+    "Phân biệt Who did you call? với Who called you?"
+  ],
+  "prerequisites": [
+    "five-verb-forms"
+  ],
+  "related": [
+    {
+      "slug": "irregular-verbs",
+      "rel": "more"
+    },
+    {
+      "slug": "past-continuous",
+      "rel": "more"
+    },
+    {
+      "slug": "past-simple-vs-continuous",
+      "rel": "more"
+    },
+    {
+      "slug": "present-perfect-vs-past-simple",
+      "rel": "contrast"
+    },
+    {
+      "slug": "used-to-and-would",
+      "rel": "alternative"
+    },
+    {
+      "slug": "tense-aspect-system",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": "Speaking Part 1 và Part 2 hay yêu cầu kể điều đã xảy ra (Describe a trip you took). Writing Task 1 dùng quá khứ đơn khi biểu đồ có mốc thời gian đã qua.",
+    "toeic": "Part 5 và Part 6 thường cho mốc như last month, in 2023, yesterday. Hãy khớp thì với mốc thời gian đó."
+  },
+  "quick": {
+    "what": "Trong cách kể sự việc, quá khứ đơn đặt việc, tình huống hoặc thói quen vào một khung quá khứ. Nó không tự chứng minh mọi thói quen hay trạng thái đó đã chấm dứt ở hiện tại. Dạng quá khứ còn có cách dùng giả định hoặc lịch sự.",
+    "when": "Dùng với yesterday, last night, two days ago, in 2019, when I was ten. Khẳng định: -ed hoặc dạng bất quy tắc. Phủ định và câu hỏi: didn't hoặc Did, cộng dạng gốc.",
+    "examples": [
+      {
+        "en": "We [V|visited] Hue [T|last summer].",
+        "vi": "Mùa hè năm ngoái chúng tôi đi thăm Huế."
+      },
+      {
+        "en": "She [AUX|didn't] [V|call] me [T|yesterday].",
+        "vi": "Hôm qua cô ấy không gọi cho tôi."
+      },
+      {
+        "en": "[AUX|Did] you [V|see] the match?",
+        "vi": "Bạn có xem trận đấu không?"
+      }
+    ],
+    "remember": "Khi đã có did hoặc didn't, dấu quá khứ nằm ở did, còn động từ chính quay về dạng gốc."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Quá khứ đơn đặt một việc vào quá khứ và đóng khung nó lại. Câu cho biết việc đó đã xảy ra, và thường không nói gì về việc nó còn ảnh hưởng tới bây giờ hay không."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "timeline",
+        "now": 80,
+        "sentence": "Linh moved to Hanoi in 2019.",
+        "events": [
+          {
+            "kind": "point",
+            "at": 30,
+            "label": "Chuyển ra Hà Nội (2019)",
+            "role": "main"
+          }
+        ]
+      },
+      "caption": "Một sự việc nằm ở một mốc trong quá khứ. Mốc đó đã qua, và câu không nối nó tới bây giờ.",
+      "alt": "Trục thời gian có một điểm ở quá khứ, cách xa thời điểm hiện tại, ghi: chuyển ra Hà Nội năm 2019."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "timeline",
+        "now": 80,
+        "sentence": "We lived in Hue for six years.",
+        "events": [
+          {
+            "kind": "span",
+            "from": 15,
+            "to": 45,
+            "label": "Sáu năm ở Huế (đã kết thúc)",
+            "role": "main"
+          }
+        ]
+      },
+      "caption": "Một khoảng thời gian đã khép lại. Câu thường được hiểu là bây giờ gia đình không còn sống ở Huế.",
+      "alt": "Trục thời gian có một đoạn ở quá khứ, kết thúc trước thời điểm hiện tại, ghi: sáu năm ở Huế."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "timeline",
+        "now": 80,
+        "sentence": "Every summer we visited my grandparents.",
+        "events": [
+          {
+            "kind": "repeat",
+            "from": 10,
+            "to": 40,
+            "label": "Mỗi mùa hè: một thói quen cũ",
+            "role": "main"
+          }
+        ]
+      },
+      "caption": "Một thói quen được kể trong giai đoạn quá khứ. Riêng quá khứ đơn không xác nhận người nói đã bỏ thói quen đó ở hiện tại.",
+      "alt": "Trục thời gian có một đoạn lặp lại ở quá khứ, cách xa thời điểm hiện tại, biểu thị thói quen mỗi mùa hè."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "I [V|met] Hung at the station [T|yesterday morning].",
+          "vi": "Sáng qua tôi gặp Hùng ở nhà ga.",
+          "note": "Một sự việc đơn lẻ."
+        },
+        {
+          "en": "She [V|opened] the door, [V|turned] on the light and [V|sat] down.",
+          "vi": "Cô ấy mở cửa, bật đèn rồi ngồi xuống.",
+          "note": "Chuỗi việc nối tiếp nhau, mỗi việc một động từ."
+        },
+        {
+          "en": "We [V|lived] in Hue [T|when I was a child].",
+          "vi": "Hồi nhỏ chúng tôi sống ở Huế.",
+          "note": "Một tình trạng trong quá khứ."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Dạng của động từ"
+    },
+    {
+      "type": "formula",
+      "lines": [
+        {
+          "label": "Khẳng định",
+          "parts": [
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "V-ed hoặc dạng bất quy tắc",
+              "role": "V"
+            }
+          ]
+        },
+        {
+          "label": "Phủ định",
+          "parts": [
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "did not (didn't)",
+              "role": "AUX"
+            },
+            {
+              "t": "dạng gốc",
+              "role": "V"
+            }
+          ]
+        },
+        {
+          "label": "Câu hỏi",
+          "parts": [
+            {
+              "t": "Did",
+              "role": "AUX"
+            },
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "dạng gốc",
+              "role": "V"
+            },
+            {
+              "t": "?"
+            }
+          ]
+        }
+      ],
+      "note": "Động từ be có dạng riêng: I/he/she/it was, you/we/they were. Không dùng did với be: Were you tired? I wasn't tired."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Cuối của động từ",
+        "Thêm",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "Hầu hết động từ",
+          "-ed",
+          "walk → walked, play → played"
+        ],
+        [
+          "-e",
+          "-d",
+          "like → liked, live → lived"
+        ],
+        [
+          "Phụ âm + y",
+          "bỏ y, thêm -ied",
+          "study → studied, try → tried"
+        ],
+        [
+          "Một nguyên âm + một phụ âm, trọng âm ở âm cuối",
+          "gấp đôi phụ âm",
+          "stop → stopped, plan → planned, prefer → preferred"
+        ],
+        [
+          "Âm cuối không mang trọng âm",
+          "không gấp đôi",
+          "visit → visited, open → opened"
+        ]
+      ],
+      "caption": "Cách viết -ed của động từ có quy tắc."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Âm cuối -ed",
+        "Đọc sau",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "/t/",
+          "âm vô thanh (trừ /t/)",
+          "worked, stopped, watched"
+        ],
+        [
+          "/d/",
+          "âm hữu thanh (trừ /d/) và nguyên âm",
+          "played, cleaned, lived"
+        ],
+        [
+          "/ɪd/",
+          "âm /t/ và /d/",
+          "wanted, needed"
+        ]
+      ],
+      "caption": "Ba cách đọc -ed. Chữ viết không đổi."
+    },
+    {
+      "type": "p",
+      "vi": "Nhiều động từ thông dụng nhất là bất quy tắc, nên bạn học nhanh nhất khi gặp chúng trong câu và học theo nhóm. Bảng dưới là dạng quá khứ đơn của mười hai động từ rất thường gặp."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Gốc",
+        "Quá khứ đơn",
+        "Gốc",
+        "Quá khứ đơn"
+      ],
+      "rows": [
+        [
+          "be",
+          "was / were",
+          "have",
+          "had"
+        ],
+        [
+          "do",
+          "did",
+          "go",
+          "went"
+        ],
+        [
+          "see",
+          "saw",
+          "take",
+          "took"
+        ],
+        [
+          "make",
+          "made",
+          "come",
+          "came"
+        ],
+        [
+          "get",
+          "got",
+          "say",
+          "said"
+        ],
+        [
+          "buy",
+          "bought",
+          "eat",
+          "ate"
+        ]
+      ],
+      "caption": "Đây chỉ là dạng quá khứ đơn. Phân từ quá khứ dùng với have có thể khác, ví dụ go, went, gone."
+    },
+    {
+      "type": "h",
+      "vi": "Phủ định và câu hỏi: dấu quá khứ nằm ở did"
+    },
+    {
+      "type": "contrast",
+      "labelA": "Khẳng định",
+      "labelB": "Phủ định hoặc câu hỏi",
+      "items": [
+        {
+          "a": {
+            "en": "She [V|called] me.",
+            "vi": "Cô ấy gọi cho tôi."
+          },
+          "b": {
+            "en": "She [AUX|didn't] [V|call] me.",
+            "vi": "Cô ấy không gọi cho tôi."
+          },
+          "diff": "Dấu quá khứ rời khỏi động từ và nằm ở didn't. Động từ chính quay về dạng gốc."
+        },
+        {
+          "a": {
+            "en": "You [V|saw] it.",
+            "vi": "Bạn đã thấy nó."
+          },
+          "b": {
+            "en": "[AUX|Did] you [V|see] it?",
+            "vi": "Bạn đã thấy nó chưa?"
+          },
+          "diff": "Did mang quá khứ, nên see ở dạng gốc."
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "labelA": "Sai",
+      "labelB": "Đúng",
+      "items": [
+        {
+          "a": {
+            "en": "She [AUX|didn't] [V|called] me.",
+            "vi": "Cô ấy không gọi cho tôi."
+          },
+          "aBad": true,
+          "b": {
+            "en": "She [AUX|didn't] [V|call] me.",
+            "vi": "Cô ấy không gọi cho tôi."
+          },
+          "diff": "Trong cụm động từ này, did đã mang quá khứ nên động từ ngay sau nó ở dạng gốc. Các mệnh đề hoặc động từ phối hợp khác vẫn có thể có dạng quá khứ."
+        },
+        {
+          "a": {
+            "en": "[AUX|Did] you [V|saw] it?",
+            "vi": "Bạn đã thấy nó chưa?"
+          },
+          "aBad": true,
+          "b": {
+            "en": "[AUX|Did] you [V|see] it?",
+            "vi": "Bạn đã thấy nó chưa?"
+          },
+          "diff": "Cùng lỗi trong câu hỏi: did đã mang quá khứ."
+        }
+      ]
+    },
+    {
+      "type": "try",
+      "exercise": "pasim-09"
+    },
+    {
+      "type": "h",
+      "vi": "Khi từ để hỏi là chủ ngữ"
+    },
+    {
+      "type": "p",
+      "vi": "Khi who hoặc what là chủ ngữ trong câu hỏi khẳng định trung tính, thường không mượn did: Who called you? Với câu hỏi tân ngữ, dùng Who did you call? Chủ ngữ vẫn có thể đi với did khi nhấn mạnh: Who did call you?"
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[Q|Who] [V|called] you last night?",
+          "vi": "Ai đã gọi cho bạn tối qua?",
+          "note": "Who là chủ ngữ nên không có did."
+        },
+        {
+          "en": "[Q|Who] [AUX|did] you [V|call] last night?",
+          "vi": "Tối qua bạn đã gọi cho ai?",
+          "note": "Who là tân ngữ nên có did."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Động từ tiếng Việt không đổi hình thức, thời gian nằm ở những từ như \"hôm qua\". Nên khi nói nhanh, người học dễ để động từ ở dạng gốc: Yesterday I go. Một số nghiên cứu cho rằng đây thường là vấn đề xử lý khi phải làm nhanh hơn là chưa biết quy tắc, vì vậy hãy luyện cả nói lẫn viết dưới áp lực thời gian."
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Tiếng Việt có ít phụ âm cuối, nên âm /t/ hoặc /d/ của -ed dễ bị yếu khi nói. Khi nói, cố gắng đọc rõ âm cuối. Khi viết, luôn có -ed."
+    },
+    {
+      "type": "try",
+      "exercise": "pasim-01"
+    }
+  ],
+  "deep": [
+    {
+      "type": "h",
+      "vi": "Dạng quá khứ không phải lúc nào cũng nói về quá khứ"
+    },
+    {
+      "type": "p",
+      "vi": "Người nói dùng dạng quá khứ khi muốn giữ khoảng cách khỏi thực tại: điều không có thật, điều khó xảy ra, hoặc lời đề nghị lịch sự. Khi đó, nghĩa là hiện tại hoặc tương lai. Bài về câu điều kiện và về ước muốn nói tiếp chuyện này."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "If I [V|had] more time, I'd learn the guitar.",
+          "vi": "Nếu tôi có thêm thời gian, tôi sẽ học guitar.",
+          "note": "Dạng quá khứ, nghĩa hiện tại, không có thật."
+        },
+        {
+          "en": "I wish I [V|knew] her number.",
+          "vi": "Giá mà tôi biết số của cô ấy.",
+          "note": "Dạng quá khứ, nghĩa hiện tại, không có thật."
+        },
+        {
+          "en": "I [V|wondered] if you could help me with this form.",
+          "vi": "Không biết bạn có giúp tôi điền mẫu này được không.",
+          "note": "Dạng quá khứ làm lời đề nghị bớt trực tiếp."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Quá khứ đơn hay hiện tại hoàn thành"
+    },
+    {
+      "type": "p",
+      "vi": "Nếu bạn nói đến một thời điểm đã qua, hoặc ngữ cảnh đã cho biết thời điểm đó, chọn quá khứ đơn. Nếu bạn nhìn việc đó từ bây giờ và kết quả còn liên quan, chọn hiện tại hoàn thành. Một câu như Where did you buy that coat? dùng quá khứ đơn dù không có từ chỉ thời gian, vì việc mua rõ ràng thuộc một lần cụ thể đã qua. Bài so sánh hai thì này nói kỹ hơn."
+    },
+    {
+      "type": "h",
+      "vi": "Thói quen cũ: quá khứ đơn, used to, would"
+    },
+    {
+      "type": "p",
+      "vi": "Every summer we visited my grandparents là đủ để nói về thói quen cũ khi có từ chỉ tần suất hoặc giai đoạn. Used to nhấn rằng thói quen hay tình trạng đó khác với bây giờ. Would thường chỉ dùng cho hành động lặp lại, không dùng cho trạng thái. Bài Used to và would nói kỹ hơn."
+    },
+    {
+      "type": "note",
+      "kind": "regional",
+      "vi": "Một số động từ có hai dạng quá khứ đều đúng: learned và learnt, burned và burnt, dreamed và dreamt, spelled và spelt. Tiếng Anh Anh dùng cả hai dạng, tiếng Anh Mỹ ưa dạng -ed hơn."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Trong nhiều phương ngữ, người ta nói I seen it, we was, he done it. Tiếng Anh chuẩn và bài thi dùng I saw it, we were, he did it."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "pasim-bare-verb",
+      "wrong": "Yesterday I go to the market.",
+      "right": "Yesterday I went to the market.",
+      "why": "Yesterday cho biết việc đã qua, nhưng động từ vẫn phải mang dạng quá khứ.",
+      "vn": "Trong tiếng Việt, \"hôm qua\" đủ để chỉ thời gian, còn động từ không đổi. Vì thế người học dễ quên đổi dạng khi nói nhanh."
+    },
+    {
+      "id": "pasim-didnt-past",
+      "wrong": "She didn't went to school.",
+      "right": "She didn't go to school.",
+      "why": "Didn't đã mang dấu quá khứ, nên động từ chính ở dạng gốc."
+    },
+    {
+      "id": "pasim-did-past",
+      "wrong": "Did you saw Minh?",
+      "right": "Did you see Minh?",
+      "why": "Did đã mang dấu quá khứ, nên động từ chính ở dạng gốc."
+    },
+    {
+      "id": "pasim-regularised",
+      "wrong": "I buyed a new phone.",
+      "right": "I bought a new phone.",
+      "why": "Buy là động từ bất quy tắc, quá khứ đơn là bought. Thêm -ed vào cả động từ bất quy tắc là lỗi áp dụng quy tắc quá rộng, rất hay gặp ở người học."
+    },
+    {
+      "id": "pasim-was-were",
+      "wrong": "We was very tired after the trip.",
+      "right": "We were very tired after the trip.",
+      "why": "We, you, they đi với were. Was chỉ đi với I, he, she, it."
+    },
+    {
+      "id": "pasim-did-be",
+      "wrong": "Did you happy yesterday?",
+      "right": "Were you happy yesterday?",
+      "why": "Be không dùng did. Hỏi bằng cách đưa was hoặc were lên trước chủ ngữ.",
+      "vn": "Người học mang cấu trúc Did you + động từ sang cả câu có tính từ."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Khi nào có did trong câu khẳng định?",
+      "a": "Khi người nói nhấn mạnh: I did tell you! Hoặc khi did là động từ chính: I did my homework. Trong cả hai trường hợp, did là quá khứ của do."
+    },
+    {
+      "q": "Tại sao didn't went là sai?",
+      "a": "Trong cụm động từ với did not, trợ động từ mang thì và động từ chính theo sau dùng dạng gốc: did not go. Đây không phải lệnh cấm nhiều động từ quá khứ trong một câu."
+    },
+    {
+      "q": "Learned và learnt, cái nào đúng?",
+      "a": "Cả hai đều đúng. Tiếng Anh Anh dùng cả learned lẫn learnt, tiếng Anh Mỹ chủ yếu dùng learned. Chọn một dạng và dùng nhất quán trong bài."
+    },
+    {
+      "q": "Không có từ chỉ thời gian thì dùng quá khứ đơn được không?",
+      "a": "Được, khi ngữ cảnh cho biết đó là một lần cụ thể đã qua. Ví dụ Where did you buy that coat? hỏi về lần mua cái áo đang có trước mặt."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "pasim-01",
+      "type": "choice",
+      "level": "A1",
+      "use": "both",
+      "skill": "form",
+      "prompt": "Kể sự việc bằng quá khứ đơn trong lối tường thuật thông thường; chọn dạng của watch.",
+      "stem": "Yesterday we ___ a movie.",
+      "options": [
+        {
+          "t": "watch",
+          "note": "Yesterday cho biết việc đã qua, nên cần dạng quá khứ.",
+          "tag": "past-bare-verb"
+        },
+        {
+          "t": "watched",
+          "ok": true,
+          "note": "Động từ có quy tắc: watch + ed."
+        },
+        {
+          "t": "watching",
+          "note": "Còn thiếu was/were. Và câu này cũng không cần dạng tiếp diễn.",
+          "tag": "past-wrong-form"
+        }
+      ],
+      "explain": "Yesterday là mốc đã qua, nên động từ cần dạng quá khứ đơn: watched."
+    },
+    {
+      "id": "pasim-02",
+      "type": "choice",
+      "level": "A1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn dạng đúng.",
+      "stem": "She ___ her keys at the office last night.",
+      "options": [
+        {
+          "t": "leaved",
+          "note": "Leave là động từ bất quy tắc, không thêm -ed.",
+          "tag": "past-regularised"
+        },
+        {
+          "t": "left",
+          "ok": true,
+          "note": "Quá khứ đơn của leave là left."
+        },
+        {
+          "t": "leave",
+          "note": "Last night là mốc quá khứ, nên cần dạng quá khứ.",
+          "tag": "past-bare-verb"
+        }
+      ],
+      "explain": "Leave đổi thành left ở quá khứ đơn. Last night xác định thì quá khứ."
+    },
+    {
+      "id": "pasim-03",
+      "type": "cloze",
+      "level": "A1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Điền dạng quá khứ đơn của động từ trong ngoặc.",
+      "stem": "Last summer my family {1} (go) to Da Nang. We {2} (stay) in a small hotel and {3} (eat) fresh seafood every day.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "went"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "goed",
+              "verdict": "wrong",
+              "note": "Go là động từ bất quy tắc: went.",
+              "tag": "past-regularised"
+            },
+            {
+              "t": "go",
+              "verdict": "wrong",
+              "note": "Last summer là mốc quá khứ, nên cần dạng quá khứ.",
+              "tag": "past-bare-verb"
+            }
+          ]
+        },
+        "2": {
+          "accept": [
+            "stayed"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "stay",
+              "verdict": "wrong",
+              "note": "Câu kể chuyện đã qua, nên cần dạng quá khứ.",
+              "tag": "past-bare-verb"
+            }
+          ]
+        },
+        "3": {
+          "accept": [
+            "ate"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "eated",
+              "verdict": "wrong",
+              "note": "Eat là động từ bất quy tắc: ate.",
+              "tag": "past-regularised"
+            },
+            {
+              "t": "eat",
+              "verdict": "wrong",
+              "note": "Câu kể chuyện đã qua, nên cần dạng quá khứ.",
+              "tag": "past-bare-verb"
+            }
+          ]
+        }
+      },
+      "explain": "Cả ba việc xảy ra trong mùa hè năm ngoái. Went và ate là dạng bất quy tắc, stayed thêm -ed."
+    },
+    {
+      "id": "pasim-04",
+      "type": "cloze",
+      "level": "A1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Dùng quá khứ đơn với động từ thường: câu hỏi có did và câu trả lời phủ định với did not hoặc dạng rút gọn.",
+      "stem": "A: {1} you {2} (see) the match last night? B: No, I {3} (not / watch) it.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "Did"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "Do",
+              "verdict": "wrong",
+              "note": "Last night là mốc quá khứ, nên trợ động từ là did.",
+              "tag": "did-vs-do"
+            },
+            {
+              "t": "Have",
+              "verdict": "wrong",
+              "note": "Have you seen không đi với last night, một mốc đã khép.",
+              "tag": "tense-time-marker"
+            }
+          ]
+        },
+        "2": {
+          "accept": [
+            "see"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "saw",
+              "verdict": "wrong",
+              "note": "Sau did, động từ chính ở dạng gốc.",
+              "tag": "did-past-form"
+            }
+          ]
+        },
+        "3": {
+          "accept": [
+            "didn't watch",
+            "did not watch"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "didn't watched",
+              "verdict": "wrong",
+              "note": "Sau didn't, động từ chính ở dạng gốc.",
+              "tag": "did-past-form"
+            },
+            {
+              "t": "not watched",
+              "verdict": "wrong",
+              "note": "Phủ định ở quá khứ đơn cần did not.",
+              "tag": "do-support-missing"
+            }
+          ]
+        }
+      },
+      "explain": "Câu hỏi và câu phủ định ở quá khứ đơn đều dùng did, và động từ chính ở dạng gốc."
+    },
+    {
+      "id": "pasim-05",
+      "type": "order",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sắp xếp thành câu hỏi.",
+      "tokens": [
+        "Where",
+        "did",
+        "you",
+        "buy",
+        "that",
+        "jacket"
+      ],
+      "end": "?",
+      "accept": [
+        [
+          "Where",
+          "did",
+          "you",
+          "buy",
+          "that",
+          "jacket"
+        ]
+      ],
+      "explain": "Từ để hỏi, rồi did, rồi chủ ngữ, rồi động từ ở dạng gốc, rồi phần còn lại."
+    },
+    {
+      "id": "pasim-06",
+      "type": "error",
+      "level": "A1",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Sửa visit thành quá khứ đơn trong câu tường thuật thông thường; giữ các từ khác.",
+      "segments": [
+        {
+          "t": "We"
+        },
+        {
+          "t": "visit",
+          "bad": true,
+          "fix": [
+            "visited"
+          ],
+          "note": "Last Tet là mốc quá khứ, nên động từ cần dạng quá khứ.",
+          "tag": "past-bare-verb"
+        },
+        {
+          "t": "our grandparents last Tet."
+        }
+      ],
+      "explain": "Đổi thành We visited our grandparents last Tet. Last Tet chỉ rõ việc đã qua."
+    },
+    {
+      "id": "pasim-07",
+      "type": "error",
+      "level": "A1",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        {
+          "t": "He"
+        },
+        {
+          "t": "didn't came",
+          "bad": true,
+          "fix": [
+            "didn't come",
+            "did not come"
+          ],
+          "note": "Sau didn't, động từ chính ở dạng gốc: come.",
+          "tag": "did-past-form"
+        },
+        {
+          "t": "to class on Monday."
+        }
+      ],
+      "explain": "Đổi thành He didn't come to class on Monday. Quá khứ đã nằm ở didn't."
+    },
+    {
+      "id": "pasim-08",
+      "type": "error",
+      "level": "A2",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "noError": true,
+      "segments": [
+        {
+          "t": "Who"
+        },
+        {
+          "t": "called"
+        },
+        {
+          "t": "you at midnight?"
+        }
+      ],
+      "explain": "Câu đúng. Who là chủ ngữ của câu hỏi, nên không cần did: Who called you? Câu Who did call you? chỉ dùng khi người nói nhấn mạnh."
+    },
+    {
+      "id": "pasim-09",
+      "type": "transform",
+      "level": "A1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lại câu thành câu phủ định.",
+      "source": "They played football after school.",
+      "instruction": "Dùng didn't hoặc did not.",
+      "accept": [
+        "They didn't play football after school",
+        "They did not play football after school"
+      ],
+      "model": "They didn't play football after school.",
+      "known": [
+        {
+          "t": "They didn't played football after school",
+          "verdict": "wrong",
+          "note": "Sau didn't, động từ chính ở dạng gốc.",
+          "tag": "did-past-form"
+        },
+        {
+          "t": "They not played football after school",
+          "verdict": "wrong",
+          "note": "Phủ định ở quá khứ đơn cần did not.",
+          "tag": "do-support-missing"
+        }
+      ],
+      "explain": "Câu khẳng định có played. Khi phủ định, dấu quá khứ chuyển sang didn't và động từ về dạng gốc play."
+    },
+    {
+      "id": "pasim-10",
+      "type": "transform",
+      "level": "A1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lại câu thành câu hỏi yes/no.",
+      "source": "Mai finished her homework.",
+      "instruction": "Bắt đầu bằng Did.",
+      "accept": [
+        "Did Mai finish her homework"
+      ],
+      "model": "Did Mai finish her homework?",
+      "known": [
+        {
+          "t": "Did Mai finished her homework",
+          "verdict": "wrong",
+          "note": "Sau did, động từ chính ở dạng gốc.",
+          "tag": "did-past-form"
+        }
+      ],
+      "explain": "Câu hỏi: Did + chủ ngữ + dạng gốc. Dấu quá khứ nằm ở Did."
+    },
+    {
+      "id": "pasim-11",
+      "type": "match",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Nối động từ gốc với dạng quá khứ đơn.",
+      "pairs": [
+        {
+          "a": "go",
+          "b": "went"
+        },
+        {
+          "a": "see",
+          "b": "saw"
+        },
+        {
+          "a": "buy",
+          "b": "bought"
+        },
+        {
+          "a": "write",
+          "b": "wrote"
+        },
+        {
+          "a": "eat",
+          "b": "ate"
+        },
+        {
+          "a": "take",
+          "b": "took"
+        }
+      ],
+      "explain": "Sáu động từ này là bất quy tắc và rất thường gặp. Hãy học chúng trong câu, không học riêng từng cặp."
+    },
+    {
+      "id": "pasim-12",
+      "type": "classify",
+      "level": "A2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Âm cuối -ed của mỗi từ đọc là gì?",
+      "cats": [
+        "/t/",
+        "/d/",
+        "/ɪd/"
+      ],
+      "items": [
+        {
+          "t": "worked",
+          "cat": "/t/"
+        },
+        {
+          "t": "played",
+          "cat": "/d/"
+        },
+        {
+          "t": "wanted",
+          "cat": "/ɪd/"
+        },
+        {
+          "t": "stopped",
+          "cat": "/t/"
+        },
+        {
+          "t": "cleaned",
+          "cat": "/d/"
+        },
+        {
+          "t": "needed",
+          "cat": "/ɪd/"
+        },
+        {
+          "t": "watched",
+          "cat": "/t/"
+        }
+      ],
+      "explain": "Sau âm vô thanh (trừ /t/): đọc /t/. Sau âm hữu thanh và nguyên âm (trừ /d/): đọc /d/. Sau /t/ hoặc /d/: đọc /ɪd/ và thêm một âm tiết."
+    },
+    {
+      "id": "pasim-13",
+      "type": "multi",
+      "level": "A2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn tất cả câu đúng.",
+      "stem": "Câu hỏi và phủ định ở quá khứ đơn",
+      "options": [
+        {
+          "t": "Did you enjoy the concert?",
+          "ok": true,
+          "note": "Did + chủ ngữ + dạng gốc: đúng."
+        },
+        {
+          "t": "Did you enjoyed the concert?",
+          "note": "Sau did, động từ chính ở dạng gốc.",
+          "tag": "did-past-form"
+        },
+        {
+          "t": "I didn't enjoy it much.",
+          "ok": true,
+          "note": "Didn't + dạng gốc: đúng."
+        },
+        {
+          "t": "I no enjoyed it much.",
+          "note": "Tiếng Anh dùng didn't, không dùng no trước động từ.",
+          "tag": "do-support-missing"
+        },
+        {
+          "t": "Who wrote this email?",
+          "ok": true,
+          "note": "Who là chủ ngữ nên không cần did."
+        }
+      ],
+      "explain": "Ba câu đúng đều dùng dạng gốc sau did hoặc didn't, hoặc không cần did khi từ để hỏi là chủ ngữ."
+    },
+    {
+      "id": "pasim-14",
+      "type": "choice",
+      "level": "A1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn dạng đúng.",
+      "stem": "My parents ___ at home when I called.",
+      "options": [
+        {
+          "t": "were",
+          "ok": true,
+          "note": "My parents là số nhiều, nên quá khứ của be là were."
+        },
+        {
+          "t": "was",
+          "note": "Was chỉ đi với I, he, she, it.",
+          "tag": "was-were"
+        },
+        {
+          "t": "did be",
+          "note": "Trong câu khẳng định trung tính này, dùng were theo chủ ngữ số nhiều; không dùng did be.",
+          "tag": "did-be"
+        }
+      ],
+      "explain": "Be có dạng quá khứ riêng: was hoặc were, theo chủ ngữ. Không thêm did."
+    },
+    {
+      "id": "pasim-15",
+      "type": "open",
+      "level": "A1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Viết năm câu về cuối tuần trước của bạn. Dùng ít nhất một động từ bất quy tắc, một câu phủ định và một mốc thời gian.",
+      "model": [
+        "On Saturday morning I went to the market with my mother.",
+        "We bought fruit and vegetables.",
+        "In the afternoon I met my friends at a café.",
+        "I didn't do my homework until Sunday evening.",
+        "On Sunday night I watched a film and went to bed late."
+      ],
+      "checklist": [
+        "Các động từ hữu hạn kể chuỗi việc dùng quá khứ; động từ ngay sau did vẫn dùng dạng gốc.",
+        "Có ít nhất một động từ bất quy tắc (went, bought, met)",
+        "Câu phủ định dùng didn't + dạng gốc",
+        "Có mốc thời gian (on Saturday, in the afternoon)"
+      ],
+      "explain": "Bài viết kể một chuỗi việc đã qua, đúng chỗ dùng của quá khứ đơn."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Mục past simple"
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Mục về past simple và dạng quá khứ của động từ"
+    },
+    {
+      "ref": "bc",
+      "note": "Bài past simple"
+    },
+    {
+      "ref": "murphy-essential",
+      "note": "Các bài về past simple"
+    },
+    {
+      "ref": "lgswe",
+      "note": "Tần suất của thì quá khứ và động từ bất quy tắc"
+    },
+    {
+      "ref": "cgel",
+      "note": "Mô tả thì quá khứ và các nghĩa của nó"
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

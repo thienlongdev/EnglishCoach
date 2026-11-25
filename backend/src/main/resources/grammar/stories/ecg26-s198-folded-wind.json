@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s198-folded-wind",
+  "title": "Gió gấp trong phong bì",
+  "summary": "Chiếc diều tre bị gãy lúc chuyển máy bay. Chủ thùng đã để thêm bản mẫu gấp giấy, nhờ đó một em bé vẫn có diều trước lễ hội.",
+  "level": "B2",
+  "topics": [
+    "past-unreal-conditionals"
+  ],
+  "scene": "airport",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Như",
+      "role": "Người phụ trách quầy"
+    },
+    {
+      "id": "b",
+      "name": "Nico",
+      "role": "Người nhận dạng đồ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Nico lấy từ đáy thùng mẩu nhắn Just in case. Như nhìn chiếc diều giấy bay trong sân và muốn cảm ơn người đã nghĩ xa.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The bamboo one never left the box in one piece.",
+          "vi": "Chiếc tre chưa kịp ra khỏi thùng nguyên vẹn."
+        },
+        {
+          "who": "b",
+          "en": "Imagine that the paper pattern hadn't been packed.",
+          "vi": "Thử nghĩ xem nếu không có bản mẫu giấy trong thùng."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Như nói hệ quả quá khứ trong tình huống ngược sự thật.",
+        "options": [
+          {
+            "ok": false,
+            "t": "Without the pattern, we won't make this kite yesterday.",
+            "note": "Won't make đặt kết quả ở tương lai nhưng yesterday chỉ quá khứ, và chiếc diều thực tế đã được làm xong.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "Without the pattern, we wouldn't have made this kite in time.",
+            "note": "Without ... nêu điều kiện ngầm. Wouldn't have made nhấn việc đã hoàn tất nhờ có mẫu, trước giờ lễ.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Em bé xin dán mẩu Just in case lên đuôi diều. Mỗi lần đổi gió, ba chữ lật mặt như một lời chào về người gói hàng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The spare plan got a sky of its own.",
+          "vi": "Kế hoạch dự phòng cũng có được bầu trời riêng."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Chiếc diều tre gãy được giữ lại làm khung cho mùa hội năm sau.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Như sửa bằng cách để em bé cầm diều vừa làm giơ lên và nói We've made it. Nico lấy mốc hoàn tất ấy để viết lời cảm ơn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The kite knew which day it was.",
+          "vi": "Chiếc diều biết mình thuộc ngày nào."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Tờ thư bay cùng diều rồi được gửi bằng đường thường, kể một việc thật bằng một giả định đúng thời.",
+      "end": true
+    }
+  ]
+}

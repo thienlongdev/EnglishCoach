@@ -1,0 +1,35 @@
+{
+  "id": "washroom-directions",
+  "title": "Đọc hai biển chỉ chỗ",
+  "summary": "Hai ngăn kéo được dán nhãn đồ dùng. Đổi thứ tự hai thông báo và xem món nào thành thông tin được đọc trước. Vị trí vật dụng có đổi không?",
+  "level": "A2",
+  "topics": [
+    "given-before-new",
+    "prepositions-place"
+  ],
+  "kind": "arrange",
+  "tokens": [
+    "Soap is on the right.",
+    "Towels are on the left."
+  ],
+  "orders": [
+    {
+      "seq": [
+        "Towels are on the left.",
+        "Soap is on the right."
+      ],
+      "verdict": "ok",
+      "note": "Mỗi câu tự xác định vị trí của một món. Đọc câu về khăn trước không đổi vị trí xà phòng. / Readers encounter the towel location first.",
+      "effect": "Khăn bên trái. Xà phòng bên phải."
+    },
+    {
+      "seq": [
+        "Soap is on the right.",
+        "Towels are on the left."
+      ],
+      "verdict": "ok",
+      "note": "Đảo hai thông báo làm người đọc chú ý xà phòng trước. Hai từ chỉ hướng vẫn gắn với cùng đồ vật. / The first topic changes, the directions do not.",
+      "effect": "Xà phòng bên phải. Khăn bên trái."
+    }
+  ]
+}

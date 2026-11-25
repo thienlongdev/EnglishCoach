@@ -1,0 +1,41 @@
+{
+  "id": "bus-stop-roles",
+  "title": "Ai nhìn thấy ai ở bến xe?",
+  "summary": "Đọc nhật ký của người đứng ở bến xe. Đảo hai người tham gia rồi xem đại từ thay đổi ra sao.",
+  "level": "A1",
+  "topics": [
+    "subject-object-pronouns",
+    "basic-word-order"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Người nhìn thấy trước",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Tôi"
+        },
+        {
+          "id": "v2",
+          "label": "Cô ấy"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I see her at the bus stop.",
+      "vi": "Tôi nhìn thấy cô ấy ở bến xe.",
+      "note": "I đứng trước động từ. Her chỉ người được nhìn thấy. / I is the observer and her is the object.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "She sees me at the bus stop.",
+      "vi": "Cô ấy nhìn thấy tôi ở bến xe.",
+      "note": "Khi đổi vai, her thành she và I thành me. Sees hòa hợp với she. / She is now the observer and me is the object.",
+      "verdict": "ok"
+    }
+  }
+}

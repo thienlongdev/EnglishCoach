@@ -1,0 +1,46 @@
+.hm-v41{position:relative;overflow:hidden;border:1px solid #8fd5d2;border-radius:2rem;box-shadow:0 22px 55px -30px #0a566d}
+.hm-v41>svg{display:block;width:100%;height:auto}
+.hm-ink{stroke:#29313e;stroke-width:4;stroke-linejoin:round;stroke-linecap:round}
+@keyframes hm-pop-v41{0%{transform:scale(1);opacity:1}25%{transform:scale(1.16);opacity:1}100%{transform:scale(.12);opacity:0}}
+@keyframes hm-burst-v41{0%{transform:scale(.3);opacity:1}100%{transform:scale(1.2);opacity:0}}
+@keyframes hm-wave-v41{to{transform:translateX(-160px)}}
+@keyframes hm-painted-blink{0%,39%,43%,100%{opacity:0}40%,42%{opacity:1}}
+.hm-v41 .hm-pop{animation:hm-pop-v41 .28s ease-out forwards}
+.hm-v41 .hm-burst{animation:hm-burst-v41 .38s ease-out forwards}
+.hm-v41 .hm-water{animation:hm-wave-v41 12s linear infinite}
+.hm-v41 .hm-water-front{animation-direction:reverse;animation-duration:17s}
+.hm-painted-blink{animation:hm-painted-blink 5.5s linear infinite;opacity:0}
+.hm-hand-open{opacity:0}.hm-hand-grip{opacity:1}
+.hm-hand-open,.hm-hand-grip{transition:opacity .18s ease-out}
+.hm-v41[data-grip=RELEASED] .hm-hand-open{opacity:1}
+.hm-v41[data-grip=RELEASED] .hm-hand-grip{opacity:0}
+.hm-v41:not([data-phase=IDLE]) .hm-painted-blink{animation:none}
+.hm-painted-person :is(.hm-face-idle,.hm-face-happy,.hm-face-worried,.hm-face-panic,.hm-face-defeated){transition:none}
+.hm-painted-person :is(.hm-face-happy,.hm-face-worried,.hm-face-panic,.hm-face-defeated){opacity:0}
+.hm-v41.hm-worried .hm-painted-person .hm-face-idle{opacity:0}
+.hm-v41.hm-worried .hm-painted-person .hm-face-worried{opacity:1}
+.hm-v41:is([data-phase=WRONG],[data-phase=FINAL_POP],[data-phase=FREE_FALL],[data-phase=WATER_CONTACT],[data-phase=WATER_STRUGGLE],[data-phase=SHARK_APPROACH],[data-phase=SHARK_BITE]) .hm-painted-person :is(.hm-face-idle,.hm-face-happy,.hm-face-worried){opacity:0}
+.hm-v41:is([data-phase=WRONG],[data-phase=FINAL_POP],[data-phase=FREE_FALL],[data-phase=WATER_CONTACT],[data-phase=WATER_STRUGGLE],[data-phase=SHARK_APPROACH],[data-phase=SHARK_BITE]) .hm-painted-person .hm-face-panic{opacity:1}
+.hm-v41:is([data-phase=CORRECT],[data-phase=WIN]) .hm-painted-person :is(.hm-face-idle,.hm-face-worried,.hm-face-panic,.hm-face-defeated){opacity:0}
+.hm-v41:is([data-phase=CORRECT],[data-phase=WIN]) .hm-painted-person .hm-face-happy{opacity:1}
+.hm-v41 .hm-win-stars{opacity:0}
+.hm-v41:is([data-phase=X_EYES_REACTION],[data-phase=LOSS_RESULT]) .hm-painted-person :is(.hm-face-idle,.hm-face-happy,.hm-face-worried,.hm-face-panic){opacity:0}
+.hm-v41:is([data-phase=X_EYES_REACTION],[data-phase=LOSS_RESULT]) .hm-painted-person .hm-face-defeated{opacity:1}
+.hm-v41:is([data-phase=CORRECT],[data-phase=WIN]) .hm-win-stars{opacity:1}
+.hm-key-pending{background:#ffe0a0!important;color:#173b52!important;border-color:#d39231!important;transform:translateY(2px)}
+.hm-key:focus-visible{outline:3px solid #dfaa41;outline-offset:3px}
+@media(min-width:1024px){.hm-page .hm-v41{max-width:650px;margin-inline:auto}}
+@media(min-width:1024px) and (max-height:800px){.hm-page{padding:10px 24px}.hm-page> *+*{margin-top:10px}.hm-page>header{padding-bottom:8px}.hm-page>header h1{font-size:28px}.hm-page>header p{font-size:10px}.hm-page .hm-v41{max-width:480px;margin-inline:auto}.hm-page fieldset{margin-top:16px}.hm-page .hm-key{height:40px;width:40px}}
+@media(prefers-reduced-motion:reduce){.hm-v41 *{animation:none!important}.hm-v41 .hm-pop,.hm-v41 .hm-burst{opacity:0}}
+.hm-static *{animation:none!important;transition:none!important}.hm-static .hm-painted-blink{opacity:0}
+
+@media(max-width:639px){
+ .hm-page{padding-top:8px}.hm-page> *+*{margin-top:12px}
+ .hm-page>header{gap:8px;padding-bottom:10px}.hm-page>header h1{font-size:28px}.hm-page>header p{font-size:10px}
+ .hm-page .hm-key{width:44px;height:44px}
+}
+@media(max-width:360px){
+ .hm-page fieldset>div{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+ .hm-page fieldset>div>div{display:contents}
+ .hm-page fieldset>div>div>.hm-key{width:100%;height:44px;margin:0}
+}

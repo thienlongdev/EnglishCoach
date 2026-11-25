@@ -1,0 +1,62 @@
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="tBedSoil2" cx="64" cy="98" r="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4E342E"/>
+      <stop offset="70%" stop-color="#3E2723"/>
+      <stop offset="100%" stop-color="#2D150B" stop-opacity="0.8"/>
+    </radialGradient>
+    <linearGradient id="woodPost2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5C3D2E"/>
+      <stop offset="50%" stop-color="#8B5E3C"/>
+      <stop offset="100%" stop-color="#4A2E1B"/>
+    </linearGradient>
+    <linearGradient id="tLeafGrad2" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#15803D"/>
+      <stop offset="60%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#4ADE80"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Soil Bed Base -->
+  <ellipse cx="64" cy="102" rx="40" ry="14" fill="url(#tBedSoil2)"/>
+  <ellipse cx="64" cy="100" rx="34" ry="10" fill="#3E2723" opacity="0.6"/>
+
+  <!-- 3 Garden Trellis Stakes Across the Bed -->
+  <rect x="38" y="44" width="4" height="58" rx="1.5" fill="url(#woodPost2)"/>
+  <rect x="62" y="32" width="4.5" height="70" rx="1.5" fill="url(#woodPost2)"/>
+  <rect x="86" y="46" width="4" height="56" rx="1.5" fill="url(#woodPost2)"/>
+  <!-- Cross string tie -->
+  <path d="M40 68 L88 64" stroke="#D7CCC8" stroke-width="1.2" stroke-dasharray="3 2" opacity="0.7"/>
+
+  <!-- Left Vine (Wrapping Stake 1) -->
+  <g>
+    <path d="M40 100 Q44 86 38 72 Q44 58 40 48" stroke="#15803D" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M34 82 C24 78 26 88 38 84 Z" fill="url(#tLeafGrad2)"/>
+    <path d="M44 74 C54 70 52 80 40 76 Z" fill="url(#tLeafGrad2)"/>
+    <path d="M34 60 C24 54 26 66 38 62 Z" fill="url(#tLeafGrad2)"/>
+    <!-- Tendril -->
+    <path d="M40 48 Q44 42 42 38" stroke="#4ADE80" stroke-width="1.4" fill="none"/>
+  </g>
+
+  <!-- Center Vine (Taller Main Vine) -->
+  <g>
+    <path d="M64 100 Q60 82 66 66 Q61 48 64 36" stroke="#166534" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M54 84 C42 78 44 90 60 86 Z" fill="url(#tLeafGrad2)"/>
+    <path d="M72 78 C84 72 82 84 66 80 Z" fill="url(#tLeafGrad2)"/>
+    <path d="M54 62 C42 56 44 68 62 64 Z" fill="url(#tLeafGrad2)"/>
+    <path d="M72 54 C84 48 82 60 66 56 Z" fill="url(#tLeafGrad2)"/>
+    <path d="M58 42 C48 36 50 46 63 44 Z" fill="url(#tLeafGrad2)"/>
+    <!-- Tendril -->
+    <path d="M64 36 Q70 30 68 26" stroke="#4ADE80" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Right Vine (Wrapping Stake 3) -->
+  <g>
+    <path d="M88 100 Q84 86 90 72 Q85 58 88 50" stroke="#15803D" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M82 82 C72 78 74 88 86 84 Z" fill="url(#tLeafGrad2)"/>
+    <path d="M92 74 C102 70 100 80 88 76 Z" fill="url(#tLeafGrad2)"/>
+    <path d="M82 62 C72 56 74 68 86 64 Z" fill="url(#tLeafGrad2)"/>
+    <!-- Tendril -->
+    <path d="M88 50 Q92 44 90 40" stroke="#4ADE80" stroke-width="1.4" fill="none"/>
+  </g>
+</svg>

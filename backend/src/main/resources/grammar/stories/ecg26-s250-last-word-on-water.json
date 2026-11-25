@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s250-last-word-on-water",
+  "title": "Chữ cuối viết lên nước",
+  "level": "C1",
+  "topics": [
+    "pragmatic-softening",
+    "academic-grammar"
+  ],
+  "scene": "library-mystery",
+  "summary": "Trang cuối tập thơ của mẹ Trúc chỉ có câu “I should like the reader to finish this”. En đã chuẩn bị hai bìa: một đóng kín, một có túi đựng thư.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Trúc",
+      "role": "Người biên tập tập thơ"
+    },
+    {
+      "id": "b",
+      "name": "En",
+      "role": "Người đóng sách"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Bên dưới finish không có tân ngữ mới ngoài this đang chỉ tập thơ. Nó có thể mời người đọc đọc đến hết hoặc viết tiếp. Mẹ không để lại lời giải riêng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "She didn't put a full stop on the page.",
+          "vi": "Mẹ không đặt dấu chấm trên trang."
+        },
+        {
+          "who": "b",
+          "en": "We can preserve the invitation even if we can't choose its meaning for everyone.",
+          "vi": "Ta vẫn giữ được lời mời dù không thể chọn nghĩa thay hết mọi người."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Trúc chọn một cách làm sách mà không biến một mong muốn nhẹ nhàng thành lệnh của tác giả.",
+        "options": [
+          {
+            "t": "We might keep the last page exactly as she left it and print our note separately.",
+            "note": "Might đưa ra phương án giữ nguyên trang. Cụm separately tách ghi chú của người biên tập khỏi lời của người mẹ.",
+            "ok": true,
+            "next": "ending-2"
+          },
+          {
+            "t": "She seems to invite a response. We could leave an envelope for anyone who wants to write.",
+            "note": "Seems và could đánh dấu cách hiểu và một đề xuất biên tập. Anyone who wants giữ quyền từ chối phù hợp sắc thái should like.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "En may một túi thư không dán. Lá thư đầu tiên chỉ ghi Con đã đọc tới cuối. Trúc đặt thư vào túi, không tự viết thêm chữ cho mẹ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "That reader finished the book in her own way.",
+          "vi": "Người ấy đã hoàn thành cuốn sách theo cách của mình."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "En in một tờ rời nhỏ như lá cây. Trúc viết lên đó ngày mình đọc lại thay vì câu trả lời cuối. Khi mở sách, người đọc có thể lấy lá ra và thấy nguyên khoảng trắng của mẹ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "She left them a page they could still enter.",
+          "vi": "Bà để lại một trang người đọc còn có thể bước vào."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+/* React normally swaps a completed streamed segment into its loading boundary with a script.
+   With scripting disabled, show the original public document in reading order. Keep hidden
+   controls, dialogs and private application content under their own visibility rules. */
+body > div[hidden]:has([data-discover-document]) {
+  display: block !important;
+}
+
+body:has(> div[hidden] [data-discover-document]) [data-purpose="standalone-route"]:has([data-discover-pending], [data-navigation-loading="route"]) {
+  display: none;
+}

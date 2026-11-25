@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s030-cold-drum",
+  "title": "Cái trống lạnh như kem",
+  "summary": "Rin đến quán kem tập trống, nhưng dùi gõ xuống lại nghe tiếng bụp mềm. Bác Bảy đã đặt một hộp kem hình trống cạnh trống thật.",
+  "level": "A1",
+  "topics": [
+    "subject-verb-agreement-basics"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Rin",
+      "role": "Nhạc công nhỏ"
+    },
+    {
+      "id": "b",
+      "name": "Bảy",
+      "role": "Chủ quán kem"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Rin gõ khẽ bằng tay. Một vật kêu to, một vật lạnh buốt. Bác Bảy cần dán hai chiếc nhãn để các bạn khỏi nhầm lần nữa.",
+      "say": [
+        {
+          "who": "a",
+          "en": "This one feels cold.",
+          "vi": "Cái này sờ vào lạnh quá."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Listen to the other one. What does it do?",
+          "vi": "Cháu nghe cái còn lại đi. Nó phát ra sao?"
+        }
+      ],
+      "choice": {
+        "prompt": "Rin viết nhãn cho chiếc trống thật. Chọn câu đúng với chủ ngữ số ít.",
+        "options": [
+          {
+            "t": "This drum makes a loud sound.",
+            "note": "This drum chỉ một vật. Động từ make thêm -s ở hiện tại đơn với chủ ngữ này.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "This drum make a loud sound.",
+            "note": "Với chủ ngữ this drum, câu trần thuật hiện tại đơn cần makes. Nếu dùng can, ta viết can make.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Bác Bảy dán nhãn lên trống, lấy thìa mở nắp cái hộp lạnh và để lộ kem dâu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The red one is lunch!",
+          "vi": "Cái đỏ là món ăn rồi!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Bác Bảy chỉ vào chữ s cuối bút chì đã viết mẫu. Rin thêm s rồi hai người mở hộp kem cạnh trống.",
+      "say": [
+        {
+          "who": "b",
+          "en": "A sound for your ears and ice cream for your mouth.",
+          "vi": "Âm thanh cho tai, còn kem cho miệng."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Buổi tập kết thúc bằng tiếng gõ thìa vào những cốc kem rỗng. Lần này cả hai thứ đều thành nhạc cụ, nhưng chỉ một thứ đã có nhãn từ đầu.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Our cups make music too.",
+          "vi": "Mấy cái cốc cũng làm nhạc được."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

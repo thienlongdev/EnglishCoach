@@ -1,0 +1,451 @@
+{
+  "schema": 1,
+  "slug": "past-unreal-conditionals",
+  "version": 2,
+  "domain": "conditionals",
+  "order": 40,
+  "kind": "grammar",
+  "title": {
+    "vi": "Điều kiện không thật ở quá khứ: If I had known…",
+    "en": "Past unreal conditions"
+  },
+  "subtitle": {
+    "vi": "Hình dung một quá khứ khác",
+    "en": "Imagine a different past"
+  },
+  "aliases": [
+    "điều kiện quá khứ không thật",
+    "third conditional",
+    "if I had known",
+    "would have went"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Tạo had + phân từ và modal have + phân từ.",
+    "Nối giả định với thực tế đã nêu.",
+    "Phân biệt had/would trong dạng rút gọn."
+  ],
+  "prerequisites": [
+    "unreal-present-conditionals",
+    "past-perfect"
+  ],
+  "related": [
+    {
+      "slug": "unreal-present-conditionals",
+      "rel": "contrast"
+    },
+    {
+      "slug": "mixed-conditionals",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Trong ngữ cảnh phản thực, if + had + phân từ và would/could/might have + phân từ hình dung điều kiện và kết quả khác quá khứ.",
+    "when": "Dùng khi nhìn lại lựa chọn và khả năng đã bỏ lỡ.",
+    "examples": [
+      {
+        "en": "[COND|If I had known], [RES|I would have helped].",
+        "vi": "Nếu lúc đó biết, tôi đã giúp rồi."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "I did not know your number, so I did not call nêu thực tế. If I had known your number, I would have called tạo một quá khứ được hình dung khác, không đổi sự thật đã qua."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "branch",
+        "root": "Thực tế trong ví dụ: I did not know your number and did not call.",
+        "branches": [
+          {
+            "cond": "If I had known your number",
+            "result": "I would have called.",
+            "world": "past-unreal",
+            "note": "Người nói đang hình dung một lựa chọn khác trong quá khứ."
+          }
+        ]
+      },
+      "caption": "Điều kiện và kết quả cùng được nhìn trong quá khứ.",
+      "alt": "Điều kiện và kết quả cùng được nhìn trong quá khứ."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Phần",
+        "Khung",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "Điều kiện",
+          "had + phân từ",
+          "if I had left earlier"
+        ],
+        [
+          "Kết quả",
+          "would have + phân từ",
+          "I would have caught it"
+        ],
+        [
+          "Khả năng",
+          "could/might have + phân từ",
+          "I might have caught it"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Would have thường nêu kết quả trong giả định; might have nêu khả năng; could have có thể nêu khả năng hoặc năng lực. Không đổi chúng để đa dạng hình thức rồi bỏ khác biệt nghĩa."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Trong If I’d known, I’d have helped, ’d đầu là had, ’d sau là would. Đọc cấu trúc theo sau, không gán mọi ’d cùng một từ."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Mẫu này thường gợi điều kiện trái thực tế trong ngữ cảnh phản thực. Hình thức không tự chứng minh sự thật ở mọi lời suy luận; các cách dùng suy xét bằng chứng cần đọc ngữ cảnh."
+    },
+    {
+      "type": "p",
+      "vi": "Nếu kết quả là tình trạng bây giờ, dùng mẫu hỗn hợp phù hợp: If I had left earlier, I would be there now. Không ép mọi kết quả quá khứ điều kiện thành would have."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "past-unreal-conditionals-m1",
+      "wrong": "If I had knew, I would have helped.",
+      "right": "If I had known, I would have helped.",
+      "why": "Had cần known."
+    },
+    {
+      "id": "past-unreal-conditionals-m2",
+      "wrong": "If I had known, I would have went.",
+      "right": "If I had known, I would have gone.",
+      "why": "Have cần gone."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có sửa được quá khứ không?",
+      "a": "Không. Câu hình dung kết quả khác để nhìn lại hoặc suy xét."
+    },
+    {
+      "q": "’d luôn là would không?",
+      "a": "Không. Trong I’d known là had; trong I’d have helped là would."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "puc-01",
+      "prompt": "Chọn khung giả định khác quá khứ đã nêu.",
+      "explain": "Had left nhìn điều kiện trong quá khứ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "I left late and missed the train. If I ___ earlier, I would have caught it.",
+      "options": [
+        {
+          "t": "had left",
+          "ok": true,
+          "note": "Had + phân từ."
+        },
+        {
+          "t": "had leave",
+          "ok": false,
+          "note": "Had cần left.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "have left",
+          "ok": false,
+          "note": "Không theo mẫu quá khứ giả định yêu cầu.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "puc-02",
+      "prompt": "Nối phần với vai trò.",
+      "explain": "Ngữ cảnh xác nhận thực tế; if hình dung khác.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "I did not know the address.",
+          "b": "Thực tế quá khứ"
+        },
+        {
+          "a": "If I had known the address",
+          "b": "Điều kiện quá khứ giả định"
+        },
+        {
+          "a": "I would have visited",
+          "b": "Kết quả quá khứ giả định"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "puc-03",
+      "prompt": "Phân loại cấu trúc.",
+      "explain": "Các modal trong kết quả không có cùng sắc thái.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Had + phân từ",
+        "Would have + phân từ",
+        "Could have + phân từ"
+      ],
+      "items": [
+        {
+          "t": "if I had known",
+          "cat": "Had + phân từ"
+        },
+        {
+          "t": "I would have helped",
+          "cat": "Would have + phân từ"
+        },
+        {
+          "t": "I could have helped",
+          "cat": "Could have + phân từ"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "puc-04",
+      "prompt": "Điền phân từ của know và catch.",
+      "explain": "Known và caught là phân từ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "If I had {1} (know), I would have {2} (catch) the earlier bus.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "known"
+          ]
+        },
+        "2": {
+          "accept": [
+            "caught"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "puc-05",
+      "prompt": "Sửa phân từ sau would have.",
+      "explain": "Go có phân từ gone.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "If I had known, I would have"
+        },
+        {
+          "t": "went",
+          "bad": true,
+          "fix": [
+            "gone"
+          ],
+          "note": "Dùng gone sau have.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "with you."
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "puc-06",
+      "prompt": "Sắp xếp bắt đầu bằng If I had known,.",
+      "explain": "Would have helped là kết quả quá khứ giả định.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "If I had known,",
+        "I",
+        "would",
+        "have",
+        "helped"
+      ],
+      "accept": [
+        [
+          "If I had known,",
+          "I",
+          "would",
+          "have",
+          "helped"
+        ]
+      ],
+      "end": ".",
+      "level": "B2"
+    },
+    {
+      "id": "puc-07",
+      "prompt": "Nêu điều khác với quá khứ đã cho.",
+      "explain": "Thay việc không biết và không gọi bằng giả định đối lập.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "I did not know your number, so I did not call.",
+      "instruction": "Dùng if + had known với your number và kết quả would have + call. Đặt điều kiện đầu câu.",
+      "accept": [
+        "If I had known your number, I would have called"
+      ],
+      "model": "If I had known your number, I would have called",
+      "level": "B2",
+      "context": "Người nói xác nhận đã muốn gọi và sẽ gọi nếu có số; chính việc không biết số là lý do duy nhất ngăn cuộc gọi trong kịch bản này."
+    },
+    {
+      "id": "puc-08",
+      "prompt": "Nhìn lại một sự cố.",
+      "explain": "Tự đối chiếu, không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Nêu một sự việc đã qua trong tình huống tự đặt. Viết hai giả định quá khứ: một would have và một might/could have. Giải thích khác sắc thái.",
+      "model": [
+        "I forgot my ticket. If I had remembered it, I would have entered. If I had called the organiser, I might have found another solution."
+      ],
+      "checklist": [
+        "Điều kiện/kết quả thuộc quá khứ.",
+        "Dùng phân từ sau had/have.",
+        "Might/could không bị hiểu thành kết quả chắc chắn."
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "puc-09",
+      "prompt": "Điền phân từ của leave và take.",
+      "explain": "Left sau had; taken sau have.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "If we had {1} (leave) earlier, we would have {2} (take) the direct train.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "left"
+          ]
+        },
+        "2": {
+          "accept": [
+            "taken"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "puc-10",
+      "prompt": "Chuyển kết quả sang khả năng.",
+      "explain": "Might have giúp nói khả năng, không hứa kết quả chắc chắn.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "If I had known, I would have helped.",
+      "instruction": "Thay would bằng might, giữ từ khác.",
+      "accept": [
+        "If I had known, I might have helped"
+      ],
+      "model": "If I had known, I might have helped",
+      "level": "B2"
+    },
+    {
+      "id": "puc-11",
+      "prompt": "Chọn tất cả khung chuẩn.",
+      "explain": "Had và have trong các mẫu này cần phân từ.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "If I had known, I would have helped.",
+          "ok": true,
+          "note": "Khung chuẩn."
+        },
+        {
+          "t": "If I had known, I could have helped.",
+          "ok": true,
+          "note": "Nêu khả năng."
+        },
+        {
+          "t": "If I had knew, I would have helped.",
+          "ok": false,
+          "note": "Cần known.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "If I had known, I would have helps.",
+          "ok": false,
+          "note": "Cần helped.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "puc-12",
+      "prompt": "Giải nghĩa dạng rút gọn.",
+      "explain": "Từ theo sau giúp phân biệt had/would.",
+      "skill": "recognition",
+      "use": "check",
+      "type": "choice",
+      "stem": "If I’d known, I’d have helped.",
+      "options": [
+        {
+          "t": "’d đầu là had; ’d sau là would.",
+          "ok": true,
+          "note": "Had known; would have helped."
+        },
+        {
+          "t": "Cả hai luôn là had.",
+          "ok": false,
+          "note": "Không đúng khung kết quả.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Cả hai luôn là would.",
+          "ok": false,
+          "note": "Không đúng khung điều kiện.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

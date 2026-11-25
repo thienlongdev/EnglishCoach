@@ -1,0 +1,460 @@
+{
+  "schema": 1,
+  "slug": "relative-clauses-defining",
+  "version": 2,
+  "domain": "clauses",
+  "order": 50,
+  "kind": "grammar",
+  "title": {
+    "vi": "Mệnh đề quan hệ xác định",
+    "en": "Defining relative clauses"
+  },
+  "subtitle": {
+    "vi": "Xác định đúng người hoặc vật và biết khi nào bỏ từ nối",
+    "en": "Identify a referent and know when a relative word can be left out"
+  },
+  "aliases": [
+    "mệnh đề quan hệ xác định",
+    "defining relative clauses",
+    "relative-pronoun-omission",
+    "khi nào bỏ who that which",
+    "the book that I bought it"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Tạo mệnh đề quan hệ xác định.",
+    "Phân biệt vai trò chủ ngữ và tân ngữ của từ quan hệ.",
+    "Bỏ từ quan hệ đúng điều kiện."
+  ],
+  "prerequisites": [
+    "subordination"
+  ],
+  "related": [
+    {
+      "slug": "relative-clauses-non-defining",
+      "rel": "contrast"
+    },
+    {
+      "slug": "relative-with-prepositions",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Mệnh đề quan hệ xác định (defining relative clause) giúp giới hạn người hoặc vật đang nói đến. Trong mẫu viết thông thường, không ngăn phần này bằng dấu phẩy.",
+    "when": "Dùng khi cần chỉ rõ người hoặc vật nào.",
+    "examples": [
+      {
+        "en": "The file [REF|that] you sent is here.",
+        "vi": "Tệp bạn gửi đang ở đây."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Trong The woman who called is here, who called cho biết đang nói tới người phụ nữ nào. Who đứng ở vị trí chủ ngữ của called; không lặp she để chỉ cùng người trong mệnh đề đó."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Danh từ được bổ nghĩa",
+            "items": [
+              "The file"
+            ]
+          },
+          {
+            "label": "Mệnh đề quan hệ",
+            "items": [
+              "that you sent"
+            ]
+          }
+        ],
+        "sentence": "{0} {1} is here."
+      },
+      "caption": "That you sent giới hạn tệp đang nói tới.",
+      "alt": "That you sent giới hạn tệp đang nói tới."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Vai trò",
+        "Ví dụ",
+        "Có thể bỏ?"
+      ],
+      "rows": [
+        [
+          "Chủ ngữ",
+          "the file that disappeared",
+          "Không theo mẫu bỏ tân ngữ"
+        ],
+        [
+          "Tân ngữ",
+          "the file that you sent",
+          "Có: the file you sent"
+        ],
+        [
+          "Người làm chủ ngữ",
+          "the woman who called",
+          "Không theo mẫu bỏ tân ngữ"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Với người, who thường là lựa chọn tự nhiên; that cũng có trong mệnh đề xác định. Với vật, which và that đều chuẩn trong mệnh đề xác định. Một số quy ước biên tập thích that, nhưng không biến sở thích ấy thành luật which luôn sai."
+    },
+    {
+      "type": "p",
+      "vi": "Bỏ từ quan hệ (relative-pronoun omission): chỉ bỏ từ làm tân ngữ trong mẫu hữu hạn xác định cơ bản: the book that I bought → the book I bought. Không bỏ who trong the person who called rồi để the person called với cùng cách phân tích."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "The book that I bought it lặp tân ngữ. The book that I bought không thiếu it: vị trí tân ngữ đã liên hệ với the book."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Trong vị trí tân ngữ chỉ người, who thông dụng; whom trang trọng hơn và that có thể dùng trong mệnh đề xác định. Bỏ từ quan hệ cũng thường tự nhiên khi cấu trúc cho phép. Không dạy mọi whom là bắt buộc."
+    },
+    {
+      "type": "p",
+      "vi": "Mẫu có giới từ để cuối như the room that we worked in có thể bỏ that: the room we worked in. Sau giới từ đưa lên đầu như in which thì không bỏ which theo mẫu đó."
+    },
+    {
+      "type": "p",
+      "vi": "Rút gọn bằng phân từ là chủ đề khác: the people waiting outside không được tạo chỉ bằng bỏ who khỏi who are waiting rồi giữ are. Cần hiểu cấu trúc và nghĩa, xem reduced-relative-clauses."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "relative-clauses-defining-m1",
+      "wrong": "The file that I sent it is here.",
+      "right": "The file that I sent is here.",
+      "why": "Bỏ tân ngữ it lặp lại."
+    },
+    {
+      "id": "relative-clauses-defining-m2",
+      "wrong": "The woman which called is here.",
+      "right": "The woman who called is here.",
+      "why": "Who chỉ người trong mẫu này."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which có luôn sai trong mệnh đề xác định không?",
+      "a": "Không. Which xác định là chuẩn, dù một số phong cách biên tập thích that."
+    },
+    {
+      "q": "Có thể bỏ từ quan hệ khi nào?",
+      "a": "Trong mẫu cơ bản đang học, khi nó làm tân ngữ của mệnh đề xác định. Không bỏ chủ ngữ hoặc từ sau giới từ đưa lên đầu theo cùng cách."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "rcd-01",
+      "prompt": "Chọn câu xác định đúng người đã gọi.",
+      "explain": "Who làm chủ ngữ của called; không lặp she.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "Tôi muốn nói người phụ nữ đã gọi.",
+      "options": [
+        {
+          "t": "The woman who called is here.",
+          "ok": true,
+          "note": "Who là chủ ngữ trong mệnh đề quan hệ."
+        },
+        {
+          "t": "The woman who she called is here.",
+          "ok": false,
+          "note": "Câu có thể đúng với who làm tân ngữ và she làm chủ ngữ: người phụ nữ mà cô ấy đã gọi. Nghĩa đó khác người phụ nữ đã gọi trong đề.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "The woman which called is here.",
+          "ok": false,
+          "note": "Which không chỉ người ở mẫu này.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rcd-02",
+      "prompt": "Nối từ quan hệ với chức năng trong câu.",
+      "explain": "Cần xét chỗ trống ngữ pháp trong mệnh đề.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "the file that disappeared",
+          "b": "that làm chủ ngữ của disappeared"
+        },
+        {
+          "a": "the file that you sent",
+          "b": "that làm tân ngữ của sent"
+        },
+        {
+          "a": "the colleague whose desk is near mine",
+          "b": "whose nêu quan hệ sở hữu"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rcd-03",
+      "prompt": "Phân loại có thể bỏ từ quan hệ trong các mẫu hữu hạn này hay không.",
+      "explain": "Có thể bỏ tân ngữ ở mệnh đề xác định; không bỏ chủ ngữ theo cùng cách.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Có thể bỏ từ quan hệ",
+        "Không bỏ chủ ngữ theo mẫu này"
+      ],
+      "items": [
+        {
+          "t": "the book that I bought",
+          "cat": "Có thể bỏ từ quan hệ"
+        },
+        {
+          "t": "the book that fell",
+          "cat": "Không bỏ chủ ngữ theo mẫu này"
+        },
+        {
+          "t": "the person who called",
+          "cat": "Không bỏ chủ ngữ theo mẫu này"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rcd-04",
+      "prompt": "Điền một từ quan hệ phù hợp; không bỏ trống.",
+      "explain": "Which hoặc that chỉ vật; who hoặc that chỉ người ở vị trí chủ ngữ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "The key {1} opens this door is missing. The person {2} called left a message.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "which",
+            "that"
+          ]
+        },
+        "2": {
+          "accept": [
+            "who",
+            "that"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "rcd-05",
+      "prompt": "Bỏ đại từ tân ngữ lặp thừa.",
+      "explain": "That đã nối chỗ tân ngữ của sent; không lặp it.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "The file that you sent"
+        },
+        {
+          "t": "it is",
+          "bad": true,
+          "fix": [
+            "is"
+          ],
+          "note": "Bỏ it lặp lại the file.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "damaged."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rcd-06",
+      "prompt": "Sắp xếp cụm danh từ, bắt đầu bằng the report; không thêm từ.",
+      "explain": "The report I wrote có mệnh đề quan hệ bỏ tân ngữ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "the report",
+        "I",
+        "wrote"
+      ],
+      "accept": [
+        [
+          "the report",
+          "I",
+          "wrote"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "rcd-07",
+      "prompt": "Bỏ từ quan hệ khi nó làm tân ngữ.",
+      "explain": "Mệnh đề xác định cho phép bỏ that ở câu này.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "The book that I ordered has arrived.",
+      "instruction": "Bỏ that; giữ mọi từ còn lại.",
+      "accept": [
+        "The book I ordered has arrived"
+      ],
+      "model": "The book I ordered has arrived",
+      "level": "B1"
+    },
+    {
+      "id": "rcd-08",
+      "prompt": "Viết hai lời nhờ xác định đúng vật hoặc người.",
+      "explain": "Tự kiểm tra vai trò; bài mở không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết một câu có từ quan hệ làm chủ ngữ và một câu có từ quan hệ làm tân ngữ. Viết lại câu thứ hai bằng cách bỏ từ quan hệ.",
+      "model": [
+        "Please bring the bag that is on the chair. The file that you sent is useful. The file you sent is useful."
+      ],
+      "checklist": [
+        "Không lặp đại từ cho cùng một vai trò.",
+        "Chỉ bỏ từ quan hệ tân ngữ theo mẫu đang học.",
+        "Không tự thêm dấu phẩy biến nghĩa thành bổ sung."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rcd-09",
+      "prompt": "Điền một từ quan hệ, không dùng mẫu bỏ từ.",
+      "explain": "That/which đều dùng được cho vật trong mệnh đề xác định; who/that cho người làm chủ ngữ.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "The bus {1} stops here goes to the airport. The driver {2} helped us was kind.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "that",
+            "which"
+          ]
+        },
+        "2": {
+          "accept": [
+            "who",
+            "that"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "rcd-10",
+      "prompt": "Gộp thành câu dùng mệnh đề xác định.",
+      "explain": "The shop được nhắc lại bằng chỗ chủ ngữ quan hệ, không thêm it.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "The shop sells maps. It opens at nine.",
+      "instruction": "Viết The shop + mệnh đề với that hoặc which nêu sells maps + opens at nine; không dùng dấu phẩy.",
+      "accept": [
+        "The shop that sells maps opens at nine",
+        "The shop which sells maps opens at nine"
+      ],
+      "model": "The shop that sells maps opens at nine",
+      "level": "B1"
+    },
+    {
+      "id": "rcd-11",
+      "prompt": "Chọn tất cả câu chuẩn.",
+      "explain": "Which xác định là chuẩn; bỏ tân ngữ cũng chuẩn.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "The file which I sent is correct.",
+          "ok": true,
+          "note": "Which có thể dùng trong mệnh đề xác định."
+        },
+        {
+          "t": "The file I sent is correct.",
+          "ok": true,
+          "note": "Có thể bỏ từ quan hệ tân ngữ."
+        },
+        {
+          "t": "The file that I sent it is correct.",
+          "ok": false,
+          "note": "Lặp tân ngữ it.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "The woman which called is here.",
+          "ok": false,
+          "note": "Which không chỉ người trong mẫu này.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rcd-12",
+      "prompt": "Chọn điều kiện bỏ từ quan hệ ở mẫu hữu hạn cơ bản.",
+      "explain": "Không biến mẹo “bỏ who/which và be” của cấu trúc khác thành luật cho mọi mệnh đề.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "the person who called / the person who I called",
+      "options": [
+        {
+          "t": "Có thể bỏ who ở cụm thứ hai vì làm tân ngữ; không bỏ ở cụm thứ nhất theo cùng mẫu.",
+          "ok": true,
+          "note": "Vai trò chủ ngữ/tân ngữ quyết định."
+        },
+        {
+          "t": "Có thể bỏ cả hai chỉ vì là mệnh đề xác định.",
+          "ok": false,
+          "note": "Không bỏ chủ ngữ như vậy.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Không bao giờ bỏ được từ quan hệ.",
+          "ok": false,
+          "note": "Mẫu tân ngữ xác định cho phép bỏ.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

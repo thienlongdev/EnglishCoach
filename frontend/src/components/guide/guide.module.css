@@ -1,0 +1,435 @@
+/*
+ * Echo Guide (10 §BL): dim layer, liquid opening, Living Echo Glass card, Echo, the panel, the offer. Tokens follow the explicit `.dark` class (10 §Y); no backdrop blur (10 §AF), so
+ * the card has its own stable fill on any wallpaper, Living World or 3D scene. Below the journey's passage (2147483000), above every page dialog.
+ */
+.tokens {
+  --g-ink: #0b1f47;
+  --g-soft: #4d5e80;
+  --g-fill: #f8fcff;
+  --g-fill-2: #e9f4ff;
+  --g-line: rgb(120 170 225 / 0.42);
+  --g-shine: rgb(255 255 255 / 0.95);
+  --g-shadow: 0 22px 48px -18px rgb(9 32 92 / 0.5), 0 4px 14px -6px rgb(9 32 92 / 0.28);
+  --g-well: rgb(22 86 184 / 0.08);
+  --g-well-hover: rgb(22 86 184 / 0.15);
+  --g-accent: #1656b8;
+  --g-veil: 4 16 58;
+}
+:global(.dark) .tokens {
+  --g-ink: #eef6ff;
+  --g-soft: #a9bcd9;
+  --g-fill: #0e1c3f;
+  --g-fill-2: #142a57;
+  --g-line: rgb(125 190 255 / 0.3);
+  --g-shine: rgb(170 220 255 / 0.2);
+  --g-shadow: 0 24px 56px -18px rgb(0 0 0 / 0.72), 0 4px 14px -6px rgb(0 0 0 / 0.5);
+  --g-well: rgb(150 205 255 / 0.1);
+  --g-well-hover: rgb(150 205 255 / 0.18);
+  --g-accent: #8fd0ff;
+  --g-veil: 1 6 26;
+}
+
+.layer {
+  position: fixed;
+  inset: 0;
+  z-index: 2147481000;
+  pointer-events: none;
+  --guide-dim: 0;
+}
+.veil {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+.dim {
+  fill: rgb(var(--g-veil) / calc(0.62 * var(--guide-dim)));
+  pointer-events: visiblePainted;
+}
+.blocker {
+  fill: transparent;
+  pointer-events: all;
+}
+.layer[data-acting] .blocker,
+.layer[data-closing] .blocker,
+.layer[data-closing] .dim {
+  pointer-events: none;
+}
+.glow {
+  fill: none;
+  stroke: #9fe6ff;
+  stroke-width: 9;
+  stroke-opacity: calc(0.3 * var(--guide-dim));
+  pointer-events: none;
+}
+.rim {
+  fill: none;
+  stroke-width: 1.8;
+  stroke-opacity: var(--guide-dim);
+  pointer-events: none;
+  stroke-linejoin: round;
+}
+/* A step the learner must do: the rim breathes, so the eye finds the control. */
+.layer[data-acting] .glow {
+  animation: guideBreathe 1.9s ease-in-out infinite;
+}
+@keyframes guideBreathe {
+  0%, 100% { stroke-width: 7; }
+  50% { stroke-width: 15; }
+}
+
+.card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: min(21.5rem, calc(100vw - 24px));
+  padding: 0.85rem 1rem 0.9rem;
+  border-radius: 1.45rem 1.45rem 1.45rem 1.65rem;
+  color: var(--g-ink);
+  background:
+    radial-gradient(120% 70% at 12% 0%, var(--g-shine), transparent 62%),
+    linear-gradient(170deg, var(--g-fill), var(--g-fill-2));
+  border: 1px solid var(--g-line);
+  box-shadow: var(--g-shadow), inset 0 1px 0 var(--g-shine);
+  pointer-events: auto;
+  outline: none;
+  will-change: transform;
+  animation: guideRise 280ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.layer[data-closing] .card {
+  animation: guideSink 220ms ease-in both;
+  pointer-events: none;
+}
+@keyframes guideRise {
+  from { opacity: 0; scale: 0.94; }
+  to { opacity: 1; scale: 1; }
+}
+@keyframes guideSink {
+  to { opacity: 0; scale: 0.96; }
+}
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  min-height: 1.75rem;
+}
+.dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+}
+.dots i {
+  display: block;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 999px;
+  background: var(--g-well-hover);
+  transition: width 240ms cubic-bezier(0.2, 0.8, 0.2, 1), background-color 200ms;
+}
+.dots i[data-past] { background: var(--g-accent); opacity: 0.55; }
+.dots i[data-on] { width: 1.05rem; background: var(--g-accent); }
+.words {
+  animation: guideWords 240ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+@keyframes guideWords {
+  from { opacity: 0; transform: translate3d(0, 5px, 0); }
+  to { opacity: 1; transform: none; }
+}
+.title {
+  margin: 0.2rem 0 0.2rem;
+  font-size: 1.02rem;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+}
+.body {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--g-soft);
+}
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.7rem;
+}
+.primary,
+.ghost,
+.quiet {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  min-height: 2.25rem;
+  padding: 0 0.95rem;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 0;
+  transition: filter 140ms, background-color 140ms, transform 140ms;
+}
+.primary {
+  color: #fff;
+  background: linear-gradient(135deg, #0d2a5e 0%, #1656b8 62%, #1d7fd8 100%);
+  box-shadow: 0 8px 18px -8px rgb(22 86 184 / 0.8), inset 0 1px 0 rgb(255 255 255 / 0.25);
+}
+.primary:hover { filter: brightness(1.1); }
+.primary:active { transform: scale(0.97); }
+.ghost {
+  padding-inline: 0.6rem 0.8rem;
+  color: var(--g-soft);
+  background: transparent;
+}
+.ghost:hover { background: var(--g-well); color: var(--g-ink); }
+.quiet {
+  color: var(--g-accent);
+  background: var(--g-well);
+}
+.quiet:hover { background: var(--g-well-hover); }
+.primary:focus-visible,
+.ghost:focus-visible,
+.quiet:focus-visible,
+.iconButton:focus-visible,
+.row:focus-visible {
+  outline: 2px solid var(--g-accent);
+  outline-offset: 2px;
+}
+.iconButton {
+  display: grid;
+  place-items: center;
+  width: 1.85rem;
+  height: 1.85rem;
+  flex: none;
+  border: 0;
+  border-radius: 999px;
+  color: var(--g-soft);
+  background: transparent;
+  cursor: pointer;
+}
+.iconButton:hover { background: var(--g-well); color: var(--g-ink); }
+
+/* Echo: position (the stage), lean and stretch (the stage), facing (CSS), float (CSS), pose (the sheet). One transform owner per layer. */
+.echo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 84px;
+  height: 84px;
+  pointer-events: none;
+  will-change: transform;
+}
+.echoTilt { width: 100%; height: 100%; }
+.echoFace {
+  width: 100%;
+  height: 100%;
+  transition: transform 300ms cubic-bezier(0.3, 1.3, 0.5, 1);
+}
+.echo[data-face='right'] .echoFace { transform: scaleX(-1); }
+.echoFloat {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  animation: guideFloat 3.6s ease-in-out infinite;
+}
+@keyframes guideFloat {
+  0%, 100% { transform: translate3d(0, -2px, 0); }
+  50% { transform: translate3d(0, 3px, 0) rotate(-1.4deg); }
+}
+.echoSprite {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: none;
+  user-select: none;
+  filter: drop-shadow(0 8px 12px rgb(5 24 80 / 0.35));
+}
+.layer[data-closing] .echo {
+  animation: guideEchoFade 200ms ease 380ms both;
+}
+@keyframes guideEchoFade {
+  to { opacity: 0; }
+}
+
+.bubbles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.bubbles i {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background: radial-gradient(circle at 34% 30%, rgb(255 255 255 / 0.95), rgb(190 235 255 / 0.28) 46%, rgb(160 225 255 / 0.5) 100%);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.5);
+}
+
+/* The offer beside the companion */
+.offer {
+  position: fixed;
+  z-index: 2147480500;
+  width: min(19.5rem, calc(100vw - 24px));
+  padding: 0.75rem 0.9rem 0.8rem;
+  border-radius: 1.3rem;
+  color: var(--g-ink);
+  background:
+    radial-gradient(120% 70% at 12% 0%, var(--g-shine), transparent 62%),
+    linear-gradient(170deg, var(--g-fill), var(--g-fill-2));
+  border: 1px solid var(--g-line);
+  box-shadow: var(--g-shadow), inset 0 1px 0 var(--g-shine);
+  animation: guideRise 300ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.offer .iconButton {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+}
+.offer .title { padding-right: 1.6rem; }
+
+/* The panel */
+.panelScrim {
+  position: fixed;
+  inset: 0;
+  z-index: 2147480800;
+  display: flex;
+  justify-content: flex-end;
+  background: rgb(var(--g-veil) / 0.36);
+  animation: guideFade 180ms ease both;
+}
+@keyframes guideFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+  width: min(25.5rem, 100vw);
+  height: 100%;
+  color: var(--g-ink);
+  background: linear-gradient(175deg, var(--g-fill), var(--g-fill-2));
+  border-left: 1px solid var(--g-line);
+  box-shadow: var(--g-shadow);
+  animation: guidePanelIn 300ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+@keyframes guidePanelIn {
+  from { transform: translate3d(28px, 0, 0); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+.panelHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 0.6rem 1.15rem;
+}
+.panelTitle {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.panelBody {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 0.7rem 0.8rem;
+}
+.panelLabel {
+  margin: 0.8rem 0 0.25rem;
+  padding-inline: 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--g-soft);
+}
+.rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.5rem 0.45rem;
+  text-align: left;
+  border: 0;
+  border-radius: 0.9rem;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+.row:hover { background: var(--g-well); }
+.rowIcon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 1.65rem;
+  height: 1.65rem;
+  margin-top: 0.08rem;
+  border-radius: 999px;
+  color: var(--g-accent);
+  background: var(--g-well);
+}
+.rowText {
+  flex: 1;
+  min-width: 0;
+}
+.rowText strong {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.rowText small {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--g-soft);
+}
+.rowState {
+  flex: none;
+  margin-top: 0.15rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--g-soft);
+}
+.panelSwitch {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.15rem calc(0.8rem + env(safe-area-inset-bottom));
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-top: 1px solid var(--g-line);
+  cursor: pointer;
+}
+.panelSwitch input {
+  width: 1.05rem;
+  height: 1.05rem;
+  flex: none;
+  accent-color: var(--g-accent);
+}
+
+/* The way in: same recipe as the top bar's other tray buttons (WorkspaceShell), this file only owns its glyph */
+@media (max-width: 639.98px) {
+  .card { border-radius: 1.3rem; padding: 0.75rem 0.9rem 0.8rem; }
+  .echo { width: 66px; height: 66px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card, .offer, .panel, .panelScrim, .words, .echoFloat, .layer[data-acting] .glow, .layer[data-closing] .card, .layer[data-closing] .echo { animation: none; }
+  .echoFace, .dots i { transition: none; }
+}
+@media (forced-colors: active) {
+  .card, .offer, .panel { border: 2px solid CanvasText; background: Canvas; color: CanvasText; }
+  .dim { fill: rgb(0 0 0 / 0.5); forced-color-adjust: none; }
+}

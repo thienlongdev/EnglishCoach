@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s173-some-but-not-all",
+  "title": "Vườn xanh được bao nhiêu?",
+  "summary": "Ảnh chụp từ xa chỉ thấy một nửa khay đã nảy. Nếu báo “tất cả đều sống”, tàu sẽ ngừng gửi hàng dự phòng.",
+  "level": "B2",
+  "topics": [
+    "hedging",
+    "negation-scope"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hà",
+      "role": "Người chăm kho hạt"
+    },
+    {
+      "id": "b",
+      "name": "Pax",
+      "role": "Người lái tàu"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Nửa khay còn lại ở phía khuất tấm pin. Ống kính chưa bao giờ nhìn tới đó. Hà đã đếm tám lá trong phần có ảnh.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Eight green dots. That's what we know.",
+          "vi": "Tám chấm xanh. Đó là điều ta biết."
+        },
+        {
+          "who": "b",
+          "en": "How much of a promise can eight dots make?",
+          "vi": "Tám chấm ấy hứa được điều gì?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn lời báo phù hợp với giới hạn quan sát.",
+        "options": [
+          {
+            "ok": false,
+            "t": "The entire crop must be thriving.",
+            "note": "Entire mở ra toàn bộ khay. Must be thriving mạnh hơn nhiều so với tám dấu quan sát được.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "At least part of the crop appears to be growing.",
+            "note": "At least part chỉ phần tối thiểu được quan sát. Appears to be growing giữ mức xác nhận từ hình ảnh.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Pax điều máy ảnh sang phía khuất. Ba hạt chưa nảy, một hạt bị kẹt ở đường nước. Họ vẫn cần hàng dự phòng và đủ thời gian giải cứu hạt mắc.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Those eight leaves bought time for the others.",
+          "vi": "Tám chiếc lá đã kiếm thêm thời gian cho những hạt còn lại."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Tám chấm xanh trở thành đầu mối cứu phần chưa nhìn thấy.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Hà đặt bàn tay che nửa ảnh và hỏi Pax đếm phần kia. Anh nhận ra mình không thể, giữ nguyên đơn dự phòng và tự xoay ống kính.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We left a space for good news.",
+          "vi": "Ta đã chừa chỗ cho tin vui."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Họ đặt chữ Chưa thấy cạnh ô ảnh trống. Khi chồi cuối cùng nhú lên, chính ô trống ấy đón tin vui trước.",
+      "end": true
+    }
+  ]
+}

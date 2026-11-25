@@ -1,0 +1,503 @@
+{
+  "schema": 1,
+  "slug": "whose-where-when",
+  "version": 2,
+  "domain": "clauses",
+  "order": 70,
+  "kind": "grammar",
+  "title": {
+    "vi": "Whose, where, when, why trong mệnh đề quan hệ",
+    "en": "Whose, where, when, why"
+  },
+  "subtitle": {
+    "vi": "Sở hữu, nơi chốn, thời gian và lý do",
+    "en": "Possession, place, time and reason"
+  },
+  "aliases": [
+    "whose where when why",
+    "mệnh đề quan hệ sở hữu",
+    "reason why",
+    "whose và who’s",
+    "café where we visited"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Dùng whose trước danh từ sở hữu.",
+    "Chọn where/when/why theo vai trò trong mệnh đề.",
+    "Không nhầm tiền ngữ địa điểm với tân ngữ của visit."
+  ],
+  "prerequisites": [
+    "relative-clauses-defining"
+  ],
+  "related": [
+    {
+      "slug": "relative-clauses-defining",
+      "rel": "more"
+    },
+    {
+      "slug": "relative-with-prepositions",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Whose nối quan hệ sở hữu; where thường thay quan hệ nơi chốn, when thời gian, why lý do sau reason.",
+    "when": "Xét phần còn thiếu trong mệnh đề, không chỉ tên loại danh từ phía trước.",
+    "examples": [
+      {
+        "en": "The author [REF|whose] book won is here.",
+        "vi": "Tác giả có cuốn sách đoạt giải đang ở đây."
+      },
+      {
+        "en": "This is the café [REF|where] we met.",
+        "vi": "Đây là quán cà phê nơi chúng tôi gặp nhau."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Whose đứng trước danh từ: the woman whose bike was stolen. Whose bike làm chủ ngữ của was stolen. Whose không chỉ dùng cho người: a company whose offices are abroad cũng chuẩn."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Người được nói tới",
+            "items": [
+              "The author"
+            ]
+          },
+          {
+            "label": "Danh từ sở hữu trong mệnh đề",
+            "items": [
+              "whose book"
+            ]
+          },
+          {
+            "label": "Thông tin về danh từ đó",
+            "items": [
+              "won a prize"
+            ]
+          }
+        ],
+        "sentence": "{0} {1} {2} is here."
+      },
+      "caption": "Whose book là cuốn sách của tác giả, không lặp her book.",
+      "alt": "Whose book là cuốn sách của tác giả, không lặp her book."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Từ",
+        "Quan hệ",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "whose",
+          "sở hữu",
+          "the author whose book won"
+        ],
+        [
+          "where",
+          "địa điểm",
+          "the café where we met"
+        ],
+        [
+          "when",
+          "thời gian",
+          "the day when we met"
+        ],
+        [
+          "why",
+          "lý do sau reason",
+          "the reason why we left"
+        ]
+      ]
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "the café where we met",
+          "vi": "quán cà phê nơi chúng tôi gặp nhau"
+        },
+        {
+          "en": "the café that we visited",
+          "vi": "quán cà phê chúng tôi đã ghé thăm"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Meet ở câu we met at the café có quan hệ nơi chốn nên dùng where. Visit trong we visited the café lấy café làm tân ngữ, nên dùng which/that hoặc bỏ trong mệnh đề xác định. Không chọn where chỉ vì café là một nơi."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Who’s là rút gọn của who is hoặc who has; không phải whose sở hữu. Kiểm tra bằng cách mở dạng rút gọn trước khi chọn."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Where có thể tương ứng in/at which; when có thể tương ứng on/in which tùy danh từ thời gian. Không có một giới từ duy nhất thay được mọi where hoặc when."
+    },
+    {
+      "type": "p",
+      "vi": "Với reason trong mệnh đề xác định, why, that hoặc mẫu bỏ có thể cùng dùng: the reason I left. Với thời gian cũng có các mẫu như the day we met. Không áp dụng bỏ từ cho mọi cấu trúc có where."
+    },
+    {
+      "type": "p",
+      "vi": "Trong mệnh đề bổ sung, whose và where cũng có thể dùng: Mai, whose office is upstairs, called. Giữ dấu phẩy và cấu trúc của mệnh đề không xác định, không tự bỏ từ nối."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "whose-where-when-m1",
+      "wrong": "The woman who’s bike was stolen called.",
+      "right": "The woman whose bike was stolen called.",
+      "why": "Whose chỉ sở hữu; who’s không có chức năng đó."
+    },
+    {
+      "id": "whose-where-when-m2",
+      "wrong": "This is the café where we visited.",
+      "right": "This is the café that we visited.",
+      "why": "Nếu café là nơi được ghé thăm và là tân ngữ của visit, dùng that/which hoặc bỏ từ quan hệ. Visit cũng có cách dùng nội động từ như trò chuyện; where có thể phù hợp nghĩa khác đó nên không cấm mọi where we visited."
+    },
+    {
+      "id": "whose-where-when-m3",
+      "wrong": "The author whose her book won is here.",
+      "right": "The author whose book won is here.",
+      "why": "Whose đã biểu đạt sở hữu, không thêm her."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Whose có dùng cho vật không?",
+      "a": "Có. A company whose offices are abroad là mẫu chuẩn."
+    },
+    {
+      "q": "Gặp địa điểm có luôn dùng where không?",
+      "a": "Không. Phải xem vai trò: where we met nhưng which we visited."
+    },
+    {
+      "q": "Reason why có sai vì dư không?",
+      "a": "Không. Nó là mẫu chuẩn; reason that và reason không từ nối cũng có thể dùng trong mẫu xác định."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "www-01",
+      "prompt": "Chọn từ quan hệ chỉ sở hữu.",
+      "explain": "Whose đứng trước danh từ; who’s là dạng rút gọn who is/has.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "The colleague ___ desk is near mine can help.",
+      "options": [
+        {
+          "t": "whose",
+          "ok": true,
+          "note": "Whose desk = bàn của đồng nghiệp ấy."
+        },
+        {
+          "t": "who’s",
+          "ok": false,
+          "note": "Who is/has desk không tạo mẫu sở hữu này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "who",
+          "ok": false,
+          "note": "Who không trực tiếp thay cho từ sở hữu trước desk.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "www-02",
+      "prompt": "Nối câu với quan hệ từ nối diễn tả.",
+      "explain": "Không chỉ nhìn danh từ đứng trước; xác định vai trò trong mệnh đề.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "the woman whose bike was stolen",
+          "b": "Sở hữu: xe của người phụ nữ"
+        },
+        {
+          "a": "the café where we met",
+          "b": "Nơi cuộc gặp diễn ra"
+        },
+        {
+          "a": "the day when we met",
+          "b": "Thời điểm cuộc gặp"
+        },
+        {
+          "a": "the reason why we left",
+          "b": "Lý do rời đi"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "www-03",
+      "prompt": "Chọn chức năng của phần quan hệ.",
+      "explain": "Whose dùng được với vật; where nói địa điểm trong mệnh đề.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Sở hữu",
+        "Địa điểm",
+        "Thời gian"
+      ],
+      "items": [
+        {
+          "t": "a company whose offices are overseas",
+          "cat": "Sở hữu"
+        },
+        {
+          "t": "the room where we worked",
+          "cat": "Địa điểm"
+        },
+        {
+          "t": "the year when we graduated",
+          "cat": "Thời gian"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "www-04",
+      "prompt": "Điền một từ quan hệ chỉ sở hữu hoặc nơi chốn.",
+      "explain": "Whose trước danh từ; where thay quan hệ at/in a place.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "The engineer {1} design won is here. This is the café {2} we first met.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "whose"
+          ]
+        },
+        "2": {
+          "accept": [
+            "where"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "www-05",
+      "prompt": "Sửa whose, giữ nghĩa sở hữu.",
+      "explain": "Who’s là rút gọn, không phải sở hữu.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "The author"
+        },
+        {
+          "t": "who’s",
+          "bad": true,
+          "fix": [
+            "whose"
+          ],
+          "note": "Dùng whose book.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "book I read is speaking tonight."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "www-06",
+      "prompt": "Sắp xếp cụm bắt đầu bằng the café.",
+      "explain": "Where đã diễn tả nơi diễn ra cuộc gặp.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "the café",
+        "where",
+        "we",
+        "met"
+      ],
+      "accept": [
+        [
+          "the café",
+          "where",
+          "we",
+          "met"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "www-07",
+      "prompt": "Gộp hai ý bằng whose.",
+      "explain": "Whose book nối tác giả với cuốn sách; không lặp her.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "The author is here. Her book won a prize.",
+      "instruction": "Viết The author + mệnh đề whose book won a prize + is here, không dùng dấu phẩy.",
+      "accept": [
+        "The author whose book won a prize is here"
+      ],
+      "model": "The author whose book won a prize is here",
+      "level": "B1"
+    },
+    {
+      "id": "www-08",
+      "prompt": "Miêu tả người, nơi và một ký ức.",
+      "explain": "Tự kiểm tra nghĩa và vai trò, không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết bốn cụm có mệnh đề quan hệ với whose, where, when và why. Dùng mỗi cụm trong một câu có nghĩa.",
+      "model": [
+        "The colleague whose desk is near mine helped. I revisited the café where we met. I remember the day when we met. I understand the reason why you left."
+      ],
+      "checklist": [
+        "Whose có danh từ sở hữu theo sau.",
+        "Where không chỉ đóng vai tân ngữ trực tiếp của visit.",
+        "When/why có tiền ngữ thời gian/lý do phù hợp."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "www-09",
+      "prompt": "Điền một từ quan hệ cho mỗi chỗ trống.",
+      "explain": "Whose dùng với công ty; where chỉ nơi; why chỉ lý do.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "A company {1} products we use is hiring. This is the room {2} we work. Tell me the reason {3} you left.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "whose"
+          ]
+        },
+        "2": {
+          "accept": [
+            "where"
+          ]
+        },
+        "3": {
+          "accept": [
+            "why",
+            "that"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "www-10",
+      "prompt": "Đổi cụm in which sang một từ quan hệ chỉ nơi.",
+      "explain": "Where thay cho quan hệ in the room; không thêm in cuối.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "This is the room in which we worked.",
+      "instruction": "Thay in which bằng where; giữ các từ còn lại.",
+      "accept": [
+        "This is the room where we worked"
+      ],
+      "model": "This is the room where we worked",
+      "level": "B1"
+    },
+    {
+      "id": "www-11",
+      "prompt": "Chọn tất cả câu chuẩn.",
+      "explain": "Whose có thể chỉ vật; where cần vai trò địa điểm, không tự thay tân ngữ của visit.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "The company whose logo you designed is expanding.",
+          "ok": true,
+          "note": "Whose dùng với company."
+        },
+        {
+          "t": "This is the café where we met.",
+          "ok": true,
+          "note": "Where chỉ nơi gặp."
+        },
+        {
+          "t": "This is the café where we visited.",
+          "ok": false,
+          "note": "Không giữ nghĩa đích visit the café; where có thể đi với visit theo nghĩa nội động từ khác, nhưng không thực hiện vai tân ngữ của nghĩa đang yêu cầu.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "The woman who’s car broke down called.",
+          "ok": false,
+          "note": "Cần whose car.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1",
+      "context": "Ở câu có visited, ý đích là ghé thăm chính quán cà phê, với café làm tân ngữ; không phải trò chuyện tại quán theo cách dùng visit nội động từ."
+    },
+    {
+      "id": "www-12",
+      "prompt": "Chọn nhận xét đúng về reason.",
+      "explain": "Trong mẫu xác định cơ bản, có thể dùng why, that hoặc không từ nối.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "the reason why I left / the reason that I left / the reason I left",
+      "options": [
+        {
+          "t": "Cả ba có thể chuẩn trong mẫu này.",
+          "ok": true,
+          "note": "Không buộc mọi reason phải theo why."
+        },
+        {
+          "t": "Chỉ why mới có thể đúng.",
+          "ok": false,
+          "note": "That và mẫu bỏ cũng có.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Reason why luôn sai vì dư nghĩa.",
+          "ok": false,
+          "note": "Đó là một mẫu chuẩn.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

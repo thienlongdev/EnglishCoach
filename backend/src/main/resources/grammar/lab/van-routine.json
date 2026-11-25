@@ -1,0 +1,41 @@
+{
+  "id": "van-routine",
+  "title": "Ai lái xe giao bánh?",
+  "summary": "Tiệm bánh ghi lịch lái xe hằng sáng. Đổi người lái và dự đoán khi nào drive có thêm s.",
+  "level": "A1",
+  "topics": [
+    "present-simple",
+    "subject-verb-agreement-basics"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Người lái",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Tôi"
+        },
+        {
+          "id": "v2",
+          "label": "Chị gái tôi"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I drive the van every morning.",
+      "vi": "Sáng nào tôi cũng lái xe tải nhỏ.",
+      "note": "I dùng drive dù người lái chỉ có một. / The base form goes with I.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "My sister drives the van every morning.",
+      "vi": "Sáng nào chị tôi cũng lái xe tải nhỏ.",
+      "note": "Chị của người nói là ngôi thứ ba số ít nên động từ thành drives. / A third-person singular subject takes drives.",
+      "verdict": "ok"
+    }
+  }
+}

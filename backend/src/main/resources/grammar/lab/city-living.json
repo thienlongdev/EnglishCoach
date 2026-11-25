@@ -1,0 +1,40 @@
+{
+  "id": "city-living",
+  "title": "At an address hay in a city?",
+  "summary": "Trên phiếu đăng ký, người ta hỏi nơi ở. Đổi độ chi tiết của câu trả lời và dự đoán giới từ trước địa điểm.",
+  "level": "A2",
+  "topics": [
+    "prepositions-place"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Mức chi tiết",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Thành phố"
+        },
+        {
+          "id": "v2",
+          "label": "Địa chỉ"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I live in Hanoi.",
+      "vi": "Tôi sống ở Hà Nội.",
+      "note": "In đặt nơi ở bên trong phạm vi thành phố. / In treats the city as an area.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "I live at 12 Rose Street.",
+      "vi": "Tôi sống tại số 12 phố Rose.",
+      "note": "At đi với địa chỉ có số nhà để chỉ một điểm cụ thể. / At identifies a particular address.",
+      "verdict": "ok"
+    }
+  }
+}

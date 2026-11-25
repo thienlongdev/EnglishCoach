@@ -1,0 +1,41 @@
+{
+  "id": "exhibit-note",
+  "title": "Sau claim, that đưa ra nội dung hay chỉ ra lời nào?",
+  "summary": "Bạn phân loại ý kiến gửi đến phòng tranh. Sau the claim that, thử đọc riêng mệnh đề sau that. Nó có đủ chủ ngữ và tân ngữ chưa?",
+  "level": "B2",
+  "topics": [
+    "noun-clauses-that",
+    "relative-clauses-defining"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Quan hệ với claim",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Nội dung lời khẳng định"
+        },
+        {
+          "id": "v2",
+          "label": "Xác định lời nào"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "We examined the claim that the prints were copies.",
+      "vi": "Chúng tôi xem xét lời khẳng định rằng các bản in là bản sao.",
+      "note": "The prints were copies đã là một mệnh đề đủ vai. That dẫn nội dung của lời khẳng định và không làm tân ngữ cho động từ. / The clause gives the content of the claim.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "We examined the claim that the curator disputed.",
+      "vi": "Chúng tôi xem xét lời khẳng định mà giám tuyển phản bác.",
+      "note": "Sau the curator disputed còn vị trí tân ngữ được hiểu là the claim. Có thể bỏ that ở mệnh đề quan hệ này. / The relative clause identifies the claim by its role as object of disputed.",
+      "verdict": "ok"
+    }
+  }
+}

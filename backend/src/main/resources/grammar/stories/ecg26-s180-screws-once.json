@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s180-screws-once",
+  "title": "Những con vít chỉ được siết một lần",
+  "summary": "Lio không mở được cửa chớp phòng áp mái. Sương nhớ ông nội từng dùng một tay đã mở được nó.",
+  "level": "B2",
+  "topics": [
+    "be-used-to-get-used-to"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sương",
+      "role": "Người thừa kế ngôi nhà"
+    },
+    {
+      "id": "b",
+      "name": "Lio",
+      "role": "Người đóng cửa chớp"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Giờ cửa đã có chốt mới, hành trình ngắn hơn. Ông nội đã quen chốt cũ, còn Lio mới làm việc ngày đầu với chốt mới.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Grandpa never looked at his hand.",
+          "vi": "Ông chưa bao giờ nhìn tay mình."
+        },
+        {
+          "who": "b",
+          "en": "I keep turning after the latch has caught.",
+          "vi": "Tôi cứ xoay tiếp cả khi then đã gài vào."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Sương giải thích điều Lio chưa quen, không khẳng định một thói quen đã chấm dứt.",
+        "options": [
+          {
+            "ok": true,
+            "t": "You aren't used to turning it only halfway yet.",
+            "note": "Be used to + -ing nói mức độ quen. Yet cho thấy vẫn đang học mức xoay nửa vòng.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "You didn't use to turn it at all.",
+            "note": "Didn't use to turn phủ định một thói quen quá khứ. Có thể Lio từng xoay kiểu chốt khác, nên câu không diễn tả chính xác khó khăn hiện tại.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Lio tập bằng chiếc chìa gỗ cho đến khi ngón tay tự dừng. Cửa mở, bên trong có hình bàn tay ông vẽ ở đúng điểm dừng cũ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Two hands learned two different doors.",
+          "vi": "Hai bàn tay đã học hai cánh cửa khác nhau."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Họ vẽ thêm một dấu ngón tay nhỏ cho chốt mới và giữ nguyên hình cũ kế bên.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Lio đưa Sương xem vết chai do xoay những cửa cũ. Cô cầm tay anh, chỉ đoạn cuối riêng của cửa này.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I knew how to turn; I needed to learn when to stop.",
+          "vi": "Tôi biết xoay; điều cần học là lúc nào dừng."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Khi cả hai buông tay đúng nửa vòng, hạt bụi đầu tiên trong hai mươi năm bay thẳng ra nền nắng.",
+      "end": true
+    }
+  ]
+}

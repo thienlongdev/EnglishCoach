@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s003-two-red-socks",
+  "title": "Hai chiếc tất không thành đôi",
+  "summary": "Bo cần hai chiếc tất đỏ cho buổi diễn. Cậu chỉ tìm được một chiếc rất dài.",
+  "level": "A1",
+  "topics": [
+    "demonstratives",
+    "regular-plurals"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "An",
+      "role": "Anh trai"
+    },
+    {
+      "id": "b",
+      "name": "Bo",
+      "role": "Em trai"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "An cầm hai chiếc tất ngắn trong tay. Trên dây phơi ở cuối sân treo một chiếc tất đỏ dài bằng cánh tay.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One red sock for two feet?",
+          "vi": "Một chiếc tất đỏ cho hai bàn chân à?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "I need the small socks. Where are they?",
+          "vi": "Em cần đôi tất nhỏ. Chúng đâu rồi?"
+        }
+      ],
+      "choice": {
+        "prompt": "An muốn đưa cho Bo hai chiếc ngay trong tay. Chọn lời nói đi với cử chỉ đó.",
+        "options": [
+          {
+            "t": "That is for you.",
+            "note": "That is chỉ một vật ở xa. Trong cảnh này Bo sẽ tưởng An đang chỉ chiếc tất dài.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "These are for you.",
+            "note": "These chỉ nhiều vật ở gần An. Are đi cùng chủ ngữ số nhiều.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Bo xỏ cả hai chiếc. Vừa đúng lúc tiếng nhạc ngoài sân vang lên.",
+      "say": [
+        {
+          "who": "b",
+          "en": "My feet are ready!",
+          "vi": "Hai chân em sẵn sàng rồi!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Bo chạy ra dây phơi rồi cười. An đưa hai chiếc tất ngắn ra tận tay em.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That one is for my arm!",
+          "vi": "Chiếc kia dành cho cánh tay em!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Bo bước ra sân với đôi tất ngắn dưới chân và chiếc tất dài trên tay. Con rối hình rắn cúi đầu chào khán giả.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Three socks, one show!",
+          "vi": "Ba chiếc tất, một buổi diễn!"
+        }
+      ],
+      "end": true
+    }
+  ]
+}

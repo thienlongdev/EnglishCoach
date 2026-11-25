@@ -1,0 +1,986 @@
+{
+  "schema": 1,
+  "slug": "past-continuous",
+  "version": 2,
+  "domain": "tense-aspect",
+  "order": 60,
+  "kind": "grammar",
+  "title": {
+    "vi": "Quá khứ tiếp diễn",
+    "en": "Past continuous"
+  },
+  "subtitle": {
+    "vi": "Đứng giữa một việc đang diễn ra trong quá khứ",
+    "en": "Standing in the middle of something that was happening"
+  },
+  "aliases": [
+    "past continuous",
+    "past progressive",
+    "quá khứ tiếp diễn",
+    "was were ing",
+    "was doing",
+    "while when",
+    "when i was",
+    "đang làm lúc đó",
+    "i was wondering",
+    "interrupted action",
+    "was watching when"
+  ],
+  "level": "A2",
+  "levelBasis": "editorial",
+  "uses": [
+    {
+      "level": "A2",
+      "vi": "Nói việc đang diễn ra tại một mốc quá khứ: At nine I was studying."
+    },
+    {
+      "level": "B1",
+      "vi": "Làm nền cho một sự kiện (I was cooking when the lights went out) và nói hai việc song song với while."
+    },
+    {
+      "level": "B2",
+      "vi": "Always + -ing trong quá khứ, I was wondering để nói lịch sự, và tương lai trong quá khứ."
+    }
+  ],
+  "objectives": [
+    "Dùng quá khứ tiếp diễn cho việc đang diễn ra tại một mốc quá khứ và cho bối cảnh của câu chuyện",
+    "Lập câu khẳng định, phủ định và câu hỏi với was/were + V-ing",
+    "Kết hợp với quá khứ đơn: một việc đang diễn ra bị một sự kiện chen vào",
+    "Giải thích vì sao I was writing a letter không cho biết lá thư xong chưa, còn I wrote a letter thường là xong"
+  ],
+  "prerequisites": [
+    "past-simple"
+  ],
+  "related": [
+    {
+      "slug": "past-simple",
+      "rel": "contrast"
+    },
+    {
+      "slug": "past-simple-vs-continuous",
+      "rel": "more"
+    },
+    {
+      "slug": "present-continuous",
+      "rel": "more"
+    },
+    {
+      "slug": "narrative-tenses",
+      "rel": "more"
+    },
+    {
+      "slug": "future-in-the-past",
+      "rel": "more"
+    },
+    {
+      "slug": "tense-aspect-system",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": "Speaking Part 2 hay yêu cầu kể một sự kiện đã qua. Quá khứ tiếp diễn cho bối cảnh (It was raining and we were waiting...) làm câu chuyện rõ và sinh động hơn.",
+    "toeic": "Part 5 hay có when hoặc while trong câu có hai việc ở quá khứ. Hãy chọn thì theo việc nào là nền, việc nào chen vào."
+  },
+  "quick": {
+    "what": "Quá khứ tiếp diễn nhìn một việc từ bên trong, tại một mốc trong quá khứ: việc đó đã bắt đầu và chưa xong. Nó thường là bối cảnh, còn quá khứ đơn là sự kiện.",
+    "when": "At nine I was studying. I was cooking when the lights went out. While Mai was washing up, Nam was drying. Dạng: was/were + V-ing.",
+    "examples": [
+      {
+        "en": "At nine last night I [AUX|was] [V|studying].",
+        "vi": "Chín giờ tối qua tôi đang học."
+      },
+      {
+        "en": "I [AUX|was] [V|cooking] when the lights [V|went] out.",
+        "vi": "Tôi đang nấu cơm thì điện tắt."
+      },
+      {
+        "en": "[AUX|Were] you [V|sleeping] when I called?",
+        "vi": "Lúc tôi gọi, bạn đang ngủ à?"
+      }
+    ],
+    "remember": "Trong mẫu kể chuyện thường gặp, tiếp diễn dựng bối cảnh và quá khứ đơn nêu sự kiện. Đây là một cách tổ chức câu chuyện, không phải chức năng duy nhất của hai dạng."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Quá khứ đơn kể việc đã xảy ra. Quá khứ tiếp diễn đưa người nghe vào giữa một việc, tại một mốc trong quá khứ, khi việc đó chưa xong. Vì vậy nó rất hợp để tả bối cảnh."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "timeline",
+        "now": 80,
+        "sentence": "At nine o'clock I was studying.",
+        "events": [
+          {
+            "kind": "span",
+            "from": 40,
+            "to": 70,
+            "label": "Đang học (bắt đầu trước 9 giờ, chưa xong lúc 9 giờ)",
+            "role": "main"
+          },
+          {
+            "kind": "point",
+            "at": 55,
+            "label": "9 giờ",
+            "role": "ref"
+          }
+        ]
+      },
+      "caption": "Tại mốc 9 giờ, việc học đang ở giữa chừng. Câu không nói bạn bắt đầu học từ lúc nào, và học xong lúc nào.",
+      "alt": "Trục thời gian có một đoạn ở quá khứ ghi đang học và một điểm mốc 9 giờ nằm giữa đoạn đó."
+    },
+    {
+      "type": "h",
+      "vi": "Dạng của câu"
+    },
+    {
+      "type": "formula",
+      "lines": [
+        {
+          "label": "Khẳng định",
+          "parts": [
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "was / were",
+              "role": "AUX"
+            },
+            {
+              "t": "V-ing",
+              "role": "V"
+            }
+          ]
+        },
+        {
+          "label": "Phủ định",
+          "parts": [
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "was / were",
+              "role": "AUX"
+            },
+            {
+              "t": "not",
+              "role": "NEG"
+            },
+            {
+              "t": "V-ing",
+              "role": "V"
+            }
+          ]
+        },
+        {
+          "label": "Câu hỏi",
+          "parts": [
+            {
+              "t": "Was / Were",
+              "role": "AUX"
+            },
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "V-ing",
+              "role": "V"
+            },
+            {
+              "t": "?"
+            }
+          ]
+        }
+      ],
+      "note": "Cách viết đuôi -ing giống bài Hiện tại tiếp diễn: making, running, lying."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "matrix",
+        "rows": [
+          "Khẳng định",
+          "Phủ định",
+          "Câu hỏi"
+        ],
+        "cols": [
+          "I / he / she / it",
+          "you / we / they"
+        ],
+        "cells": [
+          [
+            {
+              "t": "I was working",
+              "note": "Cũng: She was working"
+            },
+            {
+              "t": "You were working",
+              "note": "Cũng: They were working"
+            }
+          ],
+          [
+            {
+              "t": "I wasn't working",
+              "note": "Cũng: He wasn't working"
+            },
+            {
+              "t": "You weren't working",
+              "note": "Cũng: We weren't working"
+            }
+          ],
+          [
+            {
+              "t": "Was I working?",
+              "note": "Cũng: Was it working?"
+            },
+            {
+              "t": "Were you working?",
+              "note": "Cũng: Were they working?"
+            }
+          ]
+        ]
+      },
+      "caption": "Chỉ có hai dạng của be: was và were.",
+      "alt": "Bảng ba hàng hai cột. Hàng là khẳng định, phủ định và câu hỏi; cột là nhóm I, he, she, it và nhóm you, we, they. Ví dụ ô đầu là I was working, ô cuối hàng ba là Were you working?"
+    },
+    {
+      "type": "h",
+      "vi": "Làm nền cho một sự kiện"
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "timeline",
+        "now": 80,
+        "sentence": "I was cooking when the lights went out.",
+        "events": [
+          {
+            "kind": "open",
+            "from": 30,
+            "to": 55,
+            "label": "Đang nấu (có thể còn nấu tiếp)",
+            "role": "main"
+          },
+          {
+            "kind": "point",
+            "at": 50,
+            "label": "Điện tắt",
+            "role": "ref"
+          }
+        ]
+      },
+      "caption": "Việc nấu bắt đầu trước, và đang diễn ra khi điện tắt. Điện tắt là sự kiện chen vào giữa. Câu không cho biết sau đó bạn có nấu tiếp hay không.",
+      "alt": "Trục thời gian có một đoạn dài ở quá khứ ghi đang nấu, và một điểm ghi điện tắt nằm trong đoạn đó."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "I [AUX|was] [V|cooking] when the lights [V|went] out.",
+          "vi": "Tôi đang nấu cơm thì điện tắt.",
+          "note": "Nấu là nền, điện tắt là sự kiện."
+        },
+        {
+          "en": "She [AUX|was] [V|walking] home when she [V|found] a wallet.",
+          "vi": "Cô ấy đang đi bộ về nhà thì nhặt được một chiếc ví.",
+          "note": "Đi bộ là nền, nhặt được ví là sự kiện."
+        },
+        {
+          "en": "It [AUX|was] [V|raining] when we [V|left] the house.",
+          "vi": "Lúc chúng tôi ra khỏi nhà thì trời đang mưa.",
+          "note": "Mưa là nền, rời nhà là sự kiện."
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "labelA": "Quá khứ đơn",
+      "labelB": "Quá khứ tiếp diễn",
+      "items": [
+        {
+          "a": {
+            "en": "When Hung walked in, Lan [V|made] tea.",
+            "vi": "Khi Hùng bước vào, Lan pha trà."
+          },
+          "b": {
+            "en": "When Hung walked in, Lan [AUX|was] [V|making] tea.",
+            "vi": "Khi Hùng bước vào, Lan đang pha trà."
+          },
+          "diff": "Câu đơn thường được hiểu là Lan pha trà khi hoặc sau khi Hùng vào. Câu tiếp diễn cho thấy việc pha trà đã diễn ra tại lúc Hùng vào; đừng suy mọi cặp quá khứ đơn đều là hai việc tách biệt nối tiếp."
+        },
+        {
+          "a": {
+            "en": "Last night I [V|wrote] a long email to my aunt.",
+            "vi": "Tối qua tôi viết một email dài cho dì."
+          },
+          "b": {
+            "en": "Last night I [AUX|was] [V|writing] a long email to my aunt.",
+            "vi": "Tối qua tôi đang viết một email dài cho dì."
+          },
+          "diff": "Bên trái thường được hiểu là email đã viết xong. Bên phải cho biết bạn đang viết, nhưng không nói đã xong hay chưa."
+        }
+      ]
+    },
+    {
+      "type": "try",
+      "exercise": "pacon-01"
+    },
+    {
+      "type": "h",
+      "vi": "Hai việc song song"
+    },
+    {
+      "type": "p",
+      "vi": "Hai việc cùng diễn ra trong một khoảng thời gian thường được nối bằng while, và cả hai vế thường dùng quá khứ tiếp diễn. Điều này không bắt buộc. Quá khứ đơn cũng đúng, như While Mai washed the dishes, her brother watched TV, chỉ là ít nhấn rằng hai việc đang diễn ra cùng nhau."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Từ nối",
+        "Thường đi với",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "while",
+          "việc đang kéo dài, hai việc song song",
+          "While I was waiting, I read the news."
+        ],
+        [
+          "when",
+          "dùng được với cả việc dài và việc ngắn",
+          "I was waiting when he arrived."
+        ],
+        [
+          "as",
+          "hai việc xảy ra đồng thời",
+          "As I was leaving, the phone rang."
+        ]
+      ],
+      "caption": "Ba từ nối thường dùng trong câu kể chuyện."
+    },
+    {
+      "type": "h",
+      "vi": "Bối cảnh của một câu chuyện"
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "It [AUX|was] [V|raining], and people [AUX|were] [V|hurrying] to work. Suddenly a bus [V|stopped], and a woman [V|jumped] out.",
+          "vi": "Trời đang mưa, mọi người đang vội đi làm. Bỗng một chiếc xe buýt dừng lại, và một người phụ nữ nhảy xuống.",
+          "note": "Hai việc đầu là phông nền, hai việc sau là sự kiện.",
+          "tag": "written"
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Động từ trạng thái vẫn thường dùng quá khứ đơn: I knew the answer, không phải I was knowing the answer."
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Ở quá khứ, \"đang\" khớp khá sát với was/were + V-ing: \"Lúc đó tôi đang ngủ\" là I was sleeping. Lỗi hay gặp là bỏ was/were (They watching a film), hoặc thêm -ed thay vì -ing (I was watched TV), hoặc dùng tiếp diễn cho cả sự kiện thoáng qua. Việc đang diễn ra bị chen vào dùng quá khứ tiếp diễn, còn sự kiện chen vào dùng quá khứ đơn."
+    },
+    {
+      "type": "try",
+      "exercise": "pacon-09"
+    }
+  ],
+  "deep": [
+    {
+      "type": "h",
+      "vi": "Việc chưa chắc đã xong"
+    },
+    {
+      "type": "p",
+      "vi": "Với những việc có điểm kết thúc rõ, như cross the road, write a letter, build a house, I was crossing the road không cho biết bạn đã qua đường chưa. I crossed the road thường được hiểu là đã qua. Với những việc không có điểm kết thúc rõ, như walk hay swim, hai dạng khác nhau ít hơn."
+    },
+    {
+      "type": "h",
+      "vi": "Dạng quá khứ để nói lịch sự"
+    },
+    {
+      "type": "p",
+      "vi": "Dạng quá khứ tiếp diễn có thể làm lời nói bớt trực tiếp mà không nói về quá khứ. Người nói chọn nó để giữ khoảng cách, cho người nghe dễ từ chối."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "I [AUX|was] [V|wondering] if you could lend me your charger.",
+          "vi": "Không biết bạn có thể cho tôi mượn sạc không.",
+          "note": "Một lời đề nghị lịch sự ở hiện tại."
+        },
+        {
+          "en": "[AUX|Were] you [V|looking] for something in particular?",
+          "vi": "Anh chị đang tìm món gì cụ thể không ạ?",
+          "note": "Lời hỏi lịch sự của nhân viên cửa hàng."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Always + -ing trong quá khứ"
+    },
+    {
+      "type": "p",
+      "vi": "Giống ở hiện tại, always, constantly hay forever với tiếp diễn thêm thái độ của người nói, thường là bực mình hoặc ngạc nhiên."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "My roommate [AUX|was] always [V|borrowing] my charger.",
+          "vi": "Bạn cùng phòng tôi cứ mượn sạc của tôi mãi.",
+          "note": "Thái độ bực mình. My roommate always borrowed my charger là câu trung tính hơn."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Tương lai trong quá khứ"
+    },
+    {
+      "type": "p",
+      "vi": "Quá khứ tiếp diễn còn dùng để nói về kế hoạch đã sắp xếp từ một mốc trong quá khứ: I was leaving the next day, so I had to pack that night. Bài Tương lai trong quá khứ nói kỹ hơn."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "While cũng đi được với quá khứ đơn khi nói về một trạng thái hoặc khoảng thời gian dài: While I lived in Hue, I learned to cook. Đây là câu bình thường."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "pacon-was-past",
+      "wrong": "I was watched TV when you called.",
+      "right": "I was watching TV when you called.",
+      "why": "Sau was/were là dạng -ing, không phải -ed."
+    },
+    {
+      "id": "pacon-no-be",
+      "wrong": "They watching a film at eight.",
+      "right": "They were watching a film at eight.",
+      "why": "Quá khứ tiếp diễn cần was hoặc were trước V-ing.",
+      "vn": "Tiếng Việt nói \"Họ đang xem phim\" mà không cần động từ be, nên người học dễ bỏ was/were."
+    },
+    {
+      "id": "pacon-event-ing",
+      "wrong": "She was walking home when she was finding a wallet.",
+      "right": "She was walking home when she found a wallet.",
+      "why": "Nếu ý đích là tình cờ thấy ví một lần khi đang đi, found diễn đạt rõ sự kiện đó. Đây là chỉnh theo nghĩa đích, không phải cấm find ở mọi cấu trúc tiếp diễn."
+    },
+    {
+      "id": "pacon-stative",
+      "wrong": "I was knowing the answer, but I was too shy to speak.",
+      "right": "I knew the answer, but I was too shy to speak.",
+      "why": "Know là trạng thái, thường dùng quá khứ đơn."
+    },
+    {
+      "id": "pacon-were-was",
+      "wrong": "We was waiting at the station.",
+      "right": "We were waiting at the station.",
+      "why": "We, you, they đi với were. Was chỉ đi với I, he, she, it."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Quá khứ tiếp diễn có dùng với yesterday được không?",
+      "a": "Được, khi bạn nói về việc đang diễn ra tại một mốc hoặc kéo dài cả một khoảng thời gian: Yesterday at six I was cooking. I was working all day yesterday."
+    },
+    {
+      "q": "Tại sao I was writing a letter không cho biết tôi viết xong chưa?",
+      "a": "Vì dạng tiếp diễn chỉ đặt người nghe giữa việc viết, không nhìn tới điểm kết thúc. Muốn nói đã xong, dùng quá khứ đơn: I wrote a letter."
+    },
+    {
+      "q": "I was wondering if you could help có phải kể chuyện quá khứ không?",
+      "a": "Trong tình huống nhờ giúp hiện tại, I was wondering có thể là lời đề nghị lịch sự. Trong một câu chuyện quá khứ, chính cụm đó cũng có thể kể việc từng tự hỏi; ngữ cảnh quyết định."
+    },
+    {
+      "q": "Hai việc cùng lúc có bắt buộc dùng tiếp diễn không?",
+      "a": "Không. While Mai washed the dishes, her brother watched TV cũng đúng. Dạng tiếp diễn nhấn rằng hai việc cùng đang diễn ra."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "pacon-01",
+      "type": "choice",
+      "level": "A2",
+      "use": "both",
+      "skill": "use",
+      "prompt": "Chọn dạng dựng bối cảnh: việc sửa xe đang diễn ra trước và trong lúc bạn gọi.",
+      "stem": "When you called me, I ___ my motorbike, so I couldn't answer.",
+      "options": [
+        {
+          "t": "was repairing",
+          "ok": true,
+          "note": "Việc sửa xe đang diễn ra khi bạn gọi: was + V-ing."
+        },
+        {
+          "t": "repaired",
+          "note": "Quá khứ đơn nói hai việc nối tiếp. Câu này cần việc sửa xe đang diễn ra lúc bạn gọi.",
+          "tag": "past-simple-for-background"
+        },
+        {
+          "t": "am repairing",
+          "note": "Am repairing là hiện tại, không hợp với câu kể chuyện đã qua.",
+          "tag": "tense-time-marker"
+        }
+      ],
+      "explain": "Việc sửa xe là bối cảnh đã diễn ra từ trước, và cuộc gọi là sự kiện chen vào. Bối cảnh dùng quá khứ tiếp diễn."
+    },
+    {
+      "id": "pacon-02",
+      "type": "choice",
+      "level": "A2",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Câu nào cho biết Lan đã bắt đầu pha trà trước khi Hùng bước vào?",
+      "stem": "Về Lan và Hùng",
+      "options": [
+        {
+          "t": "When Hung walked in, Lan was making tea.",
+          "ok": true,
+          "note": "Lan đã đang pha trà lúc Hùng bước vào."
+        },
+        {
+          "t": "When Hung walked in, Lan made tea.",
+          "note": "Câu này thường gợi việc pha trà khi hoặc sau khi Hùng vào, không diễn đạt rõ việc đã đang làm dở như yêu cầu.",
+          "tag": "past-simple-for-background"
+        },
+        {
+          "t": "When Hung walked in, Lan is making tea.",
+          "note": "Is making là hiện tại, không hợp với câu kể chuyện đã qua.",
+          "tag": "tense-time-marker"
+        }
+      ],
+      "explain": "Was making tea đặt hoạt động đang diễn ra tại lúc Hùng vào. Made tea nhìn hoạt động như sự việc trọn, không tự là quy tắc mọi quá khứ đơn luôn xảy ra sau."
+    },
+    {
+      "id": "pacon-03",
+      "type": "cloze",
+      "level": "A2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Dựng bối cảnh bằng quá khứ tiếp diễn của walk; dùng quá khứ đơn của see cho một lần tình cờ nhìn thấy bạn cũ.",
+      "stem": "I {1} (walk) along the river when I {2} (see) an old friend.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "was walking"
+          ],
+          "known": [
+            {
+              "t": "walked",
+              "verdict": "awkward",
+              "note": "Walked có thể đúng với góc nhìn khác; nhiệm vụ này yêu cầu dựng bối cảnh đang đi bằng tiếp diễn.",
+              "tag": "past-simple-for-background"
+            }
+          ]
+        },
+        "2": {
+          "accept": [
+            "saw"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "was seeing",
+              "verdict": "wrong",
+              "note": "Đề yêu cầu một lần nhìn thấy và dạng quá khứ đơn của see. Was seeing có các cách hiểu khác, không phải cấu trúc đích ở đây.",
+              "tag": "continuous-for-event"
+            }
+          ]
+        }
+      },
+      "explain": "Đi dọc bờ sông là nền đang diễn ra, và nhìn thấy bạn cũ là sự kiện chen vào."
+    },
+    {
+      "id": "pacon-04",
+      "type": "cloze",
+      "level": "A2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Điền dạng đúng của động từ trong ngoặc.",
+      "stem": "While Mai {1} (wash) the dishes, her brother {2} (watch) TV.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "was washing"
+          ],
+          "known": [
+            {
+              "t": "washed",
+              "verdict": "acceptable",
+              "note": "Cũng đúng. Dạng tiếp diễn nhấn rằng hai việc đang diễn ra cùng lúc."
+            }
+          ]
+        },
+        "2": {
+          "accept": [
+            "was watching"
+          ],
+          "known": [
+            {
+              "t": "watched",
+              "verdict": "acceptable",
+              "note": "Cũng đúng. Dạng tiếp diễn nhấn rằng hai việc đang diễn ra cùng lúc."
+            }
+          ]
+        }
+      },
+      "explain": "Với while và hai việc song song, hai vế thường cùng dùng tiếp diễn. Quá khứ đơn cũng nói được ý đó nhưng ít nhấn việc đang diễn ra."
+    },
+    {
+      "id": "pacon-05",
+      "type": "order",
+      "level": "A2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sắp xếp câu hỏi bắt đầu What; đặt at midnight ở cuối.",
+      "tokens": [
+        "What",
+        "were",
+        "you",
+        "doing",
+        "at",
+        "midnight"
+      ],
+      "end": "?",
+      "accept": [
+        [
+          "What",
+          "were",
+          "you",
+          "doing",
+          "at",
+          "midnight"
+        ]
+      ],
+      "explain": "Từ để hỏi, rồi were, rồi chủ ngữ, rồi V-ing, rồi phần còn lại."
+    },
+    {
+      "id": "pacon-06",
+      "type": "error",
+      "level": "A2",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        {
+          "t": "They"
+        },
+        {
+          "t": "was playing",
+          "bad": true,
+          "fix": [
+            "were playing"
+          ],
+          "note": "They đi với were.",
+          "tag": "was-were"
+        },
+        {
+          "t": "cards when the storm started."
+        }
+      ],
+      "explain": "Đổi thành They were playing cards when the storm started. Be phải khớp chủ ngữ."
+    },
+    {
+      "id": "pacon-07",
+      "type": "error",
+      "level": "A2",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Sửa dạng từ để có cụm quá khứ tiếp diễn đúng cấu trúc; giữ was.",
+      "segments": [
+        {
+          "t": "She was "
+        },
+        {
+          "t": "find",
+          "bad": true,
+          "fix": [
+            "finding"
+          ],
+          "note": "Sau was trong cấu trúc tiếp diễn cần finding.",
+          "tag": "continuous-no-ing"
+        },
+        {
+          "t": " it difficult to read the map in the dark."
+        }
+      ],
+      "explain": "Was finding it difficult là quá khứ tiếp diễn tự nhiên để tả trải nghiệm khó đọc. Đây là lỗi hình thức find sau was, không phải một luật cấm find ở tiếp diễn."
+    },
+    {
+      "id": "pacon-08",
+      "type": "error",
+      "level": "A2",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "noError": true,
+      "segments": [
+        {
+          "t": "Everyone"
+        },
+        {
+          "t": "was talking"
+        },
+        {
+          "t": "at once, so I didn't hear the announcement."
+        }
+      ],
+      "explain": "Câu đúng. Everyone đi với was. Mọi người đang nói cùng lúc là nền, và việc không nghe được thông báo là kết quả, nên dùng quá khứ đơn."
+    },
+    {
+      "id": "pacon-09",
+      "type": "transform",
+      "level": "A2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lại câu để cho biết lúc 10 giờ Lan đang học dở.",
+      "source": "At ten o'clock last night Lan studied for her exam.",
+      "instruction": "Dùng quá khứ tiếp diễn.",
+      "accept": [
+        "At ten o'clock last night Lan was studying for her exam",
+        "At ten o'clock last night, Lan was studying for her exam",
+        "Lan was studying for her exam at ten o'clock last night",
+        "At 10 o'clock last night Lan was studying for her exam",
+        "At 10 o'clock last night, Lan was studying for her exam",
+        "Lan was studying for her exam at 10 o'clock last night",
+        "At ten last night Lan was studying for her exam",
+        "At ten last night, Lan was studying for her exam",
+        "Lan was studying for her exam at ten last night"
+      ],
+      "model": "At ten o'clock last night Lan was studying for her exam.",
+      "known": [
+        {
+          "t": "Lan studying for her exam at ten o'clock last night",
+          "verdict": "wrong",
+          "note": "Còn thiếu was trước studying.",
+          "tag": "continuous-no-be"
+        },
+        {
+          "t": "At ten o'clock last night Lan is studying for her exam",
+          "verdict": "wrong",
+          "note": "Câu nói về tối qua, nên was, không phải is.",
+          "tag": "tense-time-marker"
+        }
+      ],
+      "explain": "Quá khứ tiếp diễn đặt Lan giữa việc học tại mốc 10 giờ. Quá khứ đơn có thể hiểu là Lan bắt đầu học lúc 10 giờ."
+    },
+    {
+      "id": "pacon-10",
+      "type": "transform",
+      "level": "A2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lại câu thành câu hỏi yes/no, giữ nguyên quá khứ tiếp diễn.",
+      "source": "It was raining when you left.",
+      "instruction": "Đảo was lên trước chủ ngữ.",
+      "accept": [
+        "Was it raining when you left"
+      ],
+      "model": "Was it raining when you left?",
+      "known": [
+        {
+          "t": "Did it raining when you left",
+          "verdict": "wrong",
+          "note": "Câu có was thì không dùng did.",
+          "tag": "continuous-do-aux"
+        },
+        {
+          "t": "It was raining when you left",
+          "verdict": "wrong",
+          "note": "Câu có trật tự khẳng định có thể dùng để xác nhận theo ngữ điệu; bài yêu cầu đảo was nên phải dùng Was it raining when you left?",
+          "tag": "question-word-order"
+        }
+      ],
+      "explain": "Câu hỏi yes/no với was/were: đảo be lên trước chủ ngữ."
+    },
+    {
+      "id": "pacon-11",
+      "type": "match",
+      "level": "A2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Ghép theo cách hiểu được minh họa; ở câu cuối, giả sử người nói đang phàn nàn về việc mất chìa khóa.",
+      "pairs": [
+        {
+          "a": "While I was cooking, he was setting the table.",
+          "b": "Hai việc diễn ra song song"
+        },
+        {
+          "a": "I was cooking when he arrived.",
+          "b": "Một việc đang diễn ra bị việc khác chen vào"
+        },
+        {
+          "a": "It was raining and the streets were empty.",
+          "b": "Mô tả bối cảnh của câu chuyện"
+        },
+        {
+          "a": "She was always losing her keys.",
+          "b": "Một thói quen cũ gây bực mình"
+        }
+      ],
+      "explain": "Cả bốn câu đều dùng was/were + V-ing nhưng làm bốn việc khác nhau: song song, chen vào, bối cảnh và thái độ."
+    },
+    {
+      "id": "pacon-12",
+      "type": "classify",
+      "level": "A2",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Đoạn kể: trời mưa, mọi người vội đi làm, một xe buýt dừng, một phụ nữ nhảy xuống, tiếng còi vang lên. Ý nào thường là bối cảnh, ý nào là sự kiện?",
+      "cats": [
+        "Bối cảnh (thường dùng quá khứ tiếp diễn)",
+        "Sự kiện chính (thường dùng quá khứ đơn)"
+      ],
+      "items": [
+        {
+          "t": "Trời đang mưa lúc đó",
+          "cat": "Bối cảnh (thường dùng quá khứ tiếp diễn)"
+        },
+        {
+          "t": "Chiếc xe buýt dừng lại",
+          "cat": "Sự kiện chính (thường dùng quá khứ đơn)"
+        },
+        {
+          "t": "Mọi người đang vội đến chỗ làm",
+          "cat": "Bối cảnh (thường dùng quá khứ tiếp diễn)"
+        },
+        {
+          "t": "Một người phụ nữ nhảy xuống xe",
+          "cat": "Sự kiện chính (thường dùng quá khứ đơn)"
+        },
+        {
+          "t": "Tiếng còi vang lên",
+          "cat": "Sự kiện chính (thường dùng quá khứ đơn)"
+        }
+      ],
+      "explain": "Bối cảnh là điều đang diễn ra khi câu chuyện bắt đầu. Sự kiện là điều xảy ra, thúc câu chuyện tiến lên."
+    },
+    {
+      "id": "pacon-13",
+      "type": "multi",
+      "level": "A2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn tất cả câu đúng trong tiếng Anh chuẩn.",
+      "stem": "Quá khứ tiếp diễn",
+      "options": [
+        {
+          "t": "At that time I was living in Hue.",
+          "ok": true,
+          "note": "Một tình trạng tạm thời tại một mốc quá khứ: was + V-ing."
+        },
+        {
+          "t": "I was knowing him well.",
+          "note": "Know là trạng thái, thường dùng I knew him well.",
+          "tag": "stative-progressive"
+        },
+        {
+          "t": "While we were driving, it started to rain.",
+          "ok": true,
+          "note": "Việc đang diễn ra và sự kiện chen vào."
+        },
+        {
+          "t": "What were you doing at six?",
+          "ok": true,
+          "note": "Từ để hỏi, rồi were, rồi chủ ngữ, rồi V-ing."
+        },
+        {
+          "t": "He was go home when it rained.",
+          "note": "Sau was phải là V-ing: going.",
+          "tag": "continuous-no-ing"
+        }
+      ],
+      "explain": "Ba câu đúng có đủ was/were và V-ing, hoặc dùng nó cho một tình trạng tạm thời. Hai câu sai dùng -ing với trạng thái, hoặc thiếu -ing."
+    },
+    {
+      "id": "pacon-14",
+      "type": "choice",
+      "level": "B1",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Câu nào thường được hiểu là lá thư đã viết xong?",
+      "stem": "Về lá thư gửi dì",
+      "options": [
+        {
+          "t": "Last night I wrote a letter to my aunt.",
+          "ok": true,
+          "note": "Quá khứ đơn nói việc như một khối, thường hiểu là đã xong."
+        },
+        {
+          "t": "Last night I was writing a letter to my aunt.",
+          "note": "Tiếp diễn đặt bạn giữa việc viết, không nói đã xong hay chưa.",
+          "tag": "aspect-open-vs-complete"
+        },
+        {
+          "t": "At nine last night I was writing a letter to my aunt.",
+          "note": "Tiếp diễn tại mốc 9 giờ: lúc đó thư đang viết dở, không nói xong chưa.",
+          "tag": "aspect-open-vs-complete"
+        }
+      ],
+      "explain": "Quá khứ đơn nhìn cả việc, nên thường là việc đã hoàn tất. Quá khứ tiếp diễn chỉ cho thấy việc đang diễn ra."
+    },
+    {
+      "id": "pacon-15",
+      "type": "open",
+      "level": "A2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Viết bốn câu tả một cảnh ở quán cà phê hoặc ga tàu lúc 7 giờ sáng hôm qua. Hai câu tả bối cảnh bằng quá khứ tiếp diễn, hai câu kể sự kiện bằng quá khứ đơn.",
+      "model": [
+        "At seven yesterday morning I was waiting for the train.",
+        "It was raining, and people were hurrying under their umbrellas.",
+        "Suddenly the doors opened.",
+        "A little boy ran out and hugged his grandmother."
+      ],
+      "checklist": [
+        "Hai câu bối cảnh có was/were + V-ing",
+        "Hai câu sự kiện dùng quá khứ đơn",
+        "Có một mốc thời gian (at seven)",
+        "Dùng tiếp diễn cho nghĩa hoạt động trong cảnh; với know nghĩa biết thông tin, dạng đơn thường phù hợp."
+      ],
+      "explain": "Bối cảnh bằng tiếp diễn và sự kiện bằng quá khứ đơn là cách kể chuyện quen thuộc, và đúng chỗ dùng của quá khứ tiếp diễn."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Mục past continuous"
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Mục về past progressive, while/when và dạng quá khứ lịch sự"
+    },
+    {
+      "ref": "bc",
+      "note": "Bài past continuous và past simple"
+    },
+    {
+      "ref": "murphy-essential",
+      "note": "Các bài về past continuous"
+    },
+    {
+      "ref": "lgswe",
+      "note": "Dạng tiếp diễn trong văn kể chuyện"
+    },
+    {
+      "ref": "cgel",
+      "note": "Mô tả thể tiếp diễn ở thì quá khứ"
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

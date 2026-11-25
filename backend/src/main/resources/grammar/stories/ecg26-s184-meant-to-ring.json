@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s184-meant-to-ring",
+  "title": "Tiếng chuông lẽ ra phải reo",
+  "summary": "Lio treo chuông cảnh báo cửa lò làm gốm nhưng quên móc dây. Mẻ gốm đầu tiên nguội trước khi Sương kịp khắc tên.",
+  "level": "B2",
+  "topics": [
+    "modal-perfect-regret"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sương",
+      "role": "Người thừa kế ngôi nhà"
+    },
+    {
+      "id": "b",
+      "name": "Lio",
+      "role": "Người đóng cửa chớp"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Gốm vẫn đẹp, chỉ thiếu chữ. Lio có thể nói mình lẽ ra phải nối dây, hoặc tiếc rằng Sương không biết kịp giờ. Hai lời tiếc dẫn tới hai cách tặng mẻ gốm.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I heard the silence too late.",
+          "vi": "Đến khi nhận ra sự im lặng thì muộn mất rồi."
+        },
+        {
+          "who": "b",
+          "en": "What do you wish we'd done differently?",
+          "vi": "Anh ước mình đã làm gì khác?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn việc cụ thể cần nhìn lại.",
+        "options": [
+          {
+            "ok": true,
+            "t": "We could have checked the kiln together.",
+            "note": "Could have checked nêu một cơ hội phối hợp đã bỏ lỡ, không quy toàn bộ trách nhiệm cho riêng ai.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "I should have attached the cord.",
+            "note": "Should have attached nhận thiếu sót của người có nhiệm vụ lắp dây. Câu không khẳng định lô gốm hỏng.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Lio nối dây rồi khắc tên người nhận lên những thẻ gỗ treo miệng bình. Chuông reo thật ở buổi tặng quà.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The names sound better than they look.",
+          "vi": "Tên nghe thành tiếng còn hay hơn viết ra."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Chủ mỗi chiếc bình giữ được cả một tiếng leng keng khi chạm thẻ vào nhau.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Sương rủ Lio mở lớp làm bình không tên. Người nhận tự vẽ dấu riêng bằng sơn sau khi nung, rồi đổi quà theo dấu ấy.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We found a use for the missing names.",
+          "vi": "Ta tìm được cách dùng những cái tên còn thiếu."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Mẻ bình từng thiếu chữ trở thành trò tìm bạn đầu tiên của khu phố.",
+      "end": true
+    }
+  ]
+}

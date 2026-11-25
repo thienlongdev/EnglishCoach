@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s112-air-in-a-pouch",
+  "title": "Chiếc túi đựng buổi sáng",
+  "summary": "Trong tủ mỗi người có một túi thơm. Riêng túi Uyên chỉ có mẩu giấy ghi tiếng người bán xôi.",
+  "level": "B1",
+  "topics": [
+    "used-to-and-would"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Uyên",
+      "role": "Người ghi nhật ký"
+    },
+    {
+      "id": "b",
+      "name": "Sao",
+      "role": "Kỹ thuật viên"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Uyên lớn lên cạnh một ga sớm, ngày nào người bán cũng gọi một câu. Sao tưởng cô đang tả âm thanh vẫn còn phát ngay lúc này.",
+      "say": [
+        {
+          "who": "a",
+          "en": "There's nothing to smell in this one.",
+          "vi": "Túi này chẳng có mùi gì cả."
+        },
+        {
+          "who": "b",
+          "en": "What did you hear at home every morning?",
+          "vi": "Hồi ở nhà sáng nào cô cũng nghe gì?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Kể một âm thanh từng lặp lại ở Trái Đất.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Every morning she would sing the prices to us.",
+            "note": "Every morning đặt nền thói quen xưa. Would sing diễn tả hành động lặp chứ không phải một dự đoán tương lai.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "A woman used to call out beside our window.",
+            "note": "Used to call kể thói quen quá khứ, phù hợp việc giờ Uyên sống xa ô cửa ấy.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Sao nhờ Uyên nhắc lại đúng nhịp rao. Anh lưu tiếng cô vào đồng hồ đánh thức của trạm.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We heard breakfast before we smelled it.",
+          "vi": "Ta nghe thấy bữa sáng trước cả khi ngửi thấy."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Sáng hôm sau cả phi hành đoàn xếp hàng trước bếp. Uyên lần đầu tự nấu xôi thay cho tiếng rao cũ.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Uyên gõ chiếc thìa theo nhịp đọc giá. Nốt cuối gợi cho Sao nhớ một bài hát trẻ con.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Now my street and yours meet in the kitchen.",
+          "vi": "Giờ phố cô và phố tôi gặp nhau ở bếp."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Hai người ghép hai giai điệu thành chuông ăn sáng. Bản ghi mang hai địa chỉ khác nhau ở Trái Đất.",
+      "end": true
+    }
+  ]
+}

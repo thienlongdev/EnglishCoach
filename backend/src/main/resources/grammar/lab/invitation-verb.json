@@ -1,0 +1,40 @@
+{
+  "id": "invitation-verb",
+  "title": "Ai sẽ phát biểu ở lễ khai mạc?",
+  "summary": "Bạn được hỏi về dự định và lời mời. Giữ to speak rồi thêm tên người sau động từ dẫn. Chủ thể phát biểu đổi thế nào?",
+  "level": "B1",
+  "topics": [
+    "verb-object-infinitive"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Động từ dẫn",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Tự dự định"
+        },
+        {
+          "id": "v2",
+          "label": "Mời người khác"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I plan to speak at the opening.",
+      "vi": "Tôi dự định phát biểu ở lễ khai mạc.",
+      "note": "Sau plan to speak, người dự định và người phát biểu đều là I. / The planner is the intended speaker.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "I invited An to speak at the opening.",
+      "vi": "Tôi mời An phát biểu ở lễ khai mạc.",
+      "note": "An đứng sau invited và đồng thời được hiểu là người sẽ phát biểu. / An receives the invitation and would do the speaking.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s158-double-negative-light",
+  "title": "Đèn báo hai lần phủ định",
+  "summary": "Trên tàu thử nghiệm, một bóng đèn sáng khi cảm biến không thể loại trừ bụi. Hành khách đọc nó như một lời xác nhận đã tìm thấy một hành tinh.",
+  "level": "B2",
+  "topics": [
+    "negation-scope",
+    "modal-perfect-deduction"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Nghi",
+      "role": "Kỹ sư ánh sáng"
+    },
+    {
+      "id": "b",
+      "name": "Tao",
+      "role": "Người ghi sổ tàu"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Tao nhặt được tờ hướng dẫn cũ. Cùng một bóng đèn từng sáng trong lần họ đưa hạt bụi thủy tinh qua ống đo. Nghi đặt mẫu kính vào khoang thử.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The light means we can't rule out dust. It doesn't tell us dust is the only answer.",
+          "vi": "Đèn nói rằng ta chưa loại được bụi. Nó không cho biết bụi là lời giải duy nhất."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "People want a name for what crossed the lens. What can I honestly put in the log?",
+          "vi": "Ai cũng muốn biết thứ gì đã đi ngang ống kính. Tôi có thể ghi gì cho đúng?"
+        }
+      ],
+      "choice": {
+        "prompt": "Nghi chọn câu cho phép còn nhiều cách giải thích cho sự kiện đã qua.",
+        "options": [
+          {
+            "t": "Dust might have crossed the lens.",
+            "note": "Might have crossed nêu một khả năng trong quá khứ. Nó phù hợp với đèn chỉ báo chưa loại được bụi.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "It can't have been dust.",
+            "note": "Can't have been loại trừ bụi. Tín hiệu đèn đang thể hiện chính việc chưa loại được khả năng đó.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Tao đặt hai bức ảnh mẫu cạnh ảnh mới. Vệt sáng khớp với bụi thủy tinh nhưng cũng khớp với một hạt băng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The pictures don't settle it either.",
+          "vi": "Cả mấy tấm ảnh cũng chưa phân định được."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Tao đưa hạt bụi chuẩn qua. Đèn bật đúng màu vừa thấy. Nghi yêu cầu sửa câu trước khi phiếu được lưu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The test keeps dust on the list.",
+          "vi": "Phép thử vẫn để bụi trong danh sách khả năng."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Họ đổi nhãn đèn thành Chưa phân biệt được và đính kèm hai ảnh đối chứng. Một em bé hỏi có được đặt tên cho vệt sáng hay không. Nghi đưa em tờ giấy, ở góc đã ghi rõ Tên em tưởng tượng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A name can belong to a drawing while we wait for evidence.",
+          "vi": "Trong lúc chờ bằng chứng, cái tên vẫn có thể thuộc về một bức vẽ."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

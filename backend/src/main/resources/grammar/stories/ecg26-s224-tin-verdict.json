@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s224-tin-verdict",
+  "title": "Lời phán của con chim thiếc",
+  "level": "C1",
+  "topics": [
+    "inverted-conditionals"
+  ],
+  "scene": "office",
+  "summary": "Con chim thiếc từng hót mỗi khi có thư. Ba mươi năm sau nó vẫn hót vào ô cửa trống.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Lâm",
+      "role": "Thợ đồng hồ"
+    },
+    {
+      "id": "b",
+      "name": "Oona",
+      "role": "Chủ chim máy"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Sổ mạch ghi rằng lò xo thứ hai chưa từng được lắp. Nếu có lò xo ấy, chim đã biết dừng khi thư được lấy. Lâm chạm vào vết chân lò xo còn trống.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It still thinks the first letter is here.",
+          "vi": "Nó vẫn tưởng lá thư đầu tiên còn ở đây."
+        },
+        {
+          "who": "b",
+          "en": "Tell me what the missing spring would have changed.",
+          "vi": "Hãy nói cho tôi biết cái lò xo thiếu ấy lẽ ra đã thay đổi điều gì."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Lâm kể điều giả định trái với quá khứ khi chế tạo.",
+        "options": [
+          {
+            "t": "Had the second spring been fitted, the bird would have fallen silent.",
+            "note": "Had ... been fitted đảo từ if ... had been fitted. Would have fallen đặt kết quả giả định ở quá khứ.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "Should the second spring be fitted, the bird will fall silent.",
+            "note": "Câu nêu điều kiện còn mở cho một lần lắp tương lai. Nó đưa ra phương án sửa, chưa giải thích lịch sử đã qua.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Oona chọn giữ tiếng chim, nhưng đặt một lá thư cảm ơn vào ô trống. Lần này chim có thư thật để báo. Bà nghe cho hết một bài rồi tự mang thư tới người nhận.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Let it be right once before we mend it.",
+          "vi": "Cứ để nó báo đúng một lần trước khi sửa."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Oona lấy ngay lò xo trong ngăn. Lâm lắp thử, chim im. Trong căn phòng mới yên, họ nghe tiếng người đưa thư thật đang gõ cửa.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We can hear today's post at last.",
+          "vi": "Cuối cùng mình nghe được thư hôm nay tới rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

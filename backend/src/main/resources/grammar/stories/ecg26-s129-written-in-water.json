@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s129-written-in-water",
+  "title": "Lời hứa bằng màu nước",
+  "summary": "Một giọt nước đã xóa mất tên trên thư trước khi người giao tới. Kha bị nghi làm ướt giấy.",
+  "level": "B1",
+  "topics": [
+    "past-perfect"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Thoa",
+      "role": "Người nhận thư"
+    },
+    {
+      "id": "b",
+      "name": "Kha",
+      "role": "Người giao thư"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Thoa có ảnh lá thư đã nhòe lúc 8:40. Đồng hồ cửa ghi Kha tới lúc chín. Cô muốn nói thứ tự mà hai người cùng kiểm tra được.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I walked in with a dry coat.",
+          "vi": "Tôi bước vào với áo khô."
+        },
+        {
+          "who": "b",
+          "en": "We have something better than the coat: the earlier picture.",
+          "vi": "Có thứ đáng tin hơn chiếc áo: ảnh chụp trước đó."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Thoa đặt lần chữ nhòe trước mốc Kha tới.",
+        "options": [
+          {
+            "ok": true,
+            "t": "The name had faded before Kha arrived.",
+            "note": "Had faded nhìn lùi từ arrived. Before cũng xác định việc tên mờ xảy ra trước.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "The name faded after Kha arrived.",
+            "note": "After đặt việc mờ về sau, trái với ảnh 8:40. Dạng quá khứ đơn tự nó không sai, thứ tự mới là chỗ vướng.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Người gửi nhận ra màu nước của con mình, vốn nhạt dần trên mọi tờ giấy. Họ giữ nguyên vệt nhòe và cùng tìm địa chỉ trong cuốn sổ gốc.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The address survived the colour.",
+          "vi": "Địa chỉ còn nguyên lâu hơn màu mực."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Kha trao được thư mà không cần một cái tên hoàn hảo.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Thoa đặt ảnh dưới đồng hồ, Kha xếp thẻ giờ theo thứ tự. Người gửi tự rút lại lời nghi ngờ trước khi họ lấy sổ địa chỉ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "That was the part he wrote in permanent ink.",
+          "vi": "Đó mới là phần ông viết bằng mực không phai."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Bên cạnh tên đã nhạt, người gửi viết thêm một lời xin lỗi rõ ràng không bị mờ.",
+      "end": true
+    }
+  ]
+}

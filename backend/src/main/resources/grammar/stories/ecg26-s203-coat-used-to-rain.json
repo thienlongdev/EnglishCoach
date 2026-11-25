@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s203-coat-used-to-rain",
+  "title": "Áo mưa quen với sa mạc",
+  "summary": "Một người đi sa mạc xin nhận lại chiếc áo mưa có túi đựng cát. Nó từng theo ông qua bảy mùa mưa ở xứ khác.",
+  "level": "B2",
+  "topics": [
+    "be-used-to-get-used-to"
+  ],
+  "scene": "airport",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Như",
+      "role": "Người phụ trách quầy"
+    },
+    {
+      "id": "b",
+      "name": "Nico",
+      "role": "Người nhận dạng đồ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Tấm ảnh ở sa mạc ghi I used to live where it rained every afternoon. Nico ngỡ người đó vẫn sống ở nơi mưa ngày nào cũng đến.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The sand is new. The rain stains are older.",
+          "vi": "Cát là mới. Vết mưa thì cũ hơn."
+        },
+        {
+          "who": "b",
+          "en": "Which part of the label belongs to his old life?",
+          "vi": "Phần nào trên nhãn nói về cuộc sống trước kia?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Như điều chỉnh lời biên mục, giữ nghĩa từng sống ở xứ mưa.",
+        "options": [
+          {
+            "ok": false,
+            "t": "He is used to living in the rain.",
+            "note": "Be used to living nói hiện đã quen việc đó. Nó không thuật trực tiếp thông tin nơi ông từng ở và còn có thể gợi sai hoàn cảnh nay.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "He used to live in a rainy place.",
+            "note": "Used to live kể tình trạng từng có trong quá khứ. Nó không có nghĩa hiện tại người ấy quen sống dưới mưa.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Người chủ lật túi áo, để rơi tấm ảnh khô nguyên nhờ lớp vải đi mưa. Trong ảnh, con gái ông đang nhảy qua vũng nước.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The coat protected one small rainy day.",
+          "vi": "Chiếc áo giữ được một ngày mưa nho nhỏ."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Ông giữ áo để giữ được bức ảnh qua cả quê cũ lẫn quê mới.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Nico hỏi người chủ thay vì gạch áo khỏi danh sách sa mạc. Ông chỉ vết mưa cũ và lớp cát mới dưới cùng một nếp gấp.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One pocket had room for two climates.",
+          "vi": "Một cái túi chứa được hai vùng khí hậu."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Họ viết thêm hai địa điểm ở hai mặt thẻ, để chiếc áo được có cả quá khứ lẫn hiện tại.",
+      "end": true
+    }
+  ]
+}

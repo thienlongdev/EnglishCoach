@@ -1,0 +1,508 @@
+{
+  "schema": 1,
+  "slug": "modality-degrees-of-certainty",
+  "version": 2,
+  "domain": "modality",
+  "order": 140,
+  "kind": "grammar",
+  "title": {
+    "vi": "Thang mức chắc chắn",
+    "en": "Degrees of certainty"
+  },
+  "subtitle": {
+    "vi": "Điều chỉnh độ cam kết theo bằng chứng, phạm vi phủ định và thể loại.",
+    "en": "Calibrate commitment to evidence rather than fixed probability labels."
+  },
+  "level": "C1",
+  "levelBasis": "editorial",
+  "prerequisites": [
+    "must-cant-deduction",
+    "modal-perfect-deduction"
+  ],
+  "related": [
+    {
+      "slug": "may-might-could-possibility",
+      "rel": "more"
+    },
+    {
+      "slug": "modal-perfect-deduction",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "aliases": [
+    "mức chắc chắn",
+    "epistemic modality",
+    "modal probability",
+    "hedging",
+    "might not cannot",
+    "may 50 percent"
+  ],
+  "objectives": [
+    "Chọn phát biểu tương xứng với dữ liệu đã có.",
+    "Phân biệt khả năng phủ định với loại trừ khả năng.",
+    "Đọc should như kỳ vọng và must như suy luận trong ngữ cảnh.",
+    "Trình bày giới hạn suy luận mà không gán phần trăm cho modal."
+  ],
+  "quick": {
+    "what": "Tình thái nhận thức (epistemic modality) thể hiện mức người nói cam kết với một nhận định. Độ mạnh thay đổi theo cách dùng, bằng chứng và ngữ cảnh; không có bảng phần trăm cố định cho may, might hay could.",
+    "when": "Khi báo cáo sự cố, thảo luận nghiên cứu hoặc đưa dự báo cần phân biệt giả thuyết với kết quả đã xác minh.",
+    "examples": [
+      {
+        "en": "The change [MOD|may] [V|reflect] seasonal demand.",
+        "vi": "Thay đổi này có thể phản ánh nhu cầu theo mùa."
+      },
+      {
+        "en": "The revised route [MOD|should] [V|reduce] travel time under normal conditions.",
+        "vi": "Trong điều kiện bình thường, tuyến sửa đổi dự kiến sẽ giảm thời gian đi."
+      }
+    ],
+    "remember": "Một phát biểu mạnh cần bằng chứng phù hợp; modal không tự biến suy đoán thành dữ kiện."
+  },
+  "lesson": [
+    {
+      "type": "h",
+      "vi": "Mức cam kết không phải nhãn xác suất"
+    },
+    {
+      "type": "p",
+      "vi": "May, might và could thường cho phép nêu một khả năng. Trong nhiều tình huống chúng chồng lấn; might có thể tạo sắc thái dè dặt hơn, nhưng không luôn mang xác suất thấp hơn may. Từ riêng lẻ không cung cấp một con số như 30% hoặc 60%. Nếu có dự báo xác suất thật, con số đến từ mô hình hoặc dữ liệu, không từ ngữ pháp."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Việc người nói đang làm",
+        "Cách diễn đạt có thể dùng",
+        "Cần kiểm tra"
+      ],
+      "rows": [
+        [
+          "Nêu một giả thuyết",
+          "The delay may reflect a staffing problem.",
+          "Có bằng chứng cho khả năng này không?"
+        ],
+        [
+          "Nêu kỳ vọng",
+          "The new rota should reduce delays.",
+          "Những điều kiện thông thường nào được giả định?"
+        ],
+        [
+          "Suy luận mạnh",
+          "The timer must be faulty; it resets with every test.",
+          "Có lời giải thích khác và đã kiểm tra chưa?"
+        ],
+        [
+          "Loại trừ",
+          "This cannot be the same sample; its label is different.",
+          "Nhãn có đáng tin và có thể bị đổi không?"
+        ],
+        [
+          "Báo cáo quan sát",
+          "The timer reset in all five recorded tests.",
+          "Đây là quan sát trong phạm vi nào?"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Should và ought to trong kỳ vọng dựa vào việc điều kiện bình thường diễn ra: The courier should be here by noon. Must trong suy luận dựa vào dấu hiệu khiến người nói kết luận: The courier must be here; that is her van. Đây là khác biệt về cách xây dựng đánh giá, không đơn thuần hai nấc số học."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "branch",
+        "root": "Chọn lời từ điều đã biết",
+        "branches": [
+          {
+            "cond": "Mới nêu một giả thuyết và chưa loại trừ các khả năng khác?",
+            "result": "Nêu giả thuyết bằng may, might hoặc could; ghi giới hạn.",
+            "world": "real"
+          },
+          {
+            "cond": "Có dấu hiệu rõ hướng tới kết luận?",
+            "result": "Có thể dùng must, nhưng tách suy luận khỏi quan sát.",
+            "world": "real"
+          },
+          {
+            "cond": "Có lịch hoặc điều kiện bình thường?",
+            "result": "Should có thể nêu kỳ vọng; nói rõ điều kiện.",
+            "world": "real"
+          },
+          {
+            "cond": "Đã trực tiếp kiểm tra trong phạm vi xác định?",
+            "result": "Báo cáo dữ kiện và phạm vi thay vì thêm modal theo thói quen.",
+            "world": "real"
+          }
+        ]
+      },
+      "caption": "Đây là hướng chọn diễn đạt, không phải thuật toán chứng minh hoặc thang phần trăm.",
+      "alt": "Đây là hướng chọn diễn đạt, không phải thuật toán chứng minh hoặc thang phần trăm."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "The trial may not include night shifts. We have not seen the full schedule.",
+          "vi": "Thử nghiệm có thể không bao gồm ca đêm. Chúng ta chưa xem lịch đầy đủ."
+        },
+        {
+          "en": "The trial cannot include that shift; it starts after the trial ends.",
+          "vi": "Thử nghiệm không thể bao gồm ca đó; ca bắt đầu sau khi thử nghiệm kết thúc."
+        },
+        {
+          "en": "The sensor should have recovered by now, but we still need to check its reading.",
+          "vi": "Theo dự kiến cảm biến giờ đã phục hồi, nhưng vẫn cần kiểm tra số đọc."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Might not P để ngỏ not P; can’t P loại trừ P trong đánh giá của người nói. Not necessarily P bác tính tất yếu của P, không khẳng định not P. “Không chắc có tác dụng” khác “chắc chắn không có tác dụng”."
+    },
+    {
+      "type": "p",
+      "vi": "Trong một báo cáo, ghi The system failed in two of six tests nếu đó là quan sát thật. Từ đó, The system may be sensitive to voltage changes là giả thuyết cần kiểm tra. Đừng viết The voltage caused the failures chỉ vì hai hiện tượng đi cùng nhau."
+    },
+    {
+      "type": "try",
+      "exercise": "mdc-04"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Must có thể nghe mạnh trong suy luận nhưng đồng thời cho biết kết luận được suy ra thay vì trực tiếp quan sát. Không có một thứ tự cố định “câu không modal luôn chắc hơn must”. Người nói có thể nói dối, nhầm hoặc đang kể một quy định; phải xác định loại phát biểu trước."
+    },
+    {
+      "type": "p",
+      "vi": "Probably và likely thường biểu đạt đánh giá nghiêng về một kết quả, nhưng cách hiểu còn phụ thuộc cộng đồng và mục đích. Không xếp có tính toán probably, must, should vào các khoảng xác suất không có nguồn dữ liệu. Trong giao tiếp cần chính xác, giải thích căn cứ và điều kiện tốt hơn chỉ tăng cường từ."
+    },
+    {
+      "type": "p",
+      "vi": "Might have và could have có thể nêu khả năng quá khứ; could have còn có thể nói cơ hội không thực hiện. Should have có thể là kỳ vọng chưa xác minh hoặc đánh giá tiếc nuối. Không dùng bảng chắc chắn để xóa các cách đọc ấy."
+    },
+    {
+      "type": "p",
+      "vi": "Một phát biểu với must, may hoặc can còn có thể là nghĩa vụ, phép hoặc năng lực. Students may leave early có thể cho phép; The students may have left early thường gợi suy đoán trong ngữ cảnh tìm người. Phải xác định loại tình thái rồi mới so độ cam kết."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "mdc-form",
+      "wrong": "The results might indicates a problem.",
+      "right": "The results might indicate a problem.",
+      "why": "Modal cần indicate dạng gốc."
+    },
+    {
+      "id": "mdc-not",
+      "wrong": "The device may not working.",
+      "right": "The device may not be working.",
+      "why": "Với trạng thái đang hoạt động, dùng be working sau modal."
+    },
+    {
+      "id": "mdc-expect",
+      "wrong": "The repair should to solve it.",
+      "right": "The repair should solve it.",
+      "why": "Should đi với dạng gốc không to; nghĩa kỳ vọng còn cần điều kiện và bằng chứng."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có thể gắn may = 50%, might = 30% không?",
+      "a": "Không như quy tắc ngữ pháp. Chỉ dùng phần trăm nếu có nguồn định lượng thật và nói rõ nó đến từ đâu."
+    },
+    {
+      "q": "Must có luôn mạnh hơn should không?",
+      "a": "Chúng thường làm những việc khác nhau: suy luận và kỳ vọng. Mức cam kết thực tế cần đọc trong bối cảnh."
+    },
+    {
+      "q": "Hedging có làm bài viết yếu không?",
+      "a": "Không nếu nó phản ánh đúng giới hạn. Dè dặt không căn cứ hoặc che mờ dữ kiện đã biết cũng không giúp người đọc."
+    },
+    {
+      "q": "Not necessarily và definitely not giống nhau không?",
+      "a": "Không. Not necessarily bác tính tất yếu; definitely not cam kết mạnh với phủ định."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "mdc-01",
+      "type": "choice",
+      "level": "C1",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Chọn báo cáo tương xứng với dữ kiện.",
+      "stem": "A pilot tested one small office for two days. Cooling use fell, but weather also changed.",
+      "options": [
+        {
+          "t": "The new settings may have contributed to the reduction; the pilot does not isolate their effect.",
+          "ok": true,
+          "note": "Nêu khả năng và giới hạn nhân quả."
+        },
+        {
+          "t": "The pilot proves the new settings will cut energy use in every building.",
+          "tag": "meaning-mismatch",
+          "note": "Vượt mẫu nhỏ và chưa tách ảnh hưởng thời tiết."
+        }
+      ],
+      "explain": "Ngữ pháp tốt phải đi cùng mức khẳng định có căn cứ."
+    },
+    {
+      "id": "mdc-02",
+      "type": "match",
+      "level": "C1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Nối nhận định với hành vi nhận thức.",
+      "pairs": [
+        {
+          "a": "The guide should have arrived by now; the road is normally clear.",
+          "b": "Kỳ vọng theo điều kiện thường lệ"
+        },
+        {
+          "a": "The guide must have arrived; her signed receipt is on the desk.",
+          "b": "Suy luận mạnh từ dấu vết"
+        },
+        {
+          "a": "The guide might not have arrived; nobody has checked.",
+          "b": "Để ngỏ khả năng chưa tới"
+        }
+      ],
+      "explain": "Không thay cả ba bằng cùng một nhãn “chắc chắn”."
+    },
+    {
+      "id": "mdc-03",
+      "type": "cloze",
+      "level": "C1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Dùng may, might hoặc could để nêu một giả thuyết; chỉ điền modal.",
+      "stem": "A loose connection {1} explain the intermittent signal; other causes remain possible.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "may",
+            "might",
+            "could"
+          ]
+        }
+      },
+      "explain": "Dữ kiện không buộc một modal duy nhất giữa ba khả năng này."
+    },
+    {
+      "id": "mdc-04",
+      "type": "transform",
+      "level": "C1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Giảm khẳng định nhân quả xuống một khả năng.",
+      "source": "The new lights caused the drop in power use.",
+      "instruction": "Bắt đầu The new lights; dùng may have contributed to; giữ the drop in power use.",
+      "model": "The new lights may have contributed to the drop in power use.",
+      "accept": [
+        "The new lights may have contributed to the drop in power use."
+      ],
+      "explain": "Contributed to giữ khả năng một yếu tố góp phần, không khẳng định nguyên nhân duy nhất."
+    },
+    {
+      "id": "mdc-05",
+      "type": "classify",
+      "level": "C1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Phân biệt giả thuyết và quan sát đã ghi.",
+      "cats": [
+        "Quan sát được ghi",
+        "Giả thuyết"
+      ],
+      "items": [
+        {
+          "t": "The recorder stopped at 14:07 in the saved log.",
+          "cat": "Quan sát được ghi"
+        },
+        {
+          "t": "The recorder may have overheated.",
+          "cat": "Giả thuyết"
+        },
+        {
+          "t": "The log contains three restart entries.",
+          "cat": "Quan sát được ghi"
+        }
+      ],
+      "explain": "Các câu trong bài giả định dữ kiện được ghi là quan sát; nguyên nhân vẫn cần kiểm tra."
+    },
+    {
+      "id": "mdc-06",
+      "type": "error",
+      "level": "C1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sửa hình thức trong phát biểu dè dặt.",
+      "segments": [
+        {
+          "t": "The pattern may"
+        },
+        {
+          "t": "reflects",
+          "bad": true,
+          "fix": [
+            "reflect"
+          ],
+          "note": "Sau may là dạng gốc.",
+          "tag": "modal-base"
+        },
+        {
+          "t": "a change in demand."
+        }
+      ],
+      "explain": "Dè dặt về nghĩa không thay quy tắc hình thức của modal."
+    },
+    {
+      "id": "mdc-07",
+      "type": "multi",
+      "level": "C1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Chọn cách diễn giải đúng.",
+      "stem": "The revised process will not necessarily reduce errors.",
+      "options": [
+        {
+          "t": "Không thể coi giảm lỗi là hệ quả tất yếu.",
+          "ok": true,
+          "note": "Not necessarily bác tính tất yếu."
+        },
+        {
+          "t": "Câu vẫn để ngỏ khả năng lỗi giảm.",
+          "ok": true,
+          "note": "Không khẳng định hệ quả phủ định."
+        },
+        {
+          "t": "Chắc chắn lỗi không giảm.",
+          "tag": "meaning-mismatch",
+          "note": "Mạnh hơn câu nguồn và sai phạm vi."
+        }
+      ],
+      "explain": "Phủ định tính tất yếu khác khẳng định phủ định."
+    },
+    {
+      "id": "mdc-08",
+      "type": "open",
+      "level": "C1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết kết luận có phạm vi.",
+      "task": "Dữ kiện luyện tập: sáu lần thử, hai lần mất tín hiệu, cả hai lúc cửa kim loại đóng. Viết 4 câu tiếng Anh: báo cáo quan sát, nêu một giả thuyết, nêu điều chưa thể kết luận và đề xuất thử nghiệm. Không tự thêm số liệu.",
+      "model": [
+        "The signal failed in two of the six tests.",
+        "The metal door may have affected reception.",
+        "These observations do not establish the cause.",
+        "We should repeat the test with the door open and closed under otherwise similar conditions."
+      ],
+      "checklist": [
+        "Giữ đúng sáu lần và hai lỗi",
+        "Tách quan sát khỏi giả thuyết",
+        "Không gán phần trăm từ modal",
+        "Bước kiểm tra nhắm vào giả thuyết"
+      ],
+      "explain": "Bài cần một lập luận thận trọng, không chỉ thay một động từ."
+    },
+    {
+      "id": "mdc-09",
+      "type": "choice",
+      "level": "C1",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Đọc phạm vi phủ định.",
+      "stem": "The update might not fix the issue.",
+      "options": [
+        {
+          "t": "Việc bản cập nhật không sửa được lỗi là một khả năng.",
+          "ok": true,
+          "note": "Not fix nằm trong phạm vi khả năng."
+        },
+        {
+          "t": "Người nói loại trừ hoàn toàn việc bản cập nhật sửa được lỗi.",
+          "tag": "meaning-mismatch",
+          "note": "Cách đó gần cannot fix hơn."
+        }
+      ],
+      "explain": "Might not không bằng cannot."
+    },
+    {
+      "id": "mdc-10",
+      "type": "cloze",
+      "level": "C1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Nêu kỳ vọng bằng should; chỉ điền dạng của recover.",
+      "stem": "Under normal conditions, the server should have {1} by now.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "recovered"
+          ]
+        }
+      },
+      "explain": "Should have recovered đúng dạng; kết quả thực vẫn cần kiểm tra."
+    },
+    {
+      "id": "mdc-11",
+      "type": "transform",
+      "level": "C1",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Nêu suy luận mạnh mà vẫn giữ cấu trúc modal.",
+      "source": "Given those records, I conclude that someone changed the settings.",
+      "instruction": "Bắt đầu Someone; dùng must have; giữ changed the settings.",
+      "model": "Someone must have changed the settings.",
+      "accept": [
+        "Someone must have changed the settings."
+      ],
+      "explain": "Must have gắn kết luận với một cơ sở suy luận, không tự xác nhận danh tính người làm."
+    },
+    {
+      "id": "mdc-12",
+      "type": "multi",
+      "level": "C1",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Chọn các phát biểu biên tập có trách nhiệm.",
+      "stem": "Viết hướng dẫn về độ chắc chắn.",
+      "options": [
+        {
+          "t": "Nhiều ngữ cảnh chấp nhận cả may, might và could cho một khả năng.",
+          "ok": true,
+          "note": "Không áp thứ tự cố định cho mọi câu."
+        },
+        {
+          "t": "Cần xác định nghĩa nhận thức hay nghĩa vụ trước khi so mức cam kết.",
+          "ok": true,
+          "note": "Một must về quy định không phải dự báo."
+        },
+        {
+          "t": "Might luôn mã hóa xác suất thấp hơn may theo một tỷ lệ chuẩn.",
+          "tag": "meaning-mismatch",
+          "note": "Không có tỷ lệ ngữ pháp cố định như vậy."
+        }
+      ],
+      "explain": "Mức cam kết là lựa chọn diễn đạt theo bối cảnh, không phải phép đo từ vựng."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  },
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tác phẩm tham chiếu cho cấu trúc và nghĩa trong chương; dùng sổ nguồn hiện có. Chưa có kiểm chứng đoạn nguồn riêng cho bản thảo này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tài liệu đối chiếu biên tập dự kiến; không xác nhận đã đọc một mục hoặc ấn bản cụ thể."
+    }
+  ]
+}

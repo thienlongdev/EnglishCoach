@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s094-copper-feather",
+  "title": "Chiếc lông bằng đồng",
+  "summary": "Một chiếc lông không bao giờ bay được gửi tới bảo tàng chim. Hộp đựng có hai tên nhưng không ghi tên người làm.",
+  "level": "B1",
+  "topics": [
+    "relative-clauses-defining",
+    "whose-where-when"
+  ],
+  "scene": "library-mystery",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sen",
+      "role": "Người giữ sổ bảo tàng"
+    },
+    {
+      "id": "b",
+      "name": "Luis",
+      "role": "Thợ đồng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Trong hai bức ảnh đi cùng, ảnh bên trái chụp Ema cầm kìm có khắc hình lông vũ, ảnh bên phải chụp Tavi đang nhìn chiếc kìm trên bàn. Người tặng ghi rằng chính chủ chiếc kìm đã làm vật bằng đồng. Trên mặt trong hộp còn tờ biên nhận Ema mua một chiếc kìm khắc lông vũ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Two names and only one feather. Which name goes on the label?",
+          "vi": "Hai cái tên mà chỉ có một chiếc lông. Nhãn sẽ ghi tên ai?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Look for the maker's tools.",
+          "vi": "Hãy tìm dụng cụ của người làm."
+        }
+      ],
+      "choice": {
+        "prompt": "Sen muốn mô tả người sở hữu chiếc kìm chứ không phải người chỉ đứng cạnh nó.",
+        "options": [
+          {
+            "t": "Find the person who is looking at the pliers.",
+            "note": "Who là chủ ngữ của is looking. Nhìn vào vật không có nghĩa sở hữu vật. Cả hai người trong ảnh đều nhìn chiếc kìm.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "Find the person whose pliers have a feather on them.",
+            "note": "Whose nối person với vật người ấy sở hữu là pliers. A feather on them là dấu khắc trên kìm.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Luis lật ảnh. Tên Ema nằm sau chân dung bên trái. Trên mép hộp còn một vết kẹp có hình chiếc lông.",
+      "say": [
+        {
+          "who": "b",
+          "en": "She left her mark twice.",
+          "vi": "Bà ấy để lại dấu của mình hai lần."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Sen chỉ được cả hai người. Luis đối chiếu dấu khắc trên kìm với vết trên mép hộp rồi đọc tên sau ảnh trái.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Ema owned the tools.",
+          "vi": "Dụng cụ là của Ema."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Hóa ra chiếc lông là lần thử đầu khi Ema học nghề. Sen đặt nó cạnh những chiếc lông thật và ghi thêm một dòng cho khách nhỏ tuổi: chiếc này không bay, nhưng đã mở đầu một đời làm việc.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It took her further than a real feather could.",
+          "vi": "Nó đã đưa bà đi xa hơn cả một chiếc lông thật."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

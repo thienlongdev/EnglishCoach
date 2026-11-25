@@ -1,0 +1,41 @@
+{
+  "id": "approval-columns",
+  "title": "Insist that đưa ra yêu cầu hay quả quyết một sự thật?",
+  "summary": "Thư của kỹ sư dùng insist với thông tin về van an toàn. Chọn một yêu cầu cho tương lai hoặc một lời khẳng định về quá khứ. Dạng be có thay đổi không?",
+  "level": "C1",
+  "topics": [
+    "mandative-subjunctive",
+    "reporting-verbs"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Chức năng của insist",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Yêu cầu"
+        },
+        {
+          "id": "v2",
+          "label": "Khẳng định"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The engineer insisted that the valve be sealed.",
+      "vi": "Kỹ sư yêu cầu phải niêm phong van.",
+      "note": "Be không chia theo valve trong giả định thức yêu cầu. Câu không xác nhận van đã được niêm phong. / Mandative be sets a requirement without asserting completion.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The engineer insisted that the valve was sealed.",
+      "vi": "Kỹ sư quả quyết rằng van đã được niêm phong.",
+      "note": "Trong cuộc tranh luận về tình trạng van hôm qua, was sealed là nội dung được quả quyết, chưa phải xác nhận độc lập của người kể. / Indicative was reports a claim about the valve's state here.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "route-condition",
+  "title": "Nếu cầu đóng thì làm gì?",
+  "summary": "Bạn viết hướng dẫn đi xe đạp. Giữ nguyên điều kiện cầu đóng rồi đổi mệnh đề chính từ hướng dẫn sang dự đoán.",
+  "level": "B1",
+  "topics": [
+    "real-conditionals",
+    "imperatives"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Chức năng",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Chỉ dẫn"
+        },
+        {
+          "id": "v2",
+          "label": "Dự đoán"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "If the bridge is closed, take the lane.",
+      "vi": "Nếu cầu đóng, hãy đi đường nhỏ.",
+      "note": "Take là mệnh lệnh chỉ áp dụng trong trường hợp cầu đóng. / The condition limits an instruction.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "If the bridge is closed, the lane will be busy.",
+      "vi": "Nếu cầu đóng, đường nhỏ sẽ đông.",
+      "note": "Will be busy dự đoán hệ quả chứ không bảo người nghe phải làm gì. / The condition limits a prediction.",
+      "verdict": "ok"
+    }
+  }
+}

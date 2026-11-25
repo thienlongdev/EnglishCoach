@@ -1,0 +1,41 @@
+{
+  "id": "desk-negation",
+  "title": "Lan có làm việc ở đây không?",
+  "summary": "Danh bạ văn phòng có hai người tên Lan. Đổi lời xác nhận thành lời phủ nhận và theo dõi chữ s ở works.",
+  "level": "A1",
+  "topics": [
+    "statements-negatives-questions",
+    "do-support"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Thông tin trong danh bạ",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Xác nhận"
+        },
+        {
+          "id": "v2",
+          "label": "Phủ nhận"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Lan works here.",
+      "vi": "Lan làm việc ở đây.",
+      "note": "Works có s vì chủ ngữ là Lan. / Works carries agreement in the statement.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Lan doesn't work here.",
+      "vi": "Lan không làm việc ở đây.",
+      "note": "Does trong doesn't đã mang dấu hiệu ngôi thứ ba. Work không thêm s nữa. / Doesn't carries agreement so work stays bare.",
+      "verdict": "ok"
+    }
+  }
+}

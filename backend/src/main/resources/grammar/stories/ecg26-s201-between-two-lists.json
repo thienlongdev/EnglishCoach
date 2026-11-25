@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s201-between-two-lists",
+  "title": "Hành khách giữa hai danh sách",
+  "summary": "Một cô bé tìm một chiếc rương thuộc đoàn múa, nhưng theo sổ nó chưa bao giờ đi cùng đoàn. Nó nằm trong mục nhạc cụ của người kéo đàn.",
+  "level": "B2",
+  "topics": [
+    "given-before-new",
+    "complex-noun-phrases"
+  ],
+  "scene": "airport",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Như",
+      "role": "Người phụ trách quầy"
+    },
+    {
+      "id": "b",
+      "name": "Nico",
+      "role": "Người nhận dạng đồ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Cô bé đã biết tên đoàn nhưng chưa biết tên người cầm vé cho rương. Như cần dẫn em từ điều quen sang thông tin mới.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The dancers are the only people she recognises.",
+          "vi": "Em chỉ nhận ra mấy người múa."
+        },
+        {
+          "who": "b",
+          "en": "Start where she can find you.",
+          "vi": "Cứ bắt đầu ở chỗ em có thể theo kịp."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn cách sắp thông tin, không đổi chủ sở hữu hay người giữ vé.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Look for Ana, the violinist who checked in the dancers' trunk.",
+            "note": "Câu đưa tên lên đầu như một chỉ dẫn, rồi dùng đồng vị và mệnh đề quan hệ nối nó với rương cũ. Đích tìm vẫn là Ana.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "The dancers' trunk travelled with their violinist, Ana.",
+            "note": "Bắt đầu bằng chiếc rương em đã biết. Cụm their violinist, Ana đặt thông tin mới và tên người ở cuối.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Em lần theo hình cây vĩ ở sảnh, nhận ra Ana dù chưa biết tên. Trong rương là đôi tất diễn đầu tiên mẹ em từng đan.",
+      "say": [
+        {
+          "who": "b",
+          "en": "She found a new name through an old pair of socks.",
+          "vi": "Từ đôi tất cũ, em tìm được một cái tên mới."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Cả đoàn ký tên dưới ảnh rương, còn Ana vẽ thêm chiếc vĩ chỉ đường.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Như viết ANA lên thẻ, em giơ nó như bảng đón khách. Một tiếng đàn trả lời từ đầu bên kia sảnh.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I like a suitcase that can introduce people.",
+          "vi": "Tôi thích chiếc rương có thể giới thiệu người ta với nhau."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Em nhận ra cô kéo đàn đã từng dạy mình buộc nơ giày. Từ đó chiếc rương mang cả hai nhãn.",
+      "end": true
+    }
+  ]
+}

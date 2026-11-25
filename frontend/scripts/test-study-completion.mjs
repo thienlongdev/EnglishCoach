@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import {createRequire} from 'node:module';
+import {fileURLToPath} from 'node:url';
+const require=createRequire(import.meta.url),babel=require('next/dist/compiled/babel/bundle.js');
+const src=fileURLToPath(new URL('../src/',import.meta.url)),cache=new Map();
+function load(rel){if(cache.has(rel))return cache.get(rel);const m={exports:{}};cache.set(rel,m.exports);const code=babel.core().transformSync(fs.readFileSync(path.join(src,rel),'utf8'),{filename:rel,babelrc:false,configFile:false,presets:[babel.presetTypescript()],plugins:[babel.pluginTransformModulesCommonjs()]}).code;new Function('module','exports','require',code)(m,m.exports,n=>load(n.startsWith('@/')?n.slice(2)+'.ts':path.posix.normalize(path.posix.dirname(rel)+'/'+n)+'.ts'));return m.exports;}
+const memory=new Map();globalThis.localStorage={getItem:k=>memory.get(k)??null,setItem:(k,v)=>memory.set(k,v),removeItem:k=>memory.delete(k)};
+globalThis.window={matchMedia:()=>({matches:false}),addEventListener(){},removeEventListener(){}};globalThis.document={documentElement:{classList:{toggle(){}}}};
+const {RoomNavigation}=load('lib/study-space/navigation.ts');
+const obstacle={x:0,z:0,width:1.4,depth:1.4,rotation:Math.PI/4};
+const nav=new RoomNavigation(6,[obstacle]),start={x:-2,z:0},end={x:2,z:0};
+// A diagonal can clip an inflated corner between two former line samples.
+const cornerNav = new RoomNavigation(6, [{ x: 0, z: 0, width: .8, depth: .8, rotation: 0 }]);
+const cornerStart = { x: -.71, z: .489 }, cornerEnd = { x: -.491, z: .708 };
+assert.ok(cornerNav.free(cornerStart) && cornerNav.free(cornerEnd));
+assert.equal(cornerNav.clearLine(cornerStart, cornerEnd), false, 'the whole body must clear the corner');
+const route=nav.path(start,end);assert.ok(route&&route.length>1);let p=start;for(const next of route){assert.ok(nav.clearLine(p,next),'every walked segment clears the inflated furniture');p=next;}assert.deepEqual(route.at(-1),end);
+assert.equal(nav.path(start,{x:0,z:0}),null,'no walking into a desk');
+assert.equal(new RoomNavigation(6,[{...obstacle,width:6,depth:.5,rotation:0}]).path({x:0,z:-2},{x:0,z:2}),null,'sealed corridor is unreachable');
+assert.equal(new RoomNavigation(6,[]).path(start,end).length,1,'removing the obstacle restores the direct path');
+const scope=load('lib/appearance/scope.ts'),wp=load('lib/wallpaper/storage.ts'),sp=load('lib/spatial/preference.ts');
+const wkey=wp.accountKey(42),skey=sp.spatialKey(42),other=wp.accountKey(43);
+wp.writePreference(wkey,{...wp.DEFAULT_PREFERENCE,clarity:.3});sp.writeSpatial(skey,{...sp.DEFAULT_SPATIAL,enabled:true});
+const before=memory.get(wkey),beforeSp=memory.get(skey);let saved;
+const endScope=scope.beginAppearanceScope('42:space-a',{[wkey]:{...wp.DEFAULT_PREFERENCE,clarity:.9},[skey]:sp.DEFAULT_SPATIAL,theme:'dark'},v=>saved=v);
+wp.writePreference(wkey,{...wp.DEFAULT_PREFERENCE,clarity:.75});sp.writeSpatial(skey,{...sp.DEFAULT_SPATIAL,enabled:true,presetId:'sand-garden'});
+assert.equal(wp.currentPreference(wkey).clarity,.75);assert.equal(memory.get(wkey),before);assert.equal(memory.get(skey),beforeSp);assert.equal(wp.currentPreference(other).clarity,.6);assert.equal(saved[skey].presetId,'sand-garden');
+scope.applyAppearanceTheme('light');assert.equal(memory.has('theme'),false,'space theme never writes the global theme');
+endScope();assert.equal(wp.currentPreference(wkey).clarity,.3);assert.equal(sp.currentSpatial(skey).presetId,sp.DEFAULT_SPATIAL.presetId);
+const {widgetSize}=load('lib/study-space/widgetGeometry.ts');assert.deepEqual(widgetSize('focus',10,10),{w:264,h:280});assert.deepEqual(widgetSize('music',9999,9999,{w:800,h:600}),{w:784,h:584});
+console.log('PASS navigation segments, blocked targets, dynamic obstacles, per-space appearance persistence/isolation/cleanup, legacy widget constraints');

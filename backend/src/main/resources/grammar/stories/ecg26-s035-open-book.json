@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s035-open-book",
+  "title": "Quyển sách mở cửa",
+  "summary": "Trong thư viện đồ chơi có một cánh cửa thấp với chữ BOOK. Tí tìm ổ khóa nhưng tay nắm chỉ là một gáy sách.",
+  "level": "A1",
+  "topics": [
+    "imperatives",
+    "have-and-have-got"
+  ],
+  "scene": "library-mystery",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Tí",
+      "role": "Bạn đọc nhỏ"
+    },
+    {
+      "id": "b",
+      "name": "An",
+      "role": "Thủ thư"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Thủ thư đưa cho Tí một tấm thẻ ghi Open the book. Bên phải cánh cửa có hình quyển sách tô xanh, phần bìa nhô ra ngoài vừa đủ để cầm.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I have a card, but I don't have a key.",
+          "vi": "Em có thẻ nhưng không có chìa."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Read the card. Use your hand.",
+          "vi": "Em đọc thẻ đi. Dùng tay nhé."
+        }
+      ],
+      "choice": {
+        "prompt": "Tí đọc lời chỉ dẫn để biết hành động tiếp theo.",
+        "options": [
+          {
+            "t": "Open the book.",
+            "note": "Động từ open ở đầu câu là lời chỉ dẫn. The book chỉ quyển có bìa xanh ngay trên cửa.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "Close the book.",
+            "note": "Close cũng tạo được lời chỉ dẫn, nhưng hành động là đóng. Bìa đang khép nên Tí sẽ không vào được.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Tí kéo bìa xanh. Cả cánh cửa mở theo, để lộ căn phòng nhỏ đầy gối đọc sách.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A book is the door!",
+          "vi": "Quyển sách chính là cửa kìa!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Tí ấn bìa xuống. Cánh cửa nằm im. Thủ thư hé bìa cho em thấy khe sáng, rồi em tự kéo ra.",
+      "say": [
+        {
+          "who": "b",
+          "en": "You can go in now.",
+          "vi": "Giờ em vào được rồi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Trong phòng, Tí chọn một cuốn có hình cánh cửa ở trang đầu. Em ngồi lên gối xanh và đọc cho một bạn nhỏ khác nghe. Cánh cửa đầu tiên em đã tự mở cho mình.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can open this one too.",
+          "vi": "Cuốn này em cũng tự mở được."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

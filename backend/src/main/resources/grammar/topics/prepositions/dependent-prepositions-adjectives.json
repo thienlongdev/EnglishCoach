@@ -1,0 +1,594 @@
+{
+  "schema": 1,
+  "slug": "dependent-prepositions-adjectives",
+  "version": 2,
+  "domain": "prepositions",
+  "order": 60,
+  "kind": "grammar",
+  "title": {
+    "vi": "Tính từ + giới từ: afraid of, good at",
+    "en": "Adjective + preposition"
+  },
+  "level": "B1",
+  "levelBasis": "editorial",
+  "prerequisites": [],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "subtitle": {
+    "vi": "Học cụm tính từ và danh từ cùng quan hệ ý nghĩa",
+    "en": "Adjective and noun patterns with prepositions"
+  },
+  "aliases": [
+    "tính từ giới từ",
+    "afraid of good at",
+    "interested on",
+    "dependent-prepositions-nouns",
+    "danh từ giới từ",
+    "reason for increase in",
+    "different from to than"
+  ],
+  "objectives": [
+    "Dùng các cụm tính từ + giới từ trong ngữ cảnh cụ thể.",
+    "Phân biệt danh từ + giới từ chỉ nội dung thay đổi, lý do và đối tượng.",
+    "Nhận ra đổi giới từ có thể đổi nghĩa hoặc chỉ đổi biến thể."
+  ],
+  "related": [
+    {
+      "slug": "dependent-prepositions-verbs",
+      "rel": "more"
+    },
+    {
+      "slug": "preposition-vs-particle",
+      "rel": "contrast"
+    }
+  ],
+  "quick": {
+    "what": "Giới từ phụ thuộc (dependent preposition) thường được học cùng tính từ hoặc danh từ: proud of, interested in, reason for. Cụm từ và nghĩa cụ thể quyết định lựa chọn, không có một giới từ chung cho mọi tính từ.",
+    "when": "Dùng khi nói cảm xúc, khả năng, thái độ, nguyên nhân hoặc thay đổi số liệu.",
+    "examples": [
+      {
+        "en": "[S|I] [V|am] [C|interested in urban design].",
+        "vi": "Tôi quan tâm đến thiết kế đô thị."
+      },
+      {
+        "en": "[S|Our group] [V|is] [C|proud of the result].",
+        "vi": "Nhóm chúng tôi tự hào về kết quả."
+      },
+      {
+        "en": "[S|There] [V|was] [O|an increase in demand].",
+        "vi": "Đã có sự gia tăng nhu cầu."
+      }
+    ],
+    "remember": "Ghi cả cụm và một ngữ cảnh: good at editing, a reason for leaving; không học một cột giới từ rời."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Tính từ (adjective) thường cần thêm thông tin về đối tượng: afraid of what, interested in what. Giới từ mở phần thông tin đó. Một số tính từ có nhiều giới từ hợp lệ; nghĩa và ngữ cảnh giúp chọn, không phải chỉ một đáp án thuộc lòng."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Cụm",
+        "Ý nghĩa",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "afraid of + danh từ/V-ing",
+          "sợ điều gì",
+          "She is afraid of falling."
+        ],
+        [
+          "good at + hoạt động",
+          "giỏi việc gì",
+          "He is good at explaining diagrams."
+        ],
+        [
+          "interested in + chủ đề/hoạt động",
+          "quan tâm",
+          "I am interested in restoring old houses."
+        ],
+        [
+          "proud of + đối tượng",
+          "tự hào",
+          "They are proud of their volunteers."
+        ],
+        [
+          "responsible for + việc",
+          "chịu trách nhiệm",
+          "I am responsible for checking invoices."
+        ],
+        [
+          "similar to + đối tượng",
+          "tương tự",
+          "This layout is similar to the previous one."
+        ]
+      ]
+    },
+    {
+      "type": "formula",
+      "parts": [
+        {
+          "t": "be",
+          "role": "V"
+        },
+        {
+          "t": "tính từ",
+          "role": "ADJ"
+        },
+        {
+          "t": "giới từ",
+          "role": "PREP"
+        },
+        {
+          "t": "danh từ / đại từ / V-ing",
+          "role": "C"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "Nina is good at organising events.",
+            "vi": "Nina giỏi tổ chức sự kiện."
+          },
+          "b": {
+            "en": "Regular breaks are good for concentration.",
+            "vi": "Nghỉ giải lao đều đặn có lợi cho sự tập trung."
+          },
+          "diff": "Good at nói năng lực; good for nói lợi ích. Cả hai đúng nhưng không đổi chỗ mà giữ nguyên nghĩa."
+        }
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Tính từ và quan hệ",
+            "items": [
+              "interested in",
+              "responsible for",
+              "proud of"
+            ]
+          },
+          {
+            "label": "Bổ ngữ phù hợp",
+            "items": [
+              "restoring houses",
+              "checking invoices",
+              "our progress"
+            ]
+          }
+        ],
+        "sentence": "We are {0} {1}.",
+        "fixedOrder": true
+      },
+      "caption": "Giữ tính từ cùng giới từ khi thêm bổ ngữ",
+      "alt": "We are interested in restoring houses; responsible for checking invoices; proud of our progress. Hai ô minh họa vị trí cấu trúc; cần chọn cặp có ý nghĩa phù hợp."
+    },
+    {
+      "type": "h",
+      "vi": "Danh từ + giới từ (noun + preposition)"
+    },
+    {
+      "type": "table",
+      "head": [
+        "Cụm danh từ",
+        "Thông tin sau giới từ",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "a reason for",
+          "việc cần lý giải",
+          "a reason for the delay"
+        ],
+        [
+          "an increase in",
+          "đại lượng tăng",
+          "an increase in ticket sales"
+        ],
+        [
+          "an increase of",
+          "mức tăng",
+          "an increase of ten percent"
+        ],
+        [
+          "a solution to",
+          "vấn đề được giải quyết",
+          "a solution to the storage problem"
+        ],
+        [
+          "access to",
+          "thứ có thể tiếp cận",
+          "access to the archive"
+        ],
+        [
+          "a relationship with",
+          "bên có quan hệ",
+          "a relationship with a supplier"
+        ]
+      ]
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|We] [V|need] [O|a solution to the parking problem].",
+          "vi": "Chúng tôi cần một giải pháp cho vấn đề đỗ xe."
+        },
+        {
+          "en": "[S|There] [V|was] [O|an increase of eight percent in bookings].",
+          "vi": "Số lượt đặt chỗ tăng tám phần trăm.",
+          "note": "Of nêu mức, in nêu đại lượng; có thể cùng xuất hiện."
+        }
+      ]
+    },
+    {
+      "type": "try",
+      "exercise": "dependent-prepositions-adjectives-1"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Angry with hoặc angry at a person đều có thể tự nhiên; angry about a delay tập trung vào sự việc gây giận. Không chấm with sai chỉ vì một bảng học thuộc liệt kê at. Tương tự, pleased with và pleased about có phạm vi giao nhau; cần ngữ cảnh thật rõ nếu kiểm tra nghĩa khác nhau."
+    },
+    {
+      "type": "note",
+      "kind": "regional",
+      "vi": "Different from là lựa chọn rộng rãi. Different to được dùng trong Anh-Anh; different than thường gặp trong Anh-Mỹ và trước mệnh đề. Chọn theo ngữ cảnh và quy chuẩn biên tập, không xem hai dạng sau là lỗi phổ quát."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "I am sorry about the cancellation.",
+            "vi": "Tôi lấy làm tiếc về việc hủy."
+          },
+          "b": {
+            "en": "I feel sorry for the stranded passengers.",
+            "vi": "Tôi thấy thương những hành khách bị mắc kẹt."
+          },
+          "diff": "Sorry about hướng tới sự việc; feel sorry for hướng tới người được cảm thông. Không đồng nhất mọi sorry với lời xin lỗi do chính mình gây ra."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Các họ từ không luôn giữ nguyên giới từ: proud of nhưng pride in; interested in nhưng interest in vẫn giữ. Học cả mẫu câu thay vì giả định đổi tính từ sang danh từ là chỉ đổi đuôi từ. Bổ ngữ sau giới từ là đại từ tân ngữ như proud of them, không phải proud of they."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "da-interest",
+      "wrong": "I am interested on product design.",
+      "right": "I am interested in product design.",
+      "why": "Interested đi với in khi nêu chủ đề quan tâm."
+    },
+    {
+      "id": "da-solution",
+      "wrong": "We need a solution of this problem.",
+      "right": "We need a solution to this problem.",
+      "why": "A solution to this problem là mẫu thông dụng đang luyện. Solution of có cách dùng, nhất là nói việc giải quyết một vấn đề/xung đột; không suy ra of luôn sai chỉ vì bảng mẫu ưu tiên to."
+    },
+    {
+      "id": "da-gerund",
+      "wrong": "She is good at explain maps.",
+      "right": "She is good at explaining maps.",
+      "why": "Sau at, hành động dùng dạng V-ing trong cấu trúc này."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có thể học mỗi tính từ với một giới từ duy nhất không?",
+      "a": "Đó là bước đầu nhưng chưa đủ. Good at và good for đều đúng, với nghĩa khác. Từ điển học tập và ngữ cảnh giúp chọn mẫu."
+    },
+    {
+      "q": "Increase in và increase of khác gì?",
+      "a": "In thường nêu đại lượng như in costs; of nêu mức như of six percent. Có thể ghép an increase of six percent in costs."
+    },
+    {
+      "q": "Different than có luôn sai không?",
+      "a": "Không. Nó có cách dùng chuẩn, đặc biệt trong Anh-Mỹ. Different from thường là lựa chọn ít gây tranh luận khi viết cho nhiều vùng."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "dependent-prepositions-adjectives-1",
+      "level": "B1",
+      "use": "practice",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn cụm nói năng lực của một người.",
+      "stem": "Bao is good ___ spotting small errors.",
+      "options": [
+        {
+          "t": "at",
+          "ok": true,
+          "note": "Good at + V-ing nói giỏi hoạt động."
+        },
+        {
+          "t": "for",
+          "tag": "preposition-pattern",
+          "note": "Good for nói có lợi cho, không diễn đạt năng lực cần nêu."
+        },
+        {
+          "t": "of",
+          "tag": "preposition-pattern",
+          "note": "Good of someone thuộc mẫu đánh giá hành vi khác."
+        }
+      ],
+      "explain": "Đề yêu cầu năng lực phát hiện lỗi: good at spotting."
+    },
+    {
+      "id": "dependent-prepositions-adjectives-2",
+      "level": "B1",
+      "use": "practice",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Điền giới từ trong cụm interested.",
+      "stem": "Several residents are interested {1} the new recycling scheme.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "in"
+          ]
+        }
+      },
+      "explain": "Interested in nêu chủ đề được quan tâm."
+    },
+    {
+      "id": "dependent-prepositions-adjectives-3",
+      "level": "B1",
+      "use": "practice",
+      "type": "match",
+      "skill": "meaning",
+      "prompt": "Nối cụm với nghĩa.",
+      "pairs": [
+        {
+          "a": "proud of the team",
+          "b": "tự hào về đội"
+        },
+        {
+          "a": "responsible for the budget",
+          "b": "chịu trách nhiệm ngân sách"
+        },
+        {
+          "a": "similar to the old design",
+          "b": "tương tự thiết kế cũ"
+        },
+        {
+          "a": "access to the collection",
+          "b": "khả năng tiếp cận bộ sưu tập"
+        }
+      ],
+      "explain": "Cụm chứa tính từ hoặc danh từ phải đi cùng giới từ phù hợp với nghĩa."
+    },
+    {
+      "id": "dependent-prepositions-adjectives-4",
+      "level": "B1",
+      "use": "practice",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn danh từ và giới từ phù hợp để nêu đại lượng tăng.",
+      "stem": "There was an increase ___ demand for evening classes.",
+      "options": [
+        {
+          "t": "in",
+          "ok": true,
+          "note": "Demand là đại lượng tăng."
+        },
+        {
+          "t": "of",
+          "tag": "preposition-pattern",
+          "note": "Of thường dùng trước mức tăng như ten percent, không thay in trước demand ở đây."
+        },
+        {
+          "t": "at",
+          "tag": "preposition-pattern",
+          "note": "Increase at demand không phải mẫu cho nghĩa này."
+        }
+      ],
+      "explain": "An increase in demand nói cái gì tăng; an increase of ten percent nói tăng bao nhiêu."
+    },
+    {
+      "id": "dependent-prepositions-adjectives-5",
+      "level": "B1",
+      "use": "practice",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Dùng dạng phù hợp của manage.",
+      "stem": "She is responsible for {1} the archive.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "managing"
+          ]
+        }
+      },
+      "explain": "Responsible for nhận V-ing khi bổ ngữ là hoạt động."
+    },
+    {
+      "id": "dependent-prepositions-adjectives-6",
+      "level": "B1",
+      "use": "practice",
+      "type": "classify",
+      "skill": "recognition",
+      "prompt": "Phân biệt vai trò của thông tin sau giới từ.",
+      "cats": [
+        "Đại lượng tăng",
+        "Mức tăng",
+        "Vấn đề cần giải quyết"
+      ],
+      "items": [
+        {
+          "t": "an increase in rent",
+          "cat": "Đại lượng tăng"
+        },
+        {
+          "t": "an increase of five percent",
+          "cat": "Mức tăng"
+        },
+        {
+          "t": "a solution to overcrowding",
+          "cat": "Vấn đề cần giải quyết"
+        }
+      ],
+      "explain": "Giới từ không chỉ do từ phía trước quyết định; loại quan hệ ý nghĩa cũng quan trọng."
+    },
+    {
+      "id": "dependent-prepositions-adjectives-7",
+      "level": "B1",
+      "use": "practice",
+      "type": "transform",
+      "skill": "production",
+      "prompt": "Chuyển cụm chỉ trách nhiệm thành câu.",
+      "source": "Her responsibility is checking the receipts.",
+      "instruction": "Bắt đầu She is responsible for và giữ hoạt động.",
+      "accept": [
+        "She is responsible for checking the receipts."
+      ],
+      "model": "She is responsible for checking the receipts.",
+      "explain": "Responsible for checking là mẫu tính từ + giới từ + V-ing."
+    },
+    {
+      "id": "dependent-prepositions-adjectives-8",
+      "level": "B1",
+      "use": "practice",
+      "type": "open",
+      "skill": "production",
+      "prompt": "Viết rồi tự đối chiếu với bài mẫu.",
+      "task": "Viết ba câu về bản thân hoặc nhóm: một năng lực với good at, một mối quan tâm với interested in và một vấn đề với a solution to.",
+      "model": [
+        "I am good at explaining routes.",
+        "Our team is interested in safer cycling.",
+        "We need a solution to the lack of bike racks."
+      ],
+      "checklist": [
+        "Đã giữ đúng cụm tính từ hoặc danh từ chưa?",
+        "Sau giới từ, động từ có ở dạng V-ing không?",
+        "Các nội dung có thực tế và rõ nghĩa không?"
+      ],
+      "explain": "Chọn nội dung của bạn; không cần giống mẫu để đúng."
+    },
+    {
+      "id": "dependent-prepositions-adjectives-9",
+      "level": "B1",
+      "use": "check",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn cụm diễn tả mức tăng đúng 12%.",
+      "stem": "The report records an increase ___ twelve percent in orders.",
+      "options": [
+        {
+          "t": "of",
+          "ok": true,
+          "note": "Of giới thiệu mức tăng."
+        },
+        {
+          "t": "in",
+          "tag": "preposition-pattern",
+          "note": "In thường giới thiệu đại lượng, không dùng trước mức twelve percent trong mẫu này."
+        },
+        {
+          "t": "to",
+          "tag": "preposition-pattern",
+          "note": "To có thể nêu mức đích, không phải mức tăng 12% mà đề yêu cầu."
+        }
+      ],
+      "explain": "Of twelve percent là lượng tăng, còn in orders cho biết cái gì tăng."
+    },
+    {
+      "id": "dependent-prepositions-adjectives-10",
+      "level": "B1",
+      "use": "check",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Hoàn thành câu hỏi đã tìm ra giải pháp cho vấn đề xếp lịch chưa. Dùng found, a solution to và the scheduling problem.",
+      "stem": "Have you {1}?",
+      "blanks": {
+        "1": {
+          "accept": [
+            "found a solution to the scheduling problem"
+          ]
+        }
+      },
+      "explain": "Found đứng sau have trong câu hỏi hoàn thành; a solution to liên kết giải pháp với vấn đề. Bài yêu cầu mẫu to, không cấm solution of/for trong những ngữ cảnh phù hợp khác."
+    },
+    {
+      "id": "dependent-prepositions-adjectives-11",
+      "level": "B1",
+      "use": "check",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn nhận xét đúng về biến thể vùng miền.",
+      "stem": "different from / different to / different than",
+      "options": [
+        {
+          "t": "Có những cách dùng chuẩn cho cả ba; mức phổ biến tùy vùng và cấu trúc.",
+          "ok": true,
+          "note": "From rộng rãi, to thường Anh-Anh, than thường Anh-Mỹ."
+        },
+        {
+          "t": "Chỉ from có thể đúng trong mọi ngữ cảnh.",
+          "tag": "preposition-pattern",
+          "note": "To và than không phải lỗi tuyệt đối."
+        },
+        {
+          "t": "Than chỉ dùng được trong câu sai.",
+          "tag": "preposition-pattern",
+          "note": "Different than có cách dùng chuẩn."
+        }
+      ],
+      "explain": "Chọn from là lời khuyên thực hành rộng rãi, không phải lý do kết luận mọi biến thể khác sai."
+    },
+    {
+      "id": "dependent-prepositions-adjectives-12",
+      "level": "B1",
+      "use": "check",
+      "type": "error",
+      "skill": "form",
+      "prompt": "Sửa giới từ nêu chủ đề quan tâm.",
+      "segments": [
+        {
+          "t": "The volunteers are interested "
+        },
+        {
+          "t": "on",
+          "bad": true,
+          "fix": [
+            "in"
+          ],
+          "note": "Interested in conservation là cụm phù hợp.",
+          "tag": "preposition-pattern"
+        },
+        {
+          "t": " conservation."
+        }
+      ],
+      "explain": "Interested in conservation là cụm phù hợp."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham chiếu đề xuất cho adjective/noun + preposition. Biến thể different tham khảo ghi chú có sẵn docs/grammar/research/05-contested-rules.md mục 31, mức trích đoạn; chưa xác minh trực tiếp toàn nguồn."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham chiếu đề xuất về bổ ngữ của tính từ và danh từ; không tuyên bố đã đối chiếu trang cụ thể."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

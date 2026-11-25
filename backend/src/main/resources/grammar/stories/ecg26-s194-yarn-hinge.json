@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s194-yarn-hinge",
+  "title": "Bản lề bằng len",
+  "summary": "Một cánh cửa đồ chơi bằng sợi đan kêu cót két như cửa sắt. Em nhỏ định tra dầu vào len.",
+  "level": "B2",
+  "topics": [
+    "passive-nonfinite"
+  ],
+  "scene": "university",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mộc",
+      "role": "Sinh viên thiết kế"
+    },
+    {
+      "id": "b",
+      "name": "Teo",
+      "role": "Người phụ trách xưởng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Mộc giấu máy phát tiếng dưới bục; bản lề len luôn mềm. Teo muốn em thử tháo nguồn âm riêng mà không làm bẩn cửa.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The wool doesn't need oil.",
+          "vi": "Len đâu cần dầu."
+        },
+        {
+          "who": "b",
+          "en": "Which part is meant to be unplugged?",
+          "vi": "Phần nào mới được thiết kế để rút điện?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Mộc chỉ đúng vật nhận thao tác.",
+        "options": [
+          {
+            "ok": true,
+            "t": "The speaker is designed to be unplugged for this test.",
+            "note": "To be unplugged là nguyên mẫu bị động. Speaker là vật có dây để tháo, không phải cánh cửa len.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "The door is supposed to unplug the speaker.",
+            "note": "To unplug là chủ động, gán việc rút dây cho cánh cửa. Mô hình không có cơ cấu để cửa tự làm việc ấy.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Em nhỏ rút dây, đẩy cửa và nghe nó mềm như một tiếng thở dài. Em tự thu tiếng mèo rừ thay tiếng sắt.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The hinge kept its wool and found its voice.",
+          "vi": "Bản lề giữ nguyên len mà tìm được giọng mới."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Cửa biết rừ rừ được tặng góc đọc sách yên tĩnh của trường.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Em mở cửa ba lần, âm thanh vẫn còn. Teo chỉ giắc cắm dưới bục để em tự chọn rút. Em giữ một lần có tiếng, một lần không.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A sound can wear the wrong material.",
+          "vi": "Một âm thanh cũng có thể khoác nhầm chất liệu."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Hai lần mở thành trò đoán chất liệu bằng tai, rồi bằng tay.",
+      "end": true
+    }
+  ]
+}

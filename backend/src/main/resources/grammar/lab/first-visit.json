@@ -1,0 +1,41 @@
+{
+  "id": "first-visit",
+  "title": "Lần đầu kể về một con chó",
+  "summary": "Bạn kể cho em nghe về con chó ở cổng. So sánh câu giới thiệu với câu tiếp theo khi cả hai đã biết đó là con nào.",
+  "level": "A1",
+  "topics": [
+    "the-basics",
+    "articles-in-context"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Lượt kể",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Giới thiệu"
+        },
+        {
+          "id": "v2",
+          "label": "Nhắc lại"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "A dog came up to the gate.",
+      "vi": "Có một con chó tiến lại gần cổng.",
+      "note": "A mở ra một đối tượng mới trong câu chuyện. / A introduces a new dog.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The dog is by the gate.",
+      "vi": "Con chó ấy đang ở cạnh cổng.",
+      "note": "The phù hợp khi người nghe xác định được con chó, chẳng hạn từ câu trước. / The points back to the dog you both know about.",
+      "verdict": "ok"
+    }
+  }
+}

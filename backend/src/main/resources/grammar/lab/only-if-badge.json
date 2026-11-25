@@ -1,0 +1,40 @@
+{
+  "id": "only-if-badge",
+  "title": "Không có thẻ thì sao?",
+  "summary": "Thông báo ở cửa kho cho biết trường hợp bị giữ ngoài. Thử viết cùng một điều kiện bằng unless và if. Có nên giữ từ phủ định trong cả hai mệnh đề phụ không?",
+  "level": "B1",
+  "topics": [
+    "unless-provided-as-long-as"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Từ nối",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Unless"
+        },
+        {
+          "id": "v2",
+          "label": "If"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "You can't enter unless you show your pass.",
+      "vi": "Bạn không thể vào trừ khi xuất trình thẻ.",
+      "note": "Show ở dạng khẳng định sau unless. Việc xuất trình thẻ là điều kiện cần. / Unless sets an exception to the restriction.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "You can't enter if you don't show your pass.",
+      "vi": "Nếu không xuất trình thẻ, bạn không thể vào.",
+      "note": "Với if, phải thêm don't để diễn đạt trường hợp thiếu thẻ như câu với unless. / If needs an explicit negative for the same restriction.",
+      "verdict": "ok"
+    }
+  }
+}

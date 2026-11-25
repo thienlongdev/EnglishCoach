@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s202-returned-on-paper",
+  "title": "Chiếc đồng hồ chỉ được trả trên giấy",
+  "summary": "Hệ thống ghi một đồng hồ đã được trả nhưng nó vẫn nằm trên quầy. Một nhân viên đã bấm trả lúc in phiếu, trước khi chủ ký.",
+  "level": "B2",
+  "topics": [
+    "reporting-passives",
+    "perfect-infinitive-gerund"
+  ],
+  "scene": "airport",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Như",
+      "role": "Người phụ trách quầy"
+    },
+    {
+      "id": "b",
+      "name": "Nico",
+      "role": "Người nhận dạng đồ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Người chủ còn đang trên máy bay. Như cần báo trạng thái hồ sơ mà không báo sai trạng thái vật. Đồng hồ vẫn tích tắc cạnh bàn phím.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The database says returned. My ears say it's still here.",
+          "vi": "Sổ điện tử nói đã trả. Tai tôi nghe nó còn ở đây."
+        },
+        {
+          "who": "b",
+          "en": "Keep the record and the event apart.",
+          "vi": "Hãy tách điều được ghi với điều thật sự đã xảy ra."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Như mô tả chính xác bằng chứng của mình.",
+        "options": [
+          {
+            "ok": true,
+            "t": "It is recorded as having been returned, but it is still on the desk.",
+            "note": "As having been returned lồng kết quả vào thông tin của hồ sơ; but giới thiệu quan sát hiện tại trái với ghi nhận ấy.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "It is known to have been returned to its owner.",
+            "note": "Known to have been returned xác nhận việc giao như sự thật. Điều ấy xung đột với vật đang có mặt và người nhận còn trên máy bay.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Nico kẹp phiếu chờ chữ ký vào dây đồng hồ. Khi khách đến, chính ông ghi giờ thật từ mặt đồng hồ vào phiếu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The watch supplied its own receipt time.",
+          "vi": "Đồng hồ tự cho giờ ký nhận của mình."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Hai mốc được lưu cùng lý do chênh, giúp ca sau biết vì sao phải đợi người nhận.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Như đặt tai nghe cạnh đồng hồ cho ca trưởng nghe tiếng tích tắc. Họ sửa trạng thái chờ giao, không bỏ mất phiếu đầu.",
+      "say": [
+        {
+          "who": "a",
+          "en": "This silence came after a real goodbye.",
+          "vi": "Sự im lặng lần này đến sau một lời tạm biệt thật."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Khi khách lấy đồng hồ, quầy bỗng yên. Lần này mọi người thật sự biết nó đã đi.",
+      "end": true
+    }
+  ]
+}

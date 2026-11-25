@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s243-had-the-stage-been",
+  "title": "Sân khấu lẽ ra đã trống",
+  "summary": "Một người thợ qua đời từ lâu nhưng sàn diễn ông đóng vẫn chịu được điệu nhảy nặng đêm nay. Khuê muốn cảm ơn người vắng mặt bằng một giả định.",
+  "level": "C1",
+  "topics": [
+    "mixed-conditionals",
+    "inverted-conditionals"
+  ],
+  "scene": "lecture",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vera",
+      "role": "Đạo diễn"
+    },
+    {
+      "id": "b",
+      "name": "Khuê",
+      "role": "Người dịch"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Sổ bảo trì ghi ông đã thêm thanh chống năm 1972. Tối nay người xem thấy sàn đứng vững. Vera chỉ cho Khuê thanh gỗ cũ còn nguyên dấu bào.",
+      "say": [
+        {
+          "who": "a",
+          "en": "He's gone, but that beam is very much here.",
+          "vi": "Ông đi rồi, nhưng cây dầm vẫn còn đây."
+        },
+        {
+          "who": "b",
+          "en": "Can your line hold the old decision and tonight's result together?",
+          "vi": "Câu của cô giữ được quyết định xưa và kết quả tối nay cùng lúc không?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn giả định đặt nguyên nhân ở quá khứ và hệ quả ở hiện tại.",
+        "options": [
+          {
+            "ok": false,
+            "t": "Should he omit the beam, the stage will be weaker tomorrow.",
+            "note": "Should he omit xem việc ông bỏ thanh gỗ là phương án tương lai. Điều ấy không phù hợp với người đã mất và quyết định hoàn tất từ lâu.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "Had he omitted this beam, the stage would be weaker tonight.",
+            "note": "Had he omitted nêu việc ngược với quyết định xưa. Would be weaker tonight đặt kết quả so sánh vào tối nay, không khẳng định chắc sẽ sập.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Vera chiếu hình thanh dầm trước điệu nhảy cuối. Mỗi bước chân thành lời cảm ơn nghe được.",
+      "say": [
+        {
+          "who": "b",
+          "en": "He still carries this room.",
+          "vi": "Ông vẫn đang đỡ cả căn phòng này."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Cháu người thợ xin mẩu mạt cưa còn giữ trong sổ để đem về bên ảnh ông.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Khuê rời bàn dịch đến tận mặt dưới sân khấu. Bụi phủ dấu năm 1972 làm mốc quá khứ rõ ràng. Cô đọc lời cảm ơn trước khi dàn nhạc nổi lên.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The date belonged underneath the dancers.",
+          "vi": "Mốc năm ấy nằm ngay dưới chân người múa."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Gánh hát đặt tên người thợ lên tấm bảng đầu tiên dành cho người ở dưới sàn.",
+      "end": true
+    }
+  ]
+}

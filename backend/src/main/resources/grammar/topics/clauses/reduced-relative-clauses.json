@@ -1,0 +1,459 @@
+{
+  "schema": 1,
+  "slug": "reduced-relative-clauses",
+  "version": 2,
+  "domain": "clauses",
+  "order": 90,
+  "kind": "grammar",
+  "title": {
+    "vi": "Mệnh đề quan hệ rút gọn",
+    "en": "Reduced relative clauses"
+  },
+  "subtitle": {
+    "vi": "Rút gọn mà giữ quan hệ và thời gian",
+    "en": "Reduce a relative while preserving meaning and time"
+  },
+  "aliases": [
+    "mệnh đề quan hệ rút gọn",
+    "reduced relatives",
+    "people waiting",
+    "parcel delivered",
+    "who waiting"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Dùng -ing và phân từ bổ nghĩa danh từ đúng quan hệ.",
+    "Giữ mốc thời gian cần thiết.",
+    "Không rút mọi mệnh đề bằng thao tác bỏ từ máy móc."
+  ],
+  "prerequisites": [
+    "relative-clauses-defining",
+    "participle-clauses"
+  ],
+  "related": [
+    {
+      "slug": "relative-clauses-defining",
+      "rel": "more"
+    },
+    {
+      "slug": "participle-clauses",
+      "rel": "contrast"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Mệnh đề quan hệ rút gọn (reduced relative) thường dùng cụm không hữu hạn sau danh từ, như people waiting hoặc forms signed yesterday.",
+    "when": "Dùng khi người đọc vẫn xác định rõ quan hệ và thời gian.",
+    "examples": [
+      {
+        "en": "The people [V|waiting] outside have tickets.",
+        "vi": "Những người đang chờ ngoài kia có vé."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "The people who are waiting outside có thể rút thành the people waiting outside. Waiting liên hệ chủ động với people. Không bỏ riêng are mà giữ who waiting."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Danh từ",
+            "items": [
+              "the parcel"
+            ]
+          },
+          {
+            "label": "Phân từ bị động",
+            "items": [
+              "delivered"
+            ]
+          },
+          {
+            "label": "Mốc còn giữ",
+            "items": [
+              "yesterday"
+            ]
+          }
+        ],
+        "sentence": "{0} {1} {2}"
+      },
+      "caption": "Delivered bổ nghĩa parcel theo nghĩa được giao; yesterday giữ ngày giao.",
+      "alt": "Delivered bổ nghĩa parcel theo nghĩa được giao; yesterday giữ ngày giao."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Mẫu đầy đủ",
+        "Rút gọn",
+        "Quan hệ"
+      ],
+      "rows": [
+        [
+          "people who are waiting",
+          "people waiting",
+          "chủ động"
+        ],
+        [
+          "forms that were signed yesterday",
+          "forms signed yesterday",
+          "bị động"
+        ],
+        [
+          "the room that is available now",
+          "the room available now",
+          "tính chất sau be"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Phân từ quá khứ trong parcels delivered yesterday thường có quan hệ bị động; -ing trong staff checking tickets thường có quan hệ chủ động. Không suy mọi phân từ trong mọi ngữ cảnh đều là bị động hoặc mỗi -ing đều là “đang”."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Rút gọn có thể làm mất dấu thời gian hay tính tình thái. The person who will approve it không tự đổi thành the person approving it mà chắc chắn giữ nguyên nghĩa tương lai và vai trò."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Một cụm -ing không tự có thì hiện tại. In the photo from 1998, the man standing by the gate ... có thời gian do ảnh và ngữ cảnh xác định."
+    },
+    {
+      "type": "p",
+      "vi": "Sau first, next, only và một số mẫu, to-infinitive cũng bổ nghĩa danh từ: the first person to arrive. Không tự đổi mọi which-clause thành to-infinitive; sắc thái có thể khác."
+    },
+    {
+      "type": "p",
+      "vi": "Cần phân biệt cụm bổ nghĩa danh từ với mệnh đề phân từ bổ nghĩa cả tình huống: The people waiting outside là một cụm danh từ; Waiting outside, I called Lan là cấu trúc trạng ngữ có điều kiện chủ ngữ riêng."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "reduced-relative-clauses-m1",
+      "wrong": "The people who waiting outside have tickets.",
+      "right": "The people waiting outside have tickets.",
+      "why": "Bỏ cả who are trong mẫu rút gọn, hoặc giữ đầy đủ who are waiting."
+    },
+    {
+      "id": "reduced-relative-clauses-m2",
+      "wrong": "The parcel deliver yesterday is here.",
+      "right": "The parcel delivered yesterday is here.",
+      "why": "Dùng phân từ delivered cho quan hệ được giao."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có thể rút mọi mệnh đề quan hệ không?",
+      "a": "Không. Phải giữ nghĩa thời gian, tình thái, vai trò và độ rõ của danh từ."
+    },
+    {
+      "q": "Ing trong cụm này có luôn chỉ hiện tại không?",
+      "a": "Không. Mốc thời gian có thể đến từ ngữ cảnh quá khứ hoặc tương lai."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "rrc-01",
+      "prompt": "Chọn cụm rút gọn giữ nghĩa khách đang chờ.",
+      "explain": "Waiting bổ nghĩa guests theo nghĩa chủ động.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "the guests who are waiting outside",
+      "options": [
+        {
+          "t": "the guests waiting outside",
+          "ok": true,
+          "note": "Bỏ who are, giữ waiting."
+        },
+        {
+          "t": "the guests waited outside",
+          "ok": false,
+          "note": "Không phải cụm rút gọn giữ nghĩa chủ động đang chờ này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "the guests who waiting outside",
+          "ok": false,
+          "note": "Không giữ who rồi bỏ riêng are ở mẫu hữu hạn.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "rrc-02",
+      "prompt": "Nối cụm đầy đủ với cách rút gọn phù hợp.",
+      "explain": "-Ing thường có quan hệ chủ động; phân từ quá khứ thường có quan hệ bị động trong những mẫu này.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "the guests who are waiting",
+          "b": "the guests waiting"
+        },
+        {
+          "a": "the forms that were signed yesterday",
+          "b": "the forms signed yesterday"
+        },
+        {
+          "a": "the room that is available now",
+          "b": "the room available now"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "rrc-03",
+      "prompt": "Phân loại quan hệ của danh từ với hành động.",
+      "explain": "Danh từ được bổ nghĩa là người làm hoặc đối tượng chịu tác động theo nghĩa.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Chủ động",
+        "Bị động"
+      ],
+      "items": [
+        {
+          "t": "the people waiting outside",
+          "cat": "Chủ động"
+        },
+        {
+          "t": "the parcel delivered yesterday",
+          "cat": "Bị động"
+        },
+        {
+          "t": "the team checking the figures",
+          "cat": "Chủ động"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "rrc-04",
+      "prompt": "Điền dạng -ing hoặc phân từ của từ được cho.",
+      "explain": "Waiting chủ động; written bị động với report.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "the people {1} (wait) outside; the report {2} (write) by Lan",
+      "blanks": {
+        "1": {
+          "accept": [
+            "waiting"
+          ]
+        },
+        "2": {
+          "accept": [
+            "written"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "rrc-05",
+      "prompt": "Sửa mẫu rút gọn của cụm chủ động.",
+      "explain": "Giữ -ing khi rút who are waiting.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "The guests"
+        },
+        {
+          "t": "who waiting",
+          "bad": true,
+          "fix": [
+            "waiting",
+            "who are waiting"
+          ],
+          "note": "Dùng cụm rút gọn hoặc mệnh đề đầy đủ, không trộn hai mẫu.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "outside need help."
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "rrc-06",
+      "prompt": "Sắp xếp cụm bắt đầu bằng the files; by Lan cuối.",
+      "explain": "Files chịu tác động của checked.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "the files",
+        "checked",
+        "by Lan"
+      ],
+      "accept": [
+        [
+          "the files",
+          "checked",
+          "by Lan"
+        ]
+      ],
+      "end": ".",
+      "level": "B2"
+    },
+    {
+      "id": "rrc-07",
+      "prompt": "Rút gọn mệnh đề chỉ người đang chờ.",
+      "explain": "Bỏ who are cùng nhau, giữ phần còn lại.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "The people who are waiting outside have tickets.",
+      "instruction": "Dùng dạng rút gọn -ing; giữ danh từ, outside và mệnh đề chính.",
+      "accept": [
+        "The people waiting outside have tickets"
+      ],
+      "model": "The people waiting outside have tickets",
+      "level": "B2"
+    },
+    {
+      "id": "rrc-08",
+      "prompt": "Viết nhãn rõ cho người và vật.",
+      "explain": "Tự kiểm tra nghĩa; bài mở không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết hai câu: một danh từ được bổ nghĩa bằng -ing chủ động, một bằng phân từ quá khứ bị động. Viết lại mỗi câu bằng mệnh đề quan hệ đầy đủ theo ngữ cảnh.",
+      "model": [
+        "The people waiting outside have tickets. The people who are waiting outside have tickets. The forms signed yesterday are ready. The forms that were signed yesterday are ready."
+      ],
+      "checklist": [
+        "Danh từ có quan hệ chủ động/bị động đúng.",
+        "Không suy -ing luôn là hiện tại.",
+        "Mốc thời gian cần thiết không bị mất khi rút gọn."
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "rrc-09",
+      "prompt": "Điền dạng phù hợp của stand và damage trong cụm bổ nghĩa.",
+      "explain": "Standing chỉ người đứng; damaged chỉ đồ vật bị hư.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "the guide {1} (stand) near the door; the equipment {2} (damage) in the flood",
+      "blanks": {
+        "1": {
+          "accept": [
+            "standing"
+          ]
+        },
+        "2": {
+          "accept": [
+            "damaged"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "rrc-10",
+      "prompt": "Rút gọn mệnh đề bị động.",
+      "explain": "Giữ mốc yesterday để không xóa thông tin ngày giao.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "The parcel that was delivered yesterday is on the desk.",
+      "instruction": "Bỏ that was; giữ phân từ, mốc thời gian và các từ còn lại.",
+      "accept": [
+        "The parcel delivered yesterday is on the desk"
+      ],
+      "model": "The parcel delivered yesterday is on the desk",
+      "level": "B2"
+    },
+    {
+      "id": "rrc-11",
+      "prompt": "Chọn tất cả cụm có thể chuẩn theo nghĩa ghi rõ.",
+      "explain": "Rút gọn cần cấu trúc hoàn chỉnh và đúng quan hệ.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Người đang chờ hoặc đồ được giao.",
+      "options": [
+        {
+          "t": "the people waiting outside",
+          "ok": true,
+          "note": "Người làm việc chờ."
+        },
+        {
+          "t": "the parcel delivered yesterday",
+          "ok": true,
+          "note": "Bưu kiện được giao."
+        },
+        {
+          "t": "the people who waiting outside",
+          "ok": false,
+          "note": "Thiếu are nếu giữ who.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "the parcel was delivered yesterday on the desk",
+          "ok": false,
+          "note": "Đây là một mệnh đề có was, không phải cụm danh từ rút gọn theo nhiệm vụ.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "rrc-12",
+      "prompt": "Chọn nhận xét đúng về thời gian.",
+      "explain": "Dạng không hữu hạn không tự định thì như động từ hữu hạn.",
+      "skill": "meaning",
+      "use": "check",
+      "type": "choice",
+      "stem": "In the photo from 1998, the man standing by the gate is my father.",
+      "options": [
+        {
+          "t": "Standing có thể tả người trong ảnh năm 1998; không buộc nghĩa đứng ngay bây giờ.",
+          "ok": true,
+          "note": "Mốc thời gian do ngữ cảnh cung cấp."
+        },
+        {
+          "t": "Có -ing nên ảnh phải chụp ngay hôm nay.",
+          "ok": false,
+          "note": "Không suy thì từ -ing.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Mọi mệnh đề quan hệ đều rút gọn được mà không đổi nghĩa.",
+          "ok": false,
+          "note": "Có các giới hạn về cấu trúc và nghĩa.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

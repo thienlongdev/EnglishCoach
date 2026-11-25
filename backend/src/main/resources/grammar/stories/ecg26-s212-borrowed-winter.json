@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s212-borrowed-winter",
+  "title": "Mùa đông dựng bằng giấy",
+  "level": "B2",
+  "topics": [
+    "reporting-verbs",
+    "hedging"
+  ],
+  "scene": "newsroom",
+  "summary": "Vở phim quay giữa trưa hè nhưng cảnh có tuyết. Alba kể mình dùng giấy nghiền, không hề bảo cả bộ phim quay trong nhà. Người đọc đang chờ một tấm ảnh chứng minh tuyết thật.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Phúc",
+      "role": "Người viết tin"
+    },
+    {
+      "id": "b",
+      "name": "Alba",
+      "role": "Thợ dựng cảnh"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Đoạn băng phỏng vấn dừng sau câu I made the snow myself. Ở mép khung có cành cây thật đang rung. Phúc có thể ghi điều xác minh được mà vẫn để ngỏ nơi quay.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Her snow is paper. The tree might be real.",
+          "vi": "Tuyết là giấy. Cây có thể là thật."
+        },
+        {
+          "who": "b",
+          "en": "Then don't put a roof over the whole film in my name.",
+          "vi": "Vậy đừng nhân danh tôi dựng mái nhà lên cả bộ phim."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Chọn lời trích dẫn gián tiếp giữ nội dung lời Alba.",
+        "options": [
+          {
+            "t": "Alba admitted filming every scene indoors.",
+            "note": "Admitted thêm sắc thái thừa nhận, every scene indoors thêm việc và phạm vi Alba chưa hề nói. Câu có ngữ pháp nhưng không trung thực với băng ghi.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "Alba explained that she had made the snow herself.",
+            "note": "Had made đưa việc làm tuyết trước lúc giải thích. Herself nhấn Alba, không đưa thêm một khẳng định về địa điểm.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Phúc đăng ảnh cành cây cạnh đống giấy với đúng một dòng ghi nguồn. Một người chăm vườn nhận ra cây và gửi lời mời đoàn quay lại đúng mùa tuyết.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Next winter I can let the sky do my job.",
+          "vi": "Mùa đông tới tôi để bầu trời làm việc thay mình."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Alba cho Phúc xem bàn tay còn dính giấy dưới bóng cây ngoài sân. Anh đính chính rằng giấy là vật liệu, không phải bằng chứng có mái. Bài mới kể về người làm ra mùa đông thay vì dựng chuyện về nơi quay.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One honest handful of paper was story enough.",
+          "vi": "Một nắm giấy thật đã đủ thành chuyện."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

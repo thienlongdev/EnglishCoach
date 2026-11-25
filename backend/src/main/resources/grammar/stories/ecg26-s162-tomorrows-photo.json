@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s162-tomorrows-photo",
+  "title": "Ảnh “ngày mai”",
+  "summary": "Một tấm ảnh được đóng dấu ngày mai ngay trên bàn tin đêm.",
+  "level": "B2",
+  "topics": [
+    "future-in-the-past"
+  ],
+  "scene": "newsroom",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Linh",
+      "role": "Phóng viên trực đêm"
+    },
+    {
+      "id": "b",
+      "name": "Ari",
+      "role": "Biên tập viên"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Linh phát hiện máy in tem đặt giờ của một đảo phía đông. Ảnh thật chụp trước nửa đêm địa phương; người gửi khi ấy hẹn sẽ công bố vào sáng hôm sau.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Tomorrow is already on the paper.",
+          "vi": "Ngày mai đã nằm trên giấy rồi."
+        },
+        {
+          "who": "b",
+          "en": "Whose tomorrow did the sender mean?",
+          "vi": "Ngày mai tính theo giờ của người nào?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Linh phải thuật lại lời hẹn theo điểm nhìn khi người gửi viết, trước khi đảo sang ngày mới.",
+        "options": [
+          {
+            "ok": true,
+            "t": "She said she'd release it the following morning.",
+            "note": "Would release là tương lai nhìn từ lúc nói. The following morning bám vào ngày của người gửi.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "She said she'd already released it.",
+            "note": "Had already released mô tả việc đã xong trước khi nói. Cụm này đổi lời hẹn thành tin công bố rồi.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Ari đối chiếu giờ của đảo rồi mở ảnh đúng lúc được hẹn. Trong ảnh là một đứa trẻ hạ chiếc đồng hồ cũ của bến.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Two dates can share one sunrise.",
+          "vi": "Hai ngày tháng có thể cùng chung một lần mặt trời mọc."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Báo in kèm hai mốc giờ dưới một mặt trời. Ngoại của đứa bé giữ trang báo vì đó là lần đầu bà đọc được đúng giờ trên đảo mình.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Linh vừa định bấm gửi thì nhìn thấy phong thư đề giờ mở. Cô cài lại lịch đúng buổi sáng của đảo.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I nearly sent tomorrow out tonight.",
+          "vi": "Suýt nữa tôi gửi ngày mai đi ngay đêm nay."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Trang báo lên đúng hẹn. Linh dán hai mặt đồng hồ nhỏ cạnh nút gửi; về sau cô tự xoay chúng trước mỗi bản tin xa.",
+      "end": true
+    }
+  ]
+}

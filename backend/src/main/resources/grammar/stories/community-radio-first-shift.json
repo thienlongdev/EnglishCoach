@@ -1,0 +1,122 @@
+{
+  "id": "community-radio-first-shift",
+  "title": "Ca trực đầu ở đài cộng đồng",
+  "summary": "Bạn là Vy, tình nguyện viên mới ở phòng thu. Kể kinh nghiệm hoặc một lần cụ thể, rồi chọn cách báo công việc đã làm. Những cách kể đúng dẫn đến nhiệm vụ và đoạn kết khác nhau; một lựa chọn chưa phù hợp luôn có đường sửa và đi tiếp.",
+  "level": "B1",
+  "topics": ["present-perfect-vs-past-simple"],
+  "scene": "newsroom",
+  "cast": [
+    { "id": "vy", "name": "Vy", "role": "Tình nguyện viên mới; bạn chọn lời của Vy" },
+    { "id": "omar", "name": "Omar", "role": "Biên tập viên đài cộng đồng" }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Chiều thứ Bảy, Vy đến nhận ca trực đầu tiên. Vy có vài bản phỏng vấn cũ, trong đó có một bản thu vào mùa đông năm ngoái. Omar muốn biết Vy đã làm những gì trước khi chia việc.",
+      "say": [{ "who": "omar", "en": "Tell me about your recording experience.", "vi": "Kể tôi nghe kinh nghiệm thu âm của bạn nhé." }],
+      "choice": {
+        "prompt": "Bạn muốn giới thiệu kinh nghiệm chung hay nhắc ngay một lần cụ thể? Cả hai cách đều có thể mở cuộc trò chuyện.",
+        "options": [
+          { "t": "I've recorded interviews before.", "ok": true, "note": "Hiện tại hoàn thành (present perfect) giới thiệu kinh nghiệm tính đến bây giờ, chưa định ngày cho lần thu. Omar sẽ hỏi thêm để chọn bản lưu trữ.", "next": "experience", "consequence": "Bạn và Omar mở kho bản thu cũ." },
+          { "t": "I recorded an interview last winter.", "ok": true, "note": "Quá khứ đơn (past simple) gắn lần thu với mùa đông năm ngoái, một khoảng đã qua. Câu cũng tự nhiên; Omar đã có ví dụ cụ thể và chuyển sang việc chuẩn bị ca hôm nay.", "next": "today-report", "consequence": "Omar nhờ bạn báo tình trạng thiết bị hôm nay." },
+          { "t": "I've recorded an interview last winter.", "ok": false, "note": "Giữ last winter để định thời gian cho lần thu thì tiếng Anh chuẩn cần I recorded. Câu không sai vì thiếu kinh nghiệm, mà vì cách kết hợp thì với mốc đã qua.", "next": "repair-opening", "consequence": "Omar hỏi lại mốc thời gian, rồi hai người tiếp tục phân công." }
+        ]
+      },
+      "explain": [{ "type": "p", "vi": "Hai lựa chọn đúng đưa cùng một người kể vào hai góc nhìn: nhìn lại vốn kinh nghiệm từ bây giờ, hoặc kể một sự việc ở thời điểm đã qua. Không phải cứ dịch được thành chữ **đã** là dùng have hoặc has." }]
+    },
+    {
+      "id": "experience",
+      "narrate": "Trong thư mục có một cuộc trò chuyện Vy thu với một người làm bánh vào tháng Ba vừa qua. Omar định chọn bản đó cho chuyên mục ký ức khu phố.",
+      "say": [{ "who": "omar", "en": "Which interview did you record in March?", "vi": "Tháng Ba bạn thu cuộc phỏng vấn nào?" }],
+      "choice": {
+        "prompt": "Trả lời về cuộc phỏng vấn đó và giữ mốc in March.",
+        "options": [
+          { "t": "I interviewed a baker in March.", "ok": true, "note": "Câu đang nói về một lần cụ thể trong tháng Ba đã qua. Interviewed là quá khứ đơn phù hợp.", "next": "archive-desk", "consequence": "Hai người tìm được đúng tệp." },
+          { "t": "I've interviewed a baker in March.", "ok": false, "note": "Ở đây in March định thời gian đã qua cho chính cuộc phỏng vấn, nên dùng I interviewed. Nếu bỏ mốc, I've interviewed a baker có thể giới thiệu kinh nghiệm.", "next": "repair-date", "consequence": "Vy xác nhận lại ngày rồi mở đúng tệp." }
+        ]
+      }
+    },
+    {
+      "id": "today-report",
+      "narrate": "Vy đã kiểm tra âm thanh lúc chín giờ sáng. Bây giờ vẫn là chiều cùng ngày; có thể tổng kết việc đã làm hoặc nêu chính xác giờ kiểm tra.",
+      "say": [{ "who": "omar", "en": "What about the sound check for today's programme?", "vi": "Còn việc kiểm tra âm thanh cho chương trình hôm nay thì sao?" }],
+      "choice": {
+        "prompt": "Chọn cách báo việc đã làm. Hai câu đúng tập trung vào thông tin khác nhau.",
+        "options": [
+          { "t": "I've checked the sound today.", "ok": true, "note": "Bạn tổng kết việc đã hoàn tất trong ngày còn mở đến hiện tại. Câu không nêu giờ; Omar sẽ cùng bạn nghe bản thử.", "next": "listen-desk", "consequence": "Hai người đối chiếu chất lượng bản thử." },
+          { "t": "I checked the sound at nine this morning.", "ok": true, "note": "Bạn kể lần kiểm tra cụ thể lúc chín giờ, đã qua. Quá khứ đơn phù hợp; Omar sẽ ghi giờ đó vào nhật ký thiết bị.", "next": "log-desk", "consequence": "Hai người cập nhật nhật ký rồi chuẩn bị ca trực." },
+          { "t": "I've checked the sound at nine this morning.", "ok": false, "note": "At nine this morning định giờ đã qua cho lần kiểm tra; bây giờ là buổi chiều. Giữ thông tin này thì dùng I checked. Đừng suy ra rằng mọi câu có today đều cần hoàn thành.", "next": "repair-today", "consequence": "Vy nói lại giờ kiểm tra để Omar ghi sổ." }
+        ]
+      },
+      "explain": [{ "type": "note", "kind": "tip", "vi": "I checked the sound today cũng là một câu tự nhiên khi kể lại lần kiểm tra đã xong. Today không phải công tắc tự động chọn thì. Trong lựa chọn có at nine this morning, người nói còn định rõ một giờ đã qua." }]
+    },
+    {
+      "id": "repair-opening",
+      "say": [
+        { "who": "omar", "en": "Last winter? Tell me about that interview.", "vi": "Mùa đông năm ngoái à? Kể về cuộc phỏng vấn đó nhé." },
+        { "who": "vy", "en": "I recorded an interview last winter. I still have the file.", "vi": "Tôi thu một cuộc phỏng vấn vào mùa đông năm ngoái. Tôi vẫn giữ tệp." }
+      ],
+      "narrate": "Omar ghi nhận kinh nghiệm của Vy và chuyển sang chuẩn bị thiết bị cho ca hôm nay.",
+      "next": "today-report"
+    },
+    {
+      "id": "repair-date",
+      "say": [{ "who": "vy", "en": "I interviewed a baker in March. Here's the recording.", "vi": "Tôi phỏng vấn một người làm bánh vào tháng Ba. Bản thu ở đây." }],
+      "explain": [{ "type": "p", "vi": "Đã có mốc tháng Ba đã qua, Vy chuyển sang quá khứ đơn. Kinh nghiệm vẫn có giá trị hiện tại; điều đó không buộc câu có mốc quá khứ phải dùng hiện tại hoàn thành." }],
+      "next": "archive-desk"
+    },
+    {
+      "id": "repair-today",
+      "say": [{ "who": "vy", "en": "I checked the sound at nine this morning. The test file is on the desktop.", "vi": "Tôi kiểm tra âm thanh lúc chín giờ sáng nay. Tệp thử ở màn hình máy tính." }],
+      "next": "log-desk"
+    },
+    {
+      "id": "archive-desk",
+      "say": [
+        { "who": "omar", "en": "The baker's story fits our neighbourhood programme.", "vi": "Câu chuyện của người làm bánh hợp với chuyên mục khu phố của chúng ta." },
+        { "who": "vy", "en": "I've saved a copy for the programme.", "vi": "Tôi lưu một bản cho chương trình rồi." }
+      ],
+      "narrate": "Vy chọn đoạn kể về buổi mở tiệm đầu tiên. Omar kiểm tra giấy đồng ý sử dụng bản thu đã có trong hồ sơ.",
+      "next": "archive-end"
+    },
+    {
+      "id": "archive-end",
+      "say": [{ "who": "omar", "en": "Your first task is ready. Thanks for finding that recording.", "vi": "Nhiệm vụ đầu của bạn xong rồi. Cảm ơn bạn đã tìm bản thu đó." }],
+      "narrate": "Ca trực bắt đầu với một câu chuyện từ kho lưu trữ. Bạn đã đi từ kinh nghiệm chung đến thời điểm cụ thể, rồi báo việc vừa hoàn tất.",
+      "explain": [{ "type": "p", "vi": "I've recorded giới thiệu kinh nghiệm; I interviewed in March kể lần cụ thể; I've saved báo công việc có kết quả liên quan đến chương trình hiện tại. Ba câu phục vụ ba mục đích trong cùng một câu chuyện." }],
+      "end": true
+    },
+    {
+      "id": "listen-desk",
+      "say": [
+        { "who": "omar", "en": "Let's listen to the test recording together.", "vi": "Mình cùng nghe bản thu thử nhé." },
+        { "who": "vy", "en": "I tested both microphones at nine. The quieter one sounds better.", "vi": "Tôi thử cả hai micro lúc chín giờ. Chiếc ít nhiễu hơn nghe tốt hơn." }
+      ],
+      "narrate": "Hai người chọn micro có ít tiếng nền. Cách báo kết quả đã dẫn sang một cuộc nghe thử chung.",
+      "next": "listen-end"
+    },
+    {
+      "id": "listen-end",
+      "say": [{ "who": "vy", "en": "I've saved the test file. We're ready to record.", "vi": "Tôi lưu tệp thử rồi. Chúng ta sẵn sàng thu." }],
+      "narrate": "Vy nhận bàn điều khiển cho phần giới thiệu chương trình. Ca trực khép lại phần chuẩn bị bằng một kết quả còn dùng ngay lúc này.",
+      "explain": [{ "type": "p", "vi": "Câu hoàn thành báo việc đã làm có liên quan hiện tại; câu quá khứ có at nine cung cấp chi tiết. Hai thì bổ sung thông tin cho nhau, không chia thành một thì đúng cho cả đoạn và một thì sai." }],
+      "end": true
+    },
+    {
+      "id": "log-desk",
+      "say": [
+        { "who": "omar", "en": "Nine o'clock. I'll add that to the equipment log.", "vi": "Chín giờ nhé. Tôi sẽ thêm giờ đó vào nhật ký thiết bị." },
+        { "who": "vy", "en": "I've put the test file in the shared folder.", "vi": "Tôi đặt tệp thử trong thư mục chung rồi." }
+      ],
+      "narrate": "Nhật ký có giờ kiểm tra cụ thể, còn thư mục chung có bản thử cho người nhận ca sau.",
+      "next": "log-end"
+    },
+    {
+      "id": "log-end",
+      "say": [{ "who": "omar", "en": "The next volunteer has everything they need. Let's start the programme.", "vi": "Người trực tiếp theo có đủ thứ cần dùng rồi. Mình bắt đầu chương trình nhé." }],
+      "narrate": "Vy hoàn tất bàn giao thiết bị và bắt đầu ca trực. Nhánh này ưu tiên thông tin giờ giấc thay vì buổi nghe thử chung.",
+      "explain": [{ "type": "p", "vi": "I checked at nine ghi một lần đã qua. I've put báo kết quả hiện đang có ích. Chọn nhánh khác sẽ đổi việc hai người làm tiếp, nhưng cả hai cách báo đúng đều được tôn trọng." }],
+      "end": true
+    }
+  ]
+}

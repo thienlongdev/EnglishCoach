@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s050-late-umbrella",
+  "title": "Chiếc ô đến sau cơn mưa",
+  "summary": "Ari mang ô tới sau khi mưa đã dứt. Thu tưởng bạn đến quá muộn cứu bức tranh giấy treo ngoài hiên.",
+  "level": "A2",
+  "topics": [
+    "past-simple",
+    "clauses-reason-result"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Thu",
+      "role": "Người phơi tranh"
+    },
+    {
+      "id": "b",
+      "name": "Ari",
+      "role": "Người mang ô"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Ari gấp ô lại. Trên mặt ngoài có một vệt xanh cùng màu với tranh. Bức tranh trên hiên khô nguyên. Hóa ra lúc nãy Ari đã mở ô bên trên tranh trong khi Thu chạy lấy kẹp.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I thought my picture was wet.",
+          "vi": "Mình tưởng tranh mình đã ướt rồi."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "The rain stopped before I came to the door.",
+          "vi": "Mưa ngừng trước khi mình đến cửa."
+        }
+      ],
+      "choice": {
+        "prompt": "Thu giải thích vì sao tranh khô, dựa vào vệt màu và lời kể.",
+        "options": [
+          {
+            "t": "It stayed dry because you held the umbrella over it.",
+            "note": "Because nêu nguyên nhân, held kể hành động trong cơn mưa đã qua. Over it cho biết ô ở phía trên tranh.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "It stayed dry because you came after the rain.",
+            "note": "Đến cửa sau mưa là thật, nhưng bản thân việc tới muộn không che được tranh lúc mưa. Because đã gán nhầm nguyên nhân.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Ari lật ô cho Thu xem dấu màu. Hình con cá trên tranh in một cái đuôi bé xíu lên vải ô.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Your fish has a friend on my umbrella.",
+          "vi": "Cá của cậu có bạn trên ô mình rồi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Thu chạm vào vệt xanh ở mặt ô. Ari chỉ chỗ mình từng đứng dưới mái hiên và cả hai nhận ra dấu đuôi cá.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I was here before I knocked.",
+          "vi": "Mình đã đứng ở đây trước lúc gõ cửa."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Thu tô thêm mắt cho cái đuôi bé xíu trên ô thành một con cá thứ hai. Mỗi khi trời mưa, hai người hàng xóm đều có tranh để nhìn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Our fish like different weather.",
+          "vi": "Hai con cá của mình thích hai kiểu thời tiết khác nhau."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

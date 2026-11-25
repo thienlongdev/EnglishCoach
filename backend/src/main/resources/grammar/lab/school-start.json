@@ -1,0 +1,41 @@
+{
+  "id": "school-start",
+  "title": "Ngày thứ hai hay thứ Hai?",
+  "summary": "Lịch học có một dòng ghi Monday, một dòng ghi the second. Hai dòng có xác định ngày theo cùng một cách không?",
+  "level": "A1",
+  "topics": [
+    "numbers-dates-measures",
+    "prepositions-time"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Loại ngày",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Ngày trong tuần"
+        },
+        {
+          "id": "v2",
+          "label": "Ngày trong tháng"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The class starts on Monday.",
+      "vi": "Lớp bắt đầu vào thứ Hai.",
+      "note": "Monday thuộc chu kỳ tuần. On đi với tên ngày. / Monday names a weekday.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The class starts on the second.",
+      "vi": "Lớp bắt đầu vào ngày mùng hai.",
+      "note": "The second là số thứ tự chỉ ngày trong tháng đã biết, không nhất thiết là thứ Hai. / The second gives a date in the understood month.",
+      "verdict": "ok"
+    }
+  }
+}

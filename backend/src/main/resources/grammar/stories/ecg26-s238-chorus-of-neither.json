@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s238-chorus-of-neither",
+  "title": "Hợp xướng của chữ neither",
+  "summary": "Hai ca sĩ đều phủ nhận đã chọn bài cuối, dù cả hai đã hát. Khán giả lại nghĩ họ phủ nhận cả việc hát.",
+  "level": "C1",
+  "topics": [
+    "negation-scope",
+    "ellipsis"
+  ],
+  "scene": "lecture",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vera",
+      "role": "Đạo diễn"
+    },
+    {
+      "id": "b",
+      "name": "Khuê",
+      "role": "Người dịch"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Vera nghe rõ I didn't choose it và Neither did I trên băng tập. Nhạc trưởng đã để bản nhạc lên giá trước khi họ đến.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Their mouths are moving in the final shot.",
+          "vi": "Trong cảnh cuối họ vẫn hát."
+        },
+        {
+          "who": "b",
+          "en": "Which verb survives after neither did I?",
+          "vi": "Sau neither did I còn hiểu ngầm động từ nào?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Khuê viết phụ đề giữ đúng điều hai người cùng phủ nhận.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Neither singer chose the piece.",
+            "note": "Did thay cho chose trong ngữ cảnh ngay trước. Neither singer chỉ cả hai đều không chọn, chưa nói ai hát.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Neither singer performed the piece.",
+            "note": "Performed thay một hành động khác vào phần lược. Hình ảnh và lời khai đều không hỗ trợ thay đổi ấy.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Vera giữ cảnh cả hai cất tiếng, rồi cắt về bàn tay nhạc trưởng đặt bản nhạc. Câu chuyện chọn bài được kể hết mà không phụ lời ca.",
+      "say": [
+        {
+          "who": "b",
+          "en": "One person chose the song. Two others gave it a voice.",
+          "vi": "Một người chọn bài. Hai người khác cất tiếng hát."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Hai ca sĩ mời nhạc trưởng bước ra nhận lời cảm ơn vốn dành nhầm cho họ.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Khuê bật đoạn ngay trước, nghe nguyên chữ choose. Cô đổi phụ đề và tặng mỗi ca sĩ một bản có đánh dấu chỗ lược.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I gave them back the verb they actually shared.",
+          "vi": "Tôi trả lại cho họ đúng động từ họ cùng dùng."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Họ dùng chính dấu lược làm nhịp lấy hơi cho lần biểu diễn lại.",
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s041-two-bridges",
+  "title": "Hai cây cầu cùng tên",
+  "summary": "Đường chạy có hai cây cầu cùng mang tên Willow. Ái đến nhầm bờ với cây gậy tiếp sức.",
+  "level": "A2",
+  "topics": [
+    "prepositions-movement"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Ái",
+      "role": "Người chạy tiếp sức"
+    },
+    {
+      "id": "b",
+      "name": "Omar",
+      "role": "Người chờ gậy"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Tấm bảng bản đồ có một đường đỏ đi ngang cây cầu gỗ và một đường xanh chạy ven sông. Omar đeo băng đỏ và đang đứng bên kia cầu gỗ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can see you, but there's water between us.",
+          "vi": "Tôi thấy bạn rồi, nhưng ở giữa chúng ta là sông."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Follow the red line. What does it tell you to do?",
+          "vi": "Theo đường đỏ nhé. Nó bảo bạn làm gì?"
+        }
+      ],
+      "choice": {
+        "prompt": "Chọn lời nhắc giúp Ái sang đúng bờ.",
+        "options": [
+          {
+            "t": "Run across the bridge.",
+            "note": "Across diễn tả chuyển từ một phía sang phía kia. Cây cầu nối đúng hai bờ cần đến.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "Run along the river.",
+            "note": "Along đi theo chiều dài con sông. Đó là hướng đường xanh và chưa đưa Ái sang bờ đối diện.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Omar dang tay đón gậy ở đầu cầu bên kia. Ái nghe tiếng chân mình đổi từ tiếng đất sang tiếng gỗ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I can hear you coming!",
+          "vi": "Tôi nghe thấy bạn chạy tới rồi!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Ái chạy vài bước ven bờ thì thấy Omar vẫn cách mình một dòng nước. Cô quay lại đi qua cầu gỗ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "There you are, on my side!",
+          "vi": "Đây rồi, bạn sang bên bờ tôi rồi!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Hết cuộc đua, hai bạn xin phép ban tổ chức vẽ thêm mũi tên hình cây gậy trên bản đồ. Người chạy đến sau trao gậy ngay lần đầu.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Nobody else has to guess which Willow.",
+          "vi": "Không ai phải đoán là cầu Willow nào nữa."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

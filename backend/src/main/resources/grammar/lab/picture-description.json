@@ -1,0 +1,40 @@
+{
+  "id": "picture-description",
+  "title": "Bức ảnh đang kể chuyện gì?",
+  "summary": "Hai ảnh chụp một nhóm bạn. Đổi người đang đọc bản đồ. Phần nào của cụm động từ vẫn giữ nguyên?",
+  "level": "A1",
+  "topics": [
+    "present-continuous"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Người trong ảnh",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Một người"
+        },
+        {
+          "id": "v2",
+          "label": "Nhiều người"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "A boy is reading the map.",
+      "vi": "Một cậu bé đang đọc bản đồ.",
+      "note": "Is cho biết chủ ngữ số ít. Reading là hành động đang diễn ra trong ảnh. / Is agrees with a boy.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Two boys are reading the map.",
+      "vi": "Hai cậu bé đang đọc bản đồ.",
+      "note": "Two boys cần are nhưng động từ mang nghĩa chính vẫn là reading. / Are changes with the subject, reading stays the same.",
+      "verdict": "ok"
+    }
+  }
+}

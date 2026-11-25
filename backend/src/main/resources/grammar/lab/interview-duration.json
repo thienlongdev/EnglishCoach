@@ -1,0 +1,67 @@
+{
+  "id": "interview-duration",
+  "title": "Mục kinh nghiệm trên hồ sơ",
+  "summary": "Hai ứng viên cùng có ba năm kinh nghiệm. Đổi công việc và việc còn giữ vị trí đó. Phần nào do nghề quyết định, phần nào do thời gian?",
+  "level": "B1",
+  "topics": [
+    "interview-grammar",
+    "present-perfect-vs-past-simple"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Công việc",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Dạy kèm"
+        },
+        {
+          "id": "v2",
+          "label": "Thiết kế"
+        }
+      ]
+    },
+    {
+      "id": "axis-2",
+      "label": "Tình trạng",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Còn làm"
+        },
+        {
+          "id": "v2",
+          "label": "Đã nghỉ"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1|v1": {
+      "en": "I've tutored here for three years.",
+      "vi": "Tôi đã dạy kèm ở đây được ba năm.",
+      "note": "For three years với hiện tại hoàn thành được hiểu là đến giờ vẫn dạy ở đây. / The open interval reaches the interview.",
+      "verdict": "ok"
+    },
+    "v1|v2": {
+      "en": "I tutored there for three years before I moved.",
+      "vi": "Trước khi chuyển nhà, tôi đã dạy kèm ở đó ba năm.",
+      "note": "Quá khứ đơn trình bày ba năm dạy kèm như một giai đoạn đã hết. / Before I moved closes the period.",
+      "verdict": "ok"
+    },
+    "v2|v1": {
+      "en": "I've designed posters here for three years.",
+      "vi": "Tôi đã thiết kế áp phích ở đây được ba năm.",
+      "note": "Không cần có một tấm áp phích làm suốt ba năm. Các dự án lặp lại trong giai đoạn còn mở. / The continuing work can consist of repeated projects.",
+      "verdict": "ok"
+    },
+    "v2|v2": {
+      "en": "I designed posters there for three years before I moved.",
+      "vi": "Trước khi chuyển nhà, tôi đã thiết kế áp phích ở đó ba năm.",
+      "note": "Dù thiết kế nhiều tấm, cả giai đoạn công việc đã khép trước khi chuyển nhà. / Repeated projects fit inside a completed period.",
+      "verdict": "ok"
+    }
+  }
+}

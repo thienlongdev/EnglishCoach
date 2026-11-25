@@ -1,0 +1,480 @@
+{
+  "schema": 1,
+  "slug": "have-something-done",
+  "version": 2,
+  "domain": "voice",
+  "order": 50,
+  "kind": "grammar",
+  "title": {
+    "vi": "Have something done",
+    "en": "Have something done"
+  },
+  "subtitle": {
+    "vi": "Thu xếp việc được làm và đọc nghĩa theo ngữ cảnh",
+    "en": "Arrange for work and interpret the context"
+  },
+  "aliases": [
+    "have something done",
+    "get something done",
+    "nhờ sửa cắt kiểm tra",
+    "had my photo took",
+    "have car repaired"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Tạo have/get + vật + phân từ.",
+    "Phân biệt người làm với vật được làm.",
+    "Nhận ra nghĩa dịch vụ và trải nghiệm bất lợi."
+  ],
+  "prerequisites": [
+    "passive-form",
+    "causatives"
+  ],
+  "related": [
+    {
+      "slug": "causatives",
+      "rel": "more"
+    },
+    {
+      "slug": "passive-form",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Have/get something done đặt vật hoặc đối tượng được làm trước phân từ. Nó thường diễn tả thu xếp công việc, nhưng có thể diễn tả điều không mong muốn xảy đến.",
+    "when": "Dùng ngữ cảnh để biết dịch vụ hay trải nghiệm.",
+    "examples": [
+      {
+        "en": "[S|I] [V|had] [O|the brakes] [V|checked].",
+        "vi": "Tôi cho kiểm tra phanh."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "I had the brakes checked thường nói người khác kiểm tra theo sự thu xếp của tôi. I checked the brakes myself nói tôi tự làm. Đừng dùng hai mẫu như thể mọi cách hiểu đều hoàn toàn giống nhau."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Người thu xếp",
+            "items": [
+              "I"
+            ]
+          },
+          {
+            "label": "Have mang thì",
+            "items": [
+              "had"
+            ]
+          },
+          {
+            "label": "Vật chịu tác động",
+            "items": [
+              "the brakes"
+            ]
+          },
+          {
+            "label": "Việc được làm",
+            "items": [
+              "checked"
+            ]
+          }
+        ],
+        "sentence": "{0} {1} {2} {3}."
+      },
+      "caption": "Checked là phân từ sau vật được kiểm tra, không phải động từ quá khứ chính.",
+      "alt": "Checked là phân từ sau vật được kiểm tra, không phải động từ quá khứ chính."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Vai trò sau have",
+        "Mẫu",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "Người làm",
+          "have + người + dạng gốc",
+          "I had a mechanic check it."
+        ],
+        [
+          "Vật được làm",
+          "have + vật + phân từ",
+          "I had the engine checked."
+        ],
+        [
+          "Tương lai",
+          "will have + vật + phân từ",
+          "I will have it checked."
+        ],
+        [
+          "Mẫu get",
+          "get + vật + phân từ",
+          "I got the screen fixed."
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Thì ở have/get hoặc chuỗi trợ động từ: had it checked, will have it checked, am having it checked. Phân từ checked không tự nói việc thuộc quá khứ."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không phải động từ hoặc sự việc nào cũng hợp mọi mẫu thu xếp. Chọn việc thực sự có người/vật chịu tác động phù hợp và nghĩa tự nhiên."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Have something done có thể là trải nghiệm bất lợi: During the burglary, she had her laptop stolen. Không kết luận người chủ thu xếp hoặc có lỗi chỉ từ cấu trúc."
+    },
+    {
+      "type": "p",
+      "vi": "Get something done thường thuận trong lối nói thông thường. Nó có thể nhấn việc đạt được kết quả; không thay mọi have bằng get mà hứa văn phong và sắc thái giữ nguyên."
+    },
+    {
+      "type": "p",
+      "vi": "Không tự thêm by a professional khi câu gốc không cho biết ai làm hoặc có trình độ gì. Cấu trúc dịch vụ không tự chứng nhận chất lượng công việc."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "have-something-done-m1",
+      "wrong": "I had my photo took.",
+      "right": "I had my photo taken.",
+      "why": "Cần phân từ taken."
+    },
+    {
+      "id": "have-something-done-m2",
+      "wrong": "I had the engine check.",
+      "right": "I had the engine checked.",
+      "why": "Động từ sau vật được làm là phân từ ở mẫu này."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có luôn nghĩa trả tiền thuê dịch vụ không?",
+      "a": "Không. Có thể là thu xếp, và cũng có thể là trải nghiệm bất lợi. Cần ngữ cảnh."
+    },
+    {
+      "q": "Checked có nghĩa việc luôn ở quá khứ không?",
+      "a": "Không. Trong will have it checked, việc ở tương lai; thì nằm ở chuỗi have và trợ động từ."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "hsd-01",
+      "prompt": "Chọn mẫu thu xếp sửa thiết bị.",
+      "explain": "Have + đồ vật + phân từ nhấn việc được làm.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "I will have the laptop ___ tomorrow.",
+      "options": [
+        {
+          "t": "repaired",
+          "ok": true,
+          "note": "Laptop là đối tượng được sửa."
+        },
+        {
+          "t": "repair",
+          "ok": false,
+          "note": "Không dùng dạng gốc ở mẫu với vật chịu tác động này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "to repair",
+          "ok": false,
+          "note": "Không theo mẫu have something done.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "hsd-02",
+      "prompt": "Nối cấu trúc với vai trò.",
+      "explain": "Không trộn người thực hiện và vật chịu tác động.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "I had a mechanic check the brakes.",
+          "b": "Mechanic là người kiểm tra"
+        },
+        {
+          "a": "I had the brakes checked.",
+          "b": "Brakes là vật được kiểm tra"
+        },
+        {
+          "a": "I checked the brakes myself.",
+          "b": "Chủ ngữ nói mình tự làm"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "hsd-03",
+      "prompt": "Phân loại nghĩa theo ngữ cảnh đã nêu.",
+      "explain": "Have something done không luôn là dịch vụ chủ động đặt.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Việc được thu xếp",
+        "Trải nghiệm bất lợi"
+      ],
+      "items": [
+        {
+          "t": "I booked a repair and had the window replaced.",
+          "cat": "Việc được thu xếp"
+        },
+        {
+          "t": "During the burglary, she had her jewellery stolen.",
+          "cat": "Trải nghiệm bất lợi"
+        },
+        {
+          "t": "I arranged an appointment and had my eyes tested.",
+          "cat": "Việc được thu xếp"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "hsd-04",
+      "prompt": "Điền phân từ của check và replace.",
+      "explain": "Vật chịu tác động cần phân từ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "I had the brakes {1} (check). I will have the lock {2} (replace).",
+      "blanks": {
+        "1": {
+          "accept": [
+            "checked"
+          ]
+        },
+        "2": {
+          "accept": [
+            "replaced"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "hsd-05",
+      "prompt": "Sửa phân từ của take.",
+      "explain": "Taken là phân từ trong have a photo taken.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "I had my photo"
+        },
+        {
+          "t": "took",
+          "bad": true,
+          "fix": [
+            "taken"
+          ],
+          "note": "Dùng taken.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "at the studio."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "hsd-06",
+      "prompt": "Sắp xếp câu bắt đầu bằng We; tomorrow ở cuối.",
+      "explain": "Will have giữ tương lai; cleaned là phân từ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "We",
+        "will",
+        "have",
+        "the carpet",
+        "cleaned",
+        "tomorrow"
+      ],
+      "accept": [
+        [
+          "We",
+          "will",
+          "have",
+          "the carpet",
+          "cleaned",
+          "tomorrow"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "hsd-07",
+      "prompt": "Nêu việc được thu xếp mà không nêu thợ.",
+      "explain": "Have object repaired giữ trọng tâm ở dịch vụ sửa.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "I arranged for a mechanic to repair my car.",
+      "instruction": "Viết bằng I had my car và phân từ của repair; không nêu người thợ.",
+      "accept": [
+        "I had my car repaired"
+      ],
+      "model": "I had my car repaired",
+      "level": "B1",
+      "context": "Việc sửa đã thực sự hoàn tất theo sự thu xếp của tôi; đây không chỉ là đặt lịch cho tương lai."
+    },
+    {
+      "id": "hsd-08",
+      "prompt": "Viết kế hoạch bảo dưỡng.",
+      "explain": "Tự đối chiếu; bài mở không tự động chấm.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết ba câu: một dịch vụ đã làm, một việc sẽ thu xếp và một câu nói bạn tự làm. Dùng have/get something done cho hai câu đầu, không dùng cho câu tự làm.",
+      "model": [
+        "I had the brakes checked. I will get the tyres replaced. I cleaned the dashboard myself."
+      ],
+      "checklist": [
+        "Vật được làm đứng trước phân từ.",
+        "Thì ở have/get và trợ động từ đúng.",
+        "Không coi mọi had + vật + phân từ đều là dịch vụ."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "hsd-09",
+      "prompt": "Điền phân từ và dạng gốc theo vai trò.",
+      "explain": "Have người làm đi với check; have vật được làm đi với checked.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "I had a mechanic {1} (check) the engine. I had the engine {2} (check).",
+      "blanks": {
+        "1": {
+          "accept": [
+            "check"
+          ]
+        },
+        "2": {
+          "accept": [
+            "checked"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "hsd-10",
+      "prompt": "Đổi sang get trong cách kể ít trang trọng hơn.",
+      "explain": "Got giữ quá khứ; fixed giữ vai trò phân từ.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "I had the screen fixed yesterday.",
+      "instruction": "Thay had bằng quá khứ đơn của get; giữ các từ khác.",
+      "accept": [
+        "I got the screen fixed yesterday"
+      ],
+      "model": "I got the screen fixed yesterday",
+      "level": "B1"
+    },
+    {
+      "id": "hsd-11",
+      "prompt": "Chọn tất cả câu chuẩn.",
+      "explain": "Have/get + vật + phân từ tạo các mẫu đúng ở đây. Với get + người làm, cần to-infinitive; không dùng mẫu thiếu to. Had a mechanic to check có thể có nghĩa sẵn một người thợ để làm việc nên không được dùng như lỗi phổ quát.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "I had the brakes checked.",
+          "ok": true,
+          "note": "Vật chịu tác động + phân từ."
+        },
+        {
+          "t": "I got the screen repaired.",
+          "ok": true,
+          "note": "Get object + phân từ."
+        },
+        {
+          "t": "I had the brakes check.",
+          "ok": false,
+          "note": "Cần checked ở mẫu với đồ vật này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "I got a mechanic check the brakes.",
+          "ok": false,
+          "note": "Trong mẫu get + người làm + động từ, cần to check; câu này thiếu to.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "hsd-12",
+      "prompt": "Chọn điều được ngữ cảnh hỗ trợ.",
+      "explain": "Trong sự cố bị trộm, mẫu diễn tả điều xảy đến; không tự suy người chủ thuê trộm.",
+      "skill": "meaning",
+      "use": "check",
+      "type": "choice",
+      "stem": "During the burglary, she had her laptop stolen.",
+      "options": [
+        {
+          "t": "Máy tính của cô ấy bị trộm; câu không nói cô ấy thu xếp việc đó.",
+          "ok": true,
+          "note": "Ngữ cảnh cho trải nghiệm bất lợi."
+        },
+        {
+          "t": "Cô ấy chắc chắn thuê người trộm máy.",
+          "ok": false,
+          "note": "Không suy ra từ have something done.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Cô ấy tự tay trộm máy của người khác.",
+          "ok": false,
+          "note": "Her laptop là vật bị lấy.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s024-paper-piano",
+  "title": "Phím đàn bằng giấy",
+  "summary": "Đàn thật đã được chuyển đi nhưng bà vẫn bảo Lộc có thể tập một phần bản nhạc.",
+  "level": "A1",
+  "topics": [
+    "can-could-ability"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Lộc",
+      "role": "Người mới học đàn"
+    },
+    {
+      "id": "b",
+      "name": "Sue",
+      "role": "Bà dạy nhạc"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Trên bàn bà vẽ bảy phím trắng. Lộc ấn thử. Cậu nghe tiếng ngón tay gõ vào gỗ chứ chẳng nghe một nốt đàn nào.",
+      "say": [
+        {
+          "who": "a",
+          "en": "My paper piano can't sing.",
+          "vi": "Đàn giấy của cháu chẳng phát ra nhạc."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Your hands can do something on it. Show me.",
+          "vi": "Nhưng tay cháu vẫn làm được một việc trên đó. Cho bà xem nào."
+        }
+      ],
+      "choice": {
+        "prompt": "Lộc có thể tập cử động ngón tay. Cậu nói đúng khả năng ấy thế nào?",
+        "options": [
+          {
+            "t": "I can't move my fingers.",
+            "note": "Can't phủ định chính việc cử động ngón tay. Đàn giấy không kêu nhưng Lộc vẫn đang cử động tay được.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "I can move my fingers.",
+            "note": "Can đứng trước move dạng gốc. Khả năng này không phụ thuộc đàn có phát ra âm thanh hay không.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Lộc đặt ngón út lên phím cuối. Bà ngân đúng nốt thay cho tiếng đàn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I'll be the sound.",
+          "vi": "Bà sẽ làm tiếng đàn cho cháu."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Bà chỉ vào ngón út vừa nhúc nhích. Lộc gõ lại, bà hát một nốt đáp lời.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Your little finger works!",
+          "vi": "Ngón út của cháu hoạt động được mà!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Đến cuối bài, bà lặng đi. Lộc tự ngân nốt cuối trong khi ngón út vẫn nằm trên tờ giấy. Cậu gấp bàn phím mang theo để mai còn tập.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can take this piano to school.",
+          "vi": "Cháu mang được cây đàn này tới trường."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

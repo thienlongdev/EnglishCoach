@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s213-jar-of-mist",
+  "title": "Lọ đựng sương chưa mở",
+  "level": "B2",
+  "topics": [
+    "passive-nonfinite",
+    "past-perfect"
+  ],
+  "scene": "home",
+  "summary": "Trước khi Vân đi học, Tèo nhốt “sương nhà” trong một cái lọ. Khi chị về, lọ vẫn kín nhưng đáy có vài giọt nước. Cậu sợ món quà đã hỏng.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vân",
+      "role": "Người đi xa về"
+    },
+    {
+      "id": "b",
+      "name": "Tèo",
+      "role": "Em trai"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Niêm giấy còn nguyên. Vân biết hơi nước có thể ngưng lại trước lúc về. Việc trong lọ đổi trạng thái không đủ chứng minh có ai mở nó. Cô muốn nói đúng điều nhìn thấy.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The seal is just as you left it.",
+          "vi": "Niêm vẫn nguyên như em dán."
+        },
+        {
+          "who": "b",
+          "en": "Did I lose the morning I saved for you?",
+          "vi": "Em làm mất buổi sáng định giữ cho chị rồi à?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Vân giữ biến đổi vật lý tách khỏi lời buộc có người mở nắp.",
+        "options": [
+          {
+            "t": "Someone must have opened it and put water in.",
+            "note": "Must have opened đưa suy luận chắc chắn về một người không có bằng chứng. Niêm còn nguyên và có lời giải không cần mở.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "Some water had collected before I got home; the jar didn't need to be opened for that.",
+            "note": "Had collected đặt giọt nước trước khi về. Didn't need to be opened nói việc mở nắp không cần thiết cho hiện tượng ấy.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Tèo nghiêng lọ. Trong mỗi giọt, cửa bếp hiện lộn ngược. Hai chị em đặt lọ ở bậu để Vân có thể nhìn căn nhà nhỏ lại mỗi sớm.",
+      "say": [
+        {
+          "who": "a",
+          "en": "You kept the morning in a different shape.",
+          "vi": "Em đã giữ buổi sáng dưới một hình khác."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Vân lấy thêm lọ khô, cùng Tèo quan sát một giọt tạo thành ở thành kính. Em đổi nhãn thành Lọ buổi sáng biết biến hình. Lần đi xa tiếp, chị mang nó theo trong khăn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "It didn't spoil. It learned a new trick.",
+          "vi": "Nó đâu có hỏng. Nó học được trò mới."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

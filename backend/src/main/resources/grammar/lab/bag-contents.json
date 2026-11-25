@@ -1,0 +1,40 @@
+{
+  "id": "bag-contents",
+  "title": "Túi có táo không?",
+  "summary": "Bạn vừa đi chợ về. So sánh cách báo tin có táo với cách hỏi mà chưa biết trong túi có gì.",
+  "level": "A1",
+  "topics": [
+    "some-and-any"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Mục đích",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Thông báo"
+        },
+        {
+          "id": "v2",
+          "label": "Hỏi để biết"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "There are some apples in the bag.",
+      "vi": "Trong túi có vài quả táo.",
+      "note": "Some cho biết có táo nhưng người nói không đếm chính xác. / Some asserts an unspecified quantity.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Are there any apples in the bag?",
+      "vi": "Trong túi có quả táo nào không?",
+      "note": "Trong câu hỏi trung tính này, any không ngầm khẳng định trong túi có táo. / Any leaves the existence of apples open.",
+      "verdict": "ok"
+    }
+  }
+}

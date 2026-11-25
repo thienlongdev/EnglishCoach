@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s023-shoe-letter",
+  "title": "Bức thư nằm trong giày",
+  "summary": "Toàn sắp tự đọc được lá thư đầu tiên của bố. Bố giấu nó ở chỗ hai chị em dùng mỗi sáng.",
+  "level": "A1",
+  "topics": [
+    "imperatives",
+    "prepositions-place"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Toàn",
+      "role": "Người tập đọc"
+    },
+    {
+      "id": "b",
+      "name": "Bea",
+      "role": "Chị gái"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Trên kệ có một đôi giày đen và một đôi ủng xanh. Bố để lời nhắn Look in the black shoe. Toàn vừa học phân biệt in và under.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Dad wrote this for me. Let me try.",
+          "vi": "Bố viết cho em. Để em thử đọc."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "You can do it. Where do we look?",
+          "vi": "Em đọc được mà. Mình tìm ở đâu?"
+        }
+      ],
+      "choice": {
+        "prompt": "Toàn đọc đúng cả vị trí lẫn màu đã viết trên giấy.",
+        "options": [
+          {
+            "t": "In the black shoe.",
+            "note": "In chỉ phía trong. Black chỉ đúng đôi giày đen. Lời đáp rút gọn là tự nhiên sau câu hỏi Where.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "Under the black shoe.",
+            "note": "Under đưa bàn tay xuống dưới đế. Màu đúng nhưng vị trí khác lời nhắn.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Toàn luồn tay vào mũi giày. Tờ thư cuộn thành một ống vừa bằng ngón tay.",
+      "say": [
+        {
+          "who": "b",
+          "en": "You found his letter!",
+          "vi": "Em tìm được thư bố rồi!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Toàn nhấc giày lên thấy nền kệ sạch. Bea đọc chậm chữ in. Toàn thò tay vào mũi giày và chạm vào giấy.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Read it to me this time.",
+          "vi": "Lần này em đọc cho chị nghe đi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Lá thư chỉ có bốn từ tiếng Anh quen thuộc. Toàn đọc từng từ, rồi xỏ giày chạy ra cửa. Bố đi xa đã về và đang đứng chờ đúng như lời thư.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Dad is home!",
+          "vi": "Bố về rồi!"
+        }
+      ],
+      "end": true
+    }
+  ]
+}

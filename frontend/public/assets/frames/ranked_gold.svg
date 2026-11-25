@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- [ASSET_REQUIRED] Production-grade vector artwork (Hand-crafted vector finalization) -->
+  <!-- Series: ranked_arena | Tier: B | Slug: ranked_gold | Ranked Lineage: Polished Vanguard Gold & Shield Rivets -->
+  <!-- Production Vector Quality: PRODUCTION_READY_VECTOR | External Studio/Rive Hand-off: ASSET_REQUIRED -->
+  <!-- Center: (50, 50), Avatar Aperture: r=40 (80px boundary) -->
+  <defs>
+    <linearGradient id="rankedGoldMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="30%" stop-color="#eab308"/>
+      <stop offset="70%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#713f12"/>
+    </linearGradient>
+
+    <linearGradient id="rankedGoldPlate" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#854d0e"/>
+      <stop offset="50%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+
+    <filter id="rankedGoldDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#451a03" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Heavy Gold Vanguard Armor Ring with Angular Plates -->
+  <g class="ranked-gold-core" filter="url(#rankedGoldDropShadow)">
+    <circle cx="50" cy="50" r="45" stroke="#451a03" stroke-width="4.5"/>
+    <circle cx="50" cy="50" r="44" stroke="url(#rankedGoldMetal)" stroke-width="3.2"/>
+    <circle cx="50" cy="50" r="41" stroke="#fef08a" stroke-width="1.2"/>
+  </g>
+
+  <!-- Angular Vanguard Armor Plates at Corners (Octagonal Shielding) -->
+  <g fill="url(#rankedGoldPlate)" stroke="#713f12" stroke-width="0.6" filter="url(#rankedGoldDropShadow)">
+    <!-- Top Apex: Gold Vanguard Crown Chevron -->
+    <path d="M50 4 L56 12 L50 15 L44 12 Z"/>
+    <polygon points="50,6 54,11 50,13 46,11" fill="#ffffff"/>
+
+    <!-- Bottom Shield Anchor (Victory Chevron) -->
+    <path d="M50 96 L57 88 L50 91 L43 88 Z"/>
+    <circle cx="50" cy="90" r="1.5" fill="#fef08a"/>
+
+    <!-- Left Flank Vanguard Armor Wing -->
+    <path d="M4 50 L12 44 L15 50 L12 56 Z"/>
+    <!-- Right Flank Vanguard Armor Wing -->
+    <path d="M96 50 L88 44 L85 50 L88 56 Z"/>
+
+    <!-- Steel Shield Rivets -->
+    <circle cx="20" cy="20" r="1.6" fill="#fef08a" stroke="#713f12" stroke-width="0.5"/>
+    <circle cx="80" cy="20" r="1.6" fill="#fef08a" stroke="#713f12" stroke-width="0.5"/>
+    <circle cx="20" cy="80" r="1.6" fill="#fef08a" stroke="#713f12" stroke-width="0.5"/>
+    <circle cx="80" cy="80" r="1.6" fill="#fef08a" stroke="#713f12" stroke-width="0.5"/>
+  </g>
+</svg>

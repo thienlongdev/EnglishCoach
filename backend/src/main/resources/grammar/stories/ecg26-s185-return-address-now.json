@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s185-return-address-now",
+  "title": "Địa chỉ gửi lại cho “nơi này”",
+  "summary": "Một lá thư có câu Send it back here. Nhà đã dời số, người viết cũng chuyển đi hơn hai mươi năm.",
+  "level": "B2",
+  "topics": [
+    "backshift",
+    "reference-chains"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sương",
+      "role": "Người thừa kế ngôi nhà"
+    },
+    {
+      "id": "b",
+      "name": "Lio",
+      "role": "Người đóng cửa chớp"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Here trong thư gắn với lều gỗ cũ bên suối. Hiện người viết ở trong thị trấn. Sương có thể trả vật về đúng địa điểm cũ hoặc hỏi người viết muốn nhận ở đâu hôm nay.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The word here stayed on the paper. The writer moved.",
+          "vi": "Chữ here vẫn nằm trên giấy. Người viết đã dọn đi."
+        },
+        {
+          "who": "b",
+          "en": "Do we still know where she wants it now?",
+          "vi": "Ta còn biết hôm nay bà muốn nhận ở đâu không?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Chọn lời tường thuật giữ được địa chỉ lúc viết mà không đoán ý muốn hiện tại.",
+        "options": [
+          {
+            "ok": true,
+            "t": "She asked them to send it back there, to the cabin.",
+            "note": "There cùng to the cabin đổi điểm nhìn về địa điểm gốc của here. Asked thuật lại lời nhờ đã qua.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "She wants it sent to this house today.",
+            "note": "This house và today kéo đích về nơi người kể đang đứng bây giờ. Lá thư cũ không xác nhận mong muốn hiện tại ấy.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Họ tìm thấy dấu sơn xanh của lều trên một gốc cây. Sương gửi người viết ảnh nơi cũ và xin địa chỉ mới để trả chiếc chìa.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The address changed; the thank-you found its way.",
+          "vi": "Địa chỉ đổi đi, lời cảm ơn vẫn tìm tới."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Thư hồi âm chỉ xin giữ lại bức ảnh vì chiếc chìa nay không còn ổ khóa. Sương gắn chìa cạnh ảnh gốc cây.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Lio đem phong bì đến bưu cục trước khi bỏ vào cửa nhà. Nhân viên giúp gửi thư hỏi chứ không gửi chiếc chìa tới một đích đoán mò.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We let the writer choose her own here.",
+          "vi": "Ta đã để người viết tự chọn chữ “ở đây” của mình."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Người viết tới nhận tận tay. Bà cho biết đã quên hình chiếc chìa nhưng chưa từng quên hình dáng con suối.",
+      "end": true
+    }
+  ]
+}

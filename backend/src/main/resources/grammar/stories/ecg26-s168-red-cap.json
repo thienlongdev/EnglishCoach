@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s168-red-cap",
+  "title": "Chiếc mũ đỏ trong đám đông",
+  "summary": "Hai người bán cá cùng tên An. Nếu đặt dấu phẩy sai chỗ, lời cảm ơn sẽ tìm nhầm người đã kéo xe hàng của Linh lên dốc.",
+  "level": "B2",
+  "topics": [
+    "relative-clauses-defining",
+    "relative-clauses-non-defining"
+  ],
+  "scene": "newsroom",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Linh",
+      "role": "Phóng viên trực đêm"
+    },
+    {
+      "id": "b",
+      "name": "Ari",
+      "role": "Biên tập viên"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Chỉ một người đội mũ đỏ và đang ở bến bắc. Người kia đang bán ở bến nam. Ari cần một mô tả để trao lại đôi găng mà người giúp đã bỏ quên.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I never asked which An he was.",
+          "vi": "Tôi không hỏi anh ấy là An nào."
+        },
+        {
+          "who": "b",
+          "en": "Then give me a detail that picks him out.",
+          "vi": "Vậy cho tôi một chi tiết phân biệt được anh ấy đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Linh dùng mũ đỏ làm đặc điểm xác định giữa hai người.",
+        "options": [
+          {
+            "ok": false,
+            "t": "Find An, who wears a red cap.",
+            "note": "Mệnh đề có dấu phẩy bổ sung chi tiết như thể người nghe đã biết An nào. Với hai người chưa được phân biệt, câu thiếu chắc chắn về người được gọi.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "Find the seller named An who wears a red cap.",
+            "note": "Mệnh đề who wears a red cap gắn vào người bán tên An, giúp chọn một trong hai. Nó là thông tin cần để nhận diện.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Ari tìm đúng bến. Đôi găng vừa khít bàn tay còn hằn dây kéo. Người bán cho Linh một cục xà phòng để tẩy vết dây trên tay cô.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Two Ans, one pair of hands.",
+          "vi": "Hai người tên An, chỉ một đôi tay đã giúp."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Cô trả găng và nhận về mùi chanh theo suốt ca đêm.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Ari hỏi cả hai bến. An bến nam chỉ sang người bạn trùng tên, rồi chèo đò đưa găng qua.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I owe two different people the same word.",
+          "vi": "Tôi nợ hai người khác nhau cùng một lời cảm ơn."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Linh viết lời cảm ơn thứ hai cho một An khác: một người kéo xe, một người chèo đò. Lần này cô ghi rõ hai bến.",
+      "end": true
+    }
+  ]
+}

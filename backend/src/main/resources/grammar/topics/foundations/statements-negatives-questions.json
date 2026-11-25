@@ -1,0 +1,1006 @@
+{
+  "schema": 1,
+  "slug": "statements-negatives-questions",
+  "version": 3,
+  "domain": "foundations",
+  "order": 60,
+  "kind": "grammar",
+  "title": {
+    "vi": "Câu khẳng định, phủ định và câu hỏi",
+    "en": "Statements, negatives and questions"
+  },
+  "subtitle": {
+    "vi": "Ba việc, một nguyên liệu: trợ động từ đứng đầu",
+    "en": "Three jobs, one ingredient: the first helper verb"
+  },
+  "aliases": [
+    "statements negatives questions",
+    "do does did",
+    "do-support",
+    "trợ động từ do",
+    "câu phủ định",
+    "câu hỏi yes no",
+    "câu hỏi có không",
+    "phủ định tiếng anh",
+    "does she works",
+    "did you went",
+    "i not like",
+    "why you came early",
+    "do you can",
+    "short answers",
+    "yes i do"
+  ],
+  "level": "A1",
+  "levelBasis": "editorial",
+  "uses": [
+    {
+      "level": "A1",
+      "vi": "Phủ định và hỏi bằng do, does, did với động từ thường; bằng be với tính từ và nơi chốn."
+    },
+    {
+      "level": "A2",
+      "vi": "Dùng cùng một cách với can, will, have và với từ để hỏi như where, what, why."
+    },
+    {
+      "level": "B1",
+      "vi": "Nhận ra câu hỏi về chủ ngữ (Who called?) không dùng do, và các câu hỏi không đảo trong lời nói."
+    }
+  ],
+  "objectives": [
+    "Tạo câu phủ định với trợ động từ đứng đầu và not, hoặc do, does, did khi chưa có trợ động từ",
+    "Tạo câu hỏi có hoặc không bằng cách đưa trợ động từ lên trước chủ ngữ",
+    "Tạo câu hỏi thông tin có từ để hỏi là tân ngữ hoặc trạng ngữ theo mẫu từ để hỏi, trợ động từ, chủ ngữ, động từ",
+    "Đưa động từ chính về dạng gốc sau do, does, did",
+    "Trả lời ngắn đúng: Yes, she does. No, I can't."
+  ],
+  "prerequisites": [
+    "verb-be"
+  ],
+  "related": [
+    {
+      "slug": "yes-no-questions",
+      "rel": "more"
+    },
+    {
+      "slug": "wh-questions",
+      "rel": "more"
+    },
+    {
+      "slug": "do-support",
+      "rel": "more"
+    },
+    {
+      "slug": "subject-object-questions",
+      "rel": "special"
+    },
+    {
+      "slug": "imperatives",
+      "rel": "contrast"
+    },
+    {
+      "slug": "contractions",
+      "rel": "more"
+    },
+    {
+      "slug": "negation-scope",
+      "rel": "special"
+    }
+  ],
+  "exam": {
+    "ielts": "Speaking Part 1 là chuỗi câu hỏi và trả lời ngắn; Writing cần câu phủ định đúng. Did you went hay She doesn't works là những lỗi làm giảm độ chính xác.",
+    "toeic": "Part 5 đôi khi hỏi dạng đúng của động từ sau does, did hoặc not. Biết rằng động từ chính trở về dạng gốc giúp chọn nhanh."
+  },
+  "quick": {
+    "what": "Để phủ định bằng not hoặc tạo câu hỏi đảo trong các câu hữu hạn đơn giản, dùng trợ động từ đứng đầu cụm động từ; be làm động từ nối cũng tự làm việc này. Thêm not sau nó hoặc đưa nó trước chủ ngữ. Nếu câu hiện tại đơn/quá khứ đơn với động từ thường chưa có trợ động từ, thường thêm do, does hoặc did rồi dùng dạng gốc.",
+    "when": "Dùng với các mẫu phủ định bằng not và câu hỏi đảo ở bài này. Câu hỏi về chủ ngữ như Who called? thường không thêm do; câu có never hoặc nobody có thể phủ định mà không thêm not.",
+    "examples": [
+      {
+        "en": "[S|She] [V|works] in a bank.",
+        "vi": "Cô ấy làm ở ngân hàng."
+      },
+      {
+        "en": "[S|She] [AUX|doesn't] [V|work] in a bank.",
+        "vi": "Cô ấy không làm ở ngân hàng."
+      },
+      {
+        "en": "[AUX|Does] [S|she] [V|work] in a bank?",
+        "vi": "Cô ấy làm ở ngân hàng à?"
+      }
+    ],
+    "remember": "Với câu hỏi đảo và phủ định not: dùng trợ động từ đầu tiên hoặc be; hiện tại/quá khứ đơn với động từ thường thì thêm do/does/did khi cần."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Câu trần thuật (statement) có thể khẳng định hoặc phủ định một điều. Câu hỏi (question) hỏi về điều đó. Bài này đối chiếu câu khẳng định, phủ định bằng not và câu hỏi đảo. Trong các mẫu ấy, **trợ động từ đứng đầu** (first auxiliary), hoặc be làm động từ nối, là điểm tựa của not và phép đảo; đó là chức năng operator."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "flow",
+        "start": "start",
+        "nodes": {
+          "start": {
+            "q": "Động từ hữu hạn đứng đầu cụm là be (am, is, are, was, were)?",
+            "yes": "be",
+            "no": "aux"
+          },
+          "aux": {
+            "q": "Đã có trợ động từ khác chưa? (have, has, had trong thì hoàn thành; will, can, should, must…)",
+            "yes": "helper",
+            "no": "past"
+          },
+          "past": {
+            "q": "Câu nói về quá khứ đơn? (called, went, bought)",
+            "yes": "did",
+            "no": "third"
+          },
+          "third": {
+            "q": "Chủ ngữ ở ngôi thứ ba số ít, như he, she, it hoặc my sister?",
+            "yes": "does",
+            "no": "do"
+          },
+          "be": {
+            "end": "Dùng chính be",
+            "note": "She is late. She isn't late. Is she late?"
+          },
+          "helper": {
+            "end": "Dùng chính trợ động từ đó",
+            "note": "She can swim. She can't swim. Can she swim?"
+          },
+          "did": {
+            "end": "Mượn did",
+            "note": "They called. They didn't call. Did they call?"
+          },
+          "does": {
+            "end": "Mượn does",
+            "note": "She works. She doesn't work. Does she work?"
+          },
+          "do": {
+            "end": "Mượn do",
+            "note": "They work. They don't work. Do they work?"
+          }
+        }
+      },
+      "caption": "Sơ đồ cho phủ định not và câu hỏi đảo ở các câu đơn giản. Với I và you, hiện tại đơn dùng do dù chỉ một người. Câu hỏi chủ ngữ và câu không đảo được nói ở phần sâu.",
+      "alt": "Nếu động từ hữu hạn đầu cụm là be thì dùng nó; nếu là trợ động từ khác thì dùng trợ động từ đó. Nếu chưa có, quá khứ đơn dùng did; hiện tại đơn ngôi thứ ba số ít dùng does, còn lại dùng do, kể cả I và you số ít."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "transform",
+        "steps": [
+          {
+            "label": "Khẳng định",
+            "sentence": "She works in a bank."
+          },
+          {
+            "label": "Phủ định",
+            "sentence": "She does not work in a bank."
+          },
+          {
+            "label": "Câu hỏi có hoặc không",
+            "sentence": "Does she work in a bank?"
+          },
+          {
+            "label": "Câu hỏi với từ để hỏi",
+            "sentence": "Where does she work?"
+          }
+        ],
+        "changed": [
+          "does",
+          "not",
+          "work",
+          "Does",
+          "Where"
+        ]
+      },
+      "caption": "Does mang việc phủ định và việc đảo câu hỏi. Works trở về work, vì dấu -s đã chuyển sang does.",
+      "alt": "Bốn bước: She works in a bank; She does not work in a bank; Does she work in a bank; Where does she work. Does được mượn, work trở về dạng gốc, và trong câu hỏi does đứng trước she."
+    },
+    {
+      "type": "table",
+      "caption": "Cùng một cách làm với mỗi loại trợ động từ",
+      "head": [
+        "Trợ động từ đứng đầu",
+        "Khẳng định",
+        "Phủ định",
+        "Câu hỏi"
+      ],
+      "rows": [
+        [
+          "be",
+          "She is at home.",
+          "She isn't at home.",
+          "Is she at home?"
+        ],
+        [
+          "động từ khuyết thiếu (can)",
+          "She can swim.",
+          "She can't swim.",
+          "Can she swim?"
+        ],
+        [
+          "have (hoàn thành)",
+          "She has finished.",
+          "She hasn't finished.",
+          "Has she finished?"
+        ],
+        [
+          "does (mượn)",
+          "She works here.",
+          "She doesn't work here.",
+          "Does she work here?"
+        ],
+        [
+          "did (mượn)",
+          "They called me.",
+          "They didn't call me.",
+          "Did they call me?"
+        ]
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Sau do, does, did: động từ về dạng gốc"
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "[S|She] [V|works] here.",
+            "vi": "Cô ấy làm việc ở đây."
+          },
+          "b": {
+            "en": "[S|She] [AUX|doesn't] [V|work] here.",
+            "vi": "Cô ấy không làm việc ở đây."
+          },
+          "diff": "Dấu -s của ngôi thứ ba chuyển sang does. Động từ chính trở về dạng gốc work."
+        },
+        {
+          "a": {
+            "en": "[S|They] [V|called] me.",
+            "vi": "Họ đã gọi tôi."
+          },
+          "b": {
+            "en": "[S|They] [AUX|didn't] [V|call] me.",
+            "vi": "Họ đã không gọi tôi."
+          },
+          "diff": "Dấu quá khứ -ed chuyển sang did. Động từ chính trở về dạng gốc call."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Sau trợ động từ do, does hoặc did, động từ chính dùng dạng gốc: Did you go?, She doesn't work. Không suy rộng thành \"mỗi câu chỉ có một dấu thì\": câu có thể có nhiều mệnh đề hoặc các động từ phối hợp, như She arrived and sat down."
+    },
+    {
+      "type": "try",
+      "exercise": "snq-05"
+    },
+    {
+      "type": "h",
+      "vi": "Câu hỏi với từ để hỏi"
+    },
+    {
+      "type": "p",
+      "vi": "Trong câu hỏi thông tin thông thường mà từ để hỏi là tân ngữ hoặc trạng ngữ, đặt nó đầu câu, rồi trợ động từ và chủ ngữ: Where does she work? Nếu từ để hỏi chính là chủ ngữ, mẫu thường không đảo hay thêm do: Who works here?"
+    },
+    {
+      "type": "formula",
+      "lines": [
+        {
+          "label": "Có hoặc không",
+          "parts": [
+            {
+              "t": "trợ động từ",
+              "role": "AUX"
+            },
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "động từ",
+              "role": "V"
+            },
+            {
+              "t": "…?"
+            }
+          ]
+        },
+        {
+          "label": "Từ để hỏi",
+          "parts": [
+            {
+              "t": "từ để hỏi",
+              "role": "Q"
+            },
+            {
+              "t": "trợ động từ",
+              "role": "AUX"
+            },
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "động từ",
+              "role": "V"
+            },
+            {
+              "t": "…?"
+            }
+          ]
+        }
+      ],
+      "note": "Với be làm động từ nối, chính be đảo lên trước chủ ngữ, không thêm động từ chính thứ hai: Where is she? Sơ đồ không áp dụng máy móc cho câu hỏi chủ ngữ."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[Q|Where] [AUX|do] [S|you] [V|live]?",
+          "vi": "Bạn sống ở đâu?"
+        },
+        {
+          "en": "[Q|What] [AUX|did] [S|she] [V|buy]?",
+          "vi": "Cô ấy đã mua gì?"
+        },
+        {
+          "en": "[Q|Why] [AUX|is] [S|he] late?",
+          "vi": "Sao anh ấy trễ?",
+          "note": "Với be, không cần do: Why is he late?"
+        },
+        {
+          "en": "[Q|How often] [AUX|can] [S|we] [V|use] the library?",
+          "vi": "Chúng tôi dùng thư viện được bao lâu một lần?"
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Trả lời ngắn"
+    },
+    {
+      "type": "p",
+      "vi": "Câu trả lời ngắn lặp lại trợ động từ đứng đầu của câu hỏi: Does she work here? Yes, she does. No, she doesn't. Can you swim? Yes, I can. No, I can't. Trong câu trả lời Yes, be và các trợ động từ không rút gọn: Yes, I am, không phải Yes, I'm. Câu trả lời No rút gọn bình thường: No, she doesn't. Bạn có thể nói thêm: Yes, she works in a bank."
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Tiếng Việt phủ định bằng \"không\" ngay trước động từ: \"Tôi không thích\". Từ đó người học có thể viết I not like. Tiếng Anh cần trợ động từ: I don't like."
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Tiếng Việt thường hỏi bằng \"có … không\" hay tiểu từ cuối câu. Các câu hỏi thông tin thông thường ở bài này đảo trợ động từ trước chủ ngữ. Nhưng Yesterday you went where? cũng có thể là câu hỏi lại khi ngạc nhiên hoặc chưa nghe rõ. Đừng coi mọi câu hỏi giữ trật tự câu kể là sai; hãy chọn theo ngữ cảnh."
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Dạng đầy đủ (do not, does not, did not) hợp với văn viết trang trọng hoặc khi cần nhấn mạnh. Dạng rút gọn (don't, doesn't, didn't) là bình thường trong lời nói và văn viết thân mật."
+    },
+    {
+      "type": "try",
+      "exercise": "snq-07"
+    }
+  ],
+  "deep": [
+    {
+      "type": "h",
+      "vi": "Câu hỏi chủ ngữ thường không thêm do"
+    },
+    {
+      "type": "p",
+      "vi": "Khi hỏi về chính chủ ngữ bằng câu hỏi khẳng định trung tính, thường không đảo hay thêm do: Who called you? What happened? So sánh Who did you call?, hỏi về tân ngữ. Do có thể xuất hiện trong câu hỏi chủ ngữ để nhấn, như Who did call?, hoặc để phủ định, như Who doesn't agree?"
+    },
+    {
+      "type": "h",
+      "vi": "Have làm động từ chính"
+    },
+    {
+      "type": "p",
+      "vi": "Khi có nghĩa sở hữu, have thường đi với do: Do you have a car? I don't have a car. Dạng Have you a car? cũ hơn hoặc trang trọng hơn, chủ yếu gặp ở tiếng Anh Anh. Dạng have got (Have you got a car?) cũng rất phổ biến. Bài về have và have got nói chi tiết hơn."
+    },
+    {
+      "type": "h",
+      "vi": "Do nhấn mạnh"
+    },
+    {
+      "type": "p",
+      "vi": "Do, does, did cũng xuất hiện trong câu khẳng định để nhấn mạnh hoặc sửa lại: I do like it! She did call you. Do come in. Động từ chính vẫn ở dạng gốc."
+    },
+    {
+      "type": "h",
+      "vi": "Câu hỏi không đảo"
+    },
+    {
+      "type": "p",
+      "vi": "Trong lời nói, người ta hay hỏi bằng cách giữ trật tự câu khẳng định và lên giọng cuối câu: You're coming? She's already left? Cách này thường gặp khi xác nhận hoặc ngạc nhiên. Khi viết bài thi, hãy dùng dạng đảo."
+    },
+    {
+      "type": "h",
+      "vi": "No, not và any"
+    },
+    {
+      "type": "p",
+      "vi": "Ngoài not, phủ định còn đi qua các từ như no, never, nobody, nothing: I have no time. He never calls. Nobody answered. Khi dùng not, thường đi với any: I don't have any time."
+    },
+    {
+      "type": "h",
+      "vi": "Phủ định kép"
+    },
+    {
+      "type": "p",
+      "vi": "I don't know nothing là không chuẩn trong tiếng Anh viết chuẩn, nhưng nó có quy tắc riêng và là bình thường trong nhiều biến thể, như tiếng Anh địa phương ở miền Nam nước Mỹ và tiếng Anh của người Mỹ gốc Phi. Nó không phải \"không logic\": nhiều ngôn ngữ, như tiếng Tây Ban Nha, dùng nhiều từ phủ định trong một câu mà nghĩa vẫn là một lần phủ định. Trong bài thi, dùng I don't know anything hoặc I know nothing."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Trong văn viết trang trọng, cannot thường được viết liền thành một từ; can't là dạng rút gọn thông dụng trong lời nói và văn viết thân mật."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "snq-double-past",
+      "wrong": "Did you went to school yesterday?",
+      "right": "Did you go to school yesterday?",
+      "why": "Did đã mang dấu quá khứ. Động từ chính trở về dạng gốc: go.",
+      "vn": "Did và động từ chính cùng cụm không cùng mang dạng quá khứ: sau did dùng go. Đừng suy rộng thành giới hạn một động từ quá khứ cho cả câu."
+    },
+    {
+      "id": "snq-third-s-after-does",
+      "wrong": "She doesn't works here.",
+      "right": "She doesn't work here.",
+      "why": "Does đã mang dấu ngôi thứ ba. Động từ chính không cần -s nữa.",
+      "vn": "Tiếng Việt không có dấu hiệu hòa hợp này. Lỗi đặt -s ở cả hai chỗ cũng gặp ở người học nhiều nước."
+    },
+    {
+      "id": "snq-not-before-verb",
+      "wrong": "I not like coffee.",
+      "right": "I don't like coffee.",
+      "why": "Trong câu kể hữu hạn này, like cần trợ động từ để phủ định bằng not: I do not like coffee. Điều này không cấm not trước động từ trong cấu trúc khác, như to not agree.",
+      "vn": "Tiếng Việt đặt \"không\" ngay trước động từ: \"Tôi không thích cà phê\"."
+    },
+    {
+      "id": "snq-question-in-place",
+      "wrong": "Why you came early?",
+      "right": "Why did you come early?",
+      "why": "Trong câu hỏi thông tin quá khứ chuẩn này, dùng Why did you come early? với did trước chủ ngữ. Câu hỏi lại hoặc lời nhắc lại lời người khác có thể dùng trật tự khác.",
+      "vn": "Tiếng Việt giữ trật tự câu khẳng định khi hỏi: \"Sao bạn đến sớm?\"."
+    },
+    {
+      "id": "snq-do-with-modal",
+      "wrong": "Do you can swim?",
+      "right": "Can you swim?",
+      "why": "Can đã là trợ động từ. Không thêm do trước nó; đưa can lên đầu câu.",
+      "vn": "Một số người học đã biết rằng câu hỏi cần do và dùng cho mọi động từ."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Vì sao tiếng Anh cần do mà tiếng Việt thì không?",
+      "a": "Với câu hỏi đảo và phủ định bằng not đang học, tiếng Anh dùng trợ động từ hoặc be làm điểm tựa. Nếu hiện tại đơn/quá khứ đơn với động từ thường chưa có trợ động từ, thường thêm do/does/did. Đây không phải quy tắc cho mọi cách hỏi hay mọi cách phủ định."
+    },
+    {
+      "q": "Vì sao là doesn't work, không phải doesn't works?",
+      "a": "Trong cấu trúc với does hoặc doesn’t, động từ chính theo sau dùng dạng nguyên mẫu không to: Does she work? She doesn’t work. Không thêm -s vào work ở đây. Điều này không có nghĩa cả mệnh đề chỉ được có một đuôi -s: She sings and dances vẫn đúng."
+    },
+    {
+      "q": "Dùng do not hay don't?",
+      "a": "Cả hai đều đúng. Don't là dạng bình thường trong lời nói và văn viết thân mật. Do not hợp với văn viết trang trọng hoặc khi bạn muốn nhấn mạnh."
+    },
+    {
+      "q": "Tôi có thể hỏi You like coffee? không?",
+      "a": "Được trong lời nói thân mật, với giọng lên ở cuối câu. Khi viết bài thi hoặc hỏi một cách lịch sự, dùng Do you like coffee?"
+    },
+    {
+      "q": "Có luôn phải dùng do với động từ thường không?",
+      "a": "Không. Do thường cần cho câu hỏi đảo và phủ định not ở hiện tại đơn/quá khứ đơn với động từ thường. Who called? thường không cần, câu xác nhận You like coffee? có thể không đảo, còn He never calls đã phủ định bằng never. Have chỉ sở hữu còn có những biến thể riêng."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "snq-01",
+      "type": "choice",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Chọn dạng phủ định đúng của câu: She works in a bank.",
+      "stem": "Câu phủ định nào đúng?",
+      "options": [
+        {
+          "t": "She doesn't work in a bank.",
+          "ok": true,
+          "note": "Does mang -s và phủ định, nên động từ chính trở về work."
+        },
+        {
+          "t": "She doesn't works in a bank.",
+          "note": "Dấu -s đã nằm ở does, không đặt thêm ở works.",
+          "tag": "aux-main-form"
+        },
+        {
+          "t": "She not works in a bank.",
+          "note": "Với câu kể hiện tại đơn này, cần does not và dạng gốc work: She does not work in a bank.",
+          "tag": "not-before-main-verb"
+        }
+      ],
+      "explain": "Câu đúng: She doesn't work in a bank. Phủ định mượn does, và động từ chính về dạng gốc."
+    },
+    {
+      "id": "snq-02",
+      "type": "choice",
+      "level": "A1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn câu hỏi đúng cho nghĩa: Anh ấy biết bơi không?",
+      "stem": "Anh ấy biết bơi không?",
+      "options": [
+        {
+          "t": "Can he swim?",
+          "ok": true,
+          "note": "Can đã là trợ động từ, đưa lên trước chủ ngữ. Động từ chính giữ dạng gốc."
+        },
+        {
+          "t": "Does he can swim?",
+          "note": "Can đã là trợ động từ, không thêm does.",
+          "tag": "do-with-modal"
+        },
+        {
+          "t": "Can he swims?",
+          "note": "Sau can, động từ chính ở dạng gốc, không thêm -s.",
+          "tag": "aux-main-form"
+        }
+      ],
+      "explain": "Với can, will, should và các động từ khuyết thiếu, không dùng do. Đưa chính chúng lên đầu câu hỏi."
+    },
+    {
+      "id": "snq-03",
+      "type": "order",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sắp xếp thành câu hỏi thông tin thông thường, với where đầu câu và does trước chủ ngữ.",
+      "tokens": [
+        "where",
+        "does",
+        "she",
+        "work"
+      ],
+      "end": "?",
+      "accept": [
+        [
+          "where",
+          "does",
+          "she",
+          "work"
+        ]
+      ],
+      "explain": "Từ để hỏi where đứng đầu, rồi trợ động từ does, rồi chủ ngữ she, rồi động từ chính work ở dạng gốc."
+    },
+    {
+      "id": "snq-04",
+      "type": "order",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sắp xếp thành một câu phủ định.",
+      "tokens": [
+        "they",
+        "didn't",
+        "call",
+        "me",
+        "yesterday"
+      ],
+      "end": ".",
+      "accept": [
+        [
+          "they",
+          "didn't",
+          "call",
+          "me",
+          "yesterday"
+        ],
+        [
+          "yesterday",
+          "they",
+          "didn't",
+          "call",
+          "me"
+        ],
+        [
+          "they",
+          "yesterday",
+          "didn't",
+          "call",
+          "me"
+        ],
+        [
+          "they",
+          "didn't",
+          "yesterday",
+          "call",
+          "me"
+        ]
+      ],
+      "explain": "Yesterday thường đứng đầu hoặc cuối câu. Đặt ở giữa có thể dùng để nhấn thời gian; trước me cần ngữ cảnh đối chiếu. Sau didn't, call vẫn ở dạng gốc.",
+      "known": [
+        {
+          "seq": [
+            "they",
+            "didn't",
+            "call",
+            "yesterday",
+            "me"
+          ],
+          "verdict": "acceptable",
+          "note": "Có thể dùng khi đối chiếu người được gọi, nhấn me; thứ tự trung tính hơn là call me yesterday."
+        }
+      ]
+    },
+    {
+      "id": "snq-05",
+      "type": "transform",
+      "level": "A1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lại câu thành câu phủ định.",
+      "source": "She works in a bank.",
+      "instruction": "Dùng does, rút gọn hoặc không.",
+      "accept": [
+        "She doesn't work in a bank",
+        "She does not work in a bank"
+      ],
+      "model": "She doesn't work in a bank.",
+      "known": [
+        {
+          "t": "She doesn't works in a bank",
+          "verdict": "wrong",
+          "note": "Sau does, động từ chính về dạng gốc: work.",
+          "tag": "aux-main-form"
+        },
+        {
+          "t": "She not work in a bank",
+          "verdict": "wrong",
+          "note": "Thiếu trợ động từ. Cần does not hoặc doesn't.",
+          "tag": "not-before-main-verb"
+        }
+      ],
+      "explain": "Phủ định: mượn does, thêm not, và động từ chính về dạng gốc."
+    },
+    {
+      "id": "snq-06",
+      "type": "transform",
+      "level": "A1",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Viết lại câu thành câu hỏi có hoặc không.",
+      "source": "They called me yesterday.",
+      "instruction": "Bắt đầu bằng Did.",
+      "accept": [
+        "Did they call me yesterday"
+      ],
+      "model": "Did they call me yesterday?",
+      "known": [
+        {
+          "t": "Did they called me yesterday",
+          "verdict": "wrong",
+          "note": "Did đã mang dấu quá khứ, nên động từ chính về dạng gốc: call.",
+          "tag": "aux-main-form"
+        }
+      ],
+      "explain": "Câu hỏi quá khứ đơn: Did, chủ ngữ, động từ chính ở dạng gốc."
+    },
+    {
+      "id": "snq-07",
+      "type": "transform",
+      "level": "A1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Đặt câu hỏi về phần nơi chốn.",
+      "source": "She works in a bank.",
+      "instruction": "Dùng câu hỏi thông tin có đảo trợ động từ, bắt đầu bằng Where.",
+      "accept": [
+        "Where does she work"
+      ],
+      "model": "Where does she work?",
+      "known": [
+        {
+          "t": "Where she works",
+          "verdict": "wrong",
+          "note": "Không theo mẫu câu hỏi có đảo được yêu cầu. Where she works có thể xuất hiện như mệnh đề phụ hoặc lời hỏi lại trong ngữ cảnh khác.",
+          "tag": "question-word-order"
+        }
+      ],
+      "explain": "Từ để hỏi, rồi does, rồi chủ ngữ, rồi động từ chính ở dạng gốc."
+    },
+    {
+      "id": "snq-08",
+      "type": "error",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        {
+          "t": "Did you"
+        },
+        {
+          "t": "went",
+          "bad": true,
+          "fix": [
+            "go"
+          ],
+          "note": "Did đã mang dấu quá khứ, nên động từ chính về dạng gốc: go.",
+          "tag": "aux-main-form"
+        },
+        {
+          "t": "to school yesterday?"
+        }
+      ],
+      "explain": "Câu đúng là Did you go to school yesterday? Trong cụm did go, did mang thì quá khứ còn go là dạng gốc."
+    },
+    {
+      "id": "snq-09",
+      "type": "error",
+      "level": "A1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        {
+          "t": "She"
+        },
+        {
+          "t": "doesn't works",
+          "bad": true,
+          "fix": [
+            "doesn't work",
+            "does not work"
+          ],
+          "note": "Dấu -s đã nằm ở does, nên động từ chính về dạng gốc.",
+          "tag": "aux-main-form"
+        },
+        {
+          "t": "here."
+        }
+      ],
+      "explain": "Câu đúng là She doesn't work here."
+    },
+    {
+      "id": "snq-10",
+      "type": "error",
+      "level": "A1",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "noError": true,
+      "segments": [
+        {
+          "t": "Where"
+        },
+        {
+          "t": "do"
+        },
+        {
+          "t": "they"
+        },
+        {
+          "t": "live?"
+        }
+      ],
+      "explain": "Câu đúng: từ để hỏi where, rồi trợ động từ do, rồi chủ ngữ they, rồi động từ chính live ở dạng gốc."
+    },
+    {
+      "id": "snq-11",
+      "type": "cloze",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Điền dạng thích hợp của do ở hiện tại đơn, rút gọn hoặc không.",
+      "stem": "{1} you like coffee? Yes, I {2}. My brother {3} like it, though.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "Do"
+          ],
+          "closed": true
+        },
+        "2": {
+          "accept": [
+            "do"
+          ],
+          "closed": true
+        },
+        "3": {
+          "accept": [
+            "doesn't",
+            "does not"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Ngữ cảnh xác định bạn thích nhưng anh trai không thích: Do you like coffee? Yes, I do. My brother doesn't like it, though. Dạng đầy đủ does not cũng đúng.",
+      "context": "Bạn thích cà phê, nhưng anh trai bạn không thích. Hoàn thành hội thoại theo đúng ý này."
+    },
+    {
+      "id": "snq-12",
+      "type": "cloze",
+      "level": "A1",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Điền do, does hoặc did, và dạng đúng của động từ trong ngoặc.",
+      "stem": "What time {1} the shop open these days? Lan didn't {2} (watch) the match yesterday.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "does"
+          ],
+          "closed": true
+        },
+        "2": {
+          "accept": [
+            "watch"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "The shop là số ít, these days cho biết hiện tại, nên dùng does. Sau didn't, động từ chính về dạng gốc: watch."
+    },
+    {
+      "id": "snq-13",
+      "type": "match",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Nối mỗi câu khẳng định với câu phủ định của nó.",
+      "pairs": [
+        {
+          "a": "She works here.",
+          "b": "She doesn't work here."
+        },
+        {
+          "a": "They called.",
+          "b": "They didn't call."
+        },
+        {
+          "a": "I can swim.",
+          "b": "I can't swim."
+        },
+        {
+          "a": "He is late.",
+          "b": "He isn't late."
+        },
+        {
+          "a": "We have finished.",
+          "b": "We haven't finished."
+        }
+      ],
+      "explain": "Phủ định dùng trợ động từ đứng đầu của câu khẳng định: be, can, have, hoặc do, does, did mượn khi chưa có."
+    },
+    {
+      "id": "snq-14",
+      "type": "classify",
+      "level": "A1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Điền do/does cho câu hỏi hiện tại đơn về tình hình hiện nay; dùng did cho hai câu ghi yesterday hoặc last night.",
+      "cats": [
+        "do",
+        "does",
+        "did"
+      ],
+      "items": [
+        {
+          "t": "___ you like tea nowadays?",
+          "cat": "do"
+        },
+        {
+          "t": "___ she like tea nowadays?",
+          "cat": "does"
+        },
+        {
+          "t": "___ they call you yesterday?",
+          "cat": "did"
+        },
+        {
+          "t": "___ the shop open at nine every day?",
+          "cat": "does"
+        },
+        {
+          "t": "___ we need a visa for the trip next month?",
+          "cat": "do"
+        },
+        {
+          "t": "___ he arrive late last night?",
+          "cat": "did"
+        }
+      ],
+      "explain": "Quá khứ thì dùng did. Hiện tại thì dùng does với he, she, it hoặc một người hay vật số ít, và do với các chủ ngữ còn lại."
+    },
+    {
+      "id": "snq-15",
+      "type": "multi",
+      "level": "A1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn các câu đúng theo mẫu câu hỏi thông tin có đảo và phủ định not trong tiếng Anh phổ thông.",
+      "stem": "Những câu nào đúng?",
+      "options": [
+        {
+          "t": "Does she work here?",
+          "ok": true,
+          "note": "Does mang ngôi thứ ba, work giữ dạng gốc."
+        },
+        {
+          "t": "Do you can swim?",
+          "note": "Can đã là trợ động từ.",
+          "tag": "do-with-modal"
+        },
+        {
+          "t": "I don't like coffee.",
+          "ok": true,
+          "note": "Phủ định mượn do, động từ chính về dạng gốc."
+        },
+        {
+          "t": "He doesn't likes tea.",
+          "note": "Dấu -s đã ở does.",
+          "tag": "aux-main-form"
+        },
+        {
+          "t": "Did you see him yesterday?",
+          "ok": true,
+          "note": "Câu hỏi quá khứ đơn: did cộng dạng gốc."
+        },
+        {
+          "t": "Why you are late?",
+          "note": "Không theo mẫu câu hỏi có đảo đang yêu cầu: Why are you late? Trật tự câu kể có thể xuất hiện khi hỏi lại hoặc nhắc lại lời nói trong ngữ cảnh khác.",
+          "tag": "question-word-order"
+        }
+      ],
+      "explain": "Câu đúng đưa trợ động từ lên trước chủ ngữ và để động từ chính ở dạng gốc sau do, does, did."
+    },
+    {
+      "id": "snq-16",
+      "type": "open",
+      "level": "A1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Chọn một người bạn hoặc một người trong gia đình. Viết ba câu: một câu khẳng định về việc người đó làm, một câu phủ định về việc người đó không làm, và một câu hỏi bạn muốn hỏi họ.",
+      "model": [
+        "My cousin plays the guitar. He doesn't play football. Does he practise every day?"
+      ],
+      "checklist": [
+        "Câu khẳng định dùng -s với ngôi thứ ba số ít",
+        "Câu phủ định có doesn't hoặc don't và động từ chính ở dạng gốc",
+        "Câu hỏi bắt đầu bằng trợ động từ hoặc từ để hỏi, rồi trợ động từ, rồi chủ ngữ",
+        "Không có do cộng động từ có -s hoặc -ed"
+      ],
+      "explain": "Khi tự kiểm tra, tìm trợ động từ trong câu phủ định và câu hỏi, rồi xem động từ chính đã về dạng gốc chưa."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Các mục về câu phủ định, câu hỏi và do, does, did"
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Phần về do và câu hỏi, cùng câu trả lời ngắn"
+    },
+    {
+      "ref": "murphy-essential",
+      "note": "Phần về câu hỏi và phủ định ở hiện tại đơn và quá khứ đơn"
+    },
+    {
+      "ref": "quirk",
+      "note": "Phần về operator và việc mượn do"
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

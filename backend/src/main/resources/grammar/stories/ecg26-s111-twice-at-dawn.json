@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s111-twice-at-dawn",
+  "title": "Hai lần bình minh",
+  "summary": "Uyên thấy hai lần mặt trời mọc nhưng lịch trạm vẫn chỉ cùng một ngày.",
+  "level": "B1",
+  "topics": [
+    "present-perfect-vs-past-simple"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Uyên",
+      "role": "Người ghi nhật ký"
+    },
+    {
+      "id": "b",
+      "name": "Sao",
+      "role": "Kỹ thuật viên"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Trạm đang quay quanh một hành tinh nhỏ. Uyên chứng kiến lần đầu khi nhận ca lúc sáu giờ. Lần thứ hai vừa diễn ra trước cửa sổ bếp.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I've seen it twice on this shift.",
+          "vi": "Ca này tôi đã thấy nó hai lần."
+        },
+        {
+          "who": "b",
+          "en": "Give me one event with a time I can put on the chart.",
+          "vi": "Cho tôi một sự kiện có giờ để ghi lên biểu đồ đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Viết sự kiện đã xong ở mốc sáu giờ.",
+        "options": [
+          {
+            "ok": false,
+            "t": "I have seen the first sunrise at six on this completed shift yesterday.",
+            "note": "Yesterday và completed shift đặt sự việc vào khoảng đã khép, xung đột với have seen trong cách kể chuẩn. Hơn nữa đây vẫn là ca hiện tại.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "I saw the first sunrise at six.",
+            "note": "Saw đặt một lần quan sát vào mốc đã xác định. Nó bổ sung giờ cụ thể cho lời tổng kết I've seen it twice.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Sao đánh một chấm vàng tại số sáu. Uyên ghi chấm thứ hai ở giờ thật hiện trên bếp.",
+      "say": [
+        {
+          "who": "b",
+          "en": "One day can hold two sunrises and one breakfast.",
+          "vi": "Một ngày có thể có hai bình minh và một bữa sáng."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Họ làm riêng lịch cho bữa ăn và biểu đồ cho ngôi sao. Cả trạm thôi ăn hai bữa sáng sát nhau.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Sao trả lại phiếu vì nó xếp bình minh nhầm sang hôm qua. Uyên xem giờ nhận ca rồi chỉ chấm đầu trên lịch hôm nay.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I wanted to draw our day, not borrow yesterday's.",
+          "vi": "Tôi muốn vẽ ngày của mình chứ đâu định mượn ngày hôm qua."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Hai chấm được nối thành đường cong quỹ đạo. Uyên dùng nó thay mặt đồng hồ trên bức tranh gửi về nhà.",
+      "end": true
+    }
+  ]
+}

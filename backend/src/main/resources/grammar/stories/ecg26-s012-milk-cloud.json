@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s012-milk-cloud",
+  "title": "Đám mây trong tách",
+  "summary": "Mae chỉ có vài giây để chụp một đám mây trắng trong tách trà. Mỗi lần cô lấy máy ảnh, mây đã biến mất.",
+  "level": "A1",
+  "topics": [
+    "wh-questions",
+    "some-and-any"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hào",
+      "role": "Con trai chủ quán"
+    },
+    {
+      "id": "b",
+      "name": "Mae",
+      "role": "Người chụp ảnh"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Hào cầm thìa sữa trên tách trà đen. Sữa vừa chạm trà thì có hình một cánh chim trắng, rồi tan dần thành màu nâu.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Ready? I have some milk.",
+          "vi": "Sẵn sàng chưa ạ? Cháu có chút sữa rồi."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "One thing first. What makes the white cloud?",
+          "vi": "Khoan một chút. Cái gì tạo ra đám mây trắng vậy?"
+        }
+      ],
+      "choice": {
+        "prompt": "Mae hỏi về thứ tạo vệt trắng. Hào trả lời đúng điều được hỏi.",
+        "options": [
+          {
+            "t": "The milk makes it.",
+            "note": "What hỏi vật tạo ra vệt trắng. The milk là phần sữa mà Hào đang cầm.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "In the cup.",
+            "note": "In the cup trả lời câu hỏi Where về nơi chốn. Mae đã biết mây ở trong tách, còn cần biết nên nhìn vào đâu khi nó xuất hiện.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Mae chỉnh máy vào đầu thìa. Trước khi cánh chim tan, cô chụp được bóng trắng nổi bật trên nền trà.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I can see its wings!",
+          "vi": "Cô thấy cánh của nó rồi!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Mae đặt máy cách xa tách. Hào nâng thìa sữa lên báo hiệu, Mae nhìn theo đầu thìa và kịp bấm máy.",
+      "say": [
+        {
+          "who": "b",
+          "en": "One white bird, just for a second.",
+          "vi": "Một chú chim trắng, chỉ trong một giây thôi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Mae in ảnh rồi đặt nó cạnh thực đơn. Những ngày sau khách gọi trà chim trắng. Hào mang trà và sữa ra riêng để mỗi người tự tạo con chim của mình.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Your bird is in this spoon.",
+          "vi": "Chim của bác nằm trong chiếc thìa này."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

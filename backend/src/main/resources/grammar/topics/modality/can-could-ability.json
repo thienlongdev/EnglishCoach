@@ -1,0 +1,867 @@
+{
+  "schema": 1,
+  "slug": "can-could-ability",
+  "version": 2,
+  "domain": "modality",
+  "order": 20,
+  "kind": "grammar",
+  "title": {
+    "vi": "Can, could, be able to: khả năng",
+    "en": "Ability: can, could, be able to"
+  },
+  "subtitle": {
+    "vi": "Nói mình làm được gì: can ở hiện tại, could cho khả năng chung trong quá khứ, be able to khi can không đủ dạng",
+    "en": "Saying what you can do: can now, could for general past ability, be able to when can has no form"
+  },
+  "aliases": [
+    "can could be able to",
+    "can và can't",
+    "tôi biết bơi",
+    "i know swim",
+    "i can to swim",
+    "do you can swim",
+    "will can",
+    "managed to"
+  ],
+  "level": "A1",
+  "levelBasis": "editorial",
+  "uses": [
+    {
+      "level": "A1",
+      "vi": "Nói I can swim, I can't drive và hỏi Can you …?"
+    },
+    {
+      "level": "A2",
+      "vi": "Dùng could cho khả năng chung trong quá khứ, và be able to."
+    },
+    {
+      "level": "B1",
+      "vi": "Dùng was able to và managed to cho một lần cụ thể; will be able to, have been able to."
+    }
+  ],
+  "objectives": [
+    "Dùng can và can't cho khả năng ở hiện tại: câu khẳng định, phủ định và câu hỏi",
+    "Dùng could và couldn't cho khả năng chung trong quá khứ",
+    "Dùng be able to khi can không có dạng phù hợp: tương lai, hoàn thành, sau to",
+    "Nói một lần làm được trong quá khứ bằng was able to hoặc managed to"
+  ],
+  "prerequisites": [
+    "modals-overview"
+  ],
+  "related": [
+    {
+      "slug": "modals-overview",
+      "rel": "more"
+    },
+    {
+      "slug": "permission-and-requests",
+      "rel": "contrast"
+    },
+    {
+      "slug": "may-might-could-possibility",
+      "rel": "contrast"
+    },
+    {
+      "slug": "semi-modals",
+      "rel": "more"
+    },
+    {
+      "slug": "future-will",
+      "rel": "more"
+    },
+    {
+      "slug": "stative-dynamic",
+      "rel": "more"
+    },
+    {
+      "slug": "adjectives-vs-adverbs",
+      "rel": "confusion"
+    }
+  ],
+  "exam": {
+    "ielts": "Speaking Part 1 và 2 hay hỏi về khả năng và kỹ năng (I can play the guitar, I used to be able to …). Writing Task 2 thường dùng will be able to và is able to khi nói về lợi ích hoặc dự đoán. Lỗi như I can to swim hay Do you can … là lỗi cơ bản về độ chính xác.",
+    "toeic": "Part 5: có thể hỏi be able to sau will hoặc to, và unable to trong thư công việc (The manager was unable to attend). Phần Nghe: can và can't nghe gần nhau, nhất là trong tiếng Anh Mỹ, nên chú ý trọng âm và ngữ cảnh."
+  },
+  "quick": {
+    "what": "Can nói khả năng hoặc điều có thể làm ở hiện tại và có thể hướng tới tương lai theo ngữ cảnh. Could nói khả năng quá khứ trong cách dùng đang học. Be able to dùng được trong các khung can không có, như sau will, sau to hoặc ở thể hoàn thành.",
+    "when": "Nói ai làm được gì. Can/could đi với nguyên mẫu không to và không thêm -s. Can cũng nói được I can come tomorrow; khi cần một khung có will, dùng will be able to, không dùng will can.",
+    "examples": [
+      {
+        "en": "[S|I] [MOD|can] [V|swim] [ADV|very well].",
+        "vi": "Tôi bơi rất giỏi."
+      },
+      {
+        "en": "[S|He] [MOD|can't] [V|drive] [T|yet].",
+        "vi": "Anh ấy chưa biết lái xe."
+      },
+      {
+        "en": "[S|She] [AUX|will] [V|be able to] [V|start] [T|next week].",
+        "vi": "Tuần sau cô ấy sẽ có thể bắt đầu."
+      }
+    ],
+    "remember": "Can/could + nguyên mẫu không to. Can có thể hướng tới tương lai; trong khung có will hoặc have hoàn thành, dùng dạng thích hợp của be able to."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Muốn nói ai đó làm được việc gì, tiếng Anh dùng `can`. Can là động từ khuyết thiếu (modal verb): cùng một dạng cho mọi chủ ngữ (she can, they can), không thêm -s, và theo sau là động từ dạng gốc không có to. Tiếng Việt nói \"Tôi biết bơi\" hay \"Tôi có thể bơi\"; cả hai đều là I can swim."
+    },
+    {
+      "type": "formula",
+      "lines": [
+        {
+          "label": "Khẳng định",
+          "parts": [
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "can",
+              "role": "MOD"
+            },
+            {
+              "t": "động từ dạng gốc",
+              "role": "V"
+            }
+          ]
+        },
+        {
+          "label": "Phủ định",
+          "parts": [
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "can't / cannot",
+              "role": "MOD"
+            },
+            {
+              "t": "động từ dạng gốc",
+              "role": "V"
+            }
+          ]
+        },
+        {
+          "label": "Câu hỏi",
+          "parts": [
+            {
+              "t": "Can",
+              "role": "MOD"
+            },
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "động từ dạng gốc",
+              "role": "V"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|I] [MOD|can] [V|swim].",
+          "vi": "Tôi biết bơi.",
+          "note": "Can nói về điều bạn làm được."
+        },
+        {
+          "en": "[S|She] [MOD|can] [V|speak] [O|three languages].",
+          "vi": "Cô ấy nói được ba thứ tiếng.",
+          "note": "She can, không phải She cans."
+        },
+        {
+          "en": "[S|He] [MOD|can't] [V|drive].",
+          "vi": "Anh ấy không biết lái xe.",
+          "note": "Phủ định là can't, viết đầy đủ là cannot (một từ)."
+        },
+        {
+          "en": "[MOD|Can] [S|you] [V|cook]?",
+          "vi": "Bạn nấu ăn được không?",
+          "note": "Câu hỏi: đưa can lên trước chủ ngữ, không dùng do."
+        },
+        {
+          "en": "[MOD|Can] [S|you] [V|swim]? Yes, [S|I] [MOD|can].",
+          "vi": "Bạn biết bơi không? Biết.",
+          "note": "Trả lời ngắn lặp lại can: Yes, I can. No, I can't."
+        },
+        {
+          "en": "[S|I] [MOD|can] [V|hear] [O|music].",
+          "vi": "Tôi nghe thấy tiếng nhạc.",
+          "note": "Với see, hear, smell, tiếng Anh dùng can để nói đang nghe thấy hay nhìn thấy."
+        }
+      ]
+    },
+    {
+      "type": "try",
+      "exercise": "ca-01"
+    },
+    {
+      "type": "h",
+      "vi": "Quá khứ: could và was able to"
+    },
+    {
+      "type": "contrast",
+      "labelA": "Khả năng chung",
+      "labelB": "Một lần cụ thể",
+      "items": [
+        {
+          "a": {
+            "en": "[T|When I was five], [S|I] [MOD|could] [V|swim].",
+            "vi": "Hồi năm tuổi tôi đã biết bơi."
+          },
+          "b": {
+            "en": "[T|Last summer] [S|I] [V|was able to] [V|swim] [A|across the lake].",
+            "vi": "Hè năm ngoái tôi đã bơi qua được hồ."
+          },
+          "diff": "Bên trái nói kỹ năng ở giai đoạn đó, không bảo đảm mọi hoàn cảnh đều cho phép thực hiện. Bên phải được hiểu trong tình huống đã bơi qua hồ một lần; was able to hoặc managed to thường diễn đạt kết quả đạt được rõ hơn could."
+        },
+        {
+          "a": {
+            "en": "[S|I] [MOD|couldn't] [V|open] [O|the door].",
+            "vi": "Tôi không mở được cửa."
+          },
+          "b": {
+            "en": "[S|I] [V|wasn't able to] [V|open] [O|the door].",
+            "vi": "Tôi không mở được cửa."
+          },
+          "diff": "Ở phủ định, cả hai cách đều dùng được cho một lần cụ thể: không làm được."
+        }
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "flow",
+        "start": "sense",
+        "nodes": {
+          "specific": {
+            "q": "Bạn nói về một lần cụ thể trong quá khứ (hôm qua, tối qua, lần đó)?",
+            "yes": "affirm",
+            "no": "general"
+          },
+          "affirm": {
+            "q": "Bạn muốn khẳng định đã đạt kết quả ở lần đó, không chỉ có cơ hội?",
+            "yes": "able",
+            "no": "neg"
+          },
+          "general": {
+            "end": "could",
+            "note": "When I was ten, I could swim. Cũng có thể nói was able to."
+          },
+          "able": {
+            "end": "was able to hoặc managed to",
+            "note": "Yesterday I was able to finish the report."
+          },
+          "neg": {
+            "end": "couldn't hoặc wasn't able to",
+            "note": "I couldn't open the door. = I wasn't able to open the door."
+          },
+          "sense": {
+            "q": "Đang nói về nhìn/nghe/hiểu trực tiếp tại một mốc (như could see/hear)?",
+            "yes": "sensory",
+            "no": "specific"
+          },
+          "sensory": {
+            "end": "could có thể đúng cả ở một lần cụ thể",
+            "note": "I could hear the alarm. Xem ngữ cảnh và nghĩa của động từ."
+          }
+        }
+      },
+      "caption": "Gợi ý cho khả năng chung và kết quả đạt được; nghĩa giác quan có nhánh riêng.",
+      "alt": "Với thấy/nghe/hiểu tại một mốc, could có thể đúng. Ngoài nhóm đó, khả năng chung dùng could; kết quả đạt được một lần thường dùng was able to hoặc managed to; phủ định một lần có thể dùng could not."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "matrix",
+        "rows": [
+          "Hiện tại",
+          "Quá khứ, khả năng chung",
+          "Quá khứ, một lần cụ thể",
+          "Tương lai",
+          "Hoàn thành",
+          "Sau to hoặc -ing"
+        ],
+        "cols": [
+          "can, could",
+          "be able to"
+        ],
+        "cells": [
+          [
+            {
+              "t": "I can swim."
+            },
+            {
+              "t": "I am able to swim.",
+              "note": "Trang trọng hơn"
+            }
+          ],
+          [
+            {
+              "t": "I could swim."
+            },
+            {
+              "t": "I was able to swim."
+            }
+          ],
+          [
+            {
+              "t": "Khẳng định thường không dùng could",
+              "off": true,
+              "note": "Phủ định thì dùng được: I couldn't open it."
+            },
+            {
+              "t": "I was able to open it."
+            }
+          ],
+          [
+            {
+              "t": "I can come tomorrow.",
+              "note": "Can có thể hướng tới tương lai; không ghép will can."
+            },
+            {
+              "t": "I will be able to swim."
+            }
+          ],
+          [
+            {
+              "t": "Không có dạng này",
+              "off": true
+            },
+            {
+              "t": "I haven't been able to sleep."
+            }
+          ],
+          [
+            {
+              "t": "Không có dạng này",
+              "off": true
+            },
+            {
+              "t": "I want to be able to swim. Being able to swim is useful."
+            }
+          ]
+        ]
+      },
+      "caption": "Be able to bổ sung các khung hình thức mà can không có; can vẫn có thể nói khả năng tương lai.",
+      "alt": "Bảng hiện tại, quá khứ và các khung hình thức. Can và be able to đều có thể hướng tới tương lai; sau will, to hoặc trong hoàn thành dùng dạng be able to. Kết quả đạt được một lần thường dùng was able to, với ngoại lệ giác quan và các ngữ cảnh riêng."
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Tiếng Việt dùng \"biết\" cho kỹ năng học được (biết bơi, biết lái xe) và \"có thể\" hoặc \"được\" cho khả năng nói chung. Tiếng Anh dùng can cho cả hai. Nói I know swim là sai. Câu đúng là I can swim, hoặc I know how to swim."
+    },
+    {
+      "type": "try",
+      "exercise": "ca-09"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "**Can và could còn nhiều nghĩa khác.** Can và could cũng dùng để xin phép (Can I sit here?), đề nghị lịch sự (Could you help me?) và nói điều có thể xảy ra (It could rain). Những cách dùng này được bàn ở bài Xin phép và đề nghị, và bài May, might, could. Bài này chỉ nói về khả năng làm được."
+    },
+    {
+      "type": "p",
+      "vi": "**Can see, can hear.** Với động từ giác quan và động từ về trí óc như see, hear, smell, taste, understand, remember, tiếng Anh thường dùng can để nói về điều đang xảy ra lúc này: I can see a bird. Can you hear that? I can't remember his name. Thường không dùng thì tiếp diễn kiểu I'm hearing. Quá khứ dùng could: I could smell smoke."
+    },
+    {
+      "type": "p",
+      "vi": "**Could ở quá khứ: các trường hợp được dùng.** Trong câu phủ định và câu hỏi, could dùng được cho cả một lần cụ thể: I couldn't open the door. Why couldn't you come? Với see, hear, smell, understand, remember, could cũng dùng được ở khẳng định: I could see the sea from my room."
+    },
+    {
+      "type": "p",
+      "vi": "**Managed to.** `Managed to` nghĩa là đã cố gắng và làm được: I managed to finish the report. Nó nhấn mạnh việc khó hoặc phải nỗ lực. Dạng phủ định cũng đúng: I didn't manage to finish. Cách trang trọng hơn là succeeded in finishing."
+    },
+    {
+      "type": "p",
+      "vi": "**Be able to và unable to.** Be able to trang trọng hơn can và hay dùng trong văn viết: Students are able to choose their own topics. Unable to là dạng phủ định trang trọng: The manager was unable to attend. Hai cách này hay gặp trong thư và email công việc."
+    },
+    {
+      "type": "p",
+      "vi": "**Know how to.** Với kỹ năng học được, I know how to swim cũng đúng. Câu này nhấn rằng bạn biết cách làm, không nói bạn có đủ điều kiện làm ngay lúc này."
+    },
+    {
+      "type": "note",
+      "kind": "regional",
+      "vi": "Khi nghe, can thường đọc yếu (/kən/) còn can't đọc mạnh với nguyên âm rõ. Trong tiếng Anh Anh, can't thường có nguyên âm dài (/kɑːnt/), dễ phân biệt hơn. Trong tiếng Anh Mỹ (/kænt/), hai từ nghe gần nhau hơn, nên hãy dựa vào trọng âm và ngữ cảnh."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "ca-to",
+      "wrong": "I can to swim.",
+      "right": "I can swim.",
+      "why": "Sau can dùng động từ dạng gốc, không có to.",
+      "vn": "Nhiều động từ khác như want hay try đi với to, nên người học dễ thêm to sau can."
+    },
+    {
+      "id": "ca-do",
+      "wrong": "Do you can swim?",
+      "right": "Can you swim?",
+      "why": "Can tự đảo lên đầu để tạo câu hỏi, không dùng do."
+    },
+    {
+      "id": "ca-know",
+      "wrong": "I know swim.",
+      "right": "I can swim.",
+      "why": "Know cần how to: I know how to swim. Cách thông dụng nhất là I can swim.",
+      "vn": "Tiếng Việt \"Tôi biết bơi\" dịch từng chữ thành I know swim."
+    },
+    {
+      "id": "ca-will-can",
+      "wrong": "I will can help you tomorrow.",
+      "right": "I will be able to help you tomorrow.",
+      "why": "Trong chuẩn đích không ghép will can. Dùng will be able to nếu giữ will; I can help you tomorrow cũng đúng khi chỉ khả năng ngày mai."
+    },
+    {
+      "id": "ca-yesterday-could",
+      "wrong": "Yesterday I could finish the whole report.",
+      "right": "Yesterday I was able to finish the whole report.",
+      "why": "Nếu muốn xác nhận đã hoàn tất báo cáo trong một lần, was able to hoặc managed to rõ hơn. Could finish có thể chỉ cơ hội/khả năng và không tự xác nhận đã làm xong; đây là chỉnh theo nghĩa đích, không phải câu luôn sai ngữ pháp."
+    },
+    {
+      "id": "ca-good",
+      "wrong": "He can cook very good.",
+      "right": "He can cook very well.",
+      "why": "Bổ nghĩa cho động từ cần trạng từ well, không dùng tính từ good.",
+      "vn": "Tiếng Việt \"nấu rất giỏi\" dùng một từ \"giỏi\" cho cả hai vị trí."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can và be able to khác nhau thế nào?",
+      "a": "Hai cấu trúc thường gần nghĩa về khả năng; be able to có thêm các dạng cần sau will, to hoặc have. Can vẫn nói được khả năng tương lai như I can come tomorrow. Không tự xem chúng thay thế hoàn toàn trong mọi chức năng của can."
+    },
+    {
+      "q": "Could có phải là quá khứ của can không?",
+      "a": "Một phần. Could là quá khứ của can khi nói khả năng chung trong quá khứ (I could swim at five). Nhưng could còn dùng ở hiện tại cho đề nghị lịch sự và khả năng xảy ra, và thường không dùng để kể một lần cụ thể đã làm được."
+    },
+    {
+      "q": "Can't và cannot khác nhau thế nào?",
+      "a": "Cùng nghĩa. Cannot là dạng đầy đủ, viết liền một từ. Can't là dạng rút gọn, thân mật hơn. Can not viết rời gặp ít hơn."
+    },
+    {
+      "q": "Có nói I am able to swim được không?",
+      "a": "Được, đúng ngữ pháp, nhưng nghe trang trọng hoặc nhấn mạnh. Trong lời nói thường ngày, I can swim tự nhiên hơn."
+    },
+    {
+      "q": "I can see khác I see thế nào?",
+      "a": "I can see thường nêu việc nhìn thấy trong điều kiện hiện có. I see cũng có thể nói thấy trực tiếp, như I see a light ahead, hoặc nghĩa tôi hiểu; không giới hạn I see vào kể chuyện và hiểu ý."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ca-01",
+      "type": "cloze",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Điền can hoặc can't (cannot).",
+      "stem": "Now my sister {1} speak three languages. My brother {2} swim yet; he is only two. {3} you play the piano?",
+      "blanks": {
+        "1": {
+          "accept": [
+            "can"
+          ],
+          "closed": true
+        },
+        "2": {
+          "accept": [
+            "can't",
+            "cannot"
+          ],
+          "closed": true
+        },
+        "3": {
+          "accept": [
+            "Can"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Can nêu khả năng được xác nhận; cannot/can’t nêu việc em chưa biết bơi theo dữ kiện, không suy từ tuổi. Câu hỏi bắt đầu Can you.",
+      "context": "Dữ kiện: chị tôi nói được ba ngôn ngữ; em tôi chưa học bơi và hiện chưa biết bơi. Tuổi không phải căn cứ để suy ra kỹ năng."
+    },
+    {
+      "id": "ca-02",
+      "type": "choice",
+      "level": "A1",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Chọn câu tiếng Anh đúng cho câu tiếng Việt: \"Tôi biết bơi.\"",
+      "stem": "Tôi biết bơi.",
+      "options": [
+        {
+          "t": "I can swim.",
+          "ok": true,
+          "note": "Can + động từ dạng gốc diễn đạt khả năng."
+        },
+        {
+          "t": "I know swim.",
+          "note": "Know không đi thẳng với động từ. Cần I know how to swim, hoặc dùng can.",
+          "tag": "know-for-can"
+        },
+        {
+          "t": "I can to swim.",
+          "note": "Sau can không có to.",
+          "tag": "can-to"
+        }
+      ],
+      "explain": "Tiếng Việt dùng \"biết\" cho kỹ năng, nhưng tiếng Anh dùng can: I can swim."
+    },
+    {
+      "id": "ca-03",
+      "type": "choice",
+      "level": "A1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn dạng đúng.",
+      "stem": "Can she ___ the guitar?",
+      "options": [
+        {
+          "t": "play",
+          "ok": true,
+          "note": "Sau can dùng động từ dạng gốc."
+        },
+        {
+          "t": "plays",
+          "note": "Sau can không thêm -s, dù chủ ngữ là she.",
+          "tag": "can-plus-s"
+        },
+        {
+          "t": "to play",
+          "note": "Sau can không có to.",
+          "tag": "can-to"
+        }
+      ],
+      "explain": "Can là động từ khuyết thiếu, nên động từ theo sau luôn ở dạng gốc: Can she play …?"
+    },
+    {
+      "id": "ca-04",
+      "type": "choice",
+      "level": "A1",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Chọn dạng đúng.",
+      "stem": "When I was six, I ___ ride a bike.",
+      "options": [
+        {
+          "t": "could",
+          "ok": true,
+          "note": "When I was six cho biết quá khứ, và could nói khả năng chung ở quá khứ."
+        },
+        {
+          "t": "can",
+          "note": "Can là hiện tại, không hợp với when I was six.",
+          "tag": "present-for-past"
+        },
+        {
+          "t": "am able to",
+          "note": "Am able to là hiện tại, không hợp với when I was six.",
+          "tag": "present-for-past"
+        }
+      ],
+      "explain": "Hồi sáu tuổi là quá khứ, và đây là khả năng chung, nên dùng could (hoặc was able to)."
+    },
+    {
+      "id": "ca-05",
+      "type": "choice",
+      "level": "A2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn dạng đúng.",
+      "stem": "Next year, when I have a licence, I ___ drive to work.",
+      "options": [
+        {
+          "t": "will be able to",
+          "ok": true,
+          "note": "Will be able to là khung đúng trong các lựa chọn. Can cũng có thể nói khả năng tương lai, nhưng không đi sau will."
+        },
+        {
+          "t": "will can",
+          "note": "Hai động từ khuyết thiếu không đi liền nhau.",
+          "tag": "will-can"
+        },
+        {
+          "t": "will be can",
+          "note": "Be không đi trước can. Dạng đúng là be able to.",
+          "tag": "be-can"
+        }
+      ],
+      "explain": "Nếu chọn cấu trúc có will, dùng will be able to. Không suy rằng mọi câu khả năng tương lai đều cấm can."
+    },
+    {
+      "id": "ca-06",
+      "type": "error",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        {
+          "t": "Do you can",
+          "bad": true,
+          "fix": [
+            "Can you",
+            "Are you able to"
+          ],
+          "note": "Can tự đảo lên đầu câu hỏi, không dùng do.",
+          "tag": "do-with-can"
+        },
+        {
+          "t": "swim?"
+        }
+      ],
+      "explain": "Câu đúng là Can you swim? (hoặc Are you able to swim?). Câu hỏi với can không dùng do."
+    },
+    {
+      "id": "ca-07",
+      "type": "error",
+      "level": "A1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        {
+          "t": "She"
+        },
+        {
+          "t": "cans",
+          "bad": true,
+          "fix": [
+            "can"
+          ],
+          "note": "Can không thêm -s với he, she, it.",
+          "tag": "can-plus-s"
+        },
+        {
+          "t": "speak French and Spanish."
+        }
+      ],
+      "explain": "Câu đúng là She can speak French and Spanish. Động từ khuyết thiếu có một dạng cho mọi chủ ngữ."
+    },
+    {
+      "id": "ca-08",
+      "type": "error",
+      "level": "A1",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "noError": true,
+      "segments": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "couldn't"
+        },
+        {
+          "t": "open the door yesterday."
+        }
+      ],
+      "explain": "Câu đúng. Ở phủ định, couldn't dùng được cho cả một lần cụ thể: không làm được."
+    },
+    {
+      "id": "ca-09",
+      "type": "transform",
+      "level": "A1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lại câu về quá khứ.",
+      "source": "I can swim.",
+      "instruction": "Bắt đầu bằng When I was five, và dùng could hoặc was able to.",
+      "accept": [
+        "When I was five, I could swim",
+        "When I was five I could swim",
+        "When I was five, I was able to swim",
+        "When I was five I was able to swim"
+      ],
+      "model": "When I was five, I could swim.",
+      "known": [
+        {
+          "t": "When I was five, I can swim",
+          "verdict": "wrong",
+          "note": "Quá khứ cần could hoặc was able to, không dùng can.",
+          "tag": "present-for-past"
+        }
+      ],
+      "explain": "Khả năng chung trong quá khứ dùng could hoặc was able to."
+    },
+    {
+      "id": "ca-10",
+      "type": "transform",
+      "level": "A2",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Viết lại câu hỏi.",
+      "source": "Can you ride a motorbike?",
+      "instruction": "Dùng be able to.",
+      "accept": [
+        "Are you able to ride a motorbike"
+      ],
+      "model": "Are you able to ride a motorbike?",
+      "known": [
+        {
+          "t": "Are you can ride a motorbike",
+          "verdict": "wrong",
+          "note": "Can không đi sau are. Dùng are you able to.",
+          "tag": "be-plus-can"
+        },
+        {
+          "t": "Are you able ride a motorbike",
+          "verdict": "wrong",
+          "note": "Be able to cần to trước động từ.",
+          "tag": "missing-to"
+        }
+      ],
+      "explain": "Be able to thay can: Can you ride thành Are you able to ride."
+    },
+    {
+      "id": "ca-11",
+      "type": "order",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sắp xếp thành câu: \"Cô ấy không đến được bữa tiệc.\"",
+      "tokens": [
+        "she",
+        "wasn't",
+        "able",
+        "to",
+        "come",
+        "to",
+        "the",
+        "party"
+      ],
+      "end": ".",
+      "accept": [
+        [
+          "she",
+          "wasn't",
+          "able",
+          "to",
+          "come",
+          "to",
+          "the",
+          "party"
+        ]
+      ],
+      "explain": "Be able to ở quá khứ phủ định: wasn't able to + động từ dạng gốc. Câu nói về một lần cụ thể không đến được."
+    },
+    {
+      "id": "ca-12",
+      "type": "match",
+      "level": "A1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Nối mỗi câu tiếng Việt với câu tiếng Anh đúng.",
+      "pairs": [
+        {
+          "a": "Tôi biết nói tiếng Pháp.",
+          "b": "I can speak French."
+        },
+        {
+          "a": "Hồi nhỏ, anh ấy chạy rất nhanh.",
+          "b": "He could run very fast when he was young."
+        },
+        {
+          "a": "Hôm qua tôi đã sửa được máy tính.",
+          "b": "I was able to fix the computer yesterday."
+        },
+        {
+          "a": "Tuần sau cô ấy sẽ đến được.",
+          "b": "She will be able to come next week."
+        },
+        {
+          "a": "Tôi không nghe thấy gì cả.",
+          "b": "I can't hear anything."
+        }
+      ],
+      "explain": "Chọn theo ý đích: can cho kỹ năng hiện tại, could cho kỹ năng quá khứ, was able to cho lần sửa đã thành công. Will be able to là một cách nói tương lai, không phải cách duy nhất."
+    },
+    {
+      "id": "ca-13",
+      "type": "classify",
+      "level": "A2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Câu nào dùng được can hoặc could, câu nào phải dùng be able to?",
+      "cats": [
+        "dùng được can hoặc could",
+        "phải dùng be able to"
+      ],
+      "items": [
+        {
+          "t": "I ___ cook very well.",
+          "cat": "dùng được can hoặc could"
+        },
+        {
+          "t": "When I was ten, I ___ swim.",
+          "cat": "dùng được can hoặc could"
+        },
+        {
+          "t": "Next week I ___ come to your party.",
+          "cat": "dùng được can hoặc could"
+        },
+        {
+          "t": "I want ___ speak French.",
+          "cat": "phải dùng be able to"
+        },
+        {
+          "t": "I haven't ___ sleep well lately.",
+          "cat": "phải dùng be able to"
+        },
+        {
+          "t": "She ___ read at the age of four.",
+          "cat": "dùng được can hoặc could"
+        }
+      ],
+      "explain": "Can có thể nói khả năng tương lai: Next week I can come to your party. Sau want cần to be able to; sau haven’t cần been able to. Phân loại theo khung cấu trúc, không theo riêng mốc next week."
+    },
+    {
+      "id": "ca-14",
+      "type": "open",
+      "level": "A1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết về khả năng của bạn.",
+      "task": "Viết bốn câu về khả năng của bạn: một câu có can, một câu có can't, một câu có could về hồi nhỏ và một câu có will be able to về tương lai.",
+      "model": [
+        "I can cook Vietnamese food.",
+        "I can't drive a car yet.",
+        "When I was little, I could climb any tree.",
+        "Next year I will be able to drive."
+      ],
+      "checklist": [
+        "Sau can, can't và could là động từ dạng gốc, không có to và không có -s.",
+        "Câu về hồi nhỏ dùng could hoặc was able to, không dùng can.",
+        "Theo nhiệm vụ này, dùng will be able to cho câu tương lai; không viết will can. Can ở câu tương lai khác vẫn có thể đúng.",
+        "Không dùng do trong câu hỏi hay phủ định với can."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Mô tả can, could và be able to cho khả năng, và sự khác biệt giữa khả năng chung với một lần cụ thể trong quá khứ."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Can, could, be able to, managed to; động từ giác quan với can."
+    },
+    {
+      "ref": "cgel",
+      "note": "Phân tích động từ khuyết thiếu và các dạng tương đương như be able to."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import axios from 'axios';
+import { parseContentBatch } from '../src/lib/exams/contentBatch.ts';
+const first='{"manifest":{"packageId":"one"},"metadata":{"bbox":[0.0,12.0,-0.0],"small":1e-8,"quote":"a\\\"},]b"}}';
+const second='{"manifest":{"packageId":"two"},"nested":[{"value":1.25}]}';
+const batch=parseContentBatch(` [ ${first},\n${second} ] `);
+assert.deepEqual(batch.map((row)=>row.json),[first,second]);
+let transmitted;
+const client=axios.create({adapter:async config=>{transmitted=config.data;return {status:200,statusText:'OK',headers:{},config,data:[]};}});
+await client.post('/release',batch[0].json,{headers:{'Content-Type':'application/json'}});
+assert.equal(transmitted,first,'Axios must preserve canonical numeric tokens on the wire');
+assert.throws(()=>parseContentBatch('[]'));
+assert.throws(()=>parseContentBatch('[1]'));
+assert.throws(()=>parseContentBatch('[{} trailing]'));
+assert.throws(()=>parseContentBatch(JSON.stringify(Array.from({length:51},()=>({})))));
+console.log('Content batch: original JSON numbers, nested boundaries, Axios wire bytes and batch limits PASS');

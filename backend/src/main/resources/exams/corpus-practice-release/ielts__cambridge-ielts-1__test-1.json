@@ -1,0 +1,1690 @@
+{
+  "manifest" : {
+    "schemaVersion" : "1.0",
+    "packageId" : "RAW-RAW_CAMBRIDGE_IELTS_1_T1",
+    "packageVersion" : 1,
+    "contentHash" : "8b2d8eafd181edc032fa3e627557204b85bf2395d63afb8eb778c225ad90d07f",
+    "creator" : "exam-raw-extractor",
+    "specificationBaselineId" : "EC-EXAM-SPEC-2026-09-10",
+    "authoringStatus" : "DRAFT",
+    "createdAt" : null,
+    "metadata" : {
+      "humanReviewComplete" : false,
+      "reviewOnlyReferences" : {
+        "transcripts" : [ {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+          "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3",
+          "pages" : "113-117"
+        } ],
+        "answerKeys" : [ {
+          "skill" : "LISTENING",
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+          "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3",
+          "pages" : "136",
+          "keysParsed" : 41
+        }, {
+          "skill" : "READING",
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+          "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3",
+          "pages" : "137-138",
+          "keysParsed" : 19
+        } ],
+        "note" : "References only. Transcript text is not embedded: the learner manifest projection has no stimulus/asset role allow-list yet (EXAM-AUD-032)."
+      },
+      "ocr" : { },
+      "practiceProjection" : {
+        "fullSimulationGranted" : false,
+        "humanApprovalCreated" : false,
+        "sourceContentHash" : "cecd9891b0604b9ef82f356c5d46f18989989381094f9448fb758dcffded788d",
+        "version" : "exam-practice-projection-v1",
+        "retainedScopes" : [ "IELTS_LISTENING_SECTION_3", "IELTS_LISTENING_SECTION_4", "IELTS_WRITING_TASK_2" ],
+        "excludedScopes" : {
+          "IELTS_WRITING_TASK_1" : [ "MEDIA_IMAGE_PENDING", "QA_SCOPE_PENDING", "SCOPE_NOT_SELECTED" ]
+        },
+        "sourcePackageId" : "RAW-RAW_CAMBRIDGE_IELTS_1_T1"
+      },
+      "audioQAStatus" : "AUTOMATED_TECHNICAL_QA_ONLY_HUMAN_QA_REQUIRED",
+      "sourceProvenance" : {
+        "collection" : "cambridge",
+        "book" : "cambridge-ielts-1",
+        "test" : "TEST_1",
+        "rawSourceFile" : {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+          "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3"
+        },
+        "pageRange" : "22-38",
+        "audio" : [ {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Test 1 - Section 3.mp3",
+          "sha256" : "0621e06cc86fa7e02319277824b8249fcf5103ce3388cb2c0c058129dc98d67c",
+          "section" : "PART_3",
+          "confidence" : "CONFIDENT"
+        }, {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Test 1 - Section 4.mp3",
+          "sha256" : "b51168128b560445464ef132974a5dbff5fe05c1f34e6b070b76a294984c96c5",
+          "section" : "PART_4",
+          "confidence" : "CONFIDENT"
+        } ],
+        "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json#ielts/cambridge-ielts-1/test-1",
+        "extractorName" : "exam-raw-extractor",
+        "extractorVersion" : "3.8.5",
+        "reviewStatus" : "UNREVIEWED"
+      },
+      "sourceIdentity" : {
+        "publisher" : "Cambridge University Press & Assessment",
+        "collection" : "cambridge",
+        "book" : "cambridge-ielts-1",
+        "bookTitle" : "Cambridge IELTS 1",
+        "test" : 1,
+        "rawSourceSha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3"
+      },
+      "displayName" : {
+        "current" : "Cambridge IELTS 1 — Test 1 (source extraction, draft)",
+        "ownerSelected" : null,
+        "status" : "PROVISIONAL_SOURCE_TITLE",
+        "policy" : "DISPLAY_NAME_MAY_CHANGE_SOURCE_PROVENANCE_MUST_NOT",
+        "renameTargets" : [ "form.title", "catalogNodes[].title" ]
+      },
+      "visualQAStatus" : "PAGE_REGION_RENDERING_HUMAN_QA_REQUIRED",
+      "rightsReviewStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED_PROJECT_USE_OWNER_AUTHORIZED",
+      "audioSegments" : [ ],
+      "sourceDocuments" : [ {
+        "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+        "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3",
+        "role" : "QUESTION_BOOK",
+        "textLayer" : "TEXT"
+      } ],
+      "extraction" : {
+        "status" : "NEEDS_REVIEW",
+        "extractorVersion" : "3.8.5",
+        "blockingCodes" : [ "ANSWER_KEY_GARBAGE_REJECTED", "ANSWER_KEY_MISSING_ITEM", "GROUP_TYPE_UNKNOWN", "OPTION_PARSE_FAILED", "PART_OMITTED", "SECTION_OMITTED" ],
+        "reviewCodes" : [ "IMAGE_REGION_HEURISTIC", "LAYOUT_LINEARIZED" ]
+      },
+      "projectUsageAuthorization" : {
+        "status" : "OWNER_AUTHORIZED",
+        "scope" : "ENGLISHCOACH_PROJECT_USE",
+        "authorizedBy" : "PROJECT_OWNER",
+        "decisionDate" : "2026-10-06",
+        "decisionRef" : "EXAMS_CORPUS_OWNER_PRODUCTION_AUTHORIZATION_20261006",
+        "appliesTo" : "EXISTING_REPOSITORY_SOURCE_CORPUS",
+        "permits" : [ "EXTRACTION", "CANONICAL_PACKAGE_PREPARATION", "STAGING_VALIDATION", "LOCAL_STAGING_IMPORT_PREPARATION", "PRODUCTION_IMPORT", "PUBLICATION", "LEARNER_RUNTIME", "PRACTICE", "SIMULATION", "MEDIA", "SCORING", "RESULTS", "REVIEW" ],
+        "productionImport" : "OWNER_AUTHORIZED_PRODUCTION_USE",
+        "publisherLicence" : "NOT_ESTABLISHED",
+        "publisherEndorsement" : false
+      }
+    }
+  },
+  "sources" : [ {
+    "id" : "2c7b9d14-802e-5297-9138-1d52febf3afd",
+    "code" : "RAW_CAMBRIDGE_CAMBRIDGE_IELTS_1",
+    "name" : "Cambridge IELTS 1",
+    "owner" : "Cambridge University Press & Assessment",
+    "publisher" : "Cambridge University Press & Assessment",
+    "sourceType" : "THIRD_PARTY_PUBLICATION",
+    "referenceMeta" : {
+      "rawCorpusRoot" : "imports/source-files/",
+      "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json",
+      "rightsStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED",
+      "projectUsageAuthorization" : "OWNER_AUTHORIZED",
+      "primaryDocument" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  }, {
+    "id" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "code" : "EC_INTERNAL_ORIGINAL",
+    "name" : "English Coach original content",
+    "owner" : "English Coach",
+    "publisher" : "English Coach",
+    "sourceType" : "INTERNAL_ORIGINAL",
+    "referenceMeta" : {
+      "declaration" : "Rubrics and scoring metadata authored by English Coach; no external text"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "licenses" : [ {
+    "id" : "a8cdb4e4-8e52-57a5-a1bb-38e90866ed4a",
+    "sourceId" : "2c7b9d14-802e-5297-9138-1d52febf3afd",
+    "licenseCode" : "UNKNOWN-RAW_CAMBRIDGE_CAMBRIDGE_IELTS_1",
+    "provenanceCategory" : "UNKNOWN",
+    "commercialRights" : false,
+    "redistributionRights" : false,
+    "derivativeRights" : false,
+    "permittedPurposes" : {
+      "LOCAL_PRIVATE_REVIEW" : true
+    },
+    "permittedTerritories" : { },
+    "validFrom" : null,
+    "validUntil" : null,
+    "attribution" : "Cambridge IELTS 1 — Cambridge University Press & Assessment. Publisher licence not established; used under the EnglishCoach project owner's authorization (2026-10-03), which is not a publisher licence or endorsement.",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  }, {
+    "id" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseCode" : "EC-ORIGINAL-DRAFT-PENDING-LEGAL",
+    "provenanceCategory" : "ORIGINAL",
+    "commercialRights" : true,
+    "redistributionRights" : true,
+    "derivativeRights" : true,
+    "permittedPurposes" : {
+      "EXAM" : true,
+      "SIMULATION" : true,
+      "PRACTICE" : true,
+      "CONTENT" : true
+    },
+    "permittedTerritories" : {
+      "GLOBAL" : true
+    },
+    "validFrom" : 1790985600.000000000,
+    "validUntil" : null,
+    "attribution" : "English Coach original draft; legal review pending",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  } ],
+  "provenances" : [ {
+    "id" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "sourceId" : "2c7b9d14-802e-5297-9138-1d52febf3afd",
+    "licenseId" : "a8cdb4e4-8e52-57a5-a1bb-38e90866ed4a",
+    "creator" : "exam-raw-extractor",
+    "acquisitionMethod" : "RAW_CORPUS_EXTRACTION",
+    "originalReference" : "Cambridge IELTS 1 / Test 1",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  }, {
+    "id" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseId" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "creator" : "English Coach",
+    "acquisitionMethod" : "ORIGINAL_AUTHORING",
+    "originalReference" : "EC-RUBRIC-AND-SCORING-METADATA",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  } ],
+  "catalogNodes" : [ {
+    "id" : "6d41d0b0-cf70-5af7-b980-0e72ef59b21b",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "sourceId" : "2c7b9d14-802e-5297-9138-1d52febf3afd",
+    "parentId" : null,
+    "kind" : "VOLUME",
+    "title" : "Cambridge IELTS 1",
+    "year" : null,
+    "ordinal" : 0,
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "specifications" : [ {
+    "id" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SPEC",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "deliveryMode" : "COMPUTER_SIMULATION",
+    "blueprint" : {
+      "source" : "RAW_CORPUS_EXTRACTION",
+      "family" : "IELTS",
+      "variant" : "ACADEMIC",
+      "scope" : "FULL"
+    },
+    "timingPolicy" : {
+      "listeningSeconds" : 1800,
+      "readingSeconds" : 3600,
+      "writingSeconds" : 3600,
+      "speakingSeconds" : 840
+    },
+    "navigationPolicy" : {
+      "sectionNavigation" : "fixed_sequence"
+    },
+    "playbackPolicy" : {
+      "mode" : "ONCE"
+    },
+    "sourceReferences" : {
+      "baseline" : "EC-EXAM-SPEC-2026-09-10"
+    },
+    "contentHash" : "01a9a5d6615e4c044e33620aacc7f229326296fc975b4c54a3fc1cc0d69efd4c",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "rubrics" : [ {
+    "id" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "logicalCode" : "EC_RAW_IELTS_WRITING_RUBRIC",
+    "version" : 1,
+    "family" : "IELTS",
+    "skill" : "WRITING",
+    "taskFamily" : "IELTS_WRITING",
+    "criteria" : {
+      "taskAchievement" : {
+        "weight" : 1
+      },
+      "coherenceAndCohesion" : {
+        "weight" : 1
+      },
+      "lexicalResource" : {
+        "weight" : 1
+      },
+      "grammaticalRangeAndAccuracy" : {
+        "weight" : 1
+      }
+    },
+    "ordinalScale" : {
+      "min" : 0,
+      "max" : 9,
+      "steps" : [ 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0 ]
+    },
+    "provenanceId" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "contentHash" : "0d542a6e2c855fb3a6fa51ef83026cb296280b0f51f9073604b6756d4752e253",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "calibrations" : [ ],
+  "scoringSchemes" : [ {
+    "id" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SCORING",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "normalizationVersion" : "EC-NORM-V1",
+    "rubricReferences" : { },
+    "calibrationId" : null,
+    "mappingTable" : {
+      "metrics" : [ "LISTENING", "READING", "WRITING", "SPEAKING", "FULL_OVERALL" ],
+      "status" : "DRAFT_NOT_CALIBRATED",
+      "scoreLabel" : "English Coach estimated band"
+    },
+    "aggregationRules" : {
+      "officialEquating" : false,
+      "version" : "EC-AGGREGATION-DRAFT-V1",
+      "creditUnitsPerItem" : 1,
+      "task1Weight" : 1,
+      "task2Weight" : 2,
+      "overall" : "mean_of_four_quarter_rounding"
+    },
+    "contentHash" : "0780e29af069b167dab0956ac01663b2c8b509ca0f03839208766aa0b62ed428",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "form" : {
+    "id" : "6b62b32c-769f-50ba-ae69-3edeeea7e61c",
+    "logicalKey" : "RAW_CAMBRIDGE_IELTS_1_T1",
+    "version" : 1,
+    "title" : "Cambridge IELTS 1 — Test 1 (source extraction, draft)",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "catalogNodeId" : "6d41d0b0-cf70-5af7-b980-0e72ef59b21b",
+    "specificationId" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "lifecycleState" : "DRAFT",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "authorId" : null,
+    "contentHash" : "4b6429426bb86aaa92c9c2d3eca77dab2f0416f84531286c3a681903a46d8265",
+    "publishedAt" : null,
+    "retiredAt" : null,
+    "createdAt" : null,
+    "primaryHealthStatus" : null
+  },
+  "formComponents" : [ ],
+  "sections" : [ {
+    "id" : "39298d54-0c6a-5055-82d7-cdd59b33e32c",
+    "formId" : "6b62b32c-769f-50ba-ae69-3edeeea7e61c",
+    "skill" : "LISTENING",
+    "ordinal" : 1,
+    "specSectionKey" : "LISTENING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 1800,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  }, {
+    "id" : "b64a5aba-2d74-5a03-97cc-3f550bda99fa",
+    "formId" : "6b62b32c-769f-50ba-ae69-3edeeea7e61c",
+    "skill" : "WRITING",
+    "ordinal" : 2,
+    "specSectionKey" : "WRITING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 3600,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  } ],
+  "parts" : [ {
+    "id" : "196d5ac0-65b0-5397-a487-d3d73a5a5a59",
+    "sectionId" : "39298d54-0c6a-5055-82d7-cdd59b33e32c",
+    "partCode" : "LISTENING_PART_3",
+    "ordinal" : 1,
+    "instructions" : null,
+    "timingPolicy" : {
+      "partNumber" : 3
+    }
+  }, {
+    "id" : "ae5e8cb7-3a91-57a6-8d74-67cb477a68c4",
+    "sectionId" : "39298d54-0c6a-5055-82d7-cdd59b33e32c",
+    "partCode" : "LISTENING_PART_4",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : {
+      "partNumber" : 4
+    }
+  }, {
+    "id" : "5efc3c14-7cfe-5827-8afa-53ab1c83ca7f",
+    "sectionId" : "b64a5aba-2d74-5a03-97cc-3f550bda99fa",
+    "partCode" : "WRITING_TASK_2",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : {
+      "recommendedMinutes" : 40
+    }
+  } ],
+  "groups" : [ {
+    "id" : "6b25cb90-582c-5002-aee1-819c4a2ae409",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_1_T1_LISTENING_PART_3_Q22",
+    "version" : 1,
+    "questionType" : "SINGLE_CHOICE",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "e90be4d81eba876c7c0489c29caf48b8635f0336512989ac2b448ce8f7c5333d",
+    "createdAt" : null
+  }, {
+    "id" : "56166926-cf04-5ec8-8dc3-a0fb7a966bf5",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_1_T1_LISTENING_PART_3_Q26",
+    "version" : 1,
+    "questionType" : "GAP_COMPLETION",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "daa1086cf4dec1785d854597969ab68daa37db633a290d39a5d0f7a7bbd2f58f",
+    "createdAt" : null
+  }, {
+    "id" : "9e32b2c5-afe1-5e81-80c5-f97905fbd7ec",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_1_T1_LISTENING_PART_4_Q32",
+    "version" : 1,
+    "questionType" : "SINGLE_CHOICE",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "91fd45ef9bd2f8e75c9a061c74aaa1f0fad9a19d6c19b92d99baf0db64ba2526",
+    "createdAt" : null
+  }, {
+    "id" : "45043795-06b6-5156-8774-a02d00b04dcd",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_1_T1_LISTENING_PART_4_Q34",
+    "version" : 1,
+    "questionType" : "GAP_COMPLETION",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "15852fd3999d36b1dc027aeecede181c06308fa0339e3502aae725363627d1b7",
+    "createdAt" : null
+  }, {
+    "id" : "e7d28c10-3ceb-531c-ae14-a88ffa84fb43",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_1_T1_LISTENING_PART_4_Q37",
+    "version" : 1,
+    "questionType" : "SINGLE_CHOICE",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "2b1d22032f36032fcec7aaa9ca8fe4490d415e39ace4cf23a2097b68f6423584",
+    "createdAt" : null
+  }, {
+    "id" : "4afd9eec-8aac-5a0c-bf64-7de749d879c7",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_1_T1_WRITING_TASK_2",
+    "version" : 1,
+    "questionType" : "WRITING_TASK_2",
+    "construct" : "written_production",
+    "skill" : "WRITING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "04aedac9e6267646e653e532ff0dee4ed83b9dd858a6adb854973ff86a58cdbe",
+    "createdAt" : null
+  } ],
+  "formGroups" : [ {
+    "id" : "90b94c2b-df35-5585-87bd-bca41a8d56b6",
+    "partId" : "196d5ac0-65b0-5397-a487-d3d73a5a5a59",
+    "groupId" : "6b25cb90-582c-5002-aee1-819c4a2ae409",
+    "ordinal" : 1,
+    "displayNumbering" : "22-25"
+  }, {
+    "id" : "ce9aba8e-1784-5bfb-a323-4ccf1ba3493f",
+    "partId" : "196d5ac0-65b0-5397-a487-d3d73a5a5a59",
+    "groupId" : "56166926-cf04-5ec8-8dc3-a0fb7a966bf5",
+    "ordinal" : 2,
+    "displayNumbering" : "26-31"
+  }, {
+    "id" : "2aa0413a-8890-5ab4-be5a-b872a2708ee3",
+    "partId" : "ae5e8cb7-3a91-57a6-8d74-67cb477a68c4",
+    "groupId" : "9e32b2c5-afe1-5e81-80c5-f97905fbd7ec",
+    "ordinal" : 1,
+    "displayNumbering" : "32-33"
+  }, {
+    "id" : "40204653-f6ad-5c5f-86a5-37e19173a1b8",
+    "partId" : "ae5e8cb7-3a91-57a6-8d74-67cb477a68c4",
+    "groupId" : "45043795-06b6-5156-8774-a02d00b04dcd",
+    "ordinal" : 2,
+    "displayNumbering" : "34-36"
+  }, {
+    "id" : "57d6cb7c-599c-5373-bbd0-88cac257d148",
+    "partId" : "ae5e8cb7-3a91-57a6-8d74-67cb477a68c4",
+    "groupId" : "e7d28c10-3ceb-531c-ae14-a88ffa84fb43",
+    "ordinal" : 3,
+    "displayNumbering" : "37-41"
+  }, {
+    "id" : "3a37621a-834f-566c-b6b0-ee79427c4b9a",
+    "partId" : "5efc3c14-7cfe-5827-8afa-53ab1c83ca7f",
+    "groupId" : "4afd9eec-8aac-5a0c-bf64-7de749d879c7",
+    "ordinal" : 1,
+    "displayNumbering" : "Task 2"
+  } ],
+  "stimuli" : [ {
+    "id" : "6a85ca10-85fb-5a67-a0db-118832072852",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_1_T1_LISTENING_PART_3_AUDIO",
+    "version" : 1,
+    "kind" : "AUDIO",
+    "title" : "Listening Part 3 recording",
+    "bodyPayload" : {
+      "playback" : "ONCE",
+      "sourceRole" : "PART_RECORDING",
+      "questionRange" : "22-31",
+      "transcriptAvailable" : true,
+      "transcriptEmbedded" : false,
+      "mappingConfidence" : "CONFIDENT"
+    },
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "6b69b671007a5a2f956062c7e2dba8f9b6b4f9415a9073eb056631cf01edf2b7",
+    "createdAt" : null
+  }, {
+    "id" : "99e99588-83c4-5945-9368-cd7df3fad4ae",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_1_T1_LISTENING_PART_4_AUDIO",
+    "version" : 1,
+    "kind" : "AUDIO",
+    "title" : "Listening Part 4 recording",
+    "bodyPayload" : {
+      "playback" : "ONCE",
+      "sourceRole" : "PART_RECORDING",
+      "questionRange" : "32-41",
+      "transcriptAvailable" : true,
+      "transcriptEmbedded" : false,
+      "mappingConfidence" : "CONFIDENT"
+    },
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "eb230e0a5132df330e527c93471cbb7e8e764ae85115384b0585e8a7f207598d",
+    "createdAt" : null
+  }, {
+    "id" : "91085666-4394-5d02-99c6-d076c04aa148",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_1_T1_WRITING_TASK_2_PROMPT",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "promptContext" : "You should spend about 40 minutes on this task. Present a written argument or case to an educated reader with no specialist knowledge of the following topic: There are many different types of music in the world today. Why do we need music? Is the traditional music of a country more important than the International music that is heard everywhere nowadays? You should write at least 250 words. Use your own ideas, knowledge and experience and support your arguments with examples and relevant evidence."
+    },
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "10c7a0e628099ff9d29e434fce160ad368f95b910bbadff8e8d35e5e6a517cea",
+    "createdAt" : null
+  } ],
+  "groupStimuli" : [ {
+    "id" : "717a8e96-965e-5890-bbae-86eb322f150c",
+    "groupId" : "6b25cb90-582c-5002-aee1-819c4a2ae409",
+    "stimulusId" : "6a85ca10-85fb-5a67-a0db-118832072852",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "74cca9b2-c0ef-5399-bb00-02745b8dce7d",
+    "groupId" : "56166926-cf04-5ec8-8dc3-a0fb7a966bf5",
+    "stimulusId" : "6a85ca10-85fb-5a67-a0db-118832072852",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "68072f48-ff2b-549e-8778-fa73c8b64ecf",
+    "groupId" : "9e32b2c5-afe1-5e81-80c5-f97905fbd7ec",
+    "stimulusId" : "99e99588-83c4-5945-9368-cd7df3fad4ae",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "1265c804-5b2f-530f-8a16-8245c0ac6c2d",
+    "groupId" : "45043795-06b6-5156-8774-a02d00b04dcd",
+    "stimulusId" : "99e99588-83c4-5945-9368-cd7df3fad4ae",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "9870ca4f-1e4c-54a7-9ce6-def962d1163f",
+    "groupId" : "e7d28c10-3ceb-531c-ae14-a88ffa84fb43",
+    "stimulusId" : "99e99588-83c4-5945-9368-cd7df3fad4ae",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "dc5472cf-896e-5c39-bf42-83c6c79a1180",
+    "groupId" : "4afd9eec-8aac-5a0c-bf64-7de749d879c7",
+    "stimulusId" : "91085666-4394-5d02-99c6-d076c04aa148",
+    "role" : "PRIMARY_PROMPT",
+    "ordinal" : 2
+  } ],
+  "items" : [ {
+    "id" : "b4359891-a29a-5dea-b147-5837e6395808",
+    "groupId" : "6b25cb90-582c-5002-aee1-819c4a2ae409",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L022",
+    "version" : 1,
+    "prompt" : "The orientation meeting",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "took place recently."
+      }, {
+        "id" : "B",
+        "text" : "took place last term."
+      }, {
+        "id" : "C",
+        "text" : "will take place tomorrow."
+      }, {
+        "id" : "D",
+        "text" : "will take place next week."
+      } ],
+      "questionNumber" : 22,
+      "group" : {
+        "kind" : "SINGLE_CHOICE",
+        "questions" : "22-25",
+        "instructions" : [ "Circle the appropriate letter.", "Example" ],
+        "stem" : "A Fine Arts.\nB Economic History.\nC Economics.\nD Accountancy."
+      }
+    },
+    "construct" : "single_choice",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "743ea9eda3a08f64a93cdc2409d338afcd60465f3794f57fa0d3ed64bd1a0de9",
+    "createdAt" : null,
+    "ordinal" : 22
+  }, {
+    "id" : "698c7c0c-5433-508b-bf87-418801c296b0",
+    "groupId" : "6b25cb90-582c-5002-aee1-819c4a2ae409",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L023",
+    "version" : 1,
+    "prompt" : "Attendance at lectures is",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "optional after 4 pm."
+      }, {
+        "id" : "B",
+        "text" : "closely monitored."
+      }, {
+        "id" : "C",
+        "text" : "difficult to enforce."
+      }, {
+        "id" : "D",
+        "text" : "sometimes unnecessary."
+      } ],
+      "questionNumber" : 23,
+      "group" : {
+        "kind" : "SINGLE_CHOICE",
+        "questions" : "22-25",
+        "instructions" : [ "Circle the appropriate letter.", "Example" ],
+        "stem" : "A Fine Arts.\nB Economic History.\nC Economics.\nD Accountancy."
+      }
+    },
+    "construct" : "single_choice",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "83b5c2129dc979cdd2b3dc2b4291b3aec2da0ea972a9b92e3023bee20fc76109",
+    "createdAt" : null,
+    "ordinal" : 23
+  }, {
+    "id" : "1a2224c6-faab-5f94-b265-441b81f2dd46",
+    "groupId" : "6b25cb90-582c-5002-aee1-819c4a2ae409",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L024",
+    "version" : 1,
+    "prompt" : "Tutorials take place",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "every morning."
+      }, {
+        "id" : "B",
+        "text" : "twice a week."
+      }, {
+        "id" : "C",
+        "text" : "three mornings a week."
+      }, {
+        "id" : "D",
+        "text" : "three afternoons a week."
+      } ],
+      "questionNumber" : 24,
+      "group" : {
+        "kind" : "SINGLE_CHOICE",
+        "questions" : "22-25",
+        "instructions" : [ "Circle the appropriate letter.", "Example" ],
+        "stem" : "A Fine Arts.\nB Economic History.\nC Economics.\nD Accountancy."
+      }
+    },
+    "construct" : "single_choice",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "c3f845f5b8d3d11b2e0ff4f164b8a0b4bcd10fdb5aaa01975d38724780a24d62",
+    "createdAt" : null,
+    "ordinal" : 24
+  }, {
+    "id" : "15c49de2-acac-5991-a082-4b77175d2ed7",
+    "groupId" : "6b25cb90-582c-5002-aee1-819c4a2ae409",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L025",
+    "version" : 1,
+    "prompt" : "The lecturer’s name is",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Roberts."
+      }, {
+        "id" : "B",
+        "text" : "Rawson."
+      }, {
+        "id" : "C",
+        "text" : "Rogers."
+      }, {
+        "id" : "D",
+        "text" : "Robertson."
+      } ],
+      "questionNumber" : 25,
+      "group" : {
+        "kind" : "SINGLE_CHOICE",
+        "questions" : "22-25",
+        "instructions" : [ "Circle the appropriate letter.", "Example" ],
+        "stem" : "A Fine Arts.\nB Economic History.\nC Economics.\nD Accountancy."
+      }
+    },
+    "construct" : "single_choice",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "26011a63498408def21f9da624fd48ce0042c146c3471ac808a1bd4a1f45feb9",
+    "createdAt" : null,
+    "ordinal" : 25
+  }, {
+    "id" : "e9a689cc-9710-5558-9778-383e7e6bf930",
+    "groupId" : "56166926-cf04-5ec8-8dc3-a0fb7a966bf5",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L026",
+    "version" : 1,
+    "prompt" : "______ for 25 minutes",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 26,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "26-31",
+        "instructions" : [ "Complete the notes below using NO MORE THAN THREE WORDS.", "Tutorial paper:" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "Course requirements:\nA piece of work ON A given topic. Students must:\n(26) ______ for 25 minutes\n(27) ______\ngive to lecturer for marking\nEssay topic:\nUsually (28) ______\nType of exam:\n(29) ______\nLibrary:\nImportant books are in (30) ______ .\nFocus of course:\nFocus on (31) ______ ."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "978dd2631c71736c79b72eb906f64fbb5ca5bdfcbba966b0b20520bba8c13ab4",
+    "createdAt" : null,
+    "ordinal" : 26
+  }, {
+    "id" : "c6b2e582-baeb-5201-b2a1-fb6f7d21994e",
+    "groupId" : "56166926-cf04-5ec8-8dc3-a0fb7a966bf5",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L027",
+    "version" : 1,
+    "prompt" : "(26) ______ for 25 minutes / ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 27,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "26-31",
+        "instructions" : [ "Complete the notes below using NO MORE THAN THREE WORDS.", "Tutorial paper:" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "Course requirements:\nA piece of work ON A given topic. Students must:\n(26) ______ for 25 minutes\n(27) ______\ngive to lecturer for marking\nEssay topic:\nUsually (28) ______\nType of exam:\n(29) ______\nLibrary:\nImportant books are in (30) ______ .\nFocus of course:\nFocus on (31) ______ ."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "1e59cd543727762ff814e7ee9203ffdf66c352d096e199324779e1b00c26b6e5",
+    "createdAt" : null,
+    "ordinal" : 27
+  }, {
+    "id" : "76a991e3-1588-5894-9b2f-6993f40f389b",
+    "groupId" : "56166926-cf04-5ec8-8dc3-a0fb7a966bf5",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L028",
+    "version" : 1,
+    "prompt" : "Essay topic: / Usually ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 28,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "26-31",
+        "instructions" : [ "Complete the notes below using NO MORE THAN THREE WORDS.", "Tutorial paper:" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "Course requirements:\nA piece of work ON A given topic. Students must:\n(26) ______ for 25 minutes\n(27) ______\ngive to lecturer for marking\nEssay topic:\nUsually (28) ______\nType of exam:\n(29) ______\nLibrary:\nImportant books are in (30) ______ .\nFocus of course:\nFocus on (31) ______ ."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "061ef36342b225adb3db7f016a1582dc4e0b79be159149407cfb19677d2e695d",
+    "createdAt" : null,
+    "ordinal" : 28
+  }, {
+    "id" : "a26f764c-9870-581d-a820-0dc64df30b89",
+    "groupId" : "56166926-cf04-5ec8-8dc3-a0fb7a966bf5",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L029",
+    "version" : 1,
+    "prompt" : "Type of exam: / ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 29,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "26-31",
+        "instructions" : [ "Complete the notes below using NO MORE THAN THREE WORDS.", "Tutorial paper:" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "Course requirements:\nA piece of work ON A given topic. Students must:\n(26) ______ for 25 minutes\n(27) ______\ngive to lecturer for marking\nEssay topic:\nUsually (28) ______\nType of exam:\n(29) ______\nLibrary:\nImportant books are in (30) ______ .\nFocus of course:\nFocus on (31) ______ ."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "9487bd3b4400f8310840d0b02a774ee0b07d6582fdf6c504f99b160dd51867e6",
+    "createdAt" : null,
+    "ordinal" : 29
+  }, {
+    "id" : "2c7e0473-e08b-56ff-acbf-d02b59c5f0cc",
+    "groupId" : "56166926-cf04-5ec8-8dc3-a0fb7a966bf5",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L030",
+    "version" : 1,
+    "prompt" : "Important books are in ______ .",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 30,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "26-31",
+        "instructions" : [ "Complete the notes below using NO MORE THAN THREE WORDS.", "Tutorial paper:" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "Course requirements:\nA piece of work ON A given topic. Students must:\n(26) ______ for 25 minutes\n(27) ______\ngive to lecturer for marking\nEssay topic:\nUsually (28) ______\nType of exam:\n(29) ______\nLibrary:\nImportant books are in (30) ______ .\nFocus of course:\nFocus on (31) ______ ."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "7a15c3f0e07ec83102211f964f53adfc26fe0fd828871b10b27079ed8d319878",
+    "createdAt" : null,
+    "ordinal" : 30
+  }, {
+    "id" : "bd632349-fa6c-5b55-ae4c-24f420aa05b9",
+    "groupId" : "56166926-cf04-5ec8-8dc3-a0fb7a966bf5",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L031",
+    "version" : 1,
+    "prompt" : "Focus on ______ .",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 31,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "26-31",
+        "instructions" : [ "Complete the notes below using NO MORE THAN THREE WORDS.", "Tutorial paper:" ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "Course requirements:\nA piece of work ON A given topic. Students must:\n(26) ______ for 25 minutes\n(27) ______\ngive to lecturer for marking\nEssay topic:\nUsually (28) ______\nType of exam:\n(29) ______\nLibrary:\nImportant books are in (30) ______ .\nFocus of course:\nFocus on (31) ______ ."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "14fb398b3d1779fa820c654351d85d34c495092102ee7789a3527c3b6000203f",
+    "createdAt" : null,
+    "ordinal" : 31
+  }, {
+    "id" : "450b58c8-bfc7-5b85-add0-76cf3ef7a161",
+    "groupId" : "9e32b2c5-afe1-5e81-80c5-f97905fbd7ec",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L032",
+    "version" : 1,
+    "prompt" : "The speaker works within the Faculty of",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Science and Technology."
+      }, {
+        "id" : "B",
+        "text" : "Arts and Social Sciences."
+      }, {
+        "id" : "C",
+        "text" : "Architecture."
+      }, {
+        "id" : "D",
+        "text" : "Law."
+      } ],
+      "questionNumber" : 32,
+      "group" : {
+        "kind" : "SINGLE_CHOICE",
+        "questions" : "32-33",
+        "instructions" : [ "Circle the appropriate letter." ]
+      }
+    },
+    "construct" : "single_choice",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "3b422824e166a3b4b89917cee3cf7810b5ba58fa5c6b957caee1a457ecd0b4eb",
+    "createdAt" : null,
+    "ordinal" : 32
+  }, {
+    "id" : "b5edc5dc-5fa1-5a57-948f-9a7c333bb167",
+    "groupId" : "9e32b2c5-afe1-5e81-80c5-f97905fbd7ec",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L033",
+    "version" : 1,
+    "prompt" : "The Faculty consists firstly of",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "subjects."
+      }, {
+        "id" : "B",
+        "text" : "degrees."
+      }, {
+        "id" : "C",
+        "text" : "divisions."
+      }, {
+        "id" : "D",
+        "text" : "departments."
+      } ],
+      "questionNumber" : 33,
+      "group" : {
+        "kind" : "SINGLE_CHOICE",
+        "questions" : "32-33",
+        "instructions" : [ "Circle the appropriate letter." ]
+      }
+    },
+    "construct" : "single_choice",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "dcef5d16fa466547f85e130f701bd40089a754e11c7a2a7ac69bb7b83c0116b5",
+    "createdAt" : null,
+    "ordinal" : 33
+  }, {
+    "id" : "e21025ea-7ae9-502a-8d43-202c2120dd51",
+    "groupId" : "45043795-06b6-5156-8774-a02d00b04dcd",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L034",
+    "version" : 1,
+    "prompt" : "______ and",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 34,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "34-36",
+        "instructions" : [ "Complete the notes m NO MORE THAN THREE WORDS.", "The subjects taken in the first semester in", "this course are psychology, sociology," ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "(34) ______ and\n______\nStudents may have problems with\n(35) ______ and\n(36) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "f85ad1f26f31fbb4d3de641d5b448efd25c1184ab363b860e800d96372179528",
+    "createdAt" : null,
+    "ordinal" : 34
+  }, {
+    "id" : "5fe4358f-75fd-5808-adb5-f39ea8dbf1c5",
+    "groupId" : "45043795-06b6-5156-8774-a02d00b04dcd",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L035",
+    "version" : 1,
+    "prompt" : "Students may have problems with / ______ and",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 35,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "34-36",
+        "instructions" : [ "Complete the notes m NO MORE THAN THREE WORDS.", "The subjects taken in the first semester in", "this course are psychology, sociology," ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "(34) ______ and\n______\nStudents may have problems with\n(35) ______ and\n(36) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "b430dd2ecb23dcde97bd23149c21e3c95f4fa4e33244bf4b36c21eef7275d19a",
+    "createdAt" : null,
+    "ordinal" : 35
+  }, {
+    "id" : "ab1dd63c-4096-528f-ab5b-a9a5bffa4e3a",
+    "groupId" : "45043795-06b6-5156-8774-a02d00b04dcd",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L036",
+    "version" : 1,
+    "prompt" : "(35) ______ and / ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 36,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "34-36",
+        "instructions" : [ "Complete the notes m NO MORE THAN THREE WORDS.", "The subjects taken in the first semester in", "this course are psychology, sociology," ],
+        "wordLimitRule" : "NO MORE THAN THREE WORDS",
+        "stem" : "(34) ______ and\n______\nStudents may have problems with\n(35) ______ and\n(36) ______"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "eafd37457be44b42328f1294c0869e6dbe3a92aa23207a4ca6acb0b873a49a6f",
+    "createdAt" : null,
+    "ordinal" : 36
+  }, {
+    "id" : "094e8ac6-6427-56de-98a6-c29394aa1f7d",
+    "groupId" : "e7d28c10-3ceb-531c-ae14-a88ffa84fb43",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L037",
+    "version" : 1,
+    "prompt" : "The speaker says students can visit her",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "every morning."
+      }, {
+        "id" : "B",
+        "text" : "some mornings."
+      }, {
+        "id" : "C",
+        "text" : "mornings only."
+      }, {
+        "id" : "D",
+        "text" : "Friday morning."
+      } ],
+      "questionNumber" : 37,
+      "group" : {
+        "kind" : "SINGLE_CHOICE",
+        "questions" : "37-41",
+        "instructions" : [ "Circle the appropriate letter." ]
+      }
+    },
+    "construct" : "single_choice",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "cc238c531904d5f8b14b2b8c674ccc427276829e889893ee0de79b11537ff399",
+    "createdAt" : null,
+    "ordinal" : 37
+  }, {
+    "id" : "e9c54889-b527-5c39-903d-882fe89e3533",
+    "groupId" : "e7d28c10-3ceb-531c-ae14-a88ffa84fb43",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L038",
+    "version" : 1,
+    "prompt" : "According to the speaker, a tutorial",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "is a type of lecture."
+      }, {
+        "id" : "B",
+        "text" : "is less important than a lecture."
+      }, {
+        "id" : "C",
+        "text" : "provides a chance to share views."
+      }, {
+        "id" : "D",
+        "text" : "provides an alternative to groupwork."
+      } ],
+      "questionNumber" : 38,
+      "group" : {
+        "kind" : "SINGLE_CHOICE",
+        "questions" : "37-41",
+        "instructions" : [ "Circle the appropriate letter." ]
+      }
+    },
+    "construct" : "single_choice",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "2519462044a6d85c6c79b8f8adeada761e045c2e97be2f2908fc2c2c0e186e44",
+    "createdAt" : null,
+    "ordinal" : 38
+  }, {
+    "id" : "a28a0b78-e0a9-5dc6-a02e-869bc5398443",
+    "groupId" : "e7d28c10-3ceb-531c-ae14-a88ffa84fb43",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L039",
+    "version" : 1,
+    "prompt" : "When writing essays, the speaker advises the students to",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "research their work well."
+      }, {
+        "id" : "B",
+        "text" : "name the books they have read."
+      }, {
+        "id" : "C",
+        "text" : "share work with their friends."
+      }, {
+        "id" : "D",
+        "text" : "avoid using other writers’ ideas."
+      } ],
+      "questionNumber" : 39,
+      "group" : {
+        "kind" : "SINGLE_CHOICE",
+        "questions" : "37-41",
+        "instructions" : [ "Circle the appropriate letter." ]
+      }
+    },
+    "construct" : "single_choice",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "dedfb3040ddf8678687f1efea76ad61470af0848821a3c925e9a6cb866d62824",
+    "createdAt" : null,
+    "ordinal" : 39
+  }, {
+    "id" : "d7f1a77e-d895-5287-8673-90ee5b8e26b5",
+    "groupId" : "e7d28c10-3ceb-531c-ae14-a88ffa84fb43",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L040",
+    "version" : 1,
+    "prompt" : "The speaker thinks that plagiarism is",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "a common problem."
+      }, {
+        "id" : "B",
+        "text" : "an acceptable risk."
+      }, {
+        "id" : "C",
+        "text" : "a minor concern."
+      }, {
+        "id" : "D",
+        "text" : "a serious offence."
+      } ],
+      "questionNumber" : 40,
+      "group" : {
+        "kind" : "SINGLE_CHOICE",
+        "questions" : "37-41",
+        "instructions" : [ "Circle the appropriate letter." ]
+      }
+    },
+    "construct" : "single_choice",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "79635662c7c78cc1bd54f2fb801b6c39bbd12bddd800f7ab3f2cebb4a836c3f2",
+    "createdAt" : null,
+    "ordinal" : 40
+  }, {
+    "id" : "8ade98d1-e865-5c5d-a084-7c1d9fa14cd0",
+    "groupId" : "e7d28c10-3ceb-531c-ae14-a88ffa84fb43",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_L041",
+    "version" : 1,
+    "prompt" : "The speaker’s aims are to",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "introduce students to university expectations."
+      }, {
+        "id" : "B",
+        "text" : "introduce students to the members of staff."
+      }, {
+        "id" : "C",
+        "text" : "warn students about the difficulties of studying."
+      }, {
+        "id" : "D",
+        "text" : "guide students round the university."
+      } ],
+      "questionNumber" : 41,
+      "group" : {
+        "kind" : "SINGLE_CHOICE",
+        "questions" : "37-41",
+        "instructions" : [ "Circle the appropriate letter." ]
+      }
+    },
+    "construct" : "single_choice",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "1e1d1764ff9377f9378e0e2cc92070e933701b0ea8cbbe48e60d0fad1d39ceea",
+    "createdAt" : null,
+    "ordinal" : 41
+  }, {
+    "id" : "98e8789f-9e77-5984-be10-2a1fbeb23d9f",
+    "groupId" : "4afd9eec-8aac-5a0c-bf64-7de749d879c7",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T1_W2",
+    "version" : 1,
+    "prompt" : "You should spend about 40 minutes on this task. Present a written argument or case to an educated reader with no specialist knowledge of the following topic: There are many different types of music in the world today. Why do we need music? Is the traditional music of a country more important than the International music that is heard everywhere nowadays? You should write at least 250 words. Use your own ideas, knowledge and experience and support your arguments with examples and relevant evidence.",
+    "interactionType" : "WRITING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "free_text",
+      "minimumWords" : 250,
+      "recommendedMinutes" : 40
+    },
+    "construct" : "writing_task",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "contentHash" : "940c3441a773f1c13a71c431e0d4e087e9404c63b1c69be92031b1bc987d8367",
+    "createdAt" : null,
+    "ordinal" : 2
+  } ],
+  "answerSpecs" : [ {
+    "id" : "b97bd08b-3e64-546e-b5a3-39fa44b5a905",
+    "itemId" : "b4359891-a29a-5dea-b147-5837e6395808",
+    "acceptedAnswers" : {
+      "values" : [ "A" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "a3b947a5-186f-5b6e-bdad-51597c9ff4a7",
+    "itemId" : "698c7c0c-5433-508b-bf87-418801c296b0",
+    "acceptedAnswers" : {
+      "values" : [ "B" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "be41812c-306c-52e7-9ec4-d91f8f726ea5",
+    "itemId" : "1a2224c6-faab-5f94-b265-441b81f2dd46",
+    "acceptedAnswers" : {
+      "values" : [ "C" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "22dec5ba-23c1-557f-bd43-d84063811bed",
+    "itemId" : "15c49de2-acac-5991-a082-4b77175d2ed7",
+    "acceptedAnswers" : {
+      "values" : [ "A" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "821706e1-3e15-5c6b-9375-8132e791a455",
+    "itemId" : "e9a689cc-9710-5558-9778-383e7e6bf930",
+    "acceptedAnswers" : {
+      "values" : [ "talk", "give a talk" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "bc4b4b67-2d55-53fe-a42c-cd81ab06f926",
+    "itemId" : "c6b2e582-baeb-5201-b2a1-fb6f7d21994e",
+    "acceptedAnswers" : {
+      "values" : [ "write up work" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "b51d6718-1343-53a8-a206-2ff225c77dfa",
+    "itemId" : "76a991e3-1588-5894-9b2f-6993f40f389b",
+    "acceptedAnswers" : {
+      "values" : [ "can choose" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "ba0a4614-2407-5d08-914a-fd38d8cae01d",
+    "itemId" : "a26f764c-9870-581d-a820-0dc64df30b89",
+    "acceptedAnswers" : {
+      "values" : [ "open book" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "8b886a6b-d32c-592d-8c51-99c8f004d49f",
+    "itemId" : "2c7e0473-e08b-56ff-acbf-d02b59c5f0cc",
+    "acceptedAnswers" : {
+      "values" : [ "closed reserve" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "19d395c3-b203-565d-b3ae-92c160103ec3",
+    "itemId" : "bd632349-fa6c-5b55-ae4c-24f420aa05b9",
+    "acceptedAnswers" : {
+      "values" : [ "vocational subjects", "vocational", "preparing for work", "work", "employment" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "f9f3ce75-3748-5acc-9c40-1e57ce52d6b2",
+    "itemId" : "450b58c8-bfc7-5b85-add0-76cf3ef7a161",
+    "acceptedAnswers" : {
+      "values" : [ "B" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "3a32e48d-c2eb-5d7a-a1e6-7715d0fe2642",
+    "itemId" : "b5edc5dc-5fa1-5a57-948f-9a7c333bb167",
+    "acceptedAnswers" : {
+      "values" : [ "C" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "b9b847b9-3f15-5f1a-9dee-8c3d46c783c0",
+    "itemId" : "e21025ea-7ae9-502a-8d43-202c2120dd51",
+    "acceptedAnswers" : {
+      "values" : [ "history and economics" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "2b23c169-58bc-56c0-811a-6a2981c445f2",
+    "itemId" : "5fe4358f-75fd-5808-adb5-f39ea8dbf1c5",
+    "acceptedAnswers" : {
+      "values" : [ "meeting deadlines", "deadlines for essays", "deadlines" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "30398487-1446-5063-b331-a502d170db44",
+    "itemId" : "ab1dd63c-4096-528f-ab5b-a9a5bffa4e3a",
+    "acceptedAnswers" : {
+      "values" : [ "attendance" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 3,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "9e0cf415-1d55-5cb0-b692-16af2dfa0541",
+    "itemId" : "094e8ac6-6427-56de-98a6-c29394aa1f7d",
+    "acceptedAnswers" : {
+      "values" : [ "B" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "7735805c-fb18-5bbf-a33c-13ac5b4d9590",
+    "itemId" : "e9c54889-b527-5c39-903d-882fe89e3533",
+    "acceptedAnswers" : {
+      "values" : [ "C" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "d3d38c50-545d-5d10-ab76-eeaa90587b73",
+    "itemId" : "a28a0b78-e0a9-5dc6-a02e-869bc5398443",
+    "acceptedAnswers" : {
+      "values" : [ "B" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "8f5807a0-ff2e-50c5-90e1-e3a6c3406ad5",
+    "itemId" : "d7f1a77e-d895-5287-8673-90ee5b8e26b5",
+    "acceptedAnswers" : {
+      "values" : [ "D" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "01a1cf9b-8bd8-55e0-8f19-20dacad75eb0",
+    "itemId" : "8ade98d1-e865-5c5d-a084-7c1d9fa14cd0",
+    "acceptedAnswers" : {
+      "values" : [ "A" ],
+      "keySource" : {
+        "page" : 136,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "eb4485b1-e825-5a3d-9829-ae18b027eafb",
+    "itemId" : "98e8789f-9e77-5984-be10-2a1fbeb23d9f",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "minimumWords" : 250
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-WRITING-TEXT-V1",
+      "preserveParagraphs" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "createdAt" : null
+  } ],
+  "assets" : [ {
+    "id" : "04e6a8d3-63d7-59c4-ba03-649bf862c617",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "objectKey" : "extracted/audio/0621e06cc86fa7e02319277824b8249fcf5103ce3388cb2c0c058129dc98d67c.mp3",
+    "versionId" : "1",
+    "sha256Hash" : "0621e06cc86fa7e02319277824b8249fcf5103ce3388cb2c0c058129dc98d67c",
+    "mimeType" : "audio/mpeg",
+    "byteSize" : 766164,
+    "durationMs" : 381034,
+    "dimensions" : null,
+    "validationState" : "VALIDATED",
+    "createdAt" : null
+  }, {
+    "id" : "f30757b5-6eeb-5fd1-90ad-436453f8a2ab",
+    "provenanceId" : "86261707-2e59-5deb-9d8c-fbe5baa53296",
+    "objectKey" : "extracted/audio/b51168128b560445464ef132974a5dbff5fe05c1f34e6b070b76a294984c96c5.mp3",
+    "versionId" : "1",
+    "sha256Hash" : "b51168128b560445464ef132974a5dbff5fe05c1f34e6b070b76a294984c96c5",
+    "mimeType" : "audio/mpeg",
+    "byteSize" : 905031,
+    "durationMs" : 450468,
+    "dimensions" : null,
+    "validationState" : "VALIDATED",
+    "createdAt" : null
+  } ],
+  "stimulusAssets" : [ {
+    "id" : "1d1f0e5f-e57c-59a7-b2bc-1d4615259f39",
+    "stimulusId" : "6a85ca10-85fb-5a67-a0db-118832072852",
+    "assetId" : "04e6a8d3-63d7-59c4-ba03-649bf862c617",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "0aaa2e02-a858-5aea-856f-c1833e7d7b83",
+    "stimulusId" : "99e99588-83c4-5945-9368-cd7df3fad4ae",
+    "assetId" : "f30757b5-6eeb-5fd1-90ad-436453f8a2ab",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  } ]
+}

@@ -1,0 +1,539 @@
+{
+  "schema": 1,
+  "slug": "backshift",
+  "version": 2,
+  "domain": "reported-speech",
+  "order": 20,
+  "kind": "grammar",
+  "title": {
+    "vi": "Lùi thì: bắt buộc hay không?",
+    "en": "Backshift: required or not?"
+  },
+  "subtitle": {
+    "vi": "Lùi thì và đổi từ chỉ người, nơi, thời gian theo góc nhìn",
+    "en": "Shift tense and reference according to viewpoint"
+  },
+  "aliases": [
+    "lùi thì",
+    "backshift",
+    "reporting-deictics",
+    "đổi đại từ here now tomorrow",
+    "said she is"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Chọn lùi hoặc giữ thì theo ngữ cảnh.",
+    "Giữ đúng người và mốc khi đổi đại từ/thời gian/nơi.",
+    "Không suy thông tin đã sai chỉ vì được kể bằng quá khứ."
+  ],
+  "prerequisites": [
+    "direct-and-reported"
+  ],
+  "related": [
+    {
+      "slug": "direct-and-reported",
+      "rel": "more"
+    },
+    {
+      "slug": "future-in-the-past",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Lùi thì (backshift) thường đặt lời nói từ mốc hiện tại của người nói gốc về góc nhìn quá khứ của người kể. Đại từ và các từ here/now/tomorrow cần điều chỉnh theo quy chiếu thực.",
+    "when": "Không đổi máy móc; giữ điều đã được nói về đúng người, ngày và nơi.",
+    "examples": [
+      {
+        "en": "She said she [V|was] tired.",
+        "vi": "Cô ấy nói cô ấy mệt."
+      },
+      {
+        "en": "She said she [V|is] tired.",
+        "vi": "Cô ấy nói cô ấy đang mệt, theo góc nhìn còn phù hợp hiện tại."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Sau said, lùi thì rất thông dụng: am → was, have finished → had finished, will → would. Nhưng nếu nội dung còn đúng hoặc liên quan hiện tại, giữ thì cũng có thể phù hợp. Không đánh dấu mọi is sau said là lỗi."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "transform",
+        "steps": [
+          {
+            "label": "Lời nói thứ Hai, tomorrow chỉ thứ Ba",
+            "sentence": "On Monday, Lan said, “I will call tomorrow.”"
+          },
+          {
+            "label": "Kể từ góc nhìn khác, giữ cùng ngày được chỉ",
+            "sentence": "On Monday, Lan said she would call the next day."
+          }
+        ]
+      },
+      "caption": "The next day giữ ngày sau mốc lời nói, không tự là ngày sau hôm nay.",
+      "alt": "The next day giữ ngày sau mốc lời nói, không tự là ngày sau hôm nay."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Khi chọn lùi",
+        "Mẫu",
+        "Lưu ý"
+      ],
+      "rows": [
+        [
+          "Hiện tại đơn",
+          "is → was",
+          "có thể giữ nếu góc nhìn phù hợp"
+        ],
+        [
+          "Hiện tại hoàn thành",
+          "has done → had done",
+          "giữ phân từ"
+        ],
+        [
+          "Will/can",
+          "would/could",
+          "giữ nghĩa theo ngữ cảnh"
+        ],
+        [
+          "Quá khứ hoàn thành",
+          "had done thường giữ",
+          "không tạo had had done tự động"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Đại từ theo người: nếu Lan dùng I chỉ Lan, người khác có thể dùng she. You có thể là I, he, she, we hoặc they tùy người nghe gốc; không có bảng you luôn đổi một dạng."
+    },
+    {
+      "type": "p",
+      "vi": "Here/there và this/that theo nơi và vật được chỉ. Nếu người kể vẫn ở cùng văn phòng, here có thể giữ. Đừng đổi here thành there rồi vô tình chỉ sai nơi."
+    },
+    {
+      "type": "p",
+      "vi": "Now, today và tomorrow phụ thuộc ngày giờ của người kể. Cùng ngày có thể giữ tomorrow; kể từ ngày khác thường cần the next/following day, một ngày cụ thể hoặc cách diễn đạt tương ứng. Mục tiêu là đúng mốc, không đúng bảng thay từ."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Was trong She said she was tired không tự nói bây giờ đã hết mệt. Ngược lại, giữ is cũng không là giấy xác minh lời gốc đúng."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Must chỉ nghĩa vụ có thể được thuật bằng had to khi nhìn lại nghĩa vụ cũ; must vẫn có thể giữ khi quy tắc còn áp dụng hoặc ở nghĩa suy luận. Không thay mọi must thành had to."
+    },
+    {
+      "type": "p",
+      "vi": "Người kể có thể chọn ngày cụ thể để tránh mơ hồ: on Tuesday thay cho the next day nếu ngữ cảnh cần. Không thêm ngày nếu chưa biết ngày thật."
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Khi đại từ hoặc từ chỉ thời gian có thể gây nhầm, nêu rõ người nói gốc, ngày và nơi đã biết. Không tự thêm một mốc chưa có dữ kiện chỉ để khớp công thức lùi thì."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "backshift-m1",
+      "wrong": "She said she had took the train.",
+      "right": "She said she had taken the train.",
+      "why": "Had cần phân từ taken."
+    },
+    {
+      "id": "backshift-m2",
+      "wrong": "Lan said he was tired.",
+      "right": "Lan said she was tired.",
+      "why": "Trong tình huống bài này Lan nói về chính cô ấy; đại từ phải giữ đúng người, không theo bảng cố định."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Sau said luôn lùi thì không?",
+      "a": "Không. Giữ thì có thể phù hợp khi thông tin còn đúng hoặc liên quan ở góc nhìn hiện tại."
+    },
+    {
+      "q": "Here/tomorrow có luôn phải đổi không?",
+      "a": "Không. Kiểm tra nơi và ngày được quy chiếu; chỉ đổi khi cần giữ đúng ý."
+    },
+    {
+      "q": "Lùi thì có nghĩa thông tin không còn đúng không?",
+      "a": "Không. Quá khứ tường thuật không tự phủ nhận hiện tại."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "bks-01",
+      "prompt": "Chọn nhận xét đúng về lùi thì.",
+      "explain": "Backshift là thay đổi góc nhìn thường gặp, không bắt buộc máy móc mọi lời kể.",
+      "skill": "use",
+      "use": "practice",
+      "type": "choice",
+      "stem": "Lan said she is tired. / Lan said she was tired.",
+      "options": [
+        {
+          "t": "Cả hai có thể đúng theo mốc nhìn và việc thông tin còn phù hợp.",
+          "ok": true,
+          "note": "Không loại is chỉ vì có said."
+        },
+        {
+          "t": "Is luôn sai sau said.",
+          "ok": false,
+          "note": "Có thể giữ hiện tại khi phù hợp.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Was chắc chắn chứng minh Lan hết mệt bây giờ.",
+          "ok": false,
+          "note": "Quá khứ tường thuật không tự xác nhận hiện tại.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "bks-02",
+      "prompt": "Nối dạng với dạng lùi thì thường gặp.",
+      "explain": "Đây là bản đồ khi chọn lùi thì, không mệnh lệnh đổi mọi câu.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "am/is ready",
+          "b": "was ready"
+        },
+        {
+          "a": "have finished",
+          "b": "had finished"
+        },
+        {
+          "a": "will call",
+          "b": "would call"
+        },
+        {
+          "a": "can help",
+          "b": "could help"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "bks-03",
+      "prompt": "Phân loại yếu tố cần xem góc nhìn.",
+      "explain": "Đại từ, thời gian và địa điểm không đổi chỉ vì một bảng.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Người được chỉ",
+        "Mốc thời gian",
+        "Địa điểm"
+      ],
+      "items": [
+        {
+          "t": "I/you trong lời gốc",
+          "cat": "Người được chỉ"
+        },
+        {
+          "t": "tomorrow/the next day",
+          "cat": "Mốc thời gian"
+        },
+        {
+          "t": "here/there",
+          "cat": "Địa điểm"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "bks-04",
+      "prompt": "Điền dạng lùi thì được yêu cầu.",
+      "explain": "Am → was; will → would.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "Nam said, “I am ready.” → Nam said he {1} ready. Mai said, “I will help.” → Mai said she {2} help.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "was"
+          ]
+        },
+        "2": {
+          "accept": [
+            "would"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "bks-05",
+      "prompt": "Sửa phân từ trong khung quá khứ hoàn thành.",
+      "explain": "Had cần taken.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "She said she had"
+        },
+        {
+          "t": "took",
+          "bad": true,
+          "fix": [
+            "taken"
+          ],
+          "note": "Take có phân từ taken.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "the train."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "bks-06",
+      "prompt": "Sắp xếp câu bắt đầu bằng Lan; the next day cuối.",
+      "explain": "Would call nhìn tương lai từ mốc lời nói cũ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "Lan",
+        "said",
+        "she",
+        "would",
+        "call",
+        "the next day"
+      ],
+      "accept": [
+        [
+          "Lan",
+          "said",
+          "she",
+          "would",
+          "call",
+          "the next day"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "bks-07",
+      "prompt": "Tường thuật theo góc nhìn quá khứ yêu cầu.",
+      "explain": "Was studying là mẫu lùi từ am studying.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "Nam said, “I am studying.”",
+      "instruction": "Dùng Nam said (that) he và quá khứ tiếp diễn của study.",
+      "accept": [
+        "Nam said he was studying",
+        "Nam said that he was studying"
+      ],
+      "model": "Nam said he was studying",
+      "level": "B1"
+    },
+    {
+      "id": "bks-08",
+      "prompt": "Viết hai ngữ cảnh kể lại một lời nói.",
+      "explain": "Tự kiểm tra, không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Tự đặt một lời hư cấu có I, here và tomorrow. Kể lại một lần cùng ngày/cùng nơi và một lần ngày khác/nơi khác. Nêu rõ mốc để đại từ và thời gian không bị đoán.",
+      "model": [
+        "On Monday, at the office, Mai said, “I will work here tomorrow.” Later on Monday, at the same office, I reported: Mai said she would work here tomorrow. A week later, elsewhere, I reported: Mai said she would work there the next day."
+      ],
+      "checklist": [
+        "Here/there theo nơi của người kể.",
+        "Tomorrow/the next day giữ đúng ngày được nhắc.",
+        "Đại từ chỉ đúng người."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "bks-09",
+      "prompt": "Chọn điều đúng nếu người kể vẫn ở cùng nơi.",
+      "explain": "Here có thể giữ khi nơi quy chiếu còn giống nhau.",
+      "skill": "use",
+      "use": "practice",
+      "type": "choice",
+      "stem": "Mai nói “I work here.” Người kể thuật ngay tại cùng văn phòng.",
+      "options": [
+        {
+          "t": "Có thể giữ here nếu vẫn chỉ đúng văn phòng đó.",
+          "ok": true,
+          "note": "Không bắt buộc đổi here thành there."
+        },
+        {
+          "t": "Here luôn phải thành there sau said.",
+          "ok": false,
+          "note": "Phụ thuộc nơi kể.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "I luôn phải đổi thành he bất kể người nói.",
+          "ok": false,
+          "note": "Đại từ theo người được chỉ.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "bks-10",
+      "prompt": "Điền next/following và từ chỉ người theo ngữ cảnh.",
+      "explain": "Lan nói về chính cô ấy trong tình huống; the next day và the following day cùng chỉ ngày sau mốc lời nói gốc.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "On Monday, Lan said, “I will call tomorrow.” → Lan said {1} would call the {2} day.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "she"
+          ]
+        },
+        "2": {
+          "accept": [
+            "next",
+            "following"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "bks-11",
+      "prompt": "Điền dạng được yêu cầu khi lùi thì.",
+      "explain": "Can → could; have → had; phân từ giữ nguyên.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "She said, “I can help.” → She said she {1} help. He said, “I have finished.” → He said he {2} finished.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "could"
+          ]
+        },
+        "2": {
+          "accept": [
+            "had"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "bks-12",
+      "prompt": "Đổi góc nhìn thời gian, giữ ngày được nói tới.",
+      "explain": "Ngày sau thứ Hai vẫn là thứ Ba; the next/following day quy chiếu từ lời nói cũ.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "On Monday, Lan said, “I will call tomorrow.”",
+      "instruction": "Viết Lan said (that) she would call rồi the next day hoặc the following day; không giữ tomorrow trong nhiệm vụ này.",
+      "accept": [
+        "Lan said she would call the next day",
+        "Lan said that she would call the next day",
+        "Lan said she would call the following day",
+        "Lan said that she would call the following day"
+      ],
+      "model": "Lan said she would call the next day",
+      "level": "B1"
+    },
+    {
+      "id": "bks-13",
+      "prompt": "Chọn tất cả mẫu có thể chuẩn.",
+      "explain": "Thông tin hiện tại phù hợp có thể giữ is; dạng lùi was cũng chuẩn.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Lan nói cô ấy mệt; không có ngữ cảnh bác bỏ việc còn mệt.",
+      "options": [
+        {
+          "t": "Lan said she is tired.",
+          "ok": true,
+          "note": "Có thể giữ hiện tại khi còn phù hợp."
+        },
+        {
+          "t": "Lan said she was tired.",
+          "ok": true,
+          "note": "Lùi thì thông thường."
+        },
+        {
+          "t": "Lan said she were tired.",
+          "ok": false,
+          "note": "She cần was trong lời tường thuật trung tính này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Lan said she was tireds.",
+          "ok": false,
+          "note": "Tired là tính từ ở đây; không thêm -s theo chủ ngữ she.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "bks-14",
+      "prompt": "Chọn nhận xét đúng về now/tomorrow.",
+      "explain": "Từ chỉ thời gian phải giữ ngày/giờ thực được nhắc, không đổi cho đủ bảng.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "Kể lại một lời có tomorrow.",
+      "options": [
+        {
+          "t": "Có thể giữ tomorrow nếu mốc người kể vẫn dẫn đúng ngày; nếu đổi mốc, chọn diễn đạt rõ tương ứng.",
+          "ok": true,
+          "note": "Góc nhìn quyết định."
+        },
+        {
+          "t": "Tomorrow luôn phải đổi bất kể ngày kể.",
+          "ok": false,
+          "note": "Có thể cùng ngày.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Giữ tomorrow luôn đúng dù một tháng đã trôi qua.",
+          "ok": false,
+          "note": "Có thể làm đổi ngày được chỉ.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

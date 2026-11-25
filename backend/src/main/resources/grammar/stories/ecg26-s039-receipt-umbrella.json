@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s039-receipt-umbrella",
+  "title": "Chiếc ô bằng hóa đơn",
+  "summary": "Trời đổ mưa đúng lúc Ben ra khỏi cửa hàng với một bông hoa bằng giấy.",
+  "level": "A2",
+  "topics": [
+    "infinitive-of-purpose"
+  ],
+  "scene": "supermarket",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Thu",
+      "role": "Thu ngân"
+    },
+    {
+      "id": "b",
+      "name": "Ben",
+      "role": "Khách mua hoa"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Ben không cần thêm túi. Thu thấy mực trên cánh hoa đang loang nên giữ lại hóa đơn thật dài. Ben tưởng cô muốn kiểm tra tiền lần nữa.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Keep the flower under here.",
+          "vi": "Anh để bông hoa dưới này đi."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Why are you folding my receipt?",
+          "vi": "Sao cô lại gấp hóa đơn của tôi?"
+        }
+      ],
+      "choice": {
+        "prompt": "Thu muốn nói mục đích của mình, khi món quà vẫn còn khô ở giữa.",
+        "options": [
+          {
+            "t": "I'm folding it to keep the flower dry.",
+            "note": "To keep diễn tả mục đích của việc gấp giấy. Câu không khẳng định hoa đã ướt hết.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "I'm folding it because the flower is dry.",
+            "note": "Because nêu lý do. Việc hoa đang khô chưa diễn tả mục đích giữ hoa khỏi mưa.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Ben giữ một đầu hóa đơn để Thu gấp thành mái nhỏ. Dưới mái, cánh hoa vẫn còn rõ chữ Mẹ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I can still read her name.",
+          "vi": "Tôi vẫn đọc được tên mẹ."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Thu chỉ mái giấy rồi chỉ những giọt nước đang trượt khỏi mép. Ben hiểu ra và đỡ bông hoa ở giữa.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Oh, it's a little roof!",
+          "vi": "Ồ, đó là mái che tí hon!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Chiều hôm sau, mẹ Ben gửi lại một tấm ảnh. Bông hoa đứng trong cốc, bên trên vẫn là mái giấy với dòng chữ Cảm ơn quý khách.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I've never seen a receipt in a family photo before.",
+          "vi": "Tôi chưa từng thấy hóa đơn nào nằm trong ảnh gia đình."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

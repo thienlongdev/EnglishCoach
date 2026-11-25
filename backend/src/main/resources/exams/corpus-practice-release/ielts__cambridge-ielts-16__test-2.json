@@ -1,0 +1,2727 @@
+{
+  "manifest" : {
+    "schemaVersion" : "1.0",
+    "packageId" : "RAW-RAW_CAMBRIDGE_IELTS_16_T2",
+    "packageVersion" : 1,
+    "contentHash" : "465bdadfde038e9fc5423f12dd293fbb0a8d3360f040a3f42c4acb4110b1035e",
+    "creator" : "exam-raw-extractor",
+    "specificationBaselineId" : "EC-EXAM-SPEC-2026-09-10",
+    "authoringStatus" : "DRAFT",
+    "createdAt" : null,
+    "metadata" : {
+      "humanReviewComplete" : false,
+      "reviewOnlyReferences" : {
+        "transcripts" : [ ],
+        "answerKeys" : [ {
+          "skill" : "LISTENING",
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-16/Cam16/16_academic.pdf",
+          "sha256" : "618f6c90c14ecba0ef99eeddf40a3c8dd71138d20670b56bc6968e4f8d420b2d",
+          "pages" : "124",
+          "keysParsed" : 40
+        }, {
+          "skill" : "READING",
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-16/Cam16/16_academic.pdf",
+          "sha256" : "618f6c90c14ecba0ef99eeddf40a3c8dd71138d20670b56bc6968e4f8d420b2d",
+          "pages" : "125",
+          "keysParsed" : 40
+        } ],
+        "note" : "References only. Transcript text is not embedded: the learner manifest projection has no stimulus/asset role allow-list yet (EXAM-AUD-032)."
+      },
+      "ocr" : {
+        "metrics" : { },
+        "pages" : {
+          "imports/source-files/ielts/cambridge/Cambridge-ielts-16/Cam16/16_academic.pdf" : [ 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 124, 125 ]
+        }
+      },
+      "practiceProjection" : {
+        "fullSimulationGranted" : false,
+        "humanApprovalCreated" : false,
+        "sourceContentHash" : "ccd16b1c911e3487c018773e05f737352d61bb6ab59d2f30cac8c73a2a7ee793",
+        "version" : "exam-practice-projection-v1",
+        "retainedScopes" : [ "IELTS_LISTENING_SECTION_3", "IELTS_LISTENING_SECTION_4", "IELTS_READING_PASSAGE_1", "IELTS_SPEAKING_PART_2", "IELTS_SPEAKING_PART_3", "IELTS_WRITING_TASK_2" ],
+        "excludedScopes" : {
+          "IELTS_LISTENING_SECTION_2" : [ "QA_SCOPE_PENDING", "SCOPE_NOT_SELECTED" ]
+        },
+        "sourcePackageId" : "RAW-RAW_CAMBRIDGE_IELTS_16_T2"
+      },
+      "audioQAStatus" : "AUTOMATED_TECHNICAL_QA_ONLY_HUMAN_QA_REQUIRED",
+      "sourceProvenance" : {
+        "collection" : "cambridge",
+        "book" : "cambridge-ielts-16",
+        "test" : "TEST_2",
+        "rawSourceFile" : {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-16/Cam16/16_academic.pdf",
+          "sha256" : "618f6c90c14ecba0ef99eeddf40a3c8dd71138d20670b56bc6968e4f8d420b2d"
+        },
+        "pageRange" : "34-55",
+        "audio" : [ {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-16/Cam16/audio/Test 2 Part 2.wav",
+          "sha256" : "eb2299aa7a2ea683436f8d24b95a3ef3fa4b1f6154f1e666a7a057bc1b29a317",
+          "section" : "PART_2",
+          "confidence" : "CONFIDENT"
+        }, {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-16/Cam16/audio/Test 2 Part 3.wav",
+          "sha256" : "119323ef90bc5dfe08dc304478cca032011aca44080391b8608ec05778a4c451",
+          "section" : "PART_3",
+          "confidence" : "CONFIDENT"
+        }, {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-16/Cam16/audio/Test 2 Part 4.wav",
+          "sha256" : "a015001c21ceca0a729035d21528b73be647083287412e93ae79e1c42f5d38ee",
+          "section" : "PART_4",
+          "confidence" : "CONFIDENT"
+        } ],
+        "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json#ielts/cambridge-ielts-16/test-2",
+        "extractorName" : "exam-raw-extractor",
+        "extractorVersion" : "3.8.6",
+        "reviewStatus" : "UNREVIEWED"
+      },
+      "sourceIdentity" : {
+        "publisher" : "Cambridge University Press & Assessment",
+        "collection" : "cambridge",
+        "book" : "cambridge-ielts-16",
+        "bookTitle" : "Cambridge IELTS 16",
+        "test" : 2,
+        "rawSourceSha256" : "618f6c90c14ecba0ef99eeddf40a3c8dd71138d20670b56bc6968e4f8d420b2d"
+      },
+      "displayName" : {
+        "current" : "Cambridge IELTS 16 — Test 2 (source extraction, draft)",
+        "ownerSelected" : null,
+        "status" : "PROVISIONAL_SOURCE_TITLE",
+        "policy" : "DISPLAY_NAME_MAY_CHANGE_SOURCE_PROVENANCE_MUST_NOT",
+        "renameTargets" : [ "form.title", "catalogNodes[].title" ]
+      },
+      "visualQAStatus" : "PAGE_REGION_RENDERING_HUMAN_QA_REQUIRED",
+      "rightsReviewStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED_PROJECT_USE_OWNER_AUTHORIZED",
+      "audioSegments" : [ ],
+      "sourceDocuments" : [ {
+        "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-16/Cam16/16_academic.pdf",
+        "sha256" : "618f6c90c14ecba0ef99eeddf40a3c8dd71138d20670b56bc6968e4f8d420b2d",
+        "role" : "QUESTION_BOOK",
+        "textLayer" : "SCANNED"
+      } ],
+      "extraction" : {
+        "status" : "NEEDS_REVIEW",
+        "extractorVersion" : "3.8.6",
+        "blockingCodes" : [ "OPTION_PARSE_FAILED", "PART_OMITTED", "QUESTION_NUMBER_GAP", "SPEAKING_TURN_STRUCTURE_UNPROVEN" ],
+        "reviewCodes" : [ "ANSWER_KEY_OCR_REPAIRED", "OCR_TEXT_USED" ]
+      },
+      "projectUsageAuthorization" : {
+        "status" : "OWNER_AUTHORIZED",
+        "scope" : "ENGLISHCOACH_PROJECT_USE",
+        "authorizedBy" : "PROJECT_OWNER",
+        "decisionDate" : "2026-10-06",
+        "decisionRef" : "EXAMS_CORPUS_OWNER_PRODUCTION_AUTHORIZATION_20261006",
+        "appliesTo" : "EXISTING_REPOSITORY_SOURCE_CORPUS",
+        "permits" : [ "EXTRACTION", "CANONICAL_PACKAGE_PREPARATION", "STAGING_VALIDATION", "LOCAL_STAGING_IMPORT_PREPARATION", "PRODUCTION_IMPORT", "PUBLICATION", "LEARNER_RUNTIME", "PRACTICE", "SIMULATION", "MEDIA", "SCORING", "RESULTS", "REVIEW" ],
+        "productionImport" : "OWNER_AUTHORIZED_PRODUCTION_USE",
+        "publisherLicence" : "NOT_ESTABLISHED",
+        "publisherEndorsement" : false
+      }
+    }
+  },
+  "sources" : [ {
+    "id" : "29817100-3a16-55ee-b2ef-b9c1aaa9dad6",
+    "code" : "RAW_CAMBRIDGE_CAMBRIDGE_IELTS_16",
+    "name" : "Cambridge IELTS 16",
+    "owner" : "Cambridge University Press & Assessment",
+    "publisher" : "Cambridge University Press & Assessment",
+    "sourceType" : "THIRD_PARTY_PUBLICATION",
+    "referenceMeta" : {
+      "rawCorpusRoot" : "imports/source-files/",
+      "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json",
+      "rightsStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED",
+      "projectUsageAuthorization" : "OWNER_AUTHORIZED",
+      "primaryDocument" : "imports/source-files/ielts/cambridge/Cambridge-ielts-16/Cam16/16_academic.pdf"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  }, {
+    "id" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "code" : "EC_INTERNAL_ORIGINAL",
+    "name" : "English Coach original content",
+    "owner" : "English Coach",
+    "publisher" : "English Coach",
+    "sourceType" : "INTERNAL_ORIGINAL",
+    "referenceMeta" : {
+      "declaration" : "Rubrics and scoring metadata authored by English Coach; no external text"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "licenses" : [ {
+    "id" : "f5451fa8-35ef-5300-9844-0b80b7143eb8",
+    "sourceId" : "29817100-3a16-55ee-b2ef-b9c1aaa9dad6",
+    "licenseCode" : "UNKNOWN-RAW_CAMBRIDGE_CAMBRIDGE_IELTS_16",
+    "provenanceCategory" : "UNKNOWN",
+    "commercialRights" : false,
+    "redistributionRights" : false,
+    "derivativeRights" : false,
+    "permittedPurposes" : {
+      "LOCAL_PRIVATE_REVIEW" : true
+    },
+    "permittedTerritories" : { },
+    "validFrom" : null,
+    "validUntil" : null,
+    "attribution" : "Cambridge IELTS 16 — Cambridge University Press & Assessment. Publisher licence not established; used under the EnglishCoach project owner's authorization (2026-10-03), which is not a publisher licence or endorsement.",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  }, {
+    "id" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseCode" : "EC-ORIGINAL-DRAFT-PENDING-LEGAL",
+    "provenanceCategory" : "ORIGINAL",
+    "commercialRights" : true,
+    "redistributionRights" : true,
+    "derivativeRights" : true,
+    "permittedPurposes" : {
+      "EXAM" : true,
+      "SIMULATION" : true,
+      "PRACTICE" : true,
+      "CONTENT" : true
+    },
+    "permittedTerritories" : {
+      "GLOBAL" : true
+    },
+    "validFrom" : 1790985600.000000000,
+    "validUntil" : null,
+    "attribution" : "English Coach original draft; legal review pending",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  } ],
+  "provenances" : [ {
+    "id" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "sourceId" : "29817100-3a16-55ee-b2ef-b9c1aaa9dad6",
+    "licenseId" : "f5451fa8-35ef-5300-9844-0b80b7143eb8",
+    "creator" : "exam-raw-extractor",
+    "acquisitionMethod" : "RAW_CORPUS_EXTRACTION",
+    "originalReference" : "Cambridge IELTS 16 / Test 2",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  }, {
+    "id" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseId" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "creator" : "English Coach",
+    "acquisitionMethod" : "ORIGINAL_AUTHORING",
+    "originalReference" : "EC-RUBRIC-AND-SCORING-METADATA",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  } ],
+  "catalogNodes" : [ {
+    "id" : "28b93ad4-b55a-5dd1-becc-a7364f559ffb",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "sourceId" : "29817100-3a16-55ee-b2ef-b9c1aaa9dad6",
+    "parentId" : null,
+    "kind" : "VOLUME",
+    "title" : "Cambridge IELTS 16",
+    "year" : null,
+    "ordinal" : 0,
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "specifications" : [ {
+    "id" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SPEC",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "deliveryMode" : "COMPUTER_SIMULATION",
+    "blueprint" : {
+      "source" : "RAW_CORPUS_EXTRACTION",
+      "family" : "IELTS",
+      "variant" : "ACADEMIC",
+      "scope" : "FULL"
+    },
+    "timingPolicy" : {
+      "listeningSeconds" : 1800,
+      "readingSeconds" : 3600,
+      "writingSeconds" : 3600,
+      "speakingSeconds" : 840
+    },
+    "navigationPolicy" : {
+      "sectionNavigation" : "fixed_sequence"
+    },
+    "playbackPolicy" : {
+      "mode" : "ONCE"
+    },
+    "sourceReferences" : {
+      "baseline" : "EC-EXAM-SPEC-2026-09-10"
+    },
+    "contentHash" : "01a9a5d6615e4c044e33620aacc7f229326296fc975b4c54a3fc1cc0d69efd4c",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "rubrics" : [ {
+    "id" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "logicalCode" : "EC_RAW_IELTS_WRITING_RUBRIC",
+    "version" : 1,
+    "family" : "IELTS",
+    "skill" : "WRITING",
+    "taskFamily" : "IELTS_WRITING",
+    "criteria" : {
+      "taskAchievement" : {
+        "weight" : 1
+      },
+      "coherenceAndCohesion" : {
+        "weight" : 1
+      },
+      "lexicalResource" : {
+        "weight" : 1
+      },
+      "grammaticalRangeAndAccuracy" : {
+        "weight" : 1
+      }
+    },
+    "ordinalScale" : {
+      "min" : 0,
+      "max" : 9,
+      "steps" : [ 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0 ]
+    },
+    "provenanceId" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "contentHash" : "0d542a6e2c855fb3a6fa51ef83026cb296280b0f51f9073604b6756d4752e253",
+    "approvedAt" : null,
+    "createdAt" : null
+  }, {
+    "id" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "logicalCode" : "EC_RAW_IELTS_SPEAKING_RUBRIC",
+    "version" : 1,
+    "family" : "IELTS",
+    "skill" : "SPEAKING",
+    "taskFamily" : "IELTS_SPEAKING",
+    "criteria" : {
+      "fluencyAndCoherence" : {
+        "weight" : 1
+      },
+      "lexicalResource" : {
+        "weight" : 1
+      },
+      "grammaticalRangeAndAccuracy" : {
+        "weight" : 1
+      },
+      "pronunciation" : {
+        "weight" : 1
+      }
+    },
+    "ordinalScale" : {
+      "min" : 0,
+      "max" : 9,
+      "steps" : [ 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0 ]
+    },
+    "provenanceId" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "contentHash" : "17e0b72d560b377684b287d73acc780a48e7da645e0cdaad159f2471e51f9be1",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "calibrations" : [ ],
+  "scoringSchemes" : [ {
+    "id" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SCORING",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "normalizationVersion" : "EC-NORM-V1",
+    "rubricReferences" : { },
+    "calibrationId" : null,
+    "mappingTable" : {
+      "metrics" : [ "LISTENING", "READING", "WRITING", "SPEAKING", "FULL_OVERALL" ],
+      "status" : "DRAFT_NOT_CALIBRATED",
+      "scoreLabel" : "English Coach estimated band"
+    },
+    "aggregationRules" : {
+      "officialEquating" : false,
+      "version" : "EC-AGGREGATION-DRAFT-V1",
+      "creditUnitsPerItem" : 1,
+      "task1Weight" : 1,
+      "task2Weight" : 2,
+      "overall" : "mean_of_four_quarter_rounding"
+    },
+    "contentHash" : "0780e29af069b167dab0956ac01663b2c8b509ca0f03839208766aa0b62ed428",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "form" : {
+    "id" : "79452230-3566-5fba-b7d0-b24a269f3f4b",
+    "logicalKey" : "RAW_CAMBRIDGE_IELTS_16_T2",
+    "version" : 1,
+    "title" : "Cambridge IELTS 16 — Test 2 (source extraction, draft)",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "catalogNodeId" : "28b93ad4-b55a-5dd1-becc-a7364f559ffb",
+    "specificationId" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "lifecycleState" : "DRAFT",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "authorId" : null,
+    "contentHash" : "cb40456390994a0dfd6578c7e0da33504ede89d34d9929e5b1a94e81b81f17da",
+    "publishedAt" : null,
+    "retiredAt" : null,
+    "createdAt" : null,
+    "primaryHealthStatus" : null
+  },
+  "formComponents" : [ ],
+  "sections" : [ {
+    "id" : "f2f61f33-7485-5a22-99d3-c2b139cfa83c",
+    "formId" : "79452230-3566-5fba-b7d0-b24a269f3f4b",
+    "skill" : "LISTENING",
+    "ordinal" : 1,
+    "specSectionKey" : "LISTENING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 1800,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  }, {
+    "id" : "3db22053-8f8a-5d9e-8855-68fe8f3cfed8",
+    "formId" : "79452230-3566-5fba-b7d0-b24a269f3f4b",
+    "skill" : "READING",
+    "ordinal" : 2,
+    "specSectionKey" : "READING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 3600,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  }, {
+    "id" : "4a967d96-7ad5-5961-850f-4dce3d4348ed",
+    "formId" : "79452230-3566-5fba-b7d0-b24a269f3f4b",
+    "skill" : "WRITING",
+    "ordinal" : 3,
+    "specSectionKey" : "WRITING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 3600,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  }, {
+    "id" : "6a556e58-1403-5c44-ad4d-fbac6872b055",
+    "formId" : "79452230-3566-5fba-b7d0-b24a269f3f4b",
+    "skill" : "SPEAKING",
+    "ordinal" : 4,
+    "specSectionKey" : "SPEAKING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 840,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  } ],
+  "parts" : [ {
+    "id" : "6921859b-4fe4-556e-975a-25ba5439e89c",
+    "sectionId" : "f2f61f33-7485-5a22-99d3-c2b139cfa83c",
+    "partCode" : "LISTENING_PART_3",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : {
+      "partNumber" : 3
+    }
+  }, {
+    "id" : "cf2f2941-cf9b-5f6e-b294-7f747db6cda9",
+    "sectionId" : "f2f61f33-7485-5a22-99d3-c2b139cfa83c",
+    "partCode" : "LISTENING_PART_4",
+    "ordinal" : 3,
+    "instructions" : null,
+    "timingPolicy" : {
+      "partNumber" : 4
+    }
+  }, {
+    "id" : "b0a21f5d-fb94-5c79-80cd-48714ceb7b7f",
+    "sectionId" : "3db22053-8f8a-5d9e-8855-68fe8f3cfed8",
+    "partCode" : "READING_PASSAGE_1",
+    "ordinal" : 1,
+    "instructions" : null,
+    "timingPolicy" : {
+      "partNumber" : 1
+    }
+  }, {
+    "id" : "4c806295-6bcd-5ce5-a6ad-1caafeb55207",
+    "sectionId" : "4a967d96-7ad5-5961-850f-4dce3d4348ed",
+    "partCode" : "WRITING_TASK_2",
+    "ordinal" : 1,
+    "instructions" : null,
+    "timingPolicy" : {
+      "recommendedMinutes" : 40
+    }
+  }, {
+    "id" : "25a66713-742a-56a9-8f24-90354e5fca58",
+    "sectionId" : "6a556e58-1403-5c44-ad4d-fbac6872b055",
+    "partCode" : "SPEAKING_PART_2",
+    "ordinal" : 1,
+    "instructions" : null,
+    "timingPolicy" : { }
+  }, {
+    "id" : "d3e26292-150d-5d95-a78f-ca9a9f76280b",
+    "sectionId" : "6a556e58-1403-5c44-ad4d-fbac6872b055",
+    "partCode" : "SPEAKING_PART_3",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : { }
+  } ],
+  "groups" : [ {
+    "id" : "8ea8626a-d6b4-58a0-8c92-317c62a9476f",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_16_T2_LISTENING_PART_3_Q21",
+    "version" : 1,
+    "questionType" : "SINGLE_CHOICE",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "f99e3c64114c2446a810535997328190187ceb4317b42d92e02c33a9495e3c18",
+    "createdAt" : null
+  }, {
+    "id" : "ec528102-cff2-597b-871f-7b6dbe682cc4",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_16_T2_LISTENING_PART_3_Q25",
+    "version" : 1,
+    "questionType" : "GAP_COMPLETION",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "5582078be22f704e0d8fd4ab6fa41ff3b1e72e71b2ec70670f6f54eed9429216",
+    "createdAt" : null
+  }, {
+    "id" : "9906c0c2-831a-58ca-bff8-e0e069117012",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_16_T2_LISTENING_PART_4_Q31",
+    "version" : 1,
+    "questionType" : "GAP_COMPLETION",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "b50155f456101edf4ef343bd3d3f0c35045cc40d4606bd2cb0cd74d1ecc84e3a",
+    "createdAt" : null
+  }, {
+    "id" : "e6bd9d1c-b502-5df7-b9d9-a8d6229fc3c8",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_16_T2_READING_PASSAGE_1_Q1",
+    "version" : 1,
+    "questionType" : "TFNG",
+    "construct" : "reading_comprehension",
+    "skill" : "READING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "2d657a6d0d8afd36d2c7b9db722cfb633ba82cb29191ee254f372770badb5110",
+    "createdAt" : null
+  }, {
+    "id" : "55709bac-5929-55b8-91f4-4607d8b51a10",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_16_T2_READING_PASSAGE_1_Q9",
+    "version" : 1,
+    "questionType" : "GAP_COMPLETION",
+    "construct" : "reading_comprehension",
+    "skill" : "READING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "bd614abdc24adb2a77a5d5ed54550c09089ee75102c735fd2f02fad69748e3c6",
+    "createdAt" : null
+  }, {
+    "id" : "3f8ad57b-a83d-5527-99e8-a51dc8f861e0",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_16_T2_WRITING_TASK_2",
+    "version" : 1,
+    "questionType" : "WRITING_TASK_2",
+    "construct" : "written_production",
+    "skill" : "WRITING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "c7d12d2b59ce07f31dbbb987d0bfdb403058f5a1c9956d95628fe9505d459488",
+    "createdAt" : null
+  }, {
+    "id" : "f406c7a3-1543-5cb2-8061-9cdca4e84d44",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_16_T2_SPEAKING_PART_2",
+    "version" : 1,
+    "questionType" : "SPEAKING_PART_2",
+    "construct" : "spoken_production",
+    "skill" : "SPEAKING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "8fef9538f7bd21d754dfadfce4163af5bef991e845b667af4a3c288725e1a443",
+    "createdAt" : null
+  }, {
+    "id" : "166263a7-36a3-5fce-ad57-ec2342c85506",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_16_T2_SPEAKING_PART_3",
+    "version" : 1,
+    "questionType" : "SPEAKING_PART_3",
+    "construct" : "spoken_production",
+    "skill" : "SPEAKING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "ccf2b9831bc06981ee32ecccd31e9273cd3462013e47f38eac26fb88ee3875c4",
+    "createdAt" : null
+  } ],
+  "formGroups" : [ {
+    "id" : "b0935a69-9ca3-5587-8fd0-aeecc532a1a3",
+    "partId" : "6921859b-4fe4-556e-975a-25ba5439e89c",
+    "groupId" : "8ea8626a-d6b4-58a0-8c92-317c62a9476f",
+    "ordinal" : 1,
+    "displayNumbering" : "21-24"
+  }, {
+    "id" : "b07f4320-fb40-5ebc-aff7-5a0b921c495a",
+    "partId" : "6921859b-4fe4-556e-975a-25ba5439e89c",
+    "groupId" : "ec528102-cff2-597b-871f-7b6dbe682cc4",
+    "ordinal" : 2,
+    "displayNumbering" : "25-30"
+  }, {
+    "id" : "7a7c38e8-f3fe-5754-96ba-5896533e280d",
+    "partId" : "cf2f2941-cf9b-5f6e-b294-7f747db6cda9",
+    "groupId" : "9906c0c2-831a-58ca-bff8-e0e069117012",
+    "ordinal" : 1,
+    "displayNumbering" : "31-40"
+  }, {
+    "id" : "35fcc500-4ba0-537c-a1e2-5a7120ced57b",
+    "partId" : "b0a21f5d-fb94-5c79-80cd-48714ceb7b7f",
+    "groupId" : "e6bd9d1c-b502-5df7-b9d9-a8d6229fc3c8",
+    "ordinal" : 1,
+    "displayNumbering" : "1-8"
+  }, {
+    "id" : "b9eeb710-b525-5a7d-8524-b6a8e6d87af9",
+    "partId" : "b0a21f5d-fb94-5c79-80cd-48714ceb7b7f",
+    "groupId" : "55709bac-5929-55b8-91f4-4607d8b51a10",
+    "ordinal" : 2,
+    "displayNumbering" : "9-13"
+  }, {
+    "id" : "152f7a9f-128b-5eb3-a835-7c28a57f748c",
+    "partId" : "4c806295-6bcd-5ce5-a6ad-1caafeb55207",
+    "groupId" : "3f8ad57b-a83d-5527-99e8-a51dc8f861e0",
+    "ordinal" : 1,
+    "displayNumbering" : "Task 2"
+  }, {
+    "id" : "de50e6da-2287-5c12-8099-8f3272c3e25f",
+    "partId" : "25a66713-742a-56a9-8f24-90354e5fca58",
+    "groupId" : "f406c7a3-1543-5cb2-8061-9cdca4e84d44",
+    "ordinal" : 1,
+    "displayNumbering" : "Part 2"
+  }, {
+    "id" : "00cc96b3-24b2-5c83-9f7d-486aac4a165a",
+    "partId" : "d3e26292-150d-5d95-a78f-ca9a9f76280b",
+    "groupId" : "166263a7-36a3-5fce-ad57-ec2342c85506",
+    "ordinal" : 1,
+    "displayNumbering" : "Part 3"
+  } ],
+  "stimuli" : [ {
+    "id" : "a7123cbd-5659-5462-bfa1-d962244136b4",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_16_T2_LISTENING_PART_3_AUDIO",
+    "version" : 1,
+    "kind" : "AUDIO",
+    "title" : "Listening Part 3 recording",
+    "bodyPayload" : {
+      "playback" : "ONCE",
+      "sourceRole" : "PART_RECORDING",
+      "questionRange" : "21-30",
+      "transcriptAvailable" : false,
+      "transcriptEmbedded" : false,
+      "mappingConfidence" : "CONFIDENT"
+    },
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "54536973de6f36882a756a3e1dbc650df87150c322295635d02564a3de4b47b7",
+    "createdAt" : null
+  }, {
+    "id" : "ebe91100-bc1a-5a9a-b1f2-e0aaec8e710e",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_16_T2_LISTENING_PART_4_AUDIO",
+    "version" : 1,
+    "kind" : "AUDIO",
+    "title" : "Listening Part 4 recording",
+    "bodyPayload" : {
+      "playback" : "ONCE",
+      "sourceRole" : "PART_RECORDING",
+      "questionRange" : "31-40",
+      "transcriptAvailable" : false,
+      "transcriptEmbedded" : false,
+      "mappingConfidence" : "CONFIDENT"
+    },
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "9062c1716e2ffe2e26d5625f57ef896378188d77f2c1ea11e09fb0dceaab5ddc",
+    "createdAt" : null
+  }, {
+    "id" : "113de0e0-bf7e-5faf-acad-fb2d1d6487e6",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_16_T2_READING_PASSAGE_1_PASSAGE",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : "Passage 1 below:",
+    "bodyPayload" : {
+      "title" : "Passage 1 below:",
+      "text" : "The White Horse of Uffington 0\n\nThe cutting of huge figures or 'geoglyphs' into the earth of English hillsides has taken place for more than 3,000 years: There are 56 hill figures scattered around England, with the vast majority on the chalk downlands Of the country's southern counties. The figures include giants, horses, crosses and regimental badges. Although the majority Of these geoglyphs date within the last 300 years or SO, there are one or two that are much lder:\n\nThe most famous of these figures is perhaps also the most mysterious _ the Uffington White Horse in Oxfordshire. The White Horse has recently been re-dated and shown to be even older than its previously assigned ancient pre-Roman Iron Age\" date. More controversial is the date f the enigmatic Long Man of Wilmington in Sussex While many historians are convinced the figure is prehistoric, others believe that it was the work of an artistic monk from a nearby priory and was created between the 11th and 15th centuries.\n\nThe method of cutting these huge figures was simply to remove the overlying grass to reveal the gleaming white chalk below: However; the grass would soon grow over the geoglyph again unless it was regularly cleaned or scoured by a fairly large team Of people: One reason that the vast majority of hill figures have disappeared is that when the traditions associated with the figures faded, people no longer bothered or remembered to clear away the grass to expose the chalk outline. Furthermore, over hundreds of years the outlines would sometimes change due to people not always cutting in exactly the same place, thus creating a different shape to the original geoglyph: The fact that any ancient hill figures survive at all in England today is testament to the strength and continuity of local customs and beliefs which, in one case at least. must stretch back over millennia.\n\n#Iron Age: a period (in Britain 800 BCE - 43 CE) that is characterised by the use of iron tools\n\n38 The Uffington White Horse is a unique, stylised representation Of a horse consisting Of a long; sleek back; thin disjointed legs, a streaming tail, and a bird-like beaked head. The elegant creature almost melts into the landscape: The horse is situated 2.5 km from Uffington village on a steep slope close to the Late Bronze Age* (c: 7th century BCE) hillfort Of Uffington Castle and below the Ridgeway; a long-distance Neolithic** track.\n\nThe Uffington Horse is also surrounded by Bronze Age burial mounds. It is not far from the Bronze Age cemetery of Lambourn Seven Barrows; which consists Of more than 30 well-preserved burial mounds: The carving has been placed in such a way as to make it extremely difficult to see from close quarters, and like many geoglyphs is best appreciated from the air: Nevertheless; there are certain areas Of the Vale Of the White Horse, the valley containing and named after the enigmatic creature, from which an adequate impression may be gained: Indeed on a clear day the carving can be seen from up to 30 km away:\n\nThe earliest evidence Of a horse at Uffington is from the 1070s CE when 'White Horse Hill' is mentioned in documents from the nearby Abbey of Abingdon, and the first reference to the horse itself is soon after; in 1190 CE. However; the carving is believed to date back much further than that. Due to the similarity Of the Uffington White Horse to the stylised depictions of horses on Ist century BCE coins, it had been thought that the creature must also date to that period.\n\nHowever; in 1995 Optically Stimulated Luminescence (OSL) testing was carried out by the Oxford Archaeological Unit on soil from two Of the lower layers of the horse's body; and from another cut near the base. The result was a date for the horse's construction somewhere between 1400 and 600 BCE 3 in other words; it had a Late Bronze Age or Early Iron Age origin:\n\nThe latter end Of this date range would tie the carving Of the horse in with occupation Of the nearby Uffington hillfort; indicating that it may represent a tribal emblem marking the land Of the inhabitants of the hillfort. Alternatively; the carving may have been carried out during a Bronze or Iron Age ritual: Some researchers see the horse as representing the Celtic*** horse goddess Epona; who was worshipped as a protector of horses; and for her associations with fertility: However; the cult of Epona was not imported from Gaul (France) until around the first century CE: This date is at least six centuries after the Uffington Horse was probably carved: Nevertheless; the horse had great ritual and economic significance during the Bronze and Iron Ages, as attested by its depictions on jewellery and other metal objects: It is possible that the carving represents a goddess in native mythology; such as Rhiannon; described in later Welsh mythology as a beautiful woman dressed in gold and riding a white horse.\n\nThe fact that geoglyphs can disappear easily; along with their associated rituals and meaning; geog indicates that they were never intended to be anything more than temporary gestures: But this does not lessen their importance: These giant carvings are a fascinating glimpse into the minds Of their creators and how they viewed the landscape in which they lived.\n\n\"Bronze Age: a period (in Britain C. 2,500 BCE ~800 BCE) that is characterised by the development of bronze tools #Neolithic: a period (in Britain C. 4,000 BCE -c 2,500 BCE) that is significant for the spread of agricultural practices, and the use of stone tools\n\n##Celtic: an ancient people who migrated from Europe to Britain before the Romans\n\n39",
+      "paragraphs" : [ {
+        "id" : null,
+        "text" : "The White Horse of Uffington 0"
+      }, {
+        "id" : null,
+        "text" : "The cutting of huge figures or 'geoglyphs' into the earth of English hillsides has taken place for more than 3,000 years: There are 56 hill figures scattered around England, with the vast majority on the chalk downlands Of the country's southern counties. The figures include giants, horses, crosses and regimental badges. Although the majority Of these geoglyphs date within the last 300 years or SO, there are one or two that are much lder:"
+      }, {
+        "id" : null,
+        "text" : "The most famous of these figures is perhaps also the most mysterious _ the Uffington White Horse in Oxfordshire. The White Horse has recently been re-dated and shown to be even older than its previously assigned ancient pre-Roman Iron Age\" date. More controversial is the date f the enigmatic Long Man of Wilmington in Sussex While many historians are convinced the figure is prehistoric, others believe that it was the work of an artistic monk from a nearby priory and was created between the 11th and 15th centuries."
+      }, {
+        "id" : null,
+        "text" : "The method of cutting these huge figures was simply to remove the overlying grass to reveal the gleaming white chalk below: However; the grass would soon grow over the geoglyph again unless it was regularly cleaned or scoured by a fairly large team Of people: One reason that the vast majority of hill figures have disappeared is that when the traditions associated with the figures faded, people no longer bothered or remembered to clear away the grass to expose the chalk outline. Furthermore, over hundreds of years the outlines would sometimes change due to people not always cutting in exactly the same place, thus creating a different shape to the original geoglyph: The fact that any ancient hill figures survive at all in England today is testament to the strength and continuity of local customs and beliefs which, in one case at least. must stretch back over millennia."
+      }, {
+        "id" : null,
+        "text" : "#Iron Age: a period (in Britain 800 BCE - 43 CE) that is characterised by the use of iron tools"
+      }, {
+        "id" : null,
+        "text" : "38 The Uffington White Horse is a unique, stylised representation Of a horse consisting Of a long; sleek back; thin disjointed legs, a streaming tail, and a bird-like beaked head. The elegant creature almost melts into the landscape: The horse is situated 2.5 km from Uffington village on a steep slope close to the Late Bronze Age* (c: 7th century BCE) hillfort Of Uffington Castle and below the Ridgeway; a long-distance Neolithic** track."
+      }, {
+        "id" : null,
+        "text" : "The Uffington Horse is also surrounded by Bronze Age burial mounds. It is not far from the Bronze Age cemetery of Lambourn Seven Barrows; which consists Of more than 30 well-preserved burial mounds: The carving has been placed in such a way as to make it extremely difficult to see from close quarters, and like many geoglyphs is best appreciated from the air: Nevertheless; there are certain areas Of the Vale Of the White Horse, the valley containing and named after the enigmatic creature, from which an adequate impression may be gained: Indeed on a clear day the carving can be seen from up to 30 km away:"
+      }, {
+        "id" : null,
+        "text" : "The earliest evidence Of a horse at Uffington is from the 1070s CE when 'White Horse Hill' is mentioned in documents from the nearby Abbey of Abingdon, and the first reference to the horse itself is soon after; in 1190 CE. However; the carving is believed to date back much further than that. Due to the similarity Of the Uffington White Horse to the stylised depictions of horses on Ist century BCE coins, it had been thought that the creature must also date to that period."
+      }, {
+        "id" : null,
+        "text" : "However; in 1995 Optically Stimulated Luminescence (OSL) testing was carried out by the Oxford Archaeological Unit on soil from two Of the lower layers of the horse's body; and from another cut near the base. The result was a date for the horse's construction somewhere between 1400 and 600 BCE 3 in other words; it had a Late Bronze Age or Early Iron Age origin:"
+      }, {
+        "id" : null,
+        "text" : "The latter end Of this date range would tie the carving Of the horse in with occupation Of the nearby Uffington hillfort; indicating that it may represent a tribal emblem marking the land Of the inhabitants of the hillfort. Alternatively; the carving may have been carried out during a Bronze or Iron Age ritual: Some researchers see the horse as representing the Celtic*** horse goddess Epona; who was worshipped as a protector of horses; and for her associations with fertility: However; the cult of Epona was not imported from Gaul (France) until around the first century CE: This date is at least six centuries after the Uffington Horse was probably carved: Nevertheless; the horse had great ritual and economic significance during the Bronze and Iron Ages, as attested by its depictions on jewellery and other metal objects: It is possible that the carving represents a goddess in native mythology; such as Rhiannon; described in later Welsh mythology as a beautiful woman dressed in gold and riding a white horse."
+      }, {
+        "id" : null,
+        "text" : "The fact that geoglyphs can disappear easily; along with their associated rituals and meaning; geog indicates that they were never intended to be anything more than temporary gestures: But this does not lessen their importance: These giant carvings are a fascinating glimpse into the minds Of their creators and how they viewed the landscape in which they lived."
+      }, {
+        "id" : null,
+        "text" : "\"Bronze Age: a period (in Britain C. 2,500 BCE ~800 BCE) that is characterised by the development of bronze tools #Neolithic: a period (in Britain C. 4,000 BCE -c 2,500 BCE) that is significant for the spread of agricultural practices, and the use of stone tools"
+      }, {
+        "id" : null,
+        "text" : "##Celtic: an ancient people who migrated from Europe to Britain before the Romans"
+      }, {
+        "id" : null,
+        "text" : "39"
+      } ],
+      "notes" : [ ],
+      "sourcePages" : "39-40"
+    },
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "9ac71bca78381ca9ed8788435cac34d4cf68bf4bd7064a8561078045c0fa04f2",
+    "createdAt" : null
+  }, {
+    "id" : "afc8f537-1892-5f2b-b34e-caa61c79cec0",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_16_T2_WRITING_TASK_2_PROMPT",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "promptContext" : "You should spend about 40 minutes on this task. 4 Write about the followina topic: D 4 In their advertising; businesses nowadays usually emphasise that their products are new In some way: Whv is this? Do vou think it is a positive or neqative development? Give reasons for your answer and include any relevant examples from your own knowledge or experience. Write at least 250 words. 7 L 0 p. 134 | 53 1 I L"
+    },
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "4b42027d31ddb5ac65fed50a7c8f2537ea413e70f2aa463a926244db32c525ac",
+    "createdAt" : null
+  }, {
+    "id" : "9f23f071-ba2b-5170-87b7-1c367ac3ccfa",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_16_T2_SPEAKING_PART_2_PROMPTS",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "prompts" : [ "Describe a review you read about a product or", "service.", "You should say:", "where you read the review", "what the product or service was", "what information the review gave about the", "product or service", "and explain what you did as a result of reading", "this review:" ],
+      "sourceRole" : "SOURCE_SPEAKING_PROMPTS",
+      "runtimeUse" : "PINNED_SOURCE_ITEMS"
+    },
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "1893f213523f985f43ea54706e043b78214b30912013a6fca3d26ff6a2f458f1",
+    "createdAt" : null
+  }, {
+    "id" : "73430235-14ec-5cf0-86a9-72f6e61f49ca",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_16_T2_SPEAKING_PART_3_PROMPTS",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "prompts" : [ "Discussion topics:", "Online reviews", "What kinds of things do people write online reviews about in your country?", "Why do some people write online reviews?", "Do you think that online reviews are good for both shoppers and companies?", "Sn 0", "customer service", "What do you think it might be like to work in a customer service job?", "Do you agree that customers are more likely to complain nowadays?", "How important is it for companies to take all customer complaints seriously?", "54" ],
+      "sourceRole" : "SOURCE_SPEAKING_PROMPTS",
+      "runtimeUse" : "PINNED_SOURCE_ITEMS"
+    },
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "8b2e37e226af611c269d32fd79e44151f3aac761667b5504693047dab0fb59d4",
+    "createdAt" : null
+  } ],
+  "groupStimuli" : [ {
+    "id" : "a2a6e788-4229-56e2-9ff8-4d305f60c9ec",
+    "groupId" : "8ea8626a-d6b4-58a0-8c92-317c62a9476f",
+    "stimulusId" : "a7123cbd-5659-5462-bfa1-d962244136b4",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "4fc84581-3eee-5ca7-83f3-45653a3a7e26",
+    "groupId" : "ec528102-cff2-597b-871f-7b6dbe682cc4",
+    "stimulusId" : "a7123cbd-5659-5462-bfa1-d962244136b4",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "3159cfa6-b634-5a58-a2a6-bc5629aad243",
+    "groupId" : "9906c0c2-831a-58ca-bff8-e0e069117012",
+    "stimulusId" : "ebe91100-bc1a-5a9a-b1f2-e0aaec8e710e",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "8cab4725-1c06-52a4-9670-9e6417462752",
+    "groupId" : "e6bd9d1c-b502-5df7-b9d9-a8d6229fc3c8",
+    "stimulusId" : "113de0e0-bf7e-5faf-acad-fb2d1d6487e6",
+    "role" : "PASSAGE",
+    "ordinal" : 1
+  }, {
+    "id" : "4421406d-c185-5867-b8de-abd4b2f968d3",
+    "groupId" : "55709bac-5929-55b8-91f4-4607d8b51a10",
+    "stimulusId" : "113de0e0-bf7e-5faf-acad-fb2d1d6487e6",
+    "role" : "PASSAGE",
+    "ordinal" : 1
+  }, {
+    "id" : "6147fd4b-5873-57db-a164-f71b7ac5a9ee",
+    "groupId" : "3f8ad57b-a83d-5527-99e8-a51dc8f861e0",
+    "stimulusId" : "afc8f537-1892-5f2b-b34e-caa61c79cec0",
+    "role" : "PRIMARY_PROMPT",
+    "ordinal" : 2
+  }, {
+    "id" : "d9694f94-2585-527b-b1a1-f51e67294299",
+    "groupId" : "f406c7a3-1543-5cb2-8061-9cdca4e84d44",
+    "stimulusId" : "9f23f071-ba2b-5170-87b7-1c367ac3ccfa",
+    "role" : "PRIMARY",
+    "ordinal" : 1
+  }, {
+    "id" : "203b3187-4511-53fb-be6e-543da4136846",
+    "groupId" : "166263a7-36a3-5fce-ad57-ec2342c85506",
+    "stimulusId" : "73430235-14ec-5cf0-86a9-72f6e61f49ca",
+    "role" : "PRIMARY",
+    "ordinal" : 1
+  } ],
+  "items" : [ {
+    "id" : "f77d3d56-839a-5a5e-bb7c-ef7f9fc41da4",
+    "groupId" : "8ea8626a-d6b4-58a0-8c92-317c62a9476f",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L021",
+    "version" : 1,
+    "prompt" : "Luke read that one reason why we often forget dreams is that",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "our memories cannot cope with too much information."
+      }, {
+        "id" : "B",
+        "text" : "we might otherwise be confused about what is real:"
+      }, {
+        "id" : "C",
+        "text" : "we do not think they are important:"
+      } ],
+      "questionNumber" : 21,
+      "group" : {
+        "kind" : "SINGLE_CHOICE",
+        "questions" : "21-24",
+        "instructions" : [ "Choose the correct letter; A, B or C" ],
+        "stem" : "Assignment on sleep and dreams"
+      }
+    },
+    "construct" : "single_choice",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "45063f8d8ae51a2790fa6ef38e9623d678f126b190044fe041df89f48805e8ec",
+    "createdAt" : null,
+    "ordinal" : 21
+  }, {
+    "id" : "8aff763c-8ac5-584e-9d19-f97966ff8dc3",
+    "groupId" : "8ea8626a-d6b4-58a0-8c92-317c62a9476f",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L022",
+    "version" : 1,
+    "prompt" : "What do Luke and Susie agree about dreams predicting the future?",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "It may just be due to chance."
+      }, {
+        "id" : "B",
+        "text" : "It only happens with certain types Of event:"
+      }, {
+        "id" : "C",
+        "text" : "It happens more often than some people think."
+      } ],
+      "questionNumber" : 22,
+      "group" : {
+        "kind" : "SINGLE_CHOICE",
+        "questions" : "21-24",
+        "instructions" : [ "Choose the correct letter; A, B or C" ],
+        "stem" : "Assignment on sleep and dreams"
+      }
+    },
+    "construct" : "single_choice",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "af04071b304003ab508eb19f39fd3bf693b7bb03c40615f10a13d92bf84b4990",
+    "createdAt" : null,
+    "ordinal" : 22
+  }, {
+    "id" : "17957ecf-13e7-5f0d-aea9-7e716e4706d2",
+    "groupId" : "8ea8626a-d6b4-58a0-8c92-317c62a9476f",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L023",
+    "version" : 1,
+    "prompt" : "Susie says that a study on pre-school children having a short nap in the day",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "had controversial results."
+      }, {
+        "id" : "B",
+        "text" : "used faulty research methodology:"
+      }, {
+        "id" : "C",
+        "text" : "failed to reach anv clear conclusions."
+      } ],
+      "questionNumber" : 23,
+      "group" : {
+        "kind" : "SINGLE_CHOICE",
+        "questions" : "21-24",
+        "instructions" : [ "Choose the correct letter; A, B or C" ],
+        "stem" : "Assignment on sleep and dreams"
+      }
+    },
+    "construct" : "single_choice",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "e857bcd8cc726e00ea18a2ef61433ddaccdce50e57cf6fbbbe06c34131985365",
+    "createdAt" : null,
+    "ordinal" : 23
+  }, {
+    "id" : "130f76f9-c7ed-5748-9eec-c34849629172",
+    "groupId" : "8ea8626a-d6b4-58a0-8c92-317c62a9476f",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L024",
+    "version" : 1,
+    "prompt" : "In their last assignment; both students had problems with",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "statistical analvsis."
+      }, {
+        "id" : "B",
+        "text" : "making an action plan:"
+      }, {
+        "id" : "C",
+        "text" : "self-assessment. 35"
+      } ],
+      "questionNumber" : 24,
+      "group" : {
+        "kind" : "SINGLE_CHOICE",
+        "questions" : "21-24",
+        "instructions" : [ "Choose the correct letter; A, B or C" ],
+        "stem" : "Assignment on sleep and dreams"
+      }
+    },
+    "construct" : "single_choice",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "d03735c35b3b93ef27e57754683125ed6853af042e42c712cb778efe731cdad2",
+    "createdAt" : null,
+    "ordinal" : 24
+  }, {
+    "id" : "b597f7e8-af2a-58f7-bbd0-eebfe069ec39",
+    "groupId" : "ec528102-cff2-597b-871f-7b6dbe682cc4",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L025",
+    "version" : 1,
+    "prompt" : "Twelve students from the ______ department",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 25,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "25-30",
+        "instructions" : [ "Complete the flow chart below:", "Write ONE WORD ONLY for each answer" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\nAsslanment plan\nDecide on research question:\nIs there a relationship between hours of sleep and number Of\ndreams?\nDecide on sample:\nTwelve students from the (25) ______ department\nDecide on methodology:\nSelf-reporting\nDecide on procedure:\n4\nAnswers on (26) ______\nCheck ethical quidelines for workina with (27) ______\nO D\nEnsure that risk is assessed and (28) ______ is kept\n0 7\ntO a minimum\nAnalyse the results\nCalculate the correlation and make a (29) ______\n(30) ______ the research\n36 7/0 p: 123| 1 ______ ] p: 106|\nL"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "727a478231fc8c7afbce047011c6abef89a0420dfe6d3d497513813754087a05",
+    "createdAt" : null,
+    "ordinal" : 25
+  }, {
+    "id" : "0fe87b10-6f34-53f6-b2c0-ca9c7d8d7947",
+    "groupId" : "ec528102-cff2-597b-871f-7b6dbe682cc4",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L026",
+    "version" : 1,
+    "prompt" : "4 / Answers on ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 26,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "25-30",
+        "instructions" : [ "Complete the flow chart below:", "Write ONE WORD ONLY for each answer" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\nAsslanment plan\nDecide on research question:\nIs there a relationship between hours of sleep and number Of\ndreams?\nDecide on sample:\nTwelve students from the (25) ______ department\nDecide on methodology:\nSelf-reporting\nDecide on procedure:\n4\nAnswers on (26) ______\nCheck ethical quidelines for workina with (27) ______\nO D\nEnsure that risk is assessed and (28) ______ is kept\n0 7\ntO a minimum\nAnalyse the results\nCalculate the correlation and make a (29) ______\n(30) ______ the research\n36 7/0 p: 123| 1 ______ ] p: 106|\nL"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "0cdd47bb289bf5683cbba3ab29e9763e44651c24b059e2829874587a8f5060c3",
+    "createdAt" : null,
+    "ordinal" : 26
+  }, {
+    "id" : "0497bbc7-5161-5fa3-9bcd-b394c56f36f9",
+    "groupId" : "ec528102-cff2-597b-871f-7b6dbe682cc4",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L027",
+    "version" : 1,
+    "prompt" : "Check ethical quidelines for workina with ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 27,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "25-30",
+        "instructions" : [ "Complete the flow chart below:", "Write ONE WORD ONLY for each answer" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\nAsslanment plan\nDecide on research question:\nIs there a relationship between hours of sleep and number Of\ndreams?\nDecide on sample:\nTwelve students from the (25) ______ department\nDecide on methodology:\nSelf-reporting\nDecide on procedure:\n4\nAnswers on (26) ______\nCheck ethical quidelines for workina with (27) ______\nO D\nEnsure that risk is assessed and (28) ______ is kept\n0 7\ntO a minimum\nAnalyse the results\nCalculate the correlation and make a (29) ______\n(30) ______ the research\n36 7/0 p: 123| 1 ______ ] p: 106|\nL"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "36671b1c06da1e609f628b8e3951551483df90fcd517a2a02f8b0d22ec79eaae",
+    "createdAt" : null,
+    "ordinal" : 27
+  }, {
+    "id" : "575c7f00-2679-5ace-a60e-ca7a8cf739a9",
+    "groupId" : "ec528102-cff2-597b-871f-7b6dbe682cc4",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L028",
+    "version" : 1,
+    "prompt" : "Ensure that risk is assessed and ______ is kept",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 28,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "25-30",
+        "instructions" : [ "Complete the flow chart below:", "Write ONE WORD ONLY for each answer" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\nAsslanment plan\nDecide on research question:\nIs there a relationship between hours of sleep and number Of\ndreams?\nDecide on sample:\nTwelve students from the (25) ______ department\nDecide on methodology:\nSelf-reporting\nDecide on procedure:\n4\nAnswers on (26) ______\nCheck ethical quidelines for workina with (27) ______\nO D\nEnsure that risk is assessed and (28) ______ is kept\n0 7\ntO a minimum\nAnalyse the results\nCalculate the correlation and make a (29) ______\n(30) ______ the research\n36 7/0 p: 123| 1 ______ ] p: 106|\nL"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "037a7d48c0b8fd1654a2ad474d4c017f9445fc8f14d7d74bdd9930ff1c472c87",
+    "createdAt" : null,
+    "ordinal" : 28
+  }, {
+    "id" : "38cddea7-aab5-5b86-8303-09ad547c2527",
+    "groupId" : "ec528102-cff2-597b-871f-7b6dbe682cc4",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L029",
+    "version" : 1,
+    "prompt" : "Calculate the correlation and make a ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 29,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "25-30",
+        "instructions" : [ "Complete the flow chart below:", "Write ONE WORD ONLY for each answer" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\nAsslanment plan\nDecide on research question:\nIs there a relationship between hours of sleep and number Of\ndreams?\nDecide on sample:\nTwelve students from the (25) ______ department\nDecide on methodology:\nSelf-reporting\nDecide on procedure:\n4\nAnswers on (26) ______\nCheck ethical quidelines for workina with (27) ______\nO D\nEnsure that risk is assessed and (28) ______ is kept\n0 7\ntO a minimum\nAnalyse the results\nCalculate the correlation and make a (29) ______\n(30) ______ the research\n36 7/0 p: 123| 1 ______ ] p: 106|\nL"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "71e47500190839bf89645913ab3f0a130894650c256c28160207a2a59021265e",
+    "createdAt" : null,
+    "ordinal" : 29
+  }, {
+    "id" : "da202f4b-2e05-5eb0-9c6d-2b37e316174d",
+    "groupId" : "ec528102-cff2-597b-871f-7b6dbe682cc4",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L030",
+    "version" : 1,
+    "prompt" : "Calculate the correlation and make a (29) ______ / ______ the research",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 30,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "25-30",
+        "instructions" : [ "Complete the flow chart below:", "Write ONE WORD ONLY for each answer" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\nAsslanment plan\nDecide on research question:\nIs there a relationship between hours of sleep and number Of\ndreams?\nDecide on sample:\nTwelve students from the (25) ______ department\nDecide on methodology:\nSelf-reporting\nDecide on procedure:\n4\nAnswers on (26) ______\nCheck ethical quidelines for workina with (27) ______\nO D\nEnsure that risk is assessed and (28) ______ is kept\n0 7\ntO a minimum\nAnalyse the results\nCalculate the correlation and make a (29) ______\n(30) ______ the research\n36 7/0 p: 123| 1 ______ ] p: 106|\nL"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "5c2be56d8561b2c6de453ee6dbf12ff117859b0979c2bf504486bf8ef6e0c7ef",
+    "createdAt" : null,
+    "ordinal" : 30
+  }, {
+    "id" : "ee28d1d1-d834-5be9-9efc-0d77dc5b4b61",
+    "groupId" : "9906c0c2-831a-58ca-bff8-e0e069117012",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L031",
+    "version" : 1,
+    "prompt" : "0 An experiment on university students suggested that dance / increases ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 31,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below:", "Write ONE WORD ONLY for each answer" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\nHealth benefits Of dance\nRecent findinas:\n0 All forms of dance produce various hormones associated with feelings of\nnappiness.\n0 Dancing with others has a more positive impact than dancing alone.\n0 An experiment on university students suggested that dance\nincreases (31) ______\n0 For those with mental illness, dance could be used as a form Of\n(32) ______\nBenefits of dance for older people:\n0 accessible for people with low levels Of (33) ______\n0 reduces the risk Of heart disease\n0 better (34) ______ reduces the risk Of accidents\n0 improves (35) ______ function by making it work faster\n0 improves participants' general well-being\n0 gives people more (36) ______ to take exercise\n0 can lessen the feeling Of (37) ______ 1 very common in older people\nBenefits of Zumba:\n0 A study at The University Of Wisconsin showed that doing Zumba for\n40 minutes uses up as many (38) ______ as other quite intense forms\nO1 exercise.\n0 The American Journal of Health Behavior studv showed that:\n~ women suffering from (39) ______ benefited from doing Zumba.\nZumba became a (40) ______ for the participants."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "a2e37228145635328e30532dec9c17af79f542dc5e872f1febfc31443fa0e54a",
+    "createdAt" : null,
+    "ordinal" : 31
+  }, {
+    "id" : "422a2742-c04f-5ece-abda-7b69fc70ca4a",
+    "groupId" : "9906c0c2-831a-58ca-bff8-e0e069117012",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L032",
+    "version" : 1,
+    "prompt" : "0 For those with mental illness, dance could be used as a form Of / ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 32,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below:", "Write ONE WORD ONLY for each answer" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\nHealth benefits Of dance\nRecent findinas:\n0 All forms of dance produce various hormones associated with feelings of\nnappiness.\n0 Dancing with others has a more positive impact than dancing alone.\n0 An experiment on university students suggested that dance\nincreases (31) ______\n0 For those with mental illness, dance could be used as a form Of\n(32) ______\nBenefits of dance for older people:\n0 accessible for people with low levels Of (33) ______\n0 reduces the risk Of heart disease\n0 better (34) ______ reduces the risk Of accidents\n0 improves (35) ______ function by making it work faster\n0 improves participants' general well-being\n0 gives people more (36) ______ to take exercise\n0 can lessen the feeling Of (37) ______ 1 very common in older people\nBenefits of Zumba:\n0 A study at The University Of Wisconsin showed that doing Zumba for\n40 minutes uses up as many (38) ______ as other quite intense forms\nO1 exercise.\n0 The American Journal of Health Behavior studv showed that:\n~ women suffering from (39) ______ benefited from doing Zumba.\nZumba became a (40) ______ for the participants."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "06eb667601ae55a0a2953267f8bf3fd45ee8698812b8b331df89ef3c0a057c1c",
+    "createdAt" : null,
+    "ordinal" : 32
+  }, {
+    "id" : "25502bb3-f1a7-51e5-970a-e940b17582af",
+    "groupId" : "9906c0c2-831a-58ca-bff8-e0e069117012",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L033",
+    "version" : 1,
+    "prompt" : "0 accessible for people with low levels Of ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 33,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below:", "Write ONE WORD ONLY for each answer" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\nHealth benefits Of dance\nRecent findinas:\n0 All forms of dance produce various hormones associated with feelings of\nnappiness.\n0 Dancing with others has a more positive impact than dancing alone.\n0 An experiment on university students suggested that dance\nincreases (31) ______\n0 For those with mental illness, dance could be used as a form Of\n(32) ______\nBenefits of dance for older people:\n0 accessible for people with low levels Of (33) ______\n0 reduces the risk Of heart disease\n0 better (34) ______ reduces the risk Of accidents\n0 improves (35) ______ function by making it work faster\n0 improves participants' general well-being\n0 gives people more (36) ______ to take exercise\n0 can lessen the feeling Of (37) ______ 1 very common in older people\nBenefits of Zumba:\n0 A study at The University Of Wisconsin showed that doing Zumba for\n40 minutes uses up as many (38) ______ as other quite intense forms\nO1 exercise.\n0 The American Journal of Health Behavior studv showed that:\n~ women suffering from (39) ______ benefited from doing Zumba.\nZumba became a (40) ______ for the participants."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "7c731bb2573124ecf9d7ccefacb75206cdbe57ae145a9935d10603ea8573eb9b",
+    "createdAt" : null,
+    "ordinal" : 33
+  }, {
+    "id" : "88bd14b7-cc18-513d-92ab-fc0176cfa483",
+    "groupId" : "9906c0c2-831a-58ca-bff8-e0e069117012",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L034",
+    "version" : 1,
+    "prompt" : "0 better ______ reduces the risk Of accidents",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 34,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below:", "Write ONE WORD ONLY for each answer" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\nHealth benefits Of dance\nRecent findinas:\n0 All forms of dance produce various hormones associated with feelings of\nnappiness.\n0 Dancing with others has a more positive impact than dancing alone.\n0 An experiment on university students suggested that dance\nincreases (31) ______\n0 For those with mental illness, dance could be used as a form Of\n(32) ______\nBenefits of dance for older people:\n0 accessible for people with low levels Of (33) ______\n0 reduces the risk Of heart disease\n0 better (34) ______ reduces the risk Of accidents\n0 improves (35) ______ function by making it work faster\n0 improves participants' general well-being\n0 gives people more (36) ______ to take exercise\n0 can lessen the feeling Of (37) ______ 1 very common in older people\nBenefits of Zumba:\n0 A study at The University Of Wisconsin showed that doing Zumba for\n40 minutes uses up as many (38) ______ as other quite intense forms\nO1 exercise.\n0 The American Journal of Health Behavior studv showed that:\n~ women suffering from (39) ______ benefited from doing Zumba.\nZumba became a (40) ______ for the participants."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "b417e9ddc6b82eca04732bd51f9af45a6fd2e5e642541de68595166643cfd6c6",
+    "createdAt" : null,
+    "ordinal" : 34
+  }, {
+    "id" : "d8175cd5-b381-5bfd-87d5-17737ef392ea",
+    "groupId" : "9906c0c2-831a-58ca-bff8-e0e069117012",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L035",
+    "version" : 1,
+    "prompt" : "0 improves ______ function by making it work faster",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 35,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below:", "Write ONE WORD ONLY for each answer" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\nHealth benefits Of dance\nRecent findinas:\n0 All forms of dance produce various hormones associated with feelings of\nnappiness.\n0 Dancing with others has a more positive impact than dancing alone.\n0 An experiment on university students suggested that dance\nincreases (31) ______\n0 For those with mental illness, dance could be used as a form Of\n(32) ______\nBenefits of dance for older people:\n0 accessible for people with low levels Of (33) ______\n0 reduces the risk Of heart disease\n0 better (34) ______ reduces the risk Of accidents\n0 improves (35) ______ function by making it work faster\n0 improves participants' general well-being\n0 gives people more (36) ______ to take exercise\n0 can lessen the feeling Of (37) ______ 1 very common in older people\nBenefits of Zumba:\n0 A study at The University Of Wisconsin showed that doing Zumba for\n40 minutes uses up as many (38) ______ as other quite intense forms\nO1 exercise.\n0 The American Journal of Health Behavior studv showed that:\n~ women suffering from (39) ______ benefited from doing Zumba.\nZumba became a (40) ______ for the participants."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "c993d05d7a76f938da0c01ce1db06b0ffcda072fac42077f5e1a3e5f0ac704d7",
+    "createdAt" : null,
+    "ordinal" : 35
+  }, {
+    "id" : "90277b03-8893-5651-8693-eb49ec8f62b1",
+    "groupId" : "9906c0c2-831a-58ca-bff8-e0e069117012",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L036",
+    "version" : 1,
+    "prompt" : "0 gives people more ______ to take exercise",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 36,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below:", "Write ONE WORD ONLY for each answer" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\nHealth benefits Of dance\nRecent findinas:\n0 All forms of dance produce various hormones associated with feelings of\nnappiness.\n0 Dancing with others has a more positive impact than dancing alone.\n0 An experiment on university students suggested that dance\nincreases (31) ______\n0 For those with mental illness, dance could be used as a form Of\n(32) ______\nBenefits of dance for older people:\n0 accessible for people with low levels Of (33) ______\n0 reduces the risk Of heart disease\n0 better (34) ______ reduces the risk Of accidents\n0 improves (35) ______ function by making it work faster\n0 improves participants' general well-being\n0 gives people more (36) ______ to take exercise\n0 can lessen the feeling Of (37) ______ 1 very common in older people\nBenefits of Zumba:\n0 A study at The University Of Wisconsin showed that doing Zumba for\n40 minutes uses up as many (38) ______ as other quite intense forms\nO1 exercise.\n0 The American Journal of Health Behavior studv showed that:\n~ women suffering from (39) ______ benefited from doing Zumba.\nZumba became a (40) ______ for the participants."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "639db8128f1dab0274299627539e3d853e97a53fb9250f84c466cfa7db1bd4cd",
+    "createdAt" : null,
+    "ordinal" : 36
+  }, {
+    "id" : "a828755e-cbe3-5144-9ac3-52cabc616dce",
+    "groupId" : "9906c0c2-831a-58ca-bff8-e0e069117012",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L037",
+    "version" : 1,
+    "prompt" : "0 can lessen the feeling Of ______ 1 very common in older people",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 37,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below:", "Write ONE WORD ONLY for each answer" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\nHealth benefits Of dance\nRecent findinas:\n0 All forms of dance produce various hormones associated with feelings of\nnappiness.\n0 Dancing with others has a more positive impact than dancing alone.\n0 An experiment on university students suggested that dance\nincreases (31) ______\n0 For those with mental illness, dance could be used as a form Of\n(32) ______\nBenefits of dance for older people:\n0 accessible for people with low levels Of (33) ______\n0 reduces the risk Of heart disease\n0 better (34) ______ reduces the risk Of accidents\n0 improves (35) ______ function by making it work faster\n0 improves participants' general well-being\n0 gives people more (36) ______ to take exercise\n0 can lessen the feeling Of (37) ______ 1 very common in older people\nBenefits of Zumba:\n0 A study at The University Of Wisconsin showed that doing Zumba for\n40 minutes uses up as many (38) ______ as other quite intense forms\nO1 exercise.\n0 The American Journal of Health Behavior studv showed that:\n~ women suffering from (39) ______ benefited from doing Zumba.\nZumba became a (40) ______ for the participants."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "b9ea4c4e3e8819fe47a2b61f61f12cbc4d4ae7b382bc8861241dcc022fb3254e",
+    "createdAt" : null,
+    "ordinal" : 37
+  }, {
+    "id" : "a9444672-69c4-5a30-8aa7-7419302a1c95",
+    "groupId" : "9906c0c2-831a-58ca-bff8-e0e069117012",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L038",
+    "version" : 1,
+    "prompt" : "40 minutes uses up as many ______ as other quite intense forms",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 38,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below:", "Write ONE WORD ONLY for each answer" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\nHealth benefits Of dance\nRecent findinas:\n0 All forms of dance produce various hormones associated with feelings of\nnappiness.\n0 Dancing with others has a more positive impact than dancing alone.\n0 An experiment on university students suggested that dance\nincreases (31) ______\n0 For those with mental illness, dance could be used as a form Of\n(32) ______\nBenefits of dance for older people:\n0 accessible for people with low levels Of (33) ______\n0 reduces the risk Of heart disease\n0 better (34) ______ reduces the risk Of accidents\n0 improves (35) ______ function by making it work faster\n0 improves participants' general well-being\n0 gives people more (36) ______ to take exercise\n0 can lessen the feeling Of (37) ______ 1 very common in older people\nBenefits of Zumba:\n0 A study at The University Of Wisconsin showed that doing Zumba for\n40 minutes uses up as many (38) ______ as other quite intense forms\nO1 exercise.\n0 The American Journal of Health Behavior studv showed that:\n~ women suffering from (39) ______ benefited from doing Zumba.\nZumba became a (40) ______ for the participants."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "0a3d94f254f2a58fc776279ebc32be2d7433d492aaefc9a270628497fbe1371f",
+    "createdAt" : null,
+    "ordinal" : 38
+  }, {
+    "id" : "0e91dacd-ce98-5fba-8e35-ac9a6c58418d",
+    "groupId" : "9906c0c2-831a-58ca-bff8-e0e069117012",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L039",
+    "version" : 1,
+    "prompt" : "~ women suffering from ______ benefited from doing Zumba.",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 39,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below:", "Write ONE WORD ONLY for each answer" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\nHealth benefits Of dance\nRecent findinas:\n0 All forms of dance produce various hormones associated with feelings of\nnappiness.\n0 Dancing with others has a more positive impact than dancing alone.\n0 An experiment on university students suggested that dance\nincreases (31) ______\n0 For those with mental illness, dance could be used as a form Of\n(32) ______\nBenefits of dance for older people:\n0 accessible for people with low levels Of (33) ______\n0 reduces the risk Of heart disease\n0 better (34) ______ reduces the risk Of accidents\n0 improves (35) ______ function by making it work faster\n0 improves participants' general well-being\n0 gives people more (36) ______ to take exercise\n0 can lessen the feeling Of (37) ______ 1 very common in older people\nBenefits of Zumba:\n0 A study at The University Of Wisconsin showed that doing Zumba for\n40 minutes uses up as many (38) ______ as other quite intense forms\nO1 exercise.\n0 The American Journal of Health Behavior studv showed that:\n~ women suffering from (39) ______ benefited from doing Zumba.\nZumba became a (40) ______ for the participants."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "14a237d768948f3d0b62e20517372c3ea82e20e8948a0442e59f73fc2ecc0d15",
+    "createdAt" : null,
+    "ordinal" : 39
+  }, {
+    "id" : "ad7cb30f-3d8a-5991-bd50-8e802e7324f3",
+    "groupId" : "9906c0c2-831a-58ca-bff8-e0e069117012",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_L040",
+    "version" : 1,
+    "prompt" : "Zumba became a ______ for the participants.",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 40,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below:", "Write ONE WORD ONLY for each answer" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\nHealth benefits Of dance\nRecent findinas:\n0 All forms of dance produce various hormones associated with feelings of\nnappiness.\n0 Dancing with others has a more positive impact than dancing alone.\n0 An experiment on university students suggested that dance\nincreases (31) ______\n0 For those with mental illness, dance could be used as a form Of\n(32) ______\nBenefits of dance for older people:\n0 accessible for people with low levels Of (33) ______\n0 reduces the risk Of heart disease\n0 better (34) ______ reduces the risk Of accidents\n0 improves (35) ______ function by making it work faster\n0 improves participants' general well-being\n0 gives people more (36) ______ to take exercise\n0 can lessen the feeling Of (37) ______ 1 very common in older people\nBenefits of Zumba:\n0 A study at The University Of Wisconsin showed that doing Zumba for\n40 minutes uses up as many (38) ______ as other quite intense forms\nO1 exercise.\n0 The American Journal of Health Behavior studv showed that:\n~ women suffering from (39) ______ benefited from doing Zumba.\nZumba became a (40) ______ for the participants."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "0361ae584278714de1790dc5c792de61c606c67a99e0206a0c55a3ba2958aef7",
+    "createdAt" : null,
+    "ordinal" : 40
+  }, {
+    "id" : "bb067bb7-c10d-57e7-b154-b33571edba82",
+    "groupId" : "e6bd9d1c-b502-5df7-b9d9-a8d6229fc3c8",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_R001",
+    "version" : 1,
+    "prompt" : "Most geoglyphs in England are located in a particular area Of the country:",
+    "interactionType" : "TRUTH_CLASSIFICATION",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NOT GIVEN",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 1,
+      "group" : {
+        "kind" : "TFNG",
+        "questions" : "1-8",
+        "instructions" : [ "TRUE if the statement agrees with the information", "FALSE if the statement contradicts the information", "NOT GIVEN if there is no information on this" ],
+        "stem" : "Do the followina statements aaree with the information aiven in Readina Passaae 12\nIn poxes 1-6 on vour answer sheet write\n4 4"
+      }
+    },
+    "construct" : "tfng",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "5dfc8c6c279f493364ba211cdf39333617a38a600c30e2426e05573d4810b369",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "911b18eb-6f5b-5215-908d-4260af22e5e6",
+    "groupId" : "e6bd9d1c-b502-5df7-b9d9-a8d6229fc3c8",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_R002",
+    "version" : 1,
+    "prompt" : "There are more geoglyphs in the shape Of a horse than any other creature.",
+    "interactionType" : "TRUTH_CLASSIFICATION",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NOT GIVEN",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 2,
+      "group" : {
+        "kind" : "TFNG",
+        "questions" : "1-8",
+        "instructions" : [ "TRUE if the statement agrees with the information", "FALSE if the statement contradicts the information", "NOT GIVEN if there is no information on this" ],
+        "stem" : "Do the followina statements aaree with the information aiven in Readina Passaae 12\nIn poxes 1-6 on vour answer sheet write\n4 4"
+      }
+    },
+    "construct" : "tfng",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "697de771209ed96e6227a9beb0fc4405954c117c64e631316b10d181d52c2505",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "705feeca-37e3-52be-bf31-1315b5176277",
+    "groupId" : "e6bd9d1c-b502-5df7-b9d9-a8d6229fc3c8",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_R003",
+    "version" : 1,
+    "prompt" : "A recent dating of the Uffington White Horse indicates that people were mistaken about its age.",
+    "interactionType" : "TRUTH_CLASSIFICATION",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NOT GIVEN",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 3,
+      "group" : {
+        "kind" : "TFNG",
+        "questions" : "1-8",
+        "instructions" : [ "TRUE if the statement agrees with the information", "FALSE if the statement contradicts the information", "NOT GIVEN if there is no information on this" ],
+        "stem" : "Do the followina statements aaree with the information aiven in Readina Passaae 12\nIn poxes 1-6 on vour answer sheet write\n4 4"
+      }
+    },
+    "construct" : "tfng",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "56429ca8fe6b6d0f8f24bb9200edea33fbb25b543a89bbb069776b7c0f632833",
+    "createdAt" : null,
+    "ordinal" : 3
+  }, {
+    "id" : "afaad007-4eaf-58ce-85b6-6a1f5574d28a",
+    "groupId" : "e6bd9d1c-b502-5df7-b9d9-a8d6229fc3c8",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_R004",
+    "version" : 1,
+    "prompt" : "Historians have come to an agreement about the origins of the Long Man Of Wilmington:",
+    "interactionType" : "TRUTH_CLASSIFICATION",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NOT GIVEN",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 4,
+      "group" : {
+        "kind" : "TFNG",
+        "questions" : "1-8",
+        "instructions" : [ "TRUE if the statement agrees with the information", "FALSE if the statement contradicts the information", "NOT GIVEN if there is no information on this" ],
+        "stem" : "Do the followina statements aaree with the information aiven in Readina Passaae 12\nIn poxes 1-6 on vour answer sheet write\n4 4"
+      }
+    },
+    "construct" : "tfng",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "6d4d67f28d68ad25d9e308af66f11e7e8b80fa129a3ad718177bb46909d3f849",
+    "createdAt" : null,
+    "ordinal" : 4
+  }, {
+    "id" : "d208ee65-e655-55f4-97b9-c587796f55da",
+    "groupId" : "e6bd9d1c-b502-5df7-b9d9-a8d6229fc3c8",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_R005",
+    "version" : 1,
+    "prompt" : "Geoglyphs were created by people placing white chalk on the hillside.",
+    "interactionType" : "TRUTH_CLASSIFICATION",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NOT GIVEN",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 5,
+      "group" : {
+        "kind" : "TFNG",
+        "questions" : "1-8",
+        "instructions" : [ "TRUE if the statement agrees with the information", "FALSE if the statement contradicts the information", "NOT GIVEN if there is no information on this" ],
+        "stem" : "Do the followina statements aaree with the information aiven in Readina Passaae 12\nIn poxes 1-6 on vour answer sheet write\n4 4"
+      }
+    },
+    "construct" : "tfng",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "8f92ecd3f3e39e29ac9031f4b37f3e8ad8cc70206114c9e269f81a7544b16e5f",
+    "createdAt" : null,
+    "ordinal" : 5
+  }, {
+    "id" : "e332ce05-d8ca-59a7-9adb-2473aee7eb14",
+    "groupId" : "e6bd9d1c-b502-5df7-b9d9-a8d6229fc3c8",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_R006",
+    "version" : 1,
+    "prompt" : "Many geoglyphs in England are no longer visible.",
+    "interactionType" : "TRUTH_CLASSIFICATION",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NOT GIVEN",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 6,
+      "group" : {
+        "kind" : "TFNG",
+        "questions" : "1-8",
+        "instructions" : [ "TRUE if the statement agrees with the information", "FALSE if the statement contradicts the information", "NOT GIVEN if there is no information on this" ],
+        "stem" : "Do the followina statements aaree with the information aiven in Readina Passaae 12\nIn poxes 1-6 on vour answer sheet write\n4 4"
+      }
+    },
+    "construct" : "tfng",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "8f4bde179e086c07dcb4d9a84b46804c2532827847999138ab0226c5d787d095",
+    "createdAt" : null,
+    "ordinal" : 6
+  }, {
+    "id" : "d3639baa-7bba-5c02-86c4-6427ca6fe6e5",
+    "groupId" : "e6bd9d1c-b502-5df7-b9d9-a8d6229fc3c8",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_R007",
+    "version" : 1,
+    "prompt" : "The shape Of some geoglyphs has been altered over time.",
+    "interactionType" : "TRUTH_CLASSIFICATION",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NOT GIVEN",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 7,
+      "group" : {
+        "kind" : "TFNG",
+        "questions" : "1-8",
+        "instructions" : [ "TRUE if the statement agrees with the information", "FALSE if the statement contradicts the information", "NOT GIVEN if there is no information on this" ],
+        "stem" : "Do the followina statements aaree with the information aiven in Readina Passaae 12\nIn poxes 1-6 on vour answer sheet write\n4 4"
+      }
+    },
+    "construct" : "tfng",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "058964267481de2a339c80e82b8987000aa28ad24d34b194e5e3963cf5e1866f",
+    "createdAt" : null,
+    "ordinal" : 7
+  }, {
+    "id" : "04dad190-ec81-5c0e-838e-dc7adfefcd55",
+    "groupId" : "e6bd9d1c-b502-5df7-b9d9-a8d6229fc3c8",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_R008",
+    "version" : 1,
+    "prompt" : "The fame Of the Uffington White Horse is due to its size. 40",
+    "interactionType" : "TRUTH_CLASSIFICATION",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NOT GIVEN",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 8,
+      "group" : {
+        "kind" : "TFNG",
+        "questions" : "1-8",
+        "instructions" : [ "TRUE if the statement agrees with the information", "FALSE if the statement contradicts the information", "NOT GIVEN if there is no information on this" ],
+        "stem" : "Do the followina statements aaree with the information aiven in Readina Passaae 12\nIn poxes 1-6 on vour answer sheet write\n4 4"
+      }
+    },
+    "construct" : "tfng",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "388d71362871b6a28235bd567f201878c7ac5b8e5b59a0be2a683c133d56c09e",
+    "createdAt" : null,
+    "ordinal" : 8
+  }, {
+    "id" : "20f3b09c-caa5-58aa-8e36-089a01f68b1d",
+    "groupId" : "55709bac-5929-55b8-91f4-4607d8b51a10",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_R009",
+    "version" : 1,
+    "prompt" : "0 near an ancient road known as the ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 9,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "9-13",
+        "instructions" : [ "Complete the notes below:", "Choose ONE WORD ONLY from the passaqe for each answer", "Write vour answers in boxes 9-13 on vour answer sheet" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\n4\nD\nThe Uffinaton White Horse\nThe location of the Uffinaton White Horse:\n8 a distance Of 2.5 km from Uffington village\n0 near an ancient road known as the (9) ______\n0 close to an ancient cemetery that has a number Of burial mounds\nDatina the Uffinaton White Horse:\n8 first reference to White Horse Hill appears in (10) ______ from\nthe 1070s\n0 horses shown on coins from the period 100 BCE 1 BCE are similar in\nappearance\n0 according to analysis Of the surrounding (11) ______ 1 the Horse is\nLate Bronze Age 1 Early Iron Age\nPossible reasons for creation Of the Uffinaton White Horse:\n1 I 4a J U I 1 1 0\n0 an emblem tO Inaicate Iana ownersnip\n0 formed part of an ancient ritual\nU I I 3 0 I 1 0 1 I I 0 IC I\n0 was a representation Of aoddess Epona n associated with protection OT norses\nand (12) ______\n0 was a representation of a Welsh aoddess called (13) ______\n1 U\n3\n7/0 p. 124| 41"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "32c9d04cf0e4ea607056e7dc1de8dc16ab33a23550939348c83781c723f190f5",
+    "createdAt" : null,
+    "ordinal" : 9
+  }, {
+    "id" : "6a71a601-34d3-54ac-a3a0-4f9f8a47aa56",
+    "groupId" : "55709bac-5929-55b8-91f4-4607d8b51a10",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_R010",
+    "version" : 1,
+    "prompt" : "8 first reference to White Horse Hill appears in ______ from",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 10,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "9-13",
+        "instructions" : [ "Complete the notes below:", "Choose ONE WORD ONLY from the passaqe for each answer", "Write vour answers in boxes 9-13 on vour answer sheet" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\n4\nD\nThe Uffinaton White Horse\nThe location of the Uffinaton White Horse:\n8 a distance Of 2.5 km from Uffington village\n0 near an ancient road known as the (9) ______\n0 close to an ancient cemetery that has a number Of burial mounds\nDatina the Uffinaton White Horse:\n8 first reference to White Horse Hill appears in (10) ______ from\nthe 1070s\n0 horses shown on coins from the period 100 BCE 1 BCE are similar in\nappearance\n0 according to analysis Of the surrounding (11) ______ 1 the Horse is\nLate Bronze Age 1 Early Iron Age\nPossible reasons for creation Of the Uffinaton White Horse:\n1 I 4a J U I 1 1 0\n0 an emblem tO Inaicate Iana ownersnip\n0 formed part of an ancient ritual\nU I I 3 0 I 1 0 1 I I 0 IC I\n0 was a representation Of aoddess Epona n associated with protection OT norses\nand (12) ______\n0 was a representation of a Welsh aoddess called (13) ______\n1 U\n3\n7/0 p. 124| 41"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "ca97eda6dfe24d13ecdd2404ff166a12a445c506f7e4043f0f2ffe46d0b4c3be",
+    "createdAt" : null,
+    "ordinal" : 10
+  }, {
+    "id" : "7b99fdb8-bce3-5e5d-870c-25e5e373b952",
+    "groupId" : "55709bac-5929-55b8-91f4-4607d8b51a10",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_R011",
+    "version" : 1,
+    "prompt" : "0 according to analysis Of the surrounding ______ 1 the Horse is",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 11,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "9-13",
+        "instructions" : [ "Complete the notes below:", "Choose ONE WORD ONLY from the passaqe for each answer", "Write vour answers in boxes 9-13 on vour answer sheet" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\n4\nD\nThe Uffinaton White Horse\nThe location of the Uffinaton White Horse:\n8 a distance Of 2.5 km from Uffington village\n0 near an ancient road known as the (9) ______\n0 close to an ancient cemetery that has a number Of burial mounds\nDatina the Uffinaton White Horse:\n8 first reference to White Horse Hill appears in (10) ______ from\nthe 1070s\n0 horses shown on coins from the period 100 BCE 1 BCE are similar in\nappearance\n0 according to analysis Of the surrounding (11) ______ 1 the Horse is\nLate Bronze Age 1 Early Iron Age\nPossible reasons for creation Of the Uffinaton White Horse:\n1 I 4a J U I 1 1 0\n0 an emblem tO Inaicate Iana ownersnip\n0 formed part of an ancient ritual\nU I I 3 0 I 1 0 1 I I 0 IC I\n0 was a representation Of aoddess Epona n associated with protection OT norses\nand (12) ______\n0 was a representation of a Welsh aoddess called (13) ______\n1 U\n3\n7/0 p. 124| 41"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "91ef2b20065821a0a469bfecf06b5458a62668c70d5e2ce38b9108cc7ea8d534",
+    "createdAt" : null,
+    "ordinal" : 11
+  }, {
+    "id" : "a668d163-f742-5581-9ad5-4d82d60a0742",
+    "groupId" : "55709bac-5929-55b8-91f4-4607d8b51a10",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_R012",
+    "version" : 1,
+    "prompt" : "0 was a representation Of aoddess Epona n associated with protection OT norses / and ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 12,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "9-13",
+        "instructions" : [ "Complete the notes below:", "Choose ONE WORD ONLY from the passaqe for each answer", "Write vour answers in boxes 9-13 on vour answer sheet" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\n4\nD\nThe Uffinaton White Horse\nThe location of the Uffinaton White Horse:\n8 a distance Of 2.5 km from Uffington village\n0 near an ancient road known as the (9) ______\n0 close to an ancient cemetery that has a number Of burial mounds\nDatina the Uffinaton White Horse:\n8 first reference to White Horse Hill appears in (10) ______ from\nthe 1070s\n0 horses shown on coins from the period 100 BCE 1 BCE are similar in\nappearance\n0 according to analysis Of the surrounding (11) ______ 1 the Horse is\nLate Bronze Age 1 Early Iron Age\nPossible reasons for creation Of the Uffinaton White Horse:\n1 I 4a J U I 1 1 0\n0 an emblem tO Inaicate Iana ownersnip\n0 formed part of an ancient ritual\nU I I 3 0 I 1 0 1 I I 0 IC I\n0 was a representation Of aoddess Epona n associated with protection OT norses\nand (12) ______\n0 was a representation of a Welsh aoddess called (13) ______\n1 U\n3\n7/0 p. 124| 41"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "c76b594e17497da475a47c7b1f4178efc4d03299b97082b3d8ed80497c4e0e4e",
+    "createdAt" : null,
+    "ordinal" : 12
+  }, {
+    "id" : "deaeb910-74fe-5320-878c-f8cc07d330fd",
+    "groupId" : "55709bac-5929-55b8-91f4-4607d8b51a10",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_R013",
+    "version" : 1,
+    "prompt" : "0 was a representation of a Welsh aoddess called ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 13,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "9-13",
+        "instructions" : [ "Complete the notes below:", "Choose ONE WORD ONLY from the passaqe for each answer", "Write vour answers in boxes 9-13 on vour answer sheet" ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "4\n4\nD\nThe Uffinaton White Horse\nThe location of the Uffinaton White Horse:\n8 a distance Of 2.5 km from Uffington village\n0 near an ancient road known as the (9) ______\n0 close to an ancient cemetery that has a number Of burial mounds\nDatina the Uffinaton White Horse:\n8 first reference to White Horse Hill appears in (10) ______ from\nthe 1070s\n0 horses shown on coins from the period 100 BCE 1 BCE are similar in\nappearance\n0 according to analysis Of the surrounding (11) ______ 1 the Horse is\nLate Bronze Age 1 Early Iron Age\nPossible reasons for creation Of the Uffinaton White Horse:\n1 I 4a J U I 1 1 0\n0 an emblem tO Inaicate Iana ownersnip\n0 formed part of an ancient ritual\nU I I 3 0 I 1 0 1 I I 0 IC I\n0 was a representation Of aoddess Epona n associated with protection OT norses\nand (12) ______\n0 was a representation of a Welsh aoddess called (13) ______\n1 U\n3\n7/0 p. 124| 41"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "b710f7d652cf3afd138af471608c2e27f68691241ff76f64b92c4ad87856cbcc",
+    "createdAt" : null,
+    "ordinal" : 13
+  }, {
+    "id" : "89d2b799-8a57-510d-94da-3009e58b4b89",
+    "groupId" : "3f8ad57b-a83d-5527-99e8-a51dc8f861e0",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_W2",
+    "version" : 1,
+    "prompt" : "You should spend about 40 minutes on this task. 4 Write about the followina topic: D 4 In their advertising; businesses nowadays usually emphasise that their products are new In some way: Whv is this? Do vou think it is a positive or neqative development? Give reasons for your answer and include any relevant examples from your own knowledge or experience. Write at least 250 words. 7 L 0 p. 134 | 53 1 I L",
+    "interactionType" : "WRITING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "free_text",
+      "minimumWords" : 250,
+      "recommendedMinutes" : 40
+    },
+    "construct" : "writing_task",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "e544430e94662f2548adfc5756bb6aaf23be1ce26b3fcb0a8c2602c4a1f6d7dc",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "b4c0ba1d-74d4-5afb-a9bb-e4d9e7524b64",
+    "groupId" : "f406c7a3-1543-5cb2-8061-9cdca4e84d44",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_S2_T1",
+    "version" : 1,
+    "prompt" : "Describe a review you read about a product or service. You should say: where you read the review what the product or service was what information the review gave about the product or service and explain what you did as a result of reading this review:",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "64964e31a1be416f35b923976e1607657f9360cd9a30beacd7bc6301c9fbc5c0",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "5a0978a8-b8a4-5b22-84fb-e4aaf6d7afe8",
+    "groupId" : "166263a7-36a3-5fce-ad57-ec2342c85506",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_S3_T1",
+    "version" : 1,
+    "prompt" : "What kinds of things do people write online reviews about in your country?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "f13a7008e175a139502d7ac3c494f9fe7a0526b53092fc8240ddc87a0a822512",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "b1d07fbd-0631-52cc-a404-7f818cd089cb",
+    "groupId" : "166263a7-36a3-5fce-ad57-ec2342c85506",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_S3_T2",
+    "version" : 1,
+    "prompt" : "Why do some people write online reviews?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "04f693e89d97f721243f695af0c7657533bed7377574c441ca8f98cc79f0a2fd",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "9c6c6d66-0768-5659-9366-bfe853b6ec29",
+    "groupId" : "166263a7-36a3-5fce-ad57-ec2342c85506",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_S3_T3",
+    "version" : 1,
+    "prompt" : "Do you think that online reviews are good for both shoppers and companies?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "20261d006eb2cfb322cab09eb07e47fc75314abef152a63f81d5e194a1c2c629",
+    "createdAt" : null,
+    "ordinal" : 3
+  }, {
+    "id" : "a8a469da-1458-53f0-a676-46bf45793657",
+    "groupId" : "166263a7-36a3-5fce-ad57-ec2342c85506",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_S3_T4",
+    "version" : 1,
+    "prompt" : "What do you think it might be like to work in a customer service job?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "53f2957329ff52aa3c02f45c3487883896420fdcd77fa1e9028159c940b9c870",
+    "createdAt" : null,
+    "ordinal" : 4
+  }, {
+    "id" : "ac644831-8bae-5f28-a7d6-628769fd44e5",
+    "groupId" : "166263a7-36a3-5fce-ad57-ec2342c85506",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_S3_T5",
+    "version" : 1,
+    "prompt" : "Do you agree that customers are more likely to complain nowadays?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "3faaac65819ad6f9fcf4e5b3d890e9d9fea192559a848d17e3bc81fd18fdb504",
+    "createdAt" : null,
+    "ordinal" : 5
+  }, {
+    "id" : "d8d5c03e-7458-5c77-858c-c2e9a44215a3",
+    "groupId" : "166263a7-36a3-5fce-ad57-ec2342c85506",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_16_T2_S3_T6",
+    "version" : 1,
+    "prompt" : "How important is it for companies to take all customer complaints seriously?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "contentHash" : "673ef9ca71ad1ed0738c332012985718d5fd743399a95a662ebc5034b8d0c14f",
+    "createdAt" : null,
+    "ordinal" : 6
+  } ],
+  "answerSpecs" : [ {
+    "id" : "bfc22f1c-03ca-5364-b8ea-9d484a15b754",
+    "itemId" : "f77d3d56-839a-5a5e-bb7c-ef7f9fc41da4",
+    "acceptedAnswers" : {
+      "values" : [ "B" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "8cc64c77-0d91-5a61-bb28-f563e7c66a17",
+    "itemId" : "8aff763c-8ac5-584e-9d19-f97966ff8dc3",
+    "acceptedAnswers" : {
+      "values" : [ "A" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "def50b4c-d8e4-56ae-b46c-02f9d2c2931e",
+    "itemId" : "17957ecf-13e7-5f0d-aea9-7e716e4706d2",
+    "acceptedAnswers" : {
+      "values" : [ "C" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "e0e3f1a4-bd08-5e1f-a1e8-c175cf4346d6",
+    "itemId" : "130f76f9-c7ed-5748-9eec-c34849629172",
+    "acceptedAnswers" : {
+      "values" : [ "C" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "ce13afd5-0b60-57da-aa11-ec0e85f6dc88",
+    "itemId" : "b597f7e8-af2a-58f7-bbd0-eebfe069ec39",
+    "acceptedAnswers" : {
+      "values" : [ "history" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "56beeb0e-c13f-5cde-9773-a52e3a174f68",
+    "itemId" : "0fe87b10-6f34-53f6-b2c0-ca9c7d8d7947",
+    "acceptedAnswers" : {
+      "values" : [ "paper" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "f34ab038-5a96-50e9-8e58-e4d6c5ba4084",
+    "itemId" : "0497bbc7-5161-5fa3-9bcd-b394c56f36f9",
+    "acceptedAnswers" : {
+      "values" : [ "humans", "people" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "108fef16-4761-5bde-8dfe-eb8e74bc543e",
+    "itemId" : "575c7f00-2679-5ace-a60e-ca7a8cf739a9",
+    "acceptedAnswers" : {
+      "values" : [ "stress" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "945715c8-2ea3-5c92-b8d2-605b0c7d17b2",
+    "itemId" : "38cddea7-aab5-5b86-8303-09ad547c2527",
+    "acceptedAnswers" : {
+      "values" : [ "graph" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "03ba0dac-4a16-57c6-a038-1006e3795a19",
+    "itemId" : "da202f4b-2e05-5eb0-9c6d-2b37e316174d",
+    "acceptedAnswers" : {
+      "values" : [ "evaluate" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "ddbd5471-68fb-53b4-be66-6e19d4877636",
+    "itemId" : "ee28d1d1-d834-5be9-9efc-0d77dc5b4b61",
+    "acceptedAnswers" : {
+      "values" : [ "creativity" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "bd7780a3-d2ba-5664-9ad9-f33522149c3f",
+    "itemId" : "422a2742-c04f-5ece-abda-7b69fc70ca4a",
+    "acceptedAnswers" : {
+      "values" : [ "therapy" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "783494c1-aa58-51b9-b8bb-3b9574b7a738",
+    "itemId" : "25502bb3-f1a7-51e5-970a-e940b17582af",
+    "acceptedAnswers" : {
+      "values" : [ "fitness" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "0ef89b7d-0862-5f98-9b94-9ab7d1eb700b",
+    "itemId" : "88bd14b7-cc18-513d-92ab-fc0176cfa483",
+    "acceptedAnswers" : {
+      "values" : [ "balance" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "99347492-e0c0-5c62-a868-40a1611731a2",
+    "itemId" : "d8175cd5-b381-5bfd-87d5-17737ef392ea",
+    "acceptedAnswers" : {
+      "values" : [ "brain" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "16ee823c-f651-57c4-96b2-fb2f357ecc5d",
+    "itemId" : "90277b03-8893-5651-8693-eb49ec8f62b1",
+    "acceptedAnswers" : {
+      "values" : [ "motivation" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "55c9ce8e-b4b9-5b77-940c-772832e7d9c8",
+    "itemId" : "a828755e-cbe3-5144-9ac3-52cabc616dce",
+    "acceptedAnswers" : {
+      "values" : [ "isolation" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "d131c4fd-cc90-5fe1-b858-5a214bf6a38f",
+    "itemId" : "a9444672-69c4-5a30-8aa7-7419302a1c95",
+    "acceptedAnswers" : {
+      "values" : [ "calories" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "c0964f91-50de-58fb-b8dc-5085b960f9d0",
+    "itemId" : "0e91dacd-ce98-5fba-8e35-ac9a6c58418d",
+    "acceptedAnswers" : {
+      "values" : [ "obesity" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "07207dd4-c5ed-5426-8776-731f3591249a",
+    "itemId" : "ad7cb30f-3d8a-5991-bd50-8e802e7324f3",
+    "acceptedAnswers" : {
+      "values" : [ "habit" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "3d3046d6-d9de-5f25-b01c-c58157a3d422",
+    "itemId" : "bb067bb7-c10d-57e7-b154-b33571edba82",
+    "acceptedAnswers" : {
+      "values" : [ "TRUE" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "434afed8-f47a-513d-a98d-14ac733ee08e",
+    "itemId" : "911b18eb-6f5b-5215-908d-4260af22e5e6",
+    "acceptedAnswers" : {
+      "values" : [ "NOT GIVEN" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "ecb46765-c0bc-521b-9104-d9804db72176",
+    "itemId" : "705feeca-37e3-52be-bf31-1315b5176277",
+    "acceptedAnswers" : {
+      "values" : [ "TRUE" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "9502ffba-0c55-5d85-93ba-e387e06ee443",
+    "itemId" : "afaad007-4eaf-58ce-85b6-6a1f5574d28a",
+    "acceptedAnswers" : {
+      "values" : [ "FALSE" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "8061289d-07ec-5f49-9a9e-5e3d3b4efe61",
+    "itemId" : "d208ee65-e655-55f4-97b9-c587796f55da",
+    "acceptedAnswers" : {
+      "values" : [ "FALSE" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "392f05ae-3d2a-59e5-8460-6bef66667986",
+    "itemId" : "e332ce05-d8ca-59a7-9adb-2473aee7eb14",
+    "acceptedAnswers" : {
+      "values" : [ "TRUE" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "9c121dc5-2d1a-50ad-97e9-cd46999c5840",
+    "itemId" : "d3639baa-7bba-5c02-86c4-6427ca6fe6e5",
+    "acceptedAnswers" : {
+      "values" : [ "TRUE" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "4afc1567-b3a4-5c7e-859a-e4fc8ae75714",
+    "itemId" : "04dad190-ec81-5c0e-838e-dc7adfefcd55",
+    "acceptedAnswers" : {
+      "values" : [ "NOT GIVEN" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "06a95c98-a798-551f-acec-a03eb8705a72",
+    "itemId" : "20f3b09c-caa5-58aa-8e36-089a01f68b1d",
+    "acceptedAnswers" : {
+      "values" : [ "Ridgeway" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "7e424708-1ba0-5943-a899-3aca39c8da59",
+    "itemId" : "6a71a601-34d3-54ac-a3a0-4f9f8a47aa56",
+    "acceptedAnswers" : {
+      "values" : [ "documents" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "6c931fcb-65ce-592c-8b54-13ac9e60f0bf",
+    "itemId" : "7b99fdb8-bce3-5e5d-870c-25e5e373b952",
+    "acceptedAnswers" : {
+      "values" : [ "soil" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "9f471cf0-4024-53a7-8ec4-dd53383a9e5c",
+    "itemId" : "a668d163-f742-5581-9ad5-4d82d60a0742",
+    "acceptedAnswers" : {
+      "values" : [ "fertility" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "e18be44e-61c7-5134-9e9c-9e46c7644822",
+    "itemId" : "deaeb910-74fe-5320-878c-f8cc07d330fd",
+    "acceptedAnswers" : {
+      "values" : [ "Rhiannon" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "cccb98a8-0a5f-5638-a742-8ec4eca859c7",
+    "itemId" : "89d2b799-8a57-510d-94da-3009e58b4b89",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "minimumWords" : 250
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-WRITING-TEXT-V1",
+      "preserveParagraphs" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "createdAt" : null
+  }, {
+    "id" : "cacb52bc-4718-5a4d-bf3e-0150df86eb1a",
+    "itemId" : "b4c0ba1d-74d4-5afb-a9bb-e4d9e7524b64",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "207e99b7-81da-50a2-bab5-cafce2c04623",
+    "itemId" : "5a0978a8-b8a4-5b22-84fb-e4aaf6d7afe8",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "38f7cfdd-c2f8-5dca-9e67-7412fa8703c6",
+    "itemId" : "b1d07fbd-0631-52cc-a404-7f818cd089cb",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "1ad4dafb-dc19-5748-af55-a31b3f07afec",
+    "itemId" : "9c6c6d66-0768-5659-9366-bfe853b6ec29",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "9b089d37-7cc2-5eb1-b97c-682de37f9987",
+    "itemId" : "a8a469da-1458-53f0-a676-46bf45793657",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "d982e66b-04dc-56f4-8f80-f54726dc5228",
+    "itemId" : "ac644831-8bae-5f28-a7d6-628769fd44e5",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "f1f5c4f9-d5c8-5c14-8b96-5d9b1d06b0f0",
+    "itemId" : "d8d5c03e-7458-5c77-858c-c2e9a44215a3",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  } ],
+  "assets" : [ {
+    "id" : "1b9abddd-c405-5bf1-80eb-d445aa3cee4b",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "objectKey" : "extracted/audio/119323ef90bc5dfe08dc304478cca032011aca44080391b8608ec05778a4c451.wav",
+    "versionId" : "1",
+    "sha256Hash" : "119323ef90bc5dfe08dc304478cca032011aca44080391b8608ec05778a4c451",
+    "mimeType" : "audio/wav",
+    "byteSize" : 3333478,
+    "durationMs" : 416679,
+    "dimensions" : null,
+    "validationState" : "VALIDATED",
+    "createdAt" : null
+  }, {
+    "id" : "7316db59-b5fa-527c-b40f-ab03d461cfcf",
+    "provenanceId" : "0188a79c-8537-51ee-92a3-bf7ff5c3a416",
+    "objectKey" : "extracted/audio/a015001c21ceca0a729035d21528b73be647083287412e93ae79e1c42f5d38ee.wav",
+    "versionId" : "1",
+    "sha256Hash" : "a015001c21ceca0a729035d21528b73be647083287412e93ae79e1c42f5d38ee",
+    "mimeType" : "audio/wav",
+    "byteSize" : 4210356,
+    "durationMs" : 526289,
+    "dimensions" : null,
+    "validationState" : "VALIDATED",
+    "createdAt" : null
+  } ],
+  "stimulusAssets" : [ {
+    "id" : "9d746ce2-7c8d-5dfa-9f8f-8235a64f94c4",
+    "stimulusId" : "a7123cbd-5659-5462-bfa1-d962244136b4",
+    "assetId" : "1b9abddd-c405-5bf1-80eb-d445aa3cee4b",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "0c1814ad-410d-5221-b21c-a3305ef35a55",
+    "stimulusId" : "ebe91100-bc1a-5a9a-b1f2-e0aaec8e710e",
+    "assetId" : "7316db59-b5fa-527c-b40f-ab03d461cfcf",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  } ]
+}

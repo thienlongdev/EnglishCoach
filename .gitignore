@@ -1,0 +1,154 @@
+# ==============================================================================
+# English Coach — Strict Source-Only .gitignore Policy
+# All root-level exclusions are anchored with `/` so nested Java/TS/Python
+# packages (e.g. com/englishcoach/content/, resources/data/) are NEVER ignored.
+# ==============================================================================
+
+# --- Dependencies & Build Outputs ---
+node_modules/
+.next/
+/frontend/out/
+/frontend/build/
+/frontend/dist/
+coverage/
+*.tsbuildinfo
+/backend/target/
+*.class
+*.jar
+*.war
+.mvn/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+/tools/echo-discover/.lighthouseci/
+
+# --- IDE & OS Files ---
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# --- Internal Coding-Agent Workspaces & Artifacts (Never Publish) ---
+/.claude/
+/.codex/
+/.cursor/
+/.gemini/
+/.agents/
+/.agent/
+/.windsurf/
+.aider*
+AGENTS.md
+CLAUDE.md
+CODEX.md
+CODEX_HANDOFF.md
+GEMINI.md
+/docs/AGENTS.md
+/docs/AGENTS_CODEX.md
+/frontend/AGENTS.md
+/frontend/CLAUDE.md
+
+# --- Environment Secrets, Private Keys & Certificates ---
+.env
+.env.*
+*.env
+!.env.example
+!.env.production.example
+!deploy/env.production.example
+!ai-service/.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.crt
+*.csr
+
+# --- Databases, Dumps, Archives & Local Runtime Storage ---
+/volumes/
+/db_data/
+*.sql
+!backend/src/main/resources/db/migration/**/*.sql
+!backend/src/test/resources/**/*.sql
+!backend/scripts/**/*.sql
+*.dump
+*.tar
+*.tar.*
+*.zip
+*.7z
+*.rar
+*.db-shm
+*.db-wal
+/storage/
+/backend/storage/
+/frontend/public/storage/
+
+# External lexical database & AI model index (kept locally; provisioned per docs/operations/external-resources.md)
+/backend/src/main/resources/lexical/dictionary_en_vi.db
+/ai-service/app/services/pronunciation/ecsm/data/hubert_knn_reference_index.npz
+
+# --- External AI Models, Datasets, Exam Corpora & Live GPU Bind Mounts ---
+/audit_artifacts/
+/real_mic_acceptance_pack/
+/english-coach-models/
+/imports/
+/content/
+/data/
+/frontend/src/lib/echo-life/v3/progression/data/*
+!/frontend/src/lib/echo-life/v3/progression/data/runtime-catalog.json
+/ai-service/scripts/calibration_data/
+/ai-service/scripts/calibration_corpora/
+/ai-service/scripts/calibration_checkpoints/
+/ai-service/scripts/calibration_outputs/
+/ai-service/scripts/real_browser_cases/
+/ai-service/scripts/*_results.json
+/ai-service/scripts/local_spike_single_output.json
+/backend/scripts/translation_paragraph/data/
+
+# Large model weights, 3D authoring sources & raw media recordings
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.gguf
+*.blend
+*.blend1
+*.blend2
+*.webm
+*.mp4
+*.mov
+*.avi
+*.wav
+*.mp3
+*.ogg
+*.flac
+
+# Large local static media / offline ONNX models (kept locally; excluded from Git)
+/frontend/public/vendor/listening-translator/**/*.bin
+/frontend/public/assets/odyssey/
+/frontend/public/speaking/arena/
+/frontend/public/assets/flashcards/
+
+# Local offline exam test fixtures & temporary workspaces
+/docs/exams-production-verification/
+/tmp/
+/scratch/
+/scratch_*.ps1
+*.log
+/backend/output.txt
+/frontend/build-log.txt
+/backend_tail*.txt
+/backend_logs.txt
+/recent_backend_logs.txt
+/infra/docker/backend_error*.txt
+/infra/docker/backend_error*.log

@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s192-copper-twins",
+  "title": "Hai chiếc lá đồng",
+  "summary": "Mộc đánh bóng chỉ một mặt của hai lá đồng. Bản thuyết minh nháp lại ghi rằng cô chỉ đánh bóng một chiếc lá.",
+  "level": "B2",
+  "topics": [
+    "focus-adverbs",
+    "passive-use"
+  ],
+  "scene": "university",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mộc",
+      "role": "Sinh viên thiết kế"
+    },
+    {
+      "id": "b",
+      "name": "Teo",
+      "role": "Người phụ trách xưởng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Hai lá đều sáng ở mặt trước, cả hai mặt sau vẫn xỉn. Khách phải biết lật cả hai để thấy dấu tay của thợ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Both leaves carry my thumbprint on the back.",
+          "vi": "Mặt sau cả hai lá đều có dấu tay tôi."
+        },
+        {
+          "who": "b",
+          "en": "Tell them exactly where the polish went.",
+          "vi": "Nói rõ phần nào đã được đánh bóng đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Đặt only làm nổi bật bề mặt chứ không giảm số lá.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Only the fronts of the two leaves were polished.",
+            "note": "Only đặt trước the fronts, hai lá vẫn đủ. Bị động nhấn bề mặt được xử lý.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Only one of the two leaves was polished.",
+            "note": "Only one giới hạn số lá nhận việc đánh bóng. Nó mâu thuẫn với hai mặt trước đều sáng.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Teo treo lá trên hai sợi dây, chúng xoay lúc sáng lúc tối theo bước khách. Dấu tay hiện ra giữa hai nhịp lóe.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Now the light shows people where to look.",
+          "vi": "Giờ ánh sáng chỉ cho khách biết nhìn vào đâu."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Mộc đặt tên tác phẩm là Hai mặt của một buổi làm việc.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Mộc đưa cả hai lá ra nắng rồi tự gạch chữ one. Hai người mời khách chạm mặt sau để thấy dấu tay nổi nhẹ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The rough side told the other half.",
+          "vi": "Mặt nhám kể nửa còn lại."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Cuộc trưng bày có thêm một cách xem bằng đầu ngón tay.",
+      "end": true
+    }
+  ]
+}

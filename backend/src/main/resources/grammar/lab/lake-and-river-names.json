@@ -1,0 +1,40 @@
+{
+  "id": "lake-and-river-names",
+  "title": "Tên hồ và tên sông trên bản đồ",
+  "summary": "Bạn ghi chú hai chặng khảo sát tại Anh. Đổi loại tên địa lý và xem khi nào tên riêng thường đi cùng the.",
+  "level": "B2",
+  "topics": [
+    "articles-with-names-and-places"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Địa danh",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Hồ có Lake"
+        },
+        {
+          "id": "v2",
+          "label": "Tên sông"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "We sampled water from Lake Windermere.",
+      "vi": "Chúng tôi lấy mẫu nước từ hồ Windermere.",
+      "note": "Trong tên Lake Windermere, Lake đứng trước tên riêng và thường không có the. / Names beginning with Lake usually lack the.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "We sampled water from the Thames.",
+      "vi": "Chúng tôi lấy mẫu nước sông Thames.",
+      "note": "The Thames là cách gọi tên sông trong câu. Không thể bỏ mạo từ chỉ vì Thames là tên riêng. / River names normally take the in running prose.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,397 @@
+/* Landing page "Echo's Ocean" — atmosphere and entrance choreography.
+   Everything here animates transform / opacity only (compositor work) and stops under prefers-reduced-motion. */
+
+/* ── Atmosphere: one fixed layer behind the WebGL ocean and the content ── */
+.atmosphere {
+  --ocean-depth: 0;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: #04143a;
+}
+
+.deep {
+  position: absolute;
+  inset: 0;
+  /* Sunlit open water: clear blue under the surface, deepening to rich ocean blue (never muddy black). */
+  background:
+    radial-gradient(90% 60% at 78% -8%, rgba(56, 170, 255, 0.45), transparent 70%),
+    linear-gradient(180deg, #0b4aa6 0%, #0a3d8f 18%, #072f75 40%, #05235b 66%, #041a46 100%);
+}
+
+.surface {
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  top: -12%;
+  height: 85%;
+  background:
+    radial-gradient(55% 50% at 62% 0%, rgba(125, 211, 252, 0.28), rgba(56, 130, 246, 0.1) 48%, transparent 78%),
+    radial-gradient(30% 26% at 78% 0%, rgba(224, 242, 254, 0.18), transparent 70%);
+  opacity: calc(1 - var(--ocean-depth) * 2.4);
+}
+
+.rays {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -18%;
+  height: 112%;
+  opacity: calc(0.95 - var(--ocean-depth) * 3.2);
+  mix-blend-mode: screen;
+  transition: opacity 1.2s ease;
+}
+
+/* Once the WebGL water paints its own animated shafts, the CSS shafts (the no-WebGL water) step aside. */
+:global([data-ocean-live='1']) .rays {
+  opacity: 0;
+}
+
+.rays > span {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transform-origin: 50% 0;
+  background: radial-gradient(50% 100% at 50% 0%, rgba(186, 230, 253, 0.13), rgba(125, 211, 252, 0.04) 55%, transparent 78%);
+  animation: sway var(--dur, 18s) ease-in-out infinite alternate;
+  animation-delay: var(--delay, 0s);
+  will-change: transform, opacity;
+}
+
+.rays > span:nth-child(1) { left: 8%; width: 13vw; --r: 16deg; --dur: 19s; }
+.rays > span:nth-child(2) { left: 26%; width: 8vw; --r: 9deg; --dur: 15s; --delay: -6s; }
+.rays > span:nth-child(3) { left: 44%; width: 16vw; --r: 3deg; --dur: 22s; --delay: -3s; }
+.rays > span:nth-child(4) { left: 63%; width: 9vw; --r: -7deg; --dur: 17s; --delay: -9s; }
+.rays > span:nth-child(5) { left: 78%; width: 14vw; --r: -14deg; --dur: 21s; --delay: -12s; }
+
+@keyframes sway {
+  from { transform: rotate(var(--r)) translateX(-1.5vw); opacity: 0.55; }
+  to { transform: rotate(calc(var(--r) + 4deg)) translateX(1.5vw); opacity: 1; }
+}
+
+.glow {
+  position: absolute;
+  border-radius: 9999px;
+  will-change: transform;
+  animation: drift var(--dur, 34s) ease-in-out infinite alternate;
+}
+
+.glowCyan {
+  composes: glow;
+  width: 46vmax;
+  height: 46vmax;
+  left: -16vmax;
+  top: 32vh;
+  background: radial-gradient(closest-side, rgba(6, 182, 212, 0.13), transparent);
+  --dur: 31s;
+}
+
+.glowIndigo {
+  composes: glow;
+  width: 52vmax;
+  height: 52vmax;
+  right: -18vmax;
+  top: -12vmax;
+  background: radial-gradient(closest-side, rgba(79, 70, 229, 0.18), transparent);
+  --dur: 37s;
+}
+
+.glowViolet {
+  composes: glow;
+  width: 40vmax;
+  height: 40vmax;
+  right: 12vw;
+  bottom: -20vmax;
+  background: radial-gradient(closest-side, rgba(147, 51, 234, 0.13), transparent);
+  --dur: 29s;
+}
+
+@keyframes drift {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(4vw, -3vh, 0) scale(1.08); }
+}
+
+.abyss {
+  position: absolute;
+  inset: 0;
+  /* Descending: richer, darker indigo-blue — mysterious, never black. */
+  background: linear-gradient(180deg, rgba(4, 14, 52, 0.2), rgba(5, 10, 44, 0.7));
+  opacity: calc(var(--ocean-depth) * 0.8);
+}
+
+.dawn {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(70% 45% at 50% 105%, rgba(124, 58, 237, 0.3), transparent 70%),
+    radial-gradient(40% 30% at 50% 100%, rgba(34, 211, 238, 0.2), transparent 70%);
+  opacity: clamp(0, calc((var(--ocean-depth) - 0.62) * 3), 1);
+}
+
+/* ── Ocean glass: the interface surfaces of the living ocean ──
+   Three tiers share one material: light enters from the surface (top-left sheen), the edge catches aqua light at
+   the top and violet at the bottom, and the body takes the colour of the water behind it. Blur stays at 12 px
+   (the Phase 1 cost); the extra layers are gradients on pseudo-elements (paint once, no filters). */
+.oceanGlass,
+.oceanGlassRadiant {
+  position: relative;
+  isolation: isolate;
+  border: 1px solid rgba(165, 220, 255, 0.1);
+  -webkit-backdrop-filter: blur(12px) saturate(135%);
+  backdrop-filter: blur(12px) saturate(135%);
+}
+
+.oceanGlass {
+  background:
+    radial-gradient(120% 80% at 0% 0%, rgba(125, 211, 252, 0.13), transparent 55%),
+    linear-gradient(160deg, rgba(37, 112, 214, 0.2) 0%, rgba(13, 52, 128, 0.32) 42%, rgba(6, 28, 78, 0.5) 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(214, 240, 255, 0.2),
+    inset 0 -40px 60px -50px rgba(56, 189, 248, 0.35),
+    0 30px 70px -32px rgba(1, 10, 40, 0.75);
+}
+
+.oceanGlassRadiant {
+  background:
+    radial-gradient(90% 70% at 85% 0%, rgba(125, 211, 252, 0.24), transparent 60%),
+    radial-gradient(80% 70% at 10% 100%, rgba(167, 139, 250, 0.22), transparent 60%),
+    linear-gradient(135deg, rgba(67, 56, 202, 0.42) 0%, rgba(37, 99, 235, 0.3) 50%, rgba(14, 116, 144, 0.32) 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(224, 242, 254, 0.3),
+    0 0 80px -20px rgba(56, 189, 248, 0.35),
+    0 34px 80px -34px rgba(2, 8, 40, 0.8);
+}
+
+/* Edge light: a 1 px gradient ring (aqua at the top-left fading, violet at the bottom-right). */
+.oceanGlass::before,
+.oceanGlassRadiant::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(165, 243, 252, 0.55), rgba(165, 243, 252, 0.06) 32%, rgba(129, 140, 248, 0.05) 68%, rgba(167, 139, 250, 0.4));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.oceanGlassRadiant::before {
+  background: linear-gradient(135deg, rgba(165, 243, 252, 0.75), rgba(165, 243, 252, 0.1) 40%, rgba(196, 181, 253, 0.12) 60%, rgba(196, 181, 253, 0.6));
+}
+
+/* Inner demo surfaces: deeper marine glass, opaque enough for small text, never black. */
+.oceanInset {
+  background: linear-gradient(180deg, rgba(8, 30, 78, 0.84) 0%, rgba(4, 18, 52, 0.9) 100%);
+  border: 1px solid rgba(125, 211, 252, 0.16) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(186, 230, 253, 0.12),
+    0 18px 40px -22px rgba(1, 8, 32, 0.8);
+}
+
+/* The reef's base dissolves into the water below instead of ending on the section's edge. */
+.reefFade {
+  -webkit-mask-image: linear-gradient(180deg, #000 72%, transparent 100%);
+  mask-image: linear-gradient(180deg, #000 72%, transparent 100%);
+}
+
+/* ── Readability: a soft pool of deeper water behind the hero copy ── */
+.readPool {
+  position: absolute;
+  left: 50%;
+  bottom: 4%;
+  width: min(1100px, 100%);
+  height: 78%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  background: radial-gradient(50% 50% at 50% 55%, rgba(3, 16, 52, 0.5), rgba(3, 16, 52, 0.18) 55%, transparent 75%);
+}
+
+/* ── Reef ── */
+.reefGrass > path {
+  animation: grass 6s ease-in-out infinite alternate;
+}
+
+@keyframes grass {
+  from { transform: rotate(-4deg); }
+  to { transform: rotate(5deg); }
+}
+
+.reefPolyp {
+  animation: polyp 3.6s ease-in-out infinite alternate;
+}
+
+@keyframes polyp {
+  from { opacity: 0.35; }
+  to { opacity: 1; }
+}
+
+/* ── Hero headline: Quicksand, like every other text of the product ──
+   Every span inside (both lines and the gradient "bứt phá") inherits it, so the title stays one composition. */
+.heroTitle {
+  /* Quicksand, the product's one typeface (owner brief 2026-10-31; replaced the former hero face). Its heaviest drawn weight is 700. */
+  font-family: var(--font-quicksand), system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.15rem, min(6.4vw, 10.5vh), 6rem);
+  line-height: 1.12;
+  letter-spacing: -0.018em;
+  word-spacing: 0.04em;
+  font-kerning: normal;
+  font-feature-settings: 'kern', 'liga';
+  /* Depth against the water. A filter (not text-shadow) is drawn after each line's reveal mask, so it is never cut into
+     a box, and it never shows through the transparent glyphs of the gradient words. */
+  filter: drop-shadow(0 2px 22px rgba(3, 7, 22, 0.5));
+}
+
+/* ── Hero entrance ── */
+.line {
+  display: block;
+  overflow: hidden;
+  /* Room for Vietnamese stacked diacritics above and descenders below while the line is masked. */
+  padding: 0.1em 0.04em 0.14em;
+  margin: -0.1em -0.04em -0.14em;
+}
+
+.lineInner {
+  display: inline-block;
+  animation: rise 1.05s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: var(--d, 0ms);
+}
+
+@keyframes rise {
+  from { transform: translate3d(0, 112%, 0) rotate(2deg); }
+  to { transform: none; }
+}
+
+.fadeUp {
+  animation: fadeUp 0.95s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: var(--d, 0ms);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translate3d(0, 16px, 0); }
+  to { opacity: 1; transform: none; }
+}
+
+/*
+ * Light passing through water (owner brief 2026-10-31): the real, selectable heading text is painted by a slow periodic gradient. No copy of the glyphs. The picture repeats
+ * exactly every 200 % of the box, so the loop has no seam; it steps ~15 times a second, because the colour moves far slower than the eye can tell apart and each step repaints the
+ * title under its drop shadow. Every stop stays light enough for the deep water behind it (`readPool`); no flashing, no rainbow. Off screen it stops; under reduced motion it holds still.
+ */
+.flow,
+.shimmer {
+  background-size: 200% 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: flowLight 26s steps(390) infinite;
+  animation-delay: 0ms;
+}
+.flow {
+  background-image: linear-gradient(100deg, #ffffff 0%, #e6f8ff 12%, #a9ecff 24%, #dbe4ff 36%, #ffffff 50%, #f7dcf0 62%, #d4dcff 74%, #b8f1ff 87%, #ffffff 100%);
+  background-position: var(--flow-from, 0%) 50%;
+}
+.shimmer {
+  background-image: linear-gradient(100deg, #7deeff 0%, #c7d2fe 26%, #f4b4dc 50%, #c7d2fe 74%, #7deeff 100%);
+  background-position: -60% 50%;
+  animation-duration: 18s;
+  animation-timing-function: steps(270);
+}
+.heroTitle[data-flowing='0'] .flow,
+.heroTitle[data-flowing='0'] .shimmer { animation-play-state: paused; }
+.flow::selection,
+.shimmer::selection { -webkit-text-fill-color: #fff; color: #fff; }
+
+@keyframes flowLight {
+  from { background-position-x: var(--flow-from, 0%); }
+  to { background-position-x: calc(var(--flow-from, 0%) - 200%); }
+}
+
+@media (forced-colors: active) {
+  .flow,
+  .shimmer {
+    background-image: none;
+    color: CanvasText;
+    -webkit-text-fill-color: CanvasText;
+  }
+}
+
+.cue {
+  position: relative;
+  display: block;
+  width: 1px;
+  height: 44px;
+  overflow: hidden;
+  background: rgba(148, 163, 184, 0.18);
+}
+
+.cue::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 18px;
+  background: linear-gradient(180deg, transparent, rgba(103, 232, 249, 0.9));
+  animation: cue 2.4s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+@keyframes cue {
+  from { transform: translateY(-18px); }
+  to { transform: translateY(44px); }
+}
+
+.pulseDot {
+  animation: pulseDot 2.6s ease-in-out infinite;
+}
+
+@keyframes pulseDot {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(103, 232, 249, 0.55); }
+  50% { box-shadow: 0 0 0 6px rgba(103, 232, 249, 0); }
+}
+
+.floatSlow {
+  animation: floatSlow 7s ease-in-out infinite alternate;
+}
+
+@keyframes floatSlow {
+  from { transform: translate3d(0, 0, 0) rotate(-2deg); }
+  to { transform: translate3d(0, -12px, 0) rotate(2deg); }
+}
+
+/* Echo's standby still arrives softly (EchoStandby); it is never shown on a healthy connection. */
+.standbyIn {
+  animation: standbyIn 700ms ease-out both;
+}
+
+@keyframes standbyIn {
+  from { opacity: 0; transform: translate3d(0, 10px, 0); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rays > span,
+  .glow,
+  .glowCyan,
+  .glowIndigo,
+  .glowViolet,
+  .lineInner,
+  .fadeUp,
+  .flow,
+  .shimmer,
+  .cue::after,
+  .pulseDot,
+  .floatSlow,
+  .standbyIn,
+  .reefGrass > path,
+  .reefPolyp {
+    animation: none;
+  }
+}

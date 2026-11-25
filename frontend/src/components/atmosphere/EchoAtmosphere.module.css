@@ -1,0 +1,120 @@
+/*
+ * Echo Ocean atmosphere (EchoAtmosphere.tsx): the workspace frame's default look. Fixed, z 0, before the wallpaper stage in the
+ * DOM (so any chosen background covers it), `pointer-events: none`, `contain: strict`. The plate is a CSS background (first
+ * paint, no script); the light layers animate transform / opacity only (compositor), and only while EchoAtmosphere mounts them.
+ * The file names arrive as custom properties from atmosphereArt.ts (one source: the publish script). Explicit `.dark` only (§Y).
+ */
+.atmosphere {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  contain: strict;
+}
+
+.plate {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(var(--surface));
+  background-image: var(--eo-plate-pearl);
+  background-size: cover;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+:global(.dark) .plate { background-image: var(--eo-plate-abyss); }
+@media (max-width: 900px) {
+  .plate { background-image: var(--eo-plate-pearl-s); }
+  :global(.dark) .plate { background-image: var(--eo-plate-abyss-s); }
+}
+/* Grain: dithers the soft gradients the codec would otherwise leave in steps; a static tile, painted once. */
+.plate::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--eo-grain);
+  background-size: 64px 64px;
+  opacity: 0.012;
+}
+:global(.dark) .plate::after { opacity: 0.016; }
+
+/* ── Light: caustics at the top of the frame + breathing shafts. Quieter screens dim it (--eo-calm 0…1). ───────────────── */
+.light {
+  position: absolute;
+  inset: 0;
+  opacity: calc(1 - var(--eo-calm, 0) * 0.5);
+  transition: opacity 1.4s ease;
+  animation: eoAppear 1.6s ease-out; /* no fill: the opacity below stays free for the fade-out transition */
+}
+@keyframes eoAppear { from { opacity: 0; } }
+
+.shafts {
+  position: absolute;
+  top: -8%;
+  left: 30%;
+  right: -6%;
+  height: 76%;
+  background: var(--eo-shafts-pearl) 50% 0% / 100% 100% no-repeat;
+  transform-origin: 78% -18%;
+  /* ~10 updates a second (steps): the drift is a few pixels a second, so each step is sub-pixel and looks continuous, while the
+     compositor redraws this full-screen layer 10 times a second instead of 60 (large layers = full-frame damage). */
+  animation: eoBreathe 23s steps(230) infinite alternate;
+  will-change: transform, opacity;
+}
+:global(.dark) .shafts { background-image: var(--eo-shafts-abyss); }
+
+.caustics {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 32%;
+  overflow: hidden;
+  opacity: 0.42;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, rgb(0 0 0 / 0.5) 42%, transparent 100%);
+  mask-image: linear-gradient(180deg, #000 0%, rgb(0 0 0 / 0.5) 42%, transparent 100%);
+}
+:global(.dark) .caustics { opacity: 0.15; }
+/* two webs at two scales drifting apart: where they cross, the light concentrates the way caustics do */
+.caustics::before,
+.caustics::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(100% + 320px);
+  height: calc(100% + 320px);
+  background: var(--eo-caustic-pearl) 0 0 / 320px 320px repeat;
+  animation: eoDriftA 64s steps(640) infinite;
+  will-change: transform;
+}
+.caustics::after {
+  width: calc(100% + 448px);
+  height: calc(100% + 448px);
+  background-size: 448px 448px;
+  opacity: 0.55;
+  animation: eoDriftB 97s steps(970) infinite;
+}
+:global(.dark) .caustics::before,
+:global(.dark) .caustics::after { background-image: var(--eo-caustic-abyss); }
+
+@keyframes eoBreathe {
+  from { opacity: 0.6; transform: rotate(-1.3deg) scale(1); }
+  to { opacity: 1; transform: rotate(1.5deg) scale(1.03); }
+}
+@keyframes eoDriftA { to { transform: translate3d(-320px, -320px, 0); } }
+@keyframes eoDriftB { from { transform: translate3d(-448px, 0, 0); } to { transform: translate3d(0, -448px, 0); } }
+
+/* Library and lesson screens, typing: the light fades out and stops (opacity 0 = the compositor does not draw the layers). */
+.light[data-still] { opacity: 0; }
+.light[data-still] .shafts,
+.light[data-still] .caustics::before,
+.light[data-still] .caustics::after { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: reduce) {
+  .light, .shafts, .caustics::before, .caustics::after { animation: none; }
+}
+@media (forced-colors: active) {
+  .atmosphere { display: none; }
+}

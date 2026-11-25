@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s155-desk-at-thirteen",
+  "title": "Bàn làm việc ở tầng mười ba",
+  "summary": "Tòa nhà có mười hai tầng nhưng Vân nhận được chìa khóa đề số 13. Bà từng làm việc ở đây để lại hai bản chỉ dẫn có dấu phẩy khác nhau.",
+  "level": "B2",
+  "topics": [
+    "relative-clauses-non-defining"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vân",
+      "role": "Kiến trúc sư trẻ"
+    },
+    {
+      "id": "b",
+      "name": "Ena",
+      "role": "Người trông thang máy"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Ena mở tủ hồ sơ có mười ba ngăn. Sáu chiếc chìa trong đó có chấm đỏ, những chiếc khác không có. Chỉ nhóm chấm đỏ mới mở được các ngăn kéo trên bàn của bà.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I spent all morning looking for a floor.",
+          "vi": "Cháu đã mất cả buổi sáng tìm một tầng nhà."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Look at the keys instead. Some have red dots and some don't.",
+          "vi": "Thử nhìn các chìa khóa xem. Một số có chấm đỏ, một số thì không."
+        }
+      ],
+      "choice": {
+        "prompt": "Vân chép chỉ dẫn chỉ đúng nhóm chìa có dấu, để Ena giữ các chìa khác cho tòa nhà.",
+        "options": [
+          {
+            "t": "The keys that have red dots open the desk drawers.",
+            "note": "Mệnh đề xác định that have red dots thu hẹp nhóm chìa. Chỉ những chìa thuộc nhóm này mới được mô tả là mở ngăn bàn.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "The keys, which have red dots, open the desk drawers.",
+            "note": "Nếu the keys đang chỉ toàn bộ chùm như ở đây, hai dấu phẩy khiến thông tin chấm đỏ trở thành lời bổ sung về cả nhóm. Trong chùm thật chỉ một số chìa có dấu.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Ena đưa Vân chiếc có chấm đỏ và số 13. Nó mở một ngăn kéo hẹp giấu trong cạnh bàn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Your floor was inside a desk.",
+          "vi": "Cái tầng cháu tìm nằm ngay trong chiếc bàn."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Ena thử chìa không chấm. Nó vừa ổ khóa thang máy chứ không vừa ngăn kéo. Vân giữ lại riêng chiếc đỏ số 13.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Try the mark, not just the number.",
+          "vi": "Cháu tìm theo dấu nữa, đừng chỉ nhìn số."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Trong ngăn kéo là bản vẽ một khu vườn trên mái chưa kịp xây. Trên bản vẽ bà viết bằng tay Tầng mười ba. Vân đem hai cái ghế xếp lên mái, bắt đầu từ đó.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Two chairs are enough for the first day.",
+          "vi": "Ngày đầu có hai chiếc ghế là đủ."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

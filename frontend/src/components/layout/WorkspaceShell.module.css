@@ -1,0 +1,1041 @@
+/*
+ * Workspace shell (authenticated app chrome): sidebar + top bar. Owner brief 2026-10-15.
+ * One small token set, light by default and redefined under the explicit `.dark` class the theme toggle writes
+ * (never under the OS media query: the shell must follow the learner's chosen theme exactly like `dark:` utilities).
+ * Brand bridge with the landing: deep-ocean navy for the active / brand moments, sapphire → cyan accents, restrained violet.
+ */
+.tokens {
+  --ws-panel: #ffffff;
+  --ws-panel-2: #f6f8fc;
+  --ws-line: #e4e9f2;
+  --ws-line-strong: #d3dbea;
+  --ws-text: #26324d;
+  --ws-text-strong: #0b1a38;
+  --ws-muted: #66728c;
+  --ws-faint: #8f9ab0;
+  --ws-hover: #eef3fb;
+  --ws-ink: #0d2a5e;
+  --ws-ink-2: #1656b8;
+  --ws-glow: #22d3ee;
+  --ws-focus: #2563eb;
+  --ws-bar: rgb(255 255 255 / 0.82);
+  --ws-chip: #f3f6fb;
+  /* Hình nền on: the bar becomes tinted glass over the wallpaper (the rail uses --sb-fill-wp; see the end of this file). */
+  --ws-wp-bar: rgb(255 255 255 / 0.7);
+  /* Echo Glass top bar: the floating panel and the raised glass objects on it (2026-10-22) */
+  --tb-panel: radial-gradient(55% 160% at 88% -10%, rgb(186 210 255 / 0.42), rgb(186 210 255 / 0) 62%), radial-gradient(45% 150% at 6% 110%, rgb(196 236 255 / 0.5), rgb(196 236 255 / 0) 60%), linear-gradient(180deg, rgb(255 255 255 / 0.9), rgb(242 246 255 / 0.84));
+  --tb-panel-wp: radial-gradient(55% 160% at 88% -10%, rgb(186 210 255 / 0.42), rgb(186 210 255 / 0) 62%), linear-gradient(180deg, rgb(255 255 255 / 0.93), rgb(242 246 255 / 0.9));
+  --tb-panel-shadow: 0 1px 2px rgb(16 32 84 / 0.06), 0 14px 32px -20px rgb(30 64 160 / 0.42), inset 0 1px 0 rgb(255 255 255 / 0.95), inset 0 -1px 0 rgb(30 52 130 / 0.06);
+  --tb-panel-rim: linear-gradient(172deg, #ffffff, rgb(255 255 255 / 0.25) 42%, rgb(160 185 240 / 0.65));
+  --gx-fill: linear-gradient(180deg, #ffffff 0%, #f5f8ff 52%, #e7eefc 100%);
+  --gx-sheen: radial-gradient(120% 85% at 50% -28%, rgb(255 255 255 / 0.95), rgb(255 255 255 / 0) 60%);
+  --gx-rim: linear-gradient(165deg, #ffffff, rgb(255 255 255 / 0.32) 38%, rgb(146 172 232 / 0.75));
+  --gx-shadow: 0 1px 1px rgb(16 32 84 / 0.1), 0 6px 14px -7px rgb(24 52 140 / 0.3), 0 14px 26px -18px rgb(56 110 255 / 0.42), inset 0 1px 0 #ffffff, inset 0 -2px 3px rgb(30 52 130 / 0.08);
+  --gx-shadow-hover: 0 1px 1px rgb(16 32 84 / 0.1), 0 10px 20px -8px rgb(24 52 140 / 0.34), 0 22px 36px -18px rgb(56 110 255 / 0.52), inset 0 1px 0 #ffffff, inset 0 -2px 3px rgb(30 52 130 / 0.08);
+  --gx-shadow-press: 0 0.5px 1px rgb(16 32 84 / 0.14), 0 3px 8px -5px rgb(24 52 140 / 0.3), inset 0 1px 3px rgb(30 52 130 / 0.16), inset 0 -1px 0 rgb(255 255 255 / 0.85);
+  --gx-well: linear-gradient(180deg, #e3ebfc, #f6f9ff);
+  --gx-well-shadow: inset 0 1px 2px rgb(30 52 130 / 0.18), inset 0 -1px 0 #ffffff;
+  --gx-band: rgb(255 255 255 / 0.85);
+  --gx-lens: radial-gradient(120% 120% at 30% 15%, #ffffff 0%, #dbe8ff 45%, #9cc0ff 100%);
+  --gx-lens-shadow: 0 3px 8px -3px rgb(37 99 235 / 0.55), inset 0 1px 0 #ffffff, inset 0 -2px 3px rgb(37 99 235 / 0.25);
+  /* Sidebar — Echo OceanFlow glass, pearl edition (light). */
+  --sb-fill: radial-gradient(130% 40% at 0% 0%, rgb(186 230 253 / 0.6), transparent 62%), radial-gradient(120% 38% at 100% 100%, rgb(221 214 254 / 0.6), transparent 64%), radial-gradient(70% 26% at 100% 48%, rgb(165 243 252 / 0.22), transparent 70%), linear-gradient(180deg, #ffffff 0%, #f5f9ff 46%, #edf3fe 100%);
+  --sb-fill-wp: radial-gradient(130% 40% at 0% 0%, rgb(186 230 253 / 0.55), transparent 62%), radial-gradient(120% 38% at 100% 100%, rgb(221 214 254 / 0.55), transparent 64%), linear-gradient(180deg, rgb(255 255 255 / 0.93) 0%, rgb(245 249 255 / 0.91) 46%, rgb(237 243 254 / 0.9) 100%);
+  --sb-rim: linear-gradient(165deg, #ffffff 0%, rgb(147 197 253 / 0.8) 26%, rgb(196 181 253 / 0.55) 62%, rgb(125 211 252 / 0.85) 100%);
+  --sb-shadow: inset 0 1px 0 #ffffff, 0 24px 46px -28px rgb(29 78 160 / 0.5), 0 2px 8px -3px rgb(29 78 160 / 0.14);
+  --sb-bubble: rgb(96 165 250 / 0.35);
+  --sb-text: #2a3654;
+  --sb-strong: #0b1f4d;
+  --sb-section: #6f82ad;
+  --sb-line: rgb(96 140 220 / 0.38);
+  --sb-hover: rgb(59 130 246 / 0.08);
+  --sb-gap: #f3f8ff;
+  --sb-cap: linear-gradient(100deg, #1a55d4 0%, #2a7cf0 50%, #22b2ea 100%);
+  --sb-cap-shadow: inset 0 1px 0 rgb(255 255 255 / 0.6), inset 0 -1px 0 rgb(12 40 110 / 0.32), inset 0 0 0 1px rgb(255 255 255 / 0.22), 0 10px 22px -12px rgb(29 92 220 / 0.8), 0 0 22px -9px rgb(56 189 248 / 0.6);
+  --sb-current: linear-gradient(95deg, rgb(59 130 246 / 0.13) 0%, rgb(14 165 233 / 0.1) 55%, rgb(139 92 246 / 0.11) 100%);
+  --sb-current-edge: inset 0 0 0 1px rgb(96 165 250 / 0.5), inset 0 1px 0 rgb(255 255 255 / 0.95), 0 8px 20px -10px rgb(37 99 235 / 0.42), 0 0 26px -12px rgb(56 189 248 / 0.6);
+  --sb-glint: radial-gradient(closest-side, rgb(255 255 255 / 0.95), rgb(186 230 253 / 0.55) 48%, transparent);
+  --sb-glint-blend: normal;
+  --sb-wake: linear-gradient(180deg, rgb(96 165 250 / 0), rgb(96 165 250 / 0.2) 50%, rgb(96 165 250 / 0));
+  --sb-caustic: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='48' viewBox='0 0 120 48'%3E%3Cg fill='none' stroke='%232563eb' stroke-linecap='round'%3E%3Cpath d='M0 30C10 22 20 22 30 30S50 38 60 30S80 22 90 30S110 38 120 30' stroke-opacity='.32' stroke-width='1.3'/%3E%3Cpath d='M0 12C10 8 20 8 30 12S50 16 60 12S80 8 90 12S110 16 120 12' stroke-opacity='.2'/%3E%3Cpath d='M0 40C7 37 13 37 20 40S33 43 40 40S53 37 60 40S73 43 80 40S93 37 100 40S113 43 120 40' stroke-opacity='.16'/%3E%3C/g%3E%3C/svg%3E");
+  --sb-glass: linear-gradient(140deg, rgb(255 255 255 / 0.85), rgb(255 255 255 / 0.5) 60%, rgb(219 234 254 / 0.7));
+  --sb-glass-edge: inset 0 0 0 1px rgb(148 179 230 / 0.5), inset 0 1px 0 #ffffff, 0 8px 18px -14px rgb(29 78 160 / 0.5);
+  --sb-glow: rgb(56 189 248 / 0.45);
+  --sb-dock: linear-gradient(135deg, rgb(237 233 254 / 0.92), rgb(224 242 254 / 0.85));
+  --sb-dock-edge: inset 0 0 0 1px rgb(167 139 250 / 0.38), inset 0 1px 0 #ffffff, 0 10px 22px -18px rgb(91 33 182 / 0.45);
+  --sb-well: 0.12;
+  --sb-well-hi: 0.9;
+  --sb-well-edge: 0.24;
+  --og-home-1: #22d3ee; --og-home-2: #1d4ed8;
+  --og-path-1: #06b6d4; --og-path-2: #7c3aed;
+  --og-cosmos-1: #8b5cf6; --og-cosmos-2: #1e40af;
+  --og-cards-1: #818cf8; --og-cards-2: #4338ca;
+  --og-grammar-1: #d946ef; --og-grammar-2: #7e22ce;
+  --og-games-1: #a78bfa; --og-games-2: #6d28d9;
+  --og-reading-1: #2dd4bf; --og-reading-2: #047857;
+  --og-listening-1: #fbbf24; --og-listening-2: #c2410c;
+  --og-speaking-1: #fb7185; --og-speaking-2: #be185d;
+  --og-writing-1: #2dd4bf; --og-writing-2: #0f766e;
+  --og-exams-1: #60a5fa; --og-exams-2: #4338ca;
+  --og-rank-1: #facc15; --og-rank-2: #b45309;
+  --og-community-1: #c084fc; --og-community-2: #7e22ce;
+  --og-bell-1: #38bdf8; --og-bell-2: #1d4ed8;
+  --og-admin-1: #fbbf24; --og-admin-2: #b45309;
+  --og-security-1: #34d399; --og-security-2: #047857;
+  --og-music-1: #8b5cf6; --og-music-2: #0891b2;
+  --og-wallpaper-1: #e879f9; --og-wallpaper-2: #7e22ce;
+  --og-space-1: #818cf8; --og-space-2: #0ea5e9;
+}
+:global(.dark) .tokens {
+  --ws-panel: #0c1530;
+  --ws-panel-2: #08101f;
+  --ws-line: rgb(255 255 255 / 0.07);
+  --ws-line-strong: rgb(255 255 255 / 0.12);
+  --ws-text: #b9c5dc;
+  --ws-text-strong: #f1f5fd;
+  --ws-muted: #8d9bb8;
+  --ws-faint: #6c7a97;
+  --ws-hover: rgb(255 255 255 / 0.06);
+  --ws-ink: #1e40af;
+  --ws-ink-2: #0369a1;
+  --ws-glow: #67e8f9;
+  --ws-focus: #7dd3fc;
+  --ws-bar: rgb(9 14 28 / 0.78);
+  --ws-chip: rgb(255 255 255 / 0.05);
+  --ws-wp-bar: rgb(6 11 24 / 0.6);
+  --tb-panel: radial-gradient(55% 160% at 88% -10%, rgb(80 110 230 / 0.26), rgb(80 110 230 / 0) 62%), radial-gradient(45% 150% at 6% 110%, rgb(34 211 238 / 0.12), rgb(34 211 238 / 0) 60%), linear-gradient(180deg, rgb(20 30 66 / 0.94), rgb(10 16 38 / 0.92));
+  --tb-panel-wp: radial-gradient(55% 160% at 88% -10%, rgb(80 110 230 / 0.26), rgb(80 110 230 / 0) 62%), linear-gradient(180deg, rgb(18 27 60 / 0.95), rgb(9 14 34 / 0.94));
+  --tb-panel-shadow: 0 1px 2px rgb(0 0 0 / 0.5), 0 18px 36px -20px rgb(0 0 0 / 0.85), inset 0 1px 0 rgb(255 255 255 / 0.1), inset 0 -1px 0 rgb(0 0 0 / 0.4);
+  --tb-panel-rim: linear-gradient(172deg, rgb(180 205 255 / 0.45), rgb(255 255 255 / 0.04) 42%, rgb(125 211 252 / 0.32));
+  --gx-fill: linear-gradient(180deg, #2b3b74 0%, #1a2553 52%, #11193d 100%);
+  --gx-sheen: radial-gradient(120% 85% at 50% -28%, rgb(190 215 255 / 0.34), rgb(190 215 255 / 0) 62%);
+  --gx-rim: linear-gradient(165deg, rgb(200 222 255 / 0.62), rgb(255 255 255 / 0.06) 40%, rgb(125 211 252 / 0.42));
+  --gx-shadow: 0 1px 2px rgb(0 0 0 / 0.5), 0 8px 18px -8px rgb(0 0 0 / 0.72), 0 14px 26px -18px rgb(56 140 255 / 0.46), inset 0 1px 0 rgb(255 255 255 / 0.2), inset 0 -2px 4px rgb(0 0 0 / 0.36);
+  --gx-shadow-hover: 0 1px 2px rgb(0 0 0 / 0.5), 0 12px 22px -8px rgb(0 0 0 / 0.75), 0 20px 34px -16px rgb(56 140 255 / 0.6), inset 0 1px 0 rgb(255 255 255 / 0.24), inset 0 -2px 4px rgb(0 0 0 / 0.36);
+  --gx-shadow-press: 0 1px 1px rgb(0 0 0 / 0.5), 0 3px 8px -5px rgb(0 0 0 / 0.6), inset 0 1px 3px rgb(0 0 0 / 0.45), inset 0 -1px 0 rgb(255 255 255 / 0.1);
+  --gx-well: linear-gradient(180deg, rgb(8 12 32 / 0.7), rgb(30 42 86 / 0.55));
+  --gx-well-shadow: inset 0 1px 3px rgb(0 0 0 / 0.55), inset 0 -1px 0 rgb(255 255 255 / 0.1);
+  --gx-band: rgb(200 225 255 / 0.55);
+  --gx-lens: radial-gradient(120% 120% at 30% 15%, #bfe3ff 0%, #4f86f0 48%, #1d3a96 100%);
+  --gx-lens-shadow: 0 3px 10px -3px rgb(56 140 255 / 0.7), inset 0 1px 0 rgb(255 255 255 / 0.55), inset 0 -2px 3px rgb(6 14 50 / 0.45);
+  /* Sidebar — Echo OceanFlow glass, deep-ocean edition (dark). */
+  --sb-fill: radial-gradient(140% 38% at 0% 0%, rgb(56 189 248 / 0.18), transparent 60%), radial-gradient(130% 40% at 100% 100%, rgb(139 92 246 / 0.22), transparent 62%), radial-gradient(80% 28% at 100% 46%, rgb(34 211 238 / 0.07), transparent 70%), linear-gradient(180deg, #0c1a3d 0%, #081330 50%, #060e26 100%);
+  --sb-fill-wp: radial-gradient(140% 38% at 0% 0%, rgb(56 189 248 / 0.16), transparent 60%), radial-gradient(130% 40% at 100% 100%, rgb(139 92 246 / 0.2), transparent 62%), linear-gradient(180deg, rgb(12 26 61 / 0.93) 0%, rgb(8 19 48 / 0.92) 50%, rgb(6 14 38 / 0.91) 100%);
+  --sb-rim: linear-gradient(165deg, rgb(186 230 253 / 0.62) 0%, rgb(96 165 250 / 0.14) 24%, rgb(139 92 246 / 0.14) 62%, rgb(103 232 249 / 0.52) 100%);
+  --sb-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08), 0 24px 48px -24px rgb(1 4 16 / 0.92), 0 0 34px -18px rgb(56 189 248 / 0.4);
+  --sb-bubble: rgb(165 243 252 / 0.45);
+  --sb-text: #bccbe6;
+  --sb-strong: #f2f7ff;
+  --sb-section: #7088bb;
+  --sb-line: rgb(125 211 252 / 0.26);
+  --sb-hover: rgb(125 211 252 / 0.08);
+  --sb-gap: #0a1637;
+  --sb-cap: linear-gradient(100deg, #0f3a8c 0%, #1763d4 48%, #1aa2dd 100%);
+  --sb-cap-shadow: inset 0 1px 0 rgb(255 255 255 / 0.4), inset 0 -1px 0 rgb(2 10 40 / 0.55), inset 0 0 0 1px rgb(147 197 253 / 0.34), 0 10px 24px -12px rgb(14 100 230 / 0.9), 0 0 26px -6px rgb(56 189 248 / 0.5);
+  --sb-current: linear-gradient(95deg, rgb(37 99 235 / 0.22) 0%, rgb(14 165 233 / 0.16) 50%, rgb(124 58 237 / 0.2) 100%);
+  --sb-current-edge: inset 0 0 0 1px rgb(125 211 252 / 0.34), inset 0 1px 0 rgb(255 255 255 / 0.18), 0 0 22px -6px rgb(56 189 248 / 0.5), 0 0 40px -14px rgb(129 140 248 / 0.6);
+  --sb-glint: radial-gradient(closest-side, rgb(224 252 255 / 0.62), rgb(56 189 248 / 0.24) 52%, transparent);
+  --sb-glint-blend: screen;
+  --sb-wake: linear-gradient(180deg, rgb(56 189 248 / 0), rgb(56 189 248 / 0.22) 50%, rgb(56 189 248 / 0));
+  --sb-caustic: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='48' viewBox='0 0 120 48'%3E%3Cg fill='none' stroke='white' stroke-linecap='round'%3E%3Cpath d='M0 30C10 22 20 22 30 30S50 38 60 30S80 22 90 30S110 38 120 30' stroke-opacity='.4' stroke-width='1.3'/%3E%3Cpath d='M0 12C10 8 20 8 30 12S50 16 60 12S80 8 90 12S110 16 120 12' stroke-opacity='.24'/%3E%3Cpath d='M0 40C7 37 13 37 20 40S33 43 40 40S53 37 60 40S73 43 80 40S93 37 100 40S113 43 120 40' stroke-opacity='.2'/%3E%3C/g%3E%3C/svg%3E");
+  --sb-glass: linear-gradient(140deg, rgb(255 255 255 / 0.09), rgb(255 255 255 / 0.025) 55%, rgb(56 189 248 / 0.08));
+  --sb-glass-edge: inset 0 0 0 1px rgb(125 211 252 / 0.18), inset 0 1px 0 rgb(255 255 255 / 0.1), 0 12px 24px -18px rgb(0 0 0 / 0.85);
+  --sb-glow: rgb(56 189 248 / 0.55);
+  --sb-dock: linear-gradient(135deg, rgb(139 92 246 / 0.17), rgb(34 211 238 / 0.08) 75%);
+  --sb-dock-edge: inset 0 0 0 1px rgb(196 181 253 / 0.22), inset 0 1px 0 rgb(255 255 255 / 0.08), 0 12px 24px -18px rgb(0 0 0 / 0.8);
+  --sb-well: 0.2;
+  --sb-well-hi: 0.16;
+  --sb-well-edge: 0.2;
+  --og-home-1: #a5f3fc; --og-home-2: #3b82f6;
+  --og-path-1: #67e8f9; --og-path-2: #a78bfa;
+  --og-cosmos-1: #ddd6fe; --og-cosmos-2: #60a5fa;
+  --og-cards-1: #c7d2fe; --og-cards-2: #6366f1;
+  --og-grammar-1: #f5d0fe; --og-grammar-2: #c026d3;
+  --og-games-1: #e9d5ff; --og-games-2: #8b5cf6;
+  --og-reading-1: #99f6e4; --og-reading-2: #10b981;
+  --og-listening-1: #fde68a; --og-listening-2: #f59e0b;
+  --og-speaking-1: #fecdd3; --og-speaking-2: #ec4899;
+  --og-writing-1: #a7f3d0; --og-writing-2: #14b8a6;
+  --og-exams-1: #bfdbfe; --og-exams-2: #6366f1;
+  --og-rank-1: #fef08a; --og-rank-2: #f59e0b;
+  --og-community-1: #f5d0fe; --og-community-2: #a855f7;
+  --og-bell-1: #bae6fd; --og-bell-2: #3b82f6;
+  --og-admin-1: #fde68a; --og-admin-2: #f59e0b;
+  --og-security-1: #a7f3d0; --og-security-2: #10b981;
+  --og-music-1: #ddd6fe; --og-music-2: #22d3ee;
+  --og-wallpaper-1: #fbcfe8; --og-wallpaper-2: #c084fc;
+  --og-space-1: #c7d2fe; --og-space-2: #7dd3fc;
+}
+
+/* ─── Sidebar: Echo OceanFlow glass (owner brief 2026-10-22) ───────────────────
+ * A floating panel of deep-ocean crystal (pearl glass in light mode). Glass = a layered gradient fill + a masked specular rim +
+ * inner highlights + soft elevation, never a backdrop blur (it would blur the wallpaper, 10 §AF). The one living part is the
+ * current (OceanCurrent.tsx): water light that follows a fine pointer between entries and settles. Everything else rests,
+ * except the slow breath of the active capsule. Accent tokens built from an element's own tone are declared ON that element.
+ */
+.rail { position: relative; height: 100%; flex-shrink: 0; }
+.panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 1rem);
+  margin: 0.5rem 0.375rem;
+  border-radius: 1.6rem;
+  color: var(--sb-text);
+  background: var(--sb-fill);
+  box-shadow: var(--sb-shadow);
+  transition: width 300ms cubic-bezier(.2, .8, .2, 1);
+}
+.panelRail { border-radius: 1.4rem; }
+/* specular rim: a 1px gradient ring (masked), brightest at the top-left and along the lower right edge */
+.panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: var(--sb-rim);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  pointer-events: none;
+}
+/* two still bubbles caught in the glass beside the brand, and a soft refraction along the lower right edge (decoration only) */
+.panel::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at calc(100% - 5px) 34%, transparent 2.6px, var(--sb-bubble) 3.2px, transparent 4.4px),
+    radial-gradient(circle at calc(100% - 9px) 36.5%, transparent 1.5px, var(--sb-bubble) 2.1px, transparent 3.2px),
+    linear-gradient(90deg, transparent calc(100% - 10px), rgb(125 211 252 / 0.07)) no-repeat 0 55% / 100% 40%;
+}
+.panel > * { position: relative; z-index: 1; }
+
+.brandRow { height: 4rem; display: flex; align-items: center; flex-shrink: 0; }
+.brandRow::after {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--sb-line), transparent);
+}
+.brandMark {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.95rem;
+  background: radial-gradient(120% 120% at 28% 16%, #3b82f6 0%, #123a8a 46%, #071a42 100%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.42), inset 0 -3px 8px rgb(2 6 23 / 0.45), 0 0 0 1px rgb(125 211 252 / 0.42), 0 8px 20px -8px rgb(34 211 238 / 0.65);
+  flex-shrink: 0;
+}
+.brandMark::after {
+  content: '';
+  position: absolute;
+  inset: 2px 4px auto;
+  height: 45%;
+  border-radius: 0.8rem 0.8rem 1rem 1rem;
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.26), transparent);
+  pointer-events: none;
+}
+.brandText { animation: wsLabelIn 300ms cubic-bezier(.2, .8, .2, 1) both; }
+.brandName { font-weight: 800; letter-spacing: -0.02em; color: var(--sb-strong); font-size: 0.98rem; line-height: 1.2; }
+.brandAccent { background: linear-gradient(90deg, #0e7490, #2563eb); -webkit-background-clip: text; background-clip: text; color: transparent; }
+:global(.dark) .brandAccent { background-image: linear-gradient(90deg, #67e8f9, #93c5fd); }
+.brandTagline { color: var(--sb-section); font-size: 0.72rem; font-weight: 500; }
+.iconButton {
+  display: inline-grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.8rem;
+  color: var(--sb-text);
+  background: var(--sb-glass);
+  box-shadow: var(--sb-glass-edge);
+  outline: none;
+  transition: color 160ms, box-shadow 220ms, transform 160ms;
+}
+.iconButton:hover { color: var(--sb-strong); box-shadow: var(--sb-glass-edge), 0 0 18px -4px var(--sb-glow); }
+.iconButton:active { transform: scale(0.95); }
+.iconButton:focus-visible { box-shadow: var(--sb-glass-edge), 0 0 0 2px var(--sb-gap), 0 0 0 4px var(--ws-focus); }
+
+/* The entries are a flex column inside the one scrolling region: when they do not fit, every entry first gives up a
+   little height (42 → 34 px, 44 → 36 px on the rail) and only content that still does not fit scrolls — so a window a
+   few pixels short never shows a scrollbar, and a really short one still reaches every entry. */
+.nav { position: relative; display: flex; flex-direction: column; flex: 1 1 auto; min-height: 0; padding: 0 0.625rem; }
+/* top / bottom breathing room is flexible too: it gives way before any entry does */
+.nav::before, .nav::after { content: ''; flex: 0 1.5 1.1rem; min-height: 2px; }
+.nav::after { flex-basis: 1rem; }
+.nav .item { flex-shrink: 1; min-height: 2rem; }
+.nav .itemCollapsed { min-height: 2.25rem; }
+.nav .sectionLabel { flex-shrink: 0; }
+/* the space between groups is the divider's own (shrinkable) height, never a fixed margin: margins cannot give way, and
+   with the 16-entry administrator rail they alone pushed the entries into a scroll at common laptop heights */
+.nav .divider { flex: 0 1.5 calc(1.5rem + 1px); height: calc(1.5rem + 1px); min-height: 0.5rem; margin: 0 0.4rem;
+  background: linear-gradient(90deg, transparent, var(--sb-line), transparent) center / 100% 1px no-repeat; }
+.nav.navOpen .divider { flex-basis: 0.95rem; height: 0.95rem; min-height: 0; margin: 0; background: none; }
+.navRail { padding: 0 0.5rem; scrollbar-width: none; }
+.navRail::-webkit-scrollbar { display: none; }
+/* the collapsed rail scrolls: its tooltips sit at screen coordinates (--tip-x / --tip-y, written on hover / focus) */
+.navRail .tip { position: fixed; left: var(--tip-x, -999px); top: var(--tip-y, -999px); }
+.navRail .item:active { transform: none; } /* a transformed entry would become its fixed tooltip's frame */
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0 0.6rem;
+  margin: 0.2rem 0 0.4rem;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sb-section);
+  user-select: none;
+  animation: wsLabelIn 300ms cubic-bezier(.2, .8, .2, 1) both;
+}
+.sectionLabel::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, var(--sb-line), transparent); }
+.divider { height: 1px; margin: 0.75rem 0.4rem; background: linear-gradient(90deg, transparent, var(--sb-line), transparent); }
+
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 0.95rem;
+  color: var(--sb-text);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  transition: color 180ms, background 220ms, box-shadow 220ms, transform 180ms;
+  user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.item + .item { margin-top: 0.125rem; }
+.itemExpanded { gap: 0.7rem; width: 100%; height: 2.625rem; padding: 0 0.75rem 0 0.375rem; }
+.itemCollapsed { justify-content: center; width: 2.75rem; height: 2.75rem; margin-left: auto; margin-right: auto; }
+.item:hover { background: var(--sb-hover); color: var(--sb-strong); }
+/* With the current running, the water itself is the hover light. */
+[data-ocean] .item:hover { background: transparent; }
+.item:active { transform: scale(0.985); }
+.item:focus-visible { box-shadow: 0 0 0 2px var(--sb-gap), 0 0 0 4px var(--ws-focus); }
+.item[aria-disabled="true"] { opacity: 0.6; }
+.label { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; animation: wsLabelIn 280ms cubic-bezier(.2, .8, .2, 1) both; }
+@keyframes wsLabelIn { from { opacity: 0; transform: translate3d(-6px, 0, 0); } }
+/* touch: a finger has no hover, so the press itself lights the glass */
+@media (hover: none) {
+  .item:active:not(.itemActive) { background: var(--sb-hover); box-shadow: inset 0 0 0 1px var(--sb-line), 0 0 18px -8px var(--sb-glow); }
+}
+/* collapsed rail: the destination that is loading (the expanded rail shows a spinner instead) */
+.pendingRing {
+  position: absolute;
+  inset: -3px;
+  border-radius: 1.1rem;
+  border: 2px solid transparent;
+  border-top-color: var(--ws-glow);
+  border-right-color: var(--ws-glow);
+  animation: wsSpin 0.8s linear infinite;
+  pointer-events: none;
+}
+@keyframes wsSpin { to { transform: rotate(360deg); } }
+.skeleton { background: var(--ws-line-strong); animation: wsPulse 1.4s ease-in-out infinite; }
+@keyframes wsPulse { 50% { opacity: 0.55; } }
+
+/* The active entry: a living capsule of lit glass. The light flows in once when it arrives, then only breathes. */
+.itemActive,
+.itemActive:hover,
+[data-ocean] .itemActive:hover {
+  color: #ffffff;
+  font-weight: 600;
+  background: var(--sb-cap);
+  box-shadow: var(--sb-cap-shadow);
+  isolation: isolate;
+}
+.itemActive:hover { box-shadow: var(--sb-cap-shadow), 0 0 30px -6px var(--sb-glow); }
+.itemActive::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(100deg, transparent 25%, rgb(255 255 255 / 0.55) 46%, rgb(165 243 252 / 0.4) 54%, transparent 75%) no-repeat;
+  background-size: 240% 100%;
+  animation: wsInflow 1s cubic-bezier(.2, .8, .2, 1) both;
+}
+@keyframes wsInflow { from { background-position: 135% 0; opacity: 1; } to { background-position: -35% 0; opacity: 0; } }
+.itemActive::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(90% 130% at 14% -12%, rgb(255 255 255 / 0.36), transparent 58%),
+    radial-gradient(55% 120% at 94% 125%, rgb(103 232 249 / 0.4), transparent 62%);
+  animation: wsBreathe 6.5s ease-in-out infinite alternate;
+}
+@keyframes wsBreathe { from { opacity: 0.5; } to { opacity: 1; } }
+.itemActive .icon { color: #ffffff !important; }
+/* the pearl at the end of the capsule */
+.activeMark {
+  margin-left: auto;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 999px;
+  flex-shrink: 0;
+  background: radial-gradient(circle at 34% 30%, #ffffff 0 16%, #cffafe 32%, #67e8f9 56%, #0891b2 100%);
+  box-shadow: 0 0 0 2px rgb(255 255 255 / 0.16), 0 0 12px rgb(103 232 249 / 0.9), inset 0 -1px 2px rgb(8 51 68 / 0.5);
+}
+.count {
+  margin-left: auto;
+  min-width: 1.25rem;
+  padding: 0 0.4rem;
+  height: 1.25rem;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(180deg, #fb7185, #e11d48);
+  box-shadow: 0 0 10px -2px rgb(225 29 72 / 0.7), inset 0 1px 0 rgb(255 255 255 / 0.35);
+  font-variant-numeric: tabular-nums;
+}
+.countDot { position: absolute; top: 0.2rem; right: 0.2rem; min-width: 1rem; height: 1rem; padding: 0 0.25rem; font-size: 0.6rem; border-radius: 999px; display: grid; place-items: center; font-weight: 800; color: #fff; background: #e11d48; box-shadow: 0 0 0 2px var(--sb-gap); }
+
+/* ── Sculpted glyphs: a lit glass well in the module's tone, a gradient-stroked icon with a top highlight and a coloured depth ── */
+.glyph {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  flex-shrink: 0;
+  border-radius: 0.7rem;
+  isolation: isolate;
+  background: radial-gradient(120% 120% at 30% 16%, rgb(var(--tone) / calc(var(--sb-well) * 1.5)), rgb(var(--tone) / calc(var(--sb-well) * 0.35)) 62%, transparent 100%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / var(--sb-well-hi)), inset 0 0 0 1px rgb(var(--tone) / var(--sb-well-edge));
+  transition: transform 300ms cubic-bezier(.2, .9, .3, 1.3), box-shadow 220ms;
+}
+.glyph::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  z-index: -1;
+  border-radius: 0.95rem;
+  background: radial-gradient(closest-side, rgb(var(--tone) / 0.5), transparent);
+  opacity: 0;
+  transition: opacity 240ms;
+  pointer-events: none;
+}
+.itemCollapsed .glyph { width: 2rem; height: 2rem; border-radius: 0.75rem; }
+.glyph[data-tone="home"] { --tone: 56 189 248; }
+.glyph[data-tone="path"] { --tone: 96 165 250; }
+.glyph[data-tone="cosmos"] { --tone: 167 139 250; }
+.glyph[data-tone="cards"] { --tone: 129 140 248; }
+.glyph[data-tone="grammar"] { --tone: 232 121 249; }
+.glyph[data-tone="games"] { --tone: 167 139 250; }
+.glyph[data-tone="reading"] { --tone: 45 212 191; }
+.glyph[data-tone="listening"] { --tone: 251 191 36; }
+.glyph[data-tone="speaking"] { --tone: 244 114 182; }
+.glyph[data-tone="writing"] { --tone: 20 184 166; }
+.glyph[data-tone="exams"] { --tone: 147 197 253; }
+.glyph[data-tone="rank"] { --tone: 250 204 21; }
+.glyph[data-tone="community"] { --tone: 192 132 252; }
+.glyph[data-tone="bell"] { --tone: 96 165 250; }
+.glyph[data-tone="admin"] { --tone: 245 158 11; }
+.glyph[data-tone="security"] { --tone: 52 211 153; }
+.glyph[data-tone="music"] { --tone: 167 139 250; }
+.glyph[data-tone="wallpaper"] { --tone: 232 121 249; }
+.glyph[data-tone="space"] { --tone: 129 140 248; }
+.icon { width: 1.12rem; height: 1.12rem; flex-shrink: 0; stroke-width: 2.15; transition: transform 300ms cubic-bezier(.2, .9, .3, 1.3); }
+.glyph .icon { filter: drop-shadow(0 1.5px 1.2px rgb(var(--tone) / 0.4)); }
+:global(.dark) .glyph .icon { filter: drop-shadow(0 -0.5px 0 rgb(255 255 255 / 0.4)) drop-shadow(0 2px 3px rgb(var(--tone) / 0.55)); }
+.item:hover .glyph { transform: translate3d(0, -1px, 0) scale(1.06); box-shadow: inset 0 1px 0 rgb(255 255 255 / var(--sb-well-hi)), inset 0 0 0 1px rgb(var(--tone) / calc(var(--sb-well-edge) * 2)); }
+.item:hover .glyph::after { opacity: 1; }
+.item:active .glyph { transform: translate3d(0, 0, 0) scale(0.96); }
+/* on the capsule the glyph turns to crystal: white stroke, an inner glint, a cyan halo */
+.itemActive .glyph {
+  background: radial-gradient(120% 120% at 30% 16%, rgb(255 255 255 / 0.34), rgb(255 255 255 / 0.08) 60%, transparent 100%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.6), inset 0 0 0 1px rgb(255 255 255 / 0.26);
+}
+.itemActive .glyph .icon,
+:global(.dark) .itemActive .glyph .icon { stroke: #ffffff; filter: drop-shadow(0 0 4px rgb(186 230 253 / 0.9)); }
+.glyphDefs { position: absolute; width: 0; height: 0; overflow: hidden; pointer-events: none; }
+
+/* ── The current: water light under the glass (positioned by OceanCurrent.tsx; it never takes pointer input) ── */
+.current,
+.wake {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-radius: 0.95rem;
+  pointer-events: none;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.current { overflow: hidden; background: var(--sb-current); box-shadow: var(--sb-current-edge); }
+.wake { border-radius: 1.3rem; background: var(--sb-wake); }
+.water,
+.waterBack {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: calc(100% + 120px);
+  background: var(--sb-caustic) repeat-x 0 50% / 120px 100%;
+  animation: wsFlow 6s linear infinite paused;
+}
+.water { opacity: 0.32; }
+.waterBack { opacity: 0.2; animation: wsFlowBack 9.5s linear infinite paused; }
+/* the caustics only flow while the current is on screen (no idle compositor work) */
+[data-ocean-live] > .current > .water,
+[data-ocean-live] > .current > .waterBack { animation-play-state: running; }
+@keyframes wsFlow { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-120px, 0, 0); } }
+@keyframes wsFlowBack { from { transform: translate3d(-120px, 0, 0) scaleY(-1); } to { transform: translate3d(0, 0, 0) scaleY(-1); } }
+.glint { position: absolute; top: -35%; left: -50px; width: 100px; height: 170%; background: var(--sb-glint); mix-blend-mode: var(--sb-glint-blend); }
+.ripple {
+  position: absolute;
+  top: calc(50% - 18px);
+  left: -18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: radial-gradient(closest-side, rgb(255 255 255 / 0.8), rgb(125 211 252 / 0.32) 60%, transparent);
+  opacity: 0;
+}
+
+/* collapsed rail: label as a glass tooltip on hover AND keyboard focus */
+.tip {
+  pointer-events: none;
+  position: absolute;
+  left: calc(100% + 0.85rem);
+  top: 50%;
+  transform: translate(-6px, -50%);
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.7rem;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #eaf4ff;
+  background: linear-gradient(140deg, #12275a, #0a1736);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.14), 0 0 0 1px rgb(125 211 252 / 0.35), 0 12px 26px -10px rgb(2 6 23 / 0.7), 0 0 18px -8px rgb(56 189 248 / 0.6);
+  opacity: 0;
+  transition: opacity 140ms, transform 220ms cubic-bezier(.2, .9, .3, 1.2);
+  z-index: 100;
+}
+.item:hover .tip, .item:focus-visible .tip, .tipHost:hover .tip, .tipHost:focus-visible .tip { opacity: 1; transform: translate(0, -50%); }
+
+/* its entries join the nav's flex column (they shrink with the others); the zone itself draws nothing */
+.adminZone { display: contents; }
+.adminLabel { color: #b7791f; }
+:global(.dark) .adminLabel { color: #d6a24a; }
+
+/* ── Utility dock: Âm nhạc, Giao diện and Không gian học tập share one glass tray ── */
+.personalize {
+  position: relative;
+  flex-shrink: 0;
+  margin: 0.25rem 0.625rem 0.5rem;
+  padding: 0.3rem;
+  border-radius: 1.15rem;
+  background: var(--sb-dock);
+  box-shadow: var(--sb-dock-edge);
+}
+.personalizeRail { margin: 0.25rem 0.25rem 0.5rem; padding: 0.25rem 0; }
+.personalize .itemExpanded { height: 2.5rem; }
+.opensPanel { margin-left: auto; width: 1rem; height: 1rem; flex-shrink: 0; color: var(--sb-section); transition: transform 240ms cubic-bezier(.2, .9, .3, 1.3), color 160ms; }
+.item:hover .opensPanel { transform: translate3d(2px, 0, 0); color: var(--sb-strong); }
+
+/* ── Identity dock ── */
+.userZone { flex-shrink: 0; padding: 0 0.625rem 0.625rem; }
+.userZoneRail { padding: 0 0.25rem 0.5rem; }
+/* shorter windows: the fixed chrome (brand row, nav padding, section labels, utility dock) tightens a little so the
+   entries keep their room; nothing is hidden and no text gets smaller */
+@media (max-height: 1000px) {
+  .brandRow { height: 3.5rem; }
+  .nav::before { flex-basis: 0.7rem; }
+  .nav::after { flex-basis: 0.625rem; }
+  .sectionLabel { margin: 0.2rem 0 0.3rem; }
+  .nav.navOpen .divider { flex-basis: 0.8rem; height: 0.8rem; }
+  .personalize { margin-bottom: 0.4rem; }
+  .personalize .itemExpanded { height: 2.25rem; }
+  .personalize .itemCollapsed { height: 2.5rem; }
+  .userZone { padding-bottom: 0.5rem; }
+}
+.userCard {
+  display: flex;
+  align-items: center;
+  border-radius: 1.1rem;
+  background: var(--sb-glass);
+  box-shadow: var(--sb-glass-edge);
+  transition: box-shadow 220ms;
+}
+.userCard:hover { box-shadow: var(--sb-glass-edge), 0 0 22px -8px var(--sb-glow); }
+.avatarHalo { border-radius: 0.85rem; box-shadow: 0 0 16px -4px var(--sb-glow); }
+.guestMark { color: var(--sb-text); background: var(--sb-glass); box-shadow: var(--sb-glass-edge); }
+.userName { font-size: 0.78rem; font-weight: 600; color: var(--sb-strong); }
+.userMail { font-size: 0.69rem; color: var(--sb-section); }
+.presence { position: absolute; right: -2px; bottom: -2px; width: 0.65rem; height: 0.65rem; border-radius: 999px; background: #10b981; box-shadow: 0 0 0 2px var(--sb-gap), 0 0 8px rgb(16 185 129 / 0.7); }
+.signOut { display: inline-grid; place-items: center; width: 2rem; height: 2rem; border-radius: 0.7rem; color: var(--sb-section); transition: color 150ms, background 150ms, box-shadow 200ms; }
+.signOut:hover { color: #e11d48; background: rgb(244 63 94 / 0.1); box-shadow: inset 0 0 0 1px rgb(244 63 94 / 0.25); }
+.signOut:focus-visible { outline: 2px solid var(--ws-focus); outline-offset: 2px; }
+.signIn { padding: 0.4rem 0.75rem; border-radius: 0.7rem; font-size: 0.75rem; font-weight: 700; color: #fff; background: var(--sb-cap); box-shadow: var(--sb-cap-shadow); }
+
+/* phones: the expanded sidebar is a floating glass drawer over the content; the rail keeps its place in the layout */
+.scrim { display: none; }
+@media (max-width: 767px) {
+  .drawerOpen {
+    position: fixed;
+    top: max(0.5rem, env(safe-area-inset-top));
+    bottom: max(0.5rem, env(safe-area-inset-bottom));
+    left: max(0.375rem, env(safe-area-inset-left));
+    z-index: 70;
+    height: auto;
+    margin: 0;
+    box-shadow: var(--sb-shadow), 24px 0 60px -20px #0b1a3899;
+    animation: wsDrawerIn 280ms cubic-bezier(.2, .8, .2, 1) both;
+  }
+  .scrim { display: block; position: fixed; inset: 0; z-index: 65; background: rgb(8 16 31 / 0.42); backdrop-filter: blur(2px); border: 0; animation: wsFadeIn 220ms ease-out both; }
+  .panel { transition: none; }
+}
+@keyframes wsDrawerIn { from { opacity: 0.4; transform: translate3d(-18px, 0, 0); } }
+@keyframes wsFadeIn { from { opacity: 0; } }
+
+/* ─── Top bar: Echo Glass instrument rail (owner brief 2026-10-22, 10 §AN) ─────────────────────────────────
+ * The header ROW stays 64px (pages size themselves by it). The bar is a floating glass panel drawn inside that row (::before,
+ * rim ::after), and every control group on it is a raised glass object (.raised): layered fill under a top sheen, a masked
+ * specular rim, a bevel and a contact + ambient shadow. Hover lifts it while a light band crosses it; a press compresses it.
+ * No backdrop blur (wallpaper rule 10 §AF): the panel's own fill keeps it readable. */
+.bar {
+  position: relative;
+  isolation: isolate;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0 0.85rem 0 0.75rem;
+}
+.bar::before,
+.bar::after { content: ''; position: absolute; z-index: -1; inset: 6px 8px 2px 4px; border-radius: 1.4rem; pointer-events: none; }
+.bar::before { background: var(--tb-panel); box-shadow: var(--tb-panel-shadow); }
+.bar::after {
+  padding: 1px;
+  background: var(--tb-panel-rim);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+@media (min-width: 640px) { .bar { padding: 0 1.4rem 0 1.25rem; } }
+@media (min-width: 1024px) { .bar { padding: 0 1.6rem 0 1.4rem; } .bar::before, .bar::after { inset: 6px 12px 2px 6px; } }
+.pageTitle { color: var(--ws-text-strong); font-weight: 700; font-size: 1.02rem; letter-spacing: -0.015em; padding-left: 0.25rem; }
+.pageEyebrow { color: var(--ws-faint); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.04em; }
+
+/* The raised glass object. Its light band (::after) sits above the content but only in soft-light, so text keeps its colour. */
+.raised {
+  position: relative;
+  isolation: isolate;
+  background: var(--gx-sheen), var(--gx-fill);
+  box-shadow: var(--gx-shadow);
+  transition: transform 260ms cubic-bezier(.2, .9, .3, 1.25), box-shadow 220ms, filter 200ms, color 150ms;
+}
+.raised::before,
+.raised::after { content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 2; }
+.raised::before {
+  padding: 1px;
+  background: var(--gx-rim);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.raised::after {
+  background: linear-gradient(105deg, transparent 32%, var(--gx-band) 50%, transparent 68%) no-repeat;
+  background-size: 260% 100%;
+  background-position: 135% 0;
+  mix-blend-mode: soft-light;
+  opacity: 0;
+  transition: background-position 760ms cubic-bezier(.3, .7, .2, 1), opacity 300ms;
+}
+.raised:hover::after { background-position: -35% 0; opacity: 1; }
+.lift:hover { transform: translateY(-1px); box-shadow: var(--gx-shadow-hover); }
+.lift:active { transform: translateY(0.5px) scale(0.985); box-shadow: var(--gx-shadow-press); transition-duration: 90ms; }
+
+/* Dictionary: a polished glass capsule with a lit lens and the real Ctrl K shortcut. */
+.search {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  padding: 0 0.45rem 0 0.3rem;
+  color: var(--ws-muted);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+.search:hover { color: var(--ws-text-strong); }
+.searchLens { display: grid; place-items: center; width: 2.1rem; height: 2.1rem; flex-shrink: 0; border-radius: 999px; background: var(--gx-lens); box-shadow: var(--gx-lens-shadow); transition: transform 300ms cubic-bezier(.2, .9, .3, 1.3); }
+.search:hover .searchLens { transform: scale(1.06) rotate(-6deg); }
+.searchIcon { color: #1d4ed8; }
+:global(.dark) .searchIcon { color: #ffffff; }
+.kbd { margin-left: auto; font-family: inherit; align-items: center; gap: 0.15rem; height: 1.55rem; padding: 0 0.5rem; border-radius: 999px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.02em; color: var(--ws-muted); background: var(--gx-well); box-shadow: var(--gx-well-shadow); }
+@media (max-width: 767px) {
+  .search { width: 2.5rem; height: 2.5rem; padding: 0; justify-content: center; }
+  .searchLens { width: 2.5rem; height: 2.5rem; }
+}
+
+/* Utility tray: one raised instrument panel; each control is a well that lights up under the pointer. */
+.tray {
+  display: inline-flex;
+  align-items: center;
+  height: 2.75rem;
+  padding: 0 0.3rem;
+  border-radius: 999px;
+}
+.traySep { width: 1px; height: 1.35rem; margin: 0 0.15rem; background: linear-gradient(180deg, transparent, var(--ws-line-strong), transparent); }
+.trayButton {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  height: 2.15rem;
+  min-width: 2.15rem;
+  padding: 0 0.45rem;
+  border-radius: 999px;
+  color: var(--ws-muted);
+  transition: background 150ms, color 150ms, box-shadow 150ms, transform 260ms cubic-bezier(.2, .9, .3, 1.3);
+}
+.trayButton:hover { background: var(--gx-well); box-shadow: var(--gx-well-shadow); color: var(--ws-text-strong); }
+.trayButton:active { transform: scale(0.92); }
+/* Unread notifications: a warm golden bell with a soft glow (no blinking; the ring plays once, see TopNavbar). */
+.bellAttention { color: #b45309; background: rgb(251 191 36 / 0.2); box-shadow: inset 0 0 0 1px rgb(245 158 11 / 0.4), 0 0 14px -2px rgb(245 158 11 / 0.5); }
+.bellAttention:hover { background: rgb(251 191 36 / 0.3); color: #92400e; box-shadow: inset 0 0 0 1px rgb(245 158 11 / 0.5), 0 0 16px -2px rgb(245 158 11 / 0.55); }
+:global(.dark) .bellAttention { color: #fcd34d; background: rgb(251 191 36 / 0.14); box-shadow: inset 0 0 0 1px rgb(251 191 36 / 0.35), 0 0 14px -2px rgb(251 191 36 / 0.35); }
+:global(.dark) .bellAttention:hover { background: rgb(251 191 36 / 0.22); color: #fde68a; }
+.streak { position: relative; z-index: 1; height: 2.15rem; border-radius: 999px; color: #b45309; font-weight: 800; font-size: 0.88rem; font-variant-numeric: tabular-nums; padding: 0 0.65rem 0 0.5rem; }
+.streak:hover { background: var(--gx-well); box-shadow: var(--gx-well-shadow); }
+:global(.dark) .streak { color: #fbbf24; }
+.badge {
+  position: absolute;
+  top: -0.2rem;
+  right: -0.2rem;
+  min-width: 1.1rem;
+  height: 1.1rem;
+  padding: 0 0.25rem;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-size: 0.62rem;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(180deg, #fb7185, #e11d48);
+  box-shadow: 0 0 0 2px var(--ws-panel), 0 2px 6px -1px rgb(225 29 72 / 0.6);
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+}
+
+/* Premium: a sapphire glass jewel with a gold rim and a warm crown. */
+.premium {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  height: 2.75rem;
+  min-width: 2.75rem;
+  padding: 0 0.75rem;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.005em;
+  color: #fff6dc;
+  text-shadow: 0 1px 2px rgb(5 14 50 / 0.6);
+  background:
+    radial-gradient(120% 90% at 50% -35%, rgb(170 205 255 / 0.62), rgb(170 205 255 / 0) 58%),
+    radial-gradient(60% 80% at 85% 120%, rgb(245 200 100 / 0.28), rgb(245 200 100 / 0) 70%),
+    linear-gradient(180deg, #3166dc 0%, #1b3ea6 46%, #0c1f5e 100%);
+  box-shadow: 0 1px 1px rgb(8 20 60 / 0.3), 0 8px 18px -8px rgb(26 58 156 / 0.75), 0 16px 30px -16px rgb(37 99 235 / 0.55), inset 0 1px 0 rgb(255 255 255 / 0.5), inset 0 -3px 6px rgb(5 12 40 / 0.5);
+  transition: transform 260ms cubic-bezier(.2, .9, .3, 1.25), box-shadow 220ms, filter 200ms;
+}
+.premium::before,
+.premium::after { content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 2; }
+.premium::before {
+  padding: 1.25px;
+  background: linear-gradient(160deg, #ffe9a8, rgb(228 180 90 / 0.35) 38%, rgb(228 180 90 / 0.2) 60%, #f3c763);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.premium::after {
+  background: linear-gradient(105deg, transparent 32%, rgb(255 240 200 / 0.7) 50%, transparent 68%) no-repeat;
+  background-size: 260% 100%;
+  background-position: 135% 0;
+  mix-blend-mode: soft-light;
+  opacity: 0;
+  transition: background-position 760ms cubic-bezier(.3, .7, .2, 1), opacity 300ms;
+}
+.premium:hover { transform: translateY(-1px); filter: brightness(1.06); box-shadow: 0 1px 1px rgb(8 20 60 / 0.3), 0 12px 22px -10px rgb(26 58 156 / 0.85), 0 0 0 3px rgb(245 200 100 / 0.16), 0 18px 34px -14px rgb(245 180 70 / 0.45), inset 0 1px 0 rgb(255 255 255 / 0.55), inset 0 -3px 6px rgb(5 12 40 / 0.5); }
+.premium:hover::after { background-position: -35% 0; opacity: 1; }
+.premium:active { transform: translateY(0.5px) scale(0.985); transition-duration: 90ms; }
+.crown { color: #fcd34d; filter: drop-shadow(0 0 4px rgb(252 211 77 / 0.75)) drop-shadow(0 1px 0 rgb(120 60 0 / 0.6)); }
+@media (min-width: 1280px) { .premium { padding: 0 1.05rem 0 0.95rem; } }
+.focusRing:focus-visible { outline: 2px solid var(--ws-focus); outline-offset: 2px; }
+
+/* The music player gets a bounded, in-flow slot; every utility remains reachable on phones. */
+.authButton svg { display: none; }
+@media (max-width: 699px) {
+  .bar { gap: 5px; padding-inline: 8px 9px; }
+  .bar::before, .bar::after { inset: 5px 3px 3px 2px; border-radius: 1.15rem; }
+  .dictionarySlot button { width: 34px; height: 36px; }
+  .searchLens { width: 34px; height: 34px; }
+  .utilitySlot { gap: 5px; }
+  .tray { padding-inline: 1px; height: 38px; }
+  .trayButton { min-width: 28px; height: 32px; padding-inline: 4px; }
+  .traySep { margin-inline: 0; }
+  .premium { min-width: 34px; padding-inline: 5px; height: 36px; }
+}
+@media (max-width: 389px) {
+  .bar { gap: 2px; padding-inline: 5px; }
+  .utilitySlot { gap: 2px; }
+  .authButton { display: grid; place-items: center; width: 34px; height: 36px; padding: 0; }
+  .authButton span { display: none; }
+  .authButton svg { display: block; }
+}
+
+/* ─── Hình nền (wallpapers) ───────────────────────────────────────────────── */
+/* the icon well of Hình nền; while a wallpaper is on screen the icon becomes a tiny picture of it (the engine sets --wp-thumb) */
+.wpGlyph { overflow: visible; }
+.wpSwatch {
+  display: none;
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 0.45rem;
+  background-image: var(--wp-thumb);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 0 1.5px var(--sb-gap), 0 0 0 2.5px var(--ws-glow);
+}
+:global(html[data-wallpaper]) .wpSwatch { display: block; }
+:global(html[data-wallpaper]) .wpIcon { display: none; }
+:global(html[data-wallpaper]) .panel { background: var(--sb-fill-wp); }
+:global(html[data-wallpaper]) .bar::before { background: var(--tb-panel-wp); }
+/* The glass takes a little of the background's atmosphere (a Living World's own tint, or the learner's glass colour). */
+:global(html[data-glass-tint]) .panel { background: linear-gradient(rgb(var(--glass-tint) / 0.1), rgb(var(--glass-tint) / 0.1)), var(--sb-fill-wp); }
+:global(html[data-glass-tint]) .bar::before { background: linear-gradient(rgb(var(--glass-tint) / 0.08), rgb(var(--glass-tint) / 0.08)), var(--tb-panel-wp); }
+/* Không gian 3D: the selected experience tints the shell on every route, so moving between modules never falls back to a different look. */
+/* Echo Ocean (2026-11-14): the default atmosphere's light reaches the floating shell as a faint ambient spread (--eo-ambient,
+   app/echo-ocean.css); a wallpaper / world / 3D preset keeps the rules above and below. */
+:global(html[data-atmosphere]) .panel:not(.drawerOpen) { box-shadow: var(--sb-shadow), 0 0 44px -20px rgb(var(--eo-ambient) / 0.5); }
+:global(html[data-atmosphere]) .bar::before { box-shadow: var(--tb-panel-shadow), 0 16px 40px -26px rgb(var(--eo-ambient) / 0.55); }
+:global(html[data-spatial]) .panel { background: linear-gradient(rgb(var(--sp-tint) / 0.11), rgb(var(--sp-tint) / 0.11)), var(--sb-fill-wp); box-shadow: var(--sb-shadow), 0 0 0 1px rgb(var(--sp-tint) / 0.22), 0 0 34px -10px rgb(var(--sp-tint) / 0.5); }
+:global(html[data-spatial]) .bar::before { background: linear-gradient(rgb(var(--sp-tint) / 0.09), rgb(var(--sp-tint) / 0.09)), var(--tb-panel-wp); box-shadow: var(--tb-panel-shadow), 0 0 0 1px rgb(var(--sp-tint) / 0.18); }
+/* Layered navigation: glyph and label move apart in depth. Only inner parts move: a rail entry itself must never get a transform (its tooltip is fixed). */
+:global(html[data-spatial-nav]) .item .glyph { transition: transform 180ms cubic-bezier(.2, .8, .2, 1), box-shadow 180ms; }
+:global(html[data-spatial-nav]) .item:hover .glyph { transform: perspective(240px) translate3d(0, -2px, 26px) rotateY(-12deg); box-shadow: 0 10px 18px -8px rgb(var(--sp-tint) / 0.9), inset 0 0 0 1px rgb(var(--sp-tint) / 0.6); }
+:global(html[data-spatial-nav]) .item .label { transition: translate 180ms cubic-bezier(.2, .8, .2, 1), text-shadow 180ms; }
+:global(html[data-spatial-nav]) .item:hover .label { translate: 5px 0; text-shadow: 0 0 14px rgb(var(--sp-tint) / 0.7); }
+:global(html[data-spatial-nav]) .raised { transition: translate 180ms cubic-bezier(.2, .8, .2, 1), box-shadow 180ms; }
+:global(html[data-spatial-nav]) .raised:hover { translate: 0 -2px; box-shadow: 0 12px 22px -12px rgb(var(--sp-tint) / 0.9); }
+
+/* ─── Adaptive Navigation: Auto-Hide, Compact Pin Controls, FLIP Morph Handoff ─── */
+:global(html[data-nav-morph-active]) .panel {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.pinIconBtn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.72rem;
+}
+
+.pinIconBtnCompact {
+  width: 1.65rem;
+  height: 1.75rem;
+  border-radius: 0.62rem;
+}
+
+.pinIconActive {
+  color: var(--ws-ink-2);
+  box-shadow: var(--sb-glass-edge), inset 0 0 0 1px rgb(56 189 248 / 0.35);
+}
+
+:global(.dark) .pinIconActive {
+  color: #7dd3fc;
+}
+
+.pinTrayActive {
+  color: var(--ws-ink-2);
+}
+
+:global(.dark) .pinTrayActive {
+  color: #7dd3fc;
+}
+
+/* Sidebar Auto-Hide: zero in-flow width, smooth overlay slide from left edge */
+.railAutoHide {
+  width: 0;
+  overflow: visible;
+  z-index: 58;
+}
+
+.railAutoHide .panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: calc(100dvh - 1rem);
+  z-index: 60;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  transition:
+    transform 380ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 240ms ease,
+    width 300ms cubic-bezier(.2, .8, .2, 1);
+}
+
+.railHidden .panel {
+  transform: translate3d(-110%, 0, 0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebarEdgeZone {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 14px;
+  z-index: 57;
+  background: transparent;
+}
+
+.sidebarTouchHandle {
+  display: none;
+  position: fixed;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 58;
+  width: 18px;
+  height: 68px;
+  border-radius: 999px;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  cursor: pointer;
+}
+
+.touchHandleBarVertical {
+  width: 4px;
+  height: 40px;
+  border-radius: 999px;
+  background: rgb(56 189 248 / 0.45);
+  box-shadow: 0 2px 8px rgb(15 23 42 / 0.3);
+}
+
+/* Top Bar Auto-Hide: zero in-flow height, smooth downward reveal from top edge */
+.topBarAutoRoot {
+  position: relative;
+  z-index: 50;
+  width: 100%;
+  height: 0;
+  overflow: visible;
+}
+
+.topBarEdgeZone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 18px;
+  height: 12px;
+  z-index: 54;
+  background: transparent;
+}
+
+.topBarTouchHandle {
+  display: none;
+  position: fixed;
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 55;
+  width: 76px;
+  height: 18px;
+  border-radius: 999px;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  cursor: pointer;
+}
+
+.touchHandleBarHorizontal {
+  width: 42px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgb(56 189 248 / 0.45);
+  box-shadow: 0 2px 8px rgb(15 23 42 / 0.3);
+}
+
+.topBarOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 55;
+  transition:
+    transform 360ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 240ms ease;
+}
+
+@media (min-width: 768px) {
+  .topBarOverlayWithSidebar {
+    left: var(--ec-sidebar-width, 264px);
+    transition:
+      left 300ms cubic-bezier(.2, .8, .2, 1),
+      transform 360ms cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 240ms ease;
+  }
+}
+
+.topBarOverlayVisible {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.topBarOverlayHidden {
+  transform: translate3d(0, -112%, 0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .sidebarTouchHandle,
+  .topBarTouchHandle {
+    display: flex;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .railAutoHide .panel, .topBarOverlay, .topBarOverlayWithSidebar,
+  .panel, .item, .icon, .tip, .search, .trayButton, .premium, .iconButton, .glyph, .glyph::after, .opensPanel, .raised, .raised::after, .premium::after, .searchLens { transition: none; }
+  :global(html[data-spatial-nav]) .item:hover .glyph { transform: none; }
+  :global(html[data-spatial-nav]) .item:hover .label, :global(html[data-spatial-nav]) .raised:hover { translate: none; }
+  .lift:hover, .lift:active, .premium:active, .search:hover .searchLens, .trayButton:active { transform: none; }
+  .item:hover .icon, .item:hover .glyph, .item:active .glyph, .item:active, .item:hover .opensPanel { transform: none; }
+  .label, .sectionLabel, .brandText, .drawerOpen, .scrim, .itemActive::before, .itemActive::after, .water, .waterBack { animation: none; }
+  .itemActive::before { opacity: 0; }
+  .premium:hover { transform: none; }
+  .pendingRing { animation: none; border-color: var(--ws-glow); }
+  .skeleton { animation: none; }
+}
+

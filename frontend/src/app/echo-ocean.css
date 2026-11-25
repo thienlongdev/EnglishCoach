@@ -1,0 +1,114 @@
+/*
+ * Echo Visual Contract — Echo Ocean "Pearl × Abyss" (owner brief 2026-11-14).
+ *
+ * One small, shared vocabulary under every module's own art direction (modules keep their personalities and their own token
+ * worlds; this file never restyles them by itself). Four parts:
+ *   1. Palette   — the Echo Ocean references (pearl, abyss, lagoon, iris, coral) as `r g b` triples.
+ *   2. Lighting  — `--eo-ambient`: the one colour the foreground reflects. Decided by the active background in CSS alone:
+ *                  the atmosphere's own light by default, a wallpaper's accent, a Living World's tint, a 3D preset's tint.
+ *                  Event-driven attributes set by the existing engines; nothing samples pixels, nothing updates per frame.
+ *   3. Shape and motion — radius scale, durations and curves aligned with Echo Morph and Pearl Glass.
+ *   4. Surfaces  — `.eo-surface[data-eo=…]` primitives (pearl-learning, pearl-elevated, pearl-interactive, abyss-panel,
+ *                  abyss-hud, media-surface, exam-focus, utility-neutral, immersive-overlay) for new UI and for screens that
+ *                  have no art direction of their own. Opaque enough that contrast never depends on the scene (10 §AF).
+ * Explicit `.dark` only (10 §Y); no backdrop blur over a live scene; no `!important`; Quicksand is inherited (10 §AA).
+ */
+:root {
+  --eo-pearl: 251 248 242;
+  --eo-pearl-2: 241 245 251;
+  --eo-abyss: 7 16 40;
+  --eo-abyss-2: 12 24 58;
+  --eo-lagoon: 14 165 200;
+  --eo-iris: 124 108 246;
+  --eo-coral: 249 140 116;
+  --eo-ink: 13 24 48;
+  --eo-ink-soft: 53 67 96;
+
+  /* Lighting: the default is the Pearl atmosphere's own light (a lagoon-iris blue). */
+  --eo-ambient: 112 150 240;
+
+  --eo-r-sm: 0.75rem;
+  --eo-r-md: 1rem;
+  --eo-r-lg: 1.375rem;
+  --eo-r-xl: 1.75rem;
+
+  --eo-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --eo-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --eo-fast: 160ms;
+  --eo-base: 260ms;
+  --eo-slow: 600ms;
+
+  --eo-focus: 0 0 0 2px rgb(255 255 255), 0 0 0 4px rgb(8 145 178);
+
+  /* Elevation: neutral contact shadow + a soft spread that takes the ambient light (the "rim light" of the scene). */
+  --eo-rim: inset 0 1px 0 rgb(255 255 255 / 0.92), inset 0 -1px 0 rgb(var(--eo-ink) / 0.05);
+  --eo-elev-1: 0 1px 2px rgb(2 6 23 / 0.12), 0 8px 18px -12px rgb(var(--eo-ambient) / 0.45);
+  --eo-elev-2: 0 1px 2px rgb(2 6 23 / 0.14), 0 22px 44px -26px rgb(var(--eo-ambient) / 0.55), 0 0 0 1px rgb(var(--eo-ink) / 0.05);
+  --eo-elev-3: 0 2px 4px rgb(2 6 23 / 0.16), 0 40px 80px -40px rgb(var(--eo-ambient) / 0.6), 0 0 0 1px rgb(var(--eo-ink) / 0.06);
+  --eo-glow: 0 0 36px -14px rgb(var(--eo-ambient) / 0.55);
+}
+.dark {
+  --eo-ambient: 56 189 248;
+  --eo-ink: 226 234 250;
+  --eo-ink-soft: 168 182 212;
+  --eo-focus: 0 0 0 2px rgb(7 16 40), 0 0 0 4px rgb(125 211 252);
+  --eo-rim: inset 0 1px 0 rgb(255 255 255 / 0.12), inset 0 -1px 0 rgb(0 0 0 / 0.35);
+  --eo-elev-1: 0 1px 2px rgb(0 0 0 / 0.45), 0 10px 20px -14px rgb(var(--eo-ambient) / 0.35);
+  --eo-elev-2: 0 1px 2px rgb(0 0 0 / 0.5), 0 26px 50px -28px rgb(0 0 0 / 0.85), 0 0 34px -18px rgb(var(--eo-ambient) / 0.4);
+  --eo-elev-3: 0 2px 4px rgb(0 0 0 / 0.55), 0 44px 90px -40px rgb(0 0 0 / 0.9), 0 0 44px -18px rgb(var(--eo-ambient) / 0.45);
+  --eo-glow: 0 0 40px -12px rgb(var(--eo-ambient) / 0.6);
+}
+/* The active background's own light (attributes written by WallpaperStage / SpatialRuntimeView, never per frame). */
+html[data-wp-accent] { --eo-ambient: var(--wp-accent); }
+html[data-glass-tint] { --eo-ambient: var(--glass-tint); }
+html[data-spatial] { --eo-ambient: var(--sp-tint); }
+
+/* ── Surfaces ─────────────────────────────────────────────────────────────────────────────────────────────────────── */
+.eo-surface {
+  position: relative;
+  border-radius: var(--eo-r-lg);
+  color: rgb(var(--eo-ink));
+  background:
+    radial-gradient(120% 70% at 0% 0%, rgb(255 255 255 / 0.9), rgb(255 255 255 / 0) 58%),
+    linear-gradient(165deg, rgb(255 255 255 / 0.97), rgb(var(--eo-pearl-2) / 0.96));
+  box-shadow: var(--eo-rim), var(--eo-elev-2);
+}
+.dark .eo-surface {
+  background:
+    radial-gradient(120% 70% at 0% 0%, rgb(var(--eo-ambient) / 0.1), rgb(var(--eo-ambient) / 0) 58%),
+    linear-gradient(165deg, rgb(var(--eo-abyss-2) / 0.96), rgb(var(--eo-abyss) / 0.97));
+}
+/* A long reading or practice session: calm, no glow, the steadiest fill. */
+.eo-surface[data-eo='pearl-learning'] { box-shadow: var(--eo-rim), var(--eo-elev-1); }
+.dark .eo-surface[data-eo='pearl-learning'] { background: rgb(var(--eo-abyss-2) / 0.97); }
+/* A summary or hero panel lifted above its neighbours. */
+.eo-surface[data-eo='pearl-elevated'] { border-radius: var(--eo-r-xl); box-shadow: var(--eo-rim), var(--eo-elev-3); }
+/* A card that is one control: lifts on hover, presses on click, springs back. */
+.eo-surface[data-eo='pearl-interactive'] { cursor: pointer; transition: transform var(--eo-slow) var(--eo-spring), box-shadow var(--eo-base) var(--eo-ease); }
+.eo-surface[data-eo='pearl-interactive']:hover { transform: translateY(-2px); box-shadow: var(--eo-rim), var(--eo-elev-3), var(--eo-glow); }
+.eo-surface[data-eo='pearl-interactive']:active { transform: translateY(0) scale(0.985); transition-duration: 90ms; }
+.eo-surface[data-eo='pearl-interactive']:focus-visible { outline: none; box-shadow: var(--eo-rim), var(--eo-elev-2), var(--eo-focus); }
+/* Deep panels and HUDs over a scene: dark in both themes, light text, a thin ambient rim. */
+.eo-surface:is([data-eo='abyss-panel'], [data-eo='abyss-hud']) {
+  color: rgb(226 234 250);
+  background: linear-gradient(165deg, rgb(14 26 62 / 0.95), rgb(7 14 36 / 0.96));
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.1), 0 0 0 1px rgb(var(--eo-ambient) / 0.22), 0 24px 48px -28px rgb(0 0 0 / 0.85);
+}
+.eo-surface[data-eo='abyss-hud'] { border-radius: var(--eo-r-md); }
+/* Video and pictures: a dark, neutral frame that never tints the media. */
+.eo-surface[data-eo='media-surface'] { overflow: hidden; background: rgb(6 10 24); color: rgb(241 245 249); box-shadow: var(--eo-elev-2); }
+/* Exams: formal, flat, no glow, no motion. */
+.eo-surface[data-eo='exam-focus'] { border-radius: var(--eo-r-md); background: rgb(255 255 255); box-shadow: 0 0 0 1px rgb(15 23 42 / 0.12); }
+.dark .eo-surface[data-eo='exam-focus'] { background: rgb(15 22 40); box-shadow: 0 0 0 1px rgb(255 255 255 / 0.1); }
+/* Settings, admin, tooling: the plain app surface with the shared shape. */
+.eo-surface[data-eo='utility-neutral'] { border-radius: var(--eo-r-md); background: rgb(var(--surface-container-lowest)); box-shadow: 0 0 0 1px rgb(var(--outline-variant, 200 200 210) / 0.6), var(--eo-elev-1); }
+/* Overlays over an immersive scene (game lobbies, 3D rooms): opaque pearl / abyss, never a blur over the live scene. */
+.eo-surface[data-eo='immersive-overlay'] { border-radius: var(--eo-r-xl); box-shadow: var(--eo-rim), var(--eo-elev-3), var(--eo-glow); }
+
+@media (prefers-reduced-motion: reduce) {
+  .eo-surface[data-eo='pearl-interactive'] { transition: none; }
+  .eo-surface[data-eo='pearl-interactive']:hover, .eo-surface[data-eo='pearl-interactive']:active { transform: none; }
+}
+@media (forced-colors: active) {
+  .eo-surface { border: 1px solid CanvasText; }
+}

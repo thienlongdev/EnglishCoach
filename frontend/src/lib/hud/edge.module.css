@@ -1,0 +1,22 @@
+/* A toolbar of a 3D place that steps aside. `translate` composes with whatever transform the bar already uses to place itself. */
+.edge { transition: translate .34s cubic-bezier(.2, .8, .2, 1), opacity .24s ease; }
+.edge[data-hud-hidden] { opacity: 0; }
+.edge[data-hud-edge='top'][data-hud-hidden] { translate: 0 calc(-100% - 28px); }
+.edge[data-hud-edge='bottom'][data-hud-hidden] { translate: 0 calc(100% + 28px); }
+/* Out of the way for the pointer too, buttons included; the keyboard can still reach it, and the focus brings it back. */
+.edge[data-hud-hidden], .edge[data-hud-hidden] * { pointer-events: none; }
+@media (prefers-reduced-motion: reduce) {
+  .edge { transition: opacity .12s linear; }
+  .edge[data-hud-edge][data-hud-hidden] { translate: none; }
+}
+
+/* Told a few times, then left to the player: where the bars went. */
+.hint {
+  position: absolute; left: 50%; bottom: max(18px, env(safe-area-inset-bottom)); z-index: 30; translate: -50% 0;
+  display: inline-flex; align-items: center; gap: 8px; padding: 7px 13px; border-radius: 999px;
+  background: #0f2632e6; color: #e8f4f1; font-size: 12.5px; font-weight: 600; pointer-events: none;
+  box-shadow: 0 6px 22px #04121b55; animation: hudHint 4.2s ease forwards;
+}
+.hint kbd { min-width: 20px; padding: 0 5px; border: 1px solid #9bc0c8aa; border-radius: 5px; font: inherit; font-size: 11px; line-height: 18px; text-align: center; }
+@keyframes hudHint { 0% { opacity: 0; } 8% { opacity: 1; } 82% { opacity: 1; } 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .hint { animation: none; } }

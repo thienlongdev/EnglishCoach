@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s106-two-clock-fish",
+  "title": "Con cá có hai giờ hẹn",
+  "summary": "Đồng hồ hình cá cần lên dây trước 6 giờ, chứ không được lên dây liên tục đến 6 giờ.",
+  "level": "B1",
+  "topics": [
+    "time-prepositions-advanced"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vi",
+      "role": "Nhân viên ga"
+    },
+    {
+      "id": "b",
+      "name": "Nam",
+      "role": "Người học việc"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Tờ hướng dẫn có một chỗ mực nhòe trước six. Hẹn giờ là một lần xoay ngắn. Nam suýt ngồi vặn cả buổi chiều.",
+      "say": [
+        {
+          "who": "a",
+          "en": "My wrist is getting tired already.",
+          "vi": "Cổ tay em đã bắt đầu mỏi rồi."
+        },
+        {
+          "who": "b",
+          "en": "What does the owner need done before six?",
+          "vi": "Chủ đồng hồ cần làm xong việc gì trước sáu giờ?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Vi phục hồi giới từ chỉ hạn chót của một việc ngắn.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Wind the clock by six.",
+            "note": "By six là không muộn hơn sáu giờ. Xong một lần lúc 5:50 vẫn đạt yêu cầu.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Wind the clock until six.",
+            "note": "Until gợi việc tiếp diễn tới sáu giờ. Nó không phù hợp chỉ dẫn giới hạn thời điểm hoàn tất một lần lên dây.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Nam lên dây đúng một lần rồi đặt cá lên kệ. Sáu giờ cá vỗ đuôi; người chủ ở sân ga nghe tiếng liền chạy tới.",
+      "say": [
+        {
+          "who": "b",
+          "en": "It only needed one good turn.",
+          "vi": "Nó chỉ cần một lần vặn cho đúng."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Đó là tiếng báo bữa tối gia đình. Lần đầu cả phòng thất lạc được mời nghe nó từ bàn ăn thật.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Nam dừng trước khi xoay thêm vì dây đã căng. Hai người viết nhãn by six và gọi chủ xác nhận. Ông đem tới chiếc chìa dự phòng của đồng hồ cá.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Ten minutes early is still on time.",
+          "vi": "Sớm mười phút vẫn là đúng hạn."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Chiếc chìa nhỏ trở thành thẻ mẫu cho học viên mới: hoàn thành sớm vẫn có thể đúng hạn.",
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s166-notebook-turned",
+  "title": "Cuốn sổ được lật đúng lúc",
+  "summary": "Một tờ giấy tưởng liệt kê người mất tích hóa ra chỉ là danh sách bạn diễn.",
+  "level": "B2",
+  "topics": [
+    "participle-clauses"
+  ],
+  "scene": "newsroom",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Linh",
+      "role": "Phóng viên trực đêm"
+    },
+    {
+      "id": "b",
+      "name": "Ari",
+      "role": "Biên tập viên"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Linh lật bìa có chữ Missing. Ở trang trong, một nét gấp che dòng Characters in the play. Cô cần kể ai đã mở nếp gấp và nhìn thấy chữ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I nearly called those families.",
+          "vi": "Suýt nữa tôi đã gọi cho gia đình họ."
+        },
+        {
+          "who": "b",
+          "en": "Make the reader follow your hands.",
+          "vi": "Hãy để người đọc theo đúng những gì tay cô làm."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Linh mở câu bằng phân từ rồi chọn chủ thể có thể làm cả hai việc.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Unfolding the page, I found the cast list.",
+            "note": "Chủ ngữ ngầm của unfolding là I, cũng là người tìm thấy danh sách. Cast list giải thích đúng loại tên.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Unfolding the page, the names found me.",
+            "note": "Cách nhân hóa có thể dùng trong thơ, nhưng trong bản tin nó khiến the names thành chủ thể của unfolding. Tên không phải người mở giấy.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Ari nhận ra vở Missing của đoàn kịch thiếu nhi. Họ mang cuốn sổ tới buổi tập; đứa trẻ vai chính ôm nó trước khi bước ra sân khấu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "All the missing people have taken a bow.",
+          "vi": "Những người “mất tích” đều đã ra cúi chào rồi."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Tối ấy Linh nghe những cái tên từng khiến mình lo sợ được xướng lên dưới tiếng vỗ tay.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Linh đọc thành tiếng và thử diễn cảnh cái tên tự mở sổ. Cả hai bật cười. Họ đổi sang chủ ngữ I rồi mang sổ về cho đoàn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Perhaps the names can find me in the play.",
+          "vi": "Có lẽ những cái tên tìm đến tôi được trong vở kịch."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Cậu bé giữ sổ chép câu nhân hóa lên tờ áp phích của vở kịch. Câu không hợp bản tin lại tìm được đúng sân khấu.",
+      "end": true
+    }
+  ]
+}

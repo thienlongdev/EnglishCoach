@@ -1,0 +1,577 @@
+{
+  "schema": 1,
+  "slug": "adjective-complements",
+  "version": 2,
+  "domain": "adjectives-adverbs",
+  "order": 80,
+  "kind": "grammar",
+  "title": {
+    "vi": "Tính từ + to, that, giới từ",
+    "en": "Adjective complements"
+  },
+  "level": "B1",
+  "levelBasis": "editorial",
+  "prerequisites": [
+    "adjective-position"
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "subtitle": {
+    "vi": "Điều gì làm phần nghĩa sau tính từ trở nên đầy đủ?",
+    "en": "Infinitives, clauses and prepositional complements"
+  },
+  "aliases": [
+    "bổ ngữ tính từ",
+    "adjective to that preposition",
+    "easy to use",
+    "kind of you for me",
+    "aware to"
+  ],
+  "objectives": [
+    "Chọn nguyên mẫu, mệnh đề that hoặc cụm giới từ theo mẫu của tính từ.",
+    "Phân biệt người thực hiện trong happy to help với đối tượng được dùng trong easy to use.",
+    "Dùng for và of trong các mẫu it phù hợp nghĩa."
+  ],
+  "related": [
+    {
+      "slug": "dependent-prepositions-adjectives",
+      "rel": "more"
+    },
+    {
+      "slug": "adjective-position",
+      "rel": "more"
+    }
+  ],
+  "quick": {
+    "what": "Bổ ngữ tính từ (adjective complement) thêm nội dung mà tính từ cần hoặc cho phép. Ready to leave, sure that the figures are correct và interested in research dùng ba kiểu bổ ngữ khác nhau.",
+    "when": "Dùng để nói sẵn sàng làm gì, chắc về nội dung nào hoặc có cảm xúc với đối tượng nào.",
+    "examples": [
+      {
+        "en": "[S|We] [V|are] [C|ready to begin].",
+        "vi": "Chúng tôi sẵn sàng bắt đầu."
+      },
+      {
+        "en": "[S|I] [V|am] [C|aware that the deadline has changed].",
+        "vi": "Tôi biết hạn chót đã thay đổi."
+      }
+    ],
+    "remember": "Không phải tính từ nào cũng nhận đủ ba kiểu. Học cả mẫu và nghĩa của từng tính từ."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Ready có thể nhận phần hành động để nói sẵn sàng làm gì, nhưng We are ready cũng đủ khi ngữ cảnh đã rõ. Aware có thể nhận nội dung bằng that-clause. Không tự gắn to vào mọi tính từ; mỗi tính từ có mẫu và nghĩa riêng."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Mẫu",
+        "Ví dụ",
+        "Thông tin"
+      ],
+      "rows": [
+        [
+          "adjective + to-infinitive",
+          "willing to revise the plan",
+          "hành động sẵn lòng thực hiện"
+        ],
+        [
+          "adjective + that-clause",
+          "certain that the plan will work",
+          "nội dung tin chắc"
+        ],
+        [
+          "adjective + preposition",
+          "responsible for the budget",
+          "đối tượng hoặc quan hệ"
+        ],
+        [
+          "adjective + preposition + V-ing",
+          "interested in joining",
+          "hoạt động sau giới từ"
+        ]
+      ]
+    },
+    {
+      "type": "formula",
+      "parts": [
+        {
+          "t": "chủ ngữ",
+          "role": "S"
+        },
+        {
+          "t": "be",
+          "role": "V"
+        },
+        {
+          "t": "tính từ",
+          "role": "ADJ"
+        },
+        {
+          "t": "to V / that-clause / cụm giới từ",
+          "role": "C"
+        }
+      ]
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|The delegates] [V|were] [C|pleased to meet the designer].",
+          "vi": "Các đại biểu vui vì được gặp nhà thiết kế."
+        },
+        {
+          "en": "[S|The delegates] [V|were] [C|pleased that the designer could attend].",
+          "vi": "Các đại biểu vui vì nhà thiết kế có thể tham dự."
+        },
+        {
+          "en": "[S|The delegates] [V|were] [C|pleased with the final design].",
+          "vi": "Các đại biểu hài lòng với bản thiết kế cuối."
+        }
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "flow",
+        "start": "pattern",
+        "nodes": {
+          "pattern": {
+            "q": "Tính từ đang theo mẫu nào?",
+            "choices": [
+              {
+                "t": "Ready + hành động",
+                "to": "ready"
+              },
+              {
+                "t": "Aware + nội dung mệnh đề",
+                "to": "aware"
+              },
+              {
+                "t": "Responsible + hoạt động",
+                "to": "responsible"
+              }
+            ]
+          },
+          "ready": {
+            "end": "ready to start",
+            "note": "Nguyên mẫu có to."
+          },
+          "aware": {
+            "end": "aware that the date changed",
+            "note": "Mệnh đề có chủ ngữ và động từ."
+          },
+          "responsible": {
+            "end": "responsible for checking",
+            "note": "Giới từ for rồi V-ing."
+          }
+        }
+      },
+      "caption": "Chọn mẫu của tính từ trước, chọn dạng sau",
+      "alt": "Ready to start; aware that the date changed; responsible for checking. Các nhánh là mẫu từ đã biết, không phải quy tắc đoán cho mọi tính từ."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "The technician is happy to help.",
+            "vi": "Kỹ thuật viên vui lòng giúp đỡ."
+          },
+          "b": {
+            "en": "The device is easy to use.",
+            "vi": "Thiết bị dễ sử dụng."
+          },
+          "diff": "Technician thực hiện help. Device là thứ được use, không phải thiết bị đi dùng một thứ khác. Cùng dạng to V nhưng quan hệ nghĩa khác."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "head": [
+        "Mẫu it",
+        "Ví dụ",
+        "Cách hiểu"
+      ],
+      "rows": [
+        [
+          "It is adjective for someone to V",
+          "It is difficult for us to change the date.",
+          "đánh giá hành động đối với người thực hiện"
+        ],
+        [
+          "It is adjective of someone to V",
+          "It was thoughtful of you to call.",
+          "đánh giá hành vi hoặc phẩm chất người làm"
+        ]
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không lặp tân ngữ trong The device is easy to use theo nghĩa thiết bị là thứ được dùng. The device is easy to use it không phải cấu trúc mục tiêu."
+    },
+    {
+      "type": "try",
+      "exercise": "adjective-complements-1"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "That thường có thể lược ở các mẫu như I am sure the figures are correct. Việc lược không làm mất chủ ngữ hoặc động từ của mệnh đề. Không áp vào mọi tính từ mà không kiểm tra mẫu."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "I am afraid to ask again.",
+            "vi": "Tôi ngại hỏi lại."
+          },
+          "b": {
+            "en": "I am afraid of making the same mistake.",
+            "vi": "Tôi sợ mắc lại lỗi đó."
+          },
+          "diff": "To ask nêu hành động người nói ngại thực hiện; of making nêu điều được sợ. Hai mẫu có thể giao nhau về nghĩa, không phải cặp đối lập tuyệt đối trong mọi ngữ cảnh."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "For và of không thay thế nhau chỉ bằng đổi đại từ. It was kind of you to wait khen hành vi; It was hard for you to wait nói việc chờ khó với bạn. Một tính từ có thể có cách dùng khác ở ngữ cảnh khác, nên học bằng câu thật."
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Aware of the change và aware that the date changed có thể diễn đạt gần nhau bằng cụm danh từ hoặc mệnh đề. Không dùng aware to know như một phép thay tự động."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "ac-ready",
+      "wrong": "We are ready for start.",
+      "right": "We are ready to start.",
+      "why": "Với động từ nguyên mẫu, dùng ready to start; ready for a start là cấu trúc danh từ khác."
+    },
+    {
+      "id": "ac-aware",
+      "wrong": "I am aware to the delay.",
+      "right": "I am aware of the delay.",
+      "why": "Aware of nhận cụm danh từ; cũng có thể dùng aware that với mệnh đề."
+    },
+    {
+      "id": "ac-object",
+      "wrong": "This form is easy to complete it.",
+      "right": "This form is easy to complete.",
+      "why": "Form đã là đối tượng được complete trong cấu trúc này; không lặp it."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Sau happy luôn là to không?",
+      "a": "Không. Happy to help, happy that you came và happy with the result đều có cách dùng, với thông tin bổ sung khác nhau."
+    },
+    {
+      "q": "Vì sao easy to use không có it?",
+      "a": "Chủ ngữ của câu chính là thứ được use; cấu trúc đã liên kết vị trí đó. Thêm it lặp đối tượng."
+    },
+    {
+      "q": "Có thể bỏ that sau sure không?",
+      "a": "Thường có thể: I am sure she knows. Nhưng vẫn cần mệnh đề đủ nghĩa, không bỏ chủ ngữ theo tiếng Việt."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "adjective-complements-1",
+      "level": "B1",
+      "use": "practice",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn dạng sau ready để nêu hành động.",
+      "stem": "The team is ready ___ the trial.",
+      "options": [
+        {
+          "t": "to begin",
+          "ok": true,
+          "note": "Ready to + động từ."
+        },
+        {
+          "t": "for begin",
+          "tag": "preposition-pattern",
+          "note": "For không nhận begin dạng trần trong mẫu này."
+        },
+        {
+          "t": "beginning",
+          "tag": "preposition-pattern",
+          "note": "Ready beginning không tạo bổ ngữ này."
+        }
+      ],
+      "explain": "Ready to begin diễn tả sẵn sàng thực hiện việc bắt đầu."
+    },
+    {
+      "id": "adjective-complements-2",
+      "level": "B1",
+      "use": "practice",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Điền of hoặc to sau aware trước cụm danh từ.",
+      "stem": "Are you aware {1} the revised rules?",
+      "blanks": {
+        "1": {
+          "accept": [
+            "of"
+          ]
+        }
+      },
+      "explain": "Aware of nhận đối tượng là cụm danh từ."
+    },
+    {
+      "id": "adjective-complements-3",
+      "level": "B1",
+      "use": "practice",
+      "type": "match",
+      "skill": "meaning",
+      "prompt": "Nối mẫu với kiểu bổ ngữ.",
+      "pairs": [
+        {
+          "a": "ready to leave",
+          "b": "nguyên mẫu có to"
+        },
+        {
+          "a": "certain that she knows",
+          "b": "mệnh đề that"
+        },
+        {
+          "a": "interested in local history",
+          "b": "cụm giới từ"
+        },
+        {
+          "a": "responsible for checking",
+          "b": "giới từ và V-ing"
+        }
+      ],
+      "explain": "Chọn dạng theo mẫu tính từ cụ thể."
+    },
+    {
+      "id": "adjective-complements-4",
+      "level": "B1",
+      "use": "practice",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn người hoặc vật thực hiện hành động use theo nghĩa câu.",
+      "stem": "This scanner is easy to use.",
+      "options": [
+        {
+          "t": "Một người dùng máy quét; máy quét là thứ được sử dụng.",
+          "ok": true,
+          "note": "Scanner liên kết với đối tượng của use."
+        },
+        {
+          "t": "Máy quét tự dùng một vật khác được ngầm nêu.",
+          "tag": "preposition-pattern",
+          "note": "Đó không phải nghĩa thông thường của câu này."
+        },
+        {
+          "t": "Câu bắt buộc thêm it sau use.",
+          "tag": "preposition-pattern",
+          "note": "Không lặp đối tượng trong cấu trúc này."
+        }
+      ],
+      "explain": "To V không luôn có chủ thể thực hiện giống chủ ngữ câu chính."
+    },
+    {
+      "id": "adjective-complements-5",
+      "level": "B1",
+      "use": "practice",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Điền for hoặc of để khen hành vi chu đáo của người nghe.",
+      "stem": "It was thoughtful {1} you to send the map.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "of"
+          ]
+        }
+      },
+      "explain": "Thoughtful of you đánh giá hành vi chu đáo."
+    },
+    {
+      "id": "adjective-complements-6",
+      "level": "B1",
+      "use": "practice",
+      "type": "classify",
+      "skill": "recognition",
+      "prompt": "Nhận diện thông tin sau tính từ.",
+      "cats": [
+        "Hành động nguyên mẫu",
+        "Nội dung mệnh đề",
+        "Đối tượng qua giới từ"
+      ],
+      "items": [
+        {
+          "t": "willing to wait",
+          "cat": "Hành động nguyên mẫu"
+        },
+        {
+          "t": "sure that the door is locked",
+          "cat": "Nội dung mệnh đề"
+        },
+        {
+          "t": "proud of the result",
+          "cat": "Đối tượng qua giới từ"
+        }
+      ],
+      "explain": "Các kiểu bổ ngữ không thay thế tùy ý với mọi tính từ."
+    },
+    {
+      "id": "adjective-complements-7",
+      "level": "B1",
+      "use": "practice",
+      "type": "transform",
+      "skill": "production",
+      "prompt": "Đổi cụm danh từ sang mệnh đề.",
+      "source": "I am aware of the change in the date.",
+      "instruction": "Viết I am aware that và dùng the date has changed.",
+      "accept": [
+        "I am aware that the date has changed."
+      ],
+      "model": "I am aware that the date has changed.",
+      "explain": "Aware có thể nhận of + cụm danh từ hoặc that-clause nêu nội dung."
+    },
+    {
+      "id": "adjective-complements-8",
+      "level": "B1",
+      "use": "practice",
+      "type": "open",
+      "skill": "production",
+      "prompt": "Viết rồi tự đối chiếu với bài mẫu.",
+      "task": "Viết ba câu: ready to, sure that và một tính từ + giới từ; nội dung cùng một kế hoạch.",
+      "model": [
+        "We are ready to present the proposal.",
+        "I am sure that the figures are accurate.",
+        "We are pleased with the new layout."
+      ],
+      "checklist": [
+        "Mỗi tính từ có mẫu phù hợp không?",
+        "Mệnh đề that có chủ ngữ và động từ không?",
+        "Nếu sau giới từ là hành động, dạng V-ing có đúng không?"
+      ],
+      "explain": "Không cần dùng cùng thời trong mọi câu nếu ngữ cảnh đòi hỏi khác."
+    },
+    {
+      "id": "adjective-complements-9",
+      "level": "B1",
+      "use": "check",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn câu chuẩn với easy to.",
+      "stem": "Mẫu đơn này dễ hoàn thành.",
+      "options": [
+        {
+          "t": "This form is easy to complete.",
+          "ok": true,
+          "note": "Không lặp đối tượng của complete."
+        },
+        {
+          "t": "This form is easy to complete it.",
+          "tag": "preposition-pattern",
+          "note": "It lặp đối tượng đã liên kết với form."
+        },
+        {
+          "t": "This form is easy complete.",
+          "tag": "preposition-pattern",
+          "note": "Thiếu to trong mẫu này."
+        }
+      ],
+      "explain": "Easy to complete là cấu trúc nêu form như đối tượng được hoàn thành."
+    },
+    {
+      "id": "adjective-complements-10",
+      "level": "B1",
+      "use": "check",
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Hoàn thành vị ngữ nói cô ấy chịu trách nhiệm kiểm tra các số liệu cuối cùng. Dùng be ở hiện tại, responsible for và check ở dạng phù hợp.",
+      "stem": "She {1}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "is responsible for checking the final figures",
+            "'s responsible for checking the final figures"
+          ]
+        }
+      },
+      "explain": "Is hòa hợp với she; responsible nhận for, và hành động sau giới từ có dạng checking. Cụm the final figures nêu đối tượng kiểm tra; dạng rút gọn cũng được chấp nhận."
+    },
+    {
+      "id": "adjective-complements-11",
+      "level": "B1",
+      "use": "check",
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn câu đánh giá việc chờ là khó đối với chúng tôi.",
+      "stem": "Dùng mẫu It is difficult … to wait.",
+      "options": [
+        {
+          "t": "It is difficult for us to wait.",
+          "ok": true,
+          "note": "For us nêu bên gặp khó khăn khi thực hiện."
+        },
+        {
+          "t": "It is difficult of us to wait.",
+          "tag": "preposition-pattern",
+          "note": "Of us không phù hợp nghĩa và mẫu difficult ở đây."
+        },
+        {
+          "t": "It is difficult for we to wait.",
+          "tag": "preposition-pattern",
+          "note": "Sau for dùng đại từ us."
+        }
+      ],
+      "explain": "For us thuộc mẫu đánh giá hành động đối với người thực hiện."
+    },
+    {
+      "id": "adjective-complements-12",
+      "level": "B1",
+      "use": "check",
+      "type": "error",
+      "skill": "form",
+      "prompt": "Sửa giới từ sau aware trước danh từ.",
+      "segments": [
+        {
+          "t": "They are aware "
+        },
+        {
+          "t": "to",
+          "bad": true,
+          "fix": [
+            "of"
+          ],
+          "note": "Aware of the shortage là mẫu phù hợp.",
+          "tag": "preposition-pattern"
+        },
+        {
+          "t": " the shortage."
+        }
+      ],
+      "explain": "Aware of the shortage là mẫu phù hợp."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham chiếu đề xuất: bổ ngữ tính từ với to-infinitive, that-clause và giới từ. Chưa kiểm chứng trực tiếp từng mệnh đề hoặc khóa đáp án trong lượt soạn này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham chiếu đề xuất để đối chiếu cách dùng và ngoại lệ; không khẳng định đã đọc một trang hoặc ấn bản cụ thể."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

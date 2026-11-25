@@ -1,0 +1,41 @@
+{
+  "id": "courier-yesterday",
+  "title": "Bưu kiện rời kho lúc nào?",
+  "summary": "Theo dõi lời kể của tài xế. Thay lịch thường lệ bằng chuyến đã xong hôm qua. Go biến đổi thế nào?",
+  "level": "A2",
+  "topics": [
+    "past-simple",
+    "irregular-verbs"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Thời điểm",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Theo lịch"
+        },
+        {
+          "id": "v2",
+          "label": "Hôm qua"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "We go to the depot at six.",
+      "vi": "Chúng tôi đến kho lúc sáu giờ.",
+      "note": "Go ở hiện tại đơn nêu lịch đi kho. / Go describes the routine.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "We went to the depot at six yesterday.",
+      "vi": "Hôm qua chúng tôi đến kho lúc sáu giờ.",
+      "note": "Went là dạng quá khứ bất quy tắc của go. Yesterday khép lại mốc thời gian. / Went places the trip in finished time.",
+      "verdict": "ok"
+    }
+  }
+}

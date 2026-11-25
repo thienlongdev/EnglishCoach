@@ -1,0 +1,40 @@
+{
+  "id": "baker-orders",
+  "title": "Bao nhiêu ngày tiệm nướng bánh?",
+  "summary": "Khách muốn biết có nên ghé tiệm sau giờ làm. So sánh cụm nói tần suất từng ngày với cụm chỉ suốt một ngày.",
+  "level": "A2",
+  "topics": [
+    "all-both-each-every"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Phạm vi thời gian",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Ngày nào cũng vậy"
+        },
+        {
+          "id": "v2",
+          "label": "Suốt ngày"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "We bake every day.",
+      "vi": "Ngày nào chúng tôi cũng nướng bánh.",
+      "note": "Every day cho biết ngày nào cũng có hoạt động nướng, không cho biết nướng trong bao lâu. / Every day gives frequency.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "We bake all day.",
+      "vi": "Chúng tôi nướng bánh suốt ngày.",
+      "note": "All day nói hoạt động kéo dài trong ngày đang xét, không tự cho biết có lặp lại hằng ngày không. / All day gives duration.",
+      "verdict": "ok"
+    }
+  }
+}

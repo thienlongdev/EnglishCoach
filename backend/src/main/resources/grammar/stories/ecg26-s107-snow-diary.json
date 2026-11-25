@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s107-snow-diary",
+  "title": "Nhật ký của một ngày chưa có tuyết",
+  "summary": "Một cuốn sổ ghi “snow at ten tomorrow”. Bên ngoài đang là mùa hè. Vi ngỡ chủ nhân hẹn một trận tuyết thật.",
+  "level": "B1",
+  "topics": [
+    "future-present-forms"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vi",
+      "role": "Nhân viên ga"
+    },
+    {
+      "id": "b",
+      "name": "Nam",
+      "role": "Người học việc"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Trong trang cuối có lịch tập làm tuyết giấy cho vở diễn ngày mai. Từ snow là tên cảnh. Mười giờ là giờ khởi động buổi tập đã xếp chính thức.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It says snow tomorrow. In July?",
+          "vi": "Nó ghi mai có tuyết. Tháng bảy mà?"
+        },
+        {
+          "who": "b",
+          "en": "Read it as a timetable for a play.",
+          "vi": "Đọc như lịch của vở kịch thử xem."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Vi dùng hiện tại đơn để thuật giờ bắt đầu đã lên lịch.",
+        "options": [
+          {
+            "ok": false,
+            "t": "It snowed at ten yesterday.",
+            "note": "Snowed và yesterday biến một lịch tương lai thành lời kể thời tiết đã qua, còn mất cả chữ scene.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "The snow scene starts at ten tomorrow.",
+            "note": "Hiện tại đơn starts dùng được cho sự kiện đã xếp trong lịch. Scene phân biệt tuyết sân khấu với thời tiết.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Nam mang sổ tới đúng sân tập trước mười giờ. Đứa trẻ phụ trách rải tuyết đã cắt giấy xong nhưng thiếu thứ tự hiệu lệnh trong sổ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We made it before winter.",
+          "vi": "Mình kịp đến trước mùa đông rồi."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Vi ngồi lại xem cả một mùa đông rơi xuống trong hai phút giữa tháng bảy.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Vi nhìn sàn: các bông tuyết đều cắt từ giấy có kẻ dòng. Cô lần theo giấy tới trường và trả sổ ngay trước khi tập.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Tomorrow followed me home.",
+          "vi": "Ngày mai theo em về tận nhà."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Một bông còn mắc trên vai Nam tới hết ca. Trên nó có nguyên chữ tomorrow.",
+      "end": true
+    }
+  ]
+}

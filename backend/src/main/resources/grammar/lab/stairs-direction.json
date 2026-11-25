@@ -1,0 +1,40 @@
+{
+  "id": "stairs-direction",
+  "title": "Lên hay xuống cầu thang?",
+  "summary": "Một khách đang đứng ở chiếu nghỉ. Đổi hướng di chuyển và dự đoán tầng người ấy sẽ tới.",
+  "level": "A1",
+  "topics": [
+    "prepositions-movement"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Hướng",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Lên"
+        },
+        {
+          "id": "v2",
+          "label": "Xuống"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Walk up the stairs.",
+      "vi": "Hãy đi lên cầu thang.",
+      "note": "Up chỉ hướng đi từ thấp lên cao. / Up leads to a higher level.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Walk down the stairs.",
+      "vi": "Hãy đi xuống cầu thang.",
+      "note": "Down đảo chiều chuyển động. Vẫn là cùng cầu thang đó. / Down leads to a lower level.",
+      "verdict": "ok"
+    }
+  }
+}

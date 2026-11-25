@@ -1,0 +1,461 @@
+{
+  "schema": 1,
+  "slug": "passive-form",
+  "version": 2,
+  "domain": "voice",
+  "order": 10,
+  "kind": "grammar",
+  "title": {
+    "vi": "Câu bị động: hình thức",
+    "en": "The passive: form"
+  },
+  "subtitle": {
+    "vi": "Be và phân từ với đúng chủ ngữ, đúng mốc",
+    "en": "Be and a participle with the right subject and time"
+  },
+  "aliases": [
+    "câu bị động hình thức",
+    "passive form",
+    "be past participle",
+    "was wrote",
+    "was happened"
+  ],
+  "level": "A2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Tạo be + phân từ phù hợp.",
+    "Giữ thì khi chuyển chủ động sang bị động.",
+    "Không ép mọi động từ vào bị động."
+  ],
+  "prerequisites": [
+    "verb-be",
+    "five-verb-forms"
+  ],
+  "related": [
+    {
+      "slug": "passive-use",
+      "rel": "more"
+    },
+    {
+      "slug": "transitive-intransitive",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Bị động (passive) thường dùng be + phân từ quá khứ, với chủ ngữ là đối tượng chịu tác động trong sự việc. Tác nhân có thể được thêm bằng by.",
+    "when": "Dùng với động từ và nghĩa cho phép mẫu đó.",
+    "examples": [
+      {
+        "en": "[S|The file] [AUX|was] [V|checked] by Lan.",
+        "vi": "Tệp đã được Lan kiểm tra."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Lan checked the file → The file was checked by Lan. The file từ tân ngữ thành chủ ngữ, was giữ quá khứ, checked là phân từ. Không chỉ thêm be vào câu chủ động rồi giữ thứ tự mọi phần."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Chủ ngữ chịu tác động",
+            "items": [
+              "The file"
+            ]
+          },
+          {
+            "label": "Be mang thì",
+            "items": [
+              "was"
+            ]
+          },
+          {
+            "label": "Phân từ",
+            "items": [
+              "checked"
+            ]
+          },
+          {
+            "label": "Tác nhân tùy chọn",
+            "items": [
+              "by Lan"
+            ]
+          }
+        ],
+        "sentence": "{0} {1} {2} {3}."
+      },
+      "caption": "Was giữ mốc quá khứ; checked dùng phân từ.",
+      "alt": "Was giữ mốc quá khứ; checked dùng phân từ."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Thì ở đây",
+        "Số ít",
+        "Số nhiều"
+      ],
+      "rows": [
+        [
+          "Hiện tại đơn",
+          "The room is cleaned.",
+          "The rooms are cleaned."
+        ],
+        [
+          "Quá khứ đơn",
+          "The room was cleaned.",
+          "The rooms were cleaned."
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Phân từ có thể khác quá khứ đơn: write–wrote–written, take–took–taken. Sau be trong các bị động này cần written/taken, không wrote/took."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không phải động từ nào cũng tạo bị động: happen ở nghĩa xảy ra không tạo was happened. Có tân ngữ cũng không bảo đảm mọi bị động đều tự nhiên; cần xét nghĩa và mẫu cụ thể."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Be + phân từ có thể gần tính từ hoặc trạng thái: The door was closed có thể tả trạng thái hoặc việc đóng, tùy ngữ cảnh. Đừng phân loại chỉ bằng hai từ ấy mà không đọc cả câu."
+    },
+    {
+      "type": "p",
+      "vi": "Bị động không bắt buộc by + tác nhân. The parcel was delivered là câu đầy đủ khi không cần hoặc không biết ai giao. Không tự thêm by someone như phần bắt buộc."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "passive-form-m1",
+      "wrong": "The report was wrote.",
+      "right": "The report was written.",
+      "why": "Be đi với phân từ written."
+    },
+    {
+      "id": "passive-form-m2",
+      "wrong": "The files was checked.",
+      "right": "The files were checked.",
+      "why": "Chủ ngữ số nhiều cần were."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Be + phân từ luôn là bị động không?",
+      "a": "Không. Một số ngữ cảnh có cách hiểu tính từ/trạng thái. Đọc nghĩa và cấu trúc toàn câu."
+    },
+    {
+      "q": "Có luôn cần by không?",
+      "a": "Không. Chỉ thêm tác nhân nếu có ích cho thông tin muốn nói."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "psf-01",
+      "prompt": "Chọn bị động quá khứ đầy đủ.",
+      "explain": "Was + phân từ repaired tạo bị động.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "Chiếc xe được sửa hôm qua.",
+      "options": [
+        {
+          "t": "The bike was repaired yesterday.",
+          "ok": true,
+          "note": "Be quá khứ và phân từ."
+        },
+        {
+          "t": "The bike was repair yesterday.",
+          "ok": false,
+          "note": "Cần repaired.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "The bike repaired yesterday.",
+          "ok": false,
+          "note": "Không là bị động đầy đủ theo yêu cầu.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "A2"
+    },
+    {
+      "id": "psf-02",
+      "prompt": "Nối chủ động với bị động giữ sự việc.",
+      "explain": "Đối tượng chịu tác động thành chủ ngữ; thời gian giữ nguyên.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "Lan checked the file.",
+          "b": "The file was checked by Lan."
+        },
+        {
+          "a": "They clean the room daily.",
+          "b": "The room is cleaned daily."
+        },
+        {
+          "a": "The courier delivered the parcel.",
+          "b": "The parcel was delivered by the courier."
+        }
+      ],
+      "level": "A2"
+    },
+    {
+      "id": "psf-03",
+      "prompt": "Phân loại khung có chủ thể làm hay chịu tác động.",
+      "explain": "Agent bằng by làm nghĩa sự kiện rõ trong các câu này.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Chủ động",
+        "Bị động"
+      ],
+      "items": [
+        {
+          "t": "The guard opened the gate.",
+          "cat": "Chủ động"
+        },
+        {
+          "t": "The gate was opened by the guard.",
+          "cat": "Bị động"
+        },
+        {
+          "t": "The files were checked by Lan.",
+          "cat": "Bị động"
+        }
+      ],
+      "level": "A2"
+    },
+    {
+      "id": "psf-04",
+      "prompt": "Điền was/were phù hợp chủ ngữ.",
+      "explain": "Room số ít was; files số nhiều were.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "The room {1} cleaned yesterday. The files {2} checked yesterday.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "was"
+          ]
+        },
+        "2": {
+          "accept": [
+            "were"
+          ]
+        }
+      },
+      "level": "A2"
+    },
+    {
+      "id": "psf-05",
+      "prompt": "Sửa phân từ của write.",
+      "explain": "Written dùng trong bị động với be.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "The notice was"
+        },
+        {
+          "t": "wrote",
+          "bad": true,
+          "fix": [
+            "written"
+          ],
+          "note": "Write có phân từ written.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "by the manager."
+        }
+      ],
+      "level": "A2"
+    },
+    {
+      "id": "psf-06",
+      "prompt": "Sắp xếp câu bắt đầu bằng The parcel.",
+      "explain": "Was delivered là bị động quá khứ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "The parcel",
+        "was",
+        "delivered",
+        "by the courier"
+      ],
+      "accept": [
+        [
+          "The parcel",
+          "was",
+          "delivered",
+          "by the courier"
+        ]
+      ],
+      "end": ".",
+      "level": "A2"
+    },
+    {
+      "id": "psf-07",
+      "prompt": "Đổi sang bị động, giữ tác nhân.",
+      "explain": "The file là tân ngữ chủ động và thành chủ ngữ bị động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "Lan checked the file.",
+      "instruction": "Bắt đầu The file, dùng bị động quá khứ và giữ by Lan ở cuối.",
+      "accept": [
+        "The file was checked by Lan"
+      ],
+      "model": "The file was checked by Lan",
+      "level": "A2"
+    },
+    {
+      "id": "psf-08",
+      "prompt": "Viết thông báo ngắn về việc được làm.",
+      "explain": "Tự đối chiếu, không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết hai việc được làm hôm qua bằng bị động và một câu chủ động cùng sự việc. Chỉ thêm by khi thực sự muốn nêu người làm.",
+      "model": [
+        "The room was cleaned yesterday. The keys were returned. A caretaker cleaned the room."
+      ],
+      "checklist": [
+        "Be hợp chủ ngữ và mốc quá khứ.",
+        "Sau be dùng phân từ.",
+        "Không thêm by someone để đủ công thức."
+      ],
+      "level": "A2"
+    },
+    {
+      "id": "psf-09",
+      "prompt": "Điền phân từ và be quá khứ.",
+      "explain": "Taken là phân từ; reports số nhiều cần were.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "The photo was {1} (take) yesterday. The reports {2} sent at noon.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "taken"
+          ]
+        },
+        "2": {
+          "accept": [
+            "were"
+          ]
+        }
+      },
+      "level": "A2"
+    },
+    {
+      "id": "psf-10",
+      "prompt": "Chuyển sang bị động, bỏ tác nhân không cụ thể.",
+      "explain": "Không cần by someone khi không muốn nhấn người chưa biết.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "Someone moved the chairs.",
+      "instruction": "Bắt đầu The chairs, dùng bị động quá khứ, không dùng by.",
+      "accept": [
+        "The chairs were moved"
+      ],
+      "model": "The chairs were moved",
+      "level": "A2"
+    },
+    {
+      "id": "psf-11",
+      "prompt": "Chọn tất cả mẫu chuẩn.",
+      "explain": "Happen không tạo was happened; participle cần đúng.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "The keys were found.",
+          "ok": true,
+          "note": "Were + found."
+        },
+        {
+          "t": "The report was written.",
+          "ok": true,
+          "note": "Was + written."
+        },
+        {
+          "t": "An accident was happened.",
+          "ok": false,
+          "note": "Happen ở nghĩa xảy ra không dùng bị động này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "The report was wrote.",
+          "ok": false,
+          "note": "Cần written.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "A2"
+    },
+    {
+      "id": "psf-12",
+      "prompt": "Chọn điều đúng về by.",
+      "explain": "Tác nhân có thể không nêu vì chưa biết hoặc không cần nhấn.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "The window was broken.",
+      "options": [
+        {
+          "t": "Có thể là bị động không nêu người làm; không bắt buộc by.",
+          "ok": true,
+          "note": "Ngữ cảnh quyết định cách hiểu chi tiết."
+        },
+        {
+          "t": "Luôn thiếu ngữ pháp nếu không có by.",
+          "ok": false,
+          "note": "Bị động không tác nhân rất thông dụng.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Mọi be + phân từ đều chắc chắn là sự kiện bị động.",
+          "ok": false,
+          "note": "Có thể có cách hiểu tính từ/trạng thái.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "A2"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

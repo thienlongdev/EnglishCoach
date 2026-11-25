@@ -1,0 +1,51 @@
+{
+  "id": "time-shift-register",
+  "title": "Ai còn bảo đảm kết luận được thuật lại?",
+  "summary": "Năm ngoái tác giả viết rằng số đo bất thường. Hôm nay bạn thuật lại. Thì hiện tại, thì lùi và động từ bác bỏ khác nhau ra sao về cam kết của người viết?",
+  "level": "C1",
+  "topics": [
+    "backshift",
+    "direct-and-reported"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Mức cam kết",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Giữ góc nhìn hiện tại"
+        },
+        {
+          "id": "v2",
+          "label": "Theo mốc lời gốc"
+        },
+        {
+          "id": "v3",
+          "label": "Bác bỏ rõ ràng"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The author said that the reading is unusual.",
+      "vi": "Tác giả từng nói số đo này là bất thường.",
+      "note": "Is hướng người đọc tới cách đánh giá còn hiệu lực. Đây vẫn là lời thuật, không phải bằng chứng xác minh. / The unshifted present presents the assessment as still relevant.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The author said that the reading was unusual.",
+      "vi": "Tác giả từng nói số đo đó là bất thường.",
+      "note": "Was có thể do lùi thì sau said. Không thể chỉ vì was mà kết luận nay số đo đã bình thường. / Backshift alone does not mean the assessment became false.",
+      "verdict": "ok"
+    },
+    "v3": {
+      "en": "The author said the reading was unusual, but later withdrew that claim.",
+      "vi": "Tác giả từng cho số đo là bất thường nhưng về sau rút lại nhận định ấy.",
+      "note": "Chính withdrew that claim cho biết tác giả đổi lập trường, chứ không phải dạng was trong mệnh đề trước. / Withdrawal is explicit only in the added clause.",
+      "verdict": "ok"
+    }
+  }
+}

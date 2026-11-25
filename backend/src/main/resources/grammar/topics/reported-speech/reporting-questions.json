@@ -1,0 +1,458 @@
+{
+  "schema": 1,
+  "slug": "reporting-questions",
+  "version": 2,
+  "domain": "reported-speech",
+  "order": 30,
+  "kind": "grammar",
+  "title": {
+    "vi": "Tường thuật câu hỏi",
+    "en": "Reporting questions"
+  },
+  "subtitle": {
+    "vi": "Giữ điều được hỏi, đổi khung câu",
+    "en": "Preserve the question content in a new frame"
+  },
+  "aliases": [
+    "tường thuật câu hỏi",
+    "reported questions",
+    "asked if whether",
+    "asked where was she",
+    "who called"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Dùng if/whether cho câu hỏi yes/no.",
+    "Giữ wh- với trật tự trần thuật.",
+    "Giữ đúng người nghe và mốc khi thuật."
+  ],
+  "prerequisites": [
+    "direct-and-reported",
+    "indirect-questions"
+  ],
+  "related": [
+    {
+      "slug": "indirect-questions",
+      "rel": "more"
+    },
+    {
+      "slug": "reporting-commands-requests",
+      "rel": "contrast"
+    },
+    {
+      "slug": "backshift",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Tường thuật câu hỏi thường dùng ask + if/whether hoặc wh-clause. Mệnh đề trong có trật tự trần thuật, dù câu hỏi gốc có đảo.",
+    "when": "Xác định loại câu hỏi và người được chỉ trước khi đổi.",
+    "examples": [
+      {
+        "en": "She asked [Q|where] the office was.",
+        "vi": "Cô ấy hỏi văn phòng ở đâu."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Where is the office? có đảo is trước chủ ngữ. Trong She asked where the office was, where giữ thông tin cần biết nhưng the office đứng trước was. Không thêm that trước where."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "transform",
+        "steps": [
+          {
+            "label": "Câu hỏi trực tiếp",
+            "sentence": "Where is the office?"
+          },
+          {
+            "label": "Thuật với mệnh đề trần thuật bên trong",
+            "sentence": "She asked where the office was."
+          }
+        ]
+      },
+      "caption": "Mệnh đề nội dung không đảo như câu hỏi trực tiếp.",
+      "alt": "Mệnh đề nội dung không đảo như câu hỏi trực tiếp."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Loại",
+        "Mẫu thuật",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "Yes/no",
+          "if/whether + mệnh đề",
+          "asked whether it was open"
+        ],
+        [
+          "Wh- không làm chủ ngữ",
+          "wh- + chủ ngữ + động từ",
+          "asked where she worked"
+        ],
+        [
+          "Wh- làm chủ ngữ",
+          "who/what + động từ phù hợp",
+          "asked who had called"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Đại từ theo vai người. Nếu Lan hỏi tôi Are you ready?, lời kể của tôi là Lan asked me if I was ready. Không thay you bằng he theo bảng cố định."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Lùi thì phụ thuộc mốc và việc nội dung còn phù hợp. Bài tập có thể chỉ định was để luyện; không suy mọi giữ thì hiện tại đều sai."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Một câu hỏi về hình thức có thể là lời nhờ: Could you open the window? Nếu ý thực là nhờ mở cửa sổ, She asked me to open the window có thể thuật chức năng tốt hơn. Nếu cần thuật nguyên nội dung hỏi khả năng, dùng khung phù hợp và ngữ cảnh."
+    },
+    {
+      "type": "p",
+      "vi": "She asked where the office was là câu kể nên thường kết thúc dấu chấm. Do you know where the office is? có khung ngoài là câu hỏi. Không quyết định dấu câu chỉ từ loại nội dung gốc."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "reporting-questions-m1",
+      "wrong": "She asked where was the office.",
+      "right": "She asked where the office was.",
+      "why": "Dùng trật tự chủ ngữ trước was bên trong."
+    },
+    {
+      "id": "reporting-questions-m2",
+      "wrong": "She asked that if it was open.",
+      "right": "She asked if it was open.",
+      "why": "Không thêm that trước if ở mẫu này."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Câu hỏi được thuật có đảo bên trong không?",
+      "a": "Thông thường không. Giữ trật tự trần thuật của mệnh đề nội dung."
+    },
+    {
+      "q": "Mọi lời thuật câu hỏi có dấu hỏi không?",
+      "a": "Không. Cần xét khung ngoài là câu kể hay câu hỏi."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "rqu-01",
+      "prompt": "Chọn lời thuật câu hỏi với trật tự đúng.",
+      "explain": "Sau asked where dùng chủ ngữ trước động từ, không đảo kiểu hỏi trực tiếp.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "The visitor asked, “Where is the office?”",
+      "options": [
+        {
+          "t": "The visitor asked where the office was.",
+          "ok": true,
+          "note": "Giữ wh-, dùng trật tự trần thuật và lùi thì."
+        },
+        {
+          "t": "The visitor asked where was the office.",
+          "ok": false,
+          "note": "Không đảo was lên trước chủ ngữ bên trong.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "The visitor asked that where the office was.",
+          "ok": false,
+          "note": "Không thêm that trước where ở mẫu này.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rqu-02",
+      "prompt": "Nối câu hỏi với kiểu tường thuật.",
+      "explain": "Wh- giữ từ hỏi; yes/no dùng if/whether.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "“Where is the office?”",
+          "b": "asked where the office was"
+        },
+        {
+          "a": "“Is the office open?”",
+          "b": "asked if the office was open"
+        },
+        {
+          "a": "“Who called?”",
+          "b": "asked who had called"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rqu-03",
+      "prompt": "Phân loại dạng câu hỏi gốc.",
+      "explain": "Who called là câu hỏi chủ ngữ, không có chủ ngữ khác sau who.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Yes/no",
+        "Wh- về bổ ngữ",
+        "Wh- về chủ ngữ"
+      ],
+      "items": [
+        {
+          "t": "Is the shop open?",
+          "cat": "Yes/no"
+        },
+        {
+          "t": "Where is the shop?",
+          "cat": "Wh- về bổ ngữ"
+        },
+        {
+          "t": "Who called?",
+          "cat": "Wh- về chủ ngữ"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rqu-04",
+      "prompt": "Điền if/whether hoặc where theo câu hỏi gốc.",
+      "explain": "Có/không dùng if/whether; nơi chốn dùng where.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "“Is she ready?” → He asked {1} she was ready. “Where is she?” → He asked {2} she was.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "if",
+            "whether"
+          ]
+        },
+        "2": {
+          "accept": [
+            "where"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "rqu-05",
+      "prompt": "Sửa trật tự trong mệnh đề câu hỏi được thuật.",
+      "explain": "Không dùng đảo trực tiếp sau asked where.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "He asked"
+        },
+        {
+          "t": "where was she",
+          "bad": true,
+          "fix": [
+            "where she was"
+          ],
+          "note": "Dùng she was.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rqu-06",
+      "prompt": "Sắp xếp câu kể bắt đầu bằng The visitor.",
+      "explain": "Whether giữ nội dung có/không; the office đứng trước was.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "The visitor",
+        "asked",
+        "whether",
+        "the office",
+        "was open"
+      ],
+      "accept": [
+        [
+          "The visitor",
+          "asked",
+          "whether",
+          "the office",
+          "was open"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "rqu-07",
+      "prompt": "Thuật câu hỏi, lùi thì theo yêu cầu.",
+      "explain": "Where the station was có trật tự trần thuật.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "Mai asked, “Where is the station?”",
+      "instruction": "Bắt đầu Mai asked, giữ where và the station; dùng was.",
+      "accept": [
+        "Mai asked where the station was"
+      ],
+      "model": "Mai asked where the station was",
+      "level": "B1"
+    },
+    {
+      "id": "rqu-08",
+      "prompt": "Thuật một cuộc hỏi đáp hư cấu.",
+      "explain": "Tự kiểm tra; không gán lời cho người thật và không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Tạo ba câu hỏi: một yes/no, một where/why và một who làm chủ ngữ. Viết lại bằng asked; ghi mốc nếu cần chọn thì.",
+      "model": [
+        "“Is the room free?” The visitor asked whether the room was free. “Why is it closed?” She asked why it was closed. “Who called?” She asked who had called."
+      ],
+      "checklist": [
+        "Không đảo trong mệnh đề được thuật.",
+        "Không thêm do/did chỉ vì có từ hỏi.",
+        "If/whether đúng loại câu hỏi."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rqu-09",
+      "prompt": "Điền dạng be quá khứ và động từ hiện tại theo khung chỉ rõ.",
+      "explain": "Asked câu cũ dùng was ở nhiệm vụ này; asks hiện tại giữ is.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "Yesterday he asked where the office {1} (be), dùng lùi thì. Now he asks whether it {2} (be) open, dùng hiện tại.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "was"
+          ]
+        },
+        "2": {
+          "accept": [
+            "is"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "rqu-10",
+      "prompt": "Thuật câu hỏi yes/no.",
+      "explain": "If/whether đều dùng sau asked trong mẫu này.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "Lan asked me, “Are you ready?”",
+      "instruction": "Người nghe you là tôi; viết Lan asked me, dùng if/whether và I was ready.",
+      "accept": [
+        "Lan asked me if I was ready",
+        "Lan asked me whether I was ready"
+      ],
+      "model": "Lan asked me if I was ready",
+      "level": "B1"
+    },
+    {
+      "id": "rqu-11",
+      "prompt": "Chọn tất cả câu chuẩn.",
+      "explain": "Trật tự trần thuật và từ nối phù hợp; không thêm that trước if.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "She asked if the shop was open.",
+          "ok": true,
+          "note": "If cho yes/no."
+        },
+        {
+          "t": "She asked where the shop was.",
+          "ok": true,
+          "note": "Where + chủ ngữ + động từ."
+        },
+        {
+          "t": "She asked where was the shop.",
+          "ok": false,
+          "note": "Không đảo bên trong.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "She asked that if the shop was open.",
+          "ok": false,
+          "note": "Không thêm that trước if ở mẫu này.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "rqu-12",
+      "prompt": "Chọn nhận xét đúng về dấu hỏi.",
+      "explain": "Dấu cuối câu phụ thuộc khung ngoài, không chỉ nội dung gốc là câu hỏi.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "She asked where the office was. / Do you know where the office is?",
+      "options": [
+        {
+          "t": "Câu đầu là lời kể; câu sau là câu hỏi ở khung ngoài.",
+          "ok": true,
+          "note": "Mệnh đề trong không tự quyết định dấu hỏi của toàn câu."
+        },
+        {
+          "t": "Mọi lời thuật câu hỏi bắt buộc có dấu hỏi cuối.",
+          "ok": false,
+          "note": "Câu đầu là trần thuật.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Mọi câu có asked phải đảo động từ trong mệnh đề sau.",
+          "ok": false,
+          "note": "Trật tự trong là trần thuật.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

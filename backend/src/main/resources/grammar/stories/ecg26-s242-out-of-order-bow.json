@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s242-out-of-order-bow",
+  "title": "Lời cúi chào đặt nhầm chỗ",
+  "summary": "Khán giả chỉ nhận ra ai điều khiển con rối sau khi nghệ sĩ cúi chào. Một bản dịch biến họ thành người cúi chào trước.",
+  "level": "C1",
+  "topics": [
+    "negative-inversion"
+  ],
+  "scene": "lecture",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vera",
+      "role": "Đạo diễn"
+    },
+    {
+      "id": "b",
+      "name": "Khuê",
+      "role": "Người dịch"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Băng quay cho thấy tay khán giả vẫn để trên ghế đến khi sợi dây treo rối hiện dưới ánh sáng. Vera muốn giữ đúng khoảnh khắc vỡ lẽ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Their faces change after the bow.",
+          "vi": "Vẻ mặt họ đổi sau cái cúi chào."
+        },
+        {
+          "who": "b",
+          "en": "Put that delay at the front of the sentence.",
+          "vi": "Đưa độ trễ ấy lên đầu câu đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Khuê chọn câu nhấn đúng mốc bằng đảo ngữ.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Not until the puppeteer bowed did the audience spot the strings.",
+            "note": "Not until đặt việc nhận ra sau mốc cúi chào. Did the audience spot đảo ở mệnh đề chính. Puppeteer vẫn là người cúi.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Not until the audience bowed did the puppeteer spot the strings.",
+            "note": "Đảo ngữ đúng nhưng đã tráo cả người cúi và người nhận ra. Ngữ pháp đúng không đủ để bảo toàn hành động.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Trong phụ đề, chữ strings hiện đúng lúc dây bắt sáng. Một khán giả nhỏ nhận ra tay nghệ sĩ từ đó đã phải nâng cả hai rối.",
+      "say": [
+        {
+          "who": "b",
+          "en": "She finally looked above the puppet.",
+          "vi": "Cuối cùng em đã nhìn lên phía trên con rối."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Em xin học múa rối và bắt đầu bằng việc tự cuộn dây cuối buổi.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Khuê đứng thử ở chỗ khán giả, thấy mình chẳng cần cúi. Cô đổi hai cụm danh từ về đúng vai trước khi màn khép.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Now that second sentence has a performance of its own.",
+          "vi": "Giờ câu thứ hai mới có một màn diễn riêng."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Ở suất sau các em nhỏ tự đứng cúi chào người điều khiển rối, lần này là một cảnh mới thật sự.",
+      "end": true
+    }
+  ]
+}

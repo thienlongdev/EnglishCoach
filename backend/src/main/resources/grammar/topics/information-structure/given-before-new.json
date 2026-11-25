@@ -1,0 +1,470 @@
+{
+  "schema": 1,
+  "slug": "given-before-new",
+  "version": 2,
+  "domain": "information-structure",
+  "order": 10,
+  "kind": "grammar",
+  "title": {
+    "vi": "Cái đã biết trước, cái mới sau",
+    "en": "Given before new"
+  },
+  "subtitle": {
+    "vi": "Nối thông tin đã có và đặt phần dài dễ theo dõi",
+    "en": "Connect established information and place heavier material clearly"
+  },
+  "aliases": [
+    "cái đã biết trước cái mới sau",
+    "given before new",
+    "end-weight",
+    "phần nặng để cuối câu",
+    "tổ chức thông tin"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Giải thích given/new theo ngữ cảnh.",
+    "Dùng lựa chọn chủ ngữ/thể để giữ mạch.",
+    "Áp dụng end weight như xu hướng, không luật tuyệt đối."
+  ],
+  "prerequisites": [],
+  "related": [
+    {
+      "slug": "passive-use",
+      "rel": "more"
+    },
+    {
+      "slug": "extraposition",
+      "rel": "more"
+    },
+    {
+      "slug": "fronting",
+      "rel": "contrast"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Thông tin đã biết (given) thường làm điểm xuất phát để nối thông tin mới (new). End weight là xu hướng đặt phần dài hoặc phức tạp về cuối khi cấu trúc cho phép.",
+    "when": "Dùng để biên tập mạch đọc, không để chấm mọi trật tự khác là sai.",
+    "examples": [
+      {
+        "en": "We received a report. [S|The report] was written by a new colleague.",
+        "vi": "Chúng tôi nhận một báo cáo. Báo cáo do một đồng nghiệp mới viết."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Given không chỉ là điều đã nhắc. Một biển báo cả hai người đang nhìn có thể đã biết trong hoàn cảnh. New là thông tin mới đối với người nghe ở lượt đó, không phải một loại danh từ cố định."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Lượt trước",
+            "items": [
+              "We received a report"
+            ]
+          },
+          {
+            "label": "Điểm xuất phát giữ lại",
+            "items": [
+              "The report"
+            ]
+          },
+          {
+            "label": "Thông tin thêm",
+            "items": [
+              "was written by a new colleague"
+            ]
+          }
+        ],
+        "sentence": "{0}. {1} {2}."
+      },
+      "caption": "Report nối hai câu, rồi người viết được giới thiệu như thông tin thêm.",
+      "alt": "Report nối hai câu, rồi người viết được giới thiệu như thông tin thêm."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Mục tiêu",
+        "Cách làm có thể dùng",
+        "Giới hạn"
+      ],
+      "rows": [
+        [
+          "Giữ chủ đề",
+          "chọn chủ ngữ hoặc bị động phù hợp",
+          "không đảo vai nghĩa"
+        ],
+        [
+          "Đưa thông tin mới",
+          "đặt ở phần được nhấn theo câu hỏi",
+          "không luôn cuối"
+        ],
+        [
+          "End weight",
+          "giữ khung ngắn, phần dài ở sau",
+          "phải theo mẫu động từ"
+        ],
+        [
+          "Người nhận ngắn",
+          "send her a long report",
+          "không áp cho explain như give"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "End weight: I sent her a report about the costs of the entire project thường dễ theo hơn nếu bắt đầu bằng vật dài rồi mới nêu her. Đây là xu hướng xử lý thông tin, không phải câu kia nhất thiết sai."
+    },
+    {
+      "type": "p",
+      "vi": "That we need more time to check every entry is clear có thể viết It is clear that we need more time to check every entry. Khung it ngắn ở đầu giữ mệnh đề dài ở cuối; không phải mọi tính từ đều cho mọi extraposition."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Độ dài và độ mới khác nhau. Một cụm dài có thể đã biết; một đại từ ngắn có thể được dùng đối chiếu rất mạnh. Đừng gộp hai khái niệm thành một luật."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Cấu trúc giới thiệu như There is a problem hoặc câu chẻ có thể làm thông tin mới nổi bật ở vị trí khác. Câu hỏi hội thoại và trọng âm ảnh hưởng phân bố thông tin."
+    },
+    {
+      "type": "p",
+      "vi": "Không sửa chỉ bằng chuyển mọi câu sang bị động. Kiểm tra mạch chủ đề, người làm, phạm vi phủ định và nội dung còn được giữ đầy đủ."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "given-before-new-m1",
+      "wrong": "The report was send to her.",
+      "right": "The report was sent to her.",
+      "why": "Bị động cần phân từ sent."
+    },
+    {
+      "id": "given-before-new-m2",
+      "wrong": "The files was checked by Lan.",
+      "right": "The files were checked by Lan.",
+      "why": "Số nhiều cần were."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Given có luôn là đã nhắc không?",
+      "a": "Không. Nó có thể là điều cùng thấy hoặc đã biết trong hoàn cảnh."
+    },
+    {
+      "q": "Mới và dài có luôn phải ở cuối không?",
+      "a": "Không. Đó là xu hướng hữu ích, phụ thuộc cấu trúc, trọng âm và mục đích nhấn."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "given-before-new-01",
+      "prompt": "Chọn câu tiếp tục với the report làm điểm xuất phát theo yêu cầu.",
+      "explain": "Bị động có thể giữ chủ đề đã có ở đầu; câu chủ động khác vẫn có thể đúng.",
+      "skill": "use",
+      "use": "practice",
+      "type": "choice",
+      "stem": "We received a report. Tiếp tục bằng The report và thêm người viết mới.",
+      "options": [
+        {
+          "t": "The report was written by a new colleague.",
+          "ok": true,
+          "note": "Giữ report trước, giới thiệu colleague sau."
+        },
+        {
+          "t": "A new colleague wrote the report.",
+          "ok": false,
+          "note": "Chuẩn ngữ pháp nhưng không theo yêu cầu bắt đầu bằng chủ đề đã nêu.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "The report wrote a new colleague.",
+          "ok": false,
+          "note": "Đổi sai vai nghĩa của report.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "given-before-new-02",
+      "prompt": "Nối yếu tố với trạng thái thông tin theo ngữ cảnh.",
+      "explain": "Given/new phụ thuộc hội thoại, không phải tính chất cố định của danh từ.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "We received a report. THE REPORT was useful.",
+          "b": "Đã được nhắc trong ngữ cảnh"
+        },
+        {
+          "a": "We received a report. It was written by A NEW COLLEAGUE.",
+          "b": "Mới được giới thiệu ở lượt này"
+        },
+        {
+          "a": "Chưa ai nhắc biển này, nhưng cả hai cùng nhìn nó trước mặt: THE SIGN is damaged.",
+          "b": "Có thể biết nhờ cùng nhìn, không cần nhắc trước"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "given-before-new-03",
+      "prompt": "Phân loại trọng tâm của hai xu hướng.",
+      "explain": "Độ nặng cấu trúc và độ mới thông tin có liên hệ nhưng không giống nhau.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Given-before-new",
+        "End weight"
+      ],
+      "items": [
+        {
+          "t": "Nối một chủ đề vừa được nhắc với thông tin chưa nói.",
+          "cat": "Given-before-new"
+        },
+        {
+          "t": "Đặt mệnh đề dài ở sau một khung ngắn.",
+          "cat": "End weight"
+        },
+        {
+          "t": "Giữ một đại từ người nhận ngắn trước vật được mô tả dài.",
+          "cat": "End weight"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "given-before-new-04",
+      "prompt": "Điền dạng be quá khứ trong hai khung bị động.",
+      "explain": "Hòa hợp vẫn cần đúng dù đang luyện tổ chức thông tin.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "The report {1} written by Lan. The files {2} checked by Minh.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "was"
+          ]
+        },
+        "2": {
+          "accept": [
+            "were"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "given-before-new-05",
+      "prompt": "Sửa hình thức bị động, giữ chủ đề file.",
+      "explain": "Bị động cần phân từ sent.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "The file was"
+        },
+        {
+          "t": "send",
+          "bad": true,
+          "fix": [
+            "sent"
+          ],
+          "note": "Send có phân từ sent.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "to a new colleague."
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "given-before-new-06",
+      "prompt": "Sắp xếp bắt đầu bằng I; giữ người nhận ngắn trước vật dài.",
+      "explain": "Sent her a long report là mẫu send với người nhận ngắn trước vật dài. Her trong câu này là người nhận, không đổi thành me.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "I",
+        "sent",
+        "her",
+        "a report about the costs of the entire project"
+      ],
+      "accept": [
+        [
+          "I",
+          "sent",
+          "her",
+          "a report about the costs of the entire project"
+        ]
+      ],
+      "end": ".",
+      "level": "B2"
+    },
+    {
+      "id": "given-before-new-07",
+      "prompt": "Viết lại với chủ đề report ở đầu.",
+      "explain": "Đổi thể có thể thay điểm xuất phát mà giữ sự việc.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "A new colleague wrote the report.",
+      "instruction": "Bắt đầu The report, giữ tác nhân cuối bằng by và quá khứ.",
+      "accept": [
+        "The report was written by a new colleague"
+      ],
+      "model": "The report was written by a new colleague",
+      "level": "B2"
+    },
+    {
+      "id": "given-before-new-08",
+      "prompt": "Biên tập hai câu cho người đọc.",
+      "explain": "Tự đối chiếu; không chấm tự động và không coi mọi cách khác là lỗi.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết hai câu: câu đầu giới thiệu một vật, câu sau lấy vật ấy làm chủ đề rồi thêm thông tin. Thêm một câu có vật nhận dài ở cuối để minh họa end weight.",
+      "model": [
+        "We received a report. The report was written by a new colleague. I sent her a report about the costs of the entire project."
+      ],
+      "checklist": [
+        "Thông tin given/new được giải thích theo ngữ cảnh.",
+        "Cấu trúc dài đặt dễ theo dõi.",
+        "Không bịa quy tắc mọi thông tin mới phải ở cuối."
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "given-before-new-09",
+      "prompt": "Điền phân từ của check sau was; ở câu thứ hai dùng be quá khứ đơn để kể việc gửi đã xảy ra.",
+      "explain": "Checked sau was; was theo subject số ít.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "The report was {1} (check) by Lan. The report {2} sent to a new colleague.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "checked"
+          ]
+        },
+        "2": {
+          "accept": [
+            "was"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "given-before-new-10",
+      "prompt": "Dùng khung ngắn để đưa mệnh đề dài ra cuối.",
+      "explain": "Extraposition giúp end weight khi cấu trúc cho phép.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "That we need more time to check every entry is clear.",
+      "instruction": "Dùng It is clear ở đầu và giữ toàn bộ that-clause ở cuối.",
+      "accept": [
+        "It is clear that we need more time to check every entry"
+      ],
+      "model": "It is clear that we need more time to check every entry",
+      "level": "B2"
+    },
+    {
+      "id": "given-before-new-11",
+      "prompt": "Chọn tất cả nhận xét đúng.",
+      "explain": "Hai xu hướng là hướng dẫn, không lệnh cấm khác cách viết.",
+      "skill": "use",
+      "use": "check",
+      "type": "multi",
+      "stem": "Given-before-new và end weight.",
+      "options": [
+        {
+          "t": "Thông tin đã biết có thể đến từ hoàn cảnh chung, không chỉ lần nhắc trước.",
+          "ok": true,
+          "note": "Có given qua tình huống."
+        },
+        {
+          "t": "Cụm dài thường dễ xử lý hơn khi có khung ngắn dẫn trước.",
+          "ok": true,
+          "note": "Đó là xu hướng end weight."
+        },
+        {
+          "t": "Mọi câu có thông tin mới ở đầu đều sai ngữ pháp.",
+          "ok": false,
+          "note": "Có cấu trúc giới thiệu và nhấn mới ở đầu.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Một từ luôn là given ở mọi cuộc hội thoại.",
+          "ok": false,
+          "note": "Phụ thuộc ngữ cảnh.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "given-before-new-12",
+      "prompt": "Chọn cách đánh giá một bản sửa.",
+      "explain": "Biên tập tổ chức thông tin cần giữ cả nghĩa và câu hỏi hội thoại.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "Đổi chủ động sang bị động để giữ chủ đề.",
+      "options": [
+        {
+          "t": "Có thể hữu ích khi giữ đúng vai và phù hợp ngữ cảnh; không mặc định bị động tốt hơn.",
+          "ok": true,
+          "note": "Chọn theo điều người đọc đang theo dõi."
+        },
+        {
+          "t": "Bị động luôn tốt hơn chủ động ở mọi đoạn.",
+          "ok": false,
+          "note": "Không có ưu thế tuyệt đối.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "End weight có nghĩa xóa bớt mọi thông tin dài.",
+          "ok": false,
+          "note": "Có thể đổi vị trí để giữ thông tin rõ.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "lgswe",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

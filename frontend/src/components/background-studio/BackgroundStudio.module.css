@@ -1,0 +1,3124 @@
+/*
+ * Echo Background Studio — gallery-grade dark obsidian and pearl-glass workspace.
+ * Always dark so color stops, gradients, luminance and motion read accurately under any app theme.
+ * Room lighting adapts dynamically via --accent (matching Echo Ocean Pearl x Abyss).
+ * Zero blur filters over live layers, zero override flags, inherits Quicksand globally.
+ */
+
+@property --accent {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #38bdf8;
+}
+
+@keyframes bgStudioFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bgDockRise {
+  from {
+    opacity: 0;
+    transform: translate3d(-50%, 18px, 0) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(-50%, 0, 0) scale(1);
+  }
+}
+
+@keyframes bgPulseDot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(0.82);
+  }
+}
+
+/* ─── Studio Shell ─────────────────────────────────────────────────────────── */
+.studio {
+  --bg-ink: #040814;
+  --bg-ink-2: #081024;
+  --bg-surface: rgb(10 18 42 / 0.94);
+  --bg-surface-2: rgb(14 24 54 / 0.94);
+  --bg-surface-3: rgb(19 33 72 / 0.96);
+  --bg-text: #f1f6ff;
+  --bg-muted: #a8bae0;
+  --bg-faint: #8b9ec6;
+  --bg-line: rgb(255 255 255 / 0.08);
+  --bg-line-2: rgb(255 255 255 / 0.16);
+  --bg-rim: linear-gradient(
+    160deg,
+    rgb(224 242 254 / 0.36) 0%,
+    color-mix(in oklab, var(--accent) 28%, transparent) 34%,
+    rgb(148 163 184 / 0.12) 70%,
+    rgb(255 255 255 / 0.22) 100%
+  );
+  --bg-card-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.12),
+    inset 0 -1px 0 rgb(0 0 0 / 0.5),
+    0 22px 48px -24px rgb(0 2 12 / 0.9);
+  --bg-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--bg-text);
+  background:
+    radial-gradient(920px 540px at 10% -8%, color-mix(in oklab, var(--accent) 22%, transparent), transparent 68%),
+    radial-gradient(760px 520px at 96% 108%, color-mix(in oklab, var(--accent) 14%, transparent), transparent 68%),
+    radial-gradient(560px 420px at 52% 46%, rgb(14 30 68 / 0.28), transparent 72%),
+    linear-gradient(172deg, #071026 0%, #050a1a 52%, #030611 100%);
+  transition: --accent 180ms ease;
+  animation: bgStudioFadeIn 220ms ease-out both;
+}
+
+.studio:focus {
+  outline: none;
+}
+
+.workspace {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(420px, 1.15fr) minmax(380px, 0.95fr);
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: 12px 18px;
+  padding: 4px 18px 18px;
+  overflow: hidden;
+}
+
+/* ─── Left Stage Column ────────────────────────────────────────────────────── */
+.stageColumn {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+  min-width: 0;
+}
+
+.stageWrap {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.stageFrame {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 380px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #02050f;
+  isolation: isolate;
+  box-shadow:
+    0 34px 74px -38px color-mix(in oklab, var(--accent) 68%, black),
+    0 12px 30px -16px rgb(0 0 0 / 0.85),
+    0 0 0 1px var(--bg-line-2);
+}
+
+.stageFrame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 8;
+  border-radius: inherit;
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.22),
+    inset 0 0 0 1px rgb(255 255 255 / 0.08);
+  pointer-events: none;
+}
+
+.stageLayer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Top HUD over the Live Preview stage */
+.stageTopHud {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.stageTopHud > * {
+  pointer-events: auto;
+}
+
+.stageIdentity {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: min(320px, 60%);
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgb(5 10 24 / 0.88);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.14),
+    inset 0 0 0 1px rgb(255 255 255 / 0.12),
+    0 12px 24px -12px rgb(0 0 0 / 0.8);
+}
+
+.stageSwatchDot {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 12px color-mix(in oklab, var(--accent) 85%, white);
+}
+
+.stageThemeName {
+  min-width: 0;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #f8fbff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stageTypeTag {
+  flex: none;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--accent) 72%, white);
+  background: color-mix(in oklab, var(--accent) 18%, rgb(8 16 36));
+}
+
+.stageUnsavedDot {
+  flex: none;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fbbf24;
+  box-shadow: 0 0 8px rgb(251 191 36 / 0.8);
+}
+
+/* Top HUD right stack (Reduced Motion pill + WCAG Readability meter) */
+.stageTopHudRight {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  max-width: 100%;
+}
+
+.reducedMotionPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  font-size: 11.4px;
+  font-weight: 700;
+  color: #fde68a;
+  background: rgb(5 10 24 / 0.92);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.12),
+    inset 0 0 0 1px rgb(251 191 36 / 0.5),
+    0 12px 24px -12px rgb(0 0 0 / 0.82);
+  white-space: nowrap;
+}
+
+/* WCAG Readability and Luminance Pill */
+.readabilityPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 11.8px;
+  font-weight: 700;
+  color: #eef4ff;
+  background: rgb(5 10 24 / 0.9);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.12),
+    inset 0 0 0 1px rgb(255 255 255 / 0.12),
+    0 12px 24px -12px rgb(0 0 0 / 0.8);
+  white-space: nowrap;
+}
+
+.readabilityDot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.readabilityExcellent {
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.14),
+    inset 0 0 0 1px rgb(52 211 153 / 0.45),
+    0 12px 24px -12px rgb(0 0 0 / 0.82);
+}
+
+.readabilityExcellent .readabilityDot {
+  background: #34d399;
+  box-shadow: 0 0 10px rgb(52 211 153 / 0.85);
+}
+
+.readabilityGood {
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.14),
+    inset 0 0 0 1px rgb(56 189 248 / 0.45),
+    0 12px 24px -12px rgb(0 0 0 / 0.82);
+}
+
+.readabilityGood .readabilityDot {
+  background: #38bdf8;
+  box-shadow: 0 0 10px rgb(56 189 248 / 0.85);
+}
+
+.readabilityCaution {
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.14),
+    inset 0 0 0 1px rgb(251 191 36 / 0.52),
+    0 12px 24px -12px rgb(0 0 0 / 0.82);
+}
+
+.readabilityCaution .readabilityDot {
+  background: #fbbf24;
+  box-shadow: 0 0 10px rgb(251 191 36 / 0.85);
+}
+
+.readabilityLabel {
+  color: #f4f8ff;
+}
+
+.readabilityMetric {
+  padding-left: 6px;
+  border-left: 1px solid rgb(255 255 255 / 0.16);
+  font-size: 11px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--bg-muted);
+}
+
+/* Floating Quick Controls Bar inside Stage */
+.stageQuickBar {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  z-index: 6;
+  transform: translateX(-50%);
+  max-width: calc(100% - 20px);
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  padding: 5px;
+  border-radius: 999px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  background: rgb(6 11 26 / 0.92);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.16),
+    inset 0 0 0 1px rgb(255 255 255 / 0.12),
+    0 18px 36px -14px rgb(0 0 0 / 0.9);
+}
+
+.quickDivider {
+  flex: none;
+  width: 1px;
+  height: 18px;
+  background: rgb(255 255 255 / 0.12);
+  margin: 0 2px;
+}
+
+.quickBtn {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 32px;
+  padding: 0 9px;
+  border-radius: 999px;
+  font-size: 11.8px;
+  font-weight: 700;
+  color: #c5d3ef;
+  background: transparent;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    box-shadow 160ms ease,
+    transform 150ms var(--bg-ease);
+}
+
+.quickBtn:hover:not(:disabled) {
+  color: #ffffff;
+  background: rgb(255 255 255 / 0.08);
+}
+
+.quickBtn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.quickBtn:disabled {
+  opacity: 0.78;
+  cursor: default;
+}
+
+.quickBtnOn {
+  color: #ffffff;
+  background: rgb(255 255 255 / 0.14);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.16),
+    inset 0 0 0 1px color-mix(in oklab, var(--accent) 48%, rgb(255 255 255 / 0.18));
+}
+
+.quickBtnOn:hover:not(:disabled) {
+  color: #ffffff;
+  background: rgb(255 255 255 / 0.18);
+}
+
+.quickBtnAccent {
+  color: #041022;
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--accent) 68%, white),
+    color-mix(in oklab, var(--accent) 84%, white)
+  );
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.72),
+    0 8px 18px -8px color-mix(in oklab, var(--accent) 85%, transparent);
+}
+
+.quickBtnAccent:hover:not(:disabled) {
+  color: #041022;
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--accent) 76%, white),
+    color-mix(in oklab, var(--accent) 88%, white)
+  );
+  filter: brightness(1.04);
+}
+
+.quickBtn:focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--accent) 82%, white);
+  outline-offset: 2px;
+}
+
+/* ─── English Coach UI Mockup Overlay inside Live Preview ─────────────────── */
+.mockupCanvas {
+  --mk-surface: rgb(252 253 255 / 0.93);
+  --mk-surface-soft: rgb(246 249 255 / 0.88);
+  --mk-plate: rgb(250 252 255 / 0.94);
+  --mk-line: rgb(15 23 42 / 0.1);
+  --mk-rim: rgb(255 255 255 / 0.86);
+  --mk-ink: #0f172a;
+  --mk-ink-soft: #475569;
+  --mk-ink-faint: #64748b;
+  --mk-track: rgb(15 23 42 / 0.1);
+  --mk-chip-bg: rgb(14 165 233 / 0.12);
+  --mk-chip-ink: #0369a1;
+  --mk-shadow: 0 18px 34px -22px rgb(2 6 23 / 0.45);
+
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 58px 20px 68px;
+  overflow: hidden;
+  pointer-events: none;
+  animation: bgStudioFadeIn 220ms ease-out both;
+}
+
+.mockupDark {
+  --mk-surface: rgb(10 18 40 / 0.92);
+  --mk-surface-soft: rgb(14 24 52 / 0.88);
+  --mk-plate: rgb(9 16 36 / 0.92);
+  --mk-line: rgb(255 255 255 / 0.11);
+  --mk-rim: rgb(255 255 255 / 0.14);
+  --mk-ink: #f1f6ff;
+  --mk-ink-soft: #b6c4e2;
+  --mk-ink-faint: #8495ba;
+  --mk-track: rgb(255 255 255 / 0.12);
+  --mk-chip-bg: color-mix(in oklab, var(--accent) 20%, rgb(10 18 40));
+  --mk-chip-ink: color-mix(in oklab, var(--accent) 72%, white);
+  --mk-shadow: 0 22px 42px -24px rgb(0 0 0 / 0.82);
+}
+
+.mockupInner {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mockupHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 14px;
+  background: var(--mk-surface);
+  box-shadow:
+    inset 0 1px 0 var(--mk-rim),
+    inset 0 0 0 1px var(--mk-line),
+    var(--mk-shadow);
+}
+
+.mockupBreadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--mk-ink-soft);
+}
+
+.mockupBrandDot {
+  width: 18px;
+  height: 18px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, color-mix(in oklab, var(--accent) 85%, white), var(--accent));
+  box-shadow: 0 4px 10px -4px color-mix(in oklab, var(--accent) 80%, transparent);
+}
+
+.mockupCrumbActive {
+  color: var(--mk-ink);
+}
+
+.mockupHeaderRight {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mockupMiniPill {
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--mk-chip-ink);
+  background: var(--mk-chip-bg);
+}
+
+.mockupAvatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(140deg, var(--accent), #6366f1);
+  box-shadow: inset 0 0 0 1.5px var(--mk-rim);
+}
+
+/* .ec-wp-plate inspired local reading plate */
+.mockupPlateRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.mockupPlate {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 10px 14px;
+  border-radius: 15px;
+  background: var(--mk-plate);
+  box-shadow:
+    inset 0 1px 0 var(--mk-rim),
+    inset 0 0 0 1px var(--mk-line),
+    0 14px 30px -22px rgb(0 0 0 / 0.55);
+}
+
+.mockupEyebrow {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mk-chip-ink);
+}
+
+.mockupHeading {
+  margin: 0;
+  font-size: clamp(16px, 1.8vw, 20px);
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+  color: var(--mk-ink);
+}
+
+.mockupSearchRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mockupSearch {
+  flex: 1 1 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--mk-ink-faint);
+  background: var(--mk-surface);
+  box-shadow:
+    inset 0 1px 0 var(--mk-rim),
+    inset 0 0 0 1px var(--mk-line),
+    var(--mk-shadow);
+}
+
+.mockupCta {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #041022;
+  background: linear-gradient(135deg, color-mix(in oklab, var(--accent) 82%, white), var(--accent));
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.72),
+    0 10px 22px -10px color-mix(in oklab, var(--accent) 82%, transparent);
+}
+
+.mockupGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.mockupCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 16px;
+  background: var(--mk-surface);
+  box-shadow:
+    inset 0 1px 0 var(--mk-rim),
+    inset 0 0 0 1px var(--mk-line),
+    var(--mk-shadow);
+}
+
+.mockupCardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--mk-ink-soft);
+}
+
+.mockupCardValue {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+  color: var(--mk-ink);
+}
+
+.mockupCardFoot {
+  font-size: 10.8px;
+  font-weight: 600;
+  color: var(--mk-ink-faint);
+}
+
+.mockupProgressTrack {
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--mk-track);
+}
+
+.mockupProgressFill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--accent), color-mix(in oklab, var(--accent) 65%, #a78bfa));
+}
+
+.mockupMeterBars {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 18px;
+}
+
+.mockupMeterBar {
+  flex: 1;
+  border-radius: 3px;
+  background: var(--mk-track);
+}
+
+.mockupMeterBarOn {
+  background: linear-gradient(180deg, color-mix(in oklab, var(--accent) 80%, white), var(--accent));
+}
+
+.mockupParagraph {
+  padding: 11px 14px;
+  border-radius: 15px;
+  font-size: 11.8px;
+  line-height: 1.5;
+  color: var(--mk-ink-soft);
+  background: var(--mk-surface-soft);
+  box-shadow:
+    inset 0 1px 0 var(--mk-rim),
+    inset 0 0 0 1px var(--mk-line),
+    var(--mk-shadow);
+}
+
+.mockupParagraph strong {
+  color: var(--mk-ink);
+  font-weight: 700;
+}
+
+/* ─── Grounded Sticky Action Footer (Left Column Bottom) ──────────────────── */
+.stageFooter {
+  grid-column: 1;
+  grid-row: 2;
+  flex: none;
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 14px;
+  padding: 11px 14px;
+  border-radius: 18px;
+  background: linear-gradient(170deg, rgb(12 22 50 / 0.95) 0%, rgb(8 14 34 / 0.96) 100%);
+  box-shadow:
+    var(--bg-card-shadow),
+    inset 0 0 0 1px var(--bg-line);
+}
+
+.stageFooterMeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex: 1 1 170px;
+}
+
+.stageFooterNote {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.38;
+  color: var(--bg-muted);
+}
+
+.stageFooterError {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.38;
+  color: #fda4af;
+}
+
+.unsavedBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fde68a;
+  background: rgb(245 158 11 / 0.15);
+  box-shadow: inset 0 0 0 1px rgb(251 191 36 / 0.38);
+  white-space: nowrap;
+}
+
+.stageFooterActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* ─── Shared Tactile Studio Buttons ────────────────────────────────────────── */
+.btnPrimary,
+.btnSecondary,
+.btnAccent,
+.btnGhost,
+.btnDanger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  height: 38px;
+  padding: 0 15px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    transform 160ms var(--bg-ease),
+    box-shadow 180ms ease,
+    background-color 160ms ease,
+    color 160ms ease,
+    opacity 150ms ease;
+}
+
+.btnPrimary {
+  color: #041022;
+  background: linear-gradient(135deg, #f8fbff 0%, color-mix(in oklab, var(--accent) 44%, white) 100%);
+  box-shadow:
+    inset 0 1px 0 #ffffff,
+    0 12px 28px -12px color-mix(in oklab, var(--accent) 85%, transparent),
+    0 2px 6px rgb(0 0 0 / 0.45);
+}
+
+.btnPrimary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 1px 0 #ffffff,
+    0 16px 34px -10px color-mix(in oklab, var(--accent) 92%, transparent),
+    0 4px 10px rgb(0 0 0 / 0.5);
+}
+
+.btnAccent {
+  color: #e6f6ff;
+  background: linear-gradient(
+    145deg,
+    color-mix(in oklab, var(--accent) 28%, rgb(16 30 68)),
+    color-mix(in oklab, var(--accent) 18%, rgb(10 20 48))
+  );
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.2),
+    inset 0 0 0 1px color-mix(in oklab, var(--accent) 52%, rgb(255 255 255 / 0.16));
+}
+
+.btnAccent:hover:not(:disabled) {
+  transform: translateY(-1px);
+  color: #ffffff;
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.26),
+    inset 0 0 0 1px color-mix(in oklab, var(--accent) 76%, white),
+    0 12px 24px -12px color-mix(in oklab, var(--accent) 65%, transparent);
+}
+
+.btnSecondary {
+  color: var(--bg-text);
+  background: rgb(255 255 255 / 0.07);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.12),
+    inset 0 0 0 1px var(--bg-line-2);
+}
+
+.btnSecondary:hover:not(:disabled) {
+  background: rgb(255 255 255 / 0.12);
+}
+
+.btnGhost {
+  padding: 0 10px;
+  color: var(--bg-muted);
+  background: transparent;
+}
+
+.btnGhost:hover:not(:disabled) {
+  color: var(--bg-text);
+  background: rgb(255 255 255 / 0.06);
+}
+
+.btnDanger {
+  color: #fecdd3;
+  background: rgb(190 18 60 / 0.2);
+  box-shadow: inset 0 0 0 1px rgb(251 113 133 / 0.36);
+}
+
+.btnDanger:hover:not(:disabled) {
+  color: #ffffff;
+  background: rgb(225 29 72 / 0.34);
+}
+
+.btnPrimary:active:not(:disabled),
+.btnSecondary:active:not(:disabled),
+.btnAccent:active:not(:disabled),
+.btnGhost:active:not(:disabled),
+.btnDanger:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.btnPrimary:disabled,
+.btnSecondary:disabled,
+.btnAccent:disabled,
+.btnGhost:disabled,
+.btnDanger:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+}
+
+.btnSmall {
+  height: 32px;
+  padding: 0 11px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.btnIcon {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  color: var(--bg-muted);
+  background: rgb(255 255 255 / 0.05);
+  box-shadow: inset 0 0 0 1px var(--bg-line);
+  cursor: pointer;
+  transition:
+    transform 150ms var(--bg-ease),
+    background-color 150ms ease,
+    color 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.btnIcon:hover:not(:disabled) {
+  color: #ffffff;
+  background: rgb(255 255 255 / 0.11);
+  box-shadow: inset 0 0 0 1px var(--bg-line-2);
+}
+
+.btnIcon:disabled {
+  opacity: 0.36;
+  cursor: not-allowed;
+}
+
+.btnIconActive {
+  color: #fde68a;
+  background: rgb(245 158 11 / 0.18);
+  box-shadow: inset 0 0 0 1px rgb(251 191 36 / 0.44);
+}
+
+.btnIconActive:hover:not(:disabled) {
+  color: #fde68a;
+  background: rgb(245 158 11 / 0.28);
+  box-shadow: inset 0 0 0 1px rgb(251 191 36 / 0.62);
+}
+
+.btnIconDanger:hover:not(:disabled) {
+  color: #fda4af;
+  background: rgb(225 29 72 / 0.22);
+  box-shadow: inset 0 0 0 1px rgb(251 113 133 / 0.42);
+}
+
+/* ─── Right Inspector Column ───────────────────────────────────────────────── */
+.inspectorColumn {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+  border-radius: 24px;
+  background: linear-gradient(172deg, rgb(11 20 46 / 0.96) 0%, rgb(7 13 32 / 0.97) 58%, rgb(5 9 22 / 0.98) 100%);
+  box-shadow: var(--bg-card-shadow);
+  overflow: hidden;
+}
+
+.inspectorColumn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: var(--bg-rim);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  pointer-events: none;
+}
+
+.inspectorColumn > * {
+  position: relative;
+  z-index: 1;
+}
+
+.inspectorHeader {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 15px 16px 13px;
+  border-bottom: 1px solid var(--bg-line);
+  background: linear-gradient(180deg, rgb(16 28 62 / 0.56), transparent);
+}
+
+.inspectorHeadingRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.inspectorEyebrow {
+  margin: 0 0 3px;
+  font-size: 10.8px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--accent) 76%, white);
+}
+
+.inspectorTitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.18;
+  color: #ffffff;
+}
+
+.inspectorSubtitle {
+  margin: 4px 0 0;
+  font-size: 12.2px;
+  line-height: 1.42;
+  color: var(--bg-muted);
+}
+
+/* 4-Tab Pill Bar */
+.tabBar {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px;
+  padding: 4px;
+  border-radius: 15px;
+  background: rgb(3 7 18 / 0.85);
+  box-shadow:
+    inset 0 2px 4px rgb(0 0 0 / 0.6),
+    inset 0 0 0 1px var(--bg-line);
+}
+
+.tabBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-width: 0;
+  padding: 8px 6px;
+  border-radius: 11px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--bg-muted);
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.tabBtn:hover {
+  color: var(--bg-text);
+  background: rgb(255 255 255 / 0.05);
+}
+
+.tabBtnActive {
+  color: #041022;
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--accent) 68%, white),
+    color-mix(in oklab, var(--accent) 84%, white)
+  );
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.72),
+    0 8px 20px -8px color-mix(in oklab, var(--accent) 82%, transparent);
+}
+
+.tabBtnActive:hover {
+  color: #041022;
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--accent) 74%, white),
+    color-mix(in oklab, var(--accent) 88%, white)
+  );
+}
+
+.tabLabel {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tabBadge {
+  flex: none;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  background: rgb(255 255 255 / 0.14);
+  color: inherit;
+}
+
+.tabBtnActive .tabBadge {
+  background: rgb(4 16 34 / 0.16);
+  color: #041022;
+}
+
+/* Scrollable Inspector Body */
+.inspectorBody {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 14px 16px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(255 255 255 / 0.16) transparent;
+}
+
+/* Elevated Grouped Inspector Card */
+.sectionCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 14px 15px;
+  border-radius: 18px;
+  background: linear-gradient(170deg, rgb(14 25 56 / 0.9) 0%, rgb(9 17 40 / 0.94) 100%);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.1),
+    inset 0 0 0 1px var(--bg-line),
+    0 12px 26px -18px rgb(0 0 0 / 0.75);
+}
+
+.sectionHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.sectionHead > div {
+  min-width: 0;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #f8fbff;
+}
+
+.sectionHint {
+  margin: 2px 0 0;
+  font-size: 11.8px;
+  line-height: 1.42;
+  color: var(--bg-muted);
+}
+
+.sectionDivider {
+  height: 1px;
+  margin: 2px 0;
+  border: 0;
+  background: var(--bg-line);
+}
+
+.inlineRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 999px;
+  color: var(--bg-muted);
+  background: rgb(255 255 255 / 0.05);
+  box-shadow: inset 0 0 0 1px var(--bg-line);
+}
+
+.searchBox:focus-within {
+  box-shadow: inset 0 0 0 1.5px var(--accent);
+}
+
+.searchInput {
+  flex: 1 1 auto;
+  min-width: 0;
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-size: 12.6px;
+  font-weight: 600;
+  color: var(--bg-text);
+}
+
+.searchInput::placeholder {
+  color: var(--bg-faint);
+}
+
+/* ─── Tab 1: Presets Gallery ───────────────────────────────────────────────── */
+.filterBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.filterChip {
+  padding: 6px 11px;
+  border-radius: 999px;
+  font-size: 11.8px;
+  font-weight: 700;
+  color: var(--bg-muted);
+  background: rgb(255 255 255 / 0.05);
+  box-shadow: inset 0 0 0 1px var(--bg-line);
+  cursor: pointer;
+  transition: color 150ms ease, background-color 150ms ease, box-shadow 150ms ease;
+}
+
+.filterChip:hover {
+  color: var(--bg-text);
+  box-shadow: inset 0 0 0 1px var(--bg-line-2);
+}
+
+.filterChipActive {
+  color: #041022;
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--accent) 68%, white),
+    color-mix(in oklab, var(--accent) 84%, white)
+  );
+  box-shadow: none;
+}
+
+.filterChipActive:hover {
+  color: #041022;
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--accent) 74%, white),
+    color-mix(in oklab, var(--accent) 88%, white)
+  );
+  box-shadow: none;
+}
+
+.presetGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 11px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.presetCard {
+  --card-accent: var(--accent);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 17px;
+  overflow: hidden;
+  background: rgb(11 20 44 / 0.94);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.1),
+    inset 0 0 0 1px var(--bg-line),
+    0 12px 24px -16px rgb(0 0 0 / 0.8);
+  transition:
+    transform 190ms var(--bg-ease),
+    box-shadow 190ms ease;
+}
+
+.presetCard:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.18),
+    inset 0 0 0 1px color-mix(in oklab, var(--card-accent) 52%, rgb(255 255 255 / 0.18)),
+    0 16px 32px -16px color-mix(in oklab, var(--card-accent) 55%, black);
+}
+
+.presetCardActive {
+  box-shadow:
+    0 0 0 2px var(--bg-ink),
+    0 0 0 4px var(--card-accent),
+    0 18px 36px -18px color-mix(in oklab, var(--card-accent) 75%, transparent);
+}
+
+.presetCardActive:hover {
+  box-shadow:
+    0 0 0 2px var(--bg-ink),
+    0 0 0 4px var(--card-accent),
+    0 20px 38px -16px color-mix(in oklab, var(--card-accent) 82%, transparent);
+}
+
+.presetCardBtn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.presetSwatch {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9.5;
+  overflow: hidden;
+  background: #070d20;
+}
+
+.presetSwatchSheen {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.14) 0%, transparent 40%, rgb(3 6 16 / 0.45) 100%);
+  pointer-events: none;
+}
+
+.presetBadges {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  pointer-events: none;
+}
+
+.presetTypeBadge,
+.presetActiveBadge {
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.presetTypeBadge {
+  color: #eef4ff;
+  background: rgb(4 8 20 / 0.76);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.14);
+}
+
+.presetActiveBadge {
+  color: #041022;
+  background: #f8fbff;
+}
+
+.presetFavBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #dce7ff;
+  background: rgb(4 8 20 / 0.72);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.16);
+  cursor: pointer;
+  transition: transform 150ms var(--bg-ease), color 150ms ease, background-color 150ms ease;
+}
+
+.presetFavBtn:hover {
+  transform: scale(1.08);
+  color: #ffffff;
+  background: rgb(4 8 20 / 0.88);
+}
+
+.presetFavBtnOn {
+  color: #fbbf24;
+  box-shadow: inset 0 0 0 1px rgb(251 191 36 / 0.5);
+}
+
+.presetFavBtnOn:hover {
+  color: #fcd34d;
+  background: rgb(4 8 20 / 0.9);
+  box-shadow: inset 0 0 0 1px rgb(251 191 36 / 0.72);
+}
+
+.presetCardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 9px 11px 11px;
+}
+
+.presetCategory {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--card-accent) 72%, white);
+}
+
+.presetName {
+  font-size: 13.2px;
+  font-weight: 800;
+  line-height: 1.24;
+  color: #ffffff;
+}
+
+.presetTagline {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 11.4px;
+  line-height: 1.38;
+  color: var(--bg-muted);
+}
+
+/* ─── Segmented Controls and Blend Mode Pills ──────────────────────────────── */
+.segmented {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 3px;
+  padding: 3px;
+  border-radius: 12px;
+  background: rgb(4 8 20 / 0.78);
+  box-shadow: inset 0 0 0 1px var(--bg-line);
+}
+
+.segmentBtn {
+  min-width: 0;
+  padding: 7px 8px;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--bg-muted);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 150ms ease, background-color 150ms ease, box-shadow 150ms ease;
+}
+
+.segmentBtn:hover {
+  color: var(--bg-text);
+}
+
+.segmentBtnActive {
+  color: #041022;
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--accent) 68%, white),
+    color-mix(in oklab, var(--accent) 84%, white)
+  );
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.72);
+}
+
+.segmentBtnActive:hover {
+  color: #041022;
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--accent) 74%, white),
+    color-mix(in oklab, var(--accent) 88%, white)
+  );
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.78);
+}
+
+.pillGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pillOption {
+  padding: 6px 11px;
+  border-radius: 10px;
+  font-size: 11.8px;
+  font-weight: 700;
+  color: var(--bg-muted);
+  background: rgb(255 255 255 / 0.05);
+  box-shadow: inset 0 0 0 1px var(--bg-line);
+  cursor: pointer;
+  transition: color 150ms ease, background-color 150ms ease, box-shadow 150ms ease;
+}
+
+.pillOption:hover {
+  color: var(--bg-text);
+  background: rgb(255 255 255 / 0.09);
+}
+
+.pillOptionActive {
+  color: #041022;
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--accent) 68%, white),
+    color-mix(in oklab, var(--accent) 84%, white)
+  );
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.7);
+}
+
+.pillOptionActive:hover {
+  color: #041022;
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--accent) 74%, white),
+    color-mix(in oklab, var(--accent) 88%, white)
+  );
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.78);
+}
+
+/* ─── Tab 2: Interactive Gradient Stop Bar (2-8 stops) ─────────────────────── */
+.stopEditor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stopBarWrap {
+  position: relative;
+  padding: 12px 10px 14px;
+}
+
+.stopBarTrack {
+  position: relative;
+  height: 28px;
+  border-radius: 12px;
+  background-color: #0a1228;
+  background-image:
+    linear-gradient(45deg, rgb(255 255 255 / 0.08) 25%, transparent 25%),
+    linear-gradient(-45deg, rgb(255 255 255 / 0.08) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgb(255 255 255 / 0.08) 75%),
+    linear-gradient(-45deg, transparent 75%, rgb(255 255 255 / 0.08) 75%);
+  background-size: 12px 12px;
+  background-position: 0 0, 0 6px, 6px -6px, -6px 0;
+  box-shadow:
+    inset 0 0 0 1px rgb(255 255 255 / 0.22),
+    0 10px 24px -14px rgb(0 0 0 / 0.85);
+  cursor: copy;
+  touch-action: none;
+}
+
+.stopBarGradient {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.stopPin {
+  position: absolute;
+  top: 50%;
+  left: var(--stop-pos, 50%);
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2.5px solid #ffffff;
+  background: var(--stop-color, #38bdf8);
+  box-shadow:
+    0 4px 12px rgb(0 0 0 / 0.7),
+    0 0 0 1px rgb(0 0 0 / 0.45);
+  transform: translate(-50%, -50%);
+  cursor: grab;
+  touch-action: none;
+  transition: transform 150ms var(--bg-ease), box-shadow 150ms ease;
+}
+
+.stopPin:hover {
+  transform: translate(-50%, -50%) scale(1.14);
+}
+
+.stopPinActive {
+  z-index: 4;
+  transform: translate(-50%, -50%) scale(1.22);
+  box-shadow:
+    0 0 0 3px var(--bg-ink),
+    0 0 0 5px var(--accent),
+    0 10px 20px rgb(0 0 0 / 0.8);
+}
+
+.stopPinDragging {
+  cursor: grabbing;
+  transform: translate(-50%, -50%) scale(1.26);
+}
+
+.stopList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.stopActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.stopChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--bg-muted);
+  background: rgb(255 255 255 / 0.05);
+  box-shadow: inset 0 0 0 1px var(--bg-line);
+  cursor: pointer;
+  transition: color 140ms ease, background-color 140ms ease, box-shadow 140ms ease;
+}
+
+.stopChip:hover {
+  color: var(--bg-text);
+  background: rgb(255 255 255 / 0.09);
+}
+
+.stopChipActive {
+  color: #ffffff;
+  background: rgb(255 255 255 / 0.12);
+  box-shadow: inset 0 0 0 1.5px var(--accent);
+}
+
+.stopChipActive:hover {
+  color: #ffffff;
+  background: rgb(255 255 255 / 0.16);
+}
+
+.stopChipSwatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.45);
+}
+
+/* Color Format Switcher and Selected Stop Inspector */
+.colorInspector {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding: 12px;
+  border-radius: 14px;
+  background: rgb(5 10 24 / 0.68);
+  box-shadow: inset 0 0 0 1px var(--bg-line);
+}
+
+.colorSwatchRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.colorWell {
+  position: relative;
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    inset 0 0 0 2px rgb(255 255 255 / 0.35),
+    0 8px 18px -8px rgb(0 0 0 / 0.75);
+}
+
+.colorNativeInput {
+  position: absolute;
+  inset: -8px;
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.colorFormatCol {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.colorInputsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.channelField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.channelLabel {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bg-faint);
+}
+
+.channelInput,
+.inputText {
+  width: 100%;
+  min-width: 0;
+  height: 36px;
+  padding: 0 10px;
+  border-radius: 10px;
+  font-size: 12.8px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--bg-text);
+  background: rgb(255 255 255 / 0.06);
+  border: 1px solid var(--bg-line-2);
+  outline: none;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.inputText {
+  font-variant-numeric: normal;
+  padding: 0 12px;
+}
+
+.channelInput:focus,
+.inputText:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 28%, transparent);
+}
+
+.inputText::placeholder {
+  color: var(--bg-faint);
+}
+
+.inputError {
+  margin: 0;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #fda4af;
+}
+
+/* 2D Center X/Y Focal Pad */
+.focalPadRow {
+  display: grid;
+  grid-template-columns: 152px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+}
+
+.focalPad {
+  --fx: 50%;
+  --fy: 50%;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at var(--fx) var(--fy),
+      color-mix(in oklab, var(--accent) 44%, transparent) 0%,
+      transparent 66%
+    ),
+    linear-gradient(90deg, transparent calc(50% - 0.5px), rgb(255 255 255 / 0.1) 50%, transparent calc(50% + 0.5px)),
+    linear-gradient(0deg, transparent calc(50% - 0.5px), rgb(255 255 255 / 0.1) 50%, transparent calc(50% + 0.5px)),
+    linear-gradient(170deg, rgb(12 22 48 / 0.96), rgb(6 11 26 / 0.98));
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.12),
+    inset 0 0 0 1px var(--bg-line-2);
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.focalPadTarget {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  cursor: crosshair;
+}
+
+.focalHandle {
+  position: absolute;
+  left: var(--fx);
+  top: var(--fy);
+  z-index: 2;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow:
+    0 0 0 4px color-mix(in oklab, var(--accent) 45%, transparent),
+    0 4px 12px rgb(0 0 0 / 0.7);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.focalCoords {
+  position: absolute;
+  right: 7px;
+  bottom: 6px;
+  z-index: 5;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #dbeafe;
+  background: rgb(4 8 20 / 0.86);
+  pointer-events: none;
+}
+
+.focalStopDot {
+  position: absolute;
+  left: var(--fx, 50%);
+  top: var(--fy, 50%);
+  z-index: 3;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background: var(--stop-color, #38bdf8);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.7);
+  transform: translate(-50%, -50%);
+  cursor: grab;
+  transition: transform 140ms var(--bg-ease), box-shadow 140ms ease;
+}
+
+.focalStopDotActive {
+  z-index: 4;
+  transform: translate(-50%, -50%) scale(1.25);
+  box-shadow:
+    0 0 0 3px var(--bg-ink),
+    0 0 0 5px var(--accent),
+    0 6px 14px rgb(0 0 0 / 0.8);
+}
+
+/* ─── Bespoke Range Sliders (--fill luminous track + tabular pill) ─────────── */
+.sliderGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.sliderGridTwo {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 11px 14px;
+}
+
+.sliderRow {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.sliderRowDisabled {
+  opacity: 0.58;
+}
+
+.sliderHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.sliderLabel {
+  min-width: 0;
+  font-size: 12.2px;
+  font-weight: 700;
+  color: #dce6fa;
+}
+
+.sliderValuePill {
+  flex: none;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11.2px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #eef5ff;
+  background: rgb(255 255 255 / 0.08);
+  box-shadow: inset 0 0 0 1px var(--bg-line);
+}
+
+.rangeInput {
+  --fill: 50%;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 22px;
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.rangeInput::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    color-mix(in oklab, var(--accent) 72%, white) 0%,
+    var(--accent) var(--fill),
+    rgb(255 255 255 / 0.13) var(--fill)
+  );
+  box-shadow: inset 0 1px 2px rgb(0 0 0 / 0.45);
+}
+
+.rangeInput::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.13);
+}
+
+.rangeInput::-moz-range-progress {
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, color-mix(in oklab, var(--accent) 72%, white), var(--accent));
+}
+
+.rangeInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-top: -6px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow:
+    0 0 0 4px color-mix(in oklab, var(--accent) 34%, transparent),
+    0 3px 10px rgb(0 0 0 / 0.55);
+  transition: transform 140ms var(--bg-ease), box-shadow 140ms ease;
+}
+
+.rangeInput::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border: 0;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow:
+    0 0 0 4px color-mix(in oklab, var(--accent) 34%, transparent),
+    0 3px 10px rgb(0 0 0 / 0.55);
+}
+
+.rangeInput:hover:not(:disabled)::-webkit-slider-thumb {
+  transform: scale(1.1);
+  box-shadow:
+    0 0 0 5px color-mix(in oklab, var(--accent) 46%, transparent),
+    0 4px 12px rgb(0 0 0 / 0.65);
+}
+
+.rangeInput:disabled {
+  cursor: not-allowed;
+}
+
+.sliderEnds {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10.5px;
+  color: var(--bg-faint);
+}
+
+/* ─── Tab 3: Motion and Lighting Effect Cards ──────────────────────────────── */
+.effectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.effectCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 11px 12px;
+  border-radius: 15px;
+  text-align: left;
+  color: var(--bg-text);
+  background: linear-gradient(168deg, rgb(17 31 68 / 0.86) 0%, rgb(10 19 44 / 0.92) 100%);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.1),
+    inset 0 0 0 1px var(--bg-line);
+  cursor: pointer;
+  transition:
+    transform 170ms var(--bg-ease),
+    box-shadow 170ms ease,
+    background 170ms ease;
+}
+
+.effectCard:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.16),
+    inset 0 0 0 1px color-mix(in oklab, var(--accent) 44%, rgb(255 255 255 / 0.16));
+}
+
+.effectCardActive {
+  background:
+    radial-gradient(110% 90% at 15% 0%, color-mix(in oklab, var(--accent) 26%, transparent), transparent 64%),
+    linear-gradient(168deg, rgb(20 40 88 / 0.96) 0%, rgb(11 23 54 / 0.96) 100%);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.24),
+    inset 0 0 0 1.5px var(--accent),
+    0 12px 26px -14px color-mix(in oklab, var(--accent) 70%, transparent);
+}
+
+.effectCardActive:hover:not(:disabled) {
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.28),
+    inset 0 0 0 1.5px color-mix(in oklab, var(--accent) 82%, white),
+    0 14px 28px -12px color-mix(in oklab, var(--accent) 76%, transparent);
+}
+
+.effectCardDisabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.effectCardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.effectIconWell {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 9px;
+  color: color-mix(in oklab, var(--accent) 75%, white);
+  background: rgb(255 255 255 / 0.07);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.1);
+}
+
+.effectCardActive .effectIconWell {
+  color: #041022;
+  background: linear-gradient(135deg, color-mix(in oklab, var(--accent) 80%, white), var(--accent));
+}
+
+.effectRing {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.5px solid rgb(255 255 255 / 0.28);
+  display: grid;
+  place-items: center;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.effectCardActive .effectRing {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #041022;
+  box-shadow: 0 0 12px color-mix(in oklab, var(--accent) 80%, transparent);
+}
+
+.effectTitle {
+  font-size: 12.6px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.effectDesc {
+  font-size: 11.2px;
+  line-height: 1.38;
+  color: var(--bg-muted);
+}
+
+/* Toggle Switch Row */
+.toggleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.toggleInfo {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.toggleLabel {
+  font-size: 12.6px;
+  font-weight: 700;
+  color: #eef5ff;
+}
+
+.toggleHint {
+  font-size: 11.4px;
+  line-height: 1.4;
+  color: var(--bg-muted);
+}
+
+.switchBtn {
+  position: relative;
+  flex: none;
+  width: 44px;
+  height: 24px;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.16);
+  box-shadow: inset 0 1px 3px rgb(0 0 0 / 0.45);
+  cursor: pointer;
+  transition: background-color 180ms ease;
+}
+
+.switchBtnOn {
+  background: var(--accent);
+}
+
+.switchThumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.45);
+  transition: transform 180ms var(--bg-ease);
+}
+
+.switchBtnOn .switchThumb {
+  transform: translateX(20px);
+}
+
+.ecoBanner {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 10px 12px;
+  border-radius: 13px;
+  font-size: 11.8px;
+  line-height: 1.44;
+  color: #fde68a;
+  background: rgb(245 158 11 / 0.12);
+  box-shadow: inset 0 0 0 1px rgb(251 191 36 / 0.3);
+}
+
+.successBanner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 12px;
+  font-size: 11.8px;
+  font-weight: 700;
+  color: #a7f3d0;
+  background: rgb(16 185 129 / 0.14);
+  box-shadow: inset 0 0 0 1px rgb(52 211 153 / 0.34);
+}
+
+.gpuBudgetPill {
+  flex: none;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #dbeafe;
+  background: rgb(255 255 255 / 0.06);
+  box-shadow: inset 0 0 0 1px var(--bg-line);
+}
+
+.gpuBudgetMinimal {
+  color: #a7f3d0;
+  box-shadow: inset 0 0 0 1px rgb(52 211 153 / 0.4);
+}
+
+.gpuBudgetBalanced {
+  color: #bae6fd;
+  box-shadow: inset 0 0 0 1px rgb(56 189 248 / 0.4);
+}
+
+.gpuBudgetRich {
+  color: #fde68a;
+  box-shadow: inset 0 0 0 1px rgb(251 191 36 / 0.42);
+}
+
+/* ─── Tab 4: My Themes Library ─────────────────────────────────────────────── */
+.saveForm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.myThemesToolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.themeCountPill {
+  flex: none;
+  white-space: nowrap;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--bg-muted);
+  background: rgb(255 255 255 / 0.06);
+  box-shadow: inset 0 0 0 1px var(--bg-line);
+}
+
+.myThemeList {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.myThemeCard {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 9px 10px;
+  border-radius: 16px;
+  background: linear-gradient(168deg, rgb(15 27 60 / 0.9) 0%, rgb(10 18 42 / 0.94) 100%);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.1),
+    inset 0 0 0 1px var(--bg-line);
+  transition: transform 170ms var(--bg-ease), box-shadow 170ms ease;
+}
+
+.myThemeCard:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.16),
+    inset 0 0 0 1px var(--bg-line-2);
+}
+
+.myThemeCardActive {
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.2),
+    inset 0 0 0 1.5px var(--accent),
+    0 12px 24px -16px color-mix(in oklab, var(--accent) 70%, transparent);
+}
+
+.myThemeCardActive:hover {
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.24),
+    inset 0 0 0 1.5px color-mix(in oklab, var(--accent) 82%, white),
+    0 14px 28px -14px color-mix(in oklab, var(--accent) 76%, transparent);
+}
+
+.myThemeSelectBtn {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.myThemeSwatch {
+  flex: none;
+  width: 64px;
+  height: 44px;
+  border-radius: 11px;
+  box-shadow:
+    inset 0 0 0 1px rgb(255 255 255 / 0.22),
+    0 6px 14px -8px rgb(0 0 0 / 0.8);
+}
+
+.myThemeMeta {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.defaultEchoCard {
+  flex-wrap: nowrap;
+}
+
+.myThemeName {
+  min-width: 0;
+  font-size: 13.2px;
+  font-weight: 800;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.myThemeDate {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--bg-faint);
+}
+
+.myThemeRenameInput {
+  width: 100%;
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 8px;
+  font-size: 12.8px;
+  font-weight: 700;
+  color: #ffffff;
+  background: rgb(4 8 20 / 0.88);
+  border: 1px solid var(--accent);
+  outline: none;
+}
+
+.myThemeActions {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 28px 18px;
+  border-radius: 16px;
+  text-align: center;
+  background: rgb(6 12 28 / 0.72);
+  box-shadow: inset 0 0 0 1px var(--bg-line);
+}
+
+.emptyStateIcon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  color: color-mix(in oklab, var(--accent) 80%, white);
+  background: color-mix(in oklab, var(--accent) 16%, rgb(10 18 42));
+  box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--accent) 34%, transparent);
+}
+
+.emptyStateTitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.emptyStateDesc {
+  margin: 0;
+  max-width: 30ch;
+  font-size: 12px;
+  line-height: 1.46;
+  color: var(--bg-muted);
+}
+
+/* ─── Live Workspace Preview Floating Dock (BackgroundLivePreviewBar) ──────── */
+.liveDock {
+  --bg-text: #f1f6ff;
+  --bg-muted: #a8bae0;
+  --bg-line: rgb(255 255 255 / 0.1);
+  --bg-line-2: rgb(255 255 255 / 0.18);
+  --bg-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  position: fixed;
+  left: 50%;
+  bottom: max(18px, env(safe-area-inset-bottom));
+  z-index: 115;
+  transform: translateX(-50%);
+  max-width: calc(100vw - 24px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  padding: 9px 11px 9px 16px;
+  border-radius: 999px;
+  color: var(--bg-text);
+  background: linear-gradient(168deg, rgb(12 23 54 / 0.96) 0%, rgb(6 12 30 / 0.98) 100%);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.18),
+    inset 0 0 0 1px color-mix(in oklab, var(--accent) 44%, rgb(255 255 255 / 0.18)),
+    0 28px 64px -18px rgb(0 0 0 / 0.92),
+    0 0 40px -16px color-mix(in oklab, var(--accent) 68%, transparent);
+  animation: bgDockRise 220ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.liveDockInfo {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+.liveDockPulse {
+  flex: none;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 12px var(--accent);
+  animation: bgPulseDot 2.2s ease-in-out infinite;
+}
+
+.liveDockText {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.liveDockEyebrow {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--accent) 76%, white);
+}
+
+.liveDockTitleRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+}
+
+.liveDockTitle {
+  max-width: 200px;
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.liveDockBadge {
+  flex: none;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #fde68a;
+  background: rgb(245 158 11 / 0.16);
+  box-shadow: inset 0 0 0 1px rgb(251 191 36 / 0.4);
+  white-space: nowrap;
+}
+
+.liveDockActions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.liveDockBtn {
+  height: 36px;
+  padding: 0 13px;
+  border-radius: 999px;
+  font-size: 12.5px;
+}
+
+/* ─── Focus Visible Accessibility Rings ────────────────────────────────────── */
+.tabBtn:focus-visible,
+.filterChip:focus-visible,
+.presetFavBtn:focus-visible,
+.segmentBtn:focus-visible,
+.pillOption:focus-visible,
+.stopPin:focus-visible,
+.stopChip:focus-visible,
+.focalPad:focus-visible,
+.focalStopDot:focus-visible,
+.rangeInput:focus-visible,
+.effectCard:focus-visible,
+.switchBtn:focus-visible,
+.myThemeSelectBtn:focus-visible,
+.btnPrimary:focus-visible,
+.btnSecondary:focus-visible,
+.btnAccent:focus-visible,
+.btnGhost:focus-visible,
+.btnDanger:focus-visible,
+.btnIcon:focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--accent) 84%, white);
+  outline-offset: 2px;
+}
+
+.presetCardBtn:focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--accent) 84%, white);
+  outline-offset: -3px;
+  border-radius: 15px;
+}
+
+.focalPadTarget:focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--accent) 84%, white);
+  outline-offset: -3px;
+}
+
+.colorWell:focus-within {
+  outline: 2px solid color-mix(in oklab, var(--accent) 84%, white);
+  outline-offset: 2px;
+}
+
+.searchBox:focus-within,
+.myThemeRenameInput:focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--accent) 84%, white);
+  outline-offset: 1px;
+}
+
+.channelInput:focus-visible,
+.inputText:focus-visible {
+  outline: 2px solid transparent;
+}
+
+/* ─── Responsive: Collapse below 1040px ────────────────────────────────────── */
+@media (max-width: 1040px) {
+  .workspace {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    padding: 4px 14px 0;
+    gap: 14px;
+  }
+
+  .stageColumn {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .stageWrap {
+    flex: none;
+  }
+
+  .stageFrame {
+    flex: none;
+    min-height: 300px;
+    aspect-ratio: 16 / 10;
+    max-height: 46dvh;
+  }
+
+  .inspectorColumn {
+    flex: none;
+    overflow: visible;
+    max-width: 100%;
+  }
+
+  .inspectorBody {
+    overflow: visible;
+  }
+
+  .stageFooter {
+    position: sticky;
+    bottom: 0;
+    z-index: 12;
+    flex: none;
+    margin-top: auto;
+    margin-bottom: calc(10px + env(safe-area-inset-bottom));
+    box-shadow:
+      var(--bg-card-shadow),
+      0 -10px 26px -12px rgb(2 6 18 / 0.92),
+      inset 0 0 0 1px var(--bg-line-2);
+  }
+}
+
+/* ─── Responsive: Compact Mobile below 640px ───────────────────────────────── */
+@media (max-width: 640px) {
+  .workspace {
+    padding: 2px 10px 0;
+    gap: 12px;
+  }
+
+  .stageWrap {
+    flex: none;
+    gap: 8px;
+  }
+
+  .stageFrame {
+    height: clamp(200px, 32vh, 280px);
+    min-height: 200px;
+    max-height: 280px;
+    aspect-ratio: auto;
+    border-radius: 18px;
+  }
+
+  .stageTopHud {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    gap: 6px;
+  }
+
+  .stageIdentity {
+    max-width: 100%;
+    padding: 4px 9px;
+    gap: 6px;
+  }
+
+  .stageThemeName {
+    font-size: 11.5px;
+  }
+
+  .readabilityPill,
+  .reducedMotionPill {
+    padding: 4px 9px;
+    font-size: 10.8px;
+    gap: 5px;
+  }
+
+  .readabilityMetric {
+    font-size: 10.2px;
+    padding-left: 5px;
+  }
+
+  .stageQuickBar {
+    position: static;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
+    border-radius: 16px;
+    padding: 6px;
+    gap: 6px;
+  }
+
+  .quickBtn {
+    flex: 1 1 auto;
+    justify-content: center;
+    min-height: 38px;
+    height: auto;
+    padding: 6px 10px;
+    font-size: 11.6px;
+    gap: 5px;
+  }
+
+  .quickBtnAccent {
+    flex: 1 1 100%;
+  }
+
+  .quickDivider {
+    display: none;
+  }
+
+  .mockupCanvas {
+    padding: 44px 10px 12px;
+  }
+
+  .mockupInner {
+    gap: 8px;
+  }
+
+  .mockupSearchRow {
+    display: none;
+  }
+
+  .mockupGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .mockupCard {
+    padding: 9px 10px;
+    gap: 5px;
+  }
+
+  .mockupCard:nth-child(3) {
+    display: none;
+  }
+
+  .mockupParagraph {
+    display: none;
+  }
+
+  .inspectorHeader {
+    padding: 13px 12px 11px;
+  }
+
+  .inspectorBody {
+    padding: 12px 12px 18px;
+  }
+
+  .sectionCard {
+    padding: 12px;
+  }
+
+  .tabBar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tabBtn {
+    min-height: 42px;
+    padding: 8px 8px;
+  }
+
+  .presetGrid,
+  .effectGrid,
+  .sliderGridTwo {
+    grid-template-columns: 1fr;
+  }
+
+  .focalPadRow {
+    grid-template-columns: 1fr;
+  }
+
+  .stopBarWrap {
+    padding: 14px 18px 16px;
+  }
+
+  .stopBarTrack {
+    height: 36px;
+  }
+
+  .stopPin {
+    width: 36px;
+    height: 36px;
+  }
+
+  .focalStopDot {
+    width: 36px;
+    height: 36px;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    display: grid;
+    place-items: center;
+  }
+
+  .focalStopDot::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background: var(--stop-color, #38bdf8);
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.7);
+  }
+
+  .focalStopDotActive {
+    transform: translate(-50%, -50%);
+    box-shadow: none;
+  }
+
+  .focalStopDotActive::before {
+    transform: scale(1.22);
+    box-shadow:
+      0 0 0 3px var(--bg-ink),
+      0 0 0 5px var(--accent),
+      0 6px 14px rgb(0 0 0 / 0.8);
+  }
+
+  .effectCard {
+    min-height: 44px;
+    padding: 12px;
+  }
+
+  .btnIcon,
+  .presetFavBtn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .filterChip,
+  .stopChip,
+  .pillOption,
+  .btnSmall {
+    min-height: 36px;
+  }
+
+  .segmentBtn {
+    min-height: 38px;
+    white-space: normal;
+    line-height: 1.25;
+    text-align: center;
+    padding: 7px 6px;
+  }
+
+  .rangeInput {
+    height: 36px;
+  }
+
+  .rangeInput::-webkit-slider-thumb {
+    width: 22px;
+    height: 22px;
+    margin-top: -8px;
+  }
+
+  .rangeInput::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+  }
+
+  .defaultEchoCard {
+    flex-wrap: wrap;
+  }
+
+  .defaultEchoCard > button {
+    margin-left: auto;
+  }
+
+  .saveForm {
+    flex-wrap: wrap;
+  }
+
+  .saveForm > input {
+    flex: 1 1 100%;
+  }
+
+  .saveForm > button {
+    flex: 1 1 auto;
+  }
+
+  .stageFooter {
+    padding: 9px 10px;
+    gap: 7px 10px;
+    border-radius: 16px;
+  }
+
+  .stageFooterMeta {
+    flex: 1 1 100%;
+  }
+
+  .stageFooterNote {
+    font-size: 11.2px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .stageFooterActions {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 6px;
+  }
+
+  .stageFooterActions > * {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 40px;
+    height: 40px;
+    padding: 0 7px;
+    font-size: 11.8px;
+    gap: 4px;
+  }
+
+  .liveDock {
+    width: calc(100vw - 20px);
+    border-radius: 20px;
+    padding: 11px 12px;
+    justify-content: space-between;
+  }
+
+  .liveDockActions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .liveDockBtn {
+    min-height: 38px;
+  }
+}
+
+/* ─── Responsive: Ultra-Compact Mobile (360px - 480px) ─────────────────────── */
+@media (max-width: 480px) {
+  .mockupHeader,
+  .stageTypeTag {
+    display: none;
+  }
+
+  .tabLabel {
+    white-space: normal;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .liveDockActions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .liveDockBtn {
+    width: 100%;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+}
+
+/* ─── Reduced Motion Accessibility ─────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .studio,
+  .mockupCanvas,
+  .liveDock,
+  .liveDockPulse {
+    animation: none;
+  }
+
+  .studio,
+  .quickBtn,
+  .btnPrimary,
+  .btnSecondary,
+  .btnAccent,
+  .btnGhost,
+  .btnDanger,
+  .btnIcon,
+  .tabBtn,
+  .filterChip,
+  .presetCard,
+  .presetFavBtn,
+  .segmentBtn,
+  .pillOption,
+  .stopPin,
+  .stopChip,
+  .focalStopDot,
+  .rangeInput::-webkit-slider-thumb,
+  .rangeInput::-moz-range-thumb,
+  .effectCard,
+  .effectRing,
+  .switchBtn,
+  .switchThumb,
+  .channelInput,
+  .inputText,
+  .myThemeCard {
+    transition: none;
+  }
+
+  .presetCard:hover,
+  .effectCard:hover:not(:disabled),
+  .myThemeCard:hover,
+  .btnPrimary:hover:not(:disabled),
+  .btnAccent:hover:not(:disabled),
+  .presetFavBtn:hover,
+  .quickBtn:active:not(:disabled),
+  .btnPrimary:active:not(:disabled),
+  .btnSecondary:active:not(:disabled),
+  .btnAccent:active:not(:disabled),
+  .btnGhost:active:not(:disabled),
+  .btnDanger:active:not(:disabled),
+  .rangeInput:hover:not(:disabled)::-webkit-slider-thumb {
+    transform: none;
+  }
+}
+
+/* ─── Forced Colors (Windows High Contrast) Accessibility ──────────────────── */
+@media (forced-colors: active) {
+  .studio,
+  .stageFrame,
+  .stageFooter,
+  .inspectorColumn,
+  .sectionCard,
+  .presetCard,
+  .effectCard,
+  .myThemeCard,
+  .stageIdentity,
+  .readabilityPill,
+  .reducedMotionPill,
+  .stageQuickBar,
+  .liveDock,
+  .tabBar,
+  .segmented,
+  .searchBox,
+  .colorInspector,
+  .colorWell,
+  .stopBarTrack,
+  .focalPad,
+  .emptyState,
+  .ecoBanner,
+  .successBanner,
+  .mockupHeader,
+  .mockupPlate,
+  .mockupSearch,
+  .mockupCard,
+  .mockupParagraph {
+    border: 1px solid CanvasText;
+    box-shadow: none;
+  }
+
+  .tabBtn,
+  .segmentBtn,
+  .filterChip,
+  .pillOption,
+  .stopChip,
+  .quickBtn,
+  .btnSecondary,
+  .btnAccent,
+  .btnGhost,
+  .btnDanger,
+  .btnIcon,
+  .presetFavBtn,
+  .switchBtn {
+    border: 1px solid ButtonText;
+    box-shadow: none;
+  }
+
+  .stopPin,
+  .focalStopDot,
+  .focalStopDot::before {
+    border: 2px solid ButtonText;
+    box-shadow: none;
+  }
+
+  .focalHandle {
+    border: 2px solid Highlight;
+    background: Highlight;
+    box-shadow: none;
+  }
+
+  .effectRing {
+    border: 2px solid ButtonText;
+  }
+
+  .effectCardActive .effectRing {
+    border-color: Highlight;
+    background: Highlight;
+    color: HighlightText;
+    box-shadow: none;
+  }
+
+  .rangeInput::-webkit-slider-runnable-track,
+  .rangeInput::-moz-range-track {
+    border: 1px solid CanvasText;
+    background: Canvas;
+    box-shadow: none;
+  }
+
+  .rangeInput::-moz-range-progress {
+    background: Highlight;
+  }
+
+  .rangeInput::-webkit-slider-thumb,
+  .rangeInput::-moz-range-thumb {
+    border: 2px solid ButtonText;
+    background: ButtonFace;
+    box-shadow: none;
+  }
+
+  .rangeInput:focus-visible::-webkit-slider-thumb,
+  .rangeInput:focus-visible::-moz-range-thumb {
+    border-color: Highlight;
+    background: Highlight;
+  }
+
+  .tabBtnActive,
+  .segmentBtnActive,
+  .filterChipActive,
+  .pillOptionActive,
+  .stopChipActive,
+  .quickBtnOn,
+  .presetCardActive,
+  .effectCardActive,
+  .myThemeCardActive,
+  .stopPinActive,
+  .focalStopDotActive,
+  .focalStopDotActive::before,
+  .btnPrimary,
+  .quickBtnAccent,
+  .switchBtnOn {
+    border: 2px solid Highlight;
+    forced-color-adjust: auto;
+  }
+
+  .tabBtn:focus-visible,
+  .filterChip:focus-visible,
+  .presetCardBtn:focus-visible,
+  .presetFavBtn:focus-visible,
+  .segmentBtn:focus-visible,
+  .pillOption:focus-visible,
+  .stopPin:focus-visible,
+  .stopChip:focus-visible,
+  .focalPadTarget:focus-visible,
+  .focalStopDot:focus-visible,
+  .rangeInput:focus-visible,
+  .effectCard:focus-visible,
+  .switchBtn:focus-visible,
+  .myThemeSelectBtn:focus-visible,
+  .btnPrimary:focus-visible,
+  .btnSecondary:focus-visible,
+  .btnAccent:focus-visible,
+  .btnGhost:focus-visible,
+  .btnDanger:focus-visible,
+  .btnIcon:focus-visible,
+  .quickBtn:focus-visible,
+  .searchBox:focus-within,
+  .colorWell:focus-within,
+  .channelInput:focus-visible,
+  .inputText:focus-visible,
+  .myThemeRenameInput:focus-visible {
+    outline: 2px solid Highlight;
+    outline-offset: 2px;
+  }
+
+  .inspectorColumn::before,
+  .stageFrame::after {
+    display: none;
+  }
+}

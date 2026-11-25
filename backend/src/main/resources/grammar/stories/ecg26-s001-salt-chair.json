@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s001-salt-chair",
+  "title": "Chiếc ghế có vị mặn",
+  "summary": "Mỗi trưa có một nhúm muối dưới cùng một chiếc ghế. Hôm nay Bình ngồi chờ.",
+  "level": "A1",
+  "topics": [
+    "prepositions-place"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Bình",
+      "role": "Phụ quán"
+    },
+    {
+      "id": "b",
+      "name": "Rosa",
+      "role": "Bếp trưởng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Bình úp bàn tay hứng những hạt trắng đang rơi. Mặt bàn sạch, vậy chúng từ đâu tới?",
+      "say": [
+        {
+          "who": "a",
+          "en": "My hand is white!",
+          "vi": "Tay em trắng xóa rồi!"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Show me where the salt is.",
+          "vi": "Chỉ cho chị xem muối ở đâu."
+        }
+      ],
+      "choice": {
+        "prompt": "Báo đúng chỗ Bình vừa nhìn thấy hạt muối để Rosa tìm đường chúng rơi.",
+        "options": [
+          {
+            "t": "It's on the chair.",
+            "note": "On the chair là trên ghế. Câu đúng ngữ pháp nhưng mặt ghế đang sạch.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "It's under the chair.",
+            "note": "Under đặt muối ở phía dưới ghế. Rosa sẽ nhìn từ sàn lên.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Rosa cúi xuống. Một đường muối mảnh dẫn tới chiếc áo khoác vắt trên lưng ghế.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Look at that pocket!",
+          "vi": "Nhìn túi áo kia kìa!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Rosa miết ngón tay trên mặt ghế. Bình xòe tay dưới túi áo khoác, hứng được thêm mấy hạt.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Oh! It's under the pocket.",
+          "vi": "Ồ! Nó ở bên dưới cái túi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Trong túi áo của Bình là gói muối cậu mang cho mẹ. Gói bị thủng. Rosa đưa cậu một cái lọ nhỏ có nắp.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Now Mum can have her salt.",
+          "vi": "Giờ thì mẹ em có muối rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

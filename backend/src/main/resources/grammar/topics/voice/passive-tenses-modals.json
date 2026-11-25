@@ -1,0 +1,580 @@
+{
+  "schema": 1,
+  "slug": "passive-tenses-modals",
+  "version": 2,
+  "domain": "voice",
+  "order": 30,
+  "kind": "grammar",
+  "title": {
+    "vi": "Bị động với các thì và động từ khuyết thiếu",
+    "en": "Passive across tenses and modals"
+  },
+  "subtitle": {
+    "vi": "Giữ thì, modal và vai trò người nhận",
+    "en": "Preserve tense, modality and recipient roles"
+  },
+  "aliases": [
+    "bị động các thì modal",
+    "passive tenses modals",
+    "passive-two-objects",
+    "bị động hai tân ngữ",
+    "are been checked"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Tạo các khung tiếp diễn, hoàn thành và modal bị động.",
+    "Giữ nghĩa thời gian khi chuyển thể.",
+    "Tạo bị động hai tân ngữ theo đúng giới hạn động từ."
+  ],
+  "prerequisites": [
+    "passive-form",
+    "modals-overview"
+  ],
+  "related": [
+    {
+      "slug": "passive-form",
+      "rel": "more"
+    },
+    {
+      "slug": "two-object-verbs",
+      "rel": "more"
+    },
+    {
+      "slug": "modals-overview",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Bị động giữ phân từ chính nhưng be có thể xuất hiện dưới dạng be, being hoặc been trong các khung trợ động từ khác nhau.",
+    "when": "Chọn thì và modal trước, rồi tạo chuỗi bị động phù hợp.",
+    "examples": [
+      {
+        "en": "The room [AUX|is being] [V|cleaned].",
+        "vi": "Phòng đang được dọn."
+      },
+      {
+        "en": "The form [MOD|must] [AUX|be] [V|signed].",
+        "vi": "Biểu mẫu phải được ký."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "The room is cleaned nói mẫu hiện tại đơn; is being cleaned nhìn quá trình đang diễn ra; has been cleaned nhìn việc qua khung hoàn thành. Không đổi being và been vì cùng dịch là “được”."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Khung",
+        "Ví dụ",
+        "Cấu trúc"
+      ],
+      "rows": [
+        [
+          "Quá khứ",
+          "was cleaned",
+          "was/were + phân từ"
+        ],
+        [
+          "Tiếp diễn",
+          "is being cleaned",
+          "be + being + phân từ"
+        ],
+        [
+          "Hoàn thành",
+          "has been cleaned",
+          "have + been + phân từ"
+        ],
+        [
+          "Will/modal",
+          "will/must be cleaned",
+          "modal + be + phân từ"
+        ],
+        [
+          "Modal hoàn thành",
+          "must have been moved",
+          "modal + have + been + phân từ"
+        ]
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Modal",
+            "items": [
+              "must"
+            ]
+          },
+          {
+            "label": "Dạng gốc be",
+            "items": [
+              "be"
+            ]
+          },
+          {
+            "label": "Phân từ chính",
+            "items": [
+              "signed"
+            ]
+          }
+        ],
+        "sentence": "The form {0} {1} {2}."
+      },
+      "caption": "Modal chi phối be; signed là phân từ của hành động ký.",
+      "alt": "Modal chi phối be; signed là phân từ của hành động ký."
+    },
+    {
+      "type": "p",
+      "vi": "Giữ ý thời gian: Someone is repairing the roof → The roof is being repaired. Không thay thành The roof was repaired rồi coi chỉ đổi thể, vì đã đổi mốc/cách nhìn."
+    },
+    {
+      "type": "p",
+      "vi": "Bị động với hai tân ngữ: They gave me a key có I was given a key hoặc A key was given to me. Chủ đề được đặt ở đầu khác nhau nhưng vẫn giữ người nhận và vật."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Động từ",
+        "Bị động phù hợp ở ví dụ",
+        "Giới hạn"
+      ],
+      "rows": [
+        [
+          "give",
+          "I was given a key. / A key was given to me.",
+          "hai lựa chọn với câu này"
+        ],
+        [
+          "send",
+          "We were sent a link. / A link was sent to us.",
+          "giữ người nhận"
+        ],
+        [
+          "explain",
+          "The rule was explained to us.",
+          "không We were explained the rule"
+        ]
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không phải mọi động từ có hai bổ sung đều cho mọi bị động tự nhiên. Học theo động từ, nghĩa và thông tin; không tạo bảng đổi thể cơ học."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Chuỗi bị động hoàn thành tiếp diễn rất dài có thể hình thành trong một số cách dùng nhưng thường khó đọc. Có thể viết lại rõ hơn; không tuyên bố mọi tổ hợp ít dùng là không tồn tại."
+    },
+    {
+      "type": "p",
+      "vi": "Must have been moved thường là suy luận về một việc quá khứ, không cùng nghĩa với must be moved là yêu cầu hiện tại. Giữ khác biệt modal khi chuyển hoặc chọn khung."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "passive-tenses-modals-m1",
+      "wrong": "The form has being signed.",
+      "right": "The form has been signed.",
+      "why": "Sau has dùng been trong hoàn thành bị động."
+    },
+    {
+      "id": "passive-tenses-modals-m2",
+      "wrong": "The form must is signed.",
+      "right": "The form must be signed.",
+      "why": "Modal cần dạng gốc be."
+    },
+    {
+      "id": "passive-tenses-modals-m3",
+      "wrong": "We were explained the rule.",
+      "right": "The rule was explained to us.",
+      "why": "Explain không theo mẫu hai tân ngữ của give ở đây."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Being và been khác gì?",
+      "a": "Being dùng trong chuỗi tiếp diễn sau be; been là phân từ của be sau have trong hoàn thành."
+    },
+    {
+      "q": "Động từ hai tân ngữ luôn có hai bị động không?",
+      "a": "Không mặc nhiên. Khả năng và độ tự nhiên phụ thuộc động từ và nghĩa."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ptm-01",
+      "prompt": "Chọn khung bị động với must.",
+      "explain": "Must + be + phân từ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "The form must ___ before noon.",
+      "options": [
+        {
+          "t": "be signed",
+          "ok": true,
+          "note": "Modal, be, phân từ."
+        },
+        {
+          "t": "is signed",
+          "ok": false,
+          "note": "Sau must dùng dạng gốc be.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "be sign",
+          "ok": false,
+          "note": "Cần phân từ signed.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ptm-02",
+      "prompt": "Nối cấu trúc với cách nhìn.",
+      "explain": "Be được chia hoặc có trợ động từ trước; phân từ chính giữ vai trò.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "The room is being cleaned.",
+          "b": "Tiếp diễn hiện tại bị động"
+        },
+        {
+          "a": "The room has been cleaned.",
+          "b": "Hoàn thành hiện tại bị động"
+        },
+        {
+          "a": "The room will be cleaned.",
+          "b": "Bị động với will"
+        },
+        {
+          "a": "The room had been cleaned.",
+          "b": "Hoàn thành quá khứ bị động"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ptm-03",
+      "prompt": "Phân loại từ đứng trước phân từ cleaned.",
+      "explain": "Being dùng sau be cho tiếp diễn; been dùng sau have cho hoàn thành.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Being",
+        "Been",
+        "Be"
+      ],
+      "items": [
+        {
+          "t": "The room is ... cleaned.",
+          "cat": "Being"
+        },
+        {
+          "t": "The room has ... cleaned.",
+          "cat": "Been"
+        },
+        {
+          "t": "The room must ... cleaned.",
+          "cat": "Be"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ptm-04",
+      "prompt": "Điền be, being hoặc been.",
+      "explain": "Modal cần be; hoàn thành cần been; tiếp diễn cần being.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "It must {1} repaired. It has {2} repaired. It is {3} repaired right now.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "be"
+          ]
+        },
+        "2": {
+          "accept": [
+            "been"
+          ]
+        },
+        "3": {
+          "accept": [
+            "being"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "ptm-05",
+      "prompt": "Sửa dạng be sau has.",
+      "explain": "Has been signed là hoàn thành bị động.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "The contract has"
+        },
+        {
+          "t": "being",
+          "bad": true,
+          "fix": [
+            "been"
+          ],
+          "note": "Sau has trong khung này dùng been.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "signed."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ptm-06",
+      "prompt": "Sắp xếp câu bắt đầu bằng The forms.",
+      "explain": "Will be checked là tương lai bị động.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "The forms",
+        "will",
+        "be",
+        "checked"
+      ],
+      "accept": [
+        [
+          "The forms",
+          "will",
+          "be",
+          "checked"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "ptm-07",
+      "prompt": "Đổi sang bị động, giữ modal và bỏ tác nhân đã rõ.",
+      "explain": "Must be checked giữ nghĩa yêu cầu kiểm tra.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "Staff must check the forms.",
+      "instruction": "Bắt đầu The forms; dùng bị động và giữ must, không nêu by.",
+      "accept": [
+        "The forms must be checked"
+      ],
+      "model": "The forms must be checked",
+      "level": "B1"
+    },
+    {
+      "id": "ptm-08",
+      "prompt": "Viết thông báo tiến độ.",
+      "explain": "Tự đối chiếu, không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết một việc đang được làm, một việc đã được làm xong và một việc cần được làm. Dùng is/are being, has/have been và must be.",
+      "model": [
+        "The roof is being repaired. The windows have been replaced. The entrance must be checked."
+      ],
+      "checklist": [
+        "Being và been không bị đổi chỗ.",
+        "Đúng phân từ.",
+        "Không đổi nghĩa thời gian khi chuyển bị động."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ptm-09",
+      "prompt": "Điền to theo đúng mẫu chuyển vật cho người nhận.",
+      "explain": "Đồ vật đứng đầu vẫn có người nhận bằng to.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "A key was given {1} me. The procedure was explained {2} us.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "to"
+          ]
+        },
+        "2": {
+          "accept": [
+            "to"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "ptm-10",
+      "prompt": "Chọn bị động đúng của explain.",
+      "explain": "Explain không lấy hai tân ngữ như give trong mẫu này.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "The trainer explained the procedure to us.",
+      "options": [
+        {
+          "t": "The procedure was explained to us.",
+          "ok": true,
+          "note": "Procedure là tân ngữ được giải thích."
+        },
+        {
+          "t": "We were explained the procedure.",
+          "ok": false,
+          "note": "Không theo mẫu chuẩn của explain ở nghĩa này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "The procedure was explain to us.",
+          "ok": false,
+          "note": "Cần explained.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ptm-11",
+      "prompt": "Điền đúng be/being/been theo khung.",
+      "explain": "Must have been + phân từ là suy luận bị động; are being là tiếp diễn.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "The files are {1} checked now. The file must have {2} moved; it is no longer here. The form will {3} sent tomorrow.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "being"
+          ]
+        },
+        "2": {
+          "accept": [
+            "been"
+          ]
+        },
+        "3": {
+          "accept": [
+            "be"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "ptm-12",
+      "prompt": "Viết một trong hai mẫu bị động được phép của give.",
+      "explain": "Give với người nhận và vật có thể tạo hai cách đặt chủ đề trong câu này.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "They gave me a key.",
+      "instruction": "Viết bị động quá khứ, không nêu they: bắt đầu I hoặc A key và giữ cả người nhận lẫn vật.",
+      "accept": [
+        "I was given a key",
+        "A key was given to me"
+      ],
+      "model": "I was given a key",
+      "level": "B1"
+    },
+    {
+      "id": "ptm-13",
+      "prompt": "Chọn tất cả khung chuẩn.",
+      "explain": "Đúng trợ động từ và đúng phân từ.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "The forms have been checked.",
+          "ok": true,
+          "note": "Hoàn thành bị động."
+        },
+        {
+          "t": "The forms may be checked tomorrow.",
+          "ok": true,
+          "note": "Modal + be + phân từ."
+        },
+        {
+          "t": "The forms are been checked now.",
+          "ok": false,
+          "note": "Cần being.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "The forms must are checked.",
+          "ok": false,
+          "note": "Sau must cần be.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ptm-14",
+      "prompt": "Chọn nhận xét đúng về động từ hai tân ngữ.",
+      "explain": "Khả năng bị động phụ thuộc động từ và nghĩa, không chỉ số cụm danh từ.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "Give và explain trong các mẫu đang học.",
+      "options": [
+        {
+          "t": "Give cho phép I was given a key; explain dùng The rule was explained to me.",
+          "ok": true,
+          "note": "Không sao chép mẫu give sang explain."
+        },
+        {
+          "t": "Mọi động từ trao thông tin đều tạo được I was ... the rule.",
+          "ok": false,
+          "note": "Giới hạn theo từ.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Có hai tân ngữ thì mọi kiểu bị động đều tự nhiên ngang nhau.",
+          "ok": false,
+          "note": "Cần xét động từ, nghĩa và tổ chức thông tin.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

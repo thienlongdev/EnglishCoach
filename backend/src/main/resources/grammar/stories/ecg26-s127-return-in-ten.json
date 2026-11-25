@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s127-return-in-ten",
+  "title": "Hẹn mười mùa hè nữa",
+  "summary": "Một em bé gửi thư cho chính mình sau mười năm, nhưng dòng hướng dẫn bị rách mất giới từ.",
+  "level": "B1",
+  "topics": [
+    "time-prepositions-advanced"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Thoa",
+      "role": "Người nhận thư"
+    },
+    {
+      "id": "b",
+      "name": "Kha",
+      "role": "Người giao thư"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Thoa đặt phong bì vào tủ sẽ mở sau đúng mười mùa hè. Em không yêu cầu bưu tá mất mười năm mới đi hết con đường.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The road to her house takes ten minutes.",
+          "vi": "Đến nhà em chỉ mất mười phút."
+        },
+        {
+          "who": "b",
+          "en": "Which ten years go on the envelope?",
+          "vi": "Mười năm trên phong bì được hiểu thế nào?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Ghi ngày giao trong tương lai, tính từ lúc viết.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Deliver it in ten years.",
+            "note": "In ten years chọn thời điểm sau mười năm. Nó không chỉ độ dài quá trình giao.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Deliver it for ten years.",
+            "note": "For ten years gợi hoạt động kéo dài hay lặp suốt quãng ấy. Một lá thư chỉ được trao một lần.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Kha hẹn một mốc trên lịch. Em bé viết thêm chiều cao hiện tại ngay bên cạnh để người lớn tương lai tự so.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The wait grew longer. The road didn't.",
+          "vi": "Thời gian chờ dài thêm. Con đường thì không."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Mười năm sau phong bì rời tủ trong một buổi sáng và còn vừa lòng bàn tay người nhận.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Em thử hình dung ngày nào cũng nhận lại một lá thư rồi bật cười. Thoa đổi for thành in và trả bút để em tự ghi năm nhận.",
+      "say": [
+        {
+          "who": "a",
+          "en": "She chose one summer out of ten.",
+          "vi": "Em chọn đúng một mùa hè trong mười mùa."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Trong tủ, bên cạnh năm nhận có thêm một hình mặt trời cho ngày mở thư.",
+      "end": true
+    }
+  ]
+}

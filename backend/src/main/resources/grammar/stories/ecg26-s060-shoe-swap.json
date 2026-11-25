@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s060-shoe-swap",
+  "title": "Chiếc giày không đổi được",
+  "level": "A2",
+  "topics": [
+    "comparatives"
+  ],
+  "scene": "station",
+  "summary": "Hết giờ chạy, An nhận hai chiếc giày khác cỡ. Cô chỉ muốn đổi chiếc chật.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "An",
+      "role": "Bạn chạy bộ"
+    },
+    {
+      "id": "b",
+      "name": "Kyo",
+      "role": "Người giữ đồ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Hai giày đều mang số 38 dưới đế, nhưng một chiếc có thêm miếng lót dày. Kyo đặt cả hai cạnh nhau.",
+      "say": [
+        {
+          "who": "a",
+          "en": "They look the same from here.",
+          "vi": "Từ đây nhìn chúng giống hệt nhau."
+        },
+        {
+          "who": "b",
+          "en": "How does the left one feel?",
+          "vi": "Chiếc bên trái đi vào thấy thế nào?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "An diễn tả cảm giác của chân trái để Kyo tìm đúng nguyên nhân.",
+        "options": [
+          {
+            "t": "It's tighter than the right one.",
+            "note": "Tighter than so độ chật khi mang hai chiếc. Không khẳng định đế giày trái ngắn hơn.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "It's longer than the right one.",
+            "note": "Longer so chiều dài. Đặt hai đế cạnh nhau sẽ kiểm tra điều khác với cảm giác chật mà An cần báo.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Kyo nhấc miếng lót lên. Dưới đó có tấm thẻ chạy đã gấp tư của An. Cô lấy lại cả thẻ lẫn đôi giày vừa chân.",
+      "say": [
+        {
+          "who": "a",
+          "en": "My shoe was keeping my number safe!",
+          "vi": "Giày đã cất số chạy hộ mình!"
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Hai đế bằng nhau. Kyo cho tay vào trong, tìm ra chiếc thẻ gấp tư dưới lót. An thử lại rồi ghi vào sổ mình đã học được từ tighter.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Same length, different fit.",
+          "vi": "Cùng chiều dài, mang vào lại khác."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

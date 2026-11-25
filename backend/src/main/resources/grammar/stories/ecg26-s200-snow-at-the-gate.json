@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s200-snow-at-the-gate",
+  "title": "Tuyết ở cửa ra máy bay",
+  "summary": "Một quả cầu tuyết hết nước được mang tới quầy. Dưới chân đế có hạt trắng, nhưng không có vết nứt trên vòm.",
+  "level": "B2",
+  "topics": [
+    "passive-nonfinite",
+    "modal-perfect-deduction"
+  ],
+  "scene": "airport",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Như",
+      "role": "Người phụ trách quầy"
+    },
+    {
+      "id": "b",
+      "name": "Nico",
+      "role": "Người nhận dạng đồ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Chủ hàng là thợ làm mẫu, cho biết có một loại quả cầu không dùng nước. Như không thể kết luận nó đã rò chỉ từ những hạt khô.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It may never have held water.",
+          "vi": "Có thể nó chưa bao giờ chứa nước."
+        },
+        {
+          "who": "b",
+          "en": "Read the instructions under the base.",
+          "vi": "Đọc hướng dẫn bên dưới đế đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Dòng nhắn bảo quả cầu được lắc chứ không phải đem đổ đầy nước.",
+        "options": [
+          {
+            "ok": true,
+            "t": "It's meant to be shaken dry.",
+            "note": "Meant to be shaken ở bị động nêu cách người dùng tác động lên vật. Dry nói điều kiện hoạt động, không chứng minh từng bị rò.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "It must have been filled and then emptied.",
+            "note": "Must have been filled suy ra một quá trình quá khứ chắc chắn hơn chứng cứ cho phép; tờ hướng dẫn còn gợi loại không dùng nước.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Nico xoay nhẹ, hạt trắng rơi như tuyết thật trên ngôi nhà giấy không chịu được nước. Chủ hàng nhận ra ngay mái nhà do con mình cắt.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We saved the little house by leaving it dry.",
+          "vi": "Để nó khô mà mình cứu được cả căn nhà bé."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Quả cầu rời quầy nguyên vẹn, còn hình tuyết khô được đem dạy trong buổi đào tạo sau.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Như nhìn kỹ nhà giấy, cất ngay bình nước. Họ lắc một lần, những hạt rơi không làm mờ khung cửa tí hon.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Dry snow still needed a scarf.",
+          "vi": "Tuyết khô vẫn cần khăn len vậy."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Đứa trẻ chủ ngôi nhà đón nó ở sảnh với một chiếc khăn len, bảo nhà khô vẫn có thể lạnh.",
+      "end": true
+    }
+  ]
+}

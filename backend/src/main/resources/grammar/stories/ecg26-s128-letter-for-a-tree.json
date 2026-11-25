@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s128-letter-for-a-tree",
+  "title": "Thư gửi một thân cây",
+  "summary": "Hai cây cùng đứng trước trường. Người gửi muốn lá thư buộc vào cây từng che mưa cho mình.",
+  "level": "B1",
+  "topics": [
+    "relative-clauses-defining",
+    "whose-where-when"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Thoa",
+      "role": "Người nhận thư"
+    },
+    {
+      "id": "b",
+      "name": "Kha",
+      "role": "Người giao thư"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Một cây có hốc thấp, cây kia có cành cong. Thư nhắc rõ một con chim từng làm tổ trong hốc thấp. Kha phải nhận ra cây khi mưa xóa gần hết chữ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can still see the word nest.",
+          "vi": "Tôi vẫn đọc được chữ tổ."
+        },
+        {
+          "who": "b",
+          "en": "Which bit of the tree should we look inside?",
+          "vi": "Ta cần nhìn vào phần nào của cây?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Mô tả cái cây nhờ nơi con chim làm tổ.",
+        "options": [
+          {
+            "ok": false,
+            "t": "Find the tree that made the bird's nest.",
+            "note": "That làm chủ ngữ của made, biến cây thành người làm tổ. Nó đổi vai trong câu chuyện.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "Find the tree where the bird made its nest.",
+            "note": "Where liên hệ cây với địa điểm làm tổ. Kha cần tìm hốc có dấu tổ, không chỉ tìm tán đẹp.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Kha thấy cọng rơm thò ra từ hốc. Anh treo thư ở cành bên cạnh, chừa lối cho chim.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We left the bird its front door.",
+          "vi": "Mình vẫn chừa cửa cho chim."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Chủ thư trở lại với học sinh của mình, đọc thành tiếng dưới bóng cây từng che mình lúc nhỏ.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Kha dừng trước tán cây giống hình tổ. Thoa chỉ cọng rơm ở cây kia và nhắc người làm tổ là con chim.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One little bird put the sentence back in order.",
+          "vi": "Một chú chim nhỏ xếp lại nghĩa của câu."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Họ treo thêm một hình chim ngoài phong bì. Người nhận lần theo đúng dấu đó dưới cơn mưa đầu mùa.",
+      "end": true
+    }
+  ]
+}

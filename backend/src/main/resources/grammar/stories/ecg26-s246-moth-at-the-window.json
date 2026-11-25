@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s246-moth-at-the-window",
+  "title": "Bướm đêm không được gọi tên",
+  "level": "C1",
+  "topics": [
+    "stance-adverbs",
+    "negation-scope"
+  ],
+  "scene": "home",
+  "summary": "Trong nhật ký cha từng viết “mercifully, it didn't return”. Suốt hai mươi năm Sĩ tưởng cha nói về một người họ hàng. Trên trang có dấu cánh bướm.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sĩ",
+      "role": "Người ghi nhật ký"
+    },
+    {
+      "id": "b",
+      "name": "Mei",
+      "role": "Chị gái"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Ở trang trước, cha mô tả cả một con bướm lẫn tiếng ho của em bé. Trang tiếp theo bị xé. Mei không muốn ký một bản chép quy nỗi nhẹ nhõm của cha cho một người mà ông không hề nêu tên.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Mercifully tells me how he felt, not what it was.",
+          "vi": "Mercifully cho em biết cảm xúc của cha chứ chưa cho biết it là gì."
+        },
+        {
+          "who": "b",
+          "en": "Can we print the sentence without choosing for him?",
+          "vi": "Mình có thể in mà không quyết định thay cha không?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Chọn cách dẫn giữ ranh giới giữa thái độ và đối tượng quy chiếu.",
+        "options": [
+          {
+            "t": "Mercifully, he never welcomed that relative back.",
+            "note": "Câu tự thêm relative, biến chủ thể không trở lại thành cha không chào đón, lại mở rộng tới never. Đó là ba thay đổi mà chữ mercifully không cấp phép.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "He was relieved that something did not return. The reference is unclear.",
+            "note": "Relieved ghi đúng thái độ mà mercifully thể hiện. Something và unclear thừa nhận thiếu tiền lệ duy nhất cho it.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Mei giữ nguyên dấu cánh trong bản chụp và mời gia đình đọc cả trang trước. Họ kể được về một đêm khó ngủ thay vì tranh cãi tên người bị ghét.",
+      "say": [
+        {
+          "who": "a",
+          "en": "For once, the blank didn't become a family accusation.",
+          "vi": "Lần này khoảng trống không biến thành lời buộc tội trong nhà."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Mei đọc phiên bản ấy trước bức ảnh gia đình và nghe chính mình vô tình gán ác ý cho cha. Cô lấy bút ghi cạnh it hai khả năng trên trang trước, rồi để trống phần chưa biết.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The kindest answer here is an accurate question.",
+          "vi": "Điều tử tế nhất ở đây là hỏi đúng câu cần hỏi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

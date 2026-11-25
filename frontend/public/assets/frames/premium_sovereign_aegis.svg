@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 175" fill="none">
+  <!-- [ASSET_REQUIRED] Production-grade vector artwork -->
+  <!-- Series: premium_membership | Tier: SS | Slug: premium_sovereign_aegis | Plan: PLAN_12_MONTHS | Overflow: 160% -->
+  <!-- Center: (87.5, 87.5), Avatar aperture: r=40.5, Outer Canvas: 175x175 -->
+  <defs>
+    <!-- Sovereign Imperial Gold Gradients -->
+    <linearGradient id="sovGoldPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="25%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="75%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#854d0e"/>
+    </linearGradient>
+
+    <linearGradient id="sovCrimsonPlume" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="35%" stop-color="#dc2626"/>
+      <stop offset="75%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#450a0a"/>
+    </linearGradient>
+
+    <radialGradient id="sovAuraBackdrop" cx="50%" cy="50%" r="50%">
+      <stop offset="55%" stop-color="#fef08a" stop-opacity="0"/>
+      <stop offset="75%" stop-color="#f59e0b" stop-opacity="0.32"/>
+      <stop offset="92%" stop-color="#991b1b" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#450a0a" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="sovGemRuby" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#fca5a5"/>
+      <stop offset="60%" stop-color="#dc2626"/>
+      <stop offset="90%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#450a0a"/>
+    </radialGradient>
+
+    <filter id="sovGlowFX" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 1. Background Imperial Sovereign Aura -->
+  <circle cx="87.5" cy="87.5" r="72" fill="url(#sovAuraBackdrop)" />
+
+  <!-- 2. Grand Sovereign Wings & Imperial Laurels (Overflow Canvas) -->
+  <g filter="url(#sovGlowFX)">
+    <!-- West Sovereign Wing Flange -->
+    <path d="M 48 65 C 32 50 18 38 12 25 C 22 40 34 54 48 72 Z" fill="url(#sovGoldPrimary)" opacity="0.9" />
+    <path d="M 44 76 C 26 66 14 55 10 44 C 18 58 30 70 42 80 Z" fill="url(#sovCrimsonPlume)" opacity="0.85" />
+    <path d="M 42 88 C 24 82 14 74 12 64 C 18 76 30 84 42 92 Z" fill="url(#sovGoldPrimary)" opacity="0.9" />
+
+    <!-- East Sovereign Wing Flange -->
+    <path d="M 127 65 C 143 50 157 38 163 25 C 153 40 141 54 127 72 Z" fill="url(#sovGoldPrimary)" opacity="0.9" />
+    <path d="M 131 76 C 149 66 161 55 165 44 C 157 58 145 70 133 80 Z" fill="url(#sovCrimsonPlume)" opacity="0.85" />
+    <path d="M 133 88 C 151 82 161 74 163 64 C 157 76 145 84 133 92 Z" fill="url(#sovGoldPrimary)" opacity="0.9" />
+  </g>
+
+  <!-- 3. Supreme Sovereign Crown Crest (Top Center) -->
+  <g filter="url(#sovGlowFX)">
+    <!-- Crown Diadem Base -->
+    <path d="M 72 38 L 87.5 28 L 103 38 L 98 44 L 77 44 Z" fill="url(#sovGoldPrimary)" stroke="#fffbeb" stroke-width="0.8" />
+    <!-- 5 Sovereign Crown Spires -->
+    <polygon points="87.5,12 84,28 91,28" fill="url(#sovGoldPrimary)" stroke="#fff" stroke-width="0.6" />
+    <polygon points="76,18 74,32 80,32" fill="url(#sovGoldPrimary)" />
+    <polygon points="99,18 95,32 101,32" fill="url(#sovGoldPrimary)" />
+    <polygon points="68,26 68,36 74,36" fill="url(#sovGoldPrimary)" opacity="0.9" />
+    <polygon points="107,26 101,36 107,36" fill="url(#sovGoldPrimary)" opacity="0.9" />
+    <!-- Large Imperial Ruby in Crown Heart -->
+    <circle cx="87.5" cy="36" r="4.5" fill="url(#sovGemRuby)" stroke="#fef08a" stroke-width="1" />
+    <circle cx="87.5" cy="36" r="1.5" fill="#ffffff" />
+  </g>
+
+  <!-- 4. Sovereign Aegis Pedestal & Golden Tassels (Bottom Overflow) -->
+  <g filter="url(#sovGlowFX)">
+    <!-- Shield Apron -->
+    <polygon points="87.5,166 74,142 87.5,134 101,142" fill="url(#sovGoldPrimary)" stroke="#fef08a" stroke-width="0.8" />
+    <!-- Center Sovereign Ruby Emblem -->
+    <circle cx="87.5" cy="148" r="3.5" fill="url(#sovGemRuby)" stroke="#ffffff" stroke-width="0.8" />
+    <polygon points="87.5,158 85,164 90,164" fill="#fffbeb" />
+  </g>
+
+  <!-- 5. Massive Core Sovereign Beveled Ring -->
+  <circle cx="87.5" cy="87.5" r="46.5" stroke="url(#sovGoldPrimary)" stroke-width="3.2" />
+  <circle cx="87.5" cy="87.5" r="43.8" stroke="url(#sovCrimsonPlume)" stroke-width="1.6" stroke-dasharray="16 4" />
+  <circle cx="87.5" cy="87.5" r="41.5" stroke="#fffbeb" stroke-width="0.8" opacity="0.95" />
+
+  <!-- Imperial Ruby Studs at 45-degree points -->
+  <circle cx="120" cy="55" r="2.2" fill="url(#sovGemRuby)" stroke="#fef08a" stroke-width="0.6" />
+  <circle cx="120" cy="120" r="2.2" fill="url(#sovGemRuby)" stroke="#fef08a" stroke-width="0.6" />
+  <circle cx="55" cy="120" r="2.2" fill="url(#sovGemRuby)" stroke="#fef08a" stroke-width="0.6" />
+  <circle cx="55" cy="55" r="2.2" fill="url(#sovGemRuby)" stroke="#fef08a" stroke-width="0.6" />
+
+  <!-- Center Aperture: r=40.5 transparent for avatar face -->
+</svg>

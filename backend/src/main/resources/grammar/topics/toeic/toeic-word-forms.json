@@ -1,0 +1,471 @@
+{
+  "schema": 1,
+  "slug": "toeic-word-forms",
+  "version": 2,
+  "domain": "toeic",
+  "order": 20,
+  "kind": "application",
+  "title": {
+    "vi": "Chọn đúng từ loại trong câu",
+    "en": "Choosing the right word form"
+  },
+  "subtitle": {
+    "vi": "Tìm vai trò của chỗ trống trước khi nhìn hậu tố",
+    "en": "Choosing the right word form"
+  },
+  "aliases": [
+    "từ loại TOEIC",
+    "word forms",
+    "word families",
+    "a successfully project"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Xác định thành phần còn thiếu trong cụm danh từ và vị ngữ",
+    "Phân biệt tính từ sau động từ nối với trạng từ bổ nghĩa hành động",
+    "Kiểm tra nghĩa sau khi chọn hình thức"
+  ],
+  "prerequisites": [
+    "word-families"
+  ],
+  "related": [
+    {
+      "slug": "word-families",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": "Ứng dụng ngữ pháp trong ngữ cảnh công việc; bài tự soạn, không phải đề ETS và không quy đổi điểm."
+  },
+  "quick": {
+    "what": "Từ cùng họ không thay thế nhau tự do. Cần biết chỗ trống gọi tên người, vật, hành động hay một đặc điểm.",
+    "when": "Khi đọc thông báo, mô tả công việc và câu điền từ.",
+    "examples": [
+      {
+        "en": "[DET|The] [ADJ|revised] [N|schedule] is [ADV|now] available.",
+        "vi": "Lịch đã sửa hiện có sẵn."
+      },
+      {
+        "en": "The technician checked the connection carefully.",
+        "vi": "Kỹ thuật viên kiểm tra kết nối cẩn thận."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Đọc cả câu để tìm động từ hữu hạn và danh từ trung tâm. Trong “the rapid expansion of the team”, expansion là trung tâm; rapid mô tả nó. “Có the ở trước” chưa đủ để chọn danh từ ngay sau the vì giữa chúng có thể có tính từ hoặc trạng từ."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Vị trí",
+        "Ví dụ",
+        "Cách hiểu"
+      ],
+      "rows": [
+        [
+          "Cụm danh từ",
+          "a highly reliable supplier",
+          "highly bổ nghĩa reliable; supplier gọi tên đối tượng"
+        ],
+        [
+          "Sau động từ nối",
+          "The figures look accurate.",
+          "accurate mô tả figures"
+        ],
+        [
+          "Bổ nghĩa hành động",
+          "They responded promptly.",
+          "promptly nói cách hoặc thời điểm phản hồi"
+        ],
+        [
+          "Sau giới từ",
+          "after approval",
+          "approval là danh từ; cũng có thể có cụm -ing"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Hậu tố là gợi ý, không phải máy chấm. -tion thường tạo danh từ, nhưng một họ từ có thể có nhiều danh từ với nghĩa khác nhau: employer tuyển người, employee được tuyển, employment là việc làm. Cả ba có thể đứng sau một số từ hạn định; nghĩa quyết định lựa chọn."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "The assistant is efficient.",
+            "vi": "Trợ lý làm việc hiệu quả."
+          },
+          "b": {
+            "en": "The assistant works efficiently.",
+            "vi": "Trợ lý làm việc một cách hiệu quả."
+          },
+          "diff": "is nối người với đặc điểm; works là hành động được trạng từ mô tả."
+        }
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "transform",
+        "steps": [
+          {
+            "label": "Tìm trung tâm",
+            "sentence": "a supplier"
+          },
+          {
+            "label": "Thêm đặc điểm",
+            "sentence": "a reliable supplier"
+          },
+          {
+            "label": "Thêm mức độ",
+            "sentence": "a highly reliable supplier"
+          }
+        ]
+      },
+      "caption": "Mỗi từ thêm vào bổ nghĩa cho một thành phần cụ thể.",
+      "alt": "Tìm trung tâm: a supplier → Thêm đặc điểm: a reliable supplier → Thêm mức độ: a highly reliable supplier"
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "We need written approval before ordering.",
+          "vi": "Chúng ta cần phê duyệt bằng văn bản trước khi đặt hàng."
+        },
+        {
+          "en": "The replacement filter fits perfectly.",
+          "vi": "Bộ lọc thay thế lắp vừa khít."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Đừng tự đổi mọi từ tận cùng -ly thành trạng từ. friendly là tính từ; fast có thể là tính từ hoặc trạng từ. Dùng cấu trúc và nghĩa để kiểm tra."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Sau be có thể là tính từ, danh từ hoặc thành phần của bị động/tiếp diễn: “She is helpful”, “She is a consultant”, “She is reviewing the invoice”. Vì vậy quy tắc “sau be chọn tính từ” làm mất cấu trúc của câu. Hãy xem phần tiếp theo và chủ thể có thực hiện hay nhận hành động."
+    },
+    {
+      "type": "p",
+      "vi": "Phân từ có thể mô tả trạng thái hoặc tham gia cụm động từ. “The revised estimate” là cụm danh từ; “They have revised the estimate” có have và phân từ tạo hiện tại hoàn thành. Không cần ép mọi từ -ed vào một nhãn để làm bài."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Một từ đúng loại vẫn có thể sai nghĩa: economic nói về kinh tế, economical thường nói về tiết kiệm chi phí. Không suy ra hai từ đồng nghĩa chỉ vì cùng làm tính từ."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "toeic-word-forms-mistake-1",
+      "wrong": "The response was politely.",
+      "right": "The response was polite.",
+      "why": "Ở đây be nối response với một đặc điểm, không mô tả một hành động trả lời."
+    },
+    {
+      "id": "toeic-word-forms-mistake-2",
+      "wrong": "We need an approve.",
+      "right": "We need an approval.",
+      "why": "Cần danh từ approval sau an; approve là động từ."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có thể chỉ nhìn hai từ quanh chỗ trống?",
+      "a": "Hai từ giúp tìm cấu trúc, nhưng cả câu mới cho biết nghĩa, số và loại đối tượng."
+    },
+    {
+      "q": "Một đáp án khác đúng mà máy chưa biết thì sao?",
+      "a": "Bài viết lại có thể có nhiều cách; đáp án ngoài danh sách cần đối chiếu, không tự động xem là sai."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn phương án phù hợp với cấu trúc và nghĩa đã cho.",
+      "stem": "The new booking system is remarkably ___.",
+      "options": [
+        {
+          "t": "efficient",
+          "ok": true,
+          "note": "remarkably bổ nghĩa tính từ efficient."
+        },
+        {
+          "t": "efficiently",
+          "note": "Không dùng trạng từ làm bổ ngữ đặc điểm của system ở đây.",
+          "tag": "application-form-meaning"
+        },
+        {
+          "t": "efficiency",
+          "note": "Danh từ này không đi sau remarkably theo mẫu này.",
+          "tag": "application-form-meaning"
+        }
+      ],
+      "explain": "remarkably bổ nghĩa tính từ efficient.",
+      "id": "toeic-word-forms-01",
+      "level": "B1",
+      "use": "practice"
+    },
+    {
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Điền dạng của professional để mô tả cách xử lý.",
+      "stem": "The clerk handled the request {1}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "professionally"
+          ]
+        }
+      },
+      "explain": "Trạng từ professionally bổ nghĩa handled.",
+      "id": "toeic-word-forms-02",
+      "level": "B1",
+      "use": "practice"
+    },
+    {
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn phương án phù hợp với cấu trúc và nghĩa đã cho.",
+      "stem": "We are seeking an ___ who can manage payroll.",
+      "options": [
+        {
+          "t": "employee",
+          "ok": true,
+          "note": "Mệnh đề who chỉ người; employee là người lao động."
+        },
+        {
+          "t": "employment",
+          "note": "Employment không gọi tên người sau an.",
+          "tag": "application-form-meaning"
+        },
+        {
+          "t": "employ",
+          "note": "Employ là động từ.",
+          "tag": "application-form-meaning"
+        }
+      ],
+      "explain": "Mệnh đề who chỉ người; employee là người lao động.",
+      "id": "toeic-word-forms-03",
+      "level": "B1",
+      "use": "practice"
+    },
+    {
+      "type": "error",
+      "skill": "form",
+      "prompt": "Chọn phần sai ngữ pháp trong câu.",
+      "segments": [
+        {
+          "t": "The team prepared a "
+        },
+        {
+          "t": "carefully",
+          "bad": true,
+          "fix": [
+            "careful"
+          ],
+          "note": "Careful bổ nghĩa trực tiếp summary. Carefully có thể bổ nghĩa một động từ hoặc một phân từ như prepared, nhưng không đứng trực tiếp trước summary theo mẫu đã cho.",
+          "tag": "application-form-meaning"
+        },
+        {
+          "t": " summary."
+        }
+      ],
+      "explain": "Careful bổ nghĩa trực tiếp summary. Carefully có thể bổ nghĩa một động từ hoặc một phân từ như prepared, nhưng không đứng trực tiếp trước summary theo mẫu đã cho.",
+      "id": "toeic-word-forms-04",
+      "level": "B1",
+      "use": "practice"
+    },
+    {
+      "type": "match",
+      "skill": "meaning",
+      "prompt": "Ghép cấu trúc với ý nghĩa hoặc chức năng phù hợp.",
+      "pairs": [
+        {
+          "a": "reliability",
+          "b": "độ đáng tin cậy"
+        },
+        {
+          "a": "reliable",
+          "b": "có thể tin cậy"
+        },
+        {
+          "a": "reliably",
+          "b": "một cách đáng tin cậy"
+        }
+      ],
+      "explain": "Họ từ giữ mối liên hệ nghĩa nhưng khác chức năng.",
+      "id": "toeic-word-forms-05",
+      "level": "B1",
+      "use": "practice"
+    },
+    {
+      "type": "transform",
+      "skill": "production",
+      "prompt": "Viết lại theo yêu cầu, giữ nguyên thông tin.",
+      "source": "The designer worked with great care.",
+      "instruction": "Dùng carefully thay cụm with great care.",
+      "accept": [
+        "The designer worked carefully."
+      ],
+      "model": "The designer worked carefully.",
+      "explain": "Carefully bổ nghĩa worked, giữ nghĩa làm việc cẩn thận.",
+      "id": "toeic-word-forms-06",
+      "level": "B1",
+      "use": "practice"
+    },
+    {
+      "type": "multi",
+      "skill": "use",
+      "prompt": "Chọn tất cả phương án đúng theo yêu cầu.",
+      "stem": "Chọn các câu có cấu trúc đúng.",
+      "options": [
+        {
+          "t": "The instructions are clear.",
+          "ok": true,
+          "note": "Clear mô tả instructions."
+        },
+        {
+          "t": "The instructions explain the process clearly.",
+          "ok": true,
+          "note": "Clearly bổ nghĩa explain."
+        },
+        {
+          "t": "The instructions are clearly.",
+          "note": "Thiếu thành phần mà clearly bổ nghĩa.",
+          "tag": "application-form-meaning"
+        }
+      ],
+      "explain": "Phân biệt đặc điểm và cách thực hiện.",
+      "id": "toeic-word-forms-07",
+      "level": "B1",
+      "use": "practice"
+    },
+    {
+      "type": "open",
+      "skill": "production",
+      "prompt": "Tự viết và đối chiếu; bài này không tự chấm mức thành thạo.",
+      "task": "Viết hai câu mô tả một dịch vụ: một câu dùng tính từ, một câu dùng trạng từ.",
+      "model": [
+        "The service is reliable.",
+        "The staff respond quickly."
+      ],
+      "checklist": [
+        "Danh từ và động từ phù hợp về số",
+        "Tính từ mô tả đối tượng; trạng từ mô tả cách làm"
+      ],
+      "explain": "Có nhiều cách diễn đạt đúng; câu mẫu chỉ minh họa một cách đáp ứng nhiệm vụ.",
+      "id": "toeic-word-forms-08",
+      "level": "B1",
+      "use": "practice"
+    },
+    {
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Điền dạng của clear để nói cách giải thích.",
+      "stem": "The supervisor explained the new procedure {1}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "clearly"
+          ]
+        }
+      },
+      "explain": "Clearly mô tả explained, không phải procedure.",
+      "id": "toeic-word-forms-09",
+      "level": "B1",
+      "use": "check"
+    },
+    {
+      "type": "transform",
+      "skill": "production",
+      "prompt": "Viết lại theo yêu cầu, giữ nguyên thông tin.",
+      "source": "The engineer carried out a thorough inspection of the equipment.",
+      "instruction": "Bắt đầu bằng The engineer inspected the equipment và dùng trạng từ tương ứng với thorough.",
+      "accept": [
+        "The engineer inspected the equipment thoroughly."
+      ],
+      "model": "The engineer inspected the equipment thoroughly.",
+      "explain": "Thoroughly mô tả hành động kiểm tra; chuyển từ đặc điểm cuộc kiểm tra sang cách thực hiện.",
+      "id": "toeic-word-forms-10",
+      "level": "B1",
+      "use": "check"
+    },
+    {
+      "type": "choice",
+      "skill": "use",
+      "prompt": "Chọn phương án phù hợp với cấu trúc và nghĩa đã cho.",
+      "stem": "Applicants must submit two letters of ___.",
+      "options": [
+        {
+          "t": "recommendation",
+          "ok": true,
+          "note": "Letters of recommendation là thư giới thiệu."
+        },
+        {
+          "t": "recommend",
+          "note": "Sau of ở đây cần danh từ.",
+          "tag": "application-form-meaning"
+        },
+        {
+          "t": "recommended",
+          "note": "Phân từ không gọi tên loại thư theo mẫu này.",
+          "tag": "application-form-meaning"
+        }
+      ],
+      "explain": "Letters of recommendation là thư giới thiệu.",
+      "id": "toeic-word-forms-11",
+      "level": "B1",
+      "use": "check"
+    },
+    {
+      "type": "order",
+      "skill": "production",
+      "prompt": "Sắp xếp thành câu; bắt đầu bằng The và kết thúc bằng efficiently. Giữ nguyên từng cụm.",
+      "tokens": [
+        "organizes",
+        "the files",
+        "efficiently",
+        "The",
+        "new assistant"
+      ],
+      "accept": [
+        [
+          "The",
+          "new assistant",
+          "organizes",
+          "the files",
+          "efficiently"
+        ]
+      ],
+      "end": ".",
+      "explain": "The new assistant là chủ ngữ; efficiently mô tả organizes.",
+      "id": "toeic-word-forms-12",
+      "level": "B1",
+      "use": "check"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "English Grammar Today: word classes, adjective and adverb functions, word formation. Tham khảo định hướng chủ đề; không khẳng định đã đối chiếu từng câu với một đoạn nguồn cụ thể."
+    },
+    {
+      "ref": "ets-toeic",
+      "note": "Nguồn định dạng được main đọc và ghi tại BATCH-continuation-11.md: IIBC Test Format and Content, ETS paper-delivered Examinee Handbook tr.1,3,5. Chỉ dùng ngữ cảnh công việc và phạm vi Part 5/6; không sao chép câu hỏi hoặc quy đổi điểm."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

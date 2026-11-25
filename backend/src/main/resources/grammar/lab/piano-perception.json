@@ -1,0 +1,41 @@
+{
+  "id": "piano-perception",
+  "title": "Nghe một lượt trọn hay bắt gặp đang chơi?",
+  "summary": "Tại nhạc viện, người gác cửa nghe một sinh viên tập đàn. Giữ hear và người chơi, đổi dạng play để xét người nghe có trình bày sự kiện như một toàn thể không.",
+  "level": "C1",
+  "topics": [
+    "bare-infinitive",
+    "verb-ing-or-infinitive"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Góc nhìn sự kiện",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Toàn bộ lượt"
+        },
+        {
+          "id": "v2",
+          "label": "Đang diễn ra"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I heard Asha play the sonata.",
+      "vi": "Tôi nghe Asha chơi bản sonata.",
+      "note": "Play sau heard Asha cho cách nhìn bao quát một lượt biểu diễn, không đếm từng nốt đã nghe. / The bare infinitive presents the performance as a whole.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "I heard Asha playing the sonata.",
+      "vi": "Tôi nghe thấy Asha đang chơi bản sonata.",
+      "note": "Playing phù hợp khi đi ngang phòng tập giữa bản. Câu không xác nhận đã nghe hết. / The -ing form puts the listener inside the ongoing performance.",
+      "verdict": "ok"
+    }
+  }
+}

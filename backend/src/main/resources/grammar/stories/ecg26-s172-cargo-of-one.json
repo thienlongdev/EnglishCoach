@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s172-cargo-of-one",
+  "title": "Kiện hàng nặng một tiếng hát",
+  "summary": "Cân tàu báo kiện hạt nặng thêm, mặc dù niêm phong còn nguyên. Trong lúc tàu hát hiệu lệnh cân lại, kim nhảy thêm lần nữa.",
+  "level": "B2",
+  "topics": [
+    "causatives",
+    "have-something-done"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hà",
+      "role": "Người chăm kho hạt"
+    },
+    {
+      "id": "b",
+      "name": "Pax",
+      "role": "Người lái tàu"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Pax đã thuê thợ hiệu chuẩn cân ở cảng trước. Anh không tự làm và cần báo đúng vai của mình để Hà liên hệ người giữ hồ sơ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I paid for the check at the last port.",
+          "vi": "Tôi trả phí kiểm định ở cảng trước."
+        },
+        {
+          "who": "b",
+          "en": "Who actually adjusted the scale?",
+          "vi": "Ai thật sự điều chỉnh cân?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Pax muốn giữ rõ anh thu xếp việc kiểm định.",
+        "options": [
+          {
+            "ok": true,
+            "t": "I had the scale calibrated at the port.",
+            "note": "Had + scale + calibrated diễn tả nhờ người khác thực hiện. Nó chưa nêu tên thợ nhưng không gán thao tác trực tiếp cho Pax.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "I calibrated the scale myself.",
+            "note": "Myself nhấn Pax tự tay làm. Nó khiến người nghe tìm hồ sơ nhầm người.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Thợ gửi biểu đồ cho thấy loa ở cùng tần số làm khay rung. Họ tắt bài hát rồi cân, khối lượng trở về mức cũ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "My song weighed more than your seeds.",
+          "vi": "Bài hát của tôi còn làm cân nặng hơn hạt của cô."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Pax ghi tặng thợ một bản thu mang tên Bài hát nặng ba gam.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Hà đưa cho anh tua vít thử. Pax trả lại, gọi thợ thật. Thợ nghe tiếng hiệu lệnh qua bộ đàm và lập tức xin cân lại trong yên lặng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Listen. The cargo has a sound of its own.",
+          "vi": "Nghe kìa. Bản thân kiện hàng cũng có âm thanh."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Cả kho im một phút. Kim đứng yên, và lần đầu họ nghe hạt khô lăn rất nhẹ bên trong gói.",
+      "end": true
+    }
+  ]
+}

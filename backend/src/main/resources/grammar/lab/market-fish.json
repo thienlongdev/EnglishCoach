@@ -1,0 +1,41 @@
+{
+  "id": "market-fish",
+  "title": "Cá heo nói chung hay đàn trước mắt?",
+  "summary": "Một hướng dẫn viên chuyển từ kiến thức chung sang chỉ đàn cá heo cạnh thuyền. Đổi mạo từ rồi xác định nhóm đang nói đến.",
+  "level": "B1",
+  "topics": [
+    "generic-reference",
+    "zero-article"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Phạm vi",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Cả loài"
+        },
+        {
+          "id": "v2",
+          "label": "Nhóm xác định"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Dolphins breathe air.",
+      "vi": "Cá heo hít thở không khí.",
+      "note": "Dolphins không mạo từ có thể chỉ cả loài trong câu nêu đặc tính. / A bare plural allows a generic reading.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The dolphins are swimming beside us.",
+      "vi": "Đàn cá heo đó đang bơi cạnh chúng ta.",
+      "note": "The dolphins là đàn mà hai bên có thể nhận ra từ tình huống trên thuyền. / The points to the identifiable group.",
+      "verdict": "ok"
+    }
+  }
+}

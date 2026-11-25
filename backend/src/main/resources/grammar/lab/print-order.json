@@ -1,0 +1,41 @@
+{
+  "id": "print-order",
+  "title": "Giao việc cho người hay đặt dịch vụ?",
+  "summary": "Bạn bố trí in chương trình hòa nhạc. Đổi giữa trực tiếp giao người thực hiện và nhấn vào sản phẩm được in.",
+  "level": "B2",
+  "topics": [
+    "causatives",
+    "have-something-done"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Thành phần sau had",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Người thực hiện"
+        },
+        {
+          "id": "v2",
+          "label": "Sản phẩm"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I had the assistant print the programmes.",
+      "vi": "Tôi giao cho trợ lý in chương trình.",
+      "note": "The assistant đứng sau had và là người thực hiện print. / Have + person + bare verb names the agent.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "I had the programmes printed.",
+      "vi": "Tôi đặt in các tờ chương trình.",
+      "note": "Printed cho biết sản phẩm nhận tác động. Câu không cho biết trợ lý hay nhà in thực hiện. / Have + thing + participle foregrounds the service.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "envelope-reader",
+  "title": "Ai sẽ đọc địa chỉ trên phong bì?",
+  "summary": "Bạn chép địa chỉ bằng chữ in lúc chuẩn bị thư. Giữ nguyên mục đích đọc lại sau đó, đổi giữa người viết và người giao thư. Khi nào cần nêu một chủ ngữ mới?",
+  "level": "B1",
+  "topics": [
+    "infinitive-of-purpose",
+    "clauses-reason-result"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Người cần đọc",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Người viết"
+        },
+        {
+          "id": "v2",
+          "label": "Người giao thư"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I printed the address clearly to be able to read it again later.",
+      "vi": "Tôi viết địa chỉ bằng chữ in thật rõ để sau này chính mình đọc lại được.",
+      "note": "Chủ thể ngầm của to be able là I. Print trong ngữ cảnh viết tay là viết chữ in rõ nét. / The writer is also the intended reader.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "I printed the address clearly so that the courier could read it.",
+      "vi": "Tôi viết địa chỉ bằng chữ in thật rõ để người giao thư đọc được.",
+      "note": "The courier là chủ ngữ của could read. Mục đích hướng sang người khác chứ không còn là người viết. / So that permits a different subject for the purpose clause.",
+      "verdict": "ok"
+    }
+  }
+}

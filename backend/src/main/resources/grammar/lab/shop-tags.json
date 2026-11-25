@@ -1,0 +1,41 @@
+{
+  "id": "shop-tags",
+  "title": "Mong người bán xác nhận",
+  "summary": "Bạn hỏi về chiếc áo mới ở quầy đổi hàng. Đổi khẳng định thành phủ định rồi dự đoán cực tính của phần đuôi trong câu hỏi xác nhận trung tính.",
+  "level": "B1",
+  "topics": [
+    "question-tags",
+    "auxiliaries"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Nhận định",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Khẳng định"
+        },
+        {
+          "id": "v2",
+          "label": "Phủ định"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "This jacket is new, isn't it?",
+      "vi": "Áo khoác này mới, đúng không?",
+      "note": "Is ở mệnh đề trước thành isn't ở đuôi. It thay cho this jacket. / An affirmative anchor takes a negative confirmation tag here.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "This jacket isn't new, is it?",
+      "vi": "Áo khoác này không mới, phải không?",
+      "note": "Isn't mang phủ định ở mệnh đề trước nên đuôi dùng is it. / A negative anchor takes a positive confirmation tag here.",
+      "verdict": "ok"
+    }
+  }
+}

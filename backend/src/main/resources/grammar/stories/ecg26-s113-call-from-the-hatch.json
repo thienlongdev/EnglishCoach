@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s113-call-from-the-hatch",
+  "title": "Ai gọi ở cửa khoang?",
+  "summary": "Một bản ghi vòng lặp phát câu Who called May? Một chữ bị mờ khiến Uyên suýt đi tìm chính May làm người gọi.",
+  "level": "B1",
+  "topics": [
+    "subject-object-questions",
+    "reporting-questions"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Uyên",
+      "role": "Người ghi nhật ký"
+    },
+    {
+      "id": "b",
+      "name": "Sao",
+      "role": "Kỹ thuật viên"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "May là tên con mèo bông trong khoang trẻ em. Có em bé đang mất nó và đã gọi to tên nó. Sao muốn tìm chủ nhân để trao lại.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can hear the name May at the end.",
+          "vi": "Tôi nghe được tên May ở cuối."
+        },
+        {
+          "who": "b",
+          "en": "We need the person who called that name.",
+          "vi": "Ta cần tìm người đã gọi tên ấy."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Uyên chọn câu hỏi để trẻ giơ tay nhận mình là người gọi.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Who called May?",
+            "note": "Who là chủ ngữ làm hành động gọi, May là người hoặc vật được gọi. Không cần did trong câu hỏi trung tính này.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Who did May call?",
+            "note": "May nay làm chủ ngữ sau did, who hỏi đối tượng May gọi. Câu đúng nhưng đảo vai trong bản ghi.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Một em bé giơ tay, lặp đúng tiếng gọi trong bản ghi. May được trao lại ngay trước lúc dập đèn ngủ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The voice found its cat.",
+          "vi": "Tiếng gọi tìm lại được con mèo rồi."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Kể từ đêm đó, trạm phát thêm một tiếng mèo kêu nhỏ sau lời chúc ngủ ngon của trẻ.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Bọn trẻ cười vì mèo bông không biết gọi ai. Uyên diễn lại tiếng gọi May, và một em chạy lại nhận ra nó.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Next time May can answer.",
+          "vi": "Lần tới May tự trả lời được rồi."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Em khâu thêm cái chuông nhỏ vào cổ mèo để lần sau nó có thể tự đáp lại.",
+      "end": true
+    }
+  ]
+}

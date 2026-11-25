@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s131-two-writers",
+  "title": "Hai người viết bằng một cây bút",
+  "summary": "Nét chữ trên hai lá thư giống hệt nhau nhưng người gửi là hai chị em. Một người bị đau cổ tay và đọc cho chị chép.",
+  "level": "B1",
+  "topics": [
+    "passive-use",
+    "pronoun-reference"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Thoa",
+      "role": "Người nhận thư"
+    },
+    {
+      "id": "b",
+      "name": "Kha",
+      "role": "Người giao thư"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Chiếc bút của người chị có vết xước tạo nét đôi. Cả hai thư đều có nét đó. Kha muốn ghi đúng quyền tác giả lời nhắn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Who held the pen is easy.",
+          "vi": "Ai cầm bút thì dễ biết."
+        },
+        {
+          "who": "b",
+          "en": "Who chose the words in the second letter?",
+          "vi": "Ai chọn lời trong lá thứ hai?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Ghi rõ vai người chép mà vẫn giữ lời văn cho người em.",
+        "options": [
+          {
+            "ok": false,
+            "t": "Both messages must have been invented by the person with the pen.",
+            "note": "Must have been invented suy ra người cầm bút tạo cả nội dung. Nét chữ chỉ xác nhận việc chép, không đủ chứng cứ cho bước suy ra đó.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "The second letter was written down by her sister as she spoke.",
+            "note": "Written down nhấn việc ghi lại. Theo cảnh kể, người chị cầm bút còn người em đọc. Hai vai có thể thuộc hai người.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Thoa xin từng người ký tên hoặc để dấu tay cạnh vai của mình. Lá thư được xếp theo người có lời muốn nhắn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "A voice can travel in someone else's handwriting.",
+          "vi": "Giọng người này đi được trong nét chữ người kia."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Mười năm sau cả hai nhận ra giọng của em trong nét chữ chị khi mở phong bì.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Người em đọc một câu chưa viết. Chị chép đúng cả chỗ ngập ngừng. Kha nghe ra hai người góp phần khác nhau ngay trước mắt.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Both names fit on the envelope.",
+          "vi": "Phong bì đủ chỗ cho cả hai tên."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Thay vì một ô Tác giả, anh ghi hai dòng: người gửi lời và người ghi hộ.",
+      "end": true
+    }
+  ]
+}

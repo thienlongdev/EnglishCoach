@@ -1,0 +1,3657 @@
+{
+  "manifest" : {
+    "schemaVersion" : "1.0",
+    "packageId" : "RAW-RAW_CAMBRIDGE_IELTS_21_T4",
+    "packageVersion" : 1,
+    "contentHash" : "76150d47a53aab86ba24b3d5475c06b2f185d870340a648012eb0df74c0cf560",
+    "creator" : "exam-raw-extractor",
+    "specificationBaselineId" : "EC-EXAM-SPEC-2026-09-10",
+    "authoringStatus" : "DRAFT",
+    "createdAt" : null,
+    "metadata" : {
+      "humanReviewComplete" : false,
+      "reviewOnlyReferences" : {
+        "transcripts" : [ {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21.pdf",
+          "sha256" : "72086a3101919125c0d66c480b34bb55b5447339501bbd2241b5888a2b36af2e",
+          "pages" : "98,113-117"
+        } ],
+        "answerKeys" : [ {
+          "skill" : "LISTENING",
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21.pdf",
+          "sha256" : "72086a3101919125c0d66c480b34bb55b5447339501bbd2241b5888a2b36af2e",
+          "pages" : "124",
+          "keysParsed" : 40
+        }, {
+          "skill" : "READING",
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21.pdf",
+          "sha256" : "72086a3101919125c0d66c480b34bb55b5447339501bbd2241b5888a2b36af2e",
+          "pages" : "125",
+          "keysParsed" : 40
+        } ],
+        "note" : "References only. Transcript text is not embedded: the learner manifest projection has no stimulus/asset role allow-list yet (EXAM-AUD-032)."
+      },
+      "ocr" : { },
+      "practiceProjection" : {
+        "fullSimulationGranted" : false,
+        "humanApprovalCreated" : false,
+        "sourceContentHash" : "cdfa0931918e5d804816c6cc2759362007b1960984dbbfb92488c689de2d0f42",
+        "version" : "exam-practice-projection-v1",
+        "retainedScopes" : [ "IELTS_LISTENING_SECTION_1", "IELTS_LISTENING_SECTION_2", "IELTS_LISTENING_SECTION_4", "IELTS_READING_PASSAGE_1", "IELTS_SPEAKING_PART_1", "IELTS_SPEAKING_PART_2", "IELTS_SPEAKING_PART_3", "IELTS_WRITING_TASK_2" ],
+        "excludedScopes" : {
+          "IELTS_LISTENING_SECTION_3" : [ "QA_SCOPE_PENDING", "SCOPE_NOT_SELECTED" ],
+          "IELTS_READING_PASSAGE_2" : [ "QA_SCOPE_PENDING", "SCOPE_NOT_SELECTED" ],
+          "IELTS_READING_PASSAGE_3" : [ "QA_SCOPE_PENDING", "SCOPE_NOT_SELECTED" ],
+          "IELTS_WRITING_TASK_1" : [ "MEDIA_IMAGE_PENDING", "QA_SCOPE_PENDING", "SCOPE_NOT_SELECTED" ]
+        },
+        "sourcePackageId" : "RAW-RAW_CAMBRIDGE_IELTS_21_T4"
+      },
+      "audioQAStatus" : "AUTOMATED_TECHNICAL_QA_ONLY_HUMAN_QA_REQUIRED",
+      "sourceProvenance" : {
+        "collection" : "cambridge",
+        "book" : "cambridge-ielts-21",
+        "test" : "TEST_4",
+        "rawSourceFile" : {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21.pdf",
+          "sha256" : "72086a3101919125c0d66c480b34bb55b5447339501bbd2241b5888a2b36af2e"
+        },
+        "pageRange" : "76-97",
+        "audio" : [ {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21 Audio/Cambridge 21 - Test 4.mp3",
+          "sha256" : "d74c4b167cdfb4298a3ad661166d8bdb4ccba8ed51929bbf2fb62c059dc4208f",
+          "section" : "PART_1",
+          "confidence" : "CONFIDENT"
+        }, {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21 Audio/Cambridge 21 - Test 4.mp3",
+          "sha256" : "d74c4b167cdfb4298a3ad661166d8bdb4ccba8ed51929bbf2fb62c059dc4208f",
+          "section" : "PART_2",
+          "confidence" : "CONFIDENT"
+        }, {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21 Audio/Cambridge 21 - Test 4.mp3",
+          "sha256" : "d74c4b167cdfb4298a3ad661166d8bdb4ccba8ed51929bbf2fb62c059dc4208f",
+          "section" : "PART_3",
+          "confidence" : "CONFIDENT"
+        }, {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21 Audio/Cambridge 21 - Test 4.mp3",
+          "sha256" : "d74c4b167cdfb4298a3ad661166d8bdb4ccba8ed51929bbf2fb62c059dc4208f",
+          "section" : "PART_4",
+          "confidence" : "CONFIDENT"
+        } ],
+        "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json#ielts/cambridge-ielts-21/test-4",
+        "extractorName" : "exam-raw-extractor",
+        "extractorVersion" : "3.8.6",
+        "reviewStatus" : "UNREVIEWED"
+      },
+      "sourceIdentity" : {
+        "publisher" : "Cambridge University Press & Assessment",
+        "collection" : "cambridge",
+        "book" : "cambridge-ielts-21",
+        "bookTitle" : "Cambridge IELTS 21",
+        "test" : 4,
+        "rawSourceSha256" : "72086a3101919125c0d66c480b34bb55b5447339501bbd2241b5888a2b36af2e"
+      },
+      "displayName" : {
+        "current" : "Cambridge IELTS 21 — Test 4 (source extraction, draft)",
+        "ownerSelected" : null,
+        "status" : "PROVISIONAL_SOURCE_TITLE",
+        "policy" : "DISPLAY_NAME_MAY_CHANGE_SOURCE_PROVENANCE_MUST_NOT",
+        "renameTargets" : [ "form.title", "catalogNodes[].title" ]
+      },
+      "visualQAStatus" : "PAGE_REGION_RENDERING_HUMAN_QA_REQUIRED",
+      "rightsReviewStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED_PROJECT_USE_OWNER_AUTHORIZED",
+      "audioSegments" : [ {
+        "parentPath" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21 Audio/Cambridge 21 - Test 4.mp3",
+        "parentSha256" : "d74c4b167cdfb4298a3ad661166d8bdb4ccba8ed51929bbf2fb62c059dc4208f",
+        "startMs" : 0,
+        "endMs" : 421400,
+        "stagedPath" : "imports/exams/staging/assets/audio/ad41758eff2696b0ccc66c0734997b4fc2a1177c056c24bb3be4325150c16f48.mp3",
+        "method" : "IELTS_SPOKEN_PART_ANNOUNCEMENT_V1",
+        "evidence" : [ "S6 spoken 'Part 2' announcement opens the speech after a >= 15 s silence", "S6 spoken 'Part 3' announcement opens the speech after a >= 15 s silence", "S6 spoken 'Part 4' announcement opens the speech after a >= 15 s silence" ],
+        "part" : 1,
+        "segmentSha256" : "ad41758eff2696b0ccc66c0734997b4fc2a1177c056c24bb3be4325150c16f48"
+      }, {
+        "parentPath" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21 Audio/Cambridge 21 - Test 4.mp3",
+        "parentSha256" : "d74c4b167cdfb4298a3ad661166d8bdb4ccba8ed51929bbf2fb62c059dc4208f",
+        "startMs" : 421400,
+        "endMs" : 848300,
+        "stagedPath" : "imports/exams/staging/assets/audio/086c9587219b95ee39b075c13d89e663744c7df25174e3bf20f971bcfddd0d02.mp3",
+        "method" : "IELTS_SPOKEN_PART_ANNOUNCEMENT_V1",
+        "evidence" : [ "S6 spoken 'Part 2' announcement opens the speech after a >= 15 s silence", "S6 spoken 'Part 3' announcement opens the speech after a >= 15 s silence", "S6 spoken 'Part 4' announcement opens the speech after a >= 15 s silence" ],
+        "part" : 2,
+        "segmentSha256" : "086c9587219b95ee39b075c13d89e663744c7df25174e3bf20f971bcfddd0d02"
+      }, {
+        "parentPath" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21 Audio/Cambridge 21 - Test 4.mp3",
+        "parentSha256" : "d74c4b167cdfb4298a3ad661166d8bdb4ccba8ed51929bbf2fb62c059dc4208f",
+        "startMs" : 848300,
+        "endMs" : 1232600,
+        "stagedPath" : "imports/exams/staging/assets/audio/ac8c6b371724fd18df7b2b97de212ae6ae3df0e4763a2efa5a3f369aaa0e8af7.mp3",
+        "method" : "IELTS_SPOKEN_PART_ANNOUNCEMENT_V1",
+        "evidence" : [ "S6 spoken 'Part 2' announcement opens the speech after a >= 15 s silence", "S6 spoken 'Part 3' announcement opens the speech after a >= 15 s silence", "S6 spoken 'Part 4' announcement opens the speech after a >= 15 s silence" ],
+        "part" : 3,
+        "segmentSha256" : "ac8c6b371724fd18df7b2b97de212ae6ae3df0e4763a2efa5a3f369aaa0e8af7"
+      }, {
+        "parentPath" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21 Audio/Cambridge 21 - Test 4.mp3",
+        "parentSha256" : "d74c4b167cdfb4298a3ad661166d8bdb4ccba8ed51929bbf2fb62c059dc4208f",
+        "startMs" : 1232600,
+        "endMs" : 1679100,
+        "stagedPath" : "imports/exams/staging/assets/audio/6c6c5979ac73a68d6f654ea916927093448b38e96073f8a0b1b0e2cf7317ae22.mp3",
+        "method" : "IELTS_SPOKEN_PART_ANNOUNCEMENT_V1",
+        "evidence" : [ "S6 spoken 'Part 2' announcement opens the speech after a >= 15 s silence", "S6 spoken 'Part 3' announcement opens the speech after a >= 15 s silence", "S6 spoken 'Part 4' announcement opens the speech after a >= 15 s silence" ],
+        "part" : 4,
+        "segmentSha256" : "6c6c5979ac73a68d6f654ea916927093448b38e96073f8a0b1b0e2cf7317ae22"
+      } ],
+      "sourceDocuments" : [ {
+        "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21.pdf",
+        "sha256" : "72086a3101919125c0d66c480b34bb55b5447339501bbd2241b5888a2b36af2e",
+        "role" : "QUESTION_BOOK",
+        "textLayer" : "TEXT"
+      } ],
+      "extraction" : {
+        "status" : "EXTRACTED_CLEAN",
+        "extractorVersion" : "3.8.6",
+        "blockingCodes" : [ ],
+        "reviewCodes" : [ "ANSWER_KEY_OCR_REPAIRED", "IMAGE_REGION_HEURISTIC", "LAYOUT_LINEARIZED", "OPTION_LABEL_RESTORED" ]
+      },
+      "projectUsageAuthorization" : {
+        "status" : "OWNER_AUTHORIZED",
+        "scope" : "ENGLISHCOACH_PROJECT_USE",
+        "authorizedBy" : "PROJECT_OWNER",
+        "decisionDate" : "2026-10-06",
+        "decisionRef" : "EXAMS_CORPUS_OWNER_PRODUCTION_AUTHORIZATION_20261006",
+        "appliesTo" : "EXISTING_REPOSITORY_SOURCE_CORPUS",
+        "permits" : [ "EXTRACTION", "CANONICAL_PACKAGE_PREPARATION", "STAGING_VALIDATION", "LOCAL_STAGING_IMPORT_PREPARATION", "PRODUCTION_IMPORT", "PUBLICATION", "LEARNER_RUNTIME", "PRACTICE", "SIMULATION", "MEDIA", "SCORING", "RESULTS", "REVIEW" ],
+        "productionImport" : "OWNER_AUTHORIZED_PRODUCTION_USE",
+        "publisherLicence" : "NOT_ESTABLISHED",
+        "publisherEndorsement" : false
+      }
+    }
+  },
+  "sources" : [ {
+    "id" : "106fda5c-07dc-5056-9eb1-852632e86bd1",
+    "code" : "RAW_CAMBRIDGE_CAMBRIDGE_IELTS_21",
+    "name" : "Cambridge IELTS 21",
+    "owner" : "Cambridge University Press & Assessment",
+    "publisher" : "Cambridge University Press & Assessment",
+    "sourceType" : "THIRD_PARTY_PUBLICATION",
+    "referenceMeta" : {
+      "rawCorpusRoot" : "imports/source-files/",
+      "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json",
+      "rightsStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED",
+      "projectUsageAuthorization" : "OWNER_AUTHORIZED",
+      "primaryDocument" : "imports/source-files/ielts/cambridge/Cambridge-ielts-21/Cambridge IELTS 21.pdf"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  }, {
+    "id" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "code" : "EC_INTERNAL_ORIGINAL",
+    "name" : "English Coach original content",
+    "owner" : "English Coach",
+    "publisher" : "English Coach",
+    "sourceType" : "INTERNAL_ORIGINAL",
+    "referenceMeta" : {
+      "declaration" : "Rubrics and scoring metadata authored by English Coach; no external text"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "licenses" : [ {
+    "id" : "5a6c3233-e361-559f-9812-a40731e0fd3c",
+    "sourceId" : "106fda5c-07dc-5056-9eb1-852632e86bd1",
+    "licenseCode" : "UNKNOWN-RAW_CAMBRIDGE_CAMBRIDGE_IELTS_21",
+    "provenanceCategory" : "UNKNOWN",
+    "commercialRights" : false,
+    "redistributionRights" : false,
+    "derivativeRights" : false,
+    "permittedPurposes" : {
+      "LOCAL_PRIVATE_REVIEW" : true
+    },
+    "permittedTerritories" : { },
+    "validFrom" : null,
+    "validUntil" : null,
+    "attribution" : "Cambridge IELTS 21 — Cambridge University Press & Assessment. Publisher licence not established; used under the EnglishCoach project owner's authorization (2026-10-03), which is not a publisher licence or endorsement.",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  }, {
+    "id" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseCode" : "EC-ORIGINAL-DRAFT-PENDING-LEGAL",
+    "provenanceCategory" : "ORIGINAL",
+    "commercialRights" : true,
+    "redistributionRights" : true,
+    "derivativeRights" : true,
+    "permittedPurposes" : {
+      "EXAM" : true,
+      "SIMULATION" : true,
+      "PRACTICE" : true,
+      "CONTENT" : true
+    },
+    "permittedTerritories" : {
+      "GLOBAL" : true
+    },
+    "validFrom" : 1790985600.000000000,
+    "validUntil" : null,
+    "attribution" : "English Coach original draft; legal review pending",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  } ],
+  "provenances" : [ {
+    "id" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "sourceId" : "106fda5c-07dc-5056-9eb1-852632e86bd1",
+    "licenseId" : "5a6c3233-e361-559f-9812-a40731e0fd3c",
+    "creator" : "exam-raw-extractor",
+    "acquisitionMethod" : "RAW_CORPUS_EXTRACTION",
+    "originalReference" : "Cambridge IELTS 21 / Test 4",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  }, {
+    "id" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseId" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "creator" : "English Coach",
+    "acquisitionMethod" : "ORIGINAL_AUTHORING",
+    "originalReference" : "EC-RUBRIC-AND-SCORING-METADATA",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  } ],
+  "catalogNodes" : [ {
+    "id" : "ca2b4ef4-c295-5318-a79e-b4138f330216",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "sourceId" : "106fda5c-07dc-5056-9eb1-852632e86bd1",
+    "parentId" : null,
+    "kind" : "VOLUME",
+    "title" : "Cambridge IELTS 21",
+    "year" : null,
+    "ordinal" : 0,
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "specifications" : [ {
+    "id" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SPEC",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "deliveryMode" : "COMPUTER_SIMULATION",
+    "blueprint" : {
+      "source" : "RAW_CORPUS_EXTRACTION",
+      "family" : "IELTS",
+      "variant" : "ACADEMIC",
+      "scope" : "FULL"
+    },
+    "timingPolicy" : {
+      "listeningSeconds" : 1800,
+      "readingSeconds" : 3600,
+      "writingSeconds" : 3600,
+      "speakingSeconds" : 840
+    },
+    "navigationPolicy" : {
+      "sectionNavigation" : "fixed_sequence"
+    },
+    "playbackPolicy" : {
+      "mode" : "ONCE"
+    },
+    "sourceReferences" : {
+      "baseline" : "EC-EXAM-SPEC-2026-09-10"
+    },
+    "contentHash" : "01a9a5d6615e4c044e33620aacc7f229326296fc975b4c54a3fc1cc0d69efd4c",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "rubrics" : [ {
+    "id" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "logicalCode" : "EC_RAW_IELTS_WRITING_RUBRIC",
+    "version" : 1,
+    "family" : "IELTS",
+    "skill" : "WRITING",
+    "taskFamily" : "IELTS_WRITING",
+    "criteria" : {
+      "taskAchievement" : {
+        "weight" : 1
+      },
+      "coherenceAndCohesion" : {
+        "weight" : 1
+      },
+      "lexicalResource" : {
+        "weight" : 1
+      },
+      "grammaticalRangeAndAccuracy" : {
+        "weight" : 1
+      }
+    },
+    "ordinalScale" : {
+      "min" : 0,
+      "max" : 9,
+      "steps" : [ 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0 ]
+    },
+    "provenanceId" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "contentHash" : "0d542a6e2c855fb3a6fa51ef83026cb296280b0f51f9073604b6756d4752e253",
+    "approvedAt" : null,
+    "createdAt" : null
+  }, {
+    "id" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "logicalCode" : "EC_RAW_IELTS_SPEAKING_RUBRIC",
+    "version" : 1,
+    "family" : "IELTS",
+    "skill" : "SPEAKING",
+    "taskFamily" : "IELTS_SPEAKING",
+    "criteria" : {
+      "fluencyAndCoherence" : {
+        "weight" : 1
+      },
+      "lexicalResource" : {
+        "weight" : 1
+      },
+      "grammaticalRangeAndAccuracy" : {
+        "weight" : 1
+      },
+      "pronunciation" : {
+        "weight" : 1
+      }
+    },
+    "ordinalScale" : {
+      "min" : 0,
+      "max" : 9,
+      "steps" : [ 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0 ]
+    },
+    "provenanceId" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "contentHash" : "17e0b72d560b377684b287d73acc780a48e7da645e0cdaad159f2471e51f9be1",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "calibrations" : [ ],
+  "scoringSchemes" : [ {
+    "id" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SCORING",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "normalizationVersion" : "EC-NORM-V1",
+    "rubricReferences" : { },
+    "calibrationId" : null,
+    "mappingTable" : {
+      "metrics" : [ "LISTENING", "READING", "WRITING", "SPEAKING", "FULL_OVERALL" ],
+      "status" : "DRAFT_NOT_CALIBRATED",
+      "scoreLabel" : "English Coach estimated band"
+    },
+    "aggregationRules" : {
+      "officialEquating" : false,
+      "version" : "EC-AGGREGATION-DRAFT-V1",
+      "creditUnitsPerItem" : 1,
+      "task1Weight" : 1,
+      "task2Weight" : 2,
+      "overall" : "mean_of_four_quarter_rounding"
+    },
+    "contentHash" : "0780e29af069b167dab0956ac01663b2c8b509ca0f03839208766aa0b62ed428",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "form" : {
+    "id" : "57a2072f-4db0-5bca-a673-e391c27dff40",
+    "logicalKey" : "RAW_CAMBRIDGE_IELTS_21_T4",
+    "version" : 1,
+    "title" : "Cambridge IELTS 21 — Test 4 (source extraction, draft)",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "catalogNodeId" : "ca2b4ef4-c295-5318-a79e-b4138f330216",
+    "specificationId" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "lifecycleState" : "DRAFT",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "authorId" : null,
+    "contentHash" : "71520fd48cd44f1e65eaf58ee96d285f90ef2d8ded83e726b9f889285d883ada",
+    "publishedAt" : null,
+    "retiredAt" : null,
+    "createdAt" : null,
+    "primaryHealthStatus" : null
+  },
+  "formComponents" : [ ],
+  "sections" : [ {
+    "id" : "feaa96ad-46d4-5cd6-990c-d2ce54a5ff1e",
+    "formId" : "57a2072f-4db0-5bca-a673-e391c27dff40",
+    "skill" : "LISTENING",
+    "ordinal" : 1,
+    "specSectionKey" : "LISTENING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 1800,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  }, {
+    "id" : "5923603a-3f87-5a54-bade-d57fb326a1ed",
+    "formId" : "57a2072f-4db0-5bca-a673-e391c27dff40",
+    "skill" : "READING",
+    "ordinal" : 2,
+    "specSectionKey" : "READING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 3600,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  }, {
+    "id" : "a145137b-1621-5b1f-9b3a-32405d1bcdda",
+    "formId" : "57a2072f-4db0-5bca-a673-e391c27dff40",
+    "skill" : "WRITING",
+    "ordinal" : 3,
+    "specSectionKey" : "WRITING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 3600,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  }, {
+    "id" : "a23e5add-3df9-5717-9843-3e7b4ca220f8",
+    "formId" : "57a2072f-4db0-5bca-a673-e391c27dff40",
+    "skill" : "SPEAKING",
+    "ordinal" : 4,
+    "specSectionKey" : "SPEAKING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 840,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  } ],
+  "parts" : [ {
+    "id" : "ff1876e5-a95e-5bb9-980a-781a5d297146",
+    "sectionId" : "feaa96ad-46d4-5cd6-990c-d2ce54a5ff1e",
+    "partCode" : "LISTENING_PART_1",
+    "ordinal" : 1,
+    "instructions" : null,
+    "timingPolicy" : {
+      "partNumber" : 1
+    }
+  }, {
+    "id" : "4742fdfe-576a-5335-837d-e0e347cd7ef3",
+    "sectionId" : "feaa96ad-46d4-5cd6-990c-d2ce54a5ff1e",
+    "partCode" : "LISTENING_PART_2",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : {
+      "partNumber" : 2
+    }
+  }, {
+    "id" : "92e6a8c9-14e8-5219-87de-7e7fe00be8f7",
+    "sectionId" : "feaa96ad-46d4-5cd6-990c-d2ce54a5ff1e",
+    "partCode" : "LISTENING_PART_4",
+    "ordinal" : 4,
+    "instructions" : null,
+    "timingPolicy" : {
+      "partNumber" : 4
+    }
+  }, {
+    "id" : "1596348d-c891-5c89-9fe7-8acfed328c09",
+    "sectionId" : "5923603a-3f87-5a54-bade-d57fb326a1ed",
+    "partCode" : "READING_PASSAGE_1",
+    "ordinal" : 1,
+    "instructions" : null,
+    "timingPolicy" : {
+      "partNumber" : 1
+    }
+  }, {
+    "id" : "25f2b024-6f3a-578a-96dc-aba3260bfc14",
+    "sectionId" : "a145137b-1621-5b1f-9b3a-32405d1bcdda",
+    "partCode" : "WRITING_TASK_2",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : {
+      "recommendedMinutes" : 40
+    }
+  }, {
+    "id" : "cb192eb7-c909-5062-a145-3e559659efbb",
+    "sectionId" : "a23e5add-3df9-5717-9843-3e7b4ca220f8",
+    "partCode" : "SPEAKING_PART_1",
+    "ordinal" : 1,
+    "instructions" : null,
+    "timingPolicy" : { }
+  }, {
+    "id" : "3ad1562e-f52a-50fa-85b4-384663c02428",
+    "sectionId" : "a23e5add-3df9-5717-9843-3e7b4ca220f8",
+    "partCode" : "SPEAKING_PART_2",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : { }
+  }, {
+    "id" : "9443fdb5-db48-5556-aabc-48ae25d8ee12",
+    "sectionId" : "a23e5add-3df9-5717-9843-3e7b4ca220f8",
+    "partCode" : "SPEAKING_PART_3",
+    "ordinal" : 3,
+    "instructions" : null,
+    "timingPolicy" : { }
+  } ],
+  "groups" : [ {
+    "id" : "7d6b0bb2-31a7-5357-9179-db346445d1fe",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T4_LISTENING_PART_1_Q1",
+    "version" : 1,
+    "questionType" : "GAP_COMPLETION",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "9042e423a6f00021ed658609c73416fef33d36eee22352b36ed693456fb9914e",
+    "createdAt" : null
+  }, {
+    "id" : "ce796ab9-a8ff-5421-8bd8-7294503a4d3a",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T4_LISTENING_PART_2_Q11",
+    "version" : 1,
+    "questionType" : "MULTI_SELECT",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "e8ea1393a90b73d4ceafa9d9324bba879fbcfadb6edfb61c1f6ac252501acc89",
+    "createdAt" : null
+  }, {
+    "id" : "2327bf5f-bd07-511d-8b80-5d72a1bb4df0",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T4_LISTENING_PART_2_Q13",
+    "version" : 1,
+    "questionType" : "MULTI_SELECT",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "d7912f38592e3345e26d4439973aafcb3982189bc3b5579b6ae8e3fd83f875ba",
+    "createdAt" : null
+  }, {
+    "id" : "3614934f-ffbb-50f7-a68c-9512d96bef79",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T4_LISTENING_PART_2_Q15",
+    "version" : 1,
+    "questionType" : "MATCHING",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "1fcc6dee31956977282654a0820ef22ba719f22a148ec66b495e3bfdc4651e19",
+    "createdAt" : null
+  }, {
+    "id" : "4953e65b-4665-5a39-bb7a-1ff96b451017",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T4_LISTENING_PART_4_Q31",
+    "version" : 1,
+    "questionType" : "GAP_COMPLETION",
+    "construct" : "listening_comprehension",
+    "skill" : "LISTENING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "0a1a94143c3f99b5e74284700b9419f9ce58b4d80f6b5c3de4be12cb4c5e5421",
+    "createdAt" : null
+  }, {
+    "id" : "490501dc-7493-5a70-bf94-ff5a9e61d420",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T4_READING_PASSAGE_1_Q1",
+    "version" : 1,
+    "questionType" : "TFNG",
+    "construct" : "reading_comprehension",
+    "skill" : "READING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "063b3c576081886b77505d1afd016c8b48d11fc78847e649c55161e3d2807d44",
+    "createdAt" : null
+  }, {
+    "id" : "bc587dc4-e643-5fc8-b311-34e87bf9825c",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T4_READING_PASSAGE_1_Q8",
+    "version" : 1,
+    "questionType" : "GAP_COMPLETION",
+    "construct" : "reading_comprehension",
+    "skill" : "READING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "2bcf97cfce8cc9cec663171daf1c34cf4b2fddf52821672e10e702ef60cdf988",
+    "createdAt" : null
+  }, {
+    "id" : "d8a511bd-e0d2-5e4d-8403-f20d27f0eb0b",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T4_READING_PASSAGE_1_Q11",
+    "version" : 1,
+    "questionType" : "GAP_COMPLETION",
+    "construct" : "reading_comprehension",
+    "skill" : "READING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "9113dda91944920fbdccc97a3ca72ae0e0a687d1657f4b87193e9740744a8375",
+    "createdAt" : null
+  }, {
+    "id" : "5ea88c91-c73f-549a-8faf-a9f63ebfa7a6",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T4_WRITING_TASK_2",
+    "version" : 1,
+    "questionType" : "WRITING_TASK_2",
+    "construct" : "written_production",
+    "skill" : "WRITING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "75172bef49c4ae657c613fd4f0aa2a9aa53ce979af1bb58f6b69bd7148f8d43d",
+    "createdAt" : null
+  }, {
+    "id" : "c9c7c30a-621d-5067-9c47-b5e76238c4df",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T4_SPEAKING_PART_1",
+    "version" : 1,
+    "questionType" : "SPEAKING_PART_1",
+    "construct" : "spoken_production",
+    "skill" : "SPEAKING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "5fa46e0f849c62cc97e75c5e266c4b9e1c01d305f72e527bcf70ace5c15e30df",
+    "createdAt" : null
+  }, {
+    "id" : "57c116df-9ea5-5852-8fe9-7570296eaab2",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T4_SPEAKING_PART_2",
+    "version" : 1,
+    "questionType" : "SPEAKING_PART_2",
+    "construct" : "spoken_production",
+    "skill" : "SPEAKING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "7ea87cb0226b2142d7e25250fe45c0b9dc25e940ddfb85a4effcbfc9e14e7440",
+    "createdAt" : null
+  }, {
+    "id" : "ab3bf501-9fd8-581f-a1a0-0a7843cecdb5",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_21_T4_SPEAKING_PART_3",
+    "version" : 1,
+    "questionType" : "SPEAKING_PART_3",
+    "construct" : "spoken_production",
+    "skill" : "SPEAKING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "6c2bdad082f7906410c78af110399440870fceae5101521d9c6892935c6c5b94",
+    "createdAt" : null
+  } ],
+  "formGroups" : [ {
+    "id" : "3fcbe7a7-64b2-5f41-98ae-9d9e60a4f490",
+    "partId" : "ff1876e5-a95e-5bb9-980a-781a5d297146",
+    "groupId" : "7d6b0bb2-31a7-5357-9179-db346445d1fe",
+    "ordinal" : 1,
+    "displayNumbering" : "1-10"
+  }, {
+    "id" : "c6d1b84c-ef59-5ba2-8d0e-1e85e49dfca8",
+    "partId" : "4742fdfe-576a-5335-837d-e0e347cd7ef3",
+    "groupId" : "ce796ab9-a8ff-5421-8bd8-7294503a4d3a",
+    "ordinal" : 1,
+    "displayNumbering" : "11-12"
+  }, {
+    "id" : "35c3d2c7-1c3d-565b-a7ce-de40d2a50d90",
+    "partId" : "4742fdfe-576a-5335-837d-e0e347cd7ef3",
+    "groupId" : "2327bf5f-bd07-511d-8b80-5d72a1bb4df0",
+    "ordinal" : 2,
+    "displayNumbering" : "13-14"
+  }, {
+    "id" : "6243424d-b4eb-5f56-ad15-2d8e3bf060cf",
+    "partId" : "4742fdfe-576a-5335-837d-e0e347cd7ef3",
+    "groupId" : "3614934f-ffbb-50f7-a68c-9512d96bef79",
+    "ordinal" : 3,
+    "displayNumbering" : "15-20"
+  }, {
+    "id" : "60e5042b-0776-56bd-9cf0-8ca904b2d771",
+    "partId" : "92e6a8c9-14e8-5219-87de-7e7fe00be8f7",
+    "groupId" : "4953e65b-4665-5a39-bb7a-1ff96b451017",
+    "ordinal" : 1,
+    "displayNumbering" : "31-40"
+  }, {
+    "id" : "71641e0a-06dc-558d-9922-c7b3dd1ee337",
+    "partId" : "1596348d-c891-5c89-9fe7-8acfed328c09",
+    "groupId" : "490501dc-7493-5a70-bf94-ff5a9e61d420",
+    "ordinal" : 1,
+    "displayNumbering" : "1-7"
+  }, {
+    "id" : "90ccc126-54d3-5296-8fb4-7dc68564290d",
+    "partId" : "1596348d-c891-5c89-9fe7-8acfed328c09",
+    "groupId" : "bc587dc4-e643-5fc8-b311-34e87bf9825c",
+    "ordinal" : 2,
+    "displayNumbering" : "8-10"
+  }, {
+    "id" : "2035005d-ffac-5346-ae20-7c4fbbc5bdea",
+    "partId" : "1596348d-c891-5c89-9fe7-8acfed328c09",
+    "groupId" : "d8a511bd-e0d2-5e4d-8403-f20d27f0eb0b",
+    "ordinal" : 3,
+    "displayNumbering" : "11-13"
+  }, {
+    "id" : "a4038132-6b25-5393-8ae9-00406f759383",
+    "partId" : "25f2b024-6f3a-578a-96dc-aba3260bfc14",
+    "groupId" : "5ea88c91-c73f-549a-8faf-a9f63ebfa7a6",
+    "ordinal" : 1,
+    "displayNumbering" : "Task 2"
+  }, {
+    "id" : "55d7caa4-92f1-55f9-a9fb-8cbb90824680",
+    "partId" : "cb192eb7-c909-5062-a145-3e559659efbb",
+    "groupId" : "c9c7c30a-621d-5067-9c47-b5e76238c4df",
+    "ordinal" : 1,
+    "displayNumbering" : "Part 1"
+  }, {
+    "id" : "14367b0f-ec0f-51ff-85cb-8a94e5f103f9",
+    "partId" : "3ad1562e-f52a-50fa-85b4-384663c02428",
+    "groupId" : "57c116df-9ea5-5852-8fe9-7570296eaab2",
+    "ordinal" : 1,
+    "displayNumbering" : "Part 2"
+  }, {
+    "id" : "bd509209-afa4-5e5e-825c-b6a41f933a61",
+    "partId" : "9443fdb5-db48-5556-aabc-48ae25d8ee12",
+    "groupId" : "ab3bf501-9fd8-581f-a1a0-0a7843cecdb5",
+    "ordinal" : 1,
+    "displayNumbering" : "Part 3"
+  } ],
+  "stimuli" : [ {
+    "id" : "f8f8353b-e7ce-5115-92a9-7f38a188c428",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_21_T4_LISTENING_PART_1_AUDIO",
+    "version" : 1,
+    "kind" : "AUDIO",
+    "title" : "Listening Part 1 recording",
+    "bodyPayload" : {
+      "playback" : "ONCE",
+      "sourceRole" : "PART_RECORDING",
+      "questionRange" : "1-10",
+      "transcriptAvailable" : true,
+      "transcriptEmbedded" : false,
+      "mappingConfidence" : "CONFIDENT"
+    },
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "86febbe6c2c3f12ddf794c3c1deb9c667f5f6ddfcabb4c9d6485d1ee3f85ac92",
+    "createdAt" : null
+  }, {
+    "id" : "55143295-cfa9-5ffb-a042-ae26690603f2",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_21_T4_LISTENING_PART_2_AUDIO",
+    "version" : 1,
+    "kind" : "AUDIO",
+    "title" : "Listening Part 2 recording",
+    "bodyPayload" : {
+      "playback" : "ONCE",
+      "sourceRole" : "PART_RECORDING",
+      "questionRange" : "11-20",
+      "transcriptAvailable" : true,
+      "transcriptEmbedded" : false,
+      "mappingConfidence" : "CONFIDENT"
+    },
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "5e37e2aeb376a125f24a786970a5688339621fe74d05b55b3b2c58d98a14bab7",
+    "createdAt" : null
+  }, {
+    "id" : "a12fbd36-386b-559c-a00b-6d82d9838d12",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_21_T4_LISTENING_PART_4_AUDIO",
+    "version" : 1,
+    "kind" : "AUDIO",
+    "title" : "Listening Part 4 recording",
+    "bodyPayload" : {
+      "playback" : "ONCE",
+      "sourceRole" : "PART_RECORDING",
+      "questionRange" : "31-40",
+      "transcriptAvailable" : true,
+      "transcriptEmbedded" : false,
+      "mappingConfidence" : "CONFIDENT"
+    },
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "8aaff3e6e1f1a20b098bb10589a1171e066080ea327138bf7e3419bfae92db59",
+    "createdAt" : null
+  }, {
+    "id" : "ab7aaab9-32fb-558b-96e0-0e938fb5c191",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_21_T4_READING_PASSAGE_1_PASSAGE",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : "The problems and benefits created by the spread of the water hyacinth in Kenya",
+    "bodyPayload" : {
+      "title" : "The problems and benefits created by the spread of the water hyacinth in Kenya",
+      "text" : "Water hyacinth (Eichhornia crassipes), an aquatic plant native to South America, first appeared in countries in Africa in the early 1900s. Scientists there called it the 'world's worst aquatic weed', after it spread from the southernmost tip of Africa in the early 1900s and started obstructing major dams and rivers. In east Africa the plant arrived with Belgian colonists in Rwanda, who liked the look of its glossy leaves and delicate purple flowers floating in their ponds. But by the 1980s, it had 'escaped' out of the country via the Kagera river and made its way downstream to Lake Victoria. There, with no natural predators and perfect temperature conditions, the plant began spreading in the open water, blocking fishing routes and providing a new habitat for disease-carrying mosquitoes. For the women who smoke fish from the lake to sell it has meant declining income, as the boats that once brought the fish to shore by the hundreds struggle to navigate through the mass of plants. But water hyacinth isn't their only headache. In order to smoke the fish that they buy, they must gather huge quantities of firewood, sometimes walking as far as 10km each way to collect enough to complete their work. And each day as they cook, they breathe in the thick, grey smoke. About three out of four families in Kenya depend on wood or charcoal to cook their daily meals, and the rate is even higher in rural areas, Kenya's latest demographic and health survey shows. Using solid fuels like these for cooking increases indoor pollution. The World Health Organization estimates that about 14,300 Kenyans die annually as a result of indoor air pollution - most of which is caused by cooking and heating sources. Some years ago, on the shores of Lake Victoria, huge piles of water hyacinth that villagers had taken out of the water in an attempt to clear it were a common sight. But buried in those decaying waxy leaves was a renewable energy gold mine. It turns out the floating plant isn't just good at spreading - its foliage also contains a high ratio of carbon to nitrogen. It's a magic combination that has captivated researchers' imaginations since as early as the 1980s when, across the world, they began to explore its potential as a biofuel. Just about 4kg of the dried plant would be enough to cater for a large family's daily energy needs, early research predicted. In 2014, Nigerian academics announced they had got better yields of biofuel gas when they mixed the plant with chicken manure. A few years later, Kenyan scientists confirmed what their Nigerian peers and others had already found: manure worked to improve the process of converting the weed into gas. In 2018, the technology came to a village on the shore of Lake Victoria, called Dunga. The project promised a two-for-one solution to the dual menaces of the water hyacinth and dependence on firewood. The community received a pair of donated biogas digesters - machines that would transform a mix of water hyacinth and cow dung into biogas for cooking. The digesters work a bit like a stomach. The mixture goes in one end - think of it as a mouth - and over the next 20 to 30 days, it goes through a fermentation process and breaks down, giving off gas that comes out the other end. From there, the cleanburning gas is passed through pipes to the point of use, just like traditional domestic gas. In Dunga, the machines produce enough gas to serve about 60% of the village's population. It is used in domestic stoves and for other household tasks such as purifying water and incubating chicks. The project is testing whether biogas can provide an effective alternative to firewood and charcoal in rural Kenyan communities. Results indicate that the programme seems to be working. The women who smoke the lake fish are already getting sick less often. Besides, they don't have to devote a lot of time every day to gathering firewood, which is a great relief. As a result, they're able to make more money for their families from other enterprises. Kanyiva Muindi is an epidemiologist and air pollution research fellow at the African Population and Health Research Centre in Nairobi. She says families who switch to the smokeless cooking method could expect fewer respiratory diseases. Women, young girls and children are particularly vulnerable because they are the ones who cook in the kitchen or outside over fires. How much better the biogas stoves will be for the community's health still needs more research, says Dominic Kahumbu Wanjihia, Biogas lnternational's chief executive. But unless the price of the machines drops, it's pretty clear that most communities will never be able to afford any, since they sell for about $750. Kanyiva says affordability is a challenge worth addressing, given the huge health and environmental dangers posed by 'dirty' fuels such as wood, charcoal and kerosene. If biogas could become affordable on a large scale, she says it 'would be life-changing for millions on the African continent and beyond'.",
+      "paragraphs" : [ {
+        "id" : null,
+        "text" : "Water hyacinth (Eichhornia crassipes), an aquatic plant native to South America, first appeared in countries in Africa in the early 1900s. Scientists there called it the 'world's worst aquatic weed', after it spread from the southernmost tip of Africa in the early 1900s and started obstructing major dams and rivers. In east Africa the plant arrived with Belgian colonists in Rwanda, who liked the look of its glossy leaves and delicate purple flowers floating in their ponds. But by the 1980s, it had 'escaped' out of the country via the Kagera river and made its way downstream to Lake Victoria. There, with no natural predators and perfect temperature conditions, the plant began spreading in the open water, blocking fishing routes and providing a new habitat for disease-carrying mosquitoes. For the women who smoke fish from the lake to sell it has meant declining income, as the boats that once brought the fish to shore by the hundreds struggle to navigate through the mass of plants. But water hyacinth isn't their only headache. In order to smoke the fish that they buy, they must gather huge quantities of firewood, sometimes walking as far as 10km each way to collect enough to complete their work. And each day as they cook, they breathe in the thick, grey smoke. About three out of four families in Kenya depend on wood or charcoal to cook their daily meals, and the rate is even higher in rural areas, Kenya's latest demographic and health survey shows. Using solid fuels like these for cooking increases indoor pollution. The World Health Organization estimates that about 14,300 Kenyans die annually as a result of indoor air pollution - most of which is caused by cooking and heating sources. Some years ago, on the shores of Lake Victoria, huge piles of water hyacinth that villagers had taken out of the water in an attempt to clear it were a common sight. But buried in those decaying waxy leaves was a renewable energy gold mine. It turns out the floating plant isn't just good at spreading - its foliage also contains a high ratio of carbon to nitrogen. It's a magic combination that has captivated researchers' imaginations since as early as the 1980s when, across the world, they began to explore its potential as a biofuel. Just about 4kg of the dried plant would be enough to cater for a large family's daily energy needs, early research predicted. In 2014, Nigerian academics announced they had got better yields of biofuel gas when they mixed the plant with chicken manure. A few years later, Kenyan scientists confirmed what their Nigerian peers and others had already found: manure worked to improve the process of converting the weed into gas. In 2018, the technology came to a village on the shore of Lake Victoria, called Dunga. The project promised a two-for-one solution to the dual menaces of the water hyacinth and dependence on firewood. The community received a pair of donated biogas digesters - machines that would transform a mix of water hyacinth and cow dung into biogas for cooking. The digesters work a bit like a stomach. The mixture goes in one end - think of it as a mouth - and over the next 20 to 30 days, it goes through a fermentation process and breaks down, giving off gas that comes out the other end. From there, the cleanburning gas is passed through pipes to the point of use, just like traditional domestic gas. In Dunga, the machines produce enough gas to serve about 60% of the village's population. It is used in domestic stoves and for other household tasks such as purifying water and incubating chicks. The project is testing whether biogas can provide an effective alternative to firewood and charcoal in rural Kenyan communities. Results indicate that the programme seems to be working. The women who smoke the lake fish are already getting sick less often. Besides, they don't have to devote a lot of time every day to gathering firewood, which is a great relief. As a result, they're able to make more money for their families from other enterprises. Kanyiva Muindi is an epidemiologist and air pollution research fellow at the African Population and Health Research Centre in Nairobi. She says families who switch to the smokeless cooking method could expect fewer respiratory diseases. Women, young girls and children are particularly vulnerable because they are the ones who cook in the kitchen or outside over fires. How much better the biogas stoves will be for the community's health still needs more research, says Dominic Kahumbu Wanjihia, Biogas lnternational's chief executive. But unless the price of the machines drops, it's pretty clear that most communities will never be able to afford any, since they sell for about $750. Kanyiva says affordability is a challenge worth addressing, given the huge health and environmental dangers posed by 'dirty' fuels such as wood, charcoal and kerosene. If biogas could become affordable on a large scale, she says it 'would be life-changing for millions on the African continent and beyond'."
+      } ],
+      "notes" : [ ],
+      "sourcePages" : "82-83"
+    },
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "8ec6c4a265c361230b8064e8646ee8c0bf19b79eebbc85494f0d588e15319483",
+    "createdAt" : null
+  }, {
+    "id" : "969064af-bd60-56ae-9558-209b735ecaeb",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_21_T4_WRITING_TASK_2_PROMPT",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "promptContext" : "You should spend about 40 minutes on this task. Write about the following topic: Some people argue that primary schools focus too much on formal learning. To what extent do you agree with this opinion? How important do you think it is for children to play as well as learn in the primary school classroom? Give reasons for your answer and include any relevant examples from your own knowledge or experience. Write at least 250 words."
+    },
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "2781d7135c876ab2b3fffc32898d149dd0c4c16174ffde00e1d4464b67920298",
+    "createdAt" : null
+  }, {
+    "id" : "081d2bbd-9024-5865-8f4b-a1d6befe59b8",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_21_T4_SPEAKING_PART_1_PROMPTS",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "prompts" : [ "The examiner asks you about yourself, your home, work or studies and other", "familiar topics.", "Bread", "When do you usually eat bread?", "How important is bread in your culture?", "Have you tried any kinds of bread from other countries?", "Would you be interested in learning how to make bread?" ],
+      "sourceRole" : "SOURCE_SPEAKING_PROMPTS",
+      "runtimeUse" : "PINNED_SOURCE_ITEMS"
+    },
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "e920ca67b6ac92f324699533a3766e82464568829d682c90001e6e6f8971cdc9",
+    "createdAt" : null
+  }, {
+    "id" : "d9e16783-59d4-50db-aefc-904b582358ab",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_21_T4_SPEAKING_PART_2_PROMPTS",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "prompts" : [ "Describe a person you know who is very", "competitive. You", "about", "You should say: 2", "who this person is 1", "what this person is competitive about what", "how successful this person is say.", "and explain why you think this person is so notes", "competitive. you" ],
+      "sourceRole" : "SOURCE_SPEAKING_PROMPTS",
+      "runtimeUse" : "PINNED_SOURCE_ITEMS"
+    },
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "d9c741c2ee9b05104b4307111723b5b760fe398f4e58f2a05a8fc34de649f486",
+    "createdAt" : null
+  }, {
+    "id" : "070b2c83-15db-5e4c-a6ea-3dc530ddf785",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_21_T4_SPEAKING_PART_3_PROMPTS",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "prompts" : [ "Discussion topics:", "Competitions", "What kinds of competitions do people like to enter in your country?", "What do you think is the best kind of prize to win in a competition?", "Why do people like watching quiz shows and other competitions on TV?", "Being competitive in sports", "How important is it to be very competitive at sport?", "Do you think sportspeople perform better when they play against competitors who are", "stronger than they are?", "Why do some people think that taking part in sport is more important than winning?" ],
+      "sourceRole" : "SOURCE_SPEAKING_PROMPTS",
+      "runtimeUse" : "PINNED_SOURCE_ITEMS"
+    },
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "0297974c7b2e5294592c7e19d7165ba2ebc3ff50d9c21148de1dfdfe736e4c0f",
+    "createdAt" : null
+  } ],
+  "groupStimuli" : [ {
+    "id" : "62ff2bf9-9841-5af4-923c-34d9b71bef3c",
+    "groupId" : "7d6b0bb2-31a7-5357-9179-db346445d1fe",
+    "stimulusId" : "f8f8353b-e7ce-5115-92a9-7f38a188c428",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "28251a10-681b-5bb2-8e8a-be56ff3912cc",
+    "groupId" : "ce796ab9-a8ff-5421-8bd8-7294503a4d3a",
+    "stimulusId" : "55143295-cfa9-5ffb-a042-ae26690603f2",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "e257f2f1-bddd-51b4-8c67-14d3cf7813c3",
+    "groupId" : "2327bf5f-bd07-511d-8b80-5d72a1bb4df0",
+    "stimulusId" : "55143295-cfa9-5ffb-a042-ae26690603f2",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "7b0321de-77aa-53a2-bb56-916546d46ad6",
+    "groupId" : "3614934f-ffbb-50f7-a68c-9512d96bef79",
+    "stimulusId" : "55143295-cfa9-5ffb-a042-ae26690603f2",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "2ca41731-b58e-55bc-b974-a93e5d2bb3ff",
+    "groupId" : "4953e65b-4665-5a39-bb7a-1ff96b451017",
+    "stimulusId" : "a12fbd36-386b-559c-a00b-6d82d9838d12",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "0751df74-b2fa-5004-ab89-94fb06fbc0df",
+    "groupId" : "490501dc-7493-5a70-bf94-ff5a9e61d420",
+    "stimulusId" : "ab7aaab9-32fb-558b-96e0-0e938fb5c191",
+    "role" : "PASSAGE",
+    "ordinal" : 1
+  }, {
+    "id" : "c055f412-53f9-5e8a-aedb-f4c7828c6e00",
+    "groupId" : "bc587dc4-e643-5fc8-b311-34e87bf9825c",
+    "stimulusId" : "ab7aaab9-32fb-558b-96e0-0e938fb5c191",
+    "role" : "PASSAGE",
+    "ordinal" : 1
+  }, {
+    "id" : "d3045a40-72fb-5416-b95d-68e8fba913ae",
+    "groupId" : "d8a511bd-e0d2-5e4d-8403-f20d27f0eb0b",
+    "stimulusId" : "ab7aaab9-32fb-558b-96e0-0e938fb5c191",
+    "role" : "PASSAGE",
+    "ordinal" : 1
+  }, {
+    "id" : "da3c49fa-bacc-5462-848c-a5a3a1485325",
+    "groupId" : "5ea88c91-c73f-549a-8faf-a9f63ebfa7a6",
+    "stimulusId" : "969064af-bd60-56ae-9558-209b735ecaeb",
+    "role" : "PRIMARY_PROMPT",
+    "ordinal" : 2
+  }, {
+    "id" : "da607830-36fc-5925-b01f-0871d0a0929e",
+    "groupId" : "c9c7c30a-621d-5067-9c47-b5e76238c4df",
+    "stimulusId" : "081d2bbd-9024-5865-8f4b-a1d6befe59b8",
+    "role" : "PRIMARY",
+    "ordinal" : 1
+  }, {
+    "id" : "f5542ebf-be19-51a5-bdd4-2f2b71563dd0",
+    "groupId" : "57c116df-9ea5-5852-8fe9-7570296eaab2",
+    "stimulusId" : "d9e16783-59d4-50db-aefc-904b582358ab",
+    "role" : "PRIMARY",
+    "ordinal" : 1
+  }, {
+    "id" : "e19cef9d-bda2-5df9-853a-2ca88df0b768",
+    "groupId" : "ab3bf501-9fd8-581f-a1a0-0a7843cecdb5",
+    "stimulusId" : "070b2c83-15db-5e4c-a6ea-3dc530ddf785",
+    "role" : "PRIMARY",
+    "ordinal" : 1
+  } ],
+  "items" : [ {
+    "id" : "130fd084-109b-5f67-9ef0-89a0ddcc677e",
+    "groupId" : "7d6b0bb2-31a7-5357-9179-db346445d1fe",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L001",
+    "version" : 1,
+    "prompt" : ". / Name: Martyn ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 1,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the form below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Survey about shopping in Broadbeach\n.\nName: Martyn (1) ______\nToday's journey to Broadbeach\n.\ntown centre: used his (2) ______\n.\nPurpose of today's trip: has visited the (3) ______\n.\nlooking for a new (4) ______\ncollecting (5) ______\n(after repair)\n..\nPreferred day for shopping: (6) ______\nOpinions about shopping in the town centre\nFinds the service in shops is excellent\n.\nThinks there are too many places selling (7) ______\n.\nWould like more places to buy (8) ______\nOpinions about new out-of-town Shopping Centre\nLikes the (9) ______\nbest\nBelieves the (10) ______\nis unnecessary"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "76a7eff8663f875338d6b8884f9c7d3e84b5cab1216e32601ec3ba9224fb68e1",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "843c9b47-f25d-56bf-8f3a-01d954db71b3",
+    "groupId" : "7d6b0bb2-31a7-5357-9179-db346445d1fe",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L002",
+    "version" : 1,
+    "prompt" : "town centre: used his ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 2,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the form below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Survey about shopping in Broadbeach\n.\nName: Martyn (1) ______\nToday's journey to Broadbeach\n.\ntown centre: used his (2) ______\n.\nPurpose of today's trip: has visited the (3) ______\n.\nlooking for a new (4) ______\ncollecting (5) ______\n(after repair)\n..\nPreferred day for shopping: (6) ______\nOpinions about shopping in the town centre\nFinds the service in shops is excellent\n.\nThinks there are too many places selling (7) ______\n.\nWould like more places to buy (8) ______\nOpinions about new out-of-town Shopping Centre\nLikes the (9) ______\nbest\nBelieves the (10) ______\nis unnecessary"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "008bf6408fbd39445d83ee7719215e6acb26b503a002e4e529928e12bb893e0f",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "d7c932ae-0f9f-5d70-b7c6-a6803aba075b",
+    "groupId" : "7d6b0bb2-31a7-5357-9179-db346445d1fe",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L003",
+    "version" : 1,
+    "prompt" : "Purpose of today's trip: has visited the ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 3,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the form below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Survey about shopping in Broadbeach\n.\nName: Martyn (1) ______\nToday's journey to Broadbeach\n.\ntown centre: used his (2) ______\n.\nPurpose of today's trip: has visited the (3) ______\n.\nlooking for a new (4) ______\ncollecting (5) ______\n(after repair)\n..\nPreferred day for shopping: (6) ______\nOpinions about shopping in the town centre\nFinds the service in shops is excellent\n.\nThinks there are too many places selling (7) ______\n.\nWould like more places to buy (8) ______\nOpinions about new out-of-town Shopping Centre\nLikes the (9) ______\nbest\nBelieves the (10) ______\nis unnecessary"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "f15f0e29fbc5f372cfcd670f551ab6d2742ebc03127aea01c9a0aed8bb90c032",
+    "createdAt" : null,
+    "ordinal" : 3
+  }, {
+    "id" : "52b5ecc3-f45c-5ca9-bf66-5ca3d107c2c2",
+    "groupId" : "7d6b0bb2-31a7-5357-9179-db346445d1fe",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L004",
+    "version" : 1,
+    "prompt" : "looking for a new ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 4,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the form below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Survey about shopping in Broadbeach\n.\nName: Martyn (1) ______\nToday's journey to Broadbeach\n.\ntown centre: used his (2) ______\n.\nPurpose of today's trip: has visited the (3) ______\n.\nlooking for a new (4) ______\ncollecting (5) ______\n(after repair)\n..\nPreferred day for shopping: (6) ______\nOpinions about shopping in the town centre\nFinds the service in shops is excellent\n.\nThinks there are too many places selling (7) ______\n.\nWould like more places to buy (8) ______\nOpinions about new out-of-town Shopping Centre\nLikes the (9) ______\nbest\nBelieves the (10) ______\nis unnecessary"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "2c89952ce287acfb30a616e4a65336045d586d5a755765c228bc7bd22665961d",
+    "createdAt" : null,
+    "ordinal" : 4
+  }, {
+    "id" : "d75ea079-5ddb-54c3-ab64-6557209b16a7",
+    "groupId" : "7d6b0bb2-31a7-5357-9179-db346445d1fe",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L005",
+    "version" : 1,
+    "prompt" : "looking for a new (4) ______ / collecting ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 5,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the form below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Survey about shopping in Broadbeach\n.\nName: Martyn (1) ______\nToday's journey to Broadbeach\n.\ntown centre: used his (2) ______\n.\nPurpose of today's trip: has visited the (3) ______\n.\nlooking for a new (4) ______\ncollecting (5) ______\n(after repair)\n..\nPreferred day for shopping: (6) ______\nOpinions about shopping in the town centre\nFinds the service in shops is excellent\n.\nThinks there are too many places selling (7) ______\n.\nWould like more places to buy (8) ______\nOpinions about new out-of-town Shopping Centre\nLikes the (9) ______\nbest\nBelieves the (10) ______\nis unnecessary"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "da8000b29accdfc68f741e288b88f289cd7d47608b64f09d2b61856fccccfb81",
+    "createdAt" : null,
+    "ordinal" : 5
+  }, {
+    "id" : "3180eba4-9aa8-59cd-aebf-d36576d653e8",
+    "groupId" : "7d6b0bb2-31a7-5357-9179-db346445d1fe",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L006",
+    "version" : 1,
+    "prompt" : "Preferred day for shopping: ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 6,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the form below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Survey about shopping in Broadbeach\n.\nName: Martyn (1) ______\nToday's journey to Broadbeach\n.\ntown centre: used his (2) ______\n.\nPurpose of today's trip: has visited the (3) ______\n.\nlooking for a new (4) ______\ncollecting (5) ______\n(after repair)\n..\nPreferred day for shopping: (6) ______\nOpinions about shopping in the town centre\nFinds the service in shops is excellent\n.\nThinks there are too many places selling (7) ______\n.\nWould like more places to buy (8) ______\nOpinions about new out-of-town Shopping Centre\nLikes the (9) ______\nbest\nBelieves the (10) ______\nis unnecessary"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "d5fc20f393e1e114ad97ab66c99ef47ead080a4c3ddbbf919b388aba22993a00",
+    "createdAt" : null,
+    "ordinal" : 6
+  }, {
+    "id" : "e587ebe4-fc8d-500e-8c3e-d2e1b1c37832",
+    "groupId" : "7d6b0bb2-31a7-5357-9179-db346445d1fe",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L007",
+    "version" : 1,
+    "prompt" : "Thinks there are too many places selling ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 7,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the form below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Survey about shopping in Broadbeach\n.\nName: Martyn (1) ______\nToday's journey to Broadbeach\n.\ntown centre: used his (2) ______\n.\nPurpose of today's trip: has visited the (3) ______\n.\nlooking for a new (4) ______\ncollecting (5) ______\n(after repair)\n..\nPreferred day for shopping: (6) ______\nOpinions about shopping in the town centre\nFinds the service in shops is excellent\n.\nThinks there are too many places selling (7) ______\n.\nWould like more places to buy (8) ______\nOpinions about new out-of-town Shopping Centre\nLikes the (9) ______\nbest\nBelieves the (10) ______\nis unnecessary"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "898965097d3d50f0eea572ec893d5ebd3103e92f3f1455376140a3fd11edd3ed",
+    "createdAt" : null,
+    "ordinal" : 7
+  }, {
+    "id" : "2d0ebd30-c62a-5a60-bb17-85bda3702d0b",
+    "groupId" : "7d6b0bb2-31a7-5357-9179-db346445d1fe",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L008",
+    "version" : 1,
+    "prompt" : "Would like more places to buy ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 8,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the form below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Survey about shopping in Broadbeach\n.\nName: Martyn (1) ______\nToday's journey to Broadbeach\n.\ntown centre: used his (2) ______\n.\nPurpose of today's trip: has visited the (3) ______\n.\nlooking for a new (4) ______\ncollecting (5) ______\n(after repair)\n..\nPreferred day for shopping: (6) ______\nOpinions about shopping in the town centre\nFinds the service in shops is excellent\n.\nThinks there are too many places selling (7) ______\n.\nWould like more places to buy (8) ______\nOpinions about new out-of-town Shopping Centre\nLikes the (9) ______\nbest\nBelieves the (10) ______\nis unnecessary"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "aeb3f1750cc68e7137db6dba1706a5dd55fd512cf3851c0f85448d1b7eb043ee",
+    "createdAt" : null,
+    "ordinal" : 8
+  }, {
+    "id" : "811fee35-52b4-5021-9189-1b9a9812cac1",
+    "groupId" : "7d6b0bb2-31a7-5357-9179-db346445d1fe",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L009",
+    "version" : 1,
+    "prompt" : "Opinions about new out-of-town Shopping Centre / Likes the ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 9,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the form below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Survey about shopping in Broadbeach\n.\nName: Martyn (1) ______\nToday's journey to Broadbeach\n.\ntown centre: used his (2) ______\n.\nPurpose of today's trip: has visited the (3) ______\n.\nlooking for a new (4) ______\ncollecting (5) ______\n(after repair)\n..\nPreferred day for shopping: (6) ______\nOpinions about shopping in the town centre\nFinds the service in shops is excellent\n.\nThinks there are too many places selling (7) ______\n.\nWould like more places to buy (8) ______\nOpinions about new out-of-town Shopping Centre\nLikes the (9) ______\nbest\nBelieves the (10) ______\nis unnecessary"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "174572f4c3d828127abac441c0474cc513f47032c1c2d721fd2abbb0119cdeb9",
+    "createdAt" : null,
+    "ordinal" : 9
+  }, {
+    "id" : "173cc19e-9b95-5707-b524-a6bde7d381f5",
+    "groupId" : "7d6b0bb2-31a7-5357-9179-db346445d1fe",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L010",
+    "version" : 1,
+    "prompt" : "best / Believes the ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 10,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "1-10",
+        "instructions" : [ "Complete the form below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Survey about shopping in Broadbeach\n.\nName: Martyn (1) ______\nToday's journey to Broadbeach\n.\ntown centre: used his (2) ______\n.\nPurpose of today's trip: has visited the (3) ______\n.\nlooking for a new (4) ______\ncollecting (5) ______\n(after repair)\n..\nPreferred day for shopping: (6) ______\nOpinions about shopping in the town centre\nFinds the service in shops is excellent\n.\nThinks there are too many places selling (7) ______\n.\nWould like more places to buy (8) ______\nOpinions about new out-of-town Shopping Centre\nLikes the (9) ______\nbest\nBelieves the (10) ______\nis unnecessary"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "cbb0ddfdf1aa77996ac001e3fa93462546979f5778e345a5d163c15be21e4556",
+    "createdAt" : null,
+    "ordinal" : 10
+  }, {
+    "id" : "22d5d7b8-d4c6-58c8-9816-fb762d243c98",
+    "groupId" : "ce796ab9-a8ff-5421-8bd8-7294503a4d3a",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L011",
+    "version" : 1,
+    "prompt" : "In which TWO areas of the business exhibition did James Craig promote his company last year?",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "the Digital Marketing Centre"
+      }, {
+        "id" : "B",
+        "text" : "the TalkCon Zone"
+      }, {
+        "id" : "C",
+        "text" : "the Breakout area"
+      }, {
+        "id" : "D",
+        "text" : "the Business Village"
+      }, {
+        "id" : "E",
+        "text" : "the Business Connections Zone"
+      } ],
+      "questionNumber" : 11,
+      "group" : {
+        "kind" : "MULTI_SELECT",
+        "questions" : "11-12",
+        "instructions" : [ "Choose TWO letters, A-E." ],
+        "stem" : "In which TWO areas of the business exhibition did James Craig promote his company last year?"
+      },
+      "selection" : {
+        "count" : 2,
+        "questions" : [ 11, 12 ]
+      }
+    },
+    "construct" : "multi_select",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "118cd7bd16996e21db31f40dcf6fbacdc2e587d6b3636e65460b4ce1b14b50d3",
+    "createdAt" : null,
+    "ordinal" : 11
+  }, {
+    "id" : "40eeb3bd-3f2d-5756-b294-6e1e0376068e",
+    "groupId" : "ce796ab9-a8ff-5421-8bd8-7294503a4d3a",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L012",
+    "version" : 1,
+    "prompt" : "In which TWO areas of the business exhibition did James Craig promote his company last year?",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "the Digital Marketing Centre"
+      }, {
+        "id" : "B",
+        "text" : "the TalkCon Zone"
+      }, {
+        "id" : "C",
+        "text" : "the Breakout area"
+      }, {
+        "id" : "D",
+        "text" : "the Business Village"
+      }, {
+        "id" : "E",
+        "text" : "the Business Connections Zone"
+      } ],
+      "questionNumber" : 12,
+      "group" : {
+        "kind" : "MULTI_SELECT",
+        "questions" : "11-12",
+        "instructions" : [ "Choose TWO letters, A-E." ],
+        "stem" : "In which TWO areas of the business exhibition did James Craig promote his company last year?"
+      },
+      "selection" : {
+        "count" : 2,
+        "questions" : [ 11, 12 ]
+      }
+    },
+    "construct" : "multi_select",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "358c4ca3d169d82fb80fbef9e21b447bb0e463734c85e3daa9ccc027dc19caaf",
+    "createdAt" : null,
+    "ordinal" : 12
+  }, {
+    "id" : "42437dd8-0193-542e-8c4f-333451e23f5e",
+    "groupId" : "2327bf5f-bd07-511d-8b80-5d72a1bb4df0",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L013",
+    "version" : 1,
+    "prompt" : "Which TWO facts are given about discounts on popular brands available to exhibitors?",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "They are available to all members of exhibiting companies."
+      }, {
+        "id" : "B",
+        "text" : "They can be used for both food and clothing."
+      }, {
+        "id" : "C",
+        "text" : "They only apply if people spend at least £400."
+      }, {
+        "id" : "D",
+        "text" : "They can be used by family members."
+      }, {
+        "id" : "E",
+        "text" : "The percentage saved is always the same."
+      } ],
+      "questionNumber" : 13,
+      "group" : {
+        "kind" : "MULTI_SELECT",
+        "questions" : "13-14",
+        "instructions" : [ "Choose TWO letters, A-E.", "Which TWO facts are given about discounts on popular brands available to exhibitors?" ],
+        "stem" : "Which TWO facts are given about discounts on popular brands available to exhibitors?"
+      },
+      "selection" : {
+        "count" : 2,
+        "questions" : [ 13, 14 ]
+      }
+    },
+    "construct" : "multi_select",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "633fc3708ea7bd055a4b273a22defdf048c2a48a2027815217bae7931160a689",
+    "createdAt" : null,
+    "ordinal" : 13
+  }, {
+    "id" : "c86c6c22-9fa9-55d8-ac40-76128771a13a",
+    "groupId" : "2327bf5f-bd07-511d-8b80-5d72a1bb4df0",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L014",
+    "version" : 1,
+    "prompt" : "Which TWO facts are given about discounts on popular brands available to exhibitors?",
+    "interactionType" : "SINGLE_CHOICE",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "They are available to all members of exhibiting companies."
+      }, {
+        "id" : "B",
+        "text" : "They can be used for both food and clothing."
+      }, {
+        "id" : "C",
+        "text" : "They only apply if people spend at least £400."
+      }, {
+        "id" : "D",
+        "text" : "They can be used by family members."
+      }, {
+        "id" : "E",
+        "text" : "The percentage saved is always the same."
+      } ],
+      "questionNumber" : 14,
+      "group" : {
+        "kind" : "MULTI_SELECT",
+        "questions" : "13-14",
+        "instructions" : [ "Choose TWO letters, A-E.", "Which TWO facts are given about discounts on popular brands available to exhibitors?" ],
+        "stem" : "Which TWO facts are given about discounts on popular brands available to exhibitors?"
+      },
+      "selection" : {
+        "count" : 2,
+        "questions" : [ 13, 14 ]
+      }
+    },
+    "construct" : "multi_select",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "a63b840ff681c752e07c3c9b665007eec2507cb16bdff9b44d81ff2591a90289",
+    "createdAt" : null,
+    "ordinal" : 14
+  }, {
+    "id" : "f09b4e71-5849-5495-9deb-43745503e7d4",
+    "groupId" : "3614934f-ffbb-50f7-a68c-9512d96bef79",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L015",
+    "version" : 1,
+    "prompt" : "Jim Clowrie",
+    "interactionType" : "MATCHING",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Supporting job seekers"
+      }, {
+        "id" : "B",
+        "text" : "Dealing with personal problems"
+      }, {
+        "id" : "C",
+        "text" : "Effects of an unexpectedly rapid expansion"
+      }, {
+        "id" : "D",
+        "text" : "A global range of business experiences"
+      }, {
+        "id" : "E",
+        "text" : "Coping with financial set-backs"
+      }, {
+        "id" : "F",
+        "text" : "Developing a company in response to changing markets"
+      }, {
+        "id" : "G",
+        "text" : "Combining business success with contributions to charities"
+      } ],
+      "questionNumber" : 15,
+      "group" : {
+        "kind" : "MATCHING",
+        "questions" : "15-20",
+        "instructions" : [ "Choose SIX answers from the box and write the correct letter, A-G, next to", "Questions 15-20." ],
+        "stem" : "Which topic will each of the following speakers focus on?\nTopics"
+      }
+    },
+    "construct" : "matching",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "1e5e698088f69f42daa2f8c475ddb45fd234bb8646e81044c5fc738a495a9506",
+    "createdAt" : null,
+    "ordinal" : 15
+  }, {
+    "id" : "9465519a-2f33-53b7-a89b-d4ac3c7b5114",
+    "groupId" : "3614934f-ffbb-50f7-a68c-9512d96bef79",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L016",
+    "version" : 1,
+    "prompt" : "David France",
+    "interactionType" : "MATCHING",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Supporting job seekers"
+      }, {
+        "id" : "B",
+        "text" : "Dealing with personal problems"
+      }, {
+        "id" : "C",
+        "text" : "Effects of an unexpectedly rapid expansion"
+      }, {
+        "id" : "D",
+        "text" : "A global range of business experiences"
+      }, {
+        "id" : "E",
+        "text" : "Coping with financial set-backs"
+      }, {
+        "id" : "F",
+        "text" : "Developing a company in response to changing markets"
+      }, {
+        "id" : "G",
+        "text" : "Combining business success with contributions to charities"
+      } ],
+      "questionNumber" : 16,
+      "group" : {
+        "kind" : "MATCHING",
+        "questions" : "15-20",
+        "instructions" : [ "Choose SIX answers from the box and write the correct letter, A-G, next to", "Questions 15-20." ],
+        "stem" : "Which topic will each of the following speakers focus on?\nTopics"
+      }
+    },
+    "construct" : "matching",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "d7200f3fc3769efd3a08426299a503232eb31ce53b36e3f2430045102a9db9c2",
+    "createdAt" : null,
+    "ordinal" : 16
+  }, {
+    "id" : "b3b90ead-3e34-5c62-9b86-7caeaaa8d20b",
+    "groupId" : "3614934f-ffbb-50f7-a68c-9512d96bef79",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L017",
+    "version" : 1,
+    "prompt" : "Oliver Stanton",
+    "interactionType" : "MATCHING",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Supporting job seekers"
+      }, {
+        "id" : "B",
+        "text" : "Dealing with personal problems"
+      }, {
+        "id" : "C",
+        "text" : "Effects of an unexpectedly rapid expansion"
+      }, {
+        "id" : "D",
+        "text" : "A global range of business experiences"
+      }, {
+        "id" : "E",
+        "text" : "Coping with financial set-backs"
+      }, {
+        "id" : "F",
+        "text" : "Developing a company in response to changing markets"
+      }, {
+        "id" : "G",
+        "text" : "Combining business success with contributions to charities"
+      } ],
+      "questionNumber" : 17,
+      "group" : {
+        "kind" : "MATCHING",
+        "questions" : "15-20",
+        "instructions" : [ "Choose SIX answers from the box and write the correct letter, A-G, next to", "Questions 15-20." ],
+        "stem" : "Which topic will each of the following speakers focus on?\nTopics"
+      }
+    },
+    "construct" : "matching",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "7ef151063f31da76c30f808d62abc0afea6e404c88be7afdbfdfa131c00704ad",
+    "createdAt" : null,
+    "ordinal" : 17
+  }, {
+    "id" : "b722771c-53c0-57a8-aae3-49cf5fc86c2a",
+    "groupId" : "3614934f-ffbb-50f7-a68c-9512d96bef79",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L018",
+    "version" : 1,
+    "prompt" : "Francesca Heptonstall",
+    "interactionType" : "MATCHING",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Supporting job seekers"
+      }, {
+        "id" : "B",
+        "text" : "Dealing with personal problems"
+      }, {
+        "id" : "C",
+        "text" : "Effects of an unexpectedly rapid expansion"
+      }, {
+        "id" : "D",
+        "text" : "A global range of business experiences"
+      }, {
+        "id" : "E",
+        "text" : "Coping with financial set-backs"
+      }, {
+        "id" : "F",
+        "text" : "Developing a company in response to changing markets"
+      }, {
+        "id" : "G",
+        "text" : "Combining business success with contributions to charities"
+      } ],
+      "questionNumber" : 18,
+      "group" : {
+        "kind" : "MATCHING",
+        "questions" : "15-20",
+        "instructions" : [ "Choose SIX answers from the box and write the correct letter, A-G, next to", "Questions 15-20." ],
+        "stem" : "Which topic will each of the following speakers focus on?\nTopics"
+      }
+    },
+    "construct" : "matching",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "a883fe70c080e8f9ce4b7c26a99166a961a23076f5afa6e7262d4945cbe1cf4f",
+    "createdAt" : null,
+    "ordinal" : 18
+  }, {
+    "id" : "48246708-bafb-57de-82a9-650cfe01f4f8",
+    "groupId" : "3614934f-ffbb-50f7-a68c-9512d96bef79",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L019",
+    "version" : 1,
+    "prompt" : "Salman Khan",
+    "interactionType" : "MATCHING",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Supporting job seekers"
+      }, {
+        "id" : "B",
+        "text" : "Dealing with personal problems"
+      }, {
+        "id" : "C",
+        "text" : "Effects of an unexpectedly rapid expansion"
+      }, {
+        "id" : "D",
+        "text" : "A global range of business experiences"
+      }, {
+        "id" : "E",
+        "text" : "Coping with financial set-backs"
+      }, {
+        "id" : "F",
+        "text" : "Developing a company in response to changing markets"
+      }, {
+        "id" : "G",
+        "text" : "Combining business success with contributions to charities"
+      } ],
+      "questionNumber" : 19,
+      "group" : {
+        "kind" : "MATCHING",
+        "questions" : "15-20",
+        "instructions" : [ "Choose SIX answers from the box and write the correct letter, A-G, next to", "Questions 15-20." ],
+        "stem" : "Which topic will each of the following speakers focus on?\nTopics"
+      }
+    },
+    "construct" : "matching",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "995898e36720a19e3cc6907a4ef9aa78065be9a18f2ddc6f23413a6baa3e35f0",
+    "createdAt" : null,
+    "ordinal" : 19
+  }, {
+    "id" : "80378bcd-6ab2-56c6-9f6b-a6bbbda4a781",
+    "groupId" : "3614934f-ffbb-50f7-a68c-9512d96bef79",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L020",
+    "version" : 1,
+    "prompt" : "Annie Craven",
+    "interactionType" : "MATCHING",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "A",
+        "text" : "Supporting job seekers"
+      }, {
+        "id" : "B",
+        "text" : "Dealing with personal problems"
+      }, {
+        "id" : "C",
+        "text" : "Effects of an unexpectedly rapid expansion"
+      }, {
+        "id" : "D",
+        "text" : "A global range of business experiences"
+      }, {
+        "id" : "E",
+        "text" : "Coping with financial set-backs"
+      }, {
+        "id" : "F",
+        "text" : "Developing a company in response to changing markets"
+      }, {
+        "id" : "G",
+        "text" : "Combining business success with contributions to charities"
+      } ],
+      "questionNumber" : 20,
+      "group" : {
+        "kind" : "MATCHING",
+        "questions" : "15-20",
+        "instructions" : [ "Choose SIX answers from the box and write the correct letter, A-G, next to", "Questions 15-20." ],
+        "stem" : "Which topic will each of the following speakers focus on?\nTopics"
+      }
+    },
+    "construct" : "matching",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "570fc6379c5e4584e0e1ce2301db5e2392435d129280ff91efb07561ada27a0f",
+    "createdAt" : null,
+    "ordinal" : 20
+  }, {
+    "id" : "5bc80307-155d-5600-9ba9-075efcd95e25",
+    "groupId" : "4953e65b-4665-5a39-bb7a-1ff96b451017",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L031",
+    "version" : 1,
+    "prompt" : "unwelcome changes to their ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 31,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Music therapy for surgical patients\nBackground\nSurgery impacts patients because they may experience discomfort or\n.\nunwelcome changes to their (31) ______\nCurrent post-surgical strategies focus mainly on pain relief.\nRecent research\nA study reviewed data from about 100 (32) ______\nand found that\nlistening to music\nimproved hospital patients' sense of wellbeing.\nreduced the length of their stay.\n.\nThe patients in the study all listened to music with a (33) ______\neffect.\n.\nThe music was mostly played through music (34) ______\n.\nPatients reported an absence or low levels of (35) ______\nMedical records confirmed that patients who were played music in hospital\nneeded less (36) ______\nthan those who weren't played music.\nThe best results were achieved when patients were played music while they\n.\nwere (37) ______\nThe study concluded that playing music was effective because it served as a\n(38) ______\n.\nThe researchers recommend playing either music or sounds from (39) ______\n______\nto all surgical patients.\nA future study will investigate the best (40) ______\nfor the music."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "86825399c1b282840c51928b15603e6e621bb05d495449b6103390cad329bdae",
+    "createdAt" : null,
+    "ordinal" : 31
+  }, {
+    "id" : "e6a892fa-5e9d-53b7-901d-9cb35fd0915c",
+    "groupId" : "4953e65b-4665-5a39-bb7a-1ff96b451017",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L032",
+    "version" : 1,
+    "prompt" : "A study reviewed data from about 100 ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 32,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Music therapy for surgical patients\nBackground\nSurgery impacts patients because they may experience discomfort or\n.\nunwelcome changes to their (31) ______\nCurrent post-surgical strategies focus mainly on pain relief.\nRecent research\nA study reviewed data from about 100 (32) ______\nand found that\nlistening to music\nimproved hospital patients' sense of wellbeing.\nreduced the length of their stay.\n.\nThe patients in the study all listened to music with a (33) ______\neffect.\n.\nThe music was mostly played through music (34) ______\n.\nPatients reported an absence or low levels of (35) ______\nMedical records confirmed that patients who were played music in hospital\nneeded less (36) ______\nthan those who weren't played music.\nThe best results were achieved when patients were played music while they\n.\nwere (37) ______\nThe study concluded that playing music was effective because it served as a\n(38) ______\n.\nThe researchers recommend playing either music or sounds from (39) ______\n______\nto all surgical patients.\nA future study will investigate the best (40) ______\nfor the music."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "57d6351c5b11d897cd2af8f90e772150a4471ed900f70678210df2b9ba6bb588",
+    "createdAt" : null,
+    "ordinal" : 32
+  }, {
+    "id" : "b2a8b0fa-6791-5551-919c-fbaceb0059b3",
+    "groupId" : "4953e65b-4665-5a39-bb7a-1ff96b451017",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L033",
+    "version" : 1,
+    "prompt" : "The patients in the study all listened to music with a ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 33,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Music therapy for surgical patients\nBackground\nSurgery impacts patients because they may experience discomfort or\n.\nunwelcome changes to their (31) ______\nCurrent post-surgical strategies focus mainly on pain relief.\nRecent research\nA study reviewed data from about 100 (32) ______\nand found that\nlistening to music\nimproved hospital patients' sense of wellbeing.\nreduced the length of their stay.\n.\nThe patients in the study all listened to music with a (33) ______\neffect.\n.\nThe music was mostly played through music (34) ______\n.\nPatients reported an absence or low levels of (35) ______\nMedical records confirmed that patients who were played music in hospital\nneeded less (36) ______\nthan those who weren't played music.\nThe best results were achieved when patients were played music while they\n.\nwere (37) ______\nThe study concluded that playing music was effective because it served as a\n(38) ______\n.\nThe researchers recommend playing either music or sounds from (39) ______\n______\nto all surgical patients.\nA future study will investigate the best (40) ______\nfor the music."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "2ed2bb40e93ff6d2efac6395984a7999843d1884119cfd7086de3237dc931cc7",
+    "createdAt" : null,
+    "ordinal" : 33
+  }, {
+    "id" : "d95c8e26-826b-5840-8035-78080a4f875b",
+    "groupId" : "4953e65b-4665-5a39-bb7a-1ff96b451017",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L034",
+    "version" : 1,
+    "prompt" : "The music was mostly played through music ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 34,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Music therapy for surgical patients\nBackground\nSurgery impacts patients because they may experience discomfort or\n.\nunwelcome changes to their (31) ______\nCurrent post-surgical strategies focus mainly on pain relief.\nRecent research\nA study reviewed data from about 100 (32) ______\nand found that\nlistening to music\nimproved hospital patients' sense of wellbeing.\nreduced the length of their stay.\n.\nThe patients in the study all listened to music with a (33) ______\neffect.\n.\nThe music was mostly played through music (34) ______\n.\nPatients reported an absence or low levels of (35) ______\nMedical records confirmed that patients who were played music in hospital\nneeded less (36) ______\nthan those who weren't played music.\nThe best results were achieved when patients were played music while they\n.\nwere (37) ______\nThe study concluded that playing music was effective because it served as a\n(38) ______\n.\nThe researchers recommend playing either music or sounds from (39) ______\n______\nto all surgical patients.\nA future study will investigate the best (40) ______\nfor the music."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "bcf0045c4ceef5ce8bdbf1f6f443bccc2c43668a4c504668f5e9133b86741352",
+    "createdAt" : null,
+    "ordinal" : 34
+  }, {
+    "id" : "334a7a19-672f-596e-8908-35d4dd1f8e89",
+    "groupId" : "4953e65b-4665-5a39-bb7a-1ff96b451017",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L035",
+    "version" : 1,
+    "prompt" : "Patients reported an absence or low levels of ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 35,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Music therapy for surgical patients\nBackground\nSurgery impacts patients because they may experience discomfort or\n.\nunwelcome changes to their (31) ______\nCurrent post-surgical strategies focus mainly on pain relief.\nRecent research\nA study reviewed data from about 100 (32) ______\nand found that\nlistening to music\nimproved hospital patients' sense of wellbeing.\nreduced the length of their stay.\n.\nThe patients in the study all listened to music with a (33) ______\neffect.\n.\nThe music was mostly played through music (34) ______\n.\nPatients reported an absence or low levels of (35) ______\nMedical records confirmed that patients who were played music in hospital\nneeded less (36) ______\nthan those who weren't played music.\nThe best results were achieved when patients were played music while they\n.\nwere (37) ______\nThe study concluded that playing music was effective because it served as a\n(38) ______\n.\nThe researchers recommend playing either music or sounds from (39) ______\n______\nto all surgical patients.\nA future study will investigate the best (40) ______\nfor the music."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "7bff6ef5813a4bde271623fc9e1f734e0d777a4fec14a9ef118de96877ef92f4",
+    "createdAt" : null,
+    "ordinal" : 35
+  }, {
+    "id" : "0651e0ef-e067-5e96-b3f8-468b2798e9dc",
+    "groupId" : "4953e65b-4665-5a39-bb7a-1ff96b451017",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L036",
+    "version" : 1,
+    "prompt" : "Medical records confirmed that patients who were played music in hospital / needed less ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 36,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Music therapy for surgical patients\nBackground\nSurgery impacts patients because they may experience discomfort or\n.\nunwelcome changes to their (31) ______\nCurrent post-surgical strategies focus mainly on pain relief.\nRecent research\nA study reviewed data from about 100 (32) ______\nand found that\nlistening to music\nimproved hospital patients' sense of wellbeing.\nreduced the length of their stay.\n.\nThe patients in the study all listened to music with a (33) ______\neffect.\n.\nThe music was mostly played through music (34) ______\n.\nPatients reported an absence or low levels of (35) ______\nMedical records confirmed that patients who were played music in hospital\nneeded less (36) ______\nthan those who weren't played music.\nThe best results were achieved when patients were played music while they\n.\nwere (37) ______\nThe study concluded that playing music was effective because it served as a\n(38) ______\n.\nThe researchers recommend playing either music or sounds from (39) ______\n______\nto all surgical patients.\nA future study will investigate the best (40) ______\nfor the music."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "47ac9cda75c79c2bd4b5321edb10bc57637964aa4232321bfd8479c3e165b948",
+    "createdAt" : null,
+    "ordinal" : 36
+  }, {
+    "id" : "58d8ba9a-abe4-52e7-84bb-bc86dcc14062",
+    "groupId" : "4953e65b-4665-5a39-bb7a-1ff96b451017",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L037",
+    "version" : 1,
+    "prompt" : ". / were ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 37,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Music therapy for surgical patients\nBackground\nSurgery impacts patients because they may experience discomfort or\n.\nunwelcome changes to their (31) ______\nCurrent post-surgical strategies focus mainly on pain relief.\nRecent research\nA study reviewed data from about 100 (32) ______\nand found that\nlistening to music\nimproved hospital patients' sense of wellbeing.\nreduced the length of their stay.\n.\nThe patients in the study all listened to music with a (33) ______\neffect.\n.\nThe music was mostly played through music (34) ______\n.\nPatients reported an absence or low levels of (35) ______\nMedical records confirmed that patients who were played music in hospital\nneeded less (36) ______\nthan those who weren't played music.\nThe best results were achieved when patients were played music while they\n.\nwere (37) ______\nThe study concluded that playing music was effective because it served as a\n(38) ______\n.\nThe researchers recommend playing either music or sounds from (39) ______\n______\nto all surgical patients.\nA future study will investigate the best (40) ______\nfor the music."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "2307ae67a18c5da6cfabf624370dd6e8b75672210173dd168ccf294cbafa9688",
+    "createdAt" : null,
+    "ordinal" : 37
+  }, {
+    "id" : "c7840be8-b678-59fb-8616-3d34c3248ef3",
+    "groupId" : "4953e65b-4665-5a39-bb7a-1ff96b451017",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L038",
+    "version" : 1,
+    "prompt" : "The study concluded that playing music was effective because it served as a / ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 38,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Music therapy for surgical patients\nBackground\nSurgery impacts patients because they may experience discomfort or\n.\nunwelcome changes to their (31) ______\nCurrent post-surgical strategies focus mainly on pain relief.\nRecent research\nA study reviewed data from about 100 (32) ______\nand found that\nlistening to music\nimproved hospital patients' sense of wellbeing.\nreduced the length of their stay.\n.\nThe patients in the study all listened to music with a (33) ______\neffect.\n.\nThe music was mostly played through music (34) ______\n.\nPatients reported an absence or low levels of (35) ______\nMedical records confirmed that patients who were played music in hospital\nneeded less (36) ______\nthan those who weren't played music.\nThe best results were achieved when patients were played music while they\n.\nwere (37) ______\nThe study concluded that playing music was effective because it served as a\n(38) ______\n.\nThe researchers recommend playing either music or sounds from (39) ______\n______\nto all surgical patients.\nA future study will investigate the best (40) ______\nfor the music."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "21e2a0b2e6e20746f6da316f49dfc309659964e8c399eea4d1b98f6b1334c086",
+    "createdAt" : null,
+    "ordinal" : 38
+  }, {
+    "id" : "4e276706-05ff-5537-9ddf-0514e855568b",
+    "groupId" : "4953e65b-4665-5a39-bb7a-1ff96b451017",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L039",
+    "version" : 1,
+    "prompt" : "The researchers recommend playing either music or sounds from ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 39,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Music therapy for surgical patients\nBackground\nSurgery impacts patients because they may experience discomfort or\n.\nunwelcome changes to their (31) ______\nCurrent post-surgical strategies focus mainly on pain relief.\nRecent research\nA study reviewed data from about 100 (32) ______\nand found that\nlistening to music\nimproved hospital patients' sense of wellbeing.\nreduced the length of their stay.\n.\nThe patients in the study all listened to music with a (33) ______\neffect.\n.\nThe music was mostly played through music (34) ______\n.\nPatients reported an absence or low levels of (35) ______\nMedical records confirmed that patients who were played music in hospital\nneeded less (36) ______\nthan those who weren't played music.\nThe best results were achieved when patients were played music while they\n.\nwere (37) ______\nThe study concluded that playing music was effective because it served as a\n(38) ______\n.\nThe researchers recommend playing either music or sounds from (39) ______\n______\nto all surgical patients.\nA future study will investigate the best (40) ______\nfor the music."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "3c6d262be019b93b9d997d5e039c158003142b6be84d4c8e6085e1c3da1ff89f",
+    "createdAt" : null,
+    "ordinal" : 39
+  }, {
+    "id" : "6d4fe95e-20fb-52d4-85fa-2a0d582a0f26",
+    "groupId" : "4953e65b-4665-5a39-bb7a-1ff96b451017",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_L040",
+    "version" : 1,
+    "prompt" : "A future study will investigate the best ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 40,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "31-40",
+        "instructions" : [ "Complete the notes below.", "Write ONE WORD ONLY for each answer." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Music therapy for surgical patients\nBackground\nSurgery impacts patients because they may experience discomfort or\n.\nunwelcome changes to their (31) ______\nCurrent post-surgical strategies focus mainly on pain relief.\nRecent research\nA study reviewed data from about 100 (32) ______\nand found that\nlistening to music\nimproved hospital patients' sense of wellbeing.\nreduced the length of their stay.\n.\nThe patients in the study all listened to music with a (33) ______\neffect.\n.\nThe music was mostly played through music (34) ______\n.\nPatients reported an absence or low levels of (35) ______\nMedical records confirmed that patients who were played music in hospital\nneeded less (36) ______\nthan those who weren't played music.\nThe best results were achieved when patients were played music while they\n.\nwere (37) ______\nThe study concluded that playing music was effective because it served as a\n(38) ______\n.\nThe researchers recommend playing either music or sounds from (39) ______\n______\nto all surgical patients.\nA future study will investigate the best (40) ______\nfor the music."
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "4e6ba4ff0772e945073efef01861bc7fec812a068fc99814f4be4149103d249f",
+    "createdAt" : null,
+    "ordinal" : 40
+  }, {
+    "id" : "03bc9f89-416c-596d-8f62-4e6666395399",
+    "groupId" : "490501dc-7493-5a70-bf94-ff5a9e61d420",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_R001",
+    "version" : 1,
+    "prompt" : "Water hyacinth was introduced as a decorative plant in east Africa.",
+    "interactionType" : "TRUTH_CLASSIFICATION",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NOT GIVEN",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 1,
+      "group" : {
+        "kind" : "TFNG",
+        "questions" : "1-7",
+        "instructions" : [ "Do the following statements agree with the information given in Reading Passage 1?", "In boxes 1-7 on your answer sheet, write", "TRUE if the statement agrees with the information", "FALSE if the statement contradicts the information", "NOT GIVEN if there is no information on this" ]
+      }
+    },
+    "construct" : "tfng",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "e939cf29c1ba90d6008e258d61cf98fb9dd9bc6f68a4ac5babbdb47d43f872e2",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "7d05e077-63ad-50e2-94ee-4bfd14df863d",
+    "groupId" : "490501dc-7493-5a70-bf94-ff5a9e61d420",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_R002",
+    "version" : 1,
+    "prompt" : "Fishermen took some water hyacinth plants to Lake Victoria.",
+    "interactionType" : "TRUTH_CLASSIFICATION",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NOT GIVEN",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 2,
+      "group" : {
+        "kind" : "TFNG",
+        "questions" : "1-7",
+        "instructions" : [ "Do the following statements agree with the information given in Reading Passage 1?", "In boxes 1-7 on your answer sheet, write", "TRUE if the statement agrees with the information", "FALSE if the statement contradicts the information", "NOT GIVEN if there is no information on this" ]
+      }
+    },
+    "construct" : "tfng",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "6986c8c9a828f060e213412dfb00a6be4346ee197178ed535628b28916718fe2",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "f606c729-6229-50e0-b94d-97b4a6942b4e",
+    "groupId" : "490501dc-7493-5a70-bf94-ff5a9e61d420",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_R003",
+    "version" : 1,
+    "prompt" : "It is now difficult to force boats through the thick water hyacinth on Lake Victoria.",
+    "interactionType" : "TRUTH_CLASSIFICATION",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NOT GIVEN",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 3,
+      "group" : {
+        "kind" : "TFNG",
+        "questions" : "1-7",
+        "instructions" : [ "Do the following statements agree with the information given in Reading Passage 1?", "In boxes 1-7 on your answer sheet, write", "TRUE if the statement agrees with the information", "FALSE if the statement contradicts the information", "NOT GIVEN if there is no information on this" ]
+      }
+    },
+    "construct" : "tfng",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "f9ef9abcc7422e1d6d8dd048180a10d4c078ed12d5437ef99250e0ed9a50fc73",
+    "createdAt" : null,
+    "ordinal" : 3
+  }, {
+    "id" : "55c52eb2-8ef6-5082-89ed-f4d5b00306cf",
+    "groupId" : "490501dc-7493-5a70-bf94-ff5a9e61d420",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_R004",
+    "version" : 1,
+    "prompt" : "Chemicals produced by the water hyacinth plants are affecting the numbers of fish in Lake Victoria.",
+    "interactionType" : "TRUTH_CLASSIFICATION",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NOT GIVEN",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 4,
+      "group" : {
+        "kind" : "TFNG",
+        "questions" : "1-7",
+        "instructions" : [ "Do the following statements agree with the information given in Reading Passage 1?", "In boxes 1-7 on your answer sheet, write", "TRUE if the statement agrees with the information", "FALSE if the statement contradicts the information", "NOT GIVEN if there is no information on this" ]
+      }
+    },
+    "construct" : "tfng",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "2ed854e6c7ff4a8bc8008695a5651fd9366f8d096e322015c3ba3c60b884558d",
+    "createdAt" : null,
+    "ordinal" : 4
+  }, {
+    "id" : "6584c24c-c45b-5abf-89da-c47747298b6c",
+    "groupId" : "490501dc-7493-5a70-bf94-ff5a9e61d420",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_R005",
+    "version" : 1,
+    "prompt" : "Cooking with charcoal has been proved to be even worse for people's health than cooking with wood.",
+    "interactionType" : "TRUTH_CLASSIFICATION",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NOT GIVEN",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 5,
+      "group" : {
+        "kind" : "TFNG",
+        "questions" : "1-7",
+        "instructions" : [ "Do the following statements agree with the information given in Reading Passage 1?", "In boxes 1-7 on your answer sheet, write", "TRUE if the statement agrees with the information", "FALSE if the statement contradicts the information", "NOT GIVEN if there is no information on this" ]
+      }
+    },
+    "construct" : "tfng",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "f81851abb5465245ae39935c88305f9f52b9dc883d76ea65d2437ff2785a0f66",
+    "createdAt" : null,
+    "ordinal" : 5
+  }, {
+    "id" : "575073c2-5f4c-5d2d-9d6c-aae189df5b44",
+    "groupId" : "490501dc-7493-5a70-bf94-ff5a9e61d420",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_R006",
+    "version" : 1,
+    "prompt" : "People found it impossible to remove much water hyacinth from Lake Victoria.",
+    "interactionType" : "TRUTH_CLASSIFICATION",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NOT GIVEN",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 6,
+      "group" : {
+        "kind" : "TFNG",
+        "questions" : "1-7",
+        "instructions" : [ "Do the following statements agree with the information given in Reading Passage 1?", "In boxes 1-7 on your answer sheet, write", "TRUE if the statement agrees with the information", "FALSE if the statement contradicts the information", "NOT GIVEN if there is no information on this" ]
+      }
+    },
+    "construct" : "tfng",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "6a440203a0bcb7d8d066ee6b6ba310f5f887e3fb60eec5a4fdffe29af87d1780",
+    "createdAt" : null,
+    "ordinal" : 6
+  }, {
+    "id" : "7921dd11-ed7d-55ca-94e7-1045bb8c23ee",
+    "groupId" : "490501dc-7493-5a70-bf94-ff5a9e61d420",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_R007",
+    "version" : 1,
+    "prompt" : "Scientists started investigating the possibility of using water hyacinth to generate biogas in the last century.",
+    "interactionType" : "TRUTH_CLASSIFICATION",
+    "optionDefinitions" : {
+      "options" : [ {
+        "id" : "TRUE",
+        "text" : "TRUE"
+      }, {
+        "id" : "FALSE",
+        "text" : "FALSE"
+      }, {
+        "id" : "NOT GIVEN",
+        "text" : "NOT GIVEN"
+      } ],
+      "questionNumber" : 7,
+      "group" : {
+        "kind" : "TFNG",
+        "questions" : "1-7",
+        "instructions" : [ "Do the following statements agree with the information given in Reading Passage 1?", "In boxes 1-7 on your answer sheet, write", "TRUE if the statement agrees with the information", "FALSE if the statement contradicts the information", "NOT GIVEN if there is no information on this" ]
+      }
+    },
+    "construct" : "tfng",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "5ff077a8a9b96ffc4c869c209b10912fd5eceab6104c1bd44df5d6e0fbc34eb0",
+    "createdAt" : null,
+    "ordinal" : 7
+  }, {
+    "id" : "81d8438e-0b22-5ce4-becb-14b00bd641b8",
+    "groupId" : "bc587dc4-e643-5fc8-b311-34e87bf9825c",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_R008",
+    "version" : 1,
+    "prompt" : "First, place water hyacinth together with some / ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 8,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "8-10",
+        "instructions" : [ "Complete the flow-chart below.", "Choose NO MORE THAN TWO WORDS from the passage for each answer.", "Write your answers in boxes 8-10 on your answer sheet." ],
+        "wordLimitRule" : "NO MORE THAN TWO WORDS",
+        "stem" : "Generating biogas for domestic use in Dunga\nFirst, place water hyacinth together with some\n(8) ______\ninto a digester\nLeave the mixture until the (9) ______\nis completed\nCapture the gas emitted by the digester and\nuse (10) ______\nto transport it to individual homes\nThen use the gas for cooking as well as making water fit for\nhuman consumption"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "a8096a7b0cc0a845cafb99aaa30f26567d791318f98f9f8c4332c90943517f5c",
+    "createdAt" : null,
+    "ordinal" : 8
+  }, {
+    "id" : "91fa1468-eaca-5ae9-adfa-c7dd04f8f15f",
+    "groupId" : "bc587dc4-e643-5fc8-b311-34e87bf9825c",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_R009",
+    "version" : 1,
+    "prompt" : "Leave the mixture until the ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 9,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "8-10",
+        "instructions" : [ "Complete the flow-chart below.", "Choose NO MORE THAN TWO WORDS from the passage for each answer.", "Write your answers in boxes 8-10 on your answer sheet." ],
+        "wordLimitRule" : "NO MORE THAN TWO WORDS",
+        "stem" : "Generating biogas for domestic use in Dunga\nFirst, place water hyacinth together with some\n(8) ______\ninto a digester\nLeave the mixture until the (9) ______\nis completed\nCapture the gas emitted by the digester and\nuse (10) ______\nto transport it to individual homes\nThen use the gas for cooking as well as making water fit for\nhuman consumption"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "752c81e57cbe03c16b68c58200708126246741d17b6053a3ab4b2cbb4517735f",
+    "createdAt" : null,
+    "ordinal" : 9
+  }, {
+    "id" : "2bfd5dc3-3335-5ae1-98bd-69752fac9f33",
+    "groupId" : "bc587dc4-e643-5fc8-b311-34e87bf9825c",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_R010",
+    "version" : 1,
+    "prompt" : "Capture the gas emitted by the digester and / use ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 10,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "8-10",
+        "instructions" : [ "Complete the flow-chart below.", "Choose NO MORE THAN TWO WORDS from the passage for each answer.", "Write your answers in boxes 8-10 on your answer sheet." ],
+        "wordLimitRule" : "NO MORE THAN TWO WORDS",
+        "stem" : "Generating biogas for domestic use in Dunga\nFirst, place water hyacinth together with some\n(8) ______\ninto a digester\nLeave the mixture until the (9) ______\nis completed\nCapture the gas emitted by the digester and\nuse (10) ______\nto transport it to individual homes\nThen use the gas for cooking as well as making water fit for\nhuman consumption"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "98a01600a872070cab45564bf76e9a85b59c1bb2bdf933ee6771fc2fc6fca908",
+    "createdAt" : null,
+    "ordinal" : 10
+  }, {
+    "id" : "b4a2edd0-d474-59c1-8e88-948b976a3737",
+    "groupId" : "d8a511bd-e0d2-5e4d-8403-f20d27f0eb0b",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_R011",
+    "version" : 1,
+    "prompt" : "no need for them to spend so much ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 11,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "11-13",
+        "instructions" : [ "Complete the notes below.", "Choose ONE WORD ONLY from the passage for each answer.", "Write your answers in boxes 11-13 on your answer sheet." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Cooking with biogas in Dunga\nBenefits for the women in the village of cooking with biogas\nno need for them to spend so much (11) ______\ncollecting fuel\n..\nthey can focus on different tasks that bring in (12) ______\nthey are less likely to experience certain diseases connected to burning wood\nDrawbacks of changing to biogas\nthe (13) ______\nof the digesters is beyond the reach of most villages"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "6111111a951942a4206c34bf2190838ae79aa963def8b8e696e437f97a92872f",
+    "createdAt" : null,
+    "ordinal" : 11
+  }, {
+    "id" : "d6846983-a67e-5178-aa36-7bbefce8845d",
+    "groupId" : "d8a511bd-e0d2-5e4d-8403-f20d27f0eb0b",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_R012",
+    "version" : 1,
+    "prompt" : "they can focus on different tasks that bring in ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 12,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "11-13",
+        "instructions" : [ "Complete the notes below.", "Choose ONE WORD ONLY from the passage for each answer.", "Write your answers in boxes 11-13 on your answer sheet." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Cooking with biogas in Dunga\nBenefits for the women in the village of cooking with biogas\nno need for them to spend so much (11) ______\ncollecting fuel\n..\nthey can focus on different tasks that bring in (12) ______\nthey are less likely to experience certain diseases connected to burning wood\nDrawbacks of changing to biogas\nthe (13) ______\nof the digesters is beyond the reach of most villages"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "936676b26a7bfcfec8035c2a8a48ccdadb58e9adbcbdde6ba2cc3da738991158",
+    "createdAt" : null,
+    "ordinal" : 12
+  }, {
+    "id" : "ae19ac2a-059e-53f9-8b8c-3b50204313cb",
+    "groupId" : "d8a511bd-e0d2-5e4d-8403-f20d27f0eb0b",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_R013",
+    "version" : 1,
+    "prompt" : "Drawbacks of changing to biogas / the ______",
+    "interactionType" : "TEXT_GAP",
+    "optionDefinitions" : {
+      "options" : [ ],
+      "questionNumber" : 13,
+      "group" : {
+        "kind" : "GAP_COMPLETION",
+        "questions" : "11-13",
+        "instructions" : [ "Complete the notes below.", "Choose ONE WORD ONLY from the passage for each answer.", "Write your answers in boxes 11-13 on your answer sheet." ],
+        "wordLimitRule" : "ONE WORD ONLY",
+        "stem" : "Cooking with biogas in Dunga\nBenefits for the women in the village of cooking with biogas\nno need for them to spend so much (11) ______\ncollecting fuel\n..\nthey can focus on different tasks that bring in (12) ______\nthey are less likely to experience certain diseases connected to burning wood\nDrawbacks of changing to biogas\nthe (13) ______\nof the digesters is beyond the reach of most villages"
+      }
+    },
+    "construct" : "gap_completion",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "391b061b04c3f33b8124befa61eca31ef0c17331235f2421371804b0291e9ec6",
+    "createdAt" : null,
+    "ordinal" : 13
+  }, {
+    "id" : "c9204d67-fcd0-5393-a87f-9d36df75421b",
+    "groupId" : "5ea88c91-c73f-549a-8faf-a9f63ebfa7a6",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_W2",
+    "version" : 1,
+    "prompt" : "You should spend about 40 minutes on this task. Write about the following topic: Some people argue that primary schools focus too much on formal learning. To what extent do you agree with this opinion? How important do you think it is for children to play as well as learn in the primary school classroom? Give reasons for your answer and include any relevant examples from your own knowledge or experience. Write at least 250 words.",
+    "interactionType" : "WRITING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "free_text",
+      "minimumWords" : 250,
+      "recommendedMinutes" : 40
+    },
+    "construct" : "writing_task",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "400ead3219b2c9810772242acd618d34587c9c96fbde9e98483149c6292a2a8c",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "f8ab0c28-1222-5f9e-a58d-cef1755194a3",
+    "groupId" : "c9c7c30a-621d-5067-9c47-b5e76238c4df",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_S1_T1",
+    "version" : 1,
+    "prompt" : "When do you usually eat bread?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "96b38d9ebd8c46515507e45948408ddf062d7fcd8e1bf7f4e1e0b0305d228772",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "2ba5b4bd-3100-5e6d-b48a-054af93ad5b2",
+    "groupId" : "c9c7c30a-621d-5067-9c47-b5e76238c4df",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_S1_T2",
+    "version" : 1,
+    "prompt" : "How important is bread in your culture?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "9fad790a575b7e229acc94a057fee1ebaebdc4a0999948fae4f250003f4f837d",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "d7b52f92-2870-5746-8356-86b133494b10",
+    "groupId" : "c9c7c30a-621d-5067-9c47-b5e76238c4df",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_S1_T3",
+    "version" : 1,
+    "prompt" : "Have you tried any kinds of bread from other countries?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "7555e71aa9824d6a0d9e7e36f84e905e423958eec1e01011734a98ef1d854879",
+    "createdAt" : null,
+    "ordinal" : 3
+  }, {
+    "id" : "96f20fa9-624f-5105-b34a-5ea91d99f519",
+    "groupId" : "c9c7c30a-621d-5067-9c47-b5e76238c4df",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_S1_T4",
+    "version" : 1,
+    "prompt" : "Would you be interested in learning how to make bread?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "dbc62d1c9202d84c1fda3aaddc6220065b5cc5ff59e02d23a031637c7fdc0a22",
+    "createdAt" : null,
+    "ordinal" : 4
+  }, {
+    "id" : "8ed09cbd-28fc-5d04-9722-b658362c2f5f",
+    "groupId" : "57c116df-9ea5-5852-8fe9-7570296eaab2",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_S2_T1",
+    "version" : 1,
+    "prompt" : "Describe a person you know who is very competitive. You about You should say: 2 who this person is 1 what this person is competitive about what how successful this person is say. and explain why you think this person is so notes competitive. you",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "38234a31c5391cd5da05fa587441baf5f9fefc6206f3bd67555bdb1c9db3fcbb",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "a98773d3-a575-54b6-981e-a14375dfe391",
+    "groupId" : "ab3bf501-9fd8-581f-a1a0-0a7843cecdb5",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_S3_T1",
+    "version" : 1,
+    "prompt" : "What kinds of competitions do people like to enter in your country?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "d119dafa3fe1ba1919ddd65040ac583e67fe12fa22f4a52f88fc5a24ddd49bb1",
+    "createdAt" : null,
+    "ordinal" : 1
+  }, {
+    "id" : "e1585beb-09e3-5470-94c0-ff310932a1af",
+    "groupId" : "ab3bf501-9fd8-581f-a1a0-0a7843cecdb5",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_S3_T2",
+    "version" : 1,
+    "prompt" : "What do you think is the best kind of prize to win in a competition?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "4849577bf700f4b1e64535183607b356148d0963c4e880cb8a190cd02880bae5",
+    "createdAt" : null,
+    "ordinal" : 2
+  }, {
+    "id" : "92176553-dd8e-5d50-b48d-bf2442f43119",
+    "groupId" : "ab3bf501-9fd8-581f-a1a0-0a7843cecdb5",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_S3_T3",
+    "version" : 1,
+    "prompt" : "Why do people like watching quiz shows and other competitions on TV?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "fa633054bed7510715f91da338fe964b62746b519d5d997a920a7e164f6a6424",
+    "createdAt" : null,
+    "ordinal" : 3
+  }, {
+    "id" : "332c3d08-5255-5cdb-aa5d-5e6268a4a314",
+    "groupId" : "ab3bf501-9fd8-581f-a1a0-0a7843cecdb5",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_S3_T4",
+    "version" : 1,
+    "prompt" : "How important is it to be very competitive at sport?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "72b9e66314ffcb8beff5d330fd5e4aa5a8fd5a739eaccc0b7117ab86f44deea5",
+    "createdAt" : null,
+    "ordinal" : 4
+  }, {
+    "id" : "29b0e978-77eb-54e2-840b-b042aaf63180",
+    "groupId" : "ab3bf501-9fd8-581f-a1a0-0a7843cecdb5",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_S3_T5",
+    "version" : 1,
+    "prompt" : "Do you think sportspeople perform better when they play against competitors who are stronger than they are?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "cf705b66d782c2842057b323130cca1be1dd81dc6ae684ffc6e7b53d91edc8d4",
+    "createdAt" : null,
+    "ordinal" : 5
+  }, {
+    "id" : "796b594d-5df1-534c-a078-5800ca9716a2",
+    "groupId" : "ab3bf501-9fd8-581f-a1a0-0a7843cecdb5",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_21_T4_S3_T6",
+    "version" : 1,
+    "prompt" : "Why do some people think that taking part in sport is more important than winning?",
+    "interactionType" : "SPEAKING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "learner_audio",
+      "simulation" : true,
+      "speakingPromptBasis" : "PINNED_CORPUS_SOURCE"
+    },
+    "construct" : "speaking_task",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "contentHash" : "3737fce659c6e0ca060fa1c2cf4eb6bbb096d7fffc08c198c369555b342c68cd",
+    "createdAt" : null,
+    "ordinal" : 6
+  } ],
+  "answerSpecs" : [ {
+    "id" : "7ec01a29-4171-5ee5-8dde-d6e24ebc00d2",
+    "itemId" : "130fd084-109b-5f67-9ef0-89a0ddcc677e",
+    "acceptedAnswers" : {
+      "values" : [ "Leigh" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "5f328835-894c-5fd5-973d-51006953b1b3",
+    "itemId" : "843c9b47-f25d-56bf-8f3a-01d954db71b3",
+    "acceptedAnswers" : {
+      "values" : [ "motorbike" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "e34cfba2-f11a-5323-87fb-ac95b379a4be",
+    "itemId" : "d7c932ae-0f9f-5d70-b7c6-a6803aba075b",
+    "acceptedAnswers" : {
+      "values" : [ "hairdresser" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "e1260346-2922-5338-ad2d-149b3e934a1f",
+    "itemId" : "52b5ecc3-f45c-5ca9-bf66-5ca3d107c2c2",
+    "acceptedAnswers" : {
+      "values" : [ "suit" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "fda1584b-2332-5b2c-9521-2c9d04a47aee",
+    "itemId" : "d75ea079-5ddb-54c3-ab64-6557209b16a7",
+    "acceptedAnswers" : {
+      "values" : [ "laptop" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "f5ee8110-0eee-5155-b948-8093c24b6da4",
+    "itemId" : "3180eba4-9aa8-59cd-aebf-d36576d653e8",
+    "acceptedAnswers" : {
+      "values" : [ "Monday" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "cc0c55b2-9f04-56f0-af5e-7bf38f5a7d88",
+    "itemId" : "e587ebe4-fc8d-500e-8c3e-d2e1b1c37832",
+    "acceptedAnswers" : {
+      "values" : [ "coffee" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "48e68932-af32-595d-9ef5-96fad0a290d1",
+    "itemId" : "2d0ebd30-c62a-5a60-bb17-85bda3702d0b",
+    "acceptedAnswers" : {
+      "values" : [ "books" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "306f42c0-468e-5f03-a43f-c35f78b919d2",
+    "itemId" : "811fee35-52b4-5021-9189-1b9a9812cac1",
+    "acceptedAnswers" : {
+      "values" : [ "plants" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "9c661732-1f9a-5c5a-8ea9-2b2031f18719",
+    "itemId" : "173cc19e-9b95-5707-b524-a6bde7d381f5",
+    "acceptedAnswers" : {
+      "values" : [ "cinema" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "f87d03f4-b9a6-5a44-a314-700900652eae",
+    "itemId" : "22d5d7b8-d4c6-58c8-9816-fb762d243c98",
+    "acceptedAnswers" : {
+      "values" : [ "C", "E" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      },
+      "unorderedSet" : {
+        "questions" : [ 11, 12 ],
+        "values" : [ "C", "E" ],
+        "creditPerQuestion" : 1
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "884c6c20-d4b6-5e03-a695-8216be769867",
+    "itemId" : "40eeb3bd-3f2d-5756-b294-6e1e0376068e",
+    "acceptedAnswers" : {
+      "values" : [ "C", "E" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      },
+      "unorderedSet" : {
+        "questions" : [ 11, 12 ],
+        "values" : [ "C", "E" ],
+        "creditPerQuestion" : 1
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "632d0f6e-b441-5101-9753-cf40f45f800e",
+    "itemId" : "42437dd8-0193-542e-8c4f-333451e23f5e",
+    "acceptedAnswers" : {
+      "values" : [ "A", "B" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      },
+      "unorderedSet" : {
+        "questions" : [ 13, 14 ],
+        "values" : [ "A", "B" ],
+        "creditPerQuestion" : 1
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "1a3650bd-d9c3-5e03-9bca-008bc0a3c2c4",
+    "itemId" : "c86c6c22-9fa9-55d8-ac40-76128771a13a",
+    "acceptedAnswers" : {
+      "values" : [ "A", "B" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      },
+      "unorderedSet" : {
+        "questions" : [ 13, 14 ],
+        "values" : [ "A", "B" ],
+        "creditPerQuestion" : 1
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "5c489c58-9386-5e1c-bcaa-9423fbe8bd6e",
+    "itemId" : "f09b4e71-5849-5495-9deb-43745503e7d4",
+    "acceptedAnswers" : {
+      "values" : [ "C" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "4f505e50-fad0-5cce-a1a4-890a5dad27ee",
+    "itemId" : "9465519a-2f33-53b7-a89b-d4ac3c7b5114",
+    "acceptedAnswers" : {
+      "values" : [ "G" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "f3f0dbb7-df64-5bd5-bd74-4f07efadc44c",
+    "itemId" : "b3b90ead-3e34-5c62-9b86-7caeaaa8d20b",
+    "acceptedAnswers" : {
+      "values" : [ "D" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "edf53343-4666-5fc0-ae99-ce7e3c06b4b3",
+    "itemId" : "b722771c-53c0-57a8-aae3-49cf5fc86c2a",
+    "acceptedAnswers" : {
+      "values" : [ "A" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "ed5f0ecf-15bc-51ab-aa09-8c8a6c81260b",
+    "itemId" : "48246708-bafb-57de-82a9-650cfe01f4f8",
+    "acceptedAnswers" : {
+      "values" : [ "F" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "2bef7e7a-ca87-5733-a577-efd05ffc83c3",
+    "itemId" : "80378bcd-6ab2-56c6-9f6b-a6bbbda4a781",
+    "acceptedAnswers" : {
+      "values" : [ "B" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "d0e842f1-1134-527f-96e4-3bf4ca523764",
+    "itemId" : "5bc80307-155d-5600-9ba9-075efcd95e25",
+    "acceptedAnswers" : {
+      "values" : [ "routine" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "53834be8-a575-5952-9cb6-36c5d90851b7",
+    "itemId" : "e6a892fa-5e9d-53b7-901d-9cb35fd0915c",
+    "acceptedAnswers" : {
+      "values" : [ "trials" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "8ae117a4-a9c4-51f8-86ca-2353145a9e38",
+    "itemId" : "b2a8b0fa-6791-5551-919c-fbaceb0059b3",
+    "acceptedAnswers" : {
+      "values" : [ "calming" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "16ab1833-c3c9-5b55-9872-f169061369ef",
+    "itemId" : "d95c8e26-826b-5840-8035-78080a4f875b",
+    "acceptedAnswers" : {
+      "values" : [ "pillows" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "26dceb6e-3fcd-5eac-8a86-ef23576bd727",
+    "itemId" : "334a7a19-672f-596e-8908-35d4dd1f8e89",
+    "acceptedAnswers" : {
+      "values" : [ "anxiety" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "9720c47f-4dca-56ef-ac53-442e70010bde",
+    "itemId" : "0651e0ef-e067-5e96-b3f8-468b2798e9dc",
+    "acceptedAnswers" : {
+      "values" : [ "medication" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "87ac63ca-6748-5772-9b01-51faed144c91",
+    "itemId" : "58d8ba9a-abe4-52e7-84bb-bc86dcc14062",
+    "acceptedAnswers" : {
+      "values" : [ "awake" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "0292523a-a883-5c61-b7b2-70fc0998fcda",
+    "itemId" : "c7840be8-b678-59fb-8616-3d34c3248ef3",
+    "acceptedAnswers" : {
+      "values" : [ "distraction" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "facc58c7-00f5-5351-b68b-ad296be1ccc0",
+    "itemId" : "4e276706-05ff-5537-9ddf-0514e855568b",
+    "acceptedAnswers" : {
+      "values" : [ "nature" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "a2f30fb0-01ae-5b39-9767-770073da5e56",
+    "itemId" : "6d4fe95e-20fb-52d4-85fa-2a0d582a0f26",
+    "acceptedAnswers" : {
+      "values" : [ "volume" ],
+      "keySource" : {
+        "page" : 124,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "41613fa5-2c64-5470-805d-e440c0cd2217",
+    "itemId" : "03bc9f89-416c-596d-8f62-4e6666395399",
+    "acceptedAnswers" : {
+      "values" : [ "TRUE" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "661b6044-2580-5c76-a787-a2a0610fe078",
+    "itemId" : "7d05e077-63ad-50e2-94ee-4bfd14df863d",
+    "acceptedAnswers" : {
+      "values" : [ "FALSE" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "bf6e24de-fa76-56cb-8b85-e50a3c678d73",
+    "itemId" : "f606c729-6229-50e0-b94d-97b4a6942b4e",
+    "acceptedAnswers" : {
+      "values" : [ "TRUE" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "8eee788f-7670-5a57-86d4-590d6abd37e4",
+    "itemId" : "55c52eb2-8ef6-5082-89ed-f4d5b00306cf",
+    "acceptedAnswers" : {
+      "values" : [ "NOT GIVEN" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "ff593576-53a5-5d8a-9c4d-b98379a4f8ec",
+    "itemId" : "6584c24c-c45b-5abf-89da-c47747298b6c",
+    "acceptedAnswers" : {
+      "values" : [ "NOT GIVEN" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "a8c3ca54-477a-5320-84f0-35ce70492e87",
+    "itemId" : "575073c2-5f4c-5d2d-9d6c-aae189df5b44",
+    "acceptedAnswers" : {
+      "values" : [ "FALSE" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "ce2f51f1-97ca-5313-9acc-d0b4d3747f8c",
+    "itemId" : "7921dd11-ed7d-55ca-94e7-1045bb8c23ee",
+    "acceptedAnswers" : {
+      "values" : [ "TRUE" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "80d41fcb-8046-50af-81b6-cba894213531",
+    "itemId" : "81d8438e-0b22-5ce4-becb-14b00bd641b8",
+    "acceptedAnswers" : {
+      "values" : [ "cow dung" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 2,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "22a136c1-5c23-5146-87d1-f74af6c6fb3a",
+    "itemId" : "91fa1468-eaca-5ae9-adfa-c7dd04f8f15f",
+    "acceptedAnswers" : {
+      "values" : [ "fermentation process", "fermentation" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 2,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "d9c6e7da-86c8-57d4-b5a8-0461c8288d55",
+    "itemId" : "2bfd5dc3-3335-5ae1-98bd-69752fac9f33",
+    "acceptedAnswers" : {
+      "values" : [ "pipes" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 2,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "329f3a28-75ff-5060-9352-745eae316cd0",
+    "itemId" : "b4a2edd0-d474-59c1-8e88-948b976a3737",
+    "acceptedAnswers" : {
+      "values" : [ "time" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "ec1a0f1e-637a-50f8-a37c-f8973199fe75",
+    "itemId" : "d6846983-a67e-5178-aa36-7bbefce8845d",
+    "acceptedAnswers" : {
+      "values" : [ "money" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "7ea3afc8-baa9-592c-b572-f077ba5e2620",
+    "itemId" : "ae19ac2a-059e-53f9-8b8c-3b50204313cb",
+    "acceptedAnswers" : {
+      "values" : [ "price" ],
+      "keySource" : {
+        "page" : 125,
+        "confidence" : "CONFIDENT"
+      }
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-NORM-V1",
+      "caseInsensitive" : true,
+      "trimOuterWhitespace" : true,
+      "collapseInternalWhitespace" : true,
+      "punctuationInsensitive" : false
+    },
+    "cardinality" : 1,
+    "wordLimit" : 1,
+    "creditUnits" : 1.0,
+    "explanation" : null,
+    "rubricId" : null,
+    "createdAt" : null
+  }, {
+    "id" : "ec66896e-6df0-58fb-957b-db54dfd930ea",
+    "itemId" : "c9204d67-fcd0-5393-a87f-9d36df75421b",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "minimumWords" : 250
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-WRITING-TEXT-V1",
+      "preserveParagraphs" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "createdAt" : null
+  }, {
+    "id" : "e944f6cb-fe4f-5105-baf2-8c192b232086",
+    "itemId" : "f8ab0c28-1222-5f9e-a58d-cef1755194a3",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "3a572ec9-ba5c-5680-8b1e-d02be99bd44f",
+    "itemId" : "2ba5b4bd-3100-5e6d-b48a-054af93ad5b2",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "0be5e365-ad29-502e-9a14-2149e535b218",
+    "itemId" : "d7b52f92-2870-5746-8356-86b133494b10",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "6413052d-7f13-50a5-882d-d8f9c12bb620",
+    "itemId" : "96f20fa9-624f-5105-b34a-5ea91d99f519",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "50db830b-54b5-5434-bdf2-ec22ce52486f",
+    "itemId" : "8ed09cbd-28fc-5d04-9722-b658362c2f5f",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "e4b4ade4-9811-59b3-ac10-f97d3d11104b",
+    "itemId" : "a98773d3-a575-54b6-981e-a14375dfe391",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "33f72a16-6bd5-5e21-b2b9-37955f55e343",
+    "itemId" : "e1585beb-09e3-5470-94c0-ff310932a1af",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "12865b58-4033-5ce2-a0c4-b35aab3dad55",
+    "itemId" : "92176553-dd8e-5d50-b48d-bf2442f43119",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "f2c117d4-8a82-5493-932e-b23f236f48c1",
+    "itemId" : "332c3d08-5255-5cdb-aa5d-5e6268a4a314",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "b972cfae-768f-5b04-9030-dd3c2d8eb474",
+    "itemId" : "29b0e978-77eb-54e2-840b-b042aaf63180",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  }, {
+    "id" : "9e1056eb-0fe7-5429-9f92-3b941a99e354",
+    "itemId" : "796b594d-5df1-534c-a078-5800ca9716a2",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "evidenceRequired" : [ "learner_recording" ]
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-SPEECH-TEXT-V1",
+      "preserveAudio" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "0d568eaa-ba20-5aef-8151-403390533c50",
+    "createdAt" : null
+  } ],
+  "assets" : [ {
+    "id" : "440b713f-eba5-5359-b1d3-c57c31f6c5e6",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "objectKey" : "extracted/audio/ad41758eff2696b0ccc66c0734997b4fc2a1177c056c24bb3be4325150c16f48.mp3",
+    "versionId" : "1",
+    "sha256Hash" : "ad41758eff2696b0ccc66c0734997b4fc2a1177c056c24bb3be4325150c16f48",
+    "mimeType" : "audio/mpeg",
+    "byteSize" : 11166077,
+    "durationMs" : 421407,
+    "dimensions" : null,
+    "validationState" : "VALIDATED",
+    "createdAt" : null
+  }, {
+    "id" : "f837f861-b614-578b-a5c2-a4e6930688b6",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "objectKey" : "extracted/audio/086c9587219b95ee39b075c13d89e663744c7df25174e3bf20f971bcfddd0d02.mp3",
+    "versionId" : "1",
+    "sha256Hash" : "086c9587219b95ee39b075c13d89e663744c7df25174e3bf20f971bcfddd0d02",
+    "mimeType" : "audio/mpeg",
+    "byteSize" : 10246162,
+    "durationMs" : 426893,
+    "dimensions" : null,
+    "validationState" : "VALIDATED",
+    "createdAt" : null
+  }, {
+    "id" : "4261381a-8dcf-5af8-ac1c-5f1fc1a20081",
+    "provenanceId" : "64b73b24-bdbe-58da-b060-76de1ff4a791",
+    "objectKey" : "extracted/audio/6c6c5979ac73a68d6f654ea916927093448b38e96073f8a0b1b0e2cf7317ae22.mp3",
+    "versionId" : "1",
+    "sha256Hash" : "6c6c5979ac73a68d6f654ea916927093448b38e96073f8a0b1b0e2cf7317ae22",
+    "mimeType" : "audio/mpeg",
+    "byteSize" : 10716993,
+    "durationMs" : 446511,
+    "dimensions" : null,
+    "validationState" : "VALIDATED",
+    "createdAt" : null
+  } ],
+  "stimulusAssets" : [ {
+    "id" : "5e37f88a-a888-57a7-afc7-08ed3dca64bb",
+    "stimulusId" : "f8f8353b-e7ce-5115-92a9-7f38a188c428",
+    "assetId" : "440b713f-eba5-5359-b1d3-c57c31f6c5e6",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "353b18ec-1dc4-5dc2-9987-7580e8285c9b",
+    "stimulusId" : "55143295-cfa9-5ffb-a042-ae26690603f2",
+    "assetId" : "f837f861-b614-578b-a5c2-a4e6930688b6",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  }, {
+    "id" : "f47f6734-cb4c-5ae2-8959-138752737919",
+    "stimulusId" : "a12fbd36-386b-559c-a00b-6d82d9838d12",
+    "assetId" : "4261381a-8dcf-5af8-ac1c-5f1fc1a20081",
+    "role" : "AUDIO_PROMPT",
+    "ordinal" : 1
+  } ]
+}

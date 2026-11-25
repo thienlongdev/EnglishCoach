@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s157-third-knock",
+  "title": "Tiếng gõ thứ ba",
+  "summary": "Hai tiếng gõ phát ra từ tủ áo mỗi đêm gió lớn. Đêm nay có thêm tiếng thứ ba, dù gió đã ngừng.",
+  "level": "B2",
+  "topics": [
+    "past-unreal-conditionals",
+    "modal-perfect-regret"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Tâm",
+      "role": "Người trông ngôi nhà"
+    },
+    {
+      "id": "b",
+      "name": "Orla",
+      "role": "Thợ mộc"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Orla tháo chốt cửa rồi gõ thử. Hai tấm gỗ chạm nhau hai lần. Trước khi cô cất búa, một tiếng thứ ba vang lên từ phòng bên. Tâm nhận ra nhịp gõ của bà ngoại hay gọi cậu ngày nhỏ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We used to answer the third knock with two of our own.",
+          "vi": "Hồi xưa nhà tôi thường đáp tiếng gõ thứ ba bằng hai tiếng của mình."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "You heard it after I took the latch off. What does that rule out?",
+          "vi": "Cậu nghe tiếng ấy sau khi tôi tháo chốt. Như vậy loại được khả năng nào?"
+        }
+      ],
+      "choice": {
+        "prompt": "Chỉ xét nguồn của tiếng thứ ba lần này. Chọn lập luận phù hợp với phép thử vừa làm.",
+        "options": [
+          {
+            "t": "If the loose latch had made that third sound, removing it beforehand would have stopped it.",
+            "note": "Điều kiện trái thực tế nối giả thuyết với hệ quả cần có. Chốt đã bị tháo mà âm vẫn vang, nên nó không thể gây ra chính tiếng thứ ba vừa nghe.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "We should have removed the latch before testing it.",
+            "note": "Should have thường hàm ý đáng ra nên làm nhưng đã không làm. Ở đây Orla thực tế đã tháo chốt trước tiếng thứ ba, nên lời trách không giúp xác định nguồn âm.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Tâm gõ hai tiếng đáp lại. Phòng bên có tiếng bật nắp nhỏ và mùi gỗ tuyết tùng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Listen. Something has just opened.",
+          "vi": "Nghe kìa. Có cái gì vừa mở ra."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Orla cho Tâm xem chiếc chốt trong lòng bàn tay. Cậu nhớ ra mình vẫn còn có thể gõ đáp. Hai tiếng gõ làm một hộp nhỏ bật nắp ở phòng bên.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Your answer set something off.",
+          "vi": "Tiếng đáp của cậu vừa kích hoạt thứ gì đó."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Chiếc hộp nhạc cũ có một nút ẩn sau ván tường, đúng chỗ bà ngoại thường gõ. Mỗi lần gỗ giãn chạm nút, búa trong hộp gõ một tiếng. Tâm chèn một miếng nỉ rồi giữ lại chiếc búa để tự gọi tiếng ấy khi nhớ bà.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Now I get to decide when we say good night.",
+          "vi": "Giờ tôi được tự chọn lúc chúng tôi chúc nhau ngủ ngon."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

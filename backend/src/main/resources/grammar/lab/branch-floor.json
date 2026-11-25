@@ -1,0 +1,41 @@
+{
+  "id": "branch-floor",
+  "title": "Hai bộ phận đều mới hay chỉ máy in mới?",
+  "summary": "Người mua đọc cụm new printers and scanners trong báo giá. Sửa lại để mỗi cách đọc có bằng chứng riêng. Có đủ thông tin để kết luận từ cụm ban đầu không?",
+  "level": "B2",
+  "topics": [
+    "structural-ambiguity",
+    "complex-noun-phrases"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Ý định của người bán",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Cả hai mới"
+        },
+        {
+          "id": "v2",
+          "label": "Chỉ máy in mới"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Both the printers and the scanners are new.",
+      "vi": "Cả máy in lẫn máy quét đều mới.",
+      "note": "Đưa new ra sau are và dùng both làm phạm vi bao gồm cả hai nhóm rõ ràng. / Both and the predicate distribute new over the two sets.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The printers are new, but the scanners are used.",
+      "vi": "Máy in là hàng mới còn máy quét là hàng đã dùng.",
+      "note": "Used loại cách hiểu máy quét mới. Cụm ngắn trong báo giá tự nó chưa giải quyết hết sự mơ hồ. / The contrasting predicates disambiguate the condition.",
+      "verdict": "ok"
+    }
+  }
+}

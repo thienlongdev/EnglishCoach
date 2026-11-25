@@ -1,0 +1,40 @@
+{
+  "id": "soup-offer",
+  "title": "Cả hai món đều không có thịt?",
+  "summary": "Có đúng hai món súp. Thử báo cả hai không có thịt rồi cho phép khách chọn bất kỳ món nào. Neither và either làm việc khác nhau ra sao?",
+  "level": "B1",
+  "topics": [
+    "no-none-neither-either"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Lời của đầu bếp",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Loại bỏ đặc điểm"
+        },
+        {
+          "id": "v2",
+          "label": "Mở lựa chọn"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Neither soup contains meat.",
+      "vi": "Cả hai món súp đều không chứa thịt.",
+      "note": "Neither đi với soup số ít và phủ định đặc điểm có thịt ở cả hai món. / Neither excludes each of the two.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "You can choose either soup.",
+      "vi": "Bạn có thể chọn món súp nào trong hai món cũng được.",
+      "note": "Either không phủ định, nó mở hai lựa chọn cho cùng một khách. / Either offers a free choice between two.",
+      "verdict": "ok"
+    }
+  }
+}

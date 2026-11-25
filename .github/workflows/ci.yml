@@ -1,0 +1,103 @@
+name: CI Quality Gates
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  hygiene-and-secrets:
+    name: Repository Hygiene & Secret Guard
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run repository hygiene, secret & link checks
+        run: python scripts/ci/repo_hygiene_check.py --strict-git
+
+  backend-build-and-guards:
+    name: Backend Compile & Architecture Guards
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+      - name: Compile backend main & test sources
+        working-directory: backend
+        run: mvn -B -ntp test-compile
+      - name: Run architecture layering & core unit suites
+        working-directory: backend
+        run: >-
+          mvn -B -ntp test
+          -Dtest=ArchitectureLayeringGuardTest,Wave3RemediationBehaviorTest,ProficiencyGuardrailTest,ProficiencyListenerIsolationTest,ExamEvidenceContainmentTest,FeedbackServiceTest,FeedbackControllerTest,ParagraphSessionServiceTest,StepUpAndAdminIdentityTest,NotificationServiceTest,ReadingServiceTest,PremiumSubscriptionServiceTest,PremiumAdminServiceTest,EchoJarvisReforgeBackendTest,LearnerDnaAggregatorServiceTest,ExamAdminControllerTest,ExamMeasurementServiceTest,CardBlastCreateIdentityTest,SpeakingHardeningRegressionTest,SpellingServiceTest,WordChainServiceTest,CommunityServiceTest,LearningPathEngineTest
+          -Dsurefire.failIfNoSpecifiedTests=false
+
+  frontend-typecheck-and-contracts:
+    name: Frontend Typecheck & Contract Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Install locked frontend dependencies
+        working-directory: frontend
+        run: npm ci --no-audit --no-fund
+      - name: TypeScript strict check
+        working-directory: frontend
+        run: npx tsc --noEmit --incremental false
+      - name: Security, Wave B UX, Echo JARVIS & core contract tests
+        working-directory: frontend
+        run: |
+          npm run test:security
+          npm run test:security-regressions
+          npm run test:wave-b-ux
+          npm run test:echo-jarvis
+          npm run test:listening-glass
+          npm run test:writing-glass
+          npm run test:community-glass
+          npm run test:mascot-interaction
+          npm run test:my-books
+          npm run test:games
+          npm run test:study-space
+
+  ai-service-unit-tests:
+    name: AI Service Unit & Security Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install CPU test dependencies
+        run: >-
+          python -m pip install --upgrade pip &&
+          pip install --index-url https://download.pytorch.org/whl/cpu torch torchaudio &&
+          pip install pytest fastapi httpx pydantic python-multipart uvicorn aiofiles requests numpy scipy scikit-learn soundfile librosa transformers langchain-core langchain-openai openai yt-dlp youtube-transcript-api
+      - name: Run non-GPU AI service unit & security suites
+        working-directory: ai-service
+        run: >-
+          pytest
+          app/tests/test_security_hardening.py
+          app/tests/test_echo_local_llm.py
+          app/tests/test_echo_jarvis_voice.py
+          app/tests/test_ipa_hardening.py
+          app/tests/test_reference_pronunciation.py
+          app/tests/test_ecsm_p13_production.py
+          app/tests/test_acoustic_round2.py
+          -q

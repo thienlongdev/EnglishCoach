@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Echo Anywhere</title>
+  <link rel="stylesheet" href="ui.css">
+  <style>
+    body { min-width: 300px; }
+    header { padding: 14px 14px 12px; }
+    main { padding: 12px 12px 28px; }
+    .acct { margin-top: 10px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .acct .chip { background: rgba(255,255,255,.14); color: #fff; }
+    .acct .chip.gold { background: rgba(251,191,36,.25); color: #fde68a; }
+    .acct button { background: rgba(255,255,255,.14); color: #fff; border: 1px solid rgba(255,255,255,.25); border-radius: 10px; padding: 5px 10px; font-weight: 700; font-size: 12px; }
+    section[hidden] { display: none; }
+    .ai-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  </style>
+  <link rel="stylesheet" href="media.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="brand"><img src="icons/echo-128.webp" alt=""><div><b>Echo Anywhere</b><small>Học tiếng Anh trên mọi trang web</small></div></div>
+    <div class="acct" id="acct" aria-live="polite"></div>
+  </header>
+  <main class="stack">
+    <div class="tabs" role="tablist" aria-label="Các phần của Echo">
+      <button role="tab" id="t-lookup" aria-controls="p-lookup" aria-selected="true">Tra nghĩa</button>
+      <button role="tab" id="t-explore" aria-controls="p-explore" aria-selected="false" tabindex="-1">Khám phá</button>
+      <button role="tab" id="t-practice" aria-controls="p-practice" aria-selected="false" tabindex="-1">Luyện tập</button>
+      <button role="tab" id="t-media" aria-controls="p-media" aria-selected="false" tabindex="-1">Video và lời</button>
+      <button role="tab" id="t-saved" aria-controls="p-saved" aria-selected="false" tabindex="-1">Đã lưu</button>
+    </div>
+    <section id="p-lookup" role="tabpanel" aria-labelledby="t-lookup" class="stack"></section>
+    <section id="p-media" role="tabpanel" aria-labelledby="t-media" class="stack" hidden></section>
+    <section id="p-explore" role="tabpanel" aria-labelledby="t-explore" class="stack" hidden></section>
+    <section id="p-practice" role="tabpanel" aria-labelledby="t-practice" class="stack" hidden></section>
+    <section id="p-saved" role="tabpanel" aria-labelledby="t-saved" class="stack" hidden></section>
+  </main>
+  <script type="module" src="sidepanel.js"></script>
+</body>
+</html>

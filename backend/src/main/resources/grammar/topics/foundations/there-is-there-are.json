@@ -1,0 +1,266 @@
+{
+  "schema": 1,
+  "slug": "there-is-there-are",
+  "version": 2,
+  "domain": "foundations",
+  "order": 90,
+  "kind": "grammar",
+  "title": { "vi": "There is, there are", "en": "There is and there are" },
+  "subtitle": { "vi": "Nói rằng có một người, một vật hay một nơi: There is với số ít, There are với số nhiều", "en": "Saying that something exists: there is for one thing, there are for more" },
+  "aliases": ["there is there are", "there's", "có một … ở …", "in my town have a park", "there have", "there is two books", "is there any", "how many are there"],
+  "level": "A1",
+  "levelBasis": "editorial",
+  "uses": [
+    { "level": "A1", "vi": "Nói trong nhà, trong phố, trong lớp có gì." },
+    { "level": "A2", "vi": "Dùng quá khứ there was, there were; hỏi How many … are there?" },
+    { "level": "B1", "vi": "Nhận ra there will be, there has been, there might be và cách dùng khi liệt kê." }
+  ],
+  "objectives": [
+    "Chọn there is hoặc there are theo danh từ đứng sau",
+    "Dùng there is và there are để nói \"có gì ở đâu\" thay vì dùng have",
+    "Tạo câu phủ định và câu hỏi (There isn't any …, Is there …?, Are there …?) và trả lời ngắn Yes, there is",
+    "Phân biệt There is a bank … (giới thiệu) với The bank is … (nói về cái đã biết)"
+  ],
+  "prerequisites": ["verb-be"],
+  "related": [
+    { "slug": "have-and-have-got", "rel": "contrast" },
+    { "slug": "some-and-any", "rel": "more" },
+    { "slug": "countable-uncountable", "rel": "more" },
+    { "slug": "prepositions-place", "rel": "application" },
+    { "slug": "existential-there-advanced", "rel": "more" },
+    { "slug": "dummy-it", "rel": "confusion" },
+    { "slug": "subject-verb-agreement-basics", "rel": "more" },
+    { "slug": "contractions", "rel": "more" }
+  ],
+  "exam": {
+    "ielts": "Speaking Part 1 (quê hương, nhà cửa) và Writing Task 1 (mô tả bản đồ) hay dùng There is và There are để nói có gì ở đâu. Sai hòa hợp, như There is many …, là lỗi cơ bản về độ chính xác.",
+    "toeic": "Part 1 (mô tả ảnh) thường có câu kiểu There are some books on the shelf. Ở Part 5, chỗ trống sau there có thể hỏi is hay are: hãy nhìn danh từ đứng sau."
+  },
+  "quick": {
+    "what": "There is và there are giới thiệu sự có mặt hoặc tồn tại. Trong văn viết chuẩn, dùng there is với cụm số ít hoặc không đếm được, there are với cụm số nhiều. Lời nói thân mật còn thường có there's + số nhiều; đó là khác biệt văn phong được nêu ở phần sâu.",
+    "when": "Dùng khi giới thiệu điều mới: có gì, ở đâu. There is a bank near here. Khi đã biết cái nào, bạn nói về nó bằng be thông thường: The bank is near here.",
+    "examples": [
+      { "en": "[FOCUS|There] [V|is] [N|a park] [A|near my house].", "vi": "Có một công viên gần nhà tôi." },
+      { "en": "[FOCUS|There] [V|are] [N|two cafés] [A|on my street].", "vi": "Có hai quán cà phê trên phố tôi." },
+      { "en": "[FOCUS|There] [V|isn't] [N|any milk] [A|in the fridge].", "vi": "Trong tủ lạnh không có sữa." }
+    ],
+    "remember": "Trong mẫu văn viết chuẩn đang luyện: There is a book; There are two books. Đừng áp dụng như lệnh cấm there's + số nhiều trong mọi lời nói."
+  },
+  "lesson": [
+    { "type": "p", "vi": "Tiếng Việt nói \"Có một công viên gần nhà tôi\" với từ \"có\". Tiếng Anh dùng `there is` hoặc `there are` cho ý đó. Chữ `there` ở đây không có nghĩa là \"ở đó\": nó chỉ mở đầu câu để báo rằng sắp giới thiệu một điều mới. Nơi chốn, nếu có, là cụm đứng sau, như near my house." },
+    { "type": "diagram",
+      "spec": { "kind": "matrix",
+        "rows": ["Khẳng định", "Phủ định", "Câu hỏi", "Trả lời ngắn", "Quá khứ"],
+        "cols": ["Số ít, không đếm được", "Số nhiều"],
+        "cells": [
+          [ { "t": "There is a park. There's some rice." }, { "t": "There are two parks." } ],
+          [ { "t": "There isn't a park. There isn't any rice." }, { "t": "There aren't any parks. There are no parks." } ],
+          [ { "t": "Is there a park? Is there any rice?" }, { "t": "Are there any parks?" } ],
+          [ { "t": "Yes, there is. No, there isn't." , "note": "Yes, there's không dùng một mình" }, { "t": "Yes, there are. No, there aren't." } ],
+          [ { "t": "There was a park." }, { "t": "There were two parks." } ]
+        ] },
+      "caption": "Bảng các dạng thông dụng trong văn viết chuẩn. There's + số nhiều còn có trong lời nói và một số văn viết thân mật.",
+      "alt": "Bảng dạng của there be. Khẳng định: there is cho số ít, there are cho số nhiều. Phủ định: there isn't hoặc there aren't any. Câu hỏi: Is there, Are there. Trả lời ngắn: Yes, there is hoặc Yes, there are. Quá khứ: there was và there were." },
+    { "type": "formula", "lines": [
+      { "label": "Khẳng định", "parts": [ { "t": "There", "role": "FOCUS" }, { "t": "is / are", "role": "V" }, { "t": "danh từ", "role": "N" }, { "t": "nơi chốn", "role": "A" } ] },
+      { "label": "Phủ định", "parts": [ { "t": "There", "role": "FOCUS" }, { "t": "isn't / aren't", "role": "V" }, { "t": "any + danh từ", "role": "N" }, { "t": "nơi chốn", "role": "A" } ] },
+      { "label": "Câu hỏi", "parts": [ { "t": "Is / Are", "role": "V" }, { "t": "there", "role": "FOCUS" }, { "t": "any + danh từ", "role": "N" }, { "t": "nơi chốn", "role": "A" } ] }
+    ] },
+    { "type": "diagram",
+      "spec": { "kind": "flow", "start": "plural",
+        "nodes": {
+          "plural": { "q": "Danh từ ngay sau there be là số nhiều (two parks, many children)?", "yes": "are", "no": "is" },
+          "are": { "end": "are", "note": "There are two parks. There aren't any shops." },
+          "is": { "end": "is", "note": "There is a park. There is some water. There is a lot of traffic." }
+        } },
+      "caption": "Chọn is hay are trong các mẫu văn viết chuẩn đơn giản này; với danh sách và lời nói thân mật còn có biến thể.",
+      "alt": "Sơ đồ một câu hỏi: nếu danh từ ngay sau there be là số nhiều thì dùng are; nếu không, gồm số ít và không đếm được, thì dùng is." },
+    { "type": "examples", "items": [
+      { "en": "[FOCUS|There] [V|is] [N|a bank] [A|on the corner].", "vi": "Có một ngân hàng ở góc phố.", "note": "Danh từ số ít đếm được: có a." },
+      { "en": "[FOCUS|There] [V|are] [N|three bedrooms] [A|in the flat].", "vi": "Căn hộ có ba phòng ngủ.", "note": "Danh từ số nhiều: dùng are." },
+      { "en": "[FOCUS|There] [V|is] [N|some water] [A|in the bottle].", "vi": "Trong chai có ít nước.", "note": "Water không đếm được nên đi với is." },
+      { "en": "[FOCUS|There] [V|isn't] [N|any milk] [A|in the fridge].", "vi": "Trong tủ lạnh không có sữa.", "note": "Câu phủ định thường dùng any." },
+      { "en": "[V|Are] [FOCUS|there] [N|any shops] [A|near here]?", "vi": "Gần đây có cửa hàng nào không?", "note": "Câu hỏi: đưa are lên trước there." },
+      { "en": "[FOCUS|There] [V|was] [N|a meeting] [T|yesterday].", "vi": "Hôm qua có một cuộc họp.", "note": "Quá khứ dùng was hoặc were." }
+    ] },
+    { "type": "try", "exercise": "tia-01" },
+    { "type": "h", "vi": "Giới thiệu hay nói về cái đã biết" },
+    { "type": "contrast", "labelA": "Giới thiệu cái mới", "labelB": "Nói về cái đã biết",
+      "items": [
+        { "a": { "en": "[FOCUS|There] [V|is] [N|a bank] [A|on the corner].", "vi": "Có một ngân hàng ở góc phố." },
+          "b": { "en": "[S|The bank] [V|is] [A|on the corner].", "vi": "Ngân hàng ở góc phố." },
+          "diff": "Câu bên trái báo rằng có một ngân hàng mà người nghe chưa biết. Câu bên phải nói về ngân hàng cả hai người đã biết hoặc đang nhắc tới. Sau there be thường là danh từ chưa xác định: a, an, some, any, số đếm, no." },
+        { "a": { "en": "[FOCUS|There] [V|are] [N|two keys] [A|in the drawer].", "vi": "Có hai chiếc chìa khóa trong ngăn kéo." },
+          "b": { "en": "[S|The keys] [V|are] [A|in the drawer].", "vi": "Chìa khóa ở trong ngăn kéo." },
+          "diff": "Bên trái trả lời câu hỏi \"trong ngăn kéo có gì?\". Bên phải trả lời câu hỏi \"chìa khóa ở đâu?\"." }
+      ] },
+    { "type": "note", "kind": "vn", "vi": "Tiếng Việt dùng một từ \"có\" cho hai ý khác nhau: \"Tôi có một chiếc xe\" (sở hữu) và \"Trong gara có một chiếc xe\" (hiện hữu). Tiếng Anh tách ra: sở hữu dùng `have` (I have a car), hiện hữu dùng `there is` (There is a car in the garage). Người học hay nói In my city have many parks; câu đúng là There are many parks in my city." },
+    { "type": "try", "exercise": "tia-09" }
+  ],
+  "deep": [
+    { "type": "p", "vi": "**There's trước danh từ số nhiều.** Trong lời nói hằng ngày, người bản ngữ rất hay nói There's two books on the table hoặc There's lots of people here. Đó là cách nói thân mật và thường gặp. Trong bài viết trang trọng và bài thi, hãy viết There are two books. Khi nghe, bạn sẽ gặp There's đi với số nhiều; khi viết, hãy hòa hợp động từ với danh từ." },
+    { "type": "p", "vi": "**Danh sách.** Khi sau there là một danh sách, động từ thường hòa hợp với danh từ đầu tiên: There is a pen and two books on the desk. There are two books and a pen on the desk. Trong lời nói, There's cũng hay được dùng cho danh sách như vậy." },
+    { "type": "p", "vi": "**Các thì khác.** There đi với mọi dạng của be và với động từ khuyết thiếu: There was a meeting yesterday. There will be rain tomorrow. There has been an accident. There might be a problem. Cách dùng này được bàn kỹ hơn ở bài There nâng cao (existential there)." },
+    { "type": "p", "vi": "**Danh từ xác định.** Sau there be thường là danh từ chưa xác định, nhưng khi liệt kê hoặc nhắc người ta vẫn có thể dùng danh từ xác định: Who can help? Well, there's Mai, and there's Nam. Hoặc There's always the bus (còn xe buýt mà)." },
+    { "type": "p", "vi": "**There khác it.** There is a bank nói rằng có một ngân hàng. Khi bạn chỉ vào thứ đang nhìn thấy và nói nó là gì, dùng it: What's that? It's a bank. Hai câu có mục đích khác nhau." },
+    { "type": "note", "kind": "tip", "vi": "Chữ there trong There is thường đọc nhẹ, còn there nghĩa \"ở đó\" (Put it there) thường được nhấn. Đừng nhầm với their (của họ) và they're (họ là): ba chữ này đọc gần giống nhau nhưng viết khác nhau." }
+  ],
+  "mistakes": [
+    { "id": "tia-no-there", "wrong": "In my town have a lot of parks.", "right": "There are a lot of parks in my town.", "why": "Để nói \"có … ở …\", tiếng Anh dùng there is hoặc there are. Have nói về sở hữu.", "vn": "Tiếng Việt dùng \"có\" cho cả hai nghĩa: \"Ở thị trấn tôi có nhiều công viên\"." },
+    { "id": "tia-there-have", "wrong": "There have a cat in the garden.", "right": "There is a cat in the garden.", "why": "Câu hiện tại này cần There is a cat, không phải There have a cat. Không suy ra rằng sau there không bao giờ có have: There have been several calls là cấu trúc hoàn thành khác." },
+    { "id": "tia-agree-plural", "wrong": "There is three bedrooms in the flat.", "right": "There are three bedrooms in the flat.", "why": "Trong bài viết chuẩn đang luyện, three bedrooms là số nhiều nên chọn are. There's three bedrooms rất thường gặp trong lời nói và có thể có trong văn viết thân mật; đừng gọi mọi cách nói đó sai tuyệt đối." },
+    { "id": "tia-uncountable", "wrong": "There are a lot of traffic in the city.", "right": "There is a lot of traffic in the city.", "why": "Traffic không đếm được nên đi với is, dù có a lot of đứng trước. Động từ theo danh từ chính (traffic), không theo a lot." },
+    { "id": "tia-short-answer", "wrong": "Is there a bank near here? Yes, there's.", "right": "Is there a bank near here? Yes, there is.", "why": "Câu trả lời ngắn khẳng định không rút gọn: Yes, there is. Câu phủ định thì rút gọn được: No, there isn't." }
+  ],
+  "faq": [
+    { "q": "There is a book on the table khác The book is on the table thế nào?", "a": "Câu đầu giới thiệu một quyển sách mà người nghe chưa biết. Câu sau nói về quyển sách cả hai người đã biết. Tiếng Việt cũng phân biệt như vậy: \"Có một quyển sách trên bàn\" và \"Quyển sách ở trên bàn\"." },
+    { "q": "Có nói There's two books được không?", "a": "Trong lời nói thân mật, người bản ngữ nói như vậy rất thường. Nhưng khi viết bài, làm bài thi hay nói trang trọng, hãy dùng There are two books." },
+    { "q": "There are và They are khác nhau thế nào?", "a": "There are giới thiệu rằng có những thứ ấy. They are nói về những thứ đã nhắc đến rồi: There are two keys on the table. They are mine." },
+    { "q": "Chữ there ở đây có nghĩa là \"ở đó\" không?", "a": "Không. There trong There is chỉ mở câu và không chỉ nơi chốn. Nơi chốn là cụm đứng sau, như on the table, nên câu vẫn cần cụm đó khi bạn muốn nói rõ ở đâu." },
+    { "q": "Có phủ định kiểu There are no … không?", "a": "Có. There are no chairs có nghĩa gần như There aren't any chairs, và dạng với no nhấn mạnh hơn một chút. Sau no không dùng thêm any." }
+  ],
+  "exercises": [
+    { "id": "tia-01", "type": "cloze", "level": "A1", "use": "practice", "skill": "form",
+      "prompt": "Điền is, are hoặc dạng rút gọn theo hòa hợp của văn viết chuẩn.",
+      "stem": "There {1} a library near my house. There {2} two cafés on my street. There {3} some water in the bottle.",
+      "blanks": {
+        "1": { "accept": ["is", "'s"], "closed": true },
+        "2": { "accept": ["are"], "closed": true },
+        "3": { "accept": ["is", "'s"], "closed": true }
+      },
+      "explain": "Theo mẫu văn viết chuẩn này: a library và water dùng is hoặc 's; two cafés dùng are. Lời nói thân mật có thể dùng there's two cafés, nhưng bài đang luyện dạng hòa hợp viết chuẩn." },
+    { "id": "tia-02", "type": "choice", "level": "A1", "use": "practice", "skill": "use",
+      "prompt": "Chọn câu tiếng Anh đúng cho câu tiếng Việt: \"Có một con mèo trên ghế sofa.\"",
+      "stem": "Có một con mèo trên ghế sofa.",
+      "options": [
+        { "t": "There is a cat on the sofa.", "ok": true, "note": "There is giới thiệu một con mèo số ít, theo sau là nơi chốn." },
+        { "t": "Have a cat on the sofa.", "note": "Have a cat on the sofa có thể là một mệnh lệnh trong ngữ cảnh riêng, nhưng không phải lời thông báo Có một con mèo trên sofa.", "tag": "have-for-there" },
+        { "t": "There has a cat on the sofa.", "note": "Trong câu hiện tại đơn thông báo có mèo này, dùng there is, không dùng there has. There has been là một cấu trúc khác.", "tag": "there-has" }
+      ],
+      "explain": "Tiếng Việt dùng \"có\", tiếng Anh dùng there is khi nói một vật có mặt ở đâu đó." },
+    { "id": "tia-03", "type": "choice", "level": "A1", "use": "check", "skill": "form",
+      "prompt": "Chọn dạng hòa hợp phù hợp với văn viết chuẩn, không phải lời thoại thân mật.",
+      "stem": "There ___ three bedrooms in the flat.",
+      "options": [
+        { "t": "are", "ok": true, "note": "Bedrooms là số nhiều nên dùng are." },
+        { "t": "is", "note": "Trong bài viết chuẩn này, chọn are với bedrooms. Lời nói và một số văn viết thân mật thường dùng there's + số nhiều.", "tag": "agreement-plural" },
+        { "t": "have", "note": "Have đứng một mình không tạo được cấu trúc hiện hữu hiện tại đơn này; there have been là cấu trúc hoàn thành khác.", "tag": "there-have" }
+      ],
+      "explain": "Động từ theo danh từ đứng sau there: bedrooms số nhiều nên there are." },
+    { "id": "tia-04", "type": "choice", "level": "A1", "use": "check", "skill": "use",
+      "prompt": "Chọn câu trả lời ngắn đúng.",
+      "stem": "A: Is there a supermarket near here?  B: Yes, ___.",
+      "options": [
+        { "t": "there is", "ok": true, "note": "Câu trả lời ngắn lặp lại there is." },
+        { "t": "there's", "note": "Câu trả lời ngắn khẳng định kết thúc bằng is nên không rút gọn.", "tag": "short-answer-contraction" },
+        { "t": "it is", "note": "Câu hỏi dùng there, nên câu trả lời lặp lại there, không dùng it.", "tag": "it-for-there" }
+      ],
+      "explain": "Trả lời ngắn lặp lại phần đầu của câu hỏi: Is there …? thì Yes, there is." },
+    { "id": "tia-05", "type": "error", "level": "A1", "use": "practice", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "In my village" },
+        { "t": "have", "bad": true, "fix": ["there are"], "note": "Để nói \"có … ở …\" cần there are. Have nói về sở hữu.", "tag": "have-for-there" },
+        { "t": "two schools." }
+      ],
+      "explain": "Câu đúng là In my village there are two schools, hoặc There are two schools in my village." },
+    { "id": "tia-06", "type": "error", "level": "A1", "use": "check", "skill": "form",
+      "prompt": "Chỉnh hòa hợp theo văn viết chuẩn, không phải lời thoại thân mật.",
+      "segments": [
+        { "t": "There" },
+        { "t": "is", "bad": true, "fix": ["are"], "note": "Chairs là số nhiều nên dùng there are.", "tag": "agreement-plural" },
+        { "t": "two chairs in the room." }
+      ],
+      "explain": "Theo yêu cầu văn viết chuẩn, sửa thành There are two chairs in the room. There's two chairs có trong lời nói thân mật, nên quy tắc của bài không phải lệnh cấm trong mọi biến thể." },
+    { "id": "tia-07", "type": "error", "level": "A1", "use": "check", "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "noError": true,
+      "segments": [
+        { "t": "There are" },
+        { "t": "no tickets" },
+        { "t": "left for tonight." }
+      ],
+      "explain": "Câu đúng. No tickets là số nhiều nên dùng are. There are no … nghĩa là không còn vé nào." },
+    { "id": "tia-08", "type": "error", "level": "A1", "use": "practice", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "There" },
+        { "t": "are", "bad": true, "fix": ["is"], "note": "Rice không đếm được nên đi với is, dù có a lot of đứng trước.", "tag": "uncountable-agreement" },
+        { "t": "a lot of rice in the bowl." }
+      ],
+      "explain": "Câu đúng là There is a lot of rice in the bowl. Động từ theo danh từ chính rice, không theo a lot." },
+    { "id": "tia-09", "type": "order", "level": "A1", "use": "practice", "skill": "form",
+      "prompt": "Sắp xếp thành câu: \"Trong phòng này có hai cửa sổ.\"",
+      "tokens": ["there", "are", "two", "windows", "in", "this", "room"],
+      "end": ".",
+      "accept": [
+        ["there", "are", "two", "windows", "in", "this", "room"],
+        ["in", "this", "room", "there", "are", "two", "windows"]
+      ],
+      "explain": "Có hai cách đúng: There are two windows in this room, hoặc đưa nơi chốn lên đầu: In this room there are two windows." },
+    { "id": "tia-10", "type": "transform", "level": "A1", "use": "check", "skill": "production",
+      "prompt": "Viết lại câu thành câu hỏi có hoặc không.",
+      "source": "There is a cinema in the town.",
+      "instruction": "Đảo is lên đầu câu.",
+      "accept": ["Is there a cinema in the town"],
+      "model": "Is there a cinema in the town?",
+      "known": [
+        { "t": "Does there is a cinema in the town", "verdict": "wrong", "note": "Với there is, câu hỏi chỉ đảo is lên đầu, không dùng does.", "tag": "do-with-there" }
+      ],
+      "explain": "Câu hỏi với there be: đưa be lên trước there. There is thành Is there." },
+    {
+      "id": "tia-11",
+      "type": "transform",
+      "level": "A1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết câu phủ định có nghĩa: Trong vườn không có chiếc ghế nào.",
+      "source": "There are some chairs in the garden.",
+      "instruction": "Dùng any để diễn đạt hoàn toàn không có ghế.",
+      "accept": [
+        "There aren't any chairs in the garden",
+        "There are not any chairs in the garden"
+      ],
+      "model": "There aren't any chairs in the garden.",
+      "explain": "There aren't any chairs in the garden phủ định sự tồn tại của bất kỳ chiếc ghế nào ở đó. Some không bị cấm trong mọi câu phủ định: Some chairs aren't in the garden nói một số ghế không ở đó, không tương đương với ý hoàn toàn không có ghế."
+    },
+    { "id": "tia-12", "type": "match", "level": "A1", "use": "practice", "skill": "meaning",
+      "prompt": "Nối mỗi câu tiếng Việt với câu tiếng Anh đúng.",
+      "pairs": [
+        { "a": "Có một công viên gần nhà tôi.", "b": "There is a park near my house." },
+        { "a": "Trong tủ lạnh không có sữa.", "b": "There isn't any milk in the fridge." },
+        { "a": "Trong lớp có bao nhiêu học sinh?", "b": "How many students are there in the class?" },
+        { "a": "Hôm qua có một cuộc họp.", "b": "There was a meeting yesterday." },
+        { "a": "Có ai ở nhà không?", "b": "Is there anyone at home?" }
+      ],
+      "explain": "Tiếng Việt dùng \"có\" cho tất cả. Tiếng Anh dùng there be, với is, are, was, were và dạng phủ định hay câu hỏi tùy nghĩa." },
+    { "id": "tia-13", "type": "classify", "level": "A1", "use": "check", "skill": "form",
+      "prompt": "Theo hòa hợp của văn viết chuẩn, chọn There is hoặc There are cho mỗi cụm.",
+      "cats": ["There is", "There are"],
+      "items": [
+        { "t": "a lot of traffic", "cat": "There is" },
+        { "t": "two bedrooms", "cat": "There are" },
+        { "t": "some milk", "cat": "There is" },
+        { "t": "many children", "cat": "There are" },
+        { "t": "no time", "cat": "There is" },
+        { "t": "three people", "cat": "There are" }
+      ],
+      "explain": "Danh từ không đếm được (traffic, milk, time) đi với is. Danh từ số nhiều (bedrooms, children, people) đi với are." },
+    { "id": "tia-14", "type": "open", "level": "A1", "use": "practice", "skill": "production",
+      "prompt": "Viết về nơi bạn sống.",
+      "task": "Viết bốn câu về phòng của bạn hoặc khu phố của bạn: hai câu khẳng định, một câu phủ định và một câu hỏi, đều dùng there is hoặc there are.",
+      "model": ["There is a small park near my house.", "There are two cafés on my street.", "There isn't a cinema in my neighbourhood.", "Is there a supermarket near your home?"],
+      "checklist": [
+        "Hai câu khẳng định dùng There is với số ít và There are với số nhiều đúng chỗ.",
+        "Câu phủ định có isn't hoặc aren't, thường kèm any.",
+        "Câu hỏi bắt đầu bằng Is there hoặc Are there.",
+        "Không có câu nào dùng have thay cho there is hoặc there are."
+      ] }
+  ],
+  "sources": [
+    { "ref": "cgt", "note": "Mô tả there is và there are: hòa hợp, phủ định, câu hỏi, quá khứ." },
+    { "ref": "swan-peu", "note": "Hòa hợp sau there, danh sách, There's với số nhiều trong lời nói." },
+    { "ref": "cgel", "note": "Phân tích there hiện hữu (existential there) và danh từ chưa xác định theo sau." }
+  ],
+  "editorial": { "status": "drafted" }
+}

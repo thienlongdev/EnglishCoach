@@ -1,0 +1,493 @@
+{
+  "schema": 1,
+  "slug": "tense-consistency",
+  "version": 2,
+  "domain": "tense-aspect",
+  "order": 230,
+  "kind": "grammar",
+  "title": {
+    "vi": "Nhất quán thì trong đoạn văn",
+    "en": "Tense consistency in a text"
+  },
+  "subtitle": {
+    "vi": "Giữ mốc rõ khi thời gian thay đổi",
+    "en": "Keep the viewpoint clear when time changes"
+  },
+  "aliases": [
+    "nhất quán thì",
+    "tense consistency",
+    "chuyển thì trong đoạn",
+    "mọi câu cùng thì",
+    "did not received"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Giải thích vì sao một đoạn có thể đổi thì.",
+    "Giữ sự việc trong mốc kể đã chọn.",
+    "Biên tập chuyển mốc mà không xóa thông tin hiện tại hoặc quá khứ."
+  ],
+  "prerequisites": [
+    "narrative-tenses"
+  ],
+  "related": [
+    {
+      "slug": "narrative-tenses",
+      "rel": "more"
+    },
+    {
+      "slug": "future-in-the-past",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Nhất quán thì (tense consistency) là làm quan hệ thời gian và góc nhìn dễ hiểu; không phải bắt mọi động từ trong đoạn có cùng hình thức.",
+    "when": "Khi biên tập, xác định mốc chính rồi lý do cho mỗi thay đổi.",
+    "examples": [
+      {
+        "en": "[S|I] [V|met] Lan last year. She still [V|works] here now.",
+        "vi": "Tôi gặp Lan năm ngoái. Bây giờ cô ấy vẫn làm ở đây."
+      },
+      {
+        "en": "[S|I] [V|arrived] at nine. She [AUX|had] [V|left] at eight.",
+        "vi": "Tôi đến lúc chín giờ. Cô ấy đã đi lúc tám giờ."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Chọn mốc kể chính: một sự kiện đã kết thúc hôm qua thường được kể bằng quá khứ. Nếu đang nêu các bước liên tiếp từ góc nhìn ấy, không đổi sang hiện tại chỉ vì muốn tránh lặp thì."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Lý do đổi",
+        "Ví dụ",
+        "Quan hệ"
+      ],
+      "rows": [
+        [
+          "Nói điều còn đúng",
+          "I visited Lan. She still lives there now.",
+          "quá khứ → hiện tại"
+        ],
+        [
+          "Nhìn lùi",
+          "I arrived. She had left.",
+          "trước mốc quá khứ"
+        ],
+        [
+          "Nhìn về sau từ quá khứ",
+          "He said he would return.",
+          "tương lai từ mốc cũ"
+        ],
+        [
+          "Nêu kế hoạch hiện tại",
+          "Now I am going to apply.",
+          "mốc nhìn hiện tại"
+        ]
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Quá khứ",
+            "items": [
+              "I visited last year"
+            ]
+          },
+          {
+            "label": "Hiện tại",
+            "items": [
+              "She still lives there now"
+            ]
+          },
+          {
+            "label": "Tương lai từ hiện tại",
+            "items": [
+              "I will visit next month"
+            ]
+          }
+        ],
+        "sentence": "{0}. {1}. {2}."
+      },
+      "caption": "Ba thì có thể nhất quán khi ba mốc thời gian được nói rõ.",
+      "alt": "Ba thì có thể nhất quán khi ba mốc thời gian được nói rõ."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[S|I] [V|unlocked] the door and [V|entered] the room.",
+          "vi": "Tôi mở khóa cửa rồi bước vào phòng."
+        },
+        {
+          "en": "[S|I] [V|discovered] that the key [AUX|had] [V|broken].",
+          "vi": "Tôi phát hiện chìa khóa đã gãy trước đó."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Một phát biểu khoa học hoặc một điều người kể vẫn muốn khẳng định đúng bây giờ có thể ở hiện tại trong đoạn quá khứ. Cũng có thể dùng quá khứ theo góc tường thuật mà không tự hàm ý điều ấy nay sai."
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Trước khi sửa, hỏi: mốc có thay đổi không, tác giả có đổi góc nhìn có chủ ý không, và người đọc có hiểu được không? Nhiều thì trong một đoạn không tự động là lỗi."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Hiện tại kịch tính có thể dùng cho chuyện quá khứ như So I open the door, and he is standing there. Đó là lựa chọn kể chuyện. Bài tập trung tính ở đây chỉ định mốc để tránh coi phong cách ấy là lỗi chung."
+    },
+    {
+      "type": "p",
+      "vi": "Tường thuật không bắt buộc lùi thì mọi câu còn liên quan hiện tại. Phải kiểm tra nội dung, mốc và ngữ cảnh, không chỉ nhìn động từ said rồi tự thay tất cả."
+    },
+    {
+      "type": "p",
+      "vi": "Thì không tự cho biết sự việc thật. She had left biểu đạt việc trước mốc trong lời kể; độ tin cậy của lời kể là vấn đề khác. Khi kiểm bài, không bịa tình tiết để buộc một dạng duy nhất."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "tense-consistency-m1",
+      "wrong": "Yesterday I unlocked the room and opens the windows.",
+      "right": "Yesterday I unlocked the room and opened the windows.",
+      "why": "Trong đoạn kể trung tính cùng chủ ngữ I và chuỗi việc hôm qua, dùng opened."
+    },
+    {
+      "id": "tense-consistency-m2",
+      "wrong": "She did not received the letter.",
+      "right": "She did not receive the letter.",
+      "why": "Did đi với dạng gốc, dù mốc kể là quá khứ."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Một đoạn có được dùng nhiều thì không?",
+      "a": "Có, khi các mốc hoặc góc nhìn khác nhau và được thể hiện rõ."
+    },
+    {
+      "q": "Dùng quá khứ cho một thông tin có nghĩa bây giờ nó sai không?",
+      "a": "Không nhất thiết. Có thể đó chỉ là cách tường thuật từ mốc quá khứ; cần thêm ngữ cảnh để kết luận hiện tại."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "tcs-01",
+      "prompt": "Chọn bản sửa cho đoạn kể trung tính đã kết thúc hôm qua.",
+      "explain": "Trong mốc kể này hai sự việc nối tiếp đều ở quá khứ; không có chuyển giọng hiện tại kịch tính.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "Yesterday I unlocked the room and ___ the windows.",
+      "options": [
+        {
+          "t": "opened",
+          "ok": true,
+          "note": "Giữ mốc kể quá khứ đã nêu."
+        },
+        {
+          "t": "opens",
+          "ok": false,
+          "note": "Sai cả hòa hợp với I và mốc kể.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "opening",
+          "ok": false,
+          "note": "Không có trợ động từ để tạo động từ hữu hạn sau and.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "tcs-02",
+      "prompt": "Nối câu với mốc thời gian được nói rõ.",
+      "explain": "Một đoạn có thể có nhiều thì nếu các mốc khác nhau.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "I worked there in 2020.",
+          "b": "Công việc ở giai đoạn quá khứ xác định"
+        },
+        {
+          "a": "I work here now.",
+          "b": "Tình hình hiện tại"
+        },
+        {
+          "a": "I will work remotely next week.",
+          "b": "Việc dự kiến tuần sau"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "tcs-03",
+      "prompt": "Phân loại sự chuyển thì theo ngữ cảnh đã cho.",
+      "explain": "Các câu đều có thể đúng; mục tiêu là nhận ra lý do thay đổi mốc.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Từ quá khứ sang hiện tại",
+        "Nhìn lùi trước mốc quá khứ",
+        "Từ quá khứ nhìn về sau"
+      ],
+      "items": [
+        {
+          "t": "I visited her last year. She still lives there now.",
+          "cat": "Từ quá khứ sang hiện tại"
+        },
+        {
+          "t": "I arrived at nine. She had left at eight.",
+          "cat": "Nhìn lùi trước mốc quá khứ"
+        },
+        {
+          "t": "He said he would return the next day.",
+          "cat": "Từ quá khứ nhìn về sau"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "tcs-04",
+      "prompt": "Dùng quá khứ đơn cho visit và hiện tại đơn cho live theo mốc rõ.",
+      "explain": "Visited đặt chuyến thăm trong quá khứ; lives mô tả nơi ở vẫn đúng bây giờ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "I {1} (visit) Lan last summer. She still {2} (live) in Hue now.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "visited"
+          ]
+        },
+        "2": {
+          "accept": [
+            "lives"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "tcs-05",
+      "prompt": "Sửa động từ sau did trong đoạn kể.",
+      "explain": "Thống nhất thì không có nghĩa giữ -ed sau trợ động từ did.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "Yesterday we did not"
+        },
+        {
+          "t": "received",
+          "bad": true,
+          "fix": [
+            "receive"
+          ],
+          "note": "Did cần dạng gốc receive.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "the parcel."
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "tcs-06",
+      "prompt": "Sắp xếp câu kể bắt đầu bằng She; đặt before I arrived cuối.",
+      "explain": "Had left đặt sự ra đi trước mốc đến.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "She",
+        "had",
+        "left",
+        "before I arrived"
+      ],
+      "accept": [
+        [
+          "She",
+          "had",
+          "left",
+          "before I arrived"
+        ]
+      ],
+      "end": ".",
+      "level": "B2"
+    },
+    {
+      "id": "tcs-07",
+      "prompt": "Đưa lời kể hiện tại về mốc hôm qua theo yêu cầu.",
+      "explain": "Chuyển cả hai động từ theo mốc mới; không giữ hiện tại ở sự việc thứ hai.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "I unlock the door and enter the room.",
+      "instruction": "Thêm Yesterday ở đầu; dùng quá khứ đơn của hai động từ và giữ các từ còn lại.",
+      "accept": [
+        "Yesterday I unlocked the door and entered the room",
+        "Yesterday, I unlocked the door and entered the room"
+      ],
+      "model": "Yesterday I unlocked the door and entered the room",
+      "level": "B2"
+    },
+    {
+      "id": "tcs-08",
+      "prompt": "Biên tập một đoạn có hai mốc thời gian.",
+      "explain": "Tự đánh giá lý do chuyển thì thay vì ép mọi câu giống nhau.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết 4 câu: một việc năm ngoái, một việc xảy ra trước việc đó, một điều còn đúng bây giờ và một kế hoạch sắp tới. Ghi mốc chuyển rõ.",
+      "model": [
+        "I joined the club last year. I had met its organiser a month earlier. I still attend the weekly meetings now. I am going to help at the next event."
+      ],
+      "checklist": [
+        "Mỗi thì có lý do thời gian hoặc góc nhìn.",
+        "Không ép chân lý hay trạng thái hiện tại về quá khứ khi muốn nói bây giờ.",
+        "Không đổi ngẫu nhiên giữa kể quá khứ và hiện tại."
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "tcs-09",
+      "prompt": "Dùng quá khứ đơn của arrive, quá khứ hoàn thành của leave và hiện tại đơn của live.",
+      "explain": "Mốc đến, mốc trước đó và bây giờ cho phép ba dạng khác nhau.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "I {1} (arrive) at nine yesterday. Lan {2} (leave) at eight, before I got there. She {3} (live) nearby now.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "arrived"
+          ]
+        },
+        "2": {
+          "accept": [
+            "had left"
+          ]
+        },
+        "3": {
+          "accept": [
+            "lives"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "tcs-10",
+      "prompt": "Đổi cả đoạn sang kể quá khứ theo yêu cầu.",
+      "explain": "Cả hai sự việc thuộc cùng mốc yesterday; khóa đáp án giữ danh từ và thứ tự.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "The guide opens the gate. We follow her inside.",
+      "instruction": "Thêm Yesterday ở đầu câu thứ nhất; dùng quá khứ đơn ở cả hai câu và giữ dấu chấm ngăn câu.",
+      "accept": [
+        "Yesterday the guide opened the gate. We followed her inside",
+        "Yesterday, the guide opened the gate. We followed her inside"
+      ],
+      "model": "Yesterday the guide opened the gate. We followed her inside",
+      "level": "B2"
+    },
+    {
+      "id": "tcs-11",
+      "prompt": "Chọn tất cả đoạn có thể nhất quán theo các mốc đã nêu.",
+      "explain": "Nhiều thì không tự làm đoạn sai; lỗi là không đúng khung hoặc không rõ mốc.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các đoạn độc lập.",
+      "options": [
+        {
+          "t": "I met Lan last year. She still works here now.",
+          "ok": true,
+          "note": "Chuyển có lý do từ quá khứ sang hiện tại."
+        },
+        {
+          "t": "I arrived late. The train had already left.",
+          "ok": true,
+          "note": "Quá khứ hoàn thành nhìn lùi từ arrived."
+        },
+        {
+          "t": "Yesterday she did not arrived.",
+          "ok": false,
+          "note": "Did cần arrive.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "She still work here now.",
+          "ok": false,
+          "note": "She cần works trong hiện tại đơn.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "tcs-12",
+      "prompt": "Chọn nguyên tắc biên tập đúng.",
+      "explain": "Nhất quán là giữ mốc và góc nhìn dễ hiểu, không bắt mọi động từ cùng thì.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "Một đoạn kể việc hôm qua rồi nói tình hình hiện tại.",
+      "options": [
+        {
+          "t": "Có thể đổi từ quá khứ sang hiện tại nếu nghĩa và mốc chuyển rõ.",
+          "ok": true,
+          "note": "Đổi mốc có chủ đích là hợp lý."
+        },
+        {
+          "t": "Tất cả câu trong một đoạn bắt buộc cùng một thì.",
+          "ok": false,
+          "note": "Quy tắc đó xóa các quan hệ thời gian thật.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Cứ dùng had cho mọi động từ là nhất quán.",
+          "ok": false,
+          "note": "Had cần quan hệ với một mốc và dạng theo sau đúng.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

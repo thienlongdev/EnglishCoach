@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s100-borrowed-tomorrow",
+  "title": "Mượn một ngày mai",
+  "summary": "Khoang thư thử nghiệm chỉ chuyển thư đi đúng một ngày về trước. Mai nhận được thư của chính Sol vào ngày mai, yêu cầu giữ lại một viên bi xanh.",
+  "level": "B1",
+  "topics": [
+    "reporting-commands-requests",
+    "direct-and-reported"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mai",
+      "role": "Người trực khoang thư"
+    },
+    {
+      "id": "b",
+      "name": "Sol",
+      "role": "Hành khách nhỏ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Sol hôm nay có viên bi trong túi. Dòng thư viết Mai, please give yesterday's Sol the blue marble if he asks for it. Mai chỉ có nhiệm vụ giữ hộ rồi trả đúng người.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The letter is in my writing. I haven't written it yet.",
+          "vi": "Chữ trong thư là của cháu. Cháu còn chưa viết nó cơ."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "a",
+          "en": "Read it as a request. Who is supposed to give the marble to whom?",
+          "vi": "Đọc nó như lời nhờ nhé. Ai phải đưa viên bi cho ai?"
+        }
+      ],
+      "choice": {
+        "prompt": "Mai dùng I hoặc me để thuật lại lời Sol tương lai đã gửi cho chính mình.",
+        "options": [
+          {
+            "t": "Tomorrow's Sol asked me to give today's Sol the marble.",
+            "note": "Asked me to give xác định Mai là người thực hiện việc trao. Today's Sol là người nhận viên bi.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "Tomorrow's Sol asked today's Sol to give me the marble.",
+            "note": "Câu đổi người phải trao thành Sol hôm nay và người nhận thành Mai. Nó không giữ hướng trả bi trong thư, dù việc Sol đưa bi để Mai giữ hộ có thể xảy ra trước đó.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Sol đặt viên bi vào tay Mai, rồi lễ phép xin lại. Lần này cậu thấy rõ vệt xanh nhạt mà trước giờ vẫn bỏ qua.",
+      "say": [
+        {
+          "who": "b",
+          "en": "It looks like our planet from here.",
+          "vi": "Nhìn từ đây nó giống hành tinh của mình quá."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Mai đặt hai chiếc cốc ghi tên họ trên bàn, di viên bi theo mũi tên trong thư. Sol hiểu và xin lại viên bi từ tay Mai.",
+      "say": [
+        {
+          "who": "b",
+          "en": "So the last hand is mine.",
+          "vi": "Vậy bàn tay nhận cuối cùng là của cháu."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Ngày hôm sau, trước chuyến tàu đi xa, Sol viết bức thư bằng mực xanh. Giờ cậu biết vì sao mình cần nhờ Mai trả lại viên bi hôm qua: để có một lần nhìn quê nhà nằm gọn trong tay.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Sometimes you need to get a thing back to see it.",
+          "vi": "Đôi khi phải nhận lại một vật thì ta mới thật sự nhìn thấy nó."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

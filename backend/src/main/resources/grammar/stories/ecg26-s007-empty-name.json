@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s007-empty-name",
+  "title": "Bạn mới tên là Ai",
+  "summary": "Trên thẻ của một bạn mới chỉ có một dấu hỏi. Mai tưởng đó là tên một trò chơi.",
+  "level": "A1",
+  "topics": [
+    "verb-be",
+    "yes-no-questions"
+  ],
+  "scene": "university",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mai",
+      "role": "Sinh viên mới"
+    },
+    {
+      "id": "b",
+      "name": "Sol",
+      "role": "Người đeo thẻ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Cả nhóm phải tìm bạn cùng bàn trước khi buổi sinh hoạt bắt đầu. Thẻ Mai ghi tên bàn là Sun. Bên dưới dấu hỏi trên thẻ của Sol cũng có một mặt trời nhỏ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "My table is Sun. Look at your card.",
+          "vi": "Bàn mình là Sun. Bạn nhìn thẻ của bạn xem."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Sun! But my name isn't on it.",
+          "vi": "Sun! Nhưng trên đó không có tên mình."
+        }
+      ],
+      "choice": {
+        "prompt": "Mai muốn biết Sol có cùng bàn với mình hay không. Chọn câu để Sol trả lời có hoặc không.",
+        "options": [
+          {
+            "t": "Are you at my table?",
+            "note": "Đưa are lên trước you để hỏi. At my table là ở bàn của Mai.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "You are at my table.",
+            "note": "Đây là câu trần thuật theo thứ tự you are. Khi nói, ngữ điệu lên giọng cũng có thể biến nó thành câu hỏi, nhưng trên thẻ viết câu này kết thúc bằng dấu chấm.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Sol gật đầu rồi dùng bút vẽ thêm một mặt trời lên thẻ Mai.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Yes. Let's sit here.",
+          "vi": "Ừ. Mình ngồi ở đây nhé."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Sol đi tìm bàn Sun. Mai đi theo và đưa chiếc bút để Sol tự ghi tên vào chỗ có dấu hỏi.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I'm Sol. It means sun!",
+          "vi": "Mình là Sol. Tên mình nghĩa là mặt trời!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Hai bạn dán hai chiếc thẻ mặt trời cạnh nhau. Đến lượt giới thiệu, Mai đã nhớ được cả tên bạn lẫn tên bàn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "This is Sol, my first friend here.",
+          "vi": "Đây là Sol, người bạn đầu tiên của mình ở đây."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

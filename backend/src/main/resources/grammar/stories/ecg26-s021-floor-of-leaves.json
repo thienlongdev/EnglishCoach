@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s021-floor-of-leaves",
+  "title": "Tầng của những chiếc lá",
+  "summary": "An tới tòa nhà làm việc của bố, chỉ nhớ trước cửa có một chậu cây đỏ. Trong thang máy, mỗi nút mang một chiếc lá bằng giấy.",
+  "level": "A1",
+  "topics": [
+    "wh-questions",
+    "prepositions-place"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Bé An",
+      "role": "Khách đến thăm"
+    },
+    {
+      "id": "b",
+      "name": "Lio",
+      "role": "Người gác thang"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Lio cho An xem sơ đồ. Tầng ba có chậu cây đỏ, tầng bốn có cây xanh. An đang ở tầng một.",
+      "say": [
+        {
+          "who": "a",
+          "en": "My dad has a red plant by his door.",
+          "vi": "Bố cháu có cây đỏ cạnh cửa."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "I can show you on this map.",
+          "vi": "Chú chỉ cho cháu trên sơ đồ này nhé."
+        }
+      ],
+      "choice": {
+        "prompt": "An hỏi về nơi bố làm việc để chọn tầng, không cần hỏi tên bố.",
+        "options": [
+          {
+            "t": "Who is he?",
+            "note": "Who hỏi danh tính người đó. Biết tên bố chưa giúp An chọn trong hai chiếc lá nếu sơ đồ chỉ ghi màu cây.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "Where does he work?",
+            "note": "Where hỏi nơi chốn. Does đi với he, work là dạng gốc. Câu trả lời có thể là tầng ba.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Lio chạm vào hình lá đỏ. Thang dừng ở tầng ba, ngay trước lá đỏ lớn trong chậu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Here he is, by the plant.",
+          "vi": "Bố cháu đây rồi, ngay chỗ cái cây."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Lio nghe tên bố rồi quay lại sơ đồ lá. An chỉ màu đỏ, hai người cùng nhấn số ba.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The red leaf goes with number three.",
+          "vi": "Lá đỏ đi với số ba."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Bố tặng An một chiếc lá giấy nhỏ giống hệt lá trên nút bấm. Lần sau An tự tìm được đúng tầng và để Lio đoán xem em đã nhớ bằng cách nào.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I have a map in my pocket.",
+          "vi": "Cháu có bản đồ trong túi mà."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

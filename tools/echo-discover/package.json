@@ -1,0 +1,24 @@
+{
+  "name": "english-coach-discovery-qa",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.19"
+  },
+  "scripts": {
+    "crawl": "node crawl.mjs",
+    "test": "node regression.mjs",
+    "budgets": "lhci autorun --config=lighthouserc.cjs",
+    "qualify": "npm --prefix ../../frontend run lint && npm --prefix ../../frontend run test:navigation-performance && npm --prefix ../../frontend run test:security && npm --prefix ../../frontend run test:echo-sentinel && python matrix.py --check && npm test && npm run budgets",
+    "lab-summary": "node lab-summary.mjs",
+    "crux": "node crux.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@lhci/cli": "0.16.1",
+    "playwright": "1.65.1"
+  },
+  "overrides": {
+    "basic-ftp": "6.2.6"
+  }
+}

@@ -1,0 +1,21 @@
+/*
+ * Grammar shelves toolbar (Lab, Detective, Stories; 2026-11-20). Filters on one line, the pager on the same baseline, and
+ * real breathing room before the shelf below (the shelf used to start right under the pager). Grammar tokens only.
+ */
+.tools {
+  --pager-ink: var(--ink);
+  --pager-ink-2: var(--ink-3);
+  --pager-line: var(--line);
+  --pager-fill: var(--paper);
+  --pager-accent: var(--accent-2);
+  --pager-field: var(--chip);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  margin-bottom: clamp(1.25rem, 2.6vw, 2rem);
+}
+.filters { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; flex: 1 1 26rem; min-width: 0; }
+.search.search { flex: 1 1 16rem; width: auto; min-width: 12rem; min-height: 2.75rem; }
+.empty { display: inline-flex; align-items: center; min-height: 2.5rem; font-size: 0.9rem; font-weight: 700; line-height: 1; color: var(--ink-3); }

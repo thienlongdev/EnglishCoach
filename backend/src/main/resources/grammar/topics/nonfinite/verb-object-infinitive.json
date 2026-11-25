@@ -1,0 +1,481 @@
+{
+  "schema": 1,
+  "slug": "verb-object-infinitive",
+  "version": 2,
+  "domain": "nonfinite",
+  "order": 60,
+  "kind": "grammar",
+  "title": {
+    "vi": "Want someone to do",
+    "en": "Verb + object + to-infinitive"
+  },
+  "subtitle": {
+    "vi": "Xác định ai thực hiện hành động sau to",
+    "en": "Identify who performs the infinitive action"
+  },
+  "aliases": [
+    "want someone to do",
+    "verb object infinitive",
+    "I want she to",
+    "ask tell expect allow",
+    "người thực hiện to V"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Tạo verb + người/vật + to-infinitive.",
+    "Dùng dạng đại từ tân ngữ.",
+    "Giữ khác biệt mong muốn, kỳ vọng và yêu cầu."
+  ],
+  "prerequisites": [
+    "verb-ing-or-infinitive"
+  ],
+  "related": [
+    {
+      "slug": "verb-ing-or-infinitive",
+      "rel": "more"
+    },
+    {
+      "slug": "bare-infinitive",
+      "rel": "contrast"
+    },
+    {
+      "slug": "reporting-verbs",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Một số động từ cho phép tân ngữ rồi to-infinitive: want her to leave, ask us to wait. Người/vật trước to liên hệ với người thực hiện hành động bên trong.",
+    "when": "Học đúng động từ và nghĩa; không áp cho mọi từ có nghĩa tương tự.",
+    "examples": [
+      {
+        "en": "I want [O|her] [V|to arrive] early.",
+        "vi": "Tôi muốn cô ấy đến sớm."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "I want to leave thường có I là người muốn và người đi. I want Lan to leave có Lan là người đi. Thêm một người không chỉ trang trí câu; nó đổi vai thực hiện hành động."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Người muốn",
+            "items": [
+              "I"
+            ]
+          },
+          {
+            "label": "Người thực hiện arrive",
+            "items": [
+              "her"
+            ]
+          },
+          {
+            "label": "Hành động mong muốn",
+            "items": [
+              "to arrive early"
+            ]
+          }
+        ],
+        "sentence": "{0} want {1} {2}."
+      },
+      "caption": "Her trước to chỉ người thực hiện arrive, không tự chứng minh cô ấy sẽ đến.",
+      "alt": "Her trước to chỉ người thực hiện arrive, không tự chứng minh cô ấy sẽ đến."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Động từ",
+        "Mẫu",
+        "Sắc thái"
+      ],
+      "rows": [
+        [
+          "want",
+          "want someone to do",
+          "mong muốn"
+        ],
+        [
+          "expect",
+          "expect someone to do",
+          "kỳ vọng/dự đoán theo ngữ cảnh"
+        ],
+        [
+          "ask/tell",
+          "ask/tell someone to do",
+          "nhờ/chỉ dẫn"
+        ],
+        [
+          "allow/encourage/remind",
+          "someone to do",
+          "cho phép/khuyến khích/nhắc"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Dùng me/him/her/us/them ở vị trí tân ngữ: want her to help, không want she to help. Sau to vẫn dạng gốc, không thêm -s theo her."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Suggest không theo mẫu suggest me to wait ở nghĩa đề xuất. Có suggest waiting hoặc suggest that I/we ... tùy nội dung."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Phủ định thường là ask someone not to do. To not cũng có cách dùng khi nhấn; cần phạm vi rõ. Không làm mất not khi tường thuật vì sẽ đảo ý lời yêu cầu."
+    },
+    {
+      "type": "p",
+      "vi": "Bị động phụ thuộc từng từ và nghĩa. We were allowed to leave là mẫu được dùng; không từ đó suy mọi want/expect/ask có mọi bị động tự nhiên như nhau."
+    },
+    {
+      "type": "p",
+      "vi": "Expect someone to do không luôn là sai khiến. Trong I expect the train to arrive soon, người nói dự đoán tàu đến, không ra lệnh cho tàu."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "verb-object-infinitive-m1",
+      "wrong": "I want she to help.",
+      "right": "I want her to help.",
+      "why": "Dùng đại từ tân ngữ her."
+    },
+    {
+      "id": "verb-object-infinitive-m2",
+      "wrong": "I want her to arrives.",
+      "right": "I want her to arrive.",
+      "why": "To-infinitive dùng dạng gốc."
+    },
+    {
+      "id": "verb-object-infinitive-m3",
+      "wrong": "They suggested us to wait.",
+      "right": "They suggested that we wait.",
+      "why": "Suggest ở nghĩa này dùng mẫu mệnh đề hoặc -ing, không object + to."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Ai làm việc sau to?",
+      "a": "Thường người/vật ngay trước to trong mẫu đang học: her to arrive có her là người đến."
+    },
+    {
+      "q": "Mọi động từ cùng nghĩa đều lấy mẫu này không?",
+      "a": "Không. Cần học cấu trúc theo từng động từ và nghĩa."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "voi-01",
+      "prompt": "Chọn mẫu với want có người khác thực hiện.",
+      "explain": "Want + người + to-infinitive ở nghĩa mong người đó làm.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "I want ___ early.",
+      "options": [
+        {
+          "t": "her to arrive",
+          "ok": true,
+          "note": "Her là người thực hiện arrive."
+        },
+        {
+          "t": "she to arrive",
+          "ok": false,
+          "note": "Vị trí sau want cần dạng tân ngữ her.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "her arrive",
+          "ok": false,
+          "note": "Mẫu want này cần to.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "voi-02",
+      "prompt": "Nối câu với người thực hiện infinitive.",
+      "explain": "Không mặc định mọi người làm đều là chủ ngữ ngoài.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "I want to leave.",
+          "b": "I là người rời đi"
+        },
+        {
+          "a": "I want Lan to leave.",
+          "b": "Lan là người rời đi"
+        },
+        {
+          "a": "They asked us to wait.",
+          "b": "Us là những người được nhờ chờ"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "voi-03",
+      "prompt": "Phân loại sắc thái của động từ ngoài.",
+      "explain": "Cùng hình thức không có nghĩa cùng lực lời nói.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Mong muốn",
+        "Dự đoán/kỳ vọng",
+        "Lời nhờ"
+      ],
+      "items": [
+        {
+          "t": "I want her to win.",
+          "cat": "Mong muốn"
+        },
+        {
+          "t": "I expect her to win.",
+          "cat": "Dự đoán/kỳ vọng"
+        },
+        {
+          "t": "I asked her to wait.",
+          "cat": "Lời nhờ"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "voi-04",
+      "prompt": "Điền to và dạng đại từ theo gợi ý.",
+      "explain": "Ask me to; want him to.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "She asked me {1} wait. I want {2} (he) to help.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "to"
+          ]
+        },
+        "2": {
+          "accept": [
+            "him"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "voi-05",
+      "prompt": "Sửa dạng sau to.",
+      "explain": "Người thực hiện mới không làm infinitive thêm -s.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "I want her to"
+        },
+        {
+          "t": "arrives",
+          "bad": true,
+          "fix": [
+            "arrive"
+          ],
+          "note": "To cần dạng gốc arrive.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "early."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "voi-06",
+      "prompt": "Sắp xếp bắt đầu bằng They.",
+      "explain": "Asked us to wait có us là người được nhờ và người chờ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "They",
+        "asked",
+        "us",
+        "to",
+        "wait"
+      ],
+      "accept": [
+        [
+          "They",
+          "asked",
+          "us",
+          "to",
+          "wait"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "voi-07",
+      "prompt": "Thêm người thực hiện khác theo yêu cầu.",
+      "explain": "Chuyển từ I tự rời đi sang muốn Lan rời đi.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "I want to leave early.",
+      "instruction": "Thêm Lan sau want để Lan là người thực hiện; giữ các từ khác.",
+      "accept": [
+        "I want Lan to leave early"
+      ],
+      "model": "I want Lan to leave early",
+      "level": "B1"
+    },
+    {
+      "id": "voi-08",
+      "prompt": "Viết lời mong muốn và lời nhờ.",
+      "explain": "Tự đối chiếu, không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết một câu want someone to, một expect someone to và một ask someone not to. Giải thích ai thực hiện từng hành động.",
+      "model": [
+        "I want Lan to join us. I expect the train to arrive soon. I asked him not to open the gate."
+      ],
+      "checklist": [
+        "Người/vật trước to thực hiện hành động bên trong.",
+        "Dùng đại từ tân ngữ sau động từ ngoài.",
+        "Không gọi expect là mệnh lệnh nếu không có ngữ cảnh."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "voi-09",
+      "prompt": "Điền dạng tân ngữ và dạng gốc.",
+      "explain": "Us theo we; to leave không chia.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "They asked {1} (we) to wait. I expect her to {2} (leave) early.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "us"
+          ]
+        },
+        "2": {
+          "accept": [
+            "leave"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "voi-10",
+      "prompt": "Thuật lời nhắc bằng remind.",
+      "explain": "Remind someone to do giữ người được nhắc.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "Lan said to me, “Remember to bring your key.”",
+      "instruction": "Viết Lan reminded me và to-infinitive với bring my key; không giữ lời trực tiếp.",
+      "accept": [
+        "Lan reminded me to bring my key"
+      ],
+      "model": "Lan reminded me to bring my key",
+      "level": "B1"
+    },
+    {
+      "id": "voi-11",
+      "prompt": "Chọn tất cả mẫu chuẩn.",
+      "explain": "Allow và ask cho phép mẫu; suggest không sao chép mẫu đó.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "They allowed us to leave.",
+          "ok": true,
+          "note": "Allow + người + to."
+        },
+        {
+          "t": "They asked us to wait.",
+          "ok": true,
+          "note": "Ask + người + to."
+        },
+        {
+          "t": "They suggested us to wait.",
+          "ok": false,
+          "note": "Suggest không theo mẫu này ở nghĩa đề xuất.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "I want she to help.",
+          "ok": false,
+          "note": "Cần her, không she.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "voi-12",
+      "prompt": "Chọn nguyên tắc đúng về bị động.",
+      "explain": "Một mẫu chủ động không cấp phép mọi động từ đổi sang bị động như nhau.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "Verb + object + to-infinitive.",
+      "options": [
+        {
+          "t": "Cần kiểm tra từng động từ và nghĩa trước khi chuyển bị động.",
+          "ok": true,
+          "note": "Allowed to có mẫu bị động, nhưng không suy mọi từ giống hệt."
+        },
+        {
+          "t": "Mọi động từ trong từ điển đều lấy mẫu này.",
+          "ok": false,
+          "note": "Giới hạn theo từ.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Mọi mẫu to có cùng nghĩa sai khiến.",
+          "ok": false,
+          "note": "Expect, want và ask khác nhau.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

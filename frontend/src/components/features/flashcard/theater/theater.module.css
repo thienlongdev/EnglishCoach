@@ -1,0 +1,1683 @@
+/*
+ * Echo Memory Theater — Cinematic Reforge (2026-11-20):
+ * One cohesive Echo Ocean x Liquid Glass spatial world. The central flashcard is the hero;
+ * every surface shares layered translucent fills, specular top rims, inner crystal bevels,
+ * and floating ambient shadows. Zero backdrop-filter (10 §AF / §CG), zero !important,
+ * Quicksand inherited (§AA), explicit .dark (§Y), zero sparkle (§F), full reduced-motion compliance.
+ */
+
+.root {
+  --th-ink: #181a4a;
+  --th-ink-2: #42487c;
+  --th-ink-3: #6c73a6;
+  --th-accent: #634ef0;
+  --th-accent-2: #1ea8dc;
+  --th-glass: linear-gradient(165deg, rgb(255 255 255 / 0.9), rgb(244 242 255 / 0.78) 58%, rgb(235 245 255 / 0.76));
+  --th-glass-convex: radial-gradient(circle at 30% 22%, rgb(255 255 255 / 0.98) 0%, rgb(246 244 255 / 0.88) 46%, rgb(228 232 255 / 0.82) 100%);
+  --th-glass-solid: linear-gradient(175deg, #fcfcff 0%, #f3f1ff 60%, #edf4ff 100%);
+  --th-edge: rgb(255 255 255 / 0.96);
+  --th-rim: rgb(125 112 235 / 0.24);
+  --th-rim-strong: rgb(110 92 240 / 0.42);
+  --th-shadow: 0 14px 34px -20px rgb(58 48 168 / 0.46), 0 3px 10px -4px rgb(58 48 168 / 0.16);
+  --th-shadow-lift: 0 20px 38px -18px rgb(68 56 186 / 0.56), 0 6px 14px -6px rgb(68 56 186 / 0.22);
+  --th-hover: rgb(99 78 240 / 0.08);
+  --th-crystal-a: #d2ebff;
+  --th-crystal-b: #beb6ff;
+  --th-crystal-c: #f4e2ff;
+  --th-crystal-edge: rgb(255 255 255 / 0.88);
+  --th-pedestal: rgb(120 102 255 / 0.54);
+  --th-pedestal-2: rgb(56 189 248 / 0.44);
+  --th-strand: rgb(104 88 236 / 0.22);
+  --th-strand-a: #7c6cff;
+  --th-strand-b: #4f7cff;
+  --th-strand-c: #22b8e6;
+  position: relative;
+  isolation: isolate;
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1.5vh, 18px);
+  min-height: calc(100dvh - 4rem);
+  padding: clamp(12px, 1.8vh, 20px) clamp(12px, 2.4vw, 30px) clamp(14px, 2vh, 22px);
+  overflow: clip;
+  color: var(--th-ink);
+}
+
+:global(.dark) .root {
+  --th-ink: #f1f3ff;
+  --th-ink-2: #c5c9f2;
+  --th-ink-3: #9299cf;
+  --th-accent: #ad9fff;
+  --th-accent-2: #68dff8;
+  --th-glass: linear-gradient(165deg, rgb(48 42 122 / 0.82), rgb(26 24 80 / 0.78) 60%, rgb(18 24 68 / 0.78));
+  --th-glass-convex: radial-gradient(circle at 30% 22%, rgb(118 106 232 / 0.52) 0%, rgb(46 40 118 / 0.86) 52%, rgb(24 22 74 / 0.92) 100%);
+  --th-glass-solid: linear-gradient(175deg, #242060 0%, #181644 62%, #13163b 100%);
+  --th-edge: rgb(212 206 255 / 0.34);
+  --th-rim: rgb(156 142 255 / 0.32);
+  --th-rim-strong: rgb(178 166 255 / 0.56);
+  --th-shadow: 0 18px 42px -20px rgb(0 0 0 / 0.78), 0 0 24px -10px rgb(124 108 255 / 0.42);
+  --th-shadow-lift: 0 22px 46px -18px rgb(0 0 0 / 0.84), 0 0 32px -8px rgb(138 122 255 / 0.62);
+  --th-hover: rgb(173 159 255 / 0.14);
+  --th-crystal-a: #73daff;
+  --th-crystal-b: #6e52e4;
+  --th-crystal-c: #d290ff;
+  --th-crystal-edge: rgb(218 238 255 / 0.58);
+  --th-pedestal: rgb(164 144 255 / 0.76);
+  --th-pedestal-2: rgb(92 216 255 / 0.66);
+  --th-strand: rgb(173 159 255 / 0.26);
+  --th-strand-a: #a78bfa;
+  --th-strand-b: #7dd3fc;
+  --th-strand-c: #5eead4;
+}
+
+.root[data-fullscreen] {
+  min-height: 100dvh;
+  background: var(--th-fullscreen-bg, #eef1ff);
+}
+:global(.dark) .root[data-fullscreen] {
+  --th-fullscreen-bg: #120d38;
+}
+
+/* Over a wallpaper, a Living World or a 3D preset the chosen appearance owns the background: no scene, near-solid glass. */
+:global(html[data-wallpaper]) .root,
+:global(html[data-spatial]) .root {
+  --th-glass: var(--th-glass-solid);
+}
+:global(html[data-wallpaper]) .scene,
+:global(html[data-spatial]) .scene {
+  display: none;
+}
+
+/* ── Living Celestial Environment ────────────────────────────────────────────────────────── */
+
+.scene {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+.scene > * {
+  position: absolute;
+}
+
+.sky {
+  inset: 0;
+  background:
+    radial-gradient(54% 46% at 14% 22%, rgb(255 236 206 / 0.76), transparent 68%),
+    radial-gradient(62% 52% at 86% 18%, rgb(224 218 255 / 0.85), transparent 70%),
+    radial-gradient(48% 36% at 50% 62%, rgb(214 236 255 / 0.65), transparent 72%),
+    linear-gradient(180deg, #cbe1fb 0%, #dee5fc 34%, #efe8fe 58%, #e4eefc 65%, #d5e6f8 100%);
+}
+:global(.dark) .sky {
+  background:
+    radial-gradient(52% 42% at 18% 58%, rgb(109 40 217 / 0.34), transparent 70%),
+    radial-gradient(58% 48% at 82% 28%, rgb(37 99 235 / 0.28), transparent 70%),
+    radial-gradient(42% 30% at 50% 62%, rgb(56 189 248 / 0.14), transparent 72%),
+    linear-gradient(180deg, #090829 0%, #151052 34%, #2b1e7c 58%, #221968 65%, #0e0b34 100%);
+}
+
+/* Subtle atmospheric aurora that gently brightens with verified session progress (--th-progress). */
+.aurora {
+  inset: -6% -8% 36% -8%;
+  opacity: calc(0.24 + var(--th-progress, 0) * 0.34);
+  background:
+    radial-gradient(56% 42% at 32% 26%, rgb(255 224 188 / 0.45), transparent 68%),
+    radial-gradient(54% 38% at 72% 34%, rgb(165 180 252 / 0.38), transparent 70%);
+  translate: calc(var(--px, 0) * -6px) calc(var(--py, 0) * -4px);
+  transition: opacity 700ms ease, translate 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+:global(.dark) .aurora {
+  opacity: calc(0.32 + var(--th-progress, 0) * 0.42);
+  background:
+    radial-gradient(58% 38% at 28% 24%, rgb(139 92 246 / 0.36), transparent 68%),
+    radial-gradient(54% 36% at 72% 32%, rgb(56 189 248 / 0.3), transparent 70%),
+    radial-gradient(42% 28% at 50% 18%, rgb(52 211 153 / 0.14), transparent 72%);
+}
+.scene[data-tide='easy'] .aurora {
+  opacity: calc(0.42 + var(--th-progress, 0) * 0.4);
+}
+
+.nebula {
+  inset: 0;
+  opacity: 0;
+  background: radial-gradient(42% 32% at 50% 42%, rgb(168 85 247 / 0.24), transparent 70%);
+}
+:global(.dark) .nebula {
+  opacity: 1;
+}
+
+.starsFar,
+.stars {
+  inset: 0 0 36% 0;
+  opacity: 0;
+}
+.starsFar {
+  background-image:
+    radial-gradient(1px 1px at 5% 22%, rgb(226 232 255 / 0.8), transparent),
+    radial-gradient(1px 1px at 14% 8%, rgb(226 232 255 / 0.7), transparent),
+    radial-gradient(1.1px 1.1px at 26% 36%, rgb(186 230 253 / 0.75), transparent),
+    radial-gradient(1px 1px at 41% 14%, rgb(255 255 255 / 0.7), transparent),
+    radial-gradient(1px 1px at 53% 28%, rgb(221 214 254 / 0.8), transparent),
+    radial-gradient(1.1px 1.1px at 69% 16%, rgb(255 255 255 / 0.75), transparent),
+    radial-gradient(1px 1px at 84% 40%, rgb(186 230 253 / 0.7), transparent),
+    radial-gradient(1px 1px at 93% 12%, rgb(255 255 255 / 0.8), transparent);
+  translate: calc(var(--px, 0) * -2px) calc(var(--py, 0) * -2px);
+  transition: translate 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.stars {
+  background-image:
+    radial-gradient(1.5px 1.5px at 8% 14%, #fff, transparent),
+    radial-gradient(1.1px 1.1px at 18% 34%, #e0e7ff, transparent),
+    radial-gradient(1.3px 1.3px at 31% 9%, #fff, transparent),
+    radial-gradient(1.1px 1.1px at 44% 26%, #bae6fd, transparent),
+    radial-gradient(1.7px 1.7px at 57% 12%, #fff, transparent),
+    radial-gradient(1.1px 1.1px at 66% 38%, #ddd6fe, transparent),
+    radial-gradient(1.4px 1.4px at 76% 8%, #fff, transparent),
+    radial-gradient(1.1px 1.1px at 89% 30%, #bae6fd, transparent),
+    radial-gradient(1.3px 1.3px at 95% 16%, #fff, transparent),
+    radial-gradient(1.1px 1.1px at 4% 44%, #e0e7ff, transparent),
+    radial-gradient(1.1px 1.1px at 37% 46%, #fff, transparent),
+    radial-gradient(1.3px 1.3px at 82% 50%, #fff, transparent);
+  translate: calc(var(--px, 0) * -5px) calc(var(--py, 0) * -4px);
+  transition: translate 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+:global(.dark) .starsFar {
+  opacity: 0.72;
+}
+:global(.dark) .stars {
+  opacity: 0.88;
+  animation: twinkle 7.5s ease-in-out infinite alternate;
+}
+@keyframes twinkle {
+  from { opacity: 0.56; }
+  to { opacity: 0.96; }
+}
+
+/* ── Light-mode Celestial Centerpiece: Luminous Pearl Solar Astrolabe ── */
+
+.celestialDay {
+  left: clamp(18px, 3.8cqi, 64px);
+  top: clamp(72px, 11.5vh, 122px);
+  width: clamp(124px, 13.5cqi, 196px);
+  aspect-ratio: 1;
+  opacity: 1;
+  translate: calc(var(--px, 0) * -9px) calc(var(--py, 0) * -7px);
+  transition: opacity 400ms ease, translate 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+:global(.dark) .celestialDay {
+  opacity: 0;
+}
+
+.dayCorona {
+  position: absolute;
+  inset: -44%;
+  border-radius: 50%;
+  background: radial-gradient(
+    closest-side,
+    rgb(255 247 224 / 0.88) 0%,
+    rgb(255 224 190 / 0.46) 36%,
+    rgb(219 208 255 / 0.24) 64%,
+    transparent 100%
+  );
+  animation: dayBreathe 9s ease-in-out infinite alternate;
+}
+@keyframes dayBreathe {
+  from { scale: 0.96; opacity: 0.85; }
+  to { scale: 1.05; opacity: 1; }
+}
+
+.dayRingOuter {
+  position: absolute;
+  inset: 28% -24%;
+  border-radius: 50%;
+  border: 1.5px solid rgb(255 255 255 / 0.85);
+  box-shadow: 0 0 18px rgb(253 213 158 / 0.45), inset 0 0 12px rgb(196 181 253 / 0.35);
+  rotate: -18deg;
+  animation: orbitSway 18s ease-in-out infinite alternate;
+}
+@keyframes orbitSway {
+  from { rotate: -21deg; }
+  to { rotate: -15deg; }
+}
+
+.dayRingInner {
+  position: absolute;
+  inset: 14% -10%;
+  border-radius: 50%;
+  border: 1px dashed rgb(167 152 248 / 0.42);
+  rotate: 22deg;
+}
+
+.daySatellite {
+  position: absolute;
+  right: 8%;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ffffff 0%, #fde68a 52%, #f59e0b 100%);
+  box-shadow: 0 0 12px 2px rgb(251 191 36 / 0.72), 0 0 4px #ffffff;
+  animation: satelliteDrift 11s ease-in-out infinite alternate;
+}
+@keyframes satelliteDrift {
+  from { translate: 0 0; }
+  to { translate: -16px 4px; }
+}
+
+.dayOrb {
+  position: absolute;
+  inset: 14%;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 28%, #ffffff 0%, #fffaf0 24%, #ffe5be 52%, #f3d5ff 82%, #c7d9ff 100%);
+  box-shadow:
+    0 0 44px 8px rgb(255 232 194 / 0.72),
+    0 0 20px 2px rgb(255 255 255 / 0.85),
+    inset -10px -14px 24px rgb(165 152 246 / 0.32),
+    inset 4px 4px 14px rgb(255 255 255 / 0.95);
+}
+
+.dayBeams {
+  left: -4%;
+  top: 0;
+  width: 58%;
+  height: 66%;
+  opacity: 0.55;
+  background:
+    linear-gradient(126deg, rgb(255 247 230 / 0.45) 0%, transparent 46%),
+    linear-gradient(112deg, transparent 18%, rgb(255 255 255 / 0.28) 32%, transparent 52%);
+  translate: calc(var(--px, 0) * -4px) 0;
+  transition: opacity 400ms ease, translate 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+:global(.dark) .dayBeams {
+  opacity: 0;
+}
+
+/* ── Dark-mode Celestial System: Unobstructed Ringed Planet + Distant Crescent ── */
+
+.crescent {
+  left: clamp(28px, 5cqi, 82px);
+  top: clamp(82px, 12.5vh, 132px);
+  width: clamp(38px, 4.2cqi, 58px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  opacity: 0;
+  background: radial-gradient(circle at 30% 30%, #f8fafc 0%, #bae6fd 58%, #818cf8 100%);
+  box-shadow: 0 0 24px 2px rgb(125 211 252 / 0.35), inset -12px -4px 12px #0f0d3c;
+  translate: calc(var(--px, 0) * -5px) calc(var(--py, 0) * -4px);
+  transition: opacity 400ms ease, translate 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+:global(.dark) .crescent {
+  opacity: 0.82;
+}
+
+.planet {
+  right: clamp(18px, 3.2cqi, 56px);
+  top: clamp(238px, 34vh, 336px);
+  width: clamp(118px, 13.5cqi, 198px);
+  aspect-ratio: 1;
+  opacity: 0;
+  translate: calc(var(--px, 0) * -10px) calc(var(--py, 0) * -7px);
+  transition: opacity 400ms ease, translate 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+:global(.dark) .planet {
+  opacity: 1;
+}
+
+.planetGlow {
+  position: absolute;
+  inset: -34%;
+  border-radius: 50%;
+  background: radial-gradient(
+    closest-side,
+    rgb(167 139 250 / 0.36) 0%,
+    rgb(56 189 248 / 0.16) 54%,
+    transparent 100%
+  );
+}
+
+.planetBody {
+  position: absolute;
+  inset: 12%;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 30% 26%, #f5edff 0%, #c4b5fd 18%, #8b5cf6 45%, #3b1d8f 76%, #180d4a 100%);
+  box-shadow:
+    0 0 48px 4px rgb(167 139 250 / 0.34),
+    inset -16px -22px 36px rgb(12 6 42 / 0.68),
+    inset 4px 4px 14px rgb(240 232 255 / 0.35);
+}
+
+.planetRingBack {
+  position: absolute;
+  inset: 38% -24%;
+  border-radius: 50%;
+  border: 2px solid rgb(196 181 253 / 0.28);
+  rotate: -16deg;
+}
+
+.planetRingFront {
+  position: absolute;
+  inset: 38% -24%;
+  border-radius: 50%;
+  border: 2.5px solid transparent;
+  border-bottom-color: rgb(224 216 255 / 0.56);
+  border-left-color: rgb(125 211 252 / 0.42);
+  border-right-color: rgb(196 181 253 / 0.42);
+  box-shadow: 0 4px 14px -4px rgb(125 211 252 / 0.35);
+  rotate: -16deg;
+  animation: ringFloat 16s ease-in-out infinite alternate;
+}
+@keyframes ringFloat {
+  from { rotate: -18deg; }
+  to { rotate: -14deg; }
+}
+
+.planetMoon {
+  position: absolute;
+  left: 10%;
+  bottom: -4px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ffffff 0%, #bae6fd 58%, #818cf8 100%);
+  box-shadow: 0 0 12px 2px rgb(125 211 252 / 0.8);
+  animation: moonGlide 14s ease-in-out infinite alternate;
+}
+@keyframes moonGlide {
+  from { translate: 0 0; }
+  to { translate: 18px 3px; }
+}
+
+/* Clouds (light mode) */
+.clouds {
+  inset: 0;
+  translate: calc(var(--px, 0) * -4px) calc(var(--py, 0) * -2px);
+  transition: opacity 400ms ease, translate 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.clouds i {
+  position: absolute;
+  border-radius: 999px;
+  background: radial-gradient(closest-side, rgb(255 255 255 / 0.92), rgb(255 255 255 / 0));
+}
+.clouds i:nth-child(1) { right: 2%; top: 28%; width: 28%; height: 15%; }
+.clouds i:nth-child(2) { right: 15%; top: 38%; width: 20%; height: 10%; opacity: 0.78; }
+.clouds i:nth-child(3) { left: 16%; top: 10%; width: 22%; height: 9%; opacity: 0.62; }
+.clouds i:nth-child(4) { left: 2%; top: 44%; width: 18%; height: 9%; opacity: 0.56; }
+:global(.dark) .clouds {
+  opacity: 0;
+}
+
+/* Ocean Horizon */
+.sea {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 34%;
+  background:
+    linear-gradient(180deg, rgb(255 255 255 / 0.62) 0, transparent 3px),
+    linear-gradient(180deg, #dde9fb 0%, #cbdcf4 42%, #b7ccee 100%);
+}
+:global(.dark) .sea {
+  background:
+    linear-gradient(180deg, rgb(186 172 255 / 0.44) 0, transparent 2px),
+    linear-gradient(180deg, #271f7d 0%, #191461 42%, #0c0933 100%);
+}
+.seaHorizon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 5%, rgb(255 245 224 / 0.85) 26%, rgb(255 255 255 / 0.9) 50%, rgb(220 214 255 / 0.75) 74%, transparent 95%);
+}
+:global(.dark) .seaHorizon {
+  background: linear-gradient(90deg, transparent 6%, rgb(167 139 250 / 0.55) 28%, rgb(103 232 249 / 0.62) 50%, rgb(167 139 250 / 0.55) 74%, transparent 94%);
+}
+.seaGlint {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(180deg, transparent 0 9px, rgb(255 255 255 / 0.38) 9px 10px, transparent 10px 22px);
+  -webkit-mask-image: radial-gradient(64% 92% at 50% 0%, #000, transparent 76%);
+  mask-image: radial-gradient(64% 92% at 50% 0%, #000, transparent 76%);
+  opacity: 0.72;
+}
+:global(.dark) .seaGlint {
+  background: repeating-linear-gradient(180deg, transparent 0 9px, rgb(186 170 255 / 0.3) 9px 10px, transparent 10px 22px);
+}
+.seaPath {
+  position: absolute;
+  left: 28%;
+  right: 28%;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(180deg, rgb(255 248 232 / 0.56), rgb(255 255 255 / 0.25) 45%, transparent 82%);
+  filter: blur(10px);
+  opacity: 0.6;
+  translate: calc(var(--px, 0) * -6px) 0;
+  transition: translate 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+:global(.dark) .seaPath {
+  background: linear-gradient(180deg, rgb(156 140 255 / 0.42), rgb(56 189 248 / 0.18) 45%, transparent 82%);
+}
+
+.reef {
+  bottom: 0;
+  width: clamp(140px, 18cqi, 260px);
+  height: auto;
+  opacity: 0.92;
+}
+.reefLeft { left: -1%; }
+.reefRight { right: -1%; }
+.reef path { filter: drop-shadow(0 0 6px rgb(255 255 255 / 0.28)); }
+:global(.dark) .reef path { filter: drop-shadow(0 0 10px rgb(111 214 255 / 0.42)); }
+
+.whale {
+  right: 2%;
+  top: 56%;
+  width: clamp(148px, 15.5cqi, 240px);
+  translate: calc(var(--px, 0) * 5px) calc(var(--py, 0) * 3px);
+  transition: translate 1000ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.motes i {
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.92);
+  box-shadow: 0 0 8px 2px rgb(168 156 255 / 0.55);
+  opacity: 0;
+  animation: mote 14s linear infinite;
+}
+:global(.dark) .motes i {
+  box-shadow: 0 0 10px 3px rgb(140 200 255 / 0.62);
+}
+@keyframes mote {
+  0% { opacity: 0; translate: 0 0; }
+  15% { opacity: 0.85; }
+  85% { opacity: 0.6; }
+  100% { opacity: 0; translate: 6px -90px; }
+}
+
+/* ── Top Bar & Reforged Convex Liquid-Glass Controls ─────────────────────────────────────── */
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.deck {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  max-width: 100%;
+  padding: 5px 15px 5px 5px;
+  border-radius: 999px;
+  background: var(--th-glass);
+  box-shadow:
+    inset 0 1.5px 1px rgb(255 255 255 / 0.82),
+    inset 0 0 0 1px var(--th-edge),
+    0 0 0 1px var(--th-rim),
+    var(--th-shadow);
+}
+:global(.dark) .deck {
+  box-shadow:
+    inset 0 1px 1px rgb(255 255 255 / 0.22),
+    inset 0 0 0 1px var(--th-edge),
+    0 0 0 1px var(--th-rim),
+    var(--th-shadow);
+}
+
+.deckBack {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  color: var(--th-ink);
+  background: var(--th-glass-convex);
+  box-shadow:
+    inset 0 1.5px 1px rgb(255 255 255 / 0.9),
+    inset 0 0 0 1px var(--th-rim),
+    0 4px 10px -6px rgb(66 56 170 / 0.45);
+  transition: translate 220ms cubic-bezier(0.22, 1.4, 0.36, 1), scale 140ms ease, color 160ms ease, box-shadow 180ms ease;
+}
+:global(.dark) .deckBack {
+  box-shadow:
+    inset 0 1px 1px rgb(255 255 255 / 0.26),
+    inset 0 0 0 1px var(--th-rim),
+    0 6px 12px -6px rgb(0 0 0 / 0.65);
+}
+.deckBack:hover {
+  color: var(--th-accent);
+  translate: -2px 0;
+}
+.deckBack:active {
+  scale: 0.93;
+}
+
+.deckTitle {
+  margin: 0;
+  min-width: 0;
+  font-size: clamp(0.92rem, 1.4vw, 1.05rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--th-ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.deckChip {
+  flex: none;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--th-accent);
+  background: rgb(99 78 240 / 0.1);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.7), inset 0 0 0 1px rgb(99 78 240 / 0.26);
+}
+:global(.dark) .deckChip {
+  background: rgb(173 159 255 / 0.14);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.16), inset 0 0 0 1px rgb(173 159 255 / 0.34);
+}
+
+.barTools {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-left: auto;
+}
+
+/* Tactile Convex Liquid-Glass Circular Controls */
+.iconButton {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  color: var(--th-ink-2);
+  background: var(--th-glass-convex);
+  box-shadow:
+    inset 0 2px 2px rgb(255 255 255 / 0.94),
+    inset 0 -3px 6px -2px rgb(118 106 236 / 0.2),
+    inset 0 0 0 1px var(--th-edge),
+    0 0 0 1px var(--th-rim),
+    var(--th-shadow);
+  overflow: hidden;
+  transition:
+    color 180ms ease,
+    translate 240ms cubic-bezier(0.22, 1.4, 0.36, 1),
+    scale 140ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 220ms ease;
+}
+.iconButton::before {
+  content: '';
+  position: absolute;
+  left: 16%;
+  right: 16%;
+  top: 3px;
+  height: 42%;
+  border-radius: 999px;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.76), rgb(255 255 255 / 0));
+  opacity: 0.9;
+  transition: opacity 200ms ease;
+}
+:global(.dark) .iconButton {
+  box-shadow:
+    inset 0 1.5px 2px rgb(235 232 255 / 0.36),
+    inset 0 -4px 8px -2px rgb(12 10 46 / 0.7),
+    inset 0 0 0 1px var(--th-edge),
+    0 0 0 1px var(--th-rim),
+    var(--th-shadow);
+}
+:global(.dark) .iconButton::before {
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.28), rgb(255 255 255 / 0));
+  opacity: 0.75;
+}
+.iconButton:hover {
+  color: var(--th-accent);
+  translate: 0 -2px;
+  box-shadow:
+    inset 0 2px 3px rgb(255 255 255 / 0.98),
+    inset 0 -3px 8px -2px rgb(99 78 240 / 0.28),
+    inset 0 0 0 1px var(--th-edge),
+    0 0 0 1px var(--th-rim-strong),
+    var(--th-shadow-lift);
+}
+:global(.dark) .iconButton:hover {
+  color: #e8e4ff;
+  box-shadow:
+    inset 0 1.5px 3px rgb(240 236 255 / 0.48),
+    inset 0 -4px 8px -2px rgb(103 220 245 / 0.22),
+    inset 0 0 0 1px rgb(214 206 255 / 0.55),
+    0 0 0 1px var(--th-rim-strong),
+    var(--th-shadow-lift);
+}
+.iconButton:active {
+  translate: 0 0;
+  scale: 0.94;
+}
+.iconButton[aria-expanded='true'],
+.iconButton[aria-pressed='true'] {
+  color: var(--th-accent);
+  background: radial-gradient(circle at 32% 24%, #ffffff 0%, #ebe6ff 56%, #d9d6ff 100%);
+  box-shadow:
+    inset 0 2px 2px #ffffff,
+    inset 0 0 0 1.5px var(--th-accent),
+    0 0 22px -4px rgb(99 78 240 / 0.55),
+    var(--th-shadow);
+}
+:global(.dark) .iconButton[aria-expanded='true'],
+:global(.dark) .iconButton[aria-pressed='true'] {
+  color: #ffffff;
+  background: radial-gradient(circle at 32% 24%, rgb(156 140 255 / 0.75) 0%, rgb(78 64 190 / 0.9) 58%, rgb(46 38 134 / 0.95) 100%);
+  box-shadow:
+    inset 0 1.5px 2px rgb(255 255 255 / 0.45),
+    inset 0 0 0 1.5px var(--th-accent),
+    0 0 26px -4px rgb(125 211 252 / 0.55),
+    var(--th-shadow);
+}
+
+/* Tactile Champagne-Pearl Liquid-Glass Quiz Control (quiet, luminous, zero flat orange gradient) */
+.quiz {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 18px 0 8px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: -0.005em;
+  color: #7c3b08;
+  background:
+    radial-gradient(88% 120% at 24% 8%, rgb(255 255 255 / 0.96) 0%, transparent 56%),
+    linear-gradient(170deg, rgb(255 250 240 / 0.96) 0%, rgb(254 240 218 / 0.92) 60%, rgb(253 230 202 / 0.9) 100%);
+  box-shadow:
+    inset 0 2px 2px rgb(255 255 255 / 0.96),
+    inset 0 -3px 8px -3px rgb(217 119 6 / 0.22),
+    inset 0 0 0 1px rgb(255 255 255 / 0.88),
+    0 0 0 1px rgb(217 119 6 / 0.34),
+    0 14px 28px -18px rgb(180 83 9 / 0.52),
+    0 3px 10px -5px rgb(180 83 9 / 0.2);
+  overflow: hidden;
+  transition:
+    translate 240ms cubic-bezier(0.22, 1.4, 0.36, 1),
+    scale 140ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 220ms ease;
+}
+.quiz::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(108deg, transparent 28%, rgb(255 255 255 / 0.65) 48%, transparent 68%);
+  background-size: 240% 100%;
+  background-position: 120% 0;
+  opacity: 0;
+  transition: background-position 560ms cubic-bezier(0.22, 1, 0.36, 1), opacity 200ms ease;
+}
+.quizGlyph {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: #c2590a;
+  background: radial-gradient(circle at 34% 28%, #ffffff 0%, #fef3c7 55%, #fde68a 100%);
+  box-shadow: inset 0 1px 1px #ffffff, 0 0 0 1px rgb(217 119 6 / 0.25), 0 4px 10px -4px rgb(180 83 9 / 0.4);
+}
+.quiz:hover {
+  translate: 0 -2px;
+  box-shadow:
+    inset 0 2px 3px #ffffff,
+    inset 0 -3px 8px -2px rgb(217 119 6 / 0.3),
+    inset 0 0 0 1px #ffffff,
+    0 0 0 1px rgb(217 119 6 / 0.56),
+    0 18px 34px -16px rgb(180 83 9 / 0.62),
+    0 0 22px -6px rgb(251 191 36 / 0.45);
+}
+.quiz:hover::before {
+  opacity: 1;
+  background-position: -20% 0;
+}
+.quiz:active {
+  translate: 0 0;
+  scale: 0.96;
+}
+:global(.dark) .quiz {
+  color: #fef0c7;
+  background:
+    radial-gradient(88% 120% at 24% 8%, rgb(254 215 170 / 0.24) 0%, transparent 56%),
+    linear-gradient(170deg, rgb(104 52 24 / 0.72) 0%, rgb(68 34 26 / 0.8) 62%, rgb(48 24 44 / 0.84) 100%);
+  box-shadow:
+    inset 0 1.5px 2px rgb(254 240 199 / 0.32),
+    inset 0 -3px 8px -2px rgb(12 6 24 / 0.7),
+    inset 0 0 0 1px rgb(253 186 116 / 0.24),
+    0 0 0 1px rgb(251 146 60 / 0.42),
+    0 16px 34px -18px rgb(0 0 0 / 0.8),
+    0 0 24px -10px rgb(251 191 36 / 0.36);
+}
+:global(.dark) .quiz::before {
+  background: linear-gradient(108deg, transparent 28%, rgb(254 240 199 / 0.22) 48%, transparent 68%);
+  background-size: 240% 100%;
+  background-position: 120% 0;
+}
+:global(.dark) .quizGlyph {
+  color: #fde68a;
+  background: radial-gradient(circle at 34% 28%, rgb(251 191 36 / 0.45) 0%, rgb(146 64 14 / 0.75) 65%, rgb(88 38 16 / 0.9) 100%);
+  box-shadow: inset 0 1px 1px rgb(254 240 199 / 0.4), 0 0 0 1px rgb(251 191 36 / 0.35);
+}
+
+/* ── Study Composition & Synchronized Memory Current ─────────────────────────────────────── */
+
+.stage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.study {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1.5vh, 16px);
+  flex: 1;
+}
+.hud {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+}
+
+.counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 15px 0 11px;
+  border-radius: 999px;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--th-ink);
+  background: var(--th-glass);
+  box-shadow:
+    inset 0 1.5px 1px rgb(255 255 255 / 0.85),
+    inset 0 0 0 1px var(--th-edge),
+    0 0 0 1px var(--th-rim),
+    var(--th-shadow);
+}
+:global(.dark) .counter {
+  box-shadow:
+    inset 0 1px 1px rgb(255 255 255 / 0.22),
+    inset 0 0 0 1px var(--th-edge),
+    0 0 0 1px var(--th-rim),
+    var(--th-shadow);
+}
+.counter span {
+  color: var(--th-ink-3);
+  font-weight: 600;
+}
+.counter svg {
+  color: var(--th-accent);
+}
+
+.modes {
+  display: inline-flex;
+  gap: 3px;
+  padding: 4px;
+  border-radius: 999px;
+  background: var(--th-glass);
+  box-shadow:
+    inset 0 1.5px 1px rgb(255 255 255 / 0.84),
+    inset 0 0 0 1px var(--th-edge),
+    0 0 0 1px var(--th-rim),
+    var(--th-shadow);
+}
+:global(.dark) .modes {
+  box-shadow:
+    inset 0 1px 1px rgb(255 255 255 / 0.2),
+    inset 0 0 0 1px var(--th-edge),
+    0 0 0 1px var(--th-rim),
+    var(--th-shadow);
+}
+.modes button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 13px;
+  border-radius: 999px;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--th-ink-2);
+  transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease, scale 140ms ease;
+}
+.modes button:hover {
+  color: var(--th-accent);
+}
+.modes button:active {
+  scale: 0.96;
+}
+.modes button[aria-pressed='true'] {
+  color: #ffffff;
+  background: linear-gradient(135deg, #6f5cff 0%, #4b7dff 100%);
+  box-shadow:
+    0 6px 16px -8px rgb(99 78 240 / 0.9),
+    inset 0 1px 0 rgb(255 255 255 / 0.38);
+}
+
+/* Synchronized Memory Current (exact percentage clip-path termination — zero stroke-dasharray drift) */
+.current {
+  position: relative;
+  height: 40px;
+  min-width: 120px;
+  margin: 0 4px;
+}
+.strand {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.strandBase {
+  fill: none;
+  stroke: var(--th-strand);
+  stroke-width: 1.75;
+  stroke-linecap: round;
+}
+.strandLitClip {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  clip-path: inset(-14px calc((1 - var(--cur-t, 0)) * 100%) -14px -14px);
+  transition: clip-path 440ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.strandLit {
+  fill: none;
+  stroke-width: 2.75;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 5px rgb(104 92 255 / 0.72));
+}
+:global(.dark) .strandLit {
+  filter: drop-shadow(0 0 7px rgb(125 211 252 / 0.85));
+}
+
+.nodes {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.node {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  margin: -3.5px 0 0 -3.5px;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.72);
+  box-shadow: inset 0 0 0 1.5px var(--th-strand);
+  transition:
+    background-color 280ms ease,
+    box-shadow 280ms ease,
+    width 240ms ease,
+    height 240ms ease,
+    margin 240ms ease;
+}
+:global(.dark) .node {
+  background: rgb(30 26 88 / 0.88);
+  box-shadow: inset 0 0 0 1.5px rgb(173 159 255 / 0.38);
+}
+.node[data-state='done'] {
+  background: #7c6cff;
+  box-shadow: 0 0 0 1.5px rgb(255 255 255 / 0.8), 0 0 7px 1px rgb(124 108 255 / 0.65);
+}
+.node[data-q='hard'] {
+  background: #fb7185;
+  box-shadow: 0 0 0 1.5px rgb(255 255 255 / 0.85), 0 0 8px 1px rgb(251 113 133 / 0.78);
+}
+.node[data-q='good'] {
+  background: #6366f1;
+  box-shadow: 0 0 0 1.5px rgb(255 255 255 / 0.85), 0 0 8px 1px rgb(99 102 241 / 0.8);
+}
+.node[data-q='easy'] {
+  background: #34d399;
+  box-shadow: 0 0 0 1.5px rgb(255 255 255 / 0.9), 0 0 9px 2px rgb(52 211 153 / 0.82);
+}
+.node[data-state='active'] {
+  width: 14px;
+  height: 14px;
+  margin: -7px 0 0 -7px;
+  z-index: 2;
+  background: radial-gradient(circle at 35% 30%, #ffffff 0%, #eef2ff 56%, #c7d2fe 100%);
+  box-shadow:
+    0 0 0 3px rgb(110 92 248 / 0.4),
+    0 0 16px 4px rgb(110 92 248 / 0.72);
+  animation: activeNode 2.5s ease-in-out infinite;
+}
+:global(.dark) .node[data-state='active'] {
+  background: radial-gradient(circle at 35% 30%, #ffffff 0%, #e0f2fe 58%, #a5b4fc 100%);
+  box-shadow:
+    0 0 0 3px rgb(167 139 250 / 0.5),
+    0 0 18px 5px rgb(103 232 249 / 0.72);
+}
+@keyframes activeNode {
+  0%, 100% { scale: 1; }
+  50% { scale: 1.16; }
+}
+
+.reviewError {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-self: center;
+  max-width: min(760px, 100%);
+  padding: 10px 12px 10px 16px;
+  border-radius: 16px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #9f1239;
+  background: #fff1f2;
+  box-shadow: inset 0 0 0 1px #fecdd3, var(--th-shadow);
+}
+:global(.dark) .reviewError {
+  color: #fecdd3;
+  background: #3b0f24;
+  box-shadow: inset 0 0 0 1px rgb(251 113 133 / 0.35), var(--th-shadow);
+}
+.reviewError button { flex: none; }
+.reviewRetry {
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 12px;
+  background: #be123c;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.86rem;
+}
+.reviewRetry:disabled { opacity: 0.6; cursor: wait; }
+.reviewDismiss {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  line-height: 1;
+  opacity: 0.75;
+}
+
+/* ── The Arena: Orbit · Card · Halo (Card centred, zero clutter) ─────────────────────────── */
+
+.arena {
+  display: grid;
+  grid-template-columns: minmax(88px, 1fr) minmax(0, 840px) minmax(88px, 1fr);
+  align-items: start;
+  gap: clamp(12px, 2.4cqi, 40px);
+  flex: 1;
+}
+.side {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.sideStart { align-items: flex-end; }
+.sideEnd { align-items: flex-start; align-self: start; padding-top: 6px; }
+.cardColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 0;
+  padding-top: clamp(4px, 1.2vh, 14px);
+}
+
+/* Light field around the central flashcard */
+.aura {
+  position: absolute;
+  z-index: -1;
+  inset: -8% -10% 10% -10%;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(closest-side, rgb(168 156 255 / 0.44), rgb(120 200 255 / 0.18) 55%, transparent 80%);
+  translate: calc(var(--px, 0) * -10px) calc(var(--py, 0) * -6px);
+  transition: translate 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+:global(.dark) .aura {
+  background: radial-gradient(closest-side, rgb(139 92 246 / 0.54), rgb(56 189 248 / 0.22) 55%, transparent 80%);
+}
+.cardFloat {
+  position: relative;
+  translate: calc(var(--px, 0) * 3px) calc(var(--py, 0) * 2px);
+  transition: translate 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.cardFloat::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 12%;
+  right: 12%;
+  bottom: -26px;
+  height: 30px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgb(76 60 190 / 0.3), transparent);
+  filter: blur(4px);
+}
+:global(.dark) .cardFloat::after {
+  background: radial-gradient(closest-side, rgb(0 0 0 / 0.62), transparent);
+}
+.pedestal {
+  position: relative;
+  z-index: -1;
+  height: 46px;
+  margin: -6px 6% 0;
+  pointer-events: none;
+  translate: calc(var(--px, 0) * -6px) 0;
+  transition: translate 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.pedestal i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  translate: -50% -50%;
+}
+.pedestal i:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  border: 1.5px solid var(--th-pedestal);
+  box-shadow: 0 0 22px 2px var(--th-pedestal), inset 0 0 18px var(--th-pedestal-2);
+}
+.pedestal i:nth-child(2) {
+  width: 78%;
+  height: 66%;
+  border: 1px solid var(--th-pedestal-2);
+  opacity: 0.82;
+}
+.pedestal i:nth-child(3) {
+  width: 112%;
+  height: 130%;
+  border: 1px solid var(--th-pedestal);
+  opacity: 0;
+  animation: pedestalRing 4.8s ease-out infinite;
+}
+@keyframes pedestalRing {
+  0% { opacity: 0.55; scale: 0.86; }
+  100% { opacity: 0; scale: 1.14; }
+}
+.stage[data-phase^='flipping'] .pedestal i:nth-child(1),
+.study[data-phase^='flipping'] .pedestal i:nth-child(1) {
+  animation: pedestalSwell 600ms ease-out;
+}
+@keyframes pedestalSwell {
+  40% { box-shadow: 0 0 40px 8px var(--th-pedestal), inset 0 0 26px var(--th-pedestal-2); }
+}
+
+/* Rating dock below pedestal: empty & serene on front (redundant hint removed), Khó · Tốt · Dễ arrive on back */
+.dock {
+  position: relative;
+  display: grid;
+  margin-top: 8px;
+  min-height: 82px;
+}
+.dock > * {
+  grid-area: 1 / 1;
+}
+.dockRatings {
+  transition: opacity 220ms cubic-bezier(0.22, 1, 0.36, 1), translate 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.dock[data-ready='false'] .dockRatings { opacity: 0; translate: 0 10px; pointer-events: none; }
+
+.forgeHint {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px 12px;
+  margin-top: 10px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--th-ink-2);
+}
+
+/* ── Orbit of Tools ──────────────────────────────────────────────────────────────────────── */
+
+.orbit {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 18px 0;
+}
+.orbitArc {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 46px;
+  height: 100%;
+  translate: -10% 0;
+  overflow: visible;
+  pointer-events: none;
+}
+.orbitArc path {
+  fill: none;
+  stroke: var(--th-rim);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 6;
+}
+.orbitNode {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: var(--th-accent);
+  background: var(--th-glass-convex);
+  box-shadow:
+    inset 0 2px 2px rgb(255 255 255 / 0.95),
+    inset 0 -3px 8px -2px rgb(118 106 236 / 0.22),
+    inset 0 0 0 1px var(--th-edge),
+    0 0 0 1px var(--th-rim),
+    0 12px 26px -12px rgb(90 70 220 / 0.68),
+    0 0 18px -6px rgb(124 108 255 / 0.5);
+  transition: translate 220ms cubic-bezier(0.22, 1.4, 0.36, 1), scale 140ms ease, opacity 200ms ease, box-shadow 200ms ease;
+}
+:global(.dark) .orbitNode {
+  color: #dfd8ff;
+  box-shadow:
+    inset 0 1.5px 2px rgb(235 232 255 / 0.38),
+    inset 0 -4px 8px -2px rgb(12 10 46 / 0.72),
+    inset 0 0 0 1px rgb(206 196 255 / 0.4),
+    0 0 24px -4px rgb(140 120 255 / 0.72);
+}
+.orbitNode:nth-child(3) { translate: -14px 0; }
+.orbitNode img { width: 34px; height: 34px; object-fit: contain; }
+.orbitNode:hover:not(:disabled) {
+  translate: 0 -2px;
+  box-shadow:
+    inset 0 2px 3px #ffffff,
+    inset 0 0 0 1.5px var(--th-accent),
+    0 0 28px -4px rgb(124 108 255 / 0.85);
+}
+.orbitNode:nth-child(3):hover:not(:disabled) { translate: -14px -2px; }
+.orbitNode:active:not(:disabled) { scale: 0.94; }
+.orbitNode:disabled { opacity: 0.56; cursor: not-allowed; filter: saturate(0.6); }
+.orbitNode[data-weak]:not(:disabled) {
+  box-shadow: inset 0 0 0 1.5px #fb7185, 0 0 24px -2px rgb(251 113 133 / 0.65);
+}
+.orbitGlyph { display: grid; place-items: center; }
+.orbitLabel {
+  position: absolute;
+  right: calc(100% + 10px);
+  top: 50%;
+  translate: 4px -50%;
+  padding: 5px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--th-ink);
+  background: var(--th-glass-solid);
+  box-shadow: inset 0 1px 0 var(--th-edge), inset 0 0 0 1px var(--th-rim), var(--th-shadow);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms ease, translate 160ms ease;
+}
+.orbitNode:hover .orbitLabel,
+.orbitNode:focus-visible .orbitLabel {
+  opacity: 1;
+  translate: 0 -50%;
+}
+
+/* ── Deck Mastery Halo ───────────────────────────────────────────────────────────────────── */
+
+.mastery {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: clamp(118px, 12cqi, 150px);
+  aspect-ratio: 1;
+  margin: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle at 36% 26%, rgb(255 255 255 / 0.95), rgb(240 237 255 / 0.78) 58%, rgb(222 216 255 / 0.68));
+  box-shadow:
+    inset 0 2px 3px #ffffff,
+    inset 0 0 0 1px var(--th-edge),
+    0 0 0 1px var(--th-rim),
+    0 20px 42px -22px rgb(66 56 170 / 0.68),
+    0 0 32px -10px rgb(124 108 255 / 0.48);
+}
+:global(.dark) .mastery {
+  background: radial-gradient(circle at 36% 26%, rgb(84 68 184 / 0.78), rgb(34 28 96 / 0.86) 64%, rgb(18 16 62 / 0.92));
+  box-shadow:
+    inset 0 1.5px 2px rgb(226 220 255 / 0.34),
+    inset 0 0 0 1px rgb(190 182 255 / 0.32),
+    0 0 36px -8px rgb(124 108 255 / 0.68);
+}
+.mastery svg {
+  position: absolute;
+  inset: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  rotate: -90deg;
+  overflow: visible;
+}
+.masteryTrack {
+  fill: none;
+  stroke: rgb(106 84 240 / 0.14);
+  stroke-width: 5;
+}
+.masteryArc {
+  fill: none;
+  stroke: #7c6cff;
+  stroke-width: 5;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 4px rgb(124 108 255 / 0.8));
+  transition: stroke-dasharray 700ms ease;
+}
+:global(.dark) .masteryArc {
+  stroke: #67dcf5;
+  filter: drop-shadow(0 0 5px rgb(103 220 245 / 0.85));
+}
+.masteryBead {
+  fill: #ffffff;
+  transform-box: view-box;
+  transform-origin: 60px 60px;
+  filter: drop-shadow(0 0 5px rgb(124 108 255 / 0.9));
+  transition: rotate 700ms ease;
+}
+.masteryText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+  text-align: center;
+}
+.masteryText strong {
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--th-ink);
+  font-variant-numeric: tabular-nums;
+}
+.masteryText span {
+  margin-top: 3px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--th-ink-2);
+}
+.masteryText small {
+  margin-top: 2px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--th-accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.masteryChip {
+  display: none;
+  align-items: center;
+  gap: 7px;
+  height: 40px;
+  padding: 0 13px 0 9px;
+  border-radius: 999px;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--th-ink-2);
+  background: var(--th-glass);
+  box-shadow: inset 0 0 0 1px var(--th-edge), 0 0 0 1px var(--th-rim), var(--th-shadow);
+}
+.masteryChipDot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: conic-gradient(#7c6cff var(--p, 0deg), rgb(106 84 240 / 0.16) 0);
+  -webkit-mask: radial-gradient(circle, transparent 5px, #000 5.5px);
+  mask: radial-gradient(circle, transparent 5px, #000 5.5px);
+}
+
+/* ── Footer: Library Pill · Tips ─────────────────────────────────────────────────────────── */
+
+.foot {
+  position: relative;
+  z-index: 6;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+.tips {
+  margin-right: clamp(0px, 6cqi, 84px);
+}
+.tipsToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 44px;
+  padding: 0 13px 0 15px;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--th-ink-2);
+  background: var(--th-glass);
+  box-shadow:
+    inset 0 1.5px 1px rgb(255 255 255 / 0.86),
+    inset 0 0 0 1px var(--th-edge),
+    0 0 0 1px var(--th-rim),
+    var(--th-shadow);
+  transition: translate 220ms cubic-bezier(0.22, 1.4, 0.36, 1), color 160ms ease, scale 140ms ease;
+}
+:global(.dark) .tipsToggle {
+  box-shadow:
+    inset 0 1px 1px rgb(255 255 255 / 0.22),
+    inset 0 0 0 1px var(--th-edge),
+    0 0 0 1px var(--th-rim),
+    var(--th-shadow);
+}
+.tipsToggle svg:first-child { color: #f59e0b; }
+.tips[data-new] .tipsToggle {
+  color: var(--th-ink);
+  box-shadow:
+    inset 0 1.5px 1px var(--th-edge),
+    0 0 0 1px rgb(245 158 11 / 0.55),
+    0 0 0 5px rgb(245 158 11 / 0.14),
+    var(--th-shadow);
+}
+.tipsToggle:hover {
+  color: var(--th-accent);
+  translate: 0 -2px;
+}
+.tipsToggle:active {
+  scale: 0.96;
+}
+.tipsChevron { width: 16px; height: 16px; transition: rotate 200ms ease; }
+.tips[data-open] .tipsChevron { rotate: -90deg; }
+
+.tipsPanel {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 10px);
+  width: min(334px, calc(100vw - 32px));
+  padding: 16px 16px 14px;
+  border-radius: 22px;
+  background: var(--th-glass-solid);
+  box-shadow:
+    inset 0 1.5px 1px var(--th-edge),
+    inset 0 0 0 1px var(--th-rim),
+    0 24px 48px -22px rgb(40 30 120 / 0.55);
+  animation: rise 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.tipsClose {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  color: var(--th-ink-3);
+}
+.tipsClose:hover { background: var(--th-hover); color: var(--th-ink); }
+.tipsLead { margin: 0 28px 6px 0; font-size: 0.95rem; font-weight: 800; color: var(--th-ink); }
+.tipsNow { margin: 0 24px 10px 0; font-size: 0.88rem; line-height: 1.5; font-weight: 600; color: var(--th-ink-2); }
+.tipsKeys {
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--th-ink-2);
+}
+.tipsKeys kbd {
+  display: inline-grid;
+  place-items: center;
+  min-width: 46px;
+  height: 22px;
+  margin-right: 8px;
+  padding: 0 6px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--th-accent);
+  background: rgb(106 84 240 / 0.1);
+}
+.tipsActions { display: flex; flex-wrap: wrap; gap: 8px; }
+.tipsPrimary {
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 12px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6a54f0, #3b82f6);
+}
+.tipsQuiet {
+  min-height: 38px;
+  padding: 0 12px;
+  border-radius: 12px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--th-ink-2);
+}
+.tipsQuiet:hover { background: var(--th-hover); }
+@keyframes rise { from { opacity: 0; translate: 0 8px; } to { opacity: 1; translate: 0 0; } }
+
+/* ── Insights Sheet (on demand) ──────────────────────────────────────────────────────────── */
+
+.sheet {
+  position: absolute;
+  z-index: 20;
+  top: clamp(64px, 9vh, 84px);
+  right: clamp(10px, 2vw, 24px);
+  max-height: calc(100% - clamp(64px, 9vh, 84px) - 16px);
+  width: min(380px, calc(100% - 20px));
+  display: flex;
+  flex-direction: column;
+  border-radius: 26px;
+  overflow: hidden;
+  background: var(--th-glass-solid);
+  box-shadow:
+    inset 0 1.5px 1px var(--th-edge),
+    inset 0 0 0 1px var(--th-rim),
+    0 30px 70px -30px rgb(30 20 110 / 0.7);
+  translate: 0 0;
+  opacity: 1;
+  transition: translate 300ms cubic-bezier(0.22, 1, 0.36, 1), opacity 220ms ease, visibility 0s;
+}
+.sheet[data-open='false'] {
+  translate: 24px 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: translate 240ms ease, opacity 200ms ease, visibility 0s linear 240ms;
+}
+.sheetHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 18px 18px 8px 22px;
+}
+.sheetHead h2 { margin: 0; font-size: 1.08rem; font-weight: 800; letter-spacing: -0.01em; color: var(--th-ink); }
+.sheetClose {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  color: var(--th-ink-3);
+}
+.sheetClose:hover { background: var(--th-hover); color: var(--th-ink); }
+.sheetBody {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 4px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.sheetSection h3 {
+  margin: 0 0 10px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--th-accent);
+}
+.sheetLine { margin: 0; font-size: 0.92rem; line-height: 1.55; font-weight: 600; color: var(--th-ink-2); }
+.sheetLine strong { color: var(--th-ink); font-weight: 800; }
+.distribution {
+  display: flex;
+  height: 12px;
+  margin: 12px 0 10px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgb(106 84 240 / 0.1);
+}
+.distribution i { display: block; height: 100%; transition: width 500ms ease; }
+.distribution i[data-q='hard'] { background: linear-gradient(90deg, #fb7185, #f43f5e); }
+.distribution i[data-q='good'] { background: linear-gradient(90deg, #818cf8, #6366f1); }
+.distribution i[data-q='easy'] { background: linear-gradient(90deg, #34d399, #10b981); }
+.legend { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.legend li {
+  display: grid;
+  grid-template-columns: 12px auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--th-ink-2);
+}
+.legend li i { width: 10px; height: 10px; border-radius: 50%; }
+.legend li[data-q='hard'] i { background: #f43f5e; }
+.legend li[data-q='good'] i { background: #6366f1; }
+.legend li[data-q='easy'] i { background: #10b981; }
+.legend li b { color: var(--th-ink); font-weight: 800; }
+.legend li small { justify-self: end; font-size: 0.78rem; color: var(--th-ink-3); }
+.legend li strong { font-variant-numeric: tabular-nums; color: var(--th-ink); }
+.sheetMastery { display: flex; align-items: center; gap: 16px; }
+.sheetMastery .mastery { width: 112px; flex: none; }
+.sheetNote {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 16px;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  font-weight: 600;
+  color: var(--th-ink-2);
+  background: rgb(106 84 240 / 0.07);
+  box-shadow: inset 0 0 0 1px rgb(106 84 240 / 0.14);
+}
+.sheetGuide {
+  align-self: flex-start;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: 13px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6a54f0, #3b82f6);
+}
+
+/* ── Responsive Composition ──────────────────────────────────────────────────────────────── */
+
+@container (max-width: 1080px) {
+  .arena { grid-template-columns: minmax(0, 1fr); }
+  .sideStart { order: 3; align-self: center; }
+  .sideEnd { display: none; }
+  .orbit { flex-direction: row; gap: 14px; padding: 0; }
+  .orbitArc { display: none; }
+  .orbitNode,
+  .orbitNode:nth-child(3) { width: 48px; height: 48px; translate: 0 0; }
+  .orbitNode:nth-child(3):hover:not(:disabled) { translate: 0 -2px; }
+  .orbitLabel { right: auto; left: 50%; top: auto; bottom: calc(100% + 8px); translate: -50% 4px; }
+  .orbitNode:hover .orbitLabel,
+  .orbitNode:focus-visible .orbitLabel { translate: -50% 0; }
+  .masteryChip { display: inline-flex; }
+  .whale { top: 6%; width: clamp(110px, 20cqi, 170px); opacity: 0.55; }
+  .planet { top: 20%; right: 2%; width: 112px; opacity: 0.72; }
+  .celestialDay { top: 72px; left: 2%; width: 108px; opacity: 0.8; }
+}
+
+@container (max-width: 640px) {
+  .root { gap: 10px; }
+  .hud { grid-template-columns: auto minmax(0, 1fr); row-gap: 10px; }
+  .hudEnd { grid-column: 1 / -1; justify-self: center; }
+  .modes button { padding: 0 10px; font-size: 0.76rem; }
+  .masteryChip { display: none; }
+  .barTools { gap: 6px; }
+  .iconButton { width: 40px; height: 40px; }
+  .quiz > span:last-child { display: none; }
+  .quiz { width: 40px; height: 40px; padding: 0; justify-content: center; gap: 0; }
+  .tips { margin-right: 76px; }
+  .tipsToggle span { display: none; }
+  .whale,
+  .planet,
+  .crescent,
+  .celestialDay,
+  .dayBeams,
+  .reef { display: none; }
+  .dock { min-height: 78px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stars,
+  .motes i,
+  .pedestal i,
+  .node,
+  .tipsPanel,
+  .node[data-state='active'],
+  .dayCorona,
+  .dayRingOuter,
+  .daySatellite,
+  .planetRingFront,
+  .planetMoon { animation: none; }
+  .aura,
+  .aurora,
+  .stars,
+  .starsFar,
+  .celestialDay,
+  .dayBeams,
+  .crescent,
+  .planet,
+  .clouds,
+  .seaPath,
+  .whale,
+  .cardFloat,
+  .pedestal,
+  .sheet,
+  .dockRatings,
+  .orbitNode,
+  .orbitLabel,
+  .strandLitClip,
+  .masteryArc,
+  .masteryBead,
+  .iconButton,
+  .quiz,
+  .quiz::before,
+  .deckBack,
+  .tipsToggle { transition: none; }
+}

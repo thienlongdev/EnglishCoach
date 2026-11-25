@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- [ASSET_REQUIRED] Production-grade vector artwork (Hand-crafted vector finalization) -->
+  <!-- Series: cefr_proficiency | Tier: S | Slug: cefr_c1_master | Standard Lineage: Radiant Platinum & Crystal Geometry -->
+  <!-- Production Vector Quality: PRODUCTION_READY_VECTOR | External Studio/Rive Hand-off: ASSET_REQUIRED -->
+  <!-- Center: (50, 50), Avatar Aperture: r=40 (80px boundary) -->
+  <defs>
+    <linearGradient id="c1PlatinumGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#e2e8f0"/>
+      <stop offset="70%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+
+    <linearGradient id="c1CelestialBlueGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+
+    <filter id="c1GlowFX" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="c1DropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#0f172a" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Geometric Celestial Halos -->
+  <g class="c1-halo-rings" opacity="0.6">
+    <circle cx="50" cy="50" r="48" stroke="url(#c1CelestialBlueGrad)" stroke-width="0.8" stroke-dasharray="3 6 12 6"/>
+    <!-- Cardinal Compass Notches -->
+    <line x1="50" y1="0" x2="50" y2="4" stroke="#38bdf8" stroke-width="1.2"/>
+    <line x1="50" y1="96" x2="50" y2="100" stroke="#38bdf8" stroke-width="1.2"/>
+    <line x1="0" y1="50" x2="4" y2="50" stroke="#38bdf8" stroke-width="1.2"/>
+    <line x1="96" y1="50" x2="100" y2="50" stroke="#38bdf8" stroke-width="1.2"/>
+  </g>
+
+  <!-- Core Polished Platinum Ring -->
+  <g class="c1-core-frame" filter="url(#c1DropShadow)">
+    <circle cx="50" cy="50" r="45" stroke="#1e293b" stroke-width="4.5"/>
+    <circle cx="50" cy="50" r="44.2" stroke="url(#c1PlatinumGrad)" stroke-width="3.2"/>
+    <circle cx="50" cy="50" r="40.8" stroke="url(#c1CelestialBlueGrad)" stroke-width="1.2"/>
+  </g>
+
+  <!-- Cardinal Faceted Crystal Insets (Diamond Rhombuses) -->
+  <g class="c1-crystal-nodes" filter="url(#c1GlowFX)">
+    <!-- Top Master Crystal Crest -->
+    <g fill="url(#c1CelestialBlueGrad)" stroke="#ffffff" stroke-width="0.6">
+      <polygon points="50,2 54,8 50,14 46,8"/>
+      <!-- Inner Specular Glint -->
+      <polygon points="50,4 52,8 50,11 48,8" fill="#ffffff"/>
+    </g>
+    <!-- Flanking Platinum Wings at Crest -->
+    <path d="M46 9 L38 6 L44 12 Z" fill="url(#c1PlatinumGrad)" stroke="#94a3b8" stroke-width="0.5"/>
+    <path d="M54 9 L62 6 L56 12 Z" fill="url(#c1PlatinumGrad)" stroke="#94a3b8" stroke-width="0.5"/>
+
+    <!-- Bottom Cardinal Crystal Anchor -->
+    <polygon points="50,98 53,92 50,87 47,92" fill="url(#c1CelestialBlueGrad)" stroke="#ffffff" stroke-width="0.6"/>
+
+    <!-- Left Cardinal Crystal -->
+    <polygon points="2,50 8,46 13,50 8,54" fill="url(#c1CelestialBlueGrad)" stroke="#ffffff" stroke-width="0.6"/>
+
+    <!-- Right Cardinal Crystal -->
+    <polygon points="98,50 92,46 87,50 92,54" fill="url(#c1CelestialBlueGrad)" stroke="#ffffff" stroke-width="0.6"/>
+
+    <!-- Diagonal Crystal Studs -->
+    <circle cx="19" cy="19" r="1.8" fill="#ffffff" stroke="#38bdf8" stroke-width="0.5"/>
+    <circle cx="81" cy="19" r="1.8" fill="#ffffff" stroke="#38bdf8" stroke-width="0.5"/>
+    <circle cx="19" cy="81" r="1.8" fill="#ffffff" stroke="#38bdf8" stroke-width="0.5"/>
+    <circle cx="81" cy="81" r="1.8" fill="#ffffff" stroke="#38bdf8" stroke-width="0.5"/>
+  </g>
+</svg>

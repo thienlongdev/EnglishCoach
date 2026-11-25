@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s015-red-dot-morning",
+  "title": "Chấm đỏ của buổi sáng",
+  "summary": "Li sợ lỡ chuyến tàu mang chị về nhà. Tấm vé có số 8 rất lớn, còn bảng giờ treo ở cửa có chấm đỏ cạnh số 6.",
+  "level": "A1",
+  "topics": [
+    "prepositions-time",
+    "numbers-dates-measures"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Li",
+      "role": "Người đi tàu lần đầu"
+    },
+    {
+      "id": "b",
+      "name": "Năm",
+      "role": "Người bán vé"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Li nhìn kỹ vé. Số 8 đi sau chữ seat. Trên bảng, chấm đỏ nằm cạnh 6:00 và tên thị trấn của chị. Bây giờ là 5:55.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Does my train leave at eight?",
+          "vi": "Tàu của cháu chạy lúc tám giờ ạ?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Eight is your seat. Read the time by the red dot.",
+          "vi": "Tám là số ghế của cháu. Đọc giờ cạnh chấm đỏ đi."
+        }
+      ],
+      "choice": {
+        "prompt": "Li báo giờ khởi hành cho mẹ qua điện thoại.",
+        "options": [
+          {
+            "t": "It leaves in six hours.",
+            "note": "In six hours nghĩa là sau sáu tiếng tính từ bây giờ. Chỉ còn năm phút chứ không phải sáu tiếng.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "It leaves at six.",
+            "note": "At dùng với mốc giờ cụ thể. Six ở bảng giờ là thời điểm tàu chạy.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Mẹ chỉ Li nhìn ra cuối sân ga. Chị đã ở trên tàu, đang vẫy qua cửa sổ ghế số 7.",
+      "say": [
+        {
+          "who": "b",
+          "en": "She's right next to your seat.",
+          "vi": "Chị cháu ngồi ngay cạnh chỗ của cháu."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Li định ngồi xuống chờ. Ông Năm chỉ kim phút đang chạy và cánh tay chị vừa ló ra ngoài cửa sổ tàu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Look at seat seven!",
+          "vi": "Cháu nhìn ghế số bảy kìa!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Li lên tàu vừa đủ lúc chuông reo. Chị đưa cho em chiếc bút đỏ, chấm một chấm cạnh giờ tàu về để lần sau hai chị em cùng đọc.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Six is the time. Eight is mine.",
+          "vi": "Sáu là giờ chạy. Tám là ghế của em."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

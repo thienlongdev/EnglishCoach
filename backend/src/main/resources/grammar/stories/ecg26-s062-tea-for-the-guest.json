@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s062-tea-for-the-guest",
+  "title": "Lời mời còn bốc khói",
+  "level": "A2",
+  "topics": [
+    "permission-and-requests"
+  ],
+  "scene": "restaurant",
+  "summary": "Lee tới xin một cốc nước nóng để ngâm túi trà cuối cùng từ nhà. Út có cả bình trà mới nhưng không biết Lee muốn uống loại nào.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Út",
+      "role": "Người pha trà"
+    },
+    {
+      "id": "b",
+      "name": "Lee",
+      "role": "Khách đi xa"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Trên tay Lee là túi trà ghi bằng nét chữ của con gái. Út để hai chiếc cốc trống lên bàn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I've got my own tea today.",
+          "vi": "Hôm nay tôi có trà riêng rồi."
+        },
+        {
+          "who": "b",
+          "en": "I can bring hot water. Would you like me to pour it?",
+          "vi": "Tôi mang nước nóng được. Ông muốn tôi rót giúp chứ?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Lee muốn tự pha nhưng vẫn có thể nhờ Út rót nước. Chọn lời để phân vai.",
+        "options": [
+          {
+            "t": "Can I pour it myself?",
+            "note": "Can I ...? xin phép để Lee tự làm. Myself nhấn chính tay ông sẽ rót.",
+            "ok": true,
+            "next": "ending-2"
+          },
+          {
+            "t": "Could you pour the water, please?",
+            "note": "Could you ...? đề nghị Út thực hiện hành động. Lee vẫn tự chọn và đặt túi trà vào cốc.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Út rót thành dòng mảnh, trên nhãn trà hiện chữ Mừng bố về nhà. Lee đọc to và cả quán vỗ tay.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I hadn't seen those words before.",
+          "vi": "Trước đó tôi chưa nhìn thấy mấy chữ ấy."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Út đưa bình nhỏ. Lee pha hai cốc từ một túi rồi đẩy một cốc sang cho Út. Ông đã tìm được người đầu tiên cùng uống trà của con gái.",
+      "say": [
+        {
+          "who": "b",
+          "en": "One for the person who gave me the water.",
+          "vi": "Một cốc cho người đã cho tôi nước."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

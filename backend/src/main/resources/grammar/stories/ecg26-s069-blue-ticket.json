@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s069-blue-ticket",
+  "title": "Vé xanh không xuống nước",
+  "level": "A2",
+  "topics": [
+    "prepositions-movement"
+  ],
+  "scene": "station",
+  "summary": "Hai chiếc vé ngang sông có màu khác nhau. Ali sợ thuyền nên giữ chặt chiếc xanh.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Nhi",
+      "role": "Chị gái"
+    },
+    {
+      "id": "b",
+      "name": "Ali",
+      "role": "Em trai"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Trên vé xanh vẽ cây cầu, trên vé trắng vẽ chiếc phà. Bà đang đợi ở bờ đối diện với bánh còn nóng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I want to keep my feet dry.",
+          "vi": "Em muốn chân vẫn khô."
+        },
+        {
+          "who": "b",
+          "en": "Then read the little bridge on your ticket.",
+          "vi": "Thế em đọc hình cây cầu nhỏ trên vé đi."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Ali chọn lời chỉ hướng đưa hai chị em qua cầu.",
+        "options": [
+          {
+            "t": "Let's walk under the bridge.",
+            "note": "Under dẫn xuống phía dưới cầu. Lối ấy tới bến phà chứ chưa đưa sang bờ đối diện.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "Let's walk across the bridge.",
+            "note": "Across đặt cuộc đi bộ từ bờ này sang bờ kia. Hai chị em có thể dùng vé xanh.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Trên đỉnh cầu, Ali nhìn thấy bà giơ bánh như một chiếc đĩa vàng. Em chạy nốt nửa cầu để nhận miếng đầu tiên.",
+      "say": [
+        {
+          "who": "a",
+          "en": "She kept it warm for us.",
+          "vi": "Bà giữ bánh nóng cho mình rồi."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Hai chị em xuống bến rồi đọc thấy biển Phà. Ali tự chọn đổi vé, lên phà cùng chị và ngạc nhiên vì đôi giày vẫn khô. Bà đã đón cả hai ở cầu tàu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Boats have floors too!",
+          "vi": "Thuyền cũng có sàn mà!"
+        }
+      ],
+      "end": true
+    }
+  ]
+}

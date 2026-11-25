@@ -1,0 +1,277 @@
+/*
+ * Echo Spatial: the global identity. Loaded with the engine's chunk only: a learner who never turns the feature on never downloads this file.
+ * Every rule is under `html[data-spatial]` or on the engine's own elements. No important flags, no own typeface, nothing that changes layout.
+ */
+.ec-sp-stage {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  contain: strict;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+.ec-sp-stage[data-on='true'] { opacity: 1; }
+.ec-sp-still {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ec-sp-layer-root {
+  position: fixed;
+  inset: 0;
+  z-index: 35;
+  overflow: hidden;
+  pointer-events: none;
+  contain: strict;
+}
+.ec-sp-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: screen;
+}
+.ec-sp-ring {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1.5px rgb(var(--sp-tint) / 0.9), 0 0 28px 4px rgb(var(--sp-tint) / 0.5), inset 0 0 22px 2px rgb(var(--sp-tint) / 0.35);
+}
+.ec-sp-sheet {
+  position: absolute;
+  top: 0;
+  height: 135vh;
+  background: linear-gradient(180deg, rgb(var(--sp-tint) / 0.1), rgb(var(--sp-tint) / 0.9) 18%, var(--sp-a) 60%, rgb(var(--sp-tint) / 0.85) 88%, rgb(var(--sp-tint) / 0));
+  filter: url(#ec-sp-fluid-edge);
+}
+
+/* ─── Cards ─────────────────────────────────────────────────────────────────────────────── */
+[data-spatial] [data-sp-surface]:not(:focus-visible) {
+  outline: 1px solid rgb(var(--sp-tint) / 0.22);
+  outline-offset: -1px;
+}
+[data-spatial] [data-sp-surface='play']:hover:not(:focus-visible) {
+  outline-color: rgb(var(--sp-tint) / 0.55);
+}
+[data-spatial] [data-sp-rel] { position: relative; }
+[data-spatial] [data-sp-sheen]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: var(--sa, 0);
+  transition: opacity 0.18s linear;
+}
+[data-spatial] [data-sp-sheen='light']::after {
+  background: radial-gradient(420px circle at var(--sx, 50%) var(--sy, 50%), rgb(var(--sp-tint) / 0.2), rgb(var(--sp-tint) / 0) 62%);
+  mix-blend-mode: normal;
+}
+[data-spatial] [data-sp-sheen='frost']::after {
+  background: radial-gradient(300px circle at var(--sx, 50%) var(--sy, 50%), rgb(255 255 255 / 0.2), rgb(255 255 255 / 0) 70%);
+}
+[data-spatial] [data-sp-sheen='liquid']::after {
+  background:
+    radial-gradient(240px circle at var(--sx, 50%) var(--sy, 50%), rgb(255 255 255 / 0.16), rgb(255 255 255 / 0) 62%),
+    radial-gradient(520px circle at var(--sx, 50%) var(--sy, 50%), rgb(var(--sp-tint) / 0) 40%, rgb(var(--sp-tint) / 0.2) 46%, rgb(var(--sp-tint) / 0) 54%);
+}
+[data-spatial] [data-sp-sheen='crystal']::after {
+  background:
+    linear-gradient(calc(115deg + (var(--sx, 50%) - 50%) * 0.3), rgb(255 255 255 / 0) 30%, rgb(255 160 200 / 0.18) 42%, rgb(160 220 255 / 0.22) 50%, rgb(190 255 200 / 0.16) 58%, rgb(255 255 255 / 0) 70%);
+  background-size: 200% 200%;
+  background-position: var(--sx, 50%) var(--sy, 50%);
+}
+[data-spatial] [data-sp-sheen='holo']::after {
+  background:
+    conic-gradient(from calc(var(--sx, 50%) * 3.6deg) at var(--sx, 50%) var(--sy, 50%), rgb(255 90 200 / 0.2), rgb(90 200 255 / 0.2), rgb(110 255 170 / 0.2), rgb(255 230 110 / 0.2), rgb(255 90 200 / 0.2));
+  mix-blend-mode: overlay;
+}
+[data-spatial] [data-sp-sheen='iridescent']::after {
+  background: linear-gradient(calc(var(--sy, 50%) * 2.2deg + 40deg), rgb(255 120 190 / 0.17), rgb(120 200 255 / 0.17) 40%, rgb(150 255 200 / 0.14) 70%, rgb(255 210 130 / 0.16));
+  mix-blend-mode: overlay;
+}
+[data-spatial] [data-sp-dim]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  border-radius: inherit;
+  pointer-events: none;
+  background: rgb(4 8 20 / 0.14);
+  opacity: 1;
+}
+
+/* ─── Kinetic headings: one visible owner of the glyphs ─────────────────────────────────────
+   Only while a letter effect runs: the real ink of the heading and of everything inside it goes transparent, a gradient clipped to the text too (a transparent fill alone leaves it painted).
+   The words stay in place, selectable and read aloud. */
+h1[data-sp-ink],
+h2[data-sp-ink],
+h1[data-sp-ink] *:not(.ec-sp-typecopy):not(.ec-sp-typecopy *):not(.ec-sp-typecanvas),
+h2[data-sp-ink] *:not(.ec-sp-typecopy):not(.ec-sp-typecopy *):not(.ec-sp-typecanvas) {
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-image: none;
+  text-shadow: none;
+}
+/* Thickness comes from a filter over the glyphs' alpha: a page's soft text shadow would be repainted in the depth colour as a halo, so these two effects replace it. */
+h1[data-sp-type='extrude'],
+h2[data-sp-type='extrude'],
+h1[data-sp-type='depth'],
+h2[data-sp-type='depth'],
+h1[data-sp-type='extrude'] *,
+h2[data-sp-type='extrude'] *,
+h1[data-sp-type='depth'] *,
+h2[data-sp-type='depth'] * {
+  text-shadow: none;
+}
+.ec-sp-typecopy {
+  position: absolute;
+  inset: 0;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+.ec-sp-ch {
+  position: absolute;
+  display: block;
+  white-space: pre;
+  letter-spacing: 0;
+  text-shadow: none;
+}
+.ec-sp-typecanvas { position: absolute; pointer-events: none; }
+
+/* ─── Gallery launcher + try bar ─────────────────────────────────────────────────────────── */
+.ec-sp-pill {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 36;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid rgb(var(--sp-tint) / 0.55);
+  border-radius: 999px;
+  color: #f8fafc;
+  background: rgb(8 14 32 / 0.92);
+  box-shadow: 0 14px 32px -14px rgb(0 0 0 / 0.7), 0 0 22px -6px rgb(var(--sp-tint) / 0.7);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.ec-sp-pill:hover { background: rgb(14 22 48 / 0.96); }
+.ec-sp-pill:focus-visible { outline: 2px solid rgb(var(--sp-tint)); outline-offset: 2px; }
+
+.ec-sp-trybar {
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  z-index: 110;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 12px;
+  max-width: calc(100vw - 24px);
+  padding: 10px 12px 10px 18px;
+  border: 1px solid rgb(var(--sp-tint) / 0.5);
+  border-radius: 18px;
+  color: #f8fafc;
+  background: rgb(8 14 32 / 0.95);
+  box-shadow: 0 18px 40px -16px rgb(0 0 0 / 0.8);
+  font-size: 13px;
+  font-weight: 600;
+}
+.ec-sp-trybar button {
+  padding: 7px 13px;
+  border-radius: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.ec-sp-trybar .ec-sp-apply { color: #04121f; background: rgb(var(--sp-tint)); }
+.ec-sp-trybar .ec-sp-undo { color: #e2e8f0; background: rgb(255 255 255 / 0.08); }
+.ec-sp-trybar button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+/* ─── Gallery room ───────────────────────────────────────────────────────────────────────── */
+.ec-sp-lens {
+  position: fixed;
+  inset: 0;
+  z-index: 115;
+  background: #05070f;
+  color: #f8fafc;
+  touch-action: none;
+}
+.ec-sp-lens-host { position: absolute; inset: 0; }
+.ec-sp-lens-top {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  pointer-events: none;
+}
+.ec-sp-lens-top > * { pointer-events: auto; }
+.ec-sp-lens-title { font-size: 13px; font-weight: 700; color: rgb(226 232 240 / 0.86); }
+.ec-sp-lens-close {
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #f8fafc;
+  background: rgb(255 255 255 / 0.12);
+  cursor: pointer;
+}
+.ec-sp-lens-close:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.ec-sp-lens-focus {
+  position: absolute;
+  left: 50%;
+  bottom: 26px;
+  width: min(560px, calc(100vw - 32px));
+  transform: translateX(-50%);
+  padding: 12px 14px 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border-radius: 18px;
+  border: 1px solid rgb(var(--sp-tint) / 0.45);
+  background: rgb(8 14 32 / 0.9);
+}
+.ec-sp-lens-name { font-size: 15px; font-weight: 700; line-height: 1.35; }
+.ec-sp-lens-open {
+  flex: none;
+  padding: 9px 16px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #04121f;
+  background: rgb(var(--sp-tint));
+  cursor: pointer;
+}
+.ec-sp-lens-open:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.ec-sp-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ec-sp-stage { transition: none; }
+  [data-spatial] [data-sp-sheen]::after { transition: none; }
+}

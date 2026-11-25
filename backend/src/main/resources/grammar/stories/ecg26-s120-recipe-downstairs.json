@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s120-recipe-downstairs",
+  "title": "Công thức ở tầng dưới",
+  "summary": "Mẹo nấu nước dùng rơi trong khe giữa hai tầng quán. Linh thấy góc giấy nhưng không với tới.",
+  "level": "B1",
+  "topics": [
+    "phrasal-verbs-separable"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sa",
+      "role": "Người nấu bếp"
+    },
+    {
+      "id": "b",
+      "name": "Linh",
+      "role": "Người phục vụ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Sa buộc một cái kẹp vào dây. Kẹp vừa bám vào góc giấy, cần kéo lên trước khi hơi nước tới.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I've got the corner!",
+          "vi": "Tôi kẹp được góc giấy rồi!"
+        },
+        {
+          "who": "b",
+          "en": "Tell me what to do with the note.",
+          "vi": "Nói tôi phải làm gì với tờ ghi chú đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Sa dùng it để chỉ tờ giấy đã nhắc.",
+        "options": [
+          {
+            "ok": false,
+            "t": "Pull up it slowly.",
+            "note": "Pull up the note có thể dùng với cụm danh từ, nhưng đại từ ngắn it cần đứng giữa pull và up.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "Pull it up slowly.",
+            "note": "Pull ... up đặt đại từ it ở giữa. Slowly giúp tránh rách góc giấy đang ẩm.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Linh kéo cả tờ lên. Dòng cuối không phải nguyên liệu mà là lời nhắc mời người rửa bát cùng ăn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The last ingredient was a person.",
+          "vi": "Thành phần cuối lại là một con người."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Bữa trưa hôm ấy cả bếp ngồi cùng bàn trước khi mở cửa. Tờ giấy được cất trong lọ khô.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Sa làm mẫu bằng bàn tay kéo lên. Tờ giấy rách đôi, mỗi người cứu được một nửa.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Two hands saved both halves.",
+          "vi": "Hai bàn tay cứu được cả hai nửa."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Ghép lại mới đọc được cả công thức lẫn lời mời cuối. Linh dán giấy lên chỗ nối giữa bàn bếp và bàn ăn.",
+      "end": true
+    }
+  ]
+}

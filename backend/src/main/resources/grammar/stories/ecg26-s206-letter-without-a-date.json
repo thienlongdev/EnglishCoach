@@ -1,0 +1,86 @@
+{
+  "id": "ecg26-s206-letter-without-a-date",
+  "title": "Bức thư đổi mùa mỗi khi đọc",
+  "level": "B2",
+  "topics": [
+    "backshift",
+    "future-in-the-past"
+  ],
+  "scene": "home",
+  "summary": "Mỗi lần mở thư của mẹ Trà, câu “I'll come back next spring” như hứa bà sẽ về vào mùa xuân sắp tới. Nhưng giấy đã vàng và mẹ mất từ lâu.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Trà",
+      "role": "Người giữ nhà"
+    },
+    {
+      "id": "b",
+      "name": "Iris",
+      "role": "Khách trọ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Iris tìm thấy năm viết thư dưới một cánh hoa ép. Cuốn sổ ga xác nhận mẹ Trà đã về đúng mùa xuân sau năm đó. Lá thư đã giữ lời.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I thought the promise kept moving away.",
+          "vi": "Tôi tưởng lời hẹn cứ lùi mãi về sau."
+        },
+        {
+          "who": "b",
+          "en": "Try telling it from the year she wrote it.",
+          "vi": "Thử kể lại từ năm bà viết thư xem."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Trà thuật lại lời hứa, neo mùa xuân theo mốc của mẹ.",
+        "options": [
+          {
+            "t": "She wrote that she would come back the following spring.",
+            "note": "Would come back là tương lai ở điểm nhìn quá khứ; the following spring tính từ lúc viết. Nó không dịch chuyển theo mỗi lần đọc.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "She writes that she'll come back next spring.",
+            "note": "Hiện tại writes và next spring theo lời kể hôm nay làm lời cũ nghe như hẹn sắp tới. Chúng có thể hợp nếu đọc diễn cảm, không hợp bản ghi lịch sử đang cần.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Trà lồng vé về nhà của mẹ cạnh thư. Khách nào mở hộp cũng thấy lời hẹn đã có ngày đến, và mùa xuân không còn phải đợi ở ngoài cửa.",
+      "say": [
+        {
+          "who": "a",
+          "en": "She wasn't late. I was reading from the wrong year.",
+          "vi": "Mẹ không trễ. Tôi đã đọc từ nhầm năm."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Iris mời Trà đọc nguyên văn trên sân hiên như một lời thoại, rồi ghi riêng năm bên dưới. Trà được giữ cả độ sống của giọng mẹ lẫn sự thật bà đã trở về.",
+      "say": [
+        {
+          "who": "b",
+          "en": "You can keep the voice and still give it a date.",
+          "vi": "Cô giữ được giọng nói mà vẫn ghi đúng ngày cho nó."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

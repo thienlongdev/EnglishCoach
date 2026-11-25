@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s034-umbrella-moon",
+  "title": "Chiếc ô che mặt trăng",
+  "summary": "Miên quay lại bến xe và bỗng không thấy trăng ở nơi vừa nhìn thấy nó. Jo vẫn ngồi ở đầu ghế và chỉ lên trời.",
+  "level": "A1",
+  "topics": [
+    "prepositions-place",
+    "pronoun-reference"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Miên",
+      "role": "Người chờ xe"
+    },
+    {
+      "id": "b",
+      "name": "Jo",
+      "role": "Bạn cùng lớp"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Jo dịch sang bên phải nhường chỗ. Miên nhìn thấy trăng ngay trên vai bạn. Khi cô lùi sang trái, một chiếc ô đen trên giá báo lại che mất nó.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The moon is gone from my seat!",
+          "vi": "Nhìn từ chỗ mình thì trăng biến mất rồi!"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Come here. Can you see it now?",
+          "vi": "Lại đây. Giờ cậu thấy nó chưa?"
+        }
+      ],
+      "choice": {
+        "prompt": "Miên kể điều thấy từ ghế cũ, dùng đúng vật đang chắn tầm mắt.",
+        "options": [
+          {
+            "t": "The moon is behind the umbrella.",
+            "note": "Behind diễn tả vị trí trong tầm nhìn của Miên. Chiếc ô ở gần che khuất mặt trăng ở xa.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "The umbrella is behind the moon.",
+            "note": "Đổi chỗ hai danh từ sẽ đặt ô phía sau trăng. Điều đó không giải thích được việc chiếc ô che tầm nhìn từ ghế cũ.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Jo nâng chiếc ô lên một chút. Ánh trăng lộ ra dưới mép vải y như một đồng xu bạc.",
+      "say": [
+        {
+          "who": "b",
+          "en": "There it is again.",
+          "vi": "Nó lại hiện ra rồi kìa."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Jo lấy chiếc ô khỏi giá. Miên từ ghế nào cũng trông thấy trăng. Chiếc ô rõ ràng ở gần hai bạn hơn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I can hold the umbrella. I can't hold the moon.",
+          "vi": "Mình cầm được ô chứ không cầm được trăng."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Chuyến xe tới, Jo vẽ một vòng tròn bạc lên tay cầm chiếc ô đen. Ngày mưa, Miên vẫn có một mặt trăng bé xíu để chỉ cho bạn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Now our umbrella has a moon too.",
+          "vi": "Giờ chiếc ô cũng có trăng rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

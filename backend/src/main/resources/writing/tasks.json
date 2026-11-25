@@ -1,0 +1,549 @@
+[
+  {
+    "id": "ielts-t1-line-01",
+    "version": 1,
+    "category": "Academic",
+    "family": "IELTS",
+    "taskSubtype": "line_chart",
+    "rubricType": "IELTS",
+    "title": "IELTS Task 1: Internet Access Trends (Line Graph)",
+    "prompt": "The line graph shows the percentage of households with internet access in three European countries between 2005 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "guidance": "Write at least 150 words. Do not give your personal opinion. Structure your response into an introduction with an overview of main trends, followed by two detail paragraphs comparing specific figures.",
+    "audience": "IELTS Examiner",
+    "targetRegister": "Academic Formal",
+    "targetWordCountMin": 150,
+    "targetWordCountMax": 200,
+    "requirements": [
+      "Paraphrase the prompt in the introductory sentence",
+      "Include a clear overview highlighting key trends or highest/lowest figures",
+      "Compare key data points between the three countries",
+      "Report specific percentages and years with accuracy",
+      "Maintain objective academic style without personal pronouns"
+    ],
+    "visualData": {
+      "chartType": "line",
+      "title": "Households with Internet Access (2005-2020)",
+      "unit": "%",
+      "xAxis": {
+        "label": "Year",
+        "categories": ["2005", "2010", "2015", "2020"]
+      },
+      "yAxis": {
+        "label": "Percentage of Households (%)",
+        "min": 0,
+        "max": 100
+      },
+      "series": [
+        {
+          "name": "United Kingdom",
+          "color": "#3b82f6",
+          "data": [35, 68, 86, 94]
+        },
+        {
+          "name": "Germany",
+          "color": "#10b981",
+          "data": [42, 75, 88, 93]
+        },
+        {
+          "name": "Greece",
+          "color": "#f59e0b",
+          "data": [22, 45, 66, 81]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ielts-t1-bar-01",
+    "version": 1,
+    "category": "Academic",
+    "family": "IELTS",
+    "taskSubtype": "bar_chart",
+    "rubricType": "IELTS",
+    "title": "IELTS Task 1: Municipal Waste Generation (Bar Chart)",
+    "prompt": "The bar chart illustrates the annual amount of municipal waste generated per person across six countries in 2010 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "guidance": "Write at least 150 words. Highlight the countries with the largest increases and decreases.",
+    "audience": "IELTS Examiner",
+    "targetRegister": "Academic Formal",
+    "targetWordCountMin": 150,
+    "targetWordCountMax": 200,
+    "requirements": [
+      "Provide an overview summarizing the overall pattern across the decade",
+      "Group countries with similar trends into distinct paragraphs",
+      "Use accurate comparative structures and numerical descriptors",
+      "Write at least 150 words"
+    ],
+    "visualData": {
+      "chartType": "bar",
+      "title": "Municipal Waste Generated Per Capita (2010 vs 2020)",
+      "unit": "kg/person/year",
+      "xAxis": {
+        "label": "Country",
+        "categories": ["USA", "Germany", "Japan", "UK", "France", "Poland"]
+      },
+      "yAxis": {
+        "label": "Waste (kg per person)",
+        "min": 0,
+        "max": 800
+      },
+      "series": [
+        {
+          "name": "2010",
+          "color": "#6366f1",
+          "data": [730, 610, 420, 520, 530, 315]
+        },
+        {
+          "name": "2020",
+          "color": "#06b6d4",
+          "data": [690, 570, 380, 460, 510, 340]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ielts-t1-pie-01",
+    "version": 1,
+    "category": "Academic",
+    "family": "IELTS",
+    "taskSubtype": "pie_chart",
+    "rubricType": "IELTS",
+    "title": "IELTS Task 1: Electricity Sources Comparison (Pie Charts)",
+    "prompt": "The two pie charts compare the proportion of electricity generated from various energy sources in a particular nation in 1995 and 2015. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "guidance": "Write at least 150 words. Contrast fossil fuel reliance with the growth of renewable energy.",
+    "audience": "IELTS Examiner",
+    "targetRegister": "Academic Formal",
+    "targetWordCountMin": 150,
+    "targetWordCountMax": 200,
+    "requirements": [
+      "State the primary shift in electricity sources over the 20-year span",
+      "Compare coal, natural gas, hydro, and solar/wind proportions",
+      "Use appropriate proportions vocabulary (represented, accounted for, constituted)",
+      "Maintain clear paragraphing"
+    ],
+    "visualData": {
+      "chartType": "pie",
+      "title": "Electricity Generation by Source (1995 vs 2015)",
+      "unit": "%",
+      "subCharts": [
+        {
+          "title": "1995 (Total Generation: 320 TWh)",
+          "slices": [
+            { "name": "Coal", "value": 45, "color": "#475569" },
+            { "name": "Natural Gas", "value": 25, "color": "#f97316" },
+            { "name": "Hydro", "value": 20, "color": "#3b82f6" },
+            { "name": "Nuclear", "value": 7, "color": "#a855f7" },
+            { "name": "Solar & Wind", "value": 3, "color": "#10b981" }
+          ]
+        },
+        {
+          "title": "2015 (Total Generation: 410 TWh)",
+          "slices": [
+            { "name": "Coal", "value": 22, "color": "#475569" },
+            { "name": "Natural Gas", "value": 32, "color": "#f97316" },
+            { "name": "Hydro", "value": 18, "color": "#3b82f6" },
+            { "name": "Nuclear", "value": 6, "color": "#a855f7" },
+            { "name": "Solar & Wind", "value": 22, "color": "#10b981" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ielts-t1-table-01",
+    "version": 1,
+    "category": "Academic",
+    "family": "IELTS",
+    "taskSubtype": "table",
+    "rubricType": "IELTS",
+    "title": "IELTS Task 1: Consumer Expenditure Across Nations (Table)",
+    "prompt": "The table gives information about national consumer expenditure on three categories of items in five nations in 2022. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "guidance": "Write at least 150 words. Identify which category accounted for the highest consumer spending across all nations.",
+    "audience": "IELTS Examiner",
+    "targetRegister": "Academic Formal",
+    "targetWordCountMin": 150,
+    "targetWordCountMax": 200,
+    "requirements": [
+      "Overview indicating the highest and lowest spending categories",
+      "Accurate comparisons between countries within each category",
+      "Correct data referencing and percentages"
+    ],
+    "visualData": {
+      "chartType": "table",
+      "title": "National Consumer Expenditure Breakdown (2022)",
+      "columns": ["Country", "Food / Drink / Tobacco (%)", "Clothing / Footwear (%)", "Leisure / Education (%)"],
+      "rows": [
+        ["Ireland", "28.91%", "6.43%", "2.21%"],
+        ["Italy", "16.36%", "9.00%", "3.20%"],
+        ["Spain", "18.80%", "6.51%", "1.98%"],
+        ["Sweden", "15.77%", "5.40%", "3.22%"],
+        ["Turkey", "32.14%", "6.63%", "4.35%"]
+      ]
+    }
+  },
+  {
+    "id": "ielts-t1-process-01",
+    "version": 1,
+    "category": "Academic",
+    "family": "IELTS",
+    "taskSubtype": "process",
+    "rubricType": "IELTS",
+    "title": "IELTS Task 1: Plastic Recycling Lifecycle (Process Diagram)",
+    "prompt": "The diagram illustrates the stages in the industrial recycling of used plastic bottles into commercial clothing items. Summarise the process by selecting and describing the main stages in sequential order.",
+    "guidance": "Write at least 150 words. Use passive voice appropriately to describe mechanical and chemical steps.",
+    "audience": "IELTS Examiner",
+    "targetRegister": "Academic Formal",
+    "targetWordCountMin": 150,
+    "targetWordCountMax": 200,
+    "requirements": [
+      "Overview stating the starting raw material, number of main stages, and final end product",
+      "Sequential linkers (initially, subsequently, following this, ultimately)",
+      "Consistent use of passive voice for process descriptions"
+    ],
+    "visualData": {
+      "chartType": "process",
+      "title": "Industrial Plastic Bottle Recycling Lifecycle",
+      "steps": [
+        { "stage": 1, "label": "Collection & Sorting", "desc": "Used plastic bottles gathered from domestic recycling bins and sorted by polymer type." },
+        { "stage": 2, "label": "Washing & De-labeling", "desc": "Bottles washed under high-temperature sanitizing jets; caps, rings, and adhesive labels removed." },
+        { "stage": 3, "label": "Industrial Shredding", "desc": "Cleaned containers fed into heavy mechanical cutters to form uniform plastic flakes." },
+        { "stage": 4, "label": "Thermal Melting & Extrusion", "desc": "Flakes heated and forced through fine nozzles into continuous polyester yarn filaments." },
+        { "stage": 5, "label": "Textile Weaving & Assembly", "desc": "Filaments spooled onto industrial bobbins and woven into warm recycled fleece jackets." }
+      ]
+    }
+  },
+  {
+    "id": "ielts-t1-map-01",
+    "version": 1,
+    "category": "Academic",
+    "family": "IELTS",
+    "taskSubtype": "map",
+    "rubricType": "IELTS",
+    "title": "IELTS Task 1: Coastal Town Redevelopment (Map Comparison)",
+    "prompt": "The two maps show the town of Porthaven in 2000 and planned developments for 2025. Summarise the key infrastructural, residential, and commercial transformations that have taken place or are planned.",
+    "guidance": "Write at least 150 words. Use directional language (north, south, adjacent to) and transformation verbs.",
+    "audience": "IELTS Examiner",
+    "targetRegister": "Academic Formal",
+    "targetWordCountMin": 150,
+    "targetWordCountMax": 200,
+    "requirements": [
+      "Overview describing the overall nature of development (e.g. from rural/industrial to residential/leisure)",
+      "Precise spatial prepositions and directional vocabulary",
+      "Transformation verbs (demolished, converted, replaced by, extended)"
+    ],
+    "visualData": {
+      "chartType": "map",
+      "title": "Porthaven Coastal Town Redevelopment (2000 vs Planned 2025)",
+      "features": [
+        { "zone": "North Shore (Harbor)", "before": "Old commercial fishing docks and disused storage warehouses", "after": "Modern leisure marina, waterfront promenade with restaurants and cafes" },
+        { "zone": "Central Quarter", "before": "Single-lane two-way road with dated brick cottages and corner stores", "after": "Pedestrianized shopping boulevard with modern high-rise apartments" },
+        { "zone": "Eastern Coastline", "before": "Untamed coastal marshes and derelict gravel terrain", "after": "Protected eco-reserve park with public boardwalk and visitor center" },
+        { "zone": "South-West District", "before": "Open agricultural fields and unpaved car parking", "after": "General hospital, healthcare clinic, and high-speed park-and-ride bus terminal" }
+      ]
+    }
+  },
+  {
+    "id": "ielts-t1-mixed-01",
+    "version": 1,
+    "category": "Academic",
+    "family": "IELTS",
+    "taskSubtype": "mixed_data",
+    "rubricType": "IELTS",
+    "title": "IELTS Task 1: Commuting Distance and Car Ownership (Mixed Chart)",
+    "prompt": "The bar chart shows average car ownership rates across four metropolitan areas, while the table details the average daily commuting distance per worker in those same cities. Summarise the information and highlight key correlations.",
+    "guidance": "Write at least 150 words. Synthesize findings from both visual representations.",
+    "audience": "IELTS Examiner",
+    "targetRegister": "Academic Formal",
+    "targetWordCountMin": 150,
+    "targetWordCountMax": 210,
+    "requirements": [
+      "Synthesized overview linking car ownership to commuting distances",
+      "One body paragraph dedicated to the chart data",
+      "One body paragraph dedicated to the table metrics",
+      "Clear comparative linkers"
+    ],
+    "visualData": {
+      "chartType": "mixed",
+      "title": "Car Ownership & Worker Commuting Distance Correlation",
+      "chartPart": {
+        "type": "bar",
+        "title": "Car Ownership Rate (% of households)",
+        "categories": ["Metro Area A", "Metro Area B", "Metro Area C", "Metro Area D"],
+        "values": [78, 62, 45, 84],
+        "unit": "%"
+      },
+      "tablePart": {
+        "title": "Average Daily Commuting Metrics",
+        "columns": ["Metropolitan Area", "Avg Commuting Distance (km)", "Public Transit Usage (%)"],
+        "rows": [
+          ["Metro Area A", "26.4 km", "18%"],
+          ["Metro Area B", "19.8 km", "31%"],
+          ["Metro Area C", "11.2 km", "54%"],
+          ["Metro Area D", "31.5 km", "12%"]
+        ]
+      }
+    }
+  },
+  {
+    "id": "ielts-t2-opinion-01",
+    "version": 1,
+    "category": "Academic",
+    "family": "IELTS",
+    "taskSubtype": "opinion",
+    "rubricType": "IELTS",
+    "title": "IELTS Task 2: Free Higher Education (Opinion)",
+    "prompt": "Some people believe that university education should be completely free for all qualified citizens, funded by national taxation. To what extent do you agree or disagree with this view? Give reasons and examples from your own experience.",
+    "guidance": "Write at least 250 words. State a clear position in the introduction and defend it consistently through two well-developed body paragraphs.",
+    "audience": "IELTS Examiner",
+    "targetRegister": "Formal Academic",
+    "targetWordCountMin": 250,
+    "targetWordCountMax": 350,
+    "requirements": [
+      "Direct thesis statement with clear extent of agreement/disagreement",
+      "Topic sentences introducing central argument for each paragraph",
+      "Substantiated examples and logical consequence reasoning",
+      "Definitive conclusion reinforcing the core stance"
+    ]
+  },
+  {
+    "id": "ielts-t2-discussion-01",
+    "version": 1,
+    "category": "Academic",
+    "family": "IELTS",
+    "taskSubtype": "discussion",
+    "rubricType": "IELTS",
+    "title": "IELTS Task 2: Technology in Modern Life (Discussion)",
+    "prompt": "Some individuals argue that modern digital communications foster genuine global connection, while others contend that they isolate people and degrade interpersonal depth. Discuss both views and give your own opinion.",
+    "guidance": "Write at least 250 words. Devote one balanced body paragraph to each perspective before declaring and substantiating your own judgment.",
+    "audience": "IELTS Examiner",
+    "targetRegister": "Formal Academic",
+    "targetWordCountMin": 250,
+    "targetWordCountMax": 350,
+    "requirements": [
+      "Examine both perspectives fairly and objectively",
+      "Introduce your own stance clearly in both introduction and conclusion",
+      "Smooth transitional devices between contrasting perspectives",
+      "Nuanced modal qualifiers"
+    ]
+  },
+  {
+    "id": "ielts-t2-adv-dis-01",
+    "version": 1,
+    "category": "Academic",
+    "family": "IELTS",
+    "taskSubtype": "advantages_disadvantages",
+    "rubricType": "IELTS",
+    "title": "IELTS Task 2: Eco-Tourism in Remote Areas (Adv & Disadv)",
+    "prompt": "The rapid expansion of tourism in remote natural ecosystems has brought economic opportunities as well as environmental degradation. Do the advantages of this trend outweigh the disadvantages?",
+    "guidance": "Write at least 250 words. Evaluate benefits and drawbacks comparatively and explain why one side carries greater overall weight.",
+    "audience": "IELTS Examiner",
+    "targetRegister": "Formal Academic",
+    "targetWordCountMin": 250,
+    "targetWordCountMax": 350,
+    "requirements": [
+      "Analyze economic and cultural advantages",
+      "Analyze ecological and infrastructural drawbacks",
+      "Direct comparative evaluation answering whether advantages outweigh disadvantages",
+      "Academic vocabulary and complex clause structures"
+    ]
+  },
+  {
+    "id": "ielts-t2-prob-sol-01",
+    "version": 1,
+    "category": "Academic",
+    "family": "IELTS",
+    "taskSubtype": "problem_solution",
+    "rubricType": "IELTS",
+    "title": "IELTS Task 2: Urban Traffic Congestion (Causes & Solutions)",
+    "prompt": "In many major metropolitan centers, severe traffic congestion has become an acute problem affecting productivity and health. What are the primary causes of this issue, and what practical measures could governments implement to resolve it?",
+    "guidance": "Write at least 250 words. Balance your analysis equally between root causes and actionable policy solutions.",
+    "audience": "IELTS Examiner",
+    "targetRegister": "Formal Academic",
+    "targetWordCountMin": 250,
+    "targetWordCountMax": 350,
+    "requirements": [
+      "Identify at least two distinct systemic causes (e.g. urban sprawl, underfunded public transit)",
+      "Propose feasible municipal or national policy remedies",
+      "Maintain cause-and-effect connectors (consequently, as a result, stems from)"
+    ]
+  },
+  {
+    "id": "ielts-t2-twopart-01",
+    "version": 1,
+    "category": "Academic",
+    "family": "IELTS",
+    "taskSubtype": "two_part",
+    "rubricType": "IELTS",
+    "title": "IELTS Task 2: Delayed Independence Among Young Adults (Two-Part)",
+    "prompt": "In many developed nations, an increasing proportion of young adults continue residing with their parents well into their late twenties. Why is this occurring? Do you consider this a positive or negative development overall?",
+    "guidance": "Write at least 250 words. Answer both questions systematically in separate body sections.",
+    "audience": "IELTS Examiner",
+    "targetRegister": "Formal Academic",
+    "targetWordCountMin": 250,
+    "targetWordCountMax": 350,
+    "requirements": [
+      "Answer Question 1 thoroughly with societal and economic drivers",
+      "Answer Question 2 with an evaluative judgment on net outcome",
+      "Synthesize both insights into a cohesive concluding evaluation"
+    ]
+  },
+  {
+    "id": "toeic-picture-01",
+    "version": 1,
+    "category": "Work",
+    "family": "TOEIC",
+    "taskSubtype": "picture_sentence",
+    "rubricType": "TOEIC",
+    "title": "TOEIC Writing: Picture Description (Sentence Writing)",
+    "prompt": "Look at the office meeting scenario. Write one grammatically complete sentence describing the photograph using the two provided keywords: 'present / quarterly results'.",
+    "guidance": "Write one coherent sentence. You may alter verb tense and word forms as long as both keywords are accurately incorporated.",
+    "audience": "TOEIC Evaluator",
+    "targetRegister": "Professional Business",
+    "targetWordCountMin": 15,
+    "targetWordCountMax": 35,
+    "requirements": [
+      "Use both prompt keywords accurately",
+      "Ensure flawless subject-verb agreement and prepositional complementation",
+      "Produce a single grammatical clause or compound sentence"
+    ]
+  },
+  {
+    "id": "toeic-email-01",
+    "version": 1,
+    "category": "Work",
+    "family": "TOEIC",
+    "taskSubtype": "email_response",
+    "rubricType": "TOEIC",
+    "title": "TOEIC Writing: Client Product Inquiry (Email Response)",
+    "prompt": "Read the customer email inquiring about delivery delays and return policies. Write a professional response answering their questions, expressing empathy, and proposing two concrete solutions.",
+    "guidance": "Aim for 80-120 words. Respond courteously, address all customer inquiries directly, and maintain high professional standards.",
+    "audience": "Valued Corporate Client",
+    "targetRegister": "Professional Business",
+    "targetWordCountMin": 80,
+    "targetWordCountMax": 140,
+    "requirements": [
+      "Appropriate professional salutation and sign-off",
+      "Acknowledge the customer's inconvenience politely",
+      "Address both delivery and warranty inquiries factually",
+      "State clear next steps with responsible ownership"
+    ]
+  },
+  {
+    "id": "toeic-opinion-01",
+    "version": 1,
+    "category": "Work",
+    "family": "TOEIC",
+    "taskSubtype": "opinion_writing",
+    "rubricType": "TOEIC",
+    "title": "TOEIC Writing: Workplace Flexibility (Opinion Essay)",
+    "prompt": "Some companies allow employees to choose flexible working hours, while others insist on fixed schedules. Do you believe flexible working hours improve employee productivity? Support your position with specific reasons and workplace examples.",
+    "guidance": "Aim for 150-200 words. Express your opinion clearly, provide supporting reasoning, and conclude concisely.",
+    "audience": "TOEIC Evaluator",
+    "targetRegister": "Professional Business",
+    "targetWordCountMin": 150,
+    "targetWordCountMax": 220,
+    "requirements": [
+      "State clear stance in opening paragraph",
+      "Two distinct reasons backed by practical workplace examples",
+      "Clear business English collocations and error-free mechanics"
+    ]
+  },
+  {
+    "id": "gen-email-01",
+    "version": 1,
+    "category": "Everyday",
+    "family": "GENERAL",
+    "taskSubtype": "email",
+    "rubricType": "GENERAL",
+    "title": "General Writing: Catching Up with an Old Friend (Email)",
+    "prompt": "Write an email to a friend you have not seen in several months. Update them on your recent life events, share something exciting you tried recently, and arrange a time to meet up soon.",
+    "guidance": "Aim for 120-180 words. Keep your tone warm, personal, and conversational.",
+    "audience": "A close personal friend",
+    "targetRegister": "Casual / Friendly",
+    "targetWordCountMin": 120,
+    "targetWordCountMax": 180,
+    "requirements": [
+      "Warm, informal opening and sign-off",
+      "Share genuine personal updates",
+      "Propose specific plans to catch up"
+    ]
+  },
+  {
+    "id": "gen-paragraph-01",
+    "version": 1,
+    "category": "Academic",
+    "family": "GENERAL",
+    "taskSubtype": "paragraph",
+    "rubricType": "GENERAL",
+    "title": "General Writing: The Power of Daily Reading (Single Paragraph)",
+    "prompt": "Write a single, tightly unified paragraph explaining why developing a daily reading habit enhances cognitive longevity and critical thinking skills.",
+    "guidance": "Aim for 80-120 words. Include a strong topic sentence, two supporting details, and a concluding synthesis.",
+    "audience": "General Educated Reader",
+    "targetRegister": "Neutral / Informative",
+    "targetWordCountMin": 80,
+    "targetWordCountMax": 130,
+    "requirements": [
+      "Clear, focused topic sentence at the opening",
+      "Smooth internal transitional linkers",
+      "Resonant concluding sentence"
+    ]
+  },
+  {
+    "id": "gen-essay-01",
+    "version": 1,
+    "category": "Academic",
+    "family": "GENERAL",
+    "taskSubtype": "essay",
+    "rubricType": "GENERAL",
+    "title": "General Writing: Artificial Intelligence in Society (Essay)",
+    "prompt": "Write a balanced analytical essay examining the potential impacts of generative AI on creative industries. Consider both opportunities for creators and challenges regarding intellectual property and originality.",
+    "guidance": "Aim for 200-280 words. Develop a cohesive four-paragraph essay.",
+    "audience": "Academic Reader",
+    "targetRegister": "Academic Formal",
+    "targetWordCountMin": 200,
+    "targetWordCountMax": 280,
+    "requirements": [
+      "Clear thesis statement framing the dual aspects of generative AI",
+      "Body paragraphs contrasting creative empowerment and ethical concerns",
+      "Synthesizing conclusion"
+    ]
+  },
+  {
+    "id": "gen-report-01",
+    "version": 1,
+    "category": "Work",
+    "family": "GENERAL",
+    "taskSubtype": "report",
+    "rubricType": "GENERAL",
+    "title": "General Writing: Quarterly Department Performance (Report)",
+    "prompt": "Write a concise internal progress report for department leadership summarizing team achievements over the past quarter, outlining one major operational bottleneck, and listing recommended resource allocations for next quarter.",
+    "guidance": "Aim for 160-220 words. Use clear headings and objective professional tone.",
+    "audience": "Department Leadership",
+    "targetRegister": "Professional Formal",
+    "targetWordCountMin": 160,
+    "targetWordCountMax": 240,
+    "requirements": [
+      "Structured headings (Overview, Achievements, Challenges, Recommendations)",
+      "Objective, fact-grounded language",
+      "Actionable recommendations"
+    ]
+  },
+  {
+    "id": "gen-free-01",
+    "version": 1,
+    "category": "Creative",
+    "family": "GENERAL",
+    "taskSubtype": "free_writing",
+    "rubricType": "GENERAL",
+    "title": "General Writing: Reflection on Overcoming Adversity (Free Writing)",
+    "prompt": "Reflect freely on a moment in your life or studies when unexpected difficulty forced you to adapt your strategy. What mental shift did this experience prompt, and how does it influence your approach today?",
+    "guidance": "Aim for 150-250 words. Focus on vivid reflection, authentic tone, and personal insight.",
+    "audience": "General Reader",
+    "targetRegister": "Reflective / Expressive",
+    "targetWordCountMin": 150,
+    "targetWordCountMax": 250,
+    "requirements": [
+      "Narrative introduction framing the challenge",
+      "Introspective reflection on internal shift",
+      "Thoughtful conclusion on long-term takeaway"
+    ]
+  }
+]

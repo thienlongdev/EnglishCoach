@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s013-ice-key",
+  "title": "Chìa khóa ở trong băng",
+  "summary": "Ben khoe đã nhốt được chìa khóa trong cục nước đá. Mi không thấy chìa mà chỉ thấy hai chiếc bát úp.",
+  "level": "A1",
+  "topics": [
+    "imperatives",
+    "prepositions-place"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mi",
+      "role": "Chị gái"
+    },
+    {
+      "id": "b",
+      "name": "Ben",
+      "role": "Ảo thuật gia nhí"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Một bát trắng nằm trên bàn, bát xanh nằm trong khay đá. Lời nhắn cho Mi ghi Lift the blue bowl. Trên bàn không có bát xanh nào khác.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I don't need a key to start the game, do I?",
+          "vi": "Chị không cần chìa khóa để bắt đầu trò chơi chứ?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Read my note. Start with the colour.",
+          "vi": "Chị đọc lời nhắn đi. Bắt đầu với màu sắc nhé."
+        }
+      ],
+      "choice": {
+        "prompt": "Mi làm đúng chỉ dẫn viết trên giấy. Cô đọc to lời nào?",
+        "options": [
+          {
+            "t": "Lift the blue bowl.",
+            "note": "Lift ở đầu câu yêu cầu nhấc lên. The blue bowl chọn chiếc bát xanh đã nhìn thấy trong khay.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "Lift the white bowl.",
+            "note": "Cùng một mệnh lệnh lift nhưng tính từ white đổi chiếc bát cần nhấc. Nó sẽ dẫn Mi đến chỗ khác.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Mi nhấc bát lên. Dưới bát là cục đá trong veo, chiếc chìa lấp lánh ở giữa.",
+      "say": [
+        {
+          "who": "b",
+          "en": "There's your key!",
+          "vi": "Chìa khóa của chị kia kìa!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Dưới bát trắng chỉ có một giọt nước. Ben gõ nhẹ lên bát xanh, Mi chuyển sang và tìm được chìa trong đá.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Blue is the magic colour today.",
+          "vi": "Hôm nay màu xanh mới là màu thần kỳ."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Mi cầm cục đá trong tay cho nó tan. Khi chìa rơi xuống, Ben mở chiếc hộp nhỏ. Bên trong có một tấm vé tự vẽ mời Mi xem màn diễn ngày mai.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Keep me a seat, Ben.",
+          "vi": "Nhớ giữ cho chị một chỗ nhé, Ben."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

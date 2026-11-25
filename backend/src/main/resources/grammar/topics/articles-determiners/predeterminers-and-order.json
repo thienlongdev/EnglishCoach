@@ -1,0 +1,594 @@
+{
+  "schema": 1,
+  "slug": "predeterminers-and-order",
+  "version": 1,
+  "domain": "articles-determiners",
+  "order": 160,
+  "kind": "grammar",
+  "title": {
+    "vi": "Kết hợp từ xác định và thứ tự trong cụm danh từ",
+    "en": "Determiner combinations and order"
+  },
+  "subtitle": {
+    "vi": "All my three old maps: thứ tự gắn với ý nghĩa",
+    "en": "Ordering quantity, identification and description"
+  },
+  "aliases": [
+    "predeterminers",
+    "postdeterminers",
+    "trật tự từ xác định",
+    "all my books",
+    "half an hour",
+    "twice the price"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "prerequisites": [
+    "all-both-each-every"
+  ],
+  "related": [
+    {
+      "slug": "form-and-function",
+      "rel": "more"
+    },
+    {
+      "slug": "complex-noun-phrases",
+      "rel": "more"
+    },
+    {
+      "slug": "other-another",
+      "rel": "more"
+    },
+    {
+      "slug": "possessive-determiners",
+      "rel": "contrast"
+    }
+  ],
+  "objectives": [
+    "Sắp xếp những tổ hợp thông dụng mà không coi mọi từ xác định đều đi cùng nhau.",
+    "Dùng all/both/half và of với nhóm đã xác định.",
+    "Phân biệt các vị trí trong cụm danh từ với nhãn từ loại tuyệt đối."
+  ],
+  "exam": {
+    "ielts": "Kiểm soát cụm danh từ nhiều thành phần trong mô tả và báo cáo.",
+    "toeic": "Đọc số lượng, giá và phần tài nguyên được xác định trong thông báo."
+  },
+  "quick": {
+    "what": "Một cụm danh từ có thể kết hợp lượng, từ xác định và mô tả: **all my three old maps**. Trong những tổ hợp như vậy, all/both/half thường đứng trước the/my/these; số đếm và tính từ đứng gần danh từ hơn. Không phải mọi ô đều bắt buộc hoặc mọi từ đều ghép được.",
+    "when": "Khi cần nói cả một nhóm đã biết, một phần của lượng đã biết hoặc một số vật có mô tả cụ thể. Học theo các cấu trúc đã được dùng, không xếp từ như các viên gạch hoàn toàn tự do.",
+    "examples": [
+      {
+        "en": "[DET|All my] [N|maps] are in this drawer.",
+        "vi": "Tất cả bản đồ của tôi ở trong ngăn kéo này."
+      },
+      {
+        "en": "The repair cost [DET|twice the] [N|original price].",
+        "vi": "Việc sửa chữa tốn gấp đôi giá ban đầu."
+      }
+    ],
+    "remember": "All my maps, không phải my all maps trong mẫu này. Các nhãn trước/trung tâm/sau từ xác định là công cụ mô tả trật tự, không phải luật tạo mọi cụm có thể tưởng tượng."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Khi kiểm kê, bạn có thể nói all the boxes, both these forms, half my time. Thành phần lượng xuất hiện trước phần nhận diện nhóm. Nhưng the và my không đứng cạnh nhau tự do trong the my boxes: chúng thường cạnh tranh vị trí xác định trung tâm. Cách hỏi hữu ích là từng thành phần đóng vai trò gì và cấu trúc nào cho phép chúng cùng xuất hiện."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Lượng bao quát",
+            "items": [
+              "All"
+            ]
+          },
+          {
+            "label": "Sở hữu",
+            "items": [
+              "my"
+            ]
+          },
+          {
+            "label": "Số lượng",
+            "items": [
+              "three"
+            ]
+          },
+          {
+            "label": "Đặc điểm",
+            "items": [
+              "old"
+            ]
+          },
+          {
+            "label": "Danh từ chính",
+            "items": [
+              "maps"
+            ]
+          }
+        ],
+        "sentence": "{0} {1} {2} {3} {4} are damaged.",
+        "fixedOrder": true
+      },
+      "caption": "Một tổ hợp được phép, không phải danh sách ô phải điền trong mọi câu.",
+      "alt": "Các ô lần lượt all, my, three, old, maps. Từ lượng bao quát đi trước sở hữu; số đếm và tính từ trước danh từ chính."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Nhóm mẫu",
+        "Ví dụ",
+        "Giải thích"
+      ],
+      "rows": [
+        [
+          "all / both + nhóm xác định",
+          "all the boxes; both my keys",
+          "Bao quát cả nhóm hoặc cặp"
+        ],
+        [
+          "half + nhóm/lượng xác định",
+          "half the budget; half my notes",
+          "Một nửa của lượng hoặc tập"
+        ],
+        [
+          "bội số + lượng so sánh",
+          "twice the usual fee",
+          "Gấp hai lần một mức tham chiếu"
+        ],
+        [
+          "từ xác định + số đếm + danh từ",
+          "these three documents",
+          "Nhận diện ba tài liệu"
+        ],
+        [
+          "thứ tự + số lượng",
+          "the first two chapters",
+          "Hai chương đầu của một thứ tự đã rõ"
+        ]
+      ]
+    },
+    {
+      "type": "formula",
+      "lines": [
+        {
+          "label": "Có thể có hoặc không of",
+          "parts": [
+            {
+              "t": "all / both / half"
+            },
+            {
+              "t": "+ (of) + the / my / these + danh từ"
+            }
+          ]
+        },
+        {
+          "label": "Trước đại từ tân ngữ",
+          "parts": [
+            {
+              "t": "all / both / half"
+            },
+            {
+              "t": "+ of + us / them"
+            }
+          ]
+        }
+      ],
+      "note": "All the forms và all of the forms đều đúng. Mẫu chuẩn với đại từ là all of them; cũng có They are all ready ở cấu trúc khác."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "[DET|Both of these] [N|proposals] need more detail.",
+          "vi": "Cả hai đề xuất này cần thêm chi tiết."
+        },
+        {
+          "en": "[DET|Half the] [N|budget] is reserved for repairs.",
+          "vi": "Một nửa ngân sách dành cho sửa chữa."
+        },
+        {
+          "en": "[DET|Half of the] [N|seats] are reserved.",
+          "vi": "Một nửa số ghế đã được đặt trước."
+        },
+        {
+          "en": "Please read [DET|the first two] [N|sections].",
+          "vi": "Hãy đọc hai phần đầu tiên."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Hòa hợp không chỉ phụ thuộc từ đầu cụm. Half the budget is ... nói một lượng ngân sách, còn half the seats are ... nói các ghế. All my equipment is ... khác all my tools are .... Hãy xác định loại lượng và danh từ được nói đến, không áp dụng all hoặc half luôn số ít/số nhiều."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "The job took half an hour.",
+            "vi": "Công việc mất nửa giờ."
+          },
+          "b": {
+            "en": "The job took a half hour.",
+            "vi": "Công việc mất nửa giờ."
+          },
+          "diff": "Cả hai có cách dùng hợp lệ; a half hour quen thuộc hơn trong AmE. Đây không phải lý do để chấm một cách tuyệt đối sai."
+        },
+        {
+          "a": {
+            "en": "We paid twice the usual fee.",
+            "vi": "Chúng tôi trả gấp đôi mức phí thường lệ."
+          },
+          "b": {
+            "en": "We paid the usual fee twice.",
+            "vi": "Chúng tôi trả mức phí thường lệ hai lần."
+          },
+          "diff": "Vị trí twice thay đổi việc nó so sánh số tiền hay đếm số lần thanh toán. Tổng tiền có thể trùng, nhưng thông tin về sự kiện khác nhau."
+        }
+      ]
+    },
+    {
+      "type": "try",
+      "exercise": "pdo-04"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Một số mô hình giảng dạy gọi all,both,half trong các mẫu này là predeterminers, the/my là central determiners, còn số đếm là postdeterminers. Các tài liệu ngôn ngữ học không nhất thiết chia từ loại giống nhau. Bài học dùng nhãn theo chức năng/vị trí; không tuyên bố mỗi từ có duy nhất một từ loại bất kể ngữ cảnh."
+    },
+    {
+      "type": "p",
+      "vi": "Thứ tự thường gặp không bảo đảm mọi kết hợp đều tự nhiên. Both đã nói hai, nên both the two keys thường thừa thông tin nếu không có mục đích nhấn mạnh hay phân biệt. Thừa hoặc ít tự nhiên không tự động là sai ngữ pháp. Đừng tạo bài tìm lỗi mà chỉ dựa vào cảm giác lặp ý này."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "All three maps là cách gọn thông dụng. All the three maps cũng có cách dùng khi tập ba bản đồ đã được xác định hoặc nhấn mạnh. Không áp dụng lệnh bỏ the trong mọi trường hợp. Lựa chọn phụ thuộc tham chiếu và phong cách."
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Khi sửa cụm dài, giữ nội dung về tập tham chiếu, số lượng và thứ tự. Việc đổi first two thành two first có thể tạo cách đọc khác trong ngữ cảnh đặc biệt, nên các bài sắp xếp ở đây nêu rõ mẫu thông dụng cần luyện thay vì phủ nhận mọi trật tự được đánh dấu."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "pdo-central",
+      "wrong": "The my two keys are missing.",
+      "right": "My two keys are missing.",
+      "why": "The và my không cùng chiếm vị trí xác định trong mẫu sở hữu thông thường này."
+    },
+    {
+      "id": "pdo-order",
+      "wrong": "My all documents are here.",
+      "right": "All my documents are here.",
+      "why": "Với nghĩa toàn bộ tài liệu của tôi, all đứng trước my. All of my documents cũng đúng."
+    },
+    {
+      "id": "pdo-pronoun",
+      "wrong": "Both them are ready.",
+      "right": "Both of them are ready.",
+      "why": "Trong mẫu chuẩn trước đại từ tân ngữ them, dùng of; They are both ready là cấu trúc khác."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Có bắt buộc dùng of sau all hoặc half không?",
+      "a": "Không trước các cụm như the forms hoặc my time: all the forms và half my time đều được. Với đại từ tân ngữ ở mẫu này dùng of: all of them."
+    },
+    {
+      "q": "Predeterminer có phải một từ loại được mọi sách dùng giống nhau?",
+      "a": "Không. Đây là một nhãn hữu ích trong một cách mô tả vị trí. Các hệ thống có thể phân tích khác; hãy học cấu trúc và nghĩa trước."
+    },
+    {
+      "q": "All the three books có chắc chắn sai?",
+      "a": "Không. All three books thường gọn hơn; all the three books vẫn có ngữ cảnh sử dụng. Bài sửa lỗi không nên xem khác biệt phong cách này như lỗi tuyệt đối."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "pdo-01",
+      "type": "choice",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Chọn cụm thông dụng biểu đạt cả hai chìa khóa của tôi.",
+      "stem": "___ are in the drawer.",
+      "options": [
+        {
+          "t": "Both my keys",
+          "ok": true,
+          "note": "Both đứng trước my trong mẫu này."
+        },
+        {
+          "t": "My both keys",
+          "note": "Đổi thành both my keys cho cấu trúc chuẩn đang luyện.",
+          "tag": "determiner-order"
+        },
+        {
+          "t": "The my both keys",
+          "note": "Vừa trộn the/my vừa đặt both sai vị trí của mẫu.",
+          "tag": "determiner-double"
+        }
+      ],
+      "explain": "Lượng bao quát both đi trước từ sở hữu my."
+    },
+    {
+      "id": "pdo-02",
+      "type": "cloze",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Điền is hoặc are trong câu hiện tại đơn.",
+      "stem": "Half the equipment {1} ready. Half the tools {2} missing.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "is"
+          ],
+          "closed": true
+        },
+        "2": {
+          "accept": [
+            "are"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Equipment là lượng không đếm; tools là số nhiều. Half không quyết định động từ một mình."
+    },
+    {
+      "id": "pdo-03",
+      "type": "match",
+      "level": "B2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Ghép cụm với lượng được mô tả.",
+      "pairs": [
+        {
+          "a": "half the usual fee",
+          "b": "Một nửa mức phí tham chiếu"
+        },
+        {
+          "a": "twice the usual fee",
+          "b": "Hai lần mức phí tham chiếu"
+        },
+        {
+          "a": "both my keys",
+          "b": "Cả cặp chìa khóa của tôi"
+        },
+        {
+          "a": "the first two pages",
+          "b": "Hai trang đầu trong thứ tự"
+        }
+      ],
+      "explain": "Các thành phần trước danh từ không chỉ trang trí; chúng chọn lượng, tập hoặc thứ tự."
+    },
+    {
+      "id": "pdo-04",
+      "type": "transform",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Thêm of vào cấu trúc được phép mà giữ nguyên nghĩa.",
+      "source": "All my notes are online.",
+      "instruction": "Viết lại bắt đầu bằng All of và giữ phần còn lại.",
+      "accept": [
+        "All of my notes are online."
+      ],
+      "model": "All of my notes are online.",
+      "explain": "All my notes và all of my notes đều nhận diện toàn bộ ghi chú của tôi."
+    },
+    {
+      "id": "pdo-05",
+      "type": "multi",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Chọn mọi cụm có thể dùng trong tiếng Anh chuẩn.",
+      "stem": "Không áp đặt lựa chọn BrE thay cho AmE.",
+      "options": [
+        {
+          "t": "half an hour",
+          "ok": true,
+          "note": "Cách nói nửa giờ thông dụng."
+        },
+        {
+          "t": "a half hour",
+          "ok": true,
+          "note": "Cũng hợp lệ, đặc biệt quen thuộc trong AmE."
+        },
+        {
+          "t": "the my hour",
+          "note": "The my không phải tổ hợp thông thường.",
+          "tag": "determiner-double"
+        }
+      ],
+      "explain": "Một biến thể vùng miền hợp lệ không phải đáp án sai chỉ vì khác mẫu quen thuộc."
+    },
+    {
+      "id": "pdo-06",
+      "type": "error",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Chọn phần cần sửa trong nghĩa toàn bộ bản đồ của tôi.",
+      "segments": [
+        {
+          "t": "I have checked "
+        },
+        {
+          "t": "my all maps",
+          "bad": true,
+          "fix": [
+            "all my maps",
+            "all of my maps"
+          ],
+          "note": "All đứng trước my ở mẫu này; có thể thêm of.",
+          "tag": "determiner-order"
+        },
+        {
+          "t": " carefully."
+        }
+      ],
+      "explain": "Hai cách sửa đều giữ ý toàn bộ tập bản đồ sở hữu."
+    },
+    {
+      "id": "pdo-07",
+      "type": "choice",
+      "level": "B2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Chọn câu đếm số lần thanh toán, không chỉ so sánh mức phí.",
+      "stem": "Khách đã thực hiện hai lần thanh toán cùng mức thường lệ.",
+      "options": [
+        {
+          "t": "The customer paid the usual fee twice.",
+          "ok": true,
+          "note": "Twice cuối câu bổ nghĩa sự kiện thanh toán."
+        },
+        {
+          "t": "The customer paid twice the usual fee.",
+          "note": "Nói tổng mức bằng gấp đôi; chưa khẳng định thực hiện hai lần.",
+          "tag": "multiplier-scope"
+        }
+      ],
+      "explain": "Hai câu có thể dẫn tới tổng tiền giống nhau nhưng không cung cấp cùng thông tin về sự kiện."
+    },
+    {
+      "id": "pdo-08",
+      "type": "open",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết một báo cáo kiểm kê ngắn.",
+      "task": "Viết3 câu dùng cả một nhóm, một nửa lượng và số mục đầu tiên. Giải thích vì sao chọn động từ số ít hoặc số nhiều trong câu có half.",
+      "model": [
+        "All our samples are labelled. Half the equipment is in storage. The first three pages contain the results."
+      ],
+      "checklist": [
+        "Tổ hợp lượng và từ xác định đúng mẫu.",
+        "Half hòa hợp với loại lượng đang nói.",
+        "Nêu rõ tập tham chiếu và giữ nghĩa thứ tự."
+      ],
+      "explain": "Đối chiếu cấu trúc và nghĩa; không cần tái tạo đúng văn cảnh mẫu."
+    },
+    {
+      "id": "pdo-09",
+      "type": "cloze",
+      "level": "B2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Điền giới từ cần thiết trong mẫu chuẩn với đại từ.",
+      "stem": "Both {1} them are ready, but half {2} us still need instructions.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "of"
+          ],
+          "closed": true
+        },
+        "2": {
+          "accept": [
+            "of"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Both of them và half of us dùng of trước đại từ tân ngữ."
+    },
+    {
+      "id": "pdo-10",
+      "type": "choice",
+      "level": "B2",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Chọn nghĩa được câu nêu rõ.",
+      "stem": "The new cover costs twice the original price.",
+      "options": [
+        {
+          "t": "Giá bìa mới bằng hai lần mức giá ban đầu.",
+          "ok": true,
+          "note": "Twice the original price là lượng so sánh."
+        },
+        {
+          "t": "Người mua chắc chắn đã thanh toán hai lần.",
+          "note": "Câu không mô tả số sự kiện thanh toán.",
+          "tag": "multiplier-scope"
+        },
+        {
+          "t": "Giá bằng một nửa mức ban đầu.",
+          "note": "Đó là half the original price.",
+          "tag": "multiplier-meaning"
+        }
+      ],
+      "explain": "Vị trí twice trước cụm giá xác định mức so sánh, không số lần mua."
+    },
+    {
+      "id": "pdo-11",
+      "type": "error",
+      "level": "B2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn lỗi hoặc xác nhận câu đúng.",
+      "segments": [
+        {
+          "t": "All of my documents "
+        },
+        {
+          "t": "are available online."
+        }
+      ],
+      "noError": true,
+      "explain": "Of được phép ở all of my documents. Không bắt buộc xóa of để câu đúng."
+    },
+    {
+      "id": "pdo-12",
+      "type": "choice",
+      "level": "B2",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Trong cụm all my three old maps, thành phần nào đánh dấu sở hữu?",
+      "stem": "Xác định chức năng trong chính cụm này.",
+      "options": [
+        {
+          "t": "my",
+          "ok": true,
+          "note": "My liên hệ tập bản đồ với người nói."
+        },
+        {
+          "t": "three",
+          "note": "Three cho biết số lượng.",
+          "tag": "determiner-function"
+        },
+        {
+          "t": "old",
+          "note": "Old mô tả đặc điểm.",
+          "tag": "determiner-function"
+        }
+      ],
+      "explain": "Phân biệt chức năng sở hữu, số lượng và mô tả thay vì gọi mọi thành phần là cùng một từ loại."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "bc",
+      "note": "Tái sử dụng Quantifiers, Members of groups đã đọc2026-11-01: all/both có thể có hoặc không of trước cụm danh từ xác định."
+    },
+    {
+      "ref": "cgt",
+      "note": "Nguồn đề xuất để kiểm tra determiner order,half và multipliers; chưa có lượt đọc toàn trang xác nhận bài mới."
+    },
+    {
+      "ref": "cgel",
+      "note": "Tham khảo thêm về sự khác nhau giữa phân tích từ loại và chức năng; không gán phân loại chi tiết cho ấn bản chưa trực tiếp đọc."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

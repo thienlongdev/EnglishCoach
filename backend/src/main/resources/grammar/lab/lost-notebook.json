@@ -1,0 +1,41 @@
+{
+  "id": "lost-notebook",
+  "title": "Nói với ai trong lời kể?",
+  "summary": "Một bạn thông báo vở đã mất. Thử dẫn lời với said và told rồi tìm vị trí của người nghe.",
+  "level": "B1",
+  "topics": [
+    "reporting-verbs",
+    "direct-and-reported"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Động từ tường thuật",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Say"
+        },
+        {
+          "id": "v2",
+          "label": "Tell"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Kai said to me that the notebook was missing.",
+      "vi": "Kai nói với tôi rằng cuốn vở bị mất.",
+      "note": "Sau said, người nghe được đưa vào bằng to me. Có thể bỏ cả cụm khi không cần nêu. / Say introduces a listener with to.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Kai told me that the notebook was missing.",
+      "vi": "Kai bảo tôi rằng cuốn vở bị mất.",
+      "note": "Told nhận me trực tiếp trong mẫu kể cho ai một thông tin. / Tell takes the listener directly.",
+      "verdict": "ok"
+    }
+  }
+}

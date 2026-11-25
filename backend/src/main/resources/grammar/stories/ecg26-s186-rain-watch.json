@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s186-rain-watch",
+  "title": "Chiếc đồng hồ đếm mưa",
+  "summary": "Mộc cần chụp giọt thứ mười rơi vào chiếc đồng hồ nước trước khi hết một phút.",
+  "level": "B2",
+  "topics": [
+    "future-perfect"
+  ],
+  "scene": "university",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mộc",
+      "role": "Sinh viên thiết kế"
+    },
+    {
+      "id": "b",
+      "name": "Teo",
+      "role": "Người phụ trách xưởng"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Teo mở van ở giây số 0. Mỗi năm giây rơi một giọt, giọt đầu ở giây 5. Máy ảnh chỉ chụp một lần rồi hết phim.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The tenth drop matters more than the last second.",
+          "vi": "Giọt thứ mười quan trọng hơn giây cuối."
+        },
+        {
+          "who": "b",
+          "en": "Where will we be by fifty seconds?",
+          "vi": "Đến giây thứ năm mươi ta sẽ có gì?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Mộc chọn dự báo đúng số giọt đã rơi tính tới mốc ấy.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Ten drops will have fallen by then.",
+            "note": "Will have fallen nhìn từ mốc tương lai về số giọt đã hoàn tất. Mười lần năm giây đạt đúng mốc 50.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "The first drop will fall at fifty seconds.",
+            "note": "Will fall là tương lai đơn hợp lệ nhưng chọn sai sự kiện. Giọt đầu đã được hẹn ở giây 5.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Máy chụp cả giọt cuối và vòng sóng. Teo chiếu lớn, mười vòng như những năm tuổi của một thân cây.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We put ten birthdays in a minute.",
+          "vi": "Ta đặt được mười sinh nhật vào một phút."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Họ gửi ảnh sinh nhật cho đứa em vừa tròn mười. Em tự đếm được tuổi bằng mưa.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Mộc nhìn đồng hồ thấy hạt đầu đã nằm trong cốc. Cô chờ tới giọt mười rồi bấm vào đúng lúc hai vòng nước chạm nhau.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Waiting gave the picture its rings.",
+          "vi": "Nhờ chờ mới có những vòng nước trong ảnh."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Bức ảnh mang tên Năm mươi giây đợi chứ không phải Giọt đầu, và treo trên cửa lớp đúng mười ngày.",
+      "end": true
+    }
+  ]
+}

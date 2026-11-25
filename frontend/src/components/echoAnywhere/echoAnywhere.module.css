@@ -1,0 +1,67 @@
+/* Echo Anywhere top-bar entry: the icon, its popover and the one-time tip (portalled to <body>, fixed).
+   Liquid Glass on Echo Morph's curves (lib/morph/tokens.ts: current .22,1,.36,1); no blur over the workspace wallpaper (10 §AF):
+   the glass is near-opaque and gets its depth from edge light, specular sheen and layered shadows. */
+.trigger { position: relative; }
+.trigger::after { content: ''; position: absolute; inset: 3px; border-radius: inherit; pointer-events: none; opacity: 0;
+  background: radial-gradient(circle at 50% 35%, rgba(56, 189, 248, .35), transparent 70%); transition: opacity .26s cubic-bezier(.22, 1, .36, 1); }
+.trigger:hover::after, .trigger[aria-expanded='true']::after { opacity: 1; }
+.mark { width: 20px; height: 20px; display: block; object-fit: contain; filter: drop-shadow(0 1px 2px rgba(7, 25, 61, .2));
+  transition: rotate .4s cubic-bezier(.34, 1.32, .5, 1), scale .26s cubic-bezier(.22, 1, .36, 1); }
+.trigger:hover .mark { rotate: -10deg; scale: 1.08; }
+
+.pop, .hint {
+  --ea-ink: #0b1b3a; --ea-muted: #4b5c7f; --ea-line: rgba(22, 86, 184, .14); --ea-top: rgba(255, 255, 255, .99); --ea-bottom: rgba(244, 248, 255, .97);
+  --ea-chip: rgba(22, 86, 184, .07); --ea-sea: #1656b8; --ea-edge: #ffffff; --ea-spec: rgba(56, 189, 248, .16);
+  position: fixed; z-index: 60; width: min(340px, calc(100vw - 16px)); color: var(--ea-ink); isolation: isolate;
+  background: linear-gradient(180deg, var(--ea-top), var(--ea-bottom)); border: 1px solid var(--ea-line); border-radius: 20px;
+  box-shadow: inset 0 1px 0 var(--ea-edge), 0 0 0 .5px rgba(7, 25, 61, .06), 0 30px 60px -22px rgba(7, 25, 61, .38), 0 6px 14px -6px rgba(7, 25, 61, .18);
+  transform-origin: calc(100% - 20px) 0; animation: unfold .38s cubic-bezier(.34, 1.32, .5, 1) both;
+}
+.pop::before, .hint::before { content: ''; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none;
+  background: radial-gradient(280px 120px at 85% -10%, var(--ea-spec), transparent 70%), radial-gradient(200px 80px at 10% 0%, rgba(255, 255, 255, .8), transparent 70%); }
+:global(.dark) .pop, :global(.dark) .hint {
+  --ea-ink: #e7efff; --ea-muted: #a8bbdc; --ea-line: rgba(148, 190, 255, .2); --ea-top: rgba(22, 40, 78, .99); --ea-bottom: rgba(12, 26, 54, .98);
+  --ea-chip: rgba(140, 188, 255, .12); --ea-sea: #8cbcff; --ea-edge: rgba(170, 210, 255, .3); --ea-spec: rgba(56, 189, 248, .22);
+}
+:global(.dark) .pop::before, :global(.dark) .hint::before { background: radial-gradient(280px 120px at 85% -10%, var(--ea-spec), transparent 70%); }
+.arrow { position: absolute; top: -7px; right: 14px; width: 12px; height: 12px; transform: rotate(45deg); background: var(--ea-top);
+  border-left: 1px solid var(--ea-line); border-top: 1px solid var(--ea-line); }
+.pop { padding: 16px; }
+.pop > * { animation: settle .34s cubic-bezier(.22, 1, .36, 1) both; }
+.pop > *:nth-child(3) { animation-delay: 40ms; } .pop > *:nth-child(4) { animation-delay: 80ms; } .pop > *:nth-child(n+5) { animation-delay: 120ms; }
+.popHead { display: flex; gap: 12px; align-items: center; }
+.popHead img { width: 44px; height: 44px; flex: none; filter: drop-shadow(0 6px 10px rgba(7, 25, 61, .25)); animation: bob 5s cubic-bezier(.32, .72, .16, 1) infinite alternate; }
+.popTitle { margin: 0; font-weight: 700; font-size: 16px; background: linear-gradient(100deg, var(--ea-ink) 40%, var(--ea-sea)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.popSub { margin: 0; color: var(--ea-muted); font-size: 12.5px; }
+.popText { margin: 12px 0 10px; font-size: 13.5px; line-height: 1.55; }
+.status { padding: 8px 11px; border-radius: 12px; background: var(--ea-chip); font-size: 12.5px; color: var(--ea-muted); box-shadow: inset 0 0 0 1px var(--ea-line); }
+.ok { color: #067647; font-weight: 700; }
+:global(.dark) .ok { color: #6ce9a6; }
+.popActions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 12px; }
+.primary { display: inline-flex; padding: 9px 14px; border-radius: 13px; background: linear-gradient(135deg, #2a8bf2, #1656b8 55%, #0d2a5e); color: #fff;
+  font-weight: 700; font-size: 13px; text-decoration: none; box-shadow: inset 0 1px 0 rgba(255, 255, 255, .35), 0 8px 18px -8px rgba(22, 86, 184, .7);
+  transition: filter .26s, translate .17s cubic-bezier(.22, 1, .36, 1); }
+.primary:hover { filter: brightness(1.08); translate: 0 -1px; }
+.pending { font-size: 12.5px; font-weight: 700; color: var(--ea-muted); }
+.secondary { display: inline-flex; padding: 9px 14px; border-radius: 13px; border: 1px solid var(--ea-line); color: var(--ea-sea); font-weight: 700;
+  font-size: 13px; text-decoration: none; box-shadow: inset 0 1px 0 var(--ea-edge); transition: border-color .26s, translate .17s cubic-bezier(.22, 1, .36, 1); }
+.secondary:hover { border-color: rgba(56, 189, 248, .6); translate: 0 -1px; }
+.tiers { margin: 12px 0 0; font-size: 12px; color: var(--ea-muted); line-height: 1.5; }
+
+.hint { padding: 14px 16px 16px; width: min(300px, calc(100vw - 16px)); }
+.hintTitle { margin: 0 24px 4px 0; font-weight: 700; font-size: 14.5px; }
+.hintText { margin: 0 0 10px; font-size: 13px; line-height: 1.5; color: var(--ea-muted); }
+.hintCta { display: inline-flex; padding: 7px 12px; border-radius: 11px; background: linear-gradient(135deg, #2a8bf2, #1656b8 55%, #0d2a5e); color: #fff;
+  font-weight: 700; font-size: 12.5px; text-decoration: none; box-shadow: inset 0 1px 0 rgba(255, 255, 255, .35), 0 6px 14px -6px rgba(22, 86, 184, .7); }
+.close { position: absolute; top: 8px; right: 8px; display: grid; place-items: center; width: 28px; height: 28px; border: 0; border-radius: 9px;
+  background: transparent; color: var(--ea-muted); cursor: pointer; transition: background .2s, color .2s; }
+.close:hover { background: var(--ea-chip); color: var(--ea-ink); }
+.primary:focus-visible, .secondary:focus-visible, .hintCta:focus-visible, .close:focus-visible { outline: 2px solid #38bdf8; outline-offset: 2px; }
+
+@keyframes unfold { from { opacity: 0; scale: .92; translate: 0 -6px; } to { opacity: 1; scale: 1; translate: 0 0; } }
+@keyframes settle { from { opacity: 0; translate: 0 8px; } to { opacity: 1; translate: 0 0; } }
+@keyframes bob { from { translate: 0 1px; rotate: -2deg; } to { translate: 0 -3px; rotate: 2deg; } }
+@media (prefers-reduced-motion: reduce) {
+  .pop, .hint, .pop > *, .popHead img { animation: none; }
+  .mark, .trigger::after { transition: none; }
+}

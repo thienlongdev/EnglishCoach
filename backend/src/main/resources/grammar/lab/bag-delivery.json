@@ -1,0 +1,40 @@
+{
+  "id": "bag-delivery",
+  "title": "Người nhận thư đứng ở đâu?",
+  "summary": "Bạn nhờ chuyển một lá thư cho Nam. Đưa người nhận ra trước hoặc sau món đồ rồi tìm vị trí cần to.",
+  "level": "A2",
+  "topics": [
+    "two-object-verbs"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Trật tự",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Người trước"
+        },
+        {
+          "id": "v2",
+          "label": "Đồ vật trước"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Send Nam the letter.",
+      "vi": "Hãy gửi cho Nam lá thư.",
+      "note": "Send cho phép Nam đứng trực tiếp trước the letter mà không có to. / The recipient precedes the thing sent.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Send the letter to Nam.",
+      "vi": "Hãy gửi lá thư cho Nam.",
+      "note": "Khi the letter đứng trước, dùng to để giới thiệu người nhận. / To introduces the recipient after the object.",
+      "verdict": "ok"
+    }
+  }
+}

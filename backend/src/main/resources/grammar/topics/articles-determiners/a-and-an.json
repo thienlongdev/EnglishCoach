@@ -1,0 +1,937 @@
+{
+  "schema": 1,
+  "slug": "a-and-an",
+  "version": 2,
+  "domain": "articles-determiners",
+  "order": 10,
+  "kind": "grammar",
+  "title": {
+    "vi": "A và an",
+    "en": "A and an"
+  },
+  "subtitle": {
+    "vi": "Chọn theo âm đầu tiên bạn nghe, không theo chữ cái bạn nhìn thấy",
+    "en": "Choose by the first sound you hear, not the first letter you see"
+  },
+  "aliases": [
+    "a hay an",
+    "a or an",
+    "a an",
+    "an hour",
+    "a university",
+    "an university",
+    "a umbrella",
+    "mạo từ không xác định",
+    "indefinite article",
+    "an trước nguyên âm"
+  ],
+  "level": "A1",
+  "levelBasis": "editorial",
+  "uses": [
+    {
+      "level": "A1",
+      "vi": "Chọn a hoặc an trước một danh từ số ít đếm được: a book, an egg."
+    },
+    {
+      "level": "A2",
+      "vi": "Nhìn từ đứng ngay sau mạo từ, kể cả tính từ: a big egg, an old book. Nói nghề nghiệp: She is a nurse."
+    },
+    {
+      "level": "B1",
+      "vi": "Chữ viết tắt và con số: an MBA, a UN report, an 8% rise. Nghĩa mỗi: twice a week."
+    }
+  ],
+  "objectives": [
+    "Chọn a hoặc an theo âm đầu tiên của từ đứng ngay sau",
+    "Nhận ra chỗ chữ và âm không khớp: hour, university, one",
+    "Dùng a/an với danh từ đếm được số ít để giới thiệu điều mới, hoặc nói nghề nghiệp và loại",
+    "Nhận ra giới hạn của a/an với nghĩa số nhiều hoặc lượng không đếm đang xét, cùng các cách dùng chuyển nghĩa và cụm cố định."
+  ],
+  "prerequisites": [
+    "countable-uncountable"
+  ],
+  "related": [
+    {
+      "slug": "the-basics",
+      "rel": "contrast"
+    },
+    {
+      "slug": "zero-article",
+      "rel": "more"
+    },
+    {
+      "slug": "uncountable-traps",
+      "rel": "confusion"
+    },
+    {
+      "slug": "possessive-determiners",
+      "rel": "contrast"
+    },
+    {
+      "slug": "numbers-dates-measures",
+      "rel": "special"
+    }
+  ],
+  "exam": {
+    "ielts": "Hữu ích khi tự kiểm tra danh ngữ trong bài viết hoặc lời nói, kể cả an 8% rise và a 10% fall. Bài không có số liệu tần suất lỗi hoặc bảo đảm điểm thi.",
+    "toeic": null
+  },
+  "quick": {
+    "what": "A và an là mạo từ không xác định (indefinite article). Cả hai đều gần nghĩa với 'một' và đứng trước danh từ đếm được số ít. Dùng `an` khi từ đứng ngay sau bắt đầu bằng âm nguyên âm, dùng `a` khi bắt đầu bằng âm phụ âm.",
+    "when": "Khi trình bày một thành viên hoặc một loại bằng danh từ số ít đếm được, hay nói nghề nghiệp. A/an không tự có nghĩa người nghe hoàn toàn không biết đối tượng; hãy xét ý định giới thiệu và cách phân loại. Chọn a/an theo âm ngay sau nó.",
+    "examples": [
+      {
+        "en": "I found [DET|an] [ADJ|old] [N|umbrella] in the cupboard.",
+        "vi": "Tôi tìm thấy một cái ô cũ trong tủ."
+      },
+      {
+        "en": "It was [DET|a] [ADJ|useful] [N|lesson], but we waited [DET|an] [N|hour] for it to start.",
+        "vi": "Đó là một bài học hữu ích, nhưng chúng tôi đã đợi một tiếng nó mới bắt đầu."
+      }
+    ],
+    "remember": "Đọc to từ đứng ngay sau a/an. Nghe thấy nguyên âm thì an, nghe thấy phụ âm thì a."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "A/an là hai dạng của mạo từ không xác định. Trong các mẫu danh ngữ số ít đếm được cơ bản, chúng có thể giới thiệu hoặc phân loại. Chọn dạng theo âm của cụm đứng ngay sau; đừng chuyển chữ một trong tiếng Việt máy móc sang mạo từ ở mọi cấu trúc."
+    },
+    {
+      "type": "h",
+      "vi": "Hai câu hỏi theo thứ tự"
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "flow",
+        "start": "need",
+        "nodes": {
+          "need": {
+            "q": "Danh từ có đếm được và ở số ít không? (a book, an egg; không phải books hay rice)",
+            "yes": "new",
+            "no": "none"
+          },
+          "new": {
+            "q": "Bạn nói về 'một cái nào đó' mà người nghe chưa biết đích xác, hoặc nói ai đó, cái gì thuộc loại nào, làm nghề gì?",
+            "yes": "sound",
+            "no": "other"
+          },
+          "sound": {
+            "q": "Đọc to từ đứng ngay sau a/an. Từ đó có thể là tính từ, không nhất thiết là danh từ. Âm đầu tiên của nó là gì?",
+            "choices": [
+              {
+                "t": "Âm nguyên âm (apple, hour, MBA, eight)",
+                "to": "an"
+              },
+              {
+                "t": "Âm phụ âm, kể cả /j/ và /w/ (book, university, one)",
+                "to": "a"
+              }
+            ]
+          },
+          "none": {
+            "end": "Không dùng a hoặc an",
+            "note": "Không đặt a/an trực tiếp trước cách dùng số nhiều hoặc lượng không đếm đang xét. Một từ có thể đổi sang nghĩa suất phục vụ hoặc loại, như a coffee."
+          },
+          "other": {
+            "end": "Dùng từ khác: the, my, this...",
+            "note": "The đánh dấu khả năng nhận diện; my/this và những từ hạn định khác có công việc riêng. Việc đã biết đối tượng không cấm mọi cách giới thiệu bằng a/an."
+          },
+          "an": {
+            "end": "an",
+            "note": "an old umbrella, an hour, an MBA, an 8-year-old"
+          },
+          "a": {
+            "end": "a",
+            "note": "a big umbrella, a university, a one-day trip, a UN report"
+          }
+        }
+      },
+      "caption": "Sơ đồ cho các danh ngữ tham chiếu thông thường; không bao quát mọi vai trò hoặc cụm cố định.",
+      "alt": "Sơ đồ quyết định. Danh từ đếm được số ít thì xét tiếp, nếu không thì không dùng a hoặc an. Nếu nói về một cái chưa xác định, hoặc nói nghề nghiệp và loại, thì đọc từ đứng ngay sau: âm nguyên âm dùng an, âm phụ âm dùng a. Nếu người nghe đã biết đích xác cái nào thì dùng the hoặc từ xác định khác."
+    },
+    {
+      "type": "h",
+      "vi": "Âm quyết định, không phải chữ cái"
+    },
+    {
+      "type": "p",
+      "vi": "Cách học quen thuộc là 'an đứng trước a, e, i, o, u'. Quy tắc đó đúng với nhiều từ, nhưng sai ở những từ hay gặp nhất. Điều thật sự quyết định là âm đầu tiên của từ đứng ngay sau. Vài chữ cái được đọc khác với tên của chúng, và có chữ h không đọc ra."
+    },
+    {
+      "type": "table",
+      "caption": "Những chỗ chữ và âm không khớp",
+      "head": [
+        "Chữ viết",
+        "Âm đầu tiên thật sự",
+        "Dùng",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "`u` đọc là /juː/ (như you)",
+          "/j/, một phụ âm",
+          "`a`",
+          "`a university`, `a useful tip`, `a European city`, `a unit`"
+        ],
+        [
+          "`o` đọc là /w/ (one, once)",
+          "/w/, một phụ âm",
+          "`a`",
+          "`a one-day trip`, `a one-off fee`"
+        ],
+        [
+          "`h` câm",
+          "nguyên âm",
+          "`an`",
+          "`an hour`, `an honest answer`, `an honour`, `an heir`"
+        ],
+        [
+          "`u` đọc là /ʌ/ (như trong umbrella)",
+          "nguyên âm",
+          "`an`",
+          "`an umbrella`, `an uncle`, `an unusual idea`"
+        ],
+        [
+          "`h` được đọc",
+          "/h/, một phụ âm",
+          "`a`",
+          "`a hotel`, `a house`, `a history book`"
+        ]
+      ]
+    },
+    {
+      "type": "try",
+      "exercise": "aan-01"
+    },
+    {
+      "type": "h",
+      "vi": "Chữ viết tắt và con số: nghe tên của chữ cái"
+    },
+    {
+      "type": "p",
+      "vi": "Với chữ viết tắt đọc từng chữ cái, hãy nghe **tên** của chữ cái đầu. M đọc là 'em', nên nói `an MBA`. U đọc là 'you', nên nói `a UN report`. Với chữ viết tắt đọc thành một từ, như NASA, hãy nghe âm đầu của từ đó. Con số cũng theo âm: eight bắt đầu bằng nguyên âm, ten bắt đầu bằng phụ âm."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "She is [DET|an] [N|MBA] student.",
+          "vi": "Cô ấy là sinh viên MBA.",
+          "note": "M đọc là 'em': âm đầu là nguyên âm."
+        },
+        {
+          "en": "He wrote [DET|a] [N|UN] report.",
+          "vi": "Anh ấy viết một báo cáo của Liên Hợp Quốc.",
+          "note": "U đọc là 'you': âm đầu là /j/, một phụ âm."
+        },
+        {
+          "en": "She got [DET|an] [N|SMS] from her bank.",
+          "vi": "Cô ấy nhận được một tin nhắn SMS từ ngân hàng.",
+          "note": "S đọc là 'es': âm đầu là nguyên âm."
+        },
+        {
+          "en": "My neighbour is [DET|a] [N|NASA] engineer.",
+          "vi": "Hàng xóm của tôi là kỹ sư NASA.",
+          "note": "NASA đọc thành một từ, âm đầu là /n/."
+        },
+        {
+          "en": "There was [DET|an] 8% rise in prices, then [DET|a] 10% fall.",
+          "vi": "Giá tăng 8%, sau đó giảm 10%.",
+          "note": "Eight bắt đầu bằng nguyên âm. Ten bắt đầu bằng phụ âm.",
+          "tag": "written"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "labelA": "an",
+      "labelB": "a",
+      "items": [
+        {
+          "a": {
+            "en": "It is [DET|an] [N|EU] rule.",
+            "vi": "Đó là một quy định của EU."
+          },
+          "b": {
+            "en": "It is [DET|a] [N|UN] rule.",
+            "vi": "Đó là một quy định của Liên Hợp Quốc."
+          },
+          "diff": "EU đọc là 'ee-you', âm đầu là nguyên âm. UN đọc là 'you-en', âm đầu là /j/, một phụ âm. Hai chữ viết tắt đều bắt đầu bằng chữ cái khác nhau và âm khác nhau."
+        },
+        {
+          "a": {
+            "en": "He left [DET|an] [N|umbrella] on the bus.",
+            "vi": "Anh ấy để quên một cái ô trên xe buýt."
+          },
+          "b": {
+            "en": "He left [DET|a] [N|uniform] on the bus.",
+            "vi": "Anh ấy để quên một bộ đồng phục trên xe buýt."
+          },
+          "diff": "Hai từ cùng mở đầu bằng chữ u. Umbrella bắt đầu bằng /ʌ/, nguyên âm. Uniform bắt đầu bằng /j/, phụ âm."
+        },
+        {
+          "a": {
+            "en": "She asked [DET|an] [ADJ|honest] question.",
+            "vi": "Cô ấy hỏi một câu hỏi thẳng thắn."
+          },
+          "b": {
+            "en": "She asked [DET|a] [ADJ|hard] question.",
+            "vi": "Cô ấy hỏi một câu hỏi khó."
+          },
+          "diff": "Honest có h câm nên bắt đầu bằng nguyên âm. Hard có h được đọc nên bắt đầu bằng phụ âm."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Từ ngay sau mạo từ mới là từ quyết định"
+    },
+    {
+      "type": "p",
+      "vi": "Nếu có tính từ giữa mạo từ và danh từ, hãy nhìn tính từ chứ không nhìn danh từ. Cùng một danh từ có thể đi với hai mạo từ khác nhau tùy từ đứng trước nó."
+    },
+    {
+      "type": "contrast",
+      "labelA": "Danh từ đứng ngay sau",
+      "labelB": "Tính từ đứng ngay sau",
+      "items": [
+        {
+          "a": {
+            "en": "She ate [DET|an] [N|apple].",
+            "vi": "Cô ấy ăn một quả táo."
+          },
+          "b": {
+            "en": "She ate [DET|a] [ADJ|red] [N|apple].",
+            "vi": "Cô ấy ăn một quả táo đỏ."
+          },
+          "diff": "Apple bắt đầu bằng nguyên âm, red bắt đầu bằng phụ âm. Danh từ không đổi, mạo từ đổi theo từ đứng sau nó."
+        },
+        {
+          "a": {
+            "en": "I found [DET|a] [N|book] under the bed.",
+            "vi": "Tôi tìm thấy một cuốn sách dưới gầm giường."
+          },
+          "b": {
+            "en": "I found [DET|an] [ADJ|old] [N|book] under the bed.",
+            "vi": "Tôi tìm thấy một cuốn sách cũ dưới gầm giường."
+          },
+          "diff": "Chỉ thêm tính từ old, mạo từ đã đổi từ a thành an."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "A hoặc an nói lên điều gì?"
+    },
+    {
+      "type": "p",
+      "vi": "A/an thường giới thiệu một thành viên hoặc phân loại: My sister is a nurse. Nó không tự chứng minh người nghe chưa từng biết người hay vật ấy. Một lời nhờ a menu vẫn có thể phù hợp dù trên bàn chỉ có một thực đơn. The trực tiếp đánh dấu cách nhận diện trong ngữ cảnh; lựa chọn còn phụ thuộc điều người nói muốn trình bày."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "There is [DET|a] [N|man] at the door.",
+          "vi": "Có một người đàn ông ở cửa.",
+          "note": "Giới thiệu người vừa xuất hiện."
+        },
+        {
+          "en": "My sister is [DET|a] [N|nurse].",
+          "vi": "Chị tôi là y tá.",
+          "note": "Nói nghề nghiệp."
+        },
+        {
+          "en": "Hanoi is [DET|a] [ADJ|busy] [N|city].",
+          "vi": "Hà Nội là một thành phố đông đúc.",
+          "note": "Nói thuộc loại nào."
+        },
+        {
+          "en": "I go to the gym twice [DET|a] week.",
+          "vi": "Tôi đến phòng tập hai lần mỗi tuần.",
+          "note": "A/an còn có nghĩa 'mỗi'."
+        }
+      ]
+    },
+    {
+      "type": "try",
+      "exercise": "aan-06"
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Trong cách dùng chỉ đối tượng thông thường, danh từ đếm được số ít thường có a/an, the, my, this hoặc từ hạn định khác: My sister is a nurse; I have a car. Có ngoại lệ về vai trò, cụm cố định và văn phong, nên không gọi đây là lệnh cho mọi danh từ số ít. Advice ở nghĩa lời khuyên thông thường dùng some advice hoặc a piece of advice."
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Khi nói, `an` nối vào từ sau: `an apple` nghe như một cụm liền. Bạn không cần đọc `an` tách ra rồi mới đọc `apple`."
+    }
+  ],
+  "deep": [
+    {
+      "type": "h",
+      "vi": "Chữ h: hotel, historic, herb"
+    },
+    {
+      "type": "p",
+      "vi": "Quy tắc là theo âm, nên với từ bắt đầu bằng h được đọc, dạng thông thường hiện nay là `a`: `a hotel`, `a house`, `a historic moment`. Dạng `an historic` vẫn gặp trong văn viết, nhất là văn phong cũ hoặc trang trọng, từ thời âm h ở âm tiết không nhấn hay bị bỏ. Cả hai đều được chấp nhận, nhưng `a historic` phổ biến hơn. Hãy chọn theo cách bạn đọc."
+    },
+    {
+      "type": "note",
+      "kind": "regional",
+      "vi": "Từ herb: tiếng Anh Mỹ thường đọc không có âm /h/ (nghe như erb), nên nói `an herb`. Tiếng Anh Anh đọc có âm /h/, nên nói `a herb`. Mạo từ đi theo cách đọc, nên khác nhau giữa hai vùng."
+    },
+    {
+      "type": "h",
+      "vi": "Một chữ viết tắt, hai cách đọc"
+    },
+    {
+      "type": "p",
+      "vi": "Vì mạo từ theo âm, cùng một chữ viết có thể đi với hai mạo từ. `SQL` đọc từng chữ cái (es-kiu-el) thì là `an SQL query`, đọc là 'sequel' thì là `a SQL query`. `FAQ` đọc từng chữ cái thì là `an FAQ`, đọc thành 'fak' thì là `a FAQ`. Cả hai cách đều có trong thực tế. Điều quan trọng là mạo từ khớp với cách bạn đọc và bạn dùng nhất quán trong một văn bản."
+    },
+    {
+      "type": "h",
+      "vi": "A/an không chỉ là 'một'"
+    },
+    {
+      "type": "p",
+      "vi": "Nhiều cụm cố định có a hoặc an và nên học nguyên cụm: `a few`, `a little`, `a lot of`, `what a day`, `such a shame`, `quite a long way`, `half an hour`. Danh từ không đếm được cũng có thể đếm được khi nói về một suất hay một loại: `two coffees`, `a water, please`, `an ice cream`. `A hundred` và `one hundred` đều đúng; `one hundred` nhấn mạnh hơn."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không đặt a/an cùng với the, my, this hoặc some trong một cụm danh từ. Dịch 'một người bạn của tôi' thành `a my friend` là sai. Hãy nói `a friend of mine` hoặc `my friend`."
+    },
+    {
+      "type": "h",
+      "vi": "Hai dạng trong lời nói"
+    },
+    {
+      "type": "p",
+      "vi": "Có thể học lựa chọn a/an từ âm của cụm ngay sau, không cần suy ra một mục đích lịch sử. Bài này không xác lập niên đại hoặc nguyên nhân hình thành hai dạng. Với cách đọc biến thiên như SQL hay herb, chọn dạng khớp cách phát âm đang dùng."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "aan-spelling",
+      "wrong": "I study at an university.",
+      "right": "I study at a university.",
+      "why": "University bắt đầu bằng âm /j/ (như you), là phụ âm, nên dùng a.",
+      "vn": "Chữ u khiến nhiều người nghĩ đến nguyên âm. Hãy đọc to từ đó, đừng nhìn chữ."
+    },
+    {
+      "id": "aan-silent-h",
+      "wrong": "I waited a hour.",
+      "right": "I waited an hour.",
+      "why": "H trong hour câm, nên từ này bắt đầu bằng nguyên âm /aʊ/.",
+      "vn": "Nhiều người nghĩ h luôn là phụ âm, nhưng mạo từ theo âm chứ không theo chữ."
+    },
+    {
+      "id": "aan-omission",
+      "wrong": "My sister is teacher.",
+      "right": "My sister is a teacher.",
+      "why": "Danh từ đếm được số ít cần một từ đứng trước. Khi nói nghề nghiệp, dùng a hoặc an.",
+      "vn": "Tiếng Việt nói 'Chị tôi là giáo viên' và không cần từ nào đứng trước."
+    },
+    {
+      "id": "aan-adjective",
+      "wrong": "She bought a expensive umbrella.",
+      "right": "She bought an expensive umbrella.",
+      "why": "Từ đứng ngay sau mạo từ là expensive, bắt đầu bằng nguyên âm. Danh từ umbrella không quyết định ở đây."
+    },
+    {
+      "id": "aan-uncountable",
+      "wrong": "She gave me an advice.",
+      "right": "She gave me some advice. / She gave me a piece of advice.",
+      "why": "Advice không đếm được nên không đi với a/an.",
+      "vn": "Tiếng Việt nói 'một lời khuyên', nên dễ dịch thẳng thành an advice."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Vì sao university đi với a mà umbrella đi với an?",
+      "a": "Chữ đầu đều là u, nhưng âm khác nhau. University bắt đầu bằng /j/ giống chữ y trong yes, là phụ âm. Umbrella bắt đầu bằng nguyên âm /ʌ/. Mạo từ theo âm."
+    },
+    {
+      "q": "Có nên viết an hotel không?",
+      "a": "A hotel là mẫu trung tính thông dụng khi phát âm /h/. Những cách đọc hoặc văn phong khác có thể có an; không dùng khác biệt này để khẳng định mọi người phải nói cùng một giọng. Không có cam kết về một đáp án thi chưa được nêu quy cách."
+    },
+    {
+      "q": "Nếu không chắc cách đọc một chữ viết tắt thì sao?",
+      "a": "Tra từ điển có phiên âm hoặc nghe người bản ngữ đọc. Với những chữ hay gặp như MBA, SMS, EU, UN, nên nhớ cả cụm: an MBA, an SMS, an EU rule, a UN report."
+    },
+    {
+      "q": "A và one khác nhau thế nào?",
+      "a": "A/an chỉ 'một' mà không nhấn số lượng: I need a pen (cây bút nào cũng được). One nhấn rằng chỉ có một, không phải hai: I need one pen, not two."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "aan-01",
+      "type": "choice",
+      "level": "A1",
+      "use": "both",
+      "skill": "form",
+      "prompt": "Chọn mạo từ đúng.",
+      "context": "Hai người bạn nói chuyện về công việc của người thân.",
+      "stem": "My brother is ___ engineer.",
+      "options": [
+        {
+          "t": "a",
+          "note": "Engineer bắt đầu bằng nguyên âm /e/ (en-gi-nia), nên không dùng a.",
+          "tag": "article-a-an-sound"
+        },
+        {
+          "t": "an",
+          "ok": true,
+          "note": "Engineer bắt đầu bằng nguyên âm /e/, và nói nghề nghiệp thì cần a hoặc an."
+        },
+        {
+          "t": "(không mạo từ)",
+          "note": "Danh từ số ít đếm được phải có một từ đứng trước. Khi nói nghề nghiệp, dùng a hoặc an.",
+          "tag": "article-omission"
+        }
+      ],
+      "explain": "Có hai việc phải làm: nhận ra rằng câu cần một mạo từ (danh từ số ít đếm được chỉ nghề nghiệp), rồi nghe âm đầu của engineer để chọn an."
+    },
+    {
+      "id": "aan-02",
+      "type": "choice",
+      "level": "A1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn mạo từ đúng. Hãy đọc to từ đứng sau chỗ trống.",
+      "stem": "My cousin studies at ___ university in Hue.",
+      "options": [
+        {
+          "t": "a",
+          "ok": true,
+          "note": "University bắt đầu bằng /j/ (như you), là một phụ âm, nên dùng a."
+        },
+        {
+          "t": "an",
+          "note": "Chữ u dễ làm bạn nghĩ đến nguyên âm, nhưng âm đầu của university là /j/, một phụ âm.",
+          "tag": "article-a-an-spelling"
+        }
+      ],
+      "explain": "Chọn theo âm, không theo chữ. University bắt đầu bằng âm /j/ giống chữ y trong yes."
+    },
+    {
+      "id": "aan-03",
+      "type": "classify",
+      "level": "A2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Xếp mỗi cụm vào nhóm a hoặc an. Mạo từ đứng ngay trước cụm.",
+      "cats": [
+        "a",
+        "an"
+      ],
+      "items": [
+        {
+          "t": "hour",
+          "cat": "an"
+        },
+        {
+          "t": "university",
+          "cat": "a"
+        },
+        {
+          "t": "umbrella",
+          "cat": "an"
+        },
+        {
+          "t": "one-way ticket",
+          "cat": "a"
+        },
+        {
+          "t": "honest answer",
+          "cat": "an"
+        },
+        {
+          "t": "European city",
+          "cat": "a"
+        },
+        {
+          "t": "MBA degree",
+          "cat": "an"
+        },
+        {
+          "t": "UN report",
+          "cat": "a"
+        }
+      ],
+      "explain": "Nhóm an có âm đầu là nguyên âm: hour (h câm), umbrella, honest (h câm), MBA (đọc là 'em'). Nhóm a có âm đầu là phụ âm: university, European và UN bắt đầu bằng /j/, one-way bắt đầu bằng /w/."
+    },
+    {
+      "id": "aan-04",
+      "type": "error",
+      "level": "A1",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn 'Câu này đúng'.",
+      "segments": [
+        {
+          "t": "He bought"
+        },
+        {
+          "t": "a",
+          "bad": true,
+          "fix": [
+            "an"
+          ],
+          "note": "Umbrella bắt đầu bằng nguyên âm /ʌ/, nên cần an.",
+          "tag": "article-a-an-sound"
+        },
+        {
+          "t": "umbrella from a street seller."
+        }
+      ],
+      "explain": "Câu đúng là He bought an umbrella from a street seller. Chú ý a trước street seller vẫn đúng vì street bắt đầu bằng phụ âm."
+    },
+    {
+      "id": "aan-05",
+      "type": "error",
+      "level": "A2",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn 'Câu này đúng'.",
+      "noError": true,
+      "segments": [
+        {
+          "t": "We waited for"
+        },
+        {
+          "t": "an hour"
+        },
+        {
+          "t": "outside the station."
+        }
+      ],
+      "explain": "NoError: với cách đọc hour có h câm và lựa chọn giữa a/an, an hour là mẫu phù hợp. Câu này không có lỗi cần sửa."
+    },
+    {
+      "id": "aan-06",
+      "type": "cloze",
+      "level": "A1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Điền a hoặc an.",
+      "stem": "At the zoo, we saw {1} elephant and {2} monkey.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "an"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "a",
+              "verdict": "wrong",
+              "note": "Elephant bắt đầu bằng nguyên âm /e/, nên cần an.",
+              "tag": "article-a-an-sound"
+            }
+          ]
+        },
+        "2": {
+          "accept": [
+            "a"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "an",
+              "verdict": "wrong",
+              "note": "Monkey bắt đầu bằng phụ âm /m/, nên cần a.",
+              "tag": "article-a-an-sound"
+            }
+          ]
+        }
+      },
+      "explain": "Elephant bắt đầu bằng nguyên âm nên đi với an. Monkey bắt đầu bằng phụ âm nên đi với a."
+    },
+    {
+      "id": "aan-07",
+      "type": "transform",
+      "level": "A2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lại thành một câu.",
+      "source": "He bought a house. It is old.",
+      "instruction": "Gộp thành một câu bắt đầu bằng He bought, đặt old trước house.",
+      "accept": [
+        "He bought an old house"
+      ],
+      "model": "He bought an old house.",
+      "known": [
+        {
+          "t": "He bought a old house",
+          "verdict": "wrong",
+          "note": "Từ đứng ngay sau mạo từ bây giờ là old, bắt đầu bằng nguyên âm, nên cần an.",
+          "tag": "article-a-an-adjective"
+        }
+      ],
+      "explain": "Khi thêm tính từ old, từ đứng ngay sau mạo từ không còn là house nữa, nên a đổi thành an."
+    },
+    {
+      "id": "aan-08",
+      "type": "order",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sắp xếp thành câu hỏi.",
+      "tokens": [
+        "Is",
+        "this",
+        "a",
+        "one-way",
+        "ticket"
+      ],
+      "end": "?",
+      "accept": [
+        [
+          "Is",
+          "this",
+          "a",
+          "one-way",
+          "ticket"
+        ]
+      ],
+      "explain": "Is đứng đầu để tạo câu hỏi. A đứng trước one-way vì one bắt đầu bằng âm /w/, một phụ âm."
+    },
+    {
+      "id": "aan-09",
+      "type": "match",
+      "level": "A2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Nối mỗi cụm với lý do của mạo từ đi trước nó.",
+      "pairs": [
+        {
+          "a": "hour",
+          "b": "an: chữ h câm, âm đầu là nguyên âm"
+        },
+        {
+          "a": "university",
+          "b": "a: âm đầu là /j/, một phụ âm"
+        },
+        {
+          "a": "one-day trip",
+          "b": "a: chữ o đọc là /w/, một phụ âm"
+        },
+        {
+          "a": "MBA",
+          "b": "an: chữ M đọc là 'em', bắt đầu bằng nguyên âm"
+        }
+      ],
+      "explain": "Trong cả bốn cụm, chữ viết đánh lừa. Hãy nói thành tiếng và nghe âm đầu tiên."
+    },
+    {
+      "id": "aan-10",
+      "type": "multi",
+      "level": "A1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn tất cả cụm đúng.",
+      "stem": "Cụm nào dùng đúng a hoặc an?",
+      "options": [
+        {
+          "t": "an hour",
+          "ok": true,
+          "note": "H câm, bắt đầu bằng nguyên âm."
+        },
+        {
+          "t": "a hour",
+          "note": "Hour bắt đầu bằng nguyên âm vì h câm, nên cần an.",
+          "tag": "article-a-an-sound"
+        },
+        {
+          "t": "a university",
+          "ok": true,
+          "note": "Bắt đầu bằng /j/, một phụ âm."
+        },
+        {
+          "t": "an university",
+          "note": "Chữ u ở đây đọc là /juː/, phụ âm, nên cần a.",
+          "tag": "article-a-an-spelling"
+        },
+        {
+          "t": "an MBA",
+          "ok": true,
+          "note": "M đọc là 'em', bắt đầu bằng nguyên âm."
+        },
+        {
+          "t": "a MBA",
+          "note": "Tên chữ M là 'em', nên chọn an.",
+          "tag": "article-a-an-sound"
+        }
+      ],
+      "explain": "Ba cụm đúng đều theo âm: hour (h câm), university (/j/), MBA (đọc là 'em')."
+    },
+    {
+      "id": "aan-11",
+      "type": "multi",
+      "level": "A2",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Chọn tất cả câu đúng.",
+      "stem": "Bạn muốn hỏi về thông tin xe buýt.",
+      "options": [
+        {
+          "t": "I need some information about the bus.",
+          "ok": true,
+          "note": "Some dùng được với danh từ không đếm được."
+        },
+        {
+          "t": "I need information about the bus.",
+          "ok": true,
+          "note": "Danh từ không đếm được có thể đứng một mình khi nói chung."
+        },
+        {
+          "t": "I need an information about the bus.",
+          "note": "Information không đếm được, nên không đi với an.",
+          "tag": "article-uncountable-a"
+        },
+        {
+          "t": "I need informations about the bus.",
+          "note": "Trong nghĩa thông tin xe buýt ở đây, không dùng informations.",
+          "tag": "uncountable-plural"
+        }
+      ],
+      "explain": "Trong nghĩa thông tin được hỏi ở đây, information là cách dùng không đếm trực tiếp. Có thể dùng some information hoặc information; khi cần nêu một phần, dùng a piece of information."
+    },
+    {
+      "id": "aan-12",
+      "type": "choice",
+      "level": "A2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Chọn từ đúng để nói 'mỗi tuần'.",
+      "stem": "I go swimming twice ___ week.",
+      "options": [
+        {
+          "t": "a",
+          "ok": true,
+          "note": "A/an có thể có nghĩa 'mỗi': twice a week, hai lần mỗi tuần."
+        },
+        {
+          "t": "an",
+          "note": "Week bắt đầu bằng phụ âm /w/, nên không dùng an.",
+          "tag": "article-a-an-sound"
+        },
+        {
+          "t": "the",
+          "note": "Twice the week không có nghĩa 'hai lần mỗi tuần'. Với nghĩa mỗi, tiếng Anh dùng a (hoặc per).",
+          "tag": "article-the-for-a"
+        }
+      ],
+      "explain": "Trong các cụm chỉ tần suất và giá, a/an có nghĩa 'mỗi': twice a week, three dollars a kilo, 50 kilometres an hour."
+    },
+    {
+      "id": "aan-13",
+      "type": "error",
+      "level": "A2",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn 'Câu này đúng'.",
+      "segments": [
+        {
+          "t": "She gave me"
+        },
+        {
+          "t": "an advice",
+          "bad": true,
+          "fix": [
+            "some advice",
+            "advice",
+            "a piece of advice",
+            "a bit of advice"
+          ],
+          "note": "Advice là danh từ không đếm được, không đi với an.",
+          "tag": "article-uncountable-a"
+        },
+        {
+          "t": "about my essay."
+        }
+      ],
+      "explain": "Có thể sửa thành some advice hoặc a piece of advice. Advice không đếm được nên không có an advice hay advices."
+    },
+    {
+      "id": "aan-14",
+      "type": "cloze",
+      "level": "B1",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Điền a hoặc an, như trong một bài viết báo cáo.",
+      "stem": "The chart shows {1} 8% rise in sales and {2} 10% fall in costs.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "an"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "a",
+              "verdict": "wrong",
+              "note": "Eight bắt đầu bằng nguyên âm /eɪ/, nên cần an.",
+              "tag": "article-a-an-sound"
+            }
+          ]
+        },
+        "2": {
+          "accept": [
+            "a"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "an",
+              "verdict": "wrong",
+              "note": "Ten bắt đầu bằng phụ âm /t/, nên cần a.",
+              "tag": "article-a-an-sound"
+            }
+          ]
+        }
+      },
+      "explain": "Con số cũng theo âm: eight bắt đầu bằng nguyên âm nên an 8% rise, ten bắt đầu bằng phụ âm nên a 10% fall."
+    },
+    {
+      "id": "aan-15",
+      "type": "open",
+      "level": "A2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Viết hai hoặc ba câu về những thứ trong túi hoặc ba lô của bạn. Dùng a hoặc an ít nhất ba lần, và có ít nhất một tính từ đứng giữa mạo từ và danh từ.",
+      "model": [
+        "I have an old notebook, a blue pen and an umbrella in my bag.",
+        "There is a small bottle of water and an orange in my backpack."
+      ],
+      "checklist": [
+        "Trong các cách dùng số ít chỉ đối tượng thông thường, chọn a/an hoặc từ hạn định thích hợp; nhớ các ngoại lệ theo cấu trúc.",
+        "Bạn chọn a hoặc an theo âm của từ đứng ngay sau, kể cả tính từ",
+        "Không gắn a/an vào nghĩa lượng không đếm; phân biệt với suất phục vụ như a coffee."
+      ],
+      "explain": "Đọc to từng cụm đã viết và nghe âm đầu tiên sau mạo từ để kiểm tra."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham khảo đề xuất; không tuyên bố đã đọc trang hoặc ấn bản này trong lượt review. Mục về a và an"
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham khảo đề xuất; không tuyên bố đã đọc trang hoặc ấn bản này trong lượt review. Mục về a và an, kể cả chữ viết tắt và chữ h"
+    },
+    {
+      "ref": "murphy-essential",
+      "note": "Tham khảo đề xuất; không tuyên bố đã đọc trang hoặc ấn bản này trong lượt review. Các bài về a/an"
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

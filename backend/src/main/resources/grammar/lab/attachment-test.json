@@ -1,0 +1,41 @@
+{
+  "id": "attachment-test",
+  "title": "Ai cầm ống nhòm trong lời nhân chứng?",
+  "summary": "Lời khai có câu I saw the guide with binoculars. Viết lại theo hai cách để người đọc không cần đoán cụm giới từ gắn với người hay hành động.",
+  "level": "C1",
+  "topics": [
+    "structural-ambiguity",
+    "relative-clauses-defining"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Chủ thể dùng hoặc mang ống nhòm",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Người quan sát"
+        },
+        {
+          "id": "v2",
+          "label": "Hướng dẫn viên"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Using binoculars, I saw the guide.",
+      "vi": "Dùng ống nhòm, tôi nhìn thấy hướng dẫn viên.",
+      "note": "Using binoculars đặt dụng cụ ở phía hành động quan sát của I. Không nói hướng dẫn viên có mang ống nhòm hay không. / The fronted participle is controlled by I.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "I saw the guide who was carrying binoculars.",
+      "vi": "Tôi thấy người hướng dẫn viên đang mang ống nhòm.",
+      "note": "Who was carrying xác định người mang ống nhòm, không cho biết người kể quan sát bằng cách nào. / The relative clause attaches directly to guide.",
+      "verdict": "ok"
+    }
+  }
+}

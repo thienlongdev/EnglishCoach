@@ -1,0 +1,451 @@
+{
+  "schema": 1,
+  "slug": "reference-chains",
+  "version": 2,
+  "domain": "discourse",
+  "order": 40,
+  "kind": "grammar",
+  "title": {
+    "vi": "Chuỗi quy chiếu trong đoạn văn",
+    "en": "Reference chains"
+  },
+  "subtitle": {
+    "vi": "Giữ người đọc biết mỗi từ đang chỉ điều gì",
+    "en": "Keep each reference recoverable for the reader"
+  },
+  "aliases": [
+    "chuỗi quy chiếu",
+    "reference chains",
+    "this delay these reports",
+    "đại từ mơ hồ",
+    "singular they"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Theo dõi tiền ngữ và từ quy chiếu.",
+    "Dùng danh từ tóm tắt cho sự việc.",
+    "Giải quyết mơ hồ mà không cấm mọi lặp từ."
+  ],
+  "prerequisites": [
+    "pronoun-reference"
+  ],
+  "related": [
+    {
+      "slug": "pronoun-reference",
+      "rel": "more"
+    },
+    {
+      "slug": "given-before-new",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Chuỗi quy chiếu liên hệ danh từ, đại từ và cụm tóm tắt qua nhiều câu. Người đọc cần biết it/they/this đang chỉ gì; đúng hình thức chưa bảo đảm rõ nghĩa.",
+    "when": "Đọc lại theo góc nhìn người chưa biết ý định của mình.",
+    "examples": [
+      {
+        "en": "The train was delayed. [REF|This delay] caused a problem.",
+        "vi": "Tàu bị chậm. Sự chậm trễ này gây ra một vấn đề."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "A report arrived. It was incomplete có it liên hệ report. Two files arrived. They were incomplete có they liên hệ two files. Nhưng quy chiếu không chỉ dựa số; nghĩa và ngữ cảnh vẫn quan trọng."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "reference",
+        "text": "{a:A report} arrived. {a<:It} was incomplete. {b:Two files} were missing. We requested {b<:them}."
+      },
+      "caption": "It chỉ báo cáo; them chỉ hai tệp, không chỉ danh từ gần nhất tùy ý.",
+      "alt": "Chuỗi A nối a report với it; chuỗi B nối two files với them."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Cách quy chiếu",
+        "Ví dụ",
+        "Cần kiểm tra"
+      ],
+      "rows": [
+        [
+          "Đại từ",
+          "a report → it",
+          "đối tượng hiểu được"
+        ],
+        [
+          "Danh từ tóm tắt",
+          "a delay → this problem",
+          "nhãn có đúng mức và nghĩa không"
+        ],
+        [
+          "Cụm chỉ định",
+          "this report / these reports",
+          "hòa hợp số"
+        ],
+        [
+          "Tên lặp khi cần",
+          "Mai ... Mai herself",
+          "tránh hai người đều hợp một she"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Mai told Lan that she needed help có thể mơ hồ giữa Mai và Lan nếu không có thêm ngữ cảnh. Câu không tự sai ngữ pháp. Nếu người viết muốn rõ, có thể lặp tên hoặc viết lại cấu trúc."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "This + danh từ tóm tắt có ích khi this đơn lẻ có nhiều nội dung để chỉ. Đừng gọi một ý kiến là this finding hoặc this proof nếu chưa có căn cứ nghiên cứu/chứng minh."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "They có thể chỉ một người theo cách dùng chuẩn, như someone ... their ... they. Không ép một thuật toán họ/người/noun gần nhất vào mọi câu."
+    },
+    {
+      "type": "p",
+      "vi": "Lặp từ có thể giúp mạch. Tránh lặp quá mức là lựa chọn biên tập, không lệnh đổi mỗi lần nhắc thành đại từ dù mơ hồ."
+    },
+    {
+      "type": "p",
+      "vi": "Quy chiếu cũng có thể dựa vào tình huống hoặc phần sắp nói, không chỉ một danh từ đứng trước. Bài này tập trung chuỗi trong đoạn; khi không đủ ngữ cảnh, đừng đoán ý người viết như đáp án chắc chắn."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "reference-chains-m1",
+      "wrong": "This reports are useful.",
+      "right": "These reports are useful.",
+      "why": "These hòa hợp reports số nhiều."
+    },
+    {
+      "id": "reference-chains-m2",
+      "wrong": "These report is useful.",
+      "right": "This report is useful.",
+      "why": "This hòa hợp report số ít."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Đại từ luôn chỉ danh từ gần nhất không?",
+      "a": "Không. Nghĩa, vai người và ngữ cảnh quyết định."
+    },
+    {
+      "q": "Câu mơ hồ có luôn sai ngữ pháp không?",
+      "a": "Không. Có thể đúng hình thức nhưng cần sửa độ rõ."
+    },
+    {
+      "q": "Có phải tránh lặp mọi tên/danh từ không?",
+      "a": "Không. Lặp có thể là cách rõ nhất khi đại từ dễ gây hiểu nhầm."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "reference-chains-01",
+      "prompt": "Chọn cụm chỉ đúng sự chậm trễ vừa nêu.",
+      "explain": "This delay có danh từ tóm tắt rõ, thay vì bắt người đọc đoán this chỉ sự việc nào.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "The train was delayed by an hour. ___ made us miss the meeting.",
+      "options": [
+        {
+          "t": "This delay",
+          "ok": true,
+          "note": "Gọi rõ sự chậm trễ vừa nêu."
+        },
+        {
+          "t": "These delay",
+          "ok": false,
+          "note": "These không đi với delay số ít.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "This delays",
+          "ok": false,
+          "note": "This không đi với delays số nhiều.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "reference-chains-02",
+      "prompt": "Nối phần quy chiếu với nội dung được chỉ.",
+      "explain": "Ngữ cảnh và số giúp theo dõi, không chỉ chọn danh từ gần nhất.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "A report arrived. IT was incomplete.",
+          "b": "it chỉ a report"
+        },
+        {
+          "a": "Two files arrived. THEY were incomplete.",
+          "b": "they chỉ two files"
+        },
+        {
+          "a": "The train was delayed. THIS DELAY cost us an hour.",
+          "b": "this delay tóm tắt việc tàu chậm"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "reference-chains-03",
+      "prompt": "Phân loại điểm quy chiếu.",
+      "explain": "This + danh từ có thể gọi một sự việc, không chỉ lặp nguyên danh từ trước.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Một vật được nhắc",
+        "Một nhóm vật được nhắc",
+        "Một sự việc được tóm tắt"
+      ],
+      "items": [
+        {
+          "t": "A report arrived. It was useful.",
+          "cat": "Một vật được nhắc"
+        },
+        {
+          "t": "Two reports arrived. They were useful.",
+          "cat": "Một nhóm vật được nhắc"
+        },
+        {
+          "t": "The train was delayed. This delay was costly.",
+          "cat": "Một sự việc được tóm tắt"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "reference-chains-04",
+      "prompt": "Điền this/these theo số của danh từ tóm tắt.",
+      "explain": "This report số ít; these reports số nhiều.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "{1} report is useful. {2} reports are useful.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "This"
+          ]
+        },
+        "2": {
+          "accept": [
+            "These"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "reference-chains-05",
+      "prompt": "Sửa từ chỉ định để hợp số nhiều.",
+      "explain": "These đi với reports số nhiều.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": ""
+        },
+        {
+          "t": "This",
+          "bad": true,
+          "fix": [
+            "These"
+          ],
+          "note": "Giữ reports thì dùng these.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "reports are useful."
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "reference-chains-06",
+      "prompt": "Sắp xếp bắt đầu bằng This delay.",
+      "explain": "Danh từ tóm tắt làm quan hệ giữa hai câu rõ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "This delay",
+        "caused",
+        "a problem"
+      ],
+      "accept": [
+        [
+          "This delay",
+          "caused",
+          "a problem"
+        ]
+      ],
+      "end": ".",
+      "level": "B2"
+    },
+    {
+      "id": "reference-chains-07",
+      "prompt": "Làm rõ điều this tóm tắt.",
+      "explain": "Chọn danh từ delay để gọi đúng sự việc, không tạo thêm kết quả mới.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "The train was delayed. This caused a problem.",
+      "instruction": "Thêm delay ngay sau This ở câu thứ hai, giữ phần còn lại.",
+      "accept": [
+        "The train was delayed. This delay caused a problem"
+      ],
+      "model": "The train was delayed. This delay caused a problem",
+      "level": "B2"
+    },
+    {
+      "id": "reference-chains-08",
+      "prompt": "Viết đoạn có chuỗi quy chiếu rõ.",
+      "explain": "Tự đối chiếu, không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết bốn câu: giới thiệu một báo cáo, nói thêm bằng it, giới thiệu hai tệp rồi quy chiếu bằng they hoặc them, và tóm tắt một sự việc bằng this + danh từ. Không bịa kết quả nghiên cứu.",
+      "model": [
+        "A report arrived. It was incomplete. Two files were missing, so we requested them. This problem delayed the review."
+      ],
+      "checklist": [
+        "Đại từ có tiền ngữ hiểu được.",
+        "This + danh từ thật sự tóm tắt đúng sự việc.",
+        "Không tránh mọi lặp từ đến mức làm mơ hồ."
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "reference-chains-09",
+      "prompt": "Điền it/they theo vật đã nêu rõ.",
+      "explain": "It chỉ một report; they chỉ hai files trong các câu này.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "A report arrived. {1} was useful. Two files arrived. {2} were useful.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "It"
+          ]
+        },
+        "2": {
+          "accept": [
+            "They"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "reference-chains-10",
+      "prompt": "Làm rõ she chỉ Mai theo ý định đã cho.",
+      "explain": "Đây là sửa độ rõ, không phán câu gốc sai hình thức.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "Mai told Lan that she needed help.",
+      "instruction": "Ý định là Mai cần giúp. Thay she bằng Mai herself; giữ mọi từ khác, không tạo lời trích trực tiếp.",
+      "accept": [
+        "Mai told Lan that Mai herself needed help"
+      ],
+      "model": "Mai told Lan that Mai herself needed help",
+      "level": "B2"
+    },
+    {
+      "id": "reference-chains-11",
+      "prompt": "Chọn tất cả nhận xét đúng.",
+      "explain": "Quy chiếu phụ thuộc diễn ngôn, ngữ pháp và mục đích rõ nghĩa.",
+      "skill": "use",
+      "use": "check",
+      "type": "multi",
+      "stem": "Biên tập chuỗi đại từ.",
+      "options": [
+        {
+          "t": "Một đại từ có thể mơ hồ dù câu đúng hình thức.",
+          "ok": true,
+          "note": "Nhiều tiền ngữ có thể phù hợp."
+        },
+        {
+          "t": "This delay có thể rõ hơn this nếu cần chỉ đúng sự chậm trễ.",
+          "ok": true,
+          "note": "Danh từ tóm tắt giúp định hướng."
+        },
+        {
+          "t": "Đại từ luôn chỉ danh từ gần nhất bất kể nghĩa.",
+          "ok": false,
+          "note": "Không có máy chọn gần nhất như vậy.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Lặp lại tên hoặc danh từ luôn là lỗi văn phong.",
+          "ok": false,
+          "note": "Lặp có thể cần để rõ.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "reference-chains-12",
+      "prompt": "Chọn nhận xét đúng về singular they.",
+      "explain": "They có thể chỉ một người khi danh tính/giới không được xác định hoặc theo cách người đó dùng.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "Someone left their bag. They may return for it.",
+      "options": [
+        {
+          "t": "They có thể chỉ someone số ít; it chỉ bag.",
+          "ok": true,
+          "note": "Không buộc they luôn là một nhóm."
+        },
+        {
+          "t": "They không bao giờ chỉ một người.",
+          "ok": false,
+          "note": "Singular they có cách dùng chuẩn.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "It trong câu sau chắc chắn chỉ someone.",
+          "ok": false,
+          "note": "Bag là vật được quy chiếu ở đây.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "lgswe",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

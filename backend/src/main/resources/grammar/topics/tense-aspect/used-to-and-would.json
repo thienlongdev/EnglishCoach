@@ -1,0 +1,871 @@
+{
+  "schema": 1,
+  "slug": "used-to-and-would",
+  "version": 2,
+  "domain": "tense-aspect",
+  "order": 80,
+  "kind": "grammar",
+  "title": {
+    "vi": "Used to và would nói về thói quen cũ",
+    "en": "Used to and would"
+  },
+  "subtitle": {
+    "vi": "Thói quen và tình huống trước đây trong bối cảnh quá khứ",
+    "en": "Past habits and situations in context"
+  },
+  "aliases": [
+    "used to",
+    "would past habit",
+    "thói quen trong quá khứ",
+    "hồi xưa tôi hay",
+    "didn't use to",
+    "used to vs would",
+    "ngày xưa thường",
+    "past habits",
+    "i used to live",
+    "did you use to"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "uses": [
+    {
+      "level": "B1",
+      "vi": "Nói về thói quen và trạng thái đã qua: I used to play football. There used to be a market here."
+    },
+    {
+      "level": "B2",
+      "vi": "Dùng would để kể tiếp những thói quen sau khi bối cảnh quá khứ đã rõ, và biết khi nào would mang nghĩa khác."
+    }
+  ],
+  "objectives": [
+    "Dùng used to + động từ nguyên mẫu cho thói quen và trạng thái đã qua",
+    "Dùng would cho việc tái diễn trong bối cảnh quá khứ; phân biệt với một trạng thái kéo dài",
+    "Lập phủ định và câu hỏi đúng: didn't use to, Did you use to...?",
+    "Phân biệt used to với quá khứ đơn, với từng (trải nghiệm) và với be used to"
+  ],
+  "prerequisites": [
+    "past-simple"
+  ],
+  "related": [
+    {
+      "slug": "past-simple",
+      "rel": "alternative"
+    },
+    {
+      "slug": "past-simple-vs-continuous",
+      "rel": "alternative"
+    },
+    {
+      "slug": "be-used-to-get-used-to",
+      "rel": "confusion"
+    },
+    {
+      "slug": "will-would-prediction-habit",
+      "rel": "more"
+    },
+    {
+      "slug": "future-in-the-past",
+      "rel": "contrast"
+    },
+    {
+      "slug": "narrative-tenses",
+      "rel": "application"
+    }
+  ],
+  "exam": {
+    "ielts": "Có thể vận dụng khi kể trải nghiệm, thói quen hoặc diễn biến trong Speaking/Writing; bài này không xác nhận tần suất xuất hiện trong đề hay mức điểm.",
+    "toeic": "Có thể vận dụng khi đọc hội thoại, thư và thông báo công việc; đây không phải nhận định đã đo về tần suất câu hỏi TOEIC."
+  },
+  "quick": {
+    "what": "Used to + động từ nguyên mẫu nói về thói quen hoặc trạng thái quá khứ, thường đối lập với hiện tại. Would cũng kể việc tái diễn khi bối cảnh quá khứ đã rõ, nhưng thường không thay used to cho một trạng thái kéo dài.",
+    "when": "Dùng used to cho nơi ở, sở hữu hoặc thói quen trước đây. Dùng would để kể các dịp lặp lại trong một khung quá khứ; khung đó có thể nằm ngay trong câu. Không suy ra would luôn mang ý bây giờ đã chấm dứt.",
+    "examples": [
+      {
+        "en": "We [AUX|used to] [V|live] in a narrow alley near Hang Bac.",
+        "vi": "Hồi trước chúng tôi sống trong một con hẻm nhỏ gần phố Hàng Bạc."
+      },
+      {
+        "en": "Every Tet, Grandma [MOD|would] [V|wrap] banh chung for the whole street.",
+        "vi": "Tết nào bà cũng gói bánh chưng cho cả xóm."
+      }
+    ],
+    "remember": "Used to dùng cho thói quen và trạng thái kéo dài. Would cần cách hiểu tái diễn và bối cảnh quá khứ rõ."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Tiếng Việt có nhiều cách nói “ngày xưa”: **hồi trước, ngày xưa, trước đây, hay, thường**. Tiếng Anh có một cấu trúc gọn cho ý này, và nó mang thêm một ý ngầm: bây giờ thường không còn như vậy."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "timeline",
+        "now": 75,
+        "sentence": "I used to cycle to school.",
+        "events": [
+          {
+            "kind": "repeat",
+            "from": 15,
+            "to": 45,
+            "label": "Đạp xe đến trường, lặp đi lặp lại",
+            "role": "main"
+          },
+          {
+            "kind": "span",
+            "from": 45,
+            "to": 75,
+            "label": "Bây giờ không còn như vậy",
+            "role": "ghost"
+          }
+        ]
+      },
+      "caption": "Used to nhìn một thói quen đã khép lại và đặt nó đối diện với bây giờ.",
+      "alt": "Trục thời gian có một đoạn lặp lại ở quá khứ mang nhãn đạp xe đến trường, theo sau là một đoạn nhạt đến thời điểm hiện tại mang nhãn bây giờ không còn như vậy."
+    },
+    {
+      "type": "formula",
+      "lines": [
+        {
+          "label": "Khẳng định",
+          "parts": [
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "used to",
+              "role": "AUX"
+            },
+            {
+              "t": "động từ nguyên mẫu",
+              "role": "V"
+            }
+          ]
+        },
+        {
+          "label": "Phủ định",
+          "parts": [
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "didn't use to",
+              "role": "AUX"
+            },
+            {
+              "t": "động từ nguyên mẫu",
+              "role": "V"
+            }
+          ]
+        },
+        {
+          "label": "Câu hỏi",
+          "parts": [
+            {
+              "t": "Did",
+              "role": "AUX"
+            },
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "use to",
+              "role": "AUX"
+            },
+            {
+              "t": "động từ nguyên mẫu",
+              "role": "V"
+            }
+          ]
+        },
+        {
+          "label": "Would",
+          "parts": [
+            {
+              "t": "chủ ngữ",
+              "role": "S"
+            },
+            {
+              "t": "would",
+              "role": "MOD"
+            },
+            {
+              "t": "động từ nguyên mẫu",
+              "role": "V"
+            }
+          ]
+        }
+      ],
+      "note": "Mẫu chính trong bài là didn't use to và Did ... use to? Dạng có used sau did cũng có trong thực tế; xem phần nâng cao về biến thể chính tả."
+    },
+    {
+      "type": "h",
+      "vi": "Thói quen và trạng thái"
+    },
+    {
+      "type": "table",
+      "head": [
+        "Tình huống",
+        "Used to",
+        "Would"
+      ],
+      "rows": [
+        [
+          "Hành động lặp lại: đạp xe, đi chợ, kể chuyện",
+          "Được",
+          "Được, sau khi bối cảnh quá khứ đã rõ"
+        ],
+        [
+          "Trạng thái: sống ở đâu, có gì, là gì, biết ai, thích gì",
+          "Được",
+          "Thường không dùng"
+        ],
+        [
+          "Mở đầu một đoạn kể về quá khứ",
+          "Được",
+          "Được nếu ngay câu đó hoặc ngữ cảnh đã thiết lập quá khứ; không bắt buộc phải có câu used to trước."
+        ],
+        [
+          "Hàm ý bây giờ khác",
+          "Thường có",
+          "Tùy bối cảnh"
+        ],
+        [
+          "Một lần duy nhất ở thời điểm xác định",
+          "Không",
+          "Không ở nghĩa thói quen; would vẫn có những nghĩa khác."
+        ]
+      ],
+      "caption": "Used to rộng hơn would: nó nhận cả trạng thái."
+    },
+    {
+      "type": "contrast",
+      "labelA": "Câu A",
+      "labelB": "Câu B",
+      "items": [
+        {
+          "a": {
+            "en": "There [AUX|used to] [V|be] a cinema on this corner.",
+            "vi": "Ngày trước ở góc này có một rạp chiếu phim."
+          },
+          "b": {
+            "en": "There [MOD|would] [V|be] a cinema on this corner.",
+            "vi": "Sẽ có một rạp chiếu phim ở góc này (giả định)."
+          },
+          "diff": "Để nói một rạp từng tồn tại ổn định ở đây, used to là lựa chọn phù hợp. Câu B vẫn có thể đúng với nghĩa giả định hoặc tương lai nhìn từ quá khứ; nó không tự truyền đạt trạng thái cũ cần nói."
+        },
+        {
+          "a": {
+            "en": "When I was small, I [AUX|used to] [V|visit] my aunt every Sunday.",
+            "vi": "Hồi nhỏ, Chủ nhật nào tôi cũng đến thăm dì."
+          },
+          "b": {
+            "en": "When I was small, I [MOD|would] [V|visit] my aunt every Sunday.",
+            "vi": "Hồi nhỏ, Chủ nhật nào tôi cũng đến thăm dì."
+          },
+          "diff": "Cùng nghĩa. Với would, cụm When I was small đã đặt bối cảnh quá khứ nên thói quen hiểu được."
+        },
+        {
+          "a": {
+            "en": "We [V|lived] in Hue for six years.",
+            "vi": "Chúng tôi sống ở Huế sáu năm."
+          },
+          "b": {
+            "en": "We [AUX|used to] [V|live] in Hue.",
+            "vi": "Ngày trước chúng tôi sống ở Huế."
+          },
+          "diff": "Câu A nêu rõ bao lâu và coi đó là một khối đã qua. Câu B không nêu thời gian, đặt trước so với bây giờ."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Used to mở cảnh, would kể tiếp"
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "When I was a student in Hue, we [AUX|used to] [V|rent] a room above a noodle shop. Every morning the smell of broth [MOD|would] [V|wake] us, and we [MOD|would] [V|go] down for a bowl before class.",
+          "vi": "Hồi tôi còn là sinh viên ở Huế, chúng tôi thuê một căn phòng trên quán bún. Sáng nào mùi nước dùng cũng đánh thức chúng tôi, và chúng tôi xuống ăn một tô trước giờ học.",
+          "note": "Câu đầu dùng used to cho một trạng thái và đặt bối cảnh. Hai câu sau chuyển sang would cho những việc lặp lại.",
+          "tag": "written"
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Phủ định và câu hỏi"
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "I [AUX|didn't] [V|use to] like coffee.",
+          "vi": "Ngày trước tôi không thích cà phê."
+        },
+        {
+          "en": "[AUX|Did] you [V|use to] play badminton?",
+          "vi": "Ngày trước bạn có chơi cầu lông không?"
+        },
+        {
+          "en": "He [ADV|never] [AUX|used to] [V|talk] much.",
+          "vi": "Anh ấy ngày trước chẳng nói nhiều."
+        }
+      ]
+    },
+    {
+      "type": "try",
+      "exercise": "utw-01"
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Chữ **từng** trong tiếng Việt không phải lúc nào cũng là used to. “Tôi từng ăn sầu riêng” nói về một trải nghiệm: I've tried durian. “Ngày xưa tôi hay ăn sầu riêng mỗi mùa” mới là I used to eat durian every season. Đừng dịch từng bằng used to nếu bạn không muốn nói về một thói quen hoặc trạng thái đã qua."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không có dạng “I use to” cho hiện tại. Thói quen hiện tại dùng hiện tại đơn: I usually get up at six. Used to chỉ nói về quá khứ."
+    }
+  ],
+  "deep": [
+    {
+      "type": "h",
+      "vi": "Would có nhiều nghĩa nên cần bối cảnh"
+    },
+    {
+      "type": "p",
+      "vi": "Would còn dùng cho giả định, tương lai nhìn từ quá khứ và sự sẵn lòng. If he could trong một câu đứng riêng có thể là điều kiện giả định hiện tại hoặc một điều kiện thực tế lặp lại trong quá khứ. Phải có ngữ cảnh đủ rõ để chọn nghĩa, không chỉ tìm if hay every."
+    },
+    {
+      "type": "h",
+      "vi": "Used to hàm ý gì về bây giờ"
+    },
+    {
+      "type": "p",
+      "vi": "Used to thường ngầm nói rằng điều đó không còn đúng. Quá khứ đơn với một trạng từ tần suất thì không tự mang ý đó: We often went to Vung Tau in summer chỉ nói về quãng thời gian ấy. Nếu chính ý đối lập với hiện tại là điều bạn muốn nói, used to là lựa chọn tự nhiên."
+    },
+    {
+      "type": "h",
+      "vi": "Khi nêu số lần hoặc khoảng thời gian"
+    },
+    {
+      "type": "p",
+      "vi": "Quá khứ đơn phù hợp để kể một lần hoặc tổng số lần trong một giai đoạn đã qua. Một mốc như last summer không tự cấm used to: cả mùa hè có thể chứa một thói quen lặp lại. Với một trạng thái kéo dài dùng used to; would có thể kể tình huống tái diễn, kể cả cảm giác: On cold school mornings, I would feel sleepy on the bus."
+    },
+    {
+      "type": "h",
+      "vi": "Phát âm giải thích lỗi chính tả"
+    },
+    {
+      "type": "p",
+      "vi": "Used to trong nghĩa thói quen thường phát âm /juːstə/; use to sau did cũng có thể nghe giống như vậy. Có biến thể chính tả did ... used to và didn't used to được một số nguồn chấp nhận. Mẫu không có d sau did phổ biến trong tài liệu dạy học; bài này ưu tiên mẫu đó, không coi mọi biến thể khác là lỗi ngữ pháp."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Used not to (He used not to talk much) rất trang trọng và hiếm trong lời nói hằng ngày. Didn't use to và never used to là những dạng thông dụng."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "utw-single-event",
+      "wrong": "I used to visit Ha Long Bay just once, on 12 July last year.",
+      "right": "I visited Ha Long Bay just once, on 12 July last year.",
+      "why": "Ý đã cho là đúng một lần, không phải một thói quen; last summer tự nó chưa đủ để loại cách hiểu lặp lại.",
+      "vn": "“Tôi từng đến Vịnh Hạ Long mùa hè năm ngoái” dễ bị dịch thành used to vì chữ từng."
+    },
+    {
+      "id": "utw-did-used",
+      "wrong": "Did you use to played the piano?",
+      "right": "Did you use to play the piano?",
+      "why": "Sau use to cần động từ nguyên mẫu play. Biến thể chính tả use/used sau did là vấn đề khác, không phải lỗi được kiểm tra ở đây."
+    },
+    {
+      "id": "utw-would-state",
+      "wrong": "When I was a child, I would have a red bicycle.",
+      "right": "When I was a child, I used to have a red bicycle.",
+      "why": "Ở nghĩa sở hữu một chiếc xe suốt thời thơ ấu, used to have phù hợp. Would have cần một cách hiểu khác, chẳng hạn giả định hoặc tình huống tái diễn đã được thiết lập."
+    },
+    {
+      "id": "utw-use-to-spelling",
+      "wrong": "I use to play football when I was a child.",
+      "right": "I used to play football when I was a child.",
+      "why": "Ở câu khẳng định, dạng quá khứ cần -d: used to. Dạng use to chỉ đứng sau did, didn't."
+    },
+    {
+      "id": "utw-present-habit",
+      "wrong": "I used to get up at six these days.",
+      "right": "I usually get up at six these days.",
+      "why": "These days nói về hiện tại, mà used to chỉ nói về quá khứ. Thói quen hiện tại dùng hiện tại đơn."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Khi nào chỉ dùng được used to, không dùng được would?",
+      "a": "Với một trạng thái kéo dài như từng sống ở đâu hoặc từng sở hữu gì, thường dùng used to hoặc quá khứ đơn. Would hợp khi kể các dịp tái diễn và có bối cảnh quá khứ; không thể cấm một động từ chỉ vì nó thường mang nghĩa trạng thái."
+    },
+    {
+      "q": "Viết didn't used to có sai không?",
+      "a": "Có biến thể chính tả giữa các nguồn và vùng dùng. Mẫu didn't use to phổ biến trong tài liệu dạy học và được ưu tiên ở đây; một số nguồn cũng chấp nhận didn't used to và Did ... used to? Không nên biến lựa chọn của một tài liệu thành luật tuyệt đối."
+    },
+    {
+      "q": "Tôi có thể chỉ dùng quá khứ đơn thay cho used to không?",
+      "a": "Được. Quá khứ đơn cộng often hay every day thường đủ để kể thói quen cũ. Used to hữu ích khi muốn đối lập với hiện tại; would cần bối cảnh tái diễn rõ."
+    },
+    {
+      "q": "Used to có đi với hiện tại không?",
+      "a": "Không. Muốn nói thói quen hiện tại, dùng hiện tại đơn: I usually walk to work. Đừng viết I use to walk."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "utw-01",
+      "type": "choice",
+      "level": "B1",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Chọn từ phù hợp. Có thể có hơn một đáp án đúng.",
+      "stem": "When I was a child, we ___ in a small flat above my mother's shop.",
+      "options": [
+        {
+          "t": "used to live",
+          "ok": true,
+          "note": "Used to nhận cả trạng thái như sống ở đâu."
+        },
+        {
+          "t": "lived",
+          "ok": true,
+          "note": "Quá khứ đơn cũng đúng. Câu này không nhấn rằng bây giờ khác."
+        },
+        {
+          "t": "would live",
+          "note": "Ở cách hiểu nơi ở ổn định đã nêu, dùng lived hoặc used to live. Would live có thể có nghĩa khác trong ngữ cảnh khác.",
+          "tag": "would-for-state"
+        },
+        {
+          "t": "use to live",
+          "note": "Câu khẳng định cần used to có -d. Use to chỉ đứng sau did.",
+          "tag": "use-to-spelling"
+        }
+      ],
+      "explain": "Ngữ cảnh xác định một nơi ở ổn định trong quá khứ nên lived hoặc used to live phù hợp; would không bị cấm với live trong mọi cách dùng.",
+      "context": "Kể nơi ở ổn định suốt một giai đoạn thời thơ ấu, không phải chỗ ở luân phiên hay giả định."
+    },
+    {
+      "id": "utw-02",
+      "type": "choice",
+      "level": "B1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn dạng đúng. Có thể có hơn một đáp án đúng.",
+      "stem": "Linh ___ coffee when she was a student, but now she drinks three cups a day.",
+      "options": [
+        {
+          "t": "didn't use to drink",
+          "ok": true,
+          "note": "Phủ định chuẩn: didn't + use to + động từ nguyên mẫu."
+        },
+        {
+          "t": "never used to drink",
+          "ok": true,
+          "note": "Never đứng thay cho didn't; used to giữ nguyên có -d."
+        },
+        {
+          "t": "doesn't use to drink",
+          "note": "Used to chỉ nói về quá khứ, không có dạng hiện tại.",
+          "tag": "used-to-present"
+        },
+        {
+          "t": "wasn't used to drink",
+          "note": "Be used to có nghĩa khác (quen với) và đi với V-ing.",
+          "tag": "used-to-vs-be-used-to"
+        }
+      ],
+      "explain": "Với did, dùng use to không có -d. Với never, dùng used to có -d."
+    },
+    {
+      "id": "utw-03",
+      "type": "cloze",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Điền used to hoặc would cùng động từ trong ngoặc.",
+      "stem": "When I was at primary school, my dad {1} (take) me to school on his motorbike every morning. We {2} (stop) for a sticky-rice roll on the way.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "used to take",
+            "would take",
+            "'d take"
+          ],
+          "known": [
+            {
+              "t": "took",
+              "verdict": "awkward",
+              "note": "Đúng ngữ pháp, nhưng bài này yêu cầu used to hoặc would."
+            },
+            {
+              "t": "use to take",
+              "verdict": "wrong",
+              "note": "Câu khẳng định cần used to có -d.",
+              "tag": "use-to-spelling"
+            }
+          ]
+        },
+        "2": {
+          "accept": [
+            "used to stop",
+            "would stop",
+            "'d stop"
+          ],
+          "known": [
+            {
+              "t": "stopped",
+              "verdict": "awkward",
+              "note": "Đúng ngữ pháp, nhưng bài này yêu cầu used to hoặc would."
+            }
+          ]
+        }
+      },
+      "explain": "Every morning báo một thói quen lặp lại, và When I was at primary school đã đặt bối cảnh quá khứ, nên cả used to lẫn would đều dùng được."
+    },
+    {
+      "id": "utw-04",
+      "type": "error",
+      "level": "B1",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn “Câu này đúng”.",
+      "segments": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "use to",
+          "bad": true,
+          "fix": [
+            "used to",
+            "would"
+          ],
+          "note": "Ở câu khẳng định, dạng quá khứ cần -d: used to.",
+          "tag": "use-to-spelling"
+        },
+        {
+          "t": "play badminton every Saturday"
+        },
+        {
+          "t": "when I was at university."
+        }
+      ],
+      "explain": "Dạng use to không có -d chỉ đứng sau did, didn't. Câu khẳng định dùng used to."
+    },
+    {
+      "id": "utw-05",
+      "type": "error",
+      "level": "B1",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn “Câu này đúng”.",
+      "segments": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "used to visit",
+          "bad": true,
+          "fix": [
+            "visited"
+          ],
+          "note": "Used to nói thói quen hoặc trạng thái đã qua, không dùng cho một lần ở thời điểm cụ thể.",
+          "tag": "used-to-single-event"
+        },
+        {
+          "t": "Ha Long Bay"
+        },
+        {
+          "t": "last summer."
+        }
+      ],
+      "explain": "Ngữ cảnh chỉ rõ một chuyến duy nhất nên chọn visited. Last summer riêng lẻ vẫn có thể chứa một thói quen lặp lại; nó không tự cấm used to.",
+      "context": "Người nói xác nhận chỉ tới đó đúng một lần trong đời, vào mùa hè năm ngoái."
+    },
+    {
+      "id": "utw-06",
+      "type": "error",
+      "level": "B1",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn “Câu này đúng”.",
+      "noError": true,
+      "segments": [
+        {
+          "t": "My grandfather"
+        },
+        {
+          "t": "would tell"
+        },
+        {
+          "t": "us a story every night"
+        },
+        {
+          "t": "when we stayed with him."
+        }
+      ],
+      "explain": "Câu đúng. Tell là hành động lặp lại (every night), và when we stayed with him đã đặt bối cảnh quá khứ, nên would dùng được."
+    },
+    {
+      "id": "utw-07",
+      "type": "transform",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lại câu, nhấn rằng bây giờ không còn như vậy.",
+      "source": "I played football every afternoon at primary school. I don't play now.",
+      "instruction": "Dùng used to hoặc would, giữ at primary school và thêm I don't play now để nói rõ hiện tại đã khác.",
+      "accept": [
+        "I used to play football every afternoon at primary school. I don't play now.",
+        "At primary school I used to play football every afternoon. I don't play now.",
+        "At primary school, I used to play football every afternoon. I don't play now.",
+        "I would play football every afternoon at primary school. I don't play now.",
+        "At primary school I would play football every afternoon. I don't play now.",
+        "At primary school, I would play football every afternoon. I don't play now."
+      ],
+      "model": "I used to play football every afternoon at primary school. I don't play now.",
+      "known": [
+        {
+          "t": "I use to play football every afternoon at primary school",
+          "verdict": "wrong",
+          "note": "Câu khẳng định cần used to có -d.",
+          "tag": "use-to-spelling"
+        }
+      ],
+      "explain": "Cả hai cấu trúc kể được việc lặp lại trong bối cảnh at primary school. I don't play now giữ rõ thông tin hiện tại; would một mình không bảo đảm thói quen đã chấm dứt."
+    },
+    {
+      "id": "utw-08",
+      "type": "order",
+      "level": "B1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sắp xếp thành một câu hỏi.",
+      "tokens": [
+        "Did",
+        "you",
+        "use",
+        "to",
+        "live",
+        "in",
+        "Hue"
+      ],
+      "end": "?",
+      "accept": [
+        [
+          "Did",
+          "you",
+          "use",
+          "to",
+          "live",
+          "in",
+          "Hue"
+        ]
+      ],
+      "explain": "Câu hỏi dùng Did đứng đầu, chủ ngữ, rồi use to và động từ nguyên mẫu."
+    },
+    {
+      "id": "utw-09",
+      "type": "match",
+      "level": "B1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Nối mỗi câu với ý của nó.",
+      "pairs": [
+        {
+          "a": "There used to be a market here.",
+          "b": "Ngày trước ở đây có một cái chợ, giờ không còn."
+        },
+        {
+          "a": "Grandma would sit by the door every evening.",
+          "b": "Hồi đó tối nào bà cũng ngồi cạnh cửa."
+        },
+        {
+          "a": "I'm used to the noise.",
+          "b": "Tôi đã quen với tiếng ồn."
+        },
+        {
+          "a": "I've been to Hue.",
+          "b": "Tôi từng đến Huế (một trải nghiệm)."
+        }
+      ],
+      "explain": "Bốn cấu trúc trông gần nhau nhưng nói bốn điều khác nhau. Be used to (quen với) có bài riêng; I've been to nói về trải nghiệm."
+    },
+    {
+      "id": "utw-10",
+      "type": "classify",
+      "level": "B1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn mẫu theo cách hiểu trong ngoặc: một trạng thái kéo dài hay một việc tái diễn thời thơ ấu.",
+      "cats": [
+        "Dùng được cả used to và would",
+        "Dùng used to cho trạng thái kéo dài này"
+      ],
+      "items": [
+        {
+          "t": "visit my grandparents every summer",
+          "cat": "Dùng được cả used to và would"
+        },
+        {
+          "t": "have a bicycle (trạng thái ổn định suốt giai đoạn, không xét các dịp lặp lại)",
+          "cat": "Dùng used to cho trạng thái kéo dài này"
+        },
+        {
+          "t": "love spicy food (trạng thái ổn định suốt giai đoạn, không xét các dịp lặp lại)",
+          "cat": "Dùng used to cho trạng thái kéo dài này"
+        },
+        {
+          "t": "walk to school together",
+          "cat": "Dùng được cả used to và would"
+        },
+        {
+          "t": "play cards after dinner",
+          "cat": "Dùng được cả used to và would"
+        },
+        {
+          "t": "know every neighbour by name (trạng thái ổn định suốt giai đoạn, không xét các dịp lặp lại)",
+          "cat": "Dùng used to cho trạng thái kéo dài này"
+        }
+      ],
+      "explain": "Would cần cách nhìn tái diễn. Với các nghĩa trạng thái kéo dài đã giới hạn trong bài, used to phù hợp; đây không phải lệnh cấm would với cả nhóm động từ trong mọi câu."
+    },
+    {
+      "id": "utw-11",
+      "type": "multi",
+      "level": "B1",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Chọn tất cả các câu đúng khi bạn nói về những ngày còn nhỏ.",
+      "stem": "Hồi nhỏ, ở nhà bà",
+      "options": [
+        {
+          "t": "We used to fly kites on the roof.",
+          "ok": true,
+          "note": "Một thói quen đã qua, used to dùng được."
+        },
+        {
+          "t": "We would fly kites on the roof whenever it was windy.",
+          "ok": true,
+          "note": "Whenever tạo thói quen lặp lại, bối cảnh nói về hồi nhỏ, nên would dùng được."
+        },
+        {
+          "t": "We used to fly a kite on the roof just once, last Sunday.",
+          "note": "Just once giới hạn đúng một lần nên không hợp với nghĩa thói quen của used to.",
+          "tag": "used-to-single-event"
+        },
+        {
+          "t": "We would own a kite shaped like a dragon.",
+          "note": "Ở nghĩa sở hữu ổn định một chiếc diều trong thời thơ ấu, dùng used to own; không xét giả định hoặc các dịp tái diễn.",
+          "tag": "would-for-state"
+        }
+      ],
+      "explain": "Hai câu đầu là thói quen. Câu thứ ba là một lần, câu thứ tư là trạng thái."
+    },
+    {
+      "id": "utw-12",
+      "type": "choice",
+      "level": "B2",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Câu nào dùng would KHÔNG phải để nói về thói quen trong quá khứ?",
+      "stem": "Chọn một câu.",
+      "options": [
+        {
+          "t": "He would help us today if he were here, but he is abroad.",
+          "ok": true,
+          "note": "Đây là would của điều kiện giả định: anh ấy sẽ giúp nếu anh ấy có thể."
+        },
+        {
+          "t": "He would help us every time we moved house.",
+          "note": "Every time báo lặp lại: đây là thói quen cũ.",
+          "tag": "would-other-meanings"
+        },
+        {
+          "t": "Every Sunday he would bring us fruit.",
+          "note": "Every Sunday báo lặp lại: đây là thói quen cũ.",
+          "tag": "would-other-meanings"
+        }
+      ],
+      "explain": "Ngữ cảnh và today/but he is abroad xác định lựa chọn đầu là giả định hiện tại. If he could đứng riêng trước đây cũng có thể kể điều kiện lặp lại trong quá khứ, nên không đủ để chấm một nghĩa duy nhất.",
+      "context": "Ở lựa chọn có if, người nói đang hình dung sự giúp đỡ hôm nay trái với thực tế. Hai lựa chọn còn lại là hồi ức về người hàng xóm hồi nhỏ."
+    },
+    {
+      "id": "utw-13",
+      "type": "cloze",
+      "level": "B1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Hoàn thành câu hỏi quá khứ khẳng định theo mẫu ... you use to ...? Ở câu trả lời, chọn used to hoặc did.",
+      "stem": "A: {1} you use to have a pet when you were little? B: Yes, we {2} have a cat.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "Did"
+          ],
+          "closed": true
+        },
+        "2": {
+          "accept": [
+            "used to",
+            "did"
+          ],
+          "closed": true
+        }
+      },
+      "explain": "Câu hỏi dùng Did + chủ ngữ + use to. Câu trả lời dùng used to có -d. Yes, we did have a cat cũng đúng, nhưng nhấn mạnh hơn."
+    },
+    {
+      "id": "utw-14",
+      "type": "open",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Viết ba đến bốn câu về nơi bạn sống hoặc việc bạn hay làm khi còn nhỏ. Dùng ít nhất một used to và một would.",
+      "model": [
+        "We used to live in a house with a tiled roof near the rice fields. After school I would run home, drop my bag and ride my bike along the dyke until dark. We didn't use to have a TV, so in the evening we would sit outside and listen to my grandfather's stories.",
+        "I used to be afraid of dogs. Every morning on my way to school I would cross to the other side of the road when I saw one."
+      ],
+      "checklist": [
+        "Có ít nhất một used to cho trạng thái hoặc thói quen",
+        "Có ít nhất một would cho hành động lặp lại, sau khi bối cảnh quá khứ đã rõ",
+        "Phủ định và câu hỏi dùng use to không có -d",
+        "Dùng would cho các dịp tái diễn; dùng used to hoặc quá khứ đơn cho một trạng thái kéo dài."
+      ],
+      "explain": "Used to mở cảnh và nhận cả trạng thái. Would kể tiếp những thói quen lặp lại."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham khảo thêm về chủ điểm; chưa trực tiếp kiểm tra đoạn hoặc ấn bản trong lượt rà soát này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham khảo thêm về chủ điểm; chưa trực tiếp kiểm tra đoạn hoặc ấn bản trong lượt rà soát này."
+    },
+    {
+      "ref": "bc",
+      "note": "Các đoạn đã đối chiếu hoặc tái sử dụng có ghi rõ tại docs/grammar/TENSE-EXERCISE-REVIEW.md; không suy ra toàn bộ nguồn đã được đọc."
+    },
+    {
+      "ref": "cgel",
+      "note": "Tham khảo thêm về chủ điểm; chưa trực tiếp kiểm tra đoạn hoặc ấn bản trong lượt rà soát này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

@@ -1,0 +1,474 @@
+{
+  "schema": 1,
+  "slug": "discourse-markers-spoken",
+  "version": 2,
+  "domain": "discourse",
+  "order": 50,
+  "kind": "grammar",
+  "title": {
+    "vi": "Từ dẫn trong lời nói: well, anyway, I mean",
+    "en": "Spoken discourse markers"
+  },
+  "subtitle": {
+    "vi": "Theo dõi công việc của well, anyway và I mean",
+    "en": "Track what well, anyway and I mean do in interaction"
+  },
+  "aliases": [
+    "từ dẫn lời nói",
+    "spoken discourse markers",
+    "well anyway I mean",
+    "you know",
+    "marker không chỉ từ thừa"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Nhận ra chức năng mở đáp, tự sửa và quay lại chủ đề.",
+    "Phân biệt marker với nghĩa từ vựng thông thường.",
+    "Biên tập theo thể loại mà không coi lời nói tự nhiên là lỗi."
+  ],
+  "prerequisites": [],
+  "related": [
+    {
+      "slug": "spoken-grammar",
+      "rel": "more"
+    },
+    {
+      "slug": "pragmatic-softening",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Discourse markers giúp tổ chức lượt nói, quan hệ thái độ hoặc hướng hội thoại. Well, anyway và I mean không chỉ là từ thừa; chức năng phụ thuộc ngữ cảnh.",
+    "when": "Đọc cả lượt trước và sau để hiểu chúng đang làm gì.",
+    "examples": [
+      {
+        "en": "Well, I am not sure.",
+        "vi": "Ừm, tôi chưa chắc."
+      },
+      {
+        "en": "Anyway, back to the schedule.",
+        "vi": "Dù sao, quay lại lịch nhé."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Well ở đầu câu đáp có thể báo người nói dè dặt, cần giải thích hoặc không đáp đúng kỳ vọng. Nó khác well trong she sings well. Không gán một marker duy nhất cho một cảm xúc luôn đúng."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Lượt hỏi",
+            "items": [
+              "Can you finish tonight?"
+            ]
+          },
+          {
+            "label": "Marker",
+            "items": [
+              "Well,"
+            ]
+          },
+          {
+            "label": "Lượt đáp có giới hạn",
+            "items": [
+              "I am not sure"
+            ]
+          }
+        ],
+        "sentence": "{0} — {1} {2}."
+      },
+      "caption": "Well giúp người nghe đón một câu đáp cần dè dặt hoặc giải thích.",
+      "alt": "Well giúp người nghe đón một câu đáp cần dè dặt hoặc giải thích."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Marker trong ví dụ",
+        "Công việc",
+        "Giới hạn"
+      ],
+      "rows": [
+        [
+          "well",
+          "mở đáp/điều chỉnh kỳ vọng",
+          "không chỉ nghĩa khỏe"
+        ],
+        [
+          "anyway",
+          "quay lại/chuyển chủ đề",
+          "không mọi lần đều như therefore"
+        ],
+        [
+          "I mean",
+          "sửa hoặc giải thích lại",
+          "không tự chứng minh người nói lừa dối"
+        ],
+        [
+          "you know",
+          "gợi chia sẻ/giữ tương tác",
+          "không mọi lần là câu hỏi kiến thức thật"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "The meeting is Friday, I mean Saturday là tự sửa khi nói. Transcript có thể giữ dấu vết ấy; bản thông báo biên tập có thể chỉ viết ngày đúng nếu mục tiêu là nội dung cuối."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không gọi mọi marker là lỗi hoặc filler vô ích. Cũng không nhồi well/you know vào mọi câu để giả “tự nhiên”; tần suất và sắc thái phụ thuộc người, tình huống và thể loại."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "You know có thể mời người nghe chia sẻ hoặc theo dõi; không phải lúc nào cũng khẳng định thật rằng người nghe đã được thông báo. Khi nội dung cần chính xác, vẫn phải tránh giả định kiến thức chung sai."
+    },
+    {
+      "type": "p",
+      "vi": "Một marker có thể làm thay đổi cách người nghe hiểu thái độ. Xóa trong biên tập có thể làm mất dè dặt, sự tự sửa hoặc chuyển chủ đề, nên chọn theo mục tiêu bản ghi."
+    },
+    {
+      "type": "p",
+      "vi": "Khi biên tập hội thoại thành thông báo, phân biệt ngày hoặc quyết định cuối cùng với quá trình người nói tự sửa. Giữ dấu vết tự sửa nếu mục tiêu là bản ghi tương tác; chỉ nêu kết quả cuối nếu mục tiêu là thông báo rõ cho người đọc."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "discourse-markers-spoken-m1",
+      "wrong": "Well, I is not sure.",
+      "right": "Well, I am not sure.",
+      "why": "Hòa hợp I với am."
+    },
+    {
+      "id": "discourse-markers-spoken-m2",
+      "wrong": "Anyway, let us checks the schedule.",
+      "right": "Anyway, let us check the schedule.",
+      "why": "Sau let us dùng dạng gốc."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Marker có chỉ là từ thừa không?",
+      "a": "Không. Chúng có thể tổ chức tương tác và thái độ."
+    },
+    {
+      "q": "Có nên dùng marker ở mọi câu không?",
+      "a": "Không. Chỉ dùng khi có công việc rõ trong ngữ cảnh."
+    },
+    {
+      "q": "Xóa marker có luôn giữ nguyên nghĩa giao tiếp không?",
+      "a": "Không. Có thể mất sắc thái hoặc chức năng tự sửa."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "discourse-markers-spoken-01",
+      "prompt": "Chọn chức năng phù hợp của well theo ngữ cảnh.",
+      "explain": "Well có thể mở một câu trả lời dè dặt; không chỉ có nghĩa sức khỏe.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "choice",
+      "stem": "“Can you finish tonight?” — “Well, I am not sure.”",
+      "options": [
+        {
+          "t": "Người nói mở câu trả lời dè dặt hoặc cần điều chỉnh kỳ vọng.",
+          "ok": true,
+          "note": "Chức năng diễn ngôn trong lượt đáp."
+        },
+        {
+          "t": "Người nói chắc chắn báo mình đang khỏe.",
+          "ok": false,
+          "note": "Không phải nghĩa well trong ngữ cảnh này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Well bắt buộc chứng minh câu sau là lời nói dối.",
+          "ok": false,
+          "note": "Không có kết luận đó.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "discourse-markers-spoken-02",
+      "prompt": "Nối marker với công việc trong ví dụ.",
+      "explain": "Cần đọc cả lượt thoại.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "Anyway, back to the schedule.",
+          "b": "Quay lại chủ đề"
+        },
+        {
+          "a": "The meeting is Friday, I mean Saturday.",
+          "b": "Sửa thông tin vừa nói"
+        },
+        {
+          "a": "Well, I am not sure.",
+          "b": "Mở câu trả lời dè dặt"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "discourse-markers-spoken-03",
+      "prompt": "Phân loại cách dùng theo ngữ cảnh.",
+      "explain": "Một từ có thể là marker hoặc có nghĩa từ vựng thông thường.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Discourse marker",
+        "Nghĩa từ vựng thông thường"
+      ],
+      "items": [
+        {
+          "t": "Well, let us check.",
+          "cat": "Discourse marker"
+        },
+        {
+          "t": "She sings well.",
+          "cat": "Nghĩa từ vựng thông thường"
+        },
+        {
+          "t": "I mean Saturday, not Friday.",
+          "cat": "Discourse marker"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "discourse-markers-spoken-04",
+      "prompt": "Điền dạng hiện tại của mean và be cho câu thoại đầy đủ.",
+      "explain": "Marker không miễn hòa hợp hay khung hữu hạn.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "I {1} (mean) Saturday, not Friday. Well, I {2} (be) not sure.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "mean"
+          ]
+        },
+        "2": {
+          "accept": [
+            "am"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "discourse-markers-spoken-05",
+      "prompt": "Sửa be trong câu trả lời.",
+      "explain": "I dùng am; well không thay động từ chính.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "Well, I"
+        },
+        {
+          "t": "is",
+          "bad": true,
+          "fix": [
+            "am"
+          ],
+          "note": "I am, không I is.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "not sure."
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "discourse-markers-spoken-06",
+      "prompt": "Sắp xếp lượt thoại bắt đầu bằng Anyway,.",
+      "explain": "Anyway tạo khung quay lại chủ đề.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "Anyway,",
+        "let us",
+        "check",
+        "the schedule"
+      ],
+      "accept": [
+        [
+          "Anyway,",
+          "let us",
+          "check",
+          "the schedule"
+        ]
+      ],
+      "end": ".",
+      "level": "B2"
+    },
+    {
+      "id": "discourse-markers-spoken-07",
+      "prompt": "Thêm marker để báo quay lại chủ đề.",
+      "explain": "Không thay nội dung hành động, chỉ làm quan hệ hội thoại rõ.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "Let us check the schedule.",
+      "instruction": "Đặt Anyway, ở đầu; giữ let us check the schedule sau đó.",
+      "accept": [
+        "Anyway, let us check the schedule"
+      ],
+      "model": "Anyway, let us check the schedule",
+      "level": "B2"
+    },
+    {
+      "id": "discourse-markers-spoken-08",
+      "prompt": "Viết một đoạn hội thoại ngắn có sửa và quay lại ý.",
+      "explain": "Tự đối chiếu, không chấm tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết 3–4 lượt thoại hư cấu dùng well, I mean và anyway đúng công việc. Không thêm marker vào mọi câu.",
+      "model": [
+        "A: Can we meet on Friday? B: Well, I am not sure. A: I mean Saturday. B: That works. Anyway, let us confirm the time."
+      ],
+      "checklist": [
+        "Marker có công việc trong lượt nói.",
+        "Nội dung được sửa rõ.",
+        "Không gắn mọi marker với một nghĩa cố định duy nhất."
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "discourse-markers-spoken-09",
+      "prompt": "Điền dạng gốc theo let us và be theo I.",
+      "explain": "Let us check; I am.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "Anyway, let us {1} (check). Well, I {2} (be) ready now.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "check"
+          ]
+        },
+        "2": {
+          "accept": [
+            "am"
+          ]
+        }
+      },
+      "level": "B2"
+    },
+    {
+      "id": "discourse-markers-spoken-10",
+      "prompt": "Đưa I mean vào lời tự sửa theo mẫu transcript.",
+      "explain": "I mean sửa từ Friday thành Saturday; không khẳng định cả hai ngày.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "The meeting is on Friday. Sorry, it is on Saturday.",
+      "instruction": "Viết một lượt nói bắt đầu The meeting is on Friday, rồi I mean Saturday sau dấu phẩy.",
+      "accept": [
+        "The meeting is on Friday, I mean Saturday"
+      ],
+      "model": "The meeting is on Friday, I mean Saturday",
+      "level": "B2"
+    },
+    {
+      "id": "discourse-markers-spoken-11",
+      "prompt": "Chọn tất cả nhận xét đúng.",
+      "explain": "Marker có chức năng nhưng không phải mọi lần đều cùng nghĩa.",
+      "skill": "use",
+      "use": "check",
+      "type": "multi",
+      "stem": "Đọc lời nói.",
+      "options": [
+        {
+          "t": "Anyway có thể giúp quay lại hoặc chuyển chủ đề.",
+          "ok": true,
+          "note": "Cần ngữ cảnh."
+        },
+        {
+          "t": "I mean có thể báo sửa hoặc giải thích lại.",
+          "ok": true,
+          "note": "Không chỉ động từ có nghĩa từ vựng."
+        },
+        {
+          "t": "Well trong she sings well và well đầu lượt luôn cùng chức năng.",
+          "ok": false,
+          "note": "Trạng từ cách thức khác marker.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Mọi marker là lỗi phải xóa khỏi mọi hội thoại.",
+          "ok": false,
+          "note": "Chúng tổ chức tương tác.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    },
+    {
+      "id": "discourse-markers-spoken-12",
+      "prompt": "Chọn cách biên tập phù hợp.",
+      "explain": "Transcript và báo cáo có mục tiêu khác nhau.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "Chuyển một cuộc nói chuyện thành báo cáo công việc.",
+      "options": [
+        {
+          "t": "Giữ thông tin cần thiết, có thể bỏ marker không cần cho bản báo cáo mà không gọi lời nói gốc sai.",
+          "ok": true,
+          "note": "Đổi thể loại, không phán người nói thiếu ngữ pháp."
+        },
+        {
+          "t": "Giữ mọi marker là yêu cầu bắt buộc ở mọi báo cáo.",
+          "ok": false,
+          "note": "Tùy mục tiêu bản ghi.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Xóa mọi marker luôn giữ nguyên thái độ và quan hệ giữa người nói.",
+          "ok": false,
+          "note": "Có thể mất sắc thái dè dặt hoặc tự sửa.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B2"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    },
+    {
+      "ref": "lgswe",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

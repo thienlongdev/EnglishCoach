@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s218-names-after-glass",
+  "title": "Tên người ở sau kính",
+  "summary": "Một thiếu nữ bật khóc khi nhìn thấy nhãn ghi tên bà mình dưới một chiếc thìa bị cong. Cả đời bà làm kính, chưa từng uốn thìa.",
+  "level": "C1",
+  "topics": [
+    "structural-ambiguity",
+    "apposition"
+  ],
+  "scene": "library-mystery",
+  "cast": [
+    {
+      "id": "a",
+      "name": "An",
+      "role": "Người trông tủ kính"
+    },
+    {
+      "id": "b",
+      "name": "Faye",
+      "role": "Người làm nhãn"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Nhãn viết A spoon from Mara in a case made by her daughter. Faye tìm thấy hai phiếu. Phiếu thứ nhất ghi người tặng thìa là Mara. Phiếu thứ hai ghi người chế tác tủ là con gái Mara, bà của thiếu nữ.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We put the right names on the wrong line of sight.",
+          "vi": "Ta đã đặt đúng tên nhưng ở một vị trí khiến người xem hiểu nhầm."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "The girl wants to know exactly what her grandmother made.",
+          "vi": "Cô bé muốn biết chính xác bà mình đã làm ra thứ gì."
+        }
+      ],
+      "choice": {
+        "prompt": "An chọn nhãn giúp người đọc gắn nghề và tên đúng người, đúng vật.",
+        "options": [
+          {
+            "t": "The spoon in the case made by Mara's daughter was a gift.",
+            "note": "Cụm made by đứng sát the case, nhưng cả cụm dài vẫn có thể bị đọc là bổ nghĩa cho spoon. Câu không nêu rõ ai tặng thìa, nên chưa giải quyết khúc mắc của khách.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "Mara donated the spoon. Her daughter, a glassworker, made this case.",
+            "note": "Đồng vị a glassworker bổ nghĩa cho her daughter. Tách làm hai câu còn giữ rõ hai quan hệ khác nhau giữa người và vật.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Thiếu nữ đặt tay lên vết uốn lượn ở góc kính. Bà vẫn thường để lại một gợn sóng nhỏ như thế ở tác phẩm của mình.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That's her wave in the corner.",
+          "vi": "Kia là nét sóng của bà ở góc tủ."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Faye đọc nhãn thành tiếng, ngắt ở hai chỗ khác nhau. Cùng một chuỗi chữ bỗng gắn người thợ với hai vật. Cô viết hai câu tách biệt.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Give the case a sentence of its own.",
+          "vi": "Hãy dành một câu riêng cho chiếc tủ."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Thiếu nữ gửi bảo tàng bản vẽ đầu tiên của bà. Faye lót bản vẽ dưới thìa. Lần này khách cúi xuống xem đồ vật rồi ngẩng lên nhìn cả góc kính.",
+      "say": [
+        {
+          "who": "a",
+          "en": "For years people saw straight through her life's work.",
+          "vi": "Suốt nhiều năm người ta nhìn xuyên qua tác phẩm cả đời bà."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

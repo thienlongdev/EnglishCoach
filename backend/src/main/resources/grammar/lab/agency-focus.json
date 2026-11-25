@@ -1,0 +1,20 @@
+{
+  "id": "agency-focus",
+  "title": "Ai làm, việc gì được làm?",
+  "summary": "Đổi chủ động và bị động trong một thông báo kiểm tra thiết bị. Quan sát thông tin được giữ lại hoặc không còn được nêu khi bỏ người thực hiện.",
+  "level": "B1",
+  "topics": ["passive-form", "passive-use"],
+  "kind": "switchboard",
+  "axes": [
+    {"id":"focus","label":"Trọng tâm câu","values":[{"id":"agent","label":"Người thực hiện"},{"id":"patient","label":"Thiết bị, vẫn giữ người làm"},{"id":"unspecified","label":"Thiết bị, không nêu người làm"}]},
+    {"id":"time","label":"Thời gian","values":[{"id":"routine","label":"Việc thường lệ mỗi thứ Hai"},{"id":"past","label":"Một lần vào thứ Hai tuần trước"}]}
+  ],
+  "results": {
+    "agent|routine":{"en":"The technician checks the sensor every Monday.","vi":"Kỹ thuật viên kiểm tra cảm biến mỗi thứ Hai.","note":"Technician là người kiểm tra, sensor nhận hành động. Checks diễn đạt việc thường lệ; không có nghĩa việc kiểm tra đang diễn ra lúc nói.","verdict":"ok"},
+    "patient|routine":{"en":"The sensor is checked by the technician every Monday.","vi":"Cảm biến được kỹ thuật viên kiểm tra mỗi thứ Hai.","note":"Is checked chuyển sensor lên làm chủ ngữ. By the technician giữ đúng người thực hiện; lịch kiểm tra không đổi. Chủ ngữ của bị động không phải người làm hành động.","verdict":"ok"},
+    "unspecified|routine":{"en":"The sensor is checked every Monday.","vi":"Cảm biến được kiểm tra mỗi thứ Hai.","note":"Câu đúng và giữ lịch kiểm tra, nhưng không còn khẳng định người làm là kỹ thuật viên đã nhắc. Không dùng nó như bản viết lại giữ toàn bộ thông tin khi đề yêu cầu giữ người thực hiện.","verdict":"ok"},
+    "agent|past":{"en":"The technician checked the sensor last Monday.","vi":"Kỹ thuật viên kiểm tra cảm biến thứ Hai tuần trước.","note":"Checked kể một lần trong thời gian đã khép. Không được suy ra đây là lịch mỗi tuần.","verdict":"ok"},
+    "patient|past":{"en":"The sensor was checked by the technician last Monday.","vi":"Cảm biến được kỹ thuật viên kiểm tra thứ Hai tuần trước.","note":"Was checked là bị động quá khứ. Người làm, vật nhận hành động và mốc thời gian đều được giữ từ câu chủ động.","verdict":"ok"},
+    "unspecified|past":{"en":"The sensor was checked last Monday.","vi":"Cảm biến được kiểm tra thứ Hai tuần trước.","note":"Người thực hiện không được nêu. Bị động không tự cho biết cảm biến có đạt yêu cầu hay không; checked chỉ nói đã kiểm tra.","verdict":"ok"}
+  }
+}

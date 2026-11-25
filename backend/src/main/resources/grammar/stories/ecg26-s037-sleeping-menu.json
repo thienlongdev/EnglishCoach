@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s037-sleeping-menu",
+  "title": "Thực đơn biết ngủ",
+  "summary": "Mai tưởng thực khách chê món súp chán. Sol thì thấy tờ nhận xét dính trên thực đơn có hình một người đang ngáp.",
+  "level": "A2",
+  "topics": [
+    "ed-and-ing-adjectives"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sol",
+      "role": "Người vẽ thực đơn"
+    },
+    {
+      "id": "b",
+      "name": "Mai",
+      "role": "Nhân viên quán"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Cuối ca, Mai định xóa món súp khỏi bảng. Sol lật tờ nhận xét. Mặt sau ghi rằng khách đã đợi bốn mươi phút trước khi súp được mang ra.",
+      "say": [
+        {
+          "who": "a",
+          "en": "They finished every drop of soup.",
+          "vi": "Họ ăn hết cả giọt súp cuối cùng."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "But the note says bored. Who was bored?",
+          "vi": "Nhưng giấy có chữ bored. Ai thấy chán?"
+        }
+      ],
+      "choice": {
+        "prompt": "Sol diễn đạt đúng cảm giác của thực khách lúc chờ.",
+        "options": [
+          {
+            "t": "The guests were bored while they waited.",
+            "note": "Bored gọi tên cảm giác của người chờ. While they waited giới hạn cảm giác ấy vào lúc chờ món.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "The guests were boring while they waited.",
+            "note": "Boring tả người khách khiến người khác buồn chán. Câu đúng về cấu trúc nhưng đổi vai người cảm nhận.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Mai lấy đồng hồ bấm giờ, đo thử thời gian từ bếp ra bàn. Cửa chuyển món đang kẹt.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The soup was ready ages ago!",
+          "vi": "Súp đã sẵn sàng từ lâu rồi!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Mai đọc hết mặt sau. Chẳng ai phàn nàn về khách. Cô theo chân Sol đến cửa chuyển món đang bị kẹt.",
+      "say": [
+        {
+          "who": "b",
+          "en": "They were just waiting for us.",
+          "vi": "Họ chỉ ngồi đợi mình thôi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Mai sửa then cửa, còn Sol vẽ một cái đồng hồ nhỏ cạnh tên món. Hôm sau hai người mang súp ra khi kim còn chưa chạy một vòng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Let's keep the soup and lose the wait.",
+          "vi": "Giữ món súp và bỏ thời gian chờ đi nhé."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

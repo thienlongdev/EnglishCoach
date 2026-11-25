@@ -1,0 +1,41 @@
+{
+  "id": "library-access",
+  "title": "Sách có thể được mượn ở thời điểm nào?",
+  "summary": "Bạn đọc ghi chú về cuốn từ điển. So sánh một quyền hiện tại với phỏng đoán về lý do nó biến mất hôm qua.",
+  "level": "B1",
+  "topics": [
+    "passive-tenses-modals",
+    "modal-perfect-deduction"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Mốc xét",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Quyền hiện tại"
+        },
+        {
+          "id": "v2",
+          "label": "Khả năng quá khứ"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The dictionary may be borrowed overnight.",
+      "vi": "Từ điển có thể được mượn qua đêm.",
+      "note": "Trên nội quy, may be borrowed cho phép mượn. Chưa có khẳng định ai đã mượn. / May be borrowed grants permission on a notice.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The dictionary may have been borrowed yesterday.",
+      "vi": "Có thể hôm qua đã có người mượn từ điển.",
+      "note": "Have been borrowed nói một khả năng trước hiện tại. Không thể suy ra quy định cho mượn qua đêm. / May have been borrowed speculates about the past.",
+      "verdict": "ok"
+    }
+  }
+}

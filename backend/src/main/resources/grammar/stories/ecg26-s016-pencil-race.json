@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s016-pencil-race",
+  "title": "Cuộc đua của hai cây bút",
+  "summary": "Hai cây bút trông như đang đua trên mặt bàn dù Ken không hề chạm vào chúng.",
+  "level": "A1",
+  "topics": [
+    "prepositions-place"
+  ],
+  "scene": "university",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mai",
+      "role": "Người vẽ đường đua"
+    },
+    {
+      "id": "b",
+      "name": "Ken",
+      "role": "Bạn cùng bàn"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Mai kê một quyển vở dưới một chân bàn thấp. Hai cây bút chì lăn về phía Ken. Cậu chặn được bút vàng nhưng bút xanh rơi vào lòng bàn mở.",
+      "say": [
+        {
+          "who": "b",
+          "en": "My yellow pencil is here. Where's the blue one?",
+          "vi": "Bút vàng của mình đây rồi. Còn bút xanh đâu?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can hear it. Look inside the desk.",
+          "vi": "Mình nghe tiếng nó. Nhìn trong ngăn bàn đi."
+        }
+      ],
+      "choice": {
+        "prompt": "Mai mách Ken đúng chỗ lấy lại bút.",
+        "options": [
+          {
+            "t": "It's on the desk.",
+            "note": "On chỉ mặt bên trên của bàn. Câu đúng nhưng đó là nơi chiếc bút vừa rời khỏi.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "It's in the desk.",
+            "note": "In the desk chỉ phía trong ngăn bàn. Ken cần mở ngăn để lấy.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Ken mở ngăn. Cạnh bút xanh là tờ giấy ghi Finish: Đích đến.",
+      "say": [
+        {
+          "who": "b",
+          "en": "It won the race!",
+          "vi": "Nó thắng cuộc đua rồi!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Ken tìm trên mặt bàn trống. Mai mở ngăn cho tờ giấy ghi Đích đến lộ ra bên cạnh bút.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The race ends inside!",
+          "vi": "Cuộc đua kết thúc ở trong này!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Hai bạn gấp tờ đích thành một cái cốc cắm bút. Bàn vẫn hơi nghiêng, nhưng những tay đua đã có chỗ đứng chờ cuộc đua sau.",
+      "say": [
+        {
+          "who": "a",
+          "en": "No more races today.",
+          "vi": "Hôm nay hết đua rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

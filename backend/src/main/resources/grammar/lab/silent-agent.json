@@ -1,0 +1,41 @@
+{
+  "id": "silent-agent",
+  "title": "Cùng phân từ nhưng bộ phận nào đang được lắp?",
+  "summary": "Kỹ sư viết chú thích về một vòng đệm. Đổi giữa being fitted và once fitted. Yêu cầu giữ khô áp dụng trong lúc lắp hay sau khi lắp xong?",
+  "level": "C1",
+  "topics": [
+    "participle-clauses",
+    "passive-nonfinite"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Giai đoạn lắp",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Đang lắp"
+        },
+        {
+          "id": "v2",
+          "label": "Sau lắp"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "While being fitted, the seal must remain dry.",
+      "vi": "Trong lúc được lắp, vòng đệm phải được giữ khô.",
+      "note": "Chủ thể được lắp là the seal. While giới hạn yêu cầu vào giai đoạn thao tác đang diễn ra. / Being fitted is a passive process in progress.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Once fitted, the seal must remain dry.",
+      "vi": "Sau khi đã lắp xong, vòng đệm phải được giữ khô.",
+      "note": "Once fitted tương ứng với once it has been fitted. Nghĩa vụ được xét từ sau khi việc lắp hoàn tất. / Once fitted sets a state after completion.",
+      "verdict": "ok"
+    }
+  }
+}

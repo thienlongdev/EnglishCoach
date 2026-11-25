@@ -1,0 +1,41 @@
+{
+  "id": "choose-between",
+  "title": "Có ai ở sảnh không?",
+  "summary": "Bạn mở cửa sảnh. Thử gọi khi chưa thấy ai rồi kể lại khi nghe có tiếng trả lời.",
+  "level": "A2",
+  "topics": [
+    "indefinite-pronouns",
+    "some-and-any"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Thông tin về người",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Chưa biết có ai"
+        },
+        {
+          "id": "v2",
+          "label": "Biết có người"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Is anyone here?",
+      "vi": "Có ai ở đây không?",
+      "note": "Câu hỏi dùng anyone để kiểm tra xem có người nào ở đó không. / Anyone leaves the person's existence open.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Someone is here.",
+      "vi": "Có người ở đây.",
+      "note": "Someone xác nhận có người, chưa xác định danh tính. / Someone asserts a person is present.",
+      "verdict": "ok"
+    }
+  }
+}

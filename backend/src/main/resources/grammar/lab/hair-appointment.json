@@ -1,0 +1,40 @@
+{
+  "id": "hair-appointment",
+  "title": "Ai là người cắt tóc?",
+  "summary": "Bạn giới thiệu kiểu tóc mới. Đổi cấu trúc để chính mình cắt hoặc người khác cắt cho mình. My hair có đổi vai không?",
+  "level": "B1",
+  "topics": [
+    "have-something-done"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Người cầm kéo",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Tự làm"
+        },
+        {
+          "id": "v2",
+          "label": "Dùng dịch vụ"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I cut my hair myself.",
+      "vi": "Tôi tự cắt tóc cho mình.",
+      "note": "I là người thực hiện cut, còn myself nhấn mạnh tự tay làm. / Myself makes the agent explicit.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "I had my hair cut at the salon.",
+      "vi": "Tôi đi cắt tóc ở tiệm.",
+      "note": "Had my hair cut cho biết người nói nhận dịch vụ. Người cầm kéo không phải chủ ngữ I trong cách hiểu này. / Have + object + participle presents an arranged service.",
+      "verdict": "ok"
+    }
+  }
+}

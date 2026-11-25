@@ -1,0 +1,128 @@
+{
+  "id": "ecg26-s217-zero-hour-garden",
+  "title": "Khu vườn ở giờ số không",
+  "summary": "Một khu vườn trên tàu phát mùi mưa trước khi hệ thống tưới khởi động. Người trông vườn nhận được hai bản ghi, mỗi bản dùng một kiểu điều kiện.",
+  "level": "C1",
+  "topics": [
+    "inverted-conditionals",
+    "mixed-conditionals"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "so",
+      "name": "Sora",
+      "role": "Người trông vườn"
+    },
+    {
+      "id": "ken",
+      "name": "Ken",
+      "role": "Người bảo quản đồng hồ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "smell",
+      "say": [
+        {
+          "who": "so",
+          "en": "I can smell wet earth, but the valve is still sealed.",
+          "vi": "Tôi ngửi thấy mùi đất ướt, nhưng van vẫn còn niêm phong."
+        },
+        {
+          "who": "ken",
+          "en": "The written test is yesterday's. The wet clay is here now. Keep your times separate.",
+          "vi": "Biên bản thử là của hôm qua. Viên đất ướt thì đang ở đây. Đừng trộn hai mốc ấy."
+        }
+      ],
+      "narrate": "Ken cầm hai đồng hồ cạnh nhau. Một chiếc đo giờ tàu, chiếc kia đo giờ của khu vườn mô phỏng. Dưới bệ có một viên đất sét còn ướt. Bên trên van, dấu sáp chưa vỡ.",
+      "next": "record"
+    },
+    {
+      "id": "record",
+      "choice": {
+        "prompt": "Dòng nào giả định van đã mở hôm qua và nêu hệ quả sẽ thấy ở hiện tại, phù hợp việc dấu sáp thật vẫn nguyên?",
+        "options": [
+          {
+            "t": "Had the valve opened yesterday, the seal would be broken now.",
+            "note": "Had the valve opened là đảo của if the valve had opened. Hệ quả would be broken now nói về tình trạng hiện tại của dấu sáp.",
+            "ok": true,
+            "next": "seal",
+            "consequence": "Sora kiểm tra dấu sáp để đánh giá giả thuyết mở van."
+          },
+          {
+            "t": "Should the valve open tomorrow, the seal will break.",
+            "note": "Đây là điều kiện còn bỏ ngỏ về ngày mai. Câu đúng nhưng không kiểm tra giả thuyết về ngày hôm qua.",
+            "ok": false,
+            "next": "tomorrow",
+            "consequence": "Ken tách tờ ghi phương án ngày mai khỏi hồ sơ hôm qua."
+          }
+        ]
+      }
+    },
+    {
+      "id": "tomorrow",
+      "say": [
+        {
+          "who": "ken",
+          "en": "Keep that for the next test. What would yesterday's opening have left us with today?",
+          "vi": "Giữ dòng ấy cho lần thử sau. Nếu hôm qua mở van, đến hôm nay nó sẽ để lại gì?"
+        }
+      ],
+      "next": "seal"
+    },
+    {
+      "id": "seal",
+      "narrate": "Sora tìm thấy chiếc khăn ẩm dùng để lau mặt đồng hồ trong ngăn của mình. Cô đã đặt khăn lên bệ trước khi tắt đèn. Phía dưới khăn có một vệt đất đỏ cùng màu với viên đất sét.",
+      "say": [
+        {
+          "who": "so",
+          "en": "I tried to dry the clock, and I left the cloth here. I can account for the clay now.",
+          "vi": "Tôi lau khô chiếc đồng hồ rồi để khăn ở đây. Giờ tôi đã giải thích được vì sao đất sét ướt."
+        }
+      ],
+      "choice": {
+        "prompt": "Sau khi đã giải được chuyện đất ướt, Ken muốn ghi một phương án ứng phó cho lần thử tới nếu hai đồng hồ lại chạy lệch. Chọn dòng giữ tương lai mở.",
+        "options": [
+          {
+            "t": "Had the clocks disagreed, we would have recorded both readings.",
+            "note": "Đây là nhìn lại một tình huống giả định trong quá khứ. Lời này không giao việc cho lần thử tới.",
+            "ok": false,
+            "next": "margin",
+            "consequence": "Ken phải ghi thêm chỉ dẫn, vì người trực sau chưa biết cần chép gì."
+          },
+          {
+            "t": "Should the clocks disagree again, record both readings.",
+            "note": "Should ở đầu đặt ra một tình huống tương lai có thể xảy ra. Mệnh lệnh record nói người trực cần làm gì khi ấy.",
+            "ok": true,
+            "next": "two",
+            "consequence": "Sổ trực có chỗ cho cả hai số chỉ."
+          }
+        ]
+      }
+    },
+    {
+      "id": "margin",
+      "say": [
+        {
+          "who": "ken",
+          "en": "A missed opportunity isn't an instruction. Let's leave them two boxes to fill in.",
+          "vi": "Một dịp bỏ lỡ đâu phải lời chỉ dẫn. Ta chừa hai ô cho họ điền nhé."
+        }
+      ],
+      "next": "two"
+    },
+    {
+      "id": "two",
+      "narrate": "Sora đặt viên đất sét vào chậu cây đầu tiên và gieo một hạt cải xuống đó. Buổi thử sau, hai số giờ lại khác nhau. Người trực ghi đủ hai số bên cạnh dòng đầu tiên báo cây nảy mầm. Mùi mưa lần này đến sau tiếng mở van.",
+      "say": [
+        {
+          "who": "so",
+          "en": "We can date our first leaf in two different worlds.",
+          "vi": "Ta có thể ghi ngày chiếc lá đầu tiên ra đời theo giờ của hai thế giới."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

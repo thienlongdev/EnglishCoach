@@ -1,0 +1,41 @@
+{
+  "id": "rumoured-show",
+  "title": "Ban nhạc được cho là ở đâu, khi nào?",
+  "summary": "Một tờ báo chưa xác minh tin về ban nhạc. Giữ is said rồi đổi thời gian của hành động được đồn so với thời điểm đưa tin.",
+  "level": "B2",
+  "topics": [
+    "reporting-passives",
+    "perfect-infinitive-gerund"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Tin được thuật",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Hiện tại"
+        },
+        {
+          "id": "v2",
+          "label": "Trước đó"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The band is said to be in Hue.",
+      "vi": "Nghe nói ban nhạc đang ở Huế.",
+      "note": "To be đặt tình trạng ở Huế cùng thời với lời đồn hiện tại. / The location overlaps the current report.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The band is said to have left Hue.",
+      "vi": "Nghe nói ban nhạc đã rời Huế.",
+      "note": "To have left lùi việc rời Huế về trước lời đưa tin. Is said vẫn giữ khoảng cách với độ xác thực. / The perfect infinitive places departure earlier.",
+      "verdict": "ok"
+    }
+  }
+}

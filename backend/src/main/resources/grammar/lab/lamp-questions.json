@@ -1,0 +1,41 @@
+{
+  "id": "lamp-questions",
+  "title": "Tìm đúng chiếc đèn",
+  "summary": "Ở cửa hàng, bạn muốn biết đèn có rẻ không hoặc muốn biết chính xác giá. Dự đoán câu nào cần trả lời bằng một số tiền.",
+  "level": "A1",
+  "topics": [
+    "yes-no-questions",
+    "wh-questions"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Thông tin còn thiếu",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Có rẻ không"
+        },
+        {
+          "id": "v2",
+          "label": "Giá cụ thể"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Is the lamp cheap?",
+      "vi": "Chiếc đèn có rẻ không?",
+      "note": "Is đứng trước chủ ngữ để hỏi người nghe có đồng ý với nhận định cheap hay không. / A yes or a no can answer this.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "How much is the lamp?",
+      "vi": "Chiếc đèn giá bao nhiêu?",
+      "note": "How much thay chỗ thông tin về giá. Chỉ nói yes sẽ không cho người hỏi số tiền cần biết. / Give a price.",
+      "verdict": "ok"
+    }
+  }
+}

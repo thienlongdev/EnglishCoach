@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s014-paper-doorbell",
+  "title": "Chuông cửa bằng giấy",
+  "summary": "Bảo treo một bức vẽ cái chuông lên cửa. Luz ấn thử nhưng chẳng nghe tiếng nào.",
+  "level": "A1",
+  "topics": [
+    "present-simple",
+    "adverbs-of-frequency"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Luz",
+      "role": "Bạn cùng tầng"
+    },
+    {
+      "id": "b",
+      "name": "Bảo",
+      "role": "Người vừa chuyển đến"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Trên hình chuông có dòng chữ Please knock. Bảo nghe kém và nhìn thấy chiếc đèn nháy nối với tấm gỗ khi có người gõ. Cậu đứng bên trong nhìn bóng Luz ngoài cửa.",
+      "say": [
+        {
+          "who": "b",
+          "en": "My picture has no sound.",
+          "vi": "Hình vẽ của mình không có tiếng đâu."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "a",
+          "en": "How do I tell you I'm here?",
+          "vi": "Mình báo cho bạn biết mình đến bằng cách nào?"
+        }
+      ],
+      "choice": {
+        "prompt": "Bảo muốn chỉ cho Luz cách mọi người vẫn thường báo khi đến cửa.",
+        "options": [
+          {
+            "t": "My friends knock on the door.",
+            "note": "Hiện tại đơn tả cách làm quen thuộc. Friends là số nhiều nên dùng knock.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "My friends draw a bell.",
+            "note": "Draw a bell diễn tả việc vẽ hình chuông. Câu đúng nhưng không nói cách báo hiệu như Luz đang hỏi.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Luz gõ hai tiếng. Đèn trên bàn Bảo chớp hai lần. Cậu mở cửa và chỉ cho bạn thấy tín hiệu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Two knocks, two lights.",
+          "vi": "Hai tiếng gõ, hai lần đèn sáng."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Luz lấy bút ra. Bảo chỉ dòng chữ trên cửa. Luz gõ vào gỗ và nhìn thấy đèn lóe sau ô kính.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Oh, the wood is the button!",
+          "vi": "Ồ, tấm gỗ chính là cái nút!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Luz quay lại với hình vẽ hai bàn tay gõ lên gỗ. Bảo treo nó bên cạnh hình cái chuông. Người khách tiếp theo thử gõ ngay lần đầu.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Now the door has two pictures.",
+          "vi": "Giờ cửa có hai bức tranh rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

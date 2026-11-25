@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s028-birthday-on-monday",
+  "title": "Sinh nhật rơi xuống khỏi lịch",
+  "summary": "Một chiếc bánh giấy rơi khỏi lịch trực. Nga biết nó đánh dấu sinh nhật Ian, nhưng chưa biết dán lại vào ô nào.",
+  "level": "A1",
+  "topics": [
+    "prepositions-time"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Nga",
+      "role": "Người treo lịch"
+    },
+    {
+      "id": "b",
+      "name": "Ian",
+      "role": "Đồng nghiệp mới"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Ian làm việc từ thứ Hai tới thứ Sáu. Trên tấm bưu thiếp mẹ gửi có dòng Happy birthday on Friday. Nga đặt chiếc bánh giấy lên đầu ngón tay.",
+      "say": [
+        {
+          "who": "b",
+          "en": "It's my first birthday here.",
+          "vi": "Đây là sinh nhật đầu tiên của mình ở đây."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "a",
+          "en": "Which day shall I put the cake on?",
+          "vi": "Mình nên dán chiếc bánh vào ngày nào?"
+        }
+      ],
+      "choice": {
+        "prompt": "Điền lời nhắn chỉ đúng ngày trong tuần theo bưu thiếp.",
+        "options": [
+          {
+            "t": "My birthday is in Friday.",
+            "note": "In không dùng trước Friday khi chỉ ngày diễn ra sinh nhật. In dùng được trước tháng như in May.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "My birthday is on Friday.",
+            "note": "On đứng trước tên một ngày trong tuần khi nói ngày diễn ra sự việc. Friday chọn đúng ô thứ Sáu.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Nga dán bánh vào thứ Sáu. Ian thấy những người trực ca tối đã vẽ thêm nến vào ô đó.",
+      "say": [
+        {
+          "who": "b",
+          "en": "They know my day too!",
+          "vi": "Họ cũng biết ngày của mình rồi!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Nga đưa cây bút cho Ian. Cậu thay in bằng on trước khi cô dán bánh vào đúng ô.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Friday has a cake now.",
+          "vi": "Ô thứ Sáu có bánh rồi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Đến thứ Sáu, ca tối mang một chiếc bánh thật tới. Nga lấy hình bánh giấy trên lịch dán xuống đáy hộp để khi ăn hết Ian vẫn còn giữ được chiếc bánh đầu tiên.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Next year, I'll hang it up myself.",
+          "vi": "Sang năm mình sẽ tự treo nó lên."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

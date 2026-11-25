@@ -1,0 +1,41 @@
+{
+  "id": "weekend-preference",
+  "title": "Ai là người được đề nghị ở lại?",
+  "summary": "Bạn muốn bố trí thêm người ở quầy. Giữ would rather rồi đổi từ sở thích của mình sang mong muốn về hành động của bạn khác.",
+  "level": "B2",
+  "topics": [
+    "unreal-past-forms",
+    "bare-infinitive"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Người ở lại",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Tôi"
+        },
+        {
+          "id": "v2",
+          "label": "Bạn"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "I'd rather stay here.",
+      "vi": "Tôi muốn ở lại đây hơn.",
+      "note": "Người có sở thích và người ở lại đều là I nên dùng stay. / A shared subject allows a bare infinitive.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "I'd rather you stayed here.",
+      "vi": "Tôi muốn bạn ở lại đây hơn.",
+      "note": "You là chủ ngữ riêng. Stayed nói mong muốn cho hiện tại hoặc tương lai chứ không kể chuyện đã ở lại. / A separate subject can take a modal past.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,500 @@
+{
+  "schema": 1,
+  "slug": "modal-perfect-deduction",
+  "version": 2,
+  "domain": "modality",
+  "order": 100,
+  "kind": "grammar",
+  "title": {
+    "vi": "Must have, can't have, might have: suy luận về quá khứ",
+    "en": "Past deduction with modal perfects"
+  },
+  "subtitle": {
+    "vi": "Suy luận bây giờ về điều có thể đã xảy ra.",
+    "en": "Use present evidence to reason about earlier events."
+  },
+  "level": "B2",
+  "levelBasis": "editorial",
+  "prerequisites": [
+    "must-cant-deduction",
+    "present-perfect-basics"
+  ],
+  "related": [
+    {
+      "slug": "modal-perfect-regret",
+      "rel": "confusion"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "aliases": [
+    "suy luận quá khứ",
+    "must have done",
+    "cannot have done",
+    "might have done",
+    "could have ambiguity",
+    "must had"
+  ],
+  "objectives": [
+    "Tạo modal + have + quá khứ phân từ để suy luận về sự việc trước thời điểm xét.",
+    "Chọn mức cam kết phù hợp với bằng chứng.",
+    "Phân biệt could have nêu khả năng với cơ hội đã không thực hiện."
+  ],
+  "quick": {
+    "what": "Must have, can’t have và might have có thể nêu những suy luận khác nhau về một việc trước đó. Have không chia theo chủ ngữ sau modal.",
+    "when": "Khi chỉ có dấu vết hoặc kết quả, chưa trực tiếp xác nhận diễn biến.",
+    "examples": [
+      {
+        "en": "The floor is wet. A pipe [MOD|must] [AUX|have] [V|leaked].",
+        "vi": "Sàn ướt. Hẳn một đường ống đã rò."
+      },
+      {
+        "en": "The parcel [MOD|might] [AUX|have] [V|arrived] while we were out.",
+        "vi": "Có thể bưu kiện đã đến khi chúng ta đi vắng."
+      }
+    ],
+    "remember": "Perfect cho biết quan hệ thời gian; modal và ngữ cảnh cho biết loại đánh giá."
+  },
+  "lesson": [
+    {
+      "type": "h",
+      "vi": "Từ dấu vết hiện tại nhìn lại"
+    },
+    {
+      "type": "p",
+      "vi": "Bạn thấy cửa kho mở và một thùng hàng nằm bên trong. The driver must have delivered it before we arrived là suy luận mạnh về việc giao hàng trước lúc đến. Bạn chưa chứng kiến người giao, nên đừng đổi lời suy luận thành sự thật được xác minh."
+    },
+    {
+      "type": "formula",
+      "parts": [
+        {
+          "t": "Chủ ngữ",
+          "role": "S"
+        },
+        {
+          "t": "must / may / might / could / cannot",
+          "role": "MOD"
+        },
+        {
+          "t": "have",
+          "role": "AUX"
+        },
+        {
+          "t": "quá khứ phân từ",
+          "role": "V"
+        }
+      ],
+      "note": "Have giữ dạng gốc. Phân từ có thể bất quy tắc: gone, taken, left."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Thái độ của người nói",
+        "Ví dụ",
+        "Giới hạn"
+      ],
+      "rows": [
+        [
+          "Suy luận mạnh",
+          "Someone must have moved the chairs.",
+          "Không tự chứng minh ai đã làm."
+        ],
+        [
+          "Để ngỏ khả năng",
+          "Someone may/might/could have moved the chairs.",
+          "Có thể có cách giải thích khác."
+        ],
+        [
+          "Loại trừ",
+          "Mai can’t have moved them; she was abroad.",
+          "Phụ thuộc độ tin cậy của thông tin Mai ở nước ngoài."
+        ]
+      ]
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "The display is blank. The battery may have run out.",
+          "vi": "Màn hình trống. Có thể pin đã cạn."
+        },
+        {
+          "en": "They can’t have finished the repair; the replacement part has not arrived.",
+          "vi": "Họ không thể đã sửa xong; linh kiện thay thế chưa đến."
+        },
+        {
+          "en": "He might not have seen the revised timetable.",
+          "vi": "Có thể anh ấy chưa xem lịch sửa đổi."
+        }
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "timeline",
+        "sentence": "The driver must have delivered it before we arrived.",
+        "now": 90,
+        "events": [
+          {
+            "kind": "point",
+            "at": 25,
+            "label": "Lần giao hàng được suy ra",
+            "role": "ghost"
+          },
+          {
+            "kind": "point",
+            "at": 65,
+            "label": "Chúng ta đến",
+            "role": "ref"
+          },
+          {
+            "kind": "point",
+            "at": 90,
+            "label": "Đang đánh giá dấu vết",
+            "role": "main"
+          }
+        ]
+      },
+      "caption": "Điểm giao hàng là suy luận, không phải sự kiện đã được quan sát trong tình huống.",
+      "alt": "Điểm giao hàng là suy luận, không phải sự kiện đã được quan sát trong tình huống."
+    },
+    {
+      "type": "p",
+      "vi": "Could have left the window open có hai cách đọc thường gặp. Nếu đang tìm nguyên nhân căn phòng lạnh, nó có thể là “có thể đã để cửa mở”. Nếu người nói nhắc một lựa chọn đã bỏ qua, nó có thể là “đã có thể để cửa mở nhưng không làm”. Cần dữ kiện để phân biệt; không bắt riêng could have mang nghĩa bỏ lỡ."
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Might not have sent nói khả năng việc gửi không xảy ra. Can’t have sent loại trừ việc đã gửi. Độ cam kết khác nhau. Must have sent trong suy luận cũng khác had to send trong lời kể nghĩa vụ quá khứ."
+    },
+    {
+      "type": "try",
+      "exercise": "mpd-04"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Suy luận không phải một phép kiểm định khoa học chỉ dựa vào modal. Một email hiện đã có trong hộp thư không tự chứng minh người nhận đã đọc. Chọn must have read chỉ khi bằng chứng phù hợp; nếu chưa đủ căn cứ, might have read giữ giới hạn tốt hơn."
+    },
+    {
+      "type": "p",
+      "vi": "Modal perfect không chỉ hướng tới quá khứ tính từ lúc nói. By noon tomorrow, they may have finished the inspection đặt việc hoàn tất trước một mốc tương lai. Chương này tập trung vào suy luận về quá khứ; không định nghĩa mọi modal + have là quá khứ tuyệt đối."
+    },
+    {
+      "type": "p",
+      "vi": "Have been + V-ing nhìn lại một hoạt động đang diễn ra: They must have been testing the alarm when we called. Have been + past participle có thể là bị động: The alarm must have been tested. Hãy xác định chủ thể đang làm hay nhận tác động, không đếm riêng số từ been."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "mpd-has",
+      "wrong": "She must has left.",
+      "right": "She must have left.",
+      "why": "Sau modal, have không đổi thành has."
+    },
+    {
+      "id": "mpd-participle",
+      "wrong": "They might have took the wrong exit.",
+      "right": "They might have taken the wrong exit.",
+      "why": "Perfect dùng taken, không took."
+    },
+    {
+      "id": "mpd-obligation",
+      "wrong": "Yesterday I must submit the form.",
+      "right": "Yesterday I had to submit the form.",
+      "why": "Nếu kể nghĩa vụ hôm qua, had to phù hợp. Must have submitted sẽ đổi sang suy luận về việc nộp."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Could have có luôn nghĩa đã không làm không?",
+      "a": "Không. Nó còn nêu khả năng một việc đã xảy ra; ngữ cảnh phải làm rõ."
+    },
+    {
+      "q": "May have và might have có một đáp án độc nhất không?",
+      "a": "Nhiều tình huống chấp nhận cả hai. Nếu không có ràng buộc về cách nói, không nên chấm một từ là sai chỉ vì từ kia là mẫu."
+    },
+    {
+      "q": "Must have có bảo đảm kết luận đúng không?",
+      "a": "Không. Người nói đánh giá mạnh dựa vào điều mình biết; bằng chứng mới có thể làm thay đổi kết luận."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "mpd-01",
+      "type": "choice",
+      "level": "B2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Chọn cách đọc được hỗ trợ.",
+      "stem": "The pavement is wet, though it is not raining now. It must have rained earlier.",
+      "options": [
+        {
+          "t": "Người nói suy ra một trận mưa trước lúc này.",
+          "ok": true,
+          "note": "Vỉa hè ướt là dấu hiệu."
+        },
+        {
+          "t": "Người nói ra lệnh cho trời mưa trước đó.",
+          "tag": "meaning-mismatch",
+          "note": "Không có nghĩa vụ hoặc mệnh lệnh."
+        }
+      ],
+      "explain": "Must have rained là suy luận về sự việc trước thời điểm nói."
+    },
+    {
+      "id": "mpd-02",
+      "type": "match",
+      "level": "B2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Nối cách nói với mức cam kết.",
+      "pairs": [
+        {
+          "a": "The gate must have been open.",
+          "b": "Kết luận mạnh rằng cổng đã mở"
+        },
+        {
+          "a": "The gate might not have been open.",
+          "b": "Để ngỏ khả năng cổng đã không mở"
+        },
+        {
+          "a": "The gate cannot have been open.",
+          "b": "Loại trừ khả năng cổng đã mở"
+        }
+      ],
+      "explain": "Phạm vi phủ định và độ mạnh của đánh giá đều quan trọng."
+    },
+    {
+      "id": "mpd-03",
+      "type": "cloze",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Điền quá khứ phân từ của leave.",
+      "stem": "Her desk is empty. She may have {1} early.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "left"
+          ]
+        }
+      },
+      "explain": "May have cần left, không leave hoặc leaving."
+    },
+    {
+      "id": "mpd-04",
+      "type": "transform",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Dùng might have để giữ sự dè dặt.",
+      "source": "Perhaps someone deleted the draft.",
+      "instruction": "Bắt đầu Someone; dùng might have; giữ the draft.",
+      "model": "Someone might have deleted the draft.",
+      "accept": [
+        "Someone might have deleted the draft."
+      ],
+      "explain": "Không biến một khả năng thành kết luận must have."
+    },
+    {
+      "id": "mpd-05",
+      "type": "classify",
+      "level": "B2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Phân loại could have theo dữ kiện bổ sung.",
+      "cats": [
+        "Khả năng đã xảy ra",
+        "Cơ hội không thực hiện"
+      ],
+      "items": [
+        {
+          "t": "The source is unknown. A visitor could have moved it; we are checking the camera.",
+          "cat": "Khả năng đã xảy ra"
+        },
+        {
+          "t": "I could have joined the trip, but I chose to stay home.",
+          "cat": "Cơ hội không thực hiện"
+        },
+        {
+          "t": "We do not know why the file is missing. It could have been deleted by mistake.",
+          "cat": "Khả năng đã xảy ra"
+        }
+      ],
+      "explain": "Không dùng riêng hình thức could have để quyết định sự kiện có xảy ra không."
+    },
+    {
+      "id": "mpd-06",
+      "type": "error",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sửa phần sai.",
+      "segments": [
+        {
+          "t": "The courier might"
+        },
+        {
+          "t": "has",
+          "bad": true,
+          "fix": [
+            "have"
+          ],
+          "note": "Modal đi với have dạng gốc.",
+          "tag": "modal-perfect-have"
+        },
+        {
+          "t": "taken the parcel upstairs."
+        }
+      ],
+      "explain": "Might have taken giữ have và dùng phân từ taken."
+    },
+    {
+      "id": "mpd-07",
+      "type": "multi",
+      "level": "B2",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Chọn các câu dè dặt phù hợp khi chưa xác định nguyên nhân.",
+      "stem": "The recording is silent. Several explanations remain possible.",
+      "options": [
+        {
+          "t": "The microphone may have been muted.",
+          "ok": true,
+          "note": "Nêu một khả năng."
+        },
+        {
+          "t": "The cable might have come loose.",
+          "ok": true,
+          "note": "Nêu khả năng khác."
+        },
+        {
+          "t": "We know with certainty that the microphone was muted.",
+          "tag": "meaning-mismatch",
+          "note": "Dữ kiện không hỗ trợ sự chắc chắn."
+        }
+      ],
+      "explain": "Câu đúng cần vừa hợp hình thức vừa tương xứng với bằng chứng."
+    },
+    {
+      "id": "mpd-08",
+      "type": "open",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết báo cáo sự cố chưa kết luận.",
+      "task": "Bản thu âm bị mất đoạn cuối. Viết ba câu: ghi nhận điều đã biết, nêu hai nguyên nhân có thể bằng modal perfect, rồi đề xuất một bước kiểm tra. Không gán lỗi chắc chắn cho một người.",
+      "model": [
+        "The last two minutes are missing.",
+        "The battery might have run out, or the recorder may have stopped when its storage filled up.",
+        "We should check the device log."
+      ],
+      "checklist": [
+        "Quan sát tách khỏi giả thuyết",
+        "Modal + have + phân từ đúng",
+        "Không khẳng định nguyên nhân chưa xác minh",
+        "Có bước kiểm tra cụ thể"
+      ],
+      "explain": "Các giả thuyết khác mẫu vẫn phù hợp nếu có logic và giữ giới hạn."
+    },
+    {
+      "id": "mpd-09",
+      "type": "choice",
+      "level": "B2",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Chọn kết luận về câu còn thiếu ngữ cảnh.",
+      "stem": "Noah could have taken the spare key.",
+      "options": [
+        {
+          "t": "Câu cần thêm ngữ cảnh để phân biệt khả năng đã xảy ra với lựa chọn không thực hiện.",
+          "ok": true,
+          "note": "Could have có nhiều cách đọc."
+        },
+        {
+          "t": "Câu tự chứng minh Noah không lấy chìa khóa.",
+          "tag": "meaning-mismatch",
+          "note": "Đó chỉ là một cách đọc có thể có."
+        }
+      ],
+      "explain": "Không áp một suy diễn phản thực cho mọi could have."
+    },
+    {
+      "id": "mpd-10",
+      "type": "cloze",
+      "level": "B2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Điền phân từ của break.",
+      "stem": "The seal cannot have {1} on its own; someone cut it.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "broken"
+          ]
+        }
+      },
+      "explain": "Perfect dùng broken. Câu thể hiện đánh giá của người nói dựa vào dấu cắt."
+    },
+    {
+      "id": "mpd-11",
+      "type": "transform",
+      "level": "B2",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Dùng cannot have để loại trừ.",
+      "source": "I rule out the possibility that the sensor recorded this value.",
+      "instruction": "Bắt đầu The sensor; giữ recorded this value; dùng cannot have hoặc can’t have.",
+      "model": "The sensor cannot have recorded this value.",
+      "accept": [
+        "The sensor cannot have recorded this value.",
+        "The sensor can't have recorded this value."
+      ],
+      "explain": "Cannot have recorded loại trừ việc ghi giá trị đó, không nói máy bị cấm ghi."
+    },
+    {
+      "id": "mpd-12",
+      "type": "multi",
+      "level": "B2",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Chọn nhận xét đúng.",
+      "stem": "The assistant might not have received the message.",
+      "options": [
+        {
+          "t": "Người nói để ngỏ việc tin nhắn chưa đến người trợ lý.",
+          "ok": true,
+          "note": "Not phủ định received trong phạm vi khả năng."
+        },
+        {
+          "t": "Câu không xác nhận người trợ lý cố tình phớt lờ.",
+          "ok": true,
+          "note": "Nhận và cố tình bỏ qua là những nội dung khác nhau."
+        },
+        {
+          "t": "Câu loại trừ hoàn toàn việc người trợ lý đã nhận tin.",
+          "tag": "meaning-mismatch",
+          "note": "Might not không mạnh như cannot have."
+        }
+      ],
+      "explain": "Đọc đúng mức cam kết giúp tránh quy kết không có căn cứ."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  },
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tác phẩm tham chiếu cho cấu trúc và nghĩa trong chương; dùng sổ nguồn hiện có. Chưa có kiểm chứng đoạn nguồn riêng cho bản thảo này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tài liệu đối chiếu biên tập dự kiến; không xác nhận đã đọc một mục hoặc ấn bản cụ thể."
+    }
+  ]
+}

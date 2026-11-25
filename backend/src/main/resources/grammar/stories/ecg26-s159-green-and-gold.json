@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s159-green-and-gold",
+  "title": "Mặt xanh của lá thư vàng",
+  "summary": "Có hai phong bì màu trong khay trưng bày. Một người đồng ý trưng phong bì nhưng chưa cho đọc thư. Lời mô tả nhập nhằng có thể làm lộ chuyện riêng.",
+  "level": "B2",
+  "topics": [
+    "passive-nonfinite",
+    "reference-chains"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Ellis",
+      "role": "Thư ký triển lãm"
+    },
+    {
+      "id": "b",
+      "name": "Huệ",
+      "role": "Người viết thư"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Huệ đặt phong bì xanh còn niêm phong lên bàn. Phong bì vàng chứa bản thư cô đã cho phép đọc. Ellis nhìn câu Both letters are ready to be shown rồi lấy bút chì.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I promised that visitors would see your handwriting.",
+          "vi": "Tôi đã hứa khách sẽ thấy được nét chữ của chị."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "They can see the address on the green one. What's inside stays private.",
+          "vi": "Họ được xem địa chỉ trên chiếc màu xanh. Những gì bên trong vẫn là chuyện riêng."
+        }
+      ],
+      "choice": {
+        "prompt": "Ellis phải ghi chính xác vật nào được phép trưng mà không mở phong bì xanh.",
+        "options": [
+          {
+            "t": "The letter in the green envelope is to be displayed.",
+            "note": "Câu cũng dùng bị động đúng nhưng chuyển đối tượng trưng từ phong bì sang bức thư bên trong. Điều đó vượt quá lời đồng ý của Huệ.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "The green envelope is to be displayed unopened.",
+            "note": "To be displayed là nguyên mẫu bị động, và unopened nói rõ trạng thái phong bì khi trưng. Chủ ngữ là phong bì, không phải bức thư bên trong.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Huệ viết một dòng nhỏ ngoài mép, giải thích nét chữ thuộc về hai chị em đã dùng chung một cây bút.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That much I want people to know.",
+          "vi": "Phần đó thì tôi muốn mọi người biết."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Ellis vừa đưa tay về phía dao rọc giấy thì Huệ che phong bì lại. Anh đặt dao xuống và viết lại chủ ngữ.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The outside is part of the story too.",
+          "vi": "Mặt ngoài cũng là một phần câu chuyện."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Ngày mở cửa, chính phong bì còn dán kín khiến người xem dừng lại lâu nhất. Có khách nhận ra nét cong ở chữ g và mang tới một tấm thiệp của người em đã thất lạc liên lạc nhiều năm.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A closed envelope opened a conversation.",
+          "vi": "Một phong bì còn kín lại mở ra được một cuộc trò chuyện."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

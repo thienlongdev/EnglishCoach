@@ -1,0 +1,40 @@
+{
+  "id": "movie-feeling",
+  "title": "Khen bộ phim theo hai cách",
+  "summary": "Bạn vừa xem xong một bộ phim vui. Nếu câu cảm thán bắt đầu bằng what, bạn cần giữ lại thành phần nào mà how không cần?",
+  "level": "A2",
+  "topics": [
+    "exclamations"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Mẫu cảm thán",
+      "values": [
+        {
+          "id": "v1",
+          "label": "What"
+        },
+        {
+          "id": "v2",
+          "label": "How"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "What a funny film!",
+      "vi": "Phim hài hước quá!",
+      "note": "What đi với cả cụm a funny film, giữ a vì film đếm được số ít. / What introduces a noun phrase.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "How funny the film is!",
+      "vi": "Bộ phim hài hước biết bao!",
+      "note": "How nhấn funny. The film is vẫn theo thứ tự chủ ngữ rồi động từ. / How foregrounds the adjective.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s103-empty-name-tag",
+  "title": "Thẻ tên để trống",
+  "summary": "Trên chiếc vali có một thẻ tên không ghi tên mà chỉ vẽ hình con hươu.",
+  "level": "B1",
+  "topics": [
+    "indirect-questions"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Vi",
+      "role": "Nhân viên ga"
+    },
+    {
+      "id": "b",
+      "name": "Nam",
+      "role": "Người học việc"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Một bé gái chạy tới nói chiếc vali là của ông. Vi muốn hỏi đồ vật bên trong để xác nhận trước khi giao lại.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can describe what's in the side pocket.",
+          "vi": "Cháu mô tả được thứ trong túi bên."
+        },
+        {
+          "who": "b",
+          "en": "Ask her where her grandfather keeps the brush.",
+          "vi": "Hỏi xem ông thường cất bàn chải ở đâu."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Vi chọn câu hỏi lịch sự, tránh tiết lộ đáp án cần kiểm tra.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Could you tell me where he keeps his brush?",
+            "note": "Sau could you tell me, mệnh đề where he keeps giữ trật tự trần thuật. Nó hỏi vị trí mà chưa nói hộ.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Could you tell me where does he keep his brush?",
+            "note": "Does he keep là trật tự của câu hỏi trực tiếp. Trong câu hỏi lồng ở đây dùng where he keeps.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Em bé nói bàn chải nằm trong túi bên, có dính sơn trắng từ lần vẽ con hươu. Nam mở túi thấy đúng vệt sơn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "She knew the paint as well as the pocket.",
+          "vi": "Em ấy biết cả vết sơn lẫn vị trí túi."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Ông nhận vali rồi tặng ga một tấm thẻ hươu nhỏ để nhận ra phòng thất lạc từ xa.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Em bé lúng túng. Vi tách thành câu hỏi trực tiếp Where does he keep his brush? Em mô tả đúng chiếc túi bên có vết sơn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A shorter question got us a very clear answer.",
+          "vi": "Một câu hỏi ngắn hơn lại cho ta câu trả lời thật rõ."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Nam viết cả hai cách hỏi đúng vào sổ đào tạo rồi đứng dậy giao vali cho ông.",
+      "end": true
+    }
+  ]
+}

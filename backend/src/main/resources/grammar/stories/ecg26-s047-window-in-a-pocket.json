@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s047-window-in-a-pocket",
+  "title": "Ô cửa trong túi áo",
+  "summary": "Bo muốn đem theo chút gì có hình căn bếp trước chuyến bay đầu tiên. Điện thoại em vừa hết pin.",
+  "level": "A2",
+  "topics": [
+    "indefinite-pronouns"
+  ],
+  "scene": "airport",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Bo",
+      "role": "Người sắp đi xa"
+    },
+    {
+      "id": "b",
+      "name": "Lan",
+      "role": "Chị gái"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Lan đưa Bo một túi vải nhỏ. Bên trong có một miếng kính nhựa vẽ ô cửa sổ bếp, nhưng cô muốn em tự tìm. Bo sờ túi, thấy vật cứng có bốn góc.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Is there a picture in here?",
+          "vi": "Có hình gì trong này không chị?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Feel the corners before you look.",
+          "vi": "Sờ các góc trước khi nhìn nhé."
+        }
+      ],
+      "choice": {
+        "prompt": "Bo chưa biết đó là vật gì, chỉ chắc rằng trong túi có một thứ.",
+        "options": [
+          {
+            "t": "There's nothing in my pocket.",
+            "note": "Nothing phủ định có vật bên trong. Bo đã sờ thấy bốn góc nên lời này không khớp bằng chứng.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "There's something in my pocket.",
+            "note": "Something chỉ một vật chưa xác định trong câu khẳng định. Bo vẫn có thể đoán sau.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Lan bảo em giơ vật ấy lên trước cửa sổ sân bay. Bầu trời xa lạ bỗng nằm gọn trong khung bếp quen.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Look through it, not at it.",
+          "vi": "Nhìn xuyên qua khung ấy đi, đừng chỉ nhìn bề mặt."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Lan gõ nhẹ lên góc túi. Có tiếng cạch. Bo lôi được khung cửa nhựa ra và giơ lên trời.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That's a very noisy nothing!",
+          "vi": "Cái “không có gì” này kêu to quá nhỉ!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Trên máy bay, Bo áp khung vào cửa sổ. Mây trôi bên ngoài căn bếp của em. Em lấy bút vẽ thêm một cái cốc trên bậu cửa nhựa, đúng chỗ chị vẫn để.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Now I can take our view with me.",
+          "vi": "Giờ em mang được khung cảnh nhà mình đi cùng rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

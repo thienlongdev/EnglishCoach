@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s089-half-sung",
+  "title": "Nửa bài hát trong thang máy",
+  "summary": "June luôn ngừng bước đúng một tầng cầu thang rồi khe khẽ hát một nốt.",
+  "level": "B1",
+  "topics": [
+    "stop-remember-try"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Lâm",
+      "role": "Nhạc công mới"
+    },
+    {
+      "id": "b",
+      "name": "June",
+      "role": "Người chỉnh đàn"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Lâm cùng June khiêng ghế đàn lên phòng tập. Ở tầng ba, tiếng quạt gió vọng thành một nốt trầm. June đặt ghế xuống và ngân theo. Lâm phải giải thích vì sao họ đến muộn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We were carrying the piano stool upstairs.",
+          "vi": "Bọn tôi đang khiêng ghế đàn lên cầu thang."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Tell them why I put it down.",
+          "vi": "Hãy nói cho họ vì sao tôi đặt ghế xuống."
+        }
+      ],
+      "choice": {
+        "prompt": "June tạm dừng việc khiêng ghế để hát. Lâm kể lại hành động nào?",
+        "options": [
+          {
+            "t": "June stopped to sing.",
+            "note": "Stopped to sing cho thấy June tạm ngừng việc đang làm để hát. Việc đang làm đã rõ từ câu trước.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "June stopped singing.",
+            "note": "Stopped singing nghĩa là June thôi hát. Câu này đặt dấu chấm hết cho tiếng hát thay vì giải thích lý do cô dừng khiêng ghế.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Người chỉ huy bước ra cầu thang nghe thử. Khi June ngân đúng nốt, ô kính trên cửa khẽ rung.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That window sings back.",
+          "vi": "Ô cửa kính hát đáp lại kìa."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "June đặt tay lên lan can, hát lại nốt vừa rồi. Lâm nghe cửa kính ngân thêm một nhịp sau khi cô im tiếng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That's when I stopped singing.",
+          "vi": "Đấy mới là lúc tôi ngừng hát."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Họ kê ghế bên trong phòng tập rồi mở cửa ra cầu thang. Trong buổi diễn hôm ấy, June hát nửa câu, ô kính hát nốt cuối. Lâm ghi tên cả hai vào chương trình.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I didn't know a building could join a choir.",
+          "vi": "Tôi đâu ngờ cả một tòa nhà cũng có thể vào dàn hợp xướng."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

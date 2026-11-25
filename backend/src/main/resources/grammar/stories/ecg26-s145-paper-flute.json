@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s145-paper-flute",
+  "title": "Ống sáo kêu dù chẳng ai thổi",
+  "level": "B1",
+  "topics": [
+    "must-cant-deduction"
+  ],
+  "scene": "home",
+  "summary": "Nửa đêm căn gác vang một nốt sáo. Yuki cất sáo trong va li đã khóa. Dân không muốn đánh thức cả nhà chỉ vì một phỏng đoán.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Dân",
+      "role": "Người sửa mái"
+    },
+    {
+      "id": "b",
+      "name": "Yuki",
+      "role": "Bạn trọ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Mỗi khi gió dồn qua máng, âm lại vang. Cả hai nhìn thấy một ống giấy kẹt trong khe. Cơn gió tiếp theo sẽ cho họ một lần thử.",
+      "say": [
+        {
+          "who": "a",
+          "en": "It can't be me playing. Both my hands are here.",
+          "vi": "Không thể là mình đang thổi. Hai tay mình ở đây mà."
+        },
+        {
+          "who": "b",
+          "en": "Let's test the paper tube before we blame the roof.",
+          "vi": "Mình thử ống giấy trước khi đổ cho cái mái."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Dân chọn suy luận được bằng chứng ủng hộ lúc này.",
+        "options": [
+          {
+            "t": "The wind might be playing the tube.",
+            "note": "Might be playing nêu hoạt động có thể đang xảy ra. Cùng lúc với gió là gợi ý, chưa xác nhận cho đến khi thử.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "The sound must mean someone is in the attic.",
+            "note": "Must mean là kết luận mạnh rằng có người. Âm giống sáo chưa phân biệt người thổi với luồng gió qua ống.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Dân rút ống ra. Gió tới trong im lặng. Yuki thổi nhẹ vào ống và chơi được chính nốt vừa nghe. Họ treo ống ngoài hiên để sáng mới cho gió chơi.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The wind left us a flute.",
+          "vi": "Gió để lại cho mình một cây sáo."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Họ chiếu đèn từ cửa thay vì gọi cả nhà. Căn gác trống. Dân giữ ống giữa hai ngón tay làm tiếng đổi cao độ; cả hai hiểu ra. Sáng hôm sau họ hát lại âm ấy cho chủ nhà.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Our visitor didn't need a key.",
+          "vi": "Vị khách đêm qua đâu cần chìa khóa."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

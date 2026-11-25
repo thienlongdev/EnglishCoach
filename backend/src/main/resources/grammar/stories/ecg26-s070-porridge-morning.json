@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s070-porridge-morning",
+  "title": "Cháo của ngày mai",
+  "level": "A2",
+  "topics": [
+    "future-going-to"
+  ],
+  "scene": "home",
+  "summary": "Hạt gạo còn nguyên trong bát, nhưng trên lịch bếp dòng “cháo cho mẹ” đã được đánh dấu.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "An",
+      "role": "Người nấu sáng"
+    },
+    {
+      "id": "b",
+      "name": "Ira",
+      "role": "Bạn cùng nhà"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "An đánh dấu để nhớ kế hoạch sáng mai. Hôm nay mẹ vẫn ở xa. Ira nhìn dấu tích và tưởng món đã nấu xong.",
+      "say": [
+        {
+          "who": "a",
+          "en": "That tick is for tomorrow.",
+          "vi": "Dấu tích đó dành cho ngày mai."
+        },
+        {
+          "who": "b",
+          "en": "So what shall I tell her on the phone?",
+          "vi": "Vậy mình nói gì với mẹ qua điện thoại?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Báo kế hoạch đã chuẩn bị nhưng chưa thực hiện.",
+        "options": [
+          {
+            "t": "We're going to make porridge in the morning.",
+            "note": "Going to make diễn tả dự định. Không hứa nồi cháo đã sẵn sàng lúc gọi.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "We've made the porridge.",
+            "note": "Have made báo việc nấu đã hoàn tất, trái với bát gạo sống. Đó sẽ là tin khác hẳn với dấu lịch.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Mẹ gửi thêm cách rang gạo. Sáng hôm sau ba người nấu qua cuộc gọi, cùng nghe hạt gạo nổ lách tách dù ở hai bếp.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Now her kitchen sounds like ours.",
+          "vi": "Giờ bếp của mẹ nghe giống bếp mình."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Ira nhìn bát gạo rồi sửa lời ngay. Mẹ cười, bảo dành bát lớn nhất cho mình. Một ngày sau, chính bà bước qua cửa và nhận bát nóng ấy.",
+      "say": [
+        {
+          "who": "a",
+          "en": "That's a real tick now.",
+          "vi": "Giờ mới đáng đánh dấu xong."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

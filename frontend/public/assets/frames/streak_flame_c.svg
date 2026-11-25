@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- [ASSET_REQUIRED] Production-grade vector artwork (Hand-crafted vector finalization) -->
+  <!-- Series: streak_flame | Stage: 1 | Tier: C | Slug: streak_flame_stage_1 | Achievement Lineage: Polished Ember Bronze -->
+  <!-- Production Vector Quality: PRODUCTION_READY_VECTOR | External Studio/Rive Hand-off: ASSET_REQUIRED -->
+  <!-- Center: (50, 50), Avatar Aperture: r=40 (80px boundary) -->
+  <defs>
+    <linearGradient id="streakBronzeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdba74"/>
+      <stop offset="35%" stop-color="#f97316"/>
+      <stop offset="70%" stop-color="#c2410c"/>
+      <stop offset="100%" stop-color="#7c2d12"/>
+    </linearGradient>
+
+    <linearGradient id="streakEmberFlame" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+
+    <filter id="flameCDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#431407" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Core Polished Bronze Ring -->
+  <g class="flame-c-core" filter="url(#flameCDropShadow)">
+    <circle cx="50" cy="50" r="44.2" stroke="#431407" stroke-width="3.6"/>
+    <circle cx="50" cy="50" r="43.5" stroke="url(#streakBronzeGrad)" stroke-width="2.4"/>
+    <circle cx="50" cy="50" r="41" stroke="#fed7aa" stroke-width="0.8"/>
+  </g>
+
+  <!-- Delicate Ember Flame Crest (7-Day Milestone Accent at Top Apex) -->
+  <g class="flame-c-crest" filter="url(#flameCDropShadow)">
+    <path d="M50 4 C52 9, 56 12, 53 17 C50 20, 48 18, 47 15 C46 12, 48 8, 50 4 Z" fill="url(#streakEmberFlame)" stroke="#7c2d12" stroke-width="0.5"/>
+    <circle cx="50" cy="15" r="1.5" fill="#fef08a"/>
+  </g>
+
+  <!-- Tiny Bronze Stud Accents at 4 Cardinal Points -->
+  <circle cx="50" cy="94" r="1.5" fill="#fdba74" stroke="#7c2d12" stroke-width="0.5"/>
+  <circle cx="6" cy="50" r="1.5" fill="#fdba74" stroke="#7c2d12" stroke-width="0.5"/>
+  <circle cx="94" cy="50" r="1.5" fill="#fdba74" stroke="#7c2d12" stroke-width="0.5"/>
+</svg>

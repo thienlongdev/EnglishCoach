@@ -1,0 +1,41 @@
+{
+  "id": "sports-result",
+  "title": "Đưa kết quả hay nguyên nhân vào nền?",
+  "summary": "Trường thiếu người tham dự nên hoãn giải. Thử diễn đạt việc thiếu người bằng một lời báo riêng hoặc một mệnh đề phụ.",
+  "level": "B1",
+  "topics": [
+    "coordination",
+    "clauses-reason-result"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Cách sắp ý",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Hai thông báo"
+        },
+        {
+          "id": "v2",
+          "label": "Nêu rõ lý do"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Attendance was low, and we postponed the tournament.",
+      "vi": "Số người tham dự ít và chúng tôi đã hoãn giải.",
+      "note": "And nối hai thông tin ngang hàng. Lý do hoãn có thể suy ra nhưng chưa được nêu rõ bằng từ nối. / And coordinates two assertions.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Because attendance was low, we postponed the tournament.",
+      "vi": "Vì số người tham dự ít, chúng tôi đã hoãn giải.",
+      "note": "Because biến ý đầu thành mệnh đề phụ, giải thích trực tiếp cho quyết định hoãn. / Because explicitly makes low attendance the reason.",
+      "verdict": "ok"
+    }
+  }
+}

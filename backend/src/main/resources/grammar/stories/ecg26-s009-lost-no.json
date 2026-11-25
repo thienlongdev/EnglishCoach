@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s009-lost-no",
+  "title": "Chữ No rơi khỏi biển",
+  "summary": "Một mảnh giấy ghi chữ NOT trôi trên mặt hồ. Trên bờ, các bạn đang xếp hàng chờ cho cá ăn.",
+  "level": "A1",
+  "topics": [
+    "imperatives",
+    "statements-negatives-questions"
+  ],
+  "scene": "university",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Loan",
+      "role": "Người giữ hồ cá"
+    },
+    {
+      "id": "b",
+      "name": "Seth",
+      "role": "Bạn làm biển"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Cơn mưa làm rơi chữ NOT khỏi tấm biển DO NOT FEED THE FISH. Chữ DO còn dính lỏng ở mép giấy. Dòng dễ đọc nhất bây giờ là FEED THE FISH. Cá đã ăn sáng, còn Seth đang ôm một túi thức ăn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Stop! The fish have food.",
+          "vi": "Dừng lại! Cá có thức ăn rồi."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "One word is in your hand. Where does it go?",
+          "vi": "Một từ đang ở trong tay bạn. Đặt nó ở chỗ nào?"
+        }
+      ],
+      "choice": {
+        "prompt": "Loan cần khôi phục lời cấm cho cá ăn trên biển.",
+        "options": [
+          {
+            "t": "Feed the fish.",
+            "note": "Đây là lời yêu cầu cho ăn. Thiếu do not nên ý nghĩa đảo ngược với quy định.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "Do not feed the fish.",
+            "note": "Do not đặt trước động từ feed trong mệnh lệnh phủ định. Người đọc biết phải giữ thức ăn lại.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Seth kéo khóa túi. Các bạn lấy chì màu vẽ cá lên biển cho dễ hiểu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "My food stays in the bag.",
+          "vi": "Thức ăn của mình vẫn ở trong túi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Seth vừa mở túi thì Loan giơ mẩu NOT lên. Cậu nhìn đàn cá rồi cất túi đi.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Oh! No more food today.",
+          "vi": "Ồ! Hôm nay không cho thêm nữa."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Loan ghép chữ lại và bọc biển bằng tấm nhựa. Con cá nhỏ nhất bơi ngang hình con cá trên biển, hai cái đuôi trông như đang chạm nhau.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Look! Our sign has a friend.",
+          "vi": "Nhìn kìa! Tấm biển của mình có bạn rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

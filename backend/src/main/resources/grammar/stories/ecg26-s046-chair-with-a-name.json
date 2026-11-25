@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s046-chair-with-a-name",
+  "title": "Ghế mang tên người chưa đến",
+  "summary": "Một chiếc ghế có tên Sam ở phía diễn viên, một chiếc khác có chữ Sam ở hàng khán giả. Chỉ Sam mới biết cái nào dành cho em gái mình.",
+  "level": "A2",
+  "topics": [
+    "possessive-s-and-of"
+  ],
+  "scene": "lecture",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Diệu",
+      "role": "Người xếp chỗ"
+    },
+    {
+      "id": "b",
+      "name": "Ali",
+      "role": "Diễn viên mới"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Trong tin nhắn, Sam viết My sister has the front seat. Ali đang muốn đặt bó hoa của em gái Sam dưới đúng ghế trước khi màn mở.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Sam is on stage. The flowers aren't for him.",
+          "vi": "Sam ở trên sân khấu. Hoa không phải dành cho cậu ấy."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Who has the front seat, then?",
+          "vi": "Thế ai ngồi ghế hàng đầu?"
+        }
+      ],
+      "choice": {
+        "prompt": "Diệu trả lời để Ali tìm đúng người nhận hoa.",
+        "options": [
+          {
+            "t": "It's Sam's seat.",
+            "note": "Sam's seat chỉ ghế của chính Sam. Câu ngắn đúng cấu trúc nhưng làm mất người em gái nhận ghế hàng đầu.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "It's Sam's sister's seat.",
+            "note": "Hai sở hữu cách nối tiếp: Sam's sister là em gái Sam, còn 's sau sister gắn chiếc ghế với cô bé.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Ali đặt hoa xuống ghế hàng đầu. Sam từ sau rèm giơ ngón tay cái lên.",
+      "say": [
+        {
+          "who": "b",
+          "en": "She'll see them first.",
+          "vi": "Em ấy sẽ nhìn thấy hoa đầu tiên."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Ali cầm hoa tới cánh gà, thấy Sam đang diễn. Diệu chỉ hàng đầu, nơi em gái cậu vừa bước vào.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Right, the other Sam label!",
+          "vi": "Đúng rồi, cái ghế kia cũng có nhãn Sam!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Em gái Sam đặt bó hoa trên đầu gối. Khi anh diễn xong, cô nhón lấy một bông trao ngược lên sân khấu. Hai chiếc ghế mang cùng tên gia đình, nhưng giờ mỗi người đều có hoa.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Those two seats make sense now.",
+          "vi": "Giờ hai chiếc ghế ấy có lý rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

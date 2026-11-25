@@ -1,0 +1,18 @@
+{
+  "id":"relative-reference",
+  "title":"Dấu phẩy đổi nhóm người đang nói tới",
+  "summary":"So sánh mệnh đề xác định với thông tin bổ sung. Thử who và that trong từng mẫu mà không biến một ưu tiên văn phong thành lệnh cấm chung.",
+  "level":"B1",
+  "topics":["relative-clauses-defining","relative-clauses-non-defining"],
+  "kind":"switchboard",
+  "axes":[
+    {"id":"reference","label":"Bối cảnh tham chiếu","values":[{"id":"select","label":"Nhiều kỹ sư; chỉ nhóm sửa cảm biến được cảm ơn"},{"id":"extra","label":"Nhóm kỹ sư đã xác định; thêm việc họ sửa cảm biến"}]},
+    {"id":"relative","label":"Từ quan hệ làm chủ ngữ","values":[{"id":"who","label":"who"},{"id":"that","label":"that"}]}
+  ],
+  "results":{
+    "select|who":{"en":"The engineers who repaired the sensor received a thank-you note.","vi":"Những kỹ sư đã sửa cảm biến nhận được lời cảm ơn.","note":"Trong bối cảnh có nhiều nhóm, who repaired the sensor xác định nhóm nào được nhắc. Câu không nói các kỹ sư khác cũng nhận thư, cũng không chứng minh họ không nhận một thư khác.","verdict":"ok"},
+    "select|that":{"en":"The engineers that repaired the sensor received a thank-you note.","vi":"Những kỹ sư đã sửa cảm biến nhận được lời cảm ơn.","note":"That dùng được cho người trong mệnh đề xác định này. Who có thể là lựa chọn quen hơn trong một văn phong; không vì vậy chấm that là sai.","verdict":"ok"},
+    "extra|who":{"en":"The engineers, who repaired the sensor, received a thank-you note.","vi":"Nhóm kỹ sư đã xác định, những người đã sửa cảm biến, nhận được lời cảm ơn.","note":"Hai dấu phẩy đóng khung thông tin bổ sung về nhóm đang được nói tới. Câu không có nghĩa tất cả kỹ sư trên thế giới đều sửa cảm biến.","verdict":"ok"},
+    "extra|that":{"en":"The engineers, that repaired the sensor, received a thank-you note.","vi":"Ý định: thêm thông tin về nhóm kỹ sư đã xác định; cần sửa từ quan hệ.","note":"Trong mệnh đề quan hệ bổ sung chuẩn này, dùng who thay that. Nếu bỏ dấu phẩy để dùng that, bạn chuyển sang mẫu xác định và phải kiểm tra lại bối cảnh tham chiếu; đó không chỉ là sửa trang trí.","verdict":"bad"}
+  }
+}

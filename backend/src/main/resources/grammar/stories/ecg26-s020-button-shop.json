@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s020-button-shop",
+  "title": "Cửa hàng bán đúng một cái cúc",
+  "summary": "Ada đến chợ tìm một cái cúc bất kỳ cho chiếc áo gấu bông. Phúc bày đúng một cái cúc vàng trên khăn.",
+  "level": "A1",
+  "topics": [
+    "a-and-an",
+    "the-basics"
+  ],
+  "scene": "supermarket",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Phúc",
+      "role": "Người bán hàng"
+    },
+    {
+      "id": "b",
+      "name": "Ada",
+      "role": "Người sửa áo"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Phúc có cả hộp cúc dưới gầm bàn, nhưng chưa mở. Ada nhìn cái vàng duy nhất đang bày và nhận ra nó có hình con cá y chiếc cúc còn lại trên áo gấu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "I need a button. That yellow one is perfect.",
+          "vi": "Tôi cần một cái cúc. Cái vàng kia vừa đẹp."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "a",
+          "en": "I have a whole box. Which button do you want?",
+          "vi": "Tôi có cả hộp đấy. Cô muốn cái nào?"
+        }
+      ],
+      "choice": {
+        "prompt": "Ada chuyển từ yêu cầu chung sang đúng chiếc hai người đang nhìn.",
+        "options": [
+          {
+            "t": "A button from the box, please.",
+            "note": "A button xin một chiếc chưa xác định trong hộp. Câu lịch sự nhưng người bán có thể lấy chiếc rất khác chiếc vàng trên khăn.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "The yellow button, please.",
+            "note": "The chỉ chiếc nút vàng cụ thể mà cả hai đã nhận diện. Yellow giúp người bán chọn từ chỗ đang bày.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Phúc cầm đúng chiếc cúc hình cá. Ada đặt nó cạnh chiếc còn lại trên áo gấu.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Two little fish!",
+          "vi": "Hai con cá nhỏ kìa!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Phúc mở hộp và lấy một cái cúc nâu. Ada lắc đầu rồi chỉ con cá vàng. Ông mới hiểu.",
+      "say": [
+        {
+          "who": "a",
+          "en": "You want this fish.",
+          "vi": "Cô muốn con cá này."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Phúc khâu cúc ngay tại quầy bằng sợi chỉ vàng. Ada để con gấu ngồi bán hàng hộ ông mấy phút để ông kịp uống chén trà còn nóng.",
+      "say": [
+        {
+          "who": "b",
+          "en": "My bear has a job now.",
+          "vi": "Giờ chú gấu của tôi có việc làm rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

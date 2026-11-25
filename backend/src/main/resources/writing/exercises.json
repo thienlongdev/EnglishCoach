@@ -1,0 +1,240 @@
+{
+  "version": "1.0.0",
+  "exercises": [
+    {
+      "id": "ex-repair-aux-1",
+      "mode": "REPAIR",
+      "pattern_code": "THIRD_PERSON_SINGULAR_AUXILIARY",
+      "target_skill_code": "VERB_AGREEMENT_AND_TENSE",
+      "title": "Fix Third-Person Auxiliary",
+      "prompt": "Correct the auxiliary verb error in the sentence below while preserving the original meaning.",
+      "original_context": "She don't understand why the schedule changed so abruptly.",
+      "target_sentence": "She doesn't understand why the schedule changed so abruptly.",
+      "constraints": [
+        "Use 'does not' or 'doesn't'",
+        "Keep all other words unchanged"
+      ],
+      "hints": [
+        { "level": 1, "text": "Remember: for singular third-person subjects (he, she, it), standard English uses 'does/doesn't', not 'do/don't'." },
+        { "level": 2, "text": "Replace the word 'don't' with 'doesn't'." },
+        { "level": 3, "text": "Model answer: She doesn't understand why the schedule changed so abruptly." }
+      ],
+      "accepted_answers": [
+        "She doesn't understand why the schedule changed so abruptly.",
+        "She does not understand why the schedule changed so abruptly."
+      ]
+    },
+    {
+      "id": "ex-repair-aux-was-do",
+      "mode": "REPAIR",
+      "pattern_code": "INVALID_AUXILIARY_VERB_CONSTRUCTION",
+      "target_skill_code": "VERB_AGREEMENT_AND_TENSE",
+      "title": "Fix Auxiliary Verb Construction 'was do'",
+      "prompt": "Correct the incorrect auxiliary verb construction 'was do'. Depending on context, use simple past ('did') or past continuous ('was doing').",
+      "original_context": "I was do it by myself yesterday afternoon.",
+      "target_sentence": "I did it by myself yesterday afternoon.",
+      "constraints": [
+        "Replace 'was do' with correct past tense verb form",
+        "Keep all other words unchanged"
+      ],
+      "hints": [
+        { "level": 1, "text": "The auxiliary 'was' cannot be followed directly by a base verb like 'do'." },
+        { "level": 2, "text": "For a completed past action, replace 'was do' with the simple past 'did'." },
+        { "level": 3, "text": "Model answer: I did it by myself yesterday afternoon." }
+      ],
+      "accepted_answers": [
+        "I did it by myself yesterday afternoon.",
+        "I was doing it by myself yesterday afternoon."
+      ]
+    },
+    {
+      "id": "ex-repair-modal-1",
+      "mode": "REPAIR",
+      "pattern_code": "MODAL_AUXILIARY_BARE_INFINITIVE",
+      "target_skill_code": "VERB_AGREEMENT_AND_TENSE",
+      "title": "Modal Verb with Bare Infinitive",
+      "prompt": "Remove the unnecessary preposition following the modal verb.",
+      "original_context": "All employees must to submit their weekly timesheets by Friday.",
+      "target_sentence": "All employees must submit their weekly timesheets by Friday.",
+      "constraints": [
+        "Use the bare infinitive after 'must'",
+        "Do not use 'to' after 'must'"
+      ],
+      "hints": [
+        { "level": 1, "text": "Modal auxiliary verbs (can, could, must, should, will, would) take the base verb directly without 'to'." },
+        { "level": 2, "text": "Delete the word 'to' between 'must' and 'submit'." },
+        { "level": 3, "text": "Model answer: All employees must submit their weekly timesheets by Friday." }
+      ],
+      "accepted_answers": [
+        "All employees must submit their weekly timesheets by Friday."
+      ]
+    },
+    {
+      "id": "ex-repair-prep-1",
+      "mode": "REPAIR",
+      "pattern_code": "PREPOSITION_CHOICE_COLLOCATION",
+      "target_skill_code": "LEXICAL_PRECISION",
+      "title": "Preposition Collocation: Depend",
+      "prompt": "Correct the incorrect preposition that follows the verb 'depend'.",
+      "original_context": "Our future growth will depend of how well we innovate.",
+      "target_sentence": "Our future growth will depend on how well we innovate.",
+      "constraints": [
+        "Use the correct preposition that collocates with 'depend'"
+      ],
+      "hints": [
+        { "level": 1, "text": "The verb 'depend' always collocates with 'on' or 'upon', not 'of'." },
+        { "level": 2, "text": "Change 'depend of' to 'depend on'." },
+        { "level": 3, "text": "Model answer: Our future growth will depend on how well we innovate." }
+      ],
+      "accepted_answers": [
+        "Our future growth will depend on how well we innovate.",
+        "Our future growth will depend upon how well we innovate."
+      ]
+    },
+    {
+      "id": "ex-combine-1",
+      "mode": "COMBINE",
+      "pattern_code": "ARTICLE_MISSING_BEFORE_SINGULAR_COUNT_NOUN",
+      "target_skill_code": "CLAUSE_COMBINING_AND_COMPLEXITY",
+      "title": "Combine with Relative Clause",
+      "prompt": "Combine the two sentences into one fluent sentence using a relative clause with 'who'.",
+      "original_context": "Dr. Sarah Miller is a renowned researcher. She discovered the novel compound.",
+      "target_sentence": "Dr. Sarah Miller is a renowned researcher who discovered the novel compound.",
+      "constraints": [
+        "Combine into a single sentence",
+        "Use the relative pronoun 'who'"
+      ],
+      "hints": [
+        { "level": 1, "text": "Use 'who' to connect the person with what she did without repeating 'She'." },
+        { "level": 2, "text": "Replace '. She' with ' who '." },
+        { "level": 3, "text": "Model answer: Dr. Sarah Miller is a renowned researcher who discovered the novel compound." }
+      ],
+      "accepted_answers": [
+        "Dr. Sarah Miller is a renowned researcher who discovered the novel compound.",
+        "Dr. Sarah Miller, who is a renowned researcher, discovered the novel compound."
+      ]
+    },
+    {
+      "id": "ex-rewrite-1",
+      "mode": "REWRITE_NATURALLY",
+      "pattern_code": null,
+      "target_skill_code": "LEXICAL_PRECISION",
+      "title": "Idiomatic Polish",
+      "prompt": "Rewrite this awkward literal translation into natural, idiomatic English.",
+      "original_context": "We made a big discussion about this topic yesterday night.",
+      "target_sentence": "We had an extensive discussion about this topic last night.",
+      "constraints": [
+        "Use natural collocation for 'discussion' and 'night'",
+        "Avoid 'made a big discussion' and 'yesterday night'"
+      ],
+      "hints": [
+        { "level": 1, "text": "In English, we 'have a discussion' (not 'make') and say 'last night' (not 'yesterday night')." },
+        { "level": 2, "text": "Change 'made a big discussion' to 'had a detailed/extensive discussion' and 'yesterday night' to 'last night'." },
+        { "level": 3, "text": "Model answer: We had an in-depth discussion about this topic last night." }
+      ],
+      "accepted_answers": [
+        "We had an in-depth discussion about this topic last night.",
+        "We had an extensive discussion about this topic last night.",
+        "We had a long discussion about this topic last night.",
+        "We had a thorough discussion about this topic last night."
+      ]
+    },
+    {
+      "id": "ex-register-1",
+      "mode": "CHANGE_REGISTER",
+      "pattern_code": null,
+      "target_skill_code": "ACADEMIC_AND_PROFESSIONAL_REGISTER",
+      "title": "Elevate to Formal Register",
+      "prompt": "Transform this casual message into a formal professional email sentence.",
+      "original_context": "Hey guys, can you please send me the file asap?",
+      "target_sentence": "Could you please provide the requested document at your earliest convenience?",
+      "constraints": [
+        "Do not use casual greetings ('Hey guys')",
+        "Replace 'asap' with a formal equivalent",
+        "Use courteous request phrasing"
+      ],
+      "hints": [
+        { "level": 1, "text": "Use polite modal expressions like 'Could you please...' and replace 'asap' with 'at your earliest convenience'." },
+        { "level": 2, "text": "Begin with 'Could you please provide...' and conclude with 'at your earliest convenience?'" },
+        { "level": 3, "text": "Model answer: Could you please provide the requested file at your earliest convenience?" }
+      ],
+      "accepted_answers": [
+        "Could you please provide the requested file at your earliest convenience?",
+        "Could you please forward the document at your earliest convenience?",
+        "Could you please send the requested file at your earliest convenience?"
+      ]
+    },
+    {
+      "id": "ex-cohesion-1",
+      "mode": "IMPROVE_COHESION",
+      "pattern_code": null,
+      "target_skill_code": "PARAGRAPH_COHESION_AND_TRANSITIONS",
+      "title": "Enhance Discourse Cohesion",
+      "prompt": "Insert an appropriate transitional adverb (such as 'Furthermore', 'However', or 'Consequently') to connect these contrasting claims.",
+      "original_context": "The initial cost of solar installation is substantial. The long-term energy savings significantly outweigh the initial investment.",
+      "target_sentence": "The initial cost of solar installation is substantial; however, the long-term energy savings significantly outweigh the initial investment.",
+      "constraints": [
+        "Use a contrastive transition word such as 'However' or 'Nevertheless'",
+        "Ensure correct punctuation around the transition"
+      ],
+      "hints": [
+        { "level": 1, "text": "The second sentence contrasts with the first. Use a contrast marker like 'However' or 'Nevertheless'." },
+        { "level": 2, "text": "Place 'However,' at the beginning of the second sentence." },
+        { "level": 3, "text": "Model answer: The initial cost of solar installation is substantial. However, the long-term energy savings significantly outweigh the initial investment." }
+      ],
+      "accepted_answers": [
+        "The initial cost of solar installation is substantial. However, the long-term energy savings significantly outweigh the initial investment.",
+        "The initial cost of solar installation is substantial; however, the long-term energy savings significantly outweigh the initial investment.",
+        "The initial cost of solar installation is substantial. Nevertheless, the long-term energy savings significantly outweigh the initial investment."
+      ]
+    },
+    {
+      "id": "ex-expand-1",
+      "mode": "EXPAND",
+      "pattern_code": null,
+      "target_skill_code": "CLAUSE_COMBINING_AND_COMPLEXITY",
+      "title": "Expand Sentence with Contextual Modifiers",
+      "prompt": "Expand the simple sentence by adding descriptive details (location, timing, or manner) while keeping the core meaning intact.",
+      "original_context": "The train arrived.",
+      "target_sentence": "The express train arrived promptly at the crowded central station amid heavy morning rain.",
+      "constraints": [
+        "Expand the core clause 'The train arrived'",
+        "Include at least one descriptive modifier or location phrase"
+      ],
+      "hints": [
+        { "level": 1, "text": "Add modifiers answering when, where, or how the train arrived." },
+        { "level": 2, "text": "Specify what kind of train it was and which station it reached." },
+        { "level": 3, "text": "Model answer: The express train arrived promptly at the crowded central station amid heavy morning rain." }
+      ],
+      "accepted_answers": [
+        "The express train arrived promptly at the crowded central station amid heavy morning rain.",
+        "The morning train arrived at the busy station on time.",
+        "The express train arrived on time at the busy station."
+      ]
+    },
+    {
+      "id": "ex-paraphrase-1",
+      "mode": "PARAPHRASE",
+      "pattern_code": null,
+      "target_skill_code": "LEXICAL_PRECISION",
+      "title": "Paraphrase Complex Statement",
+      "prompt": "Paraphrase the statement using different grammatical structures and synonyms while maintaining the exact original meaning.",
+      "original_context": "Although the project faced severe budget constraints, the team delivered it on schedule.",
+      "target_sentence": "Despite significant financial limitations, the team completed the project on time.",
+      "constraints": [
+        "Maintain the original meaning",
+        "Avoid using 'Although' and 'budget constraints'"
+      ],
+      "hints": [
+        { "level": 1, "text": "Use 'Despite' or 'In spite of' followed by a noun phrase instead of 'Although'." },
+        { "level": 2, "text": "Replace 'budget constraints' with 'financial limitations' and 'delivered it on schedule' with 'completed the project on time'." },
+        { "level": 3, "text": "Model answer: Despite significant financial limitations, the team completed the project on time." }
+      ],
+      "accepted_answers": [
+        "Despite significant financial limitations, the team completed the project on time.",
+        "In spite of severe financial limitations, the team finished the project on schedule.",
+        "Despite facing severe budget limitations, the team finished the project on time."
+      ]
+    }
+  ]
+}

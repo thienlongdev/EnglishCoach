@@ -1,0 +1,41 @@
+{
+  "id": "bench-distance",
+  "title": "Ghế mới dài hơn bao nhiêu?",
+  "summary": "Bạn so kích thước hai ghế cho hành lang. Giữ longer rồi đổi phần mô tả chênh lệch. Câu nào cho số đo cụ thể?",
+  "level": "B1",
+  "topics": [
+    "degree-modifiers",
+    "comparison-advanced"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Mức chênh",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Nhỏ, ước lượng"
+        },
+        {
+          "id": "v2",
+          "label": "Đo được"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "This bench is slightly longer.",
+      "vi": "Ghế này dài hơn một chút.",
+      "note": "Slightly không cho biết chính xác dài hơn bao nhiêu. / Slightly gives an approximate small difference.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "This bench is ten centimetres longer.",
+      "vi": "Ghế này dài hơn mười xăngtimét.",
+      "note": "Ten centimetres trước longer là độ chênh giữa hai ghế, không phải toàn bộ chiều dài ghế. / The measure phrase gives the difference.",
+      "verdict": "ok"
+    }
+  }
+}

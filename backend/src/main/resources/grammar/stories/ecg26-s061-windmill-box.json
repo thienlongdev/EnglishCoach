@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s061-windmill-box",
+  "title": "Chiếc hộp không cần pin",
+  "level": "A2",
+  "topics": [
+    "infinitive-of-purpose"
+  ],
+  "scene": "university",
+  "summary": "Đèn trong một ngôi nhà giấy chỉ sáng khi ai đó thổi vào mái.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hà",
+      "role": "Người làm mô hình"
+    },
+    {
+      "id": "b",
+      "name": "Pia",
+      "role": "Bạn cùng nhóm"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Pia tìm pin trong hộp, còn Hà chỉ cánh quạt nhỏ gắn với mô tơ. Họ muốn mời khách tự thử.",
+      "say": [
+        {
+          "who": "a",
+          "en": "There's no battery under the floor.",
+          "vi": "Dưới sàn không có pin đâu."
+        },
+        {
+          "who": "b",
+          "en": "What do I blow on it for?",
+          "vi": "Mình thổi vào đó để làm gì?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Hà mô tả mục đích của hành động thổi.",
+        "options": [
+          {
+            "t": "Blow on the wheel to light the lamp.",
+            "note": "To light nói mục đích. Người thử phải thổi vào bánh quay, rồi sẽ thấy đèn sáng.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "Blow on the lamp to stop the wheel.",
+            "note": "Cấu trúc chỉ mục đích đúng nhưng đổi vật được thổi và đổi mục đích từ bật đèn sang dừng bánh. Không đúng cách mô hình được lắp.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Pia thổi một hơi ngắn. Qua ô cửa nhà giấy, một cái bàn bé tí hiện ra. Em bé xem mô hình cúi xuống chúc cả nhà ngủ ngon trước khi đèn tắt.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We made a room out of a breath.",
+          "vi": "Một hơi thở làm hiện ra cả căn phòng rồi."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Pia thổi vào đèn, nhà vẫn tối. Một cậu bé thổi vào bánh bên cạnh, ánh đèn lóe lên. Pia đưa luôn thẻ hướng dẫn cho cậu viết lại.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Our first visitor taught the second one.",
+          "vi": "Vị khách đầu tiên đã dạy vị khách thứ hai rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

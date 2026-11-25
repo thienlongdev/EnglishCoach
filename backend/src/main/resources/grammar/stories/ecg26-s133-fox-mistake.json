@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s133-fox-mistake",
+  "title": "Con cáo ở cuối địa chỉ",
+  "summary": "Một đứa trẻ ghi Fox sau tên phố vì hộp thư nhà được sơn thành mặt cáo. Bưu tá mới lại đi tìm đường Fox.",
+  "level": "B1",
+  "topics": [
+    "indirect-questions"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Thoa",
+      "role": "Người nhận thư"
+    },
+    {
+      "id": "b",
+      "name": "Kha",
+      "role": "Người giao thư"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Kha có ảnh một cái cổng đỏ với hai tai gỗ. Thoa muốn trẻ chỉ vị trí trên bản đồ mà không ép các em đoán tên phố người lớn dùng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The fox doesn't move. It lives on our gate.",
+          "vi": "Cáo không đi đâu cả. Nó ở trên cổng nhà em."
+        },
+        {
+          "who": "b",
+          "en": "Let's ask for the gate instead.",
+          "vi": "Vậy mình hỏi về cái cổng nhé."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Hỏi gián tiếp về vị trí cổng.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Can you show me where your gate is?",
+            "note": "Mệnh đề sau show me dùng your gate is, không đảo is lên trước. Đứa trẻ có thể trả lời bằng cách chỉ vào bản đồ.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Can you show me where is your gate?",
+            "note": "Where is your gate? đúng khi đứng độc lập. Trong câu hỏi gián tiếp của Kha cần trật tự chủ ngữ rồi động từ.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Em chỉ đúng góc đường có lò bánh. Kha đi theo mùi bánh và gặp đôi tai cáo thật ngoài sân.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The fox knew the address all along.",
+          "vi": "Cáo vẫn biết địa chỉ từ đầu."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Bức thư được bỏ vào miệng cáo. Tấm bản đồ nhỏ có thêm ký hiệu hai tai cho các em chưa biết đọc.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Thoa tách câu thành Show me on the map. Where is your gate? Trẻ vẽ hai tai lên góc đúng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Two ears make a fine map symbol.",
+          "vi": "Hai cái tai là ký hiệu bản đồ hay đấy."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Kha in bản sao cho cả phòng thư. Dù người mới đến, không ai còn đi tìm một con phố mang tên cáo.",
+      "end": true
+    }
+  ]
+}

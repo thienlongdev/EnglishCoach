@@ -1,0 +1,100 @@
+{
+  "id": "ecg26-s153-mended-letter",
+  "title": "Lá thư được thuê sửa",
+  "summary": "Tess phải ký tên dưới một lá thư đã rách làm đôi. Quyển sổ có chỗ cho người sở hữu và người phục chế, nhưng phòng trưng bày chỉ ghi tên cô.",
+  "level": "B2",
+  "topics": [
+    "have-something-done",
+    "passive-use"
+  ],
+  "scene": "office",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Tess",
+      "role": "Người giữ thư"
+    },
+    {
+      "id": "b",
+      "name": "Quân",
+      "role": "Thợ phục chế giấy"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Quân đã ghép mép rách bằng giấy mỏng. Dưới ánh sáng xiên, vết ghép chỉ là một đường mờ. Tess đã đặt công việc này chứ không tự mình thực hiện.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I promised my aunt I'd keep the two halves together.",
+          "vi": "Tôi đã hứa với dì là sẽ giữ hai nửa thư bên nhau."
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "You kept that promise. Now the label needs both our names.",
+          "vi": "Chị đã giữ lời. Giờ tấm nhãn cần tên cả hai chúng ta."
+        }
+      ],
+      "choice": {
+        "prompt": "Tess muốn ghi rõ mình đã nhờ Quân làm công việc chuyên môn này.",
+        "options": [
+          {
+            "t": "I had the letter repaired by Quân.",
+            "note": "Had + tân ngữ + phân từ cho thấy Tess thu xếp việc sửa. By Quân nêu người thực hiện.",
+            "ok": true,
+            "next": "path-1"
+          },
+          {
+            "t": "I repaired the letter for Quân.",
+            "note": "Dạng chủ động gán việc sửa cho Tess. For Quân lại biến Quân thành người được giúp.",
+            "ok": false,
+            "next": "path-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Quân viết tên bằng nét chì nhỏ cạnh vết ghép. Tess thêm tên dì vào ô người viết thư.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Three hands on one label, at last.",
+          "vi": "Cuối cùng một tấm nhãn cũng ghi đủ ba người góp tay."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Quân trao cho Tess chiếc kính lúp. Cô thấy cả mẩu giấy còn sót trên mũi bút của anh, rồi xin đổi nhãn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "My fingers are still covered in paste.",
+          "vi": "Tay tôi còn dính đầy hồ đây này."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Khách đầu tiên hỏi vì sao đường ghép còn thấy được. Tess bảo đó là chỗ hai trang từng rời nhau. Quân đặt một đèn đọc cạnh tủ để ai cũng nhìn được dấu nối.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Keeping something whole can leave a line worth seeing.",
+          "vi": "Giữ một vật nguyên vẹn đôi khi để lại một đường nối đáng nhìn."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

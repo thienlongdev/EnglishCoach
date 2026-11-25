@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s006-ticket-for-tea",
+  "title": "Tấm vé đổi lấy một tách trà",
+  "summary": "Paz đặt một tấm vé cũ lên quầy trà. Mặt sau có dòng chữ của bà Như.",
+  "level": "A1",
+  "topics": [
+    "subject-object-pronouns"
+  ],
+  "scene": "station",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Như",
+      "role": "Người bán trà"
+    },
+    {
+      "id": "b",
+      "name": "Paz",
+      "role": "Người đi tàu"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Như đọc lời bà viết từ lâu. Bất cứ ai mang vé trở lại sẽ được mời một tách trà. Paz chỉ sang người phụ nữ đang ngồi ở ghế đợi.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Is this cup for you?",
+          "vi": "Tách này dành cho anh à?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "No. It's my mother's ticket. She's over there.",
+          "vi": "Không. Vé của mẹ tôi. Bà ngồi đằng kia."
+        }
+      ],
+      "choice": {
+        "prompt": "Như muốn mời mẹ của Paz. Như nói gì với anh?",
+        "options": [
+          {
+            "t": "Please give it to me.",
+            "note": "Me chỉ Như, người đang nói. Lời này khiến tách trà quay lại quầy.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "Please give it to her.",
+            "note": "Her là đại từ tân ngữ chỉ mẹ của Paz, đứng sau to. It ở đây là tách trà.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Paz mang tách trà sang. Người phụ nữ nhận ra chiếc tách sứt miệng từ thời còn bé.",
+      "say": [
+        {
+          "who": "b",
+          "en": "She knows that cup!",
+          "vi": "Mẹ tôi nhận ra chiếc tách kia!"
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Paz chuyền tách lại. Như bật cười, chỉ về phía mẹ anh, rồi tự mang trà sang.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Mum, look at this cup.",
+          "vi": "Mẹ ơi, nhìn chiếc tách này đi."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Mẹ Paz đặt tay vào vết sứt. Ngày xưa chính bà làm rơi nó. Như lật tấm vé cũ cho bà xem. Hai người uống trà cho tới khi tàu đến.",
+      "say": [
+        {
+          "who": "a",
+          "en": "You can keep the ticket.",
+          "vi": "Bác cứ giữ tấm vé nhé."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

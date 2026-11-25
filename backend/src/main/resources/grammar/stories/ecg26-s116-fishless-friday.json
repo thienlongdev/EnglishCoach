@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s116-fishless-friday",
+  "title": "Ngày thứ Sáu không có cá",
+  "summary": "Bảng ăn trạm ghi “you don't have to order fish”. Uyên tưởng cá đã bị cấm đúng sinh nhật Sao.",
+  "level": "B1",
+  "topics": [
+    "mustnt-dont-have-to"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Uyên",
+      "role": "Người ghi nhật ký"
+    },
+    {
+      "id": "b",
+      "name": "Sao",
+      "role": "Kỹ thuật viên"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Cá vẫn có trong kho và còn một phần bánh rau. Quy định chỉ cho phép người ăn chọn món khác. Sao vẫn nhớ món cá cha thường làm.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Is there really no fish for your birthday?",
+          "vi": "Sinh nhật anh thật sự không có cá sao?"
+        },
+        {
+          "who": "b",
+          "en": "Read the line as a choice.",
+          "vi": "Đọc dòng ấy như một lựa chọn xem."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Uyên gửi lời mời đúng với quy định.",
+        "options": [
+          {
+            "ok": false,
+            "t": "You mustn't have fish today.",
+            "note": "Mustn't cấm ăn, mạnh hơn nhiều và trái với việc kho còn phục vụ cá. Lời mời này làm mất một lựa chọn thật.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "You can have fish, but you don't have to.",
+            "note": "Don't have to bỏ nghĩa bắt buộc chứ không cấm. Can have nói rõ món vẫn có sẵn.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Sao chọn nửa cá, nửa bánh rau, chia cho cả ca trực. Mọi người đoán được ai đã thêm thì là vì nó có mùi giống căn bếp cha anh.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That's Dad's fish, miles from his sea.",
+          "vi": "Cá của cha, dù cách biển ông xa thật xa."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Tờ thực đơn trống ở dòng cuối được điền bằng tên cha.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Sao nhìn món cá chưa mở rồi tự đọc bảng. Anh đem cả hai món ra và đề nghị sửa lại thông báo sinh nhật.",
+      "say": [
+        {
+          "who": "a",
+          "en": "A menu should leave room for a birthday.",
+          "vi": "Thực đơn vẫn nên chừa chỗ cho sinh nhật."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Uyên viết Thích gì chọn nấy dưới một hình cá đội mũ tiệc, treo tới hết chuyến.",
+      "end": true
+    }
+  ]
+}

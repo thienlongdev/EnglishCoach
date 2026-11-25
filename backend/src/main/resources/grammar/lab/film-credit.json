@@ -1,0 +1,41 @@
+{
+  "id": "film-credit",
+  "title": "Một người trong nhóm hay tất cả thành viên?",
+  "summary": "Phim ghi công ba trợ lý. Đổi cụm lượng từ trước of whom rồi kiểm tra bao nhiêu người được mệnh đề bổ sung mô tả.",
+  "level": "C1",
+  "topics": [
+    "relative-clauses-non-defining",
+    "whose-where-when"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Phạm vi bổ sung",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Một người"
+        },
+        {
+          "id": "v2",
+          "label": "Cả ba"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The three assistants, one of whom edited the sound, are listed here.",
+      "vi": "Ba trợ lý, trong đó có một người dựng âm thanh, được liệt kê ở đây.",
+      "note": "One làm chủ thể ngữ nghĩa của edited. Câu chính vẫn nói cả ba được liệt kê. / One of whom selects an individual within the three.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The three assistants, all of whom edited the sound, are listed here.",
+      "vi": "Ba trợ lý, cả ba đều dựng âm thanh, được liệt kê ở đây.",
+      "note": "All mở rộng thuộc tính dựng âm thanh cho cả nhóm. Quan hệ chính are listed không thay đổi. / All of whom attributes the work to every member.",
+      "verdict": "ok"
+    }
+  }
+}

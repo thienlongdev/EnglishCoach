@@ -1,0 +1,431 @@
+{
+  "manifest" : {
+    "schemaVersion" : "1.0",
+    "packageId" : "RAW-RAW_CAMBRIDGE_IELTS_1_T3",
+    "packageVersion" : 1,
+    "contentHash" : "22a65db27639d4321b7c4888714513a8424d4623d9f9017060c61f9293e455b2",
+    "creator" : "exam-raw-extractor",
+    "specificationBaselineId" : "EC-EXAM-SPEC-2026-09-10",
+    "authoringStatus" : "DRAFT",
+    "createdAt" : null,
+    "metadata" : {
+      "reviewOnlyReferences" : {
+        "transcripts" : [ {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+          "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3",
+          "pages" : "123-129"
+        } ],
+        "answerKeys" : [ {
+          "skill" : "LISTENING",
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+          "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3",
+          "pages" : "144",
+          "keysParsed" : 42
+        }, {
+          "skill" : "READING",
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+          "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3",
+          "pages" : "145-146",
+          "keysParsed" : 7
+        } ],
+        "note" : "References only. Transcript text is not embedded: the learner manifest projection has no stimulus/asset role allow-list yet (EXAM-AUD-032)."
+      },
+      "ocr" : { },
+      "practiceProjection" : {
+        "sourceContentHash" : "a7709696fc7a4f0beb729a5bc8b605018e8b12f2ab097604f8b7a7783164381b",
+        "version" : "exam-practice-projection-v1",
+        "retainedScopes" : [ "IELTS_WRITING_TASK_2" ],
+        "excludedScopes" : {
+          "IELTS_LISTENING_SECTION_2" : [ "QA_SCOPE_PENDING", "SCOPE_NOT_SELECTED" ],
+          "IELTS_WRITING_TASK_1" : [ "QA_SCOPE_PENDING", "SCOPE_NOT_SELECTED", "VISUAL_MISSING" ]
+        },
+        "sourcePackageId" : "RAW-RAW_CAMBRIDGE_IELTS_1_T3",
+        "fullSimulationGranted" : false,
+        "humanApprovalCreated" : false
+      },
+      "audioQAStatus" : "AUTOMATED_TECHNICAL_QA_ONLY_HUMAN_QA_REQUIRED",
+      "sourceProvenance" : {
+        "collection" : "cambridge",
+        "book" : "cambridge-ielts-1",
+        "test" : "TEST_3",
+        "rawSourceFile" : {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+          "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3"
+        },
+        "pageRange" : "62-79",
+        "audio" : [ {
+          "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Test 3 - Section 2.mp3",
+          "sha256" : "7d7b163288420c09ed0c1eb726a76ef58ed0a126494cc1f20793d829caf0ead0",
+          "section" : "PART_2",
+          "confidence" : "CONFIDENT"
+        } ],
+        "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json#ielts/cambridge-ielts-1/test-3",
+        "extractorName" : "exam-raw-extractor",
+        "extractorVersion" : "3.8.3",
+        "reviewStatus" : "UNREVIEWED"
+      },
+      "sourceIdentity" : {
+        "publisher" : "Cambridge University Press & Assessment",
+        "collection" : "cambridge",
+        "book" : "cambridge-ielts-1",
+        "bookTitle" : "Cambridge IELTS 1",
+        "test" : 3,
+        "rawSourceSha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3"
+      },
+      "displayName" : {
+        "current" : "Cambridge IELTS 1 — Test 3 (source extraction, draft)",
+        "ownerSelected" : null,
+        "status" : "PROVISIONAL_SOURCE_TITLE",
+        "policy" : "DISPLAY_NAME_MAY_CHANGE_SOURCE_PROVENANCE_MUST_NOT",
+        "renameTargets" : [ "form.title", "catalogNodes[].title" ]
+      },
+      "visualQAStatus" : "PAGE_REGION_RENDERING_HUMAN_QA_REQUIRED",
+      "rightsReviewStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED_PROJECT_USE_OWNER_AUTHORIZED",
+      "audioSegments" : [ ],
+      "sourceDocuments" : [ {
+        "path" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf",
+        "sha256" : "61cb97cb549481d6941447e3556df74fd6f0ad50ba7b8838d609eeb3ba4faae3",
+        "role" : "QUESTION_BOOK",
+        "textLayer" : "TEXT"
+      } ],
+      "extraction" : {
+        "status" : "NEEDS_REVIEW",
+        "extractorVersion" : "3.8.3",
+        "blockingCodes" : [ "ANSWER_KEY_MISSING_ITEM", "GROUP_TYPE_UNKNOWN", "OPTION_PARSE_FAILED", "PART_OMITTED", "QUESTION_NUMBER_GAP", "SECTION_OMITTED" ],
+        "reviewCodes" : [ "LAYOUT_LINEARIZED", "WRITING_VISUAL_NOT_FOUND" ]
+      },
+      "projectUsageAuthorization" : {
+        "status" : "OWNER_AUTHORIZED",
+        "scope" : "ENGLISHCOACH_PROJECT_USE",
+        "authorizedBy" : "PROJECT_OWNER",
+        "decisionDate" : "2026-10-06",
+        "decisionRef" : "EXAMS_CORPUS_OWNER_PRODUCTION_AUTHORIZATION_20261006",
+        "appliesTo" : "EXISTING_REPOSITORY_SOURCE_CORPUS",
+        "permits" : [ "EXTRACTION", "CANONICAL_PACKAGE_PREPARATION", "STAGING_VALIDATION", "LOCAL_STAGING_IMPORT_PREPARATION", "PRODUCTION_IMPORT", "PUBLICATION", "LEARNER_RUNTIME", "PRACTICE", "SIMULATION", "MEDIA", "SCORING", "RESULTS", "REVIEW" ],
+        "productionImport" : "OWNER_AUTHORIZED_PRODUCTION_USE",
+        "publisherLicence" : "NOT_ESTABLISHED",
+        "publisherEndorsement" : false
+      },
+      "humanReviewComplete" : false
+    }
+  },
+  "sources" : [ {
+    "id" : "2c7b9d14-802e-5297-9138-1d52febf3afd",
+    "code" : "RAW_CAMBRIDGE_CAMBRIDGE_IELTS_1",
+    "name" : "Cambridge IELTS 1",
+    "owner" : "Cambridge University Press & Assessment",
+    "publisher" : "Cambridge University Press & Assessment",
+    "sourceType" : "THIRD_PARTY_PUBLICATION",
+    "referenceMeta" : {
+      "rawCorpusRoot" : "imports/source-files/",
+      "rawManifestRef" : "imports/exams/manifests/raw-source/raw_source_manifest.json",
+      "rightsStatus" : "PUBLISHER_LICENCE_NOT_ESTABLISHED",
+      "projectUsageAuthorization" : "OWNER_AUTHORIZED",
+      "primaryDocument" : "imports/source-files/ielts/cambridge/Cambridge-ielts-1/Cambridge Practice Tests for IELTS 1.pdf"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  }, {
+    "id" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "code" : "EC_INTERNAL_ORIGINAL",
+    "name" : "English Coach original content",
+    "owner" : "English Coach",
+    "publisher" : "English Coach",
+    "sourceType" : "INTERNAL_ORIGINAL",
+    "referenceMeta" : {
+      "declaration" : "Rubrics and scoring metadata authored by English Coach; no external text"
+    },
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "licenses" : [ {
+    "id" : "a8cdb4e4-8e52-57a5-a1bb-38e90866ed4a",
+    "sourceId" : "2c7b9d14-802e-5297-9138-1d52febf3afd",
+    "licenseCode" : "UNKNOWN-RAW_CAMBRIDGE_CAMBRIDGE_IELTS_1",
+    "provenanceCategory" : "UNKNOWN",
+    "commercialRights" : false,
+    "redistributionRights" : false,
+    "derivativeRights" : false,
+    "permittedPurposes" : {
+      "LOCAL_PRIVATE_REVIEW" : true
+    },
+    "permittedTerritories" : { },
+    "validFrom" : null,
+    "validUntil" : null,
+    "attribution" : "Cambridge IELTS 1 — Cambridge University Press & Assessment. Publisher licence not established; used under the EnglishCoach project owner's authorization (2026-10-03), which is not a publisher licence or endorsement.",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  }, {
+    "id" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseCode" : "EC-ORIGINAL-DRAFT-PENDING-LEGAL",
+    "provenanceCategory" : "ORIGINAL",
+    "commercialRights" : true,
+    "redistributionRights" : true,
+    "derivativeRights" : true,
+    "permittedPurposes" : {
+      "EXAM" : true,
+      "SIMULATION" : true,
+      "PRACTICE" : true,
+      "CONTENT" : true
+    },
+    "permittedTerritories" : {
+      "GLOBAL" : true
+    },
+    "validFrom" : 1790985600.000000000,
+    "validUntil" : null,
+    "attribution" : "English Coach original draft; legal review pending",
+    "evidenceAssetId" : null,
+    "legalStatus" : "PENDING",
+    "createdAt" : null
+  } ],
+  "provenances" : [ {
+    "id" : "2d17dd20-7411-5910-81f7-711c698145da",
+    "sourceId" : "2c7b9d14-802e-5297-9138-1d52febf3afd",
+    "licenseId" : "a8cdb4e4-8e52-57a5-a1bb-38e90866ed4a",
+    "creator" : "exam-raw-extractor",
+    "acquisitionMethod" : "RAW_CORPUS_EXTRACTION",
+    "originalReference" : "Cambridge IELTS 1 / Test 3",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  }, {
+    "id" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "sourceId" : "5780aad2-0b8c-53d6-aa6b-5108e3f51429",
+    "licenseId" : "a417c4a8-54b9-500d-b856-e865d257ac69",
+    "creator" : "English Coach",
+    "acquisitionMethod" : "ORIGINAL_AUTHORING",
+    "originalReference" : "EC-RUBRIC-AND-SCORING-METADATA",
+    "derivativeParentId" : null,
+    "aiGenerationMeta" : null,
+    "createdAt" : null
+  } ],
+  "catalogNodes" : [ {
+    "id" : "6d41d0b0-cf70-5af7-b980-0e72ef59b21b",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "sourceId" : "2c7b9d14-802e-5297-9138-1d52febf3afd",
+    "parentId" : null,
+    "kind" : "VOLUME",
+    "title" : "Cambridge IELTS 1",
+    "year" : null,
+    "ordinal" : 0,
+    "retiredAt" : null,
+    "createdAt" : null
+  } ],
+  "specifications" : [ {
+    "id" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SPEC",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "deliveryMode" : "COMPUTER_SIMULATION",
+    "blueprint" : {
+      "source" : "RAW_CORPUS_EXTRACTION",
+      "family" : "IELTS",
+      "variant" : "ACADEMIC",
+      "scope" : "FULL"
+    },
+    "timingPolicy" : {
+      "listeningSeconds" : 1800,
+      "readingSeconds" : 3600,
+      "writingSeconds" : 3600,
+      "speakingSeconds" : 840
+    },
+    "navigationPolicy" : {
+      "sectionNavigation" : "fixed_sequence"
+    },
+    "playbackPolicy" : {
+      "mode" : "ONCE"
+    },
+    "sourceReferences" : {
+      "baseline" : "EC-EXAM-SPEC-2026-09-10"
+    },
+    "contentHash" : "01a9a5d6615e4c044e33620aacc7f229326296fc975b4c54a3fc1cc0d69efd4c",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "rubrics" : [ {
+    "id" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "logicalCode" : "EC_RAW_IELTS_WRITING_RUBRIC",
+    "version" : 1,
+    "family" : "IELTS",
+    "skill" : "WRITING",
+    "taskFamily" : "IELTS_WRITING",
+    "criteria" : {
+      "taskAchievement" : {
+        "weight" : 1
+      },
+      "coherenceAndCohesion" : {
+        "weight" : 1
+      },
+      "lexicalResource" : {
+        "weight" : 1
+      },
+      "grammaticalRangeAndAccuracy" : {
+        "weight" : 1
+      }
+    },
+    "ordinalScale" : {
+      "min" : 0,
+      "max" : 9,
+      "steps" : [ 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0 ]
+    },
+    "provenanceId" : "2d227b2a-8a67-54ae-8284-86705c21e9a7",
+    "contentHash" : "0d542a6e2c855fb3a6fa51ef83026cb296280b0f51f9073604b6756d4752e253",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "calibrations" : [ ],
+  "scoringSchemes" : [ {
+    "id" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "logicalCode" : "EC_RAW_IELTS_ACADEMIC_FULL_SCORING",
+    "version" : 1,
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "normalizationVersion" : "EC-NORM-V1",
+    "rubricReferences" : { },
+    "calibrationId" : null,
+    "mappingTable" : {
+      "metrics" : [ "LISTENING", "READING", "WRITING", "SPEAKING", "FULL_OVERALL" ],
+      "status" : "DRAFT_NOT_CALIBRATED",
+      "scoreLabel" : "English Coach estimated band"
+    },
+    "aggregationRules" : {
+      "officialEquating" : false,
+      "version" : "EC-AGGREGATION-DRAFT-V1",
+      "creditUnitsPerItem" : 1,
+      "task1Weight" : 1,
+      "task2Weight" : 2,
+      "overall" : "mean_of_four_quarter_rounding"
+    },
+    "contentHash" : "0780e29af069b167dab0956ac01663b2c8b509ca0f03839208766aa0b62ed428",
+    "approvedAt" : null,
+    "createdAt" : null
+  } ],
+  "form" : {
+    "id" : "ec4c56a3-ccea-5259-ac57-18bef6e3c818",
+    "logicalKey" : "RAW_CAMBRIDGE_IELTS_1_T3",
+    "version" : 1,
+    "title" : "Cambridge IELTS 1 — Test 3 (source extraction, draft)",
+    "family" : "IELTS",
+    "variant" : "ACADEMIC",
+    "scope" : "FULL",
+    "catalogNodeId" : "6d41d0b0-cf70-5af7-b980-0e72ef59b21b",
+    "specificationId" : "31c51da5-969f-5ecb-b7b5-9c326bd26bd1",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "lifecycleState" : "DRAFT",
+    "provenanceId" : "2d17dd20-7411-5910-81f7-711c698145da",
+    "authorId" : null,
+    "contentHash" : "0070a9ae31dfe8ef20206173b076cbb331406e2ecd8cc7441edaf7f63ab49ca7",
+    "publishedAt" : null,
+    "retiredAt" : null,
+    "createdAt" : null,
+    "primaryHealthStatus" : null
+  },
+  "formComponents" : [ ],
+  "sections" : [ {
+    "id" : "44a87ad4-5673-5cb3-912d-d5a1ca4b4922",
+    "formId" : "ec4c56a3-ccea-5259-ac57-18bef6e3c818",
+    "skill" : "WRITING",
+    "ordinal" : 2,
+    "specSectionKey" : "WRITING",
+    "scoringSchemeId" : "81b1a8d9-606e-5f10-a066-1ca71ecb01c4",
+    "durationSeconds" : 3600,
+    "timingPolicy" : {
+      "source" : "BLUEPRINT_DEFAULT"
+    },
+    "isRunnable" : true,
+    "healthStatus" : null
+  } ],
+  "parts" : [ {
+    "id" : "20c83423-a013-54a6-be19-9344f7383ca7",
+    "sectionId" : "44a87ad4-5673-5cb3-912d-d5a1ca4b4922",
+    "partCode" : "WRITING_TASK_2",
+    "ordinal" : 2,
+    "instructions" : null,
+    "timingPolicy" : {
+      "recommendedMinutes" : 40
+    }
+  } ],
+  "groups" : [ {
+    "id" : "9b4ccb77-a98e-5c9a-ad97-51b81fa846c8",
+    "logicalGroupKey" : "RAW_CAMBRIDGE_IELTS_1_T3_WRITING_TASK_2",
+    "version" : 1,
+    "questionType" : "WRITING_TASK_2",
+    "construct" : "written_production",
+    "skill" : "WRITING",
+    "topic" : null,
+    "difficultyEstimate" : null,
+    "provenanceId" : "2d17dd20-7411-5910-81f7-711c698145da",
+    "contentHash" : "24f94d3b2e19955f97ab93bd9ed11507bff61aadaf39f53830a7a2be12173295",
+    "createdAt" : null
+  } ],
+  "formGroups" : [ {
+    "id" : "3468d876-ca93-5fe3-a940-ae9bb60bdedb",
+    "partId" : "20c83423-a013-54a6-be19-9344f7383ca7",
+    "groupId" : "9b4ccb77-a98e-5c9a-ad97-51b81fa846c8",
+    "ordinal" : 1,
+    "displayNumbering" : "Task 2"
+  } ],
+  "stimuli" : [ {
+    "id" : "accba532-2156-51eb-aa39-55f4377384f9",
+    "logicalStimulusKey" : "RAW_CAMBRIDGE_IELTS_1_T3_WRITING_TASK_2_PROMPT",
+    "version" : 1,
+    "kind" : "TEXT",
+    "title" : null,
+    "bodyPayload" : {
+      "promptContext" : "You should spend about 40 minutes on this task. Present a written argument or case to an educated reader with no specialist knowledge of the following topic: News editors decide what to broadcast on television and what to print in newspapers. What factors do you think influence these decisions? Do we become used to bad news? Would it be better if more good news was reported? You should write at least 250 words. Use your own ideas, knowledge and experience and support your arguments with examples and relevant evidence."
+    },
+    "provenanceId" : "2d17dd20-7411-5910-81f7-711c698145da",
+    "contentHash" : "856eb2fc41a307d92268cbe886a61d1c952ad9cd8775c28c9a18ec4836ac333f",
+    "createdAt" : null
+  } ],
+  "groupStimuli" : [ {
+    "id" : "ccd6c858-9668-511f-8ffa-0ce313a94791",
+    "groupId" : "9b4ccb77-a98e-5c9a-ad97-51b81fa846c8",
+    "stimulusId" : "accba532-2156-51eb-aa39-55f4377384f9",
+    "role" : "PRIMARY_PROMPT",
+    "ordinal" : 2
+  } ],
+  "items" : [ {
+    "id" : "ee3efe1f-6b02-52a7-8712-8161912b4bef",
+    "groupId" : "9b4ccb77-a98e-5c9a-ad97-51b81fa846c8",
+    "logicalItemKey" : "RAW_CAMBRIDGE_IELTS_1_T3_W2",
+    "version" : 1,
+    "prompt" : "You should spend about 40 minutes on this task. Present a written argument or case to an educated reader with no specialist knowledge of the following topic: News editors decide what to broadcast on television and what to print in newspapers. What factors do you think influence these decisions? Do we become used to bad news? Would it be better if more good news was reported? You should write at least 250 words. Use your own ideas, knowledge and experience and support your arguments with examples and relevant evidence.",
+    "interactionType" : "WRITING_RESPONSE",
+    "optionDefinitions" : {
+      "responseMode" : "free_text",
+      "minimumWords" : 250,
+      "recommendedMinutes" : 40
+    },
+    "construct" : "writing_task",
+    "provenanceId" : "2d17dd20-7411-5910-81f7-711c698145da",
+    "contentHash" : "08370036859d6ed187ff39872838f43cadb69b7f264bdeb74c5f700c56ab90f3",
+    "createdAt" : null,
+    "ordinal" : 2
+  } ],
+  "answerSpecs" : [ {
+    "id" : "55ffc54c-a53c-5bed-827c-b4fb910bd7d6",
+    "itemId" : "ee3efe1f-6b02-52a7-8712-8161912b4bef",
+    "acceptedAnswers" : {
+      "policy" : "productive_response",
+      "minimumWords" : 250
+    },
+    "normalizationPolicy" : {
+      "version" : "EC-WRITING-TEXT-V1",
+      "preserveParagraphs" : true
+    },
+    "cardinality" : 1,
+    "wordLimit" : null,
+    "creditUnits" : 1.0,
+    "explanation" : "Productive task: evaluate with the pinned rubric only.",
+    "rubricId" : "f030d044-0c12-536e-bac2-9086d89de6a9",
+    "createdAt" : null
+  } ],
+  "assets" : [ ],
+  "stimulusAssets" : [ ]
+}

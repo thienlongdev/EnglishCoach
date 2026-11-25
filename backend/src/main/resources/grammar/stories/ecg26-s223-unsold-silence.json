@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s223-unsold-silence",
+  "title": "Khoảng lặng chưa bán",
+  "level": "C1",
+  "topics": [
+    "negation-scope"
+  ],
+  "scene": "interview",
+  "summary": "Bộ phim bán được phần nhạc nhưng chưa ai bàn xem khoảng lặng mười giây ở cuối thuộc về ai.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Nhã",
+      "role": "Người dựng phim"
+    },
+    {
+      "id": "b",
+      "name": "Ada",
+      "role": "Nghệ sĩ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Hợp đồng chỉ ghi âm nhạc đã sáng tác. Mười giây im là lựa chọn riêng của Ada để người xem nhớ một người bạn. Nhã mời cô quyết định cách ghi danh.",
+      "say": [
+        {
+          "who": "a",
+          "en": "We never agreed to sell every part of the ending.",
+          "vi": "Ta chưa từng thống nhất bán toàn bộ phần kết."
+        },
+        {
+          "who": "b",
+          "en": "Then say exactly what remains mine.",
+          "vi": "Vậy hãy nói rõ phần nào vẫn thuộc về tôi."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Nhã cần bảo toàn phần âm nhạc đã bán và phần im lặng chưa được thỏa thuận.",
+        "options": [
+          {
+            "t": "Nothing at the end was included in the sale.",
+            "note": "Nothing loại toàn bộ phần kết, trái với việc phần nhạc đã có hợp đồng. Nó phủ định nhiều hơn lời Ada.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "Not everything at the end was included in the sale.",
+            "note": "Not everything giới hạn phạm vi phủ định. Có phần đã bán, có phần chưa đưa vào.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Ada giữ mười giây trên bản phim nhỏ chiếu cho gia đình. Bản phát hành dùng tiếng lật trang nhạc và một dòng ghi công riêng. Ở buổi chiếu nhà, mọi người ngồi im hết mười giây.",
+      "say": [
+        {
+          "who": "b",
+          "en": "This time nobody had to fill the silence.",
+          "vi": "Lần này chẳng ai phải lấp khoảng im lặng."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Nhã thử bỏ cả nhạc. Ada nghe sự hụt hẫng ấy, tự cầm bút khoanh đúng mười giây cuối. Nhã phục hồi nhạc và giữ khoảng lặng cho buổi chiếu riêng.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I nearly gave you back a song you had already given away.",
+          "vi": "Suýt nữa tôi trả lại cô một bài cô đã trao đi rồi."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

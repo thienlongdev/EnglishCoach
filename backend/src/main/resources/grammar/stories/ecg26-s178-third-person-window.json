@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s178-third-person-window",
+  "title": "Cửa sổ gọi Sương là “cô ấy”",
+  "summary": "Cửa sổ trong phòng thời thơ ấu nói về Sương ở ngôi thứ ba. Đêm nào nó cũng kể cô đang trên đường về.",
+  "level": "B2",
+  "topics": [
+    "pronoun-reference",
+    "backshift"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sương",
+      "role": "Người thừa kế ngôi nhà"
+    },
+    {
+      "id": "b",
+      "name": "Lio",
+      "role": "Người đóng cửa chớp"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Lio phát hiện một băng ghi lời bà nói với người hàng xóm hai mươi năm trước. Bà chờ mẹ Sương, cũng mặc chiếc áo đỏ trong ảnh. Mốc thời gian quyết định người được gọi là she.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I wasn't born when that coat was new.",
+          "vi": "Lúc chiếc áo ấy còn mới thì tôi chưa sinh."
+        },
+        {
+          "who": "b",
+          "en": "Who could your grandmother have meant by she?",
+          "vi": "Thế bà cô có thể đã nói đến ai khi dùng she?"
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Sương diễn giải đại từ theo thời điểm bản ghi.",
+        "options": [
+          {
+            "ok": true,
+            "t": "She was probably talking about my mother coming home.",
+            "note": "Probably giữ khoảng dè dặt. Coming home được hiểu từ mốc bà đang chờ một người đã sống khi đó.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "She must mean me, because I'm listening now.",
+            "note": "Người nghe hiện tại không quyết định đối tượng của đại từ trên băng cũ. Must ở đây mạnh hơn các mốc ngày cho phép.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Sương đặt ảnh mẹ cạnh cửa. Miếng gỗ lỏng ngừng gõ lên nút phát lại. Lần đầu căn phòng yên, cô nghe tiếng mẹ thật ngoài sân gọi vào ăn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Three names are better company than one pronoun.",
+          "vi": "Ba cái tên làm bạn với nhau vui hơn một đại từ."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Đêm ấy họ ghi một câu mới, bằng cả ba cái tên để đời sau khỏi đoán.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Lio phát lại trước mặt Sương và mẹ cô cùng lúc. Không thể vì có hai người nghe mà she đổi sang chỉ cả hai.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The voice found the person it was waiting for.",
+          "vi": "Giọng nói tìm được người mà nó vẫn đợi."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Mẹ nhận ra lời bà dặn thuở đi học. Sương đưa băng về phòng mẹ, còn cửa sổ trở lại công việc lặng im giữ gió.",
+      "end": true
+    }
+  ]
+}

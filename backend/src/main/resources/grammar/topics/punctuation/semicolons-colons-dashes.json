@@ -1,0 +1,593 @@
+{
+  "schema": 1,
+  "slug": "semicolons-colons-dashes",
+  "version": 2,
+  "domain": "punctuation",
+  "order": 20,
+  "kind": "grammar",
+  "title": {
+    "vi": "Chấm phẩy, hai chấm, gạch ngang và trích dẫn",
+    "en": "Semicolons, colons, dashes and quotation marks"
+  },
+  "subtitle": {
+    "vi": "Chọn ranh giới theo quan hệ ý và quy cách biên tập",
+    "en": "Choose boundaries for meaning and editorial style"
+  },
+  "aliases": [
+    "semicolon colon dash",
+    "dấu chấm phẩy hai chấm",
+    "gạch ngang",
+    "quotation marks",
+    "ngoặc kép trích dẫn",
+    "however punctuation"
+  ],
+  "level": "B2",
+  "levelBasis": "editorial",
+  "prerequisites": [
+    "commas"
+  ],
+  "related": [
+    {
+      "slug": "commas",
+      "rel": "contrast"
+    },
+    {
+      "slug": "fragments-and-run-ons",
+      "rel": "more"
+    },
+    {
+      "slug": "direct-and-reported",
+      "rel": "more"
+    },
+    {
+      "slug": "sentence-variety",
+      "rel": "more"
+    }
+  ],
+  "objectives": [
+    "Nối các mệnh đề bằng chấm phẩy khi cấu trúc và quan hệ cho phép.",
+    "Dùng hai chấm để giới thiệu phần giải thích hoặc liệt kê đúng cấu trúc.",
+    "Phân biệt gạch ngang, gạch nối và quy ước đặt dấu quanh trích dẫn."
+  ],
+  "exam": {
+    "ielts": "Biên tập câu dài và mối quan hệ ý; nhiều dấu câu phức tạp không tự tạo điểm cao.",
+    "toeic": "Đọc danh sách, lời dẫn và thông báo có however hoặc thông tin chen."
+  },
+  "quick": {
+    "what": "**Chấm phẩy ;** có thể nối hai mệnh đề độc lập liên quan hoặc chia mục trong danh sách phức. **Hai chấm :** hướng người đọc tới phần triển khai. **Gạch ngang —** có thể đánh dấu phần chen hay một ý được nhấn. **Dấu trích dẫn** đánh dấu lời hoặc từ được trích, không thay nhiệm vụ của các dấu khác.",
+    "when": "Chọn sau khi xác định cấu trúc. Trong văn xuôi thông thường, phần trước hai chấm giới thiệu danh sách thường là một mệnh đề hoàn chỉnh. Tiêu đề, nhãn và định dạng đặc biệt có quy ước khác.",
+    "examples": [
+      {
+        "en": "The archive is closed today; it reopens tomorrow.",
+        "vi": "Kho lưu trữ hôm nay đóng cửa; ngày mai mở lại."
+      },
+      {
+        "en": "Bring two items: a torch and a notebook.",
+        "vi": "Mang theo hai vật: đèn pin và sổ tay."
+      }
+    ],
+    "remember": "However không tự đóng vai trò liên từ and/but. Cần ranh giới câu phù hợp khi hai phía là mệnh đề độc lập."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "The archive is closed today; it reopens tomorrow giữ hai thông tin trong một câu và cho thấy chúng liên quan. Có thể dùng hai câu riêng; chấm phẩy không phải dấu nâng cao bắt buộc. Nếu một phía chỉ là cụm từ hoặc mệnh đề phụ, không dùng mẫu nối hai mệnh đề độc lập máy móc."
+    },
+    {
+      "type": "formula",
+      "lines": [
+        {
+          "label": "Hai mệnh đề liên quan",
+          "parts": [
+            {
+              "t": "mệnh đề độc lập"
+            },
+            {
+              "t": ";"
+            },
+            {
+              "t": "mệnh đề độc lập"
+            }
+          ]
+        },
+        {
+          "label": "Có however",
+          "parts": [
+            {
+              "t": "mệnh đề độc lập"
+            },
+            {
+              "t": "; however,"
+            },
+            {
+              "t": "mệnh đề độc lập"
+            }
+          ]
+        },
+        {
+          "label": "Đổi sang hai câu",
+          "parts": [
+            {
+              "t": "mệnh đề độc lập."
+            },
+            {
+              "t": "However, mệnh đề độc lập."
+            }
+          ]
+        }
+      ],
+      "note": "However có các nghĩa và vị trí khác nữa. Mẫu ở đây là trạng từ chuyển ý mang nghĩa tuy nhiên, không phải mọi từ however đều cần cùng bộ dấu."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Dấu",
+        "Chức năng trong ví dụ",
+        "Ví dụ mới"
+      ],
+      "rows": [
+        [
+          ";",
+          "Nối mệnh đề độc lập liên quan",
+          "The scanner is old; it still works."
+        ],
+        [
+          ":",
+          "Triển khai điều đã giới thiệu",
+          "We found one problem: the cable was missing."
+        ],
+        [
+          "—",
+          "Đánh dấu phần chen",
+          "The scanner—a gift from a local shop—still works."
+        ],
+        [
+          "; trong danh sách",
+          "Tách mục đã có phẩy bên trong",
+          "The teams came from Leeds, England; Cork, Ireland; and Lyon, France."
+        ]
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "transform",
+        "steps": [
+          {
+            "label": "Hai câu riêng",
+            "sentence": "The hall is small. However, it has excellent lighting."
+          },
+          {
+            "label": "Một câu, ranh giới giữ rõ",
+            "sentence": "The hall is small; however, it has excellent lighting."
+          }
+        ]
+      },
+      "caption": "Ghép bằng chấm phẩy vẫn giữ ranh giới hai mệnh đề, không chỉ thay chấm bằng phẩy.",
+      "alt": "Hai câu The hall is small và However, it has excellent lighting được nối thành một câu bằng dấu chấm phẩy trước however và phẩy sau however."
+    },
+    {
+      "type": "p",
+      "vi": "Hai chấm có thể mở danh sách, lời giải thích hoặc lời trích sau một phần giới thiệu đầy đủ: We need three supplies: paper, ink and tape. Trong văn xuôi trung tính, tránh ngắt trực tiếp giữa động từ và tân ngữ bằng hai chấm như We need: paper and ink. Nhưng nhãn Supplies: paper and ink thuộc định dạng nhãn, không phải cùng cấu trúc câu; không chấm nó sai vì thiếu động từ."
+    },
+    {
+      "type": "contrast",
+      "items": [
+        {
+          "a": {
+            "en": "Only one item was missing: the access card.",
+            "vi": "Chỉ thiếu một thứ: thẻ ra vào."
+          },
+          "b": {
+            "en": "Only one item was missing—the access card.",
+            "vi": "Chỉ thiếu một thứ — thẻ ra vào."
+          },
+          "diff": "Hai chấm giới thiệu phần triển khai; gạch ngang có thể nhấn sự tiết lộ. Cả hai hợp lệ ở đây. Gạch ngang không phải dấu trừ hay gạch nối trong từ."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "vi": "Trích dẫn trực tiếp cần phân biệt lời người nói với lời dẫn: Ana said, “Bring a torch.” Một câu trích có thể được giới thiệu bằng hai chấm nếu phần dẫn đầy đủ và phong cách phù hợp. Việc chọn nháy đơn hoặc nháy kép, và đặt dấu phẩy/chấm trong hay ngoài nháy, tùy hệ quy cách. Trong nhiều phong cách AmE, phẩy/chấm ở trong; phong cách BrE thường xét dấu có thuộc nội dung trích không. Luôn nêu quy cách khi bài tập chỉ chấp nhận một cách."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "Did Ana say, “Bring a torch”?",
+          "vi": "Ana có nói “Mang đèn pin” không?",
+          "note": "Câu bao ngoài là câu hỏi; nội dung trích không phải câu hỏi."
+        },
+        {
+          "en": "Ana asked, “Is the torch charged?”",
+          "vi": "Ana hỏi: “Đèn pin được sạc chưa?”",
+          "note": "Dấu hỏi thuộc chính lời trích."
+        },
+        {
+          "en": "The guide—a volunteer from the museum—met us outside.",
+          "vi": "Người hướng dẫn, một tình nguyện viên bảo tàng, gặp chúng tôi bên ngoài.",
+          "note": "Hai gạch ngang bao phần chen; có thể biên tập lại bằng cặp phẩy."
+        }
+      ]
+    },
+    {
+      "type": "try",
+      "exercise": "scd-04"
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "Không phải mọi dấu hai chấm đều theo quy tắc mệnh đề hoàn chỉnh: giờ như 09:30, tiêu đề dạng Museum: a visitor's guide, nhãn biểu mẫu và lời chào thư có cấu trúc riêng. Bài học giới hạn quy tắc mệnh đề cho văn xuôi liền mạch, không dùng nó để phủ nhận các định dạng hợp lệ."
+    },
+    {
+      "type": "p",
+      "vi": "Gạch ngang dài (em dash) đánh dấu quan hệ giữa thành phần; gạch nối (hyphen) gắn từ hoặc bộ phận của từ như a well-lit corridor. Một số phong cách dùng gạch ngang ngắn có khoảng trắng thay em dash. Độ dài và khoảng cách là quy cách trình bày; không nên đánh đồng với việc có giữ đúng ranh giới ý hay không."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Hai chấm thường khiến phần sau được đọc như giải thích, minh họa hoặc phát triển phần trước. Chấm phẩy liên kết lỏng hơn. Chỉ thay dấu mà giữ từ đôi khi thay quan hệ được ngầm hiểu, nên phải đọc cả nghĩa, không xem chúng là các dấu trang trí thay thế vô hạn."
+    },
+    {
+      "type": "note",
+      "kind": "tip",
+      "vi": "Dấu trích dẫn không bảo đảm lời trích là đúng sự thật và không cho phép đổi nội dung của người nói. Ví dụ trong bài là lời thoại hư cấu để luyện cấu trúc. Khi trích nguồn thật, giữ nguyên nội dung và cung cấp xuất xứ phù hợp."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "scd-however",
+      "wrong": "The room was small, however, it was comfortable.",
+      "right": "The room was small; however, it was comfortable.",
+      "why": "Trong văn xuôi trang trọng thông thường, however không đủ để một dấu phẩy nối hai mệnh đề độc lập. Dùng hai câu riêng cũng được."
+    },
+    {
+      "id": "scd-colon",
+      "wrong": "The kit contains: a torch and a whistle.",
+      "right": "The kit contains a torch and a whistle.",
+      "why": "Ở câu văn liền mạch này, không chèn hai chấm giữa contains và tân ngữ. Có thể viết The kit contains two items: a torch and a whistle."
+    },
+    {
+      "id": "scd-fragment",
+      "wrong": "Although the room was small; we used it.",
+      "right": "Although the room was small, we used it.",
+      "why": "Although mở mệnh đề phụ nên dấu chấm phẩy không nối nó với câu chính theo mẫu hai mệnh đề độc lập."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Chấm phẩy chỉ là dấu phẩy mạnh hơn?",
+      "a": "Không đủ. Nó có điều kiện cấu trúc, chẳng hạn hai mệnh đề độc lập hoặc các mục của danh sách phức; không thể đặt ở mọi chỗ dấu phẩy xuất hiện."
+    },
+    {
+      "q": "Có bắt buộc dùng chấm phẩy trước however?",
+      "a": "Không nếu bắt đầu câu mới bằng However hoặc đặt however ở một cấu trúc khác. Quy tắc áp dụng khi nối hai mệnh đề độc lập trong một câu bằng trạng từ chuyển ý này."
+    },
+    {
+      "q": "Dấu chấm luôn phải trong ngoặc kép?",
+      "a": "Đó là quy ước phổ biến của nhiều phong cách AmE, không phải quy tắc duy nhất toàn bộ tiếng Anh. Cần nêu phong cách và phân biệt dấu thuộc lời trích với dấu của câu bao ngoài."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "scd-01",
+      "type": "choice",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Chọn câu phù hợp với văn xuôi trang trọng thông thường.",
+      "stem": "Hai phía however đều là mệnh đề độc lập.",
+      "options": [
+        {
+          "t": "The lift is old; however, it is reliable.",
+          "ok": true,
+          "note": "Chấm phẩy phân chia hai mệnh đề; phẩy tách trạng từ chuyển ý."
+        },
+        {
+          "t": "The lift is old, however, it is reliable.",
+          "note": "Comma splice trong phong cách đang luyện.",
+          "tag": "conjunctive-adverb-boundary"
+        },
+        {
+          "t": "Although the lift is old; it is reliable.",
+          "note": "Phía although là mệnh đề phụ, không phù hợp mẫu nối này.",
+          "tag": "semicolon-dependent"
+        }
+      ],
+      "explain": "Không chỉ nhìn however; phải xác định ranh giới và loại mệnh đề."
+    },
+    {
+      "id": "scd-02",
+      "type": "multi",
+      "level": "B2",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Chọn mọi cách nối hợp lệ giữ hai thông tin trong văn phong trung tính.",
+      "stem": "We checked the locks. We left at six.",
+      "options": [
+        {
+          "t": "We checked the locks; we left at six.",
+          "ok": true,
+          "note": "Hai mệnh đề độc lập có thể liên kết bằng chấm phẩy."
+        },
+        {
+          "t": "We checked the locks. We left at six.",
+          "ok": true,
+          "note": "Hai câu riêng cũng hợp lệ."
+        },
+        {
+          "t": "We checked; the locks we left at six.",
+          "note": "Ngắt ở sai ranh giới, làm hỏng quan hệ động từ và tân ngữ ở thông tin gốc.",
+          "tag": "clause-boundary"
+        }
+      ],
+      "explain": "Chấm phẩy là lựa chọn, không bắt buộc. Cần giữ nguyên ai làm gì và thời điểm."
+    },
+    {
+      "id": "scd-03",
+      "type": "match",
+      "level": "B2",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Ghép dấu với chức năng trong ví dụ.",
+      "pairs": [
+        {
+          "a": "The file is old; it still opens.",
+          "b": "Nối hai mệnh đề độc lập"
+        },
+        {
+          "a": "Bring one item: your ID.",
+          "b": "Giới thiệu phần giải thích sau câu dẫn"
+        },
+        {
+          "a": "The file—a backup copy—is safe.",
+          "b": "Bao thông tin chen bằng gạch ngang"
+        },
+        {
+          "a": "a well-lit room",
+          "b": "Gắn các thành phần trong tính từ ghép"
+        }
+      ],
+      "explain": "Dấu nối trong từ không làm cùng nhiệm vụ với gạch ngang giữa thành phần câu."
+    },
+    {
+      "id": "scd-04",
+      "type": "transform",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Ghép hai câu bằng một chấm phẩy.",
+      "source": "The museum is closed. The library remains open.",
+      "instruction": "Giữ mọi từ; thay dấu chấm giữa hai câu bằng chấm phẩy, viết the phía sau bằng chữ thường và giữ dấu chấm cuối câu.",
+      "accept": [
+        "The museum is closed; the library remains open."
+      ],
+      "model": "The museum is closed; the library remains open.",
+      "explain": "Hai phía đều là mệnh đề độc lập. Nội dung tương phản được giữ mà không thêm nguyên nhân chưa nêu.",
+      "caseMatters": true,
+      "terminalPunctuationMatters": true,
+      "known": [
+        {
+          "t": "The museum is closed; the library remains open?",
+          "verdict": "wrong",
+          "note": "Đề yêu cầu giữ dấu chấm cuối câu, không chuyển thành câu hỏi.",
+          "tag": "terminal-punctuation"
+        },
+        {
+          "t": "The museum is closed; the library remains open",
+          "verdict": "wrong",
+          "note": "Đề yêu cầu giữ dấu chấm cuối câu.",
+          "tag": "terminal-punctuation"
+        },
+        {
+          "t": "The museum is closed; The library remains open.",
+          "verdict": "wrong",
+          "note": "Trong mẫu đang luyện, từ thường ngay sau chấm phẩy không bắt đầu câu mới; đề đã yêu cầu viết thường.",
+          "tag": "semicolon-capitalization"
+        }
+      ]
+    },
+    {
+      "id": "scd-05",
+      "type": "error",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Tìm lỗi trong câu văn liền mạch, không phải nhãn danh sách.",
+      "segments": [
+        {
+          "t": "Our supplies include:",
+          "bad": true,
+          "fix": [
+            "Our supplies include"
+          ],
+          "note": "Không tách include khỏi tân ngữ bằng hai chấm trong câu này.",
+          "tag": "colon-verb-object"
+        },
+        {
+          "t": " batteries and tape."
+        }
+      ],
+      "explain": "Bỏ hai chấm, hoặc thêm một câu dẫn hoàn chỉnh trước danh sách."
+    },
+    {
+      "id": "scd-06",
+      "type": "choice",
+      "level": "B2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Trong câu này, dấu hỏi thuộc phần nào?",
+      "stem": "Did Mira say, “The bus has arrived”?",
+      "options": [
+        {
+          "t": "Câu hỏi bao ngoài về điều Mira nói.",
+          "ok": true,
+          "note": "Lời trích The bus has arrived là câu trần thuật."
+        },
+        {
+          "t": "Chắc chắn thuộc lời trích của Mira.",
+          "note": "Nội dung được trích không phải câu hỏi.",
+          "tag": "quotation-question-scope"
+        }
+      ],
+      "explain": "Phạm vi dấu hỏi phụ thuộc câu nào mang lực hỏi, không chỉ vị trí gần dấu nháy."
+    },
+    {
+      "id": "scd-07",
+      "type": "transform",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Bao phần bổ sung bằng một cặp em dash.",
+      "source": "The guide a local historian welcomed us.",
+      "instruction": "Giữ mọi từ; đặt dấu — ngay trước và sau a local historian. Theo quy cách của bài này, không đặt khoảng trắng quanh hai dấu —.",
+      "accept": [
+        "The guide—a local historian—welcomed us."
+      ],
+      "model": "The guide—a local historian—welcomed us.",
+      "explain": "Cặp gạch ngang đóng/mở phần chen. Đây là quy cách bài tập; phong cách dùng khoảng trắng hoặc cặp phẩy có thể hợp lệ trong văn bản khác."
+    },
+    {
+      "id": "scd-08",
+      "type": "open",
+      "level": "B2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Biên tập một thông báo cho người tham dự.",
+      "task": "Viết một câu có danh sách sau hai chấm, một câu nối hai mệnh đề bằng chấm phẩy và một câu trích lời nhân vật hư cấu. Giải thích một lựa chọn dấu câu.",
+      "model": [
+        "Bring two things: a badge and a notebook. The main entrance is closed; the side entrance is open. Our host said, “Please arrive early.”"
+      ],
+      "checklist": [
+        "Câu dẫn trước danh sách hoàn chỉnh theo mẫu văn xuôi.",
+        "Chấm phẩy nối đúng ranh giới.",
+        "Lời trích được đánh dấu đủ hai phía.",
+        "Quy cách trích dẫn nhất quán, không tự nhận là quy tắc duy nhất."
+      ],
+      "explain": "Các câu mẫu không phải lời trích có thật. Bài viết được tự đối chiếu, không chấm điểm học thuật tự động."
+    },
+    {
+      "id": "scd-09",
+      "type": "choice",
+      "level": "B2",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn cách dùng hai chấm trong văn xuôi liền mạch.",
+      "stem": "Người viết muốn giới thiệu hai vật cần mang.",
+      "options": [
+        {
+          "t": "Bring two items: a pass and a pen.",
+          "ok": true,
+          "note": "Bring two items là câu mệnh lệnh hoàn chỉnh."
+        },
+        {
+          "t": "Please bring: a pass and a pen.",
+          "note": "Ngắt động từ khỏi tân ngữ trong mẫu văn xuôi đã nêu.",
+          "tag": "colon-verb-object"
+        },
+        {
+          "t": "Bring two: items a pass and a pen.",
+          "note": "Ngắt giữa số đếm và danh từ, không đúng cấu trúc.",
+          "tag": "colon-boundary"
+        }
+      ],
+      "explain": "Hai chấm triển khai một ý đã đủ cấu trúc trong phần dẫn, không thay thế thành phần còn thiếu."
+    },
+    {
+      "id": "scd-10",
+      "type": "transform",
+      "level": "B2",
+      "use": "check",
+      "skill": "production",
+      "prompt": "Dùng chấm phẩy để ghép hai câu, giữ however.",
+      "source": "The tickets are expensive. However, the event is popular.",
+      "instruction": "Thay dấu chấm giữa câu bằng chấm phẩy, viết however bằng chữ thường, giữ dấu phẩy sau nó và dấu chấm cuối câu.",
+      "accept": [
+        "The tickets are expensive; however, the event is popular."
+      ],
+      "model": "The tickets are expensive; however, the event is popular.",
+      "explain": "However chuyển ý; chấm phẩy đảm nhiệm ranh giới giữa hai mệnh đề độc lập.",
+      "caseMatters": true,
+      "terminalPunctuationMatters": true,
+      "known": [
+        {
+          "t": "The tickets are expensive; however, the event is popular?",
+          "verdict": "wrong",
+          "note": "Đề yêu cầu giữ dấu chấm cuối câu, không chuyển thành câu hỏi.",
+          "tag": "terminal-punctuation"
+        },
+        {
+          "t": "The tickets are expensive; however, the event is popular",
+          "verdict": "wrong",
+          "note": "Đề yêu cầu giữ dấu chấm cuối câu.",
+          "tag": "terminal-punctuation"
+        },
+        {
+          "t": "The tickets are expensive; However, the event is popular.",
+          "verdict": "wrong",
+          "note": "Trong mẫu đang luyện, từ thường ngay sau chấm phẩy không bắt đầu câu mới; đề đã yêu cầu viết thường.",
+          "tag": "semicolon-capitalization"
+        }
+      ]
+    },
+    {
+      "id": "scd-11",
+      "type": "error",
+      "level": "B2",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Đây là nhãn trên biểu mẫu. Có cần sửa vì trước hai chấm không phải mệnh đề đầy đủ không?",
+      "segments": [
+        {
+          "t": "Required documents: "
+        },
+        {
+          "t": "passport, photograph, application form"
+        }
+      ],
+      "noError": true,
+      "explain": "Nhãn biểu mẫu có quy ước riêng. Không áp quy tắc văn xuôi liền mạch cho mọi dấu hai chấm."
+    },
+    {
+      "id": "scd-12",
+      "type": "choice",
+      "level": "B2",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chọn nhận xét đúng về dấu câu quanh lời trích.",
+      "stem": "Biên tập một văn bản tiếng Anh có quy cách riêng.",
+      "options": [
+        {
+          "t": "Cần xét dấu thuộc lời trích hay câu bao ngoài và quy cách Anh/Mỹ đang dùng.",
+          "ok": true,
+          "note": "Cả cấu trúc lẫn phong cách đều liên quan."
+        },
+        {
+          "t": "Mọi dấu câu trong mọi loại tiếng Anh đều phải nằm trong dấu nháy.",
+          "note": "Khẳng định quá rộng, sai với nhiều trường hợp và quy cách.",
+          "tag": "quotation-style-absolute"
+        },
+        {
+          "t": "Dấu nháy thay được chấm phẩy giữa hai mệnh đề.",
+          "note": "Chúng làm nhiệm vụ khác nhau.",
+          "tag": "punctuation-function"
+        }
+      ],
+      "explain": "Quy cách cần nhất quán nhưng không được mô tả một phong cách thành luật phổ quát."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "purdue-owl",
+      "note": "Main đã đọc Brief Overview of Punctuation ngày2026-11-01; reviewer đọc các phần Semicolon, Colon, Dash và Quotation Marks trong lượt review cùng ngày. Dùng nguyên tắc cấu trúc; không coi quy cách AmE của Purdue là lệnh cho mọi biến thể tiếng Anh. Reviewer cũng đọc mục Quotation marks của University of Oxford Style Guide để đối chiếu một quy cách BrE; đây không phải quy tắc của mọi phong cách BrE. Nguồn Oxford được ghi riêng trong MAIN-CONTENT-REVIEW.md, không quy cho Purdue. Ví dụ và bài tập là mới."
+    },
+    {
+      "ref": "cgt",
+      "note": "Tham khảo thêm về punctuation và reported language; chưa đọc trang bổ sung trực tiếp trong lượt này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

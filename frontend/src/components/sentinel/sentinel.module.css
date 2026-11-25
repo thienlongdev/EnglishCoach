@@ -1,0 +1,36 @@
+/* Echo Sentinel dialogs: opaque surfaces over any scene (no backdrop blur), product typeface, explicit contrast. */
+.scrim {
+  position: fixed; inset: 0; z-index: 2147480000; display: grid; place-items: center; padding: 16px;
+  background: rgb(4 10 24 / 0.78);
+}
+.panel {
+  --sn-accent: #f5c451;
+  width: min(560px, 100%); max-height: calc(100dvh - 32px); overflow-y: auto;
+  border-radius: 20px; padding: 24px 24px 20px; color: #eef3ff;
+  background: #101a33; border: 1px solid rgb(255 255 255 / 0.14);
+  box-shadow: 0 24px 64px rgb(0 0 0 / 0.5), inset 0 1px 0 rgb(255 255 255 / 0.08);
+}
+.panel[data-tone="void"] { --sn-accent: #ff8a8a; }
+.head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.icon { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 14px; color: #101a33; background: var(--sn-accent); flex: none; }
+.icon svg { width: 24px; height: 24px; }
+.title { margin: 0; font-size: 1.15rem; font-weight: 800; letter-spacing: 0.04em; color: var(--sn-accent); }
+.body { display: grid; gap: 10px; font-size: 0.98rem; line-height: 1.55; }
+.body p { margin: 0; }
+.fine { font-size: 0.84rem; color: #b9c4dc; }
+.error { color: #ffb4b4; font-weight: 700; }
+.actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; margin-top: 20px; }
+.primary, .ghost, .danger {
+  min-height: 44px; padding: 0 18px; border-radius: 12px; font: inherit; font-weight: 800; cursor: pointer;
+  border: 1px solid transparent;
+}
+.primary { color: #101a33; background: var(--sn-accent); }
+.ghost { color: #eef3ff; background: transparent; border-color: rgb(255 255 255 / 0.28); }
+.danger { color: #ffd2d2; background: #4a1620; border-color: #8a2a3a; }
+.primary:disabled, .ghost:disabled { opacity: 0.6; cursor: default; }
+.primary:focus-visible, .ghost:focus-visible, .danger:focus-visible { outline: 3px solid #ffd97a; outline-offset: 3px; }
+@media (max-width: 480px) {
+  .panel { padding: 20px 16px 16px; }
+  .actions { flex-direction: column-reverse; }
+  .actions > button { width: 100%; }
+}

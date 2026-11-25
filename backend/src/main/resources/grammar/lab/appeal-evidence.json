@@ -1,0 +1,35 @@
+{
+  "id": "appeal-evidence",
+  "title": "Đổi thứ tự bằng chứng và kết luận",
+  "summary": "Hai câu trong thư phản biện gồm một số đo và một kết luận có these readings. Đảo chúng rồi đọc như đoạn mở đầu không có biểu đồ đính kèm. Khi nào người đọc biết ngay từ chỉ định nhắc gì?",
+  "level": "C1",
+  "topics": [
+    "reference-chains",
+    "academic-grammar"
+  ],
+  "kind": "arrange",
+  "tokens": [
+    "These readings support a pause in testing.",
+    "Both gauges read zero."
+  ],
+  "orders": [
+    {
+      "seq": [
+        "Both gauges read zero.",
+        "These readings support a pause in testing."
+      ],
+      "verdict": "ok",
+      "note": "These readings gom hai kết quả đã được giới thiệu ở câu trước làm chủ ngữ của lập luận. / The demonstrative packages the two values as evidence.",
+      "effect": "Cả hai đồng hồ đều chỉ số không. Những số đo này ủng hộ việc tạm dừng thử nghiệm."
+    },
+    {
+      "seq": [
+        "These readings support a pause in testing.",
+        "Both gauges read zero."
+      ],
+      "verdict": "odd",
+      "note": "Nếu kết quả đã hiện trên bảng trước mặt, these readings vẫn tự nhiên. Ở đầu đoạn độc lập, người đọc phải đợi câu sau mới biết số đo nào. / The reader initially needs to infer a referent or look ahead.",
+      "effect": "Những số đo này ủng hộ việc tạm dừng thử nghiệm. Cả hai đồng hồ đều chỉ số không."
+    }
+  ]
+}

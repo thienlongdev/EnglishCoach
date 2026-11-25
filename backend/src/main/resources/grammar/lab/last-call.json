@@ -1,0 +1,41 @@
+{
+  "id": "last-call",
+  "title": "Trả lời ngắn vẫn mang thì nào?",
+  "summary": "Bạn nhận điện thoại hỏi đã đặt bàn chưa hoặc có thường đặt bàn không. Giữ câu trả lời yes, đổi trợ động từ để khớp với câu hỏi.",
+  "level": "B2",
+  "topics": [
+    "ellipsis",
+    "auxiliaries"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Câu hỏi vừa nghe",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Have you booked?"
+        },
+        {
+          "id": "v2",
+          "label": "Do you book ahead?"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Yes, I have.",
+      "vi": "Rồi, tôi đã đặt.",
+      "note": "Have giữ cấu trúc hoàn thành của câu hỏi. Phần booked được hiểu ngầm. / Have stands for have booked.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Yes, I do.",
+      "vi": "Có, tôi thường đặt trước.",
+      "note": "Do thay phần book ahead của câu hỏi về thói quen. Câu này không xác nhận lần đặt bàn cụ thể hôm nay. / Do stands for the simple-present predicate.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s084-paper-mirror",
+  "title": "Tấm gương bằng trang vở",
+  "level": "A2",
+  "topics": [
+    "reflexive-pronouns"
+  ],
+  "scene": "home",
+  "summary": "Mai không chịu ngồi yên cho anh vẽ. Kha nghĩ ra cách dựng hai cuốn vở đối diện để ai cũng được làm họa sĩ.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Kha",
+      "role": "Người vẽ chân dung"
+    },
+    {
+      "id": "b",
+      "name": "Mai",
+      "role": "Em gái"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Không có gương. Hai anh em ngồi đối mặt và mỗi người nhìn thấy mặt người kia. Mỗi bức vẽ sẽ là quà cho người trong tranh.",
+      "say": [
+        {
+          "who": "a",
+          "en": "I can see your nose. Can you see mine?",
+          "vi": "Anh thấy mũi em. Em thấy mũi anh không?"
+        },
+        {
+          "who": "b",
+          "en": "Yes! Who am I drawing?",
+          "vi": "Có! Em sẽ vẽ ai?"
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Kha chọn hướng cho trò vẽ phù hợp với cách ngồi hiện tại.",
+        "options": [
+          {
+            "t": "You draw me, and I draw you.",
+            "note": "Me và you làm tân ngữ chỉ người đối diện. Mỗi người vẽ được khuôn mặt đang nhìn thấy.",
+            "ok": true,
+            "next": "ending-1"
+          },
+          {
+            "t": "We each draw ourselves.",
+            "note": "Ourselves quay hành động trở lại chính người vẽ. Hai anh em sẽ phải dựa vào trí nhớ nếu không có gương.",
+            "ok": false,
+            "next": "ending-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Mai vẽ mũi Kha dài quá, Kha lại vẽ tai Mai to quá. Hai người đổi tranh, nhìn chính mình bằng ánh mắt của người kia rồi cùng ký tên.",
+      "say": [
+        {
+          "who": "b",
+          "en": "That's how I look to you!",
+          "vi": "Thì ra em trông như thế trong mắt anh!"
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Mai nhắm mắt vẽ mặt mình qua cảm giác bàn tay sờ má. Kha thử theo. Họ giữ cả hai bức chân dung đoán mò làm bìa album gia đình.",
+      "say": [
+        {
+          "who": "a",
+          "en": "My fingers remember a different nose.",
+          "vi": "Mấy ngón tay anh nhớ một cái mũi khác hẳn."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

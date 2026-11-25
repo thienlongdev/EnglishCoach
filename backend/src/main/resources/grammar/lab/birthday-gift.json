@@ -1,0 +1,40 @@
+{
+  "id": "birthday-gift",
+  "title": "Ai tặng ai chiếc mũ?",
+  "summary": "Có một chiếc mũ trên bàn sinh nhật. Khi thiếu tên người tặng và khi thiếu tên người nhận, câu nào cần did?",
+  "level": "A2",
+  "topics": [
+    "subject-object-questions"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Vai chưa biết",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Người tặng"
+        },
+        {
+          "id": "v2",
+          "label": "Người nhận"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Who gave Linh the hat?",
+      "vi": "Ai đã tặng Linh chiếc mũ?",
+      "note": "Who thay chủ ngữ nên vẫn dùng gave và không thêm did. / Who is the subject of gave.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Who did Linh give the hat to?",
+      "vi": "Linh đã tặng chiếc mũ cho ai?",
+      "note": "Linh đã là chủ ngữ. Did mang thì quá khứ nên give ở dạng nguyên mẫu. / The question asks for the recipient.",
+      "verdict": "ok"
+    }
+  }
+}

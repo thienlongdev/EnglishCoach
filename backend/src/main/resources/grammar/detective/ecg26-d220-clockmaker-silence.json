@@ -1,0 +1,29 @@
+{
+  "id": "ecg26-d220-clockmaker-silence",
+  "title": "Khoảng lặng của thợ đồng hồ",
+  "brief": "Băng ghi cuộc phỏng vấn mất một đoạn sau câu đối chiếu. Bản tốc ký liệt kê hai người, hai việc. Khôi phục lời tường thuật để tránh giao nhầm cả hai việc cho cô học nghề.",
+  "level": "C1",
+  "topics": [
+    "ellipsis",
+    "parallelism"
+  ],
+  "paragraph": [
+    {
+      "t": "Lan agreed to polish the case, and her mentor agreed to reset the hands. Their work consisted of"
+    },
+    {
+      "t": "polishing the case and to reset the hands",
+      "fix": [
+        "polishing the case and resetting the hands"
+      ],
+      "bad": true,
+      "cat": "word-form",
+      "note": "Consisted of giới thiệu hai hoạt động cùng phụ thuộc giới từ of. Dùng polishing ... and resetting ... để cả hai làm bổ ngữ của of."
+    },
+    {
+      "t": ". Lan took the cloth, her mentor the key.",
+      "note": "Động từ took được lược ở vế thứ hai trong kết cấu đối chiếu. Câu không thiếu chủ thể hành động. Chiếc khăn theo Lan và chìa khóa theo người thầy, khớp với phân công ở đầu băng.",
+      "decoy": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "questions-permission",
+  "title": "Do you mind nếu trả lời yes thì sao?",
+  "summary": "Ở phòng thu âm, một người muốn mở cửa. Thử trả lời thẳng theo động từ mind hoặc diễn giải bằng hành động để tránh hiểu nhầm.",
+  "level": "C1",
+  "topics": [
+    "pragmatic-softening",
+    "negative-questions"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Thái độ người nghe",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Đồng ý mở"
+        },
+        {
+          "id": "v2",
+          "label": "Muốn giữ cửa đóng"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "No, I don't mind. Go ahead.",
+      "vi": "Không, tôi không phiền đâu. Cứ mở đi.",
+      "note": "Với câu Do you mind if I open the door?, no trả lời không phiền. Go ahead xác nhận cách hiểu. / No negates the objection and grants permission here.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Actually, I do mind. Could we keep it closed?",
+      "vi": "Thật ra tôi có thấy phiền. Ta để cửa đóng được không?",
+      "note": "Do mind xác nhận người nghe có ngại việc mở cửa. Câu hỏi tiếp theo làm rõ mong muốn mà không phụ thuộc vào một chữ yes. / Affirmative do confirms an objection.",
+      "verdict": "ok"
+    }
+  }
+}

@@ -1,0 +1,471 @@
+{
+  "schema": 1,
+  "slug": "clauses-contrast",
+  "version": 2,
+  "domain": "clauses",
+  "order": 40,
+  "kind": "grammar",
+  "title": {
+    "vi": "Tương phản: although, while, whereas",
+    "en": "Clauses of contrast"
+  },
+  "subtitle": {
+    "vi": "Đối chiếu và điều trái kỳ vọng",
+    "en": "Contrast choices and unexpected outcomes"
+  },
+  "aliases": [
+    "mệnh đề tương phản",
+    "although though whereas while",
+    "despite in spite of",
+    "despite of"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "objectives": [
+    "Phân biệt đối chiếu với nhượng bộ.",
+    "Dùng although với mệnh đề và despite với cụm phù hợp.",
+    "Nhận ra while thời gian và while tương phản."
+  ],
+  "prerequisites": [
+    "subordination"
+  ],
+  "related": [
+    {
+      "slug": "subordination",
+      "rel": "more"
+    },
+    {
+      "slug": "clauses-reason-result",
+      "rel": "contrast"
+    }
+  ],
+  "exam": {
+    "ielts": null,
+    "toeic": null
+  },
+  "quick": {
+    "what": "Although/though thường nêu điều trái kỳ vọng; whereas và while thường đối chiếu hai sự việc. Despite/in spite of là cấu trúc giới từ.",
+    "when": "Chọn theo quan hệ ý và loại phần đi sau.",
+    "examples": [
+      {
+        "en": "[SUB|Although] it was cold, we stayed outside.",
+        "vi": "Dù trời lạnh, chúng tôi vẫn ở ngoài."
+      }
+    ]
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Although it was cold, we stayed outside nêu một điều thường có thể cản việc ở ngoài nhưng thực tế không cản. Trong I like tea, whereas Lan likes coffee, hai sở thích được đối chiếu mà không cần có kết quả bất ngờ."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "slots",
+        "slots": [
+          {
+            "label": "Điều có thể cản",
+            "items": [
+              "it was raining"
+            ]
+          },
+          {
+            "label": "Kết quả thực tế",
+            "items": [
+              "we went out anyway"
+            ]
+          }
+        ],
+        "sentence": "Although {0}, {1}."
+      },
+      "caption": "Câu nhượng bộ đặt kết quả thực tế bên cạnh điều khiến ta có thể chờ kết quả khác.",
+      "alt": "Câu nhượng bộ đặt kết quả thực tế bên cạnh điều khiến ta có thể chờ kết quả khác."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Cấu trúc",
+        "Phần theo sau",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "although/though",
+          "mệnh đề",
+          "although it was noisy"
+        ],
+        [
+          "despite",
+          "cụm danh từ hoặc -ing",
+          "despite the noise / despite feeling tired"
+        ],
+        [
+          "in spite of",
+          "cụm danh từ hoặc -ing",
+          "in spite of the rain"
+        ],
+        [
+          "whereas/while",
+          "mệnh đề đối chiếu",
+          "while Lan prefers coffee"
+        ]
+      ]
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "Although she was tired, she helped.",
+          "vi": "Dù mệt, cô ấy vẫn giúp."
+        },
+        {
+          "en": "Despite being tired, she helped.",
+          "vi": "Dù mệt, cô ấy vẫn giúp."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Không viết despite of; dùng despite hoặc in spite of. Với mệnh đề hữu hạn có thể dùng despite the fact that, nhưng không cần thêm cụm dài này nếu although đã rõ."
+    }
+  ],
+  "deep": [
+    {
+      "type": "p",
+      "vi": "While có thể chỉ thời gian hoặc đối chiếu. I cooked while she washed the dishes có cách hiểu đồng thời; I like tea while she prefers coffee có cách hiểu đối chiếu. Ngữ cảnh quan trọng."
+    },
+    {
+      "type": "p",
+      "vi": "Trong văn viết trung tính, Although ..., but ... thường là cách ghép dư quan hệ; chọn although với mệnh đề chính hoặc but nối hai mệnh đề ngang hàng. Không suy mọi sự xuất hiện của although và but trong cùng một câu đều sai."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Though còn xuất hiện cuối câu như It is useful, though trong lời nói và văn phong thân mật. Đây là cách dùng khác với though mở đầu mệnh đề."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "clauses-contrast-m1",
+      "wrong": "Despite of the rain, we left.",
+      "right": "Despite the rain, we left.",
+      "why": "Despite không kèm of."
+    },
+    {
+      "id": "clauses-contrast-m2",
+      "wrong": "Although the noise, I slept.",
+      "right": "Despite the noise, I slept.",
+      "why": "The noise là cụm danh từ; although cần mệnh đề trong mẫu đầy đủ này."
+    }
+  ],
+  "faq": [
+    {
+      "q": "While có luôn nghĩa trong khi không?",
+      "a": "Không. Nó còn đối chiếu hai ý, tùy ngữ cảnh."
+    },
+    {
+      "q": "Despite có đi với mệnh đề không?",
+      "a": "Có thể qua the fact that, như despite the fact that it rained. Không lấy trực tiếp it rained theo mẫu cơ bản."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ctr-01",
+      "prompt": "Chọn từ nối phù hợp với mệnh đề sau chỗ trống.",
+      "explain": "Although lấy mệnh đề hữu hạn; despite lấy cụm danh từ hoặc -ing.",
+      "skill": "form",
+      "use": "practice",
+      "type": "choice",
+      "stem": "___ it was raining, we walked home.",
+      "options": [
+        {
+          "t": "Although",
+          "ok": true,
+          "note": "Theo sau là it was raining."
+        },
+        {
+          "t": "Despite",
+          "ok": false,
+          "note": "Không lấy trực tiếp mệnh đề này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "In spite",
+          "ok": false,
+          "note": "In spite cần of và cấu trúc theo sau phù hợp.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ctr-02",
+      "prompt": "Nối cấu trúc với dạng theo sau.",
+      "explain": "Giữ khác biệt giữa liên từ và giới từ.",
+      "skill": "recognition",
+      "use": "practice",
+      "type": "match",
+      "pairs": [
+        {
+          "a": "although",
+          "b": "although it rained"
+        },
+        {
+          "a": "despite",
+          "b": "despite the rain"
+        },
+        {
+          "a": "in spite of",
+          "b": "in spite of feeling tired"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ctr-03",
+      "prompt": "Phân loại while theo nghĩa trong câu.",
+      "explain": "While có thể đối chiếu hoặc nêu đồng thời.",
+      "skill": "meaning",
+      "use": "practice",
+      "type": "classify",
+      "cats": [
+        "Đối chiếu",
+        "Thời gian đồng thời"
+      ],
+      "items": [
+        {
+          "t": "I prefer tea, while Lan prefers coffee.",
+          "cat": "Đối chiếu"
+        },
+        {
+          "t": "I cooked while Lan washed the dishes; both activities happened at the same time.",
+          "cat": "Thời gian đồng thời"
+        },
+        {
+          "t": "This model is cheap, whereas that one is expensive.",
+          "cat": "Đối chiếu"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ctr-04",
+      "prompt": "Điền although hoặc despite theo dạng phần sau.",
+      "explain": "Although + mệnh đề; despite + cụm danh từ.",
+      "skill": "form",
+      "use": "practice",
+      "type": "cloze",
+      "stem": "We continued {1} the rain. We continued {2} it was raining.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "despite",
+            "in spite of"
+          ]
+        },
+        "2": {
+          "accept": [
+            "although",
+            "though",
+            "even though"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "ctr-05",
+      "prompt": "Sửa cấu trúc despite, giữ cụm danh từ.",
+      "explain": "Despite không có of; in spite of là cụm khác.",
+      "skill": "form",
+      "use": "practice",
+      "type": "error",
+      "segments": [
+        {
+          "t": "We left"
+        },
+        {
+          "t": "despite of",
+          "bad": true,
+          "fix": [
+            "despite",
+            "in spite of"
+          ],
+          "note": "Dùng despite hoặc in spite of.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "the warning."
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ctr-06",
+      "prompt": "Sắp xếp câu bắt đầu bằng Although; giữ mệnh đề phụ trước.",
+      "explain": "Although đưa sự trái kỳ vọng; dấu phẩy nằm sau mệnh đề đầu.",
+      "skill": "form",
+      "use": "practice",
+      "type": "order",
+      "tokens": [
+        "Although",
+        "it was cold,",
+        "we",
+        "stayed outside"
+      ],
+      "accept": [
+        [
+          "Although",
+          "it was cold,",
+          "we",
+          "stayed outside"
+        ]
+      ],
+      "end": ".",
+      "level": "B1"
+    },
+    {
+      "id": "ctr-07",
+      "prompt": "Đổi sang despite và cụm danh từ.",
+      "explain": "Đổi cấu trúc mà giữ quan hệ nhượng bộ.",
+      "skill": "production",
+      "use": "practice",
+      "type": "transform",
+      "source": "Although it rained, we continued.",
+      "instruction": "Dùng Despite the rain ở đầu rồi we continued.",
+      "accept": [
+        "Despite the rain, we continued"
+      ],
+      "model": "Despite the rain, we continued",
+      "level": "B1"
+    },
+    {
+      "id": "ctr-08",
+      "prompt": "Viết hai kiểu tương phản.",
+      "explain": "Tự đối chiếu; không cấp mastery tự động.",
+      "skill": "production",
+      "use": "practice",
+      "type": "open",
+      "task": "Viết một câu đối chiếu hai lựa chọn với whereas hoặc while, một câu trái kỳ vọng với although và viết lại câu ấy bằng despite.",
+      "model": [
+        "The first room is bright, whereas the second is quiet. Although it was raining, we went out. Despite the rain, we went out."
+      ],
+      "checklist": [
+        "Đối chiếu và trái kỳ vọng có nghĩa rõ.",
+        "Despite theo sau bằng cụm phù hợp.",
+        "Không tự thêm but như phần bắt buộc sau although."
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ctr-09",
+      "prompt": "Điền dạng của be và giới từ trong in spite of.",
+      "explain": "Mệnh đề hữu hạn cần was; in spite of giữ đủ cụm.",
+      "skill": "form",
+      "use": "check",
+      "type": "cloze",
+      "stem": "Although she {1} (be) tired last night, she helped. She helped in spite {2} her tiredness.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "was"
+          ]
+        },
+        "2": {
+          "accept": [
+            "of"
+          ]
+        }
+      },
+      "level": "B1"
+    },
+    {
+      "id": "ctr-10",
+      "prompt": "Đổi sang although và mệnh đề.",
+      "explain": "Although cần chủ ngữ và động từ ở câu hữu hạn này.",
+      "skill": "production",
+      "use": "check",
+      "type": "transform",
+      "source": "Despite the noise, I slept well.",
+      "instruction": "Dùng Although it was noisy ở đầu; giữ I slept well sau dấu phẩy.",
+      "accept": [
+        "Although it was noisy, I slept well"
+      ],
+      "model": "Although it was noisy, I slept well",
+      "level": "B1"
+    },
+    {
+      "id": "ctr-11",
+      "prompt": "Chọn tất cả câu chuẩn.",
+      "explain": "Despite và although không lấy cùng loại bổ sung.",
+      "skill": "form",
+      "use": "check",
+      "type": "multi",
+      "stem": "Các câu độc lập.",
+      "options": [
+        {
+          "t": "Although I was tired, I stayed.",
+          "ok": true,
+          "note": "Although + mệnh đề."
+        },
+        {
+          "t": "Despite being tired, I stayed.",
+          "ok": true,
+          "note": "Despite + -ing."
+        },
+        {
+          "t": "Despite of the noise, I slept.",
+          "ok": false,
+          "note": "Dùng despite hoặc in spite of.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Although the noise, I slept.",
+          "ok": false,
+          "note": "Cần mệnh đề hoặc đổi sang despite.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    },
+    {
+      "id": "ctr-12",
+      "prompt": "Chọn nhận xét đúng về though cuối câu.",
+      "explain": "Though cuối câu là cách nối đối chiếu phổ biến trong lời nói; không coi là sai vì không ở đầu.",
+      "skill": "use",
+      "use": "check",
+      "type": "choice",
+      "stem": "The room is small. It is comfortable, though.",
+      "options": [
+        {
+          "t": "Though cuối câu có thể tự nhiên, thường trong lối nói thân mật.",
+          "ok": true,
+          "note": "Nó nêu ý đối chiếu với câu trước."
+        },
+        {
+          "t": "Though buộc phải là từ đầu tiên mọi câu.",
+          "ok": false,
+          "note": "Không có quy tắc tuyệt đối này.",
+          "tag": "pattern-mismatch"
+        },
+        {
+          "t": "Though luôn có nghĩa thời gian.",
+          "ok": false,
+          "note": "Nó có thể diễn tả nhượng bộ hoặc đối chiếu.",
+          "tag": "pattern-mismatch"
+        }
+      ],
+      "level": "B1"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Nguồn đối chiếu đề xuất cho chủ điểm này; xem ledger có sẵn docs/grammar/research/01-coverage-map.md và SOURCES.md. Chưa xác minh từng đoạn nguồn cho bản thảo này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

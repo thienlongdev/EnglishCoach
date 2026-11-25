@@ -1,0 +1,41 @@
+{
+  "id": "shared-room",
+  "title": "Người nào bỏ quên chìa khóa?",
+  "summary": "Lễ tân tìm thấy chìa khóa nhưng chưa biết người bỏ quên. Thử nhắc lại chủ sở hữu khi biết tên và khi chỉ biết đó là một vị khách.",
+  "level": "B1",
+  "topics": [
+    "pronoun-reference",
+    "singular-they"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Thông tin về khách",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Biết danh tính"
+        },
+        {
+          "id": "v2",
+          "label": "Chưa rõ danh tính"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "Mina left her key here.",
+      "vi": "Mina để quên chìa khóa ở đây.",
+      "note": "Theo ngữ cảnh một chủ sở hữu đang được nói đến, her nối chìa khóa với Mina. / Her refers back to Mina in this context.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "Someone left their key here.",
+      "vi": "Ai đó để quên chìa khóa ở đây.",
+      "note": "Someone là một người. Their ở đây không buộc phải hiểu có nhiều người bỏ quên. / Singular their can refer to one unidentified person.",
+      "verdict": "ok"
+    }
+  }
+}

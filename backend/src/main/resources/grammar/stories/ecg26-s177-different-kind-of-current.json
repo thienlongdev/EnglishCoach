@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s177-different-kind-of-current",
+  "title": "Dòng điện hay dòng nước?",
+  "summary": "Mảnh giấy nhắc “check whether the current has stopped”. Trong khoang vườn có cả dây điện lẫn dòng nước làm mát.",
+  "level": "B2",
+  "topics": [
+    "structural-ambiguity",
+    "noun-clauses-wh-if"
+  ],
+  "scene": "starship",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Hà",
+      "role": "Người chăm kho hạt"
+    },
+    {
+      "id": "b",
+      "name": "Pax",
+      "role": "Người lái tàu"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Máy bơm vẫn có đèn xanh trong khi lá khô mắc vào khe nước. Hà muốn Pax xác định nước có chảy, không phải chỉ nhìn đèn báo điện.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The light tells us about the wire.",
+          "vi": "Đèn cho ta biết chuyện dây điện."
+        },
+        {
+          "who": "b",
+          "en": "Then ask the question that matters to the roots.",
+          "vi": "Vậy hỏi điều bộ rễ thật sự cần biết đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Hà đổi từ mơ hồ current thành một mệnh đề gián tiếp rõ đối tượng.",
+        "options": [
+          {
+            "ok": true,
+            "t": "Check whether water is reaching the roots.",
+            "note": "Whether dẫn mệnh đề hỏi có hay không với trật tự water is reaching. Nó cụ thể hóa dòng nước thay vì điện.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Check whether is the electric current on.",
+            "note": "Trong câu hỏi gián tiếp không đảo is lên trước chủ ngữ. Hơn nữa hỏi điện có bật chưa sẽ lặp lại điều đèn xanh đã báo.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Pax tháo chiếc lá mắc, nước trở lại. Hà giữ chiếc lá làm dấu trang ngay cạnh dòng ghi chú đã sửa.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The roots answered us in white.",
+          "vi": "Những chiếc rễ trả lời bằng màu trắng."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Buổi tối rễ trắng vươn tới ô kính; lần này chỉ cần nhìn là biết nước có thực sự tới hay không.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Pax sửa thành whether the electric current is on, nhìn đèn, rồi vẫn phải kiểm tra đường nước. Anh phát hiện lá khô và mang trả Hà.",
+      "say": [
+        {
+          "who": "a",
+          "en": "One light couldn't answer two questions.",
+          "vi": "Một chiếc đèn không trả lời được cả hai câu hỏi."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Hai người dán hai nhãn riêng lên cửa khoang: điện đang bật, nước đang chảy. Nụ đầu tiên có đủ cả hai.",
+      "end": true
+    }
+  ]
+}

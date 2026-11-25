@@ -1,0 +1,95 @@
+{
+  "id": "ecg26-s182-birdcage-view",
+  "title": "Cảnh biển nhìn qua nan lồng",
+  "summary": "Một bức vẽ có bốn vạch đen bị coi là cảnh biển nhìn từ nhà tù. Lio đếm được bốn nan lồng chim đúng khoảng cách ấy ở cửa sổ.",
+  "level": "B2",
+  "topics": [
+    "focus-adverbs"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sương",
+      "role": "Người thừa kế ngôi nhà"
+    },
+    {
+      "id": "b",
+      "name": "Lio",
+      "role": "Người đóng cửa chớp"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Trên mặt sau có câu I could only see the sea from here. Tùy vị trí only và ngữ cảnh, câu chưa nói gì chắc về việc người vẽ bị giữ lại.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Four bars make it look like a cell.",
+          "vi": "Bốn vạch trông như song sắt."
+        },
+        {
+          "who": "b",
+          "en": "Show me a sentence about the view rather than the painter's freedom.",
+          "vi": "Viết một câu nói về cảnh nhìn thấy thay vì quyền đi lại của họa sĩ đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Sương xác định điều bức vẽ thể hiện được.",
+        "options": [
+          {
+            "ok": true,
+            "t": "From this angle, only the sea is visible beyond the bars.",
+            "note": "Only the sea giới hạn vật trong tầm nhìn ở góc này. Câu không nói họa sĩ bị khóa trong phòng.",
+            "next": "consequence-1"
+          },
+          {
+            "ok": false,
+            "t": "Only a prisoner could have drawn this view.",
+            "note": "Only a prisoner giới hạn người có khả năng vẽ, một kết luận không được bốn vạch ủng hộ. Could have không làm giới hạn ấy biến mất.",
+            "next": "consequence-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Lio đặt lồng sát khung bức vẽ. Thay góc một chút là thấy cả thuyền cá. Hai người đánh dấu góc nhìn bằng một con cá giấy trên sàn.",
+      "say": [
+        {
+          "who": "b",
+          "en": "The picture had bars. The room had an open door.",
+          "vi": "Bức tranh có song, còn căn phòng có cửa mở."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Khách đến sau lần lượt đứng vào dấu cá và tự tìm được căn phòng mở phía sau lồng.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Sương đứng ngoài sân chụp qua lồng và cũng có bốn vạch. Cô xếp ảnh của mình dưới bức vẽ làm một cặp câu hỏi.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The child found another way in.",
+          "vi": "Đứa bé tìm được một lối nhìn khác rồi."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Ngày mở cửa, một đứa trẻ tìm được góc nhìn thứ ba ngay từ bậc cửa. Bức tranh đã thôi nhốt người xem vào một lời giải.",
+      "end": true
+    }
+  ]
+}

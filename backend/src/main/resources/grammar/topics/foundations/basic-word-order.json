@@ -1,0 +1,417 @@
+{
+  "schema": 1,
+  "slug": "basic-word-order",
+  "version": 2,
+  "domain": "foundations",
+  "order": 30,
+  "kind": "grammar",
+  "title": { "vi": "Trật tự từ cơ bản: S V O", "en": "Basic word order" },
+  "subtitle": { "vi": "Vị trí của từ cho biết ai làm gì với ai", "en": "Where a word stands tells you who does what to whom" },
+  "aliases": ["word order", "svo", "subject verb object", "trật tự từ", "thứ tự từ trong câu", "chủ ngữ động từ tân ngữ", "i like very much english", "a car red", "place before time", "adverb between verb and object", "vị trí trạng từ"],
+  "level": "A1",
+  "levelBasis": "editorial",
+  "uses": [
+    { "level": "A1", "vi": "Xếp câu khẳng định đơn giản theo S V O, thêm nơi chốn và thời gian ở cuối." },
+    { "level": "A2", "vi": "Giữ trạng từ ra khỏi chỗ giữa động từ và tân ngữ, và đặt tính từ trước danh từ." },
+    { "level": "B1", "vi": "Hiểu vì sao người bản ngữ đôi khi đảo trật tự để nhấn mạnh hoặc để dồn phần dài về cuối câu." }
+  ],
+  "objectives": [
+    "Xếp câu khẳng định theo trật tự chủ ngữ, động từ, tân ngữ",
+    "Giải thích vì sao đổi chỗ chủ ngữ và tân ngữ làm đổi nghĩa",
+    "Đặt nơi chốn và thời gian ở cuối câu, hoặc thời gian ở đầu câu",
+    "Tránh đặt trạng từ giữa động từ và tân ngữ, và tránh đặt tính từ sau danh từ"
+  ],
+  "prerequisites": ["subject-and-predicate"],
+  "related": [
+    { "slug": "sentence-patterns", "rel": "more" },
+    { "slug": "statements-negatives-questions", "rel": "more" },
+    { "slug": "adjective-position", "rel": "more" },
+    { "slug": "adverbs-of-frequency", "rel": "more" },
+    { "slug": "subject-object-pronouns", "rel": "more" },
+    { "slug": "fronting", "rel": "special" }
+  ],
+  "exam": {
+    "ielts": "Trật tự từ sai, nhất là trạng từ đặt nhầm chỗ và tính từ sau danh từ, làm giảm độ chính xác trong Writing và Speaking.",
+    "toeic": "Part 5 và Part 6 thường hỏi vị trí của từ trong câu, ví dụ trạng từ nên đứng ở đâu so với động từ hay tính từ."
+  },
+  "quick": {
+    "what": "Câu khẳng định tiếng Anh có tân ngữ thường xếp chủ ngữ (S), động từ (V), rồi tân ngữ (O). Nơi chốn và thời gian thường đứng sau. Danh từ không đổi dạng theo vai trò chủ ngữ hay tân ngữ, nên trật tự là một dấu hiệu quan trọng để hiểu ai làm gì với ai.",
+    "when": "Dùng mỗi khi bạn đặt một câu khẳng định. Tiếng Việt cũng thường theo S V O, nên phần lớn dễ chuyển sang; chỗ hay sai là trạng từ, tính từ và từ để hỏi.",
+    "examples": [
+      { "en": "[S|My sister] [V|bought] [O|a bicycle] [A|at the market] [T|yesterday].", "vi": "Hôm qua chị tôi mua một chiếc xe đạp ở chợ." },
+      { "en": "[S|Lan] [V|called] [O|Minh].", "vi": "Lan gọi cho Minh. (Đổi chỗ Lan và Minh thì đổi nghĩa.)" },
+      { "en": "[S|I] [V|like] [O|English] [ADV|very much].", "vi": "Tôi rất thích tiếng Anh. (very much đứng cuối, không chen giữa like và English.)" }
+    ],
+    "remember": "Với câu S V O đơn giản, thường giữ động từ và tân ngữ ngắn cạnh nhau. Nơi chốn và thời gian có thể đổi vị trí theo điều muốn nhấn."
+  },
+  "lesson": [
+    { "type": "p", "vi": "Tin tốt cho người Việt: câu khẳng định tiếng Anh và tiếng Việt thường cùng xếp **chủ ngữ, động từ, tân ngữ** (S V O). \"Lan gọi Minh\" và \"Lan called Minh\" đi cùng một hướng. Phần khó nằm ở vài vị trí cụ thể mà bài này chỉ ra." },
+    { "type": "formula", "lines": [
+      { "label": "Mẫu cơ bản", "parts": [ { "t": "chủ ngữ", "role": "S" }, { "t": "động từ", "role": "V" }, { "t": "tân ngữ", "role": "O" } ] },
+      { "label": "Thêm nơi chốn và thời gian", "parts": [ { "t": "chủ ngữ", "role": "S" }, { "t": "động từ", "role": "V" }, { "t": "tân ngữ", "role": "O" }, { "t": "nơi chốn", "role": "A" }, { "t": "thời gian", "role": "T" } ] }
+    ], "note": "Tân ngữ (object) là người hay vật đứng sau động từ và cho biết động từ hướng tới ai hay cái gì: trong She bought a bicycle, tân ngữ là a bicycle. Không phải động từ nào cũng có tân ngữ: She slept không có." },
+    { "type": "h", "vi": "Vì sao vị trí quan trọng" },
+    { "type": "p", "vi": "Danh từ tiếng Anh không đổi dạng theo vai trò chủ ngữ hay tân ngữ. Trong mẫu S V O đang học, cụm trước động từ là chủ ngữ, cụm sau là tân ngữ. Vì vậy đổi chỗ hai cụm danh từ có thể đổi nghĩa. Không phải mọi cụm sau động từ đều là tân ngữ: trong Lan is a nurse, a nurse là bổ ngữ. Đại từ còn đổi dạng, như she và her." },
+    { "type": "contrast",
+      "items": [
+        { "a": { "en": "[S|The dog] [V|chased] [O|the cat].", "vi": "Con chó đuổi con mèo." }, "b": { "en": "[S|The cat] [V|chased] [O|the dog].", "vi": "Con mèo đuổi con chó." }, "diff": "Cùng các từ, đổi chỗ chủ ngữ và tân ngữ thì người đuổi và người bị đuổi đổi chỗ. Cả hai câu đều đúng." },
+        { "a": { "en": "[S|Lan] [V|called] [O|Minh].", "vi": "Lan gọi cho Minh." }, "b": { "en": "[S|Minh] [V|called] [O|Lan].", "vi": "Minh gọi cho Lan." }, "diff": "Trong hai câu này, người gọi đứng trước động từ. Đổi vị trí Lan và Minh làm đổi người gọi." }
+      ] },
+    { "type": "diagram",
+      "spec": { "kind": "slots", "fixedOrder": true,
+        "slots": [
+          { "label": "Chủ ngữ", "items": ["Minh", "My sister", "The students"] },
+          { "label": "Động từ", "items": ["found", "wanted", "bought"] },
+          { "label": "Tân ngữ", "items": ["a bicycle", "the tickets", "some fruit"] },
+          { "label": "Nơi chốn", "items": ["at the market", "near the station", "in Hue"] },
+          { "label": "Thời gian", "items": ["yesterday", "last week", "on Saturday"] }
+        ],
+        "sentence": "{0} {1} {2} {3} {4}." },
+      "caption": "Chọn mỗi ô một mục. Dù chọn thế nào, câu vẫn theo cùng một trật tự.",
+      "alt": "Năm ô nối tiếp nhau theo thứ tự: chủ ngữ, động từ, tân ngữ, nơi chốn, thời gian. Người học chọn một mục trong mỗi ô để ghép thành câu, ví dụ My sister bought a bicycle at the market yesterday." },
+    { "type": "h", "vi": "Nơi chốn và thời gian" },
+    { "type": "p", "vi": "Sau động từ và tân ngữ, tiếng Anh thường đặt nơi chốn trước thời gian: at the market yesterday. Đây là xu hướng, không phải luật; nói at the market on Saturday hay on Saturday at the market đều được. Thời gian cũng có thể đứng đầu câu, khi bạn muốn đặt khung thời gian trước. Người Việt hay làm như vậy: \"Hôm qua tôi đi chợ\"." },
+    { "type": "examples", "items": [
+      { "en": "[S|We] [V|met] [A|at the café] [T|on Saturday].", "vi": "Chúng tôi gặp nhau ở quán cà phê vào thứ Bảy.", "note": "Mặc định: nơi chốn, rồi thời gian." },
+      { "en": "[T|On Saturday], [S|we] [V|met] [A|at the café].", "vi": "Thứ Bảy, chúng tôi gặp nhau ở quán cà phê.", "note": "Thời gian đứng đầu. Với cụm ngắn, dấu phẩy sau nó là tùy chọn; với cụm dài, thường nên thêm." }
+    ] },
+    { "type": "try", "exercise": "bwo-01" },
+    { "type": "h", "vi": "Ba chỗ người Việt hay đặt nhầm" },
+    { "type": "p", "vi": "**Một: trạng từ chen giữa động từ và tân ngữ.** Tiếng Việt đặt từ chỉ mức độ trước động từ: \"Tôi rất thích tiếng Anh\". Từ đó người học có thể đặt very much ngay sau like, thành like very much English. Tiếng Anh không để very much đứng giữa like và English." },
+    { "type": "diagram",
+      "spec": { "kind": "transform", "steps": [
+        { "label": "Sai: trạng từ chen vào giữa", "sentence": "I like very much English." },
+        { "label": "Tự nhiên: very much ra cuối", "sentence": "I like English very much." }
+      ], "changed": ["very", "much"] },
+      "caption": "Giữ động từ và tân ngữ sát nhau. Very much đi ra sau tân ngữ.",
+      "alt": "Hai bước: I like very much English là câu sai vì very much nằm giữa động từ và tân ngữ; I like English very much là câu đúng với very much ở cuối." },
+    { "type": "p", "vi": "Cách khác cũng tự nhiên: dùng `really` trước động từ, I really like English. Còn I very much like English cũng đúng ngữ pháp nhưng nghe trang trọng hơn." },
+    { "type": "note", "kind": "vn", "vi": "**Hai: tính từ đứng trước danh từ.** Tiếng Việt đặt tính từ sau danh từ: \"xe đỏ\", \"nhà lớn\". Tiếng Anh đặt trước: a red car, a big house. Người học dễ viết a car red." },
+    { "type": "note", "kind": "vn", "vi": "**Ba: từ để hỏi đứng đầu câu hỏi.** Tiếng Việt thường để từ để hỏi ở chỗ của câu trả lời: \"Hôm qua bạn đi đâu?\". Tiếng Anh đưa từ để hỏi lên đầu: Where did you go yesterday? Câu như \"Yesterday you went where?\" xuất hiện trong bài của người Việt học tiếng Anh. Bài sau sẽ dạy riêng về câu hỏi." },
+    { "type": "try", "exercise": "bwo-02" }
+  ],
+  "deep": [
+    {
+      "type": "h",
+      "vi": "Đảo trật tự để nhấn mạnh"
+    },
+    {
+      "type": "p",
+      "vi": "Người bản ngữ có thể đưa tân ngữ lên đầu để nhấn mạnh: That film I have seen three times. Cách này gây chú ý và thường gặp hơn trong văn viết trau chuốt hoặc lời nói có ngữ điệu rõ. Ở trình độ cơ bản, hãy giữ S V O. Bạn sẽ học kỹ ở bài về đảo ngữ."
+    },
+    {
+      "type": "h",
+      "vi": "Khi tân ngữ rất dài"
+    },
+    {
+      "type": "p",
+      "vi": "Quy tắc \"không chen trạng từ giữa động từ và tân ngữ\" có ngoại lệ: nếu tân ngữ rất dài, người viết thường dồn nó về cuối câu, và một cụm ngắn có thể chen trước nó. Ví dụ: He found in the drawer a letter that nobody had opened for years. Với tân ngữ ngắn như a letter, câu He found in the drawer a letter nghe lạ."
+    },
+    {
+      "type": "h",
+      "vi": "Trạng từ chỉ tần suất có vị trí riêng"
+    },
+    {
+      "type": "p",
+      "vi": "Các trạng từ như always, often, never thường đứng trước động từ chính nhưng sau be: She always arrives early. She is always early. Bài về trạng từ chỉ tần suất nói riêng về chuyện này."
+    },
+    {
+      "type": "h",
+      "vi": "Không phải câu nào cũng là S V O"
+    },
+    {
+      "type": "p",
+      "vi": "Câu hỏi, câu mệnh lệnh và câu có there đổi trật tự. Trong lời nói, người ta còn hỏi lại bằng giọng ngạc nhiên: You work where? Đây là câu hỏi lại (echo question) khi bạn vừa nghe điều gì đó mà chưa tin hoặc chưa nghe rõ. Nó không phải cách đặt một câu hỏi thông thường."
+    },
+    {
+      "type": "h",
+      "vi": "Vị trí và dạng của đại từ"
+    },
+    {
+      "type": "p",
+      "vi": "Với đại từ, tiếng Anh dùng cả vị trí lẫn dạng từ: She called him, He called her. Her called he không theo mẫu câu kể chuẩn này. Danh từ không có hai dạng riêng theo vai trò; cần xét trật tự cùng động từ và cấu trúc để xác định chủ ngữ, tân ngữ."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Trong thơ, ca từ và văn phong cổ, đôi khi bạn gặp trật tự khác như \"Never have I seen such a sight\". Đó là cấu trúc đảo ngữ có quy tắc riêng, không phải lỗi."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "I yesterday went to the market không phải câu sai ngữ pháp tuyệt đối. Yesterday thường ở đầu hoặc cuối câu; đặt giữa chủ ngữ và động từ là cách đánh dấu thông tin, có thể nghe trau chuốt hoặc lạ trong hội thoại này. Với lời kể trung tính, dùng Yesterday I went to the market hoặc I went to the market yesterday."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "bwo-very-much",
+      "wrong": "I like very much English.",
+      "right": "I like English very much.",
+      "why": "Very much không chen giữa động từ và tân ngữ. Đặt nó sau tân ngữ, hoặc dùng really trước động từ: I really like English.",
+      "vn": "Tiếng Việt nói \"Tôi rất thích tiếng Anh\" hay \"Tôi thích tiếng Anh lắm\". Nghiên cứu về người Việt học tiếng Anh ghi nhận vị trí của very much là chỗ hay sai."
+    },
+    {
+      "id": "bwo-adjective-after-noun",
+      "wrong": "I bought a car red.",
+      "right": "I bought a red car.",
+      "why": "Tính từ tiếng Anh đứng trước danh từ nó bổ nghĩa.",
+      "vn": "Tiếng Việt đặt tính từ sau danh từ: \"xe đỏ\"."
+    },
+    {
+      "id": "bwo-question-in-place",
+      "wrong": "Where you went yesterday?",
+      "right": "Where did you go yesterday?",
+      "why": "Từ để hỏi đứng đầu, rồi tới trợ động từ did, rồi chủ ngữ. Không giữ trật tự câu khẳng định.",
+      "vn": "Tiếng Việt giữ trật tự câu khẳng định khi hỏi: \"Hôm qua bạn đi đâu?\"."
+    }
+  ],
+  "faq": [
+    { "q": "Tiếng Anh có luôn phải theo trật tự S V O không?", "a": "Không. S V O là mẫu thường gặp khi động từ có tân ngữ. Câu kể như She slept (S V) và She is tired (S V C) cũng hoàn toàn bình thường. Ngoài ra còn có câu hỏi, mệnh lệnh và các cách đưa thông tin lên đầu để nhấn mạnh." },
+    { "q": "Trạng ngữ thời gian nên đặt đầu hay cuối câu?", "a": "Cả hai đều đúng. Cuối câu là vị trí mặc định: I saw him yesterday. Đầu câu khi bạn muốn đặt khung thời gian trước: Yesterday I saw him. Cụm ngắn thì dấu phẩy sau nó là tùy chọn." },
+    { "q": "Tôi có thể nói I very much like English không?", "a": "Được. Câu đúng ngữ pháp và dùng trong văn phong khá trang trọng. Khi nói chuyện hằng ngày, I really like English và I like English a lot phổ biến hơn." },
+    { "q": "Vì sao The dog chased the cat khác The cat chased the dog?", "a": "Trong hai câu này, trật tự S V O cho biết chủ ngữ và tân ngữ. Danh từ không có dạng chủ ngữ hay tân ngữ riêng. Muốn phân tích câu khác, còn phải xét động từ và cấu trúc, không chỉ nhìn vị trí." }
+  ],
+  "exercises": [
+    { "id": "bwo-01", "type": "order", "level": "A1", "use": "practice", "skill": "form",
+      "prompt": "Sắp xếp thành một câu khẳng định.",
+      "tokens": ["my", "sister", "bought", "a", "bicycle", "yesterday"],
+      "end": ".",
+      "accept": [
+        [
+          "my",
+          "sister",
+          "bought",
+          "a",
+          "bicycle",
+          "yesterday"
+        ],
+        [
+          "yesterday",
+          "my",
+          "sister",
+          "bought",
+          "a",
+          "bicycle"
+        ],
+        [
+          "my",
+          "sister",
+          "yesterday",
+          "bought",
+          "a",
+          "bicycle"
+        ]
+      ],
+      "known": [
+        { "seq": ["my", "sister", "bought", "yesterday", "a", "bicycle"], "verdict": "awkward", "note": "Đúng ngữ pháp nhưng nghe lạ: trạng ngữ yesterday chen giữa động từ và tân ngữ ngắn. Hãy để yesterday ở cuối hoặc đầu câu." }
+      ],
+      "explain": "Hai cách thông dụng đặt yesterday ở đầu hoặc cuối. Đặt sau my sister cũng đúng, nhưng là trật tự có đánh dấu, ít trung tính hơn trong lời kể này." },
+    { "id": "bwo-02", "type": "choice", "level": "A1", "use": "practice", "skill": "form",
+      "prompt": "Chọn câu có trật tự đúng.",
+      "stem": "Câu nào đúng?",
+      "options": [
+        { "t": "I like English very much.", "ok": true, "note": "Very much đứng sau tân ngữ, giữ động từ và tân ngữ sát nhau." },
+        { "t": "I like very much English.", "note": "Very much chen giữa động từ và tân ngữ, nghe không tự nhiên.", "tag": "adverb-between-verb-object" },
+        { "t": "I very like English.", "note": "Very bổ nghĩa cho tính từ hoặc trạng từ, không đứng trước động từ như vậy. Hãy nói I really like English.", "tag": "adverb-very-before-verb" }
+      ],
+      "explain": "Giữ động từ và tân ngữ sát nhau, rồi đặt very much ra sau. Hoặc dùng really trước động từ." },
+    { "id": "bwo-03", "type": "choice", "level": "A1", "use": "check", "skill": "meaning",
+      "prompt": "Chọn nghĩa đúng của câu.",
+      "stem": "Trong câu The cat chased the dog, ai đuổi ai?",
+      "options": [
+        { "t": "Con mèo đuổi con chó.", "ok": true, "note": "The cat đứng trước động từ nên là chủ ngữ, tức bên đuổi." },
+        { "t": "Con chó đuổi con mèo.", "note": "Đây là nghĩa của The dog chased the cat. Danh từ không đổi dạng, nên vị trí quyết định.", "tag": "order-meaning" },
+        { "t": "Không biết, vì cả hai đều có thể.", "note": "Tiếng Anh không để mơ hồ ở đây: danh từ đứng trước động từ là chủ ngữ.", "tag": "order-meaning" }
+      ],
+      "explain": "Vì danh từ tiếng Anh không đổi dạng, chỉ vị trí cho biết ai làm gì với ai." },
+    { "id": "bwo-04", "type": "error", "level": "A1", "use": "practice", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "I bought" },
+        { "t": "a car red", "bad": true, "fix": ["a red car"], "note": "Tính từ tiếng Anh đứng trước danh từ.", "tag": "adjective-after-noun" },
+        { "t": "yesterday." }
+      ],
+      "explain": "Câu đúng là I bought a red car yesterday. Tính từ red đứng trước danh từ car." },
+    { "id": "bwo-05", "type": "error", "level": "A1", "use": "check", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "Where you went", "bad": true, "fix": ["Where did you go"], "note": "Câu hỏi đưa từ để hỏi lên đầu, rồi trợ động từ did, rồi chủ ngữ, rồi động từ ở dạng gốc.", "tag": "question-word-order" },
+        { "t": "yesterday?" }
+      ],
+      "explain": "Câu đúng là Where did you go yesterday? Câu hỏi không giữ trật tự của câu khẳng định." },
+    { "id": "bwo-06", "type": "transform", "level": "A1", "use": "practice", "skill": "production",
+      "prompt": "Viết lại câu.",
+      "source": "We met at the café on Saturday.",
+      "instruction": "Đưa cụm chỉ thời gian lên đầu câu.",
+      "accept": ["On Saturday we met at the café", "On Saturday, we met at the café"],
+      "model": "On Saturday, we met at the café.",
+      "explain": "Cụm chỉ thời gian có thể đứng đầu câu, phần còn lại giữ nguyên trật tự. Với cụm ngắn như on Saturday, dấu phẩy sau nó là tùy chọn." },
+    { "id": "bwo-07", "type": "order", "level": "A1", "use": "practice", "skill": "form",
+      "prompt": "Sắp xếp thành câu hỏi thông tin thông thường, mở đầu bằng where và đảo did trước chủ ngữ.",
+      "tokens": ["where", "did", "you", "go", "yesterday"],
+      "end": "?",
+      "accept": [
+        [
+          "where",
+          "did",
+          "you",
+          "go",
+          "yesterday"
+        ],
+        [
+          "where",
+          "did",
+          "you",
+          "yesterday",
+          "go"
+        ],
+        [
+          "where",
+          "yesterday",
+          "did",
+          "you",
+          "go"
+        ]
+      ],
+      "explain": "Mẫu thường dùng là Where did you go yesterday? Yesterday cũng có thể chen sau you hoặc sau where để nhấn thời gian; hai cách đó ít trung tính hơn." },
+    { "id": "bwo-08", "type": "match", "level": "A1", "use": "practice", "skill": "recognition",
+      "prompt": "Nối mỗi phần của câu với vai trò của nó.",
+      "context": "My sister bought a bicycle at the market yesterday.",
+      "pairs": [
+        { "a": "my sister", "b": "Chủ ngữ" },
+        { "a": "bought", "b": "Động từ" },
+        { "a": "a bicycle", "b": "Tân ngữ" },
+        { "a": "at the market", "b": "Nơi chốn" },
+        { "a": "yesterday", "b": "Thời gian" }
+      ],
+      "explain": "Chủ ngữ, động từ và tân ngữ đi liền nhau. Nơi chốn và thời gian đứng sau, thường theo thứ tự đó." },
+    { "id": "bwo-09", "type": "multi", "level": "A1", "use": "check", "skill": "form",
+      "prompt": "Chọn tất cả các câu có trật tự tự nhiên.",
+      "stem": "Những câu nào tự nhiên?",
+      "options": [
+        { "t": "She reads the newspaper every morning.", "ok": true, "note": "Tân ngữ đứng liền sau động từ, thời gian ở cuối." },
+        { "t": "We visited my grandparents in Hue last month.", "ok": true, "note": "Nơi chốn trước, thời gian sau, tân ngữ sát động từ." },
+        { "t": "I really enjoy these classes.", "ok": true, "note": "Really đứng trước động từ, tân ngữ ngay sau." },
+        { "t": "I enjoy very much these classes.", "note": "Very much chen giữa động từ và tân ngữ.", "tag": "adverb-between-verb-object" },
+        { "t": "We visited in Hue my grandparents last month.", "note": "Nơi chốn chen giữa động từ và tân ngữ ngắn.", "tag": "adverb-between-verb-object" }
+      ],
+      "explain": "Giữ động từ và tân ngữ sát nhau; nơi chốn và thời gian đứng sau." },
+    { "id": "bwo-10", "type": "error", "level": "A1", "use": "check", "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "noError": true,
+      "segments": [
+        { "t": "She bought" },
+        { "t": "a red bicycle" },
+        { "t": "at the market" },
+        { "t": "on Saturday." }
+      ],
+      "explain": "Câu đúng. Tính từ red đứng trước bicycle, nơi chốn đứng trước thời gian, và tân ngữ ở sát động từ." },
+    { "id": "bwo-11", "type": "open", "level": "A1", "use": "practice", "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Viết ba câu về điều bạn đã làm hoặc sẽ làm. Mỗi câu có chủ ngữ, động từ và tân ngữ. Hai câu có nơi chốn hoặc thời gian ở cuối. Một câu có một tính từ đứng trước danh từ.",
+      "model": ["I cooked noodles at home last night. My brother bought a new phone. We watched an interesting film on Sunday."],
+      "checklist": ["Mỗi câu theo trật tự chủ ngữ, động từ, tân ngữ", "Trong các câu S V O trung tính này, giữ tân ngữ ngắn ngay sau động từ", "Tính từ đứng trước danh từ", "Nơi chốn và thời gian ở vị trí hợp với ý; cuối câu thường là nơi chốn trước, thời gian sau"],
+      "explain": "Khi tự kiểm tra, hãy gạch dưới chủ ngữ, động từ và tân ngữ. Nếu có từ chen giữa động từ và tân ngữ, hãy thử đưa nó ra ngoài." },
+    { "id": "bwo-12", "type": "transform", "level": "A1", "use": "check", "skill": "production",
+      "prompt": "Sửa lại cho đúng trật tự.",
+      "source": "I like very much English.",
+      "instruction": "Giữ nguyên ý. Bạn có thể dùng very much hoặc một cách khác.",
+      "accept": ["I like English very much", "I really like English", "I very much like English", "I like English a lot", "I like English so much"],
+      "model": "I like English very much.",
+      "known": [
+        { "t": "I very like English", "verdict": "wrong", "note": "Very không đứng trước động từ. Hãy dùng really, hoặc very much sau tân ngữ.", "tag": "adverb-very-before-verb" }
+      ],
+      "explain": "Trạng từ không nên chen giữa động từ và tân ngữ. Hãy đặt very much ở cuối, hoặc dùng really hay a lot." },
+    {
+      "id": "bwo-13",
+      "type": "order",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sắp xếp thành một câu khẳng định.",
+      "tokens": [
+        "we",
+        "met",
+        "at",
+        "the",
+        "café",
+        "on",
+        "Saturday"
+      ],
+      "end": ".",
+      "accept": [
+        [
+          "we",
+          "met",
+          "at",
+          "the",
+          "café",
+          "on",
+          "Saturday"
+        ],
+        [
+          "we",
+          "met",
+          "on",
+          "Saturday",
+          "at",
+          "the",
+          "café"
+        ],
+        [
+          "on",
+          "Saturday",
+          "we",
+          "met",
+          "at",
+          "the",
+          "café"
+        ],
+        [
+          "at",
+          "the",
+          "café",
+          "we",
+          "met",
+          "on",
+          "Saturday"
+        ],
+        [
+          "on",
+          "Saturday",
+          "at",
+          "the",
+          "café",
+          "we",
+          "met"
+        ],
+        [
+          "at",
+          "the",
+          "café",
+          "on",
+          "Saturday",
+          "we",
+          "met"
+        ],
+        [
+          "we",
+          "on",
+          "Saturday",
+          "met",
+          "at",
+          "the",
+          "café"
+        ]
+      ],
+      "explain": "Nơi chốn và thời gian có thể đứng cuối hoặc được đưa lên đầu. On Saturday còn có thể đứng sau we để nhấn; mẫu We met at the café on Saturday là lựa chọn trung tính."
+    }
+  ],
+  "sources": [
+    { "ref": "cgt", "note": "Các mục về word order và vị trí của trạng ngữ" },
+    { "ref": "swan-peu", "note": "Phần về trật tự từ trong câu đơn giản" },
+    { "ref": "quirk", "note": "Phần về trật tự các thành phần trong mệnh đề" },
+    { "ref": "murphy-essential", "note": "Phần về câu khẳng định và vị trí trạng từ" }
+  ],
+  "editorial": { "status": "drafted" }
+}

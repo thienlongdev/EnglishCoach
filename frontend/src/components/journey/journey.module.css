@@ -1,0 +1,110 @@
+/*
+ * The passage (10 §BK). The host takes no pointer; it swallows clicks only while the window is fully covered and the page behind it is changing. The curtain is the CSS
+ * stand-in of the 3D current: reduced motion, Save-Data, no WebGL, a lost context. It is the same water, so every path looks like one ocean.
+ */
+.host {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  pointer-events: none;
+  contain: strict;
+  /* Empty at rest: not displayed at all, no layer, no paint. */
+  display: none;
+}
+.host[data-active] { display: block; }
+.host[data-blocking] { pointer-events: auto; }
+.layer { position: absolute; inset: 0; pointer-events: none; }
+
+.curtain {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(90% 70% at 50% 42%, rgb(112 216 255 / 0.5), rgb(112 216 255 / 0) 62%),
+    linear-gradient(180deg, #0b4fc0 0%, #0a3aa8 40%, #05206f 100%);
+  animation: curtainIn 300ms cubic-bezier(0.3, 0.7, 0.2, 1) both;
+}
+.curtain[data-instant] { animation: none; }
+.curtain[data-state='out'] {
+  animation: curtainOut 520ms cubic-bezier(0.3, 0.7, 0.2, 1) both;
+}
+:global(.dark) .curtain {
+  background:
+    radial-gradient(90% 70% at 50% 42%, rgb(70 120 230 / 0.42), rgb(70 120 230 / 0) 62%),
+    linear-gradient(180deg, #071a58 0%, #050e38 45%, #030722 100%);
+}
+@keyframes curtainIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes curtainOut { from { opacity: 1; } to { opacity: 0; } }
+
+.curtainWhale {
+  position: absolute;
+  top: 34%;
+  left: 0;
+  width: min(38vw, 20rem);
+  height: auto;
+  animation: curtainSwim 1100ms cubic-bezier(0.45, 0.05, 0.4, 1) both;
+}
+.curtain[data-dir='-1'] .curtainWhale { animation-name: curtainSwimBack; }
+@keyframes curtainSwim {
+  from { transform: translate3d(-110%, 8%, 0); }
+  to { transform: translate3d(110vw, -6%, 0); }
+}
+@keyframes curtainSwimBack {
+  from { transform: translate3d(110vw, 8%, 0) scaleX(-1); }
+  to { transform: translate3d(-110%, -6%, 0) scaleX(-1); }
+}
+
+/* A slow destination: said plainly, no percentage; after a while a real link. */
+.status {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(2rem, 9vh, 5rem);
+  translate: -50% 0;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 0;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background: rgb(4 18 64 / 0.62);
+  color: #eaf6ff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+  animation: curtainIn 400ms ease both;
+}
+.statusLink {
+  pointer-events: auto;
+  color: #a5f3fc;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Route loading on the way to a sign-in page outside a journey: water, not a skeleton. */
+.routeWater {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(180deg, #0b4fc0 0%, #0a3aa8 40%, #05206f 100%);
+}
+
+/* Sign-out: the same water, under the passage, never over it; it carries no words on screen (the status is for screen readers). */
+.leaving {
+  position: fixed;
+  inset: 0;
+  z-index: 2147482000;
+  background:
+    radial-gradient(90% 70% at 50% 42%, rgb(112 216 255 / 0.42), rgb(112 216 255 / 0) 62%),
+    linear-gradient(180deg, #0b4fc0 0%, #0a3aa8 40%, #05206f 100%);
+  animation: curtainIn 260ms ease both;
+}
+:global(.dark) .leaving {
+  background:
+    radial-gradient(90% 70% at 50% 42%, rgb(70 120 230 / 0.42), rgb(70 120 230 / 0) 62%),
+    linear-gradient(180deg, #071a58 0%, #050e38 45%, #030722 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .curtain { animation-duration: 180ms; }
+  .curtain[data-state='out'] { animation-duration: 240ms; }
+  .curtainWhale { display: none; }
+}

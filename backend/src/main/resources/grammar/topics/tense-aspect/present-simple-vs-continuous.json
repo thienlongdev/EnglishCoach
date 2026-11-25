@@ -1,0 +1,892 @@
+{
+  "schema": 1,
+  "slug": "present-simple-vs-continuous",
+  "version": 2,
+  "domain": "tense-aspect",
+  "order": 40,
+  "kind": "grammar",
+  "title": {
+    "vi": "Hiện tại đơn hay tiếp diễn?",
+    "en": "Present simple or continuous?"
+  },
+  "subtitle": {
+    "vi": "Bạn đang kể về điều lặp lại, hay về điều đang diễn ra?",
+    "en": "Are you describing what usually happens, or what is happening?"
+  },
+  "aliases": [
+    "present simple vs continuous",
+    "present simple or present continuous",
+    "đơn hay tiếp diễn",
+    "what do you do vs what are you doing",
+    "simple vs progressive",
+    "i live or i am living",
+    "phân biệt hiện tại đơn và tiếp diễn",
+    "usually always now",
+    "do or doing",
+    "i work or i am working"
+  ],
+  "level": "A2",
+  "levelBasis": "editorial",
+  "uses": [
+    {
+      "level": "A2",
+      "vi": "Chọn giữa thói quen (I walk) và việc đang diễn ra (I'm walking)."
+    },
+    {
+      "level": "B1",
+      "vi": "Tạm thời so với lâu dài, thay đổi đang diễn ra, và kế hoạch so với lịch trình."
+    },
+    {
+      "level": "B2",
+      "vi": "Sắc thái của always + -ing, dạng tiếp diễn để nói lịch sự, và kể chuyện miệng."
+    }
+  ],
+  "objectives": [
+    "Chọn hiện tại đơn khi nói về thói quen, sự thật chung, trạng thái và lịch trình",
+    "Chọn hiện tại tiếp diễn khi nói về việc đang diễn ra, tạm thời hoặc đang thay đổi",
+    "Giải thích vì sao từ chỉ thời gian là gợi ý chứ không phải luật",
+    "Phân biệt What do you do? với What are you doing? và Where do you live? với Where are you living?"
+  ],
+  "prerequisites": [
+    "present-simple",
+    "present-continuous"
+  ],
+  "related": [
+    {
+      "slug": "present-simple",
+      "rel": "more"
+    },
+    {
+      "slug": "present-continuous",
+      "rel": "more"
+    },
+    {
+      "slug": "future-present-forms",
+      "rel": "more"
+    },
+    {
+      "slug": "past-simple-vs-continuous",
+      "rel": "more"
+    },
+    {
+      "slug": "tense-aspect-system",
+      "rel": "more"
+    }
+  ],
+  "exam": {
+    "ielts": "Có thể vận dụng khi kể trải nghiệm, thói quen hoặc diễn biến trong Speaking/Writing; bài này không xác nhận tần suất xuất hiện trong đề hay mức điểm.",
+    "toeic": "Có thể vận dụng khi đọc hội thoại, thư và thông báo công việc; đây không phải nhận định đã đo về tần suất câu hỏi TOEIC."
+  },
+  "quick": {
+    "what": "Hiện tại đơn nhìn một việc như thói quen, sự thật hoặc trạng thái. Hiện tại tiếp diễn nhìn nó như việc đang diễn ra, tạm thời hoặc đang thay đổi. Cùng một động từ dùng được cả hai, với hai ý khác nhau.",
+    "when": "What do you do? thường hỏi nghề nghiệp khi làm quen. What are you doing? thường hỏi việc đang làm, nhưng ngữ cảnh cũng có thể hướng tới kế hoạch. Xét ý định và nghĩa của động từ, không chỉ từ chỉ thời gian.",
+    "examples": [
+      {
+        "en": "I [ADV|usually] [V|walk] to work.",
+        "vi": "Tôi thường đi bộ đi làm. (thói quen)"
+      },
+      {
+        "en": "Today I[AUX|'m] [V|taking] the bus.",
+        "vi": "Hôm nay tôi đi xe buýt. (khác thường, tạm thời)"
+      },
+      {
+        "en": "My brother[AUX|'s] [V|working] at a bank this summer.",
+        "vi": "Hè này anh tôi làm ở một ngân hàng. (giai đoạn tạm thời)"
+      }
+    ],
+    "remember": "Đơn: nhìn từ xa, như một quy luật. Tiếp diễn: nhìn gần, như một lát cắt đang diễn ra."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Cả hai thì đều có thể nói về hiện tại nhưng chọn góc nhìn khác nhau. Hiện tại đơn thường trình bày thói quen, sự thật hoặc trạng thái; tiếp diễn nhấn hoạt động đang diễn ra, diễn biến hoặc tính tạm thời. Nghĩa cụ thể của động từ vẫn quan trọng."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "timeline",
+        "now": 70,
+        "sentence": "I drink tea every morning.",
+        "events": [
+          {
+            "kind": "repeat",
+            "from": 10,
+            "to": 90,
+            "label": "Mỗi sáng: một thói quen, nhìn từ xa",
+            "role": "main"
+          }
+        ]
+      },
+      "caption": "Hiện tại đơn: thói quen lặp lại, trải dài qua bây giờ. Bây giờ chỉ là một điểm trên đường đó.",
+      "alt": "Trục thời gian có một đoạn lặp lại kéo từ quá khứ qua thời điểm hiện tại đến tương lai, biểu thị thói quen uống trà mỗi sáng."
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "timeline",
+        "now": 70,
+        "sentence": "I'm drinking tea.",
+        "events": [
+          {
+            "kind": "span",
+            "from": 60,
+            "to": 80,
+            "label": "Đang uống: bây giờ nằm bên trong việc đó",
+            "role": "main"
+          }
+        ]
+      },
+      "caption": "Hiện tại tiếp diễn: một việc ngắn đang diễn ra, và thời điểm nói nằm giữa nó.",
+      "alt": "Trục thời gian có một đoạn ngắn bao quanh thời điểm hiện tại, biểu thị việc uống trà đang diễn ra."
+    },
+    {
+      "type": "h",
+      "vi": "Đường đi chọn thì"
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "flow",
+        "start": "state",
+        "nodes": {
+          "state": {
+            "q": "Ở nghĩa đang dùng, động từ diễn tả trạng thái hoặc ý kiến? (know, own, belong, need, want, believe)",
+            "yes": "simple_state",
+            "no": "now"
+          },
+          "now": {
+            "q": "Việc đang diễn ra quanh lúc nói, hoặc tạm thời, hoặc đang thay đổi?",
+            "yes": "cont",
+            "no": "habit"
+          },
+          "habit": {
+            "q": "Là thói quen lặp lại, sự thật chung, hay lịch trình cố định?",
+            "yes": "simple",
+            "no": "plan"
+          },
+          "plan": {
+            "q": "Là kế hoạch cá nhân đã sắp xếp cho sắp tới?",
+            "yes": "plan_cont",
+            "no": "other"
+          },
+          "simple_state": {
+            "end": "Hiện tại đơn",
+            "note": "I know the answer. She owns a shop. Vài động từ có hai nghĩa, xem phần nâng cao."
+          },
+          "cont": {
+            "end": "Hiện tại tiếp diễn",
+            "note": "Look! It's raining. I'm staying with a friend this month. Prices are rising."
+          },
+          "simple": {
+            "end": "Hiện tại đơn",
+            "note": "I walk to work. The museum opens at nine. The train leaves at six."
+          },
+          "plan_cont": {
+            "end": "Hiện tại tiếp diễn (kế hoạch)",
+            "note": "I'm meeting her tomorrow."
+          },
+          "other": {
+            "end": "Có thể cần một thì khác",
+            "note": "Nói về quá khứ, dự đoán không có sắp xếp, hoặc kết quả còn liên quan tới bây giờ thì xem các bài về quá khứ, will và hiện tại hoàn thành."
+          }
+        }
+      },
+      "caption": "Đây là cách nghĩ thường đúng, không phải một công thức tuyệt đối.",
+      "alt": "Sơ đồ bốn câu hỏi: động từ trạng thái thì thường dùng hiện tại đơn; việc đang diễn ra, tạm thời hoặc thay đổi thì dùng tiếp diễn; thói quen, sự thật, lịch trình thì dùng đơn; kế hoạch đã sắp xếp thì dùng tiếp diễn; còn lại có thể cần thì khác."
+    },
+    {
+      "type": "h",
+      "vi": "Cùng một động từ, hai ý"
+    },
+    {
+      "type": "contrast",
+      "labelA": "Hiện tại đơn",
+      "labelB": "Hiện tại tiếp diễn",
+      "items": [
+        {
+          "a": {
+            "en": "[Q|What] [AUX|do] you [V|do]?",
+            "vi": "Bạn làm nghề gì?"
+          },
+          "b": {
+            "en": "[Q|What] [AUX|are] you [V|doing]?",
+            "vi": "Bạn đang làm gì thế?"
+          },
+          "diff": "Bên trái hỏi nghề nghiệp, điều bạn thường làm. Bên phải hỏi việc đang làm lúc này, hoặc dự định nếu có từ chỉ tương lai như tonight."
+        },
+        {
+          "a": {
+            "en": "I [V|live] with my parents.",
+            "vi": "Tôi sống với bố mẹ."
+          },
+          "b": {
+            "en": "I[AUX|'m] [V|living] with my parents at the moment.",
+            "vi": "Hiện giờ tôi đang ở với bố mẹ."
+          },
+          "diff": "Cả hai đều đúng. Bên trái là chỗ ở bình thường. Bên phải gợi ý chuyện tạm thời, ví dụ cho tới khi tìm được nhà."
+        },
+        {
+          "a": {
+            "en": "The river [V|floods] every spring.",
+            "vi": "Con sông ngập mỗi mùa xuân."
+          },
+          "b": {
+            "en": "The river [AUX|is] [V|flooding].",
+            "vi": "Con sông đang ngập."
+          },
+          "diff": "Bên trái là quy luật hằng năm. Bên phải là điều đang xảy ra lúc này."
+        },
+        {
+          "a": {
+            "en": "Prices usually [V|rise] before Tet.",
+            "vi": "Giá thường tăng trước Tết."
+          },
+          "b": {
+            "en": "Prices [AUX|are] [V|rising].",
+            "vi": "Giá đang tăng."
+          },
+          "diff": "Bên trái là quy luật. Bên phải là xu hướng đang diễn ra."
+        }
+      ]
+    },
+    {
+      "type": "try",
+      "exercise": "presvc-01"
+    },
+    {
+      "type": "h",
+      "vi": "Từ chỉ thời gian là gợi ý, không phải khóa"
+    },
+    {
+      "type": "table",
+      "head": [
+        "Hay đi với hiện tại đơn",
+        "Hay đi với hiện tại tiếp diễn"
+      ],
+      "rows": [
+        [
+          "every day, every week",
+          "now, right now"
+        ],
+        [
+          "usually, often, sometimes, never",
+          "at the moment, currently"
+        ],
+        [
+          "on Mondays, at weekends",
+          "today, this week, these days"
+        ],
+        [
+          "always, once a week",
+          "still, Look!, Listen!"
+        ]
+      ],
+      "caption": "Dấu hiệu quen thuộc. Chúng đúng phần lớn thời gian nhưng không đúng mọi lúc."
+    },
+    {
+      "type": "p",
+      "vi": "Có khi dấu hiệu của thì này lại đi với thì kia, vì nghĩa của câu thắng dấu hiệu. Một thói quen tạm thời vẫn là tiếp diễn dù có every day. Một trạng thái vẫn là đơn dù có now."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "I [ADV|usually] [V|walk] to work, but this week I[AUX|'m] [V|taking] the bus.",
+          "vi": "Thường thì tôi đi bộ đi làm, nhưng tuần này tôi đi xe buýt.",
+          "note": "Hai thì trong một câu: thói quen, và một ngoại lệ tạm thời."
+        },
+        {
+          "en": "This week I[AUX|'m] [V|taking] the bus to work [T|every day], because my car is at the garage.",
+          "vi": "Tuần này ngày nào tôi cũng đi xe buýt, vì xe của tôi đang ở xưởng.",
+          "note": "Có every day nhưng vẫn dùng tiếp diễn, vì đó là một thói quen tạm thời."
+        },
+        {
+          "en": "I [V|know] the answer [T|now].",
+          "vi": "Bây giờ tôi biết đáp án rồi.",
+          "note": "Có now nhưng know là trạng thái, nên dùng hiện tại đơn."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Tiếng Việt có thể phân biệt rõ nghề nghiệp và việc đang làm bằng ngữ cảnh hoặc từ đang; câu ngắn Bạn làm gì? đôi khi cần thêm ngữ cảnh. Khi làm quen, What do you do? thường hỏi nghề, còn What are you doing? thường hỏi việc đang làm."
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Hãy tập cả những câu không có từ chỉ thời gian: xác định người nói đang kể thói quen, mô tả hoạt động hay nêu trạng thái. Không suy ra thì chỉ từ every day, usually hoặc now."
+    },
+    {
+      "type": "try",
+      "exercise": "presvc-04"
+    }
+  ],
+  "deep": [
+    {
+      "type": "h",
+      "vi": "Tạm thời hay lâu dài là điều suy ra, không phải luật"
+    },
+    {
+      "type": "p",
+      "vi": "Nói I live in Hanoi hay I'm living in Hanoi đều có thể đúng trong cùng một hoàn cảnh. Dạng đơn là cách nói mặc định, trung tính. Dạng tiếp diễn thêm ý \"cho tới lúc này\", nên người nghe suy ra chuyện tạm thời. Người nói có thể chọn dạng tiếp diễn vì họ coi chỗ ở đó là chưa cố định, dù đã ở khá lâu."
+    },
+    {
+      "type": "h",
+      "vi": "Kể chuyện miệng: dạng tiếp diễn làm nền"
+    },
+    {
+      "type": "p",
+      "vi": "Khi kể một chuyện vừa xảy ra bằng hiện tại, người nói hay dùng tiếp diễn cho bối cảnh và đơn cho sự kiện. Cách này gần giống cách kể bằng quá khứ."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "So I[AUX|'m] [V|walking] home, and this guy [V|comes] up to me and [V|asks] for directions.",
+          "vi": "Thế là tôi đang đi bộ về nhà, và có anh chàng đến hỏi đường tôi.",
+          "tag": "spoken",
+          "note": "Đang đi là nền, đến và hỏi là sự kiện."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Lịch trình và kế hoạch"
+    },
+    {
+      "type": "p",
+      "vi": "Cả hai thì đều nói được về tương lai. Hiện tại đơn thường trình bày lịch trình hoặc chương trình: The train leaves at seven. Hiện tại tiếp diễn thường trình bày một sắp xếp: I'm leaving at seven. Lịch trình có thể do con người lên kế hoạch; đây không phải sự phân chia theo việc người nói có ý định hay không."
+    },
+    {
+      "type": "h",
+      "vi": "Hiện tại tiếp diễn làm lời nói mềm hơn"
+    },
+    {
+      "type": "p",
+      "vi": "Dạng tiếp diễn làm lời đề nghị bớt trực tiếp: I'm hoping you can help me. Trong lời nói thân mật, I'm thinking we should leave soon nghe tự nhiên, vì người nói đưa ra gợi ý một cách nhẹ nhàng, không nêu ý kiến chắc chắn. Trong bài viết trang trọng, I think we should leave soon là lựa chọn gọn hơn."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Trong thư và email công việc, currently đi với hiện tại tiếp diễn rất tự nhiên: We are currently updating our website. Với động từ trạng thái, currently vẫn đi với hiện tại đơn: She currently owns two shops."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "presvc-what-do-you-do",
+      "wrong": "What do you doing right now?",
+      "right": "What are you doing right now?",
+      "why": "Câu hỏi tiếp diễn cần are + chủ ngữ + doing; không ghép do với doing theo mẫu này.",
+      "vn": "Chọn cấu trúc câu hỏi phù hợp với ý đang hỏi về hoạt động lúc này."
+    },
+    {
+      "id": "presvc-fact-continuous",
+      "wrong": "The river flow through the city.",
+      "right": "The river flows through the city.",
+      "why": "Khi trình bày một sự thật bằng hiện tại đơn, chủ ngữ số ít the river cần flows. Dạng is flowing vẫn có thể đúng nếu người nói mô tả dòng chảy đang diễn ra."
+    },
+    {
+      "id": "presvc-stative",
+      "wrong": "I am understanding the lesson now.",
+      "right": "I understand the lesson now.",
+      "why": "Understand là trạng thái, dùng hiện tại đơn, kể cả khi có now. Dạng tiếp diễn chỉ hợp khi nói về sự tiến bộ dần, như I'm understanding more every week."
+    },
+    {
+      "id": "presvc-habit-for-now",
+      "wrong": "Sorry, I can't talk now. I cook dinner.",
+      "right": "Sorry, I can't talk now. I'm cooking dinner.",
+      "why": "Việc đang diễn ra lúc nói dùng hiện tại tiếp diễn. I cook dinner nghe như một thói quen.",
+      "vn": "\"Tôi nấu cơm\" trong tiếng Việt có thể là đang nấu, nên người học hay chọn hiện tại đơn."
+    }
+  ],
+  "faq": [
+    {
+      "q": "I live in Hanoi và I'm living in Hanoi khác nhau thế nào?",
+      "a": "Cả hai đều đúng. I live in Hanoi là cách nói bình thường, trung tính. I'm living in Hanoi gợi ý đây là chỗ ở hiện giờ, có thể chỉ trong một thời gian."
+    },
+    {
+      "q": "Today đi với thì nào?",
+      "a": "Tùy nghĩa. Today I'm taking the bus nói về một ngoại lệ hôm nay. Today I have three classes nói về lịch hôm nay. Cả hai đều tự nhiên."
+    },
+    {
+      "q": "Hiện tại đơn có nói được về việc đang xảy ra không?",
+      "a": "Ít khi. Các trường hợp thường gặp là trạng thái (I know the answer), động từ làm hành động bằng lời (I promise), và lời bình luận nhanh (He passes to Mai and she shoots)."
+    },
+    {
+      "q": "I'm usually walking to work có sai không?",
+      "a": "Có thể dùng tiếp diễn với usually khi mô tả việc thường đang diễn ra ở một thời điểm, như At eight, I'm usually walking to work, hoặc một thói quen tạm thời. Với thói quen nói chung, I usually walk to work là cách nói trung tính."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "presvc-01",
+      "type": "choice",
+      "level": "A2",
+      "use": "both",
+      "skill": "use",
+      "prompt": "Chọn dạng đúng.",
+      "stem": "Look! It ___ outside.",
+      "options": [
+        {
+          "t": "rains",
+          "note": "Look! cho thấy việc đang xảy ra. Hiện tại đơn nghe như quy luật.",
+          "tag": "present-for-now"
+        },
+        {
+          "t": "is raining",
+          "ok": true,
+          "note": "Việc đang diễn ra lúc nói: is + raining."
+        },
+        {
+          "t": "rain",
+          "note": "It là ngôi thứ ba số ít nên không thể dùng rain trần. Hơn nữa câu nói về lúc này.",
+          "tag": "third-person-s-missing"
+        }
+      ],
+      "explain": "Look! gọi sự chú ý tới điều đang có trước mắt, nên cần hiện tại tiếp diễn."
+    },
+    {
+      "id": "presvc-02",
+      "context": "Mô tả đặc điểm khí hậu thường lệ, không phải một giai đoạn tạm thời hay một cảnh đang diễn ra.",
+      "type": "choice",
+      "level": "A2",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Chọn dạng đúng.",
+      "stem": "Where I live, it ___ heavily every July.",
+      "options": [
+        {
+          "t": "rains",
+          "ok": true,
+          "note": "Every July nói về quy luật hằng năm: hiện tại đơn."
+        },
+        {
+          "t": "is raining",
+          "note": "Ngữ cảnh yêu cầu một quy luật khí hậu nói chung nên chọn dạng đơn. Tiếp diễn có thể kể sự lặp lại tạm thời trong ngữ cảnh khác; every July không tự cấm nó.",
+          "tag": "progressive-for-habit"
+        },
+        {
+          "t": "rain",
+          "note": "It cần dạng có -s: rains.",
+          "tag": "third-person-s-missing"
+        }
+      ],
+      "explain": "Câu mô tả một quy luật khí hậu của nơi bạn ở, nên hiện tại đơn là dạng phù hợp."
+    },
+    {
+      "id": "presvc-03",
+      "type": "cloze",
+      "level": "A2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Điền dạng đúng của động từ trong ngoặc.",
+      "stem": "Mai usually {1} (walk) to school, but today she {2} (take) the bus because it {3} (rain).",
+      "blanks": {
+        "1": {
+          "accept": [
+            "walks"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "is walking",
+              "verdict": "wrong",
+              "note": "Ngữ cảnh yêu cầu kể thói quen nói chung; dạng tiếp diễn sẽ đổi sang cách nhìn một hoạt động hoặc thói quen tạm thời. Usually tự nó không cấm tiếp diễn.",
+              "tag": "progressive-for-habit"
+            }
+          ]
+        },
+        "2": {
+          "accept": [
+            "is taking",
+            "'s taking"
+          ],
+          "known": [
+            {
+              "t": "takes",
+              "verdict": "awkward",
+              "note": "Hôm nay là ngoại lệ tạm thời, nên người nói thường dùng tiếp diễn.",
+              "tag": "present-for-now"
+            }
+          ]
+        },
+        "3": {
+          "accept": [
+            "is raining",
+            "'s raining"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "rains",
+              "verdict": "wrong",
+              "note": "Trong cảnh đã cho, mưa đang diễn ra lúc nói; rains sẽ trình bày như quy luật thay vì mô tả trận mưa này.",
+              "tag": "present-for-now"
+            }
+          ]
+        }
+      },
+      "explain": "Thói quen dùng đơn, ngoại lệ hôm nay và điều đang diễn ra dùng tiếp diễn. Một câu có thể chứa cả hai thì.",
+      "context": "Mô tả thói quen đi học nói chung, rồi chuyển sang việc đang diễn ra ngay lúc này: hôm nay Mai đang ngồi trên xe buýt và ngoài trời đang mưa."
+    },
+    {
+      "id": "presvc-04",
+      "type": "transform",
+      "level": "A2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lại câu để nói về lúc này.",
+      "source": "Nam watches TV every evening.",
+      "instruction": "Đổi từ thói quen sang hoạt động đang diễn ra bằng hiện tại tiếp diễn, dùng right now.",
+      "accept": [
+        "Nam is watching TV right now",
+        "Nam's watching TV right now",
+        "Right now Nam is watching TV",
+        "Right now, Nam is watching TV",
+        "Right now Nam's watching TV",
+        "Right now, Nam's watching TV"
+      ],
+      "model": "Nam is watching TV right now.",
+      "known": [
+        {
+          "t": "Nam watches TV right now",
+          "verdict": "wrong",
+          "note": "Right now nói về lúc này, nên cần hiện tại tiếp diễn.",
+          "tag": "present-for-now"
+        },
+        {
+          "t": "Nam watching TV right now",
+          "verdict": "wrong",
+          "note": "Còn thiếu is trước watching.",
+          "tag": "continuous-no-be"
+        }
+      ],
+      "explain": "Từ thói quen (every evening) sang việc đang diễn ra (right now): đổi hiện tại đơn thành am/is/are + V-ing."
+    },
+    {
+      "id": "presvc-05",
+      "type": "error",
+      "level": "A2",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        {
+          "t": "Ngoc"
+        },
+        {
+          "t": "is knowing",
+          "bad": true,
+          "fix": [
+            "knows"
+          ],
+          "note": "Know là trạng thái, nên dùng hiện tại đơn.",
+          "tag": "stative-progressive"
+        },
+        {
+          "t": "the answer, but she is shy."
+        }
+      ],
+      "explain": "Đổi thành Ngoc knows the answer, but she is shy. Biết một đáp án là trạng thái."
+    },
+    {
+      "id": "presvc-06",
+      "type": "error",
+      "level": "A2",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "noError": true,
+      "segments": [
+        {
+          "t": "I usually walk to work,"
+        },
+        {
+          "t": "but this week I'm taking the bus."
+        }
+      ],
+      "explain": "Câu đúng. Hai thì xuất hiện cùng nhau một cách tự nhiên: hiện tại đơn cho thói quen và hiện tại tiếp diễn cho ngoại lệ tạm thời."
+    },
+    {
+      "id": "presvc-07",
+      "type": "classify",
+      "level": "A2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Chọn dạng phù hợp với góc nhìn được yêu cầu dưới đây; đây không phải luật rằng dạng kia luôn sai.",
+      "cats": [
+        "Hiện tại đơn",
+        "Hiện tại tiếp diễn"
+      ],
+      "items": [
+        {
+          "t": "Nêu nghề nghiệp như thông tin thông thường, không nhấn giai đoạn làm tạm",
+          "cat": "Hiện tại đơn"
+        },
+        {
+          "t": "Nhấn một hoạt động đang diễn ra ngoài cửa sổ bằng cách nhìn tiếp diễn",
+          "cat": "Hiện tại tiếp diễn"
+        },
+        {
+          "t": "Nói về giờ tàu chạy theo lịch",
+          "cat": "Hiện tại đơn"
+        },
+        {
+          "t": "Nói rằng giá nhà đang tăng dần",
+          "cat": "Hiện tại tiếp diễn"
+        },
+        {
+          "t": "Nói về một sự thật khoa học",
+          "cat": "Hiện tại đơn"
+        },
+        {
+          "t": "Nhấn tính tạm thời của việc đang ở nhà bạn bè trong lúc nhà mình đang sửa",
+          "cat": "Hiện tại tiếp diễn"
+        }
+      ],
+      "explain": "Nghề nghiệp, lịch trình và sự thật khoa học là điều ổn định hoặc cố định: hiện tại đơn. Việc đang xảy ra, đang thay đổi hoặc tạm thời: hiện tại tiếp diễn."
+    },
+    {
+      "id": "presvc-08",
+      "type": "match",
+      "level": "A2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Nối câu hỏi với cách hiểu thông thường khi làm quen hoặc hỏi chuyện hiện tại; không xét một kế hoạch tương lai hay tình huống giả định.",
+      "pairs": [
+        {
+          "a": "What do you do?",
+          "b": "Hỏi về nghề nghiệp"
+        },
+        {
+          "a": "What are you doing?",
+          "b": "Hỏi về việc đang làm lúc này"
+        },
+        {
+          "a": "Where do you live?",
+          "b": "Hỏi về nơi ở thông thường"
+        },
+        {
+          "a": "Where are you living?",
+          "b": "Hỏi về nơi ở trong giai đoạn này, thường là tạm thời"
+        }
+      ],
+      "explain": "Hiện tại đơn hỏi về điều thường xuyên, hiện tại tiếp diễn hỏi về điều đang hoặc tạm thời."
+    },
+    {
+      "id": "presvc-09",
+      "type": "multi",
+      "level": "A2",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Chọn tất cả câu tự nhiên trong tiếng Anh chuẩn.",
+      "stem": "Đơn hay tiếp diễn",
+      "options": [
+        {
+          "t": "She is knowing the answer.",
+          "note": "Know là trạng thái, không dùng -ing.",
+          "tag": "stative-progressive"
+        },
+        {
+          "t": "He lives with his aunt, but he's looking for his own flat.",
+          "ok": true,
+          "note": "Lives nêu nơi ở hiện tại một cách trung tính; looking nhấn quá trình tìm nhà. Lives không bắt buộc nơi ở đó phải lâu dài."
+        },
+        {
+          "t": "The shop opens at nine every day.",
+          "ok": true,
+          "note": "Lịch cố định, dùng hiện tại đơn."
+        },
+        {
+          "t": "I needing a new phone.",
+          "note": "Câu thiếu động từ hữu hạn; cách nói trung tính ở đây là I need a new phone.",
+          "tag": "finite-verb"
+        }
+      ],
+      "explain": "Know trong nghĩa biết đáp án thường dùng dạng đơn. I needing thiếu động từ hữu hạn. Hai câu còn lại dùng các dạng phù hợp với ý định của chúng."
+    },
+    {
+      "id": "presvc-10",
+      "type": "cloze",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Điền dạng đúng của động từ trong ngoặc.",
+      "stem": "This week I {1} (take) the bus to work every day.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "am taking",
+            "'m taking"
+          ],
+          "known": [
+            {
+              "t": "take",
+              "verdict": "acceptable",
+              "note": "Cũng đúng nếu bạn nói như một thói quen đều đặn. Dạng tiếp diễn nhấn rằng đây là việc tạm thời trong tuần này."
+            }
+          ]
+        }
+      },
+      "explain": "Every day không bắt buộc dùng hiện tại đơn. Dạng tiếp diễn nói rằng thói quen này chỉ có trong tuần này."
+    },
+    {
+      "id": "presvc-11",
+      "type": "order",
+      "level": "A2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sắp xếp thành câu hỏi.",
+      "tokens": [
+        "How",
+        "does",
+        "your",
+        "sister",
+        "usually",
+        "get",
+        "to",
+        "work"
+      ],
+      "end": "?",
+      "accept": [
+        [
+          "How",
+          "does",
+          "your",
+          "sister",
+          "usually",
+          "get",
+          "to",
+          "work"
+        ],
+        [
+          "How",
+          "does",
+          "your",
+          "sister",
+          "get",
+          "to",
+          "work",
+          "usually"
+        ]
+      ],
+      "explain": "Câu hỏi dùng How + does + chủ ngữ + get. Usually thường đứng trước get; đặt cuối câu cũng được."
+    },
+    {
+      "id": "presvc-12",
+      "type": "open",
+      "level": "A2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Viết năm câu so sánh một ngày thường của bạn với tuần này (có điều gì khác?). Dùng hiện tại đơn cho thói quen và hiện tại tiếp diễn cho điều tạm thời.",
+      "model": [
+        "I usually get up at six and take the bus to school.",
+        "This week I'm getting up earlier because I'm preparing for a test.",
+        "My sister normally cooks dinner, but she's working late this week.",
+        "So I'm cooking for the family.",
+        "I don't usually cook, so it's a big change."
+      ],
+      "checklist": [
+        "Thói quen bình thường dùng hiện tại đơn",
+        "Điều tạm thời hoặc khác thường dùng am/is/are + V-ing",
+        "Có ít nhất một trạng từ tần suất (usually, normally)",
+        "Với know, need, want ở nghĩa trạng thái thông thường, ưu tiên dạng đơn; không coi mọi dạng tiếp diễn của động từ trạng thái là lỗi."
+      ],
+      "explain": "Bài viết cho thấy hai thì cùng làm việc: đơn nói điều thường lệ, tiếp diễn nói điều khác thường lệ."
+    },
+    {
+      "id": "presvc-13",
+      "type": "choice",
+      "level": "A2",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Chọn dạng đúng cho câu trả lời.",
+      "turns": [
+        {
+          "who": "A",
+          "t": "Hello? Are you busy?"
+        },
+        {
+          "who": "B",
+          "t": "Yes, I ___ for an exam."
+        }
+      ],
+      "stem": "Câu trả lời của B",
+      "options": [
+        {
+          "t": "study",
+          "note": "A hỏi về lúc này. Hiện tại đơn nghe như một thói quen.",
+          "tag": "present-for-now"
+        },
+        {
+          "t": "am studying",
+          "ok": true,
+          "note": "Việc đang diễn ra lúc nói."
+        },
+        {
+          "t": "studies",
+          "note": "I đi với study, không phải studies. Hơn nữa câu nói về lúc này.",
+          "tag": "present-for-now"
+        }
+      ],
+      "explain": "A hỏi bạn có bận không ngay lúc này, nên B nói việc đang làm: hiện tại tiếp diễn."
+    },
+    {
+      "id": "presvc-14",
+      "type": "error",
+      "level": "A2",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        {
+          "t": "She"
+        },
+        {
+          "t": "want",
+          "bad": true,
+          "fix": [
+            "wants"
+          ],
+          "note": "Trong câu hiện tại đơn này, she cần wants có -s.",
+          "tag": "third-person-s-missing"
+        },
+        {
+          "t": "a new laptop."
+        }
+      ],
+      "explain": "She wants a new laptop dùng hiện tại đơn cho mong muốn hiện tại. Bài này kiểm tra hòa hợp she + wants, không chấm một lựa chọn văn phong tiếp diễn thành lỗi."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham khảo thêm về chủ điểm; chưa trực tiếp kiểm tra đoạn hoặc ấn bản trong lượt rà soát này."
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham khảo thêm về chủ điểm; chưa trực tiếp kiểm tra đoạn hoặc ấn bản trong lượt rà soát này."
+    },
+    {
+      "ref": "bc",
+      "note": "Các đoạn đã đối chiếu hoặc tái sử dụng có ghi rõ tại docs/grammar/TENSE-EXERCISE-REVIEW.md; không suy ra toàn bộ nguồn đã được đọc."
+    },
+    {
+      "ref": "murphy-essential",
+      "note": "Tham khảo thêm về chủ điểm; chưa trực tiếp kiểm tra đoạn hoặc ấn bản trong lượt rà soát này."
+    },
+    {
+      "ref": "lgswe",
+      "note": "Tham khảo thêm về chủ điểm; chưa trực tiếp kiểm tra đoạn hoặc ấn bản trong lượt rà soát này."
+    },
+    {
+      "ref": "cgel",
+      "note": "Tham khảo thêm về chủ điểm; chưa trực tiếp kiểm tra đoạn hoặc ấn bản trong lượt rà soát này."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

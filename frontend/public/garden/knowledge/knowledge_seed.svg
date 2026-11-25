@@ -1,0 +1,33 @@
+<svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="seedAura" cx="48" cy="48" r="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#F59E0B" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gemSeed" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="35%" stop-color="#FBBF24"/>
+      <stop offset="75%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </radialGradient>
+    <linearGradient id="capG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#78350F"/>
+      <stop offset="50%" stop-color="#92400E"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+  </defs>
+  <!-- Ambient Golden Halo -->
+  <circle cx="48" cy="48" r="42" fill="url(#seedAura)"/>
+  <!-- Seed Acorn Body -->
+  <path d="M48 82 C30 82 22 58 22 46 C22 34 32 30 48 30 C64 30 74 34 74 46 C74 58 66 82 48 82 Z" fill="url(#gemSeed)"/>
+  <!-- Seed Cap (Textured) -->
+  <path d="M48 18 C30 18 20 28 20 36 C32 40 64 40 76 36 C76 28 66 18 48 18 Z" fill="url(#capG)"/>
+  <!-- Cap stem -->
+  <path d="M48 18 Q46 12 50 8" stroke="#78350F" stroke-width="3" stroke-linecap="round"/>
+  <!-- Inner glowing letter rune -->
+  <text x="48" y="62" font-family="Baloo 2, sans-serif" font-weight="900" font-size="22" fill="#FFFFFF" text-anchor="middle" opacity="0.95">E</text>
+  <!-- Facet highlight catchlight -->
+  <path d="M30 42 C30 36 40 34 46 34" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="34" cy="48" r="2" fill="#FFFFFF" opacity="0.9"/>
+</svg>

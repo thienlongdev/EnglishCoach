@@ -1,0 +1,67 @@
+{
+  "id": "opening-negatives",
+  "title": "Rarely ra đầu câu thì trợ động từ đi đâu?",
+  "summary": "Biên tập lời dẫn cho một phim tài liệu. Giữ nội dung về việc hội đồng hiếm khi bỏ phiếu lại, đổi vị trí rarely và mốc thời gian. Thử dự đoán dạng của vote.",
+  "level": "C1",
+  "topics": [
+    "negative-inversion",
+    "adverb-position"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Vị trí rarely",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Giữa câu"
+        },
+        {
+          "id": "v2",
+          "label": "Đầu câu"
+        }
+      ]
+    },
+    {
+      "id": "axis-2",
+      "label": "Khung thời gian",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Thường lệ"
+        },
+        {
+          "id": "v2",
+          "label": "Trong nhiệm kỳ trước"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1|v1": {
+      "en": "The panel rarely votes twice.",
+      "vi": "Hội đồng hiếm khi bỏ phiếu hai lần.",
+      "note": "Rarely ở giữa không kích hoạt đảo ngữ. Votes tự mang dấu hiệu hiện tại ngôi thứ ba. / Medial rarely leaves ordinary agreement on votes.",
+      "verdict": "ok"
+    },
+    "v2|v1": {
+      "en": "Rarely does the panel vote twice.",
+      "vi": "Hiếm khi nào hội đồng bỏ phiếu hai lần.",
+      "note": "Does đứng trước chủ ngữ và mang hòa hợp nên vote không còn s. Cách mở này trang trọng và nhấn mạnh hơn. / Initial negative-frequency rarely triggers does-support.",
+      "verdict": "ok"
+    },
+    "v1|v2": {
+      "en": "The panel rarely voted twice during its last term.",
+      "vi": "Trong nhiệm kỳ trước, hội đồng hiếm khi bỏ phiếu hai lần.",
+      "note": "Voted định vị thói quen hiếm gặp trong một nhiệm kỳ đã khép. / The main verb bears past tense.",
+      "verdict": "ok"
+    },
+    "v2|v2": {
+      "en": "Rarely did the panel vote twice during its last term.",
+      "vi": "Hiếm khi nào trong nhiệm kỳ trước hội đồng bỏ phiếu hai lần.",
+      "note": "Đảo ngữ không biến câu thành câu hỏi. Did mang quá khứ, còn vote trở về nguyên mẫu. / Did carries the past after fronted rarely.",
+      "verdict": "ok"
+    }
+  }
+}

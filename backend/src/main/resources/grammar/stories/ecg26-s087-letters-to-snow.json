@@ -1,0 +1,99 @@
+{
+  "id": "ecg26-s087-letters-to-snow",
+  "title": "Những lá thư gửi tuyết",
+  "summary": "Mỗi tháng bảy, ông Tuấn vẫn viết chữ Tuyết lên một phong bì rồi cất vào ngăn đá.",
+  "level": "B1",
+  "topics": [
+    "used-to-and-would"
+  ],
+  "scene": "home",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Mira",
+      "role": "Cháu gái"
+    },
+    {
+      "id": "b",
+      "name": "Ông Tuấn",
+      "role": "Người giữ hộp thư"
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "narrate": "Mira lấy đá uống nước thì một góc phong bì vàng trượt ra. Nó chứa ảnh một cô gái đứng bên tiệm đá bào. Trên cửa tiệm có chữ SNOW.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Is Snow a person or a place?",
+          "vi": "Tuyết là tên người hay tên một nơi hả ông?"
+        }
+      ],
+      "next": "decision"
+    },
+    {
+      "id": "decision",
+      "say": [
+        {
+          "who": "b",
+          "en": "Your grandmother called the shop Snow. It's a shoe shop now.",
+          "vi": "Bà con gọi tiệm ấy là Tuyết. Giờ ở đó là tiệm giày rồi."
+        }
+      ],
+      "choice": {
+        "prompt": "Mira muốn ghi chú cả thói quen gặp nhau lẫn việc nơi đó từng là tiệm đá. Chọn chú thích phù hợp.",
+        "options": [
+          {
+            "t": "They are used to meeting at the ice shop.",
+            "note": "Are used to meeting nghĩa là hiện đã quen với việc gặp nhau. Câu không diễn tả được tiệm đá nay đã đóng cửa.",
+            "ok": false,
+            "next": "path-2"
+          },
+          {
+            "t": "They would meet at a shop that used to sell ice.",
+            "note": "Would meet kể hành động lặp lại trong bối cảnh quá khứ đã nêu. Used to sell mô tả việc buôn bán trước kia.",
+            "ok": true,
+            "next": "path-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "path-1",
+      "narrate": "Ông lấy bút, thêm giờ tan ca ở mép ảnh. Mira nhận ra số 5:15 trên mọi lá thư.",
+      "say": [
+        {
+          "who": "b",
+          "en": "She always beat me there.",
+          "vi": "Lần nào bà ấy cũng đến trước ông."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "path-2",
+      "narrate": "Ông khoanh chữ are rồi chỉ qua cửa sổ. Tấm biển hình chiếc giày treo đúng chỗ bảng Tuyết từng ở.",
+      "say": [
+        {
+          "who": "b",
+          "en": "We can't meet at that shop now.",
+          "vi": "Bây giờ ông bà đâu còn gặp nhau ở tiệm đó được nữa."
+        }
+      ],
+      "next": "coda"
+    },
+    {
+      "id": "coda",
+      "narrate": "Mira mang máy bào đá nhỏ về nhà. Đúng 5:15, cô đặt hai ly lên bàn. Ông Tuấn viết lên chiếc phong bì đầu tiên không cần cho vào ngăn đá.",
+      "say": [
+        {
+          "who": "a",
+          "en": "This year Snow is open in our kitchen.",
+          "vi": "Năm nay tiệm Tuyết mở ngay trong bếp nhà mình."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "bridge-result",
+  "title": "Which nhắc tới cây cầu hay cả sự việc?",
+  "summary": "Trong bản tin giao thông, thử thêm mệnh đề bổ sung trực tiếp sau danh từ hoặc sau cả thông báo. Điều gì làm hành khách ngạc nhiên?",
+  "level": "B2",
+  "topics": [
+    "relative-clauses-non-defining",
+    "pronoun-reference"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Điều được bình luận",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Cây cầu"
+        },
+        {
+          "id": "v2",
+          "label": "Sự việc"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1": {
+      "en": "The bridge, which is narrow, reopened.",
+      "vi": "Cây cầu vốn hẹp đã mở lại.",
+      "note": "Which is narrow nêu thuộc tính của danh từ bridge. / Which describes the bridge.",
+      "verdict": "ok"
+    },
+    "v2": {
+      "en": "The bridge reopened, which surprised commuters.",
+      "vi": "Cầu đã mở lại, điều khiến người đi lại ngạc nhiên.",
+      "note": "Điều gây ngạc nhiên là việc mở lại cầu. Dịch which thành cây cầu trong câu này sẽ lệch nghĩa. / Which can refer to the reopening as a whole.",
+      "verdict": "ok"
+    }
+  }
+}

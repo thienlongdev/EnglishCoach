@@ -1,0 +1,67 @@
+{
+  "id": "quiet-room",
+  "title": "Tưởng phòng đã trống",
+  "summary": "Ở cửa phòng tập, bạn nghe tiếng động. Đổi điều bạn muốn hỏi và kỳ vọng ban đầu. Dấu hiệu phủ định nằm ở đâu, và người nghe được mời xác nhận điều gì?",
+  "level": "A2",
+  "topics": [
+    "negative-questions",
+    "yes-no-questions"
+  ],
+  "kind": "switchboard",
+  "axes": [
+    {
+      "id": "axis-1",
+      "label": "Điều muốn biết",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Phòng trống"
+        },
+        {
+          "id": "v2",
+          "label": "Tập đã xong"
+        }
+      ]
+    },
+    {
+      "id": "axis-2",
+      "label": "Kỳ vọng",
+      "values": [
+        {
+          "id": "v1",
+          "label": "Chưa có ý kiến"
+        },
+        {
+          "id": "v2",
+          "label": "Tưởng là đúng"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "v1|v1": {
+      "en": "Is the room empty?",
+      "vi": "Phòng trống không?",
+      "note": "Is đứng trước the room. Không có dấu hiệu rõ người hỏi đã đoán phòng trống. / The question simply asks about occupancy.",
+      "verdict": "ok"
+    },
+    "v1|v2": {
+      "en": "Isn't the room empty?",
+      "vi": "Tôi tưởng phòng trống chứ?",
+      "note": "Tiếng động trái kỳ vọng làm isn't tự nhiên. Câu chưa kết luận chắc chắn trong phòng có người. / The speaker expected an empty room.",
+      "verdict": "ok"
+    },
+    "v2|v1": {
+      "en": "Is the rehearsal over?",
+      "vi": "Buổi tập kết thúc chưa?",
+      "note": "Over ở đây là đã kết thúc. Biết buổi tập xong vẫn chưa chắc phòng trống. / A neutral question asks whether the event has ended.",
+      "verdict": "ok"
+    },
+    "v2|v2": {
+      "en": "Isn't the rehearsal over?",
+      "vi": "Tôi tưởng buổi tập kết thúc rồi chứ?",
+      "note": "Isn't gợi người hỏi tưởng đã hết giờ. Nếu còn nghe tiếng đàn, người ấy đang kiểm tra lại kỳ vọng. / The speaker expected the rehearsal to have ended.",
+      "verdict": "ok"
+    }
+  }
+}

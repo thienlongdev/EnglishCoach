@@ -1,0 +1,85 @@
+{
+  "id": "ecg26-s229-river-without-if",
+  "title": "Dòng sông thiếu chữ if",
+  "level": "C1",
+  "topics": [
+    "conditionals-beyond-types"
+  ],
+  "scene": "newsroom",
+  "summary": "Một mô hình cho thấy nước có thể chạm cửa trường. Dân làng đã bắt đầu chuyển bàn ghế vì bản tin bỏ mất điều kiện về con đập.",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Thu",
+      "role": "Nhà báo trẻ"
+    },
+    {
+      "id": "b",
+      "name": "Gio",
+      "role": "Người vẽ đê"
+    }
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "narrate": "Mực nước mô hình chỉ chạm cửa khi hai van đều khóa. Van thật thứ hai đang mở. Giấy nháp trên bàn chỉ còn một dòng School floods at noon.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Which noon? On what assumptions?",
+          "vi": "Trưa nào? Với giả định nào?"
+        },
+        {
+          "who": "b",
+          "en": "Put the gates back into that sentence.",
+          "vi": "Hãy đưa hai van trở lại trong câu ấy."
+        }
+      ],
+      "next": "turn"
+    },
+    {
+      "id": "turn",
+      "choice": {
+        "prompt": "Thu cần báo đúng điều mô hình chứng minh, để người đọc biết còn phải kiểm tra gì.",
+        "options": [
+          {
+            "t": "The school is flooded at noon whenever we run the model.",
+            "note": "Whenever hàm ý mọi lần chạy, bỏ biến số trạng thái van. Nó cũng dễ lẫn trường thật với vật trong mô hình.",
+            "ok": false,
+            "next": "ending-2"
+          },
+          {
+            "t": "With both gates shut, the model puts the water at the school door by noon.",
+            "note": "With both gates shut nêu điều kiện mà không cần từ if. Chủ ngữ the model giữ dự báo trong giới hạn mô phỏng.",
+            "ok": true,
+            "next": "ending-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending-1",
+      "narrate": "Gio dựng một cần gạt nhỏ bên mô hình. Lũ trẻ mở van thứ hai, nhìn mực nước đổi rồi rủ người lớn kiểm tra van thật. Bàn ghế được trả về lớp sau khi xem tình trạng thực tế.",
+      "say": [
+        {
+          "who": "b",
+          "en": "Let them see the condition move.",
+          "vi": "Cứ để mọi người nhìn thấy điều kiện thay đổi."
+        }
+      ],
+      "end": true
+    },
+    {
+      "id": "ending-2",
+      "narrate": "Thu chạy mô hình với van mở. Nước dừng dưới bậc đầu tiên. Cô chụp ảnh cả hai lần, ghi trạng thái van dưới mỗi ảnh rồi thay lại bản tin.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Two photographs needed two different captions.",
+          "vi": "Hai bức ảnh cần hai chú thích khác nhau."
+        }
+      ],
+      "end": true
+    }
+  ]
+}

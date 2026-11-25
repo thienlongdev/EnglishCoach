@@ -1,0 +1,96 @@
+{
+  "id": "ecg26-s124-hand-me-the-plate",
+  "title": "Chiếc đĩa đi nhầm hướng",
+  "summary": "Tại bàn dài, Sa nhờ Linh đưa đĩa cho khách ở đầu kia. Qua ba người truyền lời, chiếc đĩa quay trở lại bếp.",
+  "level": "B1",
+  "topics": [
+    "two-object-verbs",
+    "reporting-commands-requests"
+  ],
+  "scene": "restaurant",
+  "cast": [
+    {
+      "id": "a",
+      "name": "Sa",
+      "role": "Người nấu bếp"
+    },
+    {
+      "id": "b",
+      "name": "Linh",
+      "role": "Người phục vụ"
+    }
+  ],
+  "beats": [
+    {
+      "id": "scene",
+      "narrate": "Tấm giấy gốc viết Linh, please give Mara the blue plate. Mara có một tay đang bế bé nên chưa thể tự tới nhận.",
+      "say": [
+        {
+          "who": "a",
+          "en": "The plate has made a full circle.",
+          "vi": "Cái đĩa đã đi hết một vòng rồi."
+        },
+        {
+          "who": "b",
+          "en": "Tell them who sends it and who gets it.",
+          "vi": "Nói lại ai đưa và ai nhận đi."
+        }
+      ],
+      "next": "crossroads"
+    },
+    {
+      "id": "crossroads",
+      "choice": {
+        "prompt": "Sa tường thuật lời mình vừa nhờ Linh.",
+        "options": [
+          {
+            "ok": false,
+            "t": "I asked Mara to give Linh the blue plate.",
+            "note": "Đổi thứ tự tên đã đổi người thực hiện và người nhận, dù cấu trúc vẫn đúng. Mara chưa cầm đĩa để đưa.",
+            "next": "consequence-2"
+          },
+          {
+            "ok": true,
+            "t": "I asked Linh to give Mara the blue plate.",
+            "note": "Linh là người sau asked, thực hiện give. Mara là người nhận đi trước vật blue plate. Vai không đổi khi tường thuật.",
+            "next": "consequence-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consequence-1",
+      "narrate": "Đĩa tới tay Mara, bà nhìn màu xanh rồi cười: đúng chiếc đĩa bà từng nung cho quán ngày khai trương.",
+      "say": [
+        {
+          "who": "b",
+          "en": "This time only the thank-you came back.",
+          "vi": "Lần này chỉ lời cảm ơn quay về."
+        }
+      ],
+      "next": "close-1"
+    },
+    {
+      "id": "close-1",
+      "narrate": "Em bé đầu tiên ăn bánh trên chính món đồ của bà. Sa mang thư cảm ơn trả về theo đúng chiều ngược lại.",
+      "end": true
+    },
+    {
+      "id": "consequence-2",
+      "narrate": "Mara giơ hai tay bận bế em. Linh tự mang đĩa tới và gợi ý vẽ một mũi tên trên tờ nhắn.",
+      "say": [
+        {
+          "who": "a",
+          "en": "Nobody forgot which way that arrow went.",
+          "vi": "Không ai quên hướng của mũi tên ấy nữa."
+        }
+      ],
+      "next": "close-2"
+    },
+    {
+      "id": "close-2",
+      "narrate": "Cuối bữa Mara vẽ mũi tên xanh lên hóa đơn như chữ ký. Người nào từng chuyền đĩa cũng nhận ra.",
+      "end": true
+    }
+  ]
+}

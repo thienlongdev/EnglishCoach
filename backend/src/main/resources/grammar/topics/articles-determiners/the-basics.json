@@ -1,0 +1,925 @@
+{
+  "schema": 1,
+  "slug": "the-basics",
+  "version": 3,
+  "domain": "articles-determiners",
+  "order": 20,
+  "kind": "grammar",
+  "title": {
+    "vi": "The: khi cả hai đã biết là cái nào",
+    "en": "The: when both know which"
+  },
+  "subtitle": {
+    "vi": "Không phải 'đã nhắc rồi', mà là 'người nghe biết tôi nói tới cái nào'",
+    "en": "Not 'already mentioned', but 'the listener knows which one I mean'"
+  },
+  "aliases": [
+    "the",
+    "mạo từ xác định",
+    "definite article",
+    "khi nào dùng the",
+    "a hay the",
+    "a or the",
+    "the sun the moon",
+    "the first mention",
+    "the same the only",
+    "bỏ quên the"
+  ],
+  "level": "A1",
+  "levelBasis": "editorial",
+  "uses": [
+    {
+      "level": "A1",
+      "vi": "Dùng the khi chỉ có một cái trong tình huống: the sun, the door, the teacher."
+    },
+    {
+      "level": "A2",
+      "vi": "Nhắc lại điều đã nói: I bought a jacket. The jacket was cheap. Dùng the với so sánh nhất và the same, the only."
+    },
+    {
+      "level": "B1",
+      "vi": "Suy ra từ hiểu biết chung: We stayed in a hotel. The room was small. Cụm sau danh từ chỉ rõ cái nào: the girl who called."
+    }
+  ],
+  "objectives": [
+    "Tự hỏi 'người nghe có biết tôi nói tới cái nào không?' để chọn the hay a/an",
+    "Nhận ra các nguồn của sự xác định: đã nhắc trước, đang ở trước mắt, duy nhất trong thế giới của người nói, suy ra từ hiểu biết chung, cụm sau danh từ chỉ rõ",
+    "Dùng the với so sánh nhất, số thứ tự, same và only",
+    "Đọc the là /ðə/ hay /ði/ theo âm đầu của từ đứng sau"
+  ],
+  "prerequisites": [
+    "a-and-an"
+  ],
+  "related": [
+    {
+      "slug": "a-and-an",
+      "rel": "contrast"
+    },
+    {
+      "slug": "zero-article",
+      "rel": "more"
+    },
+    {
+      "slug": "generic-reference",
+      "rel": "confusion"
+    },
+    {
+      "slug": "articles-with-names-and-places",
+      "rel": "more"
+    },
+    {
+      "slug": "articles-in-context",
+      "rel": "application"
+    },
+    {
+      "slug": "demonstratives",
+      "rel": "alternative"
+    },
+    {
+      "slug": "possessive-determiners",
+      "rel": "alternative"
+    }
+  ],
+  "exam": {
+    "ielts": "Thừa the khi nói chung và thiếu the khi đã xác định là những lỗi mạo từ hay gặp trong Writing của người Việt. Trong Speaking Part 2, khi kể lại điều vừa nhắc, hãy đổi từ a/an sang the.",
+    "toeic": null
+  },
+  "quick": {
+    "what": "The là mạo từ xác định. Trong cách dùng tham chiếu thông thường, nó hướng người nghe tới đối tượng hoặc tập có thể nhận diện trong ngữ cảnh. Đây không phải định nghĩa bao quát mọi cụm có the: cách dùng theo loại và weak definites được giải thích ở phần chuyên sâu.",
+    "when": "Khi cái bạn nói tới vừa được nhắc, đang ở trước mắt cả hai, là duy nhất trong thế giới của bạn (the sun), hoặc được cụm đứng sau chỉ rõ (the girl who called). Nếu người nghe chưa nhận ra đối tượng và đó là danh từ số ít đếm được trong cách dùng thông thường, có thể dùng a/an. Với số nhiều, không đếm được hoặc từ hạn định khác, lựa chọn sẽ khác.",
+    "examples": [
+      {
+        "en": "[S|I] bought a jacket and a scarf. [DET|The] [N|jacket] was cheap.",
+        "vi": "Tôi mua một cái áo khoác và một chiếc khăn. Cái áo khoác đó rẻ."
+      },
+      {
+        "en": "Could you close [DET|the] [N|window], please?",
+        "vi": "Bạn đóng cửa sổ giúp tôi được không?"
+      }
+    ],
+    "remember": "Hỏi: người nghe có biết mình đang nói tới cái nào không? Nếu có, thường dùng the."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Mạo từ là một cách tổ chức tham chiếu trong tiếng Anh. The thường đánh dấu khả năng nhận diện, nhưng không chỉ dành cho lần nhắc lại và cũng không là lựa chọn duy nhất khi hai bên cùng biết đối tượng."
+    },
+    {
+      "type": "h",
+      "vi": "Một câu hỏi để chọn"
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "flow",
+        "start": "id",
+        "nodes": {
+          "id": {
+            "q": "Người nghe có nhận ra đích xác cái bạn nói tới không? (vì nó vừa được nhắc, đang ở trước mắt, ai cũng biết, hoặc cụm đứng sau đã chỉ rõ)",
+            "yes": "the",
+            "no": "kind"
+          },
+          "kind": {
+            "q": "Bạn đang nói chung về cả một loại, không về cái cụ thể nào? (Cats are clever. Water is wet.)",
+            "yes": "gen",
+            "no": "new"
+          },
+          "the": {
+            "end": "Có thể dùng the nếu cần đánh dấu tính xác định",
+            "note": "The jacket/the sun trong cách dùng đang xét; các từ hạn định khác như my/this cũng có thể phù hợp. Không phải mọi the đòi cùng một vật thể đã biết."
+          },
+          "gen": {
+            "end": "Thường không mạo từ",
+            "note": "Nói chung về cả loại: Cats are clever. Xem bài Nói chung."
+          },
+          "new": {
+            "end": "a/an, hoặc không mạo từ",
+            "note": "Điều mới hoặc một cái bất kỳ: a jacket (số ít đếm được); jackets, some water (số nhiều, không đếm được)."
+          }
+        }
+      },
+      "caption": "Gợi ý cho cách dùng tham chiếu thông thường, không phải thuật toán bắt buộc cho mọi mạo từ.",
+      "alt": "Ba lối suy nghĩ về tham chiếu: nhận diện, nói theo loại, hoặc giới thiệu. Đây là gợi ý cho các mẫu cơ bản; có các cách dùng theo loại và theo hoạt động ở phần chuyên sâu."
+    },
+    {
+      "type": "h",
+      "vi": "Người nghe nhận ra bằng những đường nào?"
+    },
+    {
+      "type": "p",
+      "vi": "Một danh từ trở thành 'cả hai cùng biết' theo nhiều cách. Mỗi cách là một lý do hợp lệ để dùng the. Bài học này đừng chỉ nhớ cách đầu tiên."
+    },
+    {
+      "type": "table",
+      "caption": "Năm nguồn của sự xác định",
+      "head": [
+        "Nguồn",
+        "Ví dụ",
+        "Vì sao dùng the"
+      ],
+      "rows": [
+        [
+          "Đã nhắc trước",
+          "`I bought a jacket and a scarf. The jacket was cheap.`",
+          "Câu trước đã đưa cái áo vào câu chuyện."
+        ],
+        [
+          "Đang ở trước mắt hai người",
+          "`Could you pass the salt?`",
+          "Cả hai nhìn thấy lọ muối trên bàn."
+        ],
+        [
+          "Chỉ có một trong thế giới của người nói",
+          "`The sun was bright. We met in the city centre.`",
+          "Với người nói và người nghe, chỉ có một mặt trời, một trung tâm thành phố."
+        ],
+        [
+          "Suy ra từ hiểu biết chung",
+          "We rented one room at a hotel. The room was small.",
+          "Một phòng duy nhất đã được thiết lập trong tình huống; hotel tự nó không nhận diện một phòng trong mọi khách sạn."
+        ],
+        [
+          "Cụm sau danh từ chỉ rõ",
+          "`The girl who called me is my cousin.`",
+          "Phần who called me nói rõ là cô gái nào."
+        ]
+      ]
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "reference",
+        "text": "I bought {j:a jacket} yesterday. {j<:The jacket} was cheap."
+      },
+      "caption": "Lần đầu, a jacket đưa cái áo vào câu chuyện. Lần sau, the jacket chỉ lại chính cái áo đó.",
+      "alt": "Câu văn có hai chỗ nói về cùng một vật: a jacket ở câu đầu và the jacket ở câu sau, được nối với nhau bằng một mũi tên."
+    },
+    {
+      "type": "try",
+      "exercise": "the-01"
+    },
+    {
+      "type": "h",
+      "vi": "Cùng một danh từ, hai tình huống"
+    },
+    {
+      "type": "contrast",
+      "labelA": "The",
+      "labelB": "A / an",
+      "items": [
+        {
+          "a": {
+            "en": "Please open [DET|the] [N|window].",
+            "vi": "Làm ơn mở cái cửa sổ (đang đóng) đó."
+          },
+          "b": {
+            "en": "Please open [DET|a] [N|window].",
+            "vi": "Làm ơn mở một cái cửa sổ nào đó."
+          },
+          "diff": "The đánh dấu cửa sổ được nhận diện trong ngữ cảnh; a trình bày một cửa sổ chưa đánh dấu nhận diện. Một lời nhờ dùng a vẫn có thể phù hợp dù tình huống chỉ có một cửa sổ."
+        },
+        {
+          "a": {
+            "en": "I'm going to [DET|the] [N|bank].",
+            "vi": "Tôi đi ngân hàng (ngân hàng quen thuộc)."
+          },
+          "b": {
+            "en": "I'm going to [DET|a] [N|bank].",
+            "vi": "Tôi đi một ngân hàng nào đó."
+          },
+          "diff": "The bank có thể chỉ một ngân hàng đã rõ hoặc một hoạt động quen thuộc. A bank giới thiệu một ngân hàng theo cách khác; không gán một cách đọc duy nhất nếu thiếu ngữ cảnh."
+        },
+        {
+          "a": {
+            "en": "She is [DET|the] [N|teacher].",
+            "vi": "Cô ấy là giáo viên (người chúng ta đang chờ)."
+          },
+          "b": {
+            "en": "She is [DET|a] [N|teacher].",
+            "vi": "Cô ấy là một giáo viên (nghề của cô ấy)."
+          },
+          "diff": "Hai câu khác nghĩa. The teacher chỉ một người cụ thể mà cả hai biết. A teacher nói về nghề nghiệp."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Những từ thường kéo theo the"
+    },
+    {
+      "type": "p",
+      "vi": "Một số từ làm danh từ chỉ còn một khả năng, nên chúng thường đi với the: so sánh nhất (the best, the oldest), số thứ tự (the first, the second), `the same`, `the only`, `the next`, `the last`, `the main`. Chữ 'thường' quan trọng: `a second chance` và `a first draft` vẫn đúng, vì ở đó số thứ tự không chỉ ra duy nhất một cái."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "She is [DET|the] [ADJ|best] [N|player] in the club.",
+          "vi": "Cô ấy là cầu thủ giỏi nhất câu lạc bộ."
+        },
+        {
+          "en": "This is [DET|the] [ADJ|first] [N|time] I have eaten durian.",
+          "vi": "Đây là lần đầu tôi ăn sầu riêng."
+        },
+        {
+          "en": "We have [DET|the] [ADJ|same] [N|teacher].",
+          "vi": "Chúng tôi có cùng một thầy giáo."
+        },
+        {
+          "en": "He is [DET|the] [ADJ|only] [N|student] who passed.",
+          "vi": "Anh ấy là học sinh duy nhất đỗ."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Last week/next year thường không có the khi tính trực tiếp từ hiện tại. The last week of the course hoặc the next bus là cách dùng có nhận diện khác. Không cấm the chỉ vì thấy last/next và một danh từ thời gian."
+    },
+    {
+      "type": "h",
+      "vi": "Cách đọc the"
+    },
+    {
+      "type": "p",
+      "vi": "The thường đọc là /ðə/ trước âm phụ âm: `the book`. Trước âm nguyên âm, cách đọc truyền thống thường là /ði/: `the apple`, `the hour`. Quy tắc cũng theo âm, giống a/an, nên `the university` đọc /ðə/ còn `the hour` đọc /ði/. Khi muốn nhấn 'cái duy nhất đó', người nói có thể đọc /ðiː/ kéo dài: `the best`."
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Tiếng Việt thường không có từ riêng cho ý này: người nghe tự suy ra, đôi khi nhờ các từ như cái, này, đó. Vì vậy người học dễ bỏ the ở chỗ cần (`Sun is hot`) hoặc thêm the cho 'chắc ăn' ở chỗ nói chung (`The life is difficult`). Mỗi lần, hãy tự hỏi: người nghe có biết mình nói tới cái nào không?"
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "vi": "Khi cần giới thiệu một người mà bạn không yêu cầu người nghe nhận diện trước, I met a woman là mẫu tự nhiên. The woman vẫn có thể xuất hiện ngay lần đầu nếu ngữ cảnh cung cấp căn cứ, hoặc người nói thiết lập một cách nhìn; lần nhắc đầu không tự làm the sai."
+    }
+  ],
+  "deep": [
+    {
+      "type": "h",
+      "vi": "'Cái duy nhất' hay 'cái nhận ra được'?"
+    },
+    {
+      "type": "p",
+      "vi": "Nhận diện trong tình huống giải thích nhiều cách dùng the, nhưng không phải mọi cách. Weak definites như listen to the radio có thể nói một hoạt động quen thuộc mà không buộc hai người dùng chung một máy. Generic the cũng có thể nói về một loại. Xem articles-in-context và generic-reference; không biến mẹo nhận diện thành luật duy nhất."
+    },
+    {
+      "type": "h",
+      "vi": "Suy ra từ hiểu biết chung"
+    },
+    {
+      "type": "p",
+      "vi": "Tham chiếu liên hệ cần ngữ cảnh đủ để nhận diện, không chỉ biết vật có một bộ phận. Một khách sạn có nhiều phòng, một trường có nhiều giáo viên, và một đám cưới không bắt buộc có đúng một cô dâu. Có thể thêm dữ kiện hoặc mô tả thay vì giả định một thành phần duy nhất."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "We went to [DET|a] wedding in Hue. [DET|The] [N|bride] wore a red ao dai.",
+          "vi": "Chúng tôi dự một đám cưới ở Huế. Cô dâu mặc áo dài đỏ.",
+          "note": "Trong tình huống minh họa này có một cô dâu được nhận diện. Không suy rằng mọi đám cưới có đúng một cô dâu."
+        },
+        {
+          "en": "My laptop broke. [DET|The] [N|screen] just went black.",
+          "vi": "Laptop của tôi hỏng. Màn hình tự nhiên tối đen.",
+          "note": "Cách đọc này dựa vào màn hình đang được nói tới; một thiết bị có thể có nhiều màn hình trong tình huống khác."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Cụm sau danh từ không phải lúc nào cũng làm nó xác định"
+    },
+    {
+      "type": "p",
+      "vi": "Có cụm đứng sau danh từ mà vẫn dùng a/an khi người nói chưa coi người hay vật ấy là duy nhất: `a friend of my sister's`, `a man with a red hat`. Hãy so `the man with a red hat` (người nghe biết là ông nào) với `a man with a red hat` (một ông nào đó)."
+    },
+    {
+      "type": "h",
+      "vi": "Những cụm cố định có the"
+    },
+    {
+      "type": "p",
+      "vi": "Một số cụm luôn có the dù không có 'cái đã biết' rõ ràng: `in the end`, `on the whole`, `by the way`, `all the time`, `the other day`. Chúng không suy ra được từ quy tắc, nên hãy học nguyên cụm. Với only có cụm cố định đi với a: `an only child`."
+    },
+    {
+      "type": "h",
+      "vi": "So sánh nhất không phải lúc nào cũng có the"
+    },
+    {
+      "type": "p",
+      "vi": "Khi so sánh một người hay một vật với chính nó ở những điều kiện khác nhau, thường không dùng the: `The lake is deepest in the middle`, `She is happiest when she is cooking`. Ngoài ra trong lời nói, the đôi khi được lược với so sánh nhất đứng một mình. Trong bài thi, dạng có the trước danh từ là dạng an toàn."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Tiêu đề báo, ghi chú nhanh và tin nhắn rất ngắn thường lược mạo từ: `Mayor opens new bridge`. Đó là văn phong riêng của tiêu đề, không phải văn viết thông thường."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "the-unique",
+      "wrong": "Sun is very hot today.",
+      "right": "The sun is very hot today.",
+      "why": "Mặt trời là cái duy nhất trong thế giới của người nói, người nghe nhận ra ngay, nên cần the.",
+      "vn": "Tiếng Việt nói 'Mặt trời nóng quá' mà không cần từ thêm."
+    },
+    {
+      "id": "the-second-mention",
+      "wrong": "I have a cat. A cat is black. [Mục tiêu biên tập: đánh dấu trực tiếp việc nhắc lại cùng con mèo.]",
+      "right": "I have a cat. The cat is black.",
+      "why": "The cat đánh dấu liên hệ với con mèo đã nhắc. Câu với a cat có thể đúng theo cách nhìn hoặc ngữ cảnh khác; đây là sửa theo ý định tham chiếu, không phải lệnh mọi lần nhắc hai đều dùng the.",
+      "vn": "Tiếng Việt chỉ cần nói lại 'con mèo' hoặc 'con mèo đó'."
+    },
+    {
+      "id": "the-general",
+      "wrong": "The life is difficult for the old people.",
+      "right": "Life is difficult for old people.",
+      "why": "Ở cách hiểu nói chung trong câu này, life là danh từ trừu tượng và old people là số nhiều nên không dùng the. Không phải mọi cách nói chung đều cấm the: the tiger có thể đại diện một loài. Xem bài Nói chung.",
+      "vn": "Một thói quen hay gặp là thêm the cho 'chắc ăn'. Nhưng the chỉ đi với cái người nghe nhận ra, không phải với mọi danh từ quan trọng."
+    },
+    {
+      "id": "the-superlative",
+      "wrong": "She is best student in our class.",
+      "right": "She is the best student in our class.",
+      "why": "So sánh nhất đứng trước danh từ thường kéo theo the."
+    },
+    {
+      "id": "the-last-week",
+      "wrong": "I saw him the last week. [Ý định: tuần trước tính từ hôm nay, không phải tuần cuối của một giai đoạn đã biết.]",
+      "right": "I saw him last week.",
+      "why": "Last week là mẫu cho ý tuần trước trong yêu cầu này. The last week có thể dùng với một giai đoạn đã thiết lập, như the last week of July."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Đã nhắc rồi thì luôn dùng the sao?",
+      "a": "Thường là vậy khi bạn nhắc lại chính cái đó: a jacket rồi the jacket. Nhưng the không chỉ dành cho cái đã nhắc. Nó dùng cho bất cứ gì người nghe nhận ra, như the sun hay the door. Ngược lại, nhắc một danh từ lần nữa để nói về một cái khác thì vẫn dùng a: I need a pen. Do you have a pen?"
+    },
+    {
+      "q": "Vì sao the sun mà không phải a sun?",
+      "a": "Với người nói và người nghe, chỉ có một mặt trời, nên không ai hỏi 'cái nào'. A sun vẫn dùng được khi mô tả: We walked under a blazing sun."
+    },
+    {
+      "q": "Có thể bỏ the khi nói nhanh không?",
+      "a": "Trong tiêu đề báo, ghi chú và tin nhắn rất ngắn thì được. Trong bài viết, bài thi và lời nói bình thường thì không nên bỏ chỗ cần the."
+    },
+    {
+      "q": "Hai bên đã biết là cái nào, nhưng tôi dùng my hay this được không?",
+      "a": "Được. The không phải lựa chọn duy nhất: my book, this book, that book đều làm danh từ xác định. Chọn the khi không cần nói của ai hoặc gần hay xa."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "the-01",
+      "type": "choice",
+      "level": "A1",
+      "use": "both",
+      "skill": "use",
+      "prompt": "Chọn dạng trực tiếp đánh dấu thực đơn cụ thể mà cả hai nhận diện được.",
+      "context": "Hai người ngồi trong quán cà phê. Trên bàn chỉ có một thực đơn, ở cạnh người bạn.",
+      "stem": "Could you pass me ___ menu, please?",
+      "options": [
+        {
+          "t": "the",
+          "ok": true,
+          "note": "Cả hai cùng nhìn thấy thực đơn trên bàn, nên người nghe biết đích xác cái nào."
+        },
+        {
+          "t": "a",
+          "note": "A menu vẫn có thể tự nhiên trong lời nhờ, kể cả chỉ có một thực đơn. Nó không trực tiếp đánh dấu tính xác định theo mục tiêu bài này.",
+          "tag": "article-first-mention"
+        },
+        {
+          "t": "(không mạo từ)",
+          "note": "Menu là danh từ đếm được số ít, nên cần một từ đứng trước.",
+          "tag": "article-omission"
+        }
+      ],
+      "explain": "Người nghe nhận ra cái thực đơn vì nó ở trước mắt cả hai. Đó là một trong các nguồn của the, không cần nhắc trước."
+    },
+    {
+      "id": "the-02",
+      "type": "choice",
+      "level": "A1",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Chọn dạng trực tiếp đánh dấu việc nhắc lại chính chiếc khăn vừa nêu.",
+      "context": "Linh mua một chiếc áo khoác và một chiếc khăn, rồi kể với mẹ.",
+      "stem": "I bought a jacket and a scarf. ___ scarf was a gift for you.",
+      "options": [
+        {
+          "t": "The",
+          "ok": true,
+          "note": "Chiếc khăn vừa được nhắc ở câu trước, nên mẹ biết đó là chiếc nào."
+        },
+        {
+          "t": "A",
+          "note": "A scarf có thể đúng ở mạch hoặc cách nhìn khác; nó không trực tiếp đánh dấu liên hệ nhắc lại theo yêu cầu.",
+          "tag": "article-second-mention"
+        },
+        {
+          "t": "(không mạo từ)",
+          "note": "Scarf là danh từ đếm được số ít, không đứng một mình.",
+          "tag": "article-omission"
+        }
+      ],
+      "explain": "The scarf trực tiếp nối lại chiếc khăn đã được giới thiệu. Đây là mục tiêu tham chiếu của bài, không phải luật đếm lần nhắc."
+    },
+    {
+      "id": "the-03",
+      "type": "choice",
+      "level": "B1",
+      "use": "practice",
+      "skill": "use",
+      "prompt": "Chọn từ đúng.",
+      "stem": "We stayed in a hotel near the beach. ___ room was small but clean.",
+      "options": [
+        {
+          "t": "The",
+          "ok": true,
+          "note": "The room nối lại phòng đã được xác lập, không phải vì mọi khách sạn chỉ có một phòng."
+        },
+        {
+          "t": "A",
+          "note": "A room có thể dùng ở một mạch khác; không trực tiếp đánh dấu việc nhắc lại phòng đã cho.",
+          "tag": "article-bridging"
+        },
+        {
+          "t": "(không mạo từ)",
+          "note": "Room là danh từ đếm được số ít, không đứng một mình trong câu này.",
+          "tag": "article-omission"
+        }
+      ],
+      "explain": "Căn cứ là phòng đã được xác lập trong tình huống; không suy từ hotel rằng chỉ có một phòng.",
+      "context": "Hai người đã thuê đúng một phòng và đang nhắc lại chính phòng ấy; yêu cầu đánh dấu liên hệ đó."
+    },
+    {
+      "id": "the-04",
+      "type": "cloze",
+      "level": "A1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Điền the, a hoặc an vào mỗi chỗ trống.",
+      "stem": "Look at {1} moon! I think it is {2} brightest one this year.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "the"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "a",
+              "verdict": "wrong",
+              "note": "Mặt trăng là cái duy nhất trong thế giới của người nói, nên dùng the.",
+              "tag": "article-the-omission"
+            }
+          ]
+        },
+        "2": {
+          "accept": [
+            "the"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "a",
+              "verdict": "wrong",
+              "note": "Trong mẫu so sánh nhất trước one đang luyện, dùng the. Không suy từ quy tắc này rằng mọi so sánh nhất đều chứng minh chỉ có một cá thể đạt mức cao nhất.",
+              "tag": "article-the-omission"
+            }
+          ]
+        }
+      },
+      "explain": "Theo mục tiêu nhận diện Mặt Trăng và mẫu the brightest one trong câu này, điền the. Những cấu trúc hoặc ngữ cảnh khác cần được phân tích riêng.",
+      "context": "Hai người đang nhìn Mặt Trăng từ Trái Đất và muốn dùng mạo từ nhận diện đối tượng ấy."
+    },
+    {
+      "id": "the-05",
+      "type": "error",
+      "level": "A1",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn 'Câu này đúng'.",
+      "segments": [
+        {
+          "t": "Sun",
+          "bad": true,
+          "fix": [
+            "The sun"
+          ],
+          "note": "Mặt trời là cái duy nhất trong thế giới của người nói, nên cần the.",
+          "tag": "article-the-omission"
+        },
+        {
+          "t": "rises in the east."
+        }
+      ],
+      "explain": "Câu đúng là The sun rises in the east. Cả sun và east đều cần the."
+    },
+    {
+      "id": "the-06",
+      "type": "error",
+      "level": "A2",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn 'Câu này đúng'.",
+      "noError": true,
+      "segments": [
+        {
+          "t": "I bought a notebook and a pen."
+        },
+        {
+          "t": "The notebook was cheap, but the pen was expensive."
+        }
+      ],
+      "explain": "Câu đúng. Lần đầu mỗi vật được giới thiệu bằng a, lần sau được nói lại bằng the."
+    },
+    {
+      "id": "the-07",
+      "type": "error",
+      "level": "A2",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Sửa tham chiếu theo yêu cầu: câu sau phải đánh dấu việc nói lại cùng vụ tai nạn, không giới thiệu vụ khác.",
+      "segments": [
+        {
+          "t": "I saw an accident near my school yesterday."
+        },
+        {
+          "t": "An accident",
+          "bad": true,
+          "fix": [
+            "The accident",
+            "It"
+          ],
+          "note": "Câu này nói lại chính vụ tai nạn vừa nhắc, nên cần the (hoặc dùng it).",
+          "tag": "article-second-mention"
+        },
+        {
+          "t": "was serious."
+        }
+      ],
+      "explain": "Theo ý định nhắc lại trực tiếp, dùng The accident hoặc It. An accident có thể là câu đúng trong một mạch khác; không phải mọi danh từ lặp lại đều bắt buộc the."
+    },
+    {
+      "id": "the-08",
+      "type": "transform",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lại câu, giữ nguyên ý.",
+      "source": "Minh passed the exam. Nobody else in the group passed it.",
+      "instruction": "Viết một câu bắt đầu Minh was, dùng the only và giữ rõ in the group; không tự thêm vai trò student.",
+      "accept": [
+        "Minh was the only one in the group who passed the exam",
+        "Minh was the only one in the group that passed the exam",
+        "Minh was the only one in the group to pass the exam",
+        "Minh was the only person in the group who passed the exam",
+        "Minh was the only person in the group that passed the exam",
+        "Minh was the only person in the group to pass the exam"
+      ],
+      "model": "Minh was the only one in the group who passed the exam.",
+      "known": [
+        {
+          "t": "Minh was only one who passed the exam",
+          "verdict": "wrong",
+          "note": "The only luôn đi cùng nhau trong nghĩa này: the only one.",
+          "tag": "article-the-omission"
+        }
+      ],
+      "explain": "Giữ giới hạn in the group: nguồn chỉ phủ định những người khác trong nhóm, không khẳng định toàn thế giới. One/person không tự bổ sung vai trò người học."
+    },
+    {
+      "id": "the-09",
+      "type": "order",
+      "level": "A1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sắp xếp câu kể bắt đầu bằng She is, giữ in our class ở cuối.",
+      "tokens": [
+        "She",
+        "is",
+        "the",
+        "best",
+        "student",
+        "in",
+        "our",
+        "class"
+      ],
+      "end": ".",
+      "accept": [
+        [
+          "She",
+          "is",
+          "the",
+          "best",
+          "student",
+          "in",
+          "our",
+          "class"
+        ]
+      ],
+      "explain": "Trong mẫu the best student trước danh từ đang luyện, dùng the. Một cấu trúc so sánh nhất không tự là bằng chứng toán học loại mọi khả năng đồng hạng."
+    },
+    {
+      "id": "the-10",
+      "type": "match",
+      "level": "A2",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Nối theo ngữ cảnh được ghi, không coi đây là mọi nghĩa có thể có của câu.",
+      "pairs": [
+        {
+          "a": "She is the teacher.",
+          "b": "Một giáo viên cụ thể mà cả hai đều biết hoặc đang chờ."
+        },
+        {
+          "a": "She is a teacher.",
+          "b": "Nghề của cô ấy là giáo viên."
+        },
+        {
+          "a": "I'm going to the bank. [Cả hai đã nói tới một chi nhánh cụ thể.]",
+          "b": "Ngân hàng cụ thể được nhận diện trong tình huống này, không phải mọi cách dùng the bank đều như vậy."
+        },
+        {
+          "a": "I'm going to a bank.",
+          "b": "Một ngân hàng nào đó, chưa nói rõ là ngân hàng nào."
+        }
+      ],
+      "explain": "The cho biết người nghe nhận ra cái nào. A/an chỉ nói đó là một cái thuộc loại ấy."
+    },
+    {
+      "id": "the-11",
+      "type": "classify",
+      "level": "A2",
+      "use": "check",
+      "skill": "meaning",
+      "prompt": "Phân loại căn cứ nổi bật được giả định trong các tình huống minh họa này; cụm bổ nghĩa chỉ nhận diện khi ngữ cảnh đủ rõ.",
+      "cats": [
+        "Đã nhắc trước",
+        "Duy nhất trong thế giới của người nói",
+        "Cụm sau danh từ chỉ rõ"
+      ],
+      "items": [
+        {
+          "t": "I bought a bike. The bike is red.",
+          "cat": "Đã nhắc trước"
+        },
+        {
+          "t": "I saw a film last night. The film was boring.",
+          "cat": "Đã nhắc trước"
+        },
+        {
+          "t": "The sun is hot today.",
+          "cat": "Duy nhất trong thế giới của người nói"
+        },
+        {
+          "t": "The moon looks big tonight.",
+          "cat": "Duy nhất trong thế giới của người nói"
+        },
+        {
+          "t": "The girl who called you is my cousin.",
+          "cat": "Cụm sau danh từ chỉ rõ"
+        },
+        {
+          "t": "The book on the table is mine.",
+          "cat": "Cụm sau danh từ chỉ rõ"
+        }
+      ],
+      "explain": "Các ví dụ minh họa căn cứ nhắc lại, nhận diện trong tình huống hoặc mô tả. Có cụm bổ nghĩa không tự bắt buộc the trong mọi danh ngữ."
+    },
+    {
+      "id": "the-12",
+      "type": "multi",
+      "level": "A2",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Chọn tất cả câu đúng.",
+      "stem": "Câu nào dùng đúng the?",
+      "options": [
+        {
+          "t": "The sun rises in the east.",
+          "ok": true,
+          "note": "Mặt trời và hướng đông đều là cái duy nhất trong thế giới của người nói."
+        },
+        {
+          "t": "Sun rises in the east.",
+          "note": "Sun là cái duy nhất người nghe nhận ra ngay, cần the.",
+          "tag": "article-the-omission"
+        },
+        {
+          "t": "She is the best singer in our school.",
+          "ok": true,
+          "note": "So sánh nhất trước danh từ thường kéo theo the."
+        },
+        {
+          "t": "She is best singer in our school.",
+          "note": "Thiếu the trước so sánh nhất.",
+          "tag": "article-the-omission"
+        },
+        {
+          "t": "We stayed in a hotel. The room was small but clean.",
+          "ok": true,
+          "note": "The room có thể dùng khi phòng được nhận diện trong tình huống; riêng hotel không chứng minh chỉ có một phòng."
+        },
+        {
+          "t": "We stayed in a hotel. Room was small but clean.",
+          "note": "Room là danh từ đếm được số ít, không đứng một mình trong văn viết thông thường.",
+          "tag": "article-omission"
+        }
+      ],
+      "explain": "Các câu có cách dùng phù hợp khi giữ bối cảnh và cấu trúc đã cho. The room dựa vào căn cứ nhận diện, không phải mọi khách sạn chỉ có một phòng."
+    },
+    {
+      "id": "the-13",
+      "type": "cloze",
+      "level": "B1",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Điền the, a hoặc an vào mỗi chỗ trống.",
+      "stem": "Last Sunday we went to a wedding in Hue. {1} bride wore a red ao dai, and {2} food was delicious.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "the"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "a",
+              "verdict": "wrong",
+              "note": "A bride có thể đúng ở một mạch khác, nhưng không trực tiếp đánh dấu cô dâu được nhận diện theo yêu cầu.",
+              "tag": "article-bridging"
+            }
+          ]
+        },
+        "2": {
+          "accept": [
+            "the"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "a",
+              "verdict": "wrong",
+              "note": "Food là danh từ không đếm được, không đi với a. Và đây là đồ ăn của đám cưới vừa nhắc.",
+              "tag": "article-bridging"
+            }
+          ]
+        }
+      },
+      "explain": "Dữ kiện của tình huống cung cấp cô dâu và đồ ăn cụ thể. Không suy rằng mọi đám cưới có đúng một cô dâu.",
+      "context": "Ở đám cưới này có một cô dâu đã rõ trong tình huống; người kể nói về chính cô ấy và đồ ăn của tiệc, cần đánh dấu nhận diện."
+    },
+    {
+      "id": "the-14",
+      "type": "choice",
+      "level": "A1",
+      "use": "check",
+      "skill": "use",
+      "prompt": "Chọn từ đúng. B đang kể một chuyện mới cho A.",
+      "stem": "A: Why are you late? B: I met ___ old friend on the way, so we talked for a long time.",
+      "options": [
+        {
+          "t": "an",
+          "ok": true,
+          "note": "A chưa biết người bạn nào, nên B giới thiệu bằng an (old bắt đầu bằng nguyên âm)."
+        },
+        {
+          "t": "the",
+          "note": "The có thể xuất hiện ở lần nhắc đầu khi có căn cứ nhận diện, nhưng ở đây ý định là giới thiệu người chưa được nhận diện.",
+          "tag": "article-first-mention"
+        },
+        {
+          "t": "(không mạo từ)",
+          "note": "Friend là danh từ đếm được số ít, không đứng một mình.",
+          "tag": "article-omission"
+        }
+      ],
+      "explain": "A chưa biết người bạn nào, nên B dùng an old friend. Sau đó, nếu cần nhắc lại, B sẽ nói the friend hoặc he/she.",
+      "context": "B muốn giới thiệu một người bạn mà A chưa nhận diện được; B không yêu cầu A suy ra người quen nào từ bối cảnh."
+    },
+    {
+      "id": "the-15",
+      "type": "classify",
+      "level": "A2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Luyện cách đọc yếu truyền thống trong bài, không nhấn mạnh the: phân nhóm theo âm đứng sau. Không coi đây là mọi cách phát âm hợp lệ.",
+      "cats": [
+        "/ðə/",
+        "/ði/"
+      ],
+      "items": [
+        {
+          "t": "the book",
+          "cat": "/ðə/"
+        },
+        {
+          "t": "the university",
+          "cat": "/ðə/"
+        },
+        {
+          "t": "the European Union",
+          "cat": "/ðə/"
+        },
+        {
+          "t": "the apple",
+          "cat": "/ði/"
+        },
+        {
+          "t": "the hour",
+          "cat": "/ði/"
+        },
+        {
+          "t": "the umbrella",
+          "cat": "/ði/"
+        }
+      ],
+      "explain": "Đây là mẫu đọc yếu truyền thống thường dạy. Phát âm có biến thể và the có thể được nhấn /ðiː/; không suy rằng các âm này là bắt buộc trong mọi giọng."
+    },
+    {
+      "id": "the-16",
+      "type": "open",
+      "level": "A2",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Viết ba hoặc bốn câu kể về một lần bạn gặp hoặc mua thứ gì đó. Lần đầu nhắc mỗi người hoặc vật bằng a/an, lần sau nhắc lại bằng the.",
+      "model": [
+        "Yesterday I bought a bag at the market. The bag was cheap, but the zip broke an hour later.",
+        "I met a man at the station. The man asked me for directions."
+      ],
+      "checklist": [
+        "Mỗi lần giới thiệu mới dùng a hoặc an",
+        "Khi nhắc lại đúng người hoặc vật đó, bạn dùng the",
+        "The có căn cứ trong mạch hoặc cách nhìn đã chọn; nó có thể xuất hiện ngay lần đầu nếu tình huống cung cấp nhận diện."
+      ],
+      "explain": "Mô hình a rồi the là cách mạch kể chuyện tự nhiên nhất. Đừng quên rằng the còn dùng cho cái duy nhất hoặc suy ra được."
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham khảo đề xuất; không tuyên bố đã đọc trang hoặc ấn bản này trong lượt review. Mục về mạo từ the"
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham khảo đề xuất; không tuyên bố đã đọc trang hoặc ấn bản này trong lượt review. Mục về the, kể cả nhắc lại và suy ra từ hiểu biết chung"
+    },
+    {
+      "ref": "cgel",
+      "note": "Tham khảo đề xuất; không tuyên bố đã đọc trang hoặc ấn bản này trong lượt review. Phần về tính xác định (definiteness)"
+    },
+    {
+      "ref": "murphy-essential",
+      "note": "Tham khảo đề xuất; không tuyên bố đã đọc trang hoặc ấn bản này trong lượt review. Các bài về a/an và the"
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

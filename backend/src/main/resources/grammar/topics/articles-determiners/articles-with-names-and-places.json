@@ -1,0 +1,989 @@
+{
+  "schema": 1,
+  "slug": "articles-with-names-and-places",
+  "version": 3,
+  "domain": "articles-determiners",
+  "order": 50,
+  "kind": "grammar",
+  "title": {
+    "vi": "Mạo từ với tên riêng và địa danh",
+    "en": "Articles with names and places"
+  },
+  "subtitle": {
+    "vi": "Phần lớn tên riêng đứng một mình, và nhóm có the theo mẫu chứ không theo luật cứng",
+    "en": "Most names stand alone, and the ones with the follow patterns, not hard laws"
+  },
+  "aliases": [
+    "the vietnam",
+    "the hanoi",
+    "the united states",
+    "the philippines",
+    "the netherlands",
+    "the mekong",
+    "tên riêng có the",
+    "địa danh the",
+    "mạo từ tên quốc gia",
+    "articles with proper nouns",
+    "articles with place names",
+    "the un the eu nasa",
+    "mount everest the",
+    "the alps"
+  ],
+  "level": "B1",
+  "levelBasis": "editorial",
+  "uses": [
+    {
+      "level": "A2",
+      "vi": "Tên người và thành phố không có the: Linh, Hanoi, Vietnam."
+    },
+    {
+      "level": "B1",
+      "vi": "Nhóm có the: sông, biển, dãy núi, quốc gia số nhiều, tòa nhà, tờ báo: the Mekong, the Alps, the Philippines, the Guardian."
+    },
+    {
+      "level": "B2",
+      "vi": "Tên dùng như danh từ chung (a Mr Tran, the Nguyens, a Picasso) và tổ chức viết tắt (the UN và NASA)."
+    }
+  ],
+  "objectives": [
+    "Nhận ra nhóm tên thường không mạo từ: người, thành phố, hầu hết quốc gia, phố, công viên, hồ và núi đơn",
+    "Nhận ra nhóm tên thường có the: sông, biển, sa mạc, dãy núi, quần đảo, quốc gia có tên số nhiều hoặc có of, tòa nhà, tờ báo, nhiều tổ chức",
+    "Không thêm the vào tên thông thường (the Vietnam, the Hanoi) và không bỏ the khỏi tên cần nó (the United States, the Philippines)",
+    "Dùng a hoặc the với tên riêng khi nó mang nghĩa chung (a Mr Tran, the Nguyens)"
+  ],
+  "prerequisites": [
+    "the-basics",
+    "proper-nouns"
+  ],
+  "related": [
+    {
+      "slug": "proper-nouns",
+      "rel": "more"
+    },
+    {
+      "slug": "the-basics",
+      "rel": "more"
+    },
+    {
+      "slug": "articles-with-institutions",
+      "rel": "contrast"
+    },
+    {
+      "slug": "articles-in-context",
+      "rel": "application"
+    }
+  ],
+  "exam": {
+    "ielts": "Hữu ích khi tự kiểm tra cách viết tên nơi chốn và tổ chức. Bài không có thống kê tần suất câu hỏi hoặc lỗi trong thi.",
+    "toeic": null
+  },
+  "quick": {
+    "what": "Hầu hết tên riêng (người, thành phố, phần lớn quốc gia) đứng không mạo từ. Một số nhóm tên cố định có the: tên số nhiều, sông, biển, sa mạc, dãy núi, quần đảo, tòa nhà, tờ báo và nhiều tổ chức.",
+    "when": "Đây là những mẫu thường gặp của các tên cụ thể, không suy ra chỉ từ một nơi là đơn lẻ hay có nhiều thành viên. Các tên như The Hague hoặc the Matterhorn phải học theo quy ước riêng.",
+    "examples": [
+      {
+        "en": "[S|She] lives in [N|Hanoi], but her family comes from [DET|the] [N|Mekong Delta].",
+        "vi": "Cô ấy sống ở Hà Nội, nhưng gia đình cô ấy đến từ đồng bằng sông Cửu Long."
+      },
+      {
+        "en": "My cousin lives in [DET|the] [N|Netherlands].",
+        "vi": "Anh họ tôi sống ở Hà Lan."
+      }
+    ],
+    "remember": "Học cả cụm tên và cách dùng trong văn xuôi. Những xu hướng theo sông, dãy núi, quốc gia, tổ chức giúp định hướng nhưng không thay thế quy ước của từng tên."
+  },
+  "lesson": [
+    {
+      "type": "p",
+      "vi": "Tiếng Việt không đổi dạng tên riêng: 'Hà Nội', 'sông Hồng' và 'Liên Hợp Quốc' đều đứng như vậy. Trong tiếng Anh, cùng loại tên này lại chia thành hai nhóm: nhóm đứng một mình (`Hanoi`) và nhóm đi với the (`the Red River`, `the United Nations`). Quy tắc nằm ở kiểu tên, không phải ở việc nơi đó lớn hay nhỏ."
+    },
+    {
+      "type": "h",
+      "vi": "Một sơ đồ để thử"
+    },
+    {
+      "type": "diagram",
+      "spec": {
+        "kind": "flow",
+        "start": "verified",
+        "nodes": {
+          "kind": {
+            "q": "Tên đó là tên một người, một thành phố hay một nước? (Linh, Hanoi, Vietnam, France)",
+            "yes": "countrytype",
+            "no": "water"
+          },
+          "countrytype": {
+            "q": "Tên đó có dạng số nhiều, hoặc dạng 'Republic / Kingdom / States / Union of ...'? (the Philippines, the United States, the Republic of Korea)",
+            "yes": "the",
+            "no": "zero1"
+          },
+          "water": {
+            "q": "Đó là sông, biển, đại dương, sa mạc, kênh đào, đồng bằng, dãy núi hoặc quần đảo?",
+            "yes": "the",
+            "no": "building"
+          },
+          "building": {
+            "q": "Đó là tòa nhà, bảo tàng, khách sạn, rạp, tờ báo, tổ chức hay công trình nổi tiếng? (the British Museum, the Guardian, the UN)",
+            "yes": "usuallythe",
+            "no": "single"
+          },
+          "single": {
+            "q": "Đó là một phố, quảng trường, công viên, hồ, núi đơn, đảo đơn, sân bay, nhà ga, hay trường dạng 'Tên + University'?",
+            "yes": "zero2",
+            "no": "check"
+          },
+          "the": {
+            "end": "the",
+            "note": "the Mekong, the Alps, the Philippines, the Red River, the United States, the Pacific"
+          },
+          "zero1": {
+            "end": "Thường không mạo từ theo các mẫu minh họa",
+            "note": "Linh/Hanoi/Vietnam/France thường không có mạo từ; có tên ngoại lệ như The Hague, nên cần kiểm tra khi chưa biết."
+          },
+          "usuallythe": {
+            "end": "Thường có the",
+            "note": "the Eiffel Tower, the British Museum, the Guardian, the United Nations. Có ngoại lệ, nên hãy học theo từng tên."
+          },
+          "zero2": {
+            "end": "Thường không mạo từ",
+            "note": "Nguyen Hue Street, Hoan Kiem Lake, Noi Bai Airport, Hyde Park, Harvard University"
+          },
+          "check": {
+            "end": "Kiểm tra cách tên được viết",
+            "note": "Một số tên không theo mẫu, như the Matterhorn. Tra từ điển hoặc xem cách trang chính thức và báo lớn viết tên đó."
+          },
+          "verified": {
+            "q": "Bạn đã kiểm tra cách dùng của chính tên này trong văn xuôi chưa?",
+            "yes": "known",
+            "no": "kind"
+          },
+          "known": {
+            "end": "Theo quy ước tên đã kiểm tra",
+            "note": "The Hague/the Matterhorn/NASA là các mẫu phải giữ theo tên; đừng dùng một nhóm tổng quát để sửa ngược tên đã biết."
+          }
+        }
+      },
+      "caption": "Đường đi này cho kết quả đúng ở phần lớn trường hợp. Đây là mẫu, không phải luật tuyệt đối.",
+      "alt": "Sơ đồ quyết định. Tên người, thành phố, nước: nếu có dạng số nhiều hoặc dạng Republic, Kingdom, States, Union of thì dùng the, nếu không thì không mạo từ. Sông, biển, sa mạc, dãy núi, quần đảo dùng the. Tòa nhà, bảo tàng, khách sạn, tờ báo, tổ chức thường dùng the. Phố, công viên, hồ, núi đơn, sân bay thường không mạo từ. Tên khác thì kiểm tra cách viết."
+    },
+    {
+      "type": "h",
+      "vi": "Bảng tra theo kiểu tên"
+    },
+    {
+      "type": "table",
+      "caption": "Kiểu tên và mạo từ thường gặp",
+      "head": [
+        "Kiểu tên",
+        "Mạo từ",
+        "Ví dụ"
+      ],
+      "rows": [
+        [
+          "Người, thành phố, thị trấn",
+          "Không",
+          "`Linh`, `Hanoi`, `Paris`, `Hue`"
+        ],
+        [
+          "Hầu hết quốc gia và châu lục",
+          "Không",
+          "`Vietnam`, `France`, `Japan`, `Asia`, `Africa`"
+        ],
+        [
+          "Quốc gia có tên số nhiều, hoặc có Republic, Kingdom, Union, States",
+          "`the`",
+          "`the Philippines`, `the Netherlands`, `the United States`, `the United Kingdom`, `the Republic of Korea`"
+        ],
+        [
+          "Sông, biển, đại dương, sa mạc, kênh đào, đồng bằng",
+          "`the`",
+          "`the Mekong`, `the Red River`, `the Pacific`, `the Mediterranean`, `the Sahara`, `the Suez Canal`, `the Mekong Delta`"
+        ],
+        [
+          "Dãy núi và quần đảo",
+          "`the`",
+          "`the Alps`, `the Himalayas`, `the Maldives`, `the Canary Islands`"
+        ],
+        [
+          "Núi đơn, hồ, đảo đơn, vịnh dạng 'Tên + Bay'",
+          "Không",
+          "`Mount Everest`, `Fansipan`, `Lake Victoria`, `Hoan Kiem Lake`, `Phu Quoc`, `Bali`, `Ha Long Bay`"
+        ],
+        [
+          "Phố, quảng trường, công viên, sân bay, nhà ga",
+          "Không",
+          "`Nguyen Hue Street`, `Times Square`, `Hyde Park`, `Noi Bai Airport`, `Victoria Station`"
+        ],
+        [
+          "Tòa nhà, bảo tàng, khách sạn, công trình nổi tiếng",
+          "`the`",
+          "`the Eiffel Tower`, `the British Museum`, `the Ritz`, `the Temple of Literature`, `the Hanoi Opera House`"
+        ],
+        [
+          "Tờ báo",
+          "`the`",
+          "`the Guardian`, `the New York Times`, `the Washington Post`"
+        ],
+        [
+          "Trường đại học",
+          "Tùy dạng tên",
+          "`Harvard University`, `Oxford University`, `the University of Oxford`"
+        ],
+        [
+          "Công ty và thương hiệu",
+          "Không",
+          "`Samsung`, `Vinamilk`, `Toyota`, `Google`"
+        ]
+      ]
+    },
+    {
+      "type": "try",
+      "exercise": "anp-01"
+    },
+    {
+      "type": "h",
+      "vi": "Cùng một nơi, hai dạng tên"
+    },
+    {
+      "type": "contrast",
+      "labelA": "Tên + loại",
+      "labelB": "The + loại + of + tên",
+      "items": [
+        {
+          "a": {
+            "en": "She studied at [N|Oxford University].",
+            "vi": "Cô ấy học ở Đại học Oxford."
+          },
+          "b": {
+            "en": "She studied at [DET|the] [N|University] of Oxford.",
+            "vi": "Cô ấy học ở Đại học Oxford."
+          },
+          "diff": "Cùng một trường. Dạng 'Địa danh + University' không có the. Dạng 'University of + địa danh' có the."
+        },
+        {
+          "a": {
+            "en": "We took a boat trip on [N|Ha Long Bay].",
+            "vi": "Chúng tôi đi thuyền trên vịnh Hạ Long."
+          },
+          "b": {
+            "en": "We sailed across [DET|the] [N|Bay] of Bengal.",
+            "vi": "Chúng tôi đi tàu qua vịnh Bengal."
+          },
+          "diff": "Cùng kiểu quy tắc với vịnh: 'Tên + Bay' không the, 'the Bay of + tên' có the."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Khi tên riêng được dùng như danh từ chung"
+    },
+    {
+      "type": "p",
+      "vi": "Tên riêng có thể nhận a hoặc the khi nó mang nghĩa khác. `a Mr Tran` là một người tên Trần mà bạn chưa biết. `the Nguyens` là cả gia đình họ Nguyễn. `a Picasso` là một bức tranh của Picasso. Khi đó tên làm việc như một danh từ thường."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "en": "There is [DET|a] [N|Mr Tran] at reception for you.",
+          "vi": "Có một người tên (ông) Trần ở quầy lễ tân tìm bạn.",
+          "note": "Bạn chưa biết ông Trần là ai."
+        },
+        {
+          "en": "[DET|The] [N|Nguyens] are having a party on Saturday.",
+          "vi": "Nhà họ Nguyễn tổ chức tiệc vào thứ Bảy.",
+          "note": "The + họ số nhiều: cả gia đình."
+        },
+        {
+          "en": "He drives [DET|a] [N|Toyota].",
+          "vi": "Anh ấy lái một chiếc Toyota.",
+          "note": "Tên hãng chỉ một chiếc xe của hãng."
+        }
+      ]
+    },
+    {
+      "type": "h",
+      "vi": "Chức danh và tước hiệu"
+    },
+    {
+      "type": "p",
+      "vi": "Chức danh đứng trước tên và là một phần của tên thì không the: `President Lincoln`, `Professor Lan`, `Dr Minh`, `Uncle Hung`. Khi chức danh đứng một mình như danh từ chung, nó thường có the hoặc a: `the president of the company`, `a professor from Hue`."
+    },
+    {
+      "type": "h",
+      "vi": "Tổ chức và chữ viết tắt"
+    },
+    {
+      "type": "p",
+      "vi": "The UN/the EU/the BBC và NASA/UNESCO/ASEAN là những cụm quen thuộc. Cách đọc chữ viết tắt có thể liên quan xu hướng, nhưng không quyết định một mình: IBM cũng đọc từng chữ mà thường không có the. Học quy ước tổ chức; the ASEAN countries còn có danh từ chung countries làm trung tâm."
+    },
+    {
+      "type": "note",
+      "kind": "vn",
+      "vi": "Tên tiếng Việt không cho biết tên tiếng Anh có the hay không: 'Hoa Kỳ' là the United States, 'Việt Nam' là Vietnam, 'Hà Lan' là the Netherlands, 'Phi-líp-pin' là the Philippines. Hai lỗi phổ biến là thêm the vào tên thông thường (`the Vietnam`, `the Hanoi`) và bỏ the khỏi tên cần nó (`Philippines`, `United States`)."
+    },
+    {
+      "type": "try",
+      "exercise": "anp-04"
+    }
+  ],
+  "deep": [
+    {
+      "type": "h",
+      "vi": "Vùng và hướng"
+    },
+    {
+      "type": "p",
+      "vi": "Vùng địa lý lớn thường có the: `the Middle East`, `the Mekong Delta`, `the Central Highlands`, `the Caribbean`. Hướng + tên châu lục hoặc nước, dùng như một tên đơn, thì không: `Southeast Asia`, `North America`, `Western Europe`. Khi hướng là danh từ, có the: `the north of Vietnam`, `in the south`."
+    },
+    {
+      "type": "h",
+      "vi": "Núi, cầu, tháp: không có mẫu hoàn hảo"
+    },
+    {
+      "type": "p",
+      "vi": "Mount Everest và Fansipan thường không có the, trong khi the Matterhorn có cách dùng riêng. Tower Bridge khác the Golden Gate Bridge. Đây là quy ước của tên; bài không xác lập một nguyên nhân từ nguyên cho mỗi trường hợp."
+    },
+    {
+      "type": "note",
+      "kind": "register",
+      "vi": "Cách dùng thay đổi theo thời gian. Ukraine, Sudan và Lebanon từng được viết the Ukraine, the Sudan, the Lebanon; ngày nay dạng không the là chuẩn, và the Ukraine nghe lỗi thời. Trái lại the Gambia, the Bahamas và the Netherlands vẫn giữ the."
+    },
+    {
+      "type": "h",
+      "vi": "Ngày, tháng, lễ"
+    },
+    {
+      "type": "p",
+      "vi": "Monday, May, Tet và Christmas thường không có the trong các mẫu on Monday/in May/at Tet/at Christmas. Khi thêm danh từ chung, chọn mạo từ theo cả danh ngữ và ngữ cảnh: the Tet holiday hoặc a Tet holiday có thể có công việc khác nhau; không phải cứ có danh từ theo sau là bắt buộc the."
+    },
+    {
+      "type": "h",
+      "vi": "Cách an toàn khi gặp tên mới"
+    },
+    {
+      "type": "p",
+      "vi": "Hãy xem cách tên được viết trong một nguồn đáng tin: từ điển, trang chính thức của nơi đó, báo lớn. Đừng suy ra từ tiếng Việt. Hiếm có thành phố mang the ngay trong tên, như The Hague."
+    }
+  ],
+  "mistakes": [
+    {
+      "id": "anp-the-vietnam",
+      "wrong": "I live in the Vietnam.",
+      "right": "I live in Vietnam.",
+      "why": "Tên quốc gia thông thường (Vietnam, France, Japan) không có the.",
+      "vn": "'Việt Nam' không đổi dạng trong tiếng Việt, và có người thêm the vì thấy nó 'trang trọng hơn'."
+    },
+    {
+      "id": "anp-no-the-plural",
+      "wrong": "She works in United States.",
+      "right": "She works in the United States.",
+      "why": "Tên có dạng số nhiều hoặc có States, Kingdom, Republic hay Union đi với the."
+    },
+    {
+      "id": "anp-river",
+      "wrong": "We crossed Mekong River by boat.",
+      "right": "We crossed the Mekong River by boat.",
+      "why": "Sông, biển, đại dương và sa mạc đi với the, kể cả khi có thêm chữ River."
+    },
+    {
+      "id": "anp-street",
+      "wrong": "We stayed on the Nguyen Hue Street.",
+      "right": "We stayed on Nguyen Hue Street.",
+      "why": "Phố, quảng trường, công viên có tên riêng không dùng the."
+    },
+    {
+      "id": "anp-acronym",
+      "wrong": "She works at the NASA.",
+      "right": "She works at NASA.",
+      "why": "NASA thường không có the theo cách dùng của tên này. Việc đọc thành một từ không tạo một luật cho mọi tên tổ chức; có cả tên đọc từng chữ mà không the."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Vì sao the United States mà Vietnam không the?",
+      "a": "Vì kiểu tên khác nhau. United States có dạng số nhiều (nhiều bang hợp lại), nên có the như các danh từ số nhiều xác định. Vietnam là một tên đơn. Hãy học theo kiểu tên, không theo việc nước lớn hay nhỏ."
+    },
+    {
+      "q": "Thành phố có the không?",
+      "a": "Hầu như không: Hanoi, Paris, Tokyo. Có thể gặp the khi cụm chỉ rõ đi kèm: the Hanoi of my childhood. Chỉ vài thành phố có the nằm trong tên, như The Hague."
+    },
+    {
+      "q": "Cambridge University và the University of Cambridge, cái nào đúng?",
+      "a": "Cả hai đúng. Chúng là hai cách gọi cùng một trường. Dạng 'Địa danh + University' không the, dạng 'the University of + địa danh' có the."
+    },
+    {
+      "q": "Khách sạn có tên riêng thì có the không?",
+      "a": "Thường có: We stayed at the Hilton. Nói về công ty thì không the: She works for Hilton."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "anp-01",
+      "type": "choice",
+      "level": "B1",
+      "use": "both",
+      "skill": "form",
+      "prompt": "Chọn từ đúng.",
+      "stem": "She lives near ___ Red River in Hanoi.",
+      "options": [
+        {
+          "t": "the",
+          "ok": true,
+          "note": "Sông đi với the: the Red River."
+        },
+        {
+          "t": "(không mạo từ)",
+          "note": "Tên sông, biển, sa mạc đi với the, kể cả khi có thêm chữ River.",
+          "tag": "article-name-the-omission"
+        },
+        {
+          "t": "a",
+          "note": "A Red River sẽ chỉ một con sông nào đó tên Red River, không phải con sông cụ thể này.",
+          "tag": "article-name-a"
+        }
+      ],
+      "explain": "Sông đi với the: the Red River, the Mekong, the Thames."
+    },
+    {
+      "id": "anp-02",
+      "type": "choice",
+      "level": "B1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn từ đúng.",
+      "stem": "My cousin works in ___ Netherlands.",
+      "options": [
+        {
+          "t": "the",
+          "ok": true,
+          "note": "Netherlands có dạng số nhiều, nên đi với the."
+        },
+        {
+          "t": "(không mạo từ)",
+          "note": "Tên quốc gia có dạng số nhiều cần the: the Netherlands, the Philippines.",
+          "tag": "article-name-the-omission"
+        },
+        {
+          "t": "a",
+          "note": "A không dùng với tên quốc gia.",
+          "tag": "article-name-a"
+        }
+      ],
+      "explain": "Tên quốc gia số nhiều đi với the: the Netherlands, the Philippines, the Maldives."
+    },
+    {
+      "id": "anp-03",
+      "type": "choice",
+      "level": "B1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn từ đúng.",
+      "stem": "He studied at ___ University of Oxford.",
+      "options": [
+        {
+          "t": "the",
+          "ok": true,
+          "note": "Dạng 'the University of + địa danh' có the."
+        },
+        {
+          "t": "(không mạo từ)",
+          "note": "Dạng 'University of + địa danh' cần the. Không the chỉ dùng với 'Oxford University'.",
+          "tag": "article-name-the-omission"
+        },
+        {
+          "t": "a",
+          "note": "A University of Oxford sẽ nghe như một trường khác tên Oxford, không phải trường nổi tiếng.",
+          "tag": "article-name-a"
+        }
+      ],
+      "explain": "Có hai cách gọi cùng một trường: Oxford University (không the) và the University of Oxford (có the)."
+    },
+    {
+      "id": "anp-04",
+      "type": "cloze",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Điền the. Nếu không cần mạo từ, gõ dấu gạch ngang (-).",
+      "stem": "I live in {1} Hanoi, but my parents come from {2} Mekong Delta.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "-",
+            "–",
+            "—",
+            "−",
+            "x",
+            "0",
+            "none",
+            "no article",
+            "nothing",
+            "ø"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "the",
+              "verdict": "wrong",
+              "note": "Thành phố như Hanoi không có the.",
+              "tag": "article-name-the-extra"
+            }
+          ]
+        },
+        "2": {
+          "accept": [
+            "the"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "-",
+              "verdict": "wrong",
+              "note": "Đồng bằng và sông đi với the: the Mekong Delta.",
+              "tag": "article-name-the-omission"
+            }
+          ]
+        }
+      },
+      "explain": "Hanoi là một thành phố, tên đơn, không the. The Mekong Delta là một đồng bằng gắn với sông, có the."
+    },
+    {
+      "id": "anp-05",
+      "type": "cloze",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Điền the. Nếu không cần mạo từ, gõ dấu gạch ngang (-).",
+      "stem": "Last year we visited {1} Philippines and {2} Japan. We swam in {3} Pacific.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "the"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "-",
+              "verdict": "wrong",
+              "note": "Philippines có dạng số nhiều nên cần the.",
+              "tag": "article-name-the-omission"
+            }
+          ]
+        },
+        "2": {
+          "accept": [
+            "-",
+            "–",
+            "—",
+            "−",
+            "x",
+            "0",
+            "none",
+            "no article",
+            "nothing",
+            "ø"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "the",
+              "verdict": "wrong",
+              "note": "Japan là một tên đơn, không the.",
+              "tag": "article-name-the-extra"
+            }
+          ]
+        },
+        "3": {
+          "accept": [
+            "the"
+          ],
+          "closed": true,
+          "known": [
+            {
+              "t": "-",
+              "verdict": "wrong",
+              "note": "Đại dương đi với the: the Pacific.",
+              "tag": "article-name-the-omission"
+            }
+          ]
+        }
+      },
+      "explain": "The Philippines (số nhiều), Japan (tên đơn), the Pacific (đại dương)."
+    },
+    {
+      "id": "anp-06",
+      "type": "error",
+      "level": "B1",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn 'Câu này đúng'.",
+      "segments": [
+        {
+          "t": "I live in"
+        },
+        {
+          "t": "the Vietnam",
+          "bad": true,
+          "fix": [
+            "Vietnam"
+          ],
+          "note": "Tên quốc gia thông thường không có the.",
+          "tag": "article-name-the-extra"
+        },
+        {
+          "t": "with my family."
+        }
+      ],
+      "explain": "Câu đúng là I live in Vietnam with my family."
+    },
+    {
+      "id": "anp-07",
+      "type": "error",
+      "level": "B1",
+      "use": "practice",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn 'Câu này đúng'.",
+      "segments": [
+        {
+          "t": "She works in"
+        },
+        {
+          "t": "United States",
+          "bad": true,
+          "fix": [
+            "the United States"
+          ],
+          "note": "Tên có dạng số nhiều và States cần the.",
+          "tag": "article-name-the-omission"
+        },
+        {
+          "t": "for a small company."
+        }
+      ],
+      "explain": "Câu đúng là She works in the United States for a small company."
+    },
+    {
+      "id": "anp-08",
+      "type": "error",
+      "level": "B1",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn 'Câu này đúng'.",
+      "noError": true,
+      "segments": [
+        {
+          "t": "My parents grew up near the Red River,"
+        },
+        {
+          "t": "but we live in Hue now."
+        }
+      ],
+      "explain": "Câu đúng. The Red River có the vì là sông, còn Hue là thành phố nên không the."
+    },
+    {
+      "id": "anp-09",
+      "type": "error",
+      "level": "B1",
+      "use": "check",
+      "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn 'Câu này đúng'.",
+      "segments": [
+        {
+          "t": "We took a taxi from"
+        },
+        {
+          "t": "the Heathrow Airport",
+          "bad": true,
+          "fix": [
+            "Heathrow Airport"
+          ],
+          "note": "Sân bay có tên riêng thường không the.",
+          "tag": "article-name-the-extra"
+        },
+        {
+          "t": "to Oxford Street."
+        }
+      ],
+      "explain": "Câu đúng là We took a taxi from Heathrow Airport to Oxford Street. Cả sân bay và phố có tên riêng đều không the."
+    },
+    {
+      "id": "anp-10",
+      "type": "transform",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Viết lại câu, giữ nguyên ý.",
+      "source": "She studied at Cambridge University.",
+      "instruction": "Dùng dạng the University of.",
+      "accept": [
+        "She studied at the University of Cambridge"
+      ],
+      "model": "She studied at the University of Cambridge.",
+      "known": [
+        {
+          "t": "She studied at University of Cambridge",
+          "verdict": "wrong",
+          "note": "Dạng 'University of + địa danh' cần the.",
+          "tag": "article-name-the-omission"
+        }
+      ],
+      "explain": "Cambridge University và the University of Cambridge là cùng một trường. Dạng có of cần the."
+    },
+    {
+      "id": "anp-11",
+      "type": "order",
+      "level": "B1",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Sắp xếp thành câu.",
+      "tokens": [
+        "The",
+        "Nguyens",
+        "live",
+        "near",
+        "Hoan",
+        "Kiem",
+        "Lake"
+      ],
+      "end": ".",
+      "accept": [
+        [
+          "The",
+          "Nguyens",
+          "live",
+          "near",
+          "Hoan",
+          "Kiem",
+          "Lake"
+        ]
+      ],
+      "explain": "The Nguyens là cả gia đình họ Nguyễn. Hoan Kiem Lake là hồ có tên riêng nên không the."
+    },
+    {
+      "id": "anp-12",
+      "type": "match",
+      "level": "B1",
+      "use": "practice",
+      "skill": "meaning",
+      "prompt": "Nối mỗi cụm với nghĩa của nó.",
+      "pairs": [
+        {
+          "a": "a Mr Tran",
+          "b": "Một người đàn ông tên Trần mà bạn chưa biết."
+        },
+        {
+          "a": "the Nguyens",
+          "b": "Cả gia đình hoặc nhà họ Nguyễn."
+        },
+        {
+          "a": "a Picasso",
+          "b": "Một bức tranh của Picasso."
+        },
+        {
+          "a": "the Linh I met in Hue",
+          "b": "Linh được nhận diện qua lần gặp ở Huế; không tự khẳng định có người khác cùng tên."
+        }
+      ],
+      "explain": "Mạo từ có thể chọn cách giới thiệu, nhóm gia đình, sản phẩm/tác phẩm hoặc một lần nhận diện cụ thể. Không tự suy ra số người cùng tên."
+    },
+    {
+      "id": "anp-13",
+      "type": "classify",
+      "level": "B1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Tên nào đi với the và tên nào không?",
+      "cats": [
+        "Có the",
+        "Không the"
+      ],
+      "items": [
+        {
+          "t": "Mekong",
+          "cat": "Có the"
+        },
+        {
+          "t": "Alps",
+          "cat": "Có the"
+        },
+        {
+          "t": "Philippines",
+          "cat": "Có the"
+        },
+        {
+          "t": "Pacific",
+          "cat": "Có the"
+        },
+        {
+          "t": "Hanoi",
+          "cat": "Không the"
+        },
+        {
+          "t": "Vietnam",
+          "cat": "Không the"
+        },
+        {
+          "t": "Mount Everest",
+          "cat": "Không the"
+        },
+        {
+          "t": "Oxford Street",
+          "cat": "Không the"
+        }
+      ],
+      "explain": "Sông, dãy núi, quốc gia số nhiều và đại dương có the. Thành phố, quốc gia đơn lẻ, núi đơn và phố không the."
+    },
+    {
+      "id": "anp-14",
+      "type": "multi",
+      "level": "B1",
+      "use": "check",
+      "skill": "form",
+      "prompt": "Chọn tất cả câu đúng.",
+      "stem": "Câu nào đúng?",
+      "options": [
+        {
+          "t": "We climbed in the Alps last summer.",
+          "ok": true,
+          "note": "Dãy núi đi với the."
+        },
+        {
+          "t": "He has never been to Mount Everest.",
+          "ok": true,
+          "note": "Núi đơn dạng Mount + tên không the."
+        },
+        {
+          "t": "She works for the United Nations.",
+          "ok": true,
+          "note": "Tổ chức dạng the + tên đầy đủ."
+        },
+        {
+          "t": "Her family comes from the Hanoi.",
+          "note": "Thành phố không có the.",
+          "tag": "article-name-the-extra"
+        },
+        {
+          "t": "They emigrated to Netherlands.",
+          "note": "Netherlands có dạng số nhiều, cần the.",
+          "tag": "article-name-the-omission"
+        },
+        {
+          "t": "We walked along the Oxford Street.",
+          "note": "Phố có tên riêng không the.",
+          "tag": "article-name-the-extra"
+        }
+      ],
+      "explain": "Ba câu đúng khớp mẫu: dãy núi có the, núi đơn không the, tổ chức đầy đủ có the. Ba câu sai nhầm the thừa hoặc thiếu."
+    },
+    {
+      "id": "anp-15",
+      "type": "classify",
+      "level": "B2",
+      "use": "practice",
+      "skill": "form",
+      "prompt": "Chữ viết tắt nào thường có the và chữ nào không?",
+      "cats": [
+        "the + chữ viết tắt",
+        "Chữ viết tắt không the"
+      ],
+      "items": [
+        {
+          "t": "BBC",
+          "cat": "the + chữ viết tắt"
+        },
+        {
+          "t": "UN",
+          "cat": "the + chữ viết tắt"
+        },
+        {
+          "t": "EU",
+          "cat": "the + chữ viết tắt"
+        },
+        {
+          "t": "NASA",
+          "cat": "Chữ viết tắt không the"
+        },
+        {
+          "t": "UNESCO",
+          "cat": "Chữ viết tắt không the"
+        },
+        {
+          "t": "ASEAN",
+          "cat": "Chữ viết tắt không the"
+        }
+      ],
+      "explain": "Các cụm cụ thể trong bài có cách dùng như đã phân nhóm. Cách phát âm chữ viết tắt chỉ là một xu hướng liên quan; nó không là công thức sinh mạo từ cho mọi tổ chức."
+    },
+    {
+      "id": "anp-16",
+      "type": "open",
+      "level": "B1",
+      "use": "practice",
+      "skill": "production",
+      "prompt": "Tự viết rồi tự đối chiếu.",
+      "task": "Viết ba hoặc bốn câu giới thiệu nơi bạn sống và một chuyến đi bạn từng đi. Nhắc đến một thành phố, một nước, và ít nhất một sông, biển hoặc dãy núi.",
+      "model": [
+        "I live in Hue, in central Vietnam. Last summer I visited the Mekong Delta and took a boat along the Mekong.",
+        "My friend is studying in the United Kingdom, and we hope to visit the Alps together."
+      ],
+      "checklist": [
+        "Thành phố và nước đơn lẻ không có the",
+        "Sông, biển, dãy núi và tên số nhiều có the",
+        "Bạn không thêm the vào tên đã đứng một mình"
+      ],
+      "explain": "Kiểm tra từng tên theo kiểu của nó: thành phố, nước, sông, biển, dãy núi."
+    },
+    {
+      "type": "cloze",
+      "skill": "production",
+      "prompt": "Điền vị ngữ đầy đủ bằng be ở hiện tại đơn, in và tên nước Netherlands; thêm mạo từ cần thiết, không lặp chủ ngữ.",
+      "stem": "Our new office {1}.",
+      "blanks": {
+        "1": {
+          "accept": [
+            "is in the Netherlands",
+            "'s in the Netherlands"
+          ],
+          "known": [
+            {
+              "t": "is in Netherlands",
+              "verdict": "wrong",
+              "note": "Tên Netherlands thường có the trong văn xuôi thông thường như câu này.",
+              "tag": "geographical-article"
+            }
+          ]
+        }
+      },
+      "explain": "Is in the Netherlands kết hợp hòa hợp office/is với mạo từ của tên nước trong ngữ cảnh này. Dạng viết tắt cũng được chấp nhận; không áp cách viết nhãn bản đồ cho câu văn.",
+      "id": "articles-with-names-and-places-production-check-01",
+      "level": "B1",
+      "use": "check"
+    }
+  ],
+  "sources": [
+    {
+      "ref": "cgt",
+      "note": "Tham khảo đề xuất; không tuyên bố đã đọc trang hoặc ấn bản này trong lượt review. Mục về mạo từ với tên riêng và địa danh"
+    },
+    {
+      "ref": "swan-peu",
+      "note": "Tham khảo đề xuất; không tuyên bố đã đọc trang hoặc ấn bản này trong lượt review. Mục về the với tên riêng và địa danh"
+    },
+    {
+      "ref": "cgel",
+      "note": "Tham khảo đề xuất; không tuyên bố đã đọc trang hoặc ấn bản này trong lượt review. Phần về danh từ riêng và tên"
+    },
+    {
+      "ref": "quirk",
+      "note": "Tham khảo đề xuất; không tuyên bố đã đọc trang hoặc ấn bản này trong lượt review. Phần về mạo từ với danh từ riêng"
+    },
+    {
+      "ref": "bc",
+      "note": "Reviewer đọc main explanation Articles: the or no article ngày2026-11-01 về cụm thông dụng và địa danh. Usually/normally là xu hướng; không xem đó là mọi cách dùng hoặc chứng nhận khóa bài. Giới hạn ghi trong REVIEW-ARTICLES-DETERMINERS-11.md."
+    }
+  ],
+  "editorial": {
+    "status": "drafted"
+  }
+}

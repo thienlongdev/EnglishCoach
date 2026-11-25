@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- [ASSET_REQUIRED] Production-grade vector artwork (Hand-crafted vector finalization) -->
+  <!-- Series: cefr_proficiency | Tier: SS | Slug: cefr_c2_sage | Standard Lineage: Pure Platinum & Celestial Wings -->
+  <!-- Production Vector Quality: PRODUCTION_READY_VECTOR | External Studio/Rive Hand-off: ASSET_REQUIRED -->
+  <!-- Center: (50, 50), Avatar Aperture: r=40 (80% boundary), Pristine Celestial Hierarchy -->
+  <defs>
+    <!-- Pristine Platinum & Champagne Gold Gradients -->
+    <linearGradient id="c2PlatinumGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#f1f5f9"/>
+      <stop offset="60%" stop-color="#cbd5e1"/>
+      <stop offset="85%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+
+    <linearGradient id="c2ChampagneGold" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="25%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#fef08a"/>
+      <stop offset="75%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+
+    <linearGradient id="c2WingFeatherGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#f8fafc"/>
+      <stop offset="75%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <radialGradient id="c2HaloGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#fef08a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Refined Celestial Glow Filter -->
+    <filter id="c2CelestialGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="c2DropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#0f172a" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- ── 1. Background Celestial Aura & Concentric Sacred Halos ── -->
+  <g class="c2-aura-layer" opacity="0.75">
+    <circle cx="50" cy="50" r="48.5" stroke="url(#c2ChampagneGold)" stroke-width="0.8" stroke-dasharray="2 4 8 4"/>
+    <circle cx="50" cy="50" r="46.5" stroke="#ffffff" stroke-width="0.5" opacity="0.6"/>
+  </g>
+
+  <!-- ── 2. Seraphic Multi-Tiered Celestial Wings (Left & Right Flanks) ── -->
+  <g class="c2-seraph-wings" filter="url(#c2DropShadow)">
+    <!-- Left Major Wing (Primary Upper Feather) -->
+    <path d="M12 36 C5 34, 1 42, 2 50 C5 47, 8 46, 11 47 Z" fill="url(#c2WingFeatherGrad)" stroke="url(#c2ChampagneGold)" stroke-width="0.8"/>
+    <!-- Left Mid Wing (Middle Feather) -->
+    <path d="M11 48 C3 48, 0 56, 3 64 C6 60, 9 58, 11 59 Z" fill="url(#c2WingFeatherGrad)" stroke="url(#c2ChampagneGold)" stroke-width="0.8"/>
+    <!-- Left Minor Wing (Lower Feather) -->
+    <path d="M13 60 C7 62, 5 70, 9 76 C11 72, 13 70, 14 69 Z" fill="url(#c2WingFeatherGrad)" stroke="url(#c2ChampagneGold)" stroke-width="0.8"/>
+
+    <!-- Right Major Wing (Primary Upper Feather) -->
+    <path d="M88 36 C95 34, 99 42, 98 50 C95 47, 92 46, 89 47 Z" fill="url(#c2WingFeatherGrad)" stroke="url(#c2ChampagneGold)" stroke-width="0.8"/>
+    <!-- Right Mid Wing (Middle Feather) -->
+    <path d="M89 48 C97 48, 100 56, 97 64 C94 60, 91 58, 89 59 Z" fill="url(#c2WingFeatherGrad)" stroke="url(#c2ChampagneGold)" stroke-width="0.8"/>
+    <!-- Right Minor Wing (Lower Feather) -->
+    <path d="M87 60 C93 62, 95 70, 91 76 C89 72, 87 70, 86 69 Z" fill="url(#c2WingFeatherGrad)" stroke="url(#c2ChampagneGold)" stroke-width="0.8"/>
+  </g>
+
+  <!-- ── 3. Core Platinum Ring & Carved Filigree (Aperture: r=40) ── -->
+  <g class="c2-core-frame" filter="url(#c2DropShadow)">
+    <!-- Base Platinum Shadow Rim -->
+    <circle cx="50" cy="50" r="45" stroke="#334155" stroke-width="5"/>
+    <!-- Polished Platinum Main Ring -->
+    <circle cx="50" cy="50" r="44.2" stroke="url(#c2PlatinumGrad)" stroke-width="3.6"/>
+    <!-- Inner Fine Champagne Gold Bevel (r=40.5) -->
+    <circle cx="50" cy="50" r="40.8" stroke="url(#c2ChampagneGold)" stroke-width="1.2"/>
+    <!-- Outer Sacred Geometry Trim -->
+    <circle cx="50" cy="50" r="46.2" stroke="url(#c2ChampagneGold)" stroke-width="0.8"/>
+  </g>
+
+  <!-- ── 4. Golden Laurel Wreath of Academic Wisdom (Lower Rim Anchor) ── -->
+  <g class="c2-laurel-anchor" fill="url(#c2ChampagneGold)" stroke="#92400e" stroke-width="0.4" filter="url(#c2DropShadow)">
+    <!-- Left Laurel Leaves -->
+    <path d="M44 91 C39 91, 35 88, 32 84 C36 84, 40 86, 43 89 Z"/>
+    <path d="M37 87 C32 86, 28 82, 26 77 C30 78, 34 81, 36 84 Z"/>
+    <path d="M30 81 C26 79, 23 74, 22 69 C25 71, 28 75, 29 78 Z"/>
+    <!-- Right Laurel Leaves -->
+    <path d="M56 91 C61 91, 65 88, 68 84 C64 84, 60 86, 57 89 Z"/>
+    <path d="M63 87 C68 86, 72 82, 74 77 C70 78, 66 81, 64 84 Z"/>
+    <path d="M70 81 C74 79, 77 74, 78 69 C75 71, 72 75, 71 78 Z"/>
+
+    <!-- Bottom Center Master Seal Gem -->
+    <circle cx="50" cy="92" r="3.2" fill="#ffffff" stroke="url(#c2ChampagneGold)" stroke-width="1.2"/>
+    <circle cx="50" cy="92" r="1.5" fill="#fef08a"/>
+  </g>
+
+  <!-- ── 5. Focal Point: Sovereign Celestial Crest & Radiant Diadem (Top Apex) ── -->
+  <g class="c2-apex-crest" filter="url(#c2CelestialGlow)">
+    <!-- Radiating Halo Rays Behind Diadem -->
+    <circle cx="50" cy="8" r="8" fill="url(#c2HaloGlow)" opacity="0.8"/>
+
+    <!-- Tri-Fold Platinum Archon Coronet -->
+    <g fill="url(#c2PlatinumGrad)" stroke="url(#c2ChampagneGold)" stroke-width="0.8">
+      <path d="M50 0 L54 9 L58 4 L55 12 L50 15 L45 12 L42 4 L46 9 Z"/>
+      <!-- Flanking Angelic Crest Wings -->
+      <path d="M45 12 C38 8, 30 7, 24 11 C30 14, 38 15, 44 14 Z"/>
+      <path d="M55 12 C62 8, 70 7, 76 11 C70 14, 62 15, 56 14 Z"/>
+    </g>
+
+    <!-- Central Solitary Brilliant Diamond Crystal (The Sage's Prism) -->
+    <polygon points="50,2 53,7 50,12 47,7" fill="#ffffff" stroke="#94a3b8" stroke-width="0.6"/>
+    <!-- Crystal Specular Core -->
+    <circle cx="50" cy="7" r="1" fill="#fef08a"/>
+  </g>
+</svg>

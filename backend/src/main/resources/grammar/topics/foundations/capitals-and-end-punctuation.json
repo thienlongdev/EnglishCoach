@@ -1,0 +1,303 @@
+{
+  "schema": 1,
+  "slug": "capitals-and-end-punctuation",
+  "version": 2,
+  "domain": "foundations",
+  "order": 120,
+  "kind": "grammar",
+  "title": { "vi": "Viết hoa và dấu kết câu", "en": "Capitals and end punctuation" },
+  "subtitle": { "vi": "Chữ hoa đầu câu, chữ I và tên riêng; dấu chấm, dấu chấm hỏi và dấu chấm than để kết thúc câu", "en": "Capitals at the start of a sentence, the word I and names; the full stop, question mark and exclamation mark that end a sentence" },
+  "aliases": ["capital letters", "viết hoa", "chữ hoa", "full stop", "question mark", "dấu chấm hỏi", "i live in hanoi", "I speak english"],
+  "level": "preA1",
+  "levelBasis": "editorial",
+  "uses": [
+    { "level": "preA1", "vi": "Viết hoa chữ đầu câu, chữ I và tên riêng; kết thúc câu bằng dấu chấm, dấu chấm hỏi hoặc dấu chấm than." },
+    { "level": "A1", "vi": "Viết hoa thứ trong tuần, tháng, ngôn ngữ và quốc tịch; chọn đúng dấu cho câu kể và câu hỏi." },
+    { "level": "A2", "vi": "Phân biệt danh xưng đi kèm tên (Dr Tran) với nghề nghiệp nói chung (a doctor); đặt dấu đúng cho câu hỏi gián tiếp." }
+  ],
+  "objectives": [
+    "Viết hoa chữ cái đầu câu và luôn viết hoa chữ I",
+    "Viết hoa tên riêng: tên người, địa danh, thứ, tháng, ngày lễ, ngôn ngữ và quốc tịch",
+    "Phân biệt tên riêng với danh từ chung được viết thường như teacher, city, summer",
+    "Chọn dấu chấm, dấu chấm hỏi hoặc dấu chấm than cho đúng loại câu"
+  ],
+  "prerequisites": [],
+  "related": [
+    { "slug": "what-is-a-sentence", "rel": "more" },
+    { "slug": "statements-negatives-questions", "rel": "more" },
+    { "slug": "exclamations", "rel": "more" },
+    { "slug": "proper-nouns", "rel": "more" },
+    { "slug": "fragments-and-run-ons", "rel": "more" },
+    { "slug": "commas", "rel": "more" },
+    { "slug": "apostrophes", "rel": "more" },
+    { "slug": "semicolons-colons-dashes", "rel": "more" }
+  ],
+  "exam": {
+    "ielts": "Trong IELTS Writing, dấu câu là một phần của độ chính xác ngữ pháp. Khi luyện viết, hãy kiểm tra chữ đầu câu, tên riêng và dấu kết câu. Ghi chú này không thay thế hướng dẫn riêng về cách ghi đáp án của từng bài thi.",
+    "toeic": null
+  },
+  "quick": {
+    "what": "Trong văn viết thông thường, viết hoa chữ đầu câu, đại từ I và các tên riêng như Lan, Hanoi, Monday, English. Câu kể trung tính thường kết thúc bằng dấu chấm; câu hỏi thông thường dùng dấu hỏi; cảm xúc mạnh có thể dùng dấu chấm than.",
+    "when": "Mỗi lần bạn viết một câu hoàn chỉnh: bài viết, email, đơn xin việc, ghi chú. Khi nhắn tin thân mật, nhiều người bỏ chữ hoa và dấu chấm cuối, nhưng trong bài thi và thư gửi người lạ thì giữ đầy đủ.",
+    "examples": [
+      { "en": "[S|I] [V|live] [A|in Hanoi].", "vi": "Tôi sống ở Hà Nội." },
+      { "en": "[Q|Where] [AUX|do] [S|you] [V|work]?", "vi": "Bạn làm việc ở đâu?" },
+      { "en": "[S|We] [V|have] [O|English] [T|on Monday].", "vi": "Chúng tôi có tiết tiếng Anh vào thứ hai." },
+      { "en": "What a lovely view!", "vi": "Cảnh đẹp quá!" }
+    ],
+    "remember": "Chữ I luôn viết hoa. Dấu kết câu viết sát chữ cuối, không có khoảng trắng trước nó: Really?"
+  },
+  "lesson": [
+    { "type": "p", "vi": "Chữ hoa (capital letter) thường đánh dấu đầu câu, tên riêng và đại từ I. Nó còn xuất hiện trong chữ viết tắt, tiêu đề hay một số quy ước văn phong; không phải cứ có chữ hoa ở giữa là tên riêng. Dấu kết câu giúp biểu đạt mục đích và giọng của cả câu." },
+    { "type": "diagram",
+      "spec": { "kind": "transform", "steps": [
+        { "label": "Câu chưa chỉnh", "sentence": "on monday i meet mr brown in hue" },
+        { "label": "Chữ đầu câu viết hoa", "sentence": "On monday i meet mr brown in hue" },
+        { "label": "Chữ I luôn viết hoa", "sentence": "On monday I meet mr brown in hue" },
+        { "label": "Thứ và tên riêng viết hoa", "sentence": "On Monday I meet Mr Brown in Hue" },
+        { "label": "Dấu kết câu", "sentence": "On Monday I meet Mr Brown in Hue." }
+      ], "changed": ["On", "I", "Monday", "Mr", "Brown", "Hue"] },
+      "caption": "Năm bước chỉnh một câu viết vội: chữ đầu câu, chữ I, tên riêng, rồi dấu kết câu.",
+      "alt": "Năm dòng. Dòng một: câu viết toàn chữ thường. Dòng hai: chữ On đầu câu được viết hoa. Dòng ba: chữ I được viết hoa. Dòng bốn: Monday, Mr Brown và Hue được viết hoa. Dòng năm: thêm dấu chấm cuối câu." },
+    { "type": "examples", "items": [
+      { "en": "[S|My sister] [V|works] [A|in London].", "vi": "Chị tôi làm việc ở Luân Đôn.", "note": "My ở đầu câu viết hoa. London là tên riêng nên cũng viết hoa." },
+      { "en": "[S|My brother and I] [V|share] a room.", "vi": "Anh tôi và tôi ở chung một phòng.", "note": "Chữ I luôn viết hoa, kể cả ở giữa câu." },
+      { "en": "[AUX|Can] [S|I] [V|sit] here?", "vi": "Tôi ngồi đây được không?", "note": "Chữ I viết hoa ngay cả trong câu hỏi." },
+      { "en": "[T|On Friday] [S|we] [V|visit] [O|my grandmother].", "vi": "Thứ sáu chúng tôi đến thăm bà tôi.", "note": "Friday viết hoa vì là tên một ngày. Grandmother viết thường vì không phải tên riêng." }
+    ] },
+    { "type": "h", "vi": "Những từ viết hoa vì là tên riêng" },
+    { "type": "table",
+      "head": ["Nhóm", "Viết hoa", "Viết thường"],
+      "rows": [
+        ["Tên người và danh xưng đi kèm tên", "Lan, Minh, Mr Brown, Dr Tran", "a doctor, my teacher"],
+        ["Quốc gia, thành phố, sông, núi", "Vietnam, Hanoi, the Mekong", "a country, the city, a river"],
+        ["Thứ trong tuần và tháng", "Monday, Friday, March, October", "a week, a month"],
+        ["Ngày lễ", "Tet, Christmas", "a holiday"],
+        ["Ngôn ngữ và quốc tịch", "English, Vietnamese, Japanese", "—"],
+        ["Môn học", "English, French (vì là ngôn ngữ)", "biology, history, physics"],
+        ["Mùa trong năm", "—", "spring, summer, autumn (fall), winter"],
+        ["Tên công ty, trường, thương hiệu", "Google, Vietnam Airlines, Hanoi University", "a company, an airline, a university"]
+      ],
+      "caption": "Các mẫu thông dụng trong văn viết. Tên riêng có cách viết quy ước; một số tên, danh xưng hoặc tiêu đề có quy ước khác." },
+    { "type": "note", "kind": "vn", "vi": "Tiếng Việt viết thường nhiều từ mà tiếng Anh viết hoa: tôi (I), thứ hai (Monday), tháng ba (March). Vì vậy người học dễ quên chữ hoa khi viết tiếng Anh. Ngược lại, người học có thể viết hoa cả danh từ chung như Teacher hay Family cho có vẻ quan trọng; tiếng Anh không làm vậy." },
+    { "type": "h", "vi": "Dấu kết câu" },
+    { "type": "formula",
+      "lines": [
+        { "label": "Câu kể", "parts": [ { "t": "Chữ hoa" }, { "t": "phần còn lại của câu" }, { "t": "." } ] },
+        { "label": "Câu hỏi", "parts": [ { "t": "Chữ hoa" }, { "t": "phần còn lại của câu" }, { "t": "?" } ] },
+        { "label": "Câu cảm", "parts": [ { "t": "Chữ hoa" }, { "t": "phần còn lại của câu" }, { "t": "!" } ] }
+      ],
+      "note": "Các mẫu cơ bản thường dùng một dấu kết, viết sát từ trước. Câu hỏi có thể mang sắc thái cảm thán; lời thoại và chữ viết tắt còn có quy ước riêng, nêu ở phần sâu." },
+    { "type": "examples", "items": [
+      { "en": "[S|I] [V|work] [A|at a bank].", "vi": "Tôi làm việc ở ngân hàng.", "note": "Câu kể kết thúc bằng dấu chấm (full stop trong tiếng Anh Anh, period trong tiếng Anh Mỹ)." },
+      { "en": "[AUX|Do] [S|you] [V|work] here?", "vi": "Bạn làm việc ở đây à?", "note": "Câu hỏi kết thúc bằng dấu chấm hỏi." },
+      { "en": "What a lovely view!", "vi": "Cảnh đẹp quá!", "note": "Câu cảm xúc mạnh kết thúc bằng dấu chấm than." },
+      { "en": "[V|Stop]!", "vi": "Dừng lại!", "note": "Lời cảnh báo mạnh dùng dấu chấm than." },
+      { "en": "[V|Close] [O|the door], please.", "vi": "Làm ơn đóng cửa lại.", "note": "Một yêu cầu bình thường dùng dấu chấm." }
+    ] },
+    { "type": "try", "exercise": "cap-07" }
+  ],
+  "deep": [
+    { "type": "h", "vi": "Viết hoa hay không: những chỗ hay gây lúng túng" },
+    { "type": "p", "vi": "Danh xưng thường viết hoa trước tên người: Dr Tran, Professor Lee. Khi chỉ nghề nói chung, viết thường: She is a doctor. Danh xưng dùng thay tên hoặc trong lời xưng hô có thể viết hoa theo văn phong; vì thế không có luật \"chỉ viết hoa khi ngay trước tên\". Với tên sách, phim và bài báo, hãy theo quy ước của đơn vị xuất bản: viết hoa các từ chính hoặc chỉ chữ đầu và tên riêng đều có thể phù hợp." },
+    { "type": "examples", "items": [
+      { "en": "[S|Dr Tran] [V|will see] you now.", "vi": "Bác sĩ Trần sẽ khám cho bạn ngay.", "note": "Danh xưng đi liền tên: viết hoa." },
+      { "en": "[S|My doctor] [V|is] [C|very kind].", "vi": "Bác sĩ của tôi rất tử tế.", "note": "Nói chung về nghề: viết thường." },
+      { "en": "[S|She] [V|studies] [A|at Hanoi University].", "vi": "Cô ấy học ở Đại học Hà Nội.", "note": "Tên riêng của một trường: viết hoa." },
+      { "en": "[S|We] [V|go] [A|to the university] [T|every day].", "vi": "Chúng tôi đến trường đại học mỗi ngày.", "note": "Nói chung về nơi chốn: viết thường." }
+    ] },
+    { "type": "h", "vi": "Dấu kết câu: vài tình huống đặc biệt" },
+    { "type": "p", "vi": "Chọn dấu kết theo cả câu, không chỉ theo mệnh đề chứa từ để hỏi. She asked where I lived là câu kể nên dùng dấu chấm. Could you tell me where the entrance is? là lời hỏi lịch sự nên vẫn dùng dấu hỏi, dù phần where the entrance is không đảo. Khi kết thúc câu kể bằng chữ viết tắt đã có dấu chấm, không thêm chấm thứ hai; dấu hỏi hoặc chấm than vẫn có thể đi sau." },
+    { "type": "examples", "items": [
+        {
+          "en": "[S|She] [V|asked] [CL|where I lived].",
+          "vi": "Cô ấy hỏi tôi sống ở đâu.",
+          "note": "Câu hỏi gián tiếp: dấu chấm."
+        },
+        {
+          "en": "You're leaving already?",
+          "vi": "Bạn đi rồi à?",
+          "note": "Câu kể đọc lên giọng như câu hỏi: dấu chấm hỏi."
+        },
+        {
+          "en": "[MOD|Could] [S|you] [V|open] [O|the window]?",
+          "vi": "Bạn mở cửa sổ giúp tôi được không?",
+          "note": "Lời nhờ dưới dạng câu hỏi: dấu chấm hỏi."
+        },
+        {
+          "en": "'Where are you?' she asked.",
+          "vi": "Em đang ở đâu? cô ấy hỏi.",
+          "note": "Câu trong ngoặc kết thúc bằng dấu chấm hỏi, nhưng she vẫn viết thường vì câu chưa kết thúc. Dấu ngoặc kép được dạy kỹ hơn ở bài Semicolons, colons and dashes."
+        },
+        {
+          "en": "[S|We] [V|open] [T|at 8 a.m.]",
+          "vi": "Chúng tôi mở cửa lúc 8 giờ sáng.",
+          "note": "Từ viết tắt đã có dấu chấm thì không thêm dấu chấm thứ hai. Với câu hỏi: Do you open at 8 a.m.?"
+        },
+        {
+          "en": "[MOD|Could] [S|you] [V|tell] me [CL|where the entrance is]?",
+          "vi": "Bạn chỉ giúp tôi lối vào ở đâu được không?",
+          "note": "Cả câu là lời hỏi, nên có dấu hỏi; mệnh đề nhúng vẫn giữ trật tự chủ ngữ rồi động từ."
+        }
+      ] },
+    { "type": "note", "kind": "register", "vi": "Trong tin nhắn thân mật, nhiều người viết thường toàn bộ và bỏ dấu chấm cuối câu; điều đó bình thường giữa bạn bè. Nhưng trong bài thi, email gửi người lạ hay đơn xin việc, hãy viết hoa và chấm câu đầy đủ. Viết TOÀN CHỮ HOA thường bị đọc như đang hét. Nhiều dấu chấm than liền nhau (!!!) hợp với tin nhắn vui, không hợp với bài viết trang trọng." },
+    { "type": "note", "kind": "regional", "vi": "Tiếng Anh Anh thường viết Mr Brown, Dr Tran không có dấu chấm; tiếng Anh Mỹ thường viết Mr. Brown, Dr. Tran. Dấu chấm cuối câu gọi là full stop trong tiếng Anh Anh và period trong tiếng Anh Mỹ." }
+  ],
+  "mistakes": [
+    { "id": "cap-lowercase-i", "wrong": "My sister and i live in Da Nang.", "right": "My sister and I live in Da Nang.", "why": "Chữ I luôn viết hoa, ở đầu, giữa hay cuối câu.", "vn": "Tiếng Việt viết thường tôi, mình, em, nên người học dễ quên chữ hoa của I." },
+    { "id": "cap-language", "wrong": "I speak english and vietnamese.", "right": "I speak English and Vietnamese.", "why": "Tên ngôn ngữ và quốc tịch luôn viết hoa trong tiếng Anh." },
+    { "id": "cap-day-month", "wrong": "We meet on monday in march.", "right": "We meet on Monday in March.", "why": "Tên thứ và tên tháng là tên riêng nên viết hoa.", "vn": "Tiếng Việt thường viết thường thứ hai, tháng ba." },
+    { "id": "cap-common-noun", "wrong": "My Mother works in a Bank.", "right": "My mother works in a bank.", "why": "Trong câu kể trung tính này, mother và bank là danh từ chung nên thường viết thường. Viết hoa còn có thể do tiêu đề, xưng hô hoặc dụng ý văn phong; không phải mọi chữ hoa giữa câu đều là tên riêng." },
+    { "id": "punct-question-mark", "wrong": "Where do you live.", "right": "Where do you live?", "why": "Câu hỏi trực tiếp kết thúc bằng dấu chấm hỏi." },
+    { "id": "punct-too-many", "wrong": "Really??? I can't believe it!!!", "right": "Really? I can't believe it!", "why": "Trong bài viết và email trang trọng, mỗi câu chỉ dùng một dấu kết. Nhiều dấu liền nhau chỉ hợp với tin nhắn thân mật." }
+  ],
+  "faq": [
+    { "q": "Chữ I luôn viết hoa, còn you, he, she thì sao?", "a": "Trong giao tiếp và văn viết thông thường, I luôn viết hoa; you, he, she, we, they viết thường giữa câu. Không tự viết hoa You chỉ vì người nhận lớn tuổi hay có chức vị. Tiêu đề, toàn chữ hoa và những văn phong đặc biệt có thể có quy ước riêng; chúng không thay đổi quy tắc cơ bản đang học." },
+    { "q": "Khi nhắn tin cho bạn bè, tôi có phải viết hoa và chấm câu không?", "a": "Không bắt buộc. Với bạn bè, viết thường và bỏ dấu chấm cuối là bình thường. Chữ hoa và dấu câu đầy đủ là quy ước của văn bản viết: bài thi, email công việc, đơn xin việc, bài đăng công khai. Hãy chuyển cách viết theo người đọc." },
+    { "q": "Có phải cứ chứa câu hỏi gián tiếp là kết thúc bằng dấu chấm?", "a": "Không. She asked where I lived là câu kể nên có dấu chấm. Could you tell me where the entrance is? là câu hỏi lịch sự nên có dấu hỏi. Hãy xét cả câu; mệnh đề nhúng không đảo không có nghĩa cả câu phải là câu kể." }
+  ],
+  "exercises": [
+    { "id": "cap-01", "type": "classify", "level": "preA1", "use": "check", "skill": "recognition",
+      "prompt": "Trong văn viết thông thường, xếp các tên riêng và từ chung sau đây: teacher là nghề, river là từ chỉ sông nói chung, summer là mùa, biology là môn học chứ không phải tiêu đề.",
+      "cats": ["Cần chữ hoa", "Viết thường"],
+      "items": [
+        { "t": "hanoi", "cat": "Cần chữ hoa" },
+        { "t": "monday", "cat": "Cần chữ hoa" },
+        { "t": "vietnamese", "cat": "Cần chữ hoa" },
+        { "t": "tet", "cat": "Cần chữ hoa" },
+        { "t": "teacher", "cat": "Viết thường" },
+        { "t": "summer", "cat": "Viết thường" },
+        { "t": "river", "cat": "Viết thường" },
+        { "t": "biology", "cat": "Viết thường" }
+      ],
+      "explain": "Tên một thành phố, một ngày, một ngôn ngữ hay một ngày lễ là tên riêng nên viết hoa: Hanoi, Monday, Vietnamese, Tet. Teacher, river là danh từ chung. Summer là mùa, biology là môn học, và cả hai thường viết thường." },
+    { "id": "cap-02", "type": "error", "level": "preA1", "use": "check", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "My brother and" },
+        { "t": "i", "bad": true, "fix": ["I"], "note": "Chữ I luôn viết hoa, ở đầu, giữa hay cuối câu.", "tag": "lowercase-i" },
+        { "t": "share a room." }
+      ],
+      "explain": "Câu đúng là My brother and I share a room. Chữ I viết hoa ở mọi vị trí." },
+    { "id": "cap-03", "type": "error", "level": "preA1", "use": "check", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "We have an English test on" },
+        { "t": "monday", "bad": true, "fix": ["Monday"], "note": "Tên thứ trong tuần là tên riêng nên viết hoa.", "tag": "lowercase-day" },
+        { "t": "morning." }
+      ],
+      "explain": "Câu đúng là We have an English test on Monday morning. English và Monday viết hoa; morning là danh từ chung nên viết thường." },
+    { "id": "cap-04", "type": "error", "level": "preA1", "use": "practice", "skill": "recognition",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "noError": true,
+      "segments": [
+        { "t": "Tet is an important holiday in" },
+        { "t": "Vietnam." }
+      ],
+      "explain": "Câu này đúng. Tet là tên một ngày lễ và Vietnam là tên một quốc gia, nên cả hai viết hoa." },
+    { "id": "cap-05", "type": "error", "level": "preA1", "use": "practice", "skill": "form",
+      "prompt": "Chỉnh cách viết hoa cho một câu kể trung tính trong email công việc, không phải tiêu đề hay lối nhấn riêng.",
+      "segments": [
+        { "t": "My" },
+        { "t": "Mother", "bad": true, "fix": ["mother"], "note": "Mother ở đây là danh từ chung, không phải tên riêng, nên viết thường giữa câu.", "tag": "capital-common-noun" },
+        { "t": "works in a hospital." }
+      ],
+      "explain": "Trong ngữ cảnh câu kể trung tính này, viết My mother works in a hospital. Đây là quy ước văn phong thông thường, không phải lệnh cấm mọi dụng ý viết hoa danh từ." },
+    { "id": "cap-06", "type": "error", "level": "preA1", "use": "practice", "skill": "form",
+      "prompt": "Chạm vào phần sai. Nếu câu không sai, chọn \"Câu này đúng\".",
+      "segments": [
+        { "t": "Where do you" },
+        { "t": "live.", "bad": true, "fix": ["live?"], "note": "Đây là câu hỏi trực tiếp nên kết thúc bằng dấu chấm hỏi.", "tag": "missing-question-mark" }
+      ],
+      "explain": "Trong câu hỏi thông tin trung tính được yêu cầu, dùng dấu hỏi: Where do you live? Không suy rộng thành luật cấm câu có hình thức câu hỏi dùng để cảm thán." },
+    { "id": "cap-07", "type": "choice", "level": "preA1", "use": "practice", "skill": "recognition",
+      "prompt": "Câu dưới đây được viết toàn chữ thường. Những từ nào cần viết hoa?",
+      "stem": "we speak english on monday.",
+      "options": [
+        { "t": "We, English, Monday", "ok": true, "note": "Đúng. We mở đầu câu, English là tên ngôn ngữ, Monday là tên một ngày." },
+        { "t": "English, Monday", "note": "Thiếu We. Chữ đầu của câu cũng phải viết hoa.", "tag": "capital-sentence-start" },
+        { "t": "We, speak, English, Monday", "note": "Speak là động từ, không viết hoa ở giữa câu.", "tag": "capital-verb" }
+      ],
+      "explain": "Chữ đầu câu, tên ngôn ngữ và tên thứ đều viết hoa. Động từ và giới từ thì viết thường khi không đứng đầu câu." },
+    { "id": "cap-08", "type": "choice", "level": "preA1", "use": "check", "skill": "form",
+      "prompt": "Chọn dấu kết câu đúng cho câu hỏi này.",
+      "stem": "Do you like tea ___",
+      "options": [
+        { "t": "Dấu chấm hỏi (?)", "ok": true, "note": "Đúng. Đây là câu hỏi trực tiếp." },
+        { "t": "Dấu chấm (.)", "note": "Dấu chấm dành cho câu kể. Câu này hỏi người nghe nên cần dấu chấm hỏi.", "tag": "missing-question-mark" },
+        { "t": "Dấu chấm than (!)", "note": "Dấu chấm than dành cho cảm xúc mạnh, không phải cho một câu hỏi bình thường.", "tag": "exclamation-overuse" }
+      ],
+      "explain": "Câu hỏi trực tiếp kết thúc bằng dấu chấm hỏi: Do you like tea?" },
+    { "id": "cap-09", "type": "choice", "level": "preA1", "use": "practice", "skill": "form",
+      "prompt": "Chọn dấu kết câu đúng.",
+      "context": "Bạn viết một câu kể bình thường để giới thiệu bạn mình, không có ý ngạc nhiên.",
+      "stem": "Lan is my best friend ___",
+      "options": [
+        { "t": "Dấu chấm (.)", "ok": true, "note": "Đúng. Câu kể bình thường kết thúc bằng dấu chấm." },
+        { "t": "Dấu chấm hỏi (?)", "note": "Đây không phải câu hỏi.", "tag": "wrong-end-mark" },
+        { "t": "Dấu chấm than (!)", "note": "Dấu chấm than dành cho cảm xúc mạnh. Một lời giới thiệu bình thường không cần.", "tag": "exclamation-overuse" }
+      ],
+      "explain": "Câu kể bình thường kết thúc bằng dấu chấm. Dùng dấu chấm than khi bạn thật sự ngạc nhiên hay vui mừng." },
+    { "id": "cap-10", "type": "order", "level": "preA1", "use": "practice", "skill": "form",
+      "prompt": "Sắp xếp thành câu hỏi thông tin thông thường, với where đầu câu và do trước chủ ngữ.",
+      "tokens": ["where", "do", "you", "live"],
+      "end": "?",
+      "accept": [["where", "do", "you", "live"]],
+      "explain": "Câu bắt đầu bằng chữ hoa (Where) và kết thúc bằng dấu chấm hỏi viết sát chữ cuối: Where do you live?" },
+    { "id": "cap-11", "type": "match", "level": "preA1", "use": "practice", "skill": "recognition",
+      "prompt": "Nối mỗi từ viết hoa với loại tên riêng của nó.",
+      "pairs": [
+        { "a": "Tuesday", "b": "một ngày trong tuần" },
+        { "a": "October", "b": "một tháng" },
+        { "a": "Vietnamese", "b": "một ngôn ngữ hoặc quốc tịch" },
+        { "a": "Tet", "b": "một ngày lễ" },
+        { "a": "Mr Brown", "b": "danh xưng đi kèm tên người" }
+      ],
+      "explain": "Tất cả các loại này đều là tên riêng nên luôn viết hoa trong tiếng Anh." },
+    { "id": "cap-12", "type": "cloze", "level": "preA1", "use": "practice", "skill": "meaning",
+      "prompt": "Điền một từ tiếng Anh.",
+      "stem": "The first letter of every sentence is a {1} letter.",
+      "blanks": { "1": { "accept": ["capital", "uppercase", "upper-case", "upper case"], "known": [ { "t": "big", "verdict": "awkward", "note": "Người học hay nói big letter và vẫn hiểu được, nhưng từ chuẩn là capital letter hoặc uppercase letter." } ] } },
+      "explain": "Chữ hoa trong tiếng Anh gọi là capital letter (hoặc uppercase letter). Chữ đầu của mỗi câu là một capital letter." },
+    { "id": "cap-13", "type": "cloze", "level": "A1", "use": "practice", "skill": "meaning",
+      "prompt": "Điền một từ tiếng Anh.",
+      "stem": "British English says full stop. American English says {1}.",
+      "blanks": { "1": { "accept": ["period"] } },
+      "explain": "Dấu chấm cuối câu là full stop trong tiếng Anh Anh và period trong tiếng Anh Mỹ. Cả hai đều chỉ cùng một dấu." },
+    { "id": "cap-14", "type": "multi", "level": "preA1", "use": "check", "skill": "form",
+      "prompt": "Chọn các câu đúng chữ hoa và dấu câu trong văn viết thông thường; các câu hỏi ở đây là câu hỏi thông tin trung tính.",
+      "stem": "Những câu nào đúng?",
+      "options": [
+        { "t": "My brother lives in Da Nang.", "ok": true, "note": "Đúng: chữ hoa ở đầu câu và ở Da Nang, dấu chấm cuối câu." },
+        { "t": "i study english at night.", "note": "Sai: cần I và English, và chữ đầu câu phải viết hoa.", "tag": "capital-multiple" },
+        { "t": "She is a doctor in Ho Chi Minh City.", "ok": true, "note": "Đúng: doctor viết thường, Ho Chi Minh City viết hoa." },
+        { "t": "We meet every tuesday.", "note": "Sai: tuesday là tên thứ, phải viết hoa thành Tuesday.", "tag": "lowercase-day" },
+        { "t": "Where is the station?", "ok": true, "note": "Đúng: câu hỏi kết thúc bằng dấu chấm hỏi." },
+        { "t": "What time is it.", "note": "Sai: đây là câu hỏi nên cần dấu chấm hỏi.", "tag": "missing-question-mark" }
+      ],
+      "explain": "Kiểm tra từng câu theo thứ tự: chữ đầu câu, chữ I, tên riêng, rồi dấu kết câu có hợp với loại câu không." }
+  ],
+  "sources": [
+    {
+      "ref": "swan-peu",
+      "note": "Phần về chữ hoa và dấu câu"
+    },
+    {
+      "ref": "cgel",
+      "note": "Chương về dấu câu"
+    },
+    {
+      "ref": "quirk",
+      "note": "Phụ lục về dấu câu"
+    },
+    {
+      "ref": "ielts-bd",
+      "note": "Tiêu chí Grammatical Range and Accuracy của Writing; đây là ghi chú tham khảo, không phải xác nhận đã kiểm tra hướng dẫn ghi đáp án Listening/Reading."
+    },
+    {
+      "ref": "bc",
+      "note": "Proper nouns: tên riêng và danh xưng trước tên. Phần giải thích chính đã được đọc trực tuyến trong đợt tiếp tục; nguồn dấu câu bổ sung ghi ở FOUNDATIONS-REVIEW.md."
+    }
+  ],
+  "editorial": { "status": "drafted" }
+}
