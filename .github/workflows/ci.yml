@@ -85,10 +85,12 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install CPU test dependencies
+        env:
+          CMAKE_ARGS: "-DGGML_NATIVE=OFF"
         run: >-
           python -m pip install --upgrade pip &&
           pip install --index-url https://download.pytorch.org/whl/cpu torch torchaudio &&
-          pip install --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu llama-cpp-python==0.2.62 &&
+          pip install llama-cpp-python==0.3.38 &&
           pip install pytest fastapi httpx pydantic python-multipart uvicorn aiofiles requests numpy scipy scikit-learn soundfile librosa transformers langchain-core langchain-openai openai yt-dlp youtube-transcript-api
       - name: Run non-GPU AI service unit & security suites
         working-directory: ai-service
